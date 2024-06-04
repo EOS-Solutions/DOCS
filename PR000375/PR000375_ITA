@@ -1,0 +1,100 @@
+# Cessioni di beni (Intra 1bis)
+
+**Campo "Natura transazione":**
+
+Requisito:
+
+*Negli elenchi riepilogativi relativi alle cessioni intracomunitarie di beni, i dati relativi alla natura della transazione devono essere forniti conformemente alla disaggregazione di cui alle colonne A e B della Tabella "Natura della transazione" di cui allÂAllegato XI, per i soggetti che hanno realizzato nellÂanno precedente, o in caso di inizio dellÂattivit… di scambi intracomunitari, presumono di realizzare, nellÂanno in corso, un valore delle spedizioni o degli arrivi superiore a euro 20.000.000.*
+
+Soluzione:
+
+* Codificare i nuovi valori a due cifre nella page ÃNatura transazione"
+
+* In fase di generazione del file Scambi.cee, il 1ø carattere del codice Natura transazione viene esportato nella posizione 56 del tracciato, il 2ø nella posizione 104:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/31AdvIntrastatForItaly.png"><br>
+
+**Campo ÃPaese di origine della merceÄ:**
+
+Requisito:
+
+*ai fini statistici, nel Modello INTRA 1bis Š prevista la nuova informazione relativa al Paese di origine delle merci (Stato in cui il bene Š ottenuto o prodotto: se la produzione riguarda pi— Stati, identifica lo Stato nel quale i beni sono stati sottoposti all'ultima trasformazione o lavorazione sostanziale, economicamente giustificata).*
+
+Soluzione:
+
+* Il campo ÃCod. paese di origineÄ delle righe della Dichiarazione Intrastat (ITR) viene compilato in funzione del valore presente nel campo ÃCod. paese di origineÄ dellÂanagrafica Articoli; il valore Š comunque modificabile nelle righe della dichiarazione.
+
+* In fase di generazione del file Scambi.cee, il campo viene esportato nella posizione 105 del tracciato:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/32AdvIntrastatForItaly.png"><br>
+
+
+# Acquisti di beni (Intra 2bis)
+
+**Campo "Natura transazione"**
+
+Requisito:
+
+*negli elenchi riepilogativi relativi agli acquisti intracomunitarie di beni, i dati relativi alla natura della transazione devono essere forniti conformemente alla disaggregazione di cui alle colonne A e B della Tabella »»Natura della transazioneËË di cui allÂAllegato XI.*
+
+Soluzione:
+
+* Codificare i nuovi valori a due cifre nella page ÃNatura transazioneÄ di BC
+
+* In fase di generazione del file Scambi.cee, il 1ø carattere del codice Natura transazione viene esportato nella posizione 69 del tracciato, il 2ø nella posizione 119:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/33AdvIntrastatForItaly.png"><br>
+
+
+**Eliminata obbligatoriet… di alcuni campi**
+
+Requisito:
+
+*negli elenchi riepilogativi relativi agli acquisti intracomunitarie di beni, sono diventate facoltative le informazioni relative allo Stato del fornitore, al Codice Iva del fornitore ed allÂAmmontare delle operazioni in valuta.
+*
+
+Soluzione:
+
+* in fase di ÃRilascioÄ della Dichiarazione Intrastat (ITR) non viene pi— verificata la presenza dei campi "Cod. Paese", "Partita IVA", "Importo" nelle righe della dichiarazione
+
+# Acquisti di servizi (Intra 2quater)
+
+**Eliminata obbligatoriet… di alcuni campi**
+
+Requisito:
+
+*negli elenchi riepilogativi relativi agli acquisti intracomunitarie di servizi, sono diventate facoltative le informazioni relative al Codice Iva del fornitore, allÂAmmontare delle operazioni in valuta, alla Modalit… di erogazione, alla Modalit… di incasso e al Paese di pagamento.*
+
+Soluzione:
+
+* in fase di ÃRilascioÄ della Dichiarazione Intrastat (ITR), nelle righe della dichiarazione, non viene pi— verificata la presenza dei campi "Partita IVA", "Importo", "Modalit… di erogazione" per il Cod. Metodo di pagamento e per il Paese di pagamento.
+
+# Call off-stock (Intra 1sexies)
+
+Requisito:
+
+*Š stata introdotta una nuova sezione dedicata alle operazioni di Call off-stock (Intra 1sexies). Tale sezione deve essere compilata a partire dagli elenchi riferiti a periodi decorrenti dal mese di gennaio 2022. Fatto salvo quanto stabilito per la compilazione di ciascuna colonna, i soggetti che presentano gli elenchi riepilogativi con cadenza mensile o trimestrale devono compilare le medesime colonne.*
+
+Soluzione:
+
+* Nelle righe della Dichiarazione Intrastat (ITR) di Tipo ÃVenditeÄ, viene gestito il valore ÃCall off stockÄ del campo Tipo riga, integrati i nuovi campi Tipo operazione (look up su apposita tabella), Codice paese nuovo destinatario, Partita IVA nuovo destinatario:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/34AdvIntrastatForItaly.png"><br>
+
+
+* La funzione ÃSuggerisci righeÄ Š stata integrata per proporre, nella nuova sezione, le righe relative alle Spedizioni di trasferimento registrate, con le seguenti caratteristiche:
+
+	* Cod. Paese di partenza ÃITÄ (Cod. paese presente della tabella Informazioni societ…) e Cod. Pese di destinazione UE (campo Cod. Intrastat della tabella Paesi). Nel caso in cui nella spedizione di trasferimento risulti compilato il campo Nr. Riferimento, tramite questo viene recuperata la Partiva IVA da esporre nella posizione 32 del tracciato.
+
+	* Cod. Paese di partenza UE (campo Cod. Intrastat della tabella Paesi) e Cod. Pese di destinazione ÃITÄ (Cod. paese presente della tabella Informazioni societ…).
+
+	* Le righe della dichiarazione possono comunque essere compilate e/o modificate manualmente, lato utente.
+
+* Il tracciato esportato Š il seguente:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/35AdvIntrastatForItaly.png"><br>
+
+| **NB**                                                                                                                                                                            |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| la tabella Tipo Operazione pu• contenere solo i seguenti valori:                                                                                                                  |
+| <img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/36AdvIntrastatForItaly.png"><br>                                                                     |
