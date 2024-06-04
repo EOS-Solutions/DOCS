@@ -1,0 +1,21 @@
+In GDPR Setup you need to fill the setup for each table which contains personal data:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000312-0/3GDPRToolset(1).png"><br>
+
+
+| Suggest Initial Setup      | the system suggests tables in order to create a setup                                                                         |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Import / Export GDPR Setup | It is possible to import a previous setup or export a setup (Excel file) by clicking on Import/Export GDPR Setup  |
+| Import Data                | it is possible to import all previous data (setup + research) in case of migration from NAV to BC                 |
+| Suggest Related table      | the system suggests setup for other tables (e.g. custom tables)                                                   |
+
+
+By clicking on New it is possible to create a new table setup:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000312-0/4GDPRToolset(1).png"><br>
+
+Fill in the table ID and then, by clicking on Suggest Fields, the system will show a field list containing personal data.
+
+Select, click OK and the system will import the fields in the setup page.
+
+For each field you can choose whether to encrypt or delete data.
