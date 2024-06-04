@@ -1,0 +1,5 @@
+Nella page Nomenclatura combinata si possono impostare le nomenclature di ÃServiziÄ e di ÃBeniÄ da associare alla scheda dellÂarticolo, che verranno recuperate automaticamente allÂacquisto o vendita di un prodotto.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000356-0/6AdvIntrastatForItaly.png"><br>
+
+Nella codifica inseriremo nel campo "Nr" il codice doganale ovvero il codice CPA e la relativa descrizione, il Tipo Nomenclatura (Beni/Servizi) e, qualora la tariffa doganale lo preveda, lÂunit… di misura supplementare prevista e il relativo flag.
