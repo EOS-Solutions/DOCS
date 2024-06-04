@@ -1,0 +1,17 @@
+Su una macchina possono lavorare pi— operatori. Esiste dunque la necessit… di gestire i tempi macchina, ma anche i tempi uomo.
+
+Tempi uomo e macchina sono diversi. Esempio: l'operatore 001 lavora dalla mattina fino a pranzo. Loperatore 003 inizia il turno poco prima di pranzo. La macchina invece lavora dalla mattina fino a sera.
+
+Il Power MES dettaglia i movimenti lavoro uomo e macchina:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex103/work center employee entries/10PowerMES_ITA.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex103/work center employee entries/11PowerMES_ITA.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex103/work center employee entries/9PowerMES_ITA.jpg"><br>
+
+<br>
+<br>
+ 
+ 
+ 
