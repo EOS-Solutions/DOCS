@@ -1,0 +1,19 @@
+Lo stato di materiale viene calcolato in base alla disponibilit… e non in base alla giacenza.
+
+Quando si utilizza la funzione sulla page Pianificazione sequenziale: da Funzioni->Stato dell'ordine->Stato materiale
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000414-0/30ManufacturingBaseToolkit-ITA.png"><br>
+
+sono presenti le opzioni
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000414-0/31ManufacturingBaseToolkit-ITA.png"><br>
+
+* Tutto: viene calcolato lo stato del materiale **per tutti gli ordini di produzione confermati e rilasciati** (quelli pianificati non vengono considerati).
+
+* Linee selezionate: viene calcolato **solo per le operazioni selezionate** (i relativi ordini di produzione).
+
+Il calcolo dello stato del materiale prevede le seguenti priorit…:
+
+* Gli ordini rilasciati hanno maggior priorit…, gli ordini confermati sono successivi.
+
+* Se viene usato il warehouse e per un ordine rilasciato Š stato fatto un prelievo, allora questo ordine ha la maggior priorit…
