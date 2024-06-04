@@ -1,0 +1,70 @@
+A **Production Routing is configurable** when it is **associated with an item** with Configuration Type "**Neutral to Configuration**". The configuration process automatically creates a Routing for each new item configured (with "Production Order" replenishment system).
+
+The Configurable Routing undergoes the choices of the configured item.
+
+In Setup configurator I can define:
+
+-   The status of the Production Routing at the time of creation of the configured item.   
+    Whether to copy routing comments from the neutral item to configured items.  
+    Whether to use conditions on neutral routings.
+		
+		
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing1_ENU.png"><br>
+		
+**SETUP FROM CHARACTERISTIC VALUES**
+
+You can define the work centers / machine centers connected to the configurable routing directly from the characteristic values.
+
+It is necessary to:
+
+1.  Enable the flag ÃEnable RoutingÄ in the Characteristic Values  
+    Select the Source Type and its Value  
+    Enter the processing time   
+    Enter the Standard Task Code.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing2_ENU.png"><br>
+
+Once the characteristic is prepared, it must be inserted inside the routing lines.
+
+The work center will be inserted into the routing based on the value of the characteristic that was chosen during configuration.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing3_ENU.png"><br>
+
+**SETUP WITH ROUTING LINE CONDITIONS**
+
+Alternatively, it is possible to define the different work centers or machine centers directly in the routing lines, using the conditions and the processing logic.
+
+Conditions enable or disable routing lines if a condition is true or false.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing4_ENU.png"><br>
+
+**SETUP WITH PROCESSING LOGIC**
+
+It is also possible to vary the processing times of the product according to the characteristics chosen using the Processing Logics.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing5_ENU.png"><br>
+
+The **Processing Logics** allow to:
+
+-   Decide the Run Time based on a formula
+-   Decide the Setup Time based on a formula
+-   sET run times according to formula and conditions
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing6_ENU.png"><br>
+
+The Processing Logic allows to **integrate** **Eos Tool Manufacturing (EX028.04 Product Configurator for tools and personnel)**
+
+This app is dependent on the "Manufacturing masterdata management" app.
+
+If present, it allows you to manage at the processing logic level the configuration of:
+
+-   **Tools**
+-   **Personnel**
+-   **Routing alternatives**
+-   **Comments**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing7_ENU.png"><br>
+
+You can disable the creation of configured routings through a special field in the configuration rules ®**Use Neutral Routing**¯.
+
+In this way, the configuration **does not generate a new configured routing**, but assigns the configurable item routing to the new item.
