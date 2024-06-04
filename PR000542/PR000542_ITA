@@ -1,0 +1,18 @@
+**Creare Ordini di Produzione con riferimento all'OdV di partenza**
+
+AffinchŠ i riferimenti dell'Ordine di Vendita vengano riportati sulla riga Ordine di Produzione
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000542-0/24ManufacturingBaseToolkit_ITA.png"><br>
+
+in anagrafica articolo Š necessario impostare campi relativi alla tipologia Make-To-Order:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000542-0/23ManufacturingBaseToolkit_ITA.png"><br>
+
+Se viene cancellato lÂimpegno precedentemente creato tramite la funzione pianifica, ci• non comporta la perdita del riferimento allÂODV nellÂODP.
+
+Infatti, al lancio dellÂMPS non viene proposto un nuovo ordine di produzione per soddisfare lÂODV, bens si ristabilisce lÂimpegno precedentemente creato sulla base del riferimento OdV-OdP.
+
+<br>
+<br>
+ 
+ 
