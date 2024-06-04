@@ -1,0 +1,31 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Effettuare i Setup</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Impostare i Piani di Controllo</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Compilare la matrice di controllo</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Creare Ordini di Controllo e Non-Conformit…</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Eseguire la Valutazione Fornitori</td>
+	</tr>
+</table>
+
+<br>
+
+# Product Quality Assurance - SUMMARY
+Premere ALT + Q e digitare "PQA" per vedere un elenco delle funzionalit… coinvolte: 
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX061-0/1ProductQualityAssurance-ITA.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX061-0/2ProductQualityAssurance-ITA.png"><br>
