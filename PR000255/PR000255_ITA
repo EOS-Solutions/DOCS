@@ -1,0 +1,9 @@
+Le scritture simulate sono integrate con i report finanziari standard BC. Accedendo alla struttura delle colonne, azione Modifica definizione colonna, Š possibile stabilire quali sono le tipologie di dati che devono alimentare il saldo:
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000255-0/95SimulatedGeneralLedger.png"><br>
+
+LÂapp integra due diverse informazioni:
+
+-   Includi mov. ratei/risconti: selezionato (default) vengono considerati nel saldo i movimenti di rateo e risconto
+-   Filtro sim.: option che consente di stabilire quali saldi devono essere presi in considerazione, movimenti coge, movimenti coge sim. oppure entrambi
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000255-0/96SimulatedGeneralLedger.png"><br>
