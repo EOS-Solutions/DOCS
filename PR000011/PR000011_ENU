@@ -1,0 +1,25 @@
+The Historical ECB Exchange Rates app provides direct access to the European Central Bank (ECB) Exchange rates service within Microsoft Dynamics 365 Business Central.
+The app allows you to connect to 3 different ECB web services. You can download exchange rates from:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ym3L0MRfN2Q?si=BjPvMtM3MdXP7-_l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+| Today: http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml         |
+|----------------------------------------------------------------------------|
+| 90 days: http://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml |
+| All: http://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.xml         |
+
+**Import**
+
+After installing ÃHistorical Exchange Rates Ã in Dynamics 365 Business Central, go to ÃCurrenciesÄ page and click ÃImport Historical Exchange Rates from ECBÄ:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000011-0/1enHistoricalECBEXRates.png"><br>
+
+Select the period from the Drop Down list:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000011-0/2enHistoricalECBEXRates.png"><br>
+
+Wait until download and import end. Check the new rates imported drilling down on field ÃExchange Rate AmountÄ.
+
+**NB**
+Without this integration, Dynamics 365 Business Central only supports downloading ÃlatestÄ (I.E yesterdayÂs) exchange rates.
+
