@@ -1,0 +1,11 @@
+Nella Scheda Fornitore, nel tab Qualit…:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000566-0/33ProductQualityAssurance-ITA.png"><br>
+
+| Campo | Descrizione |
+| --- | --- |
+| Fornitore certificato | Lo si pu• abilitare se il fornitore Š ritenuto affidabile e nel Setup PQA Š possibile dare un "peso" a tale valutazione. Tali parametri verranno poi utilizzati dal sistema nell'algoritmo che calcola la valutazione fornitori |
+| Codice servizio globale | E' una valutazione **soggettiva** sul Fornitore. La si utilizza per migliorare la valutazione che il sistema potrebbe fare nel caso di un fornitore che l'utente conosce come affidabile da tempo, ma che nell'ultimo periodo ha avuto dei problemi, che ha comunicato all'azienda. I calcoli del sistema lo penalizzerebbero, ma la persona che segue la Qualit… in azienda pu• influire sul "giudizio" del sistema e migliorarlo.  <br>  <br> <img width="" src="https://docs.eos-solutions.it/Images/PR000566-0/34ProductQualityAssurance-ITA.png"><br>|
+| Rapporto di valutazione | Se abilitato significa che il fornitore Š soggetto alla valutazione |
+| Cod. Classificazione | Riporta il codice di valutazione che Š stato assegnato al fornitore. Tale codice viene impostato in una tabella a parte (Codici classificazione PQA_)_ ed Š legato al Cod. Tipo Test che verr… sempre applicato per gli articoli nei documenti di quel fornitore.  <br>  <br> <img width="" src="https://docs.eos-solutions.it/Images/PR000566-0/35ProductQualityAssurance-ITA.png"><br>|
+| Cod. Tipo Test | Riporta il tipo di test che verr… applicato per tutti i carichi del fornitore, definito nella tabella di setup Tipi di Test (PQA) |
