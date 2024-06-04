@@ -1,0 +1,13 @@
+In the Inspection Order List there are orders generated automatically by the system depending on the setup that was set in the Inspection Matrix Setup. Example: if we post a receipt for the Item No. 1100 and Item No. 1001:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000539-0/24ProductQualityAssurance-ENU.png"><br>
+
+Depending on the matrix setup, in the inspection order list we will automatically find a NEW order relating to the recorded receipt:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000539-0/25ProductQualityAssurance-ENU.png"><br>
+
+the order will be generated depending on this setup:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000539-0/26ProductQualityAssurance-ENU.png"><br>
+
+the system will apply the inspection plan and the type of tests indicated.
