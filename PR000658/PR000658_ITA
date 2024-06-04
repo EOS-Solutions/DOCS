@@ -1,0 +1,32 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000658-0/8EDI_it.jpg"><br>
+
+In questa pagina si definisce quale messaggio mandare ad ogni Gruppo e come inviarlo.
+
+- **Tipo di messaggio** (obbligatorio):
+  Indica la tipologia di messaggio EDI da inviare o ricevere. Questo campo determina anche la direzione del flusso (in entrata, in uscita). INVOICE OUT vale sia per Fatture che per note di credito.
+- **Codice Gruppo EDI** (obbligatorio):
+  Indica il gruppo EDI per il quale questa setup vale.
+- **Nr. serie** (obbligatorio):
+  Ad ogni messaggio che viene inviato o ricevuto viene attribuito un numero. Questo campo indica il numeratore da usare per generare questo numero ed Š quindi obbligatorio.
+- **EDI Standard**
+  Il campo "EDI Standard" serve solo inbound, ovvero quando si importano dei file EDI. Attraverso questo campo vengono validati i diversi record type presenti nel file (BGM, DTM, FTX, RFF ecc. ecc.). D96 e Euritmo supportano tipi di record diversi. Se il file non Š valido il sistema mostra un errore.
+- **Nome Societ…**
+  ß possibile selezionare la societ… dalla lista multicompany.
+- **ID report conversione** (obbligatorio)
+  Inserire il numero del report di conversione. Questo report si occupa di convertire il documento di Business Central in un messaggio EDI (in caso di outbound) oppure un messaggio EDI in un documento di Business Central (in caso di inbound). L'app EDI mette a disposizione una serie di formati standard gi… gestiti. Questi report di conversione sono disponibili open-source su https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI
+- **Cancella File Importato**
+  Con questa impostazione Š possibile indicare che i file importati devono essere eliminati dopo essere caricati correttamente nel sistema. Questa impostazione vale solo per inbound.
+- **ID XML Port**
+  Questo campo indica l'XMLport da usare sia per leggere che per scrivere il messaggio EDI su o da file-system. Se questo non viene impostato, EDI usa un XMLport di default che scrive/legge il file 1:1 come Š presente nella tabella **Messaggio EDI**.
+- **Percorso Export** (obbligatorio)
+  Inserire il percorso in cui salvare o da cui leggere il file. Questo percorso supporta l'utilizzo di placeholder che vengono sostituti da valori del sistema. In questo momento i seguenti placeholder sono supportati:
+  - `<DOC>`:  Nr. documento di riferimento (Nr. fattura)
+  - `<DATE>`: data di oggi nel formato YYYYMMDD
+  - `<DATETIME>`: data/ora di oggi nel formato YYYYMMDDhhmmss
+- **Codice Configurazione Servizio** (obbligatorio)
+  Indica la configurazione di servizio da usare per fare l'accesso al filesystem per leggere o scrivere i file.
+- **Livello log**
+  Permette di configurare il logging per questo setup messaggio. (vedi {{<relref Ãenum18122312Ä>}} per i dettagli).
+	- Nessuno: Non viene eseguita alcuna registrazione per questa impostazione di messaggio.
+	- Solo errori: Verranno registrate solo le operazioni non riuscite.
+	- Tutte: Tutte le operazioni, comprese quelle riuscite, vengono registrate.
