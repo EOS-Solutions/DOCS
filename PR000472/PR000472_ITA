@@ -1,0 +1,28 @@
+Negli ordini di produzione rilasciati Š presente il flag **Chiuso provvisoriamente,** che permette di azzerare i fabbisogni dentro i componenti e i carichi programmati degli ordini di produzione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000472-0/19ManufacturingBaseToolkit_ITA.png"><br>
+
+Da Riga->Componenti vediamo la Quantit… residua a zero:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000472-0/20ManufacturingBaseToolkit_ITA.png"><br>
+
+Di conseguenza non Š pi— possibile caricare ulteriori output di produzione, ma sar… consentito registrare movimenti di capacit… (tempi uomo e macchina).
+
+Riattivando l'opzione Chiuso provvisoriamente la Quantit… residua viene ripristinata. 
+
+**Anagrafica articolo**
+
+Anche in anagrafica articolo viene aggiornata la "Qt… in ord. produzione". Infatti, essendo il flag Chiuso provvisoriamente attivo, la Qt… residua risulta essere 0:
+
+Per l'articolo "LS-100" ad esempio, con l'opzione Chiuso provvisoriamente disabilitata sull'OdP:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000472-0/21ManufacturingBaseToolkit_ITA.png"><br>
+
+**Con il flag attivo**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000472-0/22ManufacturingBaseToolkit_ITA.png"><br>
+
+<br>
+<br>
+ 
+ 
