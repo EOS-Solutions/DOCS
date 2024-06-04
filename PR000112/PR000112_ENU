@@ -1,0 +1,91 @@
+## Quick Guide 
+
+1.  Complete the ARXivar setup
+2.  Compile the Tables setup
+3.  Set up the Libraries
+4.  Define the folder / file storage pattern
+
+## Arxivar Setup
+
+On the Arxivar Setup page enter Client ID and Client Secret (located on the Arxivar administration page) to allow the connection between DocSolutions and ArxivarNext.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/2DoCSolutionsForArxivarNext.png"><br>
+
+| **Field**     | **Description**                              |
+|---------------|----------------------------------------------|
+| ID client     | ID client from ARXivarNextAuthentication     |
+| Client Secret | Client Secret from ARXivarNextAuthentication |
+
+
+## User Setup
+
+On the User Setup page you need also to perform the user authentication:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/3DoCSolutionsForArxivarNext.png"><br>
+
+
+## DocSolutions Table Setup (DCS)
+
+In DocSolutions (DCS) Table Setup, the default setups must be loaded from Actions-\> Load Default:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/4DoCSolutionsForArxivarNext.png"><br>
+
+Press YES
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/5DoCSolutionsForArxivarNext.png"><br>
+
+Select ARXivarNext and press OK.
+
+Confirm the Client ID and Secret (already filled in by the system as they are present on the Arxivar Setup (DCS) (ARX) page).
+
+Finally, indicate the API URL to associate the DCS app, the Document Type and the Aoo. Clicking on Import defaults the setup is completed.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/6DoCSolutionsForArxivarNext.png"><br>
+## Fields
+
+Press Fields and insert the requested information:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/5aDoCSolutionsForArxivarNext.png"><br>
+
+For each line it is possible to establish whether or not the information it is mandatory
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/25DoCSolutionsForArxivarNext.png"><br>
+
+## Libraries Setup
+
+From Edit, open the Document Library(s) you wish to enable, e.g. "Sales Order":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/8DoCSolutionsForArxivarNext.png"><br> 
+
+the system automatically enables the display of the Factbox relating to DCS on the Lists.
+
+From Libraries we choose a default library and from Open library we set its setup:
+
+
+
+In the Tab "Storage" we choose the ARXivar Site and the Document Library to which to connect it.
+
+At the bottom of the page we set the attributes to be displayed on the Business Central pages:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/10DoCSolutionsForArxivarNext.png"><br>
+
+
+
+## Permissions
+
+From the Library card-\> Permissions we define which User Group, User or Permission set can read / write files in a specific location:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/14DoCSolutionsForArxivarNext.png"><br>
+
+
+## Mapping
+
+From the DocSolutions Table setup (DCS) it is possible to map the fields in order to choose what to display on Sharepoint:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/20DoCSolutionsForsharepoint.png"><br>
+
+The Library, the name of the field, the label must be defined and a function to be associated with the field or a value must be chosen:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/21DoCSolutionsForSharepoint.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/22DoCSolutionsForArxivarNext.png"><br>
