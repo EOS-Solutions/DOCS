@@ -1,0 +1,32 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000454-0/Setup3_ENU.jpg"><br>
+
+
+| **Field**                    | **Description**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Production Panel Nos. |Production panels (Power MES stations) are created with this numerator|
+| Data Handling Type |You can manage the recording on 3 levels. Write dependent transactions, write transactions and journal, write transactions and write posted transactions. NB it is not possible to have different managements for times and quantities of output.<img width="" src="https://docs.eos-solutions.it/Images/PR000454-0/Setup4_ENU.jpg"><br>|
+| Default Language |Default language to use for captions. You can also specify it per panel (work station)|
+| Default Theme |Default Power App theme. You can also specify it per panel (work station)|
+| Attachment Provider |Specifies whether the attachments displayed by the power App are available as a standard BC attachment or with App DocSolutions|
+| Operation Warning For Team |If an operator who is part of a team executes a reason (start, stop, output) a warning message appears that the operator is part of a team and therefore a movement will be created for all the components. You can also specify it per panel (work station)|
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000454-0/Setup5_ENU.jpg"><br>
+
+| **Field**                    | **Description**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Show One Entry For Family Orders |For each family type order initiated, only one entry will be shown in the activity list|
+| Blank Output Quantity |If active, the quantity proposed to the output declaration is equal to 0, it is equal to the residual quantity|
+| Blank Output Quantity For Family |If active, the quantity proposed for the declaration of output per family is equal to 0, it is equal to the residual quantity per family (similar to the previous parameter)|
+| Use Remaining Quantity |If active, in the list of operations on the power mes page, the residual quantity will be displayed instead of the quantity to be produced. You can also specify it per panel (work station)|
+| Remaining Quantity With Employee Entries |If active, the residual quantity displayed in the list of operations on the Power MES page is calculated taking into account unregistered movements. It is useful for having the residual quantity updated even if the posting of the entries is not immediate. (linked to the previous parameter) It is also possible to specify it per panel (work station)|
+| Recalculate Family Orders Qty. |It influences the visualization of the quantity in the list of operations on the Power MES page in case of orders by family. If active, the quantities are recalculated using the ratio between the sum of the quantities of the lines to be produced and the quantity of the production order. It can also be specified per panel (work station)|
+|  |The tracking entries posted by power MES are governed by these parameters if the tracking is not pre-assigned to the production order:|
+| Output Serial / Lot Nos.  |They are used if the traceability by lot/serial is created automatically when the output is posted. They are taken into consideration only if there are no numerators for lot or serial on the item card|
+| Force SN/ Lot Information |If active, the Serial No. and Lot No. information are created regardless of the homologous parameter present on the tracking code|
+| Prod. Order No. As Lot No.  |If active, the production order number is used as the lot number when posting the output|
+| New Lot No. For Output |If active, a new lot number is created with each output posting. This parameter is ignored if the "Production order number as lot" parameter is active|
+
+<br>
+<br>
+ 
+ 
