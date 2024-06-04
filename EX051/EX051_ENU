@@ -1,0 +1,30 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Enter the setups (enable dual units of measurement and choose round accuracy to be used in calculations)</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Create sales and purchase documents using the dual unit of measurement</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Upon registration the information on the quantities in double units will be inherited</td>
+	</tr>
+	<tr>
+	  <td>4</td>
+		<td>Analyze item accounting entries that show the secondary quantity, the secondary invoiced quantity, and the secondary remaining quantity</td>
+	</tr>
+</table>
+
+<br>
+Press ALT + Q and digit "DUM" for a list of the features involved:
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX051-0/1DUM_ENU.png"><br>
+
+<br>
+<br>
+ 
+ 
+ 
