@@ -1,0 +1,98 @@
+
+**Generale**
+
+In Pannello di produzione MES Š possibile scegliere alcune opzioni:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel1_ITA.jpg"><br>
+
+| **Campo**                    | **Descrizione**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Azione dopo Operazione |Condiziona il comportamento di un pannello dop lÂesecuzione di <img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel2_ITA.jpg"><br> **Blank** = Rimane sulla pagina principale (utilizzato per pannelli mono risorsa) **Log in** = Bisogna rieseguire il login **Lista Risorse** = Torna alla pagina con lÂelenco delle risorse (Utile per pannelli multi risorsa)|
+| Time Out Sessione |In Secondi. Scaduto il time out esegue lÂazione specificata al parametro precedente (se blank non ha alcun effetto)|
+| Refresh |n Secondi. Tempo di refresh della pagina principale|
+
+
+<br>
+
+**Setup**
+
+Premendo Setup, per ogni pannello Š indispensabile definire una o pi— risorse. Il parametro ®Accesso libero¯ permette di indicare che non ci sono limitazioni di utilizzo per Dipendente. Qualsiasi dipendente sia abilitato al MES in anagrafica pu• utilizzare la postazione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel3_ITA.jpg"><br>
+
+<br>
+
+**Contatti**
+
+I Contatti, rappresentati da utenti presenti su Setup Utente, assegnati come responsabili di Produzione, Qualit…, Manutenzione, saranno utilizzati per una chiamata teams o telefonica dalla postazione di lavoro
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel4_ITA.jpg"><br>
+
+<br>
+
+**Liste personalizzabili**
+
+ß possibile personalizzare i campi presenti sulla lista principale, lÂordinamento, ed aggiungere eventuali filtri.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel5_ITA.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel6_ITA.jpg"><br>
+
+N.B. la sezione Filtri Opzionali non pu• essere utilizzata solo in caso di estensioni al codice. I setup utilizzabili sono quelli evidenziati
+
+<br>
+
+**Campi lista dinamici**
+
+Con i campi lista dinamici Š possibile definire quali campi della tabella operazioni visualizzare sullÂelenco operazioni ed aggiungere campi personalizzati tramite estensione del codice.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel7_ITA.jpg"><br>
+
+| **Campo**      | **Descrizione**                                       |
+|----------------|-------------------------------------------------------|
+| Nome Etichetta |  Utilizzata per la personalizzazione delle label      |
+|  Tipo          | Campo della tabella Operazioni o campo personalizzato |
+| Larghezza %    |  Dimensionamento dei campi                            |
+
+
+<br>
+
+**Risorse - Setup**
+
+Per ogni risorsa collegata ad un pannello Š possibile definire:
+
+-   I dipendenti abilitati a svolgere attivit…
+-   Le causali abilitate
+-   I contatti se diversi dal pannello
+
+Qui vediamo la gestione dei dipendenti
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel8_ITA.jpg"><br>
+
+<br>
+
+**Risorse - Causali**
+
+Con la gestione causali si definiscono i processi per ogni risorsa
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel9_ITA.jpg"><br>
+
+<br>
+
+**Tempi uomo**
+
+Per registrare i tempi uomo con Risorsa Centri di lavoro Š necessario
+
+-   Attivare "Gestione tempi uomo" sul Centro di lavoro.
+-   Indicare un area di produzione di tipo ®Personale¯ per la registrazione dei movimenti di capacit… con attribuzione e costo corretto
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel10_ITA.jpg"><br>
+
+<br>
+<br>
+ 
+ 
+
+
+
