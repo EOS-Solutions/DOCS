@@ -1,0 +1,19 @@
+The material status is calculated based on availability and not based on stock.
+
+When using the function on the Sequence Planning page: from Functions->Order Status->Material Status
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000414-0/30ManufacturingBaseToolkit-ENU.png"><br>
+
+options are present
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000414-0/31ManufacturingBaseToolkit-ENU.png"><br>
+
+* All: the material status is calculated **for all firm planned and released production orders** (planned ones are not considered).
+
+* Selected Lines: is calculated **only for the selected operations** (the related production orders).
+
+The material status calculation has the following priorities:
+
+* Released orders have higher priority, firm planned orders are later.
+
+* If the warehouse is used and a pick has been made for a released order, then this order has the highest priority
