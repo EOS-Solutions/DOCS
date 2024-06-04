@@ -1,0 +1,9 @@
+If we register a purchase invoice for a vendor with Reverse Charge
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000626-0/28VatManagement-en.png"><br>
+
+from Invoice-\>Statistics we see the VAT detail
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000626-0/29VatManagement-en.png"><br>
+
+The VAT % is zero because the system automatically posted vat purchased and sold of the same amount, but with a reverse sign. In the "Reverse Charge VAT Amount" and "Reverse Charge VAT %" fields, the system shows us details about the VAT percentage and the amount.
