@@ -1,0 +1,17 @@
+In Lista Ordini di controllo troviamo gli ordini generati in automatico dal sistema a seconda del setup che Š stato impostato nel Setup Matrice Controllo.
+
+Esempio: se registriamo un carico per l'articolo Ruota anteriore:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000539-0/24ProductQualityAssurance-ITA.png"><br>
+
+In base alla matrice di setup, nella lista Ordini di controllo troveremo un ordine NUOVO relativo al carico registrato:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000539-0/25ProductQualityAssurance-ITA.png"><br>
+
+Tale ordine verr… generato in base a tutte le impostazioni della matrice di setup per quell'articolo:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000539-0/26ProductQualityAssurance-ITA.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000539-0/27ProductQualityAssurance-ITA.png"><br>
+
+il sistema applicher… il piano di controllo e il tipo di test indicati.
