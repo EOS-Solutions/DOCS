@@ -1,0 +1,32 @@
+In *`Custom Fields-Setup Tabelle`* vengono mostrate le Tabelle gestite:<br>
+
+<img width="95%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_it_01.png"><br>
+<br>
+
+{{% alert title="NOTA" color="warning" %}}
+La colonna *`CAMPI ATTIVI`* indica il numero di campi per i qualii… stato impostato un setup.
+{{% /alert %}}
+
+In `Tabella` -&gt; `Campi custom` oppure cliccando nella colonna della riga desiderataŠ possibile abilitare e definire i campi da mostrare sulle pages. 
+
+Selezionando `Modifica lista` nella pagina dei campi custom questa risulta modificabile:ÿ
+
+<img width="95%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_it_02.png"> <br>
+
+| Campo  | Descrizione |
+| :-------- | :------------ |
+| **Attivo** | Consente di attivare la riga di setup per il singolo campo.<br>I campi attivi vengono mostrati in grassetto.<br><br>Per attivare la riga: `Home Page` -$gt; `Attiva`.<br>Si possono selezionare pi— campi e attivarli tutti assieme.<br>**N.B.** Per attivare un campo *Code..* Š necessario specificare una `lista custom`:<br><br><img width="50%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_it_03.png"><br>|
+| **Nome**    | Nome Š un identificativo univoco e indica il tipo di campo (`Codice`, `Numero`, `Data`, `Testo`, ecc.).<br>**Non Š modificabile!**<br>Questo nome non verr… mai visualizzato nelle page se non nei casi in cui per il campo attivo NON Š stata indicata alcuna etichetta. |
+| **Etichetta** | E' l'etichetta che definisce il nome/la descrizione del campo. Questo valore comparir… sulle page |
+| **Tipo** | Tipo campo. Le opzioni sono:<br><br> <img width="" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_it_04.png"><br><br><br>I campi Code possono essere di tipo:<br><ul><li>Lista custom</li><li>Relazione tabella</li></ul> |
+| **Relazione tabella** | Se Š stato scelto il tipo `RELAZIONE TABELLA`, questo valore indica il numero/l'ID della tabella alla quale il campo custom deve essere relazionato:<br><br><img width="50%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_it_07.png"><br> |
+| **Relazione campi** | Indica l'ID del campo da utilizzare dalla tabella selezionata per creare la relazione.<br><br>Clicca sul pulsante `...`  (alla destra del campo) per aprire la lista di campi, seleziona un campo e conferma con il puslante `OK`.<br><img width="40%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_it_06.png"><br> |
+| **Relazione tabella - Campi visibli** | Il valore viene settato in automatico dal sistema.<br><ul><li>Abilitato: min. un campo dalla tabella relazionata Š stato selezionato per essere visualizzato</li><li>Disabilitato: nessun campo Š stato selezionato.<br>**N.B.** la riga non potr… essere attivata</li></ul><br>Usa `Campo` -&gt; `Relazione tabelle - Campi visibli` per aprire una finestra dalla quale selezionare quali singoli campi devono essere visualizzati quando si cerca un valore per la relazione. |
+| **Lista custom** | Se Š stato scelto il tipo `LISTA CUSTOM`, il valore indica il codice lista alla quale il campo deve essere relazionato. |
+| **Copia su documenti** | Cliccando l'azione `HOME PAGE` -&gt; `Copia su documenti` o `Revoca copia` le modifiche apportate alla riga verranno riportate ai/alle o l'ereditariet… sar… revocata dai documenti/dalle tabelle collectati/e (p.es. Testata vendite/acquisti).<br>In questi documenti i campi copiati appariranno in azzurro:<br><br><img width="50%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_it_08.png"><br> |
+<br>
+
+### Traduzione etichette
+From `Campo` -&gt; `Traduczione campo` si possono definire le traduzioni per la riga/il campo selezionato. Usare una riga per lignua tradotta. Selezionare l'ID lingua ed inserire la traduzione nella colonna `Etichetta`.<br>
+Per le lingue/traduzioni mancanti verr… utilizzato il valore inserito nel campo `Etichetta` della page di setup tabella!
+<br><img width="95%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_it_10.png"><br>
