@@ -1,0 +1,19 @@
+Il prospetto di **Genera configurazione batch** Š una utility dedicata alla **creazione massiva di codici articolo** configurati.
+
+Serve nei casi in cui, per motivi aziendali, si desidera generare il catalogo articoli prima che lÂeffettiva richiesta arrivi dal cliente, magari per via di un processo approvativo delle distinte e dei cicli di lavoro molto lungo, oppure nei casi in cui gli articoli di acquisto sono configurabili ed Š necessario che i codici esistano per poter inserire il listino del fornitore.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000324-0/Batch1_ITA.png"><br>
+
+<br>
+
+1.  Nel campo **Nr. articolo** inserire lÂarticolo configurabile oppure un articolo gi… configurato in precedenza da usare come base di partenza per la compilazione dei valori caratteristica;
+2.  Usare la funzione **Aggiorna dati** per popolare le righe con le caratteristiche associate alla regola;
+3.  Per ogni caratteristica obbligatoria di tipo struttura Š necessario compilare campo **Nuovo valore caratteristica**. Il campo pu• contenere un singolo valore specifico o un intervallo di valori, inseribili tramite lÂassist edit selezionando righe multiple;
+4.  Per ogni caratteristica obbligatoria di tipo misura Š necessario campo **Nuovo valore inferiore e superiore** per inserire gli estremi numerici inferiori e superiori. LÂincremento delle caratteristiche di tipo misura Š dato dal Passo, impostabile sulla Caratteristica.
+5.  Terminata la compilazione di tutti i valori selezionare lÂazione **Genera configurazioni**
+6.  Come risultato si hanno tanti articoli quante sono le possibili combinazioni.
+
+<br>
+<br>
+ 
+ 
