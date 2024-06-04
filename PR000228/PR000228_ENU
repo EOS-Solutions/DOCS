@@ -1,0 +1,9 @@
+In this setup, it is possible to define the posting period for simulated entries, specifically related to **accruals and deferrals**.
+
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000228-0/1SimulatedGeneralLedger(1).png"><br>
+
+| Field                                       | Description                                                                                             |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Allow simulated posting from / to       | These dates allow you to define a period during which you cannot generate simulated entries, except for those related to **accruals and deferrals**. |
+| Allow accruals/deferrals posting from / to | These dates allow defining a period within which it is possible to generate accrual/deferral entries generated through the indication of the template and the starting/ending dates of competence, **regardless** of what is indicated in the fields "Allow simulated posting from / to"
