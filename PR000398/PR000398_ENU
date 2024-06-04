@@ -1,0 +1,5 @@
+To perform the calculations defined on the Planning Setup in an automatic way, you can add Report 70491929 ÃEOS086 Calculate PlanningÄ to the Job Queue.
+
+For each Planning Setup you must setup the fields Scheduled and a Schedule Sequence. The Schedule Sequence gives the sequence to perform the related calculation, this is important because firstly all the calculations must be done and then the splits are processed.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000398-0/13ManufPlanning-ENU.png"><br>
