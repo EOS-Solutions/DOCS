@@ -1,0 +1,31 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>View and print customers/vendors aging</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Print the Statement detailed with all the records for the selected period and with the final balance</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Print Aging ordered by customer/due date or by due date with 3 detail levels</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Print a compact, horizontal Aging: the print shows due dates grouped in columns</td>
+	</tr>	
+	<tr>
+		<td>5</td>
+		<td>Report to customer / salesperson</td>
+	</tr>		
+	<tr>
+		<td>6</td>
+		<td>Advanced Customer/Vendor Statements Setup</td>
+	</tr>			
+	<tr>
+		<td>7</td>
+		<td>Customer and vendor account statements in currency</td>
+	</tr>			
+</table>
+<br>
