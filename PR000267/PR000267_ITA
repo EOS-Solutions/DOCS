@@ -1,0 +1,22 @@
+Rinegoziamo una partita avedo precedentemente impostato il setup su "Correggi le voci esistenti".
+
+Per la fattura 20-102006 il sistema mostra due rate:
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000267-0/9DueDatesManagement.png"><br>
+
+Attraverso Aggiungi scadenza inseriamo una nuova rata di 1000 euro (che decurtiamo da una della altre due)
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000267-0/10DueDatesManagement.png"><br>
+
+Poichä stiamo rinegoziando la seconda riga (il sistema in automatico propone nel campo "Vecchia data di scadenza" la data pió vecchia), modifichiamo manualmente quanto proposto e inseriamo 08/09/20.
+
+E registriamo.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000267-0/11DueDatesManagement.png"><br>
+
+In questo caso non viene generata una scrittura di chiusura, ma viene modificata una delle due rate e ne viene aggiunta una terza. Sulla rata aggiunta il sistema riporta la nuova Data scadenza (in rosso) e la Data scadenza precedente (inserita manualmente nella page di Modifica delle occorrenze).
+
+{{% alert title="Attenzione" color="warning" %}}
+Con questo setup i movimenti rinegoziati non vengono marcati con i campi "Rinegoziazione Nr." e "Rinegoziato da". Uno stesso movimento contabile potrebbe infatti essere rinegoziato pió volte.
+{{% /alert %}}
+
