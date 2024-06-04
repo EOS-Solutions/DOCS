@@ -1,0 +1,37 @@
+The fields present in the OVR Setup are used to enable or disable the management of excess quantities for theblanket purchase/sales orders:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000096-0/02OverandUnderDeliveryQuantities.jpg"><br>
+
+Press Over-/Underdelivery Setup (OVR):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000096-0/03OverandUnderDeliveryQuantities.jpg"><br>
+
+
+| **Field**          | **Option**      | **Description**                                                                                                                                                                      |
+|--------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Type               | Overdelivery    | allows to ship or receive greater quantities than ordered                                                                                                                            |
+|                    | Underdelivery   | allows to ship or receive and closing lines with less quantities than ordered                                                                                                        |
+| Direction          | Inbound         | defines whether the goods are incoming (receipt/return)                                                                                                                              |
+|                    | Outboud         | defines whether the goods are outgoing                                                                                                                                               |
+|                    | Both            | setup line is valid for both inbound and outbound goods                                                                                                                              |
+| Source Type        | Customer        | over-/underdelivery is allowed Sales side                                                                                                                                            |
+|                    | Vendor          | over-/underdelivery is allowed Purchase side                                                                                                                                         |
+| Source No.         |                 | you can indicate a specific Customer/Vendor. If the setup line is not filled in, it applies to all Customers/Vendors (based on what is entered in the Source Type field)             |
+| Item Category Code |                 | you can indicate a generic Category for items. The setup line will be valid for all items in the category indicated.                                                                 |
+| Item No.           |                 | you can specify a specific item for which the setup will be valid                                                                                                                    |
+| Variant Code       |                 | if you choose a specific item, you can indicate a specific variant                                                                                                                   |
+| Tolerance Type     | Not allowed     | no over-/underdelivery amount is allowed                                                                                                                                             |
+|                    | Unlimited       | any over-/underdelivery amount is allowed                                                                                                                                            |
+|                    | Quantity (Base) | over-/underdelivery tolerance is allowed in base quantity                                                                                                                            |
+|                    | Percentage      | over-/underdelivery tolerance is allowed in percentage                                                                                                                               |
+| Blocked            |                 | disables the setup line                                                                                                                                                              |
+| Tolerance Value    |                 |  indicate the value if you chose Quantity (Base) or Percentage in the Tolerance Type field                                                                                           |
+| Show Warning       |                 | in case of **overdelivery** the user can choose whether to be alerted when he enters an excessive amount; if the user does not confirm, the operation is canceled                    |
+| Priority           |                 | you can set a value that define a priority order (useful, for example, if multiple setup lines are filled in for the same Customer, for the same Item or for the same Item Category) |
+
+**Note 1**
+> The user will choose whether to specify an Item Category or a specific Item. One excludes the other.
+
+**Note 2**
+> The "Line Closed" field is present on the purchase/sales document lines. If enabled, manually closes the line by not considering the setup. 
+> <img width="" src="https://docs.eos-solutions.it/Images/PR000096-0/04OverandUnderDeliveryQuantities.jpg"><br>
