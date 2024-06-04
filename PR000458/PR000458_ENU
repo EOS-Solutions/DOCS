@@ -1,0 +1,110 @@
+# File System connection setup
+
+Once you have decided what storage type you want to use and you have configured (see specific help section for each kind of storage)  type ALT+Q (search) and digit "Service Configuration (EAL)"
+
+
+
+
+| **Field**                 | **Description**                                                                            |
+|---------------------------|-----------------------------------------------------------------------------|
+| Code                   | Chose a code that is significant I.E **DCS_CUSAGR** |
+| Type  | Select the storage type you are going to use (highlighted in orange options are suitables) |
+| EndPoint URI           | Insert the https uri of the storage service|
+| Configuration details           | Insert all the api key - secret that are required for this storage type|
+
+
+<br><br>
+
+<br><br>
+
+
+
+**An administrator is needed to login and grant permission to DocSolutions app. in Azure**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/1_DCSFS_Setup.png"><br>
+
+
+<br><br>
+
+
+
+# DocSolutions Table Setup (DCS)
+
+In DocSolutions (DCS) Table Setup, the default setups must be loaded from Actions-\> Load Default:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_LoadDefaults.png"><br>
+<br><br>
+The system offers us the defaults to load, choose "DocSolution for File System". 
+
+
+<br>
+
+**Libraries Setup**
+
+From Edit, open the Document Library(s) you wish to enable, e.g. "Customer":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/2_DCSFS_DocLibrary.png"><br>
+
+
+
+
+
+| **Field**                 | **Description**                                                                            |
+|---------------------------|-----------------------------------------------------------------------------|
+| Filesystem Type           | Chose the same type as in the previous setup |
+| Service Config Code  | Select the same code that you defined before I.E. **DCS_CUSAGR** |
+| Folder Pattern Code           | Select the default existing one|
+| Filename Pattern Code          | Select the default existing one|
+
+
+
+<br>
+<br>
+<br>
+
+
+<br><br>
+**Folder pattern**
+
+From the drop-down menu on the Folder Pattern Code field, choose "Select from full list" and from Manage-\> Edit you can view/modify the document storage path:
+
+
+
+
+
+
+| **Field**         | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   | **General**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Code              | Filename pattern code                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Type              | specify whether the pattern will be used for Folders Files                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Root Folder       | path where the files will be saved. In the example they will be placed in the DocSolutions sub folder which is contained in the Documents folder                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+                                                                                                                                                                                                             |
+| Enabled           | you can create the setup card and enable or disable it as needed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|                   |**Composition**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Tipo              | Indicate the Line Type. It can be: Text, Field, Primary Key, No. Series, Table Name, Table No., Original Name E.g.: <img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br><br> <br><br> If you write:<br><img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br> the uploaded files will be saved in Documents \\ DocSolutions, in a further folder "Customer", in a further subfolder "Customer No.". |
+||||
+
+
+By pressing Test (Read/Write) we check that the connections are working:
+
+
+
+<br><br>
+**Filename pattern**
+
+In the same way, from the drop-down menu on the Filename Pattern Code field, we select "Select from full list" and from Manage-\> Edit we can view/modify the name to be assigned to the documents:
+
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/3_DCSFS_FolderPattern.png"><br>
+
+<br><br>
+**Permissions**
+
+From the Library card-\> Permissions we define which User Group, User or Permission set can read / write files in a specific location: <img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PermissionSet.png"><br>
+
+
+<br><br>
+**Mapping**
+This feature is not available for DocSolutions for File System. For metadata management evaluate Docsolutions for Sharepoint
