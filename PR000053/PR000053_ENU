@@ -1,0 +1,16 @@
+The `Bulk PEC Email to customers for Italy` app allows you to send  massive e-mails (PEC -&gt; certified e-mail) to Customers.
+
+For example, to send an e-mail to several customers, open the *`Customer List`* and select the recipients by clicking on `Actions` -&gt; `Email PEC` -&gt; `Send` :
+<br><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000053-0/ex078_bulkpec_en_01.png"><br>
+<br>
+The System will open a new e-mail window with the fields *Sender* and *Recipient* pre-filled according to the field *`PEC Email`* in the Customer card. If the field *`PEC Email`* is empty, the system will not add the recipient to the e-mail.
+<br><br>
+You can then write a text and / or attach documents and finally send.
+<br><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000053-0/ex078_bulkpec_en_02.png"><br>
+<br>
+{{% alert title="NOTE" color="warning" %}}
+The e-mail will be opened by the system in the default email client in the **PC Settings**.<br>
+It is recommended to enable pop-up windows opening in the web browser.
+{{% /alert %}}
