@@ -1,0 +1,26 @@
+* **Personale nei cicli di lavorazione**
+
+ß possibile inserire **all'interno di un ciclo di lavorazione una o pi— aree di tipo Personale**.
+
+ß possibile indicare un Costo unitario specifico per il ciclo di lavorazione in questione diverso dal costo attribuito nellÂanagrafica del personale.  
+
+Es. per il Ciclo TREKPRO selezioniamo il Centro di lavoro "Verniciatura" e da **Operazione->Personale** possiamo avere il dettaglio sulle persone che lavorano per questo centro:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000618-0/3ManufacturingBaseToolkit-ITA.png"><br>
+
+nello specifico abbiamo definito che nel centro di lavoro Verniciatura lavorano delle persone che si occupano della verniciatura vera e propria e alcuni atrezzisti che seguono invece il setup.
+
+N.B Tempo di setup e Tempo lavorazione e Capacit… simultanee vengono utilizzati dal sistema per il calcolo dei costi.
+
+| Campo | Descrizione |
+| --- | --- |
+| Tipo di tempo | allÂarea Personale Š associata una **capacit…** espressa in termini di tempo, in base al Tipo di Tempo corrispondente: Tempo di setup, Tempo lavorazione, Tempo attesa, Tempo spostamento, Tempo in coda. |
+| Percentuale | indica la percentuale di occupazione del personale (per la verniciatura viene impiegata una persone, per il 50% del suo tempo di lavoro. Il setup Š seguito da due persone ciascuna delle quali impiega tutto il proprio tempo di lavoro.) |
+
+* **Attrezzature nei cicli di lavorazione**
+
+ß possibile inserire **all'interno di un ciclo di lavorazione una o pi— Attrezzature**. LÂattrezzatura Š associata a uno o pi— Tipo tempo, in base al momento in cui Š utilizzata, tra cui: Tempo di setup, Tempo lavorazione, Tempo attesa, Tempo spostamento, Tempo in coda.  
+
+Es. per il Ciclo TREKPRO selezioniamo il Centro di lavoro "Verniciatura" e da **Operazione->Strumenti** possiamo avere il dettaglio sul telaio che serve per la verniciatura: 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000618-0/4ManufacturingBaseToolkit-ITA.png"><br>
