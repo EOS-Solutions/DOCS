@@ -1,0 +1,34 @@
+The Combine Warehouse Shipment (CWS) Eos Solutions app allows you to combine shipments based on grouping criteria defined in the setup. 
+It applies to:
+- Sales orders shipment
+
+- Purchase return shipment
+
+- Transfer shipment
+
+- Service shipment
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RFTT4yAhLR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross
+-origin" allowfullscreen></iframe>
+
+<br> <br>
+# Role Center
+
+On the following Role Center:
+
+| **Profile ID** | **Display Name** |
+| --- | --- |
+| Order Processor | Sales Order Processor |
+| Shipping and Receiving - VMS | Shipping and Receiving - Warehouse Management System |
+| Warehouse | Warehouse |
+| Worehouse Worker - WMS | Warehouse Worker - Warehouse Management System |
+
+<br>
+
+the direct link to Posted Shipments (CWS) is visible:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000005-0/2CombinedWarehouseShipment.png">
+
+<br> <br>
