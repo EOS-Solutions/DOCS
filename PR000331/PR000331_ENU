@@ -1,0 +1,47 @@
+**Free Gifts with VAT recourse**
+
+We create a sales order with a line type "Item".
+
+For the item we choose **Recourse as Free Gift Type**:
+
+Releasing the system creates a second reverse line with equal quantity and amount, but of opposite sign and different VAT Prod. Posting Group:
+
+<a href="https://docs.eos-solutions.it/Images/PR000331-0/3SalesfreeGoods_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000331-0/3SalesfreeGoods.png"></a><br>
+
+The order total is the VAT, which will be paid by the customer.
+
+**Recap**
+
+If you select a Free Gift Type with recourse the VAT Product Posting Group will be different from the source item line, because the line must show the VAT amount
+
+**Free Gifts without VAT recourse**
+
+We create a sales order with a line type "Item".
+
+For the item we choose **Without recourse as Free Gift Type** and with item charge:
+
+<a href="https://docs.eos-solutions.it/Images/PR000331-0/4SalesfreeGoods_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000331-0/4SalesfreeGoods.png"></a><br>
+
+Releasing the system will create a second reverse line with equal quatity and amount, but with opposite sign. The VAT Product Posting Group is the same.
+
+The document total is zero.
+
+**Recap**
+
+If you select a Free Gift Type without recourse the VAT Product Posting Group will be equal to the source item line, because the total must be zero.
+
+**Invoicing**
+
+After posting the shipments related to the two created orders, we generate the invoice. We open a NEW document and from Line-\> Functions-\> Get shipment lines we choose the shipments:
+
+<a href="https://docs.eos-solutions.it/Images/PR000331-0/5SalesfreeGoods_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000331-0/5SalesfreeGoods_ENU.png"></a><br>
+
+<a href="https://docs.eos-solutions.it/Images/PR000331-0/6SalesfreeGoods_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000331-0/6SalesfreeGoods_ENU.png"></a><br>
+
+For each shipment the amounts and quantities must be zero:
+
+-   The VAT is zero for the first shipment.
+-   In the second the amount of VAT is equal to 1600 euro, which is the invoice total.
+
+**NB.**
+The operation is the same also posting the Invoice directly from the Order or by using the cumulative invoicing.
