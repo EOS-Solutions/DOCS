@@ -1,0 +1,50 @@
+To create reminders, you can **run a report** or use the appropriate **action on the Delivery Reminders (PDR) page.**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/10DelRem.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/11DelRem.png"><br>
+
+The **default** setting for Posting and Document Date is **Workdate** .
+
+The **Posting Date is used as a reference date** for the calculation of the days related to the levels. If you select "**Only overdue orders**" on the reminder, the lines relating to orders that have yet to expire will not appear.
+
+You can filter by specific vendor or run the report on all suppliers.
+
+NB The document level is always used. The header level is not managed.
+
+**Reminder example**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/12DelRem.png"><br>
+
+At the bottom there is the list of orders that have yet to expire.
+
+In the header, the "Reminder level" field shows the degree to which we have reached in soliciting orders from the vendor.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/18DelRem.png"><br>
+
+## Posting
+
+Once the reminder has been checked, it can be posted and then issued from the Reminder page by pressing **Issue.**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/16DelRem.png"><br>
+
+By modifying the filters it is also possible to make a massive registration if necessary..
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/17DelRem.png"><br>
+
+| **Field**                | **Description**                                                                                                                 |
+|----------------------|--------------------------------|
+| Print                | the reminder is printed automatically (or it is possible to print it from the header using the appropriate button)              |
+| Replace Posting Date | if enabled, this option allows you to overwrite the posting date on the document with the one in the "Posting Date" field below |
+| Posting Date         | indicates the new posting date   |
+
+
+**The posted reminder has the "Due Date" field.** This field is used to define the subsequent reminders:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/13DelRem.png"><br>
+
+**Delivery Reminder Entry**
+
+The lines of issued reminders are posted in the "Delivery Reminder Entry (PDR)" page:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/15DelRem.png"><br>
