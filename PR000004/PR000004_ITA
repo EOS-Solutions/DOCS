@@ -1,0 +1,11 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VpRuv5dKLKc" title="Bank Files For Italy per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+
+# Bank Files for Italy (CBI)
+
+La app Bank Files for Italy (CBY) contiene alcune funzioni a supporto dei file bancari per l'Italia:
+
+-   3 funzioni per IÂimportazione dei files emessi dalle Banche in Business Central
+-   2 per lÂexport da Business Central ed invio alle Banche
+-   1 per l'importazione dei codici ABI e CAB
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000004-0/1BFForItaly.png"><br>
