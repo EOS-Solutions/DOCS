@@ -1,0 +1,22 @@
+| **Tipo record CBI**                                                                                                         |
+|-----------------------------------------------------------------------------------------------------------------------------|
+| CBISDDStsRptLogMsg.00.01.00 CBIBdySDDStsRpt.00.01.00                                                                        |
+| <img width="" src="https://docs.eos-solutions.it/Images/PR000386-0/4BFForItaly.png"><br>  |
+
+Questa funzione consente di importare gli insoluti DD, ovvero le RID italiane.
+
+Le rimesse dirette (RID) si utilizzano ad esempio per pagare canoni e bollette con addebito diretto sul conto corrente del cliente. Se i pagamenti non vanno a buon fine la banca mette a disposizione un file con gli incassi falliti.
+
+Il tracciato differisce dallo standard SEPA di ECB per alcuni TAG specifici introdotti da CBI.
+
+Tipi di record supportati:
+
+**CBISDDStsRptLogMsg.00.01.00**
+
+**CBIBdySDDStsRpt.00.01.00**
+
+Lanciare il report **SEPA Importazione insoluti clienti (CBI)**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000386-0/5BFForItaly.png"><br>
+
+Scegliere un template e un batch per le registrazioni.
