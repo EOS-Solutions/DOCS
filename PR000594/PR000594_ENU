@@ -1,0 +1,9 @@
+Clusters are structures composed of a header and rows. 
+
+Clusters have a filter detail that, once certified, will generate the detail of the base entities of this cluster. 
+
+It is possible to include or exclude codes using the "Include" and "Exclude" filter types. In the example below, Cluster CLU0000001 is composed of customers from central code COOP excluding a specific customer or field from the master data.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000594-0/img7.png"><br>
+
+After certification, it is possible to view the explosion of customers through the "Customer Cluster Detail Subscreen" functionality.
