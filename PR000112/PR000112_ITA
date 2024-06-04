@@ -1,0 +1,97 @@
+
+
+## Guida Rapida
+
+1. Completare il setup di ARXivar
+2. Compilare l'impostazione delle Tabelle
+3. Impostare le Librerie
+4. Impostare utenti e permessi
+
+<br><br>
+## Impostazione Arxivar
+
+Nella pagina di Impostazione Arxivar inserire ID client e Client Secret (situati nella pagina di amministrazione di Arxivar) per consentire la connessione tra DocSolutions e ArxivarNext.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/2DoCSolutionsForArxivarNext.png"><br>
+
+| **Campo**     | **Descrizione**                              |
+|---------------|----------------------------------------------|
+| ID client     | ID client da ARXivarNextAuthentication       |
+| Client Secret | Client Secret da ARXivarNextAuthentication   |
+
+<br><br>
+## Impostazione Utente
+
+Nella pagina di Impostazione Utente Š necessario eseguire anche l'autenticazione dell'utente:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/3DoCSolutionsForArxivarNext.png"><br>
+
+<br><br>
+## Impostazione Tabella DocSolutions (DCS)
+
+Nel setup Tabella DocSolutions (DCS), le impostazioni predefinite devono essere caricate da Azioni -> Carica Predefiniti:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/4DoCSolutionsForArxivarNext.png"><br>
+
+Premere Sã
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/5DoCSolutionsForArxivarNext.png"><br>
+
+Selezionare ARXivarNext e premere OK.
+
+Confermare l'ID client e il Secret (gi… compilati dal sistema poich‚ sono presenti nella pagina di Impostazione Arxivar (DCS) (ARX)).
+
+Infine, indicare l'URL dell'API per associare l'app DCS, il Tipo di Documento e l'Aoo. Cliccando su Importa predefiniti l'impostazione Š completata.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/6DoCSolutionsForArxivarNext.png"><br>
+
+<br><br>
+## Campi
+
+Premere Campi e inserire le informazioni richieste:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/5aDoCSolutionsForArxivarNext.png"><br>
+
+Per ogni riga Š possibile stabilire se l'informazione Š obbligatoria o meno
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/25DoCSolutionsForArxivarNext.png"><br>
+
+<br><br>
+## Impostazione Librerie
+
+Da Modifica, aprire la/e Libreria/e Documenti che si desidera abilitare, ad esempio "Ordine di Vendita":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/8DoCSolutionsForArxivarNext.png"><br> 
+
+il sistema abilita automaticamente la visualizzazione della Factbox relativa a DCS nelle Liste.
+
+Dalle Librerie scegliamo una libreria predefinita e da Apri libreria impostiamo la sua configurazione:
+
+
+
+Nella scheda "Archiviazione" scegliamo il Sito ARXivar e la Libreria Documenti a cui collegarlo.
+
+In fondo alla pagina impostiamo gli attributi da visualizzare nelle pagine di Business Central:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/10DoCSolutionsForArxivarNext.png"><br>
+
+
+
+## Permessi
+
+Dalla scheda Libreria -> Permessi definiamo quale Gruppo Utenti, Utente o set di Permessi pu• leggere/scrivere file in una specifica posizione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/14DoCSolutionsForArxivarNext.png"><br>
+
+
+## Mappatura
+
+Dall'impostazione Tabella DocSolutions (DCS) Š possibile mappare i campi per scegliere cosa visualizzare su Sharepoint:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/20DoCSolutionsForsharepoint.png"><br>
+
+Deve essere definita la Libreria, il nome del campo, l'etichetta e deve essere scelta una funzione da associare al campo o un valore:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/21DoCSolutionsForSharepoint.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000112-0/22DoCSolutionsForArxivarNext.png"><br>
