@@ -1,0 +1,24 @@
+La app Posted Data Administration Tool di Eos Solution nasce per modificare i dati su qualsiasi tabella di Dynamics 365 Business Central. La modifica dei dati pu• essere applicata su record singolo o massivamente su record selezionati.
+
+L'utente tipo di questa applicazione Š un professionista dotato delle competenze necessarie per apportare modifiche mirate ai dati nel sistema.
+
+LÂapp non Š pensata per lÂutilizzo da parte di utenti con competenze base o intermedie su Business Central.
+
+**Tutela dei dati modificati**
+
+-   LÂapp Š stata pensata per garantire monitoraggio delle modifiche effettuate al sistema dagli amministratori.
+-   Il tracking delle modifiche ha come prima finalit… quella di indagine e debugging in caso di modifiche "dirette" dei dati
+-   Il tracking delle modifiche ai dati registrati ottempera alle indicazioni di legge in tema di privacy e accesso dei dati da parte degli amministratori
+-   Il tracking delle modifiche offre (nella maggior parte dei casi) la possibilit… del ripristino di dati modificati / eliminati per errore (vedere il paragrafo successivo "Ripristino dati e Limitazioni")
+
+**Ripristino dati e Limitazioni**
+
+Il tracking dei dati non garantisce nel 100% dei casi il riristino degli stessi, ad esempio:
+
+-   Eliminazione di un Documento (NR1) e tentativo di ripristino dopo che il Documento NR1 Š stato reinserito a sistema
+-   Ripristino di immagini (Mediaset fields) o altri dati in formato binario
+
+**Flessibilit… del sistema**
+
+-   LÂapp nasce con lo scopo di avere la sufficiente flessibilit… per essere utilizzata su DB con localizzazioni diverse e app diverse installate (Rif. Verticali).
+-   LÂapp prevede alcuni meccanismi di tutela del dato, che sottostanno comunque al principio di violazione della business logic
