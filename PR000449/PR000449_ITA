@@ -1,0 +1,43 @@
+In "Connessioni servizio" seleziona "Setup servizio di convalida partita IVA comunitaria".
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000449-0/VIESITA3.png"><br>
+
+
+
+In "Setup servizio di convalida partita IVA comunitaria" Š presente l'URL di controllo (popolato in automatico dal sistema con un indirizzo fissato a codice).
+Attiva il flag "Abilitato":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000449-0/VIESITA4(1).png"><br>
+
+
+
+
+
+
+
+**Partite IVA corrette, ma non autorizzate ad effettuare operazioni intracomunitarie**
+
+Il sistema di controllo VIES valida le paritite IVA che possono operare a livello intracomunitario.
+
+Se, eseguendo verifica sul sito dell'Agenzia delle Entrate, venisse restituito il messaggio:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000449-0/10ConEOSNPControlloMassivoPIVA.gif"><br>
+
+
+
+significa che la partita IVA del soggetto Š valida per l'Italia, ma potrebbe non passare il controllo VIES in quanto non Š detto che sia valida per l'estero.
+E' necessario dunque andare in Anagrafica cliente e/o fornitore e spuntare l'opzione **No operazioni intracomunitarie**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000449-0/VIES5ITA.png"><br>
+
+
+'Scheda fornitore->Tab Generale:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000449-0/VIES6ITA.png"><br>
+
+
+
+In questo modo il sistema VIES salter… i controlli sulle relative P. IVA (che, come gi… scritto, sono corrette, anche se non autorizzate ad operare a livello intracomunitario).
+
+
+
