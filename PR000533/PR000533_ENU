@@ -1,0 +1,21 @@
+From Payable / receivable aging analysis page-\>Report-\>Account statement you can have a detailed print with all the records for the selected period and with the final balance.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000533-0/5AdvancedCustomerVendorStatement-en.png"><br>
+
+Il report to fill is:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000533-0/6AdvancedCustomerVendorStatement-en.png"><br>
+
+| Only Open Entries             | decide if you want to see only open entries or all entries                                                                                                                                                     |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Show Linked Entries           | Bank receipt/dishonored are shown below each "Invoice" entry. It is also shown each standard payment (cash, checks). If "Only open entries" is enabled you will see only invoice with remaining amount linked. |
+| Posting Date Filter           | You can select filters for posting date                                                                                                                                                                        |
+| Due Date Filter               | You can select filters for due date                                                                                                                                                                            |
+| Payment Method Filter         | You can select filters for payment method                                                                                                                                                                      |
+| Use Salesperson from Customer | If enabled the system uses the salesperson indicated in the Customer card (not the salesperson indicated in the posted entries)                                                                                |
+
+You can also set filters for specific Customer / Salesperson.
+
+Print example with maximum detail for Cannon Group SpA:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000533-0/7AdvancedCustomerVendorStatement-en.png"><br>
