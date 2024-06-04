@@ -1,0 +1,8 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000655-0/3EDI_en.jpg"><br>
+
+Under **Company Information** set EDI values:
+
+| Field | Description |
+|-------|-------------|
+| EDI Group Code | Identifies the EDI code of the sender |
+| EDI Identifier | Company Identifier Code of the sender |
