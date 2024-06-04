@@ -1,0 +1,20 @@
+Le **formule** possono essere utilizzate sia nelle **regole relazione** che nelle **distinte base** e **cicli**.
+Posso utilizzare gli operatori matematici e le parentesi tenendo presente che le parentesi quadre indicano i valori che le caratteristiche assumono durante la configurazione.
+Gli operatori matematici supportati sono: +-*/ ^ e and the constant PI (Pi Greco).
+
+Le formule, ad esempio, si possono inserire direttamente nelle relazioni nel campo Formula Trasferimento Valore:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000316-0/Formula1_ITA.png"><br>
+
+Nel caso in cui una formula sia ricorrente, o comunque utilizzata in pi— punti, pu• essere creata per poi essere richiamata (es. nelle distinte base). 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000316-0/Formula2_ITA.png"><br>
+
+Nella sezione TAG Š possibile inserire le caratteristiche da utilizzare nella formula.
+La formula va espressa utilizzando i valori assegnati nei TAG.
+Tramite lÂabilita condizioni Š possibile inserire formule diverse in base a condizioni.
+
+<br>
+<br>
+ 
+ 
