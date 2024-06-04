@@ -1,0 +1,15 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Set the "Withholding Tax Setup (ECU)"</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>In "Withholding Tax" set the parameters which refer to the Communication to export</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Verify the print preview and export the file</td>
+	</tr>
+</table>
+<br>
