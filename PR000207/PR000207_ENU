@@ -1,0 +1,10 @@
+In CONAI Materials enter the list of managed materials (the consortium manages steel, aluminum, paper, wood, plastic and glass).
+<br><img width="" src="https://docs.eos-solutions.it/Images/PR000207-0/6CONAI(1).png"><br>
+
+
+
+| **Field**                             | **Description**                                                                                                                                                                                                                                                                                                |
+|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Purchase LIne Type                    |- **Charge (Item)**: if you want the cost of the packaging to be charged to the item <br>- **G/L Account**: if you want the CONAI amount to be charged to an account line <br>- **Resource**: a specific resouce account will be used for the CONAI amount                                                                   |
+| Sales Line Type                       | - **Charge (Item)**: if you want the cost of the packaging to be charged to the item <br>- **G/L Account**: if you want the CONAI amount to be charged to an account line <br>- **Resource**: a specific resource account will be used for the CONAI amount                                                                  |
+| Alternative Sales / Purchase G/L Code | If the Purchase / Sales Line Type is set as <ins>Charge (Item)</ins>, the calculation engine often needs to handle special rounding operations for very small amounts when calculating charges. If necessary, you can then add a line for the small amount that remains, using the alternative purchase or sales account. |
