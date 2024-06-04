@@ -1,0 +1,7 @@
+Administrators can filter and update records massively using a specific page. The same page can also be used to perform the starting synchronization and set the pre-existing records to ÃNEWÄ or the more appropriate status
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000580-0/15DataSecurity(1).png"><br>
+
+When applying Data Security to a new table, a starting syncronization is needed to set all pre existing records to first state.
+
+Insert Table ID in first field and then click Syncronization to set initial state to all unprocessed record.
