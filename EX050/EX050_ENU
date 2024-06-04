@@ -1,0 +1,6 @@
+| Step | Description                                        |
+|------|----------------------------------------------------|
+| 1    | Create an ECS invoicing method.                    |
+| 2    | Choose in a Customer or ECS Setup a Billing Method.|               
+| 3    | Run the report Extended Combine Shipments (ECS).   |               
+| 4    | View in Sales Invoices the invoices created.       |        
