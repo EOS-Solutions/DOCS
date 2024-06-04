@@ -1,0 +1,18 @@
+The EOS ®Advanced Intrastat For Italy (ITR)¯ app uses some standard setups, integrating them with app-specific setups.
+
+On the Intrastat Setup page, set a numerator and grouping type:
+
+- ÃPer LineÄ: each single line is reported in the Intrastat declaration.
+- ÃPer DocumentÄ: the lines in the Intrastat Declaration are grouped by nomenclature and by document.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000079-0/2AdvIntrastatForItaly-en.png"><br>
+
+On the Intrastat Setup (ITR) page we can also enable the automatic generation of Call off stock lines; by activating the management, it will be possible to select the type of filter to use for automatic row suggestion
+
+\- Internal locations filter type: ÃInclude local countryÄ option: all locations with a country code equal to the one set in the Company information are processed; ÃFilterÄ option: only the locations entered in the ÃInternal locations filterÄ field are processed.
+
+\- External locations filter type: ÃInclude EU countriesÄ option: all locations relating to countries for which the ÃCodeÄ field is filled in are processed. IntrastatÄ. ÃFilterÄ option: only the locations entered in the ÃInternal locations filterÄ field are processed.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000079-0/2bAdvIntrastatForItaly-en.png"><br>
+
+
