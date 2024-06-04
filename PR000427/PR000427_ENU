@@ -1,0 +1,7 @@
+Below we summarize some **tips to improve the performance** of the configurator:
+
+-   **Reduce the number of characteristics associated with a rule**. When analyzing, consider creating multiple neutral item codes with different rules.
+-   **Reduce the number of relations** associated with rules also by using sets of characteristics.
+-   Enable the flags ®**Exclude from relations calc.**¯ and ®**Exclude from relations calc. With conditions**¯ present in the characteristics associated with the rules (either through the Certify function or manually).
+-   Enable the flag ®**Exclude from calc. surcharge**¯ present in the characteristic associated with a rule.
+-   Evaluate the setting of the fields present in the configurator setup. Especially: ®**Enable reconfiguration of production BOM and BOM component**¯, ®**Enable sublevel charac. Calc.**¯, ®**BOM sublevel calculation type**¯.
