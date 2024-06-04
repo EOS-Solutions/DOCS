@@ -1,0 +1,22 @@
+Grazie alla app Import Tassi di cambio e all'integrazione con Dynamics 365 for Financials BC accede direttamente alla Banca Centrale Europea per poter scaricare i tassi di cambio aggiornati.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ym3L0MRfN2Q?si=ezpIoQ4VrRnEHVE2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ß possibile connettersi a tre diversi servizi di download:
+
+| Oggi: http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml         |
+|----------------------------------------------------------------------------|
+| 90 giorni: http://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml |
+| Tutti: http://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist.xml         |
+
+**Import**
+
+Dopo aver installato la app in Dynamics 365 for Financials, andare alla page Valute:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000011-0/1ConEOSNPImportEXRates.png"><br>
+
+Selezionare il periodo di interesse: Oggi, 90 giorni, Tutti oppure indicare manualmente una data di inizio import.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000011-0/2ConEOSNPImportEXRates.png"><br>
+
+Attendere che il sistema completi il download e verificare i tassi importati.
