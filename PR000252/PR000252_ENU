@@ -1,0 +1,9 @@
+The Sales Free Goods (SFG) Eos Solutions app allows, through fast setup, to manage the invoicing for free gifts with or without VAT recourse.
+
+The free assignment of goods constitutes a relevant operation for VAT purposes, with obligation to issue the invoice with VAT. The customer who receives the free gift will be required to pay the tax only in the case of a "free assignment with operation of the VAT compensation." However, the company making the free sale may also decide not to recover any amounts paid of VAT, not charging it to the customer.
+
+Depending on the solution chosen we can issue invoices with or without VAT recourse:
+
+1\. Invoice with VAT recourse : if we decide to make the customer pay the tax , we create a normal invoice and cancel the taxable amount, while VAT will be valued on the invoice.
+
+2\. Invoice without VAT recourse: in this case the invoice total will be zero because the goods are a free gift and VAT will be charged to us. We will have to record the operation in the register of free gifts with the percentage of applied VAT.
