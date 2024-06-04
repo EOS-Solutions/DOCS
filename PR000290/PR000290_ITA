@@ -1,0 +1,54 @@
+Le relazioni servono per definire le logiche di interfacciamento fra le caratteristiche che compongono la regola.
+
+Le tipologie di Relazioni sono:
+
+**Obbligatoriet…/Opzionale**: una caratteristica pu• essere obbligatoria/opzionale in base al valore di unÂaltra caratteristica; il valore della caratteristica primaria rende obbligatoria/opzionale la caratteristica espressa nel campo Codice Caratteristica Secondaria. Posso rendere obbligatoria opzionale una caratteristica in Base a N condizioni, utilizzando il campo Codice Condizione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule5_ITA.png"><br>
+
+**TIPS** Per rendere non visibile una caratteristica quando non Š obbligatoria Š necessario gestire due righe differenti Obbligatorio Opzionale con Nascondi Caratteristica.
+
+**Trasferimento di Valore**: il valore della caratteristica primaria determina la compilazione automatica della caratteristica secondaria con il valore inserito nel campo Valore Caratteristica Secondaria.
+-   E' possibile trasferire un valore in base a una caratteristica utilizzando il campo Formula trasferimento a valore.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule6_ITA.png"><br>
+
+**TIPS** Se i campi valore caratteristica Primaria e Valore Caratteristica Secondaria Rimangono ÁÂ La compilazione della prima caratteristica alimenter… la seconda caratteristica con lo stesso Valore.
+
+**Trasferimento di Valore Set Caratteristiche** EÂ possibile Trasferire N Valori in N caratteristiche diverse in base al valore della caratteristica Primaria: va impostato a True il Flag Abilita Set Caratteristiche e creata lÂanagrafica del SET.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule7_ITA.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule8_ITA.png"><br>
+
+**Filtro**: servono per limitare i valori possibili di scelta delle caratteristiche Secondarie in funzione ai valori di una caratteristica primaria.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule9_ITA.png"><br>
+
+Posso combinare insieme pi— caratteristiche per combinare la scelta della seconda caratteristica inserendo una condizione: nel primo esempio la relazione di tipo filtro utilizza il codice condizione LAMP.
+Oppure posso agire sul filtro in maniera lineare (una caratteristica primaria condiziona le scelte della caratteristica secondaria): nel secondo esempio se la caratteristica MATERIALE assume il valore ALLUMINIO la caratteristica denominata CERT deve assumere valori diversi da UK.
+
+**Controlla Condizione**: posso verificare le relazioni tra caratteristiche e gestire un messaggio o un errore bloccante. Il messaggio va inserito nel campo ®messaggio¯. La condizione deve essere inserita nel campo Codice Condizione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule10_ITA.png"><br>
+
+E' possibile incrociare il codice condizione con il trasferimento a valore e traferire esattamente il valore di una caratteristica inserendo nella formula trasferimento valore, **TRA PARENTESI QUADRE,** il valore della caratteristica che si intente applicare.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule11_ITA.png"><br>
+
+**E' importante sottolineare che questo tipo di relazioni viene applicato solo al primo livello della configurazione. Il prodotto contiene dei livelli di DB produzione che a loro volta contengono articoli configurabili verranno applicate solo le relazioni di tipo livello superiore.**
+
+L'ordine con cui vengono eseguite le relazioni Š il seguente:
+* Relazioni di tipo trasferimento a valore senza condizione.
+* Relazioni di tipo filtro senza condizione.
+* Relazioni di tipo filtro con condizione.
+* Relazioni di tipo trasferimento a valore con condizione.
+* Relazioni di tipo controllo condizione.
+
+All'interno di ogni tipo relazione vengono eseguite in ordine di: 
+Sequenza, Codice regola, Codice caratteristica primaria, Valore caratteristica primaria, Cod. Condizione, Codice caratteristica secondaria, Valore caratteristica secondaria.
+
+<br>
+<br>
+ 
+ 
