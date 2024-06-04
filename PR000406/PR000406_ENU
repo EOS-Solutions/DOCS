@@ -1,0 +1,26 @@
+**Higher level relations** are used when:
+
+-   The child item has characteristics that are not present in the parent item (otherwise the transfer of values would happen automatically)
+-   Characteristic mappings are required (interaction between characteristics must occur between parent and child)
+
+NOTE: Higher level relations occur only between configurable items (type: neutral to configuration).
+
+You can condition the configuration of a child item based on the configuration choices of the parent item.
+
+-   The parent item must be a CONFIGURABLE item  
+    The child item must be a CONFIGURABLE item
+
+The values that the child item inherits from the parent item must be set in the configuration rules.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000406-0/Relations1_ENU.png"><br>
+
+-   The **value transfer from the higher level**, transfers the value of the characteristic from the higher levels (going up the BOM tree) to the child article;
+-   The **calculation from higher level** can involve characteristic formulas configured in higher levels.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000406-0/Relations2_ENU.png"><br>
+
+<br>
+<br>
+ 
+ 
+
