@@ -1,0 +1,10 @@
+Business Central allows managing up to 7 levels of hierarchy. Below is an example.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000593-0/img4.png"><br>
+
+The customer hierarchy type field (Enum) can be extended to allow other types of hierarchy (custom). Multi-hierarchies can thus be defined within the same item.
+
+**Item Hierarchy Assignment**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000593-0/img5.png"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000593-0/img6.png"><br>
