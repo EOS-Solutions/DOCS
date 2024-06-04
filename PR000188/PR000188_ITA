@@ -1,0 +1,7 @@
+Il report per effettuare massivamente la compensazione esiste lato Clienti e lato Fornitori.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000188-0/5CustomerVendorBalanceCompensation.png"><br>
+
+Tale report consente di scegliere tramite filtri i clienti o i fornitori da compensare e il sistema in automatico proporr… le scritture a saldo nel batch indicato a setup.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000188-0/6CustomerVendorBalanceCompensation.png"><br>
