@@ -1,0 +1,13 @@
+Eos Solutions Manufacturing Base Toolkit (MBT) app **estende le funzionalit… base** per la gestione degli ordini di produzione e consente di:
+
+-   Chiudere provvisoriamente un OdP
+-   Creare Ordini di Produzione con riferimento all'OdV di partenza
+-   Collegare il movimento di output di storno al movimento di capacit… originale, allo scopo di stornare i componenti consumati in backflush
+<br>
+<br>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tWkXIXDeI7c" title="Manufacturing Base Toolkit per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
