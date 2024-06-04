@@ -1,0 +1,27 @@
+Entering inventory counts in BC in the case of lot / serial no. tracking requires a long time
+because the operator need to open frequently the tracking page for each combination item / warehouse.
+
+Eos Solutions Inventory with Serial and Lot Number (ISL) app allows you to have the lot and serial number directly showed in the Inventory Journal page.
+
+on the page Physical Inventory Journals<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000037-0/5InvSerLot.png"><br>
+
+the columns Serial No. / Lot No. are shown:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000037-0/9InvSerLot.png"><br>
+
+| **Field**  | **Description**                                                                     |
+|------------|-------------------------------------------------------------------------------------|
+| Serial No. | Specifies the serial number associated with the entry.                              |
+| Lot No.    | Specifies the lot number of the item being handled for the associated document line |
+
+<br>
+Select Prepare->Calculate Inventory for Serial/Lot No. in order to calculate the inventory for Serial and Lot number:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000037-0/6InvSerLot.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000037-0/7InvSerLot.png"><br>
+
+Thanks to the Inventory with Serial and Lot Number we have the calculated lines splitted by Serial and Lot Nos:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000037-0/8InvSerLot.png"><br>
