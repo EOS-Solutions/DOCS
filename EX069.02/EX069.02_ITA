@@ -1,0 +1,53 @@
+
+
+1.  Imposta i setup (tabelle, librerie, percorsi archiviazione)
+2.  Configura la connessione ad ARXivar Next
+3.  Carica i file in ARXivar Next
+
+
+<iframe width="560" height="316" src="https://www.youtube.com/embed/O54E9Pw5r4A" title="DocSolutions For ARXivar Next per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   
+<br><br>	 
+## Introduzione
+
+La app DocSolutions for ARXivar Next di Eos Solutions consente l'integrazione con ArxivarNext, una piattaforma online di Content Management System (CMS), per creare, distribuire ed archiviare documenti in cloud.
+
+<br>
+
+| **NOTA**                                                                                                                                              |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| - Viene utilizzato ARXivarNext. Non Š consentito utilizzare ARXivar 5.6 - In fase di aggiornamento Š necessario migrare i dati dal legacy environment |
+
+
+
+<br><br>
+## Funzionalit… di DocSolutions for ArxivarNext
+
+-   Per ogni tabella Š possibile gestire diversi tipi di storage
+-   Il Tipo Storage Š per Libreria
+-   Arxivar necessita di Client ID, Client Secret e credenziali
+-   L'integrazione con ARXivarNext non si basa sui campi Metadati (DSNavKey, DSType, DSCompany)
+-   L'upgrade richiede il data migration to SET ERPID== to SystemID
+-   Non Š necessario .Net or DLL
+-   23 tabelle gi… configurate e pronte all'uso
+
+
+## Benefici per l'utente
+
+- La Connessione avviene tramite API
+- In Arxivar Next non Š richiesta configurazione ad eccezione di clien ID e Secret 
+- Esplora e seleziona i campi e le classi documentali di ARXivar NEXT direttamente da BC
+- Visualizza in anteprima degli attributi in Arxivar attributes nella factbox
+- Drag & Drop (email incluse)
+- Saas ready 
+- User impersonation
+
+<br><br>
+## Sommario
+
+Premere ALT + Q e digitare "ARX" per vedere un elenco delle funzionalit… coinvolte:
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX069.02-0/1DoCSolutionsForArxivarNext.png"><br>
+
+
