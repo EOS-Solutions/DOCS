@@ -1,0 +1,19 @@
+**Importazione codici ABI / CAB**
+
+La lista ABI CAB pu• essere aggiornata tutte le volte che si ritiene necessario, in completa autonomia. E' necessario scaricare il file zip dal portale della banca (ad esempio [Unicredit](https://tesoreria.unicreditbanca.it/tesoreria/abicab/abicab.html) )
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000390-0/13BFForItaly.png"><br>
+
+dopo aver cliccato su "qui" si apre la pagina in cui scegliere di SALVARE il file:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000390-0/14BFForItaly.png"><br>
+
+Premere ALT + Q all'interno di Business Central
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000390-0/15BFForItaly.png"><br>
+
+Da Azioni-\>Import file indicare il percorso del file precedentemente salvato.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000390-0/16BFForItaly.png"><br>
+
+La pagina verr… popolata con tutti i record del file zippato. Al termine premere SAVE ALL per salvare tutti i record importati ed aggiornare la tabella ufficiale.
