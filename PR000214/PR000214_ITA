@@ -1,0 +1,45 @@
+# CASI D'USO
+# Fattura Acquisto
+All'inserimento di una fattura di acquisto Š necessario che siano presenti a sistema le informazioni relative agli imballi CONAI, altrimenti verr… restituito un errore. Vediamo un esempio. Quando proviamo a registrare una fattura acquisto senza aver specificato gli imballi CONAI:
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/14CONAI.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/15CONAI.png"><br>
+il sistema mostra il seguente errore:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/16CONAI.png"><br>
+Procediamo quindi a definire gli imballi CONAI da Processo-\>Imballo CONAI
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/17CONAI.png"><br>
+
+Si aprir… il Dettaglio Contributo CONAI relativo alla Fattura:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/18CONAI.png"><br>
+
+Le colonne 'Peso primario (Kg)' e 'Peso secondario/terziario (Kg)' sono le uniche modificabili. Inseriamo il peso corretto come da fattura fornitore.
+
+| **Action**              | **Descrizione**                                                                                                                                                             |
+|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Elimina righe fattura   | elimina le righe CONAI precedentemente inserite in Fattura                                                                                                                  |
+| Raggruppato/Dettagliato |  mostra il dettaglio delle contribuzioni CONAI per ogni riga di fattura                                                                                                     |
+| Ripristina pesi         | qualora vengano modificati i pesi, oppure siano stati modificati i pesi degli imballi dei materiali, l'action Suggerici ricalcola e ripropone i pesi e gli importi corretti |
+
+Da **Raggruppato/Dettagliato**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/19CONAI.png"><br>
+
+Tornando nella fattura acquisto:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/20CONAI.png"><br>
+
+possiamo procedere alla registrazione. Aprendo successivamente la Fattura acquisto registrata Š ancora possibile accedere al dettaglio CONAI:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/21CONAI.png"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/22CONAI.png"><br>
+
+{{% alert title="NOTA" color="warning" %}}
+se vengono apportate modifiche ai pesi, il sistema apporter… modifiche ai soli 'Movimenti Contabili CONAI', non alla fattura registrata: <img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/23CONAI.png"><br>
+{{% /alert %}}
+
+Nella Fattura acquisto registrata, da Fattura-\>Naviga vediamo i movimenti contabili CONAI:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/24CONAI.png"><br>
