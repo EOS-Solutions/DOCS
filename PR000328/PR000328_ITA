@@ -1,0 +1,38 @@
+LÂintegrazione con Excel serve per calcolare i valori delle caratteristiche attraverso un file Excel che viene caricato e utilizzato come modello.
+
+ß molto importante valutare le performance in funzione alla complessit… del foglio di calcolo.
+
+**LÂutilizzo di Excel funziona solo sul primo livello di configurazione**. Non vengono utilizzati i file Excel associati alle regole di livelli sottostanti al primo.
+
+Non Š possibile utilizzare fogli Excel contenenti macro.
+
+L'integrazione con Excel utilizza Microsoft Excel Online e Microsoft Sharepoint Online; questo tipo di gestione Š utilizzabile sia negli ambienti OnPremise, che SAAS di Business Central.
+
+Per gestire i valori di alcune caratteristiche tramite Excel Š necessario definire allÂinterno delle caratteristiche associate alla Regola:
+
+-   Le caratteristiche coinvolte nel Calcolo Excel (**Processa in Excel**)
+-   Le caratteristiche per le quali il valore sar… letto dalle formule Excel (**Leggi output da Excel**)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000328-0/Excel1_ITA.png"><br>
+
+<br>
+
+Per attivare la configurazione con Excel Š necessario:
+
+1.  Creare il file
+2.  Compilarlo
+3.  Importarlo
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000328-0/Excel2_ITA.png"><br>
+
+AllÂinterno della Regola deve essere inoltre specificato il **momento in cui viene utilizzato il file Excel** he pu• essere:
+
+-   **Durante il processo**: il calcolo delle caratteristiche di output scatta alla validazione di ogni caratteristica di input. ß una modalit… pi— impattante sulle performance per i tempi di configurazione;
+-   **Chiusura configurazione**: il calcolo delle caratteristiche di output scatta nel momento in cui si conferma la configurazione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000328-0/Excel3_ITA.png"><br>
+
+<br>
+<br>
+ 
+ 
