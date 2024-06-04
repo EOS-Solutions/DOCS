@@ -1,0 +1,43 @@
+In the Customer / Vendor card go to *Actions-\>Functions-\>Compensation*:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/ENU_3CustomerVendorBalanceCompensation.png"><br>
+
+the system will propose the connected entries depending on the filters selected:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/ENU_4CustomerVendorBalanceCompensation.png"><br>
+
+| **Field**             | **Description**                                                             |
+|-----------------------|-----------------------------------------------------------------------------|
+| Open                  | choose if the system will show open / closed / all entries (Yes / No / All) |
+| Posting Date          | it is possible to filter by Posting Date                                    |
+| Payment Method Filter | it is possible to filter by Payment Method                                  |
+| Currency Filter       | it is possible to filter by Currency                                        |
+| Journal Template Name | define a category for records concerning registration                       |
+| Journal Batch Name    | define a batch for records concerning registration                          |
+     
+
+<br><br>**Mode Entries / Linked entries**
+
+Go to Compensation-\>Auto-Comp. From and decide whether to start from a Customer or from a Vendor. The selected entries will be markd in the "Selected" coloumn.
+
+
+{{% alert title="NOTE" color="warning" %}}
+
+In Actions\>Compensation--\>Reset Compensation it is possible to reset and select the accounting items again
+
+{{% /alert %}}
+
+In Actions-\>Suggest Compensation Lines you have access to the registration batch:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/ENU_5CustomerVendorBalanceCompensation.png"><br>
+
+
+The system will propose the entries to balance. Posting the payment, the journal registers all the entries and connects them to the selected documents.
+
+<br>**Mode On Balance**
+
+You select only entries of a section (Source), e.g. Customer and pressing "Suggest Compensation Lines" the system will propose only the lines of closure of selected invoices and will add a single record to the Vendor (Recipient) without connecting to any accounting item (you can make the connection manually later). This is achieved only when the balance of the Recipient does not become negative.
+
+<br>**Semiautomatic compensation**
+
+You select only an entry of the Source, then you go to Actions, "Auto-Comp From" and choose Vendor Entry. The system will try to connect the entry selected to the lines of the Recipient section by FIFO. It can also be done in reverse, starting from a Vendor movement.
