@@ -1,0 +1,30 @@
+In the product configurator setup there is a field called **ÃEnable Item TranslationsÄ** that allows to save the language configured description in items / variants. The description is composed with the rules already provided by the configurator and uses the language descriptions present in the characteristics and their values.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000287-0/Charac7_ENU.png"><br>
+
+For each characteristic and relative values itÂs possible to handle the translation:
+
+-   In order to **translate the characteristic description**, leave the field ®Characteristic Value¯ empty;
+-   to **translate the caracteristic value description**, leave the field ®Characteristic Value¯ empty.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000287-0/Charac6_ENU.png"><br>
+
+During configuration, descriptions are generated for all languages in the neutral item.
+
+**You can also print document with characteristics translations without save item translations.**
+
+This translation is handled in document prints, but only if the app Advanced Document Reporting (ADR) and the related bridge app with the product configurator are installed.
+
+The information regarding the chosen **characteristics** for the configured item can be handled in **document prints** with a flag in the **ADR app**.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000287-0/Charac8_ENU.png"><br>
+
+ItÂs also possible to choose whether to print the characteristic code, description, or both.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000287-0/Charac9_ENU.png"><br>
+
+<br>
+<br>
+ 
+
+ 
