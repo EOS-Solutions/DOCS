@@ -1,0 +1,1 @@
+We post a Sales Order containing items in a location without w.hse management. The system creates the CWS shipment, which we can see directly from the document via Navigate->CWS Shipment or from the Posted Shipments LIst (CWS).
