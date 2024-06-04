@@ -1,0 +1,30 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000600-0/img14.png"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000600-0/img15.png"><br>
+
+**Type**
+* Item
+* EAN
+* Item Filter
+* Hierarchy
+* Item Clusters
+* 
+
+**Minimum references number** (Minimum quantity for the assortment to be respected)
+
+**Total minimum quantity:** Minimum quantity entered in the sales order
+
+**Unit of measure:** Unit of measure to consider (it may differ from the unit of measure present in the order; the system will convert the purchased unit of measure) unless it is made binding by flagging the "binding unit of measure" flag, which verifies the correspondence of the order's unit of measure.
+
+**Minimum quantity per reference:** indicates the minimum quantity to purchase per reference
+
+**Total minimum amount:** Minimum amount to be respected in the order
+
+**Minimum reference amount:** Minimum amount of each line within the assortment
+
+**Alternative Group Code:** Allows defining the alternativity among the various records composing the assortment
+* In OR between lines with the same alternativity code
+* In AND on the total assortment
+
+Note: Assume creating an assortment with a cluster containing 20 items.
+Minimum References Number = 5 ?? it is necessary to have 5 items within the sales order for the condition to be respected
+Minimum quantity per reference = 2 ?? at least 5 references must be purchased, and for each reference, at least 2 must be purchased.
