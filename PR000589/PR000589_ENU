@@ -1,0 +1,6 @@
+There are two reports for Vendor Rating:
+
+| Report | Description |
+| --- | --- |
+| Calculate Vendor Rating (PQA) | It attributes a score to vendors considering Date, Certified Vendor and Quality. |
+| Vendor Rating (PQA) | Calculate the specific score for the vendor |
