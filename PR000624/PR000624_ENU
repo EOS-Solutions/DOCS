@@ -1,0 +1,25 @@
+Open the page Vat Register-\>Report.
+
+It is possible to print a single vat register or multiple vat register by selecting the lines in the list:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000624-0/25VatManagement-en.png"><br>
+
+| Field                          | Description                                                                                   |
+|--------------------------------|-----------------------------------------------------------------------------------------------|
+| Last Printed VAT Register Page | the system records the last printed Vat register page                                         |
+| Print VAT Register (Grouped)   | it is possible to print a single VAT register or more than one Vat register in separate files |
+| Print VAT Registers            | it is possible to print multiple VAT register in a .zip file                                  |
+
+In "**Print VAT Register**" you can enter the Printing Type:
+
+-   Test
+-   Definitive
+-   Reprint
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000624-0/26VatManagement-en.png"><br>
+
+It is possible to filter by Code, Description, Last Printed VAT Register Page
+
+Last Printing Date, Type.
+
+In "**Print VAT Register (Grouped)**" when pressing OK the system creates a .zip file that includes the VAT Registers selected.
