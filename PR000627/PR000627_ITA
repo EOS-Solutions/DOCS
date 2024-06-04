@@ -1,0 +1,27 @@
+Tramite lÂApp Vat Management for Italy (VMI) di EOS, Š possibile calcolare e gestire lÂimporto pro rata IVA indetraibile.
+
+**Setup**
+
+Nel Setup VMI:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000627-0/30VatManagement.png"><br>
+
+Š necessario indicare se la societ… Š soggetta al pro rata IVA, la percentuale di pro rata ed il conto contabile da movimentare nella liquidazione IVA:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000627-0/31VatManagement.png"><br>
+
+**Liquidazione IVA**
+
+Per calcolare lÂimporto di IVA indetraibile da pro rata Š sufficiente calcolare e registrare la liquidazione IVA utilizzando il report "Calcola e registra liquidazione IVA (VMI)":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000627-0/32VatManagement.png"><br>
+
+LÂimporto del pro rata IVA indetraibile Š evidenziato nel report nella voce apposita:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000627-0/33VatManagement.png"><br>
+
+Inoltre, eseguendo la liquidazione IVA con il flag ÃRegistraÄ, lÂimporto del pro rata IVA inserito, viene contabilizzato in Dare, utilizzando il conto impostato nel setup VMI:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000627-0/34VatManagement.png"><br>
+
+Nella procedura di calcolo della liquidazione periodica IVA (LIPE), eseguibile tramite lÂApp Electronic VAT Settlement for Italy (EVS), lÂimporto del pro rata IVA viene decurtato dal rigo VP5.
