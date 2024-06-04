@@ -1,0 +1,101 @@
+Le principali caratteristiche di Power WMS sono:
+
+-   Multilingua. Le traduzione posse essere gestire anche dallÂutente finale.
+-   Multi Company.
+-   Ambiente configurabile: Tipologia di barcode per attivit…, Azioni custom, registrazione sincrone o tramite coda processi ecc.
+-   Funzionamento ®Off line¯ per la gestione della raccolta dati allÂinterno di un documento.
+-   Funzionamento multi device: Android, Apple, Windows.
+-   Temi personalizzabili.
+-   Logiche sviluppate in BC con possibilit… di essere estese.
+
+
+Le funzionalit… realizzate sono le seguenti:
+
+-   **Informazioni articolo**
+    -   Informazioni articolo
+    -   Contenuto collocazione per bin
+    -   Contenuto collocazione per articolo
+    -   Contenuto collocazione per tracciabilit…
+-   **Carichi**
+    -   Carico acquisto
+    -   Reso cliente
+    -   Carico trasferimento
+-   **Spedizioni**
+    -   Reso fornitore
+    -   Spedizione trasferimento
+    -   Spedizione vendita
+-   **Magazzino**
+    -   Riclassificazione articolo
+    -   Registrazioni magazzino
+    -   Riclassificazione collocazione
+    -   Riclassificazione tracciabilit…
+    -   Inventario
+-   **Warehouse**
+    -   Carico warehouse
+    -   Stoccaggio
+    -   Prelievo
+    -   Spedizione warehouse
+
+Quando la power app si apre richiede allÂutente la societ… di lavoro e il badge:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000145-0/EX089-PowerApp11-ITA.png"><br>
+
+
+Il menu principale contiene tutte le attivit… abilitate per lÂoperatore.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000145-0/EX089-PowerApp1-ITA.png"><br>
+
+Tramite il menu impostazioni Š possibile cambiare una serie di impostazioni di base. Ad esempio:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000145-0/EX089-PowerApp2-ITA.png"><br>
+
+-   Tramite il Setup utente Š possibile cambiare la collocazione predefinita.
+-   Il Cambia Utente permette di cambiare lÂoperatore.
+-   Il Cambia societ… permette di cambiare la societ… di BC in cui vengono reregistrate le operazioni.
+
+
+Selezionando ad esempio lÂattivit… Carico acquisto vengono visualizzato tutti gli ordini di acquisto previsti dal filtro presente nel setup utente WMS per questo di attivit….
+EÂ possibile ricercare il documento desiderato inserendo il Nr., o il relativo barcode, nellÂapposito campo di ricerca.
+Inserendo inoltre il nome del fornitore Š possibile effettuare un filtro nei documenti.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000145-0/EX089-PowerApp3-ITA.png"><br>
+
+
+Una volta selezionato il documento la power app visualizza le righe del documento. Le righe vengono raggruppate visualizzate e in base alla Modalit… di scansione definita nel setup utente. 
+NellÂesempio la modalit… di scansione Š Per Documento, quindi le righe sono raggruppate per articolo / variante / ubicazione / collocazione / unit… di misura. La scansione dei barcode avviene direttamente da questa page e sar… la Power App stessa ad effettuare lÂaccoppiamento con la riga documento corretta. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000145-0/EX089-PowerApp4-ITA.png"><br>
+
+
+Per capire lÂeffettiva differenza fra le modalit… di scansione per riga, per gruppo, per documento immaginiamo di avere un documento con 5 righe in cui nella prima e nella seconda riga e nella terza e quarta gli articoli sono gli stessi:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000145-0/EX089-PowerApp5-ITA.png"><br>
+
+Nella power App con setup diversi ottengo:
+
+**In modalit… per riga si vedono tutte le righe che compongono il documento. Per cominciare la scansione Š necessario entrare in ogni singola riga. 
+**
+<img width="" src="https://docs.eos-solutions.it/Images/PR000145-0/EX089-PowerApp6-ITA.png"><br>
+
+
+**In modalit… per gruppo si vedono tutte le righe che compongono il documento raggruppate per articolo / variante / ubicaz. / collocazione / UdM. Per cominciare la scansione Š necessario entrare in ogni singola riga. 
+**
+<img width="" src="https://docs.eos-solutions.it/Images/PR000145-0/EX089-PowerApp7-ITA.png"><br>
+
+
+**In modalit… per documento si vedono tutte le righe che compongono il documento raggruppate per articolo / variante / ubicaz. / collocazione / UdM. Si pu• cominciare la scansione degli articoli senza entrare in ogni singola riga. 
+**
+<img width="" src="https://docs.eos-solutions.it/Images/PR000145-0/EX089-PowerApp8-ITA.png"><br>
+
+
+Dopo aver effettuato le letture Š possibile entrare in ogni singola riga del documento e visualizzare / modificare / eliminare le singole scansioni.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000145-0/EX089-PowerApp9-ITA.png"><br>
+
+
+Una volta terminata la scansione degli articoli Š possibile effettuare le seguenti operazioni:
+-   Salva. Memorizza in BC le scansioni. LÂoperatore potrebbe riprendere la scansione in un secondo momento.
+-   Salve e Registra. Memorizza le scansioni ed esegue la registrazione del documento.
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000145-0/EX089-PowerApp10-ITA.png"><br>
