@@ -1,0 +1,19 @@
+In questa page va definito quale sar… il piano di controllo da utilizzare e la sua frequenza.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000506-0/7ProductQualityAssurance-ITA.png"><br>
+
+Da Nuovo Š possibile creare un nuovo piano di controllo in cui specificare i parametri in base ai quali testare la merce e i valori attesi come risultato. Si pu• inoltre indicare con quali dispositivi eseguire i controlli. Vedi Pianificazione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000506-0/8ProductQualityAssurance-ITA.png"><br>
+
+**Frequenza**
+
+Tale campo consente di assegnare o meno una frequenza alla riga.
+
+Le opzioni sono:
+
+0 = il piano di controllo viene sempre eseguito
+
+1 = il piano di controllo viene eseguito con la frequenza specificata nel campo Periodo di frequenza
+
+Il Periodo di frequenza pu• essere: Giorno, Settimana, Mese, Trimestre, Anno 
