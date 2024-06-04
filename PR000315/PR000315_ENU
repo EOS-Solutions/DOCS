@@ -1,0 +1,23 @@
+**Conditions** are also used for:
+
+1.  **Rule relations** to check conditions and manage filters
+2.  **BOMs** to enable or disable BOM components
+3.  **Routings** to enable or disable routing lines
+4.  **Business logic**
+5.  **Formulas**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000315-0/Conditions1_ENU.png"><br>
+
+Conditions can be in **AND** / **OR**: the choice determines how to combine the filters together within the single condition.
+
+
+In the condition lines we have to enter the conditions to combine, by specifying whether the check should be performed that **the condition is the same or** that it is **different**.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000315-0/Conditions2_ENU.png"><br>
+
+In the filter text, I can insert condition value filters according to Business Central rules.ÿIt is also possible to insert characteristics with [] when a comparison is made on the value of a feature.
+
+<br>
+<br>
+ 
+ 
