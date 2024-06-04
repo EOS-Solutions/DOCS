@@ -1,0 +1,63 @@
+**Setup**
+
+Addebiti articolo
+
+Occorre creare i codici addebito articolo collegati alla gestione degli omaggi.
+
+<img width="" src="">
+<a href="https://docs.eos-solutions.it/Images/PR000332-0/8SalesfreeGoods.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000332-0/8SalesfreeGoods.png"></a>
+<br>
+
+**Nota**
+Lasciando blank i due campi ÃCat. reg. articolo/servizioÄ e ÃCat. reg. art./serv. IVAÄ, nella riga fattura inserita come Omaggio (storno ricavo), questi due campi vengono ereditati dalla riga Articolo collegata.
+
+**Setup omaggio (SFG)**
+
+In questo setup, occorre compilare i codici omaggio da gestire a sistema.
+
+<a href="https://docs.eos-solutions.it/Images/PR000332-0/9SalesfreeGoods.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000332-0/9SalesfreeGoods.png"></a>
+<br>
+
+| **Campo**                | **Descrizione**                                                                                       |
+|--------------------------|-------------------------------------------------------------------------------------------------------|
+| Nr. cliente              | cliente fittizio (azienda) intestatario del documento autofattura                                     |
+|  Nr. conto               |  conto da movimentare nelle righe del documento autofattura                                           |
+| Cat. reg. art./serv. IVA | categoria IVA impostata nelle righe del documento autofattura                                         |
+| Descrizione documento    |  se compilata, valorizza il campo standard ÃDescr. RegistrazioneÄ della testata documento autofattura |
+
+<br>
+
+**Procedura ÃGenerazione autofatt. omaggi (SFG)Ä**
+
+La procedura analizza le righe fattura / nota credito vendita, registrate nel periodo, che presentano un omaggio con Tipo omaggio ÃSenza rivalsaÄ, in modo da inserirle come righe del documento autofattura oggetto di generazione.
+
+<a href="https://docs.eos-solutions.it/Images/PR000332-0/10SalesfreeGoods.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000332-0/10SalesfreeGoods.png"></a>
+<br>
+
+| **Campo**                                                     | **Descrizione**                                                                                                                                 |
+|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Data di registrazione:                                        | indica la Data di registrazione con la quale sar… generato il documento autofattura                                                             |
+| Data di registrazione iniziale / Data di registrazione finale | indicano il periodo per il quale analizzare le righe Fattura/NC vendita registrate contenenti righe di omaggio con Tipo omaggio ÃSenza rivalsaÄ |
+| Codice omaggio                                                | consente di impostare filtri su codici omaggio con Tipo omaggio ÃSenza rivalsaÄ.                                                                |
+
+<br>
+
+**Esempio documento autofattura generato:**
+
+<a href="https://docs.eos-solutions.it/Images/PR000332-0/11SalesfreeGoods.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000332-0/11SalesfreeGoods.png"></a>
+<br>
+
+LÂautofattura presenta una riga per ogni riga Fattura / NC inclusa nel calcolo: la ÃQuantit…Ä viene forzata pari ad 1 ed il ÃPrezzo unitario IVA esclusaÄ coincide con il valore del campo ÃImportoÄ della riga omaggiata (di tipo Articolo). Il campo ÃImportoÄ corrisponde infatti allÂimponibile della riga, al netto degli sconti commerciali (sconti riga e sconti fattura).
+
+Viene inoltre inserita una riga descrittiva per ogni documento di vendita elaborato dalla procedura.
+
+**La scrittura contabile generata dalla contabilizzazione dellÂautofattura Š la seguente:**
+
+<a href="https://docs.eos-solutions.it/Images/PR000332-0/12SalesfreeGoods.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000332-0/12SalesfreeGoods.png"></a>
+<br>
+
+A seguito della contabilizzazione dellÂautofattura, occorre registrare la seguente **scrittura di prima nota** finalizzata a stornare il credito verso il cliente autofattura ed il ricavo per omaggi ed a rilevare il costo indeducibile relativo allÂIVA:
+
+Ricavi per Omaggi (± 6.840,00) @ Cliente per autofattura omaggi (± 8.334,80)
+
+Costi non deducibili (± 1.504,80)
