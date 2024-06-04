@@ -1,0 +1,13 @@
+EDI is a standard protocol for inter-company communication in a predefined format of data typically related to business documents. It offers the following advantages 
+
+- Facilitated connection with partners
+- Simplification of business process management
+- Clearer and deeper visualisation
+- Access to application extension and support for certified containers 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000445-0/2EDI.jpg"><br>
+
+EDI is a process of electronic exchange of business documents between different parties, such as suppliers, customers, banks, etc. EDI functionalities can improve the efficiency, accuracy and speed of business transactions, as well as reduce costs and errors. They are managed, directly from the App:
+
+- Incoming EDI orders: ORDERSIN
+- Sales Invoices and Credit Notes: INVOICEOUT
