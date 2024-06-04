@@ -1,0 +1,57 @@
+**Quanti documenti di acquisto possono essere creati da una PRQ?**
+
+Una riga PRQ puï essere utilizzata per creare pió di un documento di acquisto come Offerta, Ordine di acquisto o ordine programmato
+
+**Posso aggiungere una riga di richiesta di acquisto a un ordine di acquisto esistente?**
+
+Una riga PRQ puï essere aggiunta a qualsiasi documento di acquisto.
+
+Vai all¬ordine di acquisto e in √funzioni di rigaƒ cerca √Prendi righe rich. di acquistoƒ. Le righe PRQ sono prefiltrate dal numero del fornitore. L¬utente puï pulire questo filtro
+
+**Quando una PRQ diventa un'Offerta, Ordine di acquisto o Ordine programmato, dove si puï controllare il tipo e il numero del documento che ä stato creato?**
+
+<a href="https://docs.eos-solutions.it/Images/PR000568-0/FAQ_Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000568-0/FAQ_Purchaserequest.png"></a><br>
+
+i documenti creati sono raggiungibili dalle azioni di riga
+
+**Posso modificare i report del documento?**
+
+Il documento stampato puï essere personalizzato come qualsiasi altro report in business central:
+
+a) Creando un layout personalizzato RDLC [https://learn.microsoft.com/en-us/dynamics365/business-central/ui-get-started-layouts?tabs=copy](https://learn.microsoft.com/en-us/dynamics365/business-central/ui-get-started-layouts?tabs=copy)
+
+b) Creando un layout personalizzato WORD [https://learn.microsoft.com/en-us/dynamics365/business-central/ui-how-add-fields-word-report-layout](https://learn.microsoft.com/en-us/dynamics365/business-central/ui-how-add-fields-word-report-layout)
+
+c) Estendendo il report [https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-ext-object](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-ext-object)
+
+d) Duplicando il report originale [https://github.com/EOS-Solutions/Sample/tree/master/EX046.PurchaseRequest](https://github.com/EOS-Solutions/Sample/tree/master/EX046.PurchaseRequest)
+
+**Posso estendere o personalizzare l¬app?**
+
+Sç, l¬app di richiesta di acquisto puï essere estesa da chiunque abbia le conoscenze appropriate
+
+La documentazione tecnica ä disponibile qui: [https://docs.eos-solutions.it/en/docs/apps-tech/f2d14c8d-6f8a-45a6-8c0e-5b3db46aa59e.html](https://docs.eos-solutions.it/en/docs/apps-tech/f2d14c8d-6f8a-45a6-8c0e-5b3db46aa59e.html)
+
+Gli esempi di codice sono disponibili qui: [https://github.com/EOS-Solutions/Sample/tree/master/EX046.PurchaseRequest](https://github.com/EOS-Solutions/Sample/tree/master/EX046.PurchaseRequest)
+
+**Posso suggerire nuove funzionalitÖ o modifiche all¬app standard?**
+
+Sç, le IDEE possono essere postate qui [https://github.com/EOS-Solutions/IDEAS/issues](https://github.com/EOS-Solutions/IDEAS/issues) e saranno valutate dal team di sviluppo EOS
+
+# TRADUZIONI
+**Questa app non ä tradotta nella mia lingua, ä possibile avere nuove lingue?**
+
+EOS Solutions fornisce traduzioni open source qui [https://github.com/EOS-Solutions/Translations](https://github.com/EOS-Solutions/Translations)
+
+Per le nuove lingue puï essere creato e distribuito un nuovo file di traduzione e una nuova estensione come app separata
+
+**Ho trovato una cattiva traduzione nella mia lingua solo per alcuni termini, come puï essere corretta?**
+
+Chiunque puï contribuire a migliorare le traduzioni inviando una commit Git qui : [https://github.com/EOS-Solutions/Translations](https://github.com/EOS-Solutions/Translations).
+
+Il team di sviluppo incorporerÖ i termini corretti in una delle prossime release. Se non sei in condizione di contribuire in questo modo puoi registrare una richiesta al nostro servizio di supporto
+
+# LICENZA
+**Che tipo di licenza BC ä richiesta per utilizzare l¬app delle richieste di acquisto?**
+
+L¬app PRQ puï essere utilizzata con licenze Team Member o Full. Secondo le politiche Microsoft, gli utenti Team Member non possono creare un ordine di acquisto, ma possono creare un'offerta di acquisto. Questo non dipende dalle politiche EOS. La demo completa spiega lo scenario Team Member e Full User
