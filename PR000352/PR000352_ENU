@@ -1,0 +1,11 @@
+In the VAT Posting setup, the "EU Service" field determines whether the movement will be charged to the Intra goods or Intra services section; the criterion is the following:
+
+Field not checked =\> GOODS
+
+Field checked =\> SERVICES
+
+When you check EU Service, the system also automatically turns on the ®Service Tariff No. Mandatory¯ field, this check must be removed.
+
+There is also the possibility of excluding a particular combination from the intrastat by using the specific "Exclude from Intrastat" flag.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000352-0/3AdvIntrastatForItaly-en.png"><br>
