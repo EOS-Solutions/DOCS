@@ -1,0 +1,39 @@
+The Eos Solutions Product Configurator (CFG) app allows, on sales side, to manage product configuration both through the generation of item codes and through the generation of variants.
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lcJbrUdFFW0" title="Product Configurator for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mrH1QP4Rtww" title="How to connect Excel Online to Product Configurator for Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+
+**Product Configurator Features**
+
+The app Product Configurator (CFG) Eos Solutions, through the use of the characteristics and configuration rules, allows you to:
+
+-   Create automatic item variants or alternatively item codes based on the combination of selected characteristics
+-   Create and manage the price matrix that allows you to have different selling prices, according to the characteristic values
+-   Manage price surcharge and optionals
+-   Search for posted documents by characteristics
+
+<br>
+
+**Benefits for the user**        
+
+-   Free the design and development department from sales support. Even groups of less experienced users can independently use the product configurator to prepare offers and orders.
+-   Reduction of the loading times of the sales documents with consequent increase in the satisfaction of the final customer.
+-   Reduction of errors in the calculation of list prices and of any surcharges / options. The use of rules and relationships allows to sell to the end customer only what is expected by the company.
+
+<br>
+
+**Additional App**        
+
+Install Product Configurator for Manufacturing in order to:
+
+-   Create routings and production BOMs with work centers, work times, and variable BOM components depending on the value of the characteristics.
+
+<br>
+<br>
+     
