@@ -1,0 +1,49 @@
+Dopo aver configurato il [Setup DocSolutions for File System]({{<relref "dcs-fs-setup">}}), aprendo ad esempio la Lista Clienti, si vedr… la factbox sulla destra:
+
+<img width="1200" src="https://docs.eos-solutions.it/Images/ex069.03/factbox on list pages/1 DocSolutionsForSharepoint.png"><br><br>
+
+
+Premendo F11 la Factbox si ingrandisce in modalit… "a tutto schermo".
+
+<br><br>
+
+# Carica file
+
+Per caricare un file Š possibile effettuare sceglierlo cliccando su "Choose a file" oppure effettuare il drag & drop (attivo anche da outlook).
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/factbox on list pages/2DocSolutionsForSharepoint.png"><br><br>
+
+
+Cliccando OK il file verr… caricato.
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/factbox on list pages/4DocSolutionsForSharepoint.png"><br><br>
+
+
+Si pu• **eliminare** il file premendo sul cestino
+
+Si pu• **scaricare** il file premendo sulla nuvola.
+
+La lente di ingrandimento (Search) consente di **filtrare** i file caricati.
+
+Si pu• vedere il percorso del file caricato cliccando sulla cartella:
+
+<br>
+<br>
+# Limite dimensione upload
+
+In ogni libreri… si potr… specificare (in MB) qual Š la dimensione massima che ogni file pu• avere
+
+<img width="1200" src="https://docs.eos-solutions.it/Images/ex069.03/factbox on list pages/6DoCSolutionsSizeLimit.png"><br>
+<br>
+
+# Eliminare gli allegati collegati a record cancellati
+
+Per poter eliminare gli allegati in seguito alla cancellazione dei record relativi Š necessario un setup. Aprire Il Setup tabelle DocSolutions (DCS) e cliccare su Apri coda processi:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/factbox on list pages/7DoCSolutionsForSharepoint.png"><br>
+
+tale action aprir… una coda processi se esistente, altrimenti ne creer… una.
+
+Sulla Scheda di setup di ogni tabella, si potr… scegliere se abilitare o meno questa opzione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/factbox on list pages/8DoCSolutionsForSharepointDelete.png"><br>
