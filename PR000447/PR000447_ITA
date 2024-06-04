@@ -1,0 +1,9 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_aB7CYOCnJo" title="Bulk VIES Vat Number Check per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+La funzionalit… standard BC per la verifica delle P. IVA Š stata rivista ed implementata dall'app Bulk VIES VAT Number Check (VIES), estendendo i controlli anche ad altri campi.Il sistema si collega al servizio http://ec.europa.eu/taxation_customs/vies/services/checkVatService impostato a setup ed effettua una verifica sui seguenti campi:
+
+-   Partita IVA
+-   Persona fisica
+-   Cod. paese
+
