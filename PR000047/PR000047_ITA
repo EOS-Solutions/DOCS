@@ -1,0 +1,42 @@
+La app DocSolutions for Sharepoint (DCS) di Eos Solutions consente l'integrazione con Sharepoint OnLine, una piattaforma online di Content Management System (CMS), che permette la creazione, la distribuzione e l'archiviazione di documenti in cloud.
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kPw62J1geyI" title="DocSolutions For Sharepoint for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3aP9ocChL9U" title="DocSolutions For Sharepoint - How to configure Azure app, App Key and Secret" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mrY8qJxjZLE" title="EOS Apps Demo: DocSolutions for Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+| **N.B.**                                                                                 |
+|------------------------------------------------------------------------------------------|
+| La app DCS di Eos Solutions supporta **solo Sharepoint OnLine** e non Sharepoint OnPrem. |
+
+<br>
+<br>
+
+**Funzionalit… di DocSolutions per Sharepoint OnLIne**
+
+Grazie alla app DocSolutions for Sharepoint (DCS) di Eos Solutions
+
+-   per ogni tabella Š possibile gestire diversi tipi di storage
+-   Š possibile creare pi— storage per la stessa tabella, con destinazioni diverse
+-   l'integrazione con Sharepoint online Š basata su cartelle
+-   23 tabelle gi… configurate e pronte all'uso
+
+<br>
+
+**Benefici per l'utente**
+* Allega i files tramite drag and drop
+* Allega e-mail
+* Definisci i permessi di accesso in Business Central e non in Sharepoint
+* Scarica i files o mostrali direttamente nella pagina web di Sharepoint
+* La connessione avviene tramite MS GRAPH
+* Non sono necessarie configurazioni in Sharepoint. DCS Š connessa in modalit… APP (non user delegation) tramite un APP KEY ed un Secret, niente password per gli utenti
+* Esplora e trova i contenuti di sharepoint direttamente da BC
+* Lo storage Š basato su cartelle (Questo consente di non aver problemi legati al limite di 5.000 items per view di Sharepoint On Line)
+*  Definisci da setup se sovrascrivere i files gi… esistenti, tenerne copie o restituire un errore in caso di duplicati
+
