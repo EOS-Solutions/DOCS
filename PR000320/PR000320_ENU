@@ -1,0 +1,13 @@
+The product configurator according to the setup can generate **Items or Item Variants**.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000320-0/Conf1_ENU.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000320-0/Conf2_ENU.png"><br>
+
+The choice to generate new item codes or variants can be made at company level through a field in the Setup. 
+In the rule table there is a field called ®Configuration Type¯ that allows to choose the configuration mode, the values are : **Default** (the configuration behaves as defined in the setup), **Item**, **Variant**.
+
+<br>
+<br>
+ 
+ 
