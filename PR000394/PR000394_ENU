@@ -1,0 +1,11 @@
+To split the planning result into another worksheet, you must define the worksheet where the results come from, and the worksheet where the results should be transferred to.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000394-0/11ManufPlanning-ENU.png"><br>
+
+On **Worksheet Template Name** and **Journal Batch Name** fields you define the worksheet where the results come from.
+
+On the **Planning Worksheet Template** and **Planning Worksheet Name** fields you define the target worksheet. On the **Requisition Filter** field you can define a filter depending on which data should be transferred, e.g. "Replenishment System equal to Prod. Order".
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000394-0/12ManufPlanning-ENU.png"><br>
+
+If the **Starting Date Formula** and/or **Ending Date Formula** fields are specified, then the data to transfer are filtered accordingly to the Due Date.
