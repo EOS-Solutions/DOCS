@@ -1,0 +1,20 @@
+In Acquisto - Valutazione Qualit… (PQA) vengono riportati tutti i carichi effettuati che sono soggetti a controllo. In base a questa tabella viene effettuato il controllo qualit… associato al fornitore.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000570-0/37ProductQualityAssurance-ITA.png"><br>
+
+| Campo | Descrizione |
+| --- | --- |
+| Quantit… | Riporta la quantit… del carico. |
+| Quantit… (Dich.) | Riporta la quantit… che viene definita sulle righe dellÂordine di acquisto e indica quanto dovrebbe essere grande il carico che si sta registrando. |
+| Data di carico promessa/prevista | Viene ripresa dalla riga dallÂordine dalla quale deriva il carico; per calcolare il ritardo/anticipo, il sistema calcola la differenza fra la data di carico promessa e la data di registrazione del carico. |
+| Dich. i termini di consegna | Indica se in questo rapporto di valutazione verranno prese in considerazione anche le date di consegna, non solo le quantit…. |
+
+Attraverso la action Aggiorna codice valutazione il sistema compiler… in automatico il campo Cod. valutazione qualit…. Come?
+
+* Se il sistema trova un record relativo ad un OdC aperto e non ci sono Non-Conformit… collegate a tale ordine, assegna il **punteggio massimo** nel campo Cod. valutazione qualit….
+
+* Se trova un record relativo ad un OdC aperto e  ci sono delle Non-Conformit… collegate, allora lascer… il campo Cod. valutazione qualit… **vuoto**. E sar… l'utente a compilarlo manualmente.
+
+| N.B. |
+| --- |
+| Da Ordini di controllo Š possibile visualizzare l'ordine di controllo ed eventuale Non-Conformit… relativi alla riga selezionata. In tal modo l'utente che deve assegnare manualmente una valutazione Š messo a conoscenza della situazione generale. |
