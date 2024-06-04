@@ -1,0 +1,3 @@
+The "Payable/Recieivable Aging Analysis" page and on the "Account Statement" report show only entries that were generated as a result of renegotiation, not those that have been renegotiated (closed), regardless of whether the "Only Open Entry" field is active:
+
+<img width="750" src="https://docs.eos-solutions.it/Images/ex012/customervendor aging/8DueDatesManagement(1).png"><br>
