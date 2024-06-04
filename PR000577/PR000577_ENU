@@ -1,0 +1,11 @@
+Open EDS Setup page:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000577-0/4DataSecurity.png"><br>
+
+
+
+| Field                  | Description                                                                                                                                                                                                                                                                                                           |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Import Data            | You need to apply this function only during upgrades from previous versions of Data Security built in C\\AL. Export data from Old environment using appropriate Json export function in RapidStart service Click "Import" to load exported Json file in your new Business Central environment and insert new records  |
+| Deleted Processed Mail | It is possible to choose to delete emails already processed                                                                                                                                                                                                                                                           |
+| Skip Permission Checks | You can skip the permission checks for all tables (e.g for a demo environment)                                                                                                                                                                                                                                        |
