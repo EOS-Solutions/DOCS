@@ -1,0 +1,24 @@
+The Eos Solution Posted Data Administration Tool app was created to modify data on any table of Dynamics 365 Business Central. Data modification can be applied on single record or massively on selected records .
+
+The target user of this application is a professional consultant with the appropriate knowledge and skills about the underlying data model.
+
+The app is not intended for use by users with basic and intermediate Business Central skills.
+
+**Protection of modified data**
+
+-   The app was designed to ensure tracking of changes made to the system by administrators.
+-   Change tracking has the primary purpose of investigating and debugging in the event of "direct" changes to the data
+-   The tracking of changes to the recorded data complies with the legal indications on privacy and data access by administrators
+-   Change tracking offers (in most cases) the possibility of the recovery of data that has been changed / deleted by mistake. Read Limitation chapter below
+
+**Data recovery and Limitation**
+
+Data tracking does not guarantee the restoration of the same data in 100% of cases, for example:
+
+-   Deleting a Document (NR1) and attempting to restore it after Document NR1 has been re-entered into the system
+-   Recovery of images (Mediaset fields) or other data in binary format is not supported
+
+**System flexibility**
+
+-   The app was created with the aim of having sufficient flexibility to be used on DBs with different locations and different apps installed (Vertical Ref.).
+-   The app provides for some data protection mechanisms, which in any case are subject to the principle of business logic violation
