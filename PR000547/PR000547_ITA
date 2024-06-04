@@ -1,0 +1,43 @@
+Grazie alla app Manufacturing Base Toolkit Š possibile collegare il movimento di output di storno al movimento di capacit… originale, allo scopo di stornare i componenti consumati in backflush.
+
+**Registrazione output da Ordine di Produzione:**
+
+In questo esempio i componenti hanno Metodo di consuntivazione "Indietro" e sono collegati alla operazione nr. 10:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/30ManufacturingBaseToolkit_ENU.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/31ManufacturingBaseToolkit_ENU.png"><br>
+
+<br>
+
+| **Campo**                 | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Metodi di consuntivazione | Specifica il metodo utilizzato per calcolare e gestire il consumo di un articolo nei processi di produzione. Le opzioni sono: **Manuale**: immettere e registrare manualmente il consumo nella registrazione consumi. **Avanti**: registrare automaticamente il consumo in base alle righe del componente dell'ordine di produzione quando viene avviata la prima operazione. **Indietro**: calcolare e registrare automaticamente il consumo in base alle righe del componente dell'ordine di produzione quando l'ordine di produzione Š chiuso. **Prelievo+Avanti/Prelievo+Indietro**: variazioni nella gestione warehouse. |
+
+Dopo aver creato due output per 4 e 2 pezzi, vengono generati i movimenti capacit… 49 e 50 e i movimenti contabili di consumo:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/32ManufacturingBaseToolkit_ITA.png"><br>
+
+<br>
+
+**Registrazione dello storno da Ordine di Produzione:**
+
+Dalla registrazione di produzione viene inserito il movimento di output, che viene collegato al movimento originale (in questo caso il movimento 49)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/33ManufacturingBaseToolkit_ITA.png"><br>
+
+AllÂinserimento del movimento collegato il sistema chiede se si vuole esplodere i movimenti consumati collegati alla fase stornata. I movimenti vengono riportati sul giornale con la quantit… da stornare
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/34ManufacturingBaseToolkit_ITA.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/35ManufacturingBaseToolkit_ITA.png"><br>
+
+Alla registrazione vengono creati i movimenti di storno capacit… e i movimenti contabili articolo di consumo
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/36ManufacturingBaseToolkit_ITA.png"><br>
+
+<br>
+<br>
+ 
+ 
+
