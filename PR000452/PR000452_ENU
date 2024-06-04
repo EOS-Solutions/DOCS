@@ -1,0 +1,17 @@
+1.  If the invoice discount is used in both the active and passive cycles, **it is mandatory to activate the "Calc. Inv. Discount"** field in the Sales & Receivables Setup and Purchases & Payables Setup.
+2.  The DUM App is **not compatible with the management of Prepayments**. No tests have been carried out on this. During the latest developments, in order to fix the calculation of discounts, some changes have been made by linking to standard events, for which it was not possible to trace the prepayment management methods.
+3.  The management of **statistics** relating to Order documents (Sales and Purchase) displays data that has not been correctly recalculated in relation to the Invoicing and Shipping tabs:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000452-0/KL1_ENU.png"><br>
+
+The scenario with which it occurs is as follows:
+
+-   Active Dual Unit of Measure app
+-   Detailed Document Discounts app active
+-   Using Items with Sales Price Calculation Method = Secondary Unit of Measure
+-   Shipping / Invoicing with Partial Quantities
+
+<br>
+<br>
+ 
+ 
