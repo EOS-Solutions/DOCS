@@ -1,0 +1,22 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000528-0/5DataSecurity.png"><br>
+
+Premendo Stati si possono definire tutti gli stati che si desidera. Per ognuno poi va stabilito se si tratta di uno stato iniziale o finale. Si possono abilitare e disabilitare le opzioni agendo sulle checkbox:
+
+ Å Modifiche disabilitate
+
+ Å Eliminazione disabilitata
+
+ Å Stato iniziale / Stato finale
+
+ Å Registrazione documento disabilitata
+
+ Å Rilascio documento disabilitato
+
+Da Tabelle correlate si stabilisce, per ogni stato, se le tabelle ad esso collegate possono essere modificate:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000528-0/24DataSecurity.png"><br>
+
+Se effettuo il rilascio o la riapertura di un documento di Vendita o Acquisto, automaticamente viene anche impostato lo stato DataSecurity scelto in questa tabella e partono eventuali controlli, validazioni, messaggi di notifica ecc.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000528-0/6DataSecurity.png"><br>
+
