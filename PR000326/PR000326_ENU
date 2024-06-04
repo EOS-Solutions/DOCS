@@ -1,0 +1,29 @@
+It is possible to manage price lines separate from the configured item by managing the surcharges.
+
+-   Insert in the price matrix (CFG), for a given configurable item, the characteristics that lead to a price increase, their value and the "economic" value of the surcharge.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000326-0/Surcharge1_ENU.png"><br>
+
+Choose within the characteristics which type of surcharge line will be added in the Sale/Purchase document.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000326-0/Surcharge3_ENU.png"><br>
+
+In the product configurator setup, there is the Enable surcharge lines field that allows to choose whether to charge surcharges with additional document lines. If this field is deactivated, the amount of the surcharge is added to the amount of the list price.
+
+Please refer to the **Surcharge/Optional** section of the configurator setup for further details on the setup [Product Configurator - Setup]({{<relref "product-configurator-setup">}}).
+
+<br>
+
+Un tipo particolare di maggiorazioni sono quelle donominate di listino.
+-   Must be enabled in the Characteristic Rules.
+-   The values of the characteristics used must have an item associated (purchase item field) in order to allow the configurator to go back to the price list (BC standard).
+-   The characteristic that leads to this type of surcharge must have a default for the item to be configured.
+-   Any surcharge line will have a value equal to the difference between the price list of the item associated with the characteristic chosen by the user and that linked to the item associated with the default characteristic.
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000326-0/Surcharge4_ENU.png"><br>
+
+<br>
+<br>
+ 
+ 
