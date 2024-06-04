@@ -1,0 +1,11 @@
+Questa tabella consente di gestire i risultati dei test associandoli ad un codice:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000481-0/5ProductQualityAssurance-ITA.png"><br>
+
+| Campo | Descrizione |
+| --- | --- |
+| Codice | inserire un codice da associare ad ogni risultato |
+| Descrizione | campo libero per un'eventuale descrizione |
+| Risultato controllo | Å **Rilasciato**: la merce quindi non Š pi— bloccata per il controllo ma Š libera di essere consumata o spedita.<br><br>Å **Concessione**: una parte delle merce potrebbe essere utilizzabile e una parte invece non Š conforme quindi verr… fatta una riclassifica della merce in un'area a setup in ubicazione.<br><br>Å **Bloccato**: la merce Š non conforme quindi verr… fatta una riclassifica della merce in un'area a setup in ubicazione. |
+| Registrazione permessa | flag che consente di registrare, ad esempio un carico, con un ordine di controllo collegato indipendentemente dal risultato del test di controllo |
+| Consenti modifica | flag che consente di apportare modifiche sulla scheda controllo |
