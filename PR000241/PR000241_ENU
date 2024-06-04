@@ -1,0 +1,31 @@
+When the fields 'Template', 'Accrual Starting Date' and 'Accrual Ending Date' are filled in on the **invoice and/or credit memo** line (the 'Competence Period' field is automatically filled in), the accruals and/or deferrals are automatically posted upon accounting.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/App SGL Slide 20_Andrea Giordani.png"><br>
+
+When the fields 'Template', 'Accrual Starting Date' and 'Accrual Ending Date' are filled in on a **general journal** entry, accrual and/or deferral entries will be generated upon accounting.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/App SGL Slide 21_Andrea Giordani.png"><br>
+
+These are the tables that will be moved when a document, invoice or credit memo, is recorded or a G/L entry is accounted for.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/App SGL Slide 22_Andrea Giordani.png"><br>
+
+In the 'Accruals/deferrals Mov.' view, all information regarding the type of accruals and deferrals template used and the period, any closing date, etc. are reported.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/App SGL Slide 23_Andrea Giordani.png"><br>
+
+In the simulated G/L entries, there are accounting entries divided by period based on the template used.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/App SGL Slide 23 (2)_Andrea Giordani.png"><br>
+
+Calculation of ex post competence entries, through G/L entries: in case it has not been done before, it is possible to insert the parameters for the calculation of competence entries by selecting a G/L entry and executing the action "Calculate accruals".
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/App SGL Slide 24_Andrea Giordani.png"><br>
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/App SGL Slide 25_Andrea Giordani.png"><br>
+
+The page action will allow to link an accruals/deferrals template (Model code) or particular conditions for the calculation of accruals and deferrals of an accounting entry. After posting, it will be possible to preview the calculation:
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/App SGL Slide 25 (2)_Andrea Giordani.png"><br>
+
+It is also possible to reverse the previously generated competence entries  (through a specific action in the page "Accruals / deferrals entries (SGL)") and generate the entries again.
