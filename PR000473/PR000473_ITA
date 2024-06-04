@@ -1,0 +1,13 @@
+## Autenticazione
+
+Collegarsi all'indirizzi API di ARXivar API: **NomeServer/ARXivarNextAuthentication** aprire il menu  "Software":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000473-0/21DoCSolutionsForArxivarNext.png"><br>
+
+Cliccare "+" e inserire il Client ID
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000473-0/19DoCSolutionsForArxivarNext.png"><br>
+
+Selezionare "Attiva". Ora sulla lista Š possibile vedere il Client ID ed il relativo secret da inserire in Business Central
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000473-0/20DoCSolutionsForArxivarNext.png"><br>
