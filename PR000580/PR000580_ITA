@@ -1,0 +1,7 @@
+Gli amministratori possono filtrare e aggiornare i record massivamente utilizzando una pagina specifica. La stessa pagina pu• essere utilizzata per la sincronizzazione iniziale e per impostare in stato "Nuovo" o in altro stato record preesistenti:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000580-0/15DataSecurity.png"><br>
+
+Quando si applica il Data Security ad una nuova tabella, Š necessaria una sincronizzazione iniziale per impostare tutti i record preesistenti in uno stato iniziale.
+
+Inserire l'ID Tabella e poi premere Sincronizza.
