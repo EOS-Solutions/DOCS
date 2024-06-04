@@ -1,0 +1,27 @@
+Through the EOS Vat Management for Italy (VMI) App, it is possible to calculate and manage the pro rata non-deductible VAT amount.
+
+**Setup**
+
+In the VMI Setup:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000627-0/30VatManagement-en.png"><br>
+
+it is necessary to indicate if the company is subject to pro rata VAT, the pro rata percentage and the account to be handled in the VAT settlement:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000627-0/31VatManagement-en.png"><br>
+
+**VAT settlement**
+
+To calculate the non-deductible VAT amount from pro rata, simply calculate and post the VAT settlement using the "Calculate and post VAT settlement (VMI)" report:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000627-0/32VatManagement-en.png"><br>
+
+The amount of the non-deductible VAT pro rata is highlighted in the report:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000627-0/33VatManagement-en.png"><br>
+
+Furthermore, by carrying out the VAT settlement with the "Post" flag, the amount of the entered VAT pro rata is accounted for in Debit, using the account set up in the VMI setup:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000627-0/34VatManagement-en.png"><br>
+
+In the procedure for calculating the periodic VAT settlement (LIPE), which can be carried out using the Electronic VAT Settlement for Italy (EVS) App , the amount of the pro rata VAT is deducted from line VP5.
