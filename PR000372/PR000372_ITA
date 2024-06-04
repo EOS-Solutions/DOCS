@@ -1,0 +1,7 @@
+ß possibile utilizzare setup pianificazione per definire un flusso, ad esempio:  
+
+1. Pianificazione MPS e MRP di tutti gli articoli
+
+1. Distribuire il risultato della pianificazione in worksheet di pianificazione dedicati
+
+1. Schedulare il calcolo della pianificazione dalla coda processi
