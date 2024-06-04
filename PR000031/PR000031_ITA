@@ -1,0 +1,22 @@
+LÂapp Delivery Reminders (PDR) consente di tracciare le consegne scadute, creare automaticamente i solleciti e notificarli ai fornitori.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TG9IafDR1Mo" title="Delivery Reminders per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+
+ 
+**Processo Generale**
+
+<img width="800" src="https://docs.eos-solutions.it/Images/PR000031-0/9DelRem.png"><br>
+
+Il processo di gestione dei solleciti di consegna richiede i seguenti passaggi:
+
+1. Creazione dei termini e livelli di sollecito
+
+2. Creazione dei solleciti
+
+3. Verifica e registrazione dei solleciti
+
+4. Invio ai fornitori
+
+Per l'invio dei livelli di sollecito successivi, ripete i passaggi dal 2 al 4.
+
