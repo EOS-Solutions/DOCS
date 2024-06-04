@@ -1,0 +1,45 @@
+On the Setup (PTS) page set a serial number for the technical specifications and a default template based on which the attributes on the technical specifications card will be inherited:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/2ProductTechnicalSpecifications.jpg"><br>
+
+**Groups**
+
+From Attribute Groups you can enter a list of Groups that will contain all the attributes (e.g. specifications) for the items. The groups allow you to categorize the characteristics (e.g. you can create the group of chemical characteristics, the group of characteristics concerning the package, etc.)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/3ProductTechnicalSpecifications.jpg"><br>
+
+These Groups are also visible on the Standard Item Attributes List page :
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/4ProductTechnicalSpecifications.jpg"><br>
+
+For each group it is possible to manage the translation of the description by pressing Translations. The inserted translation will appear in the printing.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/5ProductTechnicalSpecifications.jpg"><br>
+
+**Attributes**
+
+In each group we insert the technical specifications creating an ordered list of Attributes. Example of nutritional information usually found on food packaging:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/6ProductTechnicalSpecifications.jpg"><br>
+
+| **Field**       | **Description**                                                                                                                                                                                                                                                                                                                                                                         |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name            | attribute name                                                                                                                                                                                                                                                                                                                                                                          |
+| Type            | specify if the value is: <br>- Integer <br> - Decimal<br> - Option (in this case the system allows you to add the various possible values)  <img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/7ProductTechnicalSpecifications.jpg"><br>  - Text (the translation of the Text type value will be inserted in the relative Technical Specs Card) - Date |
+| Values          | indicate a value for the technical specification                                                                                                                                                                                                                                                                                                                                        |
+| Unit of measure | unit of measure of the attribute                                                                                                                                                                                                                                                                                                                                                        |
+| Tolerance       | it is possible to enter a tolerance                                                                                                                                                                                                                                                                                                                                                     |
+| Blocked         | if checked, this option allows you to disable the row                                                                                                                                                                                                                                                                                                                                   |
+| Position        | indicates the position that the attribute must have compared to the others                                                                                                                                                                                                                                                                                                              |
+| Print           | if checked, this option allows the attribute to appear on the printing                                                                                                                                                                                                                                                                                                                  |
+
+<br>
+
+From Translations you can manage the translation of the single attribute.
+
+**Template**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/8ProductTechnicalSpecifications.jpg"><br>
+From Template you can create combinations of ordered lists of specific groups and related attributes:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/9ProductTechnicalSpecifications.jpg"><br>
