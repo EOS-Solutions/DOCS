@@ -1,0 +1,66 @@
+Gli Ordini di vendita 1005 e 1006 per il cliente 20000 e stesso indirizzo spedizione vengono fatturati a 2 "Fatturare a - Nr. cli" diversi
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/18CombinedWarehouseShipment_ITA.png">
+<br><br>
+
+Poichä il campo "Fatturare a - Nr. cli" non ä un criterio di cumulo per le spedizioni, gli Ordini 1005 e 1006 verranno cumulati in una unica sped. CWS:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/17CombinedWarehouseShipment_ITA.png"><br>
+
+
+In base al setup inserito:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/9CombinedWarehouseShipment_ITA.png"><br>
+
+### Fatturazione
+
+Per il Cliente 10000 viene creata e registrata la fattura, per il Cliente 20000 viene creata la fattura provvisoria.
+
+### Spedizione Whse
+
+Vengono creati 2 gruppi differenti, 1 per ordini 1001 e 1002 del Cliente 10000 e 1 per ordini 1005 e 1006 del Cliente 20000 e spediti allo stesso indirizzo.
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/19CombinedWarehouseShipment_ITA.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/20CombinedWarehouseShipment_ITA.png"><br>
+
+### Registrazione Spedizione Whse
+
+viene chiesta conferma anche per la fatturazione (registrazione) essendo attiva l'opzione per cliente 10000:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/21CombinedWarehouseShipment_ITA.png"><br>
+
+Al termine viene proposto messaggio con
+
+Fatture create e da registrare 2: fatture per il cliente 20000
+
+Fatture create e registrate 1: fattura per il cliente 10000
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/22CombinedWarehouseShipment_ITA.png"><br>
+
+Registrazione Spedizione Whse: vengono create 2 spedizioni CWS 1 per il cliente 10000 e una per il cliente 20000.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/24CombinedWarehouseShipment_ITA.png">
+<br><br>
+
+Le informazioni di Fatturazione nella bolla del cliente 20000 non sono indicate poichä fanno riferimento a diversi clienti di fatturazione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/25CombinedWarehouseShipment_ITA.png">
+<br><br>
+
+Naviga Fatture:
+
+all'interno della scheda CWS, da Naviga->Spedizione->Fatture ä possibile visualizzare la/le fatture ad essa collegate
+
+- Spedizione CWS Cliente 10000: 1 fattura registrata
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/26CombinedWarehouseShipment_ITA.png">
+
+<br><br>
+
+
+- Spedizione CWS Cliente 20000: 2 fatture da registrare (numero in rosso)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/27CombinedWarehouseShipment_ITA.png"><br>
