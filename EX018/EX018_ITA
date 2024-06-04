@@ -1,0 +1,24 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Compilare il setup inserendo i dati societari</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Scegliere se includere o meno specifici setup IVA nei campi VP</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Calcolare gli importi IVA</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Salvare ed inviare il file XML</td>
+	</tr>
+</table>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lS1Nt7NsOTk" title="Electronic VAT Settlement For Italy per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+      
