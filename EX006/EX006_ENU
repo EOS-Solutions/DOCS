@@ -1,0 +1,25 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Create CWS shipment from w.hse shipments or directly from orders</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Select shipments to be combined and verify grouping details</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Post and Print CWS shipments</td>
+	</tr>
+</table>
+
+<br>
+ 
+
+# Combine Warehouse Shipment (CWS) - SUMMARY
+
+Press ALT + Q and digit ÃCWSÄ for a list of the features involved:
+
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX006-0/1CombinedWarehouseShipment.png"><br>
