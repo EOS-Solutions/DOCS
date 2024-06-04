@@ -1,0 +1,40 @@
+Il **terzo modo** per configurare le righe di DB Š **utilizzare le condizioni e le formule per il calcolo del campo ®Quantit… per¯ e ®% di scarto¯** . Queste impostazioni possono essere utilizzate in combinazione con righe contenenti articoli di tipo ®Puntuale¯ (non configurabili), ®Da Neutro a Configurato¯ (semilavorati configurabili) o ®Da Neutro a Puntuale¯ (articoli neutri).
+
+**CONDIZIONI PER SELEZIONE RIGHE DB**
+
+Inserire un codice condizione su una riga DB significa che nella DB configurata la riga in questione dovr… essere presente solo se le voci espresse nel codice condizione dovessero risultare vere. In caso contrario la riga non verr… inclusa.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000404-0/BOMFormula1_ITA.png"><br>
+
+<br>
+
+Per esempio, la riga contenete lÂarticolo ®FAR. CIL_LONG¯ verr… inserita nella DB finale solo a condizione che la caratteristica ®TIPO_FARO¯ assuma il valore ®C_LONG¯.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000404-0/BOMFormula2_ITA.png"><br>
+
+ATTENZIONE: questo metodo Š il pi— facile da impostare, ma Š anche quello che potrebbe far aumentare le righe di distinta base.
+
+<br>
+
+**FORMULE PER CALCOLO QUANTITÚ**
+
+Il campo ®Quantit… per¯ della distinta base finale pu• dover dipendere dal valore che assumono alcune caratteristiche, specialmente quelle di tipo Misura. Per questo motivo Š possibile **indicare nel campo ®Formula quantit…¯ e ®Codice formula¯ delle logiche di calcolo.**
+
+Il campo ®**Formula quantit…¯** serve per esprimere calcoli semplici. Inserire un codice caratteristica (sempre fra parentesi quadre [CODICE CARATTERISTICA]) significa dover considerare il valore che quella caratteristica assumer… in fase di configurazione.
+
+Nel campo **®Cod. formula¯** Š possibile assegnare una formula contenente logiche pi— complesse.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000404-0/BOMFormula3_ITA.png"><br>
+
+<br>
+
+Anche il campo ®% scarto¯ pu• essere condizionato in base ad una formula inserita nel campo **®Codice formula % scarto¯.**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000404-0/BOMFormula4_ITA.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000404-0/BOMFormula5_ITA.png"><br>
+
+<br>
+<br>
+ 
+ 
