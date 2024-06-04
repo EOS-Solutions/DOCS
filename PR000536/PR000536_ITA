@@ -1,0 +1,7 @@
+E' possibile salvare e/o inviare sia ai clienti, che agli agenti i report: Estratto conto, Scadenzario in riga, Scadenzario in colonna. Tramite Report-\>Salva / Invia sono possibili diverse opzioni:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000536-0/12AdvancedCustomerVendorStatement.png"><br>
+
+| PDF (Agenti)                      | crea uno .zip in cui si trova una cartella per ogni agente. Nelle sottocartelle ci sono i clienti di ciascun agente e, per ogni cliente, si ha lo scadenzario in riga, in colonna e l'estratto conto. Nella cartella dell'Agente c'Š anche un .pdf con il riepilogo per cliente contenente le informazioni base (nome cliente-saldo-insoluto)  |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| PDF (Clienti)                     | crea uno .zip che si pu• salvare / inviare al singolo cliente contenente una cartella con i tre report (Estratto conto, Scadenzario in riga, Scadenzario in colonna)                                                                                                                                                                           |
