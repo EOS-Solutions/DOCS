@@ -1,0 +1,39 @@
+In "Service connections" select "EU VAT Reg. No. Validation Service Setup".
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000449-0/VIESENU3.png"><br>
+
+
+
+In "EU VAT Reg. No. Validation Service Setup" there is the URL for check (added by default with an address through code).
+Activate flag "Enabled":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000449-0/VIESENG4.png"><br>
+
+
+
+
+
+
+
+**Correct VAT numbers, but not authorized to do intracommunity transactions.**
+
+The VIES VAT check verify VAT numbers that can operate to intracommunity level.
+
+If, verifying on Agenzia delle Entrate site returns message:
+**ACTIVE VAT NUMBER.
+ATTENTION - To verify if a VAT number belongs to an authorized subject to do intra-community  operations must be used service Commnity VAT number check (VIES)** it means that the VAT number of the subject is valid for Italy, but it could not pass the VIES check because it couldn't be valid out of Italy.
+So it's necessary to go on vendor and/ord customer card and activate option and activate flag **No intracommunity operations**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000449-0/VIESENU6.png"><br>
+
+
+Vendor card ->Invoicing tab:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000449-0/VIESENG5.png"><br>
+
+
+
+
+So, VIES system wil skip checks on VAT numbers (that, as already written, are correct, even if not authorized to operate to intracommunity level).
+
+
