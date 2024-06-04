@@ -1,0 +1,9 @@
+A work area can be of type "Tool" or "Person" and have a specific Work Center Group Code.
+
+The other fields are filled in in the same way as classic work centers.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000617-0/2ManufacturingBaseToolkit-ENU.png"><br>
+
+| Field | Description |
+| --- | --- |
+| Type | Person: allows you to define the employment and hours of work of the personnel working on a machine (e.g. personnel dealing with painting)<br> Tool: allows you to define the machinery used for processing (e.g. a frame for painting) <br> Machine: not used |
