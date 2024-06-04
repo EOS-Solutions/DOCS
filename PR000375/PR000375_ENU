@@ -1,0 +1,99 @@
+# Transfers of goods (Intra 1bis)
+
+**"Transaction type" field:**
+
+Requirement:
+
+*Negli elenchi riepilogativi relativi alle cessioni intracomunitarie di beni, i dati relativi alla natura della transazione devono essere forniti conformemente alla disaggregazione di cui alle colonne A e B della Tabella "Natura della transazione" di cui allÂAllegato XI, per i soggetti che hanno realizzato nellÂanno precedente, o in caso di inizio dellÂattivit… di scambi intracomunitari, presumono di realizzare, nellÂanno in corso, un valore delle spedizioni o degli arrivi superiore a euro 20.000.000.*
+
+Solution:
+
+* Code the new two-digit values on the "Transaction type" page
+
+* When generating the Scambi.cee file, the 1st character of the Transaction Nature code is exported to position 56 of the layout, the 2nd to position 104:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/31AdvIntrastatForItaly.png"><br>
+
+**ÃCountry of origin of goodsÄ field:**
+
+Requirement:
+
+*ai fini statistici, nel Modello INTRA 1bis Š prevista la nuova informazione relativa al Paese di origine delle merci (Stato in cui il bene Š ottenuto o prodotto: se la produzione riguarda pi— Stati, identifica lo Stato nel quale i beni sono stati sottoposti all'ultima trasformazione o lavorazione sostanziale, economicamente giustificata).*
+
+Solution:
+
+* The ÃCountry/Region of origin codeÄ of the lines of the Intrastat Declaration (ITR) is filled in based on the value present in the ÃCountry/Region of origin code" of the Item card; the value can however be modified in the declaration lines.
+
+* When generating the Scambi.cee file, the field is exported to position 105 of the layout:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/32AdvIntrastatForItaly.png"><br>
+
+
+# Purchases of goods (Intra 2bis)
+
+**"Transaction type" field**
+
+Requirement:
+
+*negli elenchi riepilogativi relativi agli acquisti intracomunitarie di beni, i dati relativi alla natura della transazione devono essere forniti conformemente alla disaggregazione di cui alle colonne A e B della Tabella »»Natura della transazioneËË di cui allÂAllegato XI.*
+
+Solution:
+
+* Code the new two-digit values on the BC "Transaction type" page
+
+* When generating the Scambi.cee file, the 1st character of the Transaction Type code is exported to position 69 of the layout, the 2nd to position 119:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/33AdvIntrastatForItaly.png"><br>
+
+
+**Removed mandatory requirements for some fields**
+
+Requirement:
+
+*negli elenchi riepilogativi relativi agli acquisti intracomunitarie di beni, sono diventate facoltative le informazioni relative allo Stato del fornitore, al Codice Iva del fornitore ed allÂAmmontare delle operazioni in valuta.*
+
+Solution:
+
+* during the "Release" phase of the Intrastat Declaration (ITR) the presence of the "Country Code", "VAT number", "Amount" fields in the declaration lines are no longer verified
+
+# Purchases of services (Intra 2quater)
+
+**Removed mandatory requirements for some fields**
+
+Requirement:
+
+*negli elenchi riepilogativi relativi agli acquisti intracomunitarie di servizi, sono diventate facoltative le informazioni relative al Codice Iva del fornitore, allÂAmmontare delle operazioni in valuta, alla Modalit… di erogazione, alla Modalit… di incasso e al Paese di pagamento.*
+
+Solution:
+
+* during the "Release" phase of the Intrastat Declaration (ITR), in the lines of the declaration, the presence of the "VAT number", "Amount", "Delivery method" fields for the Payment Method Code and for the country of payment are no longer verified.
+
+# Call off-stock (Intra 1sexies)
+
+Requirement:
+
+*Š stata introdotta una nuova sezione dedicata alle operazioni di Call off-stock (Intra 1sexies). Tale sezione deve essere compilata a partire dagli elenchi riferiti a periodi decorrenti dal mese di gennaio 2022. Fatto salvo quanto stabilito per la compilazione di ciascuna colonna, i soggetti che presentano gli elenchi riepilogativi con cadenza mensile o trimestrale devono compilare le medesime colonne.*
+
+Solution:
+
+* In the lines of the Intrastat Declaration (ITR) of the "Sales" type, the "Call off stock" value of the Line type field is managed, with the new Operation type fields integrated (look up on a specific table), New recipient Country/Region code, New recipient VAT Reg. No :
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/34AdvIntrastatForItaly.png"><br>
+
+
+* The "Suggest lines" function has been integrated to propose, in the new section, the lines relating to registered transfer shipments, with the following characteristics:
+
+* Country code of departure ÃITÄ (Country code present in the Company Information table) and Country code of destination EU (Intrastat Code field of the Countries table). If the Reference No. field is filled out in the transfer shipment, this will retrieve the VAT number to be displayed in position 32 of the layout.
+
+* EU country code of departure (Intrastat code field of the Countries table) and country code of destination ÃITÄ (present country code of the Company information table).
+
+* The lines of the declaration can however be filled in and/or modified manually, on the user side.
+
+* The exported path is as follows:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/35AdvIntrastatForItaly.png"><br>
+
+| **NB**                                                                                                                          |
+|---------------------------------------------------------------------------------------------------------------------------------|
+| the Operation Type table can only contain the following values:                                                                 |
+| <img width="" src="https://docs.eos-solutions.it/Images/PR000375-0/36AdvIntrastatForItaly.png"><br>                   |
