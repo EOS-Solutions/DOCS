@@ -1,0 +1,16 @@
+Nella pagina Voci di sincronizzazione MDI o nella pagina Profilo di sincronizzazione premendo Log di sincronizzazione si accede alla pagina dove Š possibile visualizzare tutte le voci sincronizzate ed eventuali errori.
+
+Eventualmente Š possibile eseguire nuovamente le sincronizzazioni.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000296-0/SynchEntries.png"><br>
+
+
+
+In Stato sincronizzazione le opzioni sono:
+
+Eseguito
+
+Non riuscito (possibilmente con un messaggio che spiega l'errore nel campo "Ultimo messaggio di errore").
+
+Da "Mostra Contenuto" puoi verificare quali dati sono stati passati all'azienda target ed eventuali problemi.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000296-0/SynchEntryContent.png"><br>
