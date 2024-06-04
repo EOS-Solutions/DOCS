@@ -1,0 +1,20 @@
+La tabella definisce gli imballaggi in modo dettagliato affinchŠ il sistema possa assegnare correttamente i vuoti in base alle righe degli ordini:
+<br>
+     
+<img width="" src="https://docs.eos-solutions.it/Images/PR000234-0/IT-EmptiesManagementHUM1.jpg"><br>
+     
+| **Campo** | **Descrizione** |
+| --- | --- |
+| Nr. | numero della riga di setup |
+| Disabilitato | si pu• abilitare o disabilitare la riga una volta creata |
+| Priorit… | Š possibile assegnare una priorit… alla riga indicando dei valori numerici. Il pi— alto ha priorit… massima. |
+| Codice categoria articolo / Nr. articolo / Cod. variante | indicare l'articolo ed eventualmente la categoria e la variante |
+| Cod. unit… di misura | specifica l'unit… di misura dell'articolo |
+| Tipo origine | Šÿ possibile scegliere tra Cliente / Fornitore / Agente (spedizioniere) ed eventualmente selezionare un Numero e una Cat. registrazione.  <br>Se viene lasciato vuoto, la riga di setup vale per tutti i Clienti / Fornitori / Agenti. |
+| Default | specificare l'istruzione come predefinita per la combinazione articolo e origine |
+| Nr. materiale di imballaggio | inserire il materiale di imballaggio usato per l'imballaggio dell'articolo. |
+| Nr. portacarico | inserire il portacarico usato per l'imballaggio dell'articolo. |
+| Quantit… | indicare la quantit… di riempimento |
+| Nr. di strati / Qt…. per strato | se pi— imballaggi possono essere impilatiÿindicare gli strati e la quantit… per ciascuno |
+| Obbligatorio | quando Š impostato, Š necessario specificare un imballaggio nel documento di spedizione |
+| Cod. tipo UdC | specifica il tipo unit… di carico |
