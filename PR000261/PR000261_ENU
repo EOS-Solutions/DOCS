@@ -1,0 +1,62 @@
+# <ins>**Reversal movements**</ins>
+
+For the "Correction mode" field present in setup, we choose the option Reversal movements.
+
+We open the customer accounting movements for Grafiche Magiche 2000 and we select the document subject to re-negotiation (eg invoice 21-102040 with two installments, due date 06/30 and due date 07/30).
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000261-0/3DueDatesManagement(1).png"><br>
+
+The specific page dedicated to the management of the customer occurrences opens from Actions-Functions-\>Change Occurrences.
+
+The system proposes the two installments of the invoice:
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000261-0/5DueDatesManagement(1).png"><br>
+
+
+| **Action**      | **Description**                                                                                        |
+|-----------------|--------------------------------------------------------------------------------------------------------|
+| Manage-\>Delete | it is possible to delete one or more installments, increasing the amounts of the existing installments |
+| Add Occurrency  | you can add new installments with new due dates                                                        
+
+
+
+<br>
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000261-0/4DueDatesManagement(1).png"><br>
+
+<br>
+Through the action "Add Occurrency" we have inserted a new installment expiring on 09/30/20, reducing ± 925,00 euros from the movement expiring on 07/30/20.
+
+By executing the action "**Post**", the new ledger entries are modified / created.
+
+Since we are renegotiating the second line (the system automatically proposes the previous date in the "Old due date" field). We can manually modify what is proposed if necessary.
+
+{{% alert title="Important" color="warning" %}}
+- The **balance** must be zero 
+- In the event that there are more due dates, the "**New Due Date**" of the new installment (or new installments) is proposed equal to the earliest due date of the pre-renegotiation movements; the user can in any case modify it by acting on the specific field. 
+{{% /alert %}}
+
+
+
+We can enter / change "Our Bank account" / "Payment Method Code".
+
+The "Old due date" field is used to check the initial expiration and renegotiation dates of the installment.
+
+
+{{% alert title="Important" color="warning" %}}
+The **Block Reason** field will indicate, in the event that the renegotiation is not successful, the reason for this block. This can happen, for example, if in the setup of the Commissions CMS app it was set that an invoice cannot be renegotiated (because for example there are commissions or settlements in progress). In this case, when opening the page Change Customer Occurrences, the system will propose the Block Reason field filled in for one or more deadlines.
+{{% /alert %}}
+
+After posting:
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000261-0/6DueDatesManagement(1).png"><br>
+
+The initial invoice 21-102040 (1925,00) was closed with the "Payment" Document Type (-1925,00) of the same amount (both have residual amount = zero). For these entries, the system indicates the renegotiation number and who performed it in the two specific fields.
+
+The three installments of the invoice are shown on the other three lines. The "Old Due Date" field is filled in for the new installment.
+
+Summing up:
+
+in the execution of the procedure with "Reversal movements" mode, the system generated the following G / L entries following the renegotiation with reversal of transactions:
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000261-0/7DueDatesManagement(1).png"><br>
+
