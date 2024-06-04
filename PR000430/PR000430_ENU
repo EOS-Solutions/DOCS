@@ -1,0 +1,15 @@
+On the Setup page you can enable the management of the double unit of measure and choose some options:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000430-0/Setup1_ENU.png"><br>
+
+| **Field**                       | **Description**                                                              |
+|---------------------------------|------------------------------------------------------------------------------|
+| Enable Dual Unit of Measure     | allows you to enable the DUM app for the Company                             |
+| Suggest Sec. Qty. to Handle     | you can choose to have the system suggest the secondary quantity             |
+| Sales Price Rounding Precision  | allows you to define how many decimals round the prices in the active cycle  |
+| Purch. Price Rounding Precision | allows you to define how many decimals round prices in the passive cycle     |
+
+<br>
+<br>
+ 
+ 
