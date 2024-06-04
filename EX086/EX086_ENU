@@ -1,0 +1,21 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>MPS and MRP planning of all items</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Split and distribute the planning result to dedicated planning worksheets</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Schedule the planning calculation from Job Queue</td>
+	</tr>
+</table>
+
+<br>
+
+# Manufacturing Planning (MPL) - SUMMARY
+Press ALT + Q and digit "MPL" for a list of the involved functionalities:
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX086-0/1ManufPlanning-ENU.png"><br>
