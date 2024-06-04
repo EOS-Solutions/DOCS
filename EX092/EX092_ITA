@@ -1,0 +1,27 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Imposta i setup relativi ai giri di consegna</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Calcola tempi, percorsi e pesi</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Genera e modifica i giri di consegna</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Stampa ed esporta i giri creati</td>
+	</tr>
+</table>
+
+<br>
+<br>
+
+# Delivery Route Planner (DRP) - SUMMARY
+
+Premere ALT + Q e digitare "DRP" per vedere un elenco delle funzionalit… coinvolte:
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX092-0/1DeliveryRoutePlanner_ITA.png"><br>
