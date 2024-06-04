@@ -1,0 +1,5 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000213-0/42CONAI.png"><br>
+| **Field**                  | **Description**                                                                                                                                                                                  |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 Item / 1 Package         | If active, a package code is managed for each item; The package code coincides with that of the item to which it refers                                                                          |
+| CONAI Lines Shipments Nos. | Numerator dedicated to the generation of posted sales shippings relating only to Conai lines, in the event that the "Shipment on Invoice" flag is present on the Sales & Receivables Setup page. |
