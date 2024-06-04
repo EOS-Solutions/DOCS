@@ -1,0 +1,12 @@
+**Ubicazioni non conformi**
+
+Nel setup delle Ubicazioni Š presente il Tab Qualit… che consente di gestire la collocazione degli articoli considerati non conformi:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000520-0/12ProductQualityAssurance-ITA.png"><br>
+
+| Campo | Descrizione |
+| --- | --- |
+| Cod. Collocazione in entrata QA | Definire qui qual Š la collocazione in cui dovr… essere depositata la merce che entra in controllo qualit…. |
+| Cod. Collocazione in uscita QA | Inserire la collocazione nella quale verr… depositata la merce che Š risultata conforme. |
+| Cod. Ubicazione non Conformi | E' lÂubicazione in cui verr… spostata in automatico la merce che risulta non conforme. |
+| Cod. Collocazione non Conformi | Specificare la collocazione del magazzino scelto nel campo Cod. collocazione non Conformi in cui la merce (non conforme) sar… spostata. |
