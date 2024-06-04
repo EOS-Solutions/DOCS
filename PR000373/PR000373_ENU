@@ -1,0 +1,13 @@
+You define a Planning Setup either for the planning calculation or for the split of the planning result. In both cases you must define a specific Worksheet. In the picture you can see an example for a setup to do a planning calculation:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000373-0/10ManufPlanning-ENU.png"><br>
+
+* The calculation result is written into the worksheet defined by **Worksheet Template Name** and **Journal Batch Name**
+
+* **MPS** and **MRP** are calculated
+
+* The starting date is calculated by the **Starting Date Formula**, in this example it¡s always Monday of the current week The ending date is calculated by the **Ending Date Formula**
+
+* If you would consider an item filter for the calculation, then you could do this by the Assist button of the **Item Filter** field on the **Action Message** register
+
+On the Planning Setup Card you can set the same parameters as on the planning calculation batch (planning worksheet).
