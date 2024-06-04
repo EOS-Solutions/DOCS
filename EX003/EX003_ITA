@@ -1,0 +1,36 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KMmMlSSOg1s" title="Data Security per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+La App Data Security consente di proteggere i dati importanti dalle modifiche accidentali. Data Security Š il modo pi— semplice per aggiungere workflows (flussi) ai dati stessi o al processo di approvazione dei documenti. E' possibile filtrare i record in base a stati predefiniti, ad esempio si pu• cercare un ordine o un cliente sulla base dello stato "non approvato" oppure "obsoleto".
+
+Data Security app inoltre assicura la protezione dei dati attraverso funzionalit… che consentono di:
+
+Bloccare i record non certificati (es. Cliente senza numero di P. IVA)
+
+-   Gestire i permessi di singoli utenti o di gruppi affinchŠ solo persone autorizzate possano cambiare lo stato dei record
+-   Inviare email associate al cambiamento di stato
+-   Creare diversi workflow approvativi per specifiche entit… ad esempio: approvazione ÃrapidaÄ ordine o approvazione ÃdettagliataÄ
+
+Riassumendo la app Data Security di Eos Solutions permette di:
+
+-   Gestire diversi stati associati a unÂentit…
+-   Regolare i passaggi di stato
+-   Inviare email associate al cambiamento di stato
+
+Le tabelle entit… possono essere:
+
+-   Anagrafiche
+-   Documenti (Acquisto, Vendita Produzione)
+-   Movimenti
+
+A ogni elemento dellÂentit… Š possibile associare pi— stati, partendo da uno stato iniziale e arrivando ad uno stato finale, passando per quelli intermedi.
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX003-0/9DataSecurity.png"><br>
+
+Ad ogni stato si possono associare colori e permessi quali:
+
+-   Modifica / Elimina
+-   Rilascio / Registrazione / Stampa (per documenti Acquisto e Vendita)
+
+Inoltre Š possibile definire dei percorsi di cambio stato:
+
