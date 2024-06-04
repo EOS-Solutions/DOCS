@@ -1,0 +1,9 @@
+It is possible to define the status changes by clicking on Status Transactions ; for example I can define the workflow from New to Certificated and the actions to do before moving from one status to another. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000530-0/7DataSecurity(1).png"><br>
+
+
+| Field                  | Description                                                       |
+|------------------------|-------------------------------------------------------------------|
+| From status            | The initial status must be set as Blank-\>New.                    |
+| Skip permission checks |  if set to TRUE anyone can make the corresponding status change.  |
