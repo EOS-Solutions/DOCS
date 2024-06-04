@@ -1,0 +1,14 @@
+<table>
+<tr>
+<td>1</td>
+<td>Enter the Promotions setup, the discounts' setup and the sales prices' setup</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Create a sales order</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Let the system apply the conditions and rules set before</td>
+</tr>
+</table>
