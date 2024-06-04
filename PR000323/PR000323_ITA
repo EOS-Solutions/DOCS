@@ -1,0 +1,39 @@
+Esistono dei casi in cui Š necessario **uscire dalla configurazione senza confermarla**, mettendola solo in pausa, cos come esistono delle situazioni in cui chi inserisce alcune caratteristiche, ossia risponde ad alcune domande, non ha lÂautorizzazione di creare un nuovo codice perch‚ Š necessario che lo faccia un altro utente.
+
+Per soddisfare queste esigenze Š possibile sfruttare due strumenti:
+
+1.  **Configurazione lite**
+2.  **Salvataggio senza configurazione**
+
+<br>
+
+La configurazione lite Š una **modalit… di configurazione che impedisce agli utenti indicati di potare a termine la configurazione**. La modalit… lite pu• essere utilizzata solo quando la configurazione parte da documenti di vendita e di acquisto.
+
+In **Setup utente** Š possibile definire a quale regime di configurazione Š soggetto lÂutente nel campo ®**Modalit… configuratore di prodotto**¯. Le opzioni sono
+
+-   **Vuoto**: lÂutente pu• creare lÂarticolo configurato;
+-   **Modalit… lite**: lÂutente non pu• creare lÂarticolo configurato e non ci sono controlli sulle caratteristiche compilate;
+-   **Modalit… lite + caratteristiche obbligatorie**: lÂutente non pu• creare lÂarticolo configurato ma Š obbligato alla compilazione delle caratteristiche obbligatorie;
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000323-0/ConfMode1_ITA.png"><br>
+
+<br>
+
+Uscendo dalla configurazione in modalit… lite, sulla riga del documento di origine rimane lÂarticolo neutro e la configurazione rimane in sospeso.
+
+**CASO PARTICOLARE**: attivando il flag ®**Abilita configurazione (modalit… lite)**¯ in setup utente, si d… allÂutente impostato come lite la possibilit… di forzare la chiusura della configurazione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000323-0/ConfMode2_ITA.png"><br>
+
+<br>
+
+Senza essere indicati come utenti lite, Š comunque possibile mettere in pausa la configurazione di un articolo attraverso lÂopzione ®**Salvataggio senza configurazione**¯ presente fra le funzioni nel batch di configurazione quando la configurazione Š attivata da documenti di vendita e di acquisto.
+
+La configurazione si interrompe permettendo allÂutente di uscire, ma lÂelenco delle caratteristiche viene salvato in una tabella apposita, dando la possibilit… di riprendere la configurazione in un secondo momento.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000323-0/ConfMode3_ITA.png"><br>
+
+<br>
+<br>
+ 
+ 
