@@ -1,0 +1,18 @@
+For each group, which will correspond to a CWS shipment, you can view the shipping information by selecting the "Shipping Info" action
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000503-0/40CombinedWarehouseShipment.png">
+
+<br><br>
+
+The details of the data, Shipping Agent Code, Shipment Method Code, Weights, etc., are shown.
+
+By clicking on the "Get info from lines" action, the values of net weight, gross weight, volume and parcels nr. are calculated based on the values on the source document lines
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000503-0/41CombinedWarehouseShipment.png">
+
+<br><br>
+
+**NB**<br>
+The bold information are modified, the others are inherited from the source document.
+<br><br>
+Then we post the shipment.
