@@ -1,0 +1,15 @@
+When there are several characteristics with the same values, it is possible to define a ®**Master**¯ characteristic that stores the default values, and the other characteristics can be defined as ®**Connected**¯ to the first one, so they can utilize the same set of values.
+
+In order to synchronize the available values of a connected characteristic from the master, select the master characteristic and click on the action ®**Align Connection**¯.
+
+**The alignment can have an impact on system performance and should be scheduled when the number of characteristics and values to synchronize is high.**
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000279-0/Charac3_ENU.png"><br>
+
+**Having a master characteristic with connected characteristics helps reducing the activities of classification and maintenance.**
+
+<br>
+<br>
+ 
+ 
