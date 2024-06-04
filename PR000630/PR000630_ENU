@@ -1,0 +1,38 @@
+This function allows you to check the VAT data posted both by registration date and by operation execution date, which is used for the calculation of the VAT settlement. From the menu, open VAT Settlement (VMI).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/41VatManagement-en.png"><br>
+
+| **Field**                 | **Description**                                                                                                                                                                                                        |
+|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Start Date Filter         | enter the start date of the period to be analyzed                                                                                                                                                                      |
+| End Date Filter           | enter the end date of the period to be analyzed                                                                                                                                                                        |
+| VAT Register Type Filter  | select one of the following options Purchase Sale or leave the field blank <img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/42VatManagement-en.png"><br>  |
+| VAT Register Filter       | select a VAT register to be analyzed, based on the selection set in the previous field                                                                                                                                 |
+| VAT Identifier Filter     | it is possible to filter the page by VAT code                                                                                                                                                                          |
+
+Press Calculate Amounts
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/43VatManagement-en.png"><br>
+
+and the lines will be generated, sorted by VAT Register Type and VAT Identifier
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/44VatManagement-en.png"><br>
+
+The values ??are listed by taxable amount and VAT and by the NonDeductible amount if present. The data are also divided by Date:
+
+-   Posting Date
+-   Operation Execution Date
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/45VatManagement-en.png"><br>
+
+You can navigate the amounts in the columns and it is possible to recall the VAT movements table directly from the VAT balancing page
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/46VatManagement-en.png"><br>
+
+On the same page it is possible to check the protocol sequences in the VAT registers
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/47VatManagement-en.png"><br>
+
+The check occurs if the lines are populated. If you want to proceed with the verification of a different period, before starting the Calculate Amounts procedure, use the Clear Lines function
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/48VatManagement-en.png"><br>
