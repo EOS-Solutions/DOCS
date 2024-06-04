@@ -1,0 +1,36 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pHk5hGfY6zA" title="Invoicing Plan for Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+It is therefore an alternative to the standard BC invoicing methods, in order to create a dedicated billing plan based on the project contractual agreements. Here are the main features of the IPL app:
+
+*   Define the parameters of the invoicing plan as agreed with the customer
+
+*   Track invoices and project progress
+
+*   Post advance invoices with automatic split for VAT structure
+
+*   Invoices can be created using percentage or absolute amounts or both
+
+*   The invoice plan can be rapidly adapted to eventual changes in the sales order amount
+
+*   Create the closing invoice at Project end with automatic reversal of advance lines previously generated. Recalculate any advances when the quantities and values in the sales order are changed
+
+<br>
+
+There are two different role centers types that will use IPL
+# Sales Order Processor
+* Creates the most frequent Invoicing Plan templates
+
+* Defines the Invoice Plans according to the project agreements
+
+* Creates the Invoice Plan starting from the Sales Order
+
+# Accountant
+* Selects the invoices to be created according to the invoice plan
+
+* Creates the Sales Invoices
+
+* Posts the Sales Invoices
+
+* Creates any Credit Memos
+
+* Manages the payments
