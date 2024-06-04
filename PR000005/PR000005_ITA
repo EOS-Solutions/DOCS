@@ -1,0 +1,35 @@
+La app Combine Warehouse Shipment consente di cumulare le spedizioni in base a criteri di raggruppamento definiti a setup.
+Si applica a:
+- Ordini vendita
+
+- Resi acquisto
+
+- Spedizioni di trasferimento
+
+- Spedizioni assistenza
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RFTT4yAhLR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross
+-origin" allowfullscreen></iframe>
+
+<br> <br>
+
+# Role Center
+
+Nei seguenti Role Center:
+
+| **Profile ID** | **Display Name** |
+| --- | --- |
+| Order Processor | Sales Order Processor |
+| Shipping and Receiving - VMS | Shipping and Receiving - Warehouse Management System |
+| Warehouse | Warehouse |
+| Worehouse Worker - WMS | Warehouse Worker - Warehouse Management System |
+
+<br>
+
+Š visibile il link diretto alla page Posted Shipments (CWS) (Spedizioni registrate CWS):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000005-0/2CombinedWarehouseShipment.png">
+
+<br> <br>
