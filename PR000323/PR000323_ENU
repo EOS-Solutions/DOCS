@@ -1,0 +1,38 @@
+There are cases in which it is necessary to **exit the configuration without confirming it**, only pausing it, just as there are situations in which the person who inserts some characteristics by answering some questions, does not have permissions to create a new code because it is necessary for another user to do it.
+
+To meet these needs you can take advantage of two tools:
+
+**1. Lite configuration  
+2\. Save without configuration**
+
+<br>
+
+The lite configuration is a configuration mode that **prevents the indicated users from completing the configuration**. The lite mode can only be used when the configuration starts from sales and purchase documents.
+
+In **User Setup**, you can define which configuration regime the user is subject to in the "**Product configurator mode**" field. The options are
+
+-   **Blank**: the user can create the configured item;**  
+    Lite mode**: the user cannot create the configured item and there are no controls on the compiled characteristics;**  
+    Lite mode + charac. values mandatory**: the user cannot create the configured item but is obliged to fill in the mandatory characteristics;
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000323-0/ConfMode1_ENU.png"><br>
+
+<br>
+
+When you exit the configuration in lite mode, the neutral item remains on the source document line and the configuration remains pending.
+
+**SPECIAL CASE**: Activating the **"Enable configuration for lite mode"** flag in user setup gives the lite user the ability to force close the configuration.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000323-0/ConfMode2_ENU.png"><br>
+
+<br>
+
+Without being listed as a lite user, it is still possible to pause the configuration of an item using the **"Save without configuring"** option in the configuration batch when the configuration is triggered by sales and purchase documents.  
+The configuration is interrupted allowing the user to exit, but the list of characteristics is saved in a special table, giving the possibility to resume the configuration at a later time.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000323-0/ConfMode3_ENU.png"><br>
+
+<br>
+<br>
+ 
+ 
