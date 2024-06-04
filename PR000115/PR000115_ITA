@@ -1,0 +1,18 @@
+Scegliere il report "Giornale magazzino - Stampa (IVP) e compilare i campi:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000115-0/2GiornaleMagazzino.png"><br>
+<br>
+
+| **Campo** | **Descrizione** |
+|---|---|
+| Da data / A data                                  | indicare il periodo per il quale si vuole la stampa del magazzino                                            |
+| Etichetta pagina                                  | si pu• indicare un etichetta per la numerazione delle pagine                                                 |
+| Nr. prima pagina                                  | inserire il primo numero di pagina                                                                           |
+| Nome / Indirizzo / CAP / Citt… / Provincia        | compilare i dati anagrafici della societ…                                                                    |
+| Codice fiscale / Partita IVA                      | compilare i dati fiscali della societ…                                                                       |
+| Includi tutti gli articoli (Q.t… rimanente \<\>0) | permette di includere tutti gli articoli gestiti nel periodo in esame con quantit… rimanente diversa da zero |
+
+
+**Esempio di stampa:**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000115-0/3GiornaleMagazzino.png"><br>
