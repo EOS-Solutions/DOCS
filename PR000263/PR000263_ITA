@@ -1,0 +1,18 @@
+E' possibile anche collegare i movimenti gi… registrati. Aprire la page Movimenti C/G, selezionare le righe che contengono i movimenti da collegare e premere Azioni->Funzioni->Collega movimento:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000263-0/8GeneralLedgerApp-ITA.png"><br>
+
+Selezionare le partite e in alto premere Imposta importo da collegare. E' possibile anche impostare **manualmente** l'importo nella colonna Importo da collegare.
+
+Tramite suggerisci importo da collegare sar… il sistema che suggerir… i collegamenti (in base al setup impostato sull'anagrafica Conto) in modo da chiudere la partita principale.
+<br>
+
+| NOTA |
+| --- |
+| In testata  <br>Nel campo "<u>Importo</u>" viene mostrato l'importo del movimento di partenza.  <br>Nel campo "<u>Importo collegato</u>" viene mostrato l'importo totale collegato al movimento originale.  <br><u>Nr. partita contabile</u>: ai movimenti collegati va assegnato un numero partita contabile. Tale numero si pu• inserire manualmente. Se il campo non viene compilato, il sistema lo assegna in automatico utilizzando il numeratore impostato a setup. |
+
+<br>
+
+| NOTA |
+| --- |
+| Facendo una registrazione co.ge. e richiamando il movimento da collegare, compaiono solo le partite con stato ÃOpenÄ. |
