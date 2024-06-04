@@ -1,0 +1,17 @@
+L'app `Bulk PEC Email to customers for Italy` consente di inviare e-mail PEC in modo massivo a Clienti.
+
+Per inviare, ad esempio, una PEC a pi— clienti aprire la relativa lista e selezionare i destinatari. Premendo su `Azioni` -&gt; `Email PEC` -&gt; `Invia`:
+<br><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000053-0/ex078_bulkpec_it_01.png"><br>
+<br>
+Il sistema aprir… una e-mail con i campi *Mittente* e *Destinatario* pre-compilati con gli indirizzi presenti in anagrafica. Se un destinatario manca dell'indirizzo di posta elettronica certificata in anagrafica, il sistema non aggiunger… quel destinatario alla e-mail.
+<br><br>
+E' possibile poi scrivere un testo e/o allegare documenti e poi inviare.
+<br><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000053-0/ex078_bulkpec_it_02.png"><br>
+<br>
+
+{{% alert title="NB" color="warning" %}}
+La e-mail verr… aperta dal sistema nel client di posta **predefinito nelle impostazioni del PC**.<br>
+Si consiglia di abilitare le finestre pop-up nel browser.
+{{% /alert %}}
