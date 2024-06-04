@@ -1,0 +1,91 @@
+L'azione di controllo si trova sulle pagine:
+- Clienti
+- Fornitori
+- Contatti
+
+
+Da 'Azioni'->Controllo partita IVA VIES si pu• eseguire il controllo:
+-singolo> si seleziona una riga nelle liste Clienti/Fornitori/Contatti oppure si esegue l'azione dall'interno della singola scheda anagrafica.
+-massivo> si selezionano pi— righe nelle liste 'Clienti/Fornitori/Contatti
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESITA5.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESITA7.png"><br>
+
+
+
+
+
+**Movimenti controllo partita IVA**
+
+In Movimenti controllo partita IVA Š possibile verificare i movimenti.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESITA8.png"><br>
+
+
+
+| **Campo**     | **Descrizione**                                                    |
+|---------------|--------------------------------------------------------------------|
+| Tipo conto | Specifica il tipo di conto  |
+| Nr. conto | Specifica il numero di conto                            |
+| Cod. paese | Corrisponde al campo Codice della tabella Paesi  |
+| Partita IVA | P. IVA presente in anagrafica.                            | 
+| Stato | Le possibili opzioni sono: **Non verificato**, **Valido**, **Non valido**  |                         
+| Nome verificato | Nome presente nell'anagrafica                            |
+| Via anagrafica | Indirizzo presente in anagrafica  |
+| Via verificata | Indirizzo restituito dal controllo                            |
+| Cap anagrafica | Cap presente in anagrafica  |
+| Cap verificato | Cap restituito dal controllo                            |
+| Citt… anagrafica | Citt… presente in anagrafica                          |
+| Citt… verificata | Citt… restituita dal controllo                            |
+| Data verifica | Data in cui Š stata effettuata la verifica  |
+| ID utente | Utente che ha eseguito il controllo                            |
+
+
+A fronte del controllo da Scheda Cliente/Fornitore/Contatto viene alimentato anche il log standard. Sull'anagrafica sono presenti i due flowfield:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIES14ITA.png"><br>
+
+
+Cliccando, sar… possibile visualizzare lo stato della notifica.
+
+
+
+
+
+**Setup convalida**
+
+
+In Setup convalida Š possibile impostare gli stati di controllo della partita IVA da notificare, oltre a filtri per clienti/fornitori/contatti e relativi gruppi utenti di notifica.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIES11.png"><br>
+
+
+
+**Movimenti coda processi**
+
+Da Coda processi - Cliente, Coda processi - Fornitore e Coda processi - Contatto Š possibile schedulare il controllo, una tabella alla volta.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESITA12.png"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESITA10.png"><br>
+
+
+
+| **N.B.**                                                 |
+|----------------------------------------------------------|
+| In Stringa parametri va specificato l'ID tabella da elaborare.  |
+
+
+
+
+
+**Funzioni Data Security per blocco o avviso**
+
+In Funzioni EDS del Data Security ci sono delle specifiche funzioni che consentono di bloccare/avvisare a fronte del risultato sul controllo partita IVA.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESITA13.png"><br>
+
+
+
+
+
