@@ -1,0 +1,98 @@
+ﬂ possibile impostare, per ogni societÖ, quali dati (sia tabelle standard che personalizzate) sincronizzare.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/Profili_ENU.png"><br>
+
+Premendo Nuovo, il sistema apre la scheda del profilo di sincronizzazione. Nelle righe decidi quali campi sincronizzare tra la societÖ attuale e quella remota.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/ProfiliCard_ENU.png"><br>
+
+| **Field** | **Description** |
+| --- | --- |
+| Table No. | Il **nr. della tabella** da sincronizzare |
+| Description | Una descrizione |
+| To Company | La societÖ di destinazione alla quale mandare i dati |
+| To Company Description | Inserito automaticamente |
+| Show Synch. Error | l'utente viene avvisato di eventuali errori di sincronizzazione |
+| Execute Insert/Modify/Delete Trigger | se attivi (consigliato), i trigger di sistema vengono eseguiti anche quando vengono scritti i record nell'azienda remota |
+| Active | se vero, il profilo ä attivo e funzionante |
+| Records Synchronization | Definisce quando un record deve essere sincronizzato automaticamente o meno.<br><br>* **Automatico**: ogni modifica comporta la sincronizzazione. L'utente non ä tenuto a compiere alcuna azione. <br> <br>* **Setup / Definito dall'utente**: verranno sincronizzati solo i record che appaiono in "Record manuali sincronizzati": <br> <br> A seconda dell'opzione scelta tra Setup / Definito dall'utente nell'elenco diverso appariranno i record:** <br> Definito dall'impostazione**\->l'amministratore decide cosa mettere nella lista, inserendo la lista e aggiungendo i record.** <br> Definito dall'utente**\->l'utente decide cosa da inserire nell'elenco dei record. Esempio:: L'utente crea un nuovo cliente. L'azione da sincronizzare appare nella factbox laterale. Si apre una pagina che mostra tutte le aziende che possono essere sincronizzate, l'utente sceglie e, premendo ok, quel nuovo cliente viene aggiunto all'elenco nella pagina "Anagrafiche manuali sincronizzate". |
+| Synch. Only with Prerequisites | se attivo, quando si sincronizza una tabella che ha una chiave collegata ad altre tabelle, verrÖ controllato se le relazioni della tabella sono soddisfatte. |
+| Asynchronous synchronization | quando attiva, la Coda Lavori verrÖ sempre utilizzata per eseguire la sincronizzazione (la coda lavori deve essere utilizzata quando la configurazione ä di tipo "Locale") |
+| Table Filter | ä possibile inserire ulteriori filtri sulla tabella inserita nel Profilo |
+
+<br>
+Vediamo i campi principali sulle Righe:
+
+| **Field** | **Description** |
+| --- | --- |
+| Field No. | Il numero del campo |
+| Field Name / Caption | Il nome del campo da sincronizzare |
+| Synchronization | puoi anche scegliere, campo per campo, se la sincronizzazione deve avvenire con validazione o meno:<br><br>* Sç<br>* Convalida<br><br>se scegli "Convalida", **i controlli sono effettuato** sull'azienda remota per il campo da sincronizzare:<br><br>˙ˇˇˇˇˇˇˇˇ Se il campo ha una relazione di tabella, il sistema lo verifica (es. se il campo ä in relazione agli articoli, il sistema verifica che il l'elemento esiste).<br><br>˙ˇˇˇˇˇˇˇˇ Se il campo corrisponde al codice, viene eseguito.<br><br>˙ˇˇˇˇˇˇˇˇ Se sono presenti eventi collegati al campo, vengono eseguiti.<br><br>Una volta terminati i controlli terminato, il sistema potrebbe restituire eventuali **errori**. |
+| Validation Sort | ä possibile impostare una sequenza di validazione (il primo campo ä sempre la chiave primaria). Attraverso Gestisci->Sposta su/Sposta gió possiamo modificare l'ordine della sequenza |
+| Remote Update | opzioni: <br> <br>\- Sempre: l'aggiornamento del campo viene eseguito sempre <br> <br>- Solo se vuoto: il campo viene aggiornato solo se il campo di destinazione ä vuoto <br> <br> - Solo se diverso: il campo viene aggiornato solo se il campo di destinazione ä diverso <br> <br>\- Solo alla creazione: l'aggiornamento viene eseguito solo quando il campo viene creato |
+| Allow Remote Changes | sul campo ä possibile consentire o meno modifiche da parte dell'azienda target <br> <br>Le opzioni sono: <br> <br>\- Consenti <br>\- Nega modifiche manuali <br>\- Nega tutto |
+| Data Transformation Exists | Il sistema abilita automaticamente l'opzione se sono state impostate le trasformazioni. |
+
+<br>
+### Trasformazione
+Da **Gestisci->Trasformazione** puoi trasformare i dati.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/Transformation_ENU.png"><br>
+
+C'ä un articolo nella SocietÖ di origine con una determinata unitÖ di misura. Vogliamo sincronizzare i dati con un'azienda remota che utilizza un'unitÖ di misura diversa per lo stesso articolo. Precisiamo quindi una trasformazione: quando il sistema incontra sull'Azienda corrente l'UnitÖ di Misura data = √Imballoƒ, dovrÖ duplicarla nell'Azienda remota con √Palletƒ.
+
+Tuttavia, i campi nella pagina Trasformazione possono ancora essere modificati manualmente.
+
+| **Field** | **Description** |
+| --- | --- |
+| Table Filter | consente di applicare la trasformazione solo per il filtro specifico applicato |
+| Fixed Value | se abilitato, il campo √Da Valoreƒ non ä pió modificabile ed il sistema, INDIPENDENTEMENTE da ciï che trova nell'azienda sorgente, considererÖ il valore presente nel campo √A Valoreƒ. <br> <br>![](Eos-it/images/18MasterDataIntercompany.png) |
+| To Value is a mask | per verificare quando la dicitura che inseriamo nel campo "Al Valore" ä diversa dalle opzioni proposte dal sistema (ad esempio se vogliamo introdurre un prefisso davanti al valore scelto) |
+| From Value | Dal valore orginale |
+| To Value | Al valore trasformato |
+<br>
+Per le righe per le quali abbiamo impostato una trasformazione, il sistema seleziona automaticamente l'opzione nella colonna "Esistono trasformazioni di dati":
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/DataTransformationExists_ENU.png"><br>
+
+### Altre Funzioni
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/Actions_ENU.png"><br>
+
+#### Registro di sincronizzazione
+Dal Log di Sincronizzazione ä possibile tracciare eventuali tabelle ed errori sincronizzati.
+
+#### Duplicazione del profilo
+Permette di **duplicare un profilo di sincronizzazione** (dandogli un nome diverso) giÖ creato in modo da non dover ricreare configurazioni particolari e complicate
+
+#### Copia profilo in
+**copia i campi e le impostazioni** giÖ inseriti per un profilo **in un altro profilo esistente**
+
+#### Forza la sincronizzazione completa
+Il sistema completa la sincronizzazione in background eseguendo pió record contemporaneamente in modo da non bloccare l'utente mentre lavora.
+
+### Limitazioni delle tabelle remote
+Per la tabella indicata nella scheda Generale ä possibile limitare le azioni che ciascuna azienda target puï intraprendere. La configurazione viene impostata sulla societÖ di origine e verrÖ quindi sincronizzata e quindi replicata su tutte le altre societÖ.
+
+ **Limitazioni della tabella remota**:
+ 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/TableLimitation_ENU.png"><br>
+ 
+ 
+| **Field** | **Description** |
+| --- | --- |
+| Insert Allowed | opzioni: <br>ˇ Sç <br>ˇ Solo modifiche al sistema (nell'azienda remota possono verificarsi solo modifiche ai processi automatici e batch del sistema) <br>ˇ Nega tutto |
+| Modify Allowed | opzioni: <br>ˇ Sç <br>ˇ Personalizzato (se selezionato il sistema consentirÖ di eseguire le singole azioni consentite nella colonna "Consenti modifiche remote") <br>ˇ Nega tutto |
+| Delete Allowed | opzioni: <br>  Sç <br> Solo modifiche al sistema  (nell'azienda remota possono verificarsi solo modifiche ai processi automatici e batch del sistema) <br>  Nega tutto |
+| Rename Allowed | opzioni: <br>  Sç <br>  Solo modifiche al sistema  (nell'azienda remota possono verificarsi solo modifiche ai processi automatici e batch del sistema) <br>  Nega tutto |
+
+
+{{% alert title="NOTE" color="warning" %}}
+Le restrizioni della tabella remota vengono applicate all'intera tabella ignorando eventuali filtri applicati al profilo
+{{% /alert %}}
+
+
+{{% alert title="NOTE" color="warning" %}}
+
+L'app non aggiunge nessuna discriminante sui dati che replica: un'anagrafica cliente viene replicata come qualsiasi altra tabella.
+
+* Se si replica il "Cliente" e il "Contatto" ä necessario includere manualmente la tabella "Contatto rapporto commerciale".
+
+* Presta attenzione al √No. Serieƒ: se replichi una tabella con un √No. Serieƒ per la chiave primaria, come i contatti, le aziende di destinazione devono avere un diverso √N. Modello √serieƒ.
+
+{{% /alert %}}
