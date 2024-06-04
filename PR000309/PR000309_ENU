@@ -1,0 +1,33 @@
+Go to GDPR Requests in order to write the request (e.g. a customer wants information about her/his data in the Company database). Press New:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000309-0/1GDPRToolset(1).png"><br>
+
+
+
+| **Field**           | **Description**                                                                                                                                                                                                                                                                                                                                   |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Entry No.           | number of the request                                                                                                                                                                                                                                                                                                                             |
+| Type                | choose the desired option: Information (somebody wants information about her/his data in the Company database) Portability (somebody, e.g. a customer, asks for data export)) Adjust (somebody asks for data adjustment) Delete (somebody asks for data erasure) Block (somebody asks for data block) Encrypt (somebody asks for data encryption) |
+| Status              | status of the request (Initial/Pending/Completed)                                                                                                                                                                                                                                                                                                 |
+| Request Description | insert a description of the request                                                                                                                                                                                                                                                                                                               |
+| Search String       | insert what you are searching for                                                                                                                                                                                                                                                                                                                 |
+| user ID             |  these fields contain the user name and the date of the research. They are automatically filled in by the system                                                                                                                                                                                                                                  |
+| Created On          |                                                                                                                                                                                                                                                                                                                                                   |
+| Total Matches       | number of matching results                                                                                                                                                                                                                                                                                                                        |
+
+By clicking on Process-\>Execute the system will show all the matches discovered, depending on the fields marked as containing personal information in the GDPR setup.
+
+Click on Card:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000309-0/2GDPRToolset(1).png"><br>
+
+Select the lines to be processed, click on Report and choose the desired action (Print/Export File or Delete/Block/Encrypt).
+
+By clicking Open Record you can adjust data if it is necessary.
+
+Finally you need to change the Request Status with "Completed". Date and user ID are automatically written by the system.
+
+
+| **N.B.**                                                                                          |
+|---------------------------------------------------------------------------------------------------|
+| They are IRREVERSIBLE instructions. Once you write "Completed" **you cannot reverse the Status.** |
