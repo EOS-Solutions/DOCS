@@ -1,0 +1,17 @@
+Clicking on the **Partner Description** field opens a wizard that facilitates configuration.
+In the wizard enter:
+* Tenant ID/Server Name: Use tenant ID if connecting to a SaaS environment, Server Name if OnPrem
+* Environment Name: The instance to connect to
+* Company Name: The company
+* Service Name: Leave MDISynch
+
+If you connect to an OnPrem environment, you must also specify:
+* Use Https
+* WebService Port No.: The port used for SOAP webservices
+* Auth Tenant ID: The Azure tenant to authenticate to
+* Scope ID: The scope of the Azure app
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000168-0/OauthSaaS_EN.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000168-0/OauthOnPrem_EN.png"><br>
