@@ -1,0 +1,36 @@
+Integration with Excel is used to calculate characteristic values through an Excel file that is uploaded and used as a template.
+
+It is very important to evaluate performance according to the complexity of the spreadsheet.
+
+**Using Excel works only on the first level of configuration**. Excel files associated with the layer rules underlying the first layer are not used.
+
+You cannot use Excel sheets that contain macros.
+
+Excel integration use Microsoft Excel Online and Microsoft Sharepoint Online; this is available for both On Premise and SaaS Business Central environments.
+
+To manage the values of some characteristics through Excel it is necessary to define within the characteristics associated with the rule:
+
+-   The characteristics involved in Excel Calculation (Process in Excel)  
+-   The characteristics for which the value will be read by Excel formulas (Get output from Excel)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000328-0/Excel1_ENU.png"><br>
+
+<br>
+
+To manage the values of some characteristics through Excel it is necessary to define within the characteristics associated with the rule:
+
+-   The characteristics involved in Excel Calculation (Process in Excel)
+-   The characteristics for which the value will be read by Excel formulas (Get output from Excel)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000328-0/Excel2_ENU.png"><br>
+
+The rule must also specify **when the Excel file is used**, which can be:
+
+-   **During process**: The calculation of the output characteristics is triggered by the validation of each input characteristic. It's a more performance-impacting mode for setup time;
+-   **Configurator closing**: The calculation of the output characteristics is triggered when the configuration is confirmed.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000328-0/Excel3_ENU.png"><br>
+
+<br>
+<br>
+ 
