@@ -1,0 +1,37 @@
+DocSolutions for file system (DCS) Eos Solutions app enables integration with **a cloud or a local file system**, this enable keeping files stored in order without increasing database dimensions and managing different location and user permissions
+
+
+
+
+| **Note**                                              |
+|-------------------------------------------------------|
+| Using Azure Files Storage or Azure Blob Storage needs an active azure subscription for this services |
+| Using a local file systems needs a valid installation of Azure Function API, this is mostly intended for OnPrem environment but can be deployed also in Azure |
+| Using "in memory" option is intended for testing in a BC session scope only, at the end of the session no files are stored|
+
+
+<br>
+<br>
+
+**DocSolutions Features for File System**
+
+Thanks to Eos Solutions DocSolutions For File System (DCS) app:
+
+-   For each table, you can manage different types of storage
+-   You can create multiple storage for the same table, with different destinations
+-   Integration with File system is folder based
+-   23 tables "out of the box"
+-   Permssion for user or user groups are available
+
+(If you need metadata support and/or sharing files across and outside organization please consider DocSolutions for Sharepoint)
+
+<br>
+
+**Benefits for the user**                                                                                                      * Drag & Drop (email included)
+* Secure Connection to azure through https and oauth2
+* DCS is a connected APP with APP KEY and Secret (Simple). No Password are required for single users
+* Storage Explore and pickup files content directly from BC
+* Folder based storage, define folder names based on record fields data (I.E. Document date(Y), Customer Code etc.)
+* Overwrite, Rename or error setting for existing files
+
+
