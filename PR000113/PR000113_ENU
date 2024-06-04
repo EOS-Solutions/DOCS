@@ -1,0 +1,160 @@
+# Sharepoint setup
+
+In Sharepoint setup (DCS) you need to connect your Business Central client to the Sharepoint tenant:
+
+
+
+
+| **Field**                 | **Description**                                                                            |
+|---------------------------|-----------------------------------------------------------------------------|
+| Directory (tenant) ID     | The Azure tenant ID to which connect the client . It's already filled in SAAS environment. |
+| Aapplicazion (client) ID  | The Azure application client ID. Already filled in by the system.                          |
+| Client Secret             | Azure application Client Secret. Already filled in by the system.                          |
+
+
+<br><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_SharepointSETUP.png"><br>
+<br><br>
+
+
+
+**An office administrator is needed to login and grant permission to DocSolutions app.**
+
+
+
+From Test Login you can verify that the operation was successful:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03-TEST_LOGIN.png"><br>
+
+<br><br>
+
+
+
+# DocSolutions Table Setup (DCS)
+
+In DocSolutions (DCS) Table Setup, the default setups must be loaded from Actions-\> Load Default:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_LoadDefaults.png"><br>
+<br><br>
+The system offers us the defaults to load, choose "DocSolution for Sharepoint". Then he proposes the tenant, the client and the secret again.
+
+Confirm by pressing "Next". Finally, we must indicate the Sharepoint site to which to associate the DCS app and the specific Library (in the image: "Eos Labs" and "Documents"). By clicking on Default import settings, the setup is complete.
+
+
+<br>
+
+**Libraries Setup**
+
+From Edit, open the Document Library(s) you wish to enable, e.g. "Customer":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_LibrarySetup.png"><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+the system automatically enables the display of the Factbox relating to DCS on the Lists.
+<br>
+<br>
+<br>
+
+From Libraries we choose a default library and from Open library we set its setup:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_SPLibrarySetup.png"><br>
+
+In the Tab "Storage" we choose the Sharepoint Site and the Document Library to which to connect it.
+
+At the bottom of the page we set the attributes to be displayed on the Business Central pages: 
+
+
+
+
+<br><br>
+**Folder pattern**
+
+From the drop-down menu on the Folder Pattern Code field, choose "Select from full list" and from Manage-\> Edit you can view/modify the document storage path:
+
+
+
+
+
+
+| **Field**         | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   | **General**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Code              | Filename pattern code                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Type              | specify whether the pattern will be used for Folders Files                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Root Folder       | path where the files will be saved. In the example they will be placed in the DocSolutions sub folder which is contained in the Documents folder                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Conflict Behavior | define what to do if the system finds a file already present in the destination folder: Fail: the system will report with an error (the file cannot be loaded as it already exists)  Replace: the system will replace the file already present with the one uploaded Rename: the system renames the file by adding a progressive number at the end of the name                                                                                                                                                                                                                                                                                                                                       |
+| Enabled           | you can create the setup card and enable or disable it as needed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|                   |**Composition**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Tipo              | Indicate the Line Type. It can be: Text, Field, Primary Key, No. Series, Table Name, Table No., Original Name E.g.: <img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_PatternComposition2.png"><br><br> <br><br> If you write:<br><img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_PatternComposition2.png"><br> the uploaded files will be saved in Documents \\ DocSolutions, in a further folder "Customer", in a further subfolder "Customer No.". |
+||||
+
+
+By pressing Test (Read/Write) we check that the connections are working:
+
+
+
+<br><br>
+**Filename pattern**
+
+In the same way, from the drop-down menu on the Filename Pattern Code field, we select "Select from full list" and from Manage-\> Edit we can view/modify the name to be assigned to the documents:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_FileNamePattern.png"><br>
+
+
+<br><br>
+**Permissions**
+
+From the Library card-\> Permissions we define which User Group, User or Permission set can read / write files in a specific location: <img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_PermissionSet.png"><br>
+
+
+<br><br>
+**Mapping**
+
+From the DocSolutions Table setup (DCS) it is possible to map the fields in order to choose what to display on Sharepoint:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_0FieldMapping.png"><br>
+
+
+The Library, the name of the field, the label must be defined and a function to be associated with the field or a value must be chosen:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_FieldMapping.png"><br>
+
+
+For each line it is possible to establish whether or not the information it is mandatory
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_FieldRequired.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_FileUploadResult.png"><br>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/<Replace with video ID, obtained from YouTube and share (after https://youtu.be/)>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
