@@ -1,0 +1,4 @@
+Definition of item groups with the objective of:
+
+* Binding orders by attributing assortments to customers: when entering an order, it is not possible to enter an item if it is not present in the assortment for that specific customer
+* Managing promotions
