@@ -1,0 +1,54 @@
+To compile the Intrastat lists, access the Intrastat Declarations (ITR) page.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/20AdvIntrastatForItaly-en.png"><br>
+
+Here you can access previously inserted declarations or create new ones:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/21AdvIntrastatForItaly-en.png"><br>
+
+Depending on the intra section you want to fill in, you need to select the "Type" of declaration (Sales or Purchases and both will include the related adjustments), the year and the period of interest; We will also have to select the ®Declaration Type¯ choosing between:
+
+- Complete
+- Statistic
+- Fiscal
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/22AdvIntrastatForItaly-en.png"><br>
+
+By activating the Simplified mode, in the case of Services only, the fields:
+
+- Document No
+- Registration date
+- Delivery mode
+- Payment method
+
+Doc. no. and date of correction
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/23AdvIntrastatForItaly-en.png"><br>
+
+They are not controlled and are not exported
+
+*(ref.: semplificazione prevista nel comma 4.1 della determinazione congiunta dellÂAgenzia delle Entrate e dellÂAgenzia delle Dogane e dei Monopoli prot. n. 194409 del 25 settembre 2017)*
+
+Once the header has been compiled, the lines can be inserted using the "Suggest lines" function
+
+During the extraction phase we can indicate a cost adjustment percentage which will affect the statistical value. This calculation is to be used as an alternative to adjusting the costs of the Intrastat Shipping Code table and the cost breakdown of the Item Charge.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/24AdvIntrastatForItaly-en.png"><br>
+
+The declaration lines are retrieved from the posted document lines: Purchase invoices, Purchase credit memos, Sales invoices, Sales credit memos, Service invoices, Service credit memos
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/25AdvIntrastatForItaly-en.png"><br>
+
+The proposed lines can then be modified manually and possibly excluded from the declaration using the appropriate flag.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/26AdvIntrastatForItaly-en.png"><br>
+
+If the ÃIntra-community processingÄ flag is active, it identifies the processing performed and received within the community, i.e. the invoices relating to external processing carried out between EU countries.
+
+It is also possible to manually insert the lines using the appropriate function.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/27AdvIntrastatForItaly-en.png"><br>
+
+|  **NB**                                                                                                           |
+|-------------------------------------------------------------------------------------------------------------------|
+| N.B.: in case of re-extraction of the movements, any manual insertions and/or modifications will be overwritten.  |
