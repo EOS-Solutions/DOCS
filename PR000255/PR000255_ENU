@@ -1,0 +1,11 @@
+The simulated entries are integrated with the standard BC financial reports. By accessing the column structure, action Modify column leyout, it is possible to establish which types of data must feed the balance:
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000255-0/App SGL Slide 36_Andrea Giordani.png">
+<br>
+
+The app integrates two different pieces of information:
+
+-   Include accruals/deferrals movements: selected (default) the accrual and deferral movements are considered in the balance
+-   Sim. filter: option that allows you to determine which balances should be taken into consideration, G/L entries, sim. G/L entries or both
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000255-0/App SGL Slide 37_Andrea Giordani.png"><br>
