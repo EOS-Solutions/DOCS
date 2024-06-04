@@ -1,0 +1,9 @@
+Nei Metodi di pagamento Š necessario specificare il "Metodo di Pagamento IntrastatÄ attraverso i seguenti codici:
+
+| **Campo** | **Descrizione**                                                                         |
+|-----------|-----------------------------------------------------------------------------------------|
+| A         | Bonifico: il servizio reso viene pagato mediante bonifico bancario.                     |
+| B         | Accredito: il servizio reso viene pagato mediante accredito in conto corrente bancario. |
+| X         | Altro: il servizio reso viene pagato con modalit… diverse da bonifico/accredito         |
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000363-0/16AdvIntrastatForItaly.png"><br>
