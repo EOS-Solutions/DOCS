@@ -1,0 +1,8 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000655-0/3EDI_it.jpg"><br>
+
+In **Informazioni Societ…** impostare i valori EDI:
+
+| Campo | Descrizione |
+|-------|-------------|
+| Codice Gruppo EDI |	Identifica il codice EDI del mittente |
+| Identificatore EDI | Codice identificativo della societ… come mittente |
