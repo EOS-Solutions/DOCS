@@ -1,0 +1,19 @@
+**Create Production Orders with reference to the starting Sales Order**
+
+If you need the references of the Sales Order shown on the Production Order line
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000542-0/24ManufacturingBaseToolkit_ENU.png"><br>
+
+on the Item card it is necessary to set fields relating to the "Make-To-Order" option:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000542-0/23ManufacturingBaseToolkit_ENU.png"><br>
+
+If the reservation previously created via the planning function is canceled, this does not result in the loss of the reference Production Order / Sales Order.
+
+In fact, when the MPS is launched, a new production order is not proposed for the Sales Order, but the activity previously created on the basis of the Production Order / Sales Order reference is re-established.
+
+<br>
+<br>
+ 
+ 
+
