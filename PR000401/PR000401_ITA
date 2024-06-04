@@ -1,0 +1,41 @@
+Una **distinta** Š **configurabile** quando Š **associata ad un articolo con Tipo configurazione ®Da neutro a Configurato¯**.
+
+Il processo di configurazione crea in automatico una distinta base per ogni nuovo articolo configurato (con sistema di rifornimento ®Ordine di produzione¯) come copia della distinta base neutra.
+
+Se nella distinta base non sono presenti delle logiche di configurazione delle singole righe, la distinta base neutra viene modificata senza che siano apportate modifiche.
+
+Le **righe di una DB** sono **configurabili** se:
+
+-   Contengono articoli di tipo ®Da Neutro a Configurato;
+-   Contengono articoli di tipo ®Da Neutro a Puntuale¯;
+-   Contengono formule quantit… e/o condizioni;
+
+<br>
+
+Il **primo modo** per configurare le righe di una DB di produzione Š attraverso la **presenza di semilavorati configurabili**.
+
+Il configuratore permette di automatizzare la creazione della struttura di un articolo, ossia la creazione automatica di articoli semilavorati, distinte base e cicli di lavorazione.
+
+ß importante tenere a mente che il configuratore segue una **logica di funzionamento ®a cascata¯ o dallÂalto verso il basso**. Le caratteristiche vengono sempre trasmesse dallÂarticolo di livello 0 ai sottolivelli e mai viceversa.
+
+La trasmissione avviene con le seguenti modalit…:
+
+-   **Automaticamente**: quando nel livello secondario esiste la stessa caratteristica del livello primario. Non Š necessario stabilire delle logiche.
+-   **Caratteristiche di default**: quando nel livello secondario Š presente una caratteristica che non esiste nel livello primario e il suo valore Š sempre fisso.
+-   **Con le relazioni di tipo ®Livello superiore¯:** quando nel livello secondario Š presente una caratteristica che non esiste nel livello primario e vanno definite le logiche di compilazione.
+
+<br>
+Per fare in modo che un articolo si **configuri in automatico attraverso la configurazione** dellÂarticolo padre Š necessario
+
+1.  Assegnarli un tipo di configurazione ®Da Neutro a Configurato¯;
+2.  Assegnargli una regola a cui Š associato un insieme di caratteristiche che potrebbero essere un sottoinsieme di quelle del padre o anche diverse (in quel caso sono necessarie le relazioni a livello superiore);
+3.  Inserirlo nella DB dellÂarticolo padre.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000401-0/ProdBOM1_ITA.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000401-0/ProdBOM2_ITA.png"><br>
+
+<br>
+<br>
+ 
+ 
