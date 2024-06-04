@@ -1,0 +1,50 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5xU_xIPNPY8" title="Advanced Customer Vendor Statement for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+
+# Advanced Customer Vendor Statements (CVS)
+
+Advanced Customer Vendor Statements App offers features to display/print customers' and vendors' aging. From Customers / Vendors List go to Actions-\>Customer/Vendor aging:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/2AdvancedCustomerVendorStatement-en.png"><br><br>
+
+The system opens a page which shows customer / vendor entries in a hierarchical structure with filters for key words such as "postng date", "due date" and "document number".
+
+| **NB**                                                                                                                                                                                            |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| By "Accounting item" we mean any customer/vendor posted entry with a residual accounting value and in case of zero remaining amount, the invoices are the **main** accounting item by definition. |
+
+The **second level** is represented by instalmens. For example for an invoice with 30, 60, 90 days payment terms the system will show three lines linked to the first level accounting item (e.g. Inv. 20-102026)
+
+The **third level** is the closing of the instalment and can be either a payment or a Credit memo (e.g. Inv. 20-102027).
+
+If we post a Credit memo, it will have a residual balance and will therefore be a first-level accounting item as an invoice. When we link the Credit memo to an instalment of the invoice:
+
+-   The Credit memo will be closed thanks to the instalment
+
+Go to Actions-\>Functions--\>Ledger Entries and choose for example the credit memo nr. 20-102013 and then from Functions-\> Apply Entries choose an invoice to connect to (e.g. 20-102021) via Actions-\> Set Applies-to ID. After posting, the Credit memo is linked and closed:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/3AdvancedCustomerVendorStatement-en.png"><br>
+
+-   The Credit memo remains open with a remaining amount.
+
+The **fourth level** is represented by dishonored:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/4AdvancedCustomerVendorStatement-en.png"><br>
+
+| **NB**                                                                                |
+|---------------------------------------------------------------------------------------|
+| "Only Open Entry" allows us to choose if we want to display only open or all entries. |
+
+In the Payable / receivable aging analysis page it is possible to :
+
+\- print Aging ordered by customer/due date/salesperson with 3 detail levels (Customer/Document/Due date) and the option to display all the records involved.
+
+\- print a compact, horizontal Aging: the print shows due dates grouped in coloumns. You can choose the proportion between "Count due" and "To be due" by making a selection in the specific field. You can have multiple levels of details.
+
+\- to have the customer aging with the header printed correctly to be put in an envelope; the print is detailed with all the records for the selected period and with the final balance.
+
+All prints provide information about bank receipt (exposition), linked bill cards and any dishonored.
+
+All prints exist both for sales and purchase.
