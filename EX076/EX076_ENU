@@ -1,0 +1,17 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Create production orders with reference to the starting sales order</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Temporarily close production orders</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Link the reversal output entry to the original capacity entry</td>
+	</tr>
+</table>
+
+<br>
+<br>
