@@ -1,0 +1,11 @@
+Per il Conto C/G Ã401150 - Acq Materiale e servizi per la produzioneÄ risultano essere abilitati solo i seguenti valori della dimensione CDC:  
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000514-0/DMT4.bmp"><br>
+
+Registrazione di una fattura acquisto con riga di Tipo ®Conto C/G¯ che movimenta il mastrinoÃ 401150 - Acq Materiale e servizi per la produzioneÄ: in fase di selezione valori della dimensione CDC, il sistema mostra solo i valori abilitati. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000514-0/DMT5.bmp"><br>
+
+{{% alert title="NB" color="warning" %}}
+nel caso di riga con Tipo diverso da ÃConto C/GÄ, il sistema mostra tutti i valori della dimensione CDC ma, in fase di registrazione documento/scrittura, genera un messaggio di errore nel caso in cui sia stato selezionato un valore non abilitato a setup.
+{{% /alert %}}
