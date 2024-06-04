@@ -1,0 +1,21 @@
+Per stampare gli importi dellÂestratto conto nella valuta del documento registrato si utilizzano i seguenti report:
+
+Å Estratto conto cliente Æ in valuta (CVS)
+
+Å Estratto conto fornitore Æ in valuta (CVS)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/14AdvancedCustomerVendorStatement.png"><br>
+
+Sia lÂ**Estratto conto clienti Æ in valuta (CVS),** che lÂ**Estratto conto fornitori Æ in valuta (CVS)** espongono per ogni partita sia il valore in valuta locale, sia il valore in valuta del documento. Per la stampa in valuta dellÂestratto conto clienti, Š possibile richiedere la visualizzazione di uno specchietto riepilogativo degli importi in valuta; tale richiesta viene gestita allÂinterno della request page del report abilitando il campo ÃMostra riepilogo importi in valutaÄ .
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/15AdvancedCustomerVendorStatement.png"><br>
+
+Il report stampa, per ogni partita, la valuta della transazione ed il valore residuo dellÂimporto in valuta, oltre allÂimporto nella valuta della societ… (nel nostro caso EURO).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/16AdvancedCustomerVendorStatement.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/17AdvancedCustomerVendorStatement.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/18AdvancedCustomerVendorStatement.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/19AdvancedCustomerVendorStatement.png"><br>
