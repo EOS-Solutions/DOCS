@@ -1,0 +1,9 @@
+Once configured and activated, the fields are shown in the *Custom fields Tab* of the selected pages.<br>
+Example:
+
+<img width="95%" src="https://docs.eos-solutions.it/Images/PR000201-0/ex067_cdf_en_09.png"><br>
+<br>
+
+{{% alert title="NOTE" color="warning" %}}
+During the posting the Custom Fields Tab of the order will be transferred to the invoice.
+{{% /alert %}}
