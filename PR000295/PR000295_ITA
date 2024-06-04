@@ -1,0 +1,25 @@
+### Conti C/G principali
+
+Poich‚ la gerarchia tra le societ… potrebbe essere anche orizzontale (le societ… sono tutte operative, non esiste una vera e propria societ… ÃsorgenteÄ) pu• essere utile avere un controllo limitato per il piano dei conti e le Dimensioni.
+
+Questo controllo viene esercitato nei conti C/G principali (MDI).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000295-0/MasterGL.png"><br>
+
+Da Azioni->Importa conti C/G Š possibile importare il piano dei conti dell'Azienda principale. Grazie a Companies Accounts Matrix puoi collegare, per ciascun conto, la societ… principale alle societ… remote.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000295-0/MasterGLEnable.png"><br>
+
+
+Puoi selezionare pi— record e associarli in modo massiccio a una o pi— societ… utilizzando Gestisci->Selezione batch.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000295-0/MasterGLMatrix.png"><br>
+
+### Dimensioni principali
+
+La stessa cosa Š possibile con Dimensions. Nella pagina Dimensioni Master MDI da Azioni->Importa Dimensioni, puoi importarle e decidere quali replicare nelle diverse societ….
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000295-0/MasterDimensionImport.png"><br>
+
+
+Nella pagina Matrice societ…/Dimensioni Š poi possibile assegnare dimensioni ad ogni azienda.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000295-0/MasterDimensions.png"><br>
