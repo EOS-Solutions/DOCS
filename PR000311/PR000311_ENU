@@ -1,0 +1,20 @@
+Thanks to the Witholding Tax Certificazioni Uniche For Italy (ECU) app you can process and send the file Certificazioni Uniche printed on the official form:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000311-0/06WithhTaxCertUniche-EN.png"><br>
+
+| **Field**                 | **Description**                                                                                                                       |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| Year                      | write the year to which the Communication is referred                                                                                 |
+| Signing Company Officials | choose a Company official who can sign the Communication. N.B. In the General Ledger Setup you need to set a No. Series for Officials |
+| Prepared by               | specifies the subject who submits the Communication: Company Tax Representative                                                       |
+| Communication Number      | fill in the Communication number                                                                                                      |
+| Vendor No.                | it is possible to filter by vendor                                                                                                    |
+| Start/ End related Date   | indicate the competence period for the posted documents                                                                               |
+| Tax Code                  | specify the tax code                                                                                                                  |
+| Start / End payment Date  | it is possible to indicate the starting / ending date for the payments                                                                |
+
+Pressing **PDF Print Preview** the system displays the data relating to the four sections of the form to be filled. The fields are the same as those found in the paper format.
+
+Pressing **Export File** the system will generate the file Ritenute YEAR.zip to send through electronic transmission:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000311-0/07WithhTaxCertUniche-EN.png"><br>
