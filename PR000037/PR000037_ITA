@@ -1,0 +1,27 @@
+Inserire i conteggi di inventario in BC, nel caso di tracciabilit… lotto o serie, richiede molto tempo all'operatore, che deve aprire di continuo la page di tracciabilit… per ogni combinazione articolo/magazzino.
+
+La app Inventory with Serial and Lot Number (ISL) permette di avere il lotto e numero di serie direttamente in colonna sul prospetto.
+
+Sulla page Registrazioni inventario fisico:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000037-0/5ITInvSerLot (1).png"><br>
+
+sono visibili le colonne Nr. seriale e Nr. lotto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000037-0/9ITInvSerLot (1).png"><br>
+
+| **Campo**   | **Descrizione**                                                                        |
+|-------------|----------------------------------------------------------------------------------------|
+| Nr. seriale | Specifica il numero seriale associato al movimento.                                    |
+| Nr. lotto   | Specifica il numero di lotto dell'articolo gestito per la riga di documento associata. |
+
+<br>
+Scegliere Prepara->Calcola magazzino per Nr. seriale/Lotto per avviare il conteggio dell'inventario compilando le registrazioni con le quantit… note
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000037-0/6ITInvSerLot (1).png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000037-0/7ITInvSerLot (1).png"><br>
+
+Grazie alla app Inventory with Serial and Lot Number possiamo visualizzare le righe con evidenza dei numeri serali e di lotto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000037-0/8ITInvSerLot (1).png"><br>
