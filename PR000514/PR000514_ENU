@@ -1,0 +1,11 @@
+For the G/L account "401150 - Purchase of materials and services for production" only the following CDC dimension values are enabled:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000514-0/DMT4_ENG.bmp"><br>
+
+Recording of a purchase invoice with a ®G/L account¯ type line which moves the ledger Ã401150 - Purchase of materials and services for productionÄ: when selecting the CDC dimension values, the system only shows the enabled values.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000514-0/DMT5_ENG.bmp"><br>
+
+{{% alert title="!" color="warning" %}}
+In the case of a line with a Type other than "G/L Account", the system shows all the values ??of the CDC dimension but, during the document/writing phase, it generates an error message if a non-enabled value has been selected to setup.
+{{% /alert %}}
