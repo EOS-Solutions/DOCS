@@ -1,0 +1,61 @@
+Once the handling unit is created, this unit can be used and assigned to sales / purchase documents. For example, let's create a Sales Order. After inserting one or more item on the lines, from the specific Factbox on the right we assign them a Handling Unit:
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000482-0/13HandlingUnitsManagement.png"><br><br>
+
+
+| **Action** | **Description** |
+| --- | --- |
+| Card |opens the Handling Unit card indicated in the No. field |
+| New | it allows to create a new Handling Unit |
+| Assign | it allows you to choose the unit to assign to the document |
+| Unassign | it allows you to unlink the chosen unit |
+
+<br>
+After selecting the handling unit, the system will automatically fill in the Quantity to be shipped on the lines (based on how many pieces the handling unit can contain)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000482-0/14HandlingUnitsManagement.png"><br><br>
+
+From each Handling unit card, from **Related->Assignments** the system shows which order the unit has been assigned to, for which item and quantity.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000482-0/15HandlingUnitsManagement.png"><br>
+
+<table>
+<tr>
+<th>NB</th>
+</tr>
+<tr>
+<td>"Source No" field  shows the list of documents to which the unit has been assigned</td>
+</tr>
+</table>
+
+<br>
+
+Now you can post the shipment.
+
+On the shipment there will be a Facbox indicating the unit with the status "Shipped".
+
+By opening the Handling Unit card from **Related-> Entries** it will be possible to view the item entries for the unit.
+
+<br>
+
+<table>
+<tr>
+<th>Note</th>
+</tr>
+<tr>
+<td>The same process shall be used for Warehouse shipments.</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr>
+<th>Addition of contents / Assignment to load units</th>
+</tr>
+<tr>
+<td>In general, <b>adding content</b> and actually <b>assigning it to a UDC</b> are two different things.<br>
+The assignment is handled by the app automatically and may not correspond to the manual assignment.</td>
+</tr>
+</table>
