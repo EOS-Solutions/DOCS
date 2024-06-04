@@ -1,0 +1,13 @@
+L'EDI Š un protocollo standard per la comunicazione interaziendale in un formato predefinito di dati tipicamente legati a documenti aziendali. Offre i seguenti vantaggi 
+
+- Facilitazione della connessione con i partner
+- Semplificazione della gestione dei processi aziendali
+- Visualizzazione pi— chiara e approfondita
+- Accesso all'estensione delle applicazioni e al supporto di contenitori certificati 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000445-0/2EDI.jpg"><br>
+
+L'EDI Š un processo di scambio elettronico di documenti commerciali tra diverse parti, come fornitori, clienti, banche, ecc. Le funzionalit… EDI possono migliorare l'efficienza, l'accuratezza e la velocit… delle transazioni commerciali, oltre a ridurre i costi e gli errori. Sono gestite direttamente dall'App:
+
+- Ordini EDI in arrivo: ORDINI
+- Fatture di vendita e note di credito: FATTURAZIONE
