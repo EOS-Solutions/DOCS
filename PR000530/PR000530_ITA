@@ -1,0 +1,8 @@
+E' possibile impostare i cambi stato cliccando su Cambi di Stato; posso ad esempio definire da Edit a Closed e le azioni da fare prima di passare da uno stato all'altro.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000530-0/7DataSecurity.png"><br>
+
+| Campo                     | Descrizione                                                                       |
+|---------------------------|-----------------------------------------------------------------------------------|
+| Da stato                  | Lo stato iniziale va impostato come Blank-\>Nuovo                                 |
+| Ignora controlli permessi | se impostato a TRUE chiunque pu• effettuare la variazione di stato corrispondente |
