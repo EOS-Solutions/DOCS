@@ -1,0 +1,14 @@
+In Eos G/L Application Setup va obbligatoriamente impostato un numeratore per il numero partita da assegnare ai movimenti collegati:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000265-0/1GeneralLedgerApp-ITA.png"><br>
+
+In Scheda conto C/G  scegliere come collegare i movimenti C/G:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000265-0/2GeneralLedgerApp-ITA.png"><br>
+
+| Opzioni | Descrizione |
+| --- | --- |
+| Mai | Non consente di fare alcun collegamento movimenti sui conti |
+| Manuale | Consente di scegliere manualmente quali movimenti collegare tra loro |
+| Automatico FIFO | Consente il collegamento dei movimenti in modo automatico ordinando i movimenti stessi per prima data |
+| Automatico LIFO | Consente il collegamento dei movimenti in modo automatico ordinando i movimenti stessi per ultima data |
