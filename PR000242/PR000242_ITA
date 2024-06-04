@@ -1,0 +1,9 @@
+Quanto visto vale anche per gli ordini di acquisto.
+
+All'interno degli Ordini Acquisto infatti si possono inserire i vuoti sia facendoli calcolare al sistema in automatico, sia manualmente.
+
+I vuoti possono essere eliminati / modificati. Le righe dei vuoti poi vengono registrate nel documento di carico. Dal documento di ricezione acquisto si pu• accedere alla sezione dei vuoti.
+
+Dal carico Warehouse Š possibile accedere alla sezione contenitori e aggiungere eventuali righe prima della registrazione. (N.B. solo se non sono presenti righe calcolate automaticamente a livello di ordine).
+<br>
+     
