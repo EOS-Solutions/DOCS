@@ -1,0 +1,27 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5ZbzO-sxCtk" title="Compress Journal Entries for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+Open the General Journals list and choose a batch:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000051-0/1CompressJournalLine-ENU.png"><br>
+
+Pressing "Group selected entries" the system allows you to choose some criteria to group the selected lines:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000051-0/2CompressJournalLine-ENU.png"><br>
+
+A basic grouping is still performed by the system for some fields: 
+
+| Default (maximum) grouping for the following fields |
+| --- |
+| Document Type |
+| Document No |
+| Account Type |
+| Account No. |
+| Bal. Account Type |
+| Bal Account No. |
+| Amount (whether positive or negative) |
+| Applies-to Doc. Type |
+| Applies-to Doc. No. |
+| Applies-to ID |
+| Applies-to Entry |
