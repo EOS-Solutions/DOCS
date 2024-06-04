@@ -1,0 +1,29 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000600-0/Immagine14.png"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000600-0/Immagine15.png"><br>
+
+**Tipo**
+
+* 	Articolo 
+* 	EAN 
+* 	Filtro Articolo 
+* 	Gerarchia 
+* 	Cluster Articoli 
+
+**Numero minimo referenze** ( Quantit… minima affinchŠ lÂassortimento venga rispettato)
+Quantit… totale minima: Quantit… minima inserita nellÂordine di vendita 
+
+**Unit… di misura** Unit… di misura da considerare ( pu• essere differente dallÂunit… di misura presente nellÂordine; il sistema convertir… lÂunit… di misura acquistata) a meno che la renda vincolata apponendo il flag Ãunit… di misura vincolanteÄ il quale verifica la corrispondenza anche dellÂunit… di misura dellÂordine. 
+
+**Quantit… minima per referenza** indica la quantit… minima da acquistare per referenza
+
+**Importo totale minimo** Importo minimo da rispettare nellÂordine 
+
+**Cod. Gruppo Alternativit…** : Permette la definizione dellÂartenativit… tra i vari record che compongono lÂassortimento 
+* In OR tra righe con il medesimo codice alternativit…
+* In AND sulla totalit… dellÂassortimento 
+
+NB: Ipotizziamo di creare un Assortimento con un Cluster e lo stesso contiene 20 articoli. 
+
+Numero minimo Referenze = 5 -> Š necessario che ci siano 5 articoli allÂinterno dellÂordine di vendita affinchŠ la condizione venga rispettata 
+Quanitt… minima per referenza = 2 -> devo comprare almeno 5 referenze e per ogni referenza devo almeno comprare 2. 
+
