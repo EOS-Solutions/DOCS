@@ -1,0 +1,13 @@
+Blanket Purchase Orders are also known as vendor contracts.
+
+You can integrate them into your planning result, when you convert the planning suggestion into a purchase order, then the contract references are also transferred to the purchase order.
+
+On the Blanket Purchase  Order you can set the following information:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000369-0/9ManufPlanning-ENU.png"><br>
+
+**Due Date**: until the contract is valid
+
+**Contract No.**: number of the contract established between you and the vendor
+
+**Contract Status**: only Active contracts are considered in the planning results
