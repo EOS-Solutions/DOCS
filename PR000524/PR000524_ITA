@@ -1,0 +1,67 @@
+Per aprire un controllo generico, da un Ordine di Acquisto andare su Azioni,->Qualit…->Crea ordine controllo. 
+
+Se si vuole effettuare un test sugli articoli riportati nelle righe: da Righe->Qualit…->Crea ordine controllo (in questo caso la quantit… degli articoli da testare viene popolata in automatico dal sistema).
+
+**Fast tab "Generale"**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000524-0/16ProductQualityAssurance-ITA.png"><br>
+
+| Campo | Descrizione |
+| --- | --- |
+| Nr. | Numero di serie degli ordini di controllo |
+| Tipo di controllo | Riporta il tipo di controllo ("Ordine acquisto" nel caso si sia partiti da un Ordine di Acquisto) |
+| Nr. Piano di Controllo | Riporta il piano di controllo sulla base del quale Š stato generato lÂordine. |
+| Nr. Lotto e Nr. Serie | Se lÂarticolo Š gestito a lotti o a seriali, il sistema riporta il cod. lotto o serie della componente/prodotto che si sta testando. A seconda del setup, Š possibile creare un ordine di controllo per ogni lotto/serie presente nel carico/produzione. |
+| **RISULTATO CONTROLLO** |     |
+| Codice risultato controllo | Il codice risultato controllo cambia in automatico in base alle azioni effettuate sulle righe dall'utente.  <br>Vedi Setup. Se una delle righe dell'ordine esce dai valori minimi/massimi impostati, il sistema consente di creare una Non conformit…. |
+| Risultato controllo | E' il **risultato del controllo qualit…**. Permette le opzioni:<br><br>"Rilasciato" se il controllo Š andato a buon fine<br><br>"Concessione" se il controllo non ha avuto esito positivo, ma si vuole comunque chiuderlo<br><br>"Bloccato" se il controllo ha avuto esito negativo |
+| **RISULTATO** |     |
+| **Totale** | I campi presenti (**Quantit… e Campione**) vengono popolati in automatico dal sistema se l'OdC viene aperto dalle Righe del documento. Nel caso di controllo generico, i campi sono vuoti.<br><br> * Quantit…: quantit… **dellÂordine caricato o prodotto** (riga carico, ordine prod ecc.)<br> * Campione: quantit… **utilizzata per i controlli a campione**. Dipende dal piano di campionamento associato |
+| **Conforme** | * Quantit… Conforme: Š la quantit… **conforme totale**<br> * Q.t… Conforme del campione: Š la quantit… **conforme rispetto alla q.t… di campionamento**<br> * Quantit… non Conforme: Š la quantit… **non conforme rispetto al totale** (inserito manualmente dall'utente nel momento in cui viene effettuato il test)<br> * Q.t… non Conforme del campione:ÿŠ la quantit… **non conforme rispetto alla q.t… di campionamento** (inserito manualmente dall'utente nel momento in cui viene effettuato il test) |
+
+<br>
+
+**Fast tab "Righe"**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000524-0/17ProductQualityAssurance-ITA.png"><br>
+
+| Campo | Descrizione |
+| --- | --- |
+| Nr. Parametro, Descrizione | Campi che riportano i parametri presi in considerazione dal Piano di controllo selezionato nel Tab Generale |
+| Referto | Campo in cui viene riportato il risultato del test per un parametro definito come attributo |
+| Valore Minimo, valore Massimo | Range di valori in cui devono rientrare i risultati |
+| Valore Previsto | Risultato atteso per il parametro in esame |
+| Nr. Risultati | Riporta il numero dei risultati che sono stati ottenuti per quella riga di test. |
+| Nr. Dispositivo | Dispositivo utilizzato per effettuare la misurazione |
+| Nr. Errore | Riporta quanti risultati sono fuori range di tolleranza. |
+| Valore eff. Max/Min/Medio: | Il sistema calcola in automatico i valori minimi, massimi e medi, senza considerare le casistiche di errore. |
+| Ultimo valore effettivo | inserito dall'utente dopo il controllo. Nel caso il valore esca dal range valore min/max, il sistema chieder… se creare una non conformit…. |
+
+<br>
+
+Nella tab ÃRigheÄ cliccando su ÃRigaÄ Š possibile inserire:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000524-0/18ProductQualityAssurance-ITA.png"><br>
+
+* Risultati: da qui si possono inserire i risultati e segnalare gli eventuali errori
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000524-0/19ProductQualityAssurance-ITA.png"><br>
+
+* Commenti: per inserire i commenti di riga.
+
+Sull'Ordine di controllo:
+
+| Azione | Descrizione |
+| --- | --- |
+| Azioni->Funzioni->Convalida ordine provvisorio | Una volta inserite le quantit… che si vogliono controllare, Š possibile rendere attivo il controllo. Cos facendo le quantit… che si stanno controllando verranno spostate in controllo qualit… e non sar… pi— possibile modificare i parametri definiti nellÂordine di controllo. |
+| Azioni->Funzioni->Crea successivo controllo | Permette di creare un ulteriore controllo solo sulle unit… risultate non conformi. |
+| Azioni->Funzioni->Crea non-conformit… | Permette di creare una non-conformit… che fa riferimento all'Ordine di controllo che l'ha generata (per tornare all'Ordine di controllo, da Naviga->Ordine->Ordine di controllo) |
+| Azioni->Stampa | Effettua una stampa delle informazioni contenute nellÂordine (vedi Report). |
+
+<br>
+
+**Fast tab "Riferimento"**
+
+Nel tab ÃRiferimentoÄ vengono riportati tutti i dati relativi al carico/ordine di produzione che ha generato lÂOrdine di controllo.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000524-0/20ProductQualityAssurance-ITA.png"><br>
