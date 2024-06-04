@@ -1,0 +1,5 @@
+|                                                                                                             |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------|
+| 1      |  Assign a serial and a lot number to an item                                               |
+| 2      | Post the inventory quantities on the iventory journal                  |
+| 3      | Calculate the inventory splitted by Serial and Lot number                                      |
