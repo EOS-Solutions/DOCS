@@ -1,0 +1,56 @@
+## Setup solleciti e Selezione report
+
+In **Setup solleciti consegna** indicare i numeratori per Solleciti provvisori e registrati. Esiste infatti la possibilit… di creare dei solleciti provvisori, verificarli e poi registrarli.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/2DelRem_IT.png"><br>
+
+In Selezione report-Solleciti consegna impostare i report da utilizzare: quello per i test e quello per stampare il documento definitivo da inviare al fornitore.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/3DelRem_IT.png"><br>
+
+## Termini di sollecito
+
+Vanno definiti i testi per i solleciti, a diversi livelli sulla page Termini sollecito consegna (PDR):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/4DelRem_IT.png"><br>
+
+Tali termini di sollecito vanno assegnati ai fornitori classificando questi ultimi nel tab **Carico** con uno specifico codice:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/5DelRem_IT.png"><br>
+
+## Livelli
+
+I diversi livelli di sollecito vengono definiti in base ai giorni che possono trascorrere dalla **data di ricevimento prevista**, prima che scatti un sollecito:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/6DelRem_IT.png"><br>
+
+I solleciti successivi al primo utilizzano come riferimento la data del sollecito registrato.
+
+**Esempio:**
+avendo definito due livelli di questo tipo:
+
+> Livello 1    1 giorno   
+>
+> Livello 2  10 giorni 
+
+i solleciti verranno creati come segue:
+
+> 29/01 Data carico prevista in riga ordine d'acquisto
+>
+> 01/02  Livello 1 creato e emesso
+> 
+> 12/02  Livello 2 creato
+> 
+
+Š chiaro quindi che per far scattare il secondo livello di sollecito **deve essere registrato il primo sollecito.**
+
+## Testi
+Sulla page Livelli sollecito consegna, premendo **Testo iniziale** Š possibile inserire il testo che accompagna i diversi gradi di sollecito di consegna. Allo stesso modo, premendo **Testo finale** si pu• inserire una formula di saluto finale della comunicazione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/7DelRem_IT.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/8DelRem_IT.png"><br>
+ 
+**Esempio di stampa**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/14DelRemIT.png"><br>
