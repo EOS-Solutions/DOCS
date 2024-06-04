@@ -1,0 +1,27 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Enter the setup for the delivery routes</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Calculate times, routes and weights</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Create and modify delivery routes</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Print and export the routes</td>
+	</tr>
+</table>
+
+<br>
+<br>
+
+# Delivery Route Planner (DRP) - SUMMARY
+
+Press ALT + Q and digit "DRP" for a list of the features involved:
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX092-0/1DeliveryRoutePlanner.png"><br>
