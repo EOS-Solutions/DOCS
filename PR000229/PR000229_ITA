@@ -1,0 +1,5 @@
+La generazione di scritture relative a ratei e risconti in un dato periodo, oltre che attraverso i campi ÃConsenti reg. ratei/risconti. daÄ e ÃConsenti reg. ratei/risconti fino aÄ del **Setup date di competenza (SGL)**, pu• essere inibita tramite lÂaccensione del'opzione ÃBlocca reg. ratei/riscontiÄ nella page **Periodi contabili**.
+
+Tale opzione, inoltre, se le Data inizio e fine competenza di una riga di documento o di una scrittura di prima nota dovessero coprire in parte un periodo chiuso ed in parte uno aperto, fa s che la quota di costo relativa al periodo chiuso, venga spostata nel primo periodo successivo aperto; questa logica pu• essere applicata solo nel caso in cui lo storno del costo in contabilit… simulata non ricada anchÂesso nel periodo chiuso.
+
+<img width="750" src="https://docs.eos-solutions.it/Images//lock accounting period/9SimulatedGeneralLedger.png"><br>
