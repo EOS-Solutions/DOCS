@@ -1,0 +1,3 @@
+The generation of entries related to accruals and deferrals within a given period, in addition to being controlled through the fields "Allow accruals/deferrals posting from" and "Allow accruals/deferrals posting to" in the **Competence Date Setup (SGL)**, can also be inhibited by enabling the "Block accruals/deferrals posting" option on the **Accounting Periods** page.
+
+Furthermore, if the start and end dates of competence for a document line or journal entry partially overlap a closed period and a subsequent open period, the portion of cost related to the closed period will be shifted to the first subsequent open period. This logic can be applied only if the reversal of the cost in simulated accounting does not also fall within the closed period.
