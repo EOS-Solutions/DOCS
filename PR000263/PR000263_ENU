@@ -1,0 +1,9 @@
+It is also possible to connect the already posted entries. Open General Ledger Entries page, select the lines containing the accounting items to be connected and press Actions-> Functions-> Apply entries:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000263-0/8GeneralLedgerApp-ENU.png"><br>
+
+Select the accounting items and press Set amount to apply. You can also **manually** set the amount to apply in the "Amount" column. Pressing "Suggest amount to apply" the system will suggest the connections (based on the setup in the Account card) in order to close the main accounting item.
+
+| NB  |
+| --- |
+| Header:  <br>The amount of the starting entry is shown in the "Amount" field.  <br>"Applied Amount": in this field you can see the amount connected to the starting entry.  <br>"G/L Application Entry ID": the applied entries must be assigned a serial number. This number can be entered manually. If the field is not filled in, the system assigns it automatically using the G/L Account Card setup (Tab Posting). |
