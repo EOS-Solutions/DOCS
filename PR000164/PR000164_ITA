@@ -1,0 +1,4 @@
+Selezionare `Custom Fields - Liste custom (CDF)` dal menu (ALT-Q). In questa page di setup Š possibile configurare le liste utilizzabili nei campi custom di tipo `Code`. In seguito sar… possibile selezionare un valore da queste liste nelle pagine dove il relativo campo custom attivato Š visualizzato.<br>  
+Per ogni nuova lista Š necessario impostare un *codice* ed una *descrizione*. Successivamente andare in `Lista` -&gt; `Valori`: 
+<img width="95%" src="https://docs.eos-solutions.it/Images/PR000164-0/ex067_cdf_it_05.png"><br>
+<br>
