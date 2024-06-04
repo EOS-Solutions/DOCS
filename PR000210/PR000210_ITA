@@ -1,0 +1,7 @@
+Successivamente l¬imballo CONAI va legato alla combinazione √Articolo/Variante/UnitÖ di misuraƒ cosç da poter suggerire nelle fatture vendita e acquisto in automatico il peso:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000210-0/11CONAI.png"><br>
+
+Cliccando sull'assist-edit del campo **Codice imballaggio conai** ä possibile inserire un 'Imballo CONAI' con lo stesso codice dell'articolo
+
+Nella tabella ä possibile scegliere tramite flag se si desidera che l'imballo venga cercato nella Distinta base oppure nelle Liste di assemblaggio (nel caso, ad esempio, di un articolo il cui imballo non ä nella tabella degli imballi CONAI, ma ä nella Distinta base o nella Lista assemblaggio di quell' articolo).
