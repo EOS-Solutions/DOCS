@@ -1,0 +1,42 @@
+Tale funzionalit… permette di verificare i dati IVA registrati sia per **data di registrazione**, che per **data esecuzione operazione**, data che viene utilizzata per il calcolo della liquidazione IVA.
+
+Da menu aprire Quadratura IVA (VMI). Si aprir… la page:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/41VatManagement.png"><br>
+
+Nella tab Filtri valorizzare i campi nel seguente modo:
+
+| **Campo**           | **Descrizione**                                                                                                                                                                                                                      |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Data inizio periodo | inserire la data di inizio del periodo da analizzare                                                                                                                                                                                 |
+| Data fine periodo   | inserire la data di fine periodo da analizzare                                                                                                                                                                                       |
+| Tipo Registro IVA   | selezionare una delle seguenti opzioni Acquisto Vendita oppure lasciare il campo vuoto  <img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/42VatManagement.png"><br> |
+| Registro IVA        | selezionare un registro IVA da analizzare, in base alla selezione impostata nel campo precedente                                                                                                                                     |
+| Cod. IVA            | Š possibile filtrare la pagina per codice IVA                                                                                                                                                                                        |
+
+A questo punto premere Calcola Importi
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/43VatManagement.png"><br>
+
+e si popoleranno le righe nella parte bassa suddivise per tipo di Registro IVA e codice Registro IVA
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/44VatManagement.png"><br>
+
+I valori sono suddivisi per Imponibile e IVA e per la quota di indetraibilit… se presente. I dati inoltre sono suddivisi per Data:
+
+-   Data di Registrazione
+-   Data Esecuzione Operazione
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/45VatManagement.png"><br>
+
+Gli **importi presenti nelle colonne sono navigabili** ed Š possibile richiamare la tabella dei movimenti IVA direttamente dalla pagina della Quadratura IVA.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/46VatManagement.png"><br>
+
+Nella stessa pagina Š possibile eseguire una verifica sulla sequenzialit… dei protocolli nei registri IVA
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/47VatManagement.png"><br>
+
+La verifica avviene se le righe sono popolate. Se si vuole procedere con la verifica di un periodo differente, prima di avviare la procedura di Calcola Importi, utilizzare la funzione Cancella righe.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000630-0/48VatManagement.png"><br>
