@@ -1,0 +1,18 @@
+Each configured item or variant is identified by a **unique key code** automatically generated at the end of the configuration. The key contains the information of all the characteristics that Ãbuild the key", i.e. that are indicated in the rule as "Disable characteristic by key: No". It is thanks to this that the configurator is able to determine whether it is necessary to generate a new configuration or recover an existing one.
+
+There are situations in which you may need to **regenerate keys**, for example after the initial data import or if the "Disable characteristic by key" property has been activated on one or more characteristics.
+
+To do this, simply open the "Configured items" page from the configurable item, select the rows and launch the ÃRecreate configured items key" function.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000322-0/KeyCode1_ENU.png"><br>
+
+The configurator generates the key codes in this way:
+
+-   Composes a string with sequence order of all the codes and characteristic values associated with the rule.
+-   Characteristics that are disabled by the key are excluded.
+-   The string is encrypted in compressed form and saved in the table EOS028 CFG Item Config. Key (18091278).
+-   As the sequence or number/type of characteristics change, the configurator will generate new item codes / variants.
+
+<br>
+<br>
+ 
