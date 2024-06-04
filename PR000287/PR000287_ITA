@@ -1,0 +1,31 @@
+Nel setup del configuratore di prodotto cÂŠ un campo denominato **®Abilita Traduzioni Articolo¯** che consente di salvare in anagrafica articoli / varianti la descrizione configurata in lingua. La descrizione viene composta con le regole gi… previste dal configuratore e sfrutta le descrizioni in lingua presenti nelle caratteristiche e nei relativi valori.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000287-0/Charac7_ITA.png"><br>
+
+Per ogni caratteristica e rispettivi valori Š possibile gestire delle traduzioni:
+
+-   Per **tradurre la descrizione della caratteristica** lasciare vuoto il campo Valore caratteristica;
+-   Per **tradurre la descrizione del valore caratteristica** compilare il campo Valore caratteristica.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000287-0/Charac6_ITA.png"><br>
+
+In fase di configurazione vengono generate le descrizioni per tutte le lingue presenti nellÂarticolo neutro.
+
+**Si possono comunque stampare le descrizioni delle caratteristiche in lingua nei documenti senza salvare le traduzioni articolo**.
+
+La traduzione dellÂarticolo viene comunque gestite in fase di stampa del documento se installata lÂAPP Advance Document Reporting (ADR) and the related bridge app with the product configurator.
+
+Le informazioni riguardanti le **caratteristiche** scelte per lÂarticolo configurato possono essere gestite nelle **stampe dei documenti** tramite un Flag integrato con **lÂapp ADR.**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000287-0/Charac8_ITA.png"><br>
+
+Inoltre nelle caratteristiche Š possibile scegliere se stampare codice, descrizione o entrambi.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000287-0/Charac9_ITA.png"><br>
+
+
+<br>
+<br>
+ 
+
+ 
