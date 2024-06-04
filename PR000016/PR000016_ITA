@@ -1,0 +1,12 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000016-0/8CustomerVendorBalanceCompensation.png"><br>
+
+Grazie alla app Customer Vendor Compensation per Dynamics 365 Business Central Š possibile selezionare da due elenchi di partite aperte le scadenze da compensare.
+
+Selezionando ad esempio una fattura cliente da 100 euro ed una fattura fornitore da 80 euro, verr… suggerita la scrittura contabile per collegare le due partite azzerando la fattura fornitore e lasciando la fattura cliente aperta per 20. Precondizione: aver collegato i clienti e fornitori
+
+\- in anagrafica attraverso il campo "Nr. fornitore comp." nel tab Compensazione
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000016-0/1CustomerVendorBalanceCompensation.png"><br>
+\- in Contatti (da *Funzioni-\>Collega con esistente*)
+<img width="" src="https://docs.eos-solutions.it/Images/PR000016-0/2CustomerVendorBalanceCompensation.png"><br>
+\- tramite la P.IVA
