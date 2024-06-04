@@ -1,0 +1,72 @@
+In the Inspection Setup page you can specify the information required by the system to perform the checks.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000479-0/4ProductQualityAssurance-ENU.png"><br>
+
+**General**
+
+In the table below are listed the fields to fill in:
+
+| Field | Description |
+| --- | --- |
+| Internal Test Type | Choose the test type. The test types and their codes are set in Test Types (PQA) (see specific section below). |
+| Default Order Priority | Specifies the priority of new inspection order created from receipt |
+| Default Reason Code | Specifies the Inspection order reason code |
+| Check Result Count | Verify that the results are at least the same number as the sample size |
+| Inspection Order Report ID | Specifies the Inspection Order Report |
+| Inspection Order Report Name | Specifies the Inspection Order Report name |
+| Include Inspection Qty. in MRP | Specifies if Inspection Qty. is included on MRP. If you disable the option the quantity is calculated as ItemLedgerEntry.RemainingQuantity-ItemLedgerEntry.InspectionQuantity. |
+
+<br>
+
+**Numbering**
+
+In the table below are listed the fields to fill in:
+
+| Field | Description |
+| --- | --- |
+| Device Nos. | Specifies the code of the number series that will be used when creating Device |
+| Plan Nos. | Specifies the code of the number series that will be used when creating Plan |
+| Order Nos. | Specifies the code of the number series that will be used when creating Inspection Order |
+| Non-Compliance Nos. | Specifies the code of the number series that will be used when creating Non-Compliance document |
+
+<br>
+
+**Vendor Rating**
+
+In the table below are listed the fields to fill in:
+
+| Field | Description |
+| --- | --- |
+| Assert Delivery Terms on Release | Activate the check on late payments when counting the vendor rating, |
+| Quality Rating on Release | Activate theÿQuality management when counting the vendor rating, |
+| Use Quality Criteria in Calc. | Specifies that the system will use quality criteria in rating calculation |
+| Use Quantity Criteria in Calc. | The system uses quantity criteria in rating calculation |
+| Use Date Criteria in Calc. | Specifies that the system will use Date criteria in rating calculation |
+| Use Cert. Vendor in Calc. | Specifies that the system will use certificate Vendor in rating calculation |
+| Vendor Certification Value | Specifies the vendor certification value for rating calculation |
+| Use Global Service in Calc. | Specifies if global service is to use in calculation |
+| Default Quality Rating Code | Specifies the default quality rating code |
+
+<br>
+
+**Non-Compliance**
+
+You need to fill in:
+
+| Field | Description |
+| --- | --- |
+| Automatic Non-Compl. Creation | Specifies if create automatic non-Compl. when the result of quality is not satisfactory |
+| Journal Template Name | Specifies the Default Journal Template Name |
+| Journal Batch Name | Specifies the Default Journal Batch Name |
+
+<br>
+
+**Inspection Orders**
+
+You need to fill in:
+
+| Field | Description |
+| --- | --- |
+| Insp. Order In Progess Status | Specifies Insp. Order In Progess Status |
+| Insp. Order Non-Compliance Status | Specifies Insp. Order with Non-Compliance Status |
+| Insp. Order New Status | Specifies Insp. Order New Status |
