@@ -1,0 +1,17 @@
+rom the menu, after logging in via barcode, the user can access the Production Panel where you can see the operations to be performed (or have already been performed) and the possible reasons (e.g. start or end of processing). From setup it is possible to decide what to display and what not to display within the page.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000460-0/12PowerMES_ENU.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000460-0/3PowerMES_ENU.jpg"><br>
+
+
+The available operations are listed by date entered, but it is possible to change the sorting.
+
+| **Note**                                       |
+|------------------------------------------------|
+| Multiple users can log in to the same machine. |
+
+
+<br>
+<br>
+ 
