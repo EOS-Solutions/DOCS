@@ -1,0 +1,38 @@
+<table>
+	<tr>
+	<td>1</td>
+		<td>Installa l'app DocSolutions in Business Central</td>
+	</tr>
+		<td>2</td>
+		<td>Carica i setup di default (tabelle, librerie, storage locations)</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Defisci quale storage utilizzare :
+- 		Azure File Storage
+- 	  Azure Blob Storage
+-  	  Local file system (E' necessaria un istanza di Eos Function API)
+- 	  In Memory (solo per scenari di test)
+	</td>
+  	</tr>
+	<tr>
+		<td>4</td>
+		<td>Copia Application ID e Secret Value in Business Central</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Inizia caricando i tuoi files</td>
+	</tr>
+</table>
+
+<br>
+ 
+
+# DocSolutions for File system (DCS) - SUMMARY
+
+Premi ALT + Q and digita ÃDCSÄ per una lista completa delle voci di menu:
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex069.01/quick guide/1_DCSFS.png"><br>
+
+
