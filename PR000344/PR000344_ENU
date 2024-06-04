@@ -1,0 +1,14 @@
+<img width="" src="https://docs.eos-solutions.it/Images/ex092/delivery route setup/6DeliveryRoutePlanner.png">
+<br><br><br>
+
+
+| **Field** | **Description** |
+| --- | --- |
+| Route Plan Nos. |enter the serial number for the route plans |
+| Weight Calc. Source | defines how weights are calculated. The options are:<br><ul><li>Document Line</li><li>Doc. Shipping Info</li></ul> |
+| Pallet Calc. Source | defines how pallets are calculated. The options are:<br><ul><li>Item Category</li><li>Doc. Shipping Info</li></ul> |
+| Pallet Item Category Filter | used in case of pallet calculation according to the Item Category|
+| Manage Geo Locations | enables the calculation of the routes |
+| Default Start Point Code / Default End Point Code | represent the start/end coordinates of the routes. They are inherited at route header level, but are still modifiable |
+| Whse. Shipment Grouping / Whse. Receipt Grouping | is the method by which any warehouse shipments are issued. The values are:<br><ul><li>None (one w.hse shipment per order)</li><li>Group All</li><li>Group per Customer / Group per Vendor</li></ul> |
+| Exclude Orders Completly Received / Shipped | excludes orders fully received / shipped from filters on the documents of the delivery route |
