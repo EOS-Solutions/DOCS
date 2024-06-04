@@ -1,0 +1,10 @@
+Enter the Setup in Purchase and Sales for Customer, Material, Country (All countries, Local or Foreign), Period:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex031/conai - sales  purchase conai setup/13CONAI(1).png"><br>
+
+Each line must be enabled by crossing the Enabled field.
+
+| **Field**                | **Description**                                                                                            |
+|--------------------------|------------------------------------------------------------------------------------------------------------|
+| CONAI Detail On Document | If enhanced, at the posting of the purchase / sales document, the related accounting entries are generated |
+| CONAI Contribution       | If enhanced, the CONAI amount charge lines are created in the temporary document                           |
