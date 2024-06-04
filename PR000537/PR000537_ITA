@@ -1,0 +1,7 @@
+Nell'apposito setup indicare la data a partire dalla quale Š abilitato lo scadenzario dettagliato.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000537-0/13AdvancedCustomerVendorStatement.png"><br>
+
+I campi contrassegnati con "ID report" si riferiscono ai report da eseguire per le diverse tipologie.
+
+Possono essere impostati dei report custom, altrimenti, se i campi vengono lasciati vuoti, il sistema utilizza i report BC standard.
