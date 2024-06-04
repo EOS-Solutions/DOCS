@@ -1,0 +1,38 @@
+From the PRQ it is possible to create a purchase document by Process-> Create Purch. Document. Choose the Document Type in the next window:
+
+<a href="https://docs.eos-solutions.it/Images/PR000543-0/5Purchaserequest_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000543-0/5Purchaserequest_ENU.png"></a><br>
+
+You canÿ**duplicate**ÿorÿ**archive**ÿthe purchase requests.
+
+Once archived the requests will be moved to the list of Archived Purchase Requests.
+
+**Preview item vendors: purch. req. multi vendor list**
+
+By enabling this option you can view the vendors who have the item in their price list (regular vendors or vendors showed in the PRQ lines).
+
+<a href="https://docs.eos-solutions.it/Images/PR000543-0/19Purchaserequest_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000543-0/19Purchaserequest_ENU.png"></a><br>
+
+<table id="EOSTABLE" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-ser; font-size: 16px; border-collapse: collapse; width: 1433px; color: rgb(0, 0, 0); text-align: start;"><tbody style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;"><tr class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;"><td style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; border: 1px solid rgb(221, 221, 221); padding: 8px;"><strong class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Field</strong></td><td class="auto-style19" style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><strong class="auto-styleEOSNormal">Description</strong></td></tr><tr style="background-color: rgb(242, 242, 242);"><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Create document</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Selezionare la voce se si desidera creare il documento acquisto</span></td></tr><tr><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;">I<span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">nclude Items</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><p><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Specifies which items to consider when creating the purchase document:</span></p><ul><li><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">With vendor on PRQ: in purchase documents are included only items with the Vendor specified on the PRQ lines</span></li><li><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">In Vendor's Catalog: in purchase documents are included only items that are listed on the Vendor items table</span></li><li><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">All Items: the system creates a Purchase Document that includes all lines in the requisition.</span><br></li></ul></td></tr><tr style="background-color: rgb(242, 242, 242);"><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Document Lines Created</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">how many lines will be created by the system</span></td></tr><tr><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Vendor No. / Name</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Specifies the name of the Vendor who sells the item (can be shown as usual vendor or because on the lines of the Purchase Request).</span></td></tr><tr style="background-color: rgb(242, 242, 242);"><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Blocked</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Specifies that the related record is blocked from being posted in transactions, for example a vendor that is declared insolvent or an item that is placed in quarantine.</span></td></tr><tr><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">No. Vendor Itemsÿ</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Specifies the number of items on the PRQ that are in this vendor's catalog.</span></td></tr><tr style="background-color: rgb(242, 242, 242);"><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">No. Items with Vendor on PRQ</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Specifies the number of items on the PRQ for this vendor.</span></td></tr><tr style="background-color: rgb(221, 221, 221);"><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Last Invoice Date</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">date of the last invoice issued for the vendor</span></td></tr></tbody></table>
+
+<br>
+
+**Example:**
+
+<a href="https://docs.eos-solutions.it/Images/PR000543-0/20Purchaserequest_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000543-0/20Purchaserequest_ENU.png"></a><br>
+
+
+In this case the system creates three purchase orders:
+
+the first is for the regular Vendor (Custom Metals Incorporated) for item 1000
+
+a second order is for all articles in the requisition request for NewCaSup Vendor, that was specified in the purch. req. multi vendor list
+
+while a third order is created for American Wood Exports Vendor indicated on the PRQ for one of the items.
+
+From "Card" you can view / edit orders.
+
+<img width="20" src="https://docs.eos-solutions.it/Images/PR000543-0/exclamation.png"> **NB**
+
+it is possible to add lines to an existing order by Functions->Get Purch. Request Lines. You can add lines from one ore more purchase requests.
+
+<a href="https://docs.eos-solutions.it/Images/PR000543-0/6Purchaserequest_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000543-0/6Purchaserequest_ENU.png"></a><br>
