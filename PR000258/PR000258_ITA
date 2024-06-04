@@ -1,0 +1,10 @@
+Dal piano dei conti Š possibile usufruire dellÂazione Saldo per tipo movimento che consente di analizzare il saldo delle operazioni di apertura/chiusura di bilancio.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000258-0/38SimulatedGeneralLedger.png"><br>
+
+Tale pagina permette quindi di analizzare i totali differenziando per Ãtipo movimentoÄ.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000258-0/39SimulatedGeneralLedger.png"><br>
+
+
+Il tipo movimento Š il campo option EOS che viene valorizzato automaticamente dai report standard di chiusura economica o apertura/chiusura patrimoniale.  
