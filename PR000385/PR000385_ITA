@@ -1,0 +1,28 @@
+| **Tipo record CBI**                                                                                                         |
+|-----------------------------------------------------------------------------------------------------------------------------|
+| IB-EF                                                                                                                       |
+|<img width="" src="https://docs.eos-solutions.it/Images/PR000385-0/2BFForItaly.png"><br>  |
+
+
+Vediamo un esempio:
+
+dopo aver registrato una fattura vendita con metodo pagamento = RIBA:
+
+Il file RIBA (standard BC) viene inviato da Business Central alla banca (il file ä in formato CBI, non SEPA). A questo punto le opzioni sono:
+
+-   il cliente paga -\> la banca non da alcun avviso del pagamento
+-   il cliente non paga -\> trascorsa scadenza pió i giorni di rischio (di solito 15gg), **grazie alla app Bank Files for Italy,** dopo aver scaricato tramite homebanking **il file che ritorna le scadenze insolute**, lo si puï **importare in Business Central**.  
+    Dopodichä ä possibile registrare gli insoluti (Tipo documento= Insoluto).
+
+Lanciare il report **Import insoluti clienti (CBI)**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000385-0/3BFForItaly.png"><br>  
+
+| **Opzioni**             |                                                 |
+|-------------------------|-------------------------------------------------|
+| Nome def. registrazioni | Scegliere un template per le registrazioni COGE |
+| Nome batch contabile    | Indicare un batch per le registrazioni          |
+| Conto transitorio.      | Scegliere un numero conto transitorio           |
+
+
+Successivamente premere OK e caricare il file.
