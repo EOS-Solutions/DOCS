@@ -1,0 +1,22 @@
+Formulas can be used in both **rule relations** as well as **BOMs** and **routings**.
+It's possible to use mathematical operators and brackets keeping in mind that square brackets indicate the values that characteristics assume during configuration.
+Supported mathematical operators are: +-*/ ^ e and the constant PI.
+
+For example, formulas can be inserted directly into relations in the Transfer Value Formula field:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000316-0/Formula1_ENU.png"><br>
+
+In the event that a formula is recurring, or in any case used in several places, it can be created and then recalled (eg in production BOM).
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000316-0/Formula2_ENU.png"><br>
+
+In the TAG section you can enter the characteristics to be used in the formula.
+The formula must be expressed using the values assigned in the TAGs.
+By using the conditions enabler, you can insert different formulas based on conditions.
+
+<br>
+<br>
+ 
+ 
+
