@@ -1,0 +1,21 @@
+**Assign serial / lot number to Item**
+
+Firstly you need to assign a serial and a lot number to an Item, for example the item 1896-S "Scrivania Atene". Open the Item card and fill in the fields in the tab "Item Tracking":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000103-0/1InvSerLot.png"><br>
+
+**Item Journal - Posting**
+
+Let's see an example of posting.
+
+Open the page Item Journals and enter a new line:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000103-0/2InvSerLot.png"><br>
+
+From Line->Item Tracking Lines set the Serial / Lot Number and the Quantity as shown:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000103-0/3InvSerLot.png"><br>
+
+Now we can post the lines on the Item Journals page:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000103-0/4InvSerLot.png"><br>
