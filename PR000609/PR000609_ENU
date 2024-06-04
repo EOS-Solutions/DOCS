@@ -1,0 +1,11 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000609-0/39ProductQualityAssurance-ENU.png"><br>
+
+| Field | Description |
+| --- | --- |
+| Create Rating Proposal | If enabled, provides an assessment for each vendor, based on the assessment made for receipts with the report Calculate Vendor Rating (PQA) |
+| Update Vendor | If enabled set the new calculated classification code on the vendor card |
+| Planned Received Date from / to | It indicates the range of receipts to be tested |
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000609-0/40ProductQualityAssurance-ENU.png"><br>
