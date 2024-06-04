@@ -1,4 +1,4 @@
-<img width="" src="https://docs.eos-solutions.it/Images/PR000658-0/8EDI_en.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000658-0/8EDI_en.jpg"><br>
 
 This page defines which message to send to each group and how to send it.
 
@@ -26,7 +26,7 @@ This page defines which message to send to each group and how to send it.
 - **Service Configuration Code** (mandatory)
   Indicates the service configuration to be used to access the filesystem to read or write files.
 - **Log Level**
-  Allows to configure logging for this message setup. (see {{<relref "enum18122312">}} for details).
+  Allows to configure logging for this message setup.
 	- None: No logging will be performed for this message setup.
 	- Failures Only: Only failed operations will be logged.
 	- All: All operations, including successful ones, are logged.
