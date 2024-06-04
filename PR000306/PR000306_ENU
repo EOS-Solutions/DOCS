@@ -1,0 +1,11 @@
+In order to export the personal data of the company and the people connected to it to the form, the Company information setup must previously be completed in the General tab and in Related-\>Officials.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000306-0/03WithhTaxCertUniche-EN.png"><br>
+
+**IMPORTANT:**
+
+in order for the "Province" field to be shown in Company information, on the **COUNTRIES** page you must set the **address format as "City+County+Post code" to IT**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000306-0/04WithhTaxCertUniche-EN.png"><br>
+
+	Subsequently, by opening the Company Information page, the "Provincia" field will be visible (possibly reopen the page if already open).
