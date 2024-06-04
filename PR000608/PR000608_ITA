@@ -1,0 +1,13 @@
+Gli sconti applicati possono coesistere e possono essere differenziati nelle seguenti tipologie: 
+* Å	Clienti
+	*	Con attributi commerciali legati ad anagrafica cliente e testata documento di vendita 
+* Å	Articoli
+	* A valore, percentuale o con merce omaggio da basket
+	* Scaglioni per tipologia di soglia ( definibile per valori min e max) 
+	* Con attributi commerciali legati ad anagrafica articolo e riga documento di vendita 
+* Documenti
+	* A valore, percentuale o con merce omaggio da basket 
+	* Nel rispetto di filtri su assortimenti articoli, tipo e valore soglia documento e/o singolo riferimento 
+	* Con attributi commerciali legati ad anagrafica articolo e riga documento di vendita
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000608-0/Immagine24.png"><br>
