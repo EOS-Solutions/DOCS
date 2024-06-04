@@ -1,0 +1,18 @@
+Le gerarchie Clienti servono per definire la gerarchia dei gruppi GDO. 
+<br>
+Pu• essere applicata in qualsiasi contesto che comprende una molteplicit… di livelli (fino ad 11) fino ad arrivare allÂultimo livello che Š il cliente. Il rapporto Š 1 a 1 tra un livello e il suo superiore. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000592-0/Immagine1.png"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000592-0/Immagine2.png"><br>
+
+**Assegnazione Gerarchia Cliente** 
+<br>
+Tramite lÂanagrafica cliente Š possibile assegnare la gerarchia.
+<br>
+A seconda dei campi che sono stati gestiti (numero livelli gerarchia) verranno mostrati i relativi codici con le caption inserite a setup. 
+<br>
+I livelli possono essere aggiunti anche in una seconda fase. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000592-0/Immagine3.png"><br>
+
+Ogni assegnazione di gerarchia apre la ÃRichiesta di relazione gerarchicaÄ
