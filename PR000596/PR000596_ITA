@@ -1,0 +1,8 @@
+La definizione di attrbitui commerciali orizzontali Š una nuova Feature aggiunta in TCS e permette di ottenere un maggior dettaglio delle condizioni commerciali sia a livello di prezzi che di sconti. 
+Gli attributi commerciali possono essere abbinati : 
+1. Anagrafica clienti 
+1. Anagrafica articoli 
+1. Testata documento di vendita 
+1. Riga documento di vendita 
+
+Possono essere definiti fino a 10 attributi commerciali per ogni struttura. 
