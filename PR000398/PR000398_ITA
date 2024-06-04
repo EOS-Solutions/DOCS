@@ -1,0 +1,5 @@
+Per eseguire automaticamente i calcoli definiti nelle impostazioni di pianificazione, ä possibile aggiungere il report 70491929 "EOS086 Calculate Planning" alla coda processi.   
+
+Per ogni impostazione di pianificazione ä necessario impostare i campi Pianificato e Sequenza pianificazione. La sequenza di pianificazione fornisce appunto la sequenza per eseguire il calcolo correlato. Questo ä importante poichä vanno prima eseguiti tutti i calcoli e successivamente vengono distribuiti i risultati nei prospetti.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000398-0/13ManufPlanning-ITA.png"><br>
