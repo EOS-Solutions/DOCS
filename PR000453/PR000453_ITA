@@ -1,0 +1,38 @@
+Bisogna assegnare un Numero di serie alle Richieste d'Acquisto. Puoi scegliere se chiudere/archiviare automaticamente le richieste dopo aver creato il documento d'acquisto:
+
+<a href="https://docs.eos-solutions.it/Images/PR000453-0/7Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000453-0/7Purchaserequest.png"></a>
+<br>
+
+<table id="EOSTABLE" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-ser; font-size: 16px; border-collapse: collapse; width: 1433px; color: rgb(0, 0, 0); text-align: start;"><tbody style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;"><tr><td class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; border: 1px solid rgb(221, 221, 221); padding: 8px; width: 275px;"><strong class="auto-styleEOSNormal">Campo</strong></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><strong class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Descrizione</strong></td></tr><tr class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background-color: rgb(242, 242, 242);"><td class="auto-styleEOSNormal" style="border: 1px solid rgb(221, 221, 221); padding: 8px; width: 275px;">Chiudi / Archivia rich. di acquisto</td><td style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">E' possibile scegliere se chiudere /archiviare automaticamente le richieste dopo la creazione del documento di acquisto.</span></td></tr><tr class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;"><td class="auto-styleEOSNormal" style="border: 1px solid rgb(221, 221, 221); padding: 8px; width: 275px;">Nr. rich. d'acq.</td><td style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Campo in cui impostare un numeratore per le richieste.</span></td></tr><tr class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background-color: rgb(242, 242, 242);"><td class="auto-styleEOSNormal" style="border: 1px solid rgb(221, 221, 221); padding: 8px; width: 275px;">Elimina righe richiesta</td><td style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; border: 1px solid rgb(221, 221, 221); padding: 8px;">S<span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">i pu• scegliere se cancellare le richieste di approvvigionamento in seguito alla creazione della Richiesta di Acquisto.ÿÿ</span></td></tr><tr class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;"><td class="auto-styleEOSNormal" style="border: 1px solid rgb(221, 221, 221); padding: 8px; width: 275px;">Modifica stato PRQ</td><td style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; border: 1px solid rgb(221, 221, 221); padding: 8px;"><p class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-size: 16px;">si pu• decidere chi pu• modificare il campo stato sulle PRQ:</p><ul class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;"><li style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;"><p class="MsoNormal" style="font-family: Calibri, sans-serif; margin: 0cm 0cm 8pt; line-height: 15.6933px; font-size: 11pt;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-size: 16px;">Sempre: usato quando non sono attivati nŠ WorkFlow nŠ EDS approval</span></p></li><li style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;"><p class="MsoNormal" style="font-family: Calibri, sans-serif; margin: 0cm 0cm 8pt; line-height: 15.6933px; font-size: 11pt;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-size: 16px;">Dall'amministratore PRQ: da attivare tipicamente quando si usa il Workflow/approval standard MS</span></p></li><li style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;"><p class="MsoNormal" style="font-family: Calibri, sans-serif; margin: 0cm 0cm 8pt; line-height: 15.6933px; font-size: 11pt;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-size: 16px;">Mai: quando si usa EDS o comunque quando Š previsto un WF avanzato che consente di riaprire le PRQ</span></p></li></ul></td></tr></tbody></table>
+
+<br>
+
+**Importare e abilitare il template workflow**
+
+E' possibile utilizzare i workflow standard di Business Central o l'app Data Security per gestire le approvazioni delle richieste di acquisto.
+
+Per importare un workflow di esempio procedere come indicato di seguito. Per utilizzare Data Security installare l'app Data security for Purchase Request.
+
+1) Effettuare il download del Template fileÿ[<u>qui</u>](https://docs.eos-solutions.it/Images/PR000453-0/EX046.PRQ.xml.zip)ÿo in alto in questa pagina ed effettuare l'unzip del file
+
+2) All'interno di Business Central con ALT+Qÿ cercare ÃWorkflowÄ e selezionare Processo->Importa da file e scegliere il file scaricato:
+
+<a href="https://docs.eos-solutions.it/Images/PR000453-0/9Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000453-0/9Purchaserequest.png"></a>
+<br>
+
+3) Cercare con ALT+Qÿ "Workflow - Relazioni tabella". Aggiungere un record come indicato per tabella 18123252:
+
+<a href="https://docs.eos-solutions.it/Images/PR000453-0/10Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000453-0/10Purchaserequest.png"></a><br>
+
+4) Tramite ALT+Q aprire la pagina ÃWorkflow". Da Gestisci->Modifica aprire la scheda relativa al workflow PRQ e abilitarlo:
+
+<a href="https://docs.eos-solutions.it/Images/PR000453-0/11Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000453-0/11Purchaserequest.png"></a>
+<br>
+
+<a href="https://docs.eos-solutions.it/Images/PR000453-0/12Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000453-0/12Purchaserequest.png"></a>
+<br>
+
+5) E' consigliato, ma non necessario nascondere o rendere NO EDIT il campo ÃStatusÄ sulle PRQ utilizzando Design o custom extension:
+
+<a href="https://docs.eos-solutions.it/Images/PR000453-0/13Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000453-0/13Purchaserequest.png"></a>
+<br>
