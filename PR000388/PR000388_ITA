@@ -1,0 +1,16 @@
+| **Tipo record CBI**                                                                                                      |
+|--------------------------------------------------------------------------------------------------------------------------|
+| CBISDDStsRptLogMsg.00.01.00 CBIBdySDDStsRpt.00.01.00                                                                     |
+| <img width="" src="https://docs.eos-solutions.it/Images/PR000388-0/8BFForItaly.png"><br>  |
+
+Per esportare
+
+gli addebiti diretti per lÂitalia Š necessario configurare lÂXML PORT 18123330 nel Setup importazione/esportazione banca
+
+NOME XMLPORT ELABORAZIONE: **SEPA DD pain.008.001.02 IT**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000388-0/9BFForItaly.png"><br>
+
+Aprire una Scheda distinta cliente emessa ed esportare il file:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000388-0/10BFForItaly.png"><br>
