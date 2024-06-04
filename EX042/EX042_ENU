@@ -1,0 +1,25 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Define the Invoicing Plan parameters as agreed with the customer</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Keep track of the project progress invoices</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Post the Anticipated Payments Invoices</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Create the Closing Invoice when the project is finished</td>
+	</tr>
+</table>
+
+<br>
+
+# Invoicing Plan - SUMMARY
+Press ALT + Q and type "IPL" for a list of the features involved:
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX042-0/1InvoicingPlan-ENU.png"><br>
