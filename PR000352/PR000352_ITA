@@ -1,0 +1,11 @@
+Nel Setup registrazioni IVA il campo ÃAssistenza UEÄ determina se il movimento verr… imputato alla sezione Intra beni o Intra servizi; il criterio Š il seguente:
+
+Campo non spuntato =\> BENI
+
+Campo spuntato =\> SERVIZI
+
+Quando si spunti Assistenza UE, il sistema accende automaticamente anche il campo ®Nomenclatura combinata articoli in assistenza¯, tale spunta va rimossa.
+
+ß prevista inoltre la possibilit… di escludere una particolare combinazione dallÂintra tramite lÂutilizzo dellÂapposito flag ®Escludi da Intrastat¯.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000352-0/3AdvIntrastatForItaly-it.png"><br>
