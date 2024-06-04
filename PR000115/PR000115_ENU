@@ -1,0 +1,20 @@
+Open the request page "Inventory Register - Print (IVP)" and fill in the print options:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000115-0/2InventoryRegister.png"><br>
+
+
+| **Field** | **Description** |
+|---|---|
+| From Date / To Date                        | indicate the period                                                                                      |
+| Page Label                                 | you can specify a label for the numbering                                                                |
+| First Page No.                             | enter the first page number                                                                              |
+| Name / Address / Post Code / City / County | fill in the details of the company address                                                               |
+| Fiscal Code / VAT Registration No.         | compile the fiscal data of the company                                                                   |
+| Include all items (Remaining Q.ty <\>0)    | It allows you to include all the items managed in the period with remaining quantity different from zero |
+
+
+<br>
+
+**Print example:**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000115-0/3InventoryRegister.png"><br>
