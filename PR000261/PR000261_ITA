@@ -1,0 +1,59 @@
+# <ins>**Movimenti di storno**</ins>
+
+Per il campo "Modalit… di correzione" presente a setup scegliamo l'opzione Movimenti di storno.
+
+Apriamo i movimenti contabili cliente per Grafiche magiche 2000 e ci posizioniamo sulla rata oggetto di ri-negoziazione (es. fatt 20-102005 con due rate, scad. 03/08 e 02/09).
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000261-0/3DueDatesManagement.png"><br>
+
+Da Azioni-Funzioni-\>Modifica Scadenze si apre la specifica page dedicata alla gestione del piano di rientro.
+
+Il sistema propone le rate della fattura.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000261-0/5DueDatesManagement.png"><br>
+
+| **Azione**         | **Descrizione**                                                                                         |
+|--------------------|---------------------------------------------------------------------------------------------------------|
+| Gestione-\>Elimina | Š possibile eliminare una o pi— rate, incrementando gli importi delle rate esistenti                    |
+| Aggiungi Scadenza  | Š possibile aggiungere nuove rate con nuove date di scadenza riducendo gli importi delle rate esistenti |
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000261-0/4DueDatesManagement.png"><br>
+
+Attraverso lÂazione "Aggiungi scadenza" abbiamo inserito una nuova rata con scadenza al 31/10/20, decurtando ±1.000,00 dal movimento con scadenza al 03/08/20.
+
+Eseguendo lÂazione "**Registra**", vengono modificati/creati i nuovi movimenti contabili.
+
+
+{{% alert title="Importante" color="warning" %}}
+- Il saldo deve essere zero
+- Nel caso in cui siano presenti pi— scadenze, la "Nuova Data Scadenza" della nuova rata (o delle nuove rate) viene proposta pari alla Data scadenza meno recente dei movimenti ante rinegoziazione; lÂutente pu• comunque modificarla agendo sullÂapposito campo. 
+{{% /alert %}}
+
+
+Possiamo inserire / cambiare Banca di canalizzazione / Cod. metodo di pagamento. Il campo "Vecchia data di scadenza" serve per verifiche su date di scadenza iniziali e di rinegoziazione della rata.<br>
+
+
+
+{{% alert title="Importante" color="warning" %}}
+Il campo **Causale di Blocco** ci indicher…, nel caso in cui la rinegoziazione non andr… a buon fine, la motivazione di tale blocco. Ci• pu• avvenire, ad esempio, se nel setup della app [Commissions CMS](https://helpbc.eos-solutions.it/main.aspx?lang=it-it&content=CommissionsIntroduction.html) Š stato previsto che una fattura non pu• essere rinegoziata (poichŠ ad es. vi sono provvigioni o liquidazioni in corso). In tale caso, all'apertura della page Modifica delle occorrenze dei clienti, il sistema proporr… il campo Causale di Blocco compilato per una o pi— scadenze.
+{{% /alert %}}
+
+
+
+
+
+Dopo aver registrato:
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000261-0/6DueDatesManagement.png"><br>
+
+la Fattura 20-102005 iniziale Š stata chiusa a fronte del documento "Pagamento" di pari importo (entrambi presentano importo residuo = zero). Per questi movimenti il sistema indica il numero di rinegoziazione e chi l'ha eseguita nei due campi appositi.
+
+In rosso sono visibili le tre rate della fattura. Per la nuova rata Š compilato il campo "Data di scadenza precedente".
+
+Riassumendo:
+
+nell'esecuzione procedura con modalit… "Movimenti di storno" il sistema ha generato i seguenti Movimenti C/G a seguito della rinegoziazione con storno movimenti:
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000261-0/7DueDatesManagement.png"><br>
+
+
