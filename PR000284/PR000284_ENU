@@ -1,0 +1,14 @@
+In the setup, it is possible to choose whether to block the posting of lines with a zero amount or to alert the user with a warning message if the document has a total amount equal to zero.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000284-0/2ZeroAmountInvoice_en.png"><br>
+
+### Options
+- **Block Zero-Lines**:
+  If **true** it will block all lines with unit price equal to zero.
+
+	<img width="" src="https://docs.eos-solutions.it/Images/PR000284-0/4ZeroAmountInvoice_en.png"><br>
+
+- **Warn on Zero-Documents**:
+  If **true** it will warn the user that the document has a zero amount. The system still allows the posting.
+
+  <img width="" src="https://docs.eos-solutions.it/Images/PR000284-0/3ZeroAmountInvoice_en.png"><br>
