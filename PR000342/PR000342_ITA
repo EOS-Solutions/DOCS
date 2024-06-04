@@ -1,0 +1,22 @@
+Aprire la page Progresso produzione (MES) e compilare le informazioni richieste nel **tab Generale.**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000342-0/9ManufacturingExecutionSystem-ITA.jpg"><br>
+
+Il sistema chiede di inserire (manualmente o tramite lettore barcode):
+
+-lettura area produzione: es. 100 (reparto assemblaggio)
+
+-lettura badge: es. A001 (Š il badge di chi sta eseguendo le operazioni)
+
+-lettura causale: inserire un codice fase apertura / chiusura / pinzatura tra quelli impostati a setup (es. START)
+
+-lettura operazione: indicare l'operazione da eseguire indicando ordine.riga.operazione (es.  1011004.10000.10)
+
+| Azione | Descrizione |
+| --- | --- |
+| Ripristina | il sistema azzera i valori inseriti |
+| Cambia badge | Š possibile rifare la selezione del badge dell'impiegato, pur rimanendo all'interno del reparto scelto |
+
+| Nota |
+| --- |
+| Se viene inserita una fase Chiusura=OUTPUT il sistema chieder… anche la Quantit…, la Quantit… di scarto e la Causale di scarto. |
