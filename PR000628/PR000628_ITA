@@ -1,0 +1,27 @@
+Con lÂapp Vat Management for Italy Š possibile calcolare gli interessi iva nel caso di liquidazioni iva trimestrali.
+
+**Setup**
+
+Nel Setup VMI:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/35VatManagement.png"><br>
+
+ß necessario indicare se la **societ…** Š soggetta al calcolo dellÂinteresse iva trimestrale, la **percentuale di interessi** ed il **conto contabile** su cui sar… imputato lÂimporto degli interessi.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/36VatManagement.png"><br>
+
+**Liquidazione IVA**
+
+Nel calcolo della liquidazione Iva utilizzando il report Calcola e reg.istra liquidazione IVA VMI, viene calcolato lÂimporto degli interessi trimestrali Iva ad incremento del debito Iva da versare allÂerario.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/37VatManagement.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/38VatManagement.png"><br>
+
+Inoltre, registrando la liquidazione iva sar… imputato lÂimporto degli interessi iva al conto definito nel setup VMI:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/39VatManagement.png"><br>
+
+Nel calcolo della Comunicazione liquidazioni periodiche Iva, lÂimporto degli interessi sar… riportato nel campo VP12.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/40VatManagement.png"><br>
