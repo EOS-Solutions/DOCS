@@ -1,0 +1,25 @@
+After checking the user can enter values in the field **Last Actual Value** on the inspection order's lines.
+
+If the entered value is outside the range maximum / minimum value set in setup, the system asks whether to create a Non-Compliance.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000556-0/29ProductQualityAssurance-ENU.png"><br>
+
+The same goes for the parameters "attributes." In this case the Non-Compliance is created if the user enters a negative value in the Findings field.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000556-0/28ProductQualityAssurance-ENU.png"><br>
+
+The Non-Compliance shows (Tab "Reference") all data related to the original document which generated the inspection order and then the Non-Compliance. From Lines we can manage Causes and Corrective actions
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000556-0/30ProductQualityAssurance-ENU.png"><br>
+
+if another parameter is out of the correct range and requires the creation of a Non-Compliance, in the Non-Compliance already generated the system will add a line.
+
+The field Global Action on the General tab allows to manage the Non-Compliance with the DataSecurity app if installed.
+
+The Inspection Order status will be modified:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000556-0/31ProductQualityAssurance-ENU.png"><br>
+
+| N.B. |
+| --- |
+| To automatically create the non-compliance from the inspection order you need to enable the relative option in the Inspection Setup (PQA)  <br> <img width="" src="https://docs.eos-solutions.it/Images/PR000556-0/41ProductQualityAssurance-ENU.png"><br>|
