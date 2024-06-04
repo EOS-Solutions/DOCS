@@ -1,0 +1,11 @@
+It is possible to define a price sequence for different structures:
+
+* Customer (Header)
+
+Business Central searches for dedicated prices for the customer (in the order header)
+If not found, it moves to sequence 2 and so on.
+The first and last levels are not editable as they represent the first and last detail levels.
+
+* Items (lines)
+
+Business Central performs a control based on the data entered in the "Item" section.
