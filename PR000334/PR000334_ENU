@@ -1,0 +1,124 @@
+After setting up the templates, you can proceed with the single request from the Requests page (PDA), by pressing NEW:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/3PostedDataAdministration(1).png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/4PostedDataAdministration(1).png"><br>
+
+
+
+| **Field**     | **Description**                                                    |
+|---------------|--------------------------------------------------------------------|
+| Request Type  | choose whether to make a request for Modification or for Deletion  |
+| Template Code | enter the template code you want to use                            |
+
+With **Filters** the system shows the list of tables and lets you select the filters.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/6PostedDataAdministration(1).png"><br>
+
+Filters can be imported directly from the template using the "Copy from template" function.
+
+Once the filters have been imported, by clicking on "Replace placeholders" it is possible to massively replace all the values ??between the 2 \#
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/7PostedDataAdministration(1).png"><br>
+
+Then enter the document number you want to change.
+
+Using the New-\>Apply value function, the system carries out the replacement:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/8PostedDataAdministration(1).png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/9PostedDataAdministration(1).png"><br>
+
+And now
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/10PostedDataAdministration(1).png"><br>
+
+
+
+| **Note**                                                                                                                                                     |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Using the "Copy filter" button, it is possible to copy the filter from the first line to all the other lines that have a field No. (but they must be empty). |
+
+Once the filters have been defined, launch the "Load record" function:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/11PostedDataAdministration(1).png"><br>
+
+The system creates a line for each transaction based on the pre-set tables / filters.
+
+For each line it shows the currently present value and it is possible to select the new value for each one:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/12PostedDataAdministration(1).png"><br>
+
+In the case of dimensions it is possible to use the 3 dots on the "New value" field to select the new desired Set ID dimension:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/13PostedDataAdministration(1).png"><br>
+
+
+
+| **Note**                                             |
+|------------------------------------------------------|
+| The 3 dots work with dimensions, tables and options. |
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/22PostedDataAdministration(1).png"><br>
+
+If you don't want to set the same new value to all lines, you can use the "Propagate value" function:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/14PostedDataAdministration(1).png"><br>
+
+At this point the new value will be set to all existing lines.
+
+Then select the lines you want to change (for convenience you can use the "Select all" function):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/15PostedDataAdministration(1).png"><br>
+
+Click on Manage-\>Process to make the change by entering the new value:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/17PostedDataAdministration(1).png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/16PostedDataAdministration(1).png"><br>
+
+The "Old Value" remains as historical data.
+
+
+
+
+| **Note**                                                                                                                                                                                                                                                                                                                      |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Placeholder and filters** The managed placeholders are: Å \#\# String of your choice \#\# for fields of type text and queues Å 01/01/1900 for date fields Å 1234 for whole fields Å 1.234 for decimal fields To filter a date field to show only records where the field is empty, double single quotes ('') must be used.  |
+
+
+
+**PDA Request Log**
+
+Opening the Request Log page we see that each change is documented thanks to a log:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/18PostedDataAdministration(1).png"><br>
+
+
+
+**Cancellation Requests**
+
+On the request card, select Request Type=Delete
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/20PostedDataAdministration(1).png"><br>
+
+The steps for creating the lines are the same as previously described.
+
+In this case it is not possible to select a new value on the lines:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/21PostedDataAdministration(1).png"><br>
+
+
+
+
+| **List of possible states** |
+|-----------------------------|
+| New                         |
+| Executed (Deleted)          |
+| Reverted                    |
+
+
+
+| **Specifications**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| The log table saves the json of the deleted record as a BLOB, therefore it is possible to go back in case of deletion, in case of modification only the old value of the field is saved, therefore in case of restoration, only that field will be restored and not any others fields changed. It is possible to delete and restore several times, each time a log line will be created with the latest version data: - Deletion -\> the entire record - Modify-\> the modified value Few data is lost (Media, MediaSet and Binary. Blobs work.) |
