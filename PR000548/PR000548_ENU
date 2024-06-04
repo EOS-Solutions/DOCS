@@ -1,0 +1,39 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Manage VAT exemption</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Preview and check VAT Plafond overruns</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Print accurate reports for multiple VAT registers</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Calculate and post VAT settlement</td>
+	</tr>	
+	<tr>
+		<td>5</td>
+		<td>VAT amount in case of reverse charge</td>
+	</tr>	
+	<tr>
+		<td>6</td>
+		<td>Calculate and manage the VAT amount pro rata non-deductible</td>
+	</tr>	
+	<tr>
+		<td>7</td>
+		<td>Calculate the VAT interest in the case of quarterly VAT settlements</td>
+	</tr>	
+	<tr>
+		<td>8</td>
+		<td>Check the VAT data posted both by registration date and by operation execution date</td>
+	</tr>	
+	<tr>
+		<td>9</td>
+		<td>Execute Split Payment procedure</td>
+	</tr>		
+</table>
+<br>
