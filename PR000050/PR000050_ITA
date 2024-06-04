@@ -1,0 +1,34 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S4wXApi2UZw" title="GDPR Toolset per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Il GDPR Š stato introdotto per uniformare in tutta Europa le leggi sulla privacy, per proteggere i dati di tutti i cittadini europei e per riorganizzare il modo in cui gli enti trattano i dati personali.
+
+Il nuovo regolamento entra in vigore a partire dal 25 maggio 2018.
+
+Il regolamento si applica ai dati dei residenti nell'Unione Europea. Inoltre, a differenza della precedente direttiva, il regolamento si applica anche a imprese ed enti, organizzazioni in generale, con sede legale fuori dall'UE che trattano dati personali di residenti nell'Unione Europea. Ci• anche a prescindere dal luogo o dai luoghi ove sono collocati i sistemi di archiviazione (storage) e di elaborazione (server). Il regolamento non riguarda la gestione di dati personali per attivit… di sicurezza nazionale o di ordine pubblico ("le autorit… competenti per gli scopi di prevenzione, indagine, individuazione e persecuzione di reati penali o esecuzione di provvedimenti penali").
+
+Secondo la Commissione Europea "i dati personali sono qualunque informazione relativa a un individuo, collegata alla sua vita sia privata, sia professionale o pubblica. Sono considerati dati personali tutto ci• che pu• direttamente o indirettamente identificare una persona: nomi, foto, indirizzi email, dettagli bancari, interventi su siti web di social network, informazioni mediche o indirizzi IP di computer."
+
+Il regolamento disciplina solo il trattamento di dati personali delle persone fisiche.
+
+
+## Diritti dei soggetti
+
+1.  **Breach Notification**: in caso di fuga/furto di dati si deve darne notizia ai clienti, ai controllers e al Garante della Privacy (in Italia).
+2.  **Right to Access**: ogni persona fisica ha diritto di sapere quali dati una societ… tiene su di lei e dove li conserva e l'azienda ha 30 gg per evadere la richiesta.
+3.  **Right to be Forgotten**: la persona fisica ha anche il diritto di chiedere all'azienda di modificare i dati o di cancellarli
+4.  **Data Portability**: una persona fisica pu• chiedere a una societ… di inviarle un report in formato elettronico ( .csv e .excel) contenente l'elenco dei dati che la riguardano.
+5.  **Privacy by Design**: i sistemi informativi devono essere disegnati per proteggere la privacy ovvero chi accede deve vedere solo i dati indispensabili ad attuare il proprio lavoro. (es. ruoli in Nav, permission set, ecc.).
+6.  **Data Protection Officers**: Š necessario nominare dei responsabili che si occupino dei processi.
+
+
+## App GDPR Toolset
+
+L'app GDPR Toolset consente di gestire:
+
+-   Data discovery in NAV
+-   Data reporting (The right to be informed-Articoli 12, 13, 14)
+-   Data exporting (Csv) (The right to data portability-Articolo 20)
+-   Data erasure (The right to be forgotten)
+-   Data rectification (The right to rectification-Articolo 16)
+-   Master data blocking (The right to restrict processing-Articolo 18)
+-   GDPR request Log (Records of processing activities-Articolo 30)
