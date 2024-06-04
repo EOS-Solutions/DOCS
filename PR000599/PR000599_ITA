@@ -1,0 +1,3 @@
+Definizione di gruppi di articoli con lÂobiettivo di : 
+-	Vincolare Ordini attraverso lÂattribuzione degli assortimenti a clienti: in fase di inserimento ordine non si potr… inserire un articolo se non presente nellÂassortimento per quel determinato cliente 
+-	Gestire le promozioni 
