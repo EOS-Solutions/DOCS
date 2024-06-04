@@ -1,0 +1,31 @@
+La app Manufacturing Execution System fornisce diverse stampe:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/2ManufacturingExecutionSystem-ITA.jpg"><br>
+
+* Da **Stampa barcode causali** sulla pagina di setup, Š possibile stampare i barcode per le causali
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/5ManufacturingExecutionSystem-ITA.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/3ManufacturingExecutionSystem-ITA.jpg"><br>
+
+* e per i **badge degli impiegati**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/4ManufacturingExecutionSystem-ITA.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/6ManufacturingExecutionSystem-ITA.jpg"><br>
+
+* Da un Ordine di produzione rilasciato Š possibile **stampare la Scheda commessa in cui Š visibile il barcode** delle fasi, se impostato a setup.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/7ManufacturingExecutionSystem-ITA.jpg"><br>
+
+* Dalla lista Ordini di produzione rilasciati Š possibile **stampare il report "Calcolo dettagliato"** con il barcode in testata:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/16ManufacturingExecutionSystem-ITA.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/17ManufacturingExecutionSystem-ITA.jpg"><br>
+
+Prima della stampa il sistema effettua un controllo sui campi selezionati a setup in modo che siano congrui.
+
+Esempio:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/18ManufacturingExecutionSystem-ITA.jpg"><br>
