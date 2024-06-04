@@ -1,0 +1,16 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000660-0/9EDI_it.jpg"><br>
+
+Un messaggio EDI in uscita viene generato da Business Central e poi esportato e inviato a un partner (flusso in uscita).
+
+Per creare ed esportare i messaggi Š possibile utilizzare il report **Creare messaggi EDI in uscita**. Questo report prender… tutti i documenti BusinessCentral ammissibili e creer… un **messaggio EDI** da essi.
+
+- **Opzioni**:
+	- **Invia**: se si specifica questa opzione, tutti i documenti generati saranno automaticamente esportati nel file system secondo la configurazione di **Setup messaggi EDI**.
+
+- **Filtri**:
+	- **Cod. gruppo EDI**: si pu• usare per creare messaggi solo per i gruppi specificati.
+	- **Tipo di messaggio**: si pu• usare per creare solo certi tipi di messaggi.
+	- **Filtro data**: si pu• usare per limitare i documenti da creare in base alla data di registrazione.
+	- **Filtro nr. documento**: si pu• usare per limitare i documenti da esportare in base al loro nr. di documento.
+
+Qualsiasi errore riscontrato durante la creazione e/o l'esportazione verr… registrato nel registro degli errori (se configurato). Al termine del processo, l'utente pu• aprire un elenco di tutti gli errori (se presenti).
