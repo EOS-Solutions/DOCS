@@ -1,0 +1,23 @@
+**Fatture da emettere / da ricevere**
+
+La request page ä cosç composta:
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX001/operating logics/18SimulatedGeneralLedger.png"><br>
+
+**Data inizio**: da quale data di registrazione devono essere considerati i carichi e le spedizioni
+
+**Data fine**: fino a quale data di registrazione devono essere considerati i carichi e le spedizioni
+
+**Raggruppa righe documento**: selezionato, sarÖ possibile stabilire quali dimensioni saranno oggetto di eventuale ÆspaccaturaØ della riga
+
+**Data di registrazione**: data applicata alle scritture contabili
+
+**Con storno**: selezionato, verranno suggerite delle scritture uguali, ma opposte alle FDR/FDE
+
+**Formula data storno**: formula che definisce la data di registrazione delle scritture di storno
+
+Il sistema genera le scritture nel batch dal quale viene eseguita la funzione ÆPrendi doc. da fatturareØ: in caso di scritture simulate, le registrazioni vengono create nella Data di registrazione selezionata ed auto stornate il giorno successivo; nel caso vengano generate in COGE, la scrittura di storno viene creata automaticamente in fase di registrazione della relativa fattura (nell¬esercizio successivo).
+
+Per agevolare la navigabilitÖ dei movimenti, di default, le registrazioni vengono generate con lo stesso Nr. documento del carico / spedizione dal quale sono state originate.
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX001/operating logics/69SimulatedGeneralLedger.png"><br>
