@@ -1,0 +1,5 @@
+The "Force Same Dimension value" flag is present on the "Default Dimensions" page of the single G/L Account: if set to Yes, upon entry of the writing/document, the system forces the value of the dimension present in the "Dimension Value Code". This management is indispensable in order to be able to set a dimension value on the transactions relating to those accounts automatically fed by the system in the posting phase (e.g.: profits/losses on exchange rates, capital gains/losses from asset disposals, etc.). I
+
+t is also possible to use this setting if dimensional values ??are not associated with master data (e.g.: Purchase items), but you want to force a dimensional value in the general transaction (e.g. common raw materials). 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000511-0/DMT1_ENG.bmp"><br>
