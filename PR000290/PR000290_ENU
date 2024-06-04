@@ -1,0 +1,53 @@
+Relations are used to define the business logic among the characteristics of a rule.
+
+The types of relation are:
+
+**Mandatory/Optional**: a characteristic can be mandatory or optional according to the value of another characteristic; the value of the primary characteristic makes the secondary characteristic mandatory or optional. I can make a characteristic mandatory or optional according to n conditions, using the field Condition Code.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule5_ENU.png"><br>
+
+**TIPS** To hide a characteristic when it is not mandatory, it is necessary to define two separate lines Mandatory/Optional with Hide Characteristic.
+
+**Transfer Value**: the value of the primary characteristic determines the automatic compilation of the secondary characteristic with the value compiled in the Secondary Characteristic Value field. It is possible to transfer a value according to a characteristic, using the field Transfer Value Formula.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule6_ENU.png"><br>
+
+**TIPS** If the fields Primary characteristic value and Secondary characteristic value are both empty, a value written in the first characteristic will be copied to the second characteristic.
+
+**Characteristic Set Value Transfer** It is possible to transfer N values to N separate characteristics depending from the value of the primary characteristic: the flag enable characteristic sets needs to be active and the set needs to be created.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule7_ENU.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule8_ENU.png"><br>
+
+**Filter**: limits the possible values for the secondary characteristics.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule9_ENU.png"><br>
+
+It's possible to combine several characteristics to define the values of the secondary characteristic using a condition: in the first example the filter type relations uses the LAMP condition code.
+Otherwise the filter can be linear (a primary characteristics conditions the values of the secondary characteristic): in the second example if the MATERIAL characteristic has the value ALUMINUM the characteristic called CERT must take on values other than UK.
+
+**Check Condition**: It's possible to verify the relation between characteristics and handle a message or an error. The message goes into the ®Message¯ field, while the condition goes into the ®Condition code¯ field.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule10_ENU.png"><br>
+
+ItÂs possible to combine the condition code with the Transfer Value relation and transfer the exact value of a characteristic by inserting **between square brackets** the value of the characteristic in the value transfer formula.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000290-0/Rule11_ENU.png"><br>
+
+**It is important to note that this type of relations are only applied at the first level of the configuration. The product contains production BOM levels that contain configurable items, only the top-level relations will be applied.**
+
+The order in which the relations are executed is as follows:
+* Transfer value relations without conditions.
+* Filter relations without conditions.
+* Filter relations with conditions.
+* Transfer value relations with conditions.
+* Check Condition relations.
+
+Within each relation type, they are executed in order of: 
+Sequence, Rule code, Primary characteristic code, Primary characteristic value, Condition code, Secondary Characteristic code, Secondary Characteristic value.
+
+<br>
+<br>
+ 
+ 
