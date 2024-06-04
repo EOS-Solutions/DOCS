@@ -1,0 +1,16 @@
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/31bEqCfUcpc" title="General Ledger Application per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br><br>
+
+Nella page Registrazioni COGE Š possibile scegliere i movimenti da collegare:<br>
+**un movimento alla volta**:  tramite il campo "Collega-a movimento" sulla riga (si vedono TUTTI i movimenti, aperti/chiusi)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000014-0/4GeneralLedgerApp-ITA.png"><br>
+
+Una volta scelto il movimento da collegare premere Registra.
+
+Per verificare il collegamento aprire i Movimenti C/G:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000014-0/5GeneralLedgerApp-ITA.png"><br>
+
+Il sistema ha collegato il movimento di 124,04 euro e lo ha chiuso. La partita di 1000 euro Š rimasta aperta per 875,96 euro.
