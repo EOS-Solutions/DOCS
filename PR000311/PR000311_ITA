@@ -1,0 +1,20 @@
+Grazie alla app Withholding Tax Certificazioni Uniche For Italy (ECU) Š possibile gestire la stampa delle certificazioni uniche utilizzando il modello sintetico. Nella pagina Esportazione ritenuta d'acconto (ECU) compilare i campi relativi ai dati da esportare:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000311-0/06WithhTaxCertUniche-IT.png"><br>
+
+| **Campo**                              | **Descrizione**                                                                                                                                                                 |
+|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Anno                                   | indicare l'anno cui si riferisce la comunicazione                                                                                                                               |
+| Funzionari societ… con potere di firma | scegliere dall'elenco un funzionario della societ… con potere di firma. N.B. In Setup contabilit… generale va precedentemente impostato il numeratore per i Funzionari societ…. |
+| Preparato da                           | indicare chi presenta la comunicazione: Societ… Rappresentante fiscale                                                                                                          |
+| Numero comunicazione                   | indicare il numero progressivo della comunicazione                                                                                                                              |
+| Nr. fornitore                          | Š possibile filtrare per numero fornitore                                                                                                                                       |
+| Inizio / Fine data competenza          | indicare il periodo di competenza dei documenti registrati                                                                                                                      |
+| Cod. tributo                           | specificare il codice tributo relativo al versamento con modello F24 (1040)                                                                                                     |
+| Inizio / Fine data pagamento           | Š possibile specificare la data di inizio e fine dei pagamenti                                                                                                                  |
+
+Da **Anteprima stampa PDF** il sistema mostra i dati relativi alle quattro sezioni del modello sintetico da compilare. I campi sono gli stessi che si trovano sulla stampa cartacea.
+
+Da **Esporta file** verr… creato il file Ritenute ANNO. zip da inviare telematicamente:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000311-0/07WithhTaxCertUniche-IT.png"><br>
