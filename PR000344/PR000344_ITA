@@ -1,0 +1,14 @@
+<img width="" src="https://docs.eos-solutions.it/Images/ex092/delivery route setup/6DeliveryRoutePlanner_ITA.png">
+<br><br><br>
+
+
+| **Campo** | **Descrizione** |
+| --- | --- |
+| Nr. giri di consegna |inserire un numero di serie per i giri di consegna |
+| Origine calcolo peso | definisce la modalit… con cui vengono calcolati i pesi:<br><ul><li>Riga documento</li><li>Informazioni spedizione</li></ul> |
+| Origine calcolo pallet | definisce la modalit… con cui vengono calcolati i pallet:<br><ul><li>Categoria articolo</li><li>Informazioni spedizione</li></ul> |
+| Filtro categoria articolo pallet | utilizzato in caso di calcolo dei pallet in base a categoria articolo|
+| Gestire Geo Localizzazioni | permette l'abilitazione del calcolo dei percorsi |
+| Cod. punto part. default / Cod. punto dest. default | rappresentano le coordinate di partenza / arrivo dei giri. Vengono ereditate in testata del giro, ma sono comunque modificabili |
+| Raggruppamento sped. whse. / Raggruppamento Carichi Whse. | Š il metodo con cui vengono emesse le eventuali spedizioni warehouse. I valori ammessi sono:<br><ul><li>Nessuna (una spedizione warehouse per ordine)</li><li>Raggruppa tutti</li><li>Per cliente / Per fornitore</li></ul> |
+| Escludi ordini completamente ricevuti/spediti | esclude gli ordini completamente ricevuti / spediti dai filtri sui documenti del giro di consegna |
