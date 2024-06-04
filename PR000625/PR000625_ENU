@@ -1,0 +1,9 @@
+Once recorded the VAT settlement, the plafond amount still remaining will be reported automatically in the following month.
+
+To print the VAT Plafond choose the relevant option in Calc. reg and VAT payment:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000625-0/27VatManagement-en.png"><br>
+
+| **Note**                                                                                                                                                                                                                                  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Starting from BC17, if the **"Starting Date" is changed,** compared to that proposed by the system, for technical reasons, the **Preview may not display the correct dates** . We therefore **suggest to always Print or Print in pdf.**  |
