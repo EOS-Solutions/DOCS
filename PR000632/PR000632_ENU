@@ -1,0 +1,27 @@
+Split payment, is a particular regime which establishes that **the VAT debtor is the transferee/customer** rather than, as normally happens, the transferor/vendor.
+
+It follows that, for operations subject to split payment, the transferee/customer does not pay **VAT** to his transferor/vendor considering the fact that the same **is "paid" directly to the treasury.**
+
+**Setup**
+
+On the ÃVAT posting setupÄ page, you need to create the appropriate records with the ÃSplit PaymentÄ flag set to Yes:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000632-0/49VatManagement-en.png"><br>
+
+**Operating logic**
+
+By registering the sales document with the defined setup combination, the system automatically takes care of generating the VAT transfer, VAT which will be paid to the Treasury directly by the customer (transferee/customer):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000632-0/50VatManagement-en.png"><br>
+
+**VAT Entries generated**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000632-0/51VatManagement-en.png"><br>
+
+**Customer Ledger Entries generated**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000632-0/52VatManagement-en.png"><br>
+
+**General Ledger Entries generated**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000632-0/53VatManagement-en.png"><br>
