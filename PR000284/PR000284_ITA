@@ -1,0 +1,14 @@
+Nel setup ä possibile scegliere se bloccare la registrazione di righe con importo pari a zero oppure se avvisare l'utente con un messaggio di avviso qualora il documento presenti un importo totale uguale a zero.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000284-0/2ZeroAmountInvoice_it.png"><br>
+
+### Opzioni
+- **Blocca righe a zero**:
+  Se impostato a **sç** il sistema bloccherÖ la registrazione delle righe con prezzo unitario pari a zero
+
+	<img width="" src="https://docs.eos-solutions.it/Images/PR000284-0/4ZeroAmountInvoice_it.png"><br>
+
+- **Avvisa su documenti a zero**:
+  Se impostato a **sç** il sistema avviserÖ in caso di totale documento uguale a zero. ConsentirÖ comunque di registrare
+
+  <img width="" src="https://docs.eos-solutions.it/Images/PR000284-0/3ZeroAmountInvoice_it.png"><br>
