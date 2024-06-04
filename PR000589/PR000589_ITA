@@ -1,0 +1,6 @@
+E' possibile eseguire due report legati alla valutazione Fornitori:
+
+| Report | Descrizione |
+| --- | --- |
+| Valutazione Fornitore (PQA) | Calcola il punteggio specifico per fornitore |
+| Calcola Valutazione Acquisti (PQA) | Attribuisce un punteggio ai fornitori considerando Data, Quantit…, Fornitore certificato e Qualit…. |
