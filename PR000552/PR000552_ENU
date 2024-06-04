@@ -1,0 +1,23 @@
+**Item card**
+
+On the item card:
+
+| Page | Field | Description |
+| --- | --- | --- |
+| Navigate->History->Entries->Ledger entries | Inspection Quantity | Number of pieces under inspection |
+
+<br>
+
+**Sales**
+
+In order to prevent the sales team to sell items under inspection, on the sales order page list the system shows the item avaliability calculation. This way the avaliable amount is shortened by the pieces to be tested.
+
+**Production**
+
+Even the availability calculated for the production will be deducted the quantity of pieces still under inspection.
+
+**MRP/MPS calculation**
+
+In MRP / MPS calculation the quantity under inspection is considered depending on the option on "Inspection Setup (PQA)" page. This option can be activated to prevent orders of goods already in stock. The amount under inspection however, is not available for shipment.
+
+ 
