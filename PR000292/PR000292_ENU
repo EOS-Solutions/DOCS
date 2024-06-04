@@ -1,0 +1,97 @@
+It is possible to set, for each company, which data (both standard and custom tables) to synchronize.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/Profili_ENU.png"><br>
+Pressing New the system opens the synchronization profile card. In the lines, you decide which fields to synchronize between the current company and the remote company.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/ProfiliCard_ENU.png"><br>
+
+| **Field** | **Description** |
+| --- | --- |
+| Table No. | choose the **table** to sync |
+| Description | enter a description |
+| To Company | click the name of the **remote company** with which you want to synchronize data |
+| To Company Description | entered by the system automatically |
+| Show Synch. Error | the user is notified of any synchronization errors |
+| Execute Insert/Modify/Delete Trigger | if active (recommended), system triggers are also executed when records in the remote company are written |
+| Active | if true, the profile is active and functioning |
+| Records Synchronization | Defines when a record should be synchronized automatically or not.<br><br>*   **Automatic**: each change results in synchronization. The user is not required to take any action.  <br>    <br>*   **Setup / User Defined**: only records that appear in "Manual Records Synchronized " will be synchronized:  <br>      <br>    Depending on the option chosen between Setup / User Defined in the list different records will appear:**  <br>    Setup Defined**\->the administrator decides what to put in the list, by entering the list and adding records.**  <br>    User Defined**\->the user decides what to put in the record list. Example:: The user creates a new customer. The action to synchronize appears in the side factbox. A page opens that shows all the companies that can be synced, the user chooses, and pressing ok, that new customer is added to the list on the "Manual Records Synchronized" page. |
+| Synch. Only with Prerequisites | if active, when synchronizing a table that has a key linked to other tables, it will be checked if the table relationships are satisfied. |
+| Asynchronous synchronization | when active, the Job Queue will always be used to perform the synchronization (the job queue must be used when the configuration is of type "Local") |
+| Table Filter | you can insert additional filters on the table entered on the Profile |
+
+<br>
+Let's see the main fields on the Lines:
+
+| **Field** | **Description** |
+| --- | --- |
+| Field No. | progressive numbering for fields |
+| Field Name / Caption | name and description of the field to synchronize (can also be a custom field) |
+| Synchronization | you can also choose, field by field, whether the synchronization should be done with validation or not:<br><br>*   Yes<br>*   Validation<br><br>if you choose "Validation", **checks are made** on the remote company for the field to be synchronized:<br><br>úÿÿÿÿÿÿÿÿ If the field has a table relation, the system checks it (e.g. if the field is in relation to the items, the system verifies that the item exists).<br><br>úÿÿÿÿÿÿÿÿ If the field matches code, it runs.<br><br>úÿÿÿÿÿÿÿÿ If there are events linked to the field, they are executed.<br><br>Once the checks are finished, the system may return any **errors**. |
+| Validation Sort | you can set a validation sequence (the first field is always the primary key). Through Manage->Move Up / Move Down we can change the order of the sequence |
+| Remote Update | options:  <br>  <br>\- Always: l'aggiornamento del campo viene eseguito sempre  <br>  <br>\- Only If Empty: the field is updated only if the target field is empty  <br>  <br>\- Only If Different: the field is updated only if the target field is different  <br>  <br>\- Only On Creation: upgrade is performed only when the field is created |
+| Allow Remote Changes | on the field you may or may not allow changes by the target company  <br>  <br>Options are:  <br>  <br>\- Allow  <br>\- Deny Manual Changes  <br>\- Deny All |
+| Data Transformation Exists | The system automatically enable the option if transformations have been set. |
+
+<br>
+### Transformation
+From **Manage->Transformation** you can transform data.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/Transformation_ENU.png"><br>
+
+There is an item in the Source Company with a given unit of measure. We want to synchronize data with a remote Company that uses a different unit of measure for the same item. So let's specify a transformation: when the system encounters the given Unit of Measure = "Imballo (Package)" on the current Company, it will have to duplicate it in the remote company with "Pallet". 
+
+However, the fields on the Transformation page can still be edited manually.
+
+| **Field** | **Description** |
+| --- | --- |
+| Table Filter | allows you to apply the transformation only for the specific filter applied |
+| Fixed Value | if enabled, the "From Value" field is no longer editable, and the system, REGARDLESS of what it finds in the source company, will consider the value in the "To Value" field.  <br>  <br>![](Eos-it/images/18MasterDataIntercompany.png) |
+| To Value is a mask | to check when the caption we enter in the "To Value" field is different from the options proposed by the system (for example, if we want to introduce a prefix in front of the chosen value) |
+| From Value | value of the source Company |
+| To Value | value to be copied on the destination Company |
+<br>
+For lines for which we have set up a transformation, the system automatically checks the option in the column "Data Transformations exist":
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/DataTransformationExists_ENU.png"><br>
+
+### Other Functions
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/Actions_ENU.png"><br>
+
+#### Synchronization Log
+From Synchronization Log it is possible to trace any synchronized table and error.
+
+#### Profile Duplication
+Allows you to **duplicate a synchronization profile** (giving it a different name) that you have already created so that you don't have to recreate particular and complicated setups
+
+#### Copy Profile To
+**copies the fields and setups** that have already been entered for a profile **to another existing profile**
+
+#### Force Complete Synchronization
+The system completes background synchronization by running multiple records at a time so that it does not block the user while working.
+
+### Remote Table Limitations
+For the table indicated in the General tab, you can limit the actions that each target company can take. The setup is set on the source company and will then be synchronized, and then replicated, to all other companies. 
+
+ **Remote Table Limitations** :
+ 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000292-0/TableLimitation_ENU.png"><br>
+ 
+ 
+| **Field** | **Description** |
+| --- | --- |
+| Insert Allowed | options:  <br>ÿ Yes  <br>ÿ Only System changes (Only changes of system's automatic and batch jobs can occur in the remote company)  <br>ÿ Deny All |
+| Modify Allowed | options:  <br>ÿ Yes  <br>ÿ Custom (if selected the system will allow you to perform the individual actions allowed in the "Allow Remote Changes" column)  <br>ÿ Deny All |
+| Delete Allowed | options:  <br>ÿ Yes  <br>ÿOnly System changes ÿ(Only changes of system's automatic and batch jobs can occur in the remote company)  <br>ÿ Deny All |
+| Rename Allowed | options:  <br>ÿ Yes  <br>ÿ Only System changes ÿ(Only changes of system's automatic and batch jobs can occur in the remote company)  <br>ÿ Deny All |
+
+
+{{% alert title="NOTE" color="warning" %}}
+Remote table restrictions are applied to the entire table ignoring any filters applied to the profile
+{{% /alert %}}
+
+
+{{% alert title="NOTE" color="warning" %}}
+
+The app doesn't add any discriminant on the data it replicates: a customer record is replicated in the same way as any other table.
+
+*  If you replicate the "Customer" and the "Contact" you must manually include the "Contact Business RelationÃ table.
+ 
+* Pay attention to ÃNo. SeriesÄ: if you replicate a table with a ÃNo. SeriesÄ for primary key, such as contacts, the destination companies must have a different ÃNo. SeriesÄ pattern.
+
+{{% /alert %}}
