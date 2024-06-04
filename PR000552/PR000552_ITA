@@ -1,0 +1,23 @@
+**Anagrafica articolo**
+
+Nell'anagrafica articolo:
+
+| Page | Campo | Descrizione |
+| --- | --- | --- |
+| Scheda articolo/Naviga/Movimenti contabili | Quantit… di controllo | Indica quanti pezzi di un singolo carico sono ancora in controllo qualit…. |
+
+<br>
+
+**Vendite**
+
+Per evitare che il reparto vendite possa vendere degli articoli che sono in controllo qualit…, nella page degli ordini di vendita viene effettuato il calcolo della disponibilit… degli articoli, in modo tale che la quantit… disponibile venga decurtata del quantitativo di pezzi ancora da controllare.
+
+**Produzione**
+
+Anche la disponibilit… calcolata per la produzione sar… decurtata del quantitativo di pezzi ancora in controllo qualit….
+
+**Calcolo MRP/MPS**
+
+Nel calcolo MRP/MPS la quantit… in controllo qualit… viene considerata in modo condizionato al campo Considera qt…. in controllo in MRP nel Setup Controllo Qualit….
+
+ Questo pu• essere attivato per evitare che venga riordinata della merce che Š gi… in magazzino, ma che deve solo essere controllata. La quantit… in controllo non Š comunque disponibile per la spedizione.
