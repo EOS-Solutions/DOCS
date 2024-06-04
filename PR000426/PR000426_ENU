@@ -1,0 +1,32 @@
+The Product Configurator also allows you to configure **Assembly BOMs**.
+
+The following fields have been introduced in the Assembly BOM:
+
+-   Formula Quantity
+-   Formula Code
+-   Condition Code
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000426-0/Assembly1_ENU.png"><br>
+
+To configure an item with Assembly BOM it is necessary to set it up as:
+
+-   **Configuration Type ®**Neutral to Configuration¯
+-   **Rule** Configuration
+-   **Replenishment System:** Assembly
+
+The product configuration phase is identical to the classic configurator, with the difference that, at the end of the configuration, an assembly BOMis generated.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000426-0/Assembly2_ENU.png"><br>
+
+To the advantage of using the assembly BOM, it is emphasized that:
+
+-   It can also be used **without using the APP ®Product Configurator for manufacturing**¯
+-   It can also be used with the **Essential Experience**
+-   When used with the Premium Experience and the Product Configurator for Manufacturing app, it gives the possibility to use both Assembly and Production BOMs.
+
+Disadvantage:
+
+-   **It does not support** configuration of **Variants** because the standard BC does not provide assembly lists for variant codes.
+
+
+
