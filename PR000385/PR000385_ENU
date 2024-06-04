@@ -1,0 +1,26 @@
+| **Record type CBI**                                                                                                            |
+|--------------------------------------------------------------------------------------------------------------------------------|
+| IB-EF                                                                                                                          |
+|<img width="" src="https://docs.eos-solutions.it/Images/PR000385-0/2BFForItaly-en.png"><br>  |
+
+Let's see an example:
+
+after posting a sales invoice with Payment method = RIBA:
+
+you send the RIBA file (it is only in CBI format, not SEPA) from standard italian Business Central to the Bank. Now there are two options:
+
+-   the customer pay - \> the Bank doesn't give any advise
+-   the customer does not pay -\> after the expiry date and the days of risk (usually 15 days), **thanks to the Bank Files for Italy app,** it is possible to **import into BC a file that shows the dishonored**, after downloading it by homebanking.  
+    Then you can post the dishonored (Document type: Dishonored).
+
+The report is **Import customer dishonored (CBI)**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000385-0/3BFForItaly-en.png"><br>
+
+| **Options**            |                                            |
+|------------------------|--------------------------------------------|
+| Template name          | Choose a template from the general journal |
+| Batch name             | Indicate a batch for the posting           |
+| Transitory Account No. | Choose a transitory account number         |
+
+Then press OK and load the file.
