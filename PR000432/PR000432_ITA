@@ -1,0 +1,34 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000432-0/Item1_ITA.png"><br>
+
+Sull'anagrafica articolo Š presente il campo Cod. unit… di misura secondaria che specifica la seconda unit… di misura per l'articolo considerato. Non Š obbligatorio inserire un valore. Se il campo non viene compilato, la seconda unit… di misura non verr… gestita.
+
+Una volta movimentato l'articolo, non sar… pi— possibile modificare l'unit… di misura (sia base, che secondaria).
+
+In Unit… di misura articoli possiamo vedere tutte le unit… di misura impostate per il prodotto. Ad esempio:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000432-0/Item2_ITA.png"><br>
+
+per questo articolo l'unit… di misura principale Š PZ. Ogni pezzo pesa 2,5 Kg e in una scatola sono contenuti 10 pezzi.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000432-0/Item3_ITA.png"><br>
+
+In anagrafica articolo va inoltre definito il **Cod. Unit… di misura secondaria** e il relativo **Metodo di calcolo**.
+
+Per il Metodo calcolo qt… secondaria i valori ammessi sono:
+
+-   **Default:** permette lÂinserimento con entrambe le unit… di misura, ma effettua il calcolo solo se lÂaltra quantit… Š diversa da zero.
+-   **Fisso:** esegue sempre la conversione fra le quantit….
+-   **Nessun valore predefinito:** non esegue la conversione fra le quantit….
+
+Per il Tipo calcolo quantit… secondaria. I valori ammessi sono:
+
+-   Quantit… per unit… di misura: per il calcolo fra lÂunit… di misura primaria e secondaria utilizza il campo standard Qt… per unit… di misura (Divide).
+-   Quantit… reciproca per unit… di misura: per il calcolo fra lÂunit… di misura primaria e secondaria utilizza il campo Qt… reciproca per unit… di misura (Moltiplica).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000432-0/Item4_ITA.png"><br>
+
+N.B. La Quantit… reciproca viene utilizzata solo per I calcoli interni fra unit… di misura primaria e secondaria.
+
+<br>
+<br>
+ 
