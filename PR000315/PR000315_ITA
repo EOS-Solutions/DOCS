@@ -1,0 +1,22 @@
+Le **condizioni** vengono utilizzate allÂinterno delle:
+
+1.  **Regole Relazioni** per verifica condizioni, gestire i filtri
+2.  Nelle **Distinte Base** per attivare o meno un componente della distinta
+3.  Nei **Cicli** per accendere o spegnere una fase
+4.  Nelle **logiche di funzionamento**
+5.  Nelle **formule**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000315-0/Conditions1_ITA.png"><br>
+
+Le condizioni possono essere in **AND** o in **OR**: la scelta determina come combinare insieme i filtri allÂinterno della singola condizione.
+
+AllÂinterno delle righe condizioni devo inserire le condizioni da incrociare, specificando se va verificata la **condizione uguale o diversa**.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000315-0/Conditions2_ITA.png"><br>
+
+Nel testo filtro posso inserire filtri dei valori condizioni secondo le regole di Business Central.ÿß possibile inoltre inserire delle caratteristiche con [] quando va effettuato un confronto puntuale sul valore di una caratteristica.
+
+<br>
+<br>
+ 
+ 
