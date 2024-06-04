@@ -1,0 +1,11 @@
+The Block Customer function checks whether the dimensions, set as mandatory, have been correctly entered on the Customer Card.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000576-0/17DataSecurity(1).png"><br>
+
+The "Value Posting" field allows you to set the checks based on the following options:
+
+* Code Mandatory
+* Same Code: is the same as the "Dimension Value Code"
+* No Code
+
+The same function is also used for vendors and items.  
