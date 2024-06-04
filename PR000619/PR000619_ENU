@@ -1,0 +1,23 @@
+From Line ->Routing we can see the details relating to the production order operations:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000619-0/5ManufacturingBaseToolkit-ENU.png"><br>
+
+By selecting an operation (e.g. Painting) from Line -> Personnel we can have the details of the people working on the painting
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000619-0/6ManufacturingBaseToolkit-ENU.png"><br>
+
+From Related->Allocated Capacity we can see the **capacity need:**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000619-0/7ManufacturingBaseToolkit-ENU.png"><br>
+
+Similarly for the equipment: 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000619-0/8ManufacturingBaseToolkit-ENU.png"><br>
+
+It is possible to check the work **load** of the personal / tools work center based on the allocated capacity. On the Work Center card from Related-> Production Area-> Load:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000619-0/9ManufacturingBaseToolkit-ENU.png"><br>
+
+It is possible to see the loads by day, week, month, quarter, year, period. In the same way you can view the workload for the equipment:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000619-0/10ManufacturingBaseToolkit-ENU.png"><br>
