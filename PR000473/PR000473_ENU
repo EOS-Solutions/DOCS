@@ -1,0 +1,13 @@
+## Authentication
+
+At the ARXivar API URL: **NomeServer/ARXivarNextAuthentication** open the "Software" menu link:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000473-0/21DoCSolutionsForArxivarNext.png"><br>
+
+Press "+" and enter the Client ID
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000473-0/19DoCSolutionsForArxivarNext.png"><br>
+
+Select "Activate". Now on the list you can see the Client ID and the relative Secret
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000473-0/20DoCSolutionsForArxivarNext.png"><br>
