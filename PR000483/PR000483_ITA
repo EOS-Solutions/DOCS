@@ -1,0 +1,47 @@
+Per creare i solleciti Š possibile **eseguire un report** oppure utilizzare l'apposita **action nella page Solleciti consegna (PDR).**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/10DelRem_IT.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/11DelRem_IT.png"><br>
+
+L'impostazione predefinita per il Posting e per la Data Documento Š la **Workdate**.
+
+La Posting Date viene utilizzata come data di riferimento per il calcolo dei giorni relativi ai livelli. Se si seleziona "Solo ordini scaduti" sul sollecito non compariranno le righe relative ad ordini che devono ancora scadere.
+
+ß possibile filtrare per specifico fornitore oppure eseguire il report su tutti i fornitori.
+
+N.B. Viene sempre utilizzato il livello documento. Non viene gestito il livello di testata.
+
+**Esempio di sollecito**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/12DelRem_IT.png"><br>
+
+In fondo viene riportato l'elenco degli ordini che devono ancora scadere.
+
+In testata il campo "Livello di sollecito" mostra il grado cui siamo arrivati nel sollecitare gli ordini al fornitore.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/18DelRem_IT.png"><br>
+
+## Registrazione
+
+Una volta che il sollecito Š stato controllato, lo si pu• registrare e quindi emettere dalla page del Sollecito stesso premendo Emetti.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/16DelRem_IT.png"><br>
+
+Modificando i filtri Š possibile anche fare una registrazione massiva se necessario.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/17DelRem_IT.png"><br>
+
+| **Campo**                      | **Descrizione**                                                                                                                                          |
+|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Stampa                         | viene stampato in automatico il sollecito (oppure Š possibile eseguire la stampa dalla testata Sollecito tramite apposito bottone)                       |
+| Sostituisci data registrazione | se abilitata questa opzione consente di sovrascrivere la data registrazione presente sul documento con quella nel campo sottostante "Data registrazione" |
+| Data di registrazione          | indica la nuova data registrazione                                                                                                                       |
+
+**Sul sollecito registrato Š presente il campo "Data scadenza".** Tale campo viene utilizzata per definire i solleciti successivi.
+
+**Movimenti solleciti consegna**
+
+Le righe di solleciti emessi vengono registrate nei "Movimenti solleciti consegna (PDR)":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000483-0/15DelRem_IT.png"><br>
