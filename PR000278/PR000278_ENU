@@ -1,0 +1,33 @@
+From the W.hse Shipment list->New you can create a new warehouse shipment:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex006/create cws shipment/28CombinedWarehouseShipment.png">
+
+<br><br>
+
+| **Field** | **Description** |
+| --- | --- |
+| No. | mandatory. Automatically assigned. |
+| Location Code | Select from the list the location which contains the goods. |
+| Address | it is automatically filled by the system according to the selected orders showed on the Lines. |
+| Combine Shipments | enable the option in order to combine shipments. It is enabled by default if it is active on the selected Location card.<br><br>From Process->Groups it is shown in a list how shipments are grouped (it is possible to see both the group and the single source document). |
+
+<br>
+
+Press "**Get Source Doc. Lines**". You will see a list containing all orders which articles are in the location selected. You can filter for Source Document, Destination No., Destination Type, Ship-to Address ecc. You can also choose to view only the documents with the same shipping address (Only Combinable Documents).
+
+Show Lines allows to show details for the specific orders.
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex006/create cws shipment/30CombinedWarehouseShipment.png">
+
+<br><br>
+
+Choose combinable shipments and press ok.
+
+On the lines we can see how many shipments the system create. The **Factbox** on the right shows the information about the CWS shipment.
+
+From **Process->Groups** it is showed details about grouping shipments.<br>
+From **Shipping Info** we can verify / modify the shipping options:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex006/create cws shipment/36CombinedWarehouseShipment.png"><br>
