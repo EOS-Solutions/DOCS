@@ -1,0 +1,27 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Importazione insoluti clienti (CBI)</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>SEPA importazione insoluti clienti (CBI)</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Importazione pagamenti clienti (CBI)</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Export RID attive (SEPA DD)</td>
+	</tr>	
+	<tr>
+		<td>5</td>
+		<td>Export bonifici extra-UE in formato CBI</td>
+	</tr>		
+	<tr>
+		<td>6</td>
+		<td>Importazione codici ABI / CAB</td>
+	</tr>			
+</table>
+<br>
