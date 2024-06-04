@@ -1,0 +1,46 @@
+Apriamo la pagina Ordini di vendita e creiamo un Nuovo ordine:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000614-0/19CFG_ITA.png"><br>
+
+Quando inseriamo l'articolo sulla riga dell'ordine si apre la finestra in cui il configuratore chiede di compilare le diverse caratteristiche della "Regola 01" che abbiamo applicato alla Scheda articolo "Coperta".
+
+Una volta scelto il Tessuto "P=Poliestere" (tra cotone, lana, poliestere) il sistema chiede il Colore e propone di scegliere fra i cinque colori stabiliti dalla Regola 01. Altezza e Lunghezza devono essere nel range di valori prestabilito (tra 100 e 200), mentre la Superficie viene calcolata in base alla formula immessa sempre nella Regola 01.
+
+La Factbox sulla destra riporta le voci che si aggiornano in base alle opzioni scelte nelle righe (es. prezzo, se scegliamo Lana: 110 euro, se scegliamo Cotone: 50 euro, se scegliamo Poliestere: 20 euro):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000614-0/20CFG_ITA.png"><br>
+
+Inoltre in base al Colore Š possibile che compaia una maggiorazione.
+
+Questo perchŠ alla Regola Š associata una Matrice prezzi che in base al Valore della caratteristica applica i prezzi stabiliti.
+
+La matrice dei prezzi consente infatti di gestire i prezzi di vendita in modo parametrico in base alle caratteristiche del prodotto. Le principali funzionalit… sono:
+
+-   Prezzi di listino o prezzi particolari per specifico cliente.
+-   Prezzi per caratteristica.
+-   Valuta, date di inizio e fine validit… e scaglioni di quantit….
+-   Gestione maggiorazioni.
+-   Gestione maggiorazioni a prezzo di listino.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000614-0/21CFG_ITA.png"><br>
+
+Dopo aver compilato i dati premiamo OK e il configuratore avr… inserito una riga per il **nuovo articolo** il cui nome Š composto secondo il codice definito a setup (in Regole (CFG, nel campo Formato codice) e una seconda riga per la maggiorazione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000614-0/22CFG_ITA.png"><br>
+
+| N.B.                                                                                                                                                |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nel campo della page Setup configuratore (CFG) Š possibile scegliere se avere le righe separate per le maggiorazioni (Abilita righe maggiorazione). |
+
+**Varianti articolo**
+
+Nel caso in cui a Setup sia stata attivata la **gestione delle varianti** articolo, quando all'interno dell'ordine compiliamo le caratteristiche, il sistema non riporter… sulle righe un nuovo articolo, ma una variante dell' articolo che avevamo indicato nel campo Nr. della riga.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000614-0/29CFG_ITA.png"><br>
+
+Tutte le varianti generate le possiamo vedere nella Scheda articolo da Azioni-\>Articolo-\>Varianti cui sono collegati cicli e distinte base.
+
+<br>
+<br>
+ 
+ 
