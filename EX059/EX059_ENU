@@ -1,0 +1,27 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Enter the general setup and the companies' setup
+</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Create the Synchronization Profiles</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Decide what to sync and determine who can make changes</td>
+	</tr>
+</table>
+
+<br>
+ 
+# MDI Master Data Intercompany - SUMMARY
+
+Press ALT + Q and digit ÃMDIÄ for a list of the features involved:
+
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/EX059-0/SearchMDI_EN.png"><br>
+
+
