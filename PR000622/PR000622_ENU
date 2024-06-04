@@ -1,0 +1,39 @@
+In order to fill in the worksheet press Calculate Components:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000622-0/12ManufacturingBaseToolkit-ENU.png"><br>
+
+Components can be calculated **based on their origin**: Production BOM or Production Orders. With this functionality it is in fact possible to change components directly on the existing production orders.
+
+The exchange can be of an item or of a Bill of Materials. You can specify the Item No. in this field, or filter by item in the "Filter: Item" section.
+
+You can indicate in the **tab "With"** the item to be replaced with:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000622-0/13ManufacturingBaseToolkit-ENU.png"><br>
+
+It is also possible:
+
+* Check for replacement items
+
+* Create a new version (as in the standard functionality)
+
+* Multiply the quantity of components by a certain factor
+
+* Filter only for certain versions
+
+* Filter only for certain link codes between routing and BOM
+
+After performing the calculation, the system proposes the lines identified in the BOM containing the item to be replaced (they cannot be changed manually) and the new item that we want to insert in its place (the fields relating to the new item can be changed manually):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000622-0/14ManufacturingBaseToolkit-ENU.png"><br>
+
+and the new quantity:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000622-0/15ManufacturingBaseToolkit-ENU.png"><br>
+
+You can also specify a new routing link code and a new position.
+
+You can decide, if it has not been previously specified in the calculation page, to create a new version of the item by ticking the relative option.
+
+| Important |
+| --- |
+| At each subsequent calculation, the system adds the lines in the report without deleting the previous ones. |
