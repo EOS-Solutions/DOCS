@@ -1,0 +1,9 @@
+Aprire la pagina Setup EDS:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000577-0/4DataSecurity(1).png"><br>
+
+| Campo                     | Descrizione                                                                                                                                                                                                                                                                                                                                      |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Import Dati               | Tale funzione viene applicata solo durante upgrade da precedenti versioni di Data Security built in C\\AL. Esportare i dati da un vecchio ambiente utilizzando una Json export function in RapidStart service  Cliccare Import Dati per caricare il file json esportato all'interno del nuovo ambiente Business Central e inserire nuovi record  |
+| Cancella mail inviate     | Si possono eliminare le email gi… processate                                                                                                                                                                                                                                                                                                     |
+| Ignora controlli permessi | Si pu• decidere di ignorare i controlli sui permessi per tutte le tabelle (es. per un ambiente demo)                                                                                                                                                                                                                                             |
