@@ -1,0 +1,26 @@
+The Power MES (MES) app allows you to record production outputs by keeping track of the processing times of operators during the processing phases, taking advantage of the versatility of power apps that allow them to be used even on the move.
+
+**Main features**
+
+-   Parameters and base data are managed in BC
+-   It is a multilingual application, the customer can change the labels
+-   It's multicompany
+-   The main entity are the customizable parameterizable production panels
+-   It was born to be paperless but can also be used with barcodes
+-   Application logics are defined in BC and are largely the same as [MES Manufacturing Execution System](https://helpbc.eos-solutions.it/main.aspx?lang=en&content=ManufacturingExecutionSystem.html) app
+-   It is possible to manage posting at 3 levels
+-   It can be integrated with "old" versions of Nav or other ERPs
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000063-0/Setup2_ENU.jpg"><br>
+
+The development takes place in PowerApp, the logic is managed on BC, integrations are envisaged with the machines that aim to have reports on the functioning of the single machine or of the plant to carry out maintenance with Azure Machine Learning.
+
+<br>
+<br>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CLIh7IZII-A" title="EOS Power MES is the solution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+     
