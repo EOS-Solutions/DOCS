@@ -1,0 +1,32 @@
+Il configuratore di Prodotto Permette di configurare anche le **Distinte Base di Assemblaggio**.
+
+Sono stati introdotti nella distinta Base di Assemblaggio i Campi:
+
+-   Formula Quantit…
+-   Codice Formula
+-   Codice Condizione
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000426-0/Assembly1_ITA.png"><br>
+
+Per Configurare un articolo con DB di Assemblaggio Š necessario **impostare** allÂinterno dellÂ**articolo**:
+
+-   **Tipo di Configurazione** ®Da neutro a Configurato¯
+-   **Regola** Configuratore
+-   **Sistema di Rifornimento:** Assemblaggio
+
+La fase di configurazione di prodotto Š identica a quella del configuratore classico, con la differenza che al termine della configurazione viene creata una distinta base di assemblaggio.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000426-0/Assembly2_ITA.png"><br>
+
+A vantaggio dellÂutilizzo della distinta base di assemblaggio si sottolinea che:
+
+-   Pu• essere utilizzata anche **senza lÂutilizzo dellÂAPP ®Product Configurator for manufacturing**¯
+-   Pu• essere utilizzata anche con lÂ**esperienza Essential**
+-   Se utilizzata con lÂesperienza Premium e con la Product Configurator for Manufacturing d… la possibilit… di utilizzare sia Assemblaggio che Distinte Base di produzione.
+
+A svantaggio:
+
+-   **Non** supporta la configurazione articoli **Configurazione con Varianti** perch‚ da standard BC non sono previste distinte di assemblaggio.
+
+
+
