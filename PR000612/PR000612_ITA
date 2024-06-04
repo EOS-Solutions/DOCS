@@ -1,0 +1,41 @@
+Aggiunta possibilit… di gestire differenti date di riferimento per prezzo e per sconto.
+In setup SPP aggiunti i 2 seguenti campi
+* Data riferimento sconto
+* Data riferimento prezzo
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000612-0/Immagine26.png"><br>
+
+I valori opzionabili sono:
+* Data ordine
+* Data di consegna richiesta
+
+I valori opzionati (e relative date) verranno riproposti automaticamente su 4 nuovi campi aggiunti in Testata Ordine e utilizzati per intercettare prezzi e sconti validi con tali condizioni.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000612-0/Immagine27.png"><br>
+
+
+Nella Page ÃEccezioni prezzi e scontiÄ possono essere indicate le eccezioni/deroghe sullÂapplicazione di prezzi e sconti rispetto a quanto definito nel setup SPP base.
+
+Le eccezioni possono essere definite secondo i seguenti parametri:
+* Note: campo descrittivo utilizzabile per specificare lÂeccezione redatta
+* Tipo: pu• essere definita eccezione per:
+	* Cliente specifico
+	* Gerarchia
+NB: Eccezioni specificate per cliente sono prioritarie rispetto quelle per Gerarchia
+* Codice cliente e Descrizione: in combinazione con il campo al punto sopra definisce cliente/gerarchia al quale sar… applicata lÂeccezione
+* Livello: valido solo nel caso si opzionasse il Tipo ÃGerarchiaÄ; ne definisce il livello gerarchico 
+* Tipo di calcolo: definisce se lÂeccezione Š applicata a:
+	* Prezzi
+	* Sconti
+	* Entrambi
+* Tipo data riferimento: definisce la tipologia di data che, in combinazione con il campo indicato al punto precedente, viene utilizzata in alternativa a quella indicata in Setup SPP nellÂapplicazione della condizione economica. 
+Possono essere opzionati i seguenti valori:
+	* Data ordine
+	* Data consegna richiesta
+	* Data fissa
+* Data fissa: definisce la data che, in combinazione con il campo indicato al punto precedente, viene utilizzata in alternativa al Setup SPP nellÂapplicazione della condizione economica.
+* Data inizio e Data fine: definiscono il periodo di validit… allÂinterno del quale lÂeccezione viene applicata
+* Modificabile: defisce se lÂeccezione (riportata in testata Ordine Vendita) pu• essere eventualmente modificata.
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000612-0/Immagine28.png"><br>
