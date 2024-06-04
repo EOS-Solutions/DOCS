@@ -1,0 +1,59 @@
+Go to the page Communication VAT Clearance - Entries and select New to create a  new communication form:
+
+In the Entry Card insert the data (the fields on this page correspond exactly to the fields of the VAT Settlement Communication Model).
+
+<br>
+<img width="" src="https://docs.eos-solutions.it/Images/ex018/description/EN-3EVS.png"><br>
+<br>
+
+
+| **Field** | **Description** |
+| --- | --- |
+| Year | enter the reference year. The system automatically completes the start and end date |
+| Period Type | if the VAT Settlement is quarterly, it is necessary to fill in only one Communication Card with the Period Type = **QUARTER**. If the VAT Settlement is monthly, it is necessary to fill in three different forms, each with Type period = **MONTH** and Period No. equal to the relevant month. |
+| Period No. | indicate the reference month (values ??from 1 to 12) or the reference quarter (values ??from 1 to 4). <br>NB Taxpayers who make quarterly settlements, pursuant to art. 7, d.P.R 14, 1999, n. 542, must indicate the value "5" with reference to the fourth solar quarter |
+| Settlement Quarter No. | field filled in automatically by the system |
+| VP1 Subforniture | indicates that the taxpayer makes use of the facilities provided for by the art. 74, paragraph 5 |
+| VP1 Exceptional events / operations | for taxpayers who have made use of tax benefits (for the reference period, for VAT purposes) issued following natural disasters or other exceptional events / operations
+      
+<br>
+Pressing Calculate Amounts the following fields (except VP10, VP11 and VP12) will be automatically populated (calculated by date of operation). They can however be changed manually:ÿ
+<br>
+     
+
+| **Field** | **Description** |
+| --- | --- |
+| VP2 Total active oper. | total amount of active transactions (sales of goods and services) net of VAT, carried out in the reference period by pressing on the amount, it is possible to view the VAT entries that contribute to the total. |
+| VP3 Total passive oper. | total amount of internal, intra-community purchases and imports, relating to goods and services resulting from invoices and import customs bills, net of VAT, issued in the reference period. <br>By pressing on the amount, you can view the VAT entries that contribute to the total. |
+| VP4 Payable VAT / VP5 VAT Deducted | VAT Total of Purchase and Sales invoices. <br>By pressing on the amounts, you can view the VAT entries that contribute to the total. |
+| VP6 VAT owed | corresponds to the difference between the VP4 field and the VP5 field if positive |
+| VP6 VAT owed on credit | corresponds to the difference between the VP4 field and the VP5 field if negative (credit VAT for the following period) |
+| VP7 Debt prev. period | debt amount not paid in the previous period (since it does not exceed ±25.82) |
+| VP8 Credit prev. period | amount of VAT credit deducted, resulting from the previous communication the same solar year |
+| VP9 Credit prev. year | amount of the countervailable VAT credit that is deducted in the settlement of the period, resulting from the annual declaration of the previous year |
+| VP10 Auto payments UE | total amount of payments relating to the tax due for the first internal sale of vehicles |
+| VP11 Tax Credit | amount of the special tax credits used in the reference period to deduct the payment |
+| VP12 Inter. trimestral paym. | amount of interest due in relation to the settlement of the quarter |
+| VP13 Down paym. owed | indicate the amount of the deposit due, even if not actually paid. The row must be completed by taxpayers obliged to make deposit payments pursuant to art. 6 of Law n. 405 of 29 December 1990, and successive amendments.When the amount of the deposit is less than ±103.29, the payment should not be made, and therefore no amount should be indicated in the row. |
+  | VP13 Method | the method box must be filled in indicating the code relating to the method used to determine the down payment: <br>"1" historical;<br> "2" forecasts;<br> "3" analytical - effective;<br>"4" subjects operating in the telecommunications sectors, water supply, electricity, waste collection and disposal, etc. |
+| VP14 VAT to be paid | amount of VAT to be paid, or to be transferred to the controlling Entity or Company adhering to the group VAT settlement procedure |
+| VP14 VAT on credit | amount of VAT on credit, or to be transferred to the controlling Entity or Company adhering to the group VAT settlement procedure
+      
+<br>
+Press Save XML to generate and download the XML file. Once you have saved the XML file, check it before the submission.
+
+Print example of the PDF file:
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex018/description/EN-4EVS.png"><br>
+
+
+     
+
+
+
+
+
+
+
+
