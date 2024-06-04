@@ -1,0 +1,18 @@
+The **Generate Batch Configuration** feature is a utility dedicated to the **massive creation of configured item** numbers.
+
+It is used in cases where, for business reasons, you want to generate the item catalog before the actual request arrives from the customer, perhaps due to a very long approval process of BOMs and routings, or in cases where the purchase items are configurable and it is necessary that the codes exist in order to enter the supplier's price list.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000324-0/Batch1_ENU.png"><br>
+
+<br>
+
+1.  In the **item no.** field, enter the configurable item or a previously configured item to use as a starting point for filling in the characteristic values;
+2.  Use the **Update Data** feature to populate rows with characteristics associated with the rule;
+3.  For each required characteristic of type structure, you must fill in the **New Characteristic Value** field. The field can contain a single specific value or a range of values, which can be inserted through the assist edit by selecting multiple rows;
+4.  For each mandatory characteristic of type measure, the **New Lower and Upper Numeric Value** field is required to enter the lower and upper numeric extremes. The increase in the characteristics of type measure is given by the Step, which can be set on the characteristic.
+5.  When you have finished filling in all the values, select the **Generate Configurations** action
+6.  As a result you have as many items as there are possible combinations.
+
+<br>
+<br>
+ 
