@@ -1,0 +1,34 @@
+In Custom Fields - Table Setup you can see the tables involved:<br>
+
+<img width="95%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_en_01.png"><br>
+<br>
+
+{{% alert title="NOTE" color="warning" %}}
+
+The column *`ACTIVE FIELDS`* indicates the number of fields for which a setup has already been set.
+
+{{% /alert %}}
+
+In `Table` -&gt; `User Defined Fields` or by clicking in the column of the whished row it's possible to define and enable the custom fields. 
+
+Selecting `Edit List` the Custom Fields page it becomes modifiable:ÿ
+
+<img width="95%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_en_02.png"> <br>
+
+| Field  | Description |
+| :-------- | :------------ |
+| **Active** | Indicates the single field is enabled.<br>Active fields are displayed in bold<br><br>To enable the line: `Home` -&gt; `Activate`<br>You can select multiple lines and activate them all together.<br><br>**NB:** To enable fields named *Code ..* it is necessary to specify a `Custom list`:<br><br><img width="50%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_en_03.png"><br>|
+| **Name**    | Name is a unique identifier and indicates the value type (`Code`, `Number`, `Date`, `Text`, etc.).<br>**It is not editable!**<br>This name will never appear on the page unless a label/caption has not been defined for the active field. |
+| **Caption** | The label that defines the name/description of the field. This value will be visualized on the page |
+| **Type** | Type of field. The options are:<br><br> <img width="" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_en_04.png"><br><br><br>The code field type can be:<br><ul><li>Custom list</li><li>Table relation</li></ul> |
+| **Table relation** | If the `TABLE RELATION` type has been chosen, this value indicates the number/ID of the table to which the field should be related:<br><br><img width="50%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_en_07.png"><br> |
+| **Field relation** | Shows the field ID to be used from the selected table to create the relation.<br><br>Click on the `...` button (at the right of the field) to open the field list, select one and confirm with `OK` button.<br><img width="50%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_en_06.png"><br> |
+| **Table Relation - Visible Field** | The value is automatically set by the system.<br><ul><li>Enabled: min. one field from the relation table has been selected to be shown</li><li>Disabled: no fields have been selected.<br>**NB:** this row could not be activated</li></ul><br>Use `Field` -&gt; `Table Relation-Visible Fields` to open a window where to choose which individual fields should be visualized when selecting values for the relationship. |
+| **Custom list** | If type `CUSTOM LIST` has been chosen, the value indicates the list code to which the field should be related to. |
+| **Transfer field to to documents** | By clicking on the actions `HOME` -&gt; `Allow Transfer` or `Revoke Transfer` the changes made to the edited row will be applied on or inheritance will be revoked from the connected documents/tables (i.e. Sales/Purchase Header).<br>In this documents the copied fields will appear in light blue:<br><br><img width="50%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_en_08.png"><br> |
+<br>
+
+### Translate captions
+From `Field` -&gt; `Fields Translation` you can define the translations for the selected row/field. Use one row per translated language. Select the language ID and enter the translation in column `Caption`.<br>
+For missing languages the value entered in column `Caption` of the table setup window will be used!
+<br><img width="95%" src="https://docs.eos-solutions.it/Images/PR000162-0/ex067_cdf_en_10.png"><br>
