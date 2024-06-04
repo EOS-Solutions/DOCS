@@ -1,0 +1,11 @@
+This table allows you to manage test results with a code:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000481-0/5ProductQualityAssurance-ENU.png"><br>
+
+| Field | Description |
+| --- | --- |
+| Code | assign a name for the result code |
+| Description | enter a description |
+| Inspection Result | Å **Released**: the goods are therefore no longer blocked for inspection but are free to be consumed or shipped.<br> Å **Concession**: a part of the goods could be usable and a part is not compliant therefore a reclassification of the goods will be made in a setup area in the location.<br> Å **Blocked**: the goods are non-compliant therefore a reclassification of the goods will be made in a setup area in the location. |
+| Allow Posting | allows you to post, for example a receipt, connected with an inspection order regardless of the control test result |
+| Allow Editing | allows you to make changes on the inspection order card |
