@@ -1,0 +1,22 @@
+L'app Product Quality Assurance (PQA) consente di stampare.
+
+| Report | Descrizione |
+| --- | --- |
+| Lista dispositivi di controllo (PQA) | Mostra lÂelenco dei dispositivi di controllo |
+| Piano di controllo (PQA) | Mostra i dati contenuti in ciascun piano di controllo |
+| Ordine di controllo | Mostra i dati contenuti nellÂordine di controllo |
+
+<br>
+
+I due report seguenti riguardano la valutazione fornitore:
+
+| Report | Descrizione |
+| --- | --- |
+| Calcola Valutazione Acquisti (PQA) | Attribuisce un punteggio ai fornitori considerando Data, Quantit…, Fornitore certificato e Qualit…. |
+| Valutazione Fornitore (PQA) | Calcola il punteggio specifico per fornitore |
+
+<br>
+
+| Procedimento |
+| --- |
+| E' necessario far eseguire **prima** al sistema il report **Calcola Valutazione Acquisti (PQA)** e poi si pu• procedere con il report Valutazione Fornitore (PQA) |
