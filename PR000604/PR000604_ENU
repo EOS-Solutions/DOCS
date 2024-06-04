@@ -1,0 +1,17 @@
+It is possible to define assortments for customer hierarchy levels.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000604-0/img17.png"><br>
+
+It is also possible to define the control constraint of the assortment.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000604-0/img18.png"><br>
+
+* Constraint: the system blocks if the item is not present in the assortment
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000604-0/Immagine19.png"><br>
+
+* Constraint with confirmation: the system returns an alert message but allows the insertion of an out-of-assortment item in the order
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000604-0/Immagine20.png"><br>
+
+* No Constraint: The system places no constraint on the insertion of an out-of-assortment item
