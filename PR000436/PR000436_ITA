@@ -1,0 +1,12 @@
+Tutte le funzioni di fatturazione, sia vendite che acquisto sono state implementate con la gestione delle seconda unit… di misura. In particolare per le vendite:
+
+-   Ottieni righe spedizione
+-   Fatturazione cumulative
+-   Fatturazione cumulative estesa
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000436-0/Invoice1_ITA.png"><br>
+
+<br>
+<br>
+ 
+ 
