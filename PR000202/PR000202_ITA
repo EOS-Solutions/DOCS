@@ -1,0 +1,72 @@
+Nella pagina di setup va abilitato il Configuratore nel tab Generale. E' possibile inoltre attivare le opzioni desiderate:
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000202-0/Setup1_ITA.png"><br>
+
+<br>
+<br>
+
+Vediamo i campi principali:
+
+| **Campo**                    | **Descrizione**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Generale** | |
+| Abilita configuratore |Se abilitato indica che il configuratore Š attivo.|
+| Abilita gestione varianti |Consente di abilitare la gestione delle varianti articolo. Il configuratore di prodotto pu• generare articoli e/o varianti articolo. Questa Š lÂabilitazione di default, nelle regole Š possibile definire specifiche diverse.|
+| Abilita creazione listini vendita |Se abilitato consente a fronte di una configurazione, fatta in un documento di vendita, di salvare il prezzo calcolato dal configuratore nei listini standard di Business Central. I listini vengono creati/modificati per tutte le matrici prezzo valide. La funzionalit… gestisce entrambe le esperienze prezzo di Business Central. Le singole righe di maggiorazione non vengono salvate nei listini ma se nel setup del configuratore il campo ®Abilita righe maggiorazione¯ Š disabilitato nel listino viene memorizzato il prezzo comprensivo di tutte le maggiorazioni.|
+| Abilita creazione listini acquisto |Se abilitato consente a fronte di una configurazione, fatta in un documento di acquisto, di salvare il prezzo calcolato dal configuratore nei listini standard di Business Central. I listini vengono creati/modificati per tutte le matrici prezzo valide. La funzionalit… gestisce entrambe le esperienze prezzo di Business Central. Le singole righe di maggiorazione non vengono salvate nei listini ma se nel setup del configuratore il campo ®Abilita righe maggiorazione¯ Š disabilitato nel listino viene memorizzato il prezzo comprensivo di tutte le maggiorazioni.|
+| Gruppo prezzi cliente default |Serve per calcolare i prezzi e le maggiorazioni quando si utilizza il configuratore da anagrafica articoli o in generale da tutte le gestioni che non siano un documento di vendita o di acquisto.|
+| Ottieni prezzi per cliente |Permette di selezionare con quale codice cliente effettuare la ricerca dei prezzi allÂinterno della matrice prezzi: i valori ammessi sono: ®Vendere a¯ e ®Fatturare a¯.|
+| Visualizza articolo configurato |Se abilitata al termine della configurazione consente dopo conferma di visualizzare lÂanagrafica dellÂarticolo appena creato / modificato. La funzionalit… Š attiva solo quando si utilizza il configuratore dallÂanagrafica degli articoli.|
+| Abilita gestione attributi |Se abilitato, Š possibile associare gli attributi articolo alle caratteristiche e i valori attributo ai valori delle caratteristiche. Gli attributi verranno associati all'articolo generato dal configuratore di prodotto.|
+| Abilita traduzioni articolo |Se abilitato, consente di salvare la descrizione dell'articolo/variante in lingua dopo la configurazione.|
+| Abilita origine prezzo |Abilita lÂutilizzo del campo ®Origine prezzo¯ nelle matrici prezzo del configuratore. Tale campo definisce da dove ottenere il prezzo di vendita/acquisto. Pu• assumere i seguenti valori: Prezzo unitario (matrice prezzo), Prezzo di vendita (articolo/risorsa), Costo unitario (articolo/risorsa), Costo diretto (articolo/risorsa). Prezzo unitario (matrice prezzo)  Š il valore predefinito.|
+| Eredita non editabile dalle caratteristiche articolo |Se abilitato permette di definire se una caratteristica Š non editabile dalla tabella dei default caratteristiche articolo. Altrimenti Š possibile solo nelle regole.|
+| **Articolo da Neutro a Puntuale** | |
+| Abilita richieste regole neutri |Se abilitata in mancanza di una regola neutri che soddisfi la configurazione, viene richiesto allÂutente il codice articolo da utilizzare. Il configuratore di prodotto memorizza poi la scelta fatta dallÂutente inserendo una nuova regola dei neutri. Si utilizza in presenza di articoli con tipo di configurazione ®Da Neutro a Puntuale¯.|
+| Abilita la gestione avanzata delle regole neutri |Se abilitato nelle regole dei neutri, utilizzate per gli articoli con tipo di configurazione da neutro a puntuale, viene permesso di inserire un range di valori (Da/A Valore Caratteristica 1 ecc.). LÂattivazione pu• consentire una notevole diminuzione dei record nella tabella delle regole dei neutri in modo particolare in presenza di caratteristiche di tipo misura.|
+| Abilita creazione prod. Acquisto |Questa funzionalit… viene utilizzata solo per articoli con ®Tipo configurazione¯: ®Da neutro a puntuale¯. Il configuratore di prodotto, nel caso in cui per una determinata combinazione di caratteristiche non sia in grado di risalire al componente, segnala un errore all'operatore. Se abilitata questa opzione, non segnala un errore all'utente, ma crea in automatico un nuovo articolo compilando anche una nuova regola dei neutri che verr… utilizzata in tutte le nuove configurazioni che utilizzano la stessa combinazione di caratteristiche.|
+| Utilizza numerazione prod. Acquisto |In mancanza di una specifica modalit… di creazione del codice articolo nella regola dellÂarticolo neutro con questo setup attivato viene utilizzato il numero di serie espresso nel campo Numerazione articoli standard per la creazione del codice di configurato.|
+| Separatore numerazione prod. Acquisto |Le modalit… con cui il configuratore crea il nuovo codice da assegnare allÂarticolo sono tre con la seguente priorit…: **1.** Formula definita nella regola. **2.** Se attivo il campo ®Utilizza numerazione prod. Acquisto¯ il nr. di serie previsto in ®Numerazione articoli standard¯. **3.** Composizione del codice articolo con: Codice articolo neutro, eventuale ®Separatore numerazione prod. Acquisto¯ e sommando tutti i valori delle caratteristiche. Nel caso in cui il codice composto supera i 20 caratteri viene restituito un errore.
+ |
+| **Numerazione** | |
+| Numerazione articoli standard |Nr. di serie utilizzato dal configuratore di prodotto per la generazione di codici / varianti articolo. In fase di generazione articoli / varianti il configuratore di prodotto utilizza la seguente priorit…: **1.**  Se abilitato Formato codice presente nella regola associata all'articolo neutro. **2.**  Nr. di serie specificato nel campo del setup del configuratore di prodotto.|
+| Nr. DB di produzione/cicli |Viene utilizzato nel caso in cui il configuratore Š gestito a varianti come nr. di serie per la creazione di cicli e db di produzione. Il suo utilizzo Š fortemente consigliato ma facoltativo. Se il configuratore Š abilitato ad articoli crea articolo, ciclo e DB di produzione con lo stesso codice. Il codice variante invece non Š univoco ma pu• essere ripetuto per articoli diversi e pertanto non impostando un numero di serie si potrebbe avere conflitti in fase di creazione.|
+| Nr. configurazione esterna |Con lÂobiettivo di utilizzare il configuratore anche da strumenti esterni Š stata creata la ®configurazione esterna¯, che ne consente lÂuso ®via codice¯ attraverso un id configurazione. In questo modo Š possibile aprire una configurazione, eseguire lÂinserimento delle caratteristiche ottenendo informazioni interattive sulle altre caratteristiche ®collegate¯, sui prezzi ecc. ecc. e poi eventualmente completare la configurazione creando articoli, DB Produzione cicli ecc. ecc.|
+| **Maggiorazioni/Optional** | |
+| Abilita righe maggiorazioni |Se abilitato, il configuratore in presenza di maggiorazioni crea delle righe aggiuntive nei documenti di vendita/acquisto. Se disabilitato lÂimporto di eventuali maggiorazioni viene sommato nel prezzo unitario di riga.|
+| Disabilita sconti in righe maggiorazioni |Se disattivato riporta lo sconto associato alla riga articolo sulle righe di maggiorazione. Se attivato nelle maggiorazioni riporta lÂeventuale sconto presente nei listini standard di Business Central.|
+| Disabilita modifiche optional/maggiorazioni. |Se abilitato impedisce la modifica/cancellazione delle righe di tipo optional/maggiorazioni nei documenti. Le modifiche non vengono permesse per i campi codice di maggiorazione e quantit….|
+| Descrizione maggiorazioni (positive) |Descrizione che il sistema prende in automatico per le righe di maggiorazione positiva.|
+| Descrizione maggiorazioni (negative) |Descrizione che il sistema prende in automatico per le righe di maggiorazione negativa.|
+| Abilita assegnazione addebito articolo |Permette lÂassegnazione automatica degli addebiti articolo per le righe di maggiorazioni generate automaticamente.|
+| Abilita Tipo Maggiorazione nei valori caratteristica |Abilita la possibilit… di definire diversi tipi di maggiorazione e nr. di maggiorazione per ogni valore di caratteristica.|
+| **Excel** | |
+| Utilizza Excel |Abilita lÂutilizzo di fogli excel per il calcolo delle relazioni fra le caratteristiche della regole. Il valori ammessi sono vuoto (disabilitato), OnPrem (non pi— utilizzabile ma presente per compatibilit… con le vecchie versioni), SAAS permette di utilizzare l'integrazione tramite l'utilizzo di Microsoft Excel Online e Microsoft Sharepoint Online; questo tipo di gestione Š utilizzabile sia negli ambienti OnPremise, che SAAS di Business Central. E' necessario un account di Microsoft Office 365 valido e con i permessi di accesso. Se si attiva SAAS vanno specificati tutti gli altri setup : ID directory (tenant), ID applicazione (client), Client secret, Sito sharepoint, Nome raccolta documenti. Poi va utilizzata la funzionalit… (azione) concedi le autorizzazioni specificando un login valido per utilizzo di Microsoft Office 365.|
+| **Manufacturing** | |
+| Abilita riconfigurazione distinte |Se abilitato, il configuratore di prodotto, nel caso l'operatore utilizzi una configurazione gi… esistente, ricrea DB di produzione e ciclo di lavorazione ripartendo dal codice neutro.  Se Š disabilitato la distinta e il ciclo vengono calcolati solo la prima volta. La descrizione dellÂarticolo viene invece ricalcolata in entrambi i casi. LÂabilitazione potrebbe avere un impatto a livello di performance.|
+| Abilita calcolo caratteristiche sottolivelli |Il configuratore di prodotto permette di gestire n livelli di DB di produzione ma non di editare manualmente le caratteristiche dei sottolivelli (By design). Se attivo, abilita la possibilit… di calcolare tramite le relazioni anche le caratteristiche dei sottolivelli di DB produzione (semilavorati). Tramite questa funzionalit… Š possibile gestire nei sottolivelli di DB produzione caratteristiche che non sono presenti nel primo livello e calcolarle tramite apposite tipologie di relazioni: Calcolo (Livello Superiore), Filtro (Livello Superiore), Trasferimento (Livello Superiore). Se non si utilizzano relazioni di tipo ®livello superiore¯ si consiglia di non abilitare questo campo. Importante per le performance.|
+| Caratteristiche di Default Sottolivelli |Se abilitato, suggerisce le caratteristiche di default per i sottolivelli.|
+| Ricerca caratteristiche per sottolivelli |Permette di definire da quale livello il configuratore di prodotto parte per ricercare i valori delle caratteristiche utilizzate nelle condizioni. La ricerca vale per tutte le condizioni utilizzate nelle relazioni di tipo livello superiore. I valori ammessi sono:-   A partire dal livello attuale. Opzione consigliata.-   A partire dal livello superiore.|
+| Tipo di calcolo sottolivelli DB |Definisce il quando il configuratore calcola le relazioni relative ai sottolivelli di distinta. I valori ammessi sono: **Durante il processo**: ad ogni modifica di un valore caratteristica calcola tutti i sottolivelli. Molto utile in fase di verifica del modello di configurazione. **Chiusura configurazione**: a fine configurazione calcola tutti i sottolivelli. Opzione consigliata per le performance da valutare comunque in funzione al numero di caratteristiche e di relazioni utilizzate nei sottolivelli.|
+| Abilita calcolo pesi e volume |Se attivo il configuratore calcola pesi e volumi relativi agli articoli configurati (non attivo per le varianti). I pesi sono calcolati come somma dei pesi dei componenti per il loro impiego in DB.ÿMentre per il volume viene calcolato come specificato nel campo ®Tipo calcolo volume¯.|
+| Tipo calcolo volume | **1.** Somma. **2.** Pi— alto.|
+| Abilita condizioni ciclo |Se attivo in fase di configurazione di prodotto per il calcolo dei cicli il configuratore utilizza in alternativa le Logiche di Lavorazione   e/o le Condizioni di configurazione.|
+| Copia commenti ciclo |se attivo copia i commenti dal ciclo neutro a quello configurato.|
+| Copia commenti DB produzione |Se attivo copia i commenti dalla distinta neutra a quella configurata.|
+| Stato DB produzione |Stato con cui vengono generate le distinte configurate.|
+| Stato ciclo |Stato con cui vengono generati i cicli configurati.|
+| Gestione versioni nella configurazione del ciclo |Se attivo, in fase di configurazione viene considerata la versione di ciclo dellÂarticolo neutro attiva.|
+| **DB Produzione** | |
+| Crea righe DB sul documento di vendita |Abilita la creazione di righe documento di vendita dalle righe della distinta base di produzione dopo la configurazione dell'articolo.|
+| Metodo calcolo prezzo |Specifica come impostare il prezzo unitario sulle righe documento, create dalle righe della distinta base di produzione. I valori ammessi sono: **Listino**: se l'articolo Š configurabile cerca nella matrice prezzi in base alla matrice dei prezzi, mentre se Š un articolo puntuale va nei listini standard. **Percentuale riga DB**: spalma il prezzo dell'articolo di vendita calcolato dal configuratore in base alle % indicate nella DB di produzione.|
+| Cambia in riga commento |Se abilitata modifica in commento la riga documento dell'articolo configurato, dopo la creazione di righe documento da righe di distinta base.|
+
+<br>
+
+**La funzione nuovo setup wizard, da utilizzare in ambiente DEMO o TEST, permette di creare dei dati dimostrativi per cominciare a utilizzare il configurare.
+In particole vengono creati gli articoli BLANKET e PLAID con i quali si possono creare delle configurazioni.** 
+
+<br>
+<br>
+ 
