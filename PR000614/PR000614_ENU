@@ -1,0 +1,45 @@
+Let's open the Sales Orders page and create a New Order:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000614-0/19CFG_ENU.png"><br>
+
+When we insert the item on the order line, the window opens where the configurator asks you to fill in the different characteristics of the "Rule 01", that we applied to the "Blanket" Item Card. Once you have chosen the fabric "P-Polyester" (between cotton, wool, polyester) the system asks for Color and proposes to choose from the five colors established by Rule 01.
+
+Height and Length must be in the set range of values (between 100 and 200), while the Surface is calculated based on the formula entered in Rule 01.
+
+The Factbox on the right shows the items that are updated according to the options chosen in the lines (e.g. price if we choose Wool: 110 euros, if we choose Cotton: 50 euros, if we choose Polyester: 20 euros):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000614-0/20CFG_ENU.png"><br>
+
+In addition, a surcharge may appear based on Color. This is because the Rule has a Price Matrix that, based on the value of the characteristic, applies the prices set.
+
+The price matrix allows you to manage sales prices in a parametric way depending on the characteristics of the product. The main features are:
+
+-   Prices for Customer Price Group or for specific customer.
+-   Prices for characteristics.
+-   Currency, starting / ending date, minimum quantity.
+-   Surcharges management.
+-   Price List Surcharges management.
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000614-0/21CFG_ENU.png"><br>
+
+After filling in the data we press OK and the configurator will have entered a line for the new item, whose name is composed according to the code defined on the in Rules (CFG) page, in the Code Format field and a second line for the surcharge:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000614-0/22CFG_ENU.png"><br>
+
+| N.B.                                                                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------------|
+| In the Configurator Setup (CFG) page field, you can choose whether to have separate rows for surcharges (Enable Surcharge Lines). |
+
+**Item Variants**
+
+If Setup has enabled item variant management, when we fill in the order, the system will not report a new item on the lines, but a variant of the item that we indicated in the Line No.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000614-0/29CFG_ENU.png"><br>
+
+All generated variants we can see in the **Item Card** from Actions-\>Item-\>Variants, which Routings and Bom's are linked to.
+
+<br>
+<br>
+ 
+ 
