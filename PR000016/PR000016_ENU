@@ -1,0 +1,12 @@
+The Customer Vendor Compensation App for Microsoft Dynamics 365 Business Central allows you to select lines from two lists of accounting items to compensate. For example, if you select select a Customer invoice which total is 100 ± and a Vendor invoice which total is 80 ±, it will be suggested the entry to connect the two accounting items: the Vendor invoice will be 0 ± and the Customer invoice will now be open for 20 ±. Precondition: Customers and Vendors can be connected by different options:
+
+\- in the Customer / Vendor card (*Compensation-\>EOS Comp. Vendor No.*)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000016-0/ENU_1CustomerVendorBalanceCompensation.png"><br>
+
+\-in Contacts (from *Functions-\>Link with existing)*
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000016-0/ENU_2CustomerVendorBalanceCompensation.png"><br>
+
+\-they share the same VAT Number
+
