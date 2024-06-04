@@ -1,0 +1,10 @@
+The exemptions are divided into sale and purchase exemptions. While those in the purchase are those that the company communicates to its vendors and therefore are a single percentage for each type of material, the ones for sale are different percentages for each customer and material. This percentage of exemption is also variable period per period:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000211-0/12CONAI(1).png"><br>
+
+Summarizing::
+
+|          | Exemption Type | %                                   |
+|----------|----------------|-------------------------------------|
+| Purchase | Own            | fixed for each material             |
+| Sales    | Customer       | different for Customer and Material |
