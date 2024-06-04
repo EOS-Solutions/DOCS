@@ -1,0 +1,40 @@
+L'app Custom Defined Fields consente di inserire oltre 30 campi personalizzabili in diverse anagrafiche, senza interventi di un programmatore e senza necessit… di una licenza di sviluppo (Versione Business Central OnPremise).
+
+EÂ possibile:
+- attivare i campi personalizzati in pochi secondi sfruttando i diversi tipi di dato gestiti: date, numeri, codici ecc.
+- collegare i campi ad una tabella per la validazione dei dati
+-  selezionare una qualsiasi tabella esistente (es. Categorie articoli o Codici paesiµ) o definire una nuova lista di valori / descrizioni completamente personalizzata
+- propagare in automatico i valori dei campi custom di clienti e fornitori sui documenti di vendita e di acquisto, ereditando in automatico le opzioni attivate per lÂanagrafica
+
+Per rendere visibili i campi sulle schede anagrafiche Š possibile attivarli dallÂapposito setup impostando alcune semplici opzioni.
+
+
+**NOTA:** I nomi dei campi si possono personalizzare ed Š possibile tradurli in pi— lingue.
+
+Questi campi sono disponibili per:
+- Cliente
+- Fornitore
+- Articolo
+- Testate vendita
+- Testate acquisti
+- Risorsa
+- Commessa
+- Impiegato
+- Cespite
+- Testate trasferimento
+- Testate assistenza
+
+
+<br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EIcRkFnDHZU" title="Custom Defined Fields per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br><br>
+
+# Custom Defined Field (CDF) - SOMMARIO
+
+Premi ALT + Q e digita ÃCDFÄ per ottenere una lista delle funzionalit…:
+
+<img width="80%" src="https://docs.eos-solutions.it/Images/ex067/quick guide/ex067_cdf_en_00.png"><br>
+<br>
+
