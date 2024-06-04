@@ -1,0 +1,63 @@
+Una volta creata l'unit… di carico, tale unit… pu• essere utilizzata e assegnata ai documenti vendita / acquisto.
+
+Creiamo ad esempio un Ordine vendita. Dopo aver inserito uno o pi— articoli nelle righe, dalla specifica Factbox a destra assegniamo una Unit… di carico agli articoli stessi:
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000482-0/13HandlingUnitsManagement_ITA.png"><br><br>
+
+
+| **Azione** | **Descrizione** |
+| --- | --- |
+| Scheda |apre la scheda della unit… di carico indicata nel campo Nr. |
+| Nuovo | permette di creare una nuova unit… di carico |
+| Assegna | consente di scegliere l'unit… da assegnare al documento |
+| Annulla assegnazione | consente di scollegare l'unit… scelta dal documento |
+
+<br>
+Dopo aver selezionato l'unit… di carico, in automatico il sistema compiler… sulle righe la Quantit… da spedire (in base a quanti pezzi pu• contenere l'unit… di carico)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000482-0/14HandlingUnitsManagement_ITA.png"><br><br>
+
+Dalla Scheda unit… di carico, da **Correlato->Assegnazioni** il sistema mostra a quale ordine Š stata assegnata l'unit…, per quale articolo e per quale quantit….
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000482-0/15HandlingUnitsManagement_ITA.png"><br>
+
+<table>
+<tr>
+<th>NB</th>
+</tr>
+<tr>
+<td>"Nr. origine" mostra l'elenco dei documenti ai quali Š stata assegnata l'unit… di carico</td>
+</tr>
+</table>
+
+<br>
+
+E' ora possibile registrare la spedizione.
+
+Sulla spedizione sar… presente la Facbox che indica l'unit… di carico con lo stato "Spedito".
+
+Aprendo la Scheda dell'unit… di carico da **Correlato->Movimenti** sar… possibile visualizzare i movimenti articolo per l'unit… in esame.
+
+<br>
+
+<table>
+<tr>
+<th>Note</th>
+</tr>
+<tr>
+<td>Lo stesso processo vale per le spedizioni Warehouse.</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr>
+<th>Aggiunta di contenuti / Assegnazione ad unit… di carico</th>
+</tr>
+<tr>
+<td>In generale l'<b>aggiunta dei contenuti</b> e l'effettiva <b>assegnazione ad una UdC</b> sono due cose diverse.<br>
+L'assegnazione viene gestita dalla app in modo automatico e potrebbe non corrispondere all'assegnazione manuale.</td>
+</tr>
+</table>
