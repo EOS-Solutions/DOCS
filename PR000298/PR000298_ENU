@@ -1,0 +1,9 @@
+In the Setup page select the official layout for printing among those preloaded on the system.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000298-0/02aWithhTaxCertUniche-EN.png"><br>
+
+| **Field**                  | **Description**                                                 |
+|----------------------------|-----------------------------------------------------------------|
+| PDF Cert. Unica Version    | choose the official form to be used (downloaded from the Cloud) |
+| PDF Cert. Unica Uploaded   | it is automatically activated by the system                     |
+| Split PDF by Vendor/Reason | if enabled the pdf will be filtered by vendor                   |
