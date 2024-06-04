@@ -1,0 +1,37 @@
+Dalla Lista Spedizioni warehouse, tramite Nuovo Š possibile crare una spedizione wharehouse:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000278-0/28CombinedWarehouseShipment_ITA.png">
+
+<br><br>
+
+| **Campo** | **Descrizione** |
+| --- | --- |
+| Nr. | obbligatorio. Viene assegnato in automatico. |
+| Cod. ubicazione | Š il magazzino in cui Š presente la merce. Va selezionato dall'elenco.<br>Attenzione: se per un magazzino era stato settato "Richiedi impiegati Warehouse", qualora l'utente non abbia un profilo Warehouse, il magazzino non compare in questa lista. |
+| Indirizzo | si compila in automatico, in funzione degli ordini selezionati nelle Righe. Qualora gli indirizzi fossero pi— di uno, i campi Indirizzo non sono compilati e compare la dicitura "multipli"<br><img width="" src="https://docs.eos-solutions.it/Images/PR000278-0/25CombinedWarehouseShipment_ITA.png"> |
+| Combina Spedizioni | abilitarlo per cumulare le spedizioni. La scheda lo presenta gi… abilitato se Š attivo nell'ubicazione scelta.<br><br>Da Processo->Gruppi viene mostrato in una lista come vengono raggruppate le spedizioni in una struttura ad albero (Š possibile vedere sia il gruppo, che il singolo documento di origine). |
+
+<br>
+
+Premere sul bottone "**Prendi documenti origine**". Comparir… una finestra in cui si vedranno tutti gli ordini i cui articoli si trovano nel magazzino selezionato in Cod. Ubicazione. I documenti sono visibili in dattaglio per Nr. Documento origine, Nr. destinazione, Tipo destinazione, Spedire a- ecc. I campi sono tutti filtrabili. E' possibile inoltre scegliere di visualizzare solo i documenti con lo stesso indirizzo spedizione (Solo documenti cumulabili).
+
+Mostra righe consente di visualizzare il dettaglio righe.
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000278-0/30CombinedWarehouseShipment_ITA.png">
+
+<br><br>
+
+Scegliere le spedizioni da cumulare, dare l'ok.
+
+Nelle righe possiamo visualizzare quante spedizioni creer… il sistema e anche nella **Factbox** a destra vengono riportate le informazioni relative alle spedizioni CWS.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000278-0/39CombinedWarehouseShipment_ITA.png">
+
+<br><br>
+
+Da **Processo->Gruppi** viene mostrato in una lista il dettaglio di come vengono raggruppate le spedizioni.<br>
+Premendo **Informazioni** possiamo visualizzare ed eventualmente modificare le opzioni (il metodo di spedizione, lo spedizioniere ecc.)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000278-0/36CombinedWarehouseShipment_ITA.png"><br>
