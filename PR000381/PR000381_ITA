@@ -1,0 +1,22 @@
+Nella page Template (PDA) vanno innanzitutto impostati dei template con l'elenco delle tabelle e dei campi sul quali sar… necessario filtrare:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000381-0/1PostedDataAdministration.png"><br>
+
+Selezionando un template, da Modifica Š possibile definire le tabelle che si desiderano modificare ed i relativi campi:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000381-0/2PostedDataAdministration.png"><br>
+
+Per ogni tabella Š possibile definire il filtro da applicare.
+
+Si consiglia di impostare i dati da filtrare fra due \#, in modo che il sistema li possa riconoscere e sostituire in automatico per ogni nuova richiesta.
+
+
+**Controlli personalizzati**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000381-0/5PostedDataAdministration.png"><br>
+
+Sui template Š possibile impostare delle CU che effettuino dei controlli (es. se la fattura che si sta cancellando Š gi… stata liquidata o stampata sul libro giornale).
+
+?
+
+Da Gestione-\>Controlli personalizzati si apre la page dove andare a selezionare la CU di interesse.
