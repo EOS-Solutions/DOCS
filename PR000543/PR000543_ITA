@@ -1,0 +1,43 @@
+Dalla RDA Š possibile creare un documento di acquisto tramite Processa->Crea doc. acquisto. Scegliere il Tipo documento nella finestra successiva:
+
+<a href="https://docs.eos-solutions.it/Images/PR000543-0/5Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000543-0/5Purchaserequest.png"></a>
+<br>
+
+Le Richieste di Acquisto possono essereÿ**duplicate**ÿe / oÿ**archiviate**.
+
+Una volta archiviate le richieste verranno spostate dal sistema nella lista Richieste di acquisto archiviate.
+
+**Visualizzare in anteprima i fornitori di articoli: lista richiesta acq. multi-fornitore.**
+
+Abilitando l'opzione Š possibile visualizzare i fornitori che hanno l'articolo di interesse a listino (fornitori abituali e anche fornitori inseriti nelle righe della RDA).
+
+<a href="https://docs.eos-solutions.it/Images/PR000543-0/19Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000543-0/19Purchaserequest.png"></a>
+<br>
+
+<table id="EOSTABLE" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-ser; font-size: 16px; border-collapse: collapse; width: 1433px; color: rgb(0, 0, 0); text-align: start;"><tbody style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;"><tr><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><strong class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Campo</strong></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><strong class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Descrizione</strong></td></tr><tr style="background-color: rgb(242, 242, 242);"><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Crea documento</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Selezionare la voce se si desidera creare il documento acquisto</span></td></tr><tr><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;">I<span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">ncludi articoli</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><p><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Specifica quali articoli considerare nella creazione del documento di acquisto. Le opzioni sono:</span></p><ul><li><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Con fornitore sulla PRQ: il sistema crea una riga di acquisto all'interno di un ordine di acquisto per il fornitore specificato nella richiesta di acquisto<br style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;"></span></li><li><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Con fornitore su articolo: il sistema crea una riga di acquisto all'interno di un ordine di acquisto per il fornitore specificato nella scheda dell'articolo stesso<br style="font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;"></span></li><li><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Tutti gli articoli: il sistema crea un ordine di acquisto per tutti gli articoli della RDA, presso il fornitore indicato nel campo "Nome fornitore" dellaÿ</span><strong><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Lista richiesta acq. multi-fornitore</span></strong>.<br></li></ul></td></tr><tr style="background-color: rgb(242, 242, 242);"><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Righe documento</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Indica quante righe verranno create dal sistema</span></td></tr><tr><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Nr./Nome Fornitore</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Specifica il nome del fornitore che vende l'articolo (pu• essere mostrato in quanto fornitore abituale oppure perchŠ presente nelle righe della Richiesta di Acquisto).</span></td></tr><tr style="background-color: rgb(242, 242, 242);"><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Bloccatoÿ</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Specifica che la registrazione nelle transazioni del record correlato Š bloccata, ad esempio nel caso in cui un fornitore venga dichiarato insolvente o un articolo venga posto in quarantena.</span></td></tr><tr><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Nr. articoli per fornitore</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Specifica il numero di articoli sulla PRQ presenti nel catalogo fornitore.ÿ</span></td></tr><tr style="background-color: rgb(242, 242, 242);"><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Nr. articoli con fornitore su PRQ</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Specifica quanti articoli a catalogo hanno il fornitore indicato sulla PRQ</span></td></tr><tr style="background-color: rgb(221, 221, 221);"><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">Data ultima fattura</span></td><td style="border: 1px solid rgb(221, 221, 221); padding: 8px;"><span class="auto-styleEOSNormal" style="font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;">indica la data dell'ultima fattura di acquisto emessa per il fornitore</span></td></tr></tbody></table>
+
+<br>
+
+**Esempio**
+
+<a href="https://docs.eos-solutions.it/Images/PR000543-0/20Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000543-0/20Purchaserequest.png"></a>
+<br>
+
+In questo caso il sistema crea 3 ordini di acquisto:
+
+il primo Š per il fornitore abituale (Custom Metals Incorporated) dell'articolo 1000
+
+un secondo ordine Š per tutti gli articoli presenti nella RDA per il fornitore NewCaSup, che era indicato nella Lista richiesta acq. multi-fornitore
+
+ÿmentre un terzo ordine viene creato per il fornitore American Wood Exports indicato sulla RDA per 1 degli articoli.
+
+Daÿ**Scheda**ÿŠ possibile visualizzare/modificare i singoli ordini.
+
+<img width="20" src="https://docs.eos-solutions.it/Images/PR000543-0/exclamation.png"> **NB**
+
+Ad un ordine esistente si possono aggiungere righe tramite "Prendi righe rich. di acquisto". Questa funzione permette di aggiungere righe prendendole da una o pi— RDA.
+
+<a href="https://docs.eos-solutions.it/Images/PR000543-0/6Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000543-0/6Purchaserequest.png"></a>
+<br>
+
+
