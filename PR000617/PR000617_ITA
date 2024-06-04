@@ -1,0 +1,9 @@
+UnÂarea di produzione pu• essere di Tipo "Strumento" o "Persona" (come nell'esempio sotto riportato) e avere uno specifico Cod. gruppo area prod.
+
+Gli altri campi sono compilati alla stessa maniera delle aree di produzione classiche. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000617-0/2ManufacturingBaseToolkit-ITA.png"><br>
+
+| Campo | Descrizione |
+| --- | --- |
+| Tipo | Persona: consente di definire l'occupazione e le ore di lavoro del personale che lavora ad un macchinario (es. personale che si occupa della verniciatura)<br> Strumento: consente di definire il macchinario che serve alla lavorazione (es. un telaio per la verniciatura)<br> Macchinario: non utilizzato |
