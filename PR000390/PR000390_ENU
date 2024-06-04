@@ -1,0 +1,19 @@
+**Import ABI / CAB codes**
+
+The ABI CAB list can be updated as often as necessary, in complete autonomy. It is necessary to download the zip file from the bank portal (for example [Unicredit](https://tesoreria.unicreditbanca.it/tesoreria/abicab/abicab.html) )
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000390-0/13BFForItaly-en.png"><br>
+
+after press "qui" (here) then will open the page where it is possible to choose where to SAVE the file:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000390-0/14BFForItaly-en.png"><br>
+
+Press ALT + Q within Business Central
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000390-0/16BFForItaly-en.png"><br>
+
+From Actions-\> Import File indicate the path of the previously saved file.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000390-0/15BFForItaly-en.png"><br>
+
+The page will be populated with all the records of the zipped file. At the end press SAVE ALL to save all the imported records and update the official table.
