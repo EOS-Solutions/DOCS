@@ -1,0 +1,14 @@
+On the page Handling Units Types it is possible to establish whether a unit corresponds to a "Load Carrier" or a "Package":
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000417-0/2HandlingUnitsManagement.png"><br>
+<br>
+
+| **Field** | **Description** |
+| --- | --- |
+| Code |Code to be assigned to the load unit |
+| Description | Free description |
+| Type | Handling Units can be:<br><br>**Load Carrier** (e.g. Pallet): on the load carrier you can load boxes with additional packages inside<br><br>**Package**: it is a simple box, which can be connected to other boxes. Then all together they can be linked to a Load Carrier, which is assigned to a document |
+| HU No. Series | each handling unit can have its own numerator|
+| SSCC (Serial Shipping Container Code) | if Type = "Load Carrier" has been set, the flag allows the numerator to follow the GS1-128 rules of a Serial Shipping Container Code. The system adds the final Check Digit.<br><img width="" src="https://docs.eos-solutions.it/Images/PR000417-0/3HandlingUnitsManagement.png"> |
+| Default | the flag allows you to set a numerator as default |
