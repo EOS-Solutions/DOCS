@@ -1,0 +1,9 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mp11lKgBORc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhENG5vhOXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+ La app Master Data Intercompany di Eos Solutions consente di replicare i dati di qualsiasi tabella tra societ… diverse, sia che tali dati si trovino nello stesso database, sia che si trovino in database diversi (purchŠ collegati tra loro via webservice)
+
+Viene gestita la sincronizzazione tra societ… sia se la gerarchia Š verticale (la societ… di origine Š quella principale, le societ… di destinazione ereditano i suoi setup), sia se Š orizzontale (esistono pi— societ…, tutte operative. La societ… di origine Š quindi una delle varie societ… operative e contiene i setup principali).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex059/quick guide/schemaMDI.png"><br>
