@@ -1,0 +1,68 @@
+**Fattura di acquisto con Addebito articolo**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex1AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex2AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex3AdvIntrastatForItaly.jpg"><br>
+
+Gli oneri di trasporto ed altre spese accessorie di acquisto concorrono alla base imponibile, ai sensi art. 43 dl 331/93, supportato da dpr 633/72 art. 12 e 15
+
+**Fattura di acquisto con % regolazione costi**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex4AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex5AdvIntrastatForItaly.jpg"><br>
+
+In questo caso solo il valore statistico Š maggiorato della percentuale presente sul codice spedizione Intrastat.
+
+**NC di acquisto con % regolazione costi**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex6AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex7AdvIntrastatForItaly.jpg"><br>
+
+In questo caso il valore statistico Š defalcato della percentuale presente sul codice spedizione Intrastat.
+
+**NC di Vendita/Acquisto beni**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex8AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex9AdvIntrastatForItaly.jpg"><br>
+
+Nelle rettifiche beni sia in vendita che in acquisto andranno compilati Anno e mese/trimestre a cui la rettifica si riferisce
+
+In caso di rettifica dei valori la riga andr… compilata come detto mentre nel caso lÂerrore da rettificare sia ad esempio la partita iva o la nomenclatura combinata la rettifica andr… fatta per lÂintero importo del documento originale e reinserito il documento rettificato
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex10AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex11AdvIntrastatForItaly.jpg"><br>
+
+**NC di servizi**
+
+Le rettifiche dei servizi devono essere compensate con le fatture, quindi non vanno mai in negativo. Vediamo alcuni esempi.
+
+ESEMPIO 1 - RETTIFICA TOTALE OPERAZIONE Si dovr… compilare il modello Intra-2 quinques per rettificare quanto indicato nella sez. 3 del mod. Intra-2 quater: LÂimporto sar… pari a zero e andranno compilati solo i campi di riferimento alla dichiarazione che si vuole rettificare
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex12AdvIntrastatForItaly.jpg"><br>
+
+ESEMPIO 2 - RETTIFICA PARZIALE OPERAZIONE In questo caso andranno compilati tutti i campi e lÂimporto dovr… essere il netto (Fattura Æ Nota di credito)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex13AdvIntrastatForItaly.jpg"><br>
+
+**Nota su righe relative a Servizi**
+
+Oltre a compilare le colonne da 2 a 5 che identificano le riga di dettaglio da modificare, sono stati indicati nelle colonne da 6 a 14 tutti i dati comprensivi delle modifiche.
+
+Attenzione: in entrambi i casi in esame, gli importi devono essere azzerati o compensati manualmente dallÂutente.
+
+Nel caso di righe di tipo Acquisto, il valore del Paese di pagamento viene prelevato dal campo "Pagare a - Nr. for." della testata del documento di acquisto o, eventualmente, dalla banca del fornitore; nel caso di righe di tipo Vendita, invece, tale valore viene proposto in funzione del valore del campo "Cod. Paese" della pagina "Informazioni Societ…".
+
+**Call of stock**
+
+La funzione ÃSuggerisci righeÄ Š stata integrata per proporre, nella nuova sezione, le righe relative alle Spedizioni di trasferimento registrate, con le seguenti caratteristiche:
+
+-   Cod. Paese di partenza ÃITÄ (Cod. paese presente della tabella Informazioni societ…) e Cod. Pese di destinazione UE (campo Cod. Intrastat della tabella Paesi). Nel caso in cui nella spedizione di trasferimento risulti compilato il campo Nr. Riferimento, tramite questo viene recuperata la Partiva IVA da esporre nella posizione 32 del tracciato.
+-   Cod. Paese di partenza UE (campo Cod. Intrastat della tabella Paesi) e Cod. Pese di destinazione ÃITÄ (Cod. paese presente della tabella Informazioni societ…).
+
+Le righe della dichiarazione possono comunque essere compilate e/o modificate manualmente, lato utente.
