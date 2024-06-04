@@ -1,0 +1,70 @@
+Una **Ciclo di Produzione** ä **configurabile** quando ä **associata ad un articolo con Tipo configurazione ÆDa neutro a ConfiguratoØ**. Il processo di configurazione crea in automatico un Ciclo per ogni nuovo articolo configurato (con sistema di rifornimento ÆOrdine di produzioneØ).
+
+Il Ciclo configurabile Subisce le scelte dell¬articolo Configurato.
+
+In Setup Configuratore Posso Definire:
+
+-   lo **stato** del Ciclo Di Produzione al momento della Creazione dell¬articolo configurato.
+-   Se **Copiare i Commenti** dei cicli degli Articoli Neutri Sugli Articoli Configurati
+-   Se Utilizzare le **condizioni sui cicli** Neutri.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing1_ITA.png"><br>
+
+**SETUP DA VALORI CARATTERISTICHE**
+
+ﬂ possibile definire le Aree di Lavoro/Centri di Lavoro collegate al Ciclo Configurabile direttamente dai **Valori** delle caratteristiche.
+
+ﬂ necessario:
+
+1.  Attivare il Flag nei Valori Caratteristica Abilita Ciclo di Produzione
+2.  Selezionare il tipo Origine e il suo Valore
+3.  Inserire il tempo di Lavorazione
+4.  Inserire il Codice Task Standard.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing2_ITA.png"><br>
+
+Una volta predisposta la caratteristica, deve essere inserita all¬interno delle righe Ciclo.
+
+L¬area di Produzione verrÖ inserita nel ciclo di Lavorazione in Base al valore della caratteristica scelto durante la configurazione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing3_ITA.png"><br>
+
+**SETUP CON CONDIZIONI SU RIGA CICLO**
+
+Alternativamente ä possibile definire le diverse Aree di Produzione/Centri di Lavoro direttamente nelle righe del ciclo di produzione, utilizzando le condizioni e le logiche di Lavorazione.
+
+Le condizioni Attivano o Disattivano le Righe Ciclo se una condizione ä vera o falsa.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing4_ITA.png"><br>
+
+**SETUP CON LOGICHE DI LAVORAZIONE**
+
+ﬂ inoltre possibile variare i tempi di lavorazione del prodotto in base alla caratteristiche scelte utilizzando le Logiche di Lavorazione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing5_ITA.png"><br>
+
+Le **logiche di Lavorazione** Permettono di:
+
+-   Decidere il tempo di Lavorazione in Base a una Formula
+-   Decidere il tempo di Setup in Base a una Formula
+-   Variare i tempi di lavorazione in Base a Formula e Condizioni
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing6_ITA.png"><br>
+
+Le logiche di Lavorazione Permettono di **integrare Eos Tool Manufacturing (EX028.04 Product Configurator for tools and personnel)**
+
+Questa app ha come dipendenza l¬app ÆManufacturing masterdata managementØ.
+
+Se presente **permette di gestire** a livello di logica di lavorazione la configurazione di:
+
+-   **Strumenti**
+-   **Personale**
+-   **Alternative di ciclo**
+-   **Commenti**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000408-0/Routing7_ITA.png"><br>
+
+ﬂ possibile disabilitare la creazione di cicli configurati tramite un apposito campo presente nelle regole di configurazione Æ**Utilizza il ciclo standard**Ø.
+
+Cosç facendo **la configurazione non genera un nuovo ciclo configurato**, ma assegna al nuovo articolo il ciclo dell¬articolo configurabile.
