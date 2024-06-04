@@ -1,0 +1,32 @@
+Vi Š la possibilit… di gestire righe di prezzo separate dallÂarticolo configurato gestendo le maggiorazioni.
+
+-   Inserire allÂinterno della matrice prezzi (CFG), per un determinato articolo configurabile, le caratteristiche che fanno maggiorazione, il loro valore e il valore ®economico¯ della maggiorazione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000326-0/Surcharge1_ITA.png"><br>
+
+Scegliere allÂinterno delle caratteristiche quale tipologia di riga maggiorazione andr… aggiunta nel documento di Vendita/Acquisto.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000326-0/Surcharge3_ITA.png"><br>
+
+Nel setup del configuratore di prodotto esiste il campo Abilita righe maggiorazione che consente di scegliere se addebitare le maggiorazioni con delle righe documento aggiuntive. Se tale campo Š disattivato l'importo della maggiorazione viene sommato a quella del prezzo di listino.
+
+Consultare la sezione **Maggiorazioni/Optional** del setup configuratore per ulteriori dettaglio sul setup [Product Configurator - Setup]({{<relref "product-configurator-setup">}}).
+
+<br>
+
+Un tipo particolare di maggiorazioni sono quelle donominate di listino.
+-   Si devono attivare nelle Regole Caratteristiche.
+-   I valori delle caratteristiche utilizzate devono avere associato un articolo (campo articolo acquisto) in modo da permettere al configuratore risalire al prezzo di listino (Standard BC).
+-   La caratteristica che d… luogo a questo tipo di maggiorazione deve avere un default per lÂarticolo da configurare.
+-   LÂeventuale riga di maggiorazione avr… valore pari alla differenza fra il prezzo di listino dellÂarticolo associato alla caratteristica scelta dallÂutente e quello legato allÂarticolo associato alla caratteristica di default.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000326-0/Surcharge4_ITA.png"><br>
+
+
+<br>
+<br>
+ 
+ 
+
+
+
