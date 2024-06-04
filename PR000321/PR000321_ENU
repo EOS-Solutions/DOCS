@@ -1,0 +1,17 @@
+The points from which you can configure an item are:
+
+-   Items
+-   Sales documents (quotes, orders, invoices)
+-   Purchase documents (quotes, orders)
+-   Transfer orders
+-   Released and confirmed production orders
+-   Project (job) planning lines
+
+To configure from the documents just **enter the neutral item code** in the No. field and the configuration starts automatically.
+
+You can re-enter the configuration by selecting the "Configurator" function or the shortcut Ctrl+G.
+
+<br>
+<br>
+ 
+ 
