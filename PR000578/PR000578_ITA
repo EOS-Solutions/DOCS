@@ -1,0 +1,7 @@
+Notifiche email scattano quando si modifica uno stato. Le informazioni contestuali possono essere aggiunte usando segnaposti per i campi.
+
+Aprire la page Lista Testo Notifica EDS e premere Nuovo:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000578-0/14DataSecurity.png"><br>
+
+Inserire i campi richiesti nel tab Generale e scrivere il messaggio nelle righe utilizzando i placeholders nella tabella sottostante.
