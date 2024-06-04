@@ -1,0 +1,88 @@
+Users who are enabled to use Power WMS must be entered in the appropriate table. Each user must be defined in Business Central employees and have a linked resource. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-Users-ENU.png"><br>
+
+
+
+| **Code**                    | **Description**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Employee No** |Employee No.                                                                                                                                                                   |
+| **Status** |User Status. Only enabled users can use Power WMS.                                                                                                                                  |
+| **Badge No.** |Badge No.. Read only. The Badge No. field of the linked employee is displayed.                                                                                                   |
+| **Employee Search Name** |Employee Search Name. Read only. The Search Name field of the linked employee appears.                                                                                |
+| **Employee Status** |Employee Status. Read only. The Status field of the linked employee is displayed. Only active employees can access Power WMS.                                              |
+| **Resource No.** |Indicates the resource that is linked to the employee. Read only.                                                                                                             |
+| **Linked User Id** |Specifies Business Central user linked to employee (via the Resource No.). Required for using Warehouse tasks (Warehouse receip, Warehouse shipment, Put-away and picking). |
+| **Warehouse Employee** |Specifies if the employee has a linked User Id that is a warehouse employee. Read only.                                                                                 |
+| **Language Code** |User Language Code. Power WMS is translated according to the language set in the user. Translation refers to labels, menus, not contents.                                    |
+| **Theme Name** |Theme Name.                                                                                                                                                                     |
+| **OmniSearch** |If enabled, the OmniSearch feature is available to the user.                                                                                                                    |
+| **Location View** |Manage allowed locations for the user. This setting will be used as Location Filter in all activities that require location management.                                      |
+| **Default Location Code** |Specifies default Location Code from the Location View. If empty, the first location from the Location View will be used.                                            |
+| **Default Item Reclass. Template Name** |Default Item Reclassification Template Name for the user. Read only. It is created according to the settings in the WMS Setup.                         |
+| **Default Item Reclass. Batch Name** |Default Item Reclassification Batch Name for the user. Read only. It is created based on the settings in the WMS Setup.                                   |
+| **Default Item Journal Template Name** |Default Item Journal Template Name for the user. Read only. It is created based on the settings in the WMS Setup.                                       |
+| **Default Item Phys. Inventory Template Name** |Default Item Phys. Inventory Template Name for the user. Read only. It is created based on the settings in the WMS Setup.                       |
+| **Default Item Phys. Inventory Batch Name** |Default Item Phys. Inventory Batch Name for the user. Read only. It is created based on the settings in the WMS Setup.                             |
+
+
+
+The user card contains the following fields:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-User-ENU.png"><br>
+
+
+
+| **Code**                    | **Description**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Activity** |Activity Type.|
+| **Status** |Activity Status. The activity will be shown in the Power WMS menu only if the status is ÃEnabled".|
+| **Category** |Activity Category. This value is managed by the system and cannot be changed.|
+| **Group** |Activity Group. Specifies in which group the activity will be shown in the Power WMS menu.|
+| **Scanner Setup** |Specifies the default Scanner Setup for the activity. The scanner setup code allows to define the way in which the barcode request is handled in the various operations. They can be of five types: **Linear**, which provides a single barcode in which the elements are divided using a specific separator, **Sequential**, in which n barcodes are provided that will then be requested from the operator separately, **Positional** which provides for a single barcode and the elements are identified by defining their sequence and maximum length, **Different Separator** similar to linear but with the ability to define different types of identifiers/separators and their position (e.g. it can be used for ENA128), **Custom** managed via custom in Business Central.|
+| **Scan Mode** |Scan Mode setting for the lines. The allowed values are **Line**: barcodes are requested for each individual line of the document, **Group**: Barcodes are requested for grouping of item / variant / Unit of measure / location / bin, **Fast**: barcodes are requested on the entire document and grouped for item / variant / Unit of measure / location / bin.                                                          |
+| **Allow All Locations** |If enabled, Location View will be ignored and all locations will be available for the activity.|
+| **Apply User Id Filter** |If enabled, records will be filtered by the Linked User Id value.|
+| **Allow Blank User Id** |If enabled, records without a User Id will be available for the activity.|
+| **Purchase Header (Purchase Order)**|
+| **Key Value** |Allows to select the sort key with which the data will be displayed in Power WMS.|
+| **Key Sort** |Sorting by the matching key: Ascending or Descending.|
+| **View** |Manage filters on the table.|
+| **Records Count** |If enabled, the number of records in the table will be shown in the card.|
+| **Purchase Line (Purchase Order)**|
+| **Key** |Allows to select the sort key with which the data will be displayed in Power WMS.|
+| **Key Sort** |Sorting by the matching key: Ascending or Descending.|
+| **View** |Manage filters on the corrispective table.|
+| **Execution Mode** |Indicates how the action is performed. Specifies how the activity will be executed. Values are: **Asynchronous**: The activity will be executed as background task; **Synchronous**: The activity will be executed in foreground; **Scheduled**: The activity will be executed at a scheduled time.|
+| **Default Action** |Specifies the default action to be executed when user press the "Finish" button in Power WMS. Values are: **Save**: scans are saved and managed in Business Central; **Post**: The Source Entity will be posted.|
+| **Notify On Success** |If enabled, the user will receive a notification when the activity is successfully completed.|
+| **Allow Posting** |Allow posting of the Source Entity.|
+| **Posting Execution Mode** |Specifies how the posting of the Source Entity will be executed. Values are: **Asynchronous**: The posting will be executed as background task; **Synchronous**: The posting will be executed in foreground; **Scheduled**: The posting will be executed at a scheduled time.|
+| **Allow Source Reset** |If enabled, the user can reset the Source Entity.|
+| **Allow Automatic Tracking** |If enabled, tracking will be automatically managed by the system.|
+| **Allow Scan Edit** |If enabled, the user can edit the scanned lines.|
+| **Focus On Quantity** |If enabled, the focus will be set on the Quantity field. This setting works only if Scan Mode is set to ÃLineÄ.|
+| **Start With Scan All Lines** |If enabled, the system will start with the "Scan All Lines" mode when the Source Entity is selected.|
+| **Quantity Management** |Define how quantity is managed for the scan: add quantity or set defined quantity on the scan. Values are: Assign, Add.|
+
+<br>
+
+For each activities, you can also define the fields that are displayed. In the activity card, there are three actions that allow to define the list of fields.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-User1-ENU.png"><br>
+
+List Fields 1 contains the fields displayed in the document lists.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-User2-ENU.png"><br>
+
+Detail Fields 1 contains the fields displayed in the header detail of the individual document.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-User3-ENU.png"><br>
+
+Detail Fields 2 contains the fields that are displayed in the detail of the individual document line.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-User4-ENU.png"><br>
+
+<br>
+<br>
+     
