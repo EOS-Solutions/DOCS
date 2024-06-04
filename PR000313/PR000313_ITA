@@ -1,0 +1,56 @@
+**Esempio 1 - Il percipiente ha una percentuale di detraibilit… del 100%, con una quota di rimborso spese:**
+
+Ai fini di una corretta esportazione, in Scheda ritenuta indichiamo:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/08WithhTaxCertUniche-IT.png"><br>
+
+| **Campo**                       | **Descrizione**                                                                                                                                                                                                                                                                                                       |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Importo totale                  | indichiamo l'importo totale (ad es. 100,00 euro)                                                                                                                                                                                                                                                                      |
+| Importo non soggetto a ritenuta | nell'esempio vengono indicati 10,00 euro (rimborso spese)                                                                                                                                                                                                                                                             |
+| Quota non imponibile            | Š pari a zero perchŠ la detraibilit… Š 100%                                                                                                                                                                                                                                                                           |
+| Tipo di reddito non imponibile  | si indica "22" (specifiche tecniche: 22 nel caso di erogazione di redditi esenti ovvero di **somme che non costituiscono reddito**)                                                                                                                                                                                   |
+| Importi non reddituali          | riportare il valore presente nel campo "Importo non soggetto a ritenuta" nel Tab Ritenuta. E' sufficiente cliccare sul campo e inserire importi e causali nella tabella: <img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/08.1WithhTaxCertUniche-IT.png"><br> |
+| Importo ritenuta                | 18,00 euro ovvero il 20% dell'imponibile                                                                                                                                                                                                                                                                              |
+
+Quando si esegue l'anteprima di esportazione ritenuta si ottiene:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/09WithhTaxCertUniche-IT.png"><br>
+
+**Esempio 2 - Il percipiente ha una percentuale di detraibilit… del 50%, senza alcun rimborso spese:**
+
+Ai fini di una corretta esportazione, in Scheda ritenuta indichiamo:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/10WithhTaxCertUniche-IT.png"><br>
+
+| **Campo**                       | **Descrizione**                                                                                                                                                         |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Importo totale                  | indichiamo l'importo totale (ad es. 100,00 euro)                                                                                                                        |
+| Importo non soggetto a ritenuta | nell'esempio Š zero poichŠ non Š previsto il rimborso spese                                                                                                             |
+| Quota non imponibile            | Š pari a 50,00 euro poichŠ la detraibilit… Š del 50% e non Š presente un importo non soggetto a ritenuta (rimborso spese)                                               |
+| Tipo di reddito non imponibile  | specificare la causale relativa alle somme **non soggette a ritenuta**                                                                                                  |
+| Importi non reddituali          | riportare il valore presente nel campo "Importo non soggetto a ritenuta" nel Tab Ritenuta. E' sufficiente cliccare sul campo e inserire importi e causali nella tabella |
+| Importo ritenuta                | 10,00 euro ovvero il 20% dell'imponibile                                                                                                                                |
+
+Quando si esegue l'anteprima di esportazione ritenuta si ottiene:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/11WithhTaxCertUniche-IT.png"><br>
+
+**Esempio 3 - Il percipiente ha una percentuale di detraibilit… del 50%, ma con alcuni rimborsi spese:**
+
+Ai fini di una corretta esportazione, in Scheda ritenuta indichiamo:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/12WithhTaxCertUniche-IT.png"><br>
+
+| **Campo**                       | **Descrizione**                                                                                                                                                         |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Importo totale                  | indichiamo l'importo totale (ad es. 100,00 euro)                                                                                                                        |
+| Importo non soggetto a ritenuta | nell'esempio vengono indicati 10,00 euro (rimborso spese)                                                                                                               |
+| Quota non imponibile            | Š pari a 45,00 euro poichŠ la detraibilit… Š del 50%, ma Š presente un importo (di 10,00 euro) non soggetto a ritenuta (rimborso spese)                                 |
+| Tipo di reddito non imponibile  | specificare la causale relativa alle somme **non soggette a ritenuta**                                                                                                  |
+| Importi non reddituali          | riportare il valore presente nel campo "Importo non soggetto a ritenuta" nel Tab Ritenuta. E' sufficiente cliccare sul campo e inserire importi e causali nella tabella |
+| Importo ritenuta                | 9,00 euro ovvero il 20% dell'imponibile                                                                                                                                 |
+
+Quando si esegue l'anteprima di esportazione ritenuta si ottiene:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/13WithhTaxCertUniche-IT.png"><br>
