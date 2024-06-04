@@ -1,0 +1,17 @@
+Sulla scheda dell'imballaggio Š possibile visualizzare la Giacenza vuoti nel tab Generale. Cliccando sul campo il sistema mostra tutti i movimenti **relativi all'imballaggio.**
+
+Dalla scheda cliente, premendo Correlato->Cliente->Saldo vuoti si possono vedere quanti e quali vuoti **il cliente selezionato ha in giacenza** presso di lui.
+<br>
+     
+<img width="" src="https://docs.eos-solutions.it/Images/PR000246-0/IT-EMPEmptiesInventory1.jpg"><br>
+     
+La funzione saldo vuoti per conto permette, infatti, di visualizzare la situazione dei vuoti per Tipo / Nr. Conto. Permette inoltre la generazione della fattura.   
+<br>
+     
+<img width="" src="https://docs.eos-solutions.it/Images/PR000246-0/IT-EMPEmptiesInventory2.jpg"><br>
+     
+Da Azioni->Crea fatture Š possibile eseguire direttamente la fatturazione dei vuoti dalla pagina.
+<br>
+     
+<img width="" src="https://docs.eos-solutions.it/Images/PR000246-0/IT-EMPEmptiesInventory3.jpg"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000246-0/IT-EMPEmptiesInventory4.jpg"><br>
