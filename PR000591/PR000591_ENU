@@ -1,0 +1,24 @@
+* Define price lists at all customer classification levels
+	* Apply prices to quantity tiers on detail
+	* Create finished price lists [net price lists]. Implement the ability to create price lists for groups of homogeneous items
+
+*  Define commercial conditions on line items
+	* Filter on all item classification levels
+	* Value or quantity tier
+	* Alternative conditions
+	* Exclusive conditions
+	* Free goods
+	
+*  Define commercial conditions on document header
+	* 	Filter on all item classification levels
+	* 	Value or quantity tiers on total order
+	* 	Conditions from order header filter
+	* 	Assortment-type conditions
+	* 	Alternative conditions
+	* 	Exclusive conditions
+	* 	Free goods (direct or from a selection basket)
+
+*  Define types of commercial conditions for structured discount scales
+	* Application on line item
+	* Application on chargeable item
+	* Application on invoice discount
