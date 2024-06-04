@@ -1,0 +1,17 @@
+In questa tabella devono essere definiti i vari parametri da utilizzare per effettuare i controlli. Da Nuovo Š possibile inserire un nuovo parametro.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000508-0/42ProductQualityAssurance-ITA.png"><br>
+
+* **Misurabili**: parametri che richiedono una rilevazione misurabile.
+
+* **Attributi**: parametri che non richiedono una rilevazione misurabile.
+
+	Gli attributi possono avere tipi di parametro diverso:
+
+	- Valore effettivo: deprecato
+
+	- Codice attributo parametro: lÂanalisi pu• dare esiti diversi e tabellabili (es. colore giallo, verde, rossoµ)
+
+	- Attributo soddisfacente: lÂanalisi pu• essere positiva o negativa  
+
+ß possibile definire lÂunit… di misura in Cod. unit… di misura ed eventualmente il Metodo di misura. 
