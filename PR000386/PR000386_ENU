@@ -1,0 +1,24 @@
+| **Record type CBI**                                                                                                           |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| CBISDDStsRptLogMsg.00.01.00 CBIBdySDDStsRpt.00.01.00                                                                          |
+| <img width="" src="https://docs.eos-solutions.it/Images/PR000386-0/4BFForItaly-en.png"><br> |
+
+This feature allows you to import dishonored of Direct Debit (Italian RIDs).
+
+In Italy RIDs are used for example to pay fees and bills by direct debit on the customer's bank account.
+
+If that fails the bank makes a file with failed receipts avaliable.
+
+The layout differs from the SEPA standard of ECB due to some specific TAGs introduced by CBI.
+
+Supported Record type:
+
+**CBISDDStsRptLogMsg.00.01.00**
+
+**CBIBdySDDStsRpt.00.01.00**
+
+The report to fill is **Sepa DD dishonored (CBI)**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000386-0/5BFForItaly-en.png"><br>
+
+You need to choose a template from the general journal and a batch for the posting.
