@@ -1,0 +1,39 @@
+The **third way** to configure BOM lines is to use conditions and formulas for calculating the "**Quantity per**" and "**% scrap**" fields. These settings can be used in combination with rows containing items such as ÃFix" (non-configurable), "Neutral to ConfigurationÄ (configurable semi-finished products) or "Neutral to Fix" (neutral items).
+
+**CONDITIONS FOR SELECTING BOM LINES**
+
+Inserting a condition code on a BOM line means that in the configured BOM the line in question will only be present if the entries expressed in the condition code are true. Otherwise, the line will not be included.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000404-0/BOMFormula1_ENU.png"><br>
+
+<br>
+
+For example, the line containing the item ®FAR. CIL_LONG¯ will be inserted into the final BOM only on condition that the ®TIPO_FARO¯ takes on the value ®C_LONG¯.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000404-0/BOMFormula2_ENU.png"><br>
+
+WARNING: This method is the easiest to set up, but it's also the one that could increase the number of BOM lines created.
+
+<br>
+
+**FORMULAS FOR QUANTITY CALCULATION**
+
+The "Quantity per" field of the final BOM may have to depend on the value of some characteristics, especially those of type measure. For this reason, **calculation logics can be indicated in the "Formula quantity" and "Formula code" fields.**
+
+The "**Formula quantity**" field is used to express simple calculations. Entering a characteristic code (always in square brackets [CHARACTERISTIC CODE]) means taking into consideration the value that the specified characteristic will assume during configuration.
+
+In the "**Formula code**" field, you can assign a formula that contains more complex logic.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000404-0/BOMFormula3_ENU.png"><br>
+
+<br>
+The "% scrap" field can also be conditioned according to a formula entered in the Ã**scrap % formula code**" field.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000404-0/BOMFormula4_ENU.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000404-0/BOMFormula5_ENU.png"><br>
+
+<br>
+<br>
+ 
+ 
