@@ -1,0 +1,5 @@
+# Activity Enrties
+
+The activity entries page contains the information of all the operations performed by the operators with the Power App. It is very important to analyze the operations, especially in the event of an error. It allows you to view the information transmitted from the power app to Business Central with all the details of the scans, the outcome of the operation and the execution times.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000148-0/EX089-ActEntries-ENU.png"><br>
