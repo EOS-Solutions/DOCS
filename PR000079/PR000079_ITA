@@ -1,0 +1,16 @@
+LÂapp EOS ®Advanced Intrastat For Italy (ITR)¯ utilizza alcuni setup standard, integrandoli con setup specifici dellÂapp.
+
+Nella page Setup intrastat impostare un numeratore e un tipo di raggruppamento:
+
+-   ÃPer RigaÄ: ogni singola riga viene riportata nella dichiarazione Intrastat.
+-   ÃPer DocumentoÄ: le righe nella Dichiarazione Intrastat vengono raggruppate per nomenclatura e per documento.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000079-0/2AdvIntrastatForItaly-it.png"><br>
+
+Nella pagina Setup intrastat (ITR) possiamo inoltre abilitare la generazione automatica delle righe di tipo Call off stock; attivando la gestione, sar… possibile selezionare il tipo di filtro da utilizzare per il suggerimento automatico delle righe
+
+\- Tipo filtro ubicazioni interne: Opzione ÃIncludi paese localeÄ: vengono processate tutte le ubicazioni con Cod. paese pari a quello impostato nelle Informazioni societ…; Opzione ÃFiltroÄ: vengono processate le sole ubicazioni inserite nel campo ÃFiltro ubicazioni interneÄ.
+
+\- Tipo filtro ubicazioni esterne: Opzione ÃIncludi paesi UEÄ: vengono processate tutte le ubicazioni relative a paesi per i quali risulta compilato il campo ÃCod. IntrastatÄ. Opzione ÃFiltroÄ: vengono processate le sole ubicazioni inserite nel campo ÃFiltro ubicazioni interneÄ.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000079-0/2bAdvIntrastatForItaly-it.png"><br>
