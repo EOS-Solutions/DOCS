@@ -1,0 +1,7 @@
+Di seguito riepiloghiamo alcuni **consigli per migliorare le performance** del configuratore:
+
+-   **Ridurre il numero di caratteristiche associate ad una regola**. In fase di analisi Š opportuno considerare se farlo creando pi— codici articoli neutri con regole diverse.
+-   **Ridurre il numero di relazioni** associate alle regole anche tramite lÂutilizzo dei set di caratteristiche.
+-   Impostare i flag ®**Escludi dal calcolo delle relazioni**¯ ed ®**Escludi dal calcolo delle relazioni con condizioni**¯ presenti nelle caratteristiche associate alle regole (tramite la funzione certifica o manualmente).
+-   Impostare il flag ®**Escludi da calcolo maggiorazioni**¯ presente nelle caratteristiche associate alle regole.
+-   Valutare lÂimpostazione dei campi presenti nel setup del configuratore. In particolare: ®**Abilita riconfigurazione distinte/assemblaggio**¯, ®**Abilita calcolo caratteristiche sottolivelli DB**¯, ®**Tipo calcolo sottolivelli DB**¯.
