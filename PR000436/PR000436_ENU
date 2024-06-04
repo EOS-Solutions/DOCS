@@ -1,0 +1,12 @@
+All invoicing functions, both sales and purchases, have been implemented with the management of the second units of measure. Specifically for sales:
+
+-   Get Shipment Lines
+-   Combine Shipments
+-   Extended Combine Shipments
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000436-0/Invoice1_ENU.png"><br>
+
+<br>
+<br>
+ 
+ 
