@@ -1,0 +1,25 @@
+Le **Relazioni a livello superiore** vengono utilizzate quando:
+
+-   NellÂarticolo figlio sono presenti caratteristiche non presenti nellÂarticolo padre (altrimenti il trasferimento dei valori avverrebbe automaticamente)
+-   Sono necessarie mappature tra Caratteristiche (lÂinterazione tra le caratteristiche deve avvenire tra padre e figlio)
+
+NOTA: Le relazioni a livello superiore avvengono solo tra articolo configurabili (Tipo: da Neutro a Configurabile).
+
+ß possibile condizionare la configurazione di un articolo Figlio in base alle scelte di configurazione dellÂarticolo Padre.
+
+-   LÂarticolo padre deve essere un articolo CONFIGURABILE
+-   LÂarticolo figlio deve essere un articolo CONFIGURABILE
+
+I valori che lÂarticolo figlio eredita dallÂarticolo padre devono essere impostati nelle regole di configurazione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000406-0/Relations1_ITA.png"><br>
+
+-   Il **Trasferimento di Valore da Livello superiore**, trasferisce il valore della caratteristica dai livelli superiori (risalendo lÂalbero di distinta) allÂarticolo Figlio;
+-   Il **Calcolo livello superiore** pu• coinvolgere nelle formule caratteristiche configurate nei livelli superiori.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000406-0/Relations2_ITA.png"><br>
+
+<br>
+<br>
+ 
+
