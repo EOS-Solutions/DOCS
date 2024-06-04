@@ -1,0 +1,19 @@
+The Material Status feature gives you **an information of the material availability of each production order**.
+
+The Material Status is calculated for each component of a production order (only for firm planned and relased orders).
+
+* Available: completely available
+
+* Partially available: not completely available
+
+* Blank: not available
+
+You can launch the calculation of the Material Status, from the Sequence Planning or from the <u>Planning Setup</u>. The Material Status is shown on each production order and on the Sequence Planning.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000409-0/15ManufPlanning-ENU.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000409-0/16ManufPlanning-ENU.png"><br>
+
+On the Planning setup (MPL) from Related->Planning calculation it is possible to execute the planning according to the setup set and it is also possible to calculate the Material Status.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000409-0/14ManufPlanning-ENU.png"><br>
