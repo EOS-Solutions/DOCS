@@ -1,0 +1,7 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/76o-F9-4pMI" title="Manufacturing planning per Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+In the Manufacturing Setup you can activate the **Advanced Scheduling setting**. If it¡s activated then the Due Date of the production order is no more changed, if you change or reschedule any operation. This is very helpful for planning scenarios, as you can see if you are late or in time on your products Due Date.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000057-0/2ManufPlanning-ENU.png"><br>
