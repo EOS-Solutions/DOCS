@@ -1,0 +1,32 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z2vTB9Prnbo" title="GDPR Toolset for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The General Data Protection Regulation not only applies to organisations located within the EU but it will also apply to organisations located outside of the EU if they offer goods or services to, or monitor the behaviour of, EU data subjects It applies to all companies processing and holding the personal data of data subjects residing in the European Union, regardless of the companyÂs location.
+
+It took effect starting from May 25th 2018.
+
+What constitutes personal data? Any information related to a natural person or ÁData SubjectÂ, that can be used to directly or indirectly identify the person. It can be anything from a name, a photo, an email address, bank details, posts on social networking websites, medical information, or a computer IP address.
+
+Organizations can be fined up to 4% of annual global turnover for breaching GDPR or ±20 Million. This is the maximum fine that can be imposed for the most serious infringements e.g.not having sufficient customer consent to process data or violating the core of Privacy by Design concepts. There is a tiered approach to fines e.g. a company can be fined 2% for not having their records in order (article 28), not notifying the supervising authority and data subject about a breach or not conducting impact assessment. It is important to note that these rules apply to both controllers and processors, meaning 'clouds' will not be exempt from GDPR enforcement.
+
+
+## Data subject rights
+
+1.  **Breach Notification:** Under the GDPR, breach notification will become mandatory in all member states where a data breach is likely to Ãresult in a risk for the rights and freedoms of individualsÄ. This must be done within 72 hours of first having become aware of the breach. Data processors will also be required to notify their customers, the controllers, Ãwithout undue delayÄ after first becoming aware of a data breach.
+2.  **Right to Access:** (Gdpr ToolSet or manual reports) is the right for data subjects to obtain from the data controller confirmation as to whether or not personal data concerning them is being processed, where and for what purpose. Further, the controller shall provide a copy of the personal data, free of charge, in an electronic format.
+3.  **Right to be Forgotten:** (Gdpr ToolSet or manual deletion) also known as Data Erasure, the right to be forgotten entitles the data subject to have the data controller erase his/her personal data, cease further dissemination of the data, and potentially have third parties halt processing of the data.
+4.  **Data Portability:** (GdprToolSet or Excel export) the right for a data subject to receive the personal data concerning them.
+5.  **Privacy by Design:** (Nav Standard) (Article 23 calls for controllers to hold and process only the data absolutely necessary for the completion of its duties (data minimisation), as well as limiting the access to personal data to those needing to act out the processing
+6.  **Data Protection Officers:** a DPO is mandatory wherever the data processing is carried out by a public authority or a company (controller or processor) whose core activities consist of processing operations which require regular and systematic monitoring of data subjects. Companies passing certain thresholds should be mandated to appoint a DPO, yet they differ on the exact metric. Finally, a DPO should be mandatory for all enterprises that process 'Special categories' of data, including information such as health data or religious and political beliefs.
+
+
+## GDPR Toolset app
+
+Thanks to the GDPR Toolset app you can manage:
+
+-   Data discovery in NAV
+-   Data reporting (The right to be informed-Articles 12, 13, 14)
+-   Data exporting (Csv) (The right to data portability-Article 20)
+-   Data erasure (The right to be forgotten)
+-   Data rectification (The right to rectification-Article 16)
+-   Master data blocking (The right to restrict processing-Article 18)
+-   GDPR request Log (Records of processing activities-Article 30)
