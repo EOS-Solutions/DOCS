@@ -1,0 +1,32 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000454-0/Setup3_ITA.jpg"><br>
+
+
+| **Campo**                    | **Descrizione**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Numeratore Pannelli di Produzione |I pannelli di produzione (postazioni Power MES) vengono creati con questo numeratore|
+| Gestione Registrazione |Si pu• gestire la registrazione su 3 livelli . Scrittura dei movimenti dipendenti, Scrittura dei movimenti e del giornale, scrittura dei movimenti e scrittura movimenti registrati. N.B. non Š possibile gestire avere gestioni diverse per tempi e quantit… di output.<img width="" src="https://docs.eos-solutions.it/Images/PR000454-0/Setup4_ITA.jpg"><br>|
+| Lingua di default |Lingua di default da utilizzare per le caption. ß possibile specificarlo anche per pannello (postazione di lavoro)|
+| Tema di default |Tema di default dellÂinterfaccia utente Power App. ß possibile specificarlo anche per pannello (postazione di lavoro)|
+| Provider Allegati |Specifica se gli allegati visualizzati dalla power App sono disponibili come allegato standard BC o con App DocSolutions|
+| Avviso Operazione per Squadra |Se un operatore che fa parte di una squadra esegue una causale (avvio, sospensione, output) appare un messaggio di avvertimento che lÂoperatore fa parte di una squadra e quindi sar… creato un movimento per tutti i componenti. ß possibile specificarlo anche per pannello (postazione di lavoro)|
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000454-0/Setup5_ITA.jpg"><br>
+
+| **Campo**                    | **Descrizione**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Mostra un movimento per ordine famiglia |Per ogni ordine di tipo famiglia avviato verr… mostrato solo un movimento nell'elenco attivit…|
+| Azzera qt…. Output |Se attivo, la quantit… proposta alla dichiarazione di output Š uguale a 0, Š uguale alla quantit… residua.|
+| Azzera qt… output per famiglie |Se attivo, la quantit… proposta alla dichiarazione di output per famiglia Š uguale a 0, Š uguale alla quantit… residua per famiglia (analogo al parametro precedente)|
+| Visualizza qt…. residua |Se attivo, nella lista delle operazioni sulla pagina power mes, verr… visualizzata la quantit… residua anzichŠ la quantit… da produrre. ß possibile specificarlo anche per pannello (postazione di lavoro)|
+| Quantit… residue con letture |Se attivo, la quantit… residua visualizzata nella lista delle operazione sulla pagina Power MES, viene calcolata tenendo conto dei movimenti non registrati. ß utile per avere la quantit… residua aggiornata anche se la registrazione dei movimenti non Š immediata. (collegato al parametro precedente) ß possibile specificarlo anche per pannello (postazione di lavoro)|
+| Ricalcolo quantit… ordini per famiglia |Condiziona la visualizzazione della quantit… nelle lista delle operazioni sulla pagina Power MES in caso di ordini per famiglia. Se attivo, le quantit… vengono ricalcolate utilizzando il rapporto tra la somma delle quantit… delle righe da produrre e la quantit… dell'ordine di produzione ß possibile specificarlo anche per pannello (postazione di lavoro)|
+|  |I movimenti di tracciabilit… registrati da power MES sono governati da questi parametri se la tracciabilit… non Š pre assegnata allÂordine di produzione:|
+| Numeratori Seriali e/o lotti di default |Si utilizzano se la tracciabilit… per lotto/seriale viene creata in automatico alla registrazione dellÂoutput. Vengono presi in considerazione solo se non sono presenti numeratori per lotto o seriale sullÂanagrafica articolo|
+| Forza creazione informazioni nr. Seriale e/o numero lotto |Se attivo, le informazioni Nr. Seriale e Nr. Lotto vengono create a prescindere dallÂomologo parametro presente sul codice traccabilit…|
+| Nr. Ordine di produzione come lotto |Se attivo, alla registrazione dellÂoutput viene utilizzato il numero ordine di produzione come numero di lotto |
+| Nuovo nr. Lotto per versamento |Se attivo, viene creato un nuovo numero di lotto ad ogni registrazione di output. Questo parametro viene ignorato se Š attivo il parametro "Nr Ordine di produzione come lotto"|
+
+<br>
+<br>
+ 
+ 
