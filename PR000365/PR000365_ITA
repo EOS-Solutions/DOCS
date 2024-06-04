@@ -1,0 +1,11 @@
+Sulla page di Pianificazione sequenziale, nel Tab Operazioni, esistono diverse funzioni utili:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000365-0/5ManufPlanning-ITA.png"><br>
+	
+|  Nome   |  Descrizione   |
+| --- | --- |
+| Ordinamento per data di scadenza | ordina le operazioni in base alla data di scadenza del corrispondente ordine di produzione |
+| Sposta | sposta le operazioni selezionate su un'area di produzione del Centro lavoro |
+| Ripianificazione | mette in sequenza le operazioni selezionate.  <br>Il sequenziamento viene fatto partendo dalla data-ora di inizio. Durante la ripianificazione Š possibile scegliere di rinumerare la sequenza delle operazioni. Vengono gestite solo le operazioni non iniziate, ovvero quelle con Stato del ciclo "Pianificato". Per modificare questo comportamento si pu• impostare a "Tutti" il campo Tipo di aggiornamento sulla request page.  <br><img width="" src="https://docs.eos-solutions.it/Images/PR000365-0/6ManufPlanning-ITA.png"><br> |
+| Modifica stato | la Pianificazione sequenziale consente di modificare rapidamente lo stato dell'ordine di produzione di tutte le operazioni selezionate |
+| Stato materiale | dalla Pianificazione sequenziale Š possibile ricalcolare lo stato materiale per tutti gli ordini di produzione delle operazioni selezionate. Fornisce informazioni sulla disponibilit… del materiale di ogni ordine di produzione. Lo stato materiale viene calcolato per ogni componente di un ordine di produzione (solo per ordini confermati e rilasciati). ß possibile avviare il calcolo dello stato del materiale, dalla Pianificazione sequenziale o dal Setup Pianificazione. Lo stato materiale viene visualizzato in ogni ordine di produzione e nella Pianificazione sequenziale. ÿ  <br><img width="" src="https://docs.eos-solutions.it/Images/PR000365-0/7ManufPlanning-ITA.png"><br><img width="" src="https://docs.eos-solutions.it/Images/PR000365-0/8ManufPlanning-ITA.png"><br> |
