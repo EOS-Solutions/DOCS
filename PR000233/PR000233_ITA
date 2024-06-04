@@ -1,0 +1,29 @@
+**Caso 1: gestione fattura e nota credito con unico template** <br><br>Setup:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/64SimulatedGeneralLedger.png"><br>
+
+Scritture generate da fattura:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/60SimulatedGeneralLedger.png"><br>
+
+Scritture generate da nota credito:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/62SimulatedGeneralLedger.png"><br>
+
+In questo caso la nota credito compensa esattamente gli stessi conti della fattura. Pertanto, registrando una fattura errata, e quindi la successiva nota credito identica, il sistema manda a zero il conto movimentato dal template R/R (nellÂesempio il rateo attivo).
+
+**Caso 2: gestione fattura e nota credito con template differenti**
+
+Setup template R/R:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/61SimulatedGeneralLedger.png"><br>
+
+Scritture generate da fattura:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/63SimulatedGeneralLedger.png"><br>
+
+Scritture generate da nota credito:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/59SimulatedGeneralLedger.png"><br>
+
+In questo caso la scrittura Š contabilmente corretta, ma non va a stornare esattamente la fattura. Si usa questa modalit… di registrazione delle note di credito quando non cÂŠ un legame diretto fra la nota di credito e la fattura (es. bonus di fine anno).
