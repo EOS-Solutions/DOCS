@@ -1,0 +1,36 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000432-0/Item1_ENU.png"><br>
+
+On the Item Card there is the field Secondary Unit of Measure Code that specifies the second unit of measure for the item considered. It is not mandatory to enter a value. If the field is not filled in, the second unit of measurement will not be handled.
+
+Once the article has been moved, it will no longer be possible to change the unit of measure (both basic and secondary).
+
+In Item Units of Measure we can see all the units of measurement set for the product. For example:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000432-0/Item2_ENU.png"><br>
+
+for this item the main unit of measurement is PZ. Each piece weighs 2.5 Kg and contains 10 pieces in one box.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000432-0/Item3_ENU.png"><br>
+
+On the Item Card you need to enter the **Secondary Unit of Measure Code** and its **Secondary Quantity Calculation Method**.
+
+
+For Secondary Qty. Calc. Method the allowed values are:
+
+-   **Default:** It allows the insertion of both units of measure, but performs the calculation only if the other quantity is different from zero.
+-   **Fixed:** Always converts between quantities.
+-   **No Default:** No conversion between quantities.
+
+For Quantity Calc. Method the allowed values are:
+
+-   **Quantity per Unit of Measure:** For the calculation between the primary and secondary units of measurement, the system uses the standard Quantity field per unit of measurement (Division).
+-   **Reverse Quantity per Unit Of Measure:** For the calculation between the primary and secondary units of measurement, the system uses the field Reverse Quantity per Unit Of Measure (Multiplication).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000432-0/Item4_ENU.png"><br>
+
+N.B. The Reverse Quantity is used only for internal calculations between primary and secondary units of measure
+
+<br>
+<br>
+ 
+ 
