@@ -1,0 +1,8 @@
+The definition of horizontal trade attributes is a new feature added in TCS, allowing greater detail in trade conditions at both price and discount levels. Trade attributes can be matched to:
+
+1. Customer master data
+1. Item master data
+1. Sales document header
+1. Sales document line
+
+Up to 10 trade attributes can be defined for each structure.
