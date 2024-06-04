@@ -1,0 +1,42 @@
+The Eos Solutions Dual Unit of Measure (DUM) app allows to:
+
+-   Document management and entry posting in double unit of measure
+-   Item tracking and inventory in double unit of measure
+-   Invoicing both in the active and passive cycle with price lists linked to the second unit of measure
+
+There are market sectors, for example food or jewelry, where products are shipped and received in pieces, but companies then need to invoice them with a different unit of measurement (eg Kg / carats).
+
+Thanks to the Dual Unit of Measure app, on the order lines, we find the usual fields "Quantity" and "Unit of Measure Code" and, in addition to these, there are the fields "Secondary Quantity" and "Secondary Unit of Measure Code" in which you can specify the second unit of measurement.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000033-0/DUM2_ENU.png"><br>
+
+<br>
+<br>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gl85RrTVH-w" title="Dual Unit of Measure for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+<br>
+
+**Included Features**
+
+-   Document line management and entries in two units of measure.
+-   Item tracking and inventory with two units of measure.
+-   Invoicing, for sales and purchase, with prices linked to the second unit of measure.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000033-0/DUM3_ITA.png"><br>
+
+**N.B.**
+
+some apps/features only work with the main unit of measure:
+
+-   Over- and Under-Delivery Quantities (OVR)
+-   Costing
+-   Reservation
+-   MRP
+
+<br>
+<br>
+     
