@@ -1,0 +1,94 @@
+Sulla page Specifiche tecniche di prodotto (PTS) Š visibile la lista di schede per le specifiche tecniche:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/10itProductTechnicalSpecifications.jpg"><br>
+
+Da Nuovo si crea una nuova scheda.
+
+La scheda ha una struttura simile a testata + righe. In alto, i tab **Generale** e **Prodotto** riportano le informazioni generali. In basso i tab **Attributi** riportano le specifiche tecniche.
+
+Una volta che la scheda Š stata completata premere Rilascio.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/11itProductTechnicalSpecifications.jpg"><br>
+
+**Azioni**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/14itProductTechnicalSpecifications.jpg"><br>
+
+Da **Specifiche tecniche-\>Archivia documento** Š possibile archiviare la scheda aggiungendo una nota:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/12itProductTechnicalSpecifications.jpg"><br>
+
+Le schede archiviate sono accessibili tramite il campo "Nr. versioni archiviate" oppure aprendo la page **Archivio specifiche tecniche**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/13itProductTechnicalSpecifications.jpg"><br>
+
+Da Specifiche tecniche->Copia specifiche Š possibile duplicare una scheda.
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/15itProductTechnicalSpecifications.jpg"><br>
+
+| **Campo**                             | **Descrizione**                                                                  |
+|---------------------------------------|----------------------------------------------------------------------------------|
+| Specifiche tecniche origine nr.       | Specifica il numero delle specifiche tecniche da cui si desidera copiare i dati |
+| Specifiche tecniche destinazione nr.  | ß possibile inserire una numerazione manuale                                    |
+| Nr. serie destinazione                | Alternativamente Š possibile assegnare un numero di serie tra quelli a setup     |
+| Numero di copie                       | Stabilire quante copie della scheda si desidera creare                           |
+| Informazioni generali                 | Attivare l'opzione se si desidera copiare le informazioni generali               |
+| Attributi                             | Attivare l'opzione se si desidera copiare gli attributi                          |
+| Allegati                              | Attivare l'opzione se si desidera copiare gli allegati                           |
+| Collegamenti e note                   | Attivare l'opzione se si desidera copiare i collegamenti e le note               |
+
+**Attributi**
+
+Quando viene creata una nuova scheda il sistema, grazie al template selezionato a setup, riporter… sulle righe i diversi Attributi o Gruppi di attributi che dovranno essere valorizzati:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/16itProductTechnicalSpecifications.jpg"><br>
+
+Vengono ereditate dal template anche informazioni quali ad esempio se stampare o meno l'attributo. Tali informazioni possono comunque essere modificate.
+
+Da Gestione->Elimina riga si possono eliminare gli attributi se non sono necessari:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/17itProductTechnicalSpecifications.jpg"><br>
+
+**Stampa**
+
+Da Stampa/Invia Š possibile stampare la scheda o salvarla come PDF:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/18itProductTechnicalSpecifications.jpg"><br>
+
+Scegliendo Stampa si pu• scegliere **in quale lingua stampare** la scheda:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/20itProductTechnicalSpecifications.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/19itProductTechnicalSpecifications.jpg"><br>
+
+**Allegati**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/14itProductTechnicalSpecifications.jpg"><br>
+
+Da Specifiche tecniche-\>Allegati Š possibile caricare allegati (solo quelli in PDF verranno stampati).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/21itProductTechnicalSpecifications.jpg"><br>
+<br>
+
+| **NOTA**                                                         |
+|------------------------------------------------------------------|
+| ß possibile scegliere di gestire gli allegati con DocSolutions. |
+<br>
+Esempio di stampa PDF con allegato:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/22itProductTechnicalSpecifications.jpg"><br>
+
+**Articoli**
+
+Da Specifiche tecniche-\>Articoli si pu• collegare la scheda tecnica ad uno o pi— articoli.
+
+Successivamente premere **Collega articolo**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/23itProductTechnicalSpecifications.jpg"><br>
+
+e scegliere quale articolo / articoli collegare.
+
+ß possibile rimuovere il collegamento premendo Rimuovi articolo.
+
+Dopo aver eseguito il collegamento, sulla Scheda articolo da Azioni-\>Articolo-\>Specifiche tecniche compariranno le schede tecniche relative:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images//scheda tecnica di prodotto/24itProductTechnicalSpecifications.jpg"><br>
