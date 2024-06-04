@@ -1,0 +1,19 @@
+The main functionality is the exchange of components **in production orders and BOMs**. It replaces the standard functionality "Production BOM item exchange" which allows to exchange items on the BOM to create a new version. It is a worksheet that allows the calculation of the components to be exchanged.
+
+Using Alt + Q type "MMM" and open the Component Worksheet (MMM) page:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000621-0/11ManufacturingBaseToolkit-ENU.png"><br>
+
+The action message allows us to choose what to do: 
+
+| Field | Description |
+| --- | --- |
+| Replace | the system replaces the component within the bill of materials or the production order |
+| New | the system creates a new component in the bill of materials or in the production order |
+| Cancel | the system deletes the component from the bill of materials or from the production order |
+
+<br>
+
+By ticking "Accept Action Message" the selected action is performed.
+
+Alternatively, you can select the lines and press Accept Action Message at the top.
