@@ -1,0 +1,20 @@
+In riga di tutti i documenti sono presenti i campi **Quantit… Secondaria** e **Codice Unit… di misura secondaria** (non editabile e ereditato da anagrafica articoli).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000433-0/Doc1_ITA.png"><br>
+
+La quantit… secondaria Š editabile e viene comunque calcolata in automatico in base alle impostazioni presenti in anagrafica articoli (Metodo calcolo qt… secondaria).
+
+Sono presenti inoltre tutti i campi relativi alle quantit… da spedire / ricevere, fatturare e inevase.
+
+Altri campi presenti sulle righe:
+
+| **Nome**                          | **Descrizione**                                                                         |
+|-----------------------------------|-----------------------------------------------------------------------------------------|
+| Metodo calcolo prezzi             | ereditato da anagrafica articoli e modificabile manualmente.                            |
+| Cod. unit… di misura prezzo       | calcolato in automatico in base al Metodo calcolo prezzi e non editabile (estendibile). |
+| Calc. Prezzo unitario IVA esclusa | prezzo unitario calcolato in base ai listini e editabile manualmente.                   |
+
+
+<br>
+<br>
+ 
