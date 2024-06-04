@@ -1,0 +1,57 @@
+After configuring the [Docsolutions For Sharepoint - Setup]({{<relref "docsolutions-for-sharepoint-setup">}}), for example by opening the Customer List, you will see the factbox on the right:
+
+<img width="1200" src="https://docs.eos-solutions.it/Images/PR000139-0/1 DocSolutionsForSharepoint.png"><br>
+
+the already loaded file shows, as attributes, what has been set at setup: the Library chosen as the path, the Creation Time (returned by Sharepoint), the Directory Name and the Last Access Time.
+
+By pressing F11 the Factbox is enlarged in "full screen" mode.
+<br><br>
+
+
+# File upload
+
+To upload a file, you can choose it by clicking on "Choose a file" or drag & drop (also active from Outlook).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000139-0/2DocSolutionsForSharepoint.png"><br>
+
+the system shows the file name, the library chosen for uploading and the editable metadata:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000139-0/3DocSolutionsForSharepoint.png"><br>
+
+Click OK and the system will upload the file:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000139-0/4DocSolutionsForSharepoint.png"><br>
+
+
+You can **delete** the file by pressing on the recycle bin. You can **download** the file by pressing on the cloud. icon.
+
+The magnifying glass (Search) allows you to **filter** the uploaded files.
+
+You can see the uploaded file **inside Sharepoint** by pressing on the folder:
+
+
+From Add column you can customize the page by choosing the columns to be shown.
+<img width="1200" src="https://docs.eos-solutions.it/Images/PR000139-0/5DocSolutionsForSharepoint.png"><br>
+
+
+
+<br><br>
+# Upload size limit
+
+In each library you can specify (in MB) what is the maximum size that each file can have
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000139-0/6DoCSolutionsSizeLimit.png"><br>
+<br><br>
+# Delete attachments linked to deleted records
+
+In order to be able to eliminate the attachments following the deletion of the relative records, a setup is required. Open DocSolutions Table Setup (DCS) and click Open Job Queue:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000139-0/7DoCSolutionsForSharepoint.png"><br>
+
+his action will open a job queue if it exists, otherwise it will create one.
+
+On the Table Setup Card of each table, you can choose whether or not to enable this option:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000139-0/8DoCSolutionsForSharepointDelete.png"><br>
+
+
