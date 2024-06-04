@@ -1,0 +1,17 @@
+Nel Setup Certificazioni Uniche (ECU) scegliere il layout ufficiale per la stampa tra quelli precaricati a sistema.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000298-0/02aWithhTaxCertUniche-IT.png"><br>
+
+| **Campo**                           | **Descrizione**                                                  |
+|-------------------------------------|------------------------------------------------------------------|
+| PDF Cert. Versione Unica            | indicare il modello da utilizzare tra quelli scaricati dal Cloud |
+| PDF Cert. Unica Caricato            | si attiva in automatico una volta selezionato un modello         |
+| Suddividi PDF per fornitore/causale | attivarlo per suddividere il pdf per fornitore                   |
+
+I dati definiti nel campo ÃNr. rappresentante fiscaleÄ vengono riportati nel record A per definire il ÃCodice fiscale fornitoreÄ:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000298-0/02bWithhTaxCertUniche-IT.png"><br>
+
+Mentre i dati definiti nel campo ÃNr. intermediario trasmissioneÄ e ÃData intermediarioÄ vengono utilizzati per i relativi dati nel record B:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000298-0/02cWithhTaxCertUniche-IT.png"><br>
