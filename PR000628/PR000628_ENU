@@ -1,0 +1,27 @@
+Through the EOS Vat Management for Italy (VMI) App, it is possible to calculate the VAT interest in the case of quarterly VAT settlements.
+
+**Setup**
+
+In the VMI Setup:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/35VatManagement-en.png"><br>
+
+it is necessary to indicate if the company is subject to the calculation of the quarterly VAT interest, the percentage of interest and the accounting account on which the interest amount will be charged.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/36VatManagement-en.png"><br>
+
+**VAT settlement**
+
+When calculating the VAT settlement using the Calc. and post VMI VAT settlement report, the amount of quarterly VAT interest is calculated to increase the VAT payable to be paid to the tax authorities.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/37VatManagement-en.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/38VatManagement-en.png"><br>
+
+Furthermore, by posting the VAT payment, the amount of VAT interest will be charged to the account defined in the VMI setup:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/39VatManagement-en.png"><br>
+
+In the calculation of the Communication of periodic VAT payments, the amount of interest will be reported in the VP12 field. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000628-0/40VatManagement-en.png"><br>
