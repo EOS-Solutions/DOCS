@@ -1,0 +1,13 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000660-0/9EDI_en.jpg"><br>
+
+An inbound EDI message is receveid from a partner and imported into Business Central from the file system (inbound flow).
+
+You can use the report **Create EDI Messages Inbound** to create and import messages. This report will take all eligible files from the configured file system and will import them into Business Central.
+
+- **Options**:
+	- **create Order**: if this is specified, all documents that have been imported will also be accepted and created as documents in Business Central.
+
+- **Filters**:
+	- **EDI Group Code**: you can use this to import messages only for the specified groups.
+
+Any errors that are encountered during creating and/or importing will be logged to the error log (if configured). At the end of the process, the user can open a list of all errors (if any).
