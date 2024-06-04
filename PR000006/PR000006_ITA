@@ -1,0 +1,49 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aN5ZqtNbnVo" title="Visualizzare le Partite Clienti in Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<br>
+
+# Advanced Customer Vendor Statements (CVS)
+
+La App Advanced Customer Vendor Statements consente di visualizzare le partite cliente / fornitore dalla relativa lista premendo Azioni-\>Scadenzario clienti/fornitori.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/2AdvancedCustomerVendorStatement.png"><br><br>
+
+Si apre una page con una struttura a 4 livelli in cui la logica di raggruppamento Š la partita. Il primo livello Š il codice partita.
+
+| **NB**                                                                                                                                                                                               |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  Si intende per partita qualsiasi registrazione della contabilit… cliente o fornitore con un residuo contabile e in caso di residuo a zero le fatture sono la **partita principale** per definizione |
+
+Il **secondo livello** Š la rata. In una fattura 30,60,90 giorni avremo 3 righe legate alla partita di primo livello (es. fatt. 20-102026 dell'immagine sopra).
+
+Il **terzo livello** Š la chiusura della rata e pu• essere ad esempio un pagamento o una nota di credito (es. fatt. 20-102027 dell'immagine sopra)
+
+Se registriamo una nota di credito, questa avr… un saldo residuo e quindi sar… una partita di primo livello come una fattura. Quando colleghiamo la Nota Credito ad una rata della fattura:
+
+Å La nota di credito si chiude con la rata:
+
+da Azioni-\>Funzioni-\>Mov. contabili scegliamo ad es. NC 20-102013 e poi da Funzioni-\>Collega scegliamo la fattura a cui collegarla (es. 20-102021) tramite Collegamento-\>Collega a ID. Dopo la registrazione la Nota Credito risulta collegata e chiusa:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/3AdvancedCustomerVendorStatement.png"><br>
+
+Å La nota di credito resta aperta con un residuo.
+
+Il **quarto livello** Š rappresentato dagli insoluti:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/4AdvancedCustomerVendorStatement.png"><br>
+
+| **NB**                                                                                                           |
+|------------------------------------------------------------------------------------------------------------------|
+| Solo Partite Aperte ci consente di scegliere se vogliamo visualizzare solo le partite aperte o tutte le partite. |
+
+Dalla page Partite cliente Š possibile inoltre:
+
+\- Stampare lo scadenzario in verticale, ordinato per cliente/scadenza/agente con 3 livelli di dettaglio (cliente/documento/scadenza) e l'opzione per esporre tutte le registrazioni coinvolte
+
+\- Stampare uno scadenzario compatto, in orizzontale. In questa stampa le scadenze sono raggruppate in colonne per periodi di durata configurabili e selezionabili in diversa proporzione tra "scaduto" e "a scadere". Sono disponibili molteplici livelli di dettaglio .
+
+\- Stampare l'estratto conto cliente e tutti i dettagli sui movimenti per il periodo selezionato e il saldo finale
+
+Tutte le stampe riportano informazioni su "esposizione riba", distinte effetti collegate ed eventuali insoluti registrati.
+
+Tali stampe esistono lato clienti e lato fornitori.
