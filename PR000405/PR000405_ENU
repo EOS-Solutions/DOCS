@@ -1,0 +1,54 @@
+It is possible to plan the execution of MPS, MRP and the distribution of reports by applying some criteria and filters.
+
+In Planning Setups (MPL), you can set up different setup configurations for the system to perform planning calculations.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000405-0/17ManufPlanning-ENU.png"><br>
+
+After inserting several configuration lines, it is also possible to make them run according to a specific sequence, for example:
+
+- MPS and production items only
+
+- MPS and purchase items only
+
+- MRP for production items only
+
+- MRP for purchase items only
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000405-0/18ManufPlanning-ENU.png"><br>
+
+**Tab General**
+
+| Field | Description |
+| --- | --- |
+| Code, Description | set a code and description for the setup line |
+| Scheduled | establish if the setup is to be scheduled |
+| Schedule Sequence | if the setup is scheduled, set the phase of the planning sequence |
+
+<br>
+
+**Tab Planning**
+
+| Field | Description |
+| --- | --- |
+| Worksheet Template Name | choose the template name |
+| Journal Batch Name | select a batch on which the entries will be posted |
+| Delete Worksheet Lines | when planning starts, choose whether to delete the lines in the corresponding worksheet |
+| MPS, MRP | choose if you want to calculate the MPS and / or the MRP |
+| Starting Date Formula / Ending Date Formula | enter a formula for the planning start / end date |
+| Use Forecast | you can use a forecast made previously |
+| Exclude Forecast Before | set a date before which you want to exclude the schedule |
+| Respect Param. on Exception | choose whether to respect these parameters |
+
+<br>
+
+**Action Message**
+
+| Field | Description |
+| --- | --- |
+| Planning Worksheet Template / Name | it is possible to define a Planning template and name on which the calculation is to be distributed |
+| Item Filter | it is possible to filter by item (eg all items with "Prod. Order" supply system) |
+| Work Center Filter / Requisition Filter | it is also possible to filter by work center / requisition |
+
+Through Related-> Calculate planning it is possible to execute the planning as set up and it is also possible to calculate the material status .
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000405-0/14ManufPlanning-ENU.png"><br>
