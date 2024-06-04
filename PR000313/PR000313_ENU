@@ -1,0 +1,47 @@
+**Example 1 - 100% deductible rate**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/08WithhTaxCertUniche-EN.png"><br>
+
+| **Field**               | **Description**                                                                                                                                                             |
+|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Total Amount            | indicate the total amount (e.g. 100,00 ±)                                                                                                                                   |
+| Base - Excluded Amount  | Specifies the amount of the original purchase that is excluded from the withholding tax calculation, based on exclusions allowed by law. In the example: 10,00 ± (expenses) |
+| Non Taxable Amount      | Specifies the amount of the original purchase that is not taxable due to provisions in the law. In the example is equal to zero (100% deductible rate)                      |
+| Non-Taxable Income Type | Extend the standard Non-Taxable Income Type. You need to indicate "22" (22 in case of "Non-Taxable Income")                                                                 |
+| Withholding Tax Amount  | 18,00 ±: 20% of the taxable base                                                                                                                                            |
+
+And the PDF preview is:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/09WithhTaxCertUniche-EN.png"><br>
+
+**Example 2 - 50% deductible rate (and no expenses refund)**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/10WithhTaxCertUniche-EN.png"><br>
+
+| **Field**               | **Description**                                                                                                                                                                      |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Total Amount            | indicate the total amount (e.g. 100,00 ±)                                                                                                                                            |
+| Base - Excluded Amount  | Specifies the amount of the original purchase that is excluded from the withholding tax calculation, based on exclusions allowed by law. In the example: 0,00 ± (no expenses refund) |
+| Non Taxable Amount      | Specifies the amount of the original purchase that is not taxable due to provisions in the law. In the example is equal 50,00 ± (50% deductible rate)                                |
+| Non-Taxable Income Type | Extend the standard Non-Taxable Income Type. You need to indicate "21" and fill in the related table in the field below                                                              |
+| Withholding Tax Amount  | 10,00 ±: 20% of the taxable base                                                                                                                                                     |
+
+And the PDF preview is:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/11WithhTaxCertUniche-EN.png"><br>
+
+**Example 3 - 50% deductible rate (with expenses refund)**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/12WithhTaxCertUniche-EN.png"><br>
+
+| **Field**               | **Description**                                                                                                                                                                           |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Total Amount            | indicate the total amount (e.g. 100,00 ±)                                                                                                                                                 |
+| Base - Excluded Amount  | Specifies the amount of the original purchase that is excluded from the withholding tax calculation, based on exclusions allowed by law. In the example: 10,00 ± (expenses refund)        |
+| Non Taxable Amount      | Specifies the amount of the original purchase that is not taxable due to provisions in the law. In the example is equal 45,00 ± (50% deductible rate with the expenses refund of 10,00 ±) |
+| Non-Taxable Income Type | Extend the standard Non-Taxable Income Type. You need to indicate "21" and fill in the related table in the field below                                                                   |
+| Withholding Tax Amount  | 9,00 ±: 20% of the taxable base                                                                                                                                                           |
+
+And the PDF preview is:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000313-0/13WithhTaxCertUniche-EN.png"><br>
