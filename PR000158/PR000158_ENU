@@ -1,0 +1,60 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000158-0/Setup_EN.png"><br>
+<table><tbody><tr>
+<td><strong>Field</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr>
+<td>Delete Processed Entries</td>
+<td>When the job queue is running, if this option is enabled, all messages in the log will be deleted periodically except:
+<br>
+Å Those who are in error status<br>
+Å The last message of each synced item (e.g. If a customer is changed 5 times, there will be 5 logs. The last of these is maintained)&nbsp;</td>
+</tr>
+<tr>
+<td>Log Failed Local Entries</td>
+<td>A synchronization to a remote company corresponds to a webservice call to the remote company server. 
+<br>
+When synchronization fails in the source company, the error is logged.
+If the option is active, the error is also added in the remote one, so that those who work in that company can understand if there are problems without involving the 
+source company.&nbsp;</td>
+</tr>
+<tr>
+<td>Disable All Synchronizations</td>
+<td>It is used to block/activate the app.
+When this option is enabled, all changes made in the system are ignored, no logs occur, and no webservice calls are made.<br>
+Useful in the case of a blocking problem in the app, so serious that it affects the operation of the company.</td>
+</tr>
+<tr>
+<td>Disable Company threads</td>
+<td>If enabled, all threds are disabled.&nbsp;</td>
+</tr>
+<tr>
+<td>Allow Hot Changes</td>
+<td>Allows you to make changes to setups while a synchronization is in progress&nbsp;</td>
+</tr>
+<tr>
+<td>Thread per Company</td>
+<td>Defines the maximum number of threds that are created for 
+Company. If we do not enter a value in the setup, the default 
+value is 10. If we enter a value other than 0, that value will 
+be taken as a reference. (N.B: When a full synchronization is 
+performed, not all threds defined above are created)&nbsp;</td>
+</tr>
+<tr>
+<td>Record per Thread
+</td>
+<td>Defines the maximum number of records for each subprocess.
+If set to 0, the default system considers 2000.<br>
+E.g. if a table has 10,000 records (10,000/2000), the system will create 5 
+threads of 2000 records each.
+
+If a table has 1 million records: 1million/2000 -&gt; 500 threads, but the "Thread per company" parameter 
+makes the system create at most 10 records.  &nbsp;</td>
+</tr>
+</tbody></table>
+
+<br><br>
+In **Open Job Queue** you can manage background synchronizations by indicating the Codeunit to run and recurrence details.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000158-0/JQ_EN.png"><br>
+
