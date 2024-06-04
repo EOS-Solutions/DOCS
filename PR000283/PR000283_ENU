@@ -1,0 +1,10 @@
+In some cases, it is useful to define alphanumeric characteristics that contain comments. This is possible by selecting the option ®**Without Values**¯ on a characteristic of type ®Structure¯.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000283-0/Charac4_ENU.png"><br>
+
+This option ensures that during configuration the user can enter a free value, not conditioned by the previous association of values.
+
+<br>
+<br>
+ 
+ 
