@@ -1,0 +1,91 @@
+The check action is on pages:
+- Customers
+- Vendors
+- Contacts
+
+
+From 'Actions'->VIES Check VAT Reg. No. the check can be executed:
+-single> selecting a line in Customers/Vendors/Contacts lists or executing action from within of the specific card.
+-massive> selecting more lines in Customers/Vendors/Contacts lists.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESENG5.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESENG6.png"><br>
+
+
+
+
+
+**VAT Registration Check Entries**
+
+In VAT Registration Check Entries is possible to verify entries.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESENG7.png"><br>
+
+
+
+| **Field**     | **Description**                                                    |
+|---------------|--------------------------------------------------------------------|
+| Account Type | Specificy account type  |
+| Account No. | Specifica account number                           |
+| Country/Region Code | Corresponds to field Code in table Countries  |
+| VAT Registration No. | VAT number on Customer/Vendor/Contact card.                                      | 
+| Status | Options are: **Non verified**, **Valid**, **Not valid**  |
+| Account Name | Name on card  
+| Verified Name | Name returned from check                            |
+| Account street | Address on card  |
+| Verified street | Address returned from check                             |
+| Account Postcode | Postcode on card  |
+| Verified Postcode | Postcode returned from check                        |
+| Account City | City on card                          |
+| Verified City | City returned from check                             |
+| Verified Date | Check date  |
+| User ID | User who executed check                            |
+
+
+Checking from Customer/Vendor/Contact card, the standard log is also generated. On card there are two flowfields:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESENG8.png"><br>
+
+
+Clicking, will be possible to visualize the notification status.
+
+
+
+
+
+**Validation setup**
+
+
+In Validation Setup it's possible to set the check status of the VAT number to notify, in addition to filters for Customers/Vendors/Contacts and related notification users groups.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESENG9.png"><br>
+
+
+**Job queue entries**
+
+From Job Queue - Customer, Job Queue - Vendor, Job Queue - Contacts it's possible to schedule the check, once table at time.
+
+Nome file	Link
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESENG10.png"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESENG11.png"><br>>
+
+
+| **N.B.**                                                 |
+|----------------------------------------------------------|
+| In Parameter String you must specify the table ID to process.  |
+
+
+
+
+
+**Data Security functions for block or warning message**
+
+In EDS Functions of Data Security app there are specific functions that allow to block/alert against the result about the VAT number check.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000476-0/VIESENG12.png"><br>
+
+
+
+
+
