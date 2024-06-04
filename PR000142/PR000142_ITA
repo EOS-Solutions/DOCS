@@ -1,0 +1,29 @@
+Viene prevista una tabella di configurazione denominata Scanner Setup che consente di definire le varie modalit… di gestione dei ®barcode¯ da richiedere allÂoperatore in fase di dichiarazione attivit…. Le tipologie previste sono Lineare, Sequenziale, Posizionale, Separatori Differenti, Personalizzato.
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex089/setup scanner/EX089-ScannerLinear-ITA.png"><br>
+
+Lineare permette di selezionare gli elementi che compongono il singolo barcode oltre al carattere separatore. Ad esempio selezionando ID Articolo, Tracciabilit… e Quantit… con separatore il carattere | la power app accetter… barcode di questo formato ITEM001|LOT001|10.
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex089/setup scanner/EX089-ScannerSeq-ITA.png"><br>
+
+Sequenziale consente di definire quali informazioni vanno richieste allÂoperatore e in che ordine. NellÂesempio specifico allÂoperatore verranno richiesti 3 barcode: il primo contenente lÂidentificativo articolo, il secondo il codice tracciabilit… e il terzo la quantit….
+
+Una delle componenti del barcode Š il campo ID Articolo. Per ID Articolo non si intende solo il codice articolo ma lÂinsieme dei sui riferimenti:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex089/setup scanner/EX089-ItemRef-ITA.png"><br>
+
+Posizionale prevede un unico barcode e gli elementi vengono identificati definendone sequenza e lunghezza massima.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000142-0/EX089-ScanPos-ITA.png"><br>
+
+Separatori Differenti simile al lineare ma con la possibilit… di definire diversi tipi di identificativi/separatori e la loro posizione (ad esempio utilizzabile per ENA128). N.B. Sostituisci Istanza si utilizza per indicare  se deve spezzare alla prima o all'ultima occorrenza del separatore che trova nella stringa.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000142-0/EX089-ScanSep-ITA.png"><br>
+
+Personalizzato gestito tramite custom in Business Central.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000142-0/EX089-ScanCus-ITA.png"><br>
+
+<br>
+<br>
+     
