@@ -1,0 +1,16 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000659-0/10EDI_it.jpg"><br>
+
+Nella pagina **Elenco messaggiEDI** Š possibile visualizzare tutti i messaggi creati e importati.
+
+Per aprirne uno, utilizzare il menu **Gestione** -> **Visualizza**.
+
+Le informazioni presenti sono: Gruppo EDI e Tipo di messaggio, Data di creazione del messaggio, Numero di serie, Creato 'Su' e 'Da', Documento referenziato e Data di riferimento e Stato del messaggio.
+
+Da qui Š possibile
+
+- Riprovare a esportare il file se l'esportazione Š fallita in precedenza utilizzando l'azione **Esporta**.
+- Riprovare a convertire il messaggio in un documento di Business Central se l'esportazione non Š riuscita utilizzando l'azione **Accetta**.
+- Passare ai documenti Business Central correlati utilizzando l'azione **Documents**.
+- Controllare il registro degli errori di questo singolo messaggio utilizzando l'azione **Log**.
+- Vedere i file correlati a questo messaggio utilizzando l'azione **Files**.
+- Annullare** il documento perch‚ non Š pi— necessario e quindi rimuoverlo dall'elenco.
