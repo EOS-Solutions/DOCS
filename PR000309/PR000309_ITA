@@ -1,0 +1,32 @@
+In Richieste GDPR l'utente inserisce la richiesta pervenuta (es. un cliente chiede di sapere quali suoi dati ci siano nel database dell'azienda). Sceglie quindi il tipo di richiesta (es. informazione), una descrizione e l'oggetto della ricerca nel campo Stringa di ricerca.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000309-0/1GDPRToolset.png"><br>
+
+
+| **Campo**             | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                        |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nr. movimento         | numero della richiesta                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Tipo                  | scegliere tra le diverse opzioni: Informazione (sono state richieste semplici nformazioni su quali dati ci siano a sistema e/o su dove siano) Portabilit… (Š stato chiesto di esportare dei dati) Correzione (Š stato chiesto di modificare/correggere i dati) Eliminare (Š stato chiesto di eliminare dei dati) Bloccare (Š stato chiesto il blocco dei dati) Crittografare (Š stato chiesto di crittografare i dati) |
+| Stato                 | stato della richiesta (Nuovo/In modifica/Completato)                                                                                                                                                                                                                                                                                                                                                                   |
+| Descrizione richiesta | descrizione relativa alla richiesta pervenuta                                                                                                                                                                                                                                                                                                                                                                          |
+| Stringa di ricerca    | inserire l'oggetto della ricerca                                                                                                                                                                                                                                                                                                                                                                                       |
+| ID utente             |  campi compilati in automatico dal sistema che riportano il log di chi ha eseguito la ricerca e la data in cui tale ricerca Š stata fatta                                                                                                                                                                                                                                                                              |
+| Creato il             |                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Totale occorrenze     | numero di occorrenze relative all'oggetto di ricerca che il sistema ha trovato                                                                                                                                                                                                                                                                                                                                         |
+
+Una volta inserita la riga cliccare su Esegui e il sistema mostrer… quante occorrenze ha rilevato in base alla ricerca effettuata sui campi indicati a setup come campi contenenti dati personali.
+
+Cliccare su Scheda:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000309-0/2GDPRToolset.png"><br>
+
+Barrare le righe da processare e dal Ribbon-\>Report scegliere le azioni successive (Stampa/Esporta se si tratta di fornire informazioni oppure Elimina/Blocca/Crittografa dati selezionati).
+
+Da Apri record si pu• aprire la scheda contenente il dato e modificarlo se necessario.
+
+Al termine si cambia lo stato della richiesta in Completato. In automatico il sistema compiler… data e ID utente che ha processato la richiesta.
+
+
+| **N.B.**                                                                                                                                          |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Si tratta di istruzioni **NON REVERSIBILI**: una volta messa una operazione in Stato "Completato" non si pu• pi— tornare agli stati precedenti. |
