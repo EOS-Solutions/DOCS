@@ -1,0 +1,10 @@
+It is possible to insert manual simulated entries using G/L Journals or Recurring G/L Journals, of the simulated type.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000247-0/App SGL Slide 30_Andrea Giordani.png"><br>
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000247-0/Screenshot 2024-05-02 170321.png"><br>
+
+Recurring G/L Journals: in this case, by leveraging the standard fields Recurrence Method and Recurrence Frequency, it is possible to generate self-reversing entries.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000247-0/App SGL Slide 31_Andrea Giordani.png"><br>
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000247-0/App SGL Slide 31 (2)_Andrea Giordani.png"><br>
