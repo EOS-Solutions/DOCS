@@ -1,0 +1,17 @@
+In the Template page (PDA), templates must first be set with the list of tables and fields on which it will be necessary to filter:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000381-0/1PostedDataAdministration(1).png"><br>
+
+By selecting a template, from Edit it is possible to define the tables that you want to edit and the related fields:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000381-0/2PostedDataAdministration(1).png"><br>
+
+For each table it is possible to define the filter to apply. It is advisable to set the data to be filtered between two \#s, so that the system can recognize them and replace them automatically for each new request.
+
+
+**Custom Controls**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000381-0/5PostedDataAdministration(1).png"><br>
+
+On the templates it is possible to set CUs that carry out checks (e.g. if the invoice being canceled has already been paid or printed in the journal).?  
+From Manage-\>Custom Controls you can open the page where you can select the CU of interest.
