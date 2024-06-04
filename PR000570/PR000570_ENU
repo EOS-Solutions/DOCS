@@ -1,0 +1,20 @@
+In Quality Rating Purchase (PQA) the system shows all receipts in test. On the basis of this table it is carried out quality inspection associated with the vendor.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000570-0/37ProductQualityAssurance-ENU.png"><br>
+
+| Field | Description |
+| --- | --- |
+| Quantity | It is the quantity of the receipt |
+| Quantity (Decl.) | It is the quantity specified on the purchase order lines |
+| Expected/Planned Receipt Date | It is taken from the order line from which results the receipt; in order to calculate the delay / advance, the system calculates the difference between the expected receipt date and the receipt posting date. |
+| Decl. Terms of Delivery | Specifies whether in this evaluation report will be taken into account delivery dates, not just the quantity. |
+
+From Update Rating Code the system will fill in the Quality Rating Code. Let's see how:
+
+* If the system finds a record for an open Inspection Order and there are no Non-Compliance linked to that order, assigns the **highest rating** in the field Quality Rating Code.
+
+* If the system finds a record for an open Inspection Order and there are Non-Compliance connected, then it will leave the field Quality Rating Code **blank**. It will be the user to compile it manually.
+
+| N.B. |
+| --- |
+| From Inspection Orders (All) you can view the inspection order and any Non-compliance related to the selected line. In this way the user who need to manually assign an evaluation is made aware of the overall situation. |
