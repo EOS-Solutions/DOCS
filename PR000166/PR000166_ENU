@@ -1,0 +1,47 @@
+ciao
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000166-0/Local_EN.png"><br>
+
+<table>
+    <tbody>
+        <tr>
+            <th>
+                <p><strong>Field</strong></p>
+            </th>
+            <th>
+                <strong>Description</strong></th>
+        </tr>
+        <tr>
+            <td>Code / Description</td>
+            <td> enter Code and Description for the target company</td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <td>enter the connection type:<br> - Local<br>
+        </tr>
+        <tr>
+            <td>Partner Description</td>
+            <td>clicking on the field, the system opens a wizard to facilitate the configuration process in case of integration between companies in the same database.<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Authentication Code</td>
+            <td>Not Used</td>
+        </tr>
+        <tr>
+            <td>Active Company</td>
+            <td>you can choose whether to keep synchronization active or have your company set up without synchronizing it&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Language Code</td>
+            <td>language code to use for synchronization</td>
+        </tr>
+        <tr>
+            <td>Matrix Column No.</td>
+            <td>defines the priority with which to display companies in matrix. You can enter numeric values.<br> (1=maximum priority. As the numeric value increases, the priority decreases.)&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Current Company</td>
+            <td>shows what the current company is. The check is automatically placed by the Wizard.&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
