@@ -1,0 +1,28 @@
+Items involved in the BOM can be a pricing tool.
+
+To manage them, the functionality in the Configurator Setup must be enabled through the **Create BOM Lines in Sales Document** flag.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000407-0/ProdBOMP1_ENU.png"><br>
+
+The prices of the generated lines can be calculated using the **Price Calc. Method** option:
+
+-   **Price List**: The price is derived from the sales prices.
+-   **Percentage BOM Line:** The price of the individual components is calculated using a percentage in the production BOM lines.
+
+The **Change to Comment Line** field, if enabled, "transforms" the line with the neutral item from which the configuration was launched into a comment.
+
+In the production BOM lines, you can define **which components should generate a line in sales documents**.
+
+It is also possible to define the percentage with which to calculate the sales price (percentage of the configured item price excluding surcharges).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000407-0/ProdBOMP2_ENU.png"><br>
+
+In a sales document, the configurator generates the additional rows taken **from the first level of the production BOM**.
+
+Any neutral items are configured and any associated surcharges / optionals are generated.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000407-0/ProdBOMP3_ENU.png"><br>
+
+<br>
+<br>
+ 
