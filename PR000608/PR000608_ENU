@@ -1,0 +1,17 @@
+The applied discounts can coexist and can be differentiated into the following types:
+
+* Customers
+	* With trade attributes linked to customer master data and sales document header
+
+* Items
+	* By value, percentage or with basket gifts
+	* in base of tresholds (by min or max value)
+	* With trade attributes linked to item master data and sales document line
+
+* Documents
+	* By value, percentage or with basket gifts
+	* In compliance with filters on item assortments, type and threshold value of document and/or single reference
+	* With trade attributes linked to item and sales document line
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000608-0/img24.png"><br>
