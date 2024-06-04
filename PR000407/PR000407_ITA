@@ -1,0 +1,27 @@
+Gli articoli coinvolti nella distinta base possono essere strumento di Prezzo.
+
+Per gestirli va abilitata la funzionalit… nel Setup del Configuratore tramite il campo **Crea Righe DB sul Documento di Vendita**.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000407-0/ProdBOMP1_ITA.png"><br>
+
+I prezzi delle righe generate si possono calcolare tramite lÂopzione **Metodo Calcolo Prezzo**:
+
+-   **Listino**: Il prezzo viene ricavato dai prezzi di Vendita.
+-   **Percentuale Riga DB:** Il prezzo dei singoli componenti viene calcolato tramite una percentuale presente nelle righe DB Produzione.
+
+Il campo **Cambia in Riga Commento** se abilitato ®trasforma¯ in commento la riga con lÂarticolo neutro da cui Š stata lanciata la configurazione.
+
+Nelle righe DB produzione Š possibile definire **quali componenti devono generare una riga nei documenti di vendita**. Inoltre Š possibile definire la percentuale con cui calcolare il prezzo di vendita (percentuale rispetto al prezzo dellÂarticolo configurato escluse le maggiorazioni).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000407-0/ProdBOMP2_ITA.png"><br>
+
+In un documento di vendita il configuratore genera le righe aggiuntive prese dal **primo livello di DB Produzione**.
+
+Gli eventuali articoli neutri vengono configurati e vengono generate le eventuali maggiorazioni / optional associati.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000407-0/ProdBOMP3_ITA.png"><br>
+
+<br>
+<br>
+ 
+ 
