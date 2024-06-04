@@ -1,0 +1,20 @@
+On Inspection Device List (PQA) page, from ÃNewÄ, you can define the mechanical devices that will be used during the checks. The following table shows the key fields displayed in the page:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000507-0/9ProductQualityAssurance-ENU.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000507-0/3ProductQualityAssurance-ENU.png"><br>
+
+| Field | Option | Description |
+| --- | --- | --- |
+| Unit of Measure Code |     | To insert the unit of measure code used by the device |
+| Calibration Type | Internal / External | It indicates who performs the calibration (if it is made by the company itself or by a specialized company.) |
+| Status | Under Inspecton | If the device is in the calibration phase. |
+| Status | Released | If the device has been calibrated and can be used to perform quality checks. |
+| Status | Blocked | If the device is out of calibration and can not be used for measurements. |
+| Calibration Frequency |     | Indicates how often the device must be recalibrated (eg. 1A = 1 year) |
+| Item No. |     | The device can be linked to an item |
+| Next Date of Calibration |     | It indicates the expected date of re-calibration of the device |
+
+<br>
+
+In the **Lines** you can view the **history** of the calibrations performed.
