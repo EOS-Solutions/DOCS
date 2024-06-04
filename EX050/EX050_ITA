@@ -1,0 +1,6 @@
+| Step | Description                                                               |
+|------|---------------------------------------------------------------------------|
+| 1    | Crea i metodi di fatturazione ECS.                                        |
+| 2    | Scegliere in anagrafica Cliente o nel Setup ECS un Metodo di fatturazione.|               
+| 3    | Lanciare il report Fatt. Cumulative Estese (ECS).                         |               
+| 4    | Visualizzare in Fatture Vendita le fatture create.                        |        
