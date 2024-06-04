@@ -1,0 +1,51 @@
+# **USE CASES**
+
+# **Purchase invoice**
+
+When entering a purchase invoice, the information relating to CONAI packaging must be present in the system, otherwise an error will be returned. Let's see an example. When we try to post a purchase invoice without specifying the CONAI packaging:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/14CONAI(1).png"><br>
+
+the system shows the following error:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/15CONAI(1).png"><br>
+
+Let's proceed to define the CONAI packages from Process-\> CONAI Packages
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/17CONAI(1).png"><br>
+
+The CONAI Details relating to the Invoice are visible:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/18CONAI(1).png"><br>
+
+The 'Primary Weight (Kg)' and 'Secondary / Tertiary Weight (Kg)' columns are the only ones that can be modified. We enter the correct weight as shown on the vendor invoice.
+
+| **Action**           | **Description**                                                                                                                                 |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Delete Invoice Lines | deletes the CONAI lines previously entered in the Invoice                                                                                       |
+| Grouped / Detailed   |  shows the details of CONAI contributions for each invoice line                                                                                 |
+| Restore Weights      | if the weights, or the weights of the materials have been changed, the Suggest action recalculates and proposes the correct weights and amounts |
+
+From **Grouped / Detailed**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/19CONAI(1).png"><br>
+
+In the Purchase invoice:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/20CONAI(1).png"><br>
+
+we can proceed with the posting. By subsequently opening the posted purchase invoice it is still possible to access the CONAI details:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/21CONAI(1).png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/22CONAI(1).png"><br>
+
+{{% alert title="NOTE" color="warning" %}}
+if changes are made to the weights, the system will only make changes to the 'CONAI Accounting Entries', not to the registered invoice:  <img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/23CONAI(1).png"><br>
+{{% /alert %}}
+
+
+On the Posted Purchase Invoice, from Invoice-\>Navigate we can see the CONAI entries:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000214-0/24CONAI(1).png"><br>
+
