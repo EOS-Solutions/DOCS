@@ -1,0 +1,8 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Nlfx_O3fb_w" title="Bulk VIES Vat Number Check for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+BC standard functionality to verify VAT numbers has been revised and implemented from Bulk VIES VAT Number Check (VIES) app, extending checks event to other fields. The system connects to the service http://ec.europa.eu/taxation_customs/vies/services/checkVatService , set to setup and execute a check to verify following fields:
+
+-   VAT number
+-   Individual person
+-   Country code
