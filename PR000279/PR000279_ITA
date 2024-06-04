@@ -1,0 +1,14 @@
+In presenza di pi— caratteristiche con gli stessi valori Š possibile definirne una come ®**Master**¯, associarle i valori, e definire che le altre caratteristiche devono essere ®**connesse**¯ alla prima, ossia che devono utilizzare gli stessi valori.
+
+Per assegnare alla caratteristica connessa con la master i valori, Š necessario posizionarsi sulla caratteristica master e utilizzare lÂazione ®**Allinea coincidenze**¯.
+
+**LÂattivit… di allineamento pu• essere onerosa e sarebbe meglio schedularla in presenza di un numero elevato di caratteristiche e valori da allineare.**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000279-0/Charac3_ITA.png"><br>
+
+**Gestire una caratteristiche master e caratteristiche connesse aiuta a ridurre il numero di attivit… di codifica e di manutenzione.**
+
+<br>
+<br>
+ 
+ 
