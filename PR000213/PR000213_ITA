@@ -1,0 +1,9 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000213-0/29CONAI.png"><br>
+In Setup CONAI:
+
+
+
+| Campo  | Descrizione |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 Articolo / 1 Imballo     | se attivo, viene gestito un codice imballaggio per ogni articolo; il codice dellÂimballaggio coincide con quello dellÂarticolo a cui si riferisce    |
+|CONAI Righe Spedizione Nos | numeratore dedicato alla generazione delle spedizioni vendita registrate relative alle sole righe CONAI, nel caso in cui nel Setup contabilit… clienti sia presente il flag ®Spedizione su Fattura¯.  |
