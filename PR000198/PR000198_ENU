@@ -1,0 +1,18 @@
+
+## General Ledger Setup
+
+On the "General ledger setup" page, it is necessary to set the dimension used for the calculation, for the automatic generation of the elision entries:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000198-0/ENU_IntercompanyAccountingEliminations (1).jpg"><br>
+
+
+<br><br>
+## Chart of Accounts of the consolidating company:
+
+it is necessary to activate the option ÃConsolidated Elision CalculationÄ on all the accounts that will have to be processed for generating the elision records.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000198-0/ENU_IntercompanyAccountingEliminations (3).jpg"><br>
+
+This setup avoids generating elisions for accounts that do not concern the consolidated financial statements: for example, on an accounting entry for the collection of a loan from a subsidiary company, the Intercompany dimension will be valued both on the loan account and on that of the bank. The elision entry however, it must only be generated for the loan account.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000198-0/ENU_IntercompanyAccountingEliminations (2).jpg"><br>
