@@ -1,0 +1,41 @@
+The Eos Solutions Product Configurator for Manufacturing app allows you to create **routings and production BOMs** with work centers, run times, and BOM's components that vary according to the value of the characteristics.
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JzA_1qwyuPY" title="Product Configurator For Manufacturing for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+
+**Product Configurator Features**
+
+Installation of the Product Configurator (CFG) app is required to use the Product Configurator for Manufacturing.
+Installing the two apps through the use of the characteristics and configuration rules, allows you to:
+
+-   Create automatic item variants or alternatively item codes based on the combination of selected characteristics
+-   Create and manage the price matrix that allows you to have different selling prices, according to the characteristic values
+-   Manage price surcharge and optionals
+-   Search for posted documents by characteristics
+-   create routings and production BOMs with work centers, run times, and BOM's components that vary according to the value of the characteristics
+
+<br>
+
+**Benefits for the user**        
+
+-   Free the design and development department from sales support. Even groups of less experienced users can independently use the product configurator to prepare offers and orders.
+-   Reduction of the loading times of the sales documents with consequent increase in the satisfaction of the final customer.
+-   Reduction of errors in the calculation of list prices and of any surcharges / options. The use of rules and relationships allows to sell to the end customer only what is expected by the company.
+-   Reduction of design department errors in creation of Production BOMs and Routings. The reconfiguration function also allows you to regenerate the configurations already created for an easy revision of Production BOMs
+
+<br>
+
+**Additional App**        
+
+Install Product Configurator (CFG) to manage, on the sales side, the product configuration both through the generation of item codes and through the generation of variants. The Product Configurator (CFG) app, through the use of characteristics and configuration rules, allows you to:
+Å	Create automatic item variants or alternatively item codes based on the combination of selected characteristics
+Å	Create and manage the price matrix that allows you to have different selling prices, according to the characteristic values
+Å	Manage price surcharge and optionals
+Å	Search for posted documents by characteristics
+
+<br>
+<br>
+     
