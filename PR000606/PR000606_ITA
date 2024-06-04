@@ -1,0 +1,13 @@
+EÂ possibile definire una sequenza prezzi per diverse strutture: 
+
+*	Cliente (Testata)
+
+
+Business Central, per quanto concerne i prezzi ad esempio, come nellÂimmagine sotto riportata ricercher… i prezzi dedicati per cliente (nella testata dellÂordine)
+Nel caso in cui non li trovasse passa alla sequenza 2 e cos via. 
+Il primo e ultimo livello non sono editabili in quanto rappresentano il primo e ultimo livello di dettaglio . 
+
+* Articoli (righe)
+
+
+Per quanto concerne i dati di riga Business Central effettua un controllo in base ai dati inseriti nella sezione ÃArticoloÄ
