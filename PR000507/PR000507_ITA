@@ -1,0 +1,20 @@
+In Dispositivi di Controllo, cliccando (PQA) su ÃNuovoÄ, si possono definire i dispositivi meccanici che verranno utilizzati durante la fase di controllo. Nella tabella che segue sono riportati i campi principali visualizzabili nella page:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000507-0/9ProductQualityAssurance-ITA.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000507-0/3ProductQualityAssurance-ITA.png"><br>
+
+| Campo | Opzione | Descrizione |
+| --- | --- | --- |
+| Cod. Unit… di misura |     | Per inserire le unit… di misura utilizzate dal dispositivo. |
+| Tipo di calibratura | Interno / Esterno | Indica chi esegue la calibratura (se viene effettuata dallÂazienda stessa o da una societ… specializzata.) |
+| Stato | In Controllo | Se il dispositivo Š in fase di calibratura. |
+| Stato | Rilasciato | Se il dispositivo Š stato calibrato e pu• essere impiegato per effettuare i controlli di qualit…. |
+| Stato | Bloccato | Se il dispositivo Š fuori calibratura e non pu• essere utilizzato per le misurazioni. |
+| Frequenza Calibratura |     | Indica ogni quanto tempo il dispositivo deve essere ricalibrato (es. 1A=1 anno) |
+| Nr. Articolo |     | E' possibile collegare il dispositivo a un'anagrafica articolo |
+| Prossima Data Calibratura |     | Indica la data di ri-calibrazione del dispositivo prevista |
+
+<br>
+
+Nelle **righe** viene visualizzato lo **storico** delle calibrature effettuate
