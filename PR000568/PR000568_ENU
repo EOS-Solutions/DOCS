@@ -1,0 +1,61 @@
+**How many purchase document can be created from a PRQ?**
+
+A PRQ Line can be used to create more than one purchase document as Quotation, Purchase Order or Blanket order
+
+**Can I addÿ a purchase request line to an existing Purchase Order?**
+
+A PRQ line can be added to any purchase document.
+
+Go to the purchase order and in Ãline actionsÄ search for ÃGet Purchase Request linesÄ. The PRQ lines are prefiltered by Vendor No.. The user can clean this filter
+
+**When a PRQ becomes a Quotation, Purchase Order or Blanket Order, where can you check the type and number of the document that has been created?**
+
+<a href="https://docs.eos-solutions.it/Images/PR000568-0/FAQ_Purchaserequest_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000568-0/FAQ_Purchaserequest_ENU.png"></a><br>
+
+the create document are reachable from the line actions
+
+**Can I modify the document report?**
+
+The printed document can be customized as any other report in business central:
+
+a) Creating a custom layout RDLCÿ[https://learn.microsoft.com/en-us/dynamics365/business-central/ui-get-started-layouts?tabs=copy](https://learn.microsoft.com/en-us/dynamics365/business-central/ui-get-started-layouts?tabs=copy)
+
+b) Creating a custom layout WORDÿ[https://learn.microsoft.com/en-us/dynamics365/business-central/ui-how-add-fields-word-report-layout](https://learn.microsoft.com/en-us/dynamics365/business-central/ui-how-add-fields-word-report-layout)
+
+c) Extending the reportÿ[https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-ext-object](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-report-ext-object)
+
+d) Duplicating the original reportÿ[https://github.com/EOS-Solutions/Sample/tree/master/EX046.PurchaseRequest](https://github.com/EOS-Solutions/Sample/tree/master/EX046.PurchaseRequest)
+
+In most cases solution a) or b) is sufficient
+
+**Can I extend or customize the app?**
+
+Yes, Purchase request app can be extended by anyone with the appropriate knowledge
+
+Technical documentation is available here:ÿ[https://docs.eos-solutions.it/en/docs/apps-tech/f2d14c8d-6f8a-45a6-8c0e-5b3db46aa59e.html](https://docs.eos-solutions.it/en/docs/apps-tech/f2d14c8d-6f8a-45a6-8c0e-5b3db46aa59e.html)
+
+Code Samples are available here:ÿ[https://github.com/EOS-Solutions/Sample/tree/master/EX046.PurchaseRequest](https://github.com/EOS-Solutions/Sample/tree/master/EX046.PurchaseRequest)
+
+**Can I suggest new features or changes to the standard App?**
+
+Yes, IDEAS can be posted hereÿ[https://github.com/EOS-Solutions/IDEAS/issues](https://github.com/EOS-Solutions/IDEAS/issues)ÿand will be evaluated by EOS development team
+
+# TRANSLATIONS
+
+**This app is not translated in my language, is possible to have new languages?**
+
+ÿEOS Solutions delivers open sourced translation hereÿ[https://github.com/EOS-Solutions/Translations](https://github.com/EOS-Solutions/Translations)
+
+For new languages a new translation file and a new extension can be created and deployed as separate app
+
+**I found some bad translation in my language only for some terms, how can be fixed?**
+
+Anyone can contribute to improve translations pushing a Git commit hereÿ[https://github.com/EOS-Solutions/Translations](https://github.com/EOS-Solutions/Translations).
+
+ÿOur dev team will incorporate fixed terms in on of the next release. If you are not in condition to contribute this way you can log an issue request to our support service
+
+# LICENSE
+
+**What kind of BC license is required for using the Purchase Request app?**
+
+The PRQ app can be used with Team Member licenses or Full. According to Microsoft Policies, Team Member users cannot create a Purchase Order, but can create a Purchase Quote. This is not depending on EOS policies. The full demo explains Team Member and Full User scenarioÿ[https://www.eos-solutions.it/en/purchase-request-en.html](https://www.eos-solutions.it/en/purchase-request-en.html)
