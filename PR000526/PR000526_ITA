@@ -1,0 +1,28 @@
+Ad ogni elemento dell'entit… pu• essere associato uno stato diverso, partendo da uno stato iniziale. Aprire il Setup tabelle EDS:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000526-0/2DataSecurity.png"><br>
+
+| Field                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ID Tabella / Nome Tabella | Scegliere la tabella che si desidera gestire con Data Security impostandone nome e numero (Š possibile inserire sia tabelle standard, sia tabelle custom)                                                                                                                                                                                                                                                                    |
+| Tipo Documento            | E' possibile scegliere esattamente il tipo di documento che si intende gestire in un processo di Data Security (es. Testata vendita comprende: Ordine, Offerta, Fattura, Nota credito ecc. Ad ogni tipo documento corrisponde un numero che lo identifica ( 0, 1, 2, 3 ecc. ). <img width="" src="https://docs.eos-solutions.it/Images/PR000526-0/3DataSecurity.png"><br> |
+| Descrizione               | E' possibile inserire una descrizione                                                                                                                                                                                                                                                                                                                                                                                        |
+| Stato                     | Il sistema attribuisce uno stato alla tabella che si Š deciso di gestire con Data Security (Nuovo, In Modifica, Certificato). Quando lo stato Š "Certificato" partono i controlli da parte di data Security.                                                                                                                                                                                                                 |
+| Percorso in cambio stato  | E' possibile definire dei percorsi alternativi per una stessa entit…. Ad esempio posso differenziare tra Articoli di Acquisto ed Articoli di Produzione. Mettendo il flag si dovr… successivamente definire i vari percorsi (premendo Cambi Stato si aprir… la page Percorso Cambi Stato Sicurezza Dati)                                                                                                                     |
+| Nr. campo tipo            | All'interno di una tabella Š possibile gestire un campo specifico                                                                                                                                                                                                                                                                                                                                                            |
+| Filtro valori tipo        | Si pu• filtrare per Cliente, Gruppo prezzo cliente, Tutti i clienti, Campagna                                                                                                                                                                                                                                                                                                                                                |
+
+Da **Scheda** si apre la pagina in cui inserire le specifiche relative alla Tabella:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000526-0/22DataSecurity.png"><br>
+
+**Tab Generale**
+
+In "Nr Campo EDS" il sistema riporta in automatico il numero del **campo in cui verr… indicato lo stato Data Security** (sulla page Clienti nell'esempio sopra riportato).
+
+
+| **NOTA**                                                                                                                                                                                                                               |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Per le **Tabelle custom** (es. Cespite) il campo deve essere **compilato manualmente **  <img width="" src="https://docs.eos-solutions.it/Images/PR000526-0/2DataSecurity.png"><br> |
+
+Nel tab **Pile** si pu• scegliere quale descrizione avr… ciascuna pila EDS nella pagina del Role Center.
