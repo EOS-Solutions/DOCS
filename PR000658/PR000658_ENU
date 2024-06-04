@@ -26,7 +26,7 @@ This page defines which message to send to each group and how to send it.
 - **Service Configuration Code** (mandatory)
   Indicates the service configuration to be used to access the filesystem to read or write files.
 - **Log Level**
-  Allows to configure logging for this message setup.
+  Allows to configure logging for this message setup.(see {{<relref "enum18122312">}} for details)
 	- None: No logging will be performed for this message setup.
 	- Failures Only: Only failed operations will be logged.
 	- All: All operations, including successful ones, are logged.
