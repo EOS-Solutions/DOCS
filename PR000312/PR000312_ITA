@@ -1,0 +1,20 @@
+Effettuare il setup delle tabelle nelle quali sono contenuti i dati in Setup GDPR:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000312-0/3GDPRToolset.png"><br>
+
+
+| Suggerisci setup iniziale    | il sistema suggerisce le tabelle per poter creare il setup                                                                |
+|------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Importa / Esporta GDPR Setup | Š possibile importare un setup precedente oppure esportare un setup (file Excel) cliccando su Importa/Esporta GDPR Setup  |
+| Import dati                  | Š possibile importare tutti i dati precedenti (setup + ricerche effettuate) in caso di migrazione da NAV a BC             |
+| Suggerisci tabelle collegate | il sistema suggerisce il setup per altre tabelle (es. tabelle custom)                                                     |
+
+Cliccando su Nuovo la app consente di creare un setup per una nuova tabella:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000312-0/4GDPRToolset.png"><br>
+
+Scegliere un ID tabella, poi da Suggerisci campi il sistema mostrer… un elenco dei campi contenenti dati personali.
+
+Selezionare le righe di interesse, premere OK e il sistema importer… i campi nella page di setup.
+
+Per ogni campo scegliere se crittografare o cancellare i dati.
