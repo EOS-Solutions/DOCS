@@ -1,0 +1,54 @@
+Per compilare gli elenchi Intrastat accedere alla page Dichiarazioni Intrastat (ITR).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/20AdvIntrastatForItaly.jpg"><br>
+
+Qui Š possibile accedere alle dichiarazioni precedentemente inserite oppure crearne di nuove:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/21AdvIntrastatForItaly.jpg"><br>
+
+In funzione della sezione intra che si vuole compilare, occorre selezionare il ®Tipo¯ dichiarazione (Vendite o Acquisti ed entrambe comprenderanno le relative rettifiche), lÂanno e il periodo di nostro interesse; Dovremo inoltre selezionare il ®Tipo Dichiarazione¯ scegliendo fra:
+
+-   Completo
+-   Statistico
+-   Fiscale
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/22AdvIntrastatForItaly.jpg"><br>
+
+Attivando la modalit… semplificata, nel solo caso dei Servizi, i campi:
+
+-   Nr. Documento
+-   Data di registrazione
+-   Modalit… di erogazione
+-   Metodo di pagamento
+
+Nr e data doc. di correzione
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/23AdvIntrastatForItaly.jpg"><br>
+
+Non sono controllati e non vengono Esportati
+
+*(rif.: semplificazione prevista nel comma 4.1 della determinazione congiunta dellÂAgenzia delle Entrate e dellÂAgenzia delle Dogane e dei Monopoli prot. n. 194409 del 25 settembre 2017)*
+
+Una volta compilata la testata, le righe potranno essere inserite tramite la funzione ®Suggerisci righe¯
+
+In fase di estrazione possiamo indicare una percentuale di regolazione costi che incider… sul valore statistico. Questo calcolo Š da usarsi in alternativa alla regolazione costi della tabella Cod. Spedizione Intrastat e della ripartizione costi dellÂAddebito articolo.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/24AdvIntrastatForItaly.jpg"><br>
+
+Le righe della dichiarazione vengono recuperate dalle righe del documento registrato: Fatture di acquisto, Note di accredito di Acquisto, Fatture di vendita, Note di accredito di vendita, Fatture di assistenza, Note di accredito assistenza.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/25AdvIntrastatForItaly.jpg"><br>
+
+Le righe proposte potranno poi essere modificate manualmente ed eventualmente escluse dalla dichiarazione tramite lÂapposito flag.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/26AdvIntrastatForItaly.jpg"><br>
+
+Se il flag ÃLavorazione intracomunitariaÄ Š attivo, identifica le lavorazioni rese e ricevute in ambito comunitario, ovvero le fatture inerenti lavorazioni esterne effettuate fra paesi UE.
+
+ß possibile inserire anche manualmente le righe tramite lÂapposita funzione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000368-0/27AdvIntrastatForItaly.jpg"><br>
+
+|  **NB**                                                                                                           |
+|-------------------------------------------------------------------------------------------------------------------|
+| N.B.: in caso di ri-estrazione dei movimenti, eventuali inserimenti manuali e/o modifiche verranno sovrascritte.  |
