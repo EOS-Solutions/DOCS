@@ -1,0 +1,23 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Press ALT + Q and digit "Inventory Register - Print" </td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Fill in the print options   </td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Print the report </td>
+	</tr>
+</table>
+
+<br>
+
+
+**Inventory Register (IVP) - SUMMARY**
+
+Press ALT + Q and digit "IVP" for a summary of the involved functionalities:
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX071-0/1InventoryRegister.png"><br>
