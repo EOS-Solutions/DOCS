@@ -1,0 +1,11 @@
+La funzione Block Customer verifica se sulla tabella del Cliente, le dimensioni, impostate come obbligatorie, sono state correttamente inserite.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000576-0/17DataSecurity.png"><br>
+
+Il campo ÃValue PostingÄ consente di impostare il controllo con le seguenti opzioni:
+
+* Code Mandatory
+* Same Code: ‚ lo stesso del "Dimension Value Code"
+* No Code
+
+La stessa funzione viene anche usata per fornitori e articoli. 
