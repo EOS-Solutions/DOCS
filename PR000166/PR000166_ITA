@@ -1,0 +1,59 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000166-0/Local_IT.png"><br>
+
+<table>
+	<tbody>
+		<tr>
+			<th>
+				<p><strong>Field</strong></p>
+			</th>
+			<th>
+				<strong>Description</strong>
+			</th>
+		</tr>
+		<tr>
+			<td>Codice / Descrizione</td>
+			<td> Indicare un codice e una descrizione della Company di
+				destinazione</td>
+		</tr>
+		<tr>
+			<td>Tipo</td>
+			<td>inserire il tipo integrazione:<br>
+				- Local<br>
+				- WebService</td>
+		</tr>
+		<tr>
+			<td>Descrizione partner</td>
+			<td>
+				<p>cliccando sul campo<span> si apre un wizard c</span>he facilita la
+					configurazione nel caso di integrazione tra societ… nello stesso
+					database.
+			</td>
+		</tr>
+		<tr>
+			<td>Codice autenticazione</td>
+			<td>Non Usato</td>
+		</tr>
+		<tr>
+			<td>Societ… attiva</td>
+			<td>si pu• scegliere se mantenere attiva la sincronizzazione oppure avere la societ… a setup senza
+				sincronizzarla&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Cod. lingua</td>
+			<td>definisce la lingua principale da
+				cosiderare per le sincronizzazioni</td>
+		</tr>
+		<tr>
+			<td>Priorit… colonna matrice</td>
+			<td>definisce la priorit… con cui
+				visualizzare le company nelle matrici. <br>
+				Si possono inserire dei valori numerici. (1=priorit… massima,
+				man mano che aumenta il valore numerico la priorit… diminuisce).<br>
+				<br>
+		</tr>
+		<tr>
+			<td>Societ… corrente</td>
+			<td>mostra qual Š la societ… corrente. La spunta viene messa in automatico dal Wizard.&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
