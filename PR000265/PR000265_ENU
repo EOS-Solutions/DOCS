@@ -1,0 +1,15 @@
+In G / L Application Setup a serial number must be set for the applied entries:
+<img width="" src="https://docs.eos-solutions.it/Images/PR000265-0/1GeneralLedgerApp-ENU.png"><br>
+
+In the G/L Account card choose how to connect the G/L entries:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000265-0/2GeneralLedgerApp-ENU.png"><br>
+
+The options are
+
+| Option | Description |
+| --- | --- |
+| Never | It does not allow you to link any entry |
+| Manual | It allows you to manually choose the entries to link |
+| Automatic FIFO | It allows entries to be connected automatically by sorting them for the first date |
+| Automatic LIFO | It allows entries to be connected automatically by sorting them for the last date |
