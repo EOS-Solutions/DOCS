@@ -1,0 +1,36 @@
+On the page Inspection Plan List (PQA), from New you can set the tests to be applied to items:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000521-0/7ProductQualityAssurance-ENU.png"><br>
+
+Here you can define the type of inspection to be made and it is possible to manage **multiple versions** of the plan and define a **status**. The status specifies if it is possible to use the plan. The options are:
+
+| Status | Description |
+| --- | --- |
+| New | If the plan is new (first time you create it) |
+| Certificate | If the plan is certificate and therefore usable |
+| Under Development | If the plan is under development and therefore not yet usable |
+| Closed | If the plan is not usable, but accessible as history |
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000521-0/14ProductQualityAssurance-ENU.png"><br>
+
+In the Lines you choose the **parameter** to use for the test:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000521-0/15ProductQualityAssurance-ENU.png"><br>
+
+Other fields:
+
+| Field | Description |
+| --- | --- |
+| Expected Value | Indicates the parameter value that is expected as a measurement result with the device in use |
+| Maximum Value | Indicates the maximum tolerable value for the defined parameter for the control result to be positive |
+| Minimum Value | Indicates the minimum tolerable value for the defined parameter for the control result to be positive |
+| Frequency | This field is used if you want to assign a frequency to the row. Options:  <br>0 = The Inspection Plan is always performed  <br>1 = The Inspection Plan is performed on the basis of the specified frequency in the field "Frequency Period"  <br>The Frequency Period is: day, week, month, quarter, year  <br>  <br>  Example: we post a first receipt which constitutes the zero point. Next receipt: if it is posted one week from the previous one (the system compares the receipt registration date with the posted ledger entry), the line on the inspection order is not entered. |
+| Frequency Period | Day  <br>Week  <br>Month  <br>Quarter  <br>Year |
+
+The parameter can also be an attribute, in this case it is not necessary to enter these fields.
+
+If you want to create multiple versions of the plan, just click Actions-> Functions-> Create new Version:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000521-0/13ProductQualityAssurance-ENU.png"><br>
