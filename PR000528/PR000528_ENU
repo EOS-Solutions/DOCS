@@ -1,0 +1,17 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000528-0/5DataSecurity(1).png"><br>
+
+By pressing STATUS you can enter all the states you want. For each status you can define whether it corresponds to the initial or final status. You can act on simple checkbox to disable actions such as:
+Å Modify record data
+Å Delete record
+Å Print (on documents)
+Å Posting (on documents)
+Å Release (on documents)
+From Child Tables it is established, for each state, whether the tables to it linked can be modified: 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000528-0/24DataSecurity(1).png"><br>
+
+When Relesing or Reopening a Sale or Purchase document, the DataSecurity status chosen in this table is automatically set and any check, validation, notification message etc. starts.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000528-0/6DataSecurity(1).png"><br>
+
+You can also specify colors and actions allowed on each status. To set the color just choose between the various options (eg Black, Blue, Bold Black, Bold Blue, etc.) in the lookup window. 
