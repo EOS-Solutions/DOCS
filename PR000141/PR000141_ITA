@@ -1,0 +1,90 @@
+Gli utenti abilitati allÂutilizzo di Power WMS si devono inserire nellÂapposita tabella. Ogni utente deve essere obbligatoriamente definito nei dipendenti di Business Central ed avere una risorsa collegata. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-Users-ITA.png"><br>
+
+
+
+| **Campo**                    | **Descrizione**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Nr. Dipendente** |Nr. dipendente|
+| **Stato** |Stato utente. Solo gli utenti abilitati possono utilizzare Power WMS.|
+| **Nr. Badge** |Nr. Badge. Sola lettura. Viene visualizzato il campo Nr. Badge del dipendente collegato.|
+| **Nome ricerca dipendente** |Nome ricerca dipendente. Solo lettura. Viene visualizzato il campo Nome Ricerca del dipendente collegato.|
+| **Stato dipendente** |Stato dipendente. Solo lettura. Viene visualizzato il campo Stato del dipendente collegato. Solo i dipendenti attivi possono accedere a Power WMS.|
+| **Nr. Risorsa** |Indica la risorsa collegata al dipendente. Sola lettura.|
+| **Id utente collegato** |Indica l'utente Business Central collegato al dipendente (tramite il Nr. risorsa). Obbligatorio per lÂutilizzo delle attivit… di Warehouse (Carichi Warehouse, Spedizioni Warehouse, Stoccaggi e Prelievi). |
+| **Impiegato warehouse** |Indica se il dipendente Š collegato ad un utente Business Central impostato come impiegato warehouse. Sola lettura.|
+| **Cod. lingua** |Cod. lingua dell'utente. Power WMS viene tradotto in base alla lingua impostata nellÂutente. Per traduzione si intendono etichette, menu non i contenuti.|
+| **Nome tema** |Nome tema utente.|
+| **OmniSearch** |Se attivo, PowerWMS propone come schermata iniziale la ricerca globale OmniSearch.|
+| **Vista ubicazione** |Gestisce le ubicazioni ammesse per l'utente. Viene utilizzato come filtro in tutte le attivit… che richiedono un filtro per il cod. ubicazione.|
+| **Cod. ubicazione predefinito** |Indica il cod. ubicazione predefinito dalla vista ubicazioni. Se vuoto, viene selezionata la prima ubicazione compresa nel filtro.|
+| **Def. registrazione riclassificazione articolo predefinito** |Def. registrazione riclassificazione articolo predefinita per lÂutente. Sola lettura. Viene creato in base alle impostazioni presenti nel Setup WMS.|
+| **Giornale di registrazione articolo predefinito** |Giornale di registrazione articolo predefinito per lÂutente. Sola lettura. Viene creato in base alle impostazioni presenti nel Setup WMS.|
+| **Giornale di registrazione articolo predefinito** |Giornale di registrazione articolo predefinito per lÂutente. Sola lettura. Viene creato in base alle impostazioni presenti nel Setup WMS.|
+| **Def. registrazione inventario fisico predefinito** |Def. registrazione inventario fisico predefinito per lÂutente. Sola lettura. Viene creato in base alle impostazioni presenti nel Setup WMS.|
+| **Giornale di inventario fisico predefinito** |Nome giornale inventario fisico predefinito per lÂutente. Sola lettura. Viene creato in base alle impostazioni presenti nel Setup WMS.|
+
+
+
+La scheda utente contiene i seguenti campi:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-User-ITA.png"><br>
+
+
+
+| **Campo**                    | **Descrizione**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Attivit…** |Tipo attivit….|
+| **Stato** |Stato attivit…. Solo le attivit… abilitate vengono visualizzate in Power WMS.|
+| **Categoria** |Categoria attivit…. Il valore Š gestito dal sistema e non pu• essere modificato.|
+| **Gruppo** |Gruppo attivit…. Indica in quale gruppo viene posizionata l'attivit… nel men— Power WMS.|
+| **Setup scanner** |Indica il setup scanner predefinito da utilizzare per le scansioni. Il codice di setup scanner consente di definire la modalit… con cui viene gestita la richiesta dei barcode nelle varie operazioni. Possono essere di cinque tipi: **Lineare** che prevede un unico barcode in cui gli elementi vengono divisi utilizzando uno specifico separatore, **Sequenziale** in cui vengono previsti n barcode che verranno richiesti allÂoperatore poi in modo separato, **Posizionale** che prevede un unico barcode e gli elementi vengono identificati definendone sequenza e lunghezza massima, **Separatori Differenti** simile al lineare ma con la possibilit… di definire diversi tipi di identificativi/separatori e la loro posizione (ad esempio utilizzabile per ENA128), **Personalizzato** gestito tramite custom in Business Central.|
+| **Modalit… di scansione** |Indica la modalit… di scansione delle righe. I valori sono: "Per riga": l'utente deve selezionare la riga da scansionare; "Per gruppo": le righe vengono raggruppate e l'utente deve selezionare il gruppo da scansionare; "Per documento": le righe vengono raggruppate ma la scansione Š attiva senza bisogno di selezionare il gruppo|
+| **Consenti tutte le ubicazioni** |Se attivo, il filtro sulle ubicazioni verr… ignorato e tutte le ubicazioni saranno selezionabili dallÂutente in fase di utilizzo di Power WMS.|
+| **Applica filtro per Id utente** |Se attivo, le entit… verranno filtrate per l'utente Business Central collegato all'utente WMS.|
+| **Consenti utenti non impostati** |Se attivo, entit… non assegnate a nessun utente saranno selezionabili.|
+| **Testate acquisti (Ordine acquisto)**|
+| **Chiave** |Permette di selezionare la chiave di ordinamento con cui verranno visualizzati i dati in Power WMS.|
+| **Ordinamento** |Ordinamento per la chiave corrispondente: Crescente o Decrescente.|
+| **Vista** |Gestione dei filtri sulla tabella corrispondente.|
+| **Conteggio record** |Se attivo, verr… mostrato un badge con il conteggio dei record|
+| **Righe Acquisto (Ordine acquisto)**|
+| **Chiave** |Chiave di ordinamento per la tabella corrispondente.|
+| **Ordinamento** |Ordinamento per la chiave corrispondente: Crescente o Decrescente.|
+| **Vista** |Vista utilizzata per la gestione dei filtri della tabella corrispondente.|
+| **Modalit… di esecuzione** |Indica la modalit… di esecuzione dell'azione. I valori sono: **Asincrono**: l'esecuzione avviene in background come task; **Sincrono**: l'esecuzione avviene in tempo reale; **Schedulato**: l'esecuzione viene serializzata e gestita dalla coda processi.|
+| **Azione predefinita** |Indica l'azione predefinita proposta alla pressione del tasto "Fine" in Power WMS. I valori sono: **Salva**: salva ed elabora le scansioni; **Registra**: registra l'entit… di origine|
+| **Notifica esecuzione corretta** |Se attivo, l'utente riceve una notifica per le attivit… completate correttamente.|
+| **Consenti registrazione** |Abilita la registrazione dell'entit… di origine.|
+| **Modalit… di esecuzione registrazione** |Indica la modalit… di esecuzione della registrazione. I valori sono: **Asincrono**: l'esecuzione avviene in background come task; **Sincrono**: l'esecuzione avviene in tempo reale; **Schedulato**: l'esecuzione viene serializzata e gestita dalla coda processi.|
+| **Consenti ripristino entit… di origine** |Se attivo, l'utente pu• ripristinare l'entit… di origine.|
+| **Consenti tracciabilit… automatica** |Se attivo, la tracciabilit… verr… gestita automaticamente dal sistema.|
+| **Consenti modifica scansioni** |Se attivo, l'utente pu• modificare le scansioni.|
+| **Focus su Quantit…** |Se attivo, viene selezionato il campo Quantit… nella modalit… ®Per riga¯.|
+| **Scansiona tutte le righe** |Se attivo, Š possibile iniziare la scansione di tutte le righe in modalit… ®Per riga¯.|
+| **Gestione quantit…** |Seleziona la gestione della quantit… della scansione: aggiunta o assegnazione. I valori ammessi sono: Assegna, Aggiungi.|
+
+
+<br>
+
+Per ognuna delle attivit… Š inoltre possibile definire i campi che vengono visualizzati. AllÂinterno della scheda attivit… ci sono tre azioni che consentono di definire lÂelenco dei campi.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-User1-ITA.png"><br>
+
+
+Campi lista 1 contiene i campi visualizzati nelle liste documenti.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-User2-ITA.png"><br>
+
+Campi dettaglio 1 contiene i campi visualizzati nel dettaglio della testata del singolo documento.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-User3-ITA.png"><br>
+
+Campi dettaglio 2 contiene i campi visualizzati nel dettaglio della riga del singolo documento.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000141-0/EX089-User4-ITA.png"><br>
+
+<br>
+<br>
+     
