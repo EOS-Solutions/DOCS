@@ -1,0 +1,27 @@
+LÂapp Power MES (MES) permette di registrare gli output di produzione tenendo traccia dei tempi di lavorazione degli operatori durante le fasi di lavorazione sfruttando la versatilit… delle power app che ne consentono l'utilizzo anche in mobilit….
+
+
+**Concetti di base**
+
+-   I parametri e i dati di base sono gestiti in BC
+-   ß una applicazione multi lingua il cliente pu• modificare le etichette
+-   ß Multicompany
+-   Entit… principale sono i pannelli di produzione Personalizzabili Parametrizzabili
+-   ß nata per essere paperless ma pu• essere utilizzata anche con codici a barre
+-   Le logiche applicative sono definite in BC e sono in gran parte uguali allÂapp BC [EX070 MES Manufacturing execution system]({{<relref "mes-manufacturing-execution-system">}})
+-   ß possibile gestire il posting a 3 livelli
+-   Pu• essere integrata con ®vecchie¯ versioni di Nav o altri ERP
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000063-0/Setup2_ITA.jpg"><br>
+
+Lo sviluppo avviene in PowerApp, la logica viene gestita su BC, sono previste integrazioni con le macchine che puntano ad arrivare ad avere report di funzionamento della singola macchina o dell'impianto per effettuare manutenzioni con Azure Machine Learnng.
+
+<br>
+<br>
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uDvEqzI9LXU" title="EOS Power MES Š la soluzione" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+     
