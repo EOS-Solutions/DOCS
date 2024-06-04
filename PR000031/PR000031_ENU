@@ -1,0 +1,21 @@
+The Delivery Reminders (PDR) app allows you to track overdue deliveries, automatically create reminders and notify vendors of reminders.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7RFVUzxxFAo" title="Delivery Reminders for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+ 
+**Process Overview**
+
+<img width="800" src="https://docs.eos-solutions.it/Images/PR000031-0/9DelRem.png"><br>
+
+The process of delivery reminders requires the following steps:
+
+1. Creation of terms and levels
+
+2. Creation of reminders
+
+3. Verification and posting of the reminders
+
+4. Sending to vendors
+
+Repeat steps 2 through 4 to send subsequent reminder levels.
