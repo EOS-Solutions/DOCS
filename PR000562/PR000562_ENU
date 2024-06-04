@@ -1,0 +1,5 @@
+On the Inspection Order page you can create a Non-Compliace from Actions->Functions->Create Non-Compliance
+
+It opens a blank document that refers to the starting Inspection Order. The Quantity field is already populated with the amount that had been previously indicated as non-compliant, as now should be reviewed.
+
+The lines must be completed with information about the non compliant item and then in the General tab the Result must be filled in. From Actions it is possible to print.
