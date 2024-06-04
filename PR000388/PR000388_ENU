@@ -1,0 +1,14 @@
+| **Record type CBI**                                                                                                         |
+|-----------------------------------------------------------------------------------------------------------------------------|
+| CBISDDStsRptLogMsg.00.01.00 CBIBdySDDStsRpt.00.01.00                                                                        |
+| <img width="" src="https://docs.eos-solutions.it/Images/PR000388-0/8BFForItaly-en.png"><br>  |
+
+To export direct debits for Italy it is necessary to configure the XML PORT 18123330 in the Bank export/import setup:
+
+PROCESSING XMLPORT NAME: **SEPA DD pain.008.001.02 IT**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000388-0/9BFForItaly-en.png"><br>
+
+Open a issued customer bill card and export the file:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000388-0/10BFForItaly-en.png"><br>
