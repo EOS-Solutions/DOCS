@@ -1,0 +1,36 @@
+Nella page Elenco dei piani di controllo (PQA) cliccando su "Nuovo", si possono definire i vari test che devono essere effettuati sugli articoli.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000521-0/7ProductQualityAssurance-ITA.png"><br>
+
+In questa scheda viene definito il controllo che dovrÖ essere effettuato, **ed ä possibile gestire pió versioni** e definire uno **stato**. Lo stato del piano di controllo indica se ä possibile utilizzare quel piano ed ä possibile selezionare uno dei seguenti:
+
+| Stato | Descrizione |
+| --- | --- |
+| Nuovo | Se si sta creando il piano per la prima volta. |
+| Certificato | Se il piano ä stato certificato ed ä dunque utilizzabile. |
+| In Sviluppo | Se il piano ä in revisione o sviluppo e non puï essere utilizzato. |
+| Chiuso | Se il piano non ä pió utilizzabile, ma ä consultabile come storico. |
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000521-0/14ProductQualityAssurance-ITA.png"><br>
+
+Nelle righe deve essere definito il **parametro** da utilizzare per i test.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000521-0/15ProductQualityAssurance-ITA.png"><br>
+
+Ulteriori campi da compilare sono i seguenti:
+
+| Campo | Descrizione |
+| --- | --- |
+| Valore Previsto | Indica il valore del parametro che ci si attende come risultato della misurazione con il dispositivo in uso |
+| Valore Massimo | Indica il valore massimo tollerabile per il parametro definito affinchä il risultato del controllo sia positivo |
+| Valore Minimo | Indica il valore minimo tollerabile per il parametro definito affinchä il risultato del controllo sia positivo |
+| Frequenza | Tale campo consente di assegnare o meno una frequenza alla riga.  <br>Opzioni:  <br>0 = il piano di controllo viene sempre eseguito  <br>1 = il piano di controllo viene eseguito con la frequenza specificata nel campo Periodo di frequenza  <br>  <br>Esempio: effettuiamo un primo carico che costituisce il punto zero. Carico successivo: se viene fatto ad una settimana dal carico precedente (il sistema confronta la data registrazione carico con il mov. contabile registrato), la riga sull'ordine di controllo non viene presentata. |
+| Periodo di frequenza | Giorno  <br>Settimana  <br>Mese  <br>Trimestre  <br>Anno |
+
+Il parametro puï anche essere un'attributo, in tal caso non ä necessaria la compilazione di questi campi.
+
+Se si vogliono creare pió versioni del piano di controllo, basta cliccare su Azioni->Funzioni->Crea nuova Versione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000521-0/13ProductQualityAssurance-ITA.png"><br>
