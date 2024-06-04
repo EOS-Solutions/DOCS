@@ -1,0 +1,21 @@
+Per stampare la dichiarazione premere Report-\>Stampa:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex019/print  export the communication/28AdvIntrastatForItaly.jpg"><br>
+
+Per esportare la dichiarazione premere Home Page-\>Esporta file...:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex019/print  export the communication/28bAdvIntrastatForItaly.jpg"><br>
+
+Il file scambi.cee generato dovr… essere poi importato nellÂapposita applicazione ®Intr@Web¯ dellÂAgenzia delle Dogane e dei Monopoli.
+
+| **Azione**   | **Descrizione**                                                                                                                                                                       |
+|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Stampa       | si tratta della stampa dettagliata dei record contenuti nelle sezioni (1, 2, 3 e 4) del file scambi.cee, che vengono aggregati secondo la logica stabilita dall'Agenzia delle Dogane. |
+| Cover        | Š la stampa del frontespizio ed espone alcuni dati riepilogativi delle varie sezioni (1, 2, 3 e 4) presenti nel file scambi.cee                                                       |
+| Esporta file | questa azione crea il file scambi.cee per la dichiarazione Intrastat Acquisti/Vendite, da cui viene eseguita.                                                                         |
+
+**Esempi di stampa**
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex019/print  export the communication/29AdvIntrastatForItaly.PNG"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex019/print  export the communication/30AdvIntrastatForItaly.PNG"><br>
