@@ -1,0 +1,8 @@
+Se abbiamo impostato un setup di tolleranza merce in eccesso illimitata per il Cliente Nr. 3000 per tutti gli articoli:
+<img width="" src="https://docs.eos-solutions.it/Images/PR000546-0/IT_5OverandUnderDeliveryQuantities.jpg"><br>
+
+quando creiamo un ordine vendita di 10 pezzi e ne vogliamo spedire 20:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000546-0/IT_6OverandUnderDeliveryQuantities.jpg"><br>
+
+il sistema ci consentir… di farlo, avvisando con un messaggio della quantit… in eccesso.
