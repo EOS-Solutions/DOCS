@@ -1,0 +1,53 @@
+
+
+1.  Setup tables, libraries, storage locations
+2.  Setup connection with ARXivar Next
+2.  Upload files to ARXivar Next
+
+<iframe width="560" height="316" src="https://www.youtube.com/embed/O54E9Pw5r4A" title="DocSolutions For ARXivar Next per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  
+<br><br>
+## Introduction
+
+DocSolutions For ArxivarNext (ARX) Eos Solutions app enables integration with ArxivarNext, an online Content Management System (CMS), that allows the creation, distribution, and storage of documents in the Cloud.
+
+
+| **NOTE**                                                                                                         |
+|------------------------------------------------------------------------------------------------------------|
+| - Only ARXivar Next is allowed. No ARXivar 5.6 - Data migration from legacy environment is needed when upgrading |
+
+<br><br>
+
+## DocSolutions features for ARXivarNext
+
+-   Multiple storage addresses for Table are admitted
+-   Storage Type is for Library
+-   Arxivar need Client ID, Client Secret and credential
+-   Arxivar Next integration is not based on Metadata fields (DSNavKey, DSType, DSCompany)
+-   Upgrade requires data migration to SET ERPID== to SystemID
+-   No .Net or DLL are needed
+-   23 Tables supported Out of the Box
+
+
+
+## Benefits for the user
+- Connection is made through APIs from Arxivar Next
+- Docsolutions is a connected APP with APP KEY and Secret
+- No Arxivar configuration is needed (only Client ID and Secret)
+- Required fields are suggested from BC 
+- Explore and pickup ARXivar content directly from BC
+- Preview of Arxivar attributes in BC factbox
+- Drag & Drop (email included) 
+- Saas ready 
+- User impersonation
+
+<br><br>
+
+## Summary
+
+Press ALT + Q and digit "ARX" for a list of the features involved:
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX069.02-0/1DoCSolutionsForArxivarNext(1).png"><br>
+
+
