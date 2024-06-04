@@ -1,0 +1,31 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Enter the Setup</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Set the Inspection Plans</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Enter the Inspection Matrix Setup</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Create Inspection Orders and Non-Compliance Orders</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Perform the Vendor Rating</td>
+	</tr>
+</table>
+
+<br>
+
+# Product Quality Assurance - SUMMARY
+Press ALT + Q and digit "PQA" for a summary of the involved features:
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX061-0/1ProductQualityAssurance-ENU.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX061-0/2ProductQualityAssurance-ENU.png"><br>
