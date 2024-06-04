@@ -1,0 +1,122 @@
+Dopo aver impostato i template, si pu• procedere con la singola richiesta dalla page Richieste (PDA), premendo NUOVO:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/3PostedDataAdministration.png"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/4PostedDataAdministration.png"><br>
+
+
+
+| **Campo**       | **Descrizione**                                                       |
+|-----------------|-----------------------------------------------------------------------|
+| Tipo Richiesta  | Scegliere se effettuare una richiesta per Modifica o per Eliminazione |
+| Codice template | inserire il codice del template che si vuole utilizzare               |
+
+Da Elabora-\>Filtri:
+
+Il sistema mostra l'elenco delle tabelle e lascia selezionare i filtri.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/6PostedDataAdministration.png"><br>
+I filtri si possono importare direttamente dal template tramite la funzione "Copia da template".
+
+Una volta importati i filtri, cliccando su "Sostituisci placeholder" Š possibile sostituire massivamente tutti i valori fra i 2 \#
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/7PostedDataAdministration.png"><br>
+
+Inserire quindi il numero documento che si desidera modificare.
+
+Tramite la funzione Nuovo-\>Applica valore il sistema effettua la sostituzione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/8PostedDataAdministration.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/9PostedDataAdministration.png"><br>
+A questo punto otteniamo:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/10PostedDataAdministration.png"><br>
+
+
+
+| **Note**                                                                                                                                                             |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Utilizzando il pulsante "Copia filtro" Š possibile **copiare il filtro** dalla prima riga, su tutte le altre righe che hanno un campo Nr (devono per• essere vuote). |
+
+
+Una volta definiti i filtri, lanciare la funzione "Genera record":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/11PostedDataAdministration.png"><br>
+
+Il sistema crea una riga per ogni movimento che trova in base alle tabelle / filtri pre-impostati.
+
+Per ogni riga mostra il valore attualmente presente ed Š possibile selezionare il nuovo valore per ognuna:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/12PostedDataAdministration.png"><br>
+
+Nel caso delle dimensioni Š possibile utilizzare i 3 puntini sul campo "Nuovo valore" per selezionare il nuovo Set ID dimension desiderato:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/13PostedDataAdministration.png"><br>
+
+
+
+| **Note**                                                 |
+|----------------------------------------------------------|
+| I 3 puntini funzionano con dimensioni, tabelle e option. |
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/22PostedDataAdministration.png"><br>
+
+Se non si vuole impostare lo stesso nuovo valore su tutte le righe, Š possibile utilizzare la funzione "Propaga valore":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/14PostedDataAdministration.png"><br>
+
+A questo punto il nuovo valore sar… impostato su tutte le righe esistenti.
+
+Quindi selezionare le righe che si desidera modificare (per comodit… Š possibile usare la funzione "Seleziona tutto"):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/15PostedDataAdministration.png"><br>
+
+Cliccare su Gestione-\>Elabora per effettuare la modifica inserendo il nuovo valore:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/17PostedDataAdministration.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/16PostedDataAdministration.png"><br>
+
+Il "Vecchio valore" rimane come dato storico.
+
+
+
+
+| **Note**                                                                                                                                                                                                                                                                                                                                             |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Placeholder e filtri** I placeholder gestiti sono:  Å \#\#Stringa a piacere\#\# per campi di tipo testo e code Å 01/01/1900 per i campi data Å 1234 per i campi interi Å 1,234 per i campi decimali Per filtrare un campo data in modo da mostrare solamente i record in cui il campo Š vuoto Š necessario utilizzare i doppi apici singoli (ÁÂ).  |
+
+
+
+**Log Richieste (PDA)**
+
+Aprendo la pagina Log Richieste (PDA) vediamo che ogni modifica viene documentata tramite un log:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/18PostedDataAdministration.png"><br>
+
+
+
+**Cancellazione Richieste**
+
+Nella scheda di creazione della richieste selezionare Tipo richiesta= Eliminazione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/20PostedDataAdministration.png"><br>
+
+I passaggi per la creazione delle righe sono gli stessi precedentemente descritti.
+
+In questo caso sulle righe non Š possibile selezionare un nuovo valore:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000334-0/21PostedDataAdministration.png"><br>
+
+
+
+| **Elenco stati possibili**  |
+|-----------------------------|
+| Nuovo                       |
+| Eseguito (cancellato)       |
+| Ripristinato                |
+
+
+
+| **Specifiche**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| La tabella log salva il json del record cancellato come BLOB, perci• Š possibile tornare indietro in caso di cancellazione, in caso di modifica viene solo salvato il vecchio valore del campo, perci• in caso di ripristino, verr… ripristinato solo quel campo e non altri eventuali campi cambiati.  E' possibile cancellare e ripristinare pi— volte, ogni volta verr… creata una riga di log con il dato allÂultima versione: - Cancellazione -\> lÂintero record - Modifica-\> il valore modificato Pochi sono i dati che vengono persi (Media, MediaSet e Binary. I BLOB funzionano). |
