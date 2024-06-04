@@ -1,0 +1,16 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000659-0/10EDI_en.jpg"><br>
+
+On the **EDI Message List** page, all created and imported messages can be viewed.
+
+To open one use the menu **Manage** -> **View**.
+
+The information present is: EDI Group and Message Type, Message Creation Date, Serial No., Created ÁOnÂ and ÁFromÂ, Document Referenced and Reference Date and Message Status.
+
+From here you can:
+
+- Retry to export the file if the export has previously failed using the **Export** action.
+- Retry to convert the message into a Business Central document if it previously failed using the **Accept** action.
+- Navigate to the related Business Central documents using the **Documents** action.
+- Check the error log of this single message using the **Log** action.
+- See the files related to this message using the **Files** action.
+- **Cancel** the document because it is no longer needed and thus remove it from the list.
