@@ -1,0 +1,19 @@
+Ogni articolo o variante configurato Š identificato da una **chiave di ricerca univoca** generata in automatico a fine configurazione. La chiave contiene le informazioni di tutte le caratteristiche che ®fanno chiave¯, ossia che sono indicate nella regola come ®Disabilita caratteristica da chiave: No¯. ß grazie a questo che il configuratore riesce a stabilire se Š necessario generare una nuova configurazione o recuperarne una esistente.
+
+Esistono situazioni in cui potrebbe essere necessario **rigenerare le chiavi**, per esempio dopo lÂimportazione dei dati iniziale o se Š stata attivata la propriet… ®**Disabilita caratteristica da chiave**¯ su una o pi— caratteristiche.
+
+Per farlo basta aprire la pagina ®Articoli configurati¯ a partire dallÂarticolo configurabile, selezionare le righe e lanciare la **funzione ®Riconfigura chiave¯.**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000322-0/KeyCode1_ITA.png"><br>
+
+Il configuratore genera le chiavi di ricerca in questo modo:
+
+-   Compone una stringa con in ordine di sequenza tutti i codici e i valori delle caratteristiche associate alla regola.
+-   Vengono escluse le caratteristiche disabilitate dalla chiave.
+-   La stringa viene criptata in forma compressa e salvata nella tabella EOS028 CFG Item Config. Key (18091278).
+-   Al variare della sequenza o del numero/tipo di caratteristiche il configuratore generer… nuovi codici articolo / variante.
+
+<br>
+<br>
+ 
+ 
