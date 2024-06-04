@@ -1,0 +1,26 @@
+* **Personnel in routings**
+
+It is possible to insert **one or more "Personnel" work centers within a routing**.
+
+It is possible to indicate a specific Unit Cost for the processing cycle diifferent from the cost attributed in the personnel masterdata.  
+
+E.g. for the TREKPRO routing we select the "Verniciatura (Painting)" work center and from **Operation-> Personnel** we can get the details on the people who work for this center:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000618-0/3ManufacturingBaseToolkit-ENU.png"><br>
+
+Specifically, we have defined that in the Painting work center there are people who take care of the actual painting and some equipment installers who follow the setup instead.
+
+NB Setup Time, Run Time and Concurrent Capacities are used by the system for cost calculation.
+
+| Field | Description |
+| --- | --- |
+| Time Type | the Personal area is associated with a capacity expressed in terms of time, based on the corresponding Type of Time: Setup Time, Run Time, Wait Time, Move Time, Queue Time. |
+| Percentage | indicates the percentage of employment of the personnel (one person is employed for the painting, for 50% of their working time. The setup is followed by two people, each of whom takes all their working time.) |
+
+* **Tools in routings**
+
+It is possible to insert one or more "Tool" Work Center within a routing . The equipment is associated with one or more Time Type, based on the time it is used, including: Setup Time, Run Time, Wait Time, Move Time, Queue Time.
+
+E.g. for the TREKPRO cycle we select the "Verniciatura (Painting)" work center and from **Operation-> Tools** we can have the detail on the frame that is needed for the painting:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000618-0/4ManufacturingBaseToolkit-ENU.png"><br>
