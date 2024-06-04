@@ -1,0 +1,16 @@
+From Payable / receivable aging analysis page-\>Report-\>Aging in Column:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000535-0/10AdvancedCustomerVendorStatement-en.png"><br>
+
+| Heading Type               | Date Interval: the column header is dd/mm/yy..dd/mm/yy Number of Days: column header is 30/60 dd (+-)                                                                                                                                              |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Aged As Ofp                | The date you select is the "border" between "**Count due**" and "**To be due**"                                                                                                                                                                    |
+| Period Length              | time interval for each column (DateFormula)                                                                                                                                                                                                        |
+| Detail Level               | Customer: 1 record for each Customer Document: 1 record for each Document Due date: 1 record for Due date                                                                                                                                          |
+| Column Count due/to be due | The columns are five. You can select how many columns show before/after the "border"established. Options: 0/5, 1/4, 2/3, 3/2, 4/1, 5/0. E.g. if 3/2 is selected: there are 3 columns headed Count due and 2 columns headed To be due in the print. |
+
+You can also select filters for Posting date, Due date, Payment method.
+
+Print example:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000535-0/11AdvancedCustomerVendorStatement-en.png"><br>
