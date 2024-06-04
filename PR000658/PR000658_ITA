@@ -26,7 +26,7 @@ In questa pagina si definisce quale messaggio mandare ad ogni Gruppo e come invi
 - **Codice Configurazione Servizio** (obbligatorio)
   Indica la configurazione di servizio da usare per fare l'accesso al filesystem per leggere o scrivere i file.
 - **Livello log**
-  Permette di configurare il logging per questo setup messaggio.
+  Permette di configurare il logging per questo setup messaggio.(vedi {{<relref "enum18122312">}} per i dettagli)
 	- Nessuno: Non viene eseguita alcuna registrazione per questa impostazione di messaggio.
 	- Solo errori: Verranno registrate solo le operazioni non riuscite.
 	- Tutte: Tutte le operazioni, comprese quelle riuscite, vengono registrate.
