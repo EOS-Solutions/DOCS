@@ -1,0 +1,98 @@
+Eseguire il setup sulla page Setup MES (MES):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000330-0/2ManufacturingExecutionSystem-ITA.jpg"><br>
+
+<table>
+			<tr>
+				<th>Campo</th>
+				<th>Descrizione</th>
+			</tr>
+			<tr>
+				<td colspan="2"><strong>Tab Generale</strong></td>
+			</tr>
+			<tr>
+				<td>Registra consumi</td>
+				<td>Se attivo il sistema, all'atto di registrazione dei mov. 
+				capacit…, registrer… anche i consumi</td>
+			</tr>
+			<tr>
+				<td>Esegui registrazione</td>
+				<td>Se attivo il sistema esegue in automatico le registrazioni 
+				delle righe di capacit…. Alternativamente le righe andranno 
+				registrate manualmente</td>
+			</tr>
+			<tr>
+				<td>Mostra barcode fasi</td>
+				<td>
+				Scegliere se il sistema deve mostrare il barcode dell'operazione 
+				nella stampa della Scheda commessa dall'Odp rilasciato</td>
+			</tr>
+			<tr>
+				<td>Inverti seq. lettura per Setup e Fermo</td>
+				<td>Se attivo Š possibile partire direttamente con l'operazione 
+				di Setup/Fermo <u>senza dare prima un 
+				inizio-fase</u>. Al termine dare il fine-fase</td>
+			</tr>
+			<tr>
+				<td>Unit… di misura avanzamento</td>
+				<td>Scegliere l'unit… di misura</td>
+			</tr>
+			<tr>
+				<td>Nr. serie pinzatura</td>
+				<td>Impostare/scegliere un numero di serie specifico per la 
+				pinzatura</td>
+			</tr>
+			<tr>
+				<td>Separatore</td>
+				<td>Definire un separatore per i numeri di codice a barre (se scelgo il punto come separatore, il codice a barre sar… ad esempio: NumberODP.LineNumber.OperationNumber)</td>
+			</tr>
+			<tr>
+				<td>Metodo barcode</td>
+				<td>
+				<p>Scegliere il metodo da utilizzare:</p>
+				<ul>
+					<li><strong>OnPrem</strong>: se si utilizza la app on prem</li>
+					<li><strong>Font</strong>: se si utilizza la app Saas</li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>Formato barcode</td>
+				<td>Stabilire un formato barcode (Code39, Code128, 
+				Interleaved2of5, EAN13, QRCode)<br>
+				(N.B. Il formato QR non Š abilitato per Saas)</td>
+			</tr>
+			<tr>
+				<td>Font barcode</td>
+				<td>campo compilato in automatico dal sistema in base 
+				all'opzione scelta nel campo Metodo barcode</td>
+			</tr>
+			<tr>
+				<td colspan="2"><strong>Tab Causali</strong></td>
+			</tr>
+			<tr>
+				<td>Apertura<br>
+				Inizio fase</td>
+				<td rowspan="4">Inserire i codici delle 
+				diverse operazioni da eseguire in modo che il sistema possa 
+				riconoscerle.<br>
+				N.B. La Pinzatura serve a raggruppare diverse fasi.</td>
+			</tr>
+			<tr>
+				<td>Apertura<br>
+				Inizia la rilavorazione</td>
+			</tr>
+			<tr>
+				<td>Chiusura<br>
+				Fine fase / Tempo setup / Tempo fermo / Output</td>
+			</tr>
+			<tr>
+				<td>Pinzatura<br>
+				Crea pinzatura / Aggiungi pinzatura / Rimuovi pinzatura</td>
+			</tr>
+			</table>
+			
+Da Carica predefinito il sistema crea dei dati di base (setup e causali e un centro di lavoro/dipendente di prova)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000330-0/12ManufacturingExecutionSystem-ITA.jpg"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000330-0/13ManufacturingExecutionSystem-ITA.jpg"><br>
