@@ -1,0 +1,12 @@
+On the Sequence Planning page, on the Operations Tab, there are various functions in order to plan the operations:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000365-0/5ManufPlanning-ENU.png"><br>
+
+		
+|  Name   |  Description    |
+| --- | --- |
+| Sorting by Due Date | sorts the operations by Due Date of the related production order |
+| Move | moves the selected operations to a Machine Center of the current Work Center |
+| Replanning | brings the selected operations in sequence, the sequencing is doing by a finitely forward scheduling from the starting date-time. While replanning the operations, you can choose to renumber the sequences of the operations. Usually only not initiated operations are handled, these are all operations which Routing Status is planned, to change this behaviour you can set the Update Type field on the request page to All.  <br>  <br> <img width="" src="https://docs.eos-solutions.it/Images/PR000365-0/6ManufPlanning-ENU.png"><br> |
+| Change Status | the Planning Sequence allows to quickly change the production order status of all selected operations |
+| Material Status | from the Planning Sequence you can recalculate the Material Status for all production orders of the selected operations.  <br>It gives you an information of the material availability of each production order. The Material Status is calculated for each component of a production order (only for firm planned and relased orders). You can launch the calculation of the Material Status, from the Sequence Planning or from the Planning Setup (see on next chapter). The Material Status is shown on each production order and on the Sequence Planning.  <br>  <br><img width="" src="https://docs.eos-solutions.it/Images/PR000365-0/7ManufPlanning-ENU.png">ÿÿ <img width="" src="https://docs.eos-solutions.it/Images/PR000365-0/8ManufPlanning-ENU.png"><br> |
