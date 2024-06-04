@@ -1,0 +1,33 @@
+<table>
+<tr>
+	<td>1</td>
+		<td>Installa l'app in DocSolutions in Business Central</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>carica i setup di default (tabelle, librerie, storage)</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Definisci un app registration in Azure per consentire a BC di accedere al tuo sharepoint</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Copia Application ID e Secret Value in Business Central</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Inizia a caricare i files in Sharepoint attraverso BC</td>
+	</tr>
+</table>
+<br>
+ 
+
+
+# DocSolutions for Sharepoint (DCS) - Sommario
+ 
+Premi ALT + Q e digita ÃDCSÄ per la lista completa delle funzionalit… a menu
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX069.03-0/1DocSolutionsForSharepoint.png"><br>
+
+
