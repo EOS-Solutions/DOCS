@@ -1,0 +1,43 @@
+This setup allows you to decide when is to create an **automatic** inspection order. After generating a setup line it is possible to disable it, if necessary with the flag **Blocked.**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000485-0/6ProductQualityAssurance-ENU.png"><br>
+
+| Inspection Type | Description |
+| --- | --- |
+| Receipt | Used for warehouses with and without warehouse. When the loading document is recorded, from a purchase order or whse loading, a quality control order will be created automatically. |
+| In Progress | Used in case of multiphase cycles. In a production order, when the capacity ledger entry is posted, a quality control order will be created automatically. |
+| Output | In a production order, when posting the item ledger entry, a quality control order will be created automatically. If X deposits are made, X control orders will be created. |
+| Sales Order | Used for warehouses without warehouse management. The app allows you to detach a quality order from a sales order. |
+| Shipment | Used for warehouses without warehouse. The app allows you to detach a quality control order from the registered sales shipment, to be activated via custom. |
+| Purch. Order | Used for warehouses without warehouse. Before registering the loading document, the app allows you to detach a control order from the purchase order. This typology defined as ®incoming control¯ is typical of the food sector as the checks on the truck are carried out before the goods are accepted. |
+| Whse. Receipt | Used for warehouses with warehouse management. Before posting the loading document, the app allows you to detach a quality control order from the whse load. As mentioned above, this typology is defined as ®input control¯. |
+| Whse. Shipment | Used for warehouses with warehouse management. The app allows you to detach a quality order manually from the whse shipment. |
+
+Once defined the inspection type you need to specify filters in order to choose the particular conditions for checks.  It is possible to filter by:
+
+* Item Category Code
+
+* Item No.
+
+* Variant Code
+
+* Location Code
+
+* Test Type
+
+In "Type" and "No". field you can filter by:
+
+* Vendor: if Inspection Type is "Receipt"
+
+* Work Center: if Inspection Type is "In Progress"
+
+* Machine Center
+
+* Customer
+
+"QA on Subcontracting ReceiptÃ specifies whether that matrix setup is also active for subcontracting production order:
+
+| Name | Description |
+| --- | --- |
+| LAST OPERATION | it is active only if subcontracting is the last phase of the production order |
+| ALL OPERATIONS | it is active in all phases of the production order |
