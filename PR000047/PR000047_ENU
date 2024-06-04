@@ -1,0 +1,40 @@
+DocSolutions for Sharepoint (DCS) Eos Solutions app enables integration with **Sharepoint OnLine**, an online Content Management System (CMS), that allows the creation, distribution, and storage of documents in the Cloud.
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kPw62J1geyI" title="DocSolutions For Sharepoint for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3aP9ocChL9U" title="DocSolutions For Sharepoint - How to configure Azure app, App Key and Secret" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mrY8qJxjZLE" title="EOS Apps Demo: DocSolutions for Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+| **Note**                                              |
+|-------------------------------------------------------|
+| Only Sharepoint **OnLine** is supported (not OnPrem)  |
+
+
+<br>
+<br>
+
+**DocSolutions Features for Sharepoint OnLine**
+
+Thanks to Eos Solutions DocSolutions For Sharepoint (DCS) app:
+
+-   For each table, you can manage different types of storage
+-   you can create multiple storage for the same table, with different destinations
+-   integration with Sharepoint Online is folder-based
+-   23 tables "out of the box"
+
+<br>
+
+**Benefits for the user**                                                                                                      * Drag & Drop (email included)
+* Connection is made through MS GRAPH No Sharepoint Document Library configuration is needed
+* DCS is a connected APP with APP KEY and Secret (Simple). No Password
+* Storage Explore and pickup SP content directly from BC
+* Folder based storage (Avoid 5.000 items Limits of sharepoint)
+* Overwrite, Rename or error setting for existing files
+* Upload Preview of Sharepoint attributes in BC 
+* Saas ready Teams Integration
+
