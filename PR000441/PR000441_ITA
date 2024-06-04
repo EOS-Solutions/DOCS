@@ -1,0 +1,31 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fMh4aaovdBE" title="Purchase Request per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PMHaA2_6LL4" title="EOS Apps Demo: Purchase Request" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br><br>
+
+La Purchase Request App consente di gestire il processo aziendale relativo alle richieste di acquisto di beni/servizi. Permette di:
+
+-   Generare ordini e offerte di acquisto direttamente dalle RDA (Richieste Di Acquisto)
+-   Archiviare le RDA chiuse
+-   Raggruppare diverse richieste in una sola
+-   Differenziare le RDA per categoria
+
+ß possibile associare alle Richieste Di Acquisto un workflow approvativo secondo tre modalit…:
+
+**BASE**
+
+consente la modifica manuale dello Stato sulla scheda di richiesta
+
+**AVANZATA**
+
+permette di utilizzare la standard approval feature di Business Central
+
+**AGGIUNTIVA**
+
+installa la DataSecurity App di Eos Solutions
+
+<a href="https://docs.eos-solutions.it/Images/PR000441-0/1Purchaserequest.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000441-0/1Purchaserequest.png"></a>
+<br>
