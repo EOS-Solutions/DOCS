@@ -1,0 +1,37 @@
+In Setup (VMI), **Tab Generale** , inserire un numero protocollo lato vendite e lato acquisti.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/14VatManagement.png"><br>
+
+In **Tab Dati Fiscali**:
+
+| Field               | Description                                                                                                                                                                                                                                                                                                                                                                         |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nr. Intermediario   | indicare l'eventuale intermediario, se presente, che trasmette la dichiarazione                                                                                                                                                                                                                                                                                                     |
+| Nr. rapp firmatario | inserire il rappresentante firmatario (persona diversa dal dichiarante) che firma la dichiarazione                                                                                                                                                                                                                                                                                  |
+| Codice carica       | solitamente 1, 6, 9 (vedi tabella sotto riportata)  <img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/15VatManagement.png"><br>                                                                                                                                                                             |
+| Tipo fornitore      | Indica chi Š il soggetto responsabile dell'invio telematico. Assume i valori: **1**: soggetti che inviano la propria dichiarazione **10**: C.A.F ; societ… facenti parte di un gruppo, che inviano la dichiarazione per conto delle varie aziende del gruppo; gli iscritti negli albi dei dottori commercialisti, dei ragionieri e periti commerciali e dei consulenti del lavoro;  |
+| Data impegno        | Data in cui l'intermediario si assume l'impegno di trasmettere la dichiarazione d'intento.                                                                                                                                                                                                                                                                                          |
+
+In **Tab Firme** inserire le immagini per la firma.
+
+Per aggiungere le immagini delle due firme che saranno incluse nella Dichiarazione, Š necessario che prima siano state caricate nell'apposita tabella.
+
+Dalla funzione Ricerca (o con ALT Q) digitare "firme"
+
+Si apre la pagina con l'elenco delle firme presenti. Con Nuovo si pu• aggiungere una nuova firma; inserire il codice, la descrizione e, se codificato, il contatto corrispondente
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/16VatManagement.png"><br>
+
+Andare poi nella sezione a destra e da Anteprima selezionare Importa per importare l'immagine della firma corrispondente
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/17VatManagement.png"><br>
+
+Selezionare il file corrispondente raggiungendo la cartella in cui Š memorizzato; se il file ha il formato corretto (jpg) si potr… visualizzare l'anteprima
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/18VatManagement.png"><br>
+
+Tornando alla pagina di Setup, nel campo Cod. Firma Š ora possibile selezionare tra le firme disponbili
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/19VatManagement.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/20VatManagement.png"><br>
