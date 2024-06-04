@@ -1,0 +1,58 @@
+## Delivery Reminder Setup and Report Selection Setup
+
+In the **Delivery Reminder Setup** indicate the numberers for temporary and issued reminders. In fact, there is the possibility of creating provisional reminders, verifying them and then posting them.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/2DelRem.png"><br>
+In **Report Selections Reminder/-Delivery Reminders** set the reports to be used: the one for the tests and the one to print the final document to be sent to the vendor.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/3DelRem.png"><br>
+
+## Delivery Reminder Terms
+
+The texts for the reminders must be defined, at different levels on the Delivery Reminder Terms (PDR) page:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/4DelRem.png"><br>
+
+These reminder terms must be assigned to the vendors by classifying them in the Receiving tab with a specific code:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/5DelRem.png"><br>
+
+## Levels
+
+The different levels of reminder are defined based on the days that can elapse from the **expected receipt date**, before a reminder is issued:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/6DelRem.png"><br>
+
+Reminders subsequent to the first use the date of the recorded reminder as a reference.
+
+**Example:**
+
+having defined these two levels:
+
+> Level 1    1 day   
+>
+> Level 2  10 days 
+
+reminders will be created as follows:
+
+> 29/01 Purchase Order line Expected Receipt Date
+>
+> 01/02  Level 1 Created and issued
+> 
+> 12/02  Level 2 Created
+> 
+
+
+so, in order to issue the second reminder level, **the first reminder must be posted.**
+
+## Texts
+
+On the Delivery Reminder Levels page, by pressing Beginning Text it is possible to insert the text accompanying the different degrees of delivery reminder. Similarly, by pressing Ending Text you can enter a final greeting of the communication:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/7DelRem.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/8DelRem.png"><br>
+
+**Print example**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000097-0/14DelRem.png"><br>
