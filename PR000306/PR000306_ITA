@@ -1,0 +1,11 @@
+Al fine di esportare sul modulo i dati anagrafici della societ… e delle persone ad essa collegate va precedentemente compilato il setup Informazioni societ… nel tab Generale e in Corrrelato-\>Funzionari.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000306-0/03WithhTaxCertUniche-IT.png"><br>
+
+**IMPORTANTE:**
+
+affinchŠ venga mostrato il campo "Provincia" in Informazioni societ…, alla **pagina PAESI** si deve impostare il **formato indirizzo come "Citt…+Prov.+CAP" su IT**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000306-0/04WithhTaxCertUniche-IT.png"><br>
+
+Successivamente, aprendo la pagina Informazioni societ…, sar… visibile il campo "ProvinciaÄ (eventualmente riaprire la pagina se gi… aperta).
