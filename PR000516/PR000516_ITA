@@ -1,0 +1,9 @@
+In Campionatura (PQA) vengono definiti i campioni da testare e il massimale di pezzi che possono risultare non conformi.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000516-0/11ProductQualityAssurance-ITA.png"><br>
+
+Esempio: Creo un Ordine di acquisto, da Righe->Qualit… scelgo Crea Ordine controllo. Si aprir… la page dell' Ordine di Controllo dove il campo relativo alla dimensione del campione da controllare risulter… gi… popolato dal sistema sulla base della tabella di Campionatura (PQA).
+
+| NB |
+| --- |
+| Il campo **Campionatura** si trova in Setup Matrice controllo (PQA), Anagrafica Fornitore e nel Setup PQA.  <br>Priorit…: il sistema verifica il valore nella matrice di controllo, se non Š compilato passa all'anagrafica fornitore e infine al setup PQA. |
