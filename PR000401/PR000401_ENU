@@ -1,0 +1,39 @@
+A **production BOM** is **configurable** when it is **associated to an item** with Configuration Type "**Neutral to Configuration**". The configuration process automatically creates a BOM for each new item configured (with "Production Order" replenishment system) as a copy of the neutral BOM.
+
+If there is no configuration logic for individual rows in the BOM, the neutral BOM is modified without any changes.
+
+The **lines in a BOM** are configurable if:
+
+-   They contain "Neutral to Configuration" items;
+-   They contain ÃNeutral to Fix" items;
+-   They contain quantity formulas and/or conditions;
+
+<br>
+
+The first way to configure the lines of a production BOM is through the presence of configurable semi-finished products.
+
+The configurator allows to automate the creation of the structure of an item, i.e. the automatic creation of semi-finished items, bills of materials and routings.
+
+It is important to keep in mind that **the configurator follows a "cascade" or top-down logic**. Characteristics are always transmitted from the level 0 item to sublevels and never vice versa.
+
+The transmission takes place in the following ways:
+
+-   **Automatically**: When the same characteristic exists in the secondary level as in the primary level. There is no need to establish logic.
+-   **Default characteristics**: When there is a characteristic in the secondary level that does not exist in the primary level and its value is always fixed.
+-   **With ®Higher level¯ relations:** When there is a characteristic in the secondary level that does not exist in the primary level, and the logic must be defined.
+
+<br>
+To have an item **automatically configured** by the configuration of the parent item it is necessary:
+
+1.  Assign it a configuration type "Neutral to Configuration";
+2.  Assign it a rule that has an associated set of characteristics that could be a subset of those of the parent or even different (in which case higher level relations are required);
+3.  Insert it into the BOM of the parent item.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000401-0/ProdBOM1_ENU.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000401-0/ProdBOM2_ENU.png"><br>
+
+<br>
+<br>
+ 
+ 
