@@ -1,0 +1,9 @@
+Una volta configurati e attivati i campi vengono mostrati nel Tab Campi custom delle page scelte.<br>
+Esempio:
+
+<img width="95%" src="https://docs.eos-solutions.it/Images/PR000201-0/ex067_cdf_it_09.png"><br>
+<br>
+
+{{% alert title="NOTE" color="warning" %}}
+Al momento della registrazione di un ordine, i campi verranno trasferiti sulla fattura registrata.
+{{% /alert %}}
