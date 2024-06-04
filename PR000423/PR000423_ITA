@@ -1,0 +1,36 @@
+Per creare una unitÖ di carico si procede creando un Nuovo codice nella page UnitÖ di carico (HUM):
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000423-0/4HandlingUnitsManagement_ITA.png">
+<br><br>
+
+Il sistema chiede di scegliere il tipo di unitÖ di carico che si desidera creare (Portacarico oppure Pacchetto).
+
+<br>
+
+Nella scheda relativa all'unitÖ di carico compilare i campi richiesti:
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000423-0/7HandlingUnitsManagement_ITA.png">
+<br><br><br>
+
+
+
+
+| **Campo** | **Descrizione** |
+| --- | --- |
+| Nr. |In automatico il sistema assegna il numeratore (con numero progressivo) che era stato scelto per il Tipo unitÖ di carico |
+| Tipo | Il Tipo viene assegnato automaticamente in base a ciï che abbiamo scelto di creare |
+| Cod. Tipo UdC | Codice relativo al tipo unitÖ (assegnato automaticamente) |
+| Nr. materiale di imballaggio | Inserire il codice materiale di imballaggio della unitÖ di carico. E' possibile codificare all'interno del sistema i materiali di cui sono fatti pallet, scatoloni ecc alla page Materiali di imballaggio HUM:<br><img width="" src="https://docs.eos-solutions.it/Images/PR000423-0/5HandlingUnitsManagement_ITA.png"><br>E' possibile specificare l'utilizzo (A rendere/ A perdere) per la gestione dei vuoti, cosç come l'articolo cui collegare il materiale.<br>Si puï inoltre definire per quale tipo di unitÖ di carico viene utilizzato il materiale e in che unitÖ di misura. |
+| Nr. unitÖ di gestione padre | Inserire l'unitÖ di gestione padre per creare una struttura di imballaggio gerarchica. |
+| Cod. ubicazione | Codice dell'ubicazione in cui ä presente il contenuto dell'unitÖ di carico. |
+| Cod. collocazione | Cod. della collocazione in cui si trova il contenuto dell'unitÖ di carico. |
+| Bloccato | Imposta l'unitÖ come bloccata (un'unitÖ di carico bloccata non puï essere spostata) |
+| Stato | Indica lo stato dell'unitÖ di carico (es. "Bozza" -> ä stata creata, ma non ancora movimentata) |
+
+<br>
+
+Nelle righe della scheda ä possibile vedere il contenuto dell'unitÖ di carico.
