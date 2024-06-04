@@ -1,0 +1,14 @@
+Nella page Tipi unit… di carico Š possibile stabilire se un'unit… corrisponde a un "Portacarico" oppure ad un "Pacchetto":
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000417-0/2HandlingUnitsManagement_ITA.png"><br>
+<br>
+
+| **Campo** | **Descrizione** |
+| --- | --- |
+| Codice |Codice da assegnare all'unit… di carico |
+| Descrizione | Descrizione libera |
+| Tipo | Le Handling Units possono essere di due tipi:<br><br>**Portacarico** (es. Pallet): su questa posso caricare scatole con dentro ulteriori pacchetti.<br><br>**Pacchetto**: scatola semplice, che si pu• collegare ad altre scatole. Poi tutte insieme possono essere legate ad un Portacarico assegnato a sua volta ad un documento. |
+| Nr. serie UdC | ciascuna unit… di carico pu• avere un proprio numeratore|
+| SSCC (Serial Shipping Container Code) | se Š stato impostato Tipo = "Portacarico" il flag consente di far seguire al numeratore le regole GS1-128 di un Serial Shipping Container Code. Il sistema aggiunge la cifra (Check Digit) finale.<br><img width="" src="https://docs.eos-solutions.it/Images/PR000417-0/3HandlingUnitsManagement.png"> |
+| Default | il flag consente di impostare un numeratore come predefinito |
