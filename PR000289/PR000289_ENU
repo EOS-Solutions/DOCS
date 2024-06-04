@@ -1,0 +1,35 @@
+In Rule Characteristic itÂs possible to specify the **list of characteristics** associated with the rule, the **sequence** in which they should be shown to the operator, whether they are **mandatory** or **non editable** during the configuration, the calculation logic in **Excel**, the **maximum** and **minimum** values for characteristics of type ®measure¯, and the **styling format**.
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000289-0/Rule4_ENU.png"><br>
+
+These are the main fields present in the rule characteristics:
+
+| **Campo**                    | **Descrizione**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Characteristic Code |Characteristic Code.|
+| Characteristic Description |Characteristic Description.|
+| Sequence |Defines the sequence in which the characteristics are requested to the user. The sequence is used to create the configurator's search keys, therefore the change of sequence involves the reconfiguration of any previously generated items.|
+| Mandatory |Defines whether the characteristic is Mandatory or Optional for the rule.|ÿ
+| Connection |Indicate the master rule to which this characteristic is linked. Use the "Align Connection" action to update the values.|
+| Disable Characteristic by Key |Excludes the characteristic from the composition of the search keys of the configured items. It is recommended to use only for dummy characteristics used for calculations.|
+| Price |Used to define which characteristics are used in the price matrix for the items associated with the rule.|
+| Not Editable |Makes the characteristic uneditable. For use in characteristics calculated by relations or with a default value.|
+| Hide Characteristic |Allows the characteristic to be hidden from the user during configuration. For use in characteristics calculated by relations or with a default value.|
+| Price List Surcharge |It allows to define whether the characteristic is used in the calculation of price list surcharges.|
+| Exclude From Relations Calc. |Excludes the characteristic from the calculation of relations. To be enabled for all characteristics that are not used in rule relations. Very important for performance. In the rule, there is a certificate action that allows you to set it automatically.|
+| Exclude From Relations Calc. With Conditions |Excludes the characteristic from the calculation of conditional relations. To be enabled for all characteristics that are not used in rule condition relations. Very important for performance. In the rule, there is a certificate action that allows you to set it automatically.|
+| From Value |Used only for measure-type characteristics, allows to set a lower limit.|
+| To Value |Used only for measure-type characteristics allows to set an upper limit.|
+| Style |Allows you to set a style, color and style, to the characteristic when prompted to the user.|
+| Process In Excel |If activated during the validation of the value of the characteristic, it recalculates any excel formulas associated with the rule.|
+| Get Output From Excel |If activated during the validation phase of the characteristic value, it recalculates any excel formulas associated with the rule and assigns the value to the characteristic.|
+| Trigger Custom Code |If activated during the validation of the characteristic value, it executes any custom code associated with the rule. Contact your partner for information on how to extend the configurator.|
+| Get Output From Custom Code |If activated during the validation of the characteristic value, it executes any custom code associated with the rule and assigns the value to the characteristic. Contact your partner for information on how to extend the configurator.|ÿ
+| Indentation |Allows to set an indentation to the characteristic when prompted to the user.|
+| Exclude from Calc. Surcharge |Excludes the characteristic from the calculation of surcharges. Very important for performance.|
+
+<br>
+<br>
+ 
