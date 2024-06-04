@@ -1,0 +1,4 @@
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000226-0/65SimulatedGeneralLedger(1).png"><br>
+To establish that one or more G/L (General Ledger Entry) template feed into the simulated accounting, you need to enable the "Simulation" field.
+
+For each template, as per standard practice, you must create the corresponding batches.
