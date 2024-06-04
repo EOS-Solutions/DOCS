@@ -1,0 +1,22 @@
+The table defines the packages in detail so that the system can correctly assign the empties based on the order lines:
+<br>
+     
+<img width="" src="https://docs.eos-solutions.it/Images/PR000234-0/EN-EmptiesManagementHUM1.jpg"><br>
+     
+		 
+
+| **Field** | **Description** |
+| --- | --- |
+| No. | setup line number |
+| Disabled | you can enable or disable the line once created |
+| Priority | it is possible to assign a priority to the line by indicating numerical values. The highest has highest priority. |
+| Item Category Code / Item No. / Variant Code | indicate the item and possibly the category and variant |
+| Unit of Measure Code | specifies the unit of measure of the item |
+| Source Type | it is possible to choose between Customer / Vendor / Salesperson and possibly select a Source Posting Group and Category Code. If blank, the setup line is valid for all Customers / Vendors / Salespersons |
+| Default | set the instruction as the default for the item and source combination |
+| Packaging Material No. | insert the packaging material used to pack the item |
+| Load Carrier No. | insert the loadcarrier used for packing the article. |
+| Load Carrier No. | indicate the filling quantity |
+| Load Carrier No. / Qty. per Layer | if more packages can be stacked, indicate the layers and quantity for each |
+| Mandatory | if set, a package must be specified in the shipping document |
+| Suggest Handling Units | suggests the HU type |
