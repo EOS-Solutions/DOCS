@@ -1,0 +1,40 @@
+In Giri di consegna (DRP) Š possibile inserire i diversi giri:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/12DeliveryRoutePlanner_ITA.png"><br><br>
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/11DeliveryRoutePlanner_ITA.png"><br><br>
+
+
+Per ogni Scheda Š possibile definire uno stato: **bozza, confermato, chiuso**.
+<br>
+
+I campi di testata costituiscono un filtro per la selezione dei documenti da agganciare al giro di consegna.
+
+| **Campo** | **Descrizione** |
+| --- | --- |
+| Peso netto /Peso lordo / Nr. posti pallet |vengono calcolati in automatico in base al setup |
+| Distanza / Durata del percorso |sono calcolate in automatico in base al servizio di geolocalizzazione utilizzato |
+
+<br><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/13DeliveryRoutePlanner_ITA.png"><br>
+
+Nelle funzioni di riga Š possibile rinumerare la sequenza impostata nelle righe, spostare su / gi— la riga selezionata e aggiungere documenti (vendita, acquisto, trasferimento).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/14DeliveryRoutePlanner_ITA.png"><br><br>
+
+In testata, premendo **Azioni**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/15DeliveryRoutePlanner_ITA.png"><br>
+
+| **Azione** | **Descrizione** |
+| --- | --- |
+| Ricalcola valori |ricalcola pesi e pallet (in base al setup) |
+| Ricalcola percorso |ricalcola la durata e la distanza percorso |
+| Apri mappa percorso |apre la mappa con il percorso calcolato |
+| Ottimizza percorso |interroga il servizio MAPS abilitato e riordina le righe |
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/16DeliveryRoutePlanner_ITA.png"><br>
