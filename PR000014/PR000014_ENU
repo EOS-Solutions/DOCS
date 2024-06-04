@@ -1,0 +1,22 @@
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eQXgvoHyCn0" title="General Ledger Application for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br><br>
+In the General Journal page it is possible to choose the entries to be connected:
+
+**one entry at a time**: through the "Apply-to entry" field on the line (you see ALL entries, open/closed)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000014-0/4GeneralLedgerApp-ENU.png"><br>
+
+Once you have chosen the entry to be applied, press Post. To verify the result open the G/L Entries page:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000014-0/5GeneralLedgerApp-ENU.png"><br>
+
+The system connected the entry "124.04 euros" and closed it. The line "1000 euro" remains open for 875.96 euros. 
+
+ 
+
+Close and press Post.
+
+In General Ledger Entries, filtering by G/L Account No. entries we can verify the posted lines: the system has linked four accounting items (closing them) to the main accounting item, leaving it open for 592.83 euros. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000014-0/6GeneralLedgerApp-ENU.png"><br>
