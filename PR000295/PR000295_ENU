@@ -1,0 +1,25 @@
+### Master G/L Accounts
+
+Since the hierarchy between the companies could also be horizontal (the companies are all operational, there is no real "source" company) it can be useful to have a limited control for the Chart of Accounts and Dimensions.
+
+This control is exercised in Master G/L Accounts (MDI).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000295-0/MasterGL.png"><br>
+
+From Actions->Import G/L accounts you can import the chart of accounts of the main Company. Thanks to Companies Accounts Matrix you can link, for each account, the main company to the remote companies.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000295-0/MasterGLEnable.png"><br>
+
+
+You can select multiple records and associate them massively with one or more companies by using Manage->Batch Selection.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000295-0/MasterGLMatrix.png"><br>
+
+### Master Dimensions
+
+The same thing is possible with Dimensions. On the page MDI Master Dimensions from Actions->Import Dimensions, you can import them and decide which ones to replicate to different companies. 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000295-0/MasterDimensionImport.png"><br>
+
+
+On the Companies/Dimensions Matrix page it is possible then to assign dimensions to each company.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000295-0/MasterDimensions.png"><br>
