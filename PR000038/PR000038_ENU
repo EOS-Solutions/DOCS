@@ -1,0 +1,10 @@
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mp11lKgBORc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WhENG5vhOXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+The Eos Solutions Master Data Intercompany app allows you **to replicate data from any table between different companies**, whether that data is in the same database or in different databases (as long as they are connected to each other via WebService)
+
+Synchronization between companies is managed either if the hierarchy is vertical (the source company is the primary company, the target companies inherit its setups), or if it is horizontal (there are multiple companies, all of which are operational). The source company is therefore one of several operating companies and contains the main setups).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex059/quick guide/schemaMDI.png"><br>
