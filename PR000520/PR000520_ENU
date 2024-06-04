@@ -1,0 +1,12 @@
+**Blocked Locations**
+
+In Locations, tab Product Quality Assurance you can decide where to place the non-compliant goods:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000520-0/12ProductQualityAssurance-ENU.png"><br>
+
+| Field | Description |
+| --- | --- |
+| QA Incoming Bin Code | Define here what is bin in which must be deposited the goods that enter into PQA control. |
+| QA Outgoing Bin Code | Enter the bin in which must be deposited the goods resulted non-compliant. |
+| Blocked **Location** Code | It is the location to whitch the goods will be automatically moved if not compliant. |
+| Blocked **Bin** Code | Specify the bin to which the goods will be automatically moved if non-compliant. |
