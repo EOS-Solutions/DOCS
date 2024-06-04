@@ -1,0 +1,5 @@
+To disconnect entries, open General Ledger Entries, select one or more entries and from Actions-> Functions press Unapply entries. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000264-0/7GeneralLedgerApp-ENU.png"><br>
+
+The system will ask whether to completely unapply the G/L application entry or unapply just the entry selected.
