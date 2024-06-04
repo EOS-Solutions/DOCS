@@ -1,0 +1,31 @@
+DocSolutions per il file system (DCS) L'app Eos Solutions consente l'integrazione con **un cloud o un file system locale**, ci• consente di mantenere i file archiviati in ordine senza aumentare le dimensioni del database e gestire diverse posizioni e autorizzazioni degli utenti
+
+| **Nota**                                              |
+|-------------------------------------------------------|
+| L'uso di Azure Files Storage o Azure Blob Storage richiede un'attiva sottoscrizione azure per questi servizi |
+| L'uso di un file system locale richiede un'installazione valida dell'API Azure Function, questa Š principalmente destinata all'ambiente OnPrem ma pu• essere anche implementata in Azure |
+| L'opzione "in memoria" Š destinata solo ai test in una sessione BC, alla fine della sessione non vengono salvati file |
+
+<br>
+<br>
+
+**Funzionalit… di DocSolutions per il file system**
+
+Grazie all'app Eos Solutions DocSolutions For File System (DCS):
+
+-   Per ogni tabella, Š possibile gestire diversi tipi di archiviazione
+-   ß possibile creare pi— archivi per la stessa tabella, con destinazioni diverse
+-   L'integrazione con il file system si basa sulle cartelle
+-   23 tabelle "out of the box"
+-   Sono disponibili permessi per utenti o gruppi di utenti
+
+(Se hai bisogno del supporto dei metadati e/o della condivisione dei file all'interno e all'esterno dell'organizzazione, considera DocSolutions per Sharepoint)
+
+<br>
+
+**Vantaggi per l'utente**                                                                                                      * Trascina e rilascia (inclusa l'email)
+* Connessione sicura ad azure tramite https e oauth2
+* DCS Š un APP connessa con APP KEY e Secret (Semplice). Non sono richieste password per singoli utenti
+* Esplora lo storage e preleva il contenuto dei file direttamente da BC
+* Archiviazione basata su cartelle, definisci i nomi delle cartelle in base ai dati dei campi del record (ad es. Data del documento (Y), Codice cliente ecc.)
+* Sovrascrivi, Rinomina o errore impostazione per i file esistenti
