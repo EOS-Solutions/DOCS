@@ -1,0 +1,24 @@
+*  Definire listini prezzo a tutti i livelli di classificazione clienti
+Å	Applicare prezzi a Scaglioni di quantit… su dettaglio 
+Å	Fare Listini di prezzi finiti [listini netti]. Implementata la possibilit… di effettuare listini prezzi per gruppi di articoli omogenei 
+
+*  Definire condizioni commerciali su riga
+Å	Filtro su tutti i livelli di classificazione articolo 
+Å	Scaglione di valore peso o quantit…
+Å	Condizioni alternative 
+Å	Condizioni esclusive 
+Å	Omaggi 
+
+*  Definire condizioni commerciali su testata documento
+Å	Filtro su tutti i livelli di classificazione articolo
+Å	Scaglioni di valore, peso o quantit… su totale ordine 
+Å	Condizioni da filtro testata ordine 
+Å	Condizioni di tipo assortimentale
+Å	Condizioni alternative
+Å	Condizioni esclusive
+Å	Omaggi (diretti oppure da scelta basket articoli)
+
+*  Definire tipologie condizioni commerciali per scale sconti strutturate
+Å	Applicazione su riga
+Å	Applicazione su articolo di addebito
+Å	Applicazione su sconto fattura
