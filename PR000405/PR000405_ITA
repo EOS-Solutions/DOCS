@@ -1,0 +1,54 @@
+E' possibile pianificare lÂesecuzione di MPS, MRP e la distribuzione dei prospetti applicando alcuni criteri e filtri.
+
+In Setup pianificazione (MPL) si possono impostare diverse configurazioni di setup affinchŠ il sistema effettui dei calcoli di pianificazione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000405-0/28ManufacturingBaseToolkit-ITA.png"><br>
+
+Dopo aver inserito pi— righe di configurazione Š anche possibile farle svolgere secondo una specifica sequenza: ad esempio, configurando pi— righe, Š possibile far avvenire in sequenza le diverse parti di una pianificazione:
+
+- MPS e solo articoli di produzione
+
+- MPS e solo articoli di acquisto
+
+- MRP solo per articoli di produzione
+
+- MRP solo per gli articoli di acquisto
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000405-0/27ManufacturingBaseToolkit-ITA.png"><br>
+
+**Tab Generale**
+
+| Campo | Descrizione |
+| --- | --- |
+| Codice, Descrizione | impostare un codice e una descrizione per la riga di setup |
+| Pianificato | stabilire se il setup deve essere schedulato |
+| Sequenza pianificazione | impostare, nel caso il setup sia schedulato, la fase della sequenza di pianificazione |
+
+<br>
+
+**Tab Pianificazione**
+
+| Campo | Descrizione |
+| --- | --- |
+| Nome modello prospetto | scegliere il nome del modello |
+| Nome batch contabile | selezionare un batch sul quale verranno registrati i movimenti |
+| Cancella righe prospetto | quando inizia la Pianificazione scegliere se cancellare le righe nel corrispondente prospetto |
+| MPS, MRP | scegliere se se desidera calcolare l'MPS e/o l'MRP |
+| Formula data inizio / Formula data fine | inserire una formula per la data inizio/fine pianificazione |
+| Usa previsione | Š possibile utilizzare una Previsione effettuata in precedenza |
+| Escludi previsione prima | impostare una data prima della quale si intende escludere la pianificazione |
+| Rispetta parametri di pianificazione per avvisi di eccezione | scegliere se rispettare tali parametri |
+
+<br>
+
+**Messaggio azione**
+
+| Campo | Descrizione |
+| --- | --- |
+| Modello prospetto pianificazione, Nome pianificazione | Š possibile definire un modello e un nome pianificazione sui quali va distribuito il calcolo |
+| Filtro articolo | Š possibile filtrare per articolo (es. tutti gli articoli con sistema di rifornimento "Ord. di Prod") |
+| Filtro per area di produzione/Filtro richiesta | Š possibile filtrare anche per area di produzione / richiesta |
+
+Tramite Correlato->Calcola pianificazione Š possibile eseguire la pianificazione come da setup impostato ed Š inoltre possibile calcolare lo **Stato materiale**.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000405-0/29ManufacturingBaseToolkit-ITA.png"><br>
