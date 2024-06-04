@@ -1,0 +1,44 @@
+PowerWMS Setup contains the fields needed to start using the app. Many of the fields in the setup are then used as default for WMS users and the tasks they can perform. The init setup action automatically populates the setup data, allowing the application to start quickly. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000134-0/EX089-Setup-ENU.png"><br>
+
+| **Code**                    | **Description**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Language code** |Default language code for Power WMS. Used as default when entering a user.|
+| **Theme name** |Default theme name. Used as default when entering a user.|
+| **OmniSearch** |If enabled, Power WMS starts with the universal search page. Used as default when entering a user. |
+| **Activity Number Sequence** |Specifies the Number Sequence used for the "Activity No." field in Activity Entries. The field is mandatory and cannot be manually edited, it is set automatically with the Init setup or Init Number Sequence action.|
+| **Activity Execution Mode** |Allows you to define the default mode in which operations are performed. Specifies how the activity will be executed. Values are: **Asynchronous**: The activity will be executed as background task; **Synchronous**: The activity will be executed in foreground; **Scheduled**: The activity will be executed at a scheduled time. The execution mode can then be defined differently in each individual task associated with users.|
+| **Scan Mode** |Default setting for Scan Mode. The allowed values are **Line**: barcodes are requested for each individual line of the document, **Group**: Barcodes are requested for grouping of item / variant / Unit of measure / location / bin, **Fast**: barcodes are requested on the entire document and grouped for item / variant / Unit of measure / location / bin. The execution mode can then be defined differently in each individual task associated with users.|
+| **Notify on success** |Default setting to notify of successfully performed tasks.|
+| **Scan as base UoM** |Default to handle scans in base units of measure.|
+| **Focus on quantity** |Default setting for focus on quantity field in Line scan mode.|
+| **Start with scan all lines** |Default setting to start scanning all rows in Line scan mode.|
+| **Scanner setup code** |Default scanner setup. The scanner setup code allows to define the way in which the barcode request is handled in the various operations. They can be of five types: **Linear**, which provides a single barcode in which the elements are divided using a specific separator, **Sequential**, in which n barcodes are provided that will then be requested from the operator separately, **Positional** which provides for a single barcode and the elements are identified by defining their sequence and maximum length, **Different Separator** similar to linear but with the ability to define different types of identifiers/separators and their position (e.g. it can be used for ENA128), **Custom** managed via custom in Business Central.|
+| **Barcode separator** |Default separator character.|
+| **Allow all locations** |Default setting to enable all locations in tasks.|
+| **Default location code** |Default location code.|
+| **Apply User Id Filter** |Default setting for apply user id filter in activities.|
+| **Allow Blank User Id** |Default setting for allow blank user id in activities. |
+| **Create Batches Per Employee** |If enabled, item journal batches will be created per employee.|
+| **Allow All Reclassification Batches** |Default setting for allow all reclassification batches in activities.|
+| **Allow All Item Journal Batches** |Default setting for allow all journal batches in activities.|
+| **Allow All Phys. Inventory Batches** |Default setting for allow all inventory batches in activities.|
+| **Default Item Reclass. Template Name** |Default Item Reclass. Template Name, used as template for user templates.|
+| **Default Item Reclass. Batch Name** |Default Item Reclass. Batch Name, used as template for user batches.|
+| **Default Item Journal Template Name** |Default Item Journal Template Name, used as template for user templates. |
+| **Default Item Journal Batch Name** |Default Item Journal Batch Name, used as template for user batches.|
+| **Default Item Phys. Inventory Template Name** |Default Item Phys. Inventory Template Name, used as template for user templates.|
+| **Default Item Phys. Inventory. Batch Name** |Default Item Phys. Inventory Batch Name, used as template for user batches.|
+| **Allow Posting** |Default setting for allow posting in activities.|
+| **Posting Execution Mode** |Default execution mode for Post action.|
+| **Default Action** |Default action when pressing the "Confirm" button in Power WMS. Allowed values are Save and Save&Post.|
+| **Allow Source Reset** |Default setting for allow source reset in activities.|
+| **Allow Automatic Tracking** |Default setting for allow auto track in activities.|
+| **Allow Scan Edit** |Default setting for allow scan edit in activities.|
+| **Picking - Whse. Shipment Sync** |If enabled, Picking scans will sync with the Warehouse Shipment lines.|
+| **Blank Phys. Inventory Quantity** |If enabled, quantity on phys. inventory lines not processed by PowerWMS will be set to 0 before posting batch.|
+
+<br>
+<br>
+     
