@@ -1,0 +1,28 @@
+
+<table>
+	<tr>
+		<td>1</td>
+		<td>Imposta la dimensione da utilizzare per il calcolo</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Attiva su specifici conti lÂopzione relativa alla procedura di calcolo delle scritture di elisione</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Genera infine le scritture di elisione</td>
+	</tr>
+</table>
+
+
+<br>
+{{% alert title="Download Excel" color="warning" %}}
+ [Import saldi Consolidato_soc extra BC](https://helpbc.eos-solutions.it/help/it-it/Download/Import%20saldi%20Consolidato_soc%20extra%20BC.xlsx)
+{{% /alert %}}
+
+
+LÂApp Intercompany Accounting Eliminations (IAE) estende le funzionalit… del modulo base BC per la generazione del Bilancio consolidato, consentendo di:
+
+Å Generare automaticamente le scritture di elisione dei debiti/crediti, costi/ricavi commerciali infra gruppo;
+
+Å Utilizzare un tracciato Excel standard per lÂimport dei saldi di bilancio relativi a societ… gestite extra BC (tramite software terzi).
