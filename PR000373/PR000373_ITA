@@ -1,0 +1,13 @@
+ﬂ possibile definire un setup pianificazione per il calcolo della pianificazione o per la distribuzione dei risultati della pianificazione. In entrambi i casi ä necessario definire un foglio di lavoro. Nell'immagine ä possibile visualizzare come impostare una scheda pianificazione per poi poter eseguire il calcolo:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000373-0/10ManufPlanning-ITA.png"><br>
+
+* Il risultato del calcolo verrÖ riportato nel prospetto definito dal **Nome modello prospetto** e **Nome batch contabile**
+
+* Verranno calcolati **MPS, MRP**
+
+* La data di inizio viene calcolata dalla Formula data inizio, in questo esempio ä sempre lunedç della settimana corrente. La data di fine viene calcolata dalla Formula data di fine
+
+* Se si desidera impostare un filtro articolo per il calcolo, ä possibile farlo utilizzando il campo "**Filtro articolo**" nel tab **Messaggio azione**
+
+Nella scheda Setup Pianificazione ä possibile impostare gli stessi parametri del batch di calcolo della pianificazione (prospetto pianificazione).
