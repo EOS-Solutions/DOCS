@@ -1,4 +1,4 @@
-<img width="" src="https://docs.eos-solutions.it/Images/PR000658-0/8EDI_it.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000658-0/8EDI_it.jpg"><br>
 
 In questa pagina si definisce quale messaggio mandare ad ogni Gruppo e come inviarlo.
 
@@ -26,7 +26,7 @@ In questa pagina si definisce quale messaggio mandare ad ogni Gruppo e come invi
 - **Codice Configurazione Servizio** (obbligatorio)
   Indica la configurazione di servizio da usare per fare l'accesso al filesystem per leggere o scrivere i file.
 - **Livello log**
-  Permette di configurare il logging per questo setup messaggio. (vedi {{<relref Ãenum18122312Ä>}} per i dettagli).
+  Permette di configurare il logging per questo setup messaggio.
 	- Nessuno: Non viene eseguita alcuna registrazione per questa impostazione di messaggio.
 	- Solo errori: Verranno registrate solo le operazioni non riuscite.
 	- Tutte: Tutte le operazioni, comprese quelle riuscite, vengono registrate.
