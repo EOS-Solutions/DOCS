@@ -1,0 +1,7 @@
+It is possible to manage assortments linked to trade conditions. 
+
+The promotion does not trigger at the individual line level but on the total document. The system checks that all assortment-level conditions are met and then applies a discount. 
+
+The "Assortment Code" field must be set within the "Documents" tab in the Sales Discount table for a specific customer or customer group in relation to the parameters set in the "Customers" tab.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000603-0/img16.png"><br>
