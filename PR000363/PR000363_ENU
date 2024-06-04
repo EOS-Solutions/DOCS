@@ -1,0 +1,9 @@
+In the page Payment Methods it is necessary to insert a payment method specific for Intrastat communications:
+
+| **Campo** | **Descrizione**                                                                         |
+|-----------|-----------------------------------------------------------------------------------------|
+| A         | Bank Transfer: the service is payed by bank transfer.                                   |
+| B         | Credit: the service rendered is paid by credit in a bank account.                       |
+| X         | Other: the service is paid by other methods                                             |
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000363-0/16AdvIntrastatForItaly-en.png"><br>
