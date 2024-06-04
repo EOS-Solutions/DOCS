@@ -1,0 +1,25 @@
+Pressing Exchange components (after accepting the action message) you can confirm the lines of the report. The page opens where we make the various options effective:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000623-0/16ManufacturingBaseToolkit-ENU.png"><br>
+
+In addition, it is possible to define the exchange options:
+
+* Exchange Component
+
+* Exchange Quantity
+
+* Exchange Scrap
+
+* Exchange Routing Link
+
+* Exchange Position
+
+You can create the new version already in Certified status and force a new version start date.
+
+At the end, the lines do not disappear from the report, but have the flag **Processed** active.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000623-0/17ManufacturingBaseToolkit-ENU.png"><br>
+
+In the BOM the item has been changed:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000623-0/18ManufacturingBaseToolkit-ENU.png"><br>
