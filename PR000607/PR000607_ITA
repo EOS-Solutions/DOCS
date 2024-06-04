@@ -1,0 +1,17 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000607-0/Immagine22.png"><br>
+
+
+EÂ possibile aggregare le varie informazioni tra testate e righe
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000607-0/Immagine23.png"><br>
+
+Lo sconto fattura e lo sconto riga prendono un valore di default in testata del Gruppo prezzi, ma Š possibile editarlo per ogni singola riga.
+
+Alla certificazione il listino viene effettuato un controllo in termini di attendibilit… e correttezza di compilazione del listino. 
+
+Per essere utilizzato il listino deve essere in stato ÃCertificatoÄ. EÂ possibile modificare il listino editando lo stato e ponendolo Ãin sviluppoÄ. Il listino in questo stato mantiene la validit…. Verr… sovrascritto nel momento in cui lo stato ritorner… in ÃCertificatoÄ.
+
+Nel caso in cui si volesse dismettere il listino occorre portare lo stato in ÃChiusoÄ.
+
+EÂ inoltre possibile definire una data di validit… del listino popolando i campi Ãdata i
+nizioÄ e Ãdata fineÄ. 
