@@ -1,0 +1,43 @@
+Thanks to the Manufacturing Base Toolkit app, it is possible to link the reversal output entry to the original capacity entry, in order to reverse the components consumed in backflush.
+
+**Output posting from Production Order:**
+
+In this example, the components have "Backward" Flushing Method and are linked to operation no. 10:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/30ManufacturingBaseToolkit_ENU.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/31ManufacturingBaseToolkit_ENU.png"><br>
+
+<br>
+
+| **Field**       | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Flushing Method | Specifies how consumption of the item (component) is calculated and handled in production processes. Options: **Manual**: enter and post consumption in the consumption journal manually. **Forward**: automatically posts consumption according to the production order component lines when the first operation starts. **Backward**: automatically calculates and posts consumption according to the production order component lines when the production order is finished. **Pick + Forward / Pick + Backward**: variations with warehousing. |
+
+After creating two outputs for 4 and 2 pieces, capacity entries 49 and 50 and consumption ledger entries are generated:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/32ManufacturingBaseToolkit_ENU.png"><br>
+
+<br>
+
+**Reversal posting from Production Order:**
+
+From the production posting the output entry is inserted, which is linked to the original Capacity entry (in this case entry 49)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/33ManufacturingBaseToolkit_ENU.png"><br>
+
+When the linked entry is entered, the system asks if you want to explode the consumed entries connected to the reversed phase. The entries are reported in the journal with the quantity to be reversed
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/34ManufacturingBaseToolkit_ENU.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/35ManufacturingBaseToolkit_ENU.png"><br>
+
+On posting, capacity reversal entries and consumption item ledger entries are created:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000547-0/36ManufacturingBaseToolkit_ENU.png"><br>
+
+<br>
+<br>
+ 
+ 
+
