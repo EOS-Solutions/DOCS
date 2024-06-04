@@ -1,0 +1,19 @@
+In all documents lines there are two fields **Secondary Quantity** and **Secondary Unit Of Measure Code** (the second one is not editable and it is copied from the Item Card).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000433-0/Doc1_ENU.png"><br>
+
+Secondary quantity is editable and is in any case calculated automatically based on the settings on the Item Card (Secondary Qty. Calc. Method).
+
+All the fields relating to the quantities to be shipped / received, invoiced and outstanding are also provided.
+
+Other fields on the lines:
+
+| **Field**                   | **Description**                                                                    |
+|-----------------------------|------------------------------------------------------------------------------------|
+| Price Calc. Method          | Copied from Item and manually editable                                             |
+| Price Unit of Measure Code  | Calculated automatically based on the Secondary Qty. Calc. Method and not editable |
+| Calc. Unit Price Excl. VAT. | Unit price calculated from the price lists and editable manually                   |
+
+<br>
+<br>
+ 
