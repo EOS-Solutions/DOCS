@@ -1,0 +1,26 @@
+La pagina di Pianificazione sequenziale mostra tutte le operazioni relative ad un Centro lavoro o ad un'Area di produzione e consente il sequenziamento di ogni singola operazione.
+
+Ciascuna operazione pu• essere monitorata grazie al campo Stato del ciclo (Pianificato, In corso, Completato). E' possibile assegnare ad ogni operazione un numero riferito ad una sequenza di pianificazione. Lo si pu• fare manualmente oppure riprogrammando le operazioni.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000355-0/3ManufPlanning-ITA.png"><br>
+
+Le operazioni che vengono visualizzate sulla page di Pianificazione sequenziale possono essere filtrate grazie ai campi presenti:
+
+| Generale |  Descrizione   |
+| --- | --- |
+| Tipo filtro / Nr. filtro | consentono di filtrare per uno specifico Centro lavoro / Area di produzione |
+| Per area di produzione | se attivo, vengono mostrate tutte le operazioni per l'area di produzione selezionata, e le operazioni sui corrispondenti centri di lavoro |
+| Mostra rilasciati | se attivo, include gli ordini di produzione rilasciati |
+
+| Filtri |  Descrizione  |
+| --- | --- |
+| Filtro articolo | mostra tutte le operazioni relative all'articolo da produrre |
+| Filtro variante | mostra tutte le operazioni secondo la variante da produrre. |
+| Filtro ordine prod. | filtra le operazioni per ordine di produzione |
+| Filtro ordine vendita | filtra le operazioni per ordine di vendita |
+| Filtro data | filtra le operazioni per data |
+| Filtro status materiale | Filtrare le operazioni per status materiale delle righe di produzione (Parzialmente disponibile, Disponibile) |
+
+Premendo **Carico** Š possibile visualizzare la disponibilit… del Centro lavoro o dell'Area di produzione per quanto riguarda la capacit…, la quantit… allocata, la disponibilit… dopo ordini e il carico percentuale sul totale capacit…:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000355-0/4ManufPlanning-ITA.png"><br>
