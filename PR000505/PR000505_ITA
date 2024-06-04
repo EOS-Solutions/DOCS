@@ -1,0 +1,39 @@
+In Documenti registrati/Spedizioni vendite reg. si trova la relativa fattura. Le fatture sono pi— di una nel caso in cui la spedizione Warehouse contenesse pi— indirizzi di spedizione.
+
+In Lista Spedizioni registrate (CWS) si trovano tutte le spedizioni:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000505-0/31CombinedWarehouseShipment_ITA.png">
+
+<br><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000505-0/32CombinedWarehouseShipment_ITA.png">
+
+<br><br>
+
+Le azioni e i campi visibili sulle schede sono dinamici, ovvero cambiano in base al tipo di Spedizione visualizzato.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000505-0/33CombinedWarehouseShipment_ITA.png">
+<br>
+
+Nelle righe Š presente il riferimento al Nr. documento di partenza.
+
+<br>
+
+Da Azioni->Stampa si pu• stampare la spedizione.
+
+<br>
+
+# Conto Lavoro
+Ordini di conto lavoro:
+
+La app CWS consente di gestire, attraversi i carichi w.hse, righe presenti sui documenti acquisto, di tipo Conto lavoro.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000505-0/34CombinedWarehouseShipment_ITA.png">
+
+<br><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000505-0/35CombinedWarehouseShipment_ITA.png">
+
+<br><br>
+
+I resi conto lavoro non sono al momento gestiti.
