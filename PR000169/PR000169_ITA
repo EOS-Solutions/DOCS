@@ -1,0 +1,10 @@
+Il setup viene impostato **sulla societ… di origine**, che poi esporter… i suoi dati verso altre societ… (di destinazione).
+
+Aprire MDI Societ… Intercompany e impostare tutte le societ… di destinazione, che potranno quindi ricevere i dati.
+
+
+<br>
+Premendo Test Connection si pu• effettuare una connessione di test: il sistema ci restituir… informazioni quali:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000169-0/TestConnection.png"><br>
+Se non compare questo messaggio, sono avvenuti degli errori in fase di setup
+&nbsp;
