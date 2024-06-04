@@ -1,0 +1,95 @@
+Enter the setup on the MES Setup (MES) page:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000330-0/2ManufacturingExecutionSystem-ENU.jpg"><br>
+
+<table>
+			<tr>
+				<th>Field</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td colspan="2"><strong>Tab General</strong></td>
+			</tr>
+			<tr>
+				<td>Post Consumption</td>
+				<td>If active, when posting the capacity ledger entries, consumption will also be posted</td>
+			</tr>
+			<tr>
+				<td>Execute Posting</td>
+				<td>If active, the system automatically post capacity lines. If 
+				not, the lines will have to be posted manually</td>
+			</tr>
+			<tr>
+				<td>Show Barcode in Prod. Reports</td>
+				<td>
+				Choose if the system should show the barcode of the operation in the 
+				printing of the Job Card of the Prod. Order</td>
+			</tr>
+			<tr>
+				<td>Revert Seq. for Setup/Stop</td>
+				<td>If active, it's possible to start directly with the Setup / Stop operation without first giving a 
+				Start-phase. At the end give the End-phase</td>
+			</tr>
+			<tr>
+				<td>Output Unit of Measure</td>
+				<td>Choose Output Unit of Measure
+</td>
+			</tr>
+			<tr>
+				<td>Stapling Nos.</td>
+				<td>Set / Choose a specific serial number for stapling</td>
+			</tr>
+			<tr>
+				<td>Separator</td>
+				<td>Define a separator for the barcode numbers (if you choose 
+				a point as a separator, then the barcode will be for example: NumberODP.LineNumber.OperationNumber)</td>
+			</tr>
+			<tr>
+				<td>Barcode Generation Method&nbsp;</td>
+				<td>
+				Choose the method to use:
+				<ul>
+					<li><strong>OnPrem</strong> : if you use the app on prem
+					</li>
+					<li><strong>Font</strong>: if you are using the Saas app</li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>Barcode Type </td>
+				<td>Establish a barcode format (Code39, Code128, Interleaved2of5, EAN13, QRCode)</td>
+			</tr>
+			<tr>
+				<td>Barcode font</td>
+				<td>Filled in automatically by the system based on the option chosen in the Barcode 
+				Generation Method field</td>
+			</tr>
+			<tr>
+				<td colspan="2"><strong>Tab Reasons</strong></td>
+			</tr>
+			<tr>
+				<td>Start: <br>
+				Start Text</td>
+				<td rowspan="4">Enter the codes of the various operations to be performed so that the system can recognize them.<br>
+				Note: stapling is used to group different phases</td>
+			</tr>
+			<tr>
+				<td>Start: <br>
+				Start Rework</td>
+			</tr>
+			<tr>
+				<td>End<br>
+				End Text / Setup Text / Stop Time Text / Output Text</td>
+			</tr>
+			<tr>
+				<td>Stapling<br>
+				Create Stapling Text / Add Stapling Text / Remove Stapling 
+				Text</td>
+			</tr>
+			</table>
+			
+From Load Default the system creates basic data (setup and a work center + employee)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000330-0/12ManufacturingExecutionSystem-ENU.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000330-0/13ManufacturingExecutionSystem-ENU.jpg"><br>
