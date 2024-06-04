@@ -1,0 +1,24 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Fill in the setup with the Company information</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Setup specific VAT setup to be summarized in VP fields or not, if necessary</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Make the system calculate VAT amounts</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Save and check the XML file</td>
+	</tr>
+</table>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hp4PSLhdukg" title="Electronic VAT Settlement For Italy for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+      
