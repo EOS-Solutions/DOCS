@@ -1,0 +1,47 @@
+Sulla page Setup (PTS) impostare un numero di serie per le specifiche tecniche e un default template in base al quale verranno ereditati gli attributi sulla scheda tecnica di prodotto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/2itProductTechnicalSpecifications.jpg"><br>
+
+**Gruppi**
+
+Da Gruppi Attributo si pu• inserire una lista di Gruppi che conterranno tutti gli attributi (ovvero le specifiche) per gli articoli. I gruppi consentono di categorizzare le caratteristiche (es. si pu• creare il gruppo delle caratteristiche chimiche, il gruppo delle caratteristiche che riguardano l'involucro ecc.)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/3itProductTechnicalSpecifications.jpg"><br>
+
+Tali Gruppi sono visibili anche sulla page Lista Attributi articolo standard:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/4itProductTechnicalSpecifications.jpg"><br>
+
+Per ogni gruppo Š possibile gestire la traduzione della descrizione premendo Traduzioni. La traduzione inserita comparir… nella stampa.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/5itProductTechnicalSpecifications.jpg"><br>
+
+**Attributi**
+
+In ogni gruppo inseriamo le specifiche tecniche creando una lista ordinata di Attributi. Esempio di informazioni nutrizionali presenti di solito sulle confezioni degli alimenti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/6itProductTechnicalSpecifications.jpg"><br>
+
+| **Campo**       | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                         |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome            | nome dell'attributo                                                                                                                                                                                                                                                                                                                                                                          |
+| Tipo            | specificare se il valore Š: <br>- Intero <br> - Decimale<br> - Opzione (in questo caso il sistema consente di aggiungere i diversi valori possibili)  <img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/7itProductTechnicalSpecifications.jpg"><br>  - Testo (la traduzione del valore di tipo Testo andr… inserita all'interno della Scheda tecnica relativa)<br>- Data |
+| Valori          | indicare un valore per la specifica tecnica                                                                                                                                                                                                                                                                                                                                        |
+| Unit… di misura | unit… di misura dell'attributo                                                                                                                                                                                                                                                                                                                                                        |
+| Tolleranz       | Š possibile inserire una tolleranza                                                                                                                                                                                                                                                                                                                                                     |
+| Bloccato         | 	se barrata, tale opzione consente di disabilitare la riga                                                                                                                                                                                                                                                                                                                                   |
+| Posizione        | indica la posizione che l'attributo deve avere rispetto agli altri                                                                                                                                                                                                                                                                                                              |
+| Stampa           | se barrata, tale opzione permette di far comparire l'attributo sulla stampa.                                                                                                                                                                                                                                                                                                                  |
+
+<br>
+
+Da Traduzioni si pu• gestire la traduzione del singolo attributo.
+
+**Template**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/2itProductTechnicalSpecifications (1).jpg"><br>
+Da Template si possono creare combinazioni di liste ordinate di specifici di gruppi e relativi attributi:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/8itProductTechnicalSpecifications.jpg"><br>
+Da Template si possono creare combinazioni di liste ordinate di specifici di gruppi e relativi attributi:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000126-0/9itProductTechnicalSpecifications.jpg"><br>
