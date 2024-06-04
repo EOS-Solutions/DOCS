@@ -1,0 +1,35 @@
+Nel momento in cui in riga **fattura e/o nota credito** vengono valorizzati i campi: ÁTemplateÂ, ÁData Inizio CompetenzaÂ e ÁData Fine CompetenzaÂ (il campo ÁPeriodo competenzaÂ si compila in automatico), alla contabilizzazione si crea in automatico la rilevazione dei ratei e/o dei risconti
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/74SimulatedGeneralLedger.png"><br>
+
+Nel momento in cui in una scrittura di **prima** **nota** vengono valorizzati i campi ÁTemplateÂ, ÁData Inizio CompetenzaÂ e ÁData Fine CompetenzaÂ (il campo ÁPeriodo competenzaÂ si compila in automatico), alla contabilizzazione verranno generate le scritture di rateo e/o di risconto.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/75SimulatedGeneralLedger.png"><br>
+
+Queste le tabelle che verranno movimentate quando verr… registrato un documento, fattura o nota credito, o viene contabilizzata una scrittura di COGE.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/76SimulatedGeneralLedger.png"><br>
+
+Nella vista ÁMov. ratei/riscontiÂ sono riportate tutte le informazioni che riguardano il tipo di template ratei e risconti utilizzato e il periodo, lÂeventuale data di chiusura, etc.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/77SimulatedGeneralLedger.png"><br>
+
+
+Nei movimenti simulati sono presenti le scritture contabili suddivise per periodo in base al template utilizzato.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/78SimulatedGeneralLedger.png"><br>
+
+
+Calcolo scritture di competenza ex post, tramite Movimenti C/G: nel caso in cui non sia stato fatto prima, Š possibile inserire i parametri per il calcolo delle scritture di competenza selezionando un movimento C/G ed eseguendo lÂazione ®Calcola ratei/risconti¯.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/79SimulatedGeneralLedger.png"><br>
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/80SimulatedGeneralLedger.png"><br>
+
+
+La page action consentir… di collegare un template ratei risconti (Codice modello) oppure delle condizioni particolari per il calcolo dei ratei e risconti di una scrittura contabile. Previa registrazione sar… possibile visualizzare lÂanteprima del calcolo:
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000241-0/81SimulatedGeneralLedger.png"><br>
+
+
+ß anche possibile stornare le scritture di competenza generate in precedenza (tramite apposita azione nella page ®Movimenti ratei / risconti (SGL)¯ e generare nuovamente le scritture.
