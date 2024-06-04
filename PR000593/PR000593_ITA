@@ -1,0 +1,10 @@
+Business Central permette di gestire fino a 7 livelli di gerarchia. Di seguito un esempio
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000593-0/Immagine4.png"><br>
+
+Il campo tipo ( Enum) della gerarchia cliente pu• essere esteso e permette altri tipi di gerarchia (custom). Possono essere definite quindi multi Æ gerarchie allÂinterno dellÂarticolo stesso.
+
+**Assegnazione Gerarchia Articolo**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000593-0/Immagine5.png"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000593-0/Immagine6.png"><br>
