@@ -1,0 +1,11 @@
+La app Sales Free Goods (SFG) di Eos Solutions consente, tramite veloce setup, di gestire la fatturazione per omaggi con rivalsa o senza rivalsa dell'iva.
+
+La cessione gratuita di beni costituisce unÂoperazione rilevante ai fini IVA, con obbligo di emissione della fattura con addebito dellÂIVA.
+
+Il cliente che riceve lÂomaggio sar… tenuto al solo pagamento dellÂimposta nel caso si tratti di una Ãcessione gratuita con esercizio della rivalsa dellÂIVA". Tuttavia lÂimpresa che effettua la cessione gratuita potr… anche decidere di non esercitare la rivalsa dellÂiva, non addebitandola al cliente.
+
+In base alla soluzione scelta si possono emettere fatture con o senza rivalsa IVA:
+
+1\. fattura con rivalsa IVA: se decidiamo di richiedere il pagamento dell'IVA al cliente, dovremo creare una normale fattura e stornare l'imponibile, mentre l'IVA rimarr… valorizzata in fattura.
+
+2\. fattura senza rivalsa IVA: in questo caso il totale fattura sar… zero poichŠ i beni costituiscono un omaggio e l'iva sar… a nostro carico. Dovremo registrare l'operazione nel registro degli omaggi con la percentuale IVA applicata.
