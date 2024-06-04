@@ -1,0 +1,9 @@
+In Sample Size Test Type (PQA) you can specify the dimension of the samples to be tested and the number of pieces that may be non-compliant:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000516-0/11ProductQualityAssurance-ENU.png"><br>
+
+Example: we create a purchase order, form Lines->Product Quality Assurance we choose Create Inspection Order. The system will open the Inspection Order page where the field relative to the sample size to be checked will be already populated by the system, on the basis of the Sample Size Test Type (PQA) table.
+
+| NB |
+| --- |
+| The field **Sample Size** is in the Inspection Matrix Setup (PQA), in the Vendor Card and in the Inspection Setup (PQA).  <br>Priority: the system verifies the value in the matrix setup, if blank it passes to the vendor card, if blank the system passes to the inspection setup. |
