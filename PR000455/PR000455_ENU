@@ -1,0 +1,90 @@
+
+**General**
+
+In the MES production panel it is possible to choose some options:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel1_ENU.jpg"><br>
+
+| **Field**                    | **Description**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Operation Follow Up |It modifies the behavior of a panel after the execution of <img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel2_ENU.jpg"><br> **Blank** = Remains on main page (used for single resource panels) **LogIn** = You must log in again **Resource List** = Return to the page with the list of resources (Useful for multi-resource panels)|
+| Session Time Out |In Seconds. Once the time out has expired, it performs the action specified in the previous parameter (if blank, it has no effect)|
+| Refresh |In Seconds. Main page refresh time|
+
+<br>
+
+**Setup**
+
+By pressing Setup, it is essential to define one or more resources for each panel. The ®Free access¯ parameter allows you to indicate that there are no usage restrictions for Employees. Any employee who is MES-enabled in the registry can use the workstation.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel3_ENU.jpg"><br>
+
+<br>
+
+**Contacts**
+
+The Contacts, represented by users present on User Setup, assigned as Production, Quality, Maintenance managers, will be used for a team or telephone call from the workstation
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel4_ENU.jpg"><br>
+
+<br>
+
+**Customizable lists**
+
+You can customize the fields on the main list, the sorting, and add any filters.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel5_ENU.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel6_ENU.jpg"><br>
+
+The Optional Filters section cannot be used only in case of extensions to the code. The usable setups are those highlighted
+
+<br>
+
+**Dynamic List Field Setup**
+
+With the dynamic list fields it is possible to define which fields of the operations table to display on the operations list and add custom fields by extending the code.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel7_ENU.jpg"><br>
+
+| **Field**     | **Description**                        |
+|---------------|----------------------------------------|
+| Caption Name  |  Used for label customization          |
+|  Type         | Operations table field or custom field |
+| Width %       | Field sizing                           |
+
+
+<br>
+
+**Resources - Setup**
+
+For each resource connected to a panel it is possible to define:
+
+-   Employees authorized to carry out activities
+-   Reason codes enabled
+-   The contacts if different from the panel
+
+Here we see employee management
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel8_ENU.jpg"><br>
+
+Resources - Reason Codes
+
+With reason code management, processes are defined for each resource
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel9BIS_ENU.jpg"><br>
+
+<br>
+
+**Man Times**
+
+To record man times with Resource Machining Centers is required
+
+-   Activate "Man time management" on the Work Center.
+-   Indicate a production area of type "Personal" for posting capacity entries with assignment and correct cost
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000455-0/Panel10_ENU.jpg"><br>
+
+<br>
+<br>
+ 
