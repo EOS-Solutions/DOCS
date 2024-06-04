@@ -1,0 +1,24 @@
+The Sequence Planning page shows all operations of a Work Center or Machine Center, and allows the sequencing of the single operations. Each operation can be monitored by its Routing Status (planned, in progress, finished). You can give each operation a production sequence number, this can be done manually or by replanning the operations.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000355-0/3ManufPlanning-ENU.png"><br>
+
+The operations shown on the Sequence Planning page, can be set by various filter criteria.
+	
+| General |  Description   |
+| --- | --- |
+| Filter Type / Filter No. | it is possible to filter by a specific Work Center or Machine Center |
+| By Work Center | if activated, then all operations for the specific Work Center are shown, also those who are on a Machine Center related to the specific Work Center |
+| Show Released | if you enable it, you include also the operations of released production orders, otherwise only those of planned and firm planned orders are shown |
+
+| Filters |  Description  |
+| --- | --- |
+| Item Filter | shows all operations related to a production order with the specific item |
+| Variant Filter | shows all operations related to a production order with the specific variant |
+| Prod. Order Filter | all operations of the production orders in the filter criteria |
+| Sales Order Filter | all operations related to sales orders |
+| Date Filter | applied to Starting Date of the operations to filter |
+| Material Status Filter | shows all operations that corresponds to the Material Status (Partial Available, Available) |
+
+Pressing **Load** you can view the avaliability of the machine or work center, including its capacity, the allocated quantity, avaliability after orders and the load in percent of its total capacity:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000355-0/4ManufPlanning-ENU.png"><br>
