@@ -1,0 +1,27 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Enter the Setup</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Create Rules and Relations</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Create a Sales Order and let the system create new items/variants based on the characteristics selected</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Create production BOMs and routings based on the characteristics selected</td>
+	</tr>
+</table>
+
+<br>
+Press ALT + Q and digit "CFG" for a list of the features involved
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex028/quick guide/1CFG_ENU.png"><br>
+
+<br>
+<br>
