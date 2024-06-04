@@ -1,0 +1,161 @@
+DallÂordine di vendita **Rilasciato** Š possibile creare il piano di fatturazione dedicato tramite apposita funzione: "Piano di fatturazione (IPL)".
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/8InvoicingPlan-ITA.png"><br>
+
+Nel piano di fatturazione appena creato, sar… possibile **richiamare un template preconfigurato**, variando eventualmente i dati di testata e/o di riga in base alle esigenze del singolo ordine:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/9InvoicingPlan-ITA.png"><br>
+
+Nel piano di fatturazione sono visualizzati diversi importi, tra i quali:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/10InvoicingPlan-ITA.png"><br>
+
+|  Opzione   |  Descrizione   |
+| --- | --- |
+| Importo ordine | totale imponibile dellÂordine di vendita |
+| Importo totale anticipo | totale dellÂimponibile degli anticipi che verranno fatturati |
+| Importo a chiusura da fatturare | totale imponibile delle fatture a saldo da emettere |
+
+Completare se necessario la configurazione dei campi di registrazione del piano di fatturazione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/11InvoicingPlan-ITA.png"><br>
+
+A livello di riga del piano di fatturazione, Š possibile compilare o modificare alcuni campi:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/12InvoicingPlan-ITA.png"><br>
+
+I valori relativi alle percentuali o agli importi delle righe di fatture di anticipo, possono essere calcolati come:
+
+* Percentuale dellÂimporto totale dellÂordine di vendita (lÂimporto verr… ricalcolato in automatico)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/13InvoicingPlan-ITA.png"><br>
+
+* Importo fisso rispetto al totale dellÂordine di vendita (le percentuali verranno ricalcolate in automatico).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/14InvoicingPlan-ITA.png"><br>
+
+Nel caso i valori o le quantit… nellÂordine di vendita venissero variati Š possibile utilizzare la funzione "Ricalcola piano fattura" con due opzioni:
+
+* **Ricalcola percentuali:** gli importi rimarranno invariati e le percentuali saranno adattate al nuovo totale;
+
+* **Ricalcola importi:** le percentuali rimarranno invariate e gli importi saranno adattati al nuovo totale.
+
+| N.B. |
+| --- |
+| Il ricalcolo avr… effetto solo sulle fatture di anticipo non ancora registrate |
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/15InvoicingPlan-ITA.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/16InvoicingPlan-ITA.png"><br>
+
+Ogni riga pu• avere diversi metodi e condizioni di pagamento in modo che ogni fattura nasca con i termini di pagamento prestabiliti senza ulteriori interventi da parte dellÂutente:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/17InvoicingPlan-ITA.png"><br>
+
+Per creare le fatture/note credito di vendita dal piano di fatturazione Š sempre necessario indicare quale riga si desidera elaborare, tramite il flag "**Esegui azione**".
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/18InvoicingPlan-ITA.png"><br>
+
+Successivamente per generare le diverse tipologie di documento Š necessario utilizzare le seguenti funzioni presenti in testata:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/19InvoicingPlan-ITA.png"><br>
+
+|  Opzione   |  Descrizione   |
+| --- | --- |
+| Crea fattura anticipata | per generare le fatture di anticipo |
+| Crea fattura | per generare la fattura di chiusura parziale, fattura di chiusura parziale con detrazioni, fattura di chiusura |
+| Crea nota di credito | per generare le note di credito a storno delle fatture di anticipo |
+
+Le azioni descritte, generano i documenti di vendita provvisori, **lÂultimo documento che dovr… essere generato Š la fattura di chiusura** (al netto di eventuali note di credito).
+
+Creando la fattura di anticipo viene proposta una request page nella quale Š possibile impostare la "**Data di registrazione**" con la quale si vuole generare il documento di anticipo e abilitare l'opzione "**Dividi righe per IVA**" (abilitata di default); tale opzione permette di generare tante righe nella fattura di anticipo quanti sono gli assoggettamenti IVA presenti nelle righe dellÂordine di vendita, al quale Š collegato il piano di fatturazione (es.: riga con IVA al 10% e riga con IVA al 22%). 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/20InvoicingPlan-ITA.png"><br>
+
+La prima fattura di vendita di anticipo generata dal piano di fatturazione nellÂesempio contiene le righe spaccate per codice IVA (IVA22 e IVA10) in quanto nellÂordine di vendita le righe articolo presentano due codici IVA differenti (IVA22 e IVA10).  
+
+**Fattura di anticipo**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/21InvoicingPlan-ITA.png"><br>
+
+**Ordine di vendita**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/22InvoicingPlan-ITA.png"><br>
+
+Una volta registrata la fattura di anticipo sul piano di fatturazione verranno riportate le seguenti informazioni:
+
+**Informazioni di riga:**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/23InvoicingPlan-ITA.png"><br>
+
+* Importo fatturato: totale della riga di anticipo fatturata (iva esclusa)
+
+* Nr. fattura: Numero di protocollo della fattura di vendita registrata
+
+* Data di registrazione: data di registrazione della fattura di vendita registrata
+ 
+**Informazioni di testata:**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/24InvoicingPlan-ITA.png"><br>
+
+* Importo Anticipo fatturato: imponibile degli anticipi fatturati
+
+* Importo totale fatturato: importo totale iva inclusa fatturato
+
+Se si desidera stornare la fattura di anticipo registrata, Š necessario utilizzare la funzione preposta: "Crea nota credito", in questo caso BC generer… una nota di credito di vendita a storno totale dellÂanticipo.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/25InvoicingPlan-ITA.png"><br>
+
+Nota di credito di vendita a storno della fattura di anticipo: 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/26InvoicingPlan-ITA.png"><br>
+
+Dal piano di fatturazione sar… possibile visualizzare a livello di riga:
+
+* Nr. nota credito: numero di protocollo della nota credito registrata
+
+* Importo nota credito: il valore di storno dellÂanticipo registrato con la nota credito
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/27InvoicingPlan-ITA.png"><br>
+
+Anche gli importi di testata verranno aggiornati di conseguenza: 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/28InvoicingPlan-ITA.png"><br>
+
+Dopo aver registrato le fatture di anticipo e effettuato la spedizione parziale o completa degli articoli presenti nellÂordine di vendita, Š possibile generare la **Fattura a chiusura parziale**, la **Fattura a chiusura parziale** con detrazioni (se presenti nel piano di fatturazione) ed infine la fattura di chiusura a saldo **Fattura di chiusura**, utilizzando la funzione "Crea fattura":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/29InvoicingPlan-ITA.png"><br>
+
+Cliccando sulla funzione Crea fattura, si aprir… una request page nella quale sar… possibile scegliere se generare le righe di storno dellÂanticipo precedentemente fatturato, direttamente nella fattura a saldo (opzione di default) oppure creare unÂapposita nota di credito contenente le sole righe a storno dellÂanticipo: 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/30InvoicingPlan-ITA.png"><br>
+
+La fattura a saldo verr… generata con data registrazione pari alla Data fatturazione prevista impostata nella relativa riga del piano di fatturazione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/31InvoicingPlan-ITA.png"><br>
+
+Nel caso si scelga di creare la fattura a chiusura con storno delle righe di anticipo direttamente in fattura, il sistema andr… a generare un unico documento (fattura di vendita) contenente le righe articolo (di saldo) e le righe di storno dellÂanticipo (spaccate per codice IVA):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/32InvoicingPlan-ITA.png"><br>
+
+Nel caso invece in cui si scelga lÂopzione di generare le righe a storno dellÂanticipo con emissione di apposita nota di credito, verranno creati due documenti:
+
+* La nota di credito contenente le sole righe di storno anticipo
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/33InvoicingPlan-ITA.png"><br>
+
+* La fattura di saldo (senza righe di storno)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/34InvoicingPlan-ITA.png"><br>
+
+Una volta registrata la fattura a saldo, il piano di fatturazione risulter… completamente fatturato:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/35InvoicingPlan-ITA.png"><br>
+
+Dal piano di fatturazione Š possibile avere visibilit… degli incassi registrati a fronte delle fatture registrate dal piano di fatturazione, tramite i campi Importo incassato e Importo incassato (VL):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/36InvoicingPlan-ITA.png"><br>
+
+Nei movimenti contabili clienti Š possibile visualizzare il **numero del piano di fatturazione** su tutti i movimenti generati tramite lÂapp IPL, compresi gli incassi collegati a fatture generate da piano di fatturazione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/37InvoicingPlan-ITA.png"><br>
