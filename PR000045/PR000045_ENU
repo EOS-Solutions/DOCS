@@ -1,0 +1,38 @@
+The Custom Defined Fields app allows you to enter over 30 customizable fields in different cards, without involving a programmer and without a development license (Business Central OnPremise version).
+
+It's possible to: 
+- activate the custom fields in a few seconds using the different types of data managed: dates, numbers, codes, etc.
+- link the fields to a table for data validation
+- select any existing table (e.g. Articles categories or Country codes ...) or define a new list of completely customized values / descriptions
+- automatically propagate the values of the custom fields of customers and vendors on sales and purchase documents, inheriting the activated options
+
+To make the fields visible on the pages you can enable them from the appropriate setup by setting some simple options.
+
+**NB:** Field names can be customized and can be translated into multiple languages.
+
+The custom fields are avaliable for:
+- Customer
+- Vendor
+- Item
+- Sales header
+- Purchase header
+- Resource
+- Job
+- Employee
+- Fixed asset
+- Transfer header
+- Service header
+
+<br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/95z_v2Y9ovY" title="Custom Defined Fields for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<br><br>
+# Custom Defined Field (CDF) - SUMMARY
+
+Press ALT + Q and digit ÃCDFÄ for a list of the features involved:
+
+<img width="80%" src="https://docs.eos-solutions.it/Images/ex067/quick guide/ex067_cdf_en_00.png"><br>
+<br>
