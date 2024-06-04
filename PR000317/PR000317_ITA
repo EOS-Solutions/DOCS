@@ -1,0 +1,33 @@
+La sezione **Configuratore** sulla **scheda articolo** serve per abilitare un articolo alla gestione del configuratore.
+
+Il campo **Tipo configurazione** indica il comportamento di un articolo nel modulo del configuratore e pu• essere:
+
+-   **Puntuale**: Š un articolo standard, non configurabile o gi… configurato;
+-   **Da neutro a configurato:** lÂarticolo Š configurabile secondo le logiche stabilite nel campo Codice regola;
+-   **Da neutro a puntuale**: lÂarticolo Š fittizio e seguendo le logiche degli ®articoli neutri¯ o delle ®regole neutri¯ deve essere sostituito in distinta base da un articolo puntale seguendo le logiche stabilite nel campo Codice regola;
+
+Nel campo **Codice regola** viene fatta lÂassociazione fra articolo e insieme di istruzioni a cui deve essere sottostare durante la configurazione, in primis lÂinsieme di caratteristiche.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000317-0/Item1_ITA.png"><br>
+
+In Azioni/Configuratore sono presenti tutte le funzioni del configuratore associate alla scheda articolo.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000317-0/Item2_ITA.png"><br>
+
+-   **Configuratore**: serve per avviare la configurazione (shortcut tastiera **CTRL+G**, sia da lista che da scheda articolo e sui documenti);
+-   **Caratteristiche ammesse**: replica il comportamento delle relazioni di tipo Filtro sulla regola e serve per limitare i valori ammessi per lÂarticolo per ogni caratteristica;
+-   **Matrice prezzi**: apre la matrice prezzi filtrata per numero articolo;
+-   **Default caratteristiche articolo**: tabella in cui Š possibile associare dei valori caratteristica predefiniti per lÂarticolo. ß possibile associare valori
+-   **Regole neutri**: attiva la gestione delle regole neutri per gli articoli Da neutro a Puntuale;
+-   **Caratteristiche articolo**: tabella in cui sono riepilogate tutte le caratteristiche associate ad un articolo configurato. ß la tabella da cui prende informazione la Fact Box ®Caratteristiche articolo¯; 
+-   **Articoli configurati**: a partire da un articolo configurabile si possono vedere tutti gli articoli configurati nati. In questa pagina si trova il campo **Chiave di ricerca**, ossia la **chiave univoca generata dal configuratore per identificare un articolo come insieme di tutte le caratteristiche** (escluse quelle che non fanno chiave). La funzione Riconfigura chiave serve per ricreare la chiavi a fronte di cambiamenti effettuati sulla regola;
+-   **Copia articolo:** obsoleta. ß stata rimpiazzata dalla funzione ®Copia articolo¯ standard;
+-   **Copia matrice prezzi.** Questa funzione permette di copiare la matrice prezzi da un articolo a un altro.
+-   **Copia caratt. Regole in ammessi articolo.** Questa funzione copia lÂelenco dei valori delle caratteristiche dalla regola associata allÂarticolo alla tabella delle caratteristiche ammesse per articolo. In fase di utilizzo del configuratore le caratteristiche ammesse hanno priorit… su quelle definite della regola e questa funzione Š un utility per copiare e poi personalizzarle per un determinato articolo.
+-   **Esplodi caratteristiche regole in matrici prezzo.** Esplode nella matrice prezzi tutte le combinazioni delle caratteristiche dellÂarticolo che compongono il prezzo in modo poi da consentire un veloce caricamento dei prezzi.
+
+
+<br>
+<br>
+ 
+ 
