@@ -1,0 +1,68 @@
+**Purchase Invoice with Item Charge**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex1AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex2AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex3AdvIntrastatForItaly.jpg"><br>
+
+Transport costs and other additional purchase costs contribute to the taxable base, pursuant to art. 43 dl 331/93, supported by dpr 633/72 art. 12 and 15
+
+**Purchase invoice with % cost adjustment**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex4AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex5AdvIntrastatForItaly.jpg"><br>
+
+In this case only the statistical value is increased by the percentage present on the Entry/Exit point code.
+
+**Purchase Credit memo with % cost adjustment**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex6AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex7AdvIntrastatForItaly.jpg"><br>
+
+In this case the statistical value is deducted by the percentage present on the Entry/Exit point code.
+
+**Credit Memo of Sale/Purchase of goods**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex8AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex9AdvIntrastatForItaly.jpg"><br>
+
+In the adjustments of goods both for sale and for purchase, the year and month/quarter to which the adjustment refers must be filled in
+
+In the event of correction of the values, the line must be filled in as mentioned, while if the error to be corrected is for example the VAT number or the combined nomenclature, the correction must be made for the entire amount of the original document and the rectified document reinserted
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex10AdvIntrastatForItaly.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex11AdvIntrastatForItaly.jpg"><br>
+
+**Credit Memo of services**
+
+Service adjustments must be offset against invoices, so they never go negative. Let's see some examples.
+
+EXAMPLE 1 - TOTAL CORRECTION OF OPERATION The Intra-2 quinques form must be completed to rectify what is indicated in the section. 3 of the form. Intra-2 quater: The amount will be zero and only the fields relating to the declaration you want to rectify will have to be filled in
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex12AdvIntrastatForItaly.jpg"><br>
+
+EXAMPLE 2 - PARTIAL OPERATION CORRECTION In this case all fields must be filled in and the amount must be net (Invoice - Credit Memo)
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000374-0/ex13AdvIntrastatForItaly.jpg"><br>
+
+**Note on lines relating to Services**
+
+In addition to filling in columns 2 to 5 which identify the detail lines to be modified, all the data including the modifications have been indicated in columns 6 to 14.
+
+Attention: in both cases in question, the amounts must be reset or compensated manually by the user.
+
+In the case of Purchase type lines, the value of the payment country is taken from the "Pay to - Vendor No." field. of the header of the purchase document or, possibly, by the supplier's bank; in the case of Sales type lines, however, this value is proposed based on the value of the "Country Code" field on the "Company Information" page.
+
+**Call of stock**
+
+The ÃSuggest linesÄ function has been integrated to propose, in the new section, the lines relating to registered transfer shipments, with the following characteristics:
+
+- Country code of departure ÃITÄ (Country code present in the Company information table) and Country code of destination EU (Intrastat code field of the Countries table). If the Reference No. field is filled out in the transfer shipment, this will retrieve the VAT number to be displayed in position 32 of the layout.
+- EU country code of departure (Intrastat code field of the Countries table) and country code of destination ÃITÄ (present country code of the Company information table).
+
+The lines of the declaration can however be filled in and/or modified manually, on the user side.
