@@ -1,0 +1,8 @@
+The conditions with the same "competing" promotions info code on the item detail are applied with the following criterion:
+
+1. Item
+1. Clusters
+1. Hierarchies
+1. Item category code
+1. Promotional group
+1. Discount groups
