@@ -1,0 +1,6 @@
+The **setup is entered on the source company**, which will then release its data to other (target) companies. Open Companies (MDI) page and set up all target companies, which can then receive the data.
+
+<br>
+By pressing Test Connection you can make a test. The system will return information such as:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000169-0/TestConnection.png"><br>
+If not, some error occurred in the setup process
