@@ -1,0 +1,48 @@
+**Omaggi con rivalsa**
+
+Creiamo un Ordine di vendita in cui inseriamo una riga articolo.
+
+Per tale articolo scegliamo come Codice omaggio, tra quelli impostati a setup, "RiVALSA CG".
+
+Rilasciando il sistema crea una seconda riga di storno con quantit… e importo uguali, ma di segno opposto e differente cat. reg. art./serv. iva:
+
+<a href="https://docs.eos-solutions.it/Images/PR000331-0/3SalesfreeGoods.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000331-0/3SalesfreeGoods.png"></a><br>
+
+Il totale del documento Š l'IVA, che sar… pagata dal Cliente.
+
+**Riassumendo**
+
+Se si seleziona un codice omaggio con rivalsa, la cat. reg. art/serv. IVA sar… differente dalla riga di articolo originaria, perch‚ la fattura non deve andare a zero, ma deve riportare lÂimporto delÂIva.
+
+**Omaggi senza rivalsa**
+
+Creiamo un Ordine di vendita in cui inseriamo una riga articolo.
+
+Per tale articolo scegliamo come Codice omaggio, tra quelli impostati a setup, "SENZA RIVALSA ADD", ovvero senza rivalsa iva, ma con addebito articolo:
+
+<a href="https://docs.eos-solutions.it/Images/PR000331-0/4SalesfreeGoods.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000331-0/4SalesfreeGoods.png"></a><br>
+
+Al Rilascio il sistema crea una seconda riga di storno con quantit… e importo uguali, ma di segno opposto e la cat. reg. art./serv. iva rimane la stessa.
+
+Il totale del documento Š zero.
+
+**Riassumendo**
+
+Se si seleziona un codice omaggio senza rivalsa, la cat. reg. art/serv. IVA sar… identica alla riga di articolo originaria, perch‚ la fattura deve andare a zero.
+
+**Fatturazione**
+
+Dopo aver registrato le spedizioni relative ai due ordini creati, generiamo la fattura. Apriamo un documento NUOVO e da Riga-\>Funzioni-\>Ottieni righe spedizione scegliamo le spedizioni registrate:
+
+<a href="https://docs.eos-solutions.it/Images/PR000331-0/5SalesfreeGoods.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000331-0/5SalesfreeGoods.png"></a><br>
+
+<a href="https://docs.eos-solutions.it/Images/PR000331-0/6SalesfreeGoods.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000331-0/6SalesfreeGoods.png"></a><br>
+
+Per ciascuna spedizione gli importi e le quantit… vanno a zero:
+
+-   L'iva va a zero nella prima spedizione.
+-   Nella seconda l'importo iva Š pari a 1600 euro, che risulta come totale fattura.
+
+**NB.**
+Il funzionamento Š il medesimo anche registrando la Fattura direttamente dall'Ordine o effettuando la Fatturazione cumulativa.
+
