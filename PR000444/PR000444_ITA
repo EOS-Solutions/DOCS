@@ -1,0 +1,1 @@
+Con l'app EDI di EOS Š possibile gestire l'invio e la ricezione di documenti a clienti e fornitori tramite EDI. L'app EDI gestisce lo scambio di file su diversi tipi di file system (FS locale tramite FunctionAPI, Azure BLOB Storage, Azure FileShare storage).
