@@ -1,0 +1,17 @@
+To print the communication press Actions-\> Print:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex019/print  export the communication/28AdvIntrastatForItaly-en.PNG"><br>
+
+| **Action**  | **Description**                                                                                                                                                                                 |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Print       | it is the detailed printing of the records contained in the sections (1, 2, 3 and 4) in the scambi.cee file, which are combined according to the logic established by the Agenzia delle Dogane. |
+| Cover       | it is the printing of the cover page and exposes some summary data of the various sections (1, 2, 3 and 4) present in the scambi.cee file.                                                      |
+| Export file | this action creates the scambi.cee file for Intrastat Purchase / Sales declaration, from which it is executed.                                                                                  |
+
+The generated scambi.cee file must then be imported into the specific "Intr@Web" application of the Customs and Monopolies Agency.
+
+**Print example**
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex019/print  export the communication/29AdvIntrastatForItaly.PNG"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex019/print  export the communication/30AdvIntrastatForItaly.PNG"><br>
