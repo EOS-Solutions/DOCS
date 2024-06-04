@@ -1,0 +1,7 @@
+Dall'Ordine di Controllo si pu• aprire una Non-Conformit… manualmente tramite Azioni->Funzioni->Crea non-conformit….
+
+Si apre un documento vuoto che fa riferimento all'OdC di partenza.  Il campo Quantit… Š gi… popolato con la quantit… che era stata indicata precedentemente come non conforme, poichŠ ora va riesaminata.
+
+La tabella della Non-Conformit… Š uguale a quella dell'Ordine di Controllo. Sulle righe vanno compilati i vari campi relativi all'articolo non conforme e poi in testata si indica il Risultato Controllo.
+
+Da Azioni Š possibile effettuare la **stampa**.
