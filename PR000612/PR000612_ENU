@@ -1,0 +1,48 @@
+Adding the possibility to manage different reference dates for prices and discounts
+In the SPP setup, the following two fields have been added:
+
+* Discount reference date
+* Price reference date
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000612-0/img26.png"><br>
+
+The selectable values are:
+
+* Order date
+* Requested delivery date
+
+The selected values (and related dates) will be automatically proposed in four new fields added in the Order Header and used to intercept valid prices and discounts under these conditions.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000612-0/img27.png"><br>
+
+In the "Price and Discount Exceptions" page, exceptions/waivers on the application of prices and discounts compared to what is defined in the basic SPP setup can be indicated. 
+
+Exceptions can be defined according to the following parameters:
+
+* Note: Descriptive field that can be used to specify the drafted exception
+* Type: Exception can be defined for:
+
+	* Specific customer 
+	* Hierarchy
+Note: Exceptions specified for a customer take precedence over those for a hierarchy.
+
+* Customer Code and Description: In combination with the field mentioned above, it defines the customer/hierarchy to which the exception will be applied.
+* Level: Valid only if the "Hierarchy" type is chosen; it defines the hierarchical level.
+* Calculation type: Defines if the exception is applied to:
+
+	* Prices
+	* Discounts
+	* Both
+
+* Reference date type: Defines the type of date that, in combination with the field indicated above, is used instead of the one specified in the SPP Setup when applying the economic condition. The following values can be selected:
+
+	* Order date
+	* Requested delivery date
+	* Fixed date
+	* 
+* Fixed date: Defines the date that, in combination with the field indicated above, is used instead of the SPP Setup when applying the economic condition.
+* Start date and End date: Define the validity period within which the exception is applied.
+* Modifiable: Defines if the exception (reported in the Sales Order Header) can be eventually modified.
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000612-0/img28.png"><br>
