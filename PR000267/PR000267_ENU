@@ -1,0 +1,22 @@
+We renegotiate an accounting entry, having previously set the setup to "Correct existing entries". 
+For the invoice 21-102039 the system shows two installments:
+ 
+  <img width="750" src="https://docs.eos-solutions.it/Images/PR000267-0/9DueDatesManagement(1).png"><br>
+Through Add Occurrency we insert a new installment of 1200,00 euros (reducing the amount of one of the other two) 
+ 
+  <img width="750" src="https://docs.eos-solutions.it/Images/PR000267-0/10DueDatesManagement(1).png"><br>
+ 
+ 
+and we post.
+ 
+ <img width="750" src="https://docs.eos-solutions.it/Images/PR000267-0/11DueDatesManagement(1).png"><br>
+ 
+ 
+In this case, a closing record is not generated, but one of the two installments is modified and a third one is added. On the added installment, the system reports the new Due date (08/30) and the Old Due Date (06/30)).
+ 
+{{% alert title="Important" color="warning" %}}
+With this setup, the renegotiated transactions are not marked with the "Renegotiation No." fields and "Renegotiated by". The same accounting movement could in fact be renegotiated several times.
+ 
+{{% /alert %}}
+
+
