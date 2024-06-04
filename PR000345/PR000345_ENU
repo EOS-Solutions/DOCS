@@ -1,0 +1,31 @@
+The Manufacturing Execution System app provides the user with many printings:
+
+On the Setup page
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/2ManufacturingExecutionSystem-ENU.jpg"><br>
+
+* from "**Print Barcode Reason**" it is possible to print barcodes for reasons
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/5ManufacturingExecutionSystem-ENU.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/3ManufacturingExecutionSystem-ENU.jpg"><br>
+
+* and for **employees badges**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/4ManufacturingExecutionSystem-ENU.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/6ManufacturingExecutionSystem-ENU.jpg"><br>
+
+* From the Released Production Order you can **print the Job card** in which **the barcode is visible** if set on the setup
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/7ManufacturingExecutionSystem-ENU.jpg"><br>
+
+* From the Released Production Order list you can print the **report "Detail Calc." with the quantity per order or per operation**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/16ManufacturingExecutionSystem-ENU.jpg"><br>
+
+Before printing, the system checks the fields selected in setup so that they are consistent.
+
+Example:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000345-0/18ManufacturingExecutionSystem-ENU.jpg"><br>
