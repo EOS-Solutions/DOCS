@@ -1,0 +1,41 @@
+Dalla Scheda Cliente / Fornitore si accede alla funzionalit… da *Azioni-\>Funzioni-\>Compensazione*:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/3CustomerVendorBalanceCompensation.png"><br>
+
+Si aprir… una pagina che mostra le partite in base ai filtri selezionati in alto:
+<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/4CustomerVendorBalanceCompensation.png"><br>
+<br>
+
+| **Campo**                | **Descrizione**                                                      |
+|--------------------------|----------------------------------------------------------------------|
+| Aperto                   | scegliere se visualizzare solo i movimenti aperti (Si / No / Tutti)  |
+| Data di registrazione    | Š possibile impostare una data di registrazione come filtro          |
+| Filtro metodo pagamento  | scegliere se filtrare per metodo pagamento                           |
+| Filtro valuta            | scegliere se filtrare per valuta                                     |
+| Nome def. registrazioni  | impostare / modificare la categoria per le registrazioni             |
+| Nome batch contabile     | impostare / modificare il batch per le registrazioni                 |
+
+<br>**Modalit… Partite/Partite con collegamento**
+
+Da *Azioni-\>Compensazione-\>Comp. auto da* decidere se partire da un movimento cliente o fornitore. Il sistema proporr… in automatico le partite da collegare che verranno marcate nella colonna "Selezionato".
+
+
+{{% alert title="NOTA" color="warning" %}}
+
+Da Azioni-\>Annulla Compensazione Š possibile annullare la selezione delle righe e ri-eseguirla.
+
+{{% /alert %}}
+
+Da *Azioni-\>Suggerisci righe compensazione* si accede al batch contabile che consente di effettuare la compensazione e infine di registrare:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/7CustomerVendorBalanceCompensation.png"><br>
+
+Il sistema proporr… le righe di chiusura che possiamo registrare da Registrazione.
+
+<br>**Modalit… a saldo**
+
+Si selezionano solo le partite di una sezione (Sorgente), ad es. Cliente e premendo "Suggerisci righe compensazione" il sistema proporr… solo le righe di chiusura delle fatture selezionate e aggiunger… una singola scrittura per il Fornitore (Destinatario) senza collegarla a nessuna partita (si pu• effettuare il collegamento manualmente in seguito). La compensazione avviene solo quando il saldo del soggetto destinatario non va in negativo.
+
+<br>**Compensazione semi-automatica**
+
+Si seleziona una partita di una sezione, si va in Azioni-\>"Comp. auto. da" e si sceglie Mov. fornitore. Il sistema cercher… di collegare a FIFO la partita che ho selezionato con le partite della sezione del Destinatario. Si pu• fare anche al contrario, partendo da un movimento del fornitore.
