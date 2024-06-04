@@ -1,0 +1,19 @@
+The menu at the top left allows access to the various pages: it is possible to open the page in which to change the resource (machine) on which one is working. If the user is enabled (from setup) he can create work teams. You can log indirect hours or get PowerBI reports on machine performance.
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000462-0/4PowerMES_ENU.jpg"><br>
+
+| **Action**                                                        | **Description**                                                                                                                         |
+|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| Change resource                                                   | Allows you to return to the Work Area where it is possible to change the Work Center                                                    |
+| Teams setup                                                       | If enabled, you can manage / create work teams (a flag defines if the user is a team leader) <img width="" src="https://docs.eos-solutions.it/Images/PR000462-0/13PowerMES_ENU.jpg"><br>|
+| Post indirect time                                                | Indirect hours can be recorded <img width="" src="https://docs.eos-solutions.it/Images/PR000462-0/14PowerMES_ENU.jpg"><br>|
+| Power BI reports                                                  | A dashboard displays POWER BI reports showing the performance of a specific machine                                                     |
+| Call prod. responsible (ph.) / Call prod. responsible (Teams)     | The production manager can be reached by phone or via Teams, for example in the event of problems on the machine                        |
+| Call quality responsible (ph.) / Call quality responsible (Teams) | The quality manager can be reached by phone or via Teams, for example in the event of a recurring problem on the quality of some pieces |
+| Call maint. responsible (ph.) / Call maint. responsible (Teams)   | The maintenance manager can be reached by phone or via Teams, for example in the event of a machine breakdown                           |
+
+<br>
+<br>
+ 
+ 
