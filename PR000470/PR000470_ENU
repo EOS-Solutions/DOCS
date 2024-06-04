@@ -1,0 +1,17 @@
+Several operators can work on one machine. There is therefore the need to manage machine times, but also man times.
+
+Man and machine times are different. Example: operator 001 works from morning until lunch. Operator 003 starts the shift just before lunch. The machine, on the other hand, works from morning until evening.
+
+The Power MES details man and machine work movements:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex103/work center employee entries/10PowerMES_ENU.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex103/work center employee entries/11PowerMES_ENU.jpg"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex103/work center employee entries/9PowerMES_ENU.jpg"><br>
+
+<br>
+<br>
+ 
+ 
+ 
