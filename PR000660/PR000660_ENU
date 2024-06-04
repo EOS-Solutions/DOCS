@@ -1,0 +1,16 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000660-0/9EDI_en.jpg"><br>
+
+An outbound EDI message is genered from within Business Central and then exported and sent to a partner (outbound flow).
+
+You can use the report **Create EDI Messages Outbound** to create and export messages. This report will take all eligible BusinessCentral documents and create an **EDI message** from it.
+
+- **Options**:
+	- **Send**: if this is specified, all documents that will be generated will also automatically be export to the file system according to the configuration on the **EDI Message Setup**.
+
+- **Filters**:
+	- **EDI Group Code**: you can use this to create messages only for the specified groups.
+	- **Message Type**: you can use this to create only certan message types.
+	- **Date Filter**: you can use this to limit the documents to be created by it's posting date.
+	- **Document No. Filter**: you can use this to limit the documents to be exported by it's document no.
+
+Any errors that are encountered during creating and/or exporting will be logged to the error log (if configured). At the end of the process, the user can open a list of all errors (if any).
