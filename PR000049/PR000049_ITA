@@ -1,0 +1,23 @@
+La app Inventory Register (IVP) di Eos Solutions consente di eseguire la stampa del Giornale di magazzino.
+
+Le norme fiscali prevedono l'obbligo di tenuta della contabilit… di magazzino al superamento di determinati limiti di ricavi e di rimanenze.
+
+In tutti gli altri casi la contabilit… di magazzino rappresenta una scrittura facoltativa.
+
+Il Giornale di magazzino ha come obiettivo quello di rilevare i carichi e gli scarichi di beni dal magazzino: si tratta quindi di un registro cronologico nel quale sono rilevati, in ordine di data, tutte le merci entrate ed uscite dal magazzino.
+
+Per ogni movimento vengono riportati i seguenti dati:
+
+Å Codice e Descrizione dellÂarticolo movimentato;
+
+Å Data di registrazione e Data documento;
+
+Å Cod. Ubicazione;
+
+Å Nr. documento;
+
+Å Descrizione dellÂoperazione;
+
+Å Quantit…;
+
+Å Unit… di misura.  
