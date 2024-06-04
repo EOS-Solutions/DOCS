@@ -1,0 +1,19 @@
+**Invoices to Issue / Receive**
+
+The request page is structured as follows:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000236-0/App SGL Slide 15_Andrea Giordani.png"><br>
+
+- **Starting Date**: From which registration date should the shipments and deliveries be considered.
+- **Ending Date**: Up to which registration date should the shipments and deliveries be considered.
+- **Group Document Lines**: When selected, it will be possible to determine which dimensions should be subject to potential line splitting.
+- **Posting Date**: The date applied to accounting entries.
+- **With Reversal**: When selected, identical entries but opposite to the issued/received invoices will be suggested.
+- **Reversal Date Formula**: A formula defining the reversal date for the reversal entries.
+
+The system generates entries in the batch from which the "Get Invoices to Be Issued" function is executed. In the case of simulated entries, the batches are created on the selected Posting Date and automatically reversed the next day. If they are generated in G/L, the reversal entry is automatically created during the posting of the corresponding invoice (in the next accounting period).
+
+To facilitate navigation, by default, the entries are generated with the same document number as the shipment/delivery from which they originated.
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000236-0/App SGL Slide 16_Andrea Giordani.png"><br>
