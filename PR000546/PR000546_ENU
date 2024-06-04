@@ -1,0 +1,9 @@
+With a setup like this for Customer No. 3000 (Overdelivery tolerance unlimited in outbound, for all items):
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000546-0/05OverandUnderDeliveryQuantities.jpg"><br>
+
+when we create a 10-piece sales order and we want to ship 20:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000546-0/06OverandUnderDeliveryQuantities.jpg"><br>
+
+The system will allow us to do so, alerting with a message of excess quantity.
