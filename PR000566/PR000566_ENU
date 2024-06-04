@@ -1,0 +1,11 @@
+On the Vendor card, tab Product Quality Assurance:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000566-0/33ProductQualityAssurance-ENU.png"><br>
+
+| Field | Description |
+| --- | --- |
+| Certified Vendor | You can enable it if the vendor is deemed reliable. In the Inspection Setup (PQA) it is possible to give a "weight" to such an assessment. These parameters are then used by the system in the algorithm that calculates the vendor rating. |
+| Global Service Code | It is a subjective evaluation on the Vendor. This is used to improve the assessment that the system could do in the case of a vendor that the user knows as reliable. but that the algorithm would penalize with calculations.  <br>This way the person responsible for the Product Quality Assurance in the Company can affect the "judgment" of the system and improve it.  <br>  <br> <img width="" src="https://docs.eos-solutions.it/Images/PR000566-0/34ProductQualityAssurance-ENU.png"><br>|
+| Duty of Rating | If enabled the vendor is under evaluation |
+| Classification Code | Shows the evaluation code that has been assigned to the vendor. This code is set in a separate table (Vendor Classification Codes PQA) and is linked to the Test Type Code that will be always applied for the items in the documents of that vendor.  <br>  <br> <img width="" src="https://docs.eos-solutions.it/Images/PR000566-0/35ProductQualityAssurance-ENU.png"><br>|
+| Test Type Code | Shows the test type that will be applied to all the receipts of the vendor, which is defined in the setup table Test Types (PQA) |
