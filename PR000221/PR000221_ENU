@@ -1,0 +1,26 @@
+To enable the management of CONAI package in BOM / Assembly List for a finished product (Es:1000) you need to implement some settings:
+
+1\. In Item 1000 (finished product) from Navigate-\>CONAI-\>CONAI Packages you need to choose the option **Search on Product BOM** or **Search on Assembly BOM**
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/46CONAI(1).png"><br>
+
+2\. Define item components that are intended to serve as Item CONAI Package. In the field 'EOS Conai of the Item card you have to choose "CONAI Package":
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/47CONAI(1).png"><br>
+3\. For the Item BOX505030 it has to be coded the CONAI Package
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/48CONAI(1).png"><br>
+
+4\. In the Item 1000 BOM specify the packaging components (e.g. BOX505030):
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/49CONAI(1).png"><br>
+
+5\. As an alternative to the previous point can be entered the component "Package (ES: BOX505030)" in the 1924-W assembly list
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/50CONAI(1).png"><br>
+
+If the item has its own package code, and also a package code in the BOM or Assembly List, the weights of the CONAI materials will be added.
+
+As an alternative to point 1), e.g. in the case where you think it is not necessary to define an item CONAI Package PF for each item, you can simply choose Explode BOM in the field "EOS Conai". In this case the system will proceed directly to search the BOM or in the Assembly List the packing item, finding no CONAI Package code active for the article. However, in case the item is defined as 'Explode BOM' and has also the CONAI package the system will consider the CONAI Package as high priority.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/52CONAI(1).png"><br>
