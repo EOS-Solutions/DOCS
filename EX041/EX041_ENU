@@ -1,0 +1,16 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Set the Reason codes and the posting criteria</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Post a sales order with reason code correspondent to "Do not invoice"</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>The system will not create the related invoice</td>
+	</tr>
+</table>
+<br>
+
