@@ -1,0 +1,14 @@
+| **Record type CBI**                                                                                                           |
+|-------------------------------------------------------------------------------------------------------------------------------|
+| RH-EF                                                                                                                         |
+| <img width="" src="https://docs.eos-solutions.it/Images/PR000387-0/6BFForItaly-en.png"><br>  |
+
+The procedure is similar to the Import SEPA DD Dishonored (CBI), but payments are imported using the Account Statement file (these payments are extra UE, not managed by SEPA).
+
+Payments are imported in the General Journal.
+
+The report to fill is **Import customer payments (CBI):**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000387-0/7BFForItaly-en.png"><br>
+
+Specify a Bank account for the payments to import.
