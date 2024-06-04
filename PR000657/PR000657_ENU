@@ -1,0 +1,15 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000657-0/5EDI_en.jpg"><br>
+
+From the top menu you can open the **EDI Mapping** page.
+
+EDI mapping is the process of matching standard Euritmo/HoGast fields to internal codes defined in Business Central.
+
+{{% alert title=ÁNBÂ colour=ÁlightÂ %}}
+The codes ÁExternalÂ and ÁExternal 2Â are codes based on the Euritmo/HoGast standard or provided by the customer.
+{{% /alert %}}
+
+- **Type**:
+	- **VAT Code**: you choose, within BC, between the Group VAT code (Code BC) and the Category reg. art/serv. VAT Code (Code 2 BC)
+	- **Payments**: the Conditions (BC Code) and the Payment method (Code 2 BC) are selected
+	- **Unit of measure**: select it in the column BC Code (e.g. Can, Day, Gram, Package etc.)
+	- **Return Code**: select it in the column BC Code
