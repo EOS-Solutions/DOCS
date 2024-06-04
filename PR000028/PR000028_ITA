@@ -1,0 +1,37 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tEc57xHmaHM" title="Invoicing Plan per Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+Costituisce quindi un'alternativa ai metodi di fatturazione standard BC, al fine di **creare un piano di fatturazione dedicato in base agli accordi contrattuali di progetto**. Di seguito le caratteristiche principali dellÂapp IPL:
+
+* Definire i parametri del piano di fatturazione come concordato con il cliente
+
+*  Tenere traccia delle fatture e dello stato avanzamento del progetto
+
+*  Registrare le fatture di anticipo con spaccatura automatica per castelletto IVA
+
+* Le fatture di anticipo possono essere create in funzioni di % e/o importi
+
+* Le fatture possono essere rapidamente modificate se ci sono eventuali cambiamenti negli importi dell'ordine vendita
+
+* Creare la fattura di chiusura al termine del progetto con storno automatico delle righe di anticipo precedentemente generate. Ricalcolare eventuali anticipi alla modifica delle quantit… e dei valori nellÂordine di vendita
+
+L'app IPL viene utilizzata da due tipi di ruolo utente:
+
+# Gestore Ordini Vendita
+* Crea i modelli di Piano di Fatturazione pi— utilizzati
+
+* Definisce i Piani Fatturazione secondo gli accordi di progetto
+
+* Crea il Piano Fatturazione partendo dall'Ordine di Vendita. 
+
+# Contabile
+* Seleziona le fatture da creare in base al piano fatture
+
+* Crea le fatture di vendita
+
+* Registra le fatture di vendita
+
+* Crea eventuali Note di Credito
+
+* Gestisce e contabilizza i relativi incassi
