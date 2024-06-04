@@ -1,0 +1,17 @@
+L'app `Bulk Email to Customer and Vendor` consente di inviare e-mail in modo massivo a Clienti, Fornitori, Contatti.
+
+Per inviare, ad esempio, una e-mail a pi— clienti aprire la relativa lista e selezionare i destinatari. Premendo su `Azioni` -&gt; `Email` -&gt; `Invia`:
+<br><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000042-0/ex064_bulkpeo_it_01.png"><br>
+<br>
+Il sistema aprir… una e-mail con i campi *Mittente* e *Destinatario* pre-compilati con gli indirizzi presenti in anagrafica. Se un destinatario manca dell'indirizzo di posta elettronica in anagrafica, il sistema non aggiunger… quel destinatario alla e-mail.
+<br><br>
+E' possibile poi scrivere un testo e/o allegare documenti e poi inviare.
+<br><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000042-0/ex064_bulkpeo_it_02.png"><br>
+<br>
+
+{{% alert title="NB" color="warning" %}}
+La e-mail verr… aperta dal sistema nel client di posta **predefinito nelle impostazioni del PC**.<br>
+Si consiglia di abilitare le finestre pop-up nel browser.
+{{% /alert %}}
