@@ -1,0 +1,19 @@
+In this page we need to define which is the inspection plan to be used and its frequency.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000506-0/7ProductQualityAssurance-ENU.png"><br>
+
+From New it is possible to create a new inspection plan in which you need to specify parameters to be considered while testing goods and also you need to enter the expected values. Then you can choose the devices to be used in the checks. See Planning.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000506-0/8ProductQualityAssurance-ENU.png"><br>
+
+**Frequency**
+
+This field is used if you want to assign a frequency to the row.
+
+Options:
+
+0 = The Inspection Plan is always performed
+
+1 = The Inspection Plan is performed on the basis of the specified frequency in the field "Frequency Period"
+
+The Frequency Period is: day, week, month, quarter, year
