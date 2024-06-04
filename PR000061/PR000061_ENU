@@ -1,0 +1,11 @@
+The Delivery Route Planner (DRP) app allows to:
+
+* manage delivery routes for documents such as Sales Orders, Purchase Orders, Posted Sales Shipments., Warehouse Receipts., Transfer Orders
+
+* calculate and optimize transfer times / routes through the services made available by the MAPS App
+
+* calculate weights
+
+* generate shipments from the delivery routes
+
+* export routes in order to use them with other applications, such as Circuit
