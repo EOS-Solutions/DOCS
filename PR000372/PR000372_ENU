@@ -1,0 +1,7 @@
+You can use the Planning Setup to define a planning workflow, for instance:
+
+1. MPS and MRP planning of all items
+
+1. Split and distribute the planning result to dedicated planning worksheets
+
+1. Schedule the planning calculation from Job Queue
