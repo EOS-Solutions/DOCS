@@ -1,0 +1,95 @@
+On the Product Technical Specs (PTS) page you can see a list of technical specifications cards:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/10ProductTechnicalSpecifications.jpg"><br>
+
+From **New** a new card is created.
+
+The card has a similar structure to header + lines.
+
+At the top, the General and Product tabs show general information. At the bottom, the Attributes tabs show the technical specifications. Once the card has been completed press Release.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/11ProductTechnicalSpecifications.jpg"><br>
+
+**Actions**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/14ProductTechnicalSpecifications.jpg"><br>
+
+From **Technical Specifications-\>Archive Document** it is possible to archive the card by adding a note:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/12ProductTechnicalSpecifications.jpg"><br>
+
+The archived cards can be accessed via the "No. of Archived Versions" field or by opening the **Technical Specs Archive** page .
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/13ProductTechnicalSpecifications.jpg"><br>
+
+From Technical specifications-> **Copy specifications** it is possible to duplicate a card.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/15ProductTechnicalSpecifications.jpg"><br>
+
+| **Field**                 | **Description**                                                                                                                                                                                                      |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Source Specifications No. |  Specifies the number of the technical specifications that you want to copy the data from.                                                                                                                           |
+| Target Specifications No. | Specifies the number of the new technical specifications, where you want to copy the data to. To generate the new technical specifications number from a serial number, fill in the Target No. Series field instead. |
+| Target No. Series         | Specifies the number series that is used to assign a number to the new technical specifications.                                                                                                                     |
+| Number of Copies          | Determine how many copies of the card you want to create                                                                                                                                                             |
+| General Information       | Enable this option if you want to copy the general information                                                                                                                                                       |
+| Attributes                | Enable this option if you want to copy the attributes                                                                                                                                                                |
+| Attachments               | Enable this option if you want to copy the attachments                                                                                                                                                               |
+| Links and Notes           | Enable this option if you want to copy links and the notes                                                                                                                                                           |
+
+**Attributes**
+
+When a new tab is created the system, thanks to the template selected in setup, will report on the lines the different Attributes or Groups of attributes that will have to be valued:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/16ProductTechnicalSpecifications.jpg"><br>
+
+Information such as whether or not to print the attribute is also inherited from the template. This information may still be changed.
+
+From Manage-\>Delete line you can delete attributes if you don't need them:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/17ProductTechnicalSpecifications.jpg"><br>
+
+**Print**
+
+By pressing Print/Send you can print the card or create a PDF file:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/18ProductTechnicalSpecifications.jpg"><br>
+
+By choosing **Print** you can choose in which language to print the card:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/20ProductTechnicalSpecifications.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/19ProductTechnicalSpecifications.jpg"><br>
+
+**Attachments**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/14ProductTechnicalSpecifications.jpg"><br>
+
+From **Technical Specs-\>Attachments** you can upload attachments (only those in PDF will be printed).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/21ProductTechnicalSpecifications.jpg"><br>
+<br>
+
+| **IMPORTANT**                                           |
+|---------------------------------------------------------|
+| You can choose to manage attachments with DocSolutions. |
+<br>
+PDF Attachment printing example:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/22ProductTechnicalSpecifications.jpg"><br>
+
+**Items**
+
+From Technical Specs-\>Items you can link the technical specs card to one ore more items (new or already in the system).
+
+Press Actions-\>**Link Item**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/23ProductTechnicalSpecifications.jpg"><br>
+
+and choose which item/items to link to.
+
+You can remove the link by pressing Remove Item.
+
+After making the connection, on the Item card from Actions-\>Item-\>Technical specifications will appear the technical specs related to:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000276-0/24ProductTechnicalSpecifications.jpg"><br>
