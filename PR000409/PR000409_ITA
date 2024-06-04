@@ -1,0 +1,23 @@
+Il sistema calcola **per ogni riga** di componente degli OdP, **confermati e rilasciati**, **se il materiale Š disponibile**. Lo Stato materiale pu• assumere i valori:
+
+* Disponibile = completamente disponibile
+
+* Parzialmente disponibile = parzialmente disponibile
+
+* Vuoto = non disponibile
+
+In base alla disponibilit… dei componenti si determina la disponibilit… sullÂOrdine di Produzione, che pu• assumere i valori:
+
+* Disponibile = se tutti i componenti sono disponibili
+
+* Parzialmente disponibile= se almeno un componente Š parzialmente disponibile o non disponibile
+
+* Vuoto = se tutti i componenti non sono disponibili
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000409-0/25ManufacturingBaseToolkit-ITA.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000409-0/26ManufacturingBaseToolkit-ITA.png"><br>
+
+In **Setup pianificazione (MPL)** da Correlato->Calcola pianificazione Š possibile eseguire la pianificazione come da setup impostato ed Š inoltre possibile calcolare lo Stato materiale.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000409-0/29ManufacturingBaseToolkit-ITA.png"><br>
