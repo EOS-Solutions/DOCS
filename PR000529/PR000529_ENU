@@ -1,0 +1,12 @@
+For example you can simply define that a record changes from ÃNEWÄ to ÃCERTIFIEDÄ and then to ÃOBSOLETEÄ.
+
+it is necessary to establish:
+* The states
+
+* Status changes
+
+* The permits
+
+* The functions applicable to the table records (e.g. "block customer")
+
+* The mandatory fields 
