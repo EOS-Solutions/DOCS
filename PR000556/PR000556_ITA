@@ -1,0 +1,27 @@
+Nelle righe dell'ordine di controllo l'utente pu• inserire i valori rilevati dopo il controllo nel campo **Ultimo valore effettivo**.
+
+Se il valore inserito Š al di fuori del range valore massimo/valore minimo impostato a setup, il sistema chiede se creare una non conformit….
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000556-0/29ProductQualityAssurance-ITA.png"><br>
+
+Lo stesso vale per i parametri definiti "attributi". In tal caso la non conformit… viene creata se l'utente inserisce un valore negativo nel campo **Referto**.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000556-0/28ProductQualityAssurance-ITA.png"><br>
+
+L'ordine di Non-Conformit… riporta (tab Riferimento) tutti i dati relativi al documento di partenza, da cui Š stato generato lÂordine di controllo e, in seguito, la Non-Conformit….
+
+Nelle righe viene riportato il parametro fuori specifica. Inoltre a livello di riga, da Riga abbiamo la possibilit… di gestire Cause e Azioni correttive:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000556-0/30ProductQualityAssurance-ITA.png"><br>
+
+se un OdC ha un secondo parametro che va fuori specifica e che necessita della creazione di una Non-Conformit…, nella Non-Conformit… gi… aperta verr… aggiunta una riga.
+
+In testata Š presente il campo Azione globale che ci permette di ad esempio di gestire la Non-Conformit… con la app DataSecurity se installata.
+
+Nell'Ordine di Controllo che ha generato la Non-Conformit… lo stato sar… cambiato:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000556-0/31ProductQualityAssurance-ITA.png"><br>
+
+| N.B. |
+| --- |
+| Per creare in automatico la non conformit… dallÂOrdine di Controllo va abilitata la relativa option nel Setup Controllo Qualit…ÿ(PQA)  <br> <img width="" src="https://docs.eos-solutions.it/Images/PR000556-0/41ProductQualityAssurance-ITA.png"><br>|
