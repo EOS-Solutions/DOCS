@@ -1,0 +1,6 @@
+Select `Custom Fields - Custom lists (CDF)` from menu (ALT-Q). In this setup window you define the lists that can be used in the custom `Code` fiels. Later it is possible to select a value from them in pages where the activated field will be shown.<br>
+For each new list it is necessary to set a *code* and a *description*. Then go to `List` -&gt; `Values`:
+<img width="95%" src="https://docs.eos-solutions.it/Images/PR000164-0/ex067_cdf_en_05.png"><br>
+<br>
+
+	
