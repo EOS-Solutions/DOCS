@@ -1,0 +1,9 @@
+A work center can be identified as:
+
+* **Tool**
+
+* **Person**
+
+This allows you to consider these two aspects in routings and consequently in production orders. You can use these areas for informational purposes only, or you can consider them in capacity movements, in terms of setup and run times, to which **you can associate costs**. Simply activate the corresponding option on the Manufacturing Setup tab:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000616-0/1ManufacturingBaseToolkit-ENU.png"><br>
