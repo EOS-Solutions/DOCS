@@ -1,0 +1,12 @@
+La procedura di chiusura dei ratei e risconti da utilizzare a fine esercizio viene eseguita direttamente dalle Registrazioni COGE utilizzando la funzione di ÁChiusura Ratei/RiscontiÁ (procedura che NON pu• essere utilizzata nei batch dei simulati).  
+
+<img width="750" src="https://docs.eos-solutions.it/Images/EX001/end of fiscal year accr.deferrals closure/8SimulatedGeneralLedger.png"><br>
+
+Chiusura Ratei e Risconti di fine esercizio
+Al termine della procedura il sistema crea le righe riportando la data di fine esercizio e lo storno il giorno successivo
+
+<img width="750" src="https://docs.eos-solutions.it/Images/EX001/end of fiscal year accr.deferrals closure/88SimulatedGeneralLedger.png"><br>
+
+AllÂatto della registrazione delle scritture saranno generate anche le scritture uguali e contrarie in contabilit… simulata, visto che questÂultima contiene gi… le singole registrazioni create in precedenza (vedasi flag ®Bilancia in simulazione¯). Nella page Movimenti ratei / risconti (SGL) risulter… inoltre valorizzata la ®Data ultima chiusura¯.  
+
+ 
