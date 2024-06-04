@@ -1,0 +1,10 @@
+<img width="" src="https://docs.eos-solutions.it/Images/PR000346-0/7DeliveryRoutePlanner.png">
+<br><br>
+
+In the Customer Card, Shipping tab the field "Periodic Tour Code" contains the table for the definition of periodic routes.
+<br>
+
+The data are entered in the Customers, Vendors, Ship to Addresses, Order Addresses master data. You can use this information as a filter for selecting documents in delivery routes.
+
+<br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000346-0/8DeliveryRoutePlanner.png"><br>
