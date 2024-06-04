@@ -1,0 +1,104 @@
+Alla page Comunicazione Liquidazione IVA - Movimenti (EVS) scegliere Nuovo per creare una Comunicazione.
+
+Se la Liquidazione IVA Š trimestrale Š necessario compilare una sola scheda Comunicazione con il Tipo periodo=TRIMESTRE. Se la Liquidazione IVA Š mensile Š necessario compilare tre schede diverse, ciascuna con Tipo periodo=MESE e Nr. periodo uguale al mese di competenza. I campi di questa page corrispondono esattamente ai campi del Modello per la Comunicazione liquidazione IVA.  
+      
+<img width="" src="https://docs.eos-solutions.it/Images/ex018/description/IT-3EVS.png"><br>
+
+<br>
+     
+**Tab Stato**
+
+| **Campo** | **Descrizione** |
+| --- | --- |
+| Anno | inserire l'anno di riferimento. Il sistema compila in automatico la Data inizio e fine |
+| Tipo periodo | selezionare Mese o Trimestre |
+| Period No. | indicare il mese di riferimento (valori da 1 a 12) oppure il trimestre di riferimento (valori da 1 a 4). N.B. I contribuenti che eseguono liquidazioni trimestrali, ai sensi dellÂart. 7 del d.P.R. 14 ottobre 1999, n. 542, devono indicare il valore Ã5Ä con riferimento al quarto trimestre solare |
+| Nr. trimestre di liquidazione | campo compilato in automatico dal sistema |
+| Conferma | se attivo, in fase di esportazione del file Xml, il sistema imposta il valore Ã1Ä nel tag ÃFlagConfermaÄ 
+
+<br>
+     
+**Tab Generale**
+
+| **Campo** | **Descrizione** |
+| --- | --- |
+| VP1 Subforniture | indica che il contribuente si Š avvalso delle agevolazioni previste dallÂart. 74, comma 5. |
+| VP1 Eventi eccezionali | da barrare per i soggetti che, essendone legittimati, hanno fruito per il periodo di riferimento, agli effetti dellÂIVA, delle agevolazioni fiscali previste da particolari disposizioni normative emanate a seguito di calamit… naturali o di altri eventi eccezionali. |
+      
+<br>
+Premendo Calcola Importi i seguenti campi (tranne VP10, VP11 e VP12) verranno automaticamente popolati (calcolati per data effettuazione operazione).
+Sono comunque modificabili manualmente:
+<br>
+     
+       
+
+| **Campo** | **Descrizione** |
+| --- | --- |
+| VP2 Totale oper. attive. | ammontare complessivo delle operazioni attive (cessioni di beni e prestazioni di servizi) al netto dellÂIVA, effettuate nel periodo di riferimento. <br>Premendo sui tre puntini, Š possibile visualizzare i movimenti iva che concorrono al totale. |
+| VP3 Totale oper. passive | ammontare complessivo degli acquisti allÂinterno, intracomunitari e delle importazioni, relativi a beni e servizi risultanti dalle fatture e dalle bollette doganali di importazione, al netto dellÂIVA, annotate nel periodo di riferimento. <br>Premendo sui tre puntini, Š possibile visualizzare i movimenti iva che concorrono al totale. |
+| VP4 IVA esigibile / VP5 IVA detratta | corrispondono al Totale IVA delle fatture Acquisto e Vendita.<br>Premendo sui tre puntini, Š possibile visualizzare i movimenti iva che concorrono al totale. |
+| VP6 IVA dovuta	 | corrisponde alla differenza tra il campo VP4 e il campo VP5 se positiva |
+| VP6 IVA dovuta a cred. | 	corrisponde alla differenza tra il campo VP4 e il campo VP5 se negativa (IVA a credito per il periodo successivo) |
+| VP7 Debito periodo prec.	 | importo a debito non versato nel periodo precedente in quanto non superiore a 25,82 euro |
+| VP8 Credito periodo prec. | ammontare dellÂIVA a credito computata in detrazione, risultante dalle liquidazioni precedenti dello stesso anno solare |
+| VP9 Credito anno prec. | ammontare del credito IVA compensabile che viene portato in detrazione nella liquidazione del periodo, risultante dalla dichiarazione annuale dellÂanno precedente |
+| VP10 Versamenti auto UE | ammontare complessivo dei versamenti relativi allÂimposta dovuta per la prima cessione interna di autoveicoli |
+| VP 11 Crediti d'imposta | ammontare dei particolari crediti dÂimposta utilizzati nel periodo di riferimento a scomputo del versamento |
+| VP12 Inter.liq. trimestrali | ammontare degli interessi dovuti relativamente alla liquidazione del trimestre |
+| VP13 Acconto dovuto | indicare lÂammontare dellÂacconto dovuto, anche se non effettivamente versato. Il rigo deve essere compilato dai contribuenti obbligati al versamento dellÂacconto ai sensi dellÂart. 6 della legge 29 dicembre 1990, n. 405, e successive modificazioni. Qualora lÂammontare dellÂacconto risulti inferiore a euro 103,29, il versamento non deve essere effettuato e pertanto nel rigo non va indicato alcun importo. |
+| VP13 Metodo | La casella metodo deve essere compilata indicando il codice relativo al metodo utilizzato per la determinazione dellÂacconto: <br>"1" storico;<br> "2" previsionale;<br> "3" analitico - effettivo;<br>"4" soggetti operanti nei settori delle telecomunicazioni, somministrazione di acqua, energia elettrica, raccolta e smaltimento rifiuti, eccetera. |
+| VP14 IVA da versare | importo dellÂIVA da versare, o da trasferire allÂente o societ… controllante nel caso di ente o societ… che aderisce alla liquidazione dellÂIVA di gruppo |
+| VP14 IVA da versare a cred. | importo dellÂIVA a credito, o da trasferire allÂente o societ… controllante nel caso di ente o societ… che aderisce alla liquidazione dellÂIVA di gruppo
+      
+<br>
+
+**Dettaglio calcolo campi:**
+      
+<table>
+	<tr>
+		<td>I campi VP2 e VP3 corrispondono ai Totali imponibile delle fatt. Acquisto e Vendita.</td>
+	</tr>
+	<tr>
+		<td>I campi VP4 e VP5 corrispondono ai Totali IVA Acquisto e Vendita. Vengono calcolati dal sistema prendendo i dati dalla page Reparti/Gestione contabile/Contabilit… generale/Storico/Movimenti IVA.</td>
+	</tr>
+	<tr>
+		<td>Il campi VP7 - VP8 - VP9 - VP13 vengono popolati prendendo i dati dalla Lista dichiarazioni IVA periodica.</td>
+	</tr>
+	<tr>
+		<td>I campi VP10 - VP11 - VP12  non vengono calcolati in automatico dal sistema. Vanno inseriti manualmente</td>
+	</tr>
+	<tr>
+		<td>I campi VP14 vengono calcolati in base a queste formule:<br> "1" IVA da versare: (VP6 IVA dovuta + VP7 + VP12) Æ (VP6 IVA dovuta a cred. + VP8 + VP9 + VP10 + VP11 + VP13) <br> "2" IVA da versare a cred.: (VP6 IVA dovuta a cred. + VP8 + VP9 + VP10 + VP11 + VP13) Æ (VP6 IVA dovuta + VP7 + VP12)</td>
+	</tr>
+</table>
+     
+      
+<br>
+
+**Stampa/Salva**
+
+
+| **Azione** |**Descrizione**|
+| --- | --- | 
+| Salva XML |consente di creare e scaricare il file XML per verificarlo prima di inviare la Comunicazione
+| Salva PDF |permette di salvare la Comunicazione in formato PDF
+| Stampa |consente di stampare i soli dati numerici sui moduli prestampati cartacei
+     
+<br>
+Il template per la generazione del PDF Š gi… presente nell'app al momento dell'installazione. In caso di aggiornamenti, l'utente trover… automaticamente l'ultima versione.
+
+Esempio di stampa PDF:
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex018/description/EN-4EVS.png"><br>
+
+
+     
+
+
+
+
+
+
+
+
