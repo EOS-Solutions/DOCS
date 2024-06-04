@@ -1,0 +1,21 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Esegui una pianificazione MPS e MRP di tutti gli articoli</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Distribuisci i risultati della pianificazione in worksheets specifici</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Schedula il calcolo pianificazione dalla Job Queue</td>
+	</tr>
+</table>
+
+<br>
+
+# Manufacturing Planning (MPL) - SUMMARY
+Premere ALT + Q e digitare "MPL" per un elenco delle funzionalit… coinvolte:
+
+<img width="" src="https://docs.eos-solutions.it/Images/EX086-0/1ManufPlanning-ITA.png"><br>
