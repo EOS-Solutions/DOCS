@@ -1,0 +1,31 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HS3GOchHgwY" title="Purchase Request for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PMHaA2_6LL4" title="EOS Apps Demo: Purchase Request" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br><br>
+
+The Purchase Request App allows you to manage the business process related to requests for the purchase of goods / services. It allows to:
+
+-   Generate orders and quotes directly from the PRQ (Purchase Requests)
+-   Archive closed PRQs
+-   Group several requests into one
+-   Differentiate the PRQs by category
+
+ÿIt is possible to associate the Purchase Requests with an approval workflow in three ways:
+
+**BASE**
+
+allows you to change the purchase request's status manually
+
+**ADVANCED**
+
+allows the user to use the standard Business Central approval feature
+
+**ADDITIONAL**
+
+installs the DataSecurity App of Eos Solutions
+
+<a href="https://docs.eos-solutions.it/Images/PR000441-0/1Purchaserequest_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000441-0/1Purchaserequest_ENU.png"></a>
+<br>
