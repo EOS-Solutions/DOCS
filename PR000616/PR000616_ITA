@@ -1,0 +1,9 @@
+Un'**area di produzione** pu• essere di identificata come:
+
+* **Attrezzatura**
+
+* **Personale**
+
+Ci• permette di considerare questi due aspetti nei cicli di lavorazione e conseguentemente negli ordini di produzione. ß possibile utilizzare tali aree solo a scopo informativo, oppure considerarle nei movimenti di capacit…, in termini di tempi di setup e di lavorazione, **a cui Š possibile associare dei costi**. ß sufficiente attivare il flag corrispondente nella scheda Setup Manufacturing: 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000616-0/1ManufacturingBaseToolkit-ITA.png"><br>
