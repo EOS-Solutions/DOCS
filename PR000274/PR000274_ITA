@@ -1,0 +1,70 @@
+Le caratteristiche sono un dato fondamentale per lÂutilizzo del configuratore. Sono lÂ**unit… di partenza** di tutta la struttura di configurazione e concettualmente corrispondono alle **domande che devono essere fatte in fase di configurazione**. Vengono utilizzate per identificare le varianti o gli articoli creati dal configuratore.
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000274-0/Charac2_ITA.png"><br>
+
+Possono essere di due tipi:
+-   **Struttura:** caratteristiche che assumono un elenco definito di valori alfanumerici o numerici pre-codificati;
+-   **Misura:** caratteristiche che accettano solo valori numerici ad inserimento libero.
+
+
+Segue un dettaglio dei principali campi presenti nelle caratteristiche:
+
+| **Campo**                    | **Descrizione**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Codice |Codice caratteristica.|
+| Descrizione |Descrizione caratteristica.|
+| Lunghezza Massima |Dedicata a caratteristiche di tipo struttura. Impedisce che una caratteristica possa assumere valori superiori a quello indicato.|
+| Tipo Decodifica |Assume solo i valori Struttura e Misura: **Struttura**: caratteristiche che assumono un elenco definito di valori alfanumerici o numerici pre-codificati. **Misura**: caratteristiche che accettano solo valori numerici ad inserimento libero.|
+| Senza Valori |Consente di utilizzare una caratteristica di tipo struttura senza indicare un elenco predefinito di valori.|
+| Acronimo |Viene utilizzato nella composizione della descrizione dell'articolo prima dellÂeventuale codice o descrizione del valore della caratteristica. Esistono due modalit… per configurare la descrizione di un articolo: **1.** Secondo la definizione della regola: opzione pi— frequente per un maggiore controllo. **2.** Con una somma di caratteristiche: in mancanza di una regola con istruzioni per la compilazione della descrizione, il sistema compone la descrizione dell'articolo andando a leggere nelle caratteristiche quelle con il flag Usa codice e Usa descrizione.|
+| Usa descrizione |Se attivo inserisce la descrizione del valore caratteristica nella descrizione articolo.|
+| Usa codice |Se attivo inserisce il codice del valore caratteristica nella descrizione articolo.|
+| Master |Indica che i valori di una caratteristica possono essere utilizzati da altre caratteristiche.|
+| Connessione |Va indicato il valore di una caratteristica master. Utilizzare l'azione ®Allinea coincidenze¯ per aggiornare gli altri valori. Si consiglia la schedulazione della procedura perch‚ i tempi di esecuzione potrebbero essere lunghi.|
+| Tipo maggiorazione |Indica il tipo con cui viene inserita la riga di maggiorazione (non optional). I valori ammessi sono Conto C/G, Articolo, Risorsa, Cespite, Addebito (Articolo).|
+| Nr. maggiorazione |Indica il codice con cui viene inserita la riga di maggiorazione (non optional).|
+| Disabilita copia caratteristiche collegate ai prezzi |Utilizzato per le caratteristiche master e quelle  con connessione. Attivando questo campo, la funzione Allinea coincidenze non valorizza i campi "Codice caratteristica collegata" e "Valore caratteristica collegata" nelle caratteristiche connesse. In presenza di molteplici caratteristiche che insistono sulla stessa caratteristica connessa Š molto utile.|
+| Codice dimensione |Utilizzato solo se il configuratore crea articoli. Se questo campo contiene un valore, quella dimensione viene portata sull'articolo creato.|
+| Codice valore dimensione |Utilizzato solo se il configuratore crea articoli. Se questo campo contiene un valore, quel valore dimensione viene portata sull'articolo creato.|
+| Registrazione valore |Determina la tipologia di gestione della dimensione.|
+| Passo |Vale solo per le caratteristiche di tipo misura e viene utilizzato nella configurazione batch. Determina l'incremento che deve essere fatto per le caratteristiche di tipo misura.|
+| Formato numerico |Indica l'espressione che in AL viene utilizzata per formattare il codice (ad esempio utilizzando Precision e Standard Format). Viene usata solo per le relazioni di tipo a livello superiore per formattare in modo custom caratteristiche di tipo struttura calcolate con formula.|
+| ID Attributo |Indica lÂID Attributo. Utilizzato per la mappatura fra caratteristiche e attributi.|
+| Valore Attributo |Indica il Valore Attributo. Utilizzato per la mappatura fra caratteristiche e attributi.|
+
+<br>
+
+Segue un dettaglio dei principali campi presenti nei valori caratteristiche:
+
+| **Campo**                    | **Descrizione**                                                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Codice |Codice valore caratteristica.|
+| Descrizione |Descrizione valore caratteristica.|
+| Acronimo |Viene sostituito nella descrizione articolo alla descrizione del valore della caratteristica e nel codice dellÂarticolo al posto del codice della caratteristica.|
+| Usa descrizione |Se attivo inserisce la descrizione del valore caratteristica nella descrizione articolo. Viene ereditato dalla caratteristica e pu• essere disabilitato per singolo valore.|
+| Usa codice |Se attivo inserisce il codice del valore caratteristica nella descrizione articolo. Viene ereditato dalla caratteristica e pu• essere disabilitato per singolo valore.|
+| Codice caratteristica collegata |Utilizzato assieme al Valore caratteristica collegata, se valorizzato, in configurazione viene effettuato un trasferimento a valore 1:1 su questa caratteristica e non Š necessario scrivere una relazione di tipo trasferimento a valore.|
+| Valore caratteristica collegata |Utilizzato assieme al Codice caratteristica collegata, se valorizzato, in configurazione viene effettuato un trasferimento a valore 1:1 su questa caratteristica e non Š necessario scrivere una relazione di tipo trasferimento a valore.|
+| Codice caratteristica regole neutri/ammessi |Utilizzato assieme al Valore caratteristica regole neutri/ammessi. Se valorizzato, in presenza di una regola dei neutri, viene utilizzato al posto della caratteristica stessa per ricercare il codice puntuale.|
+| Valore caratteristica regole neutri/ammessi |Utilizzato assieme al Codice caratteristica regole neutri/ammessi. Se valorizzato, in presenza di una regola dei neutri, viene utilizzato al posto del valore della caratteristica stessa per ricercare il codice puntuale.|
+| Nr articolo di acquisto |Definisce l'articolo puntuale, tendenzialmente di acquisto, che deve essere sostituito all'articolo ®Da neutro a puntuale¯ nella DB di produzione DB. Si utilizza quando il rapporto fra la caratteristica e lÂarticolo puntuale Š 1:1.|
+| Abilita ciclo di produzione |Se attivo, identifica che il valore della caratteristica condiziona la riga del ciclo configurato. Attiva le logiche dei campi: Tipo origine, Nr. Origine, Fattore tempo lavorazione, Cod. task standard.|
+| Tipo origine |La riga di ciclo pu• essere gestita come Area di produzione o Centro di lavoro.|
+| Nr. origine |Codice area di produzione o Centro di lavoro da utilizzare nel ciclo in funzione al Tipo Origine.|
+| Fattore tempo lavorazione |Fattore utilizzato per il calcolo del tempo di lavorazione della riga ciclo.|
+| Cod. task standard |Codice task standard da utilizzare nella riga ciclo.|
+| Nr. Articolo optional |Definisce l'articolo optional associato al valore caratteristica. Il Nr. Articolo optional e la relativa quantit… possono essere gestiti nella tabella Specifiche Articolo Optional quando ho bisogno di specificare optional diversi per articoli neutri diversi.|
+| Quantit… articolo optional |Moltiplicatore utilizzato per il calcolo della quantit… di articolo optional.|
+| Bloccato |Se attivo, il valore caratteristica non Š pi— selezionabile in configurazione.|
+| Codice dimensione |Utilizzato solo se il configuratore crea articoli. Se questo campo contiene un valore, quella dimensione viene portata sull'articolo creato.|
+| Codice valore dimensione |Utilizzato solo se il configuratore crea articoli. Se questo campo contiene un valore, quel valore dimensione viene portata sull'articolo creato.|
+| Registrazione valore |Determina la tipologia di gestione della dimensione.|
+| ID Attributo |Indica lÂID Attributo. Utilizzato per la mappatura fra valori caratteristiche e attributi.|
+| Valore Attributo |Indica il Valore Attributo. Utilizzato per la mappatura fra valori caratteristiche e attributi.
+| Codice ordinamento |Utilizzato per definire la priorit… del valore. In presenza di due caratteristiche che fanno scattare la compilazione diretta di un'altra caratteristica, il sistema prende sempre quella con l'ordinamento maggiore.|
+
+<br>
+<br>
+ 
