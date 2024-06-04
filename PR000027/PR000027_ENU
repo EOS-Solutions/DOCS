@@ -1,0 +1,9 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lf-jzB6HFlc" title="Close Documents Without Invoicing for Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+The Eos SolutionsÂ Close Documents Without Invoicing (CDW) app allows you to:
+
+-   Generate system Shipments and Sales Returns, Receipts and Purchase Return Shipments that do not require the issuance of the related Invoice or Credit Note document
+-   Generate sales and purchase documents that, even in the presence of ÃItemÄ Type lines, do not move the stock and the value of the item itself
+-   Generate sales documents that do not feed the various tables related to ÃLedger entryÄ (non-administrative documents).
