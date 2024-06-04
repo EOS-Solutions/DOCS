@@ -1,0 +1,28 @@
+In the Released Production Orders the **Temporarily terminated** option, allows you to reset the requirements within the components and the scheduled loads of the production orders.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000472-0/19ManufacturingBaseToolkit_ENU.png"><br>
+
+From Line->Components we can view the Remaining Quantity which is zero:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000472-0/20ManufacturingBaseToolkit_ENU.png"><br>
+
+Consequently, it is no longer possible to load further production outputs, but it will be possible to post capacity entries (man and machine times).
+
+By reactivating the option Temporarily Terminated, the Remaining Quantity is restored.
+
+**Item card**
+
+The "Qty in production order" is also updated in the item card. In fact, since the "Closed Temporarily" option is active, the residual Qty is 0.
+
+With the option disabled on the Production Order for the Item "LS-100":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000472-0/21ManufacturingBaseToolkit_ENU.png"><br>
+
+**With the option enabled**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000472-0/22ManufacturingBaseToolkit_ENU.png"><br>
+
+<br>
+<br>
+ 
+ 
