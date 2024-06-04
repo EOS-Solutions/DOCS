@@ -1,0 +1,18 @@
+Per ogni gruppo, che corrisponder… ad una spedizione registrata CWS, Š possibile visualizzare le informazioni sulla spedizione selezionando lÂazione ÃInfo spedizioneÄ
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000503-0/40CombinedWarehouseShipment_ITA.png">
+
+<br><br>
+
+Viene mostrato il dettaglio dei dati, spedizioniere, metodo di spedizione, pesi, etc..
+
+Cliccando sullÂazione ÃCopia info dalle righeÄ viene eseguito il calcolo dei valori di peso netto, peso lordo, volume e nr. Colli sulla base dei valori presenti nelle righe documento di origine
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000503-0/41CombinedWarehouseShipment_ITA.png">
+
+<br><br>
+
+**NB**<br>
+Le informazioni in grassetto sono quelle modificate, le altre sono ereditate dal documento di partenza.
+<br><br>
+Al termine registriamo.
