@@ -1,0 +1,13 @@
+ Si pu• stabilire, ad esempio, che un record passi da "Nuovo" a "Certificato" e infine a "Obsoleto".
+
+ E' necessario definire:
+ 
+*  Gli Stati
+ 
+*  I Cambi di Stato
+ 
+*  I Permessi
+ 
+*  Le Funzioni da applicare ai record di tabella (es. "Block customer
+ 
+*  I campi obbligatori
