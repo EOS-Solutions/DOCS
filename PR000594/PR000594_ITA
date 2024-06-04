@@ -1,0 +1,14 @@
+I cluster sono strutture composte da Testata e righe.
+
+I cluster hanno un dettaglio filtro che una volta Certificato andr… a generare il dettaglio delle entit… di base di questo cluster. 
+
+EÂ possibile includere o eslcudere i codici utilizzando il tipo filtro ÃIncudiÄ ed ÃescludiÄ.
+
+NellÂesempio di sotto il Cluster CLU0000001 Š formato da clienti che hanno da codice centrale COOP ad esclusione per un determinato cliente o campo dellÂanagrafica. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000594-0/Immagine7.png"><br>
+
+
+Dopo essere stato Certificato, vi Š la possibilit… di visualizzare lÂesplosione dei clienti attraverso la funzionalit… ÃSottomascera dettagli cluster clientiÄ.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000594-0/Immagine8.png"><br>
