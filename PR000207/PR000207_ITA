@@ -1,0 +1,11 @@
+In Materiali CONAI inserire l'elenco dei materiali gestiti (il consorzio gestisce acciaio, alluminio, carta, legno, plastica e vetro).<br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000207-0/6CONAI.png"><br>
+
+<br><br>
+
+
+| **Campo**                              | **Descrizione**                                                                                                                                                                                                                                                                                                                                  |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tipo riga acquisto                     | - **Addebito (Articolo)**: se si vuole che il costo dell'imballo venga caricato sull'articolo <br>- **Conto C/G:** se si decide di movimentare una riga di conto per gli importi CONAI                                                                                                                                                                   |
+| Tipo riga vendita                      | - **Addebito (Articolo)**: se si vuole che il costo dell'imballo venga caricato sull'articolo <br> - **Conto C/G**: se si decide di movimentare una riga di conto per gli importi CONAI  <br>- **Risorsa**: in questo caso la voce andr… su un conto specifico per il CONAI                                                                                     |
+| Conto C/G acquisto/vendita alternativo | Se il <ins>Tipo riga</ins> acquisto/vendita Š impostato come <ins>addebito</ins>, nel calcolo degli addebiti spesso Š necessario che il motore di calcolo gestisca degli arrotondamenti particolari, per importi molto piccoli. Se necessario quindi si pu• aggiungere una riga per l'importo esiguo che rimane, utilizzando il conto alternativo acquisto o vendita.  |
