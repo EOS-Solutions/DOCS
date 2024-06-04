@@ -1,0 +1,27 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0Pzl8el1QOw" title="Compress Journal Entries per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+Aprire le Registrazioni CoGe e scegliere un giornale
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000051-0/1CompressJournalLine-ITA.png"><br>
+
+Premendo Azioni->Raggruppa Movimenti Selezionati il sistema aprir… una finestra in cui sar… possibile scegliere alcuni criteri per raggruppare le righe del batch in esame. 
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000051-0/2CompressJournalLine-ITA.png"><br>
+
+Un raggruppamento di base viene comunque effettuato da Business Central per alcuni campi:
+
+| Raggruppamento (massimo) di default per i seguenti campi |
+| --- |
+| Document Type |
+| Document No |
+| Account Type |
+| Account No. |
+| Bal. Account Type |
+| Bal Account No. |
+| Amount (se positivo o negativo) |
+| Applies-to Doc. Type |
+| Applies-to Doc. No. |
+| Applies-to ID |
+| Applies-to Entry |
