@@ -1,0 +1,6 @@
+In the Tariff Numbers page you can set the tariff numbers for "Services" and "Goods" to be associated with the item card, which will be automatically used in case of purchase or sale of a product.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000356-0/6AdvIntrastatForItaly-en.png"><br>
+
+In the coding we will insert in the "No." field the Tariff No. and the related description, the Tariff Type (Goods/Services) and, if the customs tariff requires it, the Suppl. unit of measure and the related flag.
+The field ÃSupplementary Unit of MeasureÄ is used to manage the tariff numbers with a different unit of measure from that specified in the document.
