@@ -1,0 +1,7 @@
+Una volta registrata la liquidazione Iva, lÂammontare di plafond ancora residuo verr… riportato automaticamente nel mese successivo. Per stampare il Plafond IVA scegliere la relativa opzione in Calc. e reg liquidazione IVA:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000625-0/27VatManagement.png"><br>
+
+| **Nota**                                                                                                                                                                                                                                                |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| A partire da BC17, se la **"Data inizio" viene modificata** rispetto a quella proposta dal sistema, per ragioni tecniche, l'**Anteprima potrebbe non esporre le date corrette**. Suggeriamo quindi di **eseguire sempre la Stampa o la Stampa in pdf.** |
