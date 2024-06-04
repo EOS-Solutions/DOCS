@@ -1,0 +1,97 @@
+# Configurazione della connessione al File System
+
+Una volta deciso quale tipo di archiviazione si desidera utilizzare e configurato (vedere la sezione di aiuto specifica per ogni tipo di archiviazione) digitare ALT+Q (ricerca) e digitare "Configurazione  servizio (EAL)"
+
+| **Campo**                 | **Descrizione**                                                                            |
+|---------------------------|-----------------------------------------------------------------------------|
+| Codice                    | Scegli un codice significativo, ad es. **DCS_CUSAGR** |
+| Tipo                      | Seleziona il tipo di archiviazione che intendi utilizzare (le opzioni evidenziate in arancione sono adatte) |
+| URI Endpoint              | Inserisci l'URI https del servizio di archiviazione|
+| Dettagli della configurazione | Inserisci tutte le chiavi API - segreto richieste per questo tipo di archiviazione|
+
+<br><br>
+
+<br><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/1_DCSFS_Setup.png"><br>
+
+**ß necessario un amministratore per accedere e concedere l'autorizzazione all'app DocSolutions in Azure**
+
+<br><br>
+
+# Setup Tabelle DocSolutions (DCS)
+
+Cercare "Setup tabelle DocSolutions (DCS)", e caricare le impostazioni di default Azioni -> Carica Default:
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_LoadDefaults.png"><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+Il sistema ci offre i predefiniti da caricare, scegli "DocSolution per File System".
+
+<br>
+
+**Configurazione delle librerie**
+
+Da Modifica, apri la Libreria dei documenti che desideri abilitare, ad es. "Cliente":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/2_DCSFS_DocLibrary.png"><br>
+
+| **Campo**                 | **Descrizione**                                                                            |
+|---------------------------|-----------------------------------------------------------------------------|
+| Tipo di Filesystem        | Scegli lo stesso tipo della configurazione precedente |
+| Codice Configurazione Servizio | Seleziona lo stesso codice che hai definito in precedenza, ad es. **DCS_CUSAGR** |
+| Codice Modello Cartella   | Seleziona quello predefinito esistente|
+| Codice Modello Nome File  | Seleziona quello predefinito esistente|
+
+<br>
+<br>
+<br>
+
+<br><br>
+**Modello di cartella**
+
+Dal menu a tendina sul campo Codice Template Cartella, scegli "Seleziona dall'elenco completo" e da Gestisci -> Modifica puoi visualizzare/modificare il percorso di archiviazione dei documenti:
+
+| **Campo**         | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   | **Generale**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Codice            | Codice del modello di nome file                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Tipo              | specifica se il modello verr… utilizzato per Cartelle File                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Cartella Radice   | percorso dove verranno salvati i file. Nell'esempio saranno posizionati nella sottocartella DocSolutions contenuta nella cartella Documenti                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Abilitato         | puoi creare la scheda di configurazione e abilitarla o disabilitarla secondo necessit…                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                   |**Composizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Tipo              | Indica il Tipo di Linea. Pu• essere: Testo, Campo, Chiave Primaria, Serie No., Nome Tabella, No. Tabella, Nome Originale Esempio: <img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br><br> <br><br> Se scrivi:<br><img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br> i file caricati verranno salvati in Documenti \\ DocSolutions, in una ulteriore cartella "Cliente", in una ulteriore sottocartella "No. Cliente". |
+||||
+
+Premendo Test (Lettura/Scrittura) controlliamo che le connessioni funzionino:
+
+<br><br>
+**Modello di nome file**
+
+Allo stesso modo, dal menu a tendina sul campo Codice Modello Nome File, selezioniamo "Seleziona dall'elenco completo" e da Gestisci -> Modifica possiamo visualizzare/modificare il nome da assegnare ai documenti:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/3_DCSFS_FolderPattern.png"><br>
+
+<br><br>
+**Permessi**
+
+Dalla scheda Libreria -> Permessi definiamo quale Gruppo Utenti, Utente o set di Permessi pu• leggere / scrivere file in una specifica posizione: <img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PermissionSet.png"><br>
+
+<br><br>
+**Mappatura**
+Questa funzionalit… non Š disponibile per DocSolutions per File System. Per la gestione dei metadati valutare Docsolutions per Sharepoint
+
+**Tipo gestione conflitti**
+La funzionalit… che determina come trattare i files esistenti non Š disponibile per il file system, se un file esiste gi… viene creato un nuovo file con un suffisso incrementale tra parentesi (Es File, File(1), File(2). Se si desidera utilizzare funzionalit… avanzate di versioning valutare l'adozione di Sharepoint.
