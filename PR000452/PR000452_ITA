@@ -1,0 +1,17 @@
+1.  Nel caso di utilizzo dello sconto fattura sia nel ciclo attivo, che passivo Š obbligatorio attivare il campo "**Calcola sconto fatt.**" presente nei Setup contabilit… clienti e Setup contabilit… fornitori.
+2.  LÂApp **DUM non Š compatibile con la gestione dei Prepayment**. Non sono stati fatti test in merito. Durante gli ultimi sviluppi, per sistemare il calcolo degli sconti, sono state apportate alcune modifiche agganciandosi ad eventi standard, per i quali non era possibile risalire alle modalit… di gestione del prepayment.
+3.  La **gestione delle statistiche** relative ai documenti di tipo Ordine (Vendita e Acquisto) visualizza dati non correttamente ricalcolati relativamente ai tab Fatturazione e Spedizione:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000452-0/KL1_ITA.png"><br>
+
+Lo scenario con cui si verifica Š il seguente:
+
+-   app Dual Unit of Measure attiva
+-   app Detailed Document Discounts attiva
+-   utilizzo di articoli con Metodo di calcolo prezzo di vendita = Unit… di misura secondaria
+-   spedizione / fatturazione con Quantit… parziali
+
+<br>
+<br>
+ 
+ 
