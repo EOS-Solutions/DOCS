@@ -1,0 +1,40 @@
+In Route Plan List (DRP) you can enter the routes
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/12DeliveryRoutePlanner.png"><br><br>
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/11DeliveryRoutePlanner.png"><br><br>
+
+
+For each Card it is possible to define a status: **draft, confirmed, closed**.
+<br>
+
+The header fields are a filter for selecting the documents to be attached to the delivery round.
+
+| **Field** | **Description** |
+| --- | --- |
+| Net Weight / Gross Weight /No. of Pallet Places |automatically suggested by the system based on the setup |
+| Route Distance / Duration |calculated automatically based on the geolocation service used |
+
+<br><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/13DeliveryRoutePlanner.png"><br>
+
+In the line functions you can renumber the sequence set, move up / down the selected line and add documents (sales, purchase, transfer).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/14DeliveryRoutePlanner.png"><br><br>
+
+On the header, by pressing **Actions**:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/15DeliveryRoutePlanner.png"><br>
+
+| **Action** | **Description** |
+| --- | --- |
+| Recalculate Values |recalculate weights and pallets (depending on the setup) |
+| Recalculate Route |recalculates the duration and distance traveled |
+| Open Route Map |opens the map with the calculated route |
+| Optimize Route |queries the enabled MAPS service and reorders the lines |
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000349-0/16DeliveryRoutePlanner.png"><br>
