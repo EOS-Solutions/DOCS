@@ -1,0 +1,19 @@
+**Assegnare all'articolo il numero seriale e il numero di lotto**
+
+Innanzitutto va assegnato all'articolo un numero di serie e di lotto. Vediamo ad esempio l'articolo 1896-S "Scrivania Atene". Apriamo la scheda e compiliamo i campi del tab Tracciabilit… articolo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000103-0/1ITInvSerLot (1).png"><br>
+
+**Reg. Ricorrenti articoli**
+
+Vediamo un esempio di registrazione per l'articolo 1896-S:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000103-0/2ITInvSerLot.png"><br>
+
+Da Riga-\>Righe tracciabilit… articolo impostiamo il numero seriale / lotto e la quantit… come nell'esempio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000103-0/3ITInvSerLot.png"><br>
+
+Ora Š possibile registrare le righe sul Giornale di Registrazioni magazzino:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000103-0/4ITInvSerLot.png"><br>
