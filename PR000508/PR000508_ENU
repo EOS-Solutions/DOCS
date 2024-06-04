@@ -1,0 +1,16 @@
+Here you can set the parameters to be used to carry out the checks. From New you can enter a new parameter.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000508-0/42ProductQualityAssurance-ENU.png"><br>
+
+* **Measurable**: parameters that require measurable detection.
+* **Attributes**: parameters that do not require measurable detection.
+
+	Attributes can have different parameter types:
+
+	- Actual value: deprecated
+
+	- Parameter attribute code: the analysis can give different and tabular results (e.g. yellow, green, red colour...)
+
+	- Attribute Fulfilled: the analysis can be positive or negative
+
+It is possible to define the unit of measurement in Unit of Measure Code and possibly the Measure Method.
