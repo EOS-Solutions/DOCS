@@ -1,0 +1,7 @@
+The CONAI packaging must be linked to the combination "Item / Variant / Unit of Measure" so as to be able to automatically suggest the weight in the sales and purchase invoices:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000210-0/11CONAI(1).png"><br>
+
+By clicking on the assist-edit of the **Conai Package Code** field it is possible to insert a 'CONAI Package' with the same article code.
+
+On the CONAI Item Packaging page it is possible to choose if you want the packaging to be searched on the Production BOM or on the Assembly BOM (in the case, for example, of an item whose packaging is not in the CONAI packaging table, but is in the Production BOM or in the Assembly BOM of that item).
