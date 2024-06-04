@@ -1,0 +1,36 @@
+To create a handling unit, proceed by creating a New code on the Handling Units (HUM) page:
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000423-0/4HandlingUnitsManagement.png">
+<br><br>
+
+The system asks you to choose the type of unit you want to create (Load Carrier or Package).
+
+<br>
+
+In the form relating to the handling unit, fill in the required fields:
+
+<br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000423-0/7HandlingUnitsManagement.png">
+<br><br><br>
+
+
+
+
+| **Field** | **Description** |
+| --- | --- |
+| Nr. |The system automatically assigns the numerator (with progressive number) that was chosen for the Type of handling unit |
+| Type | The Type is automatically assigned based on what we chose to create |
+| HU Type Code | Unit type code (automatically assigned)|
+| Packaging Material No. | Insert the packaging material code of the handling unit.  It is possible to code within the system the materials of which pallets, boxes, etc. are made on the Packaging Materials (HUM) page:<br><img width="" src="https://docs.eos-solutions.it/Images/PR000423-0/5HandlingUnitsManagement.png"><br>It is possible to specify if it is reusable or not (Reusable / One-Way) for the empties  management, as well as the item to which to link the material. You can also define for which type of handling unit the material is used and in which unit of measurement |
+| Parent Handling Unit No. | Insert the parent handling unit to create a hierarchical packaging structure |
+| Location Code | Location code where the content of the handling unit is in place |
+| Bin Code | Bin code where the content of the handling unit is in place |
+| Blocked | Sets the handling unit as blocked. A blocked handling unit can not be moved |
+| Status | Specifies the value of the "Status" field |
+
+<br>
+
+in the lines of the tab "Content" you can see the content of the handling unit.
