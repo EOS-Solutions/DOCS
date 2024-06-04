@@ -1,0 +1,36 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Kh1TRvGuYo" title="Data Security for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
+Data security App helps you protecting important information from accidental modification. Data Security is the simplest way to add Workflows to master data or document approvals. This app helps you filtering record based on admin defined status, for instance you can easily filter customer or order not approved or in obsolete status.
+
+Data Security App for Microsoft Dynamics Business Central allows the creation of coding workflow of personal data and documents
+
+It ensures the security and protection of data through functions that enable to:
+
+Å Block records not completely qualified (e.g. Customer without VAT No)
+
+Å Manage user or group policy and permit to change record status only to granted people
+
+Å Send email when a record changes status; include context info
+
+Å Create different approval path for a specific entity for example:Order quick approval or detailed approvals
+
+-   Managing different status associated to an entity
+-   Regulate status change
+-   Send email associated to status change
+
+Entity tables can be:
+
+-   Personal data
+-   Documents (Purchase, sales, manufacturing)
+-   Entries
+
+To each entity element is possibile to associate more status, starting from an initial status and arriving at a final status, passing through intermediate ones. To each status is possibile to associate a colour and different permissions:
+<image>
+
+-   Modify/Delete
+-   Release/Registration/Print (for sale/purchase documents)
+
+It is also possibile to define status change paths.
+<image>
