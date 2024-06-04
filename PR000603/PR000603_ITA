@@ -1,0 +1,8 @@
+EÂ possibile gestire gli assortimenti legati a condizioni commerciali. La promozione non scatta a livello di singola riga, ma sul totale del documento. 
+
+Il sistema effettua un controllo affinchŠ tutte le condizioni a livello di assortimento siano rispettate e viene applicato quindi uno sconto.
+
+Occorre impostare il campo ÃCodice AssortimentoÄ allÂinterno del tab ÃDocumentiÄ nella tabella Sconto Vendita per un determinato cliente o gruppo cliente in relazione ai parametri impostanti nel tab ÃClientiÄ.
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000603-0/Immagine16.png"><br>
