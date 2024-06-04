@@ -1,0 +1,18 @@
+Il menu in alto a sx consente di accedere alle diverse pagine: Š possibile aprire la pagina in cui cambiare la risorsa (macchina) su cui si sta lavorando. Se l'utente Š abilitato (da setup) pu• creare squadre di lavoro. Si possono registrare ore indirette oppure ottenere report di PowerBI sulle performance della macchina.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000462-0/4PowerMES_ITA.jpg"><br>
+
+| Azione                                                     | Descrizione                                                                                                                                        |
+|------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cambia risorsa                                             | Consente di tornare all'Area di Lavoro in cui Š possibile cambiare il Centro di Lavoro                                                             |
+| Setup squadre                                              | Se abilitati, si possono gestire / creare squadre di lavoro (un flag definisce se l'utente Š un caposquadra) <img width="" src="https://docs.eos-solutions.it/Images/PR000462-0/13PowerMES_ITA.jpg"><br>|
+| Registra ore indirette                                     | Si possono regsistrare ore indirette <img width="" src="https://docs.eos-solutions.it/Images/PR000462-0/14PowerMES_ITA.jpg"><br>|
+| Report Power BI                                            | Una dashboard mostra i report di POwer BI che mostrano le performance di una specifica macchina                                                    |
+| Chiama resp. prod (tel) / Chiama resp. prod. (Teams)       | Si pu• raggiungere telefonicamente o via Teams il responsabile della produzione, ad esempio in caso di problemi sulla macchina                     |
+| Chiama resp. qualit… (tel.) / Chiama resp. qualit… (Teams) | Si pu• raggiungere telefonicamente o via Teams il responsabile qualit…, ad esempio in caso di un problema ricorrente sulla qualit… di alcuni pezzi |
+| Chiama resp. manut. (tel.) / Chiama resp. manut. (Teams)   | Si pu• raggiungere telefonicamente o via Teams il responsabile della manutenzione, ad esempio in caso di guasto della macchina                     |
+
+<br>
+<br>
+ 
+ 
