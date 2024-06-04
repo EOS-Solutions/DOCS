@@ -1,0 +1,71 @@
+In order to create an inspection open a Purchase Order and from Actions->Product Quality Assurance->Create Inspection Order.
+
+If you want to carry out a test on the items reported in the lines: from Lines->Product Quality Assurance->Create Inspection Order (in this case the quantity of items to be tested is automatically populated by the system).
+
+**Tab "General"**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000524-0/16ProductQualityAssurance-ENU.png"><br>
+
+<br>
+
+| Field | Description |
+| --- | --- |
+| No. | No. series of inspection orders |
+| Inspection Type | it shows the inspection type (e.g. "purchase order" if we create the inspection order from the purchase order) |
+| Inspection Plan No. | it is the inspection plan on which this inspection order is based |
+| Lot No. / Serial No. | The system shows the lot or serial number of the component/item under inspection. Depending on the setup it is possible to create an inspection order for every lot /series of the receipt/production. |
+| **INSPECTION RESULT** |     |
+| Inspection Result Code | the Inspection Result Code changes automatically according to the actions performed by the user on the lines.  <br>See Setup. If one of the order lines exceed from the minimum / maximum values set, the system allows to create a Non-Compliance. |
+| Inspection Result | It's the PQA **result**. Options:<br><br>"Released": the test has been positive<br><br>"Concession": the outcome was not entirely positive, but the test was passed .<br><br>"Blocked": negative. Test failed |
+| **RESULT** |     |
+| **Total** | the fields (**Quantity and Sample**) are entered automatically by the system if the inspection order is genereted from the lines' document. Otherwise the fields are blank. <br> * Quantity: quantity **of the loaded or producted order** (receipt line, production order, etc.) <br> * Sample: quantity **used for spot checks**. It depends on the associated sampling plan|
+| **Compliance** | * Compliance Quantity: total quantity which is compliant <br> * Sample Compliance Quantity: quantity of the sample which is compliant (number of pieces that are in accordance with results) <br> * Blocked Quantity:ÿ total quantity which is non compliant (this field is populated by the user after performing the test) <br> * Sample Blocked Quantity: quantity of the sample which is non compliant (this field is populated by the user after performing the test) |
+
+<br>
+
+**Tab "Lines"**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000524-0/17ProductQualityAssurance-ENU.png"><br>
+
+<br>
+
+| Field | Description |
+| --- | --- |
+| Parameter No. / Description | Parameters considered by the inspection plan selected on the General tab |
+| Findings | Test result for parameters defined as attributes |
+| Minimal / Maximal Value | Range of values in which the results must fall |
+| Expected Value | Expected result for the parameter considered |
+| No. of Results | Returns the number of results that have been obtained for the test line |
+| Inspection Device No. | Device used to carry out the measurement |
+| No. of Failures | Shows how many results are out of the acceptable range |
+| Max/Min/Avg Actual Value | The system automatically calculates the minimum, maximum and average values, regardless of errors |
+| Last Actual Value | Inserted by the user after the inspection. If the value is out of the range min / max, the system will ask whether to create a non-compliance. |
+
+<br>
+
+In the Lines tab, by clicking on Line it is possible to enter:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000524-0/18ProductQualityAssurance-ENU.png"><br>
+
+* Results: here you can enter the results and report any errors
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000524-0/19ProductQualityAssurance-ENU.png"><br>
+
+* Comments: to place line comments
+
+On the Inspection Order card:
+
+| Action | Description |
+| --- | --- |
+| Actions->Functions->Confirm Temporary Order | Once inserted the quantity that you want to control, it is possible to make the check active. By doing so the amount that you are checking will be moved in PQA control and will no longer be possible to modify the defined parameters in the Inspection Order. |
+| Actions->Functions->Create Follow-up Inspection | It allows to perform additional checks only on non-compliant items |
+| Actions->Functions->Create Non-Compliance | It allows to create a non-compliance that refers to the Inspection Order that has generated it (to go back to the Inspection Order: Navigate->Order->Inspection Order) |
+| Actions->Print | It allows to print the Order information (Report). |
+
+<br>
+
+**Tab "Reference"**
+
+The tab "Reference" shows all the data relating to the receipt / production order that has generated the inspection order.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000524-0/20ProductQualityAssurance-ENU.png"><br>
