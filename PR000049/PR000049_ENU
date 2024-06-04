@@ -1,0 +1,22 @@
+The Eos Solutions Inventory Register app (IVP) allows you to print the Inventory Register.
+
+The fiscal requires the inventory register for stock accounts that exceed certain limits of revenues and inventories.
+
+In all other cases, the stock accounts is an optional writing. The stock Journal aims to detect the incoming and outcoming of goods within the warehouse: it is therefore a chronological register in which are recorded, in order of date, all inputs and outputs of goods from the warehouse.
+
+For every entry is reported:
+
+ Å Code and description of the good;
+
+Å Posting and Document Date;
+
+Å Location code;
+
+Å Document number;
+
+Å Description of the operation;
+
+Å Quantity;  
+
+Å Unit of measure. 
+
