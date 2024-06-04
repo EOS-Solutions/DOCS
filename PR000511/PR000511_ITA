@@ -1,0 +1,5 @@
+Nella pagina √Dimensioni di default" del singolo Conto C/G ä presente il flag √Forza stesso valore dimensioneƒ: se impostato a Sç, all'atto della registrazione scrittura/documento, il sistema forza il valore della dimensione presente nel campo "Codice valore dimensioni". Questa gestione ä indispensabile per poter impostare un valore dimensionale sulle transazioni relative a quei conti alimentati automaticamente dal sistema in fase di posting (ad es.: utili/perdite su cambi, plusvalenze/minusvalenze da alienazione cespiti, etc.).
+
+ﬂ inoltre possibile utilizzare questa impostazione nel caso in cui non si associno valori dimensionali alle anagrafiche (es.: Articoli di acquisto), ma si voglia appunto forzare un valore dimensionale nella transazione COGE (es. Materie prime comuni).
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000511-0/DMT1.bmp"><br>
