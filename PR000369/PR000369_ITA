@@ -1,0 +1,13 @@
+Gli Ordini Acquisto Programmati sono noti anche come Contratti Fornitore.
+
+ß possibile integrarli nel risultato della pianificazione, quando si converte il suggerimento di pianificazione in un ordine fornitore, i riferimenti al contratto vengono trasferiti anche all'ordine fornitore.
+
+Negli Ordini Acquisto Programmati Š possibile inserire le seguenti informazioni:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000369-0/9ManufPlanning-ITA.png"><br>
+
+**Data scadenza**: data fino alla quale il contratto Š valido
+
+**Nr. contratto**: numero contratto tra azienda e fornitore
+
+**Status contratto**: solo i contratti in stato "Attivo" sono considerati validi ai fini della pianificazione
