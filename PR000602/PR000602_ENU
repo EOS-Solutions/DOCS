@@ -1,0 +1,22 @@
+Product Quality Assurance (PQA) app allows to print:
+
+| Report | Description |
+| --- | --- |
+| Inspection Device List (PQA) | it shows the inspection devices list |
+| Inspection Plan (PQA) | Shows the data in each inspection plan |
+| Inspection Order | Shows the data in each inspection order |
+
+<br>
+
+The following two reports concern the vendor evaluation:
+
+| Report | Description |
+| --- | --- |
+| Calculate Vendor Rating (PQA) | It attributes a score to vendors considering Date, Certified Vendor and Quality. |
+| Vendor Rating (PQA) | Calculate the specific score for the vendor |
+
+<br>
+
+| Procedure |
+| --- |
+| **First** you need to make the system perform the **Calculate Vendor Rating (PQA)** report and **afterwords** you can run the **Vendor Rating (PQA)** report |
