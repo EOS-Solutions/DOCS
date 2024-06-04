@@ -1,0 +1,23 @@
+| **CODE**          | **DESCRIPTION**                |
+|-------------------|--------------------------------|
+| BLOCK_CUSTOMER    | Block Customer                 |
+| BLOCK_GLACCOUNT   | Block G/L Account              |
+| BLOCK_ITEM        | Block Item                     |
+| BLOCK_JOB         | Block Job                      |
+| BLOCK_VENDOR      | Block Vendor                   |
+| CHECKDIM_CUSTOMER | Check Customer Dimensions      |
+| CHECKDIM_ITEM     | Check Item Dimensions          |
+| CHECKDIM_JOB      | Check Job Dimensions           |
+| CHECKDIM_VENDOR   | Check Vendor Dimensions        |
+| ECHKVATREG_CONT   | VAT Registration check block   |
+| ECHKVATREG_CUST   | VAT Registration check block   |
+| ECHKVATREG_VEND   | VAT Registration check block   |
+| MESSAGE_ITEM      | Item Message                   |
+| UNBLOCK_CUSTOMER  | Unblock Customer               |
+| UNBLOCK_GLACCOUNT | Unblock G/L Account            |
+| UNBLOCK_ITEM      | Unblock Item                   |
+| UNBLOCK_JOB       | Unblock Job                    |
+| UNBLOCK_VENDOR    | Unblock Vendor                 |
+| WCHKVATREG_CONT   | VAT Registration check warning |
+| WCHKVATREG_CUST   | VAT Registration check warning |
+| WCHKVATREG_VEND   | VAT Registration check warning |
