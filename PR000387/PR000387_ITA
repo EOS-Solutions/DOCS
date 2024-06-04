@@ -1,0 +1,12 @@
+| **Tipo record CBI**                                                                                                        |
+|----------------------------------------------------------------------------------------------------------------------------|
+| RH-EF                                                                                                                      |
+| <img width="" src="https://docs.eos-solutions.it/Images/PR000387-0/6BFForItaly.png"><br>  |
+
+La procedura Š simile a SEPA Importazione insoluti clienti (CBI), ma i pagamenti vengono importati tramite il file delle Rendicontazioni, tipicamente quelli non gestiti da SEPA, ovvero gli esteri extra-europei.
+
+Lanciare il report **Importazione pagamenti clienti (CBI):**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000387-0/7BFForItaly.png"><br>
+
+Specificare un numero di conto corrente sul quale importare i pagamenti.
