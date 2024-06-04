@@ -1,0 +1,5 @@
+This printout shows, for each G/L Account, the related G/L and simulated entries (similar to an Accounting Card). By enabling the 'Incl. Mov. G/L sim.' field, the report highlights when it comes to G/L entries and/or simulated entries.
+
+<img width="750" src="https://docs.eos-solutions.it/Images/ex001/gl account - entries report/App SGL Slide 34_Andrea Giordani.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex001/gl account - entries report/94SimulatedGeneralLedger.png"><br>
