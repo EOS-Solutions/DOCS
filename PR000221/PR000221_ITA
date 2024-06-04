@@ -1,0 +1,27 @@
+Per attivare la gestione degli imballi CONAI in Distinta Base / Lista Assemblaggio relativamente ad un prodotto finito (Es:1000) Š necessario attuare alcune impostazioni:
+
+1\. Nell'articolo 1000 (prodotto finito) da Naviga-\>CONAI-\>Imballo Articolo CONAI va scelta l'opzione Cerca nelle distinte basi oppure Cerca nelle liste assemblaggio:
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/46CONAI.png"><br>
+
+2\. Definire gli articoli Componenti che hanno lo scopo di fungere da articolo Package Conai. Per fare questo il campo 'EOS Conai' dell'anagrafica Articolo (ES: BOX505030) deve essere definita 'Conai Package'
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/47CONAI.png"><br>
+
+3\. Deve essere codificato per l'articolo BOX505030 anche l'Imballo Articolo CONAI
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/48CONAI.png"><br>
+
+4\. Nella Distinta Base dell'articolo 1000 inserire il componente/i che sono Imballi (es:BOX505030)
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/49CONAI.png"><br>
+
+5\. In alternativa al punto precedente pu• essere inserito il componente Package (ES:BOX505030) all'interno della lista assemblaggio 1924-W
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/50CONAI.png"><br>
+
+Nel caso che l'articolo abbia un suo codice di imballo pi— anche sia definito l'imballo della DIBA o nella Lista Assembl. I pesi dei materiali CONAI verranno sommati
+
+In alternativa al punto 1), ossia nel caso in cui non si ritenga necessario definire un Imballo Articolo CONAI per ogni articolo PF pu• essere sufficiente definire nell'articolo PF (Es: 1000) il campo 'EOS CONAI'='Explode BOM'. In questo caso il sistema proceder… direttamente a cercare nella DIBA o nella Lista assemblaggio l'articolo di imballaggio, non trovando nessun Imballo Articolo CONAI attivo per l'articolo. Comunque nel caso l'articolo sia definito come 'Explode BOM' ed abbia anche l'Imballo Articolo CONAI il sistema considerer… prioritaria la presenza dell'Imballo Articolo CONAI
+
+<img width="750" src="https://docs.eos-solutions.it/Images/PR000221-0/52CONAI.png"><br>
