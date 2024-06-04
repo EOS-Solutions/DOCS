@@ -1,0 +1,17 @@
+## Setup contabilit… generale
+
+Sulla page "Setup contabilit… generale" occorre impostare la dimensione utilizzata per il calcolo, per la generazione automatica delle scritture di elisione:
+
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000198-0/ITA_IntercompanyAccountingEliminations (1).jpg"><br>
+<br><br>
+## Piano dei conti COGE della societ… consolidante:
+
+
+Š necessario attivare l'opzione ÃCalcolo elisioni consolidatoÄ su tutti i conti che dovranno essere processati per la generazione delle scritture di elisione.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000198-0/ITA_IntercompanyAccountingEliminations (3).jpg"><br>
+
+Questo setup evita di generare elisioni per conti che non riguardano il bilancio consolidato: ad esempio su una scrittura contabile di incasso di un finanziamento da una societ… controllata, la dimensione Intercompany risulter… valorizzata sia sul conto finanziamento sia su quello della banca, la scrittura di elisione dovr… per• essere generata solo per il conto relativo al finanziamento.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000198-0/ITA_IntercompanyAccountingEliminations (2).jpg"><br><br>
