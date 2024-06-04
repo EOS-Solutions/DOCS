@@ -1,0 +1,4 @@
+Nella pagina "Analisi scadenzari clienti/fornitori" e nel report Estratto conto vengono visualizzati **solo i movimenti generati a seguito della rinegoziazione**, non quelli rinegoziati (chiusi), indipendentemente dal fatto che sia attivo il campo "Solo movimenti aperti":
+
+
+<img width="750" src="https://docs.eos-solutions.it/Images/ex012/customervendor aging/8DueDatesManagement.png"><br>
