@@ -1,0 +1,60 @@
+
+# **CASI D'USO**
+
+
+<br>
+
+
+# **Fattura vendita**
+
+
+<br>
+
+Apriamo una Fattura di vendita, generata da un ordine di vendita, per il Cliente 10000, per l'articolo 1000 in quantit… 100:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000215-0/25CONAI.png"><br>
+
+Registriamo la Spedizione e successivamente la Fattura:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000215-0/26CONAI.png"><br>
+
+Dalla Fattura registrata Š possibile accedere al dettaglio CONAI tramite:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000215-0/27CONAI.png"><br>
+
+| **Action**              | **Descrizione**                                                                                                                                                             |
+|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Elimina righe fattura   | elimina le righe CONAI precedentemente inserite in Fattura                                                                                                                  |
+| Raggruppato/Dettagliato |  mostra il dettaglio delle contribuzioni CONAI per ogni riga di fattura                                                                                                     |
+| Ripristina pesi         | qualora vengano modificati i pesi, oppure siano stati modificati i pesi degli imballi dei materiali, l'action Suggerici ricalcola e ripropone i pesi e gli importi corretti |
+
+Da Fattura-\>Naviga si pu• accedere ai Movimenti contabili CONAI:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000215-0/28CONAI.png"><br>
+
+Altri casi d'uso cui Š possibile applicare il CONAI:
+
+1\. Ordine di Vendita + Spedizione + Fattura cumulativa std
+
+2\. Fattura di vendita diretta
+
+3\. Ordine di vendita + Spedizione + Fattura di vendita con 'Ottieni righe di spedizione'
+<br><br><br>
+# **Spedizioni vendita che contengono SOLO righe CONAI**
+
+In Setup CONAI il campo 'CONAI Righe Spedizioni Nos.' fa riferimento ad un numeratore Spedizioni legato alle righe generate dalla funzione 'Imballi CONAI' in fase di Fatturazione di Vendita.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000215-0/29CONAI.png"><br>
+
+Nel caso in cui, in **Setup Contabilit… Clienti**, sia abilitato il campo **Spedizione su Fattura**
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000215-0/30CONAI.png"><br>
+
+e nella fattura di vendita siano state generate delle righe CONAI il sistema emetter… una Spedizione di Vendita con il numeratore impostato in CONAI Righe Spedizioni Nos., per le righe CONAI.
+
+Eesempi di spedizioni generate a seguito della registrazione della fattura di vedita con righe CONAI:
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000215-0/31CONAI.png"><br>
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000215-0/32CONAI.png"><br>
+
