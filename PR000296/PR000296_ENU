@@ -1,0 +1,16 @@
+On the page MDI Synchronization Entries or form Synchronization Prifile page by pressing Synchronization Log you can access the page where you can view all synchronized entries and any errors.
+
+You can eventually re-perform synchronizations.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000296-0/SynchEntries.png"><br>
+
+
+
+In Synchronization Status the options are:
+
+Executed
+
+Failed (possibly with a message explaining the error in "Last Error Message" field.
+
+From "Show Content" you can check what data has been passed to the target company and any problems.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000296-0/SynchEntryContent.png"><br>
