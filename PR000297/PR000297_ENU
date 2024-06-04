@@ -1,0 +1,11 @@
+The page gives us global control over synchronized data.  
+
+The record count is displayed for each synchronized table so that you can identify any synchronization issues.
+
+In Table ID field you can choose one of the tables with a MDI profile. By pressing Calculate the system shows an overview of the synchronized fields.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000297-0/Matrix.png"><br>
+
+By selecting a line and pressing Zoom you can access further details, such as the description in the different companies.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000297-0/Matrix2.png"><br>
