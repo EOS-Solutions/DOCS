@@ -1,0 +1,13 @@
+Per distribuire il risultato della pianificazione in un altro prospetto, Š necessario definire il prospetto da cui provengono i risultati e quello in cui trasferire i risultati.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000394-0/10ManufPlanning-ITA.png"><br>
+
+Nei campi **Nome modello prospetto** e **Nome batch contabile** si definisce il prospetto da cui provengono i risultati.  
+
+Nei campi **Modello prospetto pianificazione** e **Nome prospetto pianificazione** viene definito il prospetto di destinazione.
+
+Nel campo **Filtro richiesta** Š possibile impostare un filtro a seconda dei dati da trasferire, ad esempio "Sistema di rifornimento" uguale a "Ordine prod":
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000394-0/12ManufPlanning-ITA.png"><br>
+
+Se vengono specificati i campi **Formula data inizio** e/o **Formula data fine**, i dati da trasferire vengono filtrati di conseguenza in base alla data di scadenza.
