@@ -1,0 +1,16 @@
+Customer hierarchies are used to define the hierarchy of GDO groups. 
+It can be applied in any context comprising multiple levels (up to 11), down to the last level, which is the customer. 
+
+The relationship is 1 to 1 between a level and its superior.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000592-0/img1.png"><br>
+<img width="" src="https://docs.eos-solutions.it/Images/PR000592-0/img2.png"><br>
+
+** Customer Hierarchy Assignment **
+
+Through the customer master data, it is possible to assign the hierarchy. 
+Depending on the managed fields (number of hierarchy levels), the respective codes with captions entered in the setup will be displayed. Levels can also be added at a later stage.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000592-0/img3.png"><br>
+
+Each hierarchy assignment opens the "Hierarchy Relationship Request".
