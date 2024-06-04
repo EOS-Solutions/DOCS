@@ -1,0 +1,22 @@
+Open the Production Progress (MES) page and fill in the required information in the General tab.
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000342-0/9ManufacturingExecutionSystem-ENU.jpg"><br>
+
+You need to enter (manually or with a barcode reader):
+
+-Reading Work Center: eg. 100 (assembly department)
+
+-Reading badge: eg.. A001 (is the badge of who is performing the operations)
+
+-Reading Reason: insert a code for the opening / closing / stapling phase among those set in setup (e.g. START)
+
+-Reading Operation: fill in the operation to be performed by indicating order.line.operation (e.g. 1011004.10000.10)
+
+| Action | Description |
+| --- | --- |
+| Reset | the system resets the values entered |
+| Change Badge | it is possible to select again the employee's badge, while remaining within the chosen department |
+
+| Note |
+| --- |
+| If a Close=OUTPUT phase is inserted, the system will also ask for the Quantity, the Quantity of waste and the Reason for rejection. |
