@@ -1,0 +1,10 @@
+Tale setup consente di abilitare il calcolo CONAI in acquisto/vendita, per le diverse tipologie di materiale codificate a sistema.
+
+<img width="" src="https://docs.eos-solutions.it/Images/ex031/conai - sales  purchase conai setup/13CONAI.png"><br>
+
+Ciascuna riga va abilitata barrando il campo Abilitato.
+
+| Campo  | Descrizione |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Contributo conai              | se valorizzato, al posting del documento acquisto/vendita, vengono generati i relativi Movimenti contabili CONAI |
+| Dettaglio conai sul documento | se valorizzato, vengono create nel documento provvisorio le righe di addebito importo CONAI                      |
