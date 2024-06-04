@@ -1,0 +1,11 @@
+Se registriamo una fattura acquisto per un fornitore con Reverse Charge
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000626-0/28VatManagement.png"><br>
+
+da Fattura-\>Statistiche visualizziamo il dettaglio IVA
+
+<img width="" src="https://docs.eos-solutions.it/Images/PR000626-0/29VatManagement.png"><br>
+
+La % iva ä zero poichä in automatico ha registrato l'iva in acquisto e in vendita di pari importo, ma con segno inverso.
+
+Nei campi "**Importo IVA Reverse Charge**" e "**% IVA Reverse Charge**" il sistema ci mostra il **dettaglio sulla percentuale IVA e sull'importo**.
