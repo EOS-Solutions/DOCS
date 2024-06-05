@@ -1,0 +1,76 @@
+**Setup Agente/Add. Acquisti**
+
+Innanzitutto Š necessario settare le informazioni base in Scheda agenti/add. Acq.:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000478-0/CommissionITA3.jpg"><br>
+
+Campi da compilare:
+
+| **Campo**                 |  **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Codice fornitore          | Codice dellÂanagrafica fornitore relativo a questo agente                                                                                                                                                                                                                                                                                                                                                                                              |
+| % anticipo                | Percentuale Specifica la percentuale di anticipo da concedere allÂagente/Add. Acquisti. LÂimporto viene calcolato sui valori dei mov. contabili provvigioni.                                                                                                                                                                                                                                                                                           |
+| Importo anticipo (VL)     |  Specifica lÂimporto dellÂanticipo da concedere allÂagente/add. Acquisti. LÂimporto verr… liquidato una volta per periodo di liquidazione. Questo importo viene sommato allÂimporto calcolato nella Ã% anticipoÄ.                                                                                                                                                                                                                                      |
+| Periodi di liquidazione   | Periodicit… con il quale si intende liquidare lÂagente. Le opzioni sono: - Annuale - Trimestrale - Mensile                                                                                                                                                                                                                                                                                                                                             |
+|  Tipo di liquidazione     |  Criteri di calcolo della liquidazione: - *Fatturato:* la provvigione viene liquidata su tutte le provvigioni relative alle fatture, indipendentemente dal pagamento; - *Pagato (parzialmente):* la provvigione viene liquidata in percentuale sulle rate della fattura che sono state pagate anche solo parzialmente. - *Pagato (completamente):* la provvigione viene liquidata in base alle rate della fattura che sono state completamente pagate. |
+| Conto C/G costi           | Conto utilizzato nelle righe della fattura passiva generata per la liquidazione delle provvigioni.                                                                                                                                                                                                                                                                                                                                                     |
+| Conto C/G liquidazione    | Conto utilizzato per la rilevazione dei costi provigionali (maturato)                                                                                                                                                                                                                                                                                                                                                                                  |
+| Data di fine liquidazione | Data in cui Š stata effettuata lÂultima liquidazione provvigioni. Specifica quando interrompere il processo di liquidazione.                                                                                                                                                                                                                                                                                                                           |
+
+**Ruoli agente (CMS)**
+
+Codificare i ruoli agente nella tabella Ruoli agenti (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000478-0/CommissionITA5.jpg"><br>
+
+**Rete di vendita (CMS)**
+
+Codificare la rete di vendita nella tabella Reti di vendita (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000478-0/CommissionITA6.jpg"><br>
+
+Tramite il pulsante Agente Š possibile associare per ciascuna rete di vendita i relativi ruoli ed agenti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000478-0/CommissionITA7.jpg"><br>
+
+Tramite il pulsante Suggerisci ruoli agente il sistema suggerisce i ruoli.
+
+| **<img width="15" src="https://docs-test.eos-solutions.it/Images/PR000478-0/exclamation.png"> NB** |
+|--------------------------------------------------------------------------------------------------------------------------------------|
+|  Non Š possibile inserire un agente senza un ruolo.                                                                                  |
+
+**Gruppi provvigioni (CMS)**
+
+In questa page Š possibile codificare i gruppi provvigione da associare ai clienti/articoli:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000478-0/CommissionITA8.jpg"><br>
+
+**Setup agenti su anagrafica clienti**
+
+SullÂanagrafica clienti Š possibile impostare gli agenti e la rete di vendita:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000478-0/CommissionITA9.jpg"><br>
+
+EÂ possibile inserire pi— reti di vendita abilitandone solo una tramite il campo Default:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000478-0/CommissionITA10.jpg"><br>
+
+EÂ anche possibile legare gli agenti e la rete vendita agli indirizzi di spedizione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000478-0/CommissionITA11.jpg"><br>
+
+Se la rete di vendita non Š abilitata non sar… visibile il relativo menu e gli agenti saranno gestibili puntualmente. La disabilitazione della rete vendita non comporta la perdita dei dati, gli agenti saranno conservati.
+
+| [Commissions - Introduction]({{<relref "commissions-cms">}})|
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Setup calcolo provvigioni]({{<relref "commissions-calculation-setup">}})|
+| [Gestione movimenti contabili provvigione]({{<relref "commission-ledger-entries">}})|
+| [Gestione anticipi e stanziamenti provvigione]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Creazione fatture acquisto agenti]({{<relref "commissions-commission-purchase-document">}})|
+| [Creazione fatture acquisto da prospetto liquidazione]({{<relref "create-commission-prospect">}}) |
+| [Note tecniche]({{<relref "commission-technical-notes">}})|                                        
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000478-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
