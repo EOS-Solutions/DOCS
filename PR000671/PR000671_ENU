@@ -1,0 +1,15 @@
+Items: Tracking is mandatory for SIAN items. ÃExclude from SIANÄ checkbox let disable SIAN management for specific Items. I.E: labels and caps products type must not be managed with the SIAN.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/7wine-sian-ENU.jpg"><br>
+
+The SIAN is expecting to manage the coding of the items through two free coding codes: defined as Primary and Secondary Code.
+
+Fields composing the codes are: Category, Classification, Act Certification, Physical State, Color, Organic, DOP/IGP, Vineyard, Date of DOP Certificate, No. of DOP Certificate, E-Bacchus, Subzone, Year, Origin of Grapes, Provenience, Wine Growing Zone, Batch Code, Mass.
+
+In addition to these checks, it is necessary to add the verification of enological practices. By enological practices we mean: Countries of Origin, Traditional Terms, Enological Practices (Manipulations), Varieties.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/8wine-sian-ENU.jpg"><br>
+
+In each entries of an item it is possible to access to the Lot Information Sheet to see which is the associated SIAN code and possibly change a series of attributes and obtain a new SIAN code.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/9wine-sian-ENU.jpg"><br>
