@@ -1,17 +1,17 @@
 Sales orders 1005 and 1006 for Customer 20000 and same shipping address are billed to 2 different "Bill-to  Customer Nr.":
 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/18CombinedWarehouseShipment.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000294-0/18CombinedWarehouseShipment.png">
 <br><br>
 
 The "Bill-to Customer Nr." field is not a combination criterion, so orders 1005 and 1006 will bi combined in a unique CWS shipment
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/17CombinedWarehouseShipment.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000294-0/17CombinedWarehouseShipment.png"><br>
 
 
 According to the setup:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/9CombinedWarehouseShipment.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000294-0/9CombinedWarehouseShipment.png"><br>
 
 ### Invoicing
 
@@ -28,15 +28,15 @@ For the Customer 10000 an invoice is generated and posted. For the Customer 2000
 
 They are shipped to the same address.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/19CombinedWarehouseShipment.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000294-0/19CombinedWarehouseShipment.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/20CombinedWarehouseShipment.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000294-0/20CombinedWarehouseShipment.png"><br>
 
 ### Whse Shipment Posting
 
 The system request confirmation for invoicing (posting), because the option is enabled for Customer 10000:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/21CombinedWarehouseShipment.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000294-0/21CombinedWarehouseShipment.png"><br>
 
 Then the following message appears:
 
@@ -44,16 +44,16 @@ Number of source invoices created 2: invoices for customer 20000
 
 Number of source invoices created and posted 1: invoice for customer 10000
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/22CombinedWarehouseShipment.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000294-0/22CombinedWarehouseShipment.png"><br>
 
 W.hse shipment posting: 2 CWS shipments are created: 1 for customer 10000 and 1 for customer 20000.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/24CombinedWarehouseShipment.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000294-0/24CombinedWarehouseShipment.png">
 <br><br>
 
 Invoicing info are not displayed because they refer to different "Bill-to" Customers.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/25CombinedWarehouseShipment.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000294-0/25CombinedWarehouseShipment.png">
 <br><br>
 
 Navigate invoices:
@@ -62,11 +62,11 @@ On the CWS card, from Navigate->Shipment->Invoices it is possible to view the re
 
 - CWS shipment - Customer 10000: 1 posted invoice:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/26CombinedWarehouseShipment.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000294-0/26CombinedWarehouseShipment.png">
 
 <br><br>
 
 
 - CWS shipment - Customer 20000: 2 invoice to be posted:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000294-0/27CombinedWarehouseShipment.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000294-0/27CombinedWarehouseShipment.png"><br>
