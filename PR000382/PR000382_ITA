@@ -1,0 +1,48 @@
+Questa page consente di calcolare i vari tipi di costo degli articoli in magazzino per i periodi di riferimento, determinando il valore fiscale del magazzino per ciascun periodo. LÂ elaborazione di un periodo avviene con i seguenti step:
+
+* Creazione manuale del periodo
+* Archiviazione dati: vengono archiviati i dati di riferimento (articoli, distinte, cicli, etc.)
+* Calcolo dati consuntivi: con questa attivit… vengono calcolati i vari tipi di costo articolo in funzione dei parametri definiti nel setup.
+* Calcolo costi categorie LIFO: da utilizzare solo se la costificazione Š fatta per categoria LIFO.
+
+Le principali funzioni del modulo sono:  
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/5inventory-valuation-and-costing-ita.png"><br>
+
+|Azione|Descrizione|
+|-----|---------|
+| Archivia dati periodo | Per generare una versione locale delle anagrafiche articoli, che includono ora anche i campi per il calcolo dei vari tipi di costo ad essi associati. ß una modalit… di calcolo dei costi che avviene in ÃparalleloÄ allo standard. Le modalit… di calcolo dei costi sono definite nel setup come illustrato in precedenza  |
+| Calcola dati consuntivi | Per calcolare i costi per i dati precedentemente ÃstoricizzatiÄ |
+<br>
+Il costo standard non viene calcolato dal costing, ma viene ereditato quello presente in anagrafica Articolo.  
+
+Dopo lÂesecuzione del calcolo, cliccando su Storico->Storico articoli, Š possibile consultare le varie tipologie di costo calcolate per il singolo articolo:   
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/15inventory-valuation-and-costing-ita.png"><br>
+Da Storico->Storico articoli si possono consultare, fra le altre:
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/7inventory-valuation-and-costing-ita.png"><br>
+* Report -> Scheda costi articolo
+* Report -> Stampa dettaglio costi  
+
+Nella Scheda Articolo sono riportate tutte le informazioni relative alla valorizzazione dellÂArticolo per il Periodo Riferimento ed in particolare ogni costo Š ripartito fra le componenti di costo a "Livello singolo" e "Dettaglio":
+
+* Costo diretto materiale (Materie Prime / Componenti)
+* Costo diretto capacit… (Costo derivante dai tempi lavorazioni interne)
+* Costo c.to lavoro Eff. (Costo derivante dalle lavorazioni esterne effettuate dai Terzisti)
+
+Per ognuna delle 3 componenti di costo diretto, il sistema pu• gestire le corrispondenti voci di costo generale/indiretto.
+
+**Azioni per aggiornamento dati**
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/9inventory-valuation-and-costing-ita.png"><br>
+* LÂazione ÃAggiorna articoloÄ pu• essere utilizzata SOLO se si vuole sovrascrivere il Costo unitario/Costo standard dellÂanagrafica Articolo. Da NON usare se non dopo attenta valutazione.
+* Le azioni ÃAggiorna mov. cont.  articoliÄ ed ÃAggiorna mov. cont. capacit…Ä: vengono utilizzate SOLO se si vogliono aggiornare i movimenti sulla base dei costi calcolati dal costing di Business Central. Utilizzano logiche simili a quelle dellÂAdjustment standard di Business Central. Da NON usare se non dopo attenta valutazione.  
+
+**Esclusione movimenti di magazzino presenti su determinate Collocazioni**
+
+Tale funzionalit… consente di escludere dal calcolo delle giacenze di periodo, i movimenti di magazzino presenti su determinate collocazioni indicate a setup. Nel periodo di elaborazione Š presente il flag ÃEsclusione collocazioni abilitataÄ: 
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/11inventory-valuation-and-costing-ita.png"><br>
+Le collocazioni da escludere dal calcolo, per singolo Cod. ubicazione, vanno indicate in Collocazioni escluse (IVC).
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/22inventory-valuation-and-costing-ita.png"><br>
