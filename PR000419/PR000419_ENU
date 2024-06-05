@@ -1,0 +1,8 @@
+
+Discounts can also be applied to the price list
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000419-0/Detailed Document Discounts - Usage_Price List_ENU_001.png"><br>
+
+From the three dots of the Detailed Discount field you can access the detailed discounts table. In this case, the Process-> Update preview action will not be present as we are in the price list and there is no starting amount on which to apply the discount.
+
+By inserting item 1250 in a purchase / sale document, the system will automatically propose the discount inserted in the price list.
