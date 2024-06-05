@@ -1,0 +1,6 @@
+[**Work center / Production area Tariff calculation depending on Production work center**](http://)
+
+Only C/ A accounts can be created to accommodate the costs relating to each individual production area / work center. In order to subsequently calculate the rate relating to the connected Production Cost Center, it is necessary to fill in the following fields in the C/A account card:
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000411-0/16Extended Management Accounting-enu.png"><br>
+The latter determines the calculation of the "Tariff", available from the same C / A Analysis Card: 
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000411-0/17Extended Management Accounting-enu.png"><br>
