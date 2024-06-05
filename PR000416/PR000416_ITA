@@ -1,0 +1,11 @@
+
+Sulla page Setup sconto dettagliato (DDD) impostare:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000416-0/Detailed Document Discounts - Setup_Configuration_ITA_001.png"><br>
+
+| **Campo** |	**Descrizione** |
+| --- | --- |
+| **Setup applicazione** |  |
+| Nascondi % sconto riga	| Specifica se il campo standard "% sconto riga" deve essere nascosto in tutte le pagine del documento |
+| **Metodo di calcolo** |  |
+| Metodo calc. prezzi vendita / Metodo calc. sconti vendita	| Specifica il metodo di calcolo per i prezzi / sconti di vendita. Le opzioni sono:<br /> ? Migliore possibile: il sistema calcola il prezzo / sconto pi— conveniente<br /> ? Per priorit…: il calcolo viene eseguito seguendo le priorit… impostate |
