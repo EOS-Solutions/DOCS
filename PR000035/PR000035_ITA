@@ -1,0 +1,15 @@
+La app Inventory Valuation and Costing (IVC) di Eos Solutions consente di implementare ®scenari¯ di valorizzazione dellÂinventario, utilizzando le diverse configurazioni di costing; supporta inoltre le seguenti funzionalit…:
+
+* Possibilit… di implementare ÃscenariÄ di valorizzazione dellÂinventario utilizzando differenti configurazioni di costing.
+* Possibilit… di impostare differenti parametri di calcolo: periodo, esclusione di determinate ubicazioni/collocazioni, etc.
+* Possibilit… di calcolare il costo futuro degli articoli di produzione simulando incrementi di costo delle materie prime e/o dei costi orari delle aree di produzione / centri di lavoro.
+* Valorizzazione a costo medio esercizio, medio ponderato, medio lotti, LIFO a scatti, etc.
+* Valorizzazione a costi specifici per articolo / variante, articolo / lotto, articolo / numeri di serie;
+* Gestione dei costi accessori di acquisto e di eventuali costi aggiuntivi finalizzata alla valorizzazione Ãfull costingÄ.
+* Storicizzazione in archivio parallelo di tutte le anagrafiche coinvolte nel calcolo: articoli, distinte basi, cicli di produzione, aree di produzione, centri di lavoro, etc.
+* Scomposizione del costo nelle differenti componenti: materiali, capacit… (lavorazioni interne), lavorazioni esterne.
+* Calcolo del WIP di produzione.
+* Possibilit… di caricare i costi pre go-live per il corretto calcolo del costo delle giacenze iniziali.
+
+Premere ALT + Q e digitare "IVC" per vedere un elenco delle funzionalit… coinvolte: 
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Introduction/1inventory-valuation-and-costing-ita.png"><br>
