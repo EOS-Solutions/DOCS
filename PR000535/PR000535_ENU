@@ -1,6 +1,6 @@
 From Payable / receivable aging analysis page-\>Report-\>Aging in Column:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000535-0/10AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000535-0/10AdvancedCustomerVendorStatement-en.png"><br>
 
 | Heading Type               | Date Interval: the column header is dd/mm/yy..dd/mm/yy Number of Days: column header is 30/60 dd (+-)                                                                                                                                              |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,4 +13,4 @@ You can also select filters for Posting date, Due date, Payment method.
 
 Print example:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000535-0/11AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000535-0/11AdvancedCustomerVendorStatement-en.png"><br>
