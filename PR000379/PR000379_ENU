@@ -1,0 +1,7 @@
+Costing for purchase orders works the same way as seen on the sales side.
+
+However, the "Suggest transport costs" function is not present on the Purchase Orders. In the Transport Costs Tab, the shipping agent you intend to use must be indicated:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000379-0/PO_PriceCalculation_ENU_001.png"><br>
+
+Also in this case you can view the detail from Related-> Document-> Card.
