@@ -1,0 +1,25 @@
+[**Definizione Driver (EMA)**](http://)
+
+Pagina deputata alla codifica dei driver di contabilit… analitica. 
+<br> 
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/driver CA/14Extended Management Accounting-ita.png">
+<br>
+
+|Campo|Descrizione|
+|-----|-----------|
+| Codeunit Personalizzata| da compilare con i riferimenti alla procedura sviluppata per il calcolo del driver in questione (es.: del nr. dei Dipendenti per CDC) |
+| Nome Funzione | da compilare con i riferimenti alla specifica funzione creata per il calcolo dei Movimenti prestazioni (es.: il nr. dei Dipendenti per CDC) |
+|Movimenti prestazioni|pagina attraverso la quale verificare lÂultimo aggiornamento dei Movimenti prestazioni|
+|Storico|pagina attraverso la quale consultare lo storico dei Movimenti prestazioni, aggiornato ad ogni esecuzione della procedura "Aggiorna archivio driver"|
+
+<br>
+ß inoltre possibile creare Driver calcolati (es.: di tipo Formula o Unione) in funzione di altri Driver.  
+<br>
+
+**Oggetti rilevazione driver (EMA)**
+
+Attraverso lÂazione ®Sincronizza la dimensione centro di costo¯ vengono inseriti tutti i valori dei CDC codificati a sistema: 
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/driver CA/15Extended Management Accounting-ita.png">
+<br>
+LÂutente pu• poi modificare lÂelenco proposto e, se necessario, inserire altri oggetti di rilevazione, non collegati ai CDC.  
