@@ -1,0 +1,42 @@
+La Fondazione Enasarco ([www.enasarco.it)](http://www.enasarco.it/) provvede alla previdenza e allÂassistenza degli agenti e dei rappresentanti di commercio.
+
+**Introduzione**
+
+La app Enasarco FIRR and FISC (CMS) di Eos Solutions consente di gestire il calcolo e la registrazione dei contributi agente in ottemperanza alla normativa vigente tramite:
+
+-   Assegnazione di parametri contributivi a fornitori/agenti
+-   Calcolo dei contributi per le tipologie previste (Enasarco, FIRR, FISC)
+-   Registrazione in contabilit… dei contributi calcolati
+-   Possibilit… di intervenire con modifiche e correzioni
+-   Esportazione, ove previsto, del file "Grandi ditte" tramite apposita distinta
+-   Collegamento facilitato movimenti fornitore legati ai contributi con movimenti fornitore derivanti dalla registrazione del documento di acquisto relativo
+
+
+LÂapp Enasarco FIRR and FISC Š basata sulla app Commissions: la base imponibile per il calcolo dei contributi Š rappresentata dalle provvigioni del modulo CMS che risultano liquidate o in liquidazione. Per questo motivo, la parte di gestione contributi Š identificata anchÂessa dallÂacronimo CMS.
+
+| **N.B.**                                                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------|
+| Per poter scaricare ed installare la app Enasarco FIRR and FISC Š necessario avere gi… installato la app Commissions. |
+
+**Enasarco FIRR and FISC - SUMMARY**
+
+Premere ALT + Q e digitare "CMS" per vedere un elenco delle funzionalit… coinvolte:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000009-0/ENAIntroduzione1.png"><br>
+
+
+|**Task**|**Vedere**|
+|--|--|
+|Impostare il setup Enasarco relativo a previdenza e assistenza, inserire il setup F.I.R.R. e F.I.S.C., impostare l'anagrafica agente e fornitore: Setup Provvigioni (CMS), Setup Enasarco previdenza (CMS), Setup Enasarco assistenza (CMS), Setup F.I.R.R (CMS), Setup F.I.S.C (CMS), Scheda Agente/Add. acquisti, Scheda Fornitore.|[Setup]({{<relref "enasarco-firr-and-fisc-setup">}})|
+|Vedere il flusso operativo|[Step operativi]({{<relref "ena-steps">}})|
+|Enasarco Previdenza/Assistenza: Movimenti contributi (CMS), Calcola e registra Enasarco documenti (CMS), Collega mov. contributi a mov. fornitori (CMS)|[Calcolo e registrazione in C/G movimenti contributi in documento di acquisto non registrato]({{<relref "enasarco-firr-and-fisc-cms-calculate-a">}})<br>[Collegamento assistito tramite page ad hoc dei movimenti fornitore generati dalla registrazione dei contributi con i movimenti fornitore relativi alla registrazione del documento di acquisto]({{<relref "ena-apply-contributions-ledger-entries">}})|
+|F.I.R.R. / F.I.S.C.: Calcola F.I.R.R. (CMS) , Calcolo F.I.S.C (CMS)|[Calcolo e registrazione in C/G movimenti contributi tramiteapposito report presente a menu]({{<relref "ena-calculate-and-post-contribution-entries-through-specific-report">}})|
+|Estrarre i contributi in una distinta e generare il file Grandi Ditte: Distinte contributi (CMS)|[Distinta contributi / Generazione file]({{<relref "contribution-bill-grandi-ditte">}})|
+|Importare movimenti di una gestione precedente o in corso d'opera: Movimenti contributi (CMS)|[Import mov. pregressi]({{<relref "ena-import-previous-contribution-entries">}})|
+|Integrazioni gestione contributi ENASARCO per normativa (agevolazione) ÃGiovani agentiÄ|[Giovani agenti]({{<relref "ena-giovani-agenti-facilitation">}})|
+
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
