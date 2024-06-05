@@ -1,0 +1,33 @@
+From a shipment/order you can open the Packing List composition page through Actions->Functions->Packing List or from Process->Packing List:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000555-0/EX055_Packing List Page_ENU_IMG1.png"><br>
+ 
+
+The Packing List is a set of handling units, connected to order lines, and has a tree structure.
+
+First, you must select the handling units from "New Handling Unit".
+
+Clicking on New Handling Unit the system will open the list of packaging materials:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000555-0/EX055_Packing List Page_ENU_IMG2.png"><br>
+
+For example, we choose a box and then add content from **Add Content** .
+
+The page shows item lines based on orders/shipments. We enter quantities for the items to be added and press OK.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000555-0/EX055_Packing List Page_ENU_IMG3.png"><br>
+
+|**Field**|**Description**|
+|:---|:---|
+|Source No.|order number|
+|No.|item number and description|
+|Quantity|item quantity requested on the order page|
+|Q.ty Assigned|quantity already assigned on the packing list|
+|Q.ty to Handle|enter the quantity to be included in the box that we have selected in the packing list|
+|Location Code|connected to the logistics flow of handling units|
+|Bin Code|connected to the logistics flow of handling units|
+|Lot No.|assign the lot number if needed|
+|Serial No.|assign the serial number if needed|
+<br>
+To create multiple containers in the same Packing List, you always proceed from New Handling Unit and then define its contents from Add Content.
