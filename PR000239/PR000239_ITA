@@ -1,12 +1,12 @@
 Dopo aver compilato i campi della riga uno o pi— articoli per i quali sono state precedentemente create le istruzioni di imballaggio, da Azioni->Vuoti>Calcola vuoti
 <br>
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000239-0/IT-EMPSalesOrder1.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000239-0/IT-EMPSalesOrder1.jpg"><br>
      
 facciamo generare al sistema una o pi— righe relative ai vuoti per l'ordine:
 <br> 
       
-<img width="" src="https://docs.eos-solutions.it/Images/PR000239-0/IT-EMPSalesOrder2.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000239-0/IT-EMPSalesOrder2.jpg"><br>
      
 D Azioni->Vuoti Š possibile eliminare i vuoti oppure, tramite modifica, gestirli manualmente.
 <br>
@@ -21,7 +21,7 @@ Quando su un documento vengono inseriti i vuoti, questi sono visibili in dettagl
 <br>
      
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000239-0/IT-EMPSalesOrder3.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000239-0/IT-EMPSalesOrder3.jpg"><br>
      
 **Le righe dei vuoti vengono registrate nel documento di spedizione** (anche nelle spedizioni CWS).
 
@@ -30,4 +30,4 @@ Dalla spedizione Warehouse Š possibile accedere alla sezione contenitori e aggiu
 N.B. solo se non sono presenti righe calcolate automaticamente a livello di ordine.  
 <br>
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000239-0/IT-EMPSalesOrder4.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000239-0/IT-EMPSalesOrder4.jpg"><br>
