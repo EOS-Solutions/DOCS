@@ -3,7 +3,7 @@ On the Setup page:
 
 <br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/3CombinedWarehouseShipment.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/3CombinedWarehouseShipment.png">
 <br><br>
 
 | **Field** | **Description** |
@@ -16,7 +16,7 @@ On the Setup page:
 | Always Ship All Lines | Specifies if all lines in a warehouse shipment should always be shipped, ignoring filters applied on the page |
 | **Sales** |
 | Post Not Item Lines | Specifies if post non-item lines on source document while post warehouse shipment. |
-| Order Line Description | Specifies if add a description line with order No. on invoice document. The reference to CWS shipment with the posting date is always shown. On the second line you can choose to add: None, Order No., External Document No., Your Reference.<br>In the example below "Our Order No." is shown:<br> <img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/29CombinedWarehouseShipment.png"><br> |
+| Order Line Description | Specifies if add a description line with order No. on invoice document. The reference to CWS shipment with the posting date is always shown. On the second line you can choose to add: None, Order No., External Document No., Your Reference.<br>In the example below "Our Order No." is shown:<br> <img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/29CombinedWarehouseShipment.png"><br> |
 | **Purchase** |
 | Post Not Item Lines | Specifies if post non-item lines on source document while post warehouse receipt or warehouse shipment. |
 | Return Line Description | Specifies if add a description line with order No. on credit memo document. |
@@ -28,98 +28,3 @@ On the Setup page:
 | Report ID for Purchase Return. Order Shipment | Specifies which report is to be printed with CWS posted shipments from purchase return order. |
 | Report ID for Outbound Transfer Order Shipment | Specifies which report is to be printed with CWS posted shipments from outbound transfer order. |
 | Report ID for Service Order Shipment | Specifies which report print with CWS posted shipments from service order. |
-
-<br>
-
-# Reporting
-The standard setup on the report selection page is mandatory:
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/16CombinedWarehouseShipment.png">
-
-<br><br>
-
-
-
-# Combination criteria codes and setup
-
-* From Combination->Combination Criteria Codes for each Document Type to ship it is possible to define one or more criteria code.
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/13CombinedWarehouseShipment.png">
-<br><br>
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/4CombinedWarehouseShipment.png">
-<br><br>
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/5CombinedWarehouseShipment.png">
-
-<br><br>
-
-
-
-# Default Grouping
-Default:  Ship-to Address and Source Document Type
-
-* From Combination->Combination Criteria Setup, for each Document Type to ship can be defined one or more criteria setup for a specific shipment location to specific destination
-<br>
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/6CombinedWarehouseShipment.png"><br>
-
-It is possible to open the combination criteria codes prom "Open Combination Codes".
-
-<br><br>
-
-
-# Initialize Combination Setup
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/7CombinedWarehouseShipment.png">
-<br><br>
-
-It creates a Default Setup for combination criteria in Whse Shipment.
-
-Initialize Combination Setup :
-* Creates Default codes
-* Creates Default Setup (valid for shipment from all locations to all destinations)
-
-<br><br>
-
-
-# Invoicing - Codes
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/8CombinedWarehouseShipment.png"><br><br>
-
-For each Document Type to ship can be defined one or more criteria to invoice warehouse shipment : Create Invoice (without post), Post Invoice, Print Document (document to print).
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/9CombinedWarehouseShipment.png">
-
-<br><br>
-
-
-# Invoicing - Setup
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/14CombinedWarehouseShipment.png">
-<br><br>
-
-For each Sales Order to ship can be defined one or more invoicing setup for a specific shipment location to specific destination
-<br>
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/10CombinedWarehouseShipment.png">
-
-<br><br>
-
-
-# Initialize Invoicing Setup
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/11CombinedWarehouseShipment.png">
-<br><br>
-
-The system creates a Default Setup for invoicing criteria in Whse Shipment
-
-Initialize Invoicing Setup:
-
-- Create Default Codes (but not Active). Must be manually activate
-- Create Default Setup (valid for shipment from all locations to all destinations)
-
-<br><br>
-
-
-# Create CWS Shipment
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/12CombinedWarehouseShipment.png">
-<br><br>
-
-The system generates CWS from Posted Source Document if missing:
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/15CombinedWarehouseShipment.png"><br>
