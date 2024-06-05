@@ -1,0 +1,9 @@
+**Before Start Item Cost (IVC) - Import**
+
+A precondition for the correct calculation of the Average / Weighted costs and of the LIFO bands is the import of the Before Start Item Costs (especially if the initial stocks have been imported as "Positive adjustments"). 
+
+The following image shows the instructions for the preparation of the Excel sheet "Import Before Start Item Cost" for the calculation of the Average Weighted Cost:  
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Before Start Item Cost/18inventory-valuation-and-costing-enu.png"><br>
+
+After the massive import, the data can be changed manually by accessing the "Import Before Start Item Cost (IVC)" page.
