@@ -1,0 +1,42 @@
+
+In the lines of the shipping price we define the detail of Transport Costs
+
+*   for each service offered by the shipper (e.g. standard delivery, 24-hour delivery, etc.)
+*   according to the departure and arrival areas
+
+Let's see an example of a shipping price for shipping areas .
+
+From Related -> Price-> Areas definition we have defined the departure and arrival points:  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000197-0/PriceList_Line_ENU_1.png"><br>
+
+We have codified each route agreed with the shipper. As seen in theÿ[Setup]({{<relref "transport-cost-etc-ex038setup">}})ÿ, it is possible to use the different filters including the customer filter if we have specific agreements with one or more customers.
+
+For each of the filters you can also define a composite filter, eg. "from postcode 37010 to postcode 37170".
+
+The white warehouse and the blue warehouse are the starting points of the goods from the company (From Location Code Area).
+
+Let's see the lines of the list:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000197-0/PriceList_Line_ENU_2.png"><br>
+
+| **Field**| **Description** |
+| :--- | :--- |
+| **Transport Cost (Area)** |
+| Starting / Destination Area Code| indicates where the goods leave from and where they arrive |
+| Shipping Agent Service Code| indicates the type of service relating to the route. Multiple services can be coded for the same route (eg Blue Warehouse-> Milan: delivery service in 24 hours is provided and also the standard delivery service) |
+| Price Type Code| specifies the type of shipping price that is considered (the shipper can agree, for example, a price list for gross weight for one route and for km traveled for another route) |
+| Starting / Ending Date| dates that indicate the duration of validity for the line set in order to keep a history for changes to the shipping price |
+| Priority| you can indicate numerical values that establish which row should be used first if, for example, there are two rows with the same postcode. This applies ifÿFirst occurrenceÿhas been set in "Area Calculation Type" |
+| Description| it's possible add a extended description |
+| **Additional Charges** |
+| Additional Charge Code| enter a code to identify the type of additional service |
+| Starting / Endng Date| service validity interval in order to keep a history for changes to the shipping price |
+| Description| you can enter an extended description |
+| Quantity Type| Customer  <br>Gross Weight  <br>Net Weight |
+| Unit Price| indicate the cost of the service |
+| Amount %| it is linked to the Quantity Type field |
+| Tariff %| a % on tariff can be defined |
+| Amount Minimum| you can indicate a minimum amount for the service |
+| Rounding Factor| a rounding factor can be applied for quantities |
+| Fixed| if crossed, the charge is always charged by the shipper (e.g. fixed costs charged for document management in case of foreign shipments) |
+| Unique for Delivery| used for deliveries involving delivery rounds. In this case an additional charge can be set for the specific lap |
