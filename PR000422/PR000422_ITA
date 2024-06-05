@@ -1,0 +1,17 @@
+
+La fatturazione differita, gestita dalla app [Extended Combine Shipment (ECS) EX050]({{<relref "extended-combine-shipment">}}) consente di indicare come raggruppare i documenti, a chi intestare le fatture, con quale frequenza fatturare.
+
+Per quanto riguarda l'invio cumulativo di fatture contenenti sconti di testata Š necessario creare uno **specifico Metodo di fatturazione**:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000422-0/Detailed Document Discounts - Usage_Discounts and deferred billing_ITA_001.png"><br>
+ 
+
+In Campi va **abilitata** l'opzione **ID set sconti**.
+
+In questo modo, quando viene eseguito il report Fatt. Cumulative Estese ECS, inserendo come Cod. metodo fatt. default il metodo impostato a setup precedemtemente (es. DDD)
+
+| ?? **Attenzione** |
+|:---|
+| Gli sconti vengono raggruppati se il **Tipo sconto = % sconto** e se hanno **lo stesso valore**.<br /><br />Se gli sconti testata sono per Importo sconto, il sistema genera fatture separate. |
+
