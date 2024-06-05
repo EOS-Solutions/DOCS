@@ -1,0 +1,40 @@
+
+Sulle RIGHE documento (es. Ordine vendita) inseriamo un Tipo riga (es. Articolo), una quantit… e un prezzo unitario:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ITA_001.png"><br> 
+
+In aggiunta al campo standard "%sconto riga", sulle righe Š presente il campo "Sconto riga dettagliato" in cui Š possibile inserire sconti multipli. Da Righe->Informazioni correlate->Dettaglio sconti oppure dai tre puntini
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ITA_002.png"><br> 
+
+Š possibile accedere alla tabella di dettaglio nella quale si possono visualizzare gli sconti inseriti. E' possibile inoltre aggiungere righe di sconto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ITA_003.png"><br>
+
+il sistema ha suddiviso gli sconti inseriti nella riga del documento creando tre righe di dettaglio. Le ultime due righe sono state aggiunte manualmente.
+
+| ?? **Attenzione** |
+|:---|
+|Nella tabella di dettaglio Š possibile specificare il Tipo sconto. Nelle righe documento invece lo sconto inserito Š sempre in percentuale.|
+
+I campi principali sono:
+
+|**Campo** | **Descrizione** |
+|:---|:---|
+|Fatturato|Indica se questa riga di sconto Š stata fatturata. Valido solo per importi sconto fissi. |
+|Tipo	|E' possibile scegliere fra:<br>**% sconto:** valore che indica lo sconto in percentuale da applicare<br>**Importo sconto: **importo fisso che viene scontato<br>**Importo per unit…: **importo che viene scontato per ogni pezzo dell'articolo<br>**Importo per peso netto: **importo scontato sul peso netto del prodotto|
+|Basata sull'importo originale|Specifica se lo sconto viene calcolato sull'importo originale, non scontato, del documento (indicato nel campo "Importo di riferimento"). Il sistema altrimenti applica gli sconti in successione sull'importo di volta in volta risultante<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ITA_004.png">|
+|Elabora->Aggiorna anteprima|Consente di far popolare al sistema i campi Importo riferimento-Addebito/Sconto-Importo netto progressivo per vedere gli importi sconto in anteprima. Va eseguita ad ogni modifica.<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ITA_005.png">|
+|Codice origine|Se presente indica l'origine del movimento sconto (es.  condizioni di pagamento / metodo di spedizione)|
+|Escludi scalare|Il sistema di default calcola gli sconti in modo scalare sull'importo che via via si riduce man mano che gli sconti vengono aggiunti. Abilitando questa opzione invece gli sconti ripartono dall'importo originale del documento:<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ITA_006.png">|
+|Importo riferimento|Importo preso come base di calcolo per lo sconto|
+|Addebito/Sconto|Importo che viene scontato|
+|Importo netto progressivo|Importo netto del documento con gli sconti inclusi|
+
+Chiudendo la tabella di dettaglio e tornando sul documento il sistema avr… aggiunto gli sconti inseriti dalla pagina di dettaglio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ITA_007.png"><br>
+
+| ?? **Attenzione** |
+|:---|
+|Il campo standard "% sconto riga" viene comunque popolato in automatico dal sistema.|
