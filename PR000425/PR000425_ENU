@@ -1,0 +1,87 @@
+[**Profitability analysis**](http://)
+
+Profitability analysis allows you to obtain through EMA a margin income statement per customer/item (and aggregates of these two entities). This is an income statement scheme at the cost of sales. The structure of this income statement is almost free, once the lines have been defined, it will be necessary to indicate for each line the origin of the data. The setup for profitability analysis is performed within the "Setup C/A Æ profitability" in the tab called "Profitability analysis":
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/44Extended Management Accounting-enu.jpg">
+<br>
+
+|Field|Description|
+|-----|-----------|
+| Combine Entries C/Ind | None, Day, Month, Maximum ->specifies the option to allow for industrial ledger entries to be posted individually or as a combined posting per day or month. |
+| No Profitability compression by field Drop shipment, by Location code, by Variant code, by Lot no, by Serial no | these fields refer to creating lines about Revenues/Net Revenues of the profitability C/E, in the event that data compression is active. They can therefore be enhanced or modified only if the field "Combine Entries C/Ind" has a value other than None |
+|Item Cost From|Specifies where to retrieve the item's cost. You can choose from standard cost worksheet or IVC extension.|
+|Cost Type|Specifies which type of cost to analyze. Costing method available are = Average, Weighed Average, Standard|
+|Match on Invoice Date|Specifies if consider the posting date of the invoice or the posting date of the shipment when calculating sales analysis|
+|Driver Dimension 1, 2, 3, 4|allow you to indicate 4 dimensions (in addition to the 2 global ones) to be used in the calculation of the Profitability Drivers|
+
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/26Extended Management Accounting-enu.png">
+<br>
+
+[**Profitability income statement example**](http://)
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/25Extended Management Accounting-enu.png">
+<br>
+
+The field "Source Type" defines the way the single account is filled in and provides a series of pre-defined options.
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/26Extended Management Accounting-enu.png">
+<br>
+
+In any case, through ÃSales cost custom calculationÄ, it is possible to define a codeunit and a custom function through which to retrieve data from other tables present in the system, according to a specific logic.
+
+ As standard, the following pre-coded functions can be used:
+
+* PROVV: allows you to recover the accrued commission cost of the single sales line from the appropriate "Commissions (CMS)" App
+* PREMICLI: allows you to recover the amount of the bonus assigned to the single sales line from the specific "Sales and Purchase Bonus (SPB)" App
+* TRASP: allows you to recover the amount of the transport cost assigned to the single sales line from the special "Transport Costs" App
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/27Extended Management Accounting-enu.png">
+<br>
+
+If a profitability account has the "Source Type" = C/A, it is necessary to set up the link between the various accounts and define the logic for spreading the cost on the sales lines.
+
+The connection between the 2 economic accounts must be set on the C / A account: the target profitability account must be indicated (the indication must be made in the "Profitability column" field) and the driver to be used ("Driver Code" field ) for spreading the cost on the sales turnover. As an alternative to the driver code, the ÃDriver ColumnÄ and ÃSpalmatura BaseÄ fields can be used directly. 
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/28Extended Management Accounting-enu.png">
+<br>
+
+Note
+> To recover the commissions relating to free gifts lines connected to Item lines, on the specific profitability analysis account, you must fill in the "Sales Item Charge" field, with the charge code relating to free gifts: 
+
+ <img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/43Extended Management Accounting-enu.jpg">
+ <br>
+ 
+[**Profitability Driver**](http://)
+
+They allow you to allocate costs on sales turnover ("Driver column") according to filters set on fields and / or dimensions present in the sales lines. In the following example, marketing costs are spread across the revenue lines according to the value of the "Division Value Filter".  
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/29Extended Management Accounting-enu.png">
+<br>
+ 
+[**Scenario Analysis (EMA)**](http://)
+
+To feed the Profitability Analysis Account, after calculating the cost of the single item (eg through the ÃIVCÄ App), it is necessary to go back to the Scenario Analysis Card and execute the ÃUpdate C/IND AnalysisÄ function. At the end of the processing, the "Status C/IND" field in the Statistics tab will show the value "Allocated Indirects". 
+<br> 
+ <img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/30Extended Management Accounting-enu.jpg">
+ <br>
+ 
+|Field|Description|
+|-----|---------|
+| Update C/IND Analysis | feeds the detailed table C/IND Entries which you can open from the C/IND Account |
+| Navigate -> C/IND Card Analysis | il is possible to access the C/IND Analysis Account, filtered according to the initial Analysis Code |
+
+<br>
+
+[**Check data generated through the Profitability Income Statement (EMA)**](http://)
+
+ <img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/31Extended Management Accounting-enu.png">
+ <br>
+"Analysis Net Amount" balance resulting from cost allocation process on sales lines.
+
+[**Example of entries generated by the allocation process**](http://)
+
+Through the Drilldown of the column "Analysis Net Amount" it is possible to access the details: 
+ <img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/32Extended Management Accounting-enu.png">
+ <br>
+
