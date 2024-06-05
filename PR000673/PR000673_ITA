@@ -1,0 +1,23 @@
+La pagina permette di inviare la tabella Vasi al SIAN. Le azioni principali sono:
+
+* Utilizzando il Crea soggetto Š possibile creare / aggiornare le botti.
+
+* Spedisci al Servizio WEB.
+
+* Ottieni Risposta.
+
+* Nella sezione Risposta SIAN Š presente lo stato della richiesta/risposta.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000673-0/10wine-sian-ITA.jpg"><br>
+
+Le seguenti funzioni analoghe a quelle dei vasi consentono l'invio di:
+
+* Elenco clienti SIAN: invia clienti.
+
+* Elenco fornitori SIAN: invia fornitori.
+
+* Elenco articoli SIAN: invia articoli.
+
+* SIAN Shipping Agent: Invia spedizioniere.
+
+* SIAN Vineyard List: Invia vigneti.
