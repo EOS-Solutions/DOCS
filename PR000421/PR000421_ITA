@@ -1,0 +1,16 @@
+
+Va impostato a setup il Codice origine sia per i pagamenti, sia per le spedizioni:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000421-0/Detailed Document Discounts - Setup_Source Code_ITA_001.png"><br>
+
+Tali codici consentono di riconoscere rapidamente in tabella gli sconti dipendenti dalle condizioni di pagamento o dai metodi spedizione.
+
+Se sul pagamento viene scelta una condizione di pagamento che presenta uno sconto associato
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000421-0/Detailed Document Discounts - Setup_Source Code_ITA_002.png"><br>
+
+sulla testata documento verr… applicato tale sconto e il codice origine ci permette di capire che Š stato ereditato da una condizione di pagamento:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000421-0/Detailed Document Discounts - Setup_Source Code_ITA_003.png"><br>
+
+
