@@ -1,0 +1,24 @@
+**Calcolo valore WIP di magazzino**
+
+Setup: per effettuare il calcolo del WIP Š necessario attivare il flag ÃCalcola WIP periodoÄ per il periodo oggetto di elaborazione: 
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/12inventory-valuation-and-costing-ita.png"><br>
+
+Elaborazione: dopo aver eseguito le funzionalit… ÃArchivia dati periodoÄ e ÃCalcola dati consuntiviÄ Š possibile accedere allo ÃStorico wipÄ: <br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/13inventory-valuation-and-costing-ita.png"><br>
+
+Vengono mostrati tutti gli ordini di produzione inclusi nel calcolo e, tramite Gestione->Visualizza Š possibile accedere alla scheda di dettaglio del singolo ordine.<br> 
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/23inventory-valuation-and-costing-ita.png"><br>
+Esempio scheda di dettaglio:<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/24inventory-valuation-and-costing-ita.png"><br>
+
+* Il campo ÃImporto costoÄ della testata indica il valore del WIP calcolato per lo specifico ordine.
+* Subpage ÃWip componenti ordini prodÄ: contiene la valorizzazione dei componenti utilizzati per articoli non ancora versati a magazzino come Output (parzialmente o completamente). NellÂesempio sopra: sono stati consumati 10 pz per ogni componente ma Š stato registrato un Output parziale (5 su 10 pz).
+* Subpage ÃWip cicli ordini prodÄ: contiene la valorizzazione dei movimenti capacit… (tempo di lavorazione + tempo di setup) registrati per articoli non ancora versati a magazzino come Output (parzialmente o completamente). NellÂesempio sopra: sono stati registrati Movimenti contabili capacit… per 122 minuti (totale previsto per produrre 10 pz) ma Š stato versato a magazzino un Output parziale (5 su 10 pz). Generalmente per le lavorazioni interne, il calcolo viene effettuato in funzione dei tempi dichiarati/effettivi, per il C/Lavoro in funzione dei PZ.
+ 
+**Storico wip (IVC)**
+
+I dati calcolati posso essere visualizzati attraverso il report Storico wip (IVC):
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/27inventory-valuation-and-costing-ita.png"><br>
+Esempio di stampa<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/28inventory-valuation-and-costing-ita.png"><br>
