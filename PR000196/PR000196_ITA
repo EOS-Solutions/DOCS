@@ -1,0 +1,22 @@
+
+Dalla lista Cod. listino trasporto (ETC) Š possibile crearne uno premendo Nuovo:
+
+| **?? Attenzione** |
+| --- |
+| Ogni listino eÂ associato ad un solo spedizioniere. </br> Uno spedizioniere ha un solo listino per i costi di trasporto. |
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000196-0/PriceList_Header_ITA_1.png"></br>
+
+
+| **Field**| **Description** |
+| :--- | :--- |
+| Cod. listino trasportoÿ| Indica lo Spedizioniere ed Š selezionato dalla lista Spedizionieri precedentemente definita. |
+| Preventivo/Preconsuntivo/Consuntivoÿ| Consente di calcolare i costi di trasporto sulla base del listino rispettivamente al momento della creazione dell'ordine di vendita/bolla/fattura. |
+| Tipo calcolo| **Somma**ÿPrende in input tutti i codici tipo listino delle righe ed effettua la somma dei valori ai fini del calcolo del costo di tutta la spedizione.  </br> **Prima occorrenza**ÿPrende in input il primo valore che incontra nelle righe (in base al valore del campo Priorit…)senza effettuare la somma. |
+| Tipo calcolo per zona| **Somma**ÿPrende in input tutti i codici tipo listino delle righe ed effettua la somma dei valori ai fini del calcolo del costo di tutta la spedizione. </br> **Prima occorrenza**ÿPrende in input il primo valore che incontra nelle righeÿ (in base al valore del campo Priorit…) senza effettuare la somma. |
+| Nr. Versioniÿ| E' il numeratore predefinito per gestire le versioni del listino. |
+| Fattore conversione peso/volume | Consente di specificare il fattore di conversione peso/volume dello spedizioniere. Questo perch‚ nel caso di spedizioni di colli voluminosi il costo della spedizione non viene calcolato semplicemente in base al peso effettivo, ma sul peso tassabile, grazie ad un fattore di conversione che traduce in kg tassabili un determinato volume. |
+| Versione attivaÿÿ| Una volta definite le versioni del listino con i relativi periodi di validit… nella tabella , la versione attiva verr… indicata automaticamente in tale campo. |
+| Valutaÿÿ| Indica la valuta in cui calcolare i costi di trasporto. |
+| Stato| Indica lo stato del documento. </br>**Nuovo**: listino di nuova creazione. Non pu• essere utilizzato per i calcoli, ma pu• essere modificato. </br> **In Sviluppo:ÿ il** listino in fase di modifica. Non pu• essere utilizzato per i calcoli. </br> **Certificato**:ÿ il listino pu• generare calcoli dei costi di trasporto, ma non pu• essere modificato. </br> **Chiuso**: non pu• essere utilizzato, n‚ modificato, ma viene mantenuto nello storico. |
