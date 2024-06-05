@@ -1,0 +1,10 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/7CombinedWarehouseShipment.png">
+<br><br>
+
+It creates a Default Setup for combination criteria in Whse Shipment.
+
+Initialize Combination Setup :
+* Creates Default codes
+* Creates Default Setup (valid for shipment from all locations to all destinations)
+
+<br>
