@@ -1,0 +1,17 @@
+
+In the Shipping Price card from Related-> Price-> Areas definition it is possible to set the departure and shipping areas related to the shipping price list for all the routes agreed with the shipper.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000172-0/Setup_ShippingArea_ENU_1.png"><br>
+
+Each column constitutes a filter. It is therefore also possible to set combinations eg. " from one code to another code," one code or another "etc. 
+
+
+
+| ?? **Important** |
+|---|
+| It is necessary to define theÿ**departure area from the company's warehouse**ÿby ticking the option "ÿ**From Location CodeÿArea**" |
+
+
+In the calculations, the system uses filters starting from the most detailed up to the least detailed: Customer, Postal Code, ISTAT City,ÿCounty,ÿTerritory, Country.
+
+
