@@ -1,0 +1,48 @@
+This page allows you to calculate the various types of cost of the items in the warehouse for the reference periods, determining the fiscal value of the warehouse for each period. The processing of a period occurs with the following steps:
+
+* Manual creation of the period
+* Data archiving: reference data are archived (items, lists, routings etc.)
+* Calculation of actual data: with this activity the various types of item costs are calculated according to the parameters defined in the setup
+* Calculation of LIFO category costs: to be used only if the costing is made for LIFO category
+
+The main features are:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/5inventory-valuation-and-costing-enu.png"><br>
+
+|Action|Description|
+|-----|---------|
+| Archive Period data | To generate a local version of the item master data, which now also includes fields for calculating the various types of costs associated with them. It is a method of calculating costs that takes place alongside the standard. The cost calculation methods are defined in the setup as illustrated above |
+| Calculate Actual data | to calculate costs for previously stored datas |
+<br>
+As standard cost, the one present in the item card is inherited, so it is not calculated by the costing  
+
+After performing the calculation, by clicking on History->Item History, it is possible to consult the various types of cost calculated for the single item:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/15inventory-valuation-and-costing-enu.png"><br>
+You can consult also:
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/7inventory-valuation-and-costing-enu.png"><br>
+* Report->Print Data Detail
+* Report->Item Costing Card
+
+The Item card contains all the information relating to the valuation of the item for the reference period and in particular each cost is divided between the cost components at "Single level" and "Rolled-up":
+
+* Direct Materials Cost (Materials/Components)
+* Direct Capacity Cost (deriving from internal processing times)
+* Actual Subcontracted Cost (rom external work carried out by subcontractors)
+
+For each of the 3 direct cost components, the system can manage the corresponding general / indirect cost items.
+
+**Data updating**
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/9inventory-valuation-and-costing-enu.png"><br>
+* The action ÃUpdate Item CostsÄ can ONLY be used if you want to overwrite the unit cost/standard cost of the item card. Not to be used until after careful evaluation.
+* The actions ÃUpdate Item Entries and "Update Capacity EntriesÄare used ONLY if you want to update the entries based on the costs calculated by the costing of Business Central. They use logic similar to that of the BC standard adjustment. Not to be used until after careful evaluation.
+
+**Bin exclusion**
+
+This function allows to exclude from the calculation of the amount of the period the warehouse entries present in certain locations indicated in the setup. In the Item Costing Period Management there is the related flag "Bin Exclusion Enabled": 
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/11inventory-valuation-and-costing-enu.png"><br>
+The locations to be excluded from the calculation, for each Location Code, must be indicated in the Excluded Bins (IVC).
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Period Management/22inventory-valuation-and-costing-enu.png"><br>
