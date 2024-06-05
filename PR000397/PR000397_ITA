@@ -1,0 +1,5 @@
+[**Sincronizza C/G con C/A (EMA)**](http://)
+
+Per sincronizzare i saldi, Š necessario lanciare la procedura ÃSincronizza C/G con C/A (EMA)Ä:<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Transfer Entries to CA/5Extended Management Accounting-ita.png"><br>
+La procedura esegue prima la funzione ÃRegistra conti c/a in piano dei contiÄ e poi trasferisce i movimenti C/G e simulati in contabilit… analitica, a partire dallÂultima sincronizzazione effettuata in precedenza.  
