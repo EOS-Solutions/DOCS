@@ -1,0 +1,91 @@
+**Prepayment Setup**
+
+The prepayment amount in percentage or fixed amount is determined on the Salesperson/Purchaser Card::
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/CommAdvAlloc1.png"><br>
+
+The percentage is applied to the amount of the commission on sales documents registered during the month, for agents with Partial or Total settlement.
+
+-   % Prepayment: a record is created for each combination of Line / Invoice / Credit Note - due date. The Document No. is inherited from the Invoice / Credit Note that generated it.
+-   Prepayment Amount (LCY): a record is created for each salesperson with Due Date equal to thePosting Date. The two calculation methods are alternatives to one another.
+
+In both cases opposite record will also be generated with reason code "prepayment reversal." The document number will coincide with that of the prepayment that generated it.
+
+**Commission Advance Calculation (CMS)**
+
+To calculate the advances you have to launch the report Commission Advance Calculation (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/CommAdvAlloc2.png"><br>
+
+The system shows how many salespersons have been processed and how many lines have been created in a message.
+
+In the Commission Payable journal are then created the following commission entries to be settled:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/CommAdvAlloc3.png"><br>
+
+On posting, the system will create Commission advances entries.
+
+**Commission Cost Allocation (CMS)**
+
+The "Commission cost allocation (CMS)" procedure allows you to generate the following periodic accounting / simulated entry:
+
+Accrued commission expense (CE) @ Commission expense to be paid (SP - Liabilities).
+
+The accounts handled are present in the "Commissions" tab of the Salespeople / Purchasers master data.
+
+**Commissions Setup (CMS)**
+
+In the "Allocation" section of the Commissions Setup it is necessary to fill in the following parameters:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/CommAdvAlloc4.png"><br>
+
+| **Field**                                                 | **Description**                                                                                                                                                                                                                                                                       |
+|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cost Allocation on Invoiced                               | the procedure, by default, works only for agents with settlement type on the collected (partial or total). If you want to manage the allocation entries also for the agents with settlement type on the turnover, it is necessary to activate the flag ÃCost Allocation on Invoiced". |
+| Allocation Template Name / Allocation Batch Name          | choose a name from those listed                                                                                                                                                                                                                                                       |
+| Sim. Allocation Template Name Sim. Allocation Batch Name  | choose a name from those listed                                                                                                                                                                                                                                                       |
+| Simulated Cost Allocation                                 | if you want to manage, during the year, the allocations in simulated accounting, this option must be turned on. NB: the end-of-year appropriations will in any case be accounted for in the general accounts.                                                                         |
+
+**Execution of the "Commission cost allocation (CMS)" procedure**
+
+Entries during the year or at the end of the year are generated in the General Ledger as a result of the execution of the procedure with the "Simulated" flag set to No:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/CommAdvAlloc5.png"><br>
+
+| **Field**                   | **Description**                                                                                                                                          |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Starting / Ending Date      | period considered for the calculation of the commission appropriations                                                                                   |
+| Simulated                   | it is proposed according to the activation or not of the "Simulated cost allocation" field present in the "Commission Setup (CMS)"                       |
+| Template Name / Batch Name  | they are retrieved from the related fields in the "Commission Setup (CMS)", depending on whether the posting is made in general or simulated accounting  |
+| Post                        | if enabled, the generated entries are automatically accounted for                                                                                        |
+
+**Example of generated GL entries:**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/CommAdvAlloc6.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/CommAdvAlloc7.png"><br>
+
+**Example of simulated entries generated:**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/CommAdvAlloc8.png"><br>
+
+**Comm. Cost Allocation Register (CMS) / Comm. Sim. Cost Allocation Register (CMS)**
+
+The accounting / simulated postings related to commission allocations can be consulted on the pages "Comm. Cost Allocation Register (CMS) / Comm. Sim. Cost Allocation Register (CMS) ":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/CommAdvAlloc9.png"><br>
+
+|       See also                                                                                                                               |
+|----------------------------------------------------------------------------------------------------------------------------------------------|
+| [Salespersons Setup]({{<relref "commissions-setup">}})|
+| [Commissions Calculation Setup]({{<relref "commissions-calculation-setup">}}) |
+| [Commission Ledger Entries]({{<relref "commission-ledger-entries">}})|
+| [Create Purchase Document]({{<relref "commissions-commission-purchase-document">}})|
+| [Create Purchase Document from Commission Prospect]({{<relref "create-commission-prospect">}})|
+| [Report]({{<relref "report">}})|
+| [Technical Notes]({{<relref "commission-technical-notes">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
