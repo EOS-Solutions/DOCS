@@ -1,0 +1,29 @@
+
+La app prevede inoltre un setup dal quale Š possibile scegliere la modalit… di calcolo dei costi di trasporto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000176-0/Setup_Datasource_ITA_1.png"><br>
+
+Il setup permette tre scelte:ÿ
+
+<table>
+<tr>
+	<td rowspan="0">**Origine Parametri Doc. Vend.**</td>
+	<td>**Standard**</td>
+</tr>
+<tr>
+	<td>**CWS**</td>
+</tr>
+<tr>
+	<td>**Informazioni spedizione**</td>
+</tr>
+</table>
+</br>
+
+Se si desidera calcolare i costi di trasportoÿ**in base alle CWS,**ÿnella pageÿ**Costi di trasporto per documento (ETC)**ÿsi utilizza la funzione "**Calc****. Costo Trasporto per**":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000176-0/Setup_Datasource_ITA_2.png"><br>
+
+**Negli altri due casi**ÿsi utilizza "**Calc****. spedizioni Vend.**":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000176-0/Setup_Datasource_ITA_3.png"><br>
+
