@@ -1,0 +1,41 @@
+The Enasarco Foundation ([www.enasarco.it)](http://www.enasarco.it/) provides the social security and assistance of salespersons and trade representatives.
+
+**Introduction**
+
+The Enasarco FIRR and FISC (CMS) Eos Solutions app allows you to manage the calculation and registration of agent contributions in accordance with applicable regulations through:
+
+-   Assigning contribution parameters to vendors/agents
+-   Calculating contributions for Enasarco, F.I.R.R., F.I.S.C.
+-   Posting calculated contributions to accounting
+-   Ability to intervene with changes and fixes
+-   Exporting the "Grandi Ditte" file through specific bill
+-   Easy application of vendor entries related to contributions to vendor entries related to purchase document posting
+
+The Enasarco FIRR and FISC app is based on the Commissions app: the taxable basis for calculating contributions is represented by commissions, that are yet settled or to be settled. For this reason, the contribution management is also identified by the acronym CMS. 
+
+| **N.B.**                                                                                                    |
+|-------------------------------------------------------------------------------------------------------------|
+| You must have already installed the Commissions app to download and install the Enasarco FIRR and FISC app. |
+
+**Enasarco FIRR and FISC - SUMMARY**
+
+Press ALT + Q and digit "CMS" to see a list of the features involved:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000009-0/ENAIntroduction1.png"><br>
+
+<br>
+
+
+|**Task**  |**See** |
+|--|--|
+| Set the setup for social security and assistance, enter the setup F.I.R.R. and F.I.S.C., set the vendor and salesperson card: Commissions Setup (CMS), Enasarco Soc. Sec. Setup CMS), Enasarco Assistance Setup (CMS), F.I.R.R Setup (CMS), F.I.S.C Setup (CMS), Salesperson Card, Vendor Card.|[Setup]({{<relref "enasarco-firr-and-fisc-setup">}})|
+|Workflow|[Steps]({{<relref "ena-steps">}})|
+|Enasarco Social Security/Assistance: Contribution Ledger Entry (CMS), Calculate and Post Contr. Ledger Entry (CMS), Apply Contr. Vendor Ledger Entry (CMS)|[Calculate and post contribution entries in unposted purchase document]({{<relref "enasarco-firr-and-fisc-cms-calculate-a">}})<br> [Apply vendor entries related to contributions to vendor entries related to purchase document posting]({{<relref "ena-apply-contributions-ledger-entries">}})
+|F.I.R.R. / F.I.S.C.: Calculate F.I.R.R. (CMS) , Calculate F.I.S.C (CMS)|[Calculate and post contribution entries through specific report]({{<relref "ena-calculate-and-post-contribution-entries-through-specific-report">}})|
+|Export contributions into a bill and generate the Grandi Ditte file: Contributions Bill List|[Contribution Bill / Grandi Ditte File]({{<relref "contribution-bill-grandi-ditte">}})|
+|Import contributions related to a previous management: Contributions Ledger Entry (CMS)|[Import previous contribution entries]({{<relref "ena-import-previous-contribution-entries">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
