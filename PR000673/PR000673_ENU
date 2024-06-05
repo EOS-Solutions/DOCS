@@ -1,0 +1,23 @@
+The page allows to send the Tanks table to SIAN. The main actions are:
+
+* Using the Create Subject you can Create/Update the tanks.
+
+* Send to WEB service.
+
+* Get Response.
+
+* In the SIAN Response section there is the status of the request / response.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000673-0/10wine-sian-ENU.jpg"><br>
+
+The following functions similarly to those of the tanks allow the sending of:
+
+* SIAN Customer List: Send Customers
+
+* SIAN Vendor List: Send Vendors
+
+* SIAN Item List: Send Items
+
+* SIAN Shipping Agent: Send Shipping Agent
+
+* SIAN Vineyard List: Send Vineyards
