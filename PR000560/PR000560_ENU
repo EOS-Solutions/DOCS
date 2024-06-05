@@ -1,0 +1,19 @@
+In order to use the "Suggest Line For Packing" function, you must fill in a setup in "Packaging Instructions". This setup provides the system with the information to create the packaging for each different item:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000560-0/EX055_Setup Instructions_ENU_IMG1.png"><br>
+
+|**Field**|**Description**|
+|:---|:---|
+|No.	record number|
+|Disabled	you can enable or disable the row after creation|
+|Priority	You can prioritize the row by indicating numeric values. The highest has top priority.|
+|Item Category Code / Item No. / Variant Code	indicate the article and possibly the category and variant|
+|Unit of Measure Code	Insert the unit of measure of the packed item, f.e. box|
+|Source Type	you can choose between Customer/ Vendor /Salesperson and optionally select a Number and a Posting Group|
+|Default	Specify the instruction as default for the item and source combination.|
+|Packaging Material No.	 Insert the packaging material used to pack the item.|
+|Load Carrier No.	 Insert the load carrier used to pack the item.|
+|Qty. per Packaging Material	Filling quantity |
+|No. of Layers / Qty. per Layer	 No. of layers / packages if more packagings could be stacked|
+|Mandatory	When set, then a packaging must be specified on the shipment|
+|HU Type Code	 Specify the handling unit type.|
