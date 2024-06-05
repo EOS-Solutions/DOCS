@@ -1,0 +1,169 @@
+<iframe width="560" height="316" src="https://www.youtube.com/embed/Vffg_5mOZHU" title="Advanced Cash Flow for Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br><br>
+Press ALT + Q and digit "CSF" for a list of the features involved:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF1.jpg"><br>
+
+| **Task**                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [1](#part1). Define the due dates of sales / purchase orders using the defined payment terms based on the planned shipment dates of the order header / order lines                                                       |
+| [2](#part2). Define the due dates of sales orders using the defined payment terms based on the planned invoicing dates of the invoicing plan connected to the order (EOS App "IPL")                        |
+| [3](#part3). Show the customer exposure in a separate cashflow account line based on the open ledger due dates. This feature is only available in the italian database, linked to the "Bank receipt" payment method |
+| [4](#part4). Change the due dates of the cashflow worksheet with a number of days specified for the payment method of the single line/order or in the customer/vendor card                                        |
+| [5](#part5). Change the due dates and amounts to receive/pay of the single overdue customer/vendor ledger entries based on specific parameters defined in a new CSF table                                         |
+
+<a name="part1">
+     
+</a>
+<br>
+<br>
+<br>
+
+# Define the due dates of sales / purchase orders using the defined payment terms based on the planned shipment dates of the order header / order lines
+
+
+On the Cash Flow Setup page, in the "Advanced Cash Flow" Tab there are the options:
+
+| Due Sales - Ship. Date  |
+|-------------------------|
+| Due Purch. - Ship. Date |
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF2.jpg"><br>
+
+The logic defined for calculating the expiration dates relating to sales / purchase orders is applied by the specific function "Suggest Worksheets lines (CSF)" on the "Cash flow Worksheet" page:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF3.jpg"><br>
+
+If the procedure is performed with the "**Group by document type" option enabled**:
+
+-   Sales Order - Cash flow date = Header shipment date + deadlines from payment term present in the order
+-   Purchase Order - Cash flow date = Promised delivery date of the header + deadlines from the payment term present in the order
+-   In both cases, if the determined date is prior to the workdate, it can be forced equal to the latter through the standard flag "Move Overdue Cash Flow Dates to Work Date" on the "Cash flow forecast sheet" page.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF4.jpg"><br>
+
+If the procedure is performed with the "Group by document type" option disabled:
+
+-   Sales Order - Cash flow date = Line shipment date + deadlines from payment term present in the order
+-   Purchase Order - Cash flow date = Promised delivery date of line + deadlines from payment term present in the order
+-   In both cases, if the determined date is prior to the workdate, it can be forced equal to the latter through the standard flag "Move cash flow dates to work date" on the "Cash flow forecast sheet" page.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF5.jpg"><br>
+
+<a name="part2">
+       
+</a>
+<br>
+<br>
+<br>
+
+# Define the due dates of sales orders using the defined payment terms based on the planned invoicing dates of the invoicing plan connected to the order (EOS App "IPL")
+
+If a Sales Order is associated with an Invoicing Plan (see [Invoicing Plan (IPL)]({{<relref "invoicing-plan-ipl">}}) app), the amount and deadlines of the order not yet invoiced are calculated according to the lines present in the invoicing plan itself:
+
+-   Only Invoicing Plan lines with the "Invoice Posted" flag set to NO are included in the processing
+-   The date used to determine the "Cash Flow Date" is present on each line of the Invoicing Plan and is the "Expected Invoice Date" if \> / = workdate, otherwise the workdate to which the payment condition on the invoicing plan applies.
+
+Invoicing Plan combined with a Sales Order (No. 1070):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF6.jpg"><br>
+
+Cash Flow Worksheet generated
+
+The lines generated in the Cash Flow Worksheet correctly have a "Cash Flow Date" determined by:
+
+**Expected invoice date** of the invoicing plan ( or workdate if it's later) **+ payment term** indicated in the same line of the invoicing plan:
+
+**<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF7.jpg"><br>**
+
+After invoicing the 1st line (Prepayment Invoice) of the Invoicing Plan, only the due date for the 2nd line (not invoiced) is included in the Cash Flow Worksheet:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF8.jpg"><br>
+
+
+<a name="part3">
+      
+</a>
+<br>
+<br>
+<br>
+
+# Show the customer exposure in a separate cashflow account line based on the open ledger due dates. This feature is only available in the italian database, linked to the "Bank receipt" payment method
+
+On the "Cash Flow Setup" page you can see the "Receiv. CF Account No. - Exp." field:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF9.jpg"><br>
+
+-   If "Cash account No. - Customer exposure" is valued, this account is used in the "Suggest Worksheet Lines (CSF)" procedure to view the customer exposure; this logic applies only to customer ledger entries of "Document Type: Payment, Bank Receipt: Yes, Open: Yes". Otherwise the logic applied will be the standard one.
+-   If the ÃSuggest Worksheet Lines (CSF)Ä report is executed with the ÃReceivablesÄ option enabled, then both the standard account combined with the accounts receivable and the new ÃNr. Cash account - Customer exposure ".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF10.jpg"><br>
+
+The row relating to the Riba (Payment) issue is generated on account 0015 indicated in the "Cash Account No. - Customer Exposure" field. The related invoice line (line highlighted in blue) remains on the standard account:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF11.jpg"><br>
+
+
+<a name="part4">
+      
+</a>
+<br>
+<br>
+<br>
+
+# Change the due dates of the cashflow worksheet with a number of days specified for the payment method of the single line/order or in the customer/vendor card
+
+It is possible to set the new field "CF - Average delay days" on the Payment Methods and in the Customers / Vendors records: this value will have to adjust the Due date calculated in the cash flow for the relative movements and customer / vendor orders.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF12.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF13.jpg"><br>
+
+The lines generated in the Cash Flow Worksheet correctly show a "Cash Flow Date" adjusted by the value present in the "Average Delay Day" field of the payment method or, alternatively, in the same field of the customer / vendor card.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF14.jpg"><br>
+
+
+<a name="part5">
+      
+</a>
+<br>
+<br>
+<br>
+
+# Change the due dates and amounts to receive/pay of the single overdue customer/vendor ledger entries based on specific parameters defined in a new CSF table
+
+Provide for the possibility for each customer / vendor accounting movement to change the amount to be collected / paid and the relative due date, by filling in the field "Average Delay Day List (CSF)".
+
+This field is based on a specific table containing the following fields:
+
+-   Code
+-   Description
+-   330D - % Income/Payment: to be used in calculating the amount by adjusting the expiration date (or the workdate in the case of overdue) by 30 days..
+-   60D - % Income/Payment: to be used in calculating the amount by adjusting the expiration date (or the workdate in the case of overdue) by 60 days.
+-   90D - % Income/Payment: to be used in calculating the amount by adjusting the expiration date (or the workdate in the case of overdue) by 90 days.
+-   Calculation Type: determines the calculation logic of the new deadlines according to a no. of days (30G, 60G, 90G) or a nr. of months (1M, 2M, 3M).
+
+In the event that the 3 columns show % equal to 0 (zero), the match will be excluded from the calculation.
+
+Table / page "Average Delay Day List (CSF)"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF15.jpg"><br>
+
+Customer or vendor ledger entries:
+
+the accounting movement has been marked with the value "01" of the "CSF - Cod. calculation of overdue amounts" field:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF16.jpg"><br>
+
+Cash Flow Worksheet generated
+
+the calculation of the "Cash flow date" is correct: in fact, the 3 days of delay on the payment method (Bank) were added to the original expiry date (31/01/21), then the logic was applied calculation combined with code "01":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF17.jpg"><br>
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
