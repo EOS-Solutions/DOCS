@@ -1,0 +1,13 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000676-0/11wine-sian-ENU.jpg"><br>
+
+This page allows to send the operations to SIAN.
+
+The main actions are:
+
+*  **Generate Lines**: allows to process the lines that make up the transaction. Basically, only the header is loaded when the various entries are recorded in the operations list. In order to proceed with sending the operation, it is necessary to create the operation lines.
+
+*  **Control/Open**: allows to check if there are any errors in the operation. A series of formal checks are performed on the registration in order to intercept any errors before sending it to SIAN.
+
+* **Send to WEBservice**
+
+* **Get Response**
