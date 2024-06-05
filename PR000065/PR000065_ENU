@@ -1,11 +1,13 @@
 {{% pageinfo color="info" %}}
-Some features of the Advanced Document Reporting App require a subscription.
+Some features of this app require a subscription.
 
-The subscription can be activated from Subscription control panel or directly from the notification messages that the system proposes, by clicking on the link that allows you to start the subscription wizard. In particular:
+The subscription can be activated from *Subscription control panel* page or directly from the notification messages that the system proposes, by clicking on the link that allows you to start the subscription wizard.
 
-* **FREE** version : the user can print all the reports included and modify the general setup. It is not possible to modify the advanced setups that allow the customization and / or the massive sending.
+In details:
 
-* **PRO** version : all features are active. The pro-version enable access to report sources, allowing further customization.
+* FREE-TRIAL-DEMO version: it's automatically activated at first request and gives full access to all features. This trial expires after 20 days from the activation
 
-See www.eos-solutions.it website for more information.
+* FULL VERSION: it's possibile to buy a full version that will last for 12 months following the wizard and accessing to the EOS AppStore.
+
+See <a href="www.eos-solutions.it">www.eos-solutions.it</a> website for more information.
 {{% /pageinfo %}}
