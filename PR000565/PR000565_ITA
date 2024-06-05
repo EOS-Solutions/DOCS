@@ -1,0 +1,143 @@
+Come detto precedentemente le tre possibilit… di calcolo sono:
+
+a) Manualmente dalla lista dei mov. contributi
+
+b) Tramite rilascio del documento
+
+c) Tramite report di elaborazione massiva
+
+**a) ESEMPIO Calcolo e registrazione in C/G movimenti contributi in documento di acquisto non registrato**
+
+1.  Accedo ai movimenti contributi
+2.  Li modifico se necessario
+3.  Li contabilizzo
+
+In fattura/nota credito di acquisto Š presente una nuova sezione Enasarco allÂinterno del gruppo Provvigioni:  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg1.png"><br>
+
+ß possibile quindi verificare se il calcolo dellÂintegrazione Š abilitato per il documento specifico (di default lo Š se la fattura Š di fine trimestre) e navigare i movimenti contributi del documento. Vengono mostrati anche i Movimenti contributi (contributi calcolati dal sistema a carico azienda e agente per questa fattura) se presenti. Cliccando sul numero Š possibile vederne i dettagli. Diversamente si pu• accedere ai Mov. contributi anche da Naviga-\> Fattura-\> Provvigioni-\> **Mov. contributi:**
+
+all'apertura della pagina il sistema calcola i contributi sia a carico azienda, sia a carico agente
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg2.png"><br>
+
+Nell'esempio sopra riportato il campo Importo contributo VL in C/G mostra che i movimenti non sono stati ancora contabilizzati in C/G.
+
+Il campo Importo Contributo VL Š modificabile (se modificato il sistema abilita il flag MODIFICATO).
+
+da Elabora -\> Registra in C/G i contributi vengono appoggiati sul batch indicato in Setup e contabilizzati e il campo Importo contributo VG viene valorizzato (navigabile): Viene valorizzato anche il campo Nr. Registro contributi:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg3.png"><br>
+
+Per ogni registrazione relativa ai contributi si genera un registro:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg4.png"><br>
+
+| **N.B.**                                                                                                                                |
+|-----------------------------------------------------------------------------------------------------------------------------------------|
+| Se a Setup non Š stato abbinato un numeratore al batch di registrazione, il Nr. Documento riporta il numero della fattura provvisoria.  |
+
+In fattura acquisto -\>scheda ritenute e contributi:un tab ENASARCO riepiloga i dettagli:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg5.png"><br>
+
+**b) ESEMPIO Calcolo e registrazione in C/G movimenti contributi in documento di acquisto non registrato**
+
+1.  Apro la fattura acquisto
+2.  Rilascio il documento e automaticamente il sistema calcola i contributi e li contabilizza oppure li contabilizza se sono gi… stati calcolati precedentemente.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg6.png"><br>
+
+Al rilascio del documento il sistema si accorge che mancano i movimenti contributi, quindi li calcola e li contabilizza.
+
+I mov. contributi sono navigabili (se sono presenti vari soci saranno presenti le righe relative:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg7.png"><br>
+
+**b) ESEMPIO Calcolo e registrazione in C/G movimenti contributi + Integrazione in documento di acquisto di fine trimestre**
+
+La fattura nell'esempio Š di fine trimestre. Il sistema propone in automatico il flag Integrazione/recupero abilitato.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg8.png"><br>
+
+Aprendo i movimenti contributi dal relativo campo oppure da Naviga-\>Fattura-\>Provvigioni-\>Mov. Contributi, il sistema ha calcolato le righe relative ai contributi e una riga di Integrazione (nel caso in cui fossero stati versati pi— contributi rispetto a quanto previsto, il sistema calcolerebbe un recupero inserendo una riga negativa)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg9.png"><br>
+
+| N.B.                                                                                  |
+|---------------------------------------------------------------------------------------|
+| Il flag Integrazione/recupero viene abilitato automaticamente nella colonna relativa. |
+
+Rilasciamo e registriamo la fattura. Se nel Setup provvigioni Š stato attivato il flag ÃCollega automaticamente i movimenti contabili fornitori contributi alla registrazioneÄ, in coda alla registrazione della fattura fornitore, il sistema effettua il collegamento tra il movimento contabile fornitore di Tipo Fattura e quello relativo al contributo a carico dellÂagente.
+
+I movimenti contributi sono navigabili anche sulla fattura registrata dal tab Provvigioni.
+
+**Esclusione intero documento o specifiche righe da calcolo contributi ENASARCO**
+
+Si pu• intervenire manualmente per escludere un intero documento dal calcolo Enasarco. In questo caso, nessun contributo sar… calcolato per questo documento
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg10.png"><br>
+
+Lo stesso tipo di intervento Š possibile attuarlo a livello di singola riga, in modo da escluderne una o pi— dal calcolo dellÂimponibile Enasarco a partire dal quale il contributo sar… generato. Questa esclusione si applica ad esempio alle righe di bollo.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg11.png"><br>
+
+**NB:** lÂazione sul flag di testata prevale sulle impostazioni di riga, ovvero se il flag in testata Š posto a SI, tutti i flag delle righe saranno aggiornati di conseguenza.
+
+**Generazione massiva contributi ENASARCO**
+
+Le operazioni precedentemente descritte, oltre che eseguite da singolo documento o in generale demandate al rilascio dello stesso, possono essere lanciate in modo massivo tramite il report a menu **Calcola e registra Enasarco documenti (CMS**).
+
+Tale operazione consente di registrare i contributi unicamente sui documenti in stato Aperto e prevede la selezione di alcuni parametri di lancio, in modo da poter decidere quale delle operazioni si vuole eseguire su tutti i documenti che rientrano nei filtri impostati:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg12.png"><br>
+
+Nella stampa il sistema riporta i filtri che erano stati applicati:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg13.png"><br>
+
+| N.B.                                                                                                                                                     |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| E' possibile scegliere se eseguire solo i calcoli oppure effettuare anche la registrazione (in base ai filtri che vengono attivati nella sezione ESEGUI) |
+
+**Report di calcolo integrazioni**
+
+Nel caso in cui le integrazioni/recuperi dei contributi Enasarco non si vogliano calcolare sulla singola fattura (di fine trimestre) ma si preferisca effettuare un calcolo massivo, Š possibile utilizzare lÂapposita procedura ÃCalcola integrazioni Enasarco (CMS)Ä:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg14.png"><br>
+
+| **Campo**                 | **Descrizione**                                                                                                                                                                                                                                                   |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Data calcolo              | campo obbligatorio. Specifica la data di riferimento per il calcolo dell'integrazione. Sar… poi considerato il trimestre di riferimento                                                                                                                           |
+| Nr. documento             | campo obbligatorio. Specifica il Nr. documento che sar… utilizzato al momento della scrittura dei movimenti di integrazione                                                                                                                                       |
+| Crea movimenti            | specifica se debbano essere scritti i movimenti di integrazione o se produrre solo un'anteprima (nel secondo caso Š proposta una page con i movimenti contributi che verrebbero scritti, con Nr. documento "\*\*\*" per evidenziare il fatto che sono temporanei) |
+| Registra movimenti in C/G | specifica se i movimenti contributi generati debbano anche essere registrati in C/G                                                                                                                                                                               |
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg16.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg17.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegDocNonReg15.png"><br>
+
+<table style="width: 11%; height: 56px">
+	<tbody><tr>
+		<td class="auto-style7">&nbsp;&nbsp;IMPORTANTE&nbsp;&nbsp;</td>
+	</tr>
+</tbody></table>
+
+Eseguendo il report con ÃCrea movimenti= SIÄ e ÃRegistra movimenti in C/G = NOÄ, il sistema crea i movimenti senza registrarli in CG.
+
+Eseguendo di nuovo il report per lo stesso periodo non crea effetti, i movimenti creati e non registrati in CG vanno poi registrati in CG da ÃMovimenti contributiÄ.
+
+Vedi anche:
+
+| [Introduzione]({{<relref "enasarco-firr-and-fisc-cms">}})                                                                        |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Step operativi]({{<relref "ena-steps">}})                                                  |
+| [Distinta contributi / Generazione file]({{<relref "contribution-bill-grandi-ditte">}})|
+| [Import mov. pregressi]({{<relref "ena-import-previous-contribution-entries">}}))                                    |
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
