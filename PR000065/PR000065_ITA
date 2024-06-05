@@ -1,13 +1,13 @@
 {{% pageinfo color="info" %}}
-Alcune funzionalit… della app Advanced Document Reporting richiedono una sottoscrizione.
+Alcune funzionalit… di questa app richiedono di avere una sottoscrizione attiva.
 
-Tale sottoscrizione la si pu• attivare dalla page Pannello di controllo sottoscrizioni oppure direttamente dai messaggi di notifica che il sistema propone, cliccando sul link che consente di avviare il wizard delle sottoscrizioni.
+La sottoscrizione pu• essere attivata dalla pagina *Pannello di controllo sottoscrizioni* o direttamente dal messaggio di notifica che appare sulle pagine dell'app. Cliccando il link sul messaggio viene eseguito il wizard di richiesta.
 
-Nello specifico:
+In Dettaglio
 
-* Versione **FREE**: l'utente pu• stampare tutti i report inclusi e modificare il setup generale. Non pu• modificare i setup avanzati che consentono la customizzazione e/o lÂinvio massivo.
+* FREE-TRIAL-DEMO: Questa sottoscrizione viene attivata automaticamente effettuando la prima richiesta e da accesso a tutte le funzionalit… dell'app. Il periodo di prova scade 20 giorni dopo l'attivazione
 
-* Versione **PRO**: tutte le funzionalit… sono attive , senza limitazioni. Abilita l'accesso ai sorgenti dei report permettendo la customizzazione estesa degli stessi.
+* FULL VERSION: Š possibile acquistare una versione completa che dura 12 mesi sempre eseguendo il wizard ed accedendo all'AppStore di Eos Solutions
 
-Per maggiorni informazioni consultate il sito www.eos-solutions.it
+Per maggiorni informazioni consultate il sito <a href="www.eos-solutions.it">www.eos-solutions.it</a>
 {{% /pageinfo %}}
