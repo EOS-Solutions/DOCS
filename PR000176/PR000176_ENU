@@ -1,0 +1,30 @@
+
+The ETC app also includes a setup from which you can choose how to calculate transport costs:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000176-0/Setup_Datasource_ENU_1.png"><br>
+
+There are three possible options:ÿ
+
+<table>
+<tr>
+	<td rowspan="0">**Sales Document Param. Source**</td>
+	<td>**Standard**</td>
+</tr>
+<tr>
+	<td>**CWS**</td>
+</tr>
+<tr>
+	<td>**Shipping Info**</td>
+</tr>
+</table>
+</br>
+
+
+If you want to calculateÿ**transport costs based on CWS**, on the Document Shipping Price (ETC) page you use the "**Calc.** **Shipping Price For**" function:ÿ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000176-0/Setup_Datasource_ENU_2.png"><br>
+
+**In the other two cases**ÿ"**Calc.** **Sales Shipt.**" is used:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000176-0/Setup_Datasource_ENU_3.png"><br>
+
