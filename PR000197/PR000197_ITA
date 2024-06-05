@@ -1,0 +1,42 @@
+
+Nelle righe del listino definiamo il dettaglio Costi di Trasporto per
+
+*   ciascun servizio offerto dallo spedizioniere (es. consegna standard, consegna in 24 ore, ecc.)
+*   in base alle zone di partenza e di arrivo
+
+Vediamo un esempio diÿ**listino per zone di spedizione**.
+
+Da Correlato ->Prezzo->Definizione zone abbiamo definito i punti di partenza e arrivo:  
+  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000197-0/PriceList_Line_ITA_1.png"><br>
+
+Abbiamo codificato ogni tratta concordata con lo spedizioniere. Come visto nelÿ[setup]({{<relref "transport-cost-etc-ex038setup">}}), Š possibile utilizzare i diversi filtri tra cui il filtro cliente se abbiamo accordi specifici con uno o pi— clienti. Per ognuno dei filtri si pu• anche definire un filtro composto, ad es. "dal CAP 37010 al CAP 37170".
+
+Il Magazzino bianco e il Magazzino blu sono i punti di partenza della merce dall'azienda (Area da Cod. Ubicazione).
+
+Vediamo le righe del listino:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000197-0/PriceList_Line_ITA_2.png"><br>
+
+|**Campo**|**Descrizione**|
+|:---|:---|
+|**Costi Trasporto (Zone)**|
+|Zona di partenza / arrivo|indicano da dove parte e dove arriva la merce|
+|Codice servizio spedizioniere|indica il tipo di servizio relativo alla tratta. Si possono codificare pi— servizi per la stessa tratta (es. Magazzino blu->Milano: Š previsto il servizio di consegna in 24 ore e anche il servizio di consegna standard)|
+|Cod. tipo listino|specifica il tipo di listino che viene considerato (lo spedizioniere pu• accordare ad esempio un listino per peso lordo per una tratta e per km percorsi per un'altra tratta)|
+|Data inizio / fine|date che indicano la durata della validit… per la riga impostataÿin modo da mantenere uno storico per le modifiche al listino|
+|Priorit…|si possono indicare dei valori numerici che stabiliscono quale riga deve essere utilizzata per prima se, ad esempio, esistono due righe con lo stesso CAP.  <br>Ci• vale nel caso sia stato impostatoÿPrima occorrenzaÿin "Tipo calcolo per zona"|
+|Descrizione|Š possibile inserire una descrizione estesa|
+|**Oneri aggiuntivi**|
+|Cod. onere aggiuntivo|inserire un codice per identificare il tipo di servizio aggiuntivo|
+|Data inizio / fine|intervallo di validit… del servizio in modo da mantenere uno storico per le modifiche al listino|
+|Descrizione|Š possibile inserire una descrizione estesa|
+|Tipo quantit…|Da cliente  <br>Peso lordo (Kg)  <br>Peso netto (Kg)|
+|Prezzo unitario|indicare il costo del servizio|
+|% sul valore|Š legata al campo Tipo quantit…|
+|% sul nolo|pu• essere definita una % sul nolo|
+|Importo minimo|si pu• indicare un importo minimo per il servizio|
+|Fattore arrotondamento|si pu• applicare un fattore di arrotondamento per le quantit…|
+|Fisso|se barrato, l'onere viene addebitato sempre dallo spedizioniere (es. costi fissi addebitati per la gestione dei documenti in caso di spedizioni estere)|
+|Univoco per consegna|utilizzato per le consegne che prevedono i giri di consegna. In questo caso un onere aggiuntivo pu• essere impostato per lo specifico giro|
+
