@@ -1,6 +1,6 @@
 It is possible to save and / or send reports both for customers and for salespersons: Account statement, Aging, Aging in column. Through Report-\> Save / Send different options are possible:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000536-0/12AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000536-0/12AdvancedCustomerVendorStatement-en.png"><br>
 
 | PDF (Salesperson)                     | create a .zip with a folder for each salesperson. In the subfolders there is the customer list for each salesperson and, for each customer, you can find: Aging, Aging in column and Account statement. In the salesperson folder there is also a .pdf with the summary by customer containing the basic information (customer name-balance-dishonored) |
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
