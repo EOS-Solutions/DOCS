@@ -1,0 +1,17 @@
+If we want to add a larger container e.g. a Pallet, we can do it both before and after creating the Packing List.
+
+After entering it from New Handling Unit, through the Cut/Paste functions we can define the tree structure: we select the line of the package to be inserted on the pallet, we press Cut Handling Unit and then we select the pallet and press Paste Handling Unit:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000557-0/EX055_Tree Structure_ENU_IMG1.png"><br>
+
+|**Action**|**Description**|
+|:---|:---|
+|Cut Handling Unit|select the handling unit to put on the pallet|
+|Paste Handling Unit|assign the handling unit to the pallet|
+|Move to first level|disconnects the unit from the pallet and brings it back to its initial level|
+|Attach New Handling Unit|as the "New Handling Unit" feature is used to generate a new unit. In this case, however, it will already be assigned to the selected pallet.|
+|Remove Content|After selecting multiple lines, you can delete them from the packing list that you created.<br>Note: if we remove a container, automatically all its contents are also deleted.|
+|Assign Handling Unit|it opens a list of handling units that are already structured, and are not linked to any document and you can put them into the packing list (e.g. if pallets are prepared at one point in the Company and shipments subsequently take place at another point)|
+|Suggest LIne For Packing|the system examines shipments and, according to the Packaging Instructions, proposes boxes already filled with the number of pieces indicated in setup|
+|Handling Unit|the system shows details about the selected unit and its contents<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR000557-0/EX055_Tree Structure_ENU_IMG2.png"><br>|
+
