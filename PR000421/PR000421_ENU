@@ -1,0 +1,14 @@
+
+The source code must be set in setup for both payments and shipments:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000421-0/Detailed Document Discounts - Setup_Source Code_ENU_001.png"><br>
+
+These codes allow you to quickly recognize discounts depending on the payment terms or shipping methods in the table.
+
+If a payment term has an associated discount on the Payment terms page:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000421-0/Detailed Document Discounts - Setup_Source Code_ENU_002.png"><br>
+
+this discount will be applied on the document header and the source code allows us to understand that it was inherited from a payment term:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000421-0/Detailed Document Discounts - Setup_Source Code_ENU_003.png"><br>
