@@ -1,0 +1,16 @@
+
+Deferred invoicing, managed by the [Extended Combine Shipment (ECS) EX050]({{<relref "extended-combine-shipment">}}) app, allows you to indicate how to group documents, who to pay the invoices to, and how often to invoice.
+
+Regarding the cumulative sending of invoices containing header discounts, it is necessary to create a **specific invoicing method**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000422-0/Detailed Document Discounts - Usage_Discounts and deferred billing_ENU_001.png"><br>
+ 
+
+In Fields, the **Discount set ID option** must be **enabled**.
+
+This way, when the Invoice report is run. ECS Extended Cumulatives, entering as Invoice Method Code. default the method set in setup previously (e.g. DDD)
+
+| ?? **Attention** |
+|:---|
+| Discounts are grouped if **Discount Type = Discount %** and if they have the **same value**.<br /><br />If header discounts are by Discount Amount, the system generates separate invoices. |
+
