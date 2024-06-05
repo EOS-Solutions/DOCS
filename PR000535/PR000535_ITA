@@ -1,6 +1,6 @@
 Da Lista clienti-\>Report-\>Scadenzario in colonna:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000535-0/10AdvancedCustomerVendorStatement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000535-0/10AdvancedCustomerVendorStatement.png"><br>
 
 | Tipo testata                  | Intervallo data: le colonne vengono intestate in formato dd/mm/yy..dd/mm/aa Numero giorni: le colonne vengono intestate in formato formato 30/60 gg (+-)                                                                                                                                |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,4 +13,4 @@ Anche in questo caso si pu• inserire un Filtro per data registrazione, data scad
 
 Esempi di stampa:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000535-0/11AdvancedCustomerVendorStatement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000535-0/11AdvancedCustomerVendorStatement.png"><br>
