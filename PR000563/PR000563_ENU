@@ -1,0 +1,38 @@
+**Enasarco Social Security/Assistance**
+
+1. Calculate and post contribution entries in unposted purchase document
+
+	a) Manually from the contribution entries listi
+
+	b) By releasing the document
+
+	c) Through massive processing report
+
+2. Apply vendor entries related to contributions to vendor entries related to purchase document posting
+
+**F.I.R.R. / F.I.S.C.**
+
+1\. Calculate and post contribution entries through specific report
+
+| **N.B.**                                                                                                                                                                    |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **For all types of contributions :**  manual changes are possible to the contribution amount with relative automatic generation of the correction writing in General Ledger |
+
+| **Task**                            | **See**                                                                                                                                                                                                                                                                                                                                                                                                  |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enasarco Social Security/Assistance | 1. [Calculate and post contribution entries in unposted purchase document]({{<relref "enasarco-firr-and-fisc-cms-calculate-a">}}) 2. [Apply vendor entries related to contributions to vendor entries related to purchase document posting]({{<relref "ena-apply-contributions-ledger-entries">}})|
+| F.I.R.R. / F.I.S.C.                 | [Calculate and post contribution entries through specific report]({{<relref "ena-calculate-and-post-contribution-entries-through-specific-report">}})                                                                                                                                                                                                                              |
+<br>
+
+See also:
+
+| [Introduction]({{<relref "enasarco-firr-and-fisc-cms">}})                                                                      |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Setup]({{<relref "enasarco-firr-and-fisc-setup">}})                                                               |
+| [Contribution Bill / Grandi Ditte File]({{<relref "contribution-bill-grandi-ditte">}})|
+| [Import previous contribution entries]({{<relref "ena-import-previous-contribution-entries">}})            |
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+**Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.**
