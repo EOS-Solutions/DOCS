@@ -1,0 +1,8 @@
+
+Si possono applicare gli sconti anche al listino prezzi
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000419-0/Detailed Document Discounts - Usage_Price List_ITA_001.png"><br>
+
+Dai tre puntini del campo Sconto dettagliato si accede alla tabella di dettaglio. In questo caso non sar… presente la action Elabora->Aggiorna anteprima poichŠ siamo all'interno del listino e non c'Š un importo di partenza su cui applicare lo sconto.
+
+Inserendo l'articolo 1250 in un documento acquisto/vendita il sistema proporr… in automatico lo sconto inserito nel listino.
