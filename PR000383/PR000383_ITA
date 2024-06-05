@@ -1,0 +1,32 @@
+La gestione dei costi per Lotto/Variante/Nr. serie prevede la compilazione del campo ÃCod. Famiglia ProdottoÄ nellÂanagrafica Articoli:  
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Specific Costs/16inventory-valuation-and-costing-ita.png"><br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Specific Costs/26inventory-valuation-and-costing-ita.png"><br>
+Per il periodo oggetto di calcolo occorre inoltre impostare il flag ÃCalcola costi specificiÄ e valorizzare (tranne che per il 1ø periodo) il campo ÃCosto specifico Æ Cod. periodo precedenteÄ: 
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Specific Costs/6inventory-valuation-and-costing-ita.png"><br>
+I costi specifici vengono quindi copiati dal periodo precedente, ricalcolando solo le giacenze ed i costi dei lotti/seriali/varianti movimentati nel periodo di calcolo. 
+
+Gli effetti del calcolo sono:
+
+* Se nel ÃSetup costi articoliÄ il campo ÃCalcolo costi articoliÄ presenta il valore ÃGiacenzaÄ: nel campo Costo medio e Costo medio ponderato della elaborazione periodi sono riportati i costi medi per lotto/seriale/variante calcolati come costi medi ponderati in base alla quantit… di ogni singolo lotto/seriale/variante sul totale giacenza finale.  
+
+I costi medi dei singoli lotti/seriali sono analizzabili selezionando lÂazione ÃCosto specificoÄ mentre quelli delle singole varianti, tramite lÂazione ÃCosto varianteÄ:  
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Specific Costs/8inventory-valuation-and-costing-ita.png"><br>
+Il campo Codice Famiglia prodotto oltre ad impattare sul calcolo dei costi specifici per Lotto/Seriale/Matricola ha anche la funzione di pilotare la stampa Valutazione fiscale (IVC).
+
+AllÂinterno di questo report Š infatti possibile selezionare il tipo di costo da utilizzare per la valorizzazione del magazzino:
+
+* Costo Standard
+* Costo Medio
+* Costo Medio Ponderato
+* Costo FIFO
+* Costo LIFO
+* Costo Ultimo
+* Costo Fiscale
+
+Nel caso in cui venga selezionato il tipo ÃCosto FiscaleÄ il report di stampa avr… il seguente comportamento:
+
+1. Se le anagrafiche articolo presentano il campo Cod. Famiglia Prodotto valorizzato, il costo utilizzato come fiscale sar… quello definito nel campo ÃCosto Fiscale nel report di valutazione dellÂinventarioÄ.
+2. Se le anagrafiche articolo presentano il campo Cod. Famiglia Prodotto non valorizzato, il costo utilizzato come fiscale sar… di default il Medio Ponderato.
+
+La compilazione del campo ÃCodice Famiglia prodottoÄ sullÂanagrafica articolo pu• quindi essere utile solamente nel caso in cui si vogliano attribuire costi differenti nel report ÃValutazione Fiscale IVCÄ.  
