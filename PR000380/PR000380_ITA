@@ -1,0 +1,21 @@
+
+Apriamo il prospetto Liquidazione costi di trasporto (ETC) filtrando ad esempio per il mese di gennaio e per lo spedizioniere DHL:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000380-0/Settlement_ITA_001.png"><br>
+ 
+
+Sono visibili i dettagli dei costi di trasporto per i diversi tipi di documento e in basso viene riportato il costo totale.
+
+I costi possono essere modificati manualmente.
+
+Nel caso in cui il fornitore DHL ci invii una fattura con un importo superiore a quello calcolato dal sistema, inseriamo tale importo nel campo "Importo fattura" e scegliamo nel campo "Tipo spalmatura" come spalmare la differenza sui costi gi… calcolati.
+
+Infine premiamo Applica spalmatura:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000380-0/Settlement_ITA_002.png"><br>
+ 
+
+Quando le righe sono definitive, dopo aver selezionato le righe di interesse, da "Imposta stato definitivo" i costi vengono bloccati.
+
