@@ -1,0 +1,38 @@
+**Distinta contributi / Generazione file**
+
+Una volta registrati i movimenti contributi, questi possono essere estratti in una distinta che li raggruppi per tipologia e periodo di riferimento. La distinta Š propedeutica alla generazione del file Grandi ditte, per tale motivo tratta i movimenti di tipo F.I.R.R. o Enasarco. Con la funzione suggerisci Š possibile popolare le righe di distinta analizzando i movimenti contributi corrispondenti ai filtri immessi.
+
+In Distinte Contributi (CMS) troviamo tutte le distinte gi… create. Aprendo una Scheda:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000572-0/ENADistContr1.png"><br>
+
+| **Campo**         | **Descrizione**                                                                                                                                                                                                                                    |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nr.               | numero di serie assegnato dal sistema in base al numeratore impostato in Setup provvigioni                                                                                                                                                         |
+| Tipo contributo   | scegliere tra: Enasarco (previd + assist) FIRR                                                                                                                                                                                                     |
+| Data distinta     | il sistema propone la work date                                                                                                                                                                                                                    |
+| Data inizio /fine | Se si tratta di distinta Enasarco impostare la data inizio trimestre. Il sistema inserisce in automatico la data fine trimestre. Se si tratta di distinta F.I.R.R. impostare la data inizio. Il sistema inserisce in automatico la data fine anno. |
+|                   |                                                                                                                                                                                                                                                    |
+
+Da **Suggerisci mov contributi** il sistema genera le righe della distinta: propone per ogni fornitore e agente i movimenti contributi. I campi nelle righe sono utili alla generezione del file Grandi Ditte (per le aziende con un numero di agenti \>100). Nel file Grandi Ditte sar… necessario infatti esportare il campo Codice Relazione e il Totale importo documento dato dalla somma dei campi Importo documento (VL) nelle righe.
+
+Dopo aver rilasciato la distinta, Š possibile generare e successivamente inviare il file grandi ditte da **Crea File.** Nel Tab File sono presenti i dettagli.
+
+| **N.B.**                                                                                                                                                                                                                   |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Il nome del file Š codificato. Il sistema prende le informazioni dai campi impostati nel Setup provvigioni:  <img width="" src="https://docs-test.eos-solutions.it/Images/PR000572-0/ENADistContr2.png"><br> |
+
+Da Download file oppure cliccando sul nome file lo si pu• scaricare e visualizzare.
+
+Vedi anche:
+
+| [Introduzione](https://helpbc.eos-solutions.it/main.aspx?lang=it-it&content=EnasarcoFIRRandFISC.html)                                     |
+|-------------------------------------------------------------------------------------------------------------------------------------------|
+| [Setup](https://helpbc.eos-solutions.it/main.aspx?lang=it-it&content=EnasarcoFIRRandFISC-Setup.html)                                      |
+| [Step operativi](https://helpbc.eos-solutions.it/main.aspx?lang=it-it&content=EnasarcoFIRRandFISC%20-%20StepOperativi.html)               |
+| [Import mov. pregressi](https://helpbc.eos-solutions.it/main.aspx?lang=it-it&content=EnasarcoFIRRandFISC%20-%20Import-mov-pregressi.html) |
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
