@@ -1,0 +1,61 @@
+**Creazione prospetti di liquidazione**
+
+Lanciando il report Crea prospetti liquidazione (CMS) Š possibile lanciare la creazione delle fatture di acquisto relative ai movimenti provvigione creati dai documenti di vendita o relativi a causali per cui non Š prevista la creazione diretta della fattura di acquisto.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/prospliq1.jpg"><br>
+
+| Campo                        | Descrizione                                                                   |   |
+|------------------------------|-------------------------------------------------------------------------------|---|
+| Rilascia prospetto           | crea i prospetti e li rilascia subito                                         |   |
+| Conserva prospetti esistenti | nel caso siano gi… stati creati alcuni prospetti, e non si voglia ricrearli   |   |
+| Apri log di esecuzione       | mostra i log di esecuzione per capire quali calcoli sta eseguendo il report.  |   |
+
+Sulla page Prospetti di liquidazione Š possibile visualizzare i prospetti creati:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/prospliq2.jpg"><br>
+
+Aprendo il singolo prospetto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/prospliq3.jpg"><br>
+
+Il sistema crea una riga per ogni codice causale, i movimenti provvigione derivanti da documenti di vendita non hanno cod. causale, quindi vengono sommati in unÂunica riga senza causale.
+
+E' possibile visualizzare lÂelenco dei movimenti provvigione, che hanno contribuito a determinare il totale della riga da Gestione-\>Movimenti contabili provvigioni:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/prospliq4.jpg"><br>
+
+Cliccando sul valore in Importo in liquidazione (VL) Š possibile accedere alla tabella Movimento contabili provv. dettagliati e visualizzare i riferimenti del prospetto di liquidazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/prospliq5.jpg"><br>
+
+Altrimenti Š possibile vedere il dettaglio dei movimenti provvigione lanciando il report Prospetti liquidazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/prospliq6.jpg"><br>
+
+Dopo aver verificato i dati su questa page e aver modificato le date, Š possibile rilasciare.
+
+Una volta effettuato il rilascio Š possibile generare il documento di acquisto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/prospliq7.jpg"><br>
+
+EÂ possibile creare i documenti di acquisto anche tramite il report Crea documenti acquisto da prospetto (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/prospliq8.jpg"><br>
+
+Il sistema creer… le fatture di acquisto sulla base dei prospetti che sono stati rilasciati.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/prospliq9.jpg">
+<br>
+
+| [Commissions - Introduction]({{<relref "commissions-cms">}})|
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Setup agenti]({{<relref "commissions-setup">}}) |
+| [Setup calcolo provvigioni]({{<relref "commissions-calculation-setup">}})|
+| [Gestione movimenti contabili provvigione]({{<relref "commission-ledger-entries">}})|
+| [Gestione anticipi e stanziamenti provvigione]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Creazione fatture acquisto agenti]({{<relref "commissions-commission-purchase-document">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
