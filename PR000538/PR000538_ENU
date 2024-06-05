@@ -4,18 +4,18 @@ The following reports are used to print the statement amounts in the currency of
 
 Å Vendor Statement - Currency (CVS)
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/14AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000538-0/14AdvancedCustomerVendorStatement-en.png"><br>
 
 Both the Customer Statement - Currency (CVS) and the Vendor Statement - Currency (CVS) show the local currency value and the currency value of the document. To print the customer statement in currency, it is possible to request the display of a summary of the amounts in currency; this request is managed within the report request page by enabling the **Show "Amounts by Currency summary"** field.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/15AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000538-0/15AdvancedCustomerVendorStatement-en.png"><br>
 
 The report shows, both for customer and vendor, the transaction currency and the residual value of the currency amount, in addition to the amount in the company currency (in our case EURO).
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/16AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000538-0/16AdvancedCustomerVendorStatement-en.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/17AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000538-0/17AdvancedCustomerVendorStatement-en.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/18AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000538-0/18AdvancedCustomerVendorStatement-en.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000538-0/19AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000538-0/19AdvancedCustomerVendorStatement-en.png"><br>
