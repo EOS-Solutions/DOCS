@@ -1,0 +1,18 @@
+Classificare i bonus permette di definire allÂinterno di un unico contratto la tipologia delle singole condizioni che lo compongono. Ogni classe definisce inoltre i conti di liquidazione e di accantonamento dedicati, se diversi da un default gestibile a setup.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000681-0/4SalesPurchaseBonus.png"><br>
+
+- **Conto C/G stanz. bonus cliente**:
+  da compilare indicando il contro economico da utilizzare nella scrittura periodica di stanziamento (es.: Premi su vendite).
+- **Conto C/G stanz. bonus fornitore**:
+  da compilare indicando il contro economico da utilizzare nella scrittura periodica di stanziamento (es.: Premi su acquisti).
+- **Conto C/G liq. bonus clienti**:
+ - Se non risulta essere attiva la gestione degli stanziamenti:
+   indicare il conto economico da movimentare in sede di liquidazione del bonus cliente
+ - Se risulta essere attiva la gestione degli stanziamenti:
+indicare il contro patrimoniale (es.: Clienti premi da liquidare) utilizzato nella procedura di stanziamento (se lo stesso campo della pagina ÃClassi bonus (SPB)Ä risulta essere a blank) e nelle righe del documento di liquidazione del bonus cliente (se lo stesso campo della pagina ÃClassi bonus (SPB)Ä risulta essere a blank).
+- **Conto C/G liq. bonus fornitori**:
+ - Se non risulta essere attiva la gestione degli stanziamenti:
+   indicare il conto economico da movimentare in sede di liquidazione del bonus fornitore
+ - Se risulta essere attiva la gestione degli stanziamenti:
+   indicare il contro patrimoniale (es.: Fornitori premi da liquidare) utilizzato nella procedura di stanziamento (se lo stesso campo della pagina ÃClassi bonus (SPB)Ä risulta essere a blank) e nelle righe del documento di liquidazione del bonus fornitore (se lo stesso campo della pagina ÃClassi bonus (SPB)Ä risulta essere a blank).
