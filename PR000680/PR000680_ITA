@@ -11,3 +11,11 @@ Aprire la page **Setup Bonus (SPB)** e compilare i campi relativi a i conti bonu
   Specifica il conto C/G di liquidazione del bonus fornitore. 
   - Se non risulta essere attiva la gestione degli stanziamenti: indicare il conto economico da movimentare in sede di liquidazione del bonus cliente;
   - Se risulta essere attiva la gestione degli stanziamenti: indicare il contro patrimoniale (es.: Fornitori premi da liquidare) utilizzato nella procedura di stanziamento (se lo stesso campo della pagina ÃClassi bonus (SPB)Ä risulta essere a blank) e nelle righe del documento di liquidazione del bonus cliente (se lo stesso campo della pagina ÃClassi bonus (SPB)Ä risulta essere a blank).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000680-0/3SalesPurchaseBonus.png"><br>
+
+- **Conto C/G stanz. bonus cliente**:
+  da compilare indicando il conto economico da utilizzare nella scrittura periodica di stanziamento (es.: Premi su vendite). Viene utilizzato nel caso in cui lo stesso campo della pagina ÃClassi bonus (SPB)Ä risulti essere vuoto
+- **Conto C/G stanz. bonus fornitore**:
+  da compilare indicando il contro economico da utilizzare nella scrittura periodica di stanziamento (es.: Premi su acquisti). Viene utilizzato nel caso in cui lo stesso campo della pagina ÃClassi bonus (SPB)Ä risulti essere vuoto.   
+Classi Bonus
