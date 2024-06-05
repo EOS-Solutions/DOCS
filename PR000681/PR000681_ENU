@@ -1,0 +1,18 @@
+Classifying bonuses allows you to define the type of the terms and conditions for each single contract. Each class also defines the dedicated settlement and provision accounts, if they are different from a default that can be managed to setup.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000681-0/4SalesPurchaseBonus_en.png"><br>
+
+- **Cust. Bonus Settl. G/L Acc.**:
+  Specifies the customer bonus settlement account no. (e.g. Sales Bonus)
+- **Vend. Bonus Settl. G/L Acc.**:
+  Specifies the vendor bonus settlement account no. (e.g. Purchase Bonus)
+- **Customer Allocation Acc. No.**:
+  - If the management allocations is not active:
+    indicate the income statement account to be used during the settlement
+  - If the management allocations is active:
+    indicate the balance sheet account (e.g. Customer Bonus to settle) used in the allocation procedure (if the same field on the "Bonus Classes (SPB)" page turns out to be empty) and on the lines of the customer bonus settlement document (if the same field on the "Bonus Classes (SPB)" page turns out to be empty).
+- **Vendor Allocation Acc. No.**:
+  - If the management allocations is not active:
+    indicate the income statement account to be used during the settlement
+  - If the management allocations is active:
+    indicate the balance sheet account (e.g. Vendor Bonus to settle) used in the allocation procedure (if the same field on the "Bonus Classes (SPB)" page turns out to be empty) and on the lines of the vendor bonus settlement document (if the same field on the "Bonus Classes (SPB)" page turns out to be empty).
