@@ -1,0 +1,38 @@
+**Calculation logics for various types of costs**
+
+Unlike the BC standard, the costs are calculated by calculating only the input movements with the movement type "Purchase" or "Output". If the initial stocks have been loaded with Movement Type "Positive adjustment", it is therefore necessary to set the initial quantities and values in the "Pre-departure Item Costs" table.
+
+**Average Cost Calculation**: Total purchase and product amount / Total quantity purchased and produced
+
+**Setup at DiBa/Standard Cycles**: The average cost is calculated with the following logic: consumption from Diba * cost defined in Item cost setup (average cost, weighted average cost or standard cost) + times from Cycle * cost defined in Setup item costs (movement cost, standard cost or budget cost) + C/Labor cost (recovered according to the setup hierarchy).
+
+**Setup with Actual Movements**: The average cost is calculated with the following logic: actual consumption declared * cost defined in the Item Costs Setup (average cost, weighted average cost or standard cost) + actual times declared * cost defined in the Costs Setup items (movement cost, standard cost or budget cost) + C/Labor cost (recovered according to the setup hierarchy).
+
+> **NB**
+* An item should only be managed with Purchase or Production replenishment system. In the event that the same item is both purchased and produced, the calculated cost will correspond to the average of the costs of the two processes; However, if the calculation is carried out on a standard/DiBa cycle, it will not be possible to view the breakdown of the cost into the different components (material cost, capacity and labor cost) given that the entire cost will be highlighted as a material component. 
+* In the case of actual movements calculation: the cost of a production movement, unlike the BC standard, is determined by considering the consumption and times declared, regardless of the status of the PO, and of the fact that the order has a phase of C/work, etc.
+
+Calculation of weighted average cost
+
+The weighted average cost is calculated based on the "Weighted average cost calculation method" defined in the Item Cost Setup.
+
+**FIFO Cost Calculation**
+
+  The FIFO cost is calculated with the following logic: the stock at the end of the period is determined, then the last purchase/output movements sufficient to cover the final stock are recovered. FIFO Cost: Total cost amount / Total quantity (of the above movements).
+
+**LIFO Cost Calculation**
+
+The calculation logic is the same as described for the FIFO Cost, however calculating the movements with the opposite logic, i.e. recovering the least recent purchase/output movements. LIFO Cost: Total cost amount / Total quantity (of the above movements).
+
+**Final Cost Calculation**
+
+**Purchase type item:**
+
+the procedure sorts the movements by Registration Date and Movement No. and identifies the last (most recent) movement for which to calculate the cost. The final cost is determined with the following logic: the procedure recovers the last item accounting entry of the Purchase type (invoiced or not invoiced), accesses the valorisation transactions by filtering them by Entry type = Direct cost and applies the following formula: (Purchase amount Actual + Estimated Purchase Amount) / Quantity.
+
+**Production type item:**
+
+the procedure sorts the movements by Registration Date and Movement No. and identifies the last (most recent) movement for which to calculate the cost. The Ultimate Cost is determined with the following logic: the procedure recovers the Ultimate Cost of the components (consumption) used for the specific Work Order, then adds the direct and general costs of the related capacity movements, then divides the total of the two costs by the quantity of OdP output. In both cases, if there are no movements in the calculation period, the final cost is recovered as follows:
+
+* The system searches for the last Cost in the Item Cost History of the previous period (Previous Period End Date < Period End Date) with the same Item Cost Setup Code, ordering the periods by Period Code; then recover the value of the Last cost field and mark the "Forcing last cost" field with the Previous last cost option.
+* If the previous search was also unsuccessful (remote case: probably in the go-live phase with positive adjustments and pre-departure costs or in cases of previous periods filtered for certain items), the Last Cost is inherited from the Average Cost field of the History item costs of the same period and the ÃForcing last costÄ field is marked = CMP or Standard (i.e. the same forcing option present in the ÃForcing average costÄ field is inherited).
