@@ -1,0 +1,25 @@
+[**C/A Drivers List (EMA)**](http://)
+
+Page dedicated to the coding of the cost accounting drivers.
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/driver CA/14Extended Management Accounting-enu.png">
+<br>
+
+|Field|Description|
+|-----|-----------|
+| Program No. | to be filled in with the references to the procedure developed for the calculation of the driver in question (e.g. of the number of Employees for CDC) |
+| Function No. | to be filled in with the references to the specific function created for the calculation of Performance Entries (e.g. the number of Employees for CDC) |
+|Entry Performance|page through which you check the latest performane entries update|
+|History|page through which you can consult the history of performance entries, updated at each execution of the "Update Driver Archive (EMA)" procedure|
+
+<br>
+
+It is also possible to create calculated Drivers (e.g. Formula or Union type) depending on other Drivers. 
+
+**C/A Driver Objects (EMA)**
+
+Through the action "Synchronize cost center dimension" all the values ??of the system-coded cost centers are entered:
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/driver CA/15Extended Management Accounting-enu.png">
+<br>
+The user can then modify the proposed list and, if necessary, insert other driver objects, not connected to the cost centers.
