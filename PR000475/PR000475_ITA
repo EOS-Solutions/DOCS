@@ -1,0 +1,36 @@
+**Commissions** 
+
+LÂApp Commissions (CMS) viene utilizzata per gestire e calcolare le provvigioni vendita per gli agenti. Il flusso base prevede:
+
+-   Definizione dei setup per ogni agente. In questa fase Š possibile definire le condizioni contrattuali di base definite per ogni agente (anticipi, periodo liquidazione, etc).
+-   Definizione dei ruoli agenti e delle reti di vendita.
+-   Definizione del metodo di calcolo delle provvigioni.
+-   Generazione di movimenti provvigione sia manualmente, che tramite documenti di vendita.
+-   Possibilit… di gestire degli anticipi o degli stanziamenti sulle provvigioni.
+-   Liquidazione delle provvigioni direttamente attraverso le fatture di acquisto, oppure da prospetti di liquidazione
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/CommissionImageITA.jpg"><br>
+
+**Commissions - SUMMARY**
+
+Per un sommario dei programmi premere ALT + Q e digitare "CMS":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/CommissionImageITA2.jpg"><br>
+
+| **Task**                                                                                                                                                                                                   | **Vedere**                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Effettuare il setup agenti: Ruoli agenti (CMS), Rete di vendita (CMS), Gruppi provvigioni (CMS)                                                                                                   | [Setup agenti]({{<relref "commissions-setup">}})|
+| Effettuare il setup per il calcolo delle provvigioni: Causali provvigione (CMS), Def. registrazioni provvigioni (CMS), Setup provvigioni (CMS), Periodi provvigione (CMS), Setup calcolo provvigioni (CMS) | [Setup calcolo provvigioni]({{<relref "commissions-calculation-setup">}}) |
+| Importare i movimenti provvigione ancora da liquidare                                                                                                                                                      | [Import movimenti provvigione]({{<relref "import-commission-entries">}}) |
+| Abbattere lÂimponibile e lÂimporto della provvigione presente nei singoli movimenti provvigioni                                                                                                            | [Abbattimento provvigioni]({{<relref "commission-reduction">}}) |
+| Gestire i movimenti contabili delle provvigioni: Giornale provvigioni da liquidare (CMS)                                                                                                                   | [Gestione movimenti contabili provvigione]({{<relref "commission-ledger-entries">}}) |
+| Gestire anticipi e stanziamenti delle provvigioni: Calcolo anticipi provvigione (CMS), Stanziamento costi provvigione (CMS)                                                                                | [Gestione anticipi e stanziamenti provvigione]({{<relref "commissions-manage-advances-and-allocations">}}) |
+| Creare fatture acquisto per gli agenti: Crea documenti acquisto (CMS)                                                                                                                                      | [Creazione fatture acquisto agenti]({{<relref "commissions-commission-purchase-document">}})  |
+| Creare fatture acquisto dal prospetto delle liquidazioni: Crea prospetti liquidazione (CMS), Crea documenti acquisto da prospetto (CMS)                                                                    | [Creazione fatture acquisto da prospetto liquidazione]({{<relref "create-commission-prospect">}})  |
+| Report                                                                                                                                                                                                     | [Report]({{<relref "report">}})     |
+| Note tecniche sul calcolo delle provvigioni (Priorit…, Soglie)                                                                                                                                             | [Note tecniche]({{<relref "commission-technical-notes">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
