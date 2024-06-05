@@ -1,0 +1,183 @@
+**Setup calcolo provvigioni / Priorit…**
+
+ß possibile definire nel Setup provvigioni (CMS) la priorit… da attribuire alle varie componenti (Agente, Cliente, Prodotto) nel momento del reperimento della riga di provvigione da utilizzare per una riga specifica di documento:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche1.jpg"><br>
+
+Dal momento che una riga di documento potrebbe avere dati che aderiscono a pi— righe di setup calcolo, Š necessario stabilire una priorit… tra di esse per definire quale sia quella di riferimento.
+
+Esempio:
+
+Ipotizziamo di avere una fattura di vendita con il cliente 20000, che in anagrafica ha associato lÂagente BM e la rete vendita 03SUD:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche2.jpg"><br>
+
+Con questa fattura vengono vendute 3 biciclette, quindi sulle righe troveremo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche3.jpg"><br>
+
+Ipotizziamo di aver le seguenti righe di setup nel Setup calcolo provvigione (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche4.jpg"><br>
+
+Tutte e 3 le righe hanno filtri che identificano la nostra riga di documento:
+
+Å La prima per rete vendita e ruolo
+
+Å La seconda per rete vendita, ruolo e articolo
+
+Å La terza per rete vendita, ruolo e cliente
+
+Il sistema quindi utilizza le priorit… definite a setup per definire quale sia effettivamente la riga di da utilizzare per il calcolo:
+
+Nel nostro esempio:
+
+Å Priorit… 1: Agente
+
+Å Priorit… 2: Cliente
+
+Å Priorit… 3: Prodotto
+
+Delle nostre 3 righe di setup quindi:
+
+1) A livello di ruolo/agente sono identiche, quindi stessa priorit…
+
+2) La terza riga ha specificato il cliente, quindi rispetta una priorit… maggiore (priorit… 2) rispetto alla seconda riga che ha invece lÂindicazione del prodotto (priorit… 3)
+
+LÂeffetto di questo calcolo si traduce nel fatto che alla riga di documento sia assegnata la provvigione da 27.5%, ovvero della terza riga di setup
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche5.jpg"><br>
+
+A scopo informativo e di verifica Š presente la colonna ÃPriorit…Ä (di default non visibile) nel setup calcolo provvigione
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche6.jpg"><br>
+
+Di seguito una breve spiegazione sulla metodologia di calcolo:
+
+1) Viene assegnato un punteggio dellÂordine di grandezza 100.000 per la priorit… 1 (nel caso nostro Agente)
+
+2) Viene assegnato un punteggio dellÂordine di grandezza delle 1.000 per la priorit… 2 (nel caso nostro Cliente)
+
+3) Viene assegnato un punteggio dellÂordine di grandezza delle 10 per la priorit… 3 (nel caso nostro Prodotto)
+
+Quindi:
+
+coefficiente priorit… = 100.000 se priorit… 1, 1.000 se priorit… 2, 10 se priorit… 3
+
+Per lÂattribuzione punteggio agente il calcolo Š:
+
+1) Se specificato agente preciso: 37 \* coefficiente priorit…
+
+2) Se specificato agente con filtro: 19 \* coefficiente priorit…
+
+3) Se specificata rete vendita precisa: 11 \* coefficiente priorit…
+
+4) Se specificata rete vendita con filtro: 7 \* coefficiente priorit…
+
+5) Se specificato ruolo preciso: 3 \* coefficiente priorit…
+
+6) Se specificato ruolo con filtro: 2 \* coefficiente priorit…
+
+Per lÂattribuzione punteggio cliente il calcolo Š:
+
+1) Se specificato cliente preciso: 7 \* coefficiente priorit…
+
+2) Se specificato cliente con filtro: 3 \* coefficiente priorit…
+
+3) Se specificato gruppo provv. cliente: 2 \* coefficiente priorit…
+
+Per lÂattribuzione punteggio prodotto il calcolo Š:
+
+1) Se specificato prodotto preciso: 7 \* coefficiente priorit…
+
+2) Se specificato prodotto con filtro: 3 \* coefficiente priorit…
+
+3) Se specificato gruppo provv. prodotto: 2 \* coefficiente priorit…
+
+La somma di questi punteggi determina la priorit… della riga, la priorit… pi— alta determina la riga da utilizzare.
+
+NellÂesempio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche7.jpg"><br>
+
+*Riga 1:*
+
+| Rete vendita precisa | 1.100.000 |
+|----------------------|-----------|
+| Ruolo preciso        | 300.000   |
+| Totale priorit…      | 1.400.000 |
+
+*Riga 2:*
+
+| Rete vendita precisa | 1.100.000 |
+|----------------------|-----------|
+| Ruolo preciso        | 300.000   |
+| Articolo preciso     | 70        |
+| Totale priorit…      | 1.400.070 |
+
+*Riga 3:*
+
+| Rete vendita precisa | 1.100.000 |
+|----------------------|-----------|
+| Ruolo preciso        | 300.000   |
+| Cliente preciso      | 70.000    |
+| Totale priorit…      | 1.407.000 |
+
+**Calcolo soglie**
+
+Nel Setup calcolo provvigioni (CMS), oltre a poter specificare una percentuale fissa per i criteri importati in riga, Š anche possibile indicare una percentuale di provvigione che vari in funzione dello sconto riga presente sulla riga di documento oggetto si assegnazione della provvigione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche8.jpg"><br>
+
+In questo caso
+
+Å Il campo Provvigione % e Importo provvigione VL dovranno essere vuoti
+
+Å Il campo Soglie provvigioni riporter… il conteggio delle righe di soglia setuppate
+
+Å Dal pulsante Imposta soglie sar… possibile accedere al dettaglio delle soglie
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche12.jpg"><br>
+
+Il campo Soglia sconto % specifica la percentuale di sconto da cui devono essere considerati la percentuale provvigione e lÂimporto.
+
+I limiti inseriti nel campo Soglia sconto % sono da intendersi come Ãvalore minimoÄ, ovvero nel nostro esempio:
+
+-   a partire da sconto 0.00, verr… assegnata una provvigione del 10% (fino a uno sconto 4.99 data la riga successiva di setup);
+-   da sconto 5.00 incluso, verr… assegnata una provvigione del 7% (fino a uno sconto 9.99 data la riga successiva di setup);
+-   da sconto 10.00 incluso, verr… assegnata una provvigione del 5% (in poi).
+
+EÂ recuperata unicamente la riga valida con il limite pi— vicino al valore di riga, ci• a dire che le percentuali o gli importi inseriti per le soglie non si cumulano.
+
+Esempio di creazione righe di vendita con Setup calcolo provvigioni (CMS) con soglie impostate come da figura precedente:
+
+Ipotesi 1: Ipotizziamo di vendere lÂarticolo 1000 con una % sconto riga pari a 0:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche9.jpg"><br>
+
+Ipotesi 2: Ipotizziamo di vendere lÂarticolo 1000 con una % sconto riga pari a 6:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche10.jpg"><br>
+
+Ipotesi 3: Ipotizziamo di vendere lÂarticolo 1000 con una % sconto riga pari a 15:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/notetecniche11.jpg"><br>
+
+| **<img width="15" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/exclamation.png"> NB**                |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| ß utilizzato il campo % Sconto riga standard per il confronto, il setup provvigioni per soglie non tiene in alcun modo conto dello sconto fattura.  |
+
+| [Commissions - Introduction]({{<relref "commissions-cms">}})|
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Setup agenti]({{<relref "commissions-setup">}})|
+| [Setup calcolo provvigioni]({{<relref "commissions-calculation-setup">}})|
+| [Gestione movimenti contabili provvigione]({{<relref "commission-ledger-entries">}})|
+| [Gestione anticipi e stanziamenti provvigione]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Creazione fatture acquisto agenti]({{<relref "commissions-commission-purchase-document">}})|
+| [Creazione fatture acquisto da prospetto liquidazione]({{<relref "create-commission-prospect">}})|
+
+                                         
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
