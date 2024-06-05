@@ -1,0 +1,79 @@
+**Salespeople / Purchasers Setup**
+
+First you need to set the basic information Salesperson / Purchaser Card:
+
+ <img width="" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/CommissionImageENU3.png"><br>
+
+| **Field**                      | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Vendor Code                    | Specifies the vendor related to the salesperson/purchaser. It will be used in settlement process.                                                                                                                                                                                                                                                                                                                                                                                     |
+| % Prepayment                   | Specifies percentage of advance to give to salesperson/purchaser. Amount is calculated on commission ledger entry values.                                                                                                                                                                                                                                                                                                                                                             |
+| Prepayment Amount (LCY)        | Specifies amount of advance to give to salesperson/purchaser. Amount will be settled once per commission period                                                                                                                                                                                                                                                                                                                                                                       |
+| Settlement Period              |  Specifies if the salesperson is to settle every - Year - Semester - Four Months - Quarter - Quarter - Two Months - Month                                                                                                                                                                                                                                                                                                                                                             |
+| Settlement Type                | Specifies settlement type. This handles when document commission amount will be payable - Invoiced*:* the commission is paid on all commissions relating to invoices, regardless of the payment; - Paid (partially): the commission is paid on a percentage rate of the invoice which have been paid - Paid (document)): the commission is paid only when all the installments have been paid - Paid (entry): the commission is paid even if only the first installment has been paid |
+| Commission Cost G/L Acc.       | Specifies G/L account used to store commission costs (payable).                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Commission Settlement G/L Acc. | Specifies G/L account used in settlement document.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Settlement Ending Date         | Specifies when to stop settlement process.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+**Salespersons roles (CMS)**
+
+Enter the salespersons roles in this table:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/CommissionImageENU4.png"><br>
+
+**Sales networks (CMS)**
+
+Enter the sales network:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/CommissionImageENU5.png"><br>
+
+By pressing Salespersons it is possible to link roles and salespersons for each network:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/CommissionImageENU6.png"><br>
+
+By pressing Load salesperson roles the system will suggest the roles.
+
+|<img width="15" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/exclamation.png"> **NB**|
+|--------------------------------------------------------|
+|  You can not enter a salesperson without a role.       |
+
+**Commission groups (CMS)**
+
+On this page you can link commission groups to customers / items:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/CommissionImageENU7.png"><br>
+
+**Salesperson setup on customer card**
+
+On the customer card you can setup salespersons and sales network:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/CommissionImageENU8.png"><br>
+
+It is possible to insert multiple sales networks and enable just one sales network in the Default field:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/CommissionImageENU9.png"><br>
+
+You can also link salespeople and sales network to shipping addresses.
+
+| **<img width="15" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/exclamation.png"> NB**                                                  |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| If the sales network is not enabled you will not see its menu and salespersons can be managed at the moment you need. Disabling the sales network does not involve the loss of data. |
+
+| See also                                                                                                                                     |
+|----------------------------------------------------------------------------------------------------------------------------------------------|
+| [Salespersons Setup]({{<relref "commissions-setup">}})                            |
+| [Commissions Calculation Setup]({{<relref "commissions-calculation-setup">}})      |
+| [Commission Ledger Entries]({{<relref "commission-ledger-entries">}})                  |
+| [Manage advances and allocations]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Create Purchase Invoice]({{<relref "commissions-commission-purchase-document">}})|
+| [Create Commission Prospect]({{<relref "create-commission-prospect">}})|
+| [Report]({{<relref "report">}})                                                   |
+| [Technical Notes]({{<relref "commission-technical-notes">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
+
+
+
