@@ -1,0 +1,84 @@
+[**Analisi della Profittabilit…**](http://)
+
+LÂanalisi della profittabilit… consente di ottenere tramite EMA un conto economico di marginalit… per cliente/articolo (ed aggregati di queste due entit…). Si tratta di uno schema di conto economico a costo del venduto. La struttura di questo conto economico Š pressoch‚ libera, una volta definite le righe, sar… necessario indicare per ciascuna riga lÂorigine del dato. Il setup relativo allÂAnalisi delle profittabilit… viene eseguito allÂinterno del ÃSetup C/A Æ profittabilit…Ä nella sezione denominata appunto ÃAnalisi profittabilit…Ä. I campi importanti sono i seguenti:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/42Extended Management Accounting-ita.jpg">
+<br>
+
+|Campo|Description|
+|-----|-----------|
+| Compressione mov. profittabilit… | Nessuno, Mese, Giorno, Massimo -> identifica la logica di accorpamento dei movimenti di vendita. Il valore ÃNessunoÄ consente da visualizzare le righe dei singoli documenti di vendita, alle quali vengono assegnate le differenti tipologie di costo. Il livello ÃMassimoÄ di compressione gestito Š dato da cliente-articolo-periodo-combinazioni di dimensioni |
+| No compressione per spedizione diretta, cod. ubicazione, cod. variante, nr. lotto, nr. seriale  | impattano nella logica di creazione delle righe relative ai Ricavi/Ricavi netti del C/E di profittabilit…, nel caso in cui la compressione dati sia attiva. Possono quindi essere valorizzati o modificati solo nel caso in cui il campo ÃCompressione mov. profittabilit…Ä presenti un valore diverso da Nessuno |
+|Origine costo del venduto da|Specifies where to retrieve the item's cost. You can choose from standard cost worksheet or IVC extension.|
+|Tipo Costo|costo con il quale valorizzare il costo del venduto|
+|Filtro data reg. alla data fattura|consente di definire se considerare la Data di registrazione della fattura o della spedizione nel calcolo dei movimenti di fatturato|
+|Driver dimensione 1, 2, 3, 4 |consentono di indicare 4 dimensioni (oltre alle 2 globali) da utilizzare nel calcolo dei ÃDriver analisi profittabilit… (EMA)Ä|
+
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/26Extended Management Accounting-ita.png">
+<br>
+
+[**Esempio C/E di Profittabilit…**](http://)
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/25Extended Management Accounting-ita.png">
+<br>
+
+Il campo "Tipo origine" determina la logica di alimentazione del singolo conto e prevede una serie di opzioni predefinite. 
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/26Extended Management Accounting-ita.png">
+<br>
+
+ß comunque possibile definire, attraverso il valore ÃCosto vendita pers.Ä, una codeunit ed una funzione ad hoc attraverso le quali recuperare dati altre tabelle presenti a sistema, secondo una logica specifica.
+
+Da standard Š possibile utilizzare le seguenti funzioni pre-codificate:
+
+* PROVV: consente di recuperare il costo provvigionale (maturato) della singola riga di vendita dallÂapposita App ÃCommissions (CMS)Ä
+* PREMICLI: consente di recuperare lÂimporto del bonus assegnato alla singola riga di vendita dallÂapposita App ÃSales and Purchase Bonus (SPB)Ä
+* TRASP: consente di recuperare lÂimporto del costo di trasporto assegnato alla singola riga di vendita dallÂapposita App ÃTransport CostsÄ
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/27Extended Management Accounting-ita.png">
+<br>
+
+Nel caso in cui un conto di profittabilit… presenti il "Tipo Origine" = C/A, occorre impostare il collegamento tra i vari conti e definire la logica di spalmatura del costo sulle righe di vendita.
+
+Il collegamento tra i 2 conti economici va impostato sul conto di C/A: dovr… essere indicato il conto di profittabilit… di destinazione (lÂindicazione va fatta nel campo ÃColonna profittabilit…Ä) ed il driver da utilizzare (campo ÃCod. DriverÄ) per la spalmatura del costo sul fatturato di vendita. In alternativa al codice driver si possono utilizzare direttamente i campi ÃColonna DriverÄ e ÃBase SpalmaturaÄ.  
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/28Extended Management Accounting-ita.png">
+<br>
+
+NB
+> Per recuperare le provvigioni relative a righe di tipo Omaggio collegate a righe Articolo, sullo specifico conto di analisi della profittabilit…, occorre compilare il campo ÃSomma addebiti articoloÄ, con il codice addebito relativo agli Omaggi:  
+
+ <img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/43Extended Management Accounting-ita.jpg">
+ <br>
+ 
+[**Driver di profittabilit…**](http://)
+
+Consentono di allocare costi sul fatturato di vendita (®Colonna driver¯) in funzione di filtri impostati su campi e/o dimensioni presenti nelle righe di vendita. NellÂesempio seguente i costi di marketing vengono spalmati sulle righe di fatturato in funzione del valore della dimensione ®Divisione¯.  <br>  
+ <img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/29Extended Management Accounting-ita.png"><br>
+ 
+[**Scenari di analisi (EMA)**](http://)
+
+Per alimentare il CE di Profittabilit…, dopo aver calcolato il costo del singolo articolo (per es. tramite App ÃIVCÄ), Š necessario tornare nella Scheda Analisi C/A ed eseguire la funzione ÃAggiorna analisi della profittabilit…Ä. Al termine dellÂelaborazione il campo ÃStato profittabilit…Ä nella sezione Statistiche riporter… il valore ÃAllocati IndirettiÄ. 
+<br>
+ <img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/30Extended Management Accounting-ita.png">
+ <br>
+ 
+|Campo|Descrizione|
+|-----|-----------|
+| Aggiorna lÂanalisi della profittabilit… | alimenta la tabella di dettaglio "Movimenti C/IND", consultabile tramite il C/E di Profittabilit |
+| Naviga -> Scheda di analisi della profittabilit… | tramite il pulsante  Š possibile accedere al C/E di Profittabilit…, filtrato in funzione de Cod. analisi di partenza |
+
+<br>
+
+[**Verifica dati generati tramite il Conto economico profittabilit… (EMA)**](http://)
+
+ <img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/31Extended Management Accounting-ita.png">
+ <br>
+"Saldo Periodo Analisi C/A" saldo derivante da processo di allocazione costi sulle righe di vendita.
+
+[**Esempio movimenti generati dal processo di allocazione**](http://)
+
+Tramite il Drilldown della colonna "Saldo Periodo Analisi C/A" Š possibile accedere al dettaglio movimenti.  <br>
+ <img width="750" src="https://docs-test.eos-solutions.it/Images/PR000425-0/32Extended Management Accounting-ita.png">
+ <br>
