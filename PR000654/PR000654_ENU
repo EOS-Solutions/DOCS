@@ -1,0 +1,7 @@
+The Wine Assignment feature is used only for expensive/premium wine bottles. It allows to
+
+* define sales assigment periods (year, campaign)
+
+* define assigned quantity for a specific item / period and salesperson or (and) customer or (and) Country
+
+* check errors in Quote / Order
