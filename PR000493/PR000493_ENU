@@ -1,0 +1,128 @@
+**Commission Reason Codes (CMS)**
+
+On the page Commission Reason Codes you can define the reason codes, G/L Account Numbers and VAT Product Posting Groups:   
+  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup1.png"><br>
+
+**Commission Jnl. Templates (CMS)**
+
+On this page you can set the journal templates:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup2.png"><br>
+
+Details:
+
+| **Field**              |  **Description**                                                                                                                                                                                                                                                                                                                                                                              |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name and Description   | Name and journal description                                                                                                                                                                                                                                                                                                                                                                  |
+| Type                   | Options: - Payable: journals will be used to insert entries manually (eg. expenses) - Settlement: will be used to settle commission entries within the journal, without opening the invoice                                                                                                                                                                                                   |
+| Page ID                |  According to what is specified in the Type field, the system automatically proposes two different pages: - Payable = commissions to be paid: this journal is to add any additions to commissions (eg. to add an amount on the invoice to pay the expense). - Settlement = commissions to be settled: this journal is used to settle commissions without opening an invoice (no G/L entries). |
+| Source Code            |  It defines the source code to be used in the journal                                                                                                                                                                                                                                                                                                                                         |
+| Commission Reason Code | It defines the reason code to be used in the journal                                                                                                                                                                                                                                                                                                                                          |
+
+Reason codes have this setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup3.png"><br>
+
+| **Field**               | **Description**                                                                                                            |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| Code and Description    | Code and description of the commission                                                                                     |
+| Create Purchase Invoice | Create Purchase Invoice Specifies if system will create directly purchase documents instead of using settlement prospects. |
+| G/L Account No.         | Specifies the G/L account no. to use when creating purchase documents.                                                     |
+| VAT Prod. Posting Group | Specifies the VAT posting group to use when creating purchase documents.                                                   |
+
+In Commission Jnl Template, from New-\>Batch you can set the specific batch for each journal:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup4.png"><br>
+
+**Commissions Setup (CMS)**
+
+You need to enter the Commissions setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup5.png"><br>
+
+| **Field**                                                                                                        | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **SALES**                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Enable Sales Network                                                                                             | Specifies if sales network management is enabled. If not, you will be able to insert salespersons directly on customers and documents.                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Get Salesperson From                                                                                             | Get Salesperson From Specifies if salespersons on documents have to be retrieved from Sell-to or Bill-to customer.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Settlement Prospect Nos.                                                                                         | Specifies the number that will be used when creating settlement prospects.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Settlem. Invoice Nos.                                                                                            | Specifies the number that will be used when creating settlement purchase invoices.                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Settlem. Cr. Memo Nos.                                                                                           | Specifies the number that will be used when creating settlement purchase credit memos.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Unapply Settled Entries Warning                                                                                  | Specifies what kind of message must be shown when unapplying a customer ledger entry that is related to a settled commission entry Options - None: no signaling from the system - Message: the system informs the user that the entry has commissions related to it. *-* Confirm: the system locks the user and asks for confirmation to continue. *-* Error*:* the system does not allow unapplying.                                                                                                                                                     |
+| Cost Allocation on Invoiced                                                                                      | Specifies whether to manage the cost allocation for salespersons with the method of invoiced settlement                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Create Settlement Credit Memos                                                                                   | Specifies if in case of negative prospect total, settlement credit memo must be created.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **WHEN SALESPERSON IS CHANGED ON DOCUMENT HEADER**                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| This Tab manages behavior on the lines when inserting / modifying / deleting salespeople on the document header  | Insert new salesperson/role - Keep existing salesperson/role:  a) if a record exists with the same salesperson role, when the salesperson is changen on the header no action is taken  b) if a record with the same salesperson role does not exist, the new record is added on all document lines Insert new salesperson/role - Overwrite existing salesperson/role: the new record is added on all lines of the document, possibly with the salespersons with the same role being deleted before No lines update: the change is not spread on the lines |
+|                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **CALCULATION**                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Def. Base Incl. Inv. Disc.                                                                                       | Defines if the amount on which to calculate the commission must include the invoice discount                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Def. Base Incl. Line Disc.                                                                                       | Defines if the amount on which to calculate the commission must include the line discount                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Priority 1 Æ 2- 3                                                                                                | Specifies the first-second-third parameter in order of importance used to calculate commissions on documents.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| No Sales Comm. Calc. on Release/Posting Specifies if the commission does not be calculated on posting.           | Specifies if the commission does not be calculated on posting. It recommended only in case of high transaction volumes with deterioration of performance.                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **REASON CODE**                                                                                                  |  Specifies the reasons codes for the different types of posting                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+
+**Commission Period (CMS)**
+
+On this page you can define the commission periods that will be used to make settlement:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup6.png"><br>
+
+It is possible to create periods automatically using the specific button:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup7.png"><br>
+
+**Commissions Calculation Setup (CMS)**
+
+In the Commissions Calculation Setup (CMS) you can set up commissions with the following criteria:
+
+Å Sales network
+
+Å Salesperson role
+
+Å Salesperson
+
+Å Customer Commission Group
+
+Å Customer
+
+Å Line type
+
+Å Product
+
+Å Product Commission Group
+
+Å Date
+
+If the line of the sales document is applicable to multiple criteria, the system selects the criterion based on the priorities defined in the Commissions Setup (CMS). The commissions can be calculated for:
+
+Å Percentage: to be calculated on the base amount (taxable VAT, with or without discounts according to the Commissions Setup (CMS)) for each sales line falling within the setup parameters.
+
+Å Fixed Amount: commission amount that is assigned to the salesperson for each sales line that falls within the parameter setup. The fixed amount may be defined on the same line of the percentage, the two fields are not mutually exclusive.
+
+Å Threshold: threshold are defined for the calculation of commission. The threshold are calculated thanks to the Set Threshold button.
+
+At the top we can find all the possible filters::
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup8.png"><br>
+
+Through the Set Threshold button it is possible to define the % commission and / or the amount of the threshold associated with the line discount.
+
+| **<img width="15" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/exclamation.png"> NB**                                                     |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| In the case of lines having the same parameters (salesperson, customer, product), the system will use the priorities set in the Commissions Setup (CMS) in the fields Priority 1 - 2 - 3 |
+
+| See also                                                                                                                                     |
+|----------------------------------------------------------------------------------------------------------------------------------------------|
+| [Salespersons Setup]({{<relref "commissions-setup">}})|
+| [Commission Ledger Entries]({{<relref "commission-ledger-entries">}}) |
+| [Manage advances and allocations]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Create Purchase Invoice]({{<relref "commissions-commission-purchase-document">}}) |
+| [Create Purchase Invoice from Commission Prospect]({{<relref "create-commission-prospect">}}) |
+| [Report]({{<relref "report">}}) |
+| [Technical Notes]({{<relref "commission-technical-notes">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
