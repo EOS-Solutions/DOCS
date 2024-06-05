@@ -1,0 +1,56 @@
+Consente di impostare i parametri di base per il corretto funzionamento dellÂapplicazione:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Setup/44Extended Management Accounting-ita.jpg"><br>
+
+Dettaglio principali campi:
+
+<table>
+  <tbody>
+    <tr>
+      <th align="left">Campo</th>
+      <th align="left">Descrizione</th>
+    </tr>
+    <tr>
+      <td>Data inizio per trasferimento C/G</td>
+      <td align="left">specifica la data a partire dalla quale trasferire i movimenti COGE/simulati in COAN</td>    
+    </tr>
+    <tr>
+      <td>Allinea conto C/G</td>
+      <td align="left">indica come deve avvenire lÂallineamento tra i conti del PdC COGE e quello di COAN. Le opzioni possibili sono: 
+        <ul>
+          <li>Nessun Allineamento </li>
+          <li>Automatico: quando viene creato un conto C/G, viene creato automaticamente il relativo conto nel PdC C/A.</li>
+					<li>Richiesta di conferma: quando viene creato un conto C/G, viene richiesta conferma allÂutente per procedere alla creazione del relativo conto C/A (valorizzando anche, 1 ad 1, il campo ÃRange conti C/GÄ del conto C/A) </li>
+        </ul>
+       </td>
+    </tr>
+    <tr>
+      <td>Conti C/G Sincronizzati</td>
+      <td align="left">consente di indicare quali conti debbano essere riportati in C/A, le opzioni sono ÃTuttiÄ oppure ÃConti EconomiciÄ</td>
+    </tr>
+    <tr>
+      <td>Allinea i conti sulla sincronizzazione C/G-C/A</td>
+      <td align="left">indica se allineare automaticamente il PdC COAN con quello COGE, in sede di esecuzione della procedura ÃSincronizza CG con CAÄ</td>
+    </tr>
+		<tr>
+      <td>Conto ripresa saldi C/G</td>
+      <td align="left">Š il conto che Š necessario creare nel piano dei conti di analitica e che il sistema utilizza come contropartita di tutti i movimenti che vengono riportati dalla C/G alla C/A; da valorizzare nel caso di sincronizzazione del solo conto economico</td>
+    </tr>
+		<tr>
+      <td>Compressione movimenti</td>
+      <td align="left">indica la logica di accorpamento dati con cui vengono trasferiti i record dalla COGE alla COAN. La compressione minima dei movimenti Š sempre il giorno anche se Š presente lÂopzione ÃNessunoÄ. I valori vengono accorpati per Periodo-Conto-Dimensioni</td>
+    </tr>
+		<tr>
+      <td>Allocazione Mensile</td>
+      <td align="left">impatta sulle allocazioni di Tipo ÃDriverÄ. Se attivato, lÂimporto mensile oggetto di ribaltamento viene allocato in funzione dei movimenti performance generati per lo stesso periodo. Il valore alla data Š quindi ottenuto come somma degli importi allocati in funzione dei movimenti performance calcolati mensilmente</td>
+    </tr>
+		<td>Dim. Centro di Costo</td>
+      <td align="left">Š necessario indicare il codice della dimensione globale a cui sono associati i centri di costo</td>
+    </tr>
+		<td>UdM Calcolo driver capacit…</td>
+      <td align="left">viene inizializzato in funzione del valore presente nel campo ÃMostra capacit… inÄ del Setup manufacturing; pu• essere modificato nel caso in cui i tempi (presenti nei Movimenti contabili capacit…) debbano essere sono espressi/convertiti in altra unit… di misura </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
