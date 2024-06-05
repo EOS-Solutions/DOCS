@@ -2,7 +2,7 @@ Nella page di setup:
 
 <br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/3CombinedWarehouseShipment_ITA.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/3CombinedWarehouseShipment_ITA.png">
 <br><br>
 
 | **Campo** | **Descrizione** |
@@ -15,7 +15,7 @@ Nella page di setup:
 | Spedisci sempre tutte le righe | Lo standard di Business Central permette di impostare dei filtri sulle righe della spedizione warehouse e in fase di registrazione vengono registrate solo le righe filtrate. Attivando questa nuova funzionalit… i filtri impostati vengono ignorati e vengono spedite tutte le righe. |
 | **Vendita** |
 | Registra righe non-articolo | Specifica se registrare righe di tipo non articolo nel documento di origine durante la registrazione di una spedizione warehouse. |
-| Riga descrittiva nr. ordine | Specifica se aggiungere una riga descrittiva con il numero ordine nella fattura. Il riferimento alla spedizione CWS con la data di registrazione viene sempre riportato. Nella seconda riga si pu• scegliere se inserire il  numero d'ordine, il numero documento esterno, Vs. riferimento oppure nulla.<br>Nell'esempio Š stato scelto di inserire il numero d'ordine interno:<br> <img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/29CombinedWarehouseShipment_ITA.png"><br> |
+| Riga descrittiva nr. ordine | Specifica se aggiungere una riga descrittiva con il numero ordine nella fattura. Il riferimento alla spedizione CWS con la data di registrazione viene sempre riportato. Nella seconda riga si pu• scegliere se inserire il  numero d'ordine, il numero documento esterno, Vs. riferimento oppure nulla.<br>Nell'esempio Š stato scelto di inserire il numero d'ordine interno:<br> <img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/29CombinedWarehouseShipment_ITA.png"><br> |
 | **Acquisto** |
 | Registra righe non-articolo | Specifica se registrare righe di tipo non articolo nel documento di origine durante la registrazione di un carico warehouse o di una spedizione warehouse. |
 | Riga descrittiva nr. ordine | Specifica se aggiungere una riga descrittiva con il numero ordine nella fattura. |
@@ -27,101 +27,3 @@ Nella page di setup:
 | ID report spedizioni reso acquisto | Specifica il report da stampare con spedizioni CWS registrate da ordini di reso acquisto. |
 | ID report spedizioni trasferimento | Specifica il report da stampare con spedizioni CWS registrate da ordini di trasferimento. |
 | ID report spedizioni assistenza | Specifica il report da stampare con spedizioni CWS registrate da ordini di assistenza. |
-
-<br>
-
-# Reporting
-E' obbligatorio comunque effettuare il setup standard in Selezione report:
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/16CombinedWarehouseShipment_ITA.png">
-
-<br><br>
-
-
-# Codici e Setup Raggruppamento
-
-* Da Raggruppamento->Codici criterio raggruppamento Š possibile definire per ogni tipo documento da spedire come accorpare le spedizioni (definibili anche sulla singola ubicazione).
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/13CombinedWarehouseShipment_ITA.png">
-<br><br>
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/4CombinedWarehouseShipment_ITA.png">
-<br><br>
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/5CombinedWarehouseShipment_ITA.png">
-
-<br><br>
-
-
-
-# Raggruppamento di default
-Default: tipo documento di origine e indirizzo di spedizione. 
-
-* Inoltre Da Raggruppamento->Setup criterio raggruppamento  per ogni tipo documento Š possibile definire uno specifico setup per ogni ubicazione/destinazione:
-
-<br>
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/6CombinedWarehouseShipment_ITA.png"><br><br>
-
-Selezionando una riga, da Apri codici raggruppamento si pu• esaminare la lista dei criteri di raggruppamento.
-
-<br><br>
-
-
-# Inizializzare il Setup ragguppamento
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/7CombinedWarehouseShipment_ITA.png">
-<br><br>
-
-E' possibile far creare al sistema un setup iniziale che imposta i criteri di raggruppamento di default da utilizzare in spedizioni warehouse.
-
-Inizializza setup raggrupp. :
-* crea codici di default
-* crea un setup di default per le spedizioni da tutte le ubicazioni / per tutte le destinazioni
-
-<br><br>
-
-
-# Fatturazione - Codici
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/8CombinedWarehouseShipment_ITA.png"><br><br>
-
-Ad ogni tipo documento Š possibile associare uno o pi— criteri di fatturazione: Crea fattura / Registra fattura / Stampa documento (scegliere quale documento stampare).
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/9CombinedWarehouseShipment_ITA.png">
-
-<br><br>
-
-
-
-# Fatturazione - Setup
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/14CombinedWarehouseShipment_ITA.png">
-<br><br>
-
-Per ogni ordine vendita da spedire si possono impostare pi— setup per specifiche ubicazioni verso specifiche destinazioni:
-<br>
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/10CombinedWarehouseShipment_ITA.png">
-<br><br>
-Selezionando una riga, da Apri codici fatturazione si pu• esaminare la lista dei codici fatturazione.
-
-<br><br>
-
-
-# Inizializzare il Setup fatturazione
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/11CombinedWarehouseShipment_ITA.png">
-<br><br>
-
-E' possibile far creare al sistema un setup iniziale che imposta i criteri di fatturazione di default da utilizzare in spedizioni warehouse
-
-Inizializza setup fatturaz. :
-
-- Crea codici di default (non Š attivo di default. Va abilitata la funzionalit… manualmente)
-- Crea un setup di default per le spedizioni da tutte le ubicazioni / per tutte le destinazioni
-
-<br><br>
-
-
-# Crea spedizione CWS
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/12CombinedWarehouseShipment_ITA.png">
-<br><br>
-
-Il sistema crea una spedizione combinata w.house (se mancanti) a partire da una o pi— spedizioni vendita registrata. E' necessario impostare opzioni e filtro:
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000071-0/15CombinedWarehouseShipment_ITA.png"><br>
