@@ -1,11 +1,11 @@
-<img width="" src="https://docs.eos-solutions.it/Images/PR000657-0/5EDI_en.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000657-0/5EDI_en.jpg"><br>
 
 From the top menu you can open the **EDI Mapping** page.
 
 EDI mapping is the process of matching standard Euritmo/HoGast fields to internal codes defined in Business Central.
 
-{{% alert title=ÁNBÂ colour=ÁlightÂ %}}
-The codes ÁExternalÂ and ÁExternal 2Â are codes based on the Euritmo/HoGast standard or provided by the customer.
+{{% alert title="NB" colour="light" %}}
+The codes 'External' and 'External 2' are codes based on the Euritmo/HoGast standard or provided by the customer.
 {{% /alert %}}
 
 - **Type**:
