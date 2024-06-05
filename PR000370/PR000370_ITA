@@ -1,0 +1,60 @@
+Le logiche di utilizzo e gestione degli Scenari analisi C/A sono le stesse descritte allÂinterno dellÂApp EMA. 
+
+LÂinstallazione di EMA Budget Allocation prevede, nelle pagine Scenari di analisi e Scheda analisi C/A, i seguenti due campi:
+
+<table>
+  <tbody>
+    <tr>
+      <th align="left">Campo</th>
+      <th align="left">Descrizione</th>
+    </tr>
+    <tr>
+      <td>Origine allocazione</td>
+      <td align="left">indica come deve avvenire lÂallineamento tra i conti del PdC COGE e quello di COAN. Le opzioni possibili sono: 
+        <ul>
+          <li>Consuntivo (valore di default): consente lÂallocazione dei movimenti di contabilit… analitica </li>
+          <li>Budget: permette lÂallocazione di dati di budget presenti nel ÃBudget C/AÄ</li>
+        </ul>
+       </td>
+    </tr>
+    <tr>
+      <td>Filtro budget</td>
+      <td align="left">Valorizzabile, se il campo precedente presenta lÂopzione Budget, per indicare il periodo di budget dal quale recuperare i dati oggetto di allocazione.</td>    
+    </tr>		
+    <tr>
+  </tbody>
+</table>
+
+<br>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex027/EMA Budget allocation - Scenario Analysis/EMA-BA4-ita.png">
+<br>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex027/EMA Budget allocation - Scenario Analysis/EMA-BA5-ita.png">
+<br>
+
+Nel caso di utilizzo della ÃSequenza AllocazioniÄ, sar… possibile inserire esclusivamente schede di allocazione che presentino lo stesso valore del campo ÃOrigine allocazioneÄ. 
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex027/EMA Budget allocation - Scenario Analysis/EMA-BA6-ita.png"><br>
+
+| Campo | Descrizione |
+|-------|-----------|
+| Aggiorna archivio driver | Aggiorna i Movimenti prestazioni dei driver codificati a sistema |
+| Aggiorna analisi C/A | Esegue le schede di allocazione in Stato "Certificata", in ordine di Livello e Sequenza/Codice |
+
+<br>
+Sulla scheda Analisi C/A, tramite le funzioni ÃAggiorna Archivio DriverÄ e successivamente ÃAggiorna Analisi C/AÄ, Š possibile eseguire tutte le allocazioni che sono state inserite allÂinterno della lista allocazioni o solo quelle selezionate tramite lÂazione ÃSequenza allocazioniÄ e calcolare quindi la tariffa di budget del centro di costo produttivo.
+
+**Verifica dati generati tramite il processo di allocazione**
+
+ß possibile aprire direttamente il Piano dei conti C/A dalla scheda di analisi C/A tramite Correlato->Analisi->Piano dei Conti C/A: questÂultimo risulter… gi… filtrato per lÂAnalisi C/A che abbiamo appena eseguito. In alternativa Š possibile accedere alla pagina ÃPiano dei conti C/AÄ ed applicare i filtri opportuni: 
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex027/EMA Budget allocation - Scenario Analysis/EMA-BA7-ita.png">
+<br>
+
+Tramite drilldown sulla colonna "Importo budget analisi C/A" Š possibile accedere al dettaglio movimenti, analizzabile anche tramite lÂazione "Tracciabilit… origine". 
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex027/EMA Budget allocation - Scenario Analysis/EMA-BA8-ita.png">
+<br>
+
+Se si dovesse rendere necessaria una nuova esecuzione della stessa analisi Š possibile eseguire nuovamente le apposite procedure, azzerando preventivamente i dati generati dalla precedente allocazione.
