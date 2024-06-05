@@ -1,0 +1,13 @@
+SIAN Š il Sistema Informativo Agricolo Nazionale e consente alle aziende del settore vitivinicolo, attraverso un sistema di comunicazione basato su Web Services, di trasmettere/consultare le informazioni relative ai registri enologici: operazioni enologiche, ingressi e uscite, trattamenti enologici, vinificazione ecc.
+
+Le informazioni principali sono:
+
+* Indirizzi dei servizi Web
+
+* Gruppo di numerazione che consente di definire le modalit… di gestione del codice articolo SIAN, che Š costituito dal codice primario e dal codice secondario
+
+* Ambiente di produzione SIAN e ambiente di test
+
+* Web Service Log: consente il controllo dei dati trasmessi al SIAN
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000121-0/14wine-sian-ITA.jpg"><br>
