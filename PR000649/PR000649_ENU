@@ -1,0 +1,25 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000649-0/2wine-base-ENU.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000649-0/3wine-base-ENU.jpg"><br>
+
+The Item Card includes:
+
+* Alcohol degree, Year, Sugar, Bottle Volume etc..
+
+* Using EOS Wine Item Tracking Code is mandatory.
+
+* Lot No. Formula. This field allows the Lot No. Calculation:
+
+	- DD = Day
+
+	- DDD = Julian Day
+
+	- MM = Month
+
+	- WW = Week
+
+	- Y = Year
+	
+	- HH = Hour
+
+	- MI = Minutes
