@@ -1,10 +1,10 @@
 From Payable / receivable aging analysis page-\>Report-\>Account statement you can have a detailed print with all the records for the selected period and with the final balance.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000533-0/5AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000533-0/5AdvancedCustomerVendorStatement-en.png"><br>
 
 Il report to fill is:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000533-0/6AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000533-0/6AdvancedCustomerVendorStatement-en.png"><br>
 
 | Only Open Entries             | decide if you want to see only open entries or all entries                                                                                                                                                     |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -18,4 +18,4 @@ You can also set filters for specific Customer / Salesperson.
 
 Print example with maximum detail for Cannon Group SpA:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000533-0/7AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000533-0/7AdvancedCustomerVendorStatement-en.png"><br>
