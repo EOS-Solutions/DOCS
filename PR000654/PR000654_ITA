@@ -1,0 +1,7 @@
+La funzione Assegnazioni Vino viene utilizzata solo per bottiglie di vino costose/premium. Permette di
+
+* definire i periodi di vendita (anno, campagna)
+
+* definire la quantit… assegnata per un articolo / periodo specifico e venditore o (e) cliente o (e) Paese
+
+* controllare gli eventuali errori in Preventivo / Ordine
