@@ -1,0 +1,123 @@
+**Commissions Setup (CMS)**
+
+On the Commissions Setup page, Contributions tab, you need to set the cost/debit accounts for the contributions management:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN1.png"><br>
+
+| **Field**                                                          | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Contribution Bill Nos.                                             | nos. to use when creating a contribution bill. Contribution bill is used to export Grandi Ditte file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Contribution Template Name/Contribution Batch Name                 | Specify the template and the batch name for contribution entries posting.  <img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN2.png"><br>                                                                                                                                                                                                                                                                                                                                                                              |
+| Header Text                                                        | Specifies the header description shown in the Annual Reporting FIRR-ENASARCO report.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Footer Text                                                        | Specifies the footer description shown in the Annual Reporting FIRR-ENASARCO report.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **ENASARCO**                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Enasarco Protocol No. / Enasarco Position No.                      | Specicies Enasarco protocol / position number., used in Grandi Ditte file export                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **SOCIAL SECURITY / ASSISTANCE / F.I.R.R. / F.I.S.C.**             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Cost G/L Account No.                                               | enter the cost account relating to the individual type of contribution                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Debit G/L Account No.                                              | enter the debit account relating to the individual type of contribution                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **CONTRIBUTIONS**                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Post Contributions on closed Periods                               | Show Error (default option): the G/L recording of the contribution allocation is not allowed; Å First available date: the G/L registration of the contribution allocation will take place on the first available day; Å Document registration date: the G/L registration of the contribution allocation will take place on the Invoice registration date.  NB: in the case of the two procedures relating to the calculation of FIRR and FISC contributions, the "Document registration date" option assumes the same behavior as the "First available date" option.  |
+| Automatically Apply Contribution Vendor Ledger Entries on Posting  | if activated, at the end of the registration of the supplier invoice, the system makes the connection between the supplier accounting movement of Invoice Type and that relating to the contribution paid by the agent.                                                                                                                                                                                                                                                                                                                                               |
+
+**Enasarco Soc. Sec. Setup (CMS)**
+
+On Enasarco Soc. Sec. Setup (CMS) page, clicking New you can enter data related to Social Security type:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN3.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN4.png"><br>
+
+| **Field**                  | **Description**                                                                                         |
+|----------------------------|---------------------------------------------------------------------------------------------------------|
+| Starting Date              | Specifies the date from which the setup is enabled                                                      |
+| Paid by Company Fund %     |  % in charge of the Company                                                                             |
+| Paid by Salesperson Fund % | % in charge of the Salesperson                                                                          |
+| Maximum / Minimum amount   | Enter the max / min base amount for One- / Multi- firm salesperson (minimum amount is on quarter basis) |
+
+**Enasarco Assistance Setup (CMS)**
+
+On the page Enasarco Assistance Setup (CMS) click New and enter data related to Assistance
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN5.png"><br>
+
+The assistance fund is in brackets, so for each year it is necessary to enter up to 4 brackets with the relative percentages charged to the company and agent.
+
+**F.I.R.R Setup (CMS)**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN6.png"><br>
+
+Open the setup card and enter a Starting date.
+
+Next, enter the brackets and the relative percentages for the mono- /multi- firm salesperson as shown in the pitcure.
+
+**F.I.S.C Setup (CMS)**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN7.png"><br>
+
+For each year you need to set the details (Commercial and Industrial).
+
+They can be updated if the parameters change during the year.
+
+**Salesperson Card Setup**
+
+Each salesperson subject to the calculation of contributions will be matched to the related vendor In the Salesperson Card. Contributions is a tab dedicated to the necessary settings for the management of contributions:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN8.png"><br>
+
+| **Field**                            | **Description**                                                                                                                                                                                                                                                  |
+|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Society Type                         | Individual Agent Partnership: for salespeople/purchasers covered by this society type, must be indicated in master data representing the partnership, the reference vendor. (The Partnership is subject to Social Security fund) Company (subject to Assistance) |
+| Partner Of / Company Share           | fields to be filled in case of Partnerships (see last paragraph)                                                                                                                                                                                                 |
+| Salesperson Type                     | Mono-firm Multi-firm                                                                                                                                                                                                                                             |
+| Collaboration Starting / Ending Date | Enter the collaboration starting / ending date for the salesperson.                                                                                                                                                                                              |
+| Subject to Enasarco                  | the Enasarco calculation can be enabled or disabled                                                                                                                                                                                                              |
+| Enasarco Registration No.            | Specifies the Enasarco registration number.                                                                                                                                                                                                                      |
+| Enasarco Contribution Type           | indicate the type of contribution, choosing between: Social Security Assistance                                                                                                                                                                                  |
+| Soc. Sec. / Assistance Ripened       | specify the ripened amount for Social Security / Assistance                                                                                                                                                                                                      |
+| Subject to a F.I.R.R                 |  F.I.R.R can be enabled or disabled                                                                                                                                                                                                                              |
+|  F.I.R.R. Ripened                    | specifies the ripened amount for F.I.R.R. (calculated by the system)                                                                                                                                                                                             |
+| Subject to a F.I.S.C.                |  F.I.S.C. can be enabled or disabled                                                                                                                                                                                                                             |
+| AEC Type                             | indicate the type of contract between: Commercial Industrial                                                                                                                                                                                                     |
+| F.I.S.C. Hist. Shelved               | Specifies shelved value for F.I.S.C.                                                                                                                                                                                                                             |
+|  F.I.S.C. Ripened                    | specifies the ripened amount for F.I.S.C. (calculated by the system)                                                                                                                                                                                             |
+
+You need to enter the Vendor No. in the Commission Tab:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN9.png"><br>
+
+| **Field**   | **Description**                                                                   |
+|-------------|-----------------------------------------------------------------------------------|
+| Vendor Code | Svendor related to the salesperson. It will be used in the process of settlement. |
+
+**Vendor Card Setup**
+
+In the Vendor card, as shown for salespeople/purchasers, there is the Contributions tab. Data are displayed for informational purposes only, their modification is made in the salesperson card, which is the owner of the data.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN10.png"><br>
+
+| **N.B.**                                                                                                                                                           |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| No. of Related Salespersons: we can connect multiple agents to the same vendor. All agents connected to the same vendor must have the same calculation parameters. |
+
+**Partnership**
+
+Must be indicated in master data representing the partnership, the reference vendor. On the Salesperson card it must be shown that it is a Partnership:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN11.png"><br>
+
+In partner 1 and partner 2 Cards we will be specify the Company which they are connected and associated to:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupEN12.png"><br>
+
+See also:
+
+| [Introduction](({{<relref "enasarco-firr-and-fisc-cms">}})                                                                      |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Steps]({{<relref "ena-steps">}})  |
+| [Contribution Bill / Grandi Ditte file]({{<relref "contribution-bill-grandi-ditte">}})|
+| [Import previous contribution entries]({{<relref "ena-import-previous-contribution-entries">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.o:p\>
