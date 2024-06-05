@@ -1,0 +1,92 @@
+**Setup anticipi**
+
+LÂanticipo mensile in percentuale o importo fisso viene stabilito in anagrafica agenti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/AntStanz1.jpg"><br>
+
+La percentuale viene applicata allÂimporto delle provvigioni presenti sui documenti di vendita registrati nel mese, per gli agenti con liquidazione sullÂincassato parziale o totale.
+
+-   % Anticipo: viene generato un record per ogni combinazione di Riga/Fattura/NC Æ data scadenza. Il Nr. documento viene ereditato dalla Fattura/NC che lo ha generato.
+-   Importo anticipo (VL): viene generato un record per ogni agente con Data scadenza pari alla data di registrazione. I due metodi di calcolo sono alternativi fra loro.
+
+In entrambi i casi saranno generati anche i record opposti con causale ÃStorni anticipoÄ. Il numero documento coincider… con quello dellÂanticipo che lo ha generato.
+
+**Calcolo anticipi provvigione (CMS)**
+
+Per calcolare gli anticipi sulle provvigioni Š sufficiente lanciare il report Calcolo anticipi provvigione (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/AntStanz2.jpg"><br>
+
+Il sistema riporta quanti agenti ha elaborato e quante righe sono state create:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/AntStanz3.jpg"><br>
+
+Sul giornale vengono quindi creati i seguenti movimenti provvigione da liquidare:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/AntStanz4.jpg"><br>
+
+AllÂatto della registrazione il sistema creer… dei movimenti provvigione di anticipo.
+
+**Stanziamento costi provvigione (CMS)**
+
+La procedura ÃStanziamento costi provvigione (CMS)Ä consente di generare la seguente scrittura contabile / simulata periodica:
+
+Provvigioni passive maturate (CE) @ Provvigioni passive da liquidare (SP - Passivit…).
+
+I conti movimentati sono presenti nella scheda ÃProvvigioniÄ dellÂanagrafica Agenti/Addetti Acq.
+
+**Setup provvigioni (CMS)**
+
+Nella sezione ÃStanziamento costiÄ del Setup provvigioni Š necessario compilare i seguenti parametri:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/AntStanz5.jpg"><br>
+
+| **Campo**                                                        | **Descrizione**                                                                                                                                                                                                                                                                                        |
+|------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Stanziamento costi su tipo liq. fatturato                        | la procedura, di default, opera solo per gli agenti con tipo liquidazione sullÂincassato (parziale o totale). Se si desidera gestire le scritture di stanziamento anche per gli agenti con tipo liquidazione sul fatturato, Š necessario attivare il flag ÃStanziamento costi su tipo liq. fatturatoÄ. |
+| Stanziamento costi simulato                                      | se si desidera gestire, in corso dÂanno, gli stanziamenti in contabilit… simulata, occorre accendere questo flag. N.B.: gli stanziamenti di fine esercizio saranno comunque contabilizzati in contabilit… generale.                                                                                    |
+| Nome def. reg. stanziamentoÄ / ÃNome batch stanziamento          | scegliere un nome tra quelli in elenco                                                                                                                                                                                                                                                                 |
+| Nome def. reg. sim. stanziamentoÄ / ÃNome batch sim stanziamento | scegliere un nome tra quelli in elenco                                                                                                                                                                                                                                                                 |
+
+**Esecuzione procedura ÃStanziamento costi provvigione (CMS)Ä**
+
+Le scritture in corso dÂanno o a fine anno vengono generate in COGE per effetto dellÂesecuzione della procedura con il flag ÃSimulatoÄ a No:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/AntStanz6.jpg"><br>
+
+| **Campo**                  | **Descrizione**                                                                                                                                                  |
+|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Data inizio / Data fine    | indicare il periodo di calcolo degli stanziamenti provvigionali.                                                                                                 |
+| Simulato                   | viene proposto in funzione dell'attivazione o meno del campo ÃStanziamento costi simulatoÄ presente nel ÃSetup provvigioni (CMS)Ä                                |
+| Nome template / Nome batch | vengono recuperati dai relativi campi presenti nel ÃSetup provvigioni (CMS)Ä, a seconda che la registrazione venga effettuata in contabilit… generale o simulata |
+| Registra                   | se abilitato, le scritture generate vengono automaticamente contabilizzate.                                                                                      |
+
+**Esempio di scrittura COGE generata:**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/AntStanz7.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/AntStanz8.jpg"><br>
+
+**Esempio di scrittura simulata generata:**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/AntStanz9.jpg"><br>
+
+**Registro di stanziamento costi provv. / Registro di stanziamento costi provv. sim.**
+
+Le registrazioni contabili / simulate relative agli stanziamenti provvigionali, sono consultabili tramite le pagine ÃRegistro di stanziamento costi provv.Ä o ÃRegistro di stanziamento costi provv. sim.Ä:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000497-0/AntStanz10.jpg"><br>
+
+| [Commissions - Introduction]({{<relref "commissions-cms">}})|
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Setup agenti]({{<relref "commissions-setup">}})|
+| [Setup calcolo provvigioni]({{<relref "commissions-calculation-setup">}})|
+| [Gestione movimenti contabili provvigione]({{<relref "commission-ledger-entries">}})|
+| [Creazione fatture acquisto agenti]({{<relref "commissions-commission-purchase-document">}})|
+| [Creazione fatture acquisto da prospetto liquidazione]({{<relref "create-commission-prospect">}})|
+| [Note tecniche]({{<relref "commission-technical-notes">}})| 
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
