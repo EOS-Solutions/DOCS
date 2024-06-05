@@ -1,0 +1,74 @@
+**Commission Reason Codes (CMS)**
+
+In Commission Reason Codes (CMS)there is the field Exclude from F.I.R.R./F.I.S.C.: it specifies if entries with this reason code should be excluded from F.I.S.C. and F.I.R.R. base calculation.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcPostThroughReport1.png"><br>
+
+**Calculate F.I.R.R. (CMS)**
+
+The calculation of the FIRR is performed via a menu function: Calculate F.I.R.R (CMS). The report allows to enter the calculation parameters and allows to make a preview of the calculation without any posting.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcPostThroughReport2.png"><br>
+
+| **Option**       | **Description**                                                                                                                                                                     |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Calculation Date | specifies the reference date for contribution calculation (some companies perform the calculation on a monthly basis, others on a quarterly basis, still others on an annual basis) |
+| Document No.     | if the automatic Nr. Series has not been activated in the batch setup, it is necessary to indicate a Document No. (usually it is the user who indicates the number in this report)  |
+| Post             | if not activated, the system provides a preview of the calculation of contributions (no entries are created in the general ledger)                                                  |
+
+For each salesperson the Code, the Type and the Starting Date of the collaboration are shown. In addition, the report shows the Taxable Commissions, the Calculated Amount on the taxable amount, the shelved amount and the amount to post:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcPostThroughReport3.png"><br>
+
+After activating the Post option on the report page, we execute the report and in the Contributions Registers (CMS) list we can see the entries generated:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcPostThroughReport4.png"><br>
+
+In Contributions Ledger Entries it is possible to see the vendor's contributions:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcPostThroughReport5.png"><br>
+
+As for the Enasarco, the contribution amount can be modified. Subsequently, from Process-\> Post G/L Correction the correction is posted to general ledger. The Contribution amount field becomes navigable and shows the detail of the correction.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcPostThroughReport6.png"><br>
+
+**Calculate F.I.S.C. (CMS)**
+
+The calculation of the FISC is performed via a menu function: Calculate F.I.S.C (CMS). The report allows to enter the calculation parameters and allows to make a preview of the calculation without any posting.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcPostThroughReport7.png"><br>
+
+| **Option**       | **Description**                                                                                                                                                                     |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Calculation Date | specifies the reference date for contribution calculation (some companies perform the calculation on a monthly basis, others on a quarterly basis, still others on an annual basis) |
+| Document No.     | if the automatic Nr. Series has not been activated in the batch setup, it is necessary to indicate a Document No. (usually it is the user who indicates the number in this report)  |
+| Post             | if not activated, the system provides a preview of the calculation of contributions (no entries are created in the general ledger)                                                  |
+
+For each salesperson a header reports the Name and the Type AEC. There are as many lines as there are brackets of the FISC calculation years and each shows the taxable commission, the calculated amount, the shelved amount and the amount to be posted:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcPostThroughReport8.png"><br>
+
+| **N.B**.|
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Shelved amount**:: if there is shelved value for previous years, this amount must be entered in the specific field in the salesperson card, Contributions tab:  
+|<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcPostThroughReport9.png"><br> and in the FISC calculation report, the system will add the amount. |
+
+<br>
+After activating the "Post" flag on the report and after running it (also in preview), in Contributions Registers (CMS) list we can see the entries generated.
+
+In Contributions Ledger Entries there is the detail of vendor contributions entries.
+
+Also in this case the contribution amount can be modified. Subsequently, from Process-\> from Process-\> Post G/L Correction the correction is posted to general ledger. The Contribution amount field becomes navigable and shows the detail of the correction.
+
+See also:
+
+| [Introduction]({{<relref "enasarco-firr-and-fisc-cms">}})                                                                      |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Steps]({{<relref "ena-steps">}})                     |
+| [Contribution Bill / Grandi Ditte File]({{<relref "contribution-bill-grandi-ditte">}}) |
+| [Import previous contribution entries]({{<relref "ena-import-previous-contribution-entries">}})  |
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
