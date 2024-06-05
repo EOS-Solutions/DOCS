@@ -1,0 +1,15 @@
+
+E' possibile anche applicare sconti documento da Correlato->Ordine->Dettaglio sconti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000420-0/Detailed Document Discounts - Usage_Document Discount Header_ITA_001.png"><br>
+
+ê presente una tabella come la precedente in cui inserire gli sconti.
+
+Gli sconti di testata possono essere ereditati da:
+* **Condizioni pagamento**
+* **Metodi di spedizione**
+
+In entrambe le page ä presente il campo "Sconto dettagliato" in cui vengono inseriti gli sconti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000420-0/Detailed Document Discounts - Usage_Document Discount Header_ITA_002.png"><br>
+
