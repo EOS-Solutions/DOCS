@@ -1,0 +1,38 @@
+To import commission transactions still to be settled, open the Commission Entry page, select Actions-\>Massive Actions-\>Import Entries-\>Import Entries:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000494-0/ImportCommEntries1.png"><br>
+
+In the Commission Import jnl. Lines page it is possible to enter, manually or via Excel, the documents relating to the commissions still to be paid:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000494-0/ImportCommEntries2.png"><br>
+
+The field "Applies-to Cust. Ledger Entry No.Ä is mandatory for posting imported transactions.
+
+It contains the reference to the commission's source customer ledger entry. This field can be filled in manually or using the "Assign cust. ledger entry no." function.
+
+| **NB**                                                                  |
+|-------------------------------------------------------------------------|
+| The total amount of the commission must be the one to be settled in BC. |
+
+After entering the commission transactions to be settled in the "Commission Import Jnl. Linesl" page, select "Post" to transfer them to the "Commission Entry" page:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000494-0/ImportCommEntries3.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000494-0/ImportCommEntries4.png"><br>
+
+These entries will be considered in the commission settlement prospect.
+
+| [EX010 Commissions]({{<relref "commissions-cms">}})                                             |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Salespersons Setup]({{<relref "commissions-setup">}})|
+| [Commissions Calculation Setup]({{<relref "commissions-calculation-setup">}})  |
+| [Commission Ledger Entries]({{<relref "commission-ledger-entries">}})       |
+| [Manage advances and allocations]({{<relref "commissions-manage-advances-and-allocations">}}) |
+| [Create Purchase Document]({{<relref "commissions-commission-purchase-document">}}) |
+| [Create Purchase Invoice from Commission Prospect]({{<relref "create-commission-prospect">}}) |
+| [Technical Notes]({{<relref "commission-technical-notes">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
