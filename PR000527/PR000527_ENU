@@ -1,0 +1,165 @@
+**Commission Calculation Setup / Priority**
+
+It is possible to define in the Commission Setup (CMS) the priority to be assigned to the various components (Salesperson, Customer, Product) when retrieving the commission line to be used for a specific document line:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes1.png"><br>
+
+Since a document line might have data that can be linked to multiple setup calculation lines, it is necessary to establish a priority among them to determine which one will be used.
+
+Example:
+
+Let's assume we have a sales invoice for the customer 20000, who in its Customer Card has set up the salesperson BM and the sales network c3SUD:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes2.png"><br>
+
+With this invoice, 3 bicycles are being sold, so on the lines we will find:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes3.png"><br>
+
+Let's assume we have the following setup lines in the Commission Calculation Setup (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes4.png"><br>
+
+All 3 lines have filters that identify our document line:
+
+- The first by sales network and role
+- The second by sales network, role, and item
+- The third by sales network, role, and customer
+
+The system then uses the priorities defined in the setup to determine which line to use for the calculation:
+
+In our example:
+
+- Priority 1: Salesperson
+- Priority 2: Customer
+- Priority 3: Product
+
+our 3 setup lines then:
+
+1. At the role/agent level, they are identical, so they've got the same priority.
+2. The third line specifies the customer, so it has a higher priority (priority 2) compared to the second line which instead specifies the product (priority 3).
+
+The effect of this calculation is that the document line is assigned the commission from the third setup line, which is 27.5%.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes5.png"><br>
+
+For informational and verification purposes, there is a "Priority" column (not visible by default) in the commission calculation setup.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes6 and 7.png"><br>
+
+Below is a brief explanation about the calculation methodology:
+
+1. A score of 100,000 is assigned for priority 1 (in our case, Salesperson).
+2. A score of 1,000 is assigned for priority 2 (in our case, Customer).
+3. A score of 10 is assigned for priority 3 (in our case, Product).
+
+Therefore:
+
+priority coefficient = 100,000 if priority 1, 1,000 if priority 2, 10 if priority 3.
+
+For the salesperson score assignment, the calculation is:
+
+1. If a specific salesperson is specified: 37 \* priority coefficient.
+2. If a salesperson with a filter is specified: 19 \* priority coefficient.
+3. If a specific sales network is specified: 11 \* priority coefficient.
+4. If a sales network with a filter is specified: 7 \* priority coefficient.
+5. If a specific role is specified: 3 \* priority coefficient.
+6. If a role with a filter is specified: 2 \* priority coefficient.
+
+For the customer score assignment, the calculation is:
+
+1. If a specific customer is specified: 7 \* priority coefficient.
+2. If a customer with a filter is specified: 3 \* priority coefficient.
+3. If a customer commission group is specified: 2 \* priority coefficient.
+
+For the product score assignment, the calculation is:
+
+1. If a specific product is specified: 7 \* priority coefficient.
+2. If a product with a filter is specified: 3 \* priority coefficient.
+3. If a product commission group is specified: 2 \* priority coefficient.
+
+The sum of these scores determines the priority of the line, with the highest priority determining the line to be used.
+
+In the example:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes6 and 7.png"><br>
+
+*Line 1:*
+
+| Specific sales network | 1,100,000 |
+|------------------------|-----------|
+| Specific role          | 300,000   |
+| Total priority         | 1,400,000 |
+
+*Line 2:*
+
+| Specific sales network | 1,100,000 |
+|------------------------|-----------|
+| Specific role          | 300,000   |
+| Specific item          | 70        |
+| Total priority         | 1,400,070 |
+
+*Line 3:*
+
+| Specific sales network | 1,100,000 |
+|------------------------|-----------|
+| Specific role          | 300,000   |
+| Specific customer      | 70,000    |
+| Total priority         | 1,407,000 |
+
+**Threshold Calculation**
+
+In the Commission Calculation Setup (CMS), in addition to specifying a fixed percentage for the line's criteria, it is also possible to indicate a commission percentage that varies depending on the line discount present on the document line subject to the commission calculation setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes8.png"><br>
+
+In this case:
+
+- The Commission % and Commission Amount (LCY) fields should be empty.
+- The Commission Thresholds field will show the count of threshold lines set up.
+- From the Set Thresholds button, it is possible to access the threshold details.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes9.png"><br>
+
+The Discount Threshold % field specifies the discount percentage from which the commission percentage and amount should be considered.
+
+The limits entered in the Discount Threshold % field are to be understood as "minimum value", in our example:
+
+- Starting from a 0.00 discount, a 10% commission will be assigned (up to a 4.99 discount given the next setup line).
+- From a 5.00 discount inclusive, a 7% commission will be assigned (up to a 9.99 discount given the next setup line).
+- From a 10.00 discount inclusive, a 5% commission will be assigned (and so on).
+
+Only the valid line with the limit closest to the line value is retrieved, meaning the percentages or amounts entered for the thresholds do not accumulate.
+
+Example of creating sales lines with Commission Calculation Setup (CMS) with thresholds set as in the previous figure:
+
+Hypothesis 1: Suppose we sell item 1000 with a line discount % equal to 0:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes10.png"><br>
+
+Hypothesis 2: Suppose we sell item 1000 with a line discount % equal to 6:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes11.png"><br>
+
+Hypothesis 3: Suppose we sell item 1000 with a line discount % equal to 15:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000527-0/CMSTechnicalNotes12.png"><br>
+
+| **<img width="15" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/exclamation.png"> NB** |
+|------------------------------------------------------------------------------------------------------------------------------------------------|
+| The standard Line Discount % field is used to compare thresholds, the commission setup for thresholds does not in any way consider the invoice discount |
+<br>
+
+| [Commissions - Introduction]({{<relref "commissions-cms">}})|
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Salesperson Setup]({{<relref "commissions-setup">}})|
+| [Commission Calculation Setup]({{<relref "commissions-calculation-setup">}})|
+| [Commission Ledger Entries Management]({{<relref "commission-ledger-entries">}})|
+| [Advance and Allocation Management]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Creating Salesperson Purchase Invoices]({{<relref "commissions-commission-purchase-document">}})|
+| [Creating Purchase Invoices from Settlement Prospect]({{<relref "create-commission-prospect">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italy. All rights reserved.
