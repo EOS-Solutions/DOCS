@@ -1,0 +1,48 @@
+**Apply Contributions Ledger Entries (CMS)**
+
+If the flag ÃAutomatically Apply Contribution Vendor Ledger Entries on Posting Ä is not active in the Commission Setup, you must manually proceed with connecting the supplier accounting entries.
+
+It is therefore necessary to link afterwords the entries mentioned above. The connection can be applied manually in standard mode starting from the vendor entries.
+
+To facilitate this operation, the Enasarco FIRR and FISC app provides a specific page: Apply Contributions Ledger Entries (CMS).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000567-0/ENAApplyContrLedgEntry1.png"><br>
+
+In the example, the system suggests on the right which entry should be connected to the selected one. The entry is suggested according to the posting date and the document number.
+
+| **Field**                             | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Contribution entries date limit       |  Specifies a posting date limit for contributions entries to process.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Vendor Ledger Entries date limit      | Specifies a posting date limit for vendor ledger entries to process.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Vendor No. filter                     | It allows you to choose a salesperson to process                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Process-\>Suggest application         | The system processes the vendor entries related to the contributions and suggests those not yet connected (from the Line functions it is possible to view the details). If the system proposes several occurrences, only the first will have the APPLY flag activated automatically. It is however possible to modify and set the flag on another occurrence through Set / Remove Apply.   <img width="" src="https://docs-test.eos-solutions.it/Images/PR000567-0/ENAApplyContrLedgEntry2.png"><br> |
+| Entry to apply                        | factbox that suggests an entry that according to the system must be linked to the selected vendor entry                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Result                                | No-Compliant entry found: the connection has already occurred previously (manually) and the remaining amount is zero. Compliant entry found: it is possible to apply the occurence Compliant entry found but not applicable: the connection is not possible Applied: the vendor entry has been linked                                                                                                                                                                                                    |
+| Process-\>Apply Contributions Entries | After verifying that the flag "APPLY" in the Entry to apply section is active for the selected entry, from Process-\>Apply Contributions Entries the system will ask whether to link only the selectedentry or all entries. At the end the entry will be applied.                                                                                                                                                                                                                                        |
+
+| N.B.                                                                                                                                                                                           |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| The Contribution Entry Factbox provides details of each entry line on the page.  !<img width="" src="https://docs-test.eos-solutions.it/Images/PR000567-0/ENAApplyContrLedgEntry3.png"><br> |
+
+Summarizing:
+
+1\. Analysis of vendor entries linked to contribution entries that are still open and that respect the inserted filters.
+
+2\. Proposal of the vendor entry to which to apply the entry originating from the contribution, with some compatibility check logics
+
+3\. Manual verification of the correctness of what is proposed by the system
+
+4\. Punctual or massive application of entries
+
+See also:
+
+| [Introduction]({{<relref "enasarco-firr-and-fisc-cms">}})                                                                   |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Steps]({{<relref "ena-steps">}})  |
+| [Contribution Bill / Grandi Ditte File]({{<relref "contribution-bill-grandi-ditte">}})|
+| [Import previous contribution entries]({{<relref "ena-import-previous-contribution-entries">}})  |
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
