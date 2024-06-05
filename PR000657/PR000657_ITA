@@ -1,11 +1,11 @@
-<img width="" src="https://docs.eos-solutions.it/Images/PR000657-0/5EDI_it.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000657-0/5EDI_it.jpg"><br>
 
 Dal menu in alto Š possibile aprire la page **Mapping EDI**.
 
 La mappatura EDI Š il processo che permette di abbinare i campi standard Euritmo/HoGast ai codici interni definiti in Business Central.
 
 {{% alert title="NB" color="light" %}}
-I codici "Esterno" ed "Esterno 2" sono codici basati sullo standard Euritmo/HoGast oppure forniti dal cliente.
+I codici 'Esterno' ed 'Esterno 2' sono codici basati sullo standard Euritmo/HoGast oppure forniti dal cliente.
 {{% /alert %}}
 
 - **Tipo**:
