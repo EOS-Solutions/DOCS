@@ -1,0 +1,17 @@
+The "Allocation Card" allows the reversal of indirect costs charged to account/dimensions, to other account/dimension combinations (eg: to Work Centers, Divisions, etc.). As with the allocation of actual data, it is possible to use static and / or dynamic allocations.
+
+On the "Allocations List" and "Allocation Card" pages there is the "Allocation Source" field, containing the following options: 
+
+| Field | Description |
+|-------|-------------|
+| Final balance (default value) | Allows the allocation of cost accounting entries |
+| Budget | Allows the allocation of budget data present in the "C/A Budgets (EMA)" |
+
+<br>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex027/EMA Budget allocation - Allocation/EMA-BA2-enu.png">
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex027/EMA Budget allocation - Allocation/EMA-BA3-enu.png">
+<br>
+
+The different allocation cards are performed in ascending order of level; with the same level, execution takes place according to the "Sequence" field or, alternatively (if the sequence value is equal to zero), according to the Code field (alphanumeric order).
