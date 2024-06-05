@@ -1,0 +1,37 @@
+**Commissions**
+
+The App Commissions (CMS) is used to manage and calculate sales commissions for salespeople. The basic flow includes:
+
+-   Define setups for each salesperson. At this stage you can define the basic contractual conditions for each agent (prepayment, settlement period, etc.).
+-   Define salesperson roles and sales networks
+-   Set the commission calculation method
+-   Generate commission entries either manually or through sales documents
+-   Ability to manage prepayments or commission cost allocation
+-   Commissions settlement directly through the purchase invoices, or from settlement prospects
+
+**<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/CommissionImageENU.png"><br>**
+
+**Commissions - SUMMARY**
+
+Press ALT + Q and digit "CMS" for a summary of the functionalities:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/CommissionImageENU2.png"><br>
+
+| **Task**                                                                                                                                                                                             | **See**                                                                                                                                      |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| Enter the salespersons setup: Salespersons Roles (CMS), Salespersons Networks (CMS), Commission Groups (CMS)                                                                                        |[Salesperson Setup]({{<relref "commissions-setup">}})                              |
+| Enter the setup for the commission calculation: Commission Reason Codes (CMS), Commission Jnl. Templates CMS), Commissions Setup (CMS), Commission Period (CMS), Commissions Calculation Setup (CMS) | [Commissions Calculation Setup]({{<relref "commissions-calculation-setup">}})                    |
+| Import commission entries still to be settled                                                                                                                                                        | [Import Commission Entries]({{<relref "import-commission-entries">}})                       |
+| Reduce the taxable amount and the amount of the commission present in the individual commission entries                                                                                              | [Commission Reduction]({{<relref "commission-reduction">}})                              |
+| Manage commission entries: Commission Settl. Jnl. Lines (CMS)                                                                                                                                        | [Commission Ledger Entries]({{<relref "commission-ledger-entries">}})                  |
+| Manage advances and allocations: Commission Advance Calculation (CMS), Commission Cost Allocation (CMS)                                                                                              | [Manage advances and allocations]({{<relref "commissions-manage-advances-and-allocations">}})       |
+| Create purchase invoice for salespersons: Commission Purch. Doc. Create (CMS)                                                                                                                     |[Create Purchase Document]({{<relref "commissions-commission-purchase-document">}})                           |
+| Create purchase documents from settlement prospect: Create Commission Prospect (CMS), Commission Purch. Doc. Create from Prospect (CMS)                                                              | [Create Commission Prospect]({{<relref "create-commission-prospect">}})|
+| Report | [Report]({{<relref "report">}})|
+| Technical Notes|[Technical Notes]({{<relref "commission-technical-notes">}})|
+
+  
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
