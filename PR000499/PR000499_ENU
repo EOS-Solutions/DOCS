@@ -1,0 +1,59 @@
+**Create Commission Prospect (CMS)**
+
+Launching the report Create Commission Prospects (CMS) you can initiate the creation of purchase invoices for the commission entries created by the sales documents or related to reason codes for which the direct creation of the purchase invoice is not planned.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/CreateCommProsp1.png"><br>
+
+| Field                       | Description                                                                                                                    |   |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------|---|
+| Release                     | Specifies if created prospects must be automatically released                                                                  |   |
+| Preserve Existing Prospects | Specifies if existing settlement prospects have to be saved or regenerated. Released prospect will be not deleted in any case. |   |
+| Open execution log          | Specifies if a summary page with execution log has to be opened at the end of the process.                                     |   |
+
+On page Settlement Prospects you can see the created prospects:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/CreateCommProsp2.png"><br>
+
+By opening a prospect:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/CreateCommProsp3.png"><br>
+
+The system creates a line for each reason code, the commission entries originating from sales documents have not reason codes, then they are grouped in a single line with no reason code.
+
+It is possible to view the commission entries , which have contributed to the LIne Total from Manage-\>Commission Ledger Entries
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/CreateCommProsp4.png"><br>
+
+By clicking on the value in Settlement amount (LCY) we have access to the Detailed Commission Entry page and we can view the references of the settlement prospect:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/CreateCommProsp5.png"><br>
+
+Otherwise, you can see the Detailed Commission Entry page launching the report Commission Prospect:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/CreateCommProsp6.png"><br>
+
+After checking the data and modifying dates on this page, you can release.
+
+Once the release is completed it is possible to generate a purchase document:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/CreateCommProsp7.png"><br>
+
+You can create purchasing documents also through the report Commission Purch. Doc. Create From Prospect (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000499-0/CreateCommProsp8.png"><br>
+
+The system will create the invoices based on the prospects that have been released.
+
+| **See also**                                                                                                                          |
+|---------------------------------------------------------------------------------------------------------------------------------------|
+| [Salespersons Setup]({{<relref "commissions-setup">}})|
+| [Commissions Calculation Setup]({{<relref "commissions-calculation-setup">}}) |
+| [Commission Ledger Entries]({{<relref "commission-ledger-entries">}})|
+| [Manage advances and allocations]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Create Purchase Document]({{<relref "commissions-commission-purchase-document">}})|
+| [Report]({{<relref "report">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
