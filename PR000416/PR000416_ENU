@@ -1,0 +1,11 @@
+
+On the Detailed Discount Setup (DDD) page, set:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000416-0/Detailed Document Discounts - Setup_Configuration_ENU_001.png"><br>
+
+| **Field** |	**Description** |
+| --- | --- |
+| **Application Setup** |  |
+| Hide Line Discount %	| Specifies if the standard field "Line Discount %" should be hidden on all document pages. |
+| **Calculation Method** |  |
+| Sales Price / Sales Discount Calc. Method	| Specifies the calculation method for sales prices / sales discount.<br /> ? Best possible: the system calculates the most convenient price / discount<br /> ? By priority: the calculation is performed following the priorities set |
