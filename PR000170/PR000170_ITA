@@ -1,0 +1,20 @@
+
+In questa page definiamo come calcolare i costi di trasporto, ovvero in base a
+
+*   chilometri di viaggio
+*   numero bancali
+*   tipo colli
+*   ore di viaggio
+*   peso lordo / netto della merce da spedire
+
+Le voci elencate coprono la maggior parte delle casistiche. E' comunque possibile inserire ulteriori tipi se necessario.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000170-0/Setup_PriceList_ITA_1.png"><br>
+
+
+| Campo         | Descrizione                                                                                                                                                                                                                                              |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Preventivo    | consente di calcolare i costi di trasporto sulla base del listino al momento della creazione dell'ordine di vendita.                                                                                                                                     |
+| Preconsuntivo | consente di calcolare i costi di trasporto sulla base del listino al momento della spedizione dela merce al cliente e dunque della creazione del documento di trasporto o prima della conferma della correttezza dei costi da parte dello spedizioniere. |
+| Consuntivo    | consente di calcolare i costi di trasporto a valle della conferma della correttezza dei costi da parte dello spedizioniere.                                                                                                                              |
+
