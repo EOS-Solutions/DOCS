@@ -1,0 +1,15 @@
+La app Extended Management Accounting di Eos Solutions estende le funzionalit… della Contabilit… Analitica e consente lÂimplementazione dellÂAnalisi della Profittabilit… cliente/articolo.
+
+**Architettura del sistema**
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Introduction/2Extended Management Accounting-ita.png">
+<br>
+
+Premere ALT + Q e digitare "EMA" per vedere un elenco delle funzionalit… coinvolte:
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Introduction/1Extended Management Accounting-ita.png">
+<br>
+
+| **Attivit…** | **Vedi** |
+|----------|---------|
+| Contabilit… analitica (EMA) | [Ema Extended Management Accounting - Cost Accounting]({{<relref "ema-extended-management-accounting-cost-accounting">}})|
+| Analisi della profitabilit… (EMA) | [Ema Extended Management Accounting - Profitability analysis]({{<relref "ema-extended-management-accounting-profitability-analysis">}}) |
