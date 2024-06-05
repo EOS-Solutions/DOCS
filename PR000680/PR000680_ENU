@@ -12,3 +12,10 @@ Open the **Bonus Setup (SPB)** page and fill in the fields for customer and supp
   Specifies the C/G account of the vendor bonus settlement. 
   - If no allocation management is active: Specify the C/G account to be used when settling the customer bonus;
   - If allocation management is active: indicate the equity counter (e.g.: Suppliers bonus to be settled) used in the allocation procedure (if the same field of the ÁBonus classes (SPB)Â page results to be blank) and in the lines of the customer bonus settlement document (if the same field of the ÁBonus classes (SPB)Â page results to be blank).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000680-0/3SalesPurchaseBonus_en.png"><br>
+
+- **Customer Allocation Acc. No.**:
+  to be filled in indicating the income statement account to be used in the periodic writing of allocation (e.g. Sales bonuses). It is used if the same field on the "Bonus Classes (SPB)" page turns out to be empty
+- **Vendor Allocation Acc. No.**:
+  to be filled in indicating the income statement account to be used in the periodic writing of allocation (e.g. Purchase bonuses). It is used if the same field on the "Bonus Classes (SPB)" page turns out to be empty
