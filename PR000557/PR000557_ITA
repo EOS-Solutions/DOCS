@@ -1,0 +1,18 @@
+
+Se vogliamo aggiungere un contenitore pi— grande es. un Pallet, lo possiamo fare sia prima, sia dopo aver creato la Packing List.
+
+Dopo averlo inserito da Nuova unit… di carico, tramite le funzioni di Taglia/Incolla potremo definire la struttura ad albero: selezioniamo la riga della scatola da inserire sul pallet, premiamo Taglia unit… di carico e poi selezioniamo il pallet e premiamo Incolla unit… di carico:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000557-0/EX055_Tree Structure_ITA_IMG1.png"><br>
+
+|**Azione**|**Descrizione**|
+|:---|:---|
+|Taglia unit… di carico|seleziona l'unit… di carico da mettere sul pallet|
+|Incolla unit… di carico|assegna l'unit… di carico tagliata al pallet selezionato|
+|Sposta al primo livello|scollega l'unit… dal pallet e la riporta al livello iniziale|
+|Collega nuova unit… di carico|come la funzionalit… "Nuova unit… di carico" serve per generare una unit… nuova. In questo caso per• sar… gi… assegnata al pallet selezionato.|
+|Rimuovi contenuto|dopo aver selezionato una pi— righe Š possibile eliminarle dalla packing list creata.<br>N.B. Se rimuoviamo un contenitore automaticamente viene eliminato anche tutto il suo contenuto.|
+|Assegna unit… di carico|si apre una lista di handling units gi… costruite, che non sono collegate ad alcun documento ed Š possibile inserirle nella packing list<br>(es. se i pallet vengono preparati in un punto dell'azienda e le spedizioni avvengono successivamente in un altro punto)|
+|Suggerisci riga per imballaggio|il sistema esamina le spedizioni e, in base alle Istruzioni per l'imballaggio, propone delle scatole gi… riempite con il numero di pezzi indicato a setup|
+|Unit… di carico|il sistema mostra i dettagli relativi all'unit… selezionata e al suo contenuto<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR000557-0/EX055_Tree Structure_ITA_IMG2.png"><br>|
+
