@@ -1,0 +1,18 @@
+<table>
+	<tr>
+	 <td>1</td>
+	 <td>Impostare il setup</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Eseguire il calcolo e la registrazione dei movimenti contributi</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Collegare i movimenti contributi ai movimenti fornitore</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Creare la distinta contributi e, se necessario, il file Grandi Ditte</td>
+	</tr>
+</table>
