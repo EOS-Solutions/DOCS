@@ -1,0 +1,49 @@
+La procedura consente di abbattere lÂimponibile e lÂimporto della provvigione presente nei singoli ÃMovimenti provvigioni (CMS)Ä, in funzione dei parametri impostati nel ÃSetup abbattimento provvigioni (CMS).
+
+**Setup**
+
+ÃSetup abbattimento provvigioni (CMS)Ä: occorre impostare i seguenti parametri:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000495-0/AbbProvv1.jpg"><br>
+
+Attraverso il campo ÃDisabilitatoÄ Š possibile rendere obsoleto un record in modo che venga ignorato dalla procedura ÃAbbattimento provvigioni (CMS)Ä.
+
+ÃPriorit…Ä consente invece di cambiare lÂordinamento di elaborazione dei records; inoltre alimenta il flag ÃPriorit… manualeÄ.
+
+**Logica di funzionamento**
+
+Esecuzione procedura ÃAbbattimento provvigioni (CMS)Ä: la procedura elabora solo i movimenti provvigioni che non risultino essere in liquidazione o gi… liquidati.
+
+Tramite il flag ÃProcessa gi… abbattutiÄ Š possibile decidere di ri-elaborare i records gi… abbattuti in precedenza. Occorre impostare il periodo da elaborare e gli eventuali opportuni filtri:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000495-0/AbbProvv2.jpg"><br>
+
+La procedura storicizza la Ã% AbbattimentoÄ e modifica i valori dei seguenti campi presenti nei ÃMovimenti provvigioniÄ:
+
+Å ÃBase calcolo provvigione (VL)Ä
+
+Å Ã% Provvigione (Importo) (VL)Ä
+
+Å ÃImporto totale provvigione (VL)Ä
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000495-0/AbbProvv3.jpg"><br>
+
+Nella procedura di liquidazione provvigioni confluiscono gli importi eventualmente abbattuti.
+<br>
+
+| [Commissions - Introduction]({{<relref "commissions-cms">}})|
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Setup agenti]({{<relref "commissions-setup">}})|
+| [Import movimenti provvigione]({{<relref "import-commission-entries">}}) |
+| [Setup calcolo provvigioni]({{<relref "commissions-calculation-setup">}}) |
+| [Gestione movimenti contabili provvigione]({{<relref "commission-ledger-entries">}})|
+| [Gestione anticipi e stanziamenti provvigione]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Creazione fatture acquisto agenti]({{<relref "commissions-commission-purchase-document">}})|
+| [Creazione fatture acquisto da prospetto liquidazione]({{<relref "create-commission-prospect">}})|
+| [Note tecniche]({{<relref "commission-technical-notes">}})|
+
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
