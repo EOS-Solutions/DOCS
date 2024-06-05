@@ -1,0 +1,13 @@
+
+
+1.ÿÿÿÿÿ Imposta i setup per le zone di spedizione, i tipi di listino, gli oneri aggiuntivi e le anagrafiche
+
+2.ÿÿÿÿÿ Crea i listini costi di trasporto
+
+3.ÿÿÿÿÿ Lascia calcolare i costi al sistema poi esegui la liquidazione
+
+La app Transport Costs (ETC) di Eos Solutions consente di calcolare i costi di trasporto sostenuti per la spedizione/ricevimento della merce a partire dai documenti di BC (ordini di vendita, spedizioni di vendita, ordini di acquisto, carichi di acquisto, spedizioni di trasferimento, ecc.). Consente inoltre di monitorare e tenere sotto controllo quanto sar… addebitato per i costi di trasporto da parte degli spedizionieri.
+
+E' possibile uilizzare i costi calcolati nel controllo di gestione ([EMA Extended Management Accounting (EMA) EX023]({{<relref "ema-extended-management-accounting">}})).
+
+A partire da un listino fornito dallo spedizioniere Š possibileÿ**risalire ad un costo di trasporto previsto**ÿper una determinata spedizione (listino per peso, nr. colli, nr. pallet, ecc.). In seguitoÿ**tale costo pu• essere confrontato con la fattura**ÿdello spedizioniere. 
