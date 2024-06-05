@@ -1,0 +1,11 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/11CombinedWarehouseShipment.png">
+<br><br>
+
+The system creates a Default Setup for invoicing criteria in Whse Shipment
+
+Initialize Invoicing Setup:
+
+- Create Default Codes (but not Active). Must be manually activate
+- Create Default Setup (valid for shipment from all locations to all destinations)
+
+<br>
