@@ -1,0 +1,37 @@
+**Settlement prospects (CMS)**
+
+From page Commission prospects you can see the details of the commission entries launching the report Commission Prospect by clicking Report-\>Commission Prospect::
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000500-0/CommReport1.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000500-0/CommReport2.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000500-0/CommReport3.png"><br>
+
+
+
+
+**Print Commissions Detail (CMS)**
+
+This report shows a list of commissions earned in a given period, with the amount paid.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000500-0/CommReport4.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000500-0/CommReport5.png"><br>
+
+
+
+| See also                                                                                                                                     |
+|----------------------------------------------------------------------------------------------------------------------------------------------|
+| [Salespersons Setup]({{<relref "commissions-setup">}})|
+| [Commissions Calculation Setup]({{<relref "commissions-calculation-setup">}})  |
+| [Commission Ledger Entries]({{<relref "commission-ledger-entries">}})|
+| [Manage advances and allocations]({{<relref "commissions-manage-advances-and-allocations">}}) |
+| [Create Purchase Document]({{<relref "commissions-commission-purchase-document">}})|
+| [Create Purchase Document from Commission Prospect]({{<relref "create-commission-prospect">}}) |
+| [Technical Notes]({{<relref "commission-technical-notes">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
