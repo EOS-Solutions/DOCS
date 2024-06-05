@@ -1,0 +1,29 @@
+Cost management for Lot / Variant / No. series consists of filling the field "Product Family Code " in the item card:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Specific Costs/16inventory-valuation-and-costing-enu.png"><br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Specific Costs/26inventory-valuation-and-costing-enu.png"><br>
+For the period being calculated, the "Calculate specific cost" flag must also be set: 
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Specific Costs/6inventory-valuation-and-costing-enu.png"><br>
+The effects of the calculation are:
+
+* If in the ÃItem Costing Setup (IVC)Ä the field " Calc. Specific Cost" is compiled with "Amount": in "Average Cost" and "Weighted Average Cost" of the period management are listed the average costs per lot / serial / variant calculated as weighted average costs depending on the quantity of each single lot / serial / variant on the total final amount.  
+
+ The average costs of the individual lots / serials can be analyzed by selecting the "Specific Cost" action while those of the individual variants, through the "Variant Cost" action:
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Specific Costs/8inventory-valuation-and-costing-enu.png"><br>
+The Product Family Code field, in addition to impacting the calculation of specific costs for Lot/Serial/Serial Number, also serves the function of controlling the Fiscal Valuation (IVC) printing.
+Within this report, it is possible to select the type of cost to use for inventory valuation:
+
+* Standard Cost
+* Average Cost
+* Weighted Average Cost
+* FIFO Cost
+* LIFO Cost
+* Last Cost
+* Fiscal Cost
+
+In case the "Fiscal Cost" type is selected, the print report will behave as follows:
+
+1. If the item master data has the Product Family Code field filled, the cost used for fiscal purposes will be the one defined in the "Fiscal Cost in the inventory valuation report" field.
+2. If the item master data does not have the Product Family Code field filled, the cost . used for fiscal purposes will default to the Weighted Average.
+
+Filling in the "Product Family Code" field in the item master data can therefore be useful only if different costs are to be assigned in the "Fiscal Valuation IVC" report."  
