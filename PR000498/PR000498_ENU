@@ -1,0 +1,46 @@
+**Commission Purchase Document (CMS)**
+
+To generate the purchase invoices related to commissions it is necessary to run the report Commission Purch. Doc. Create CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CommPurchDoc1.png"><br>
+
+If "Create Purchase Invoice" on Commission reason Codes (CMS) is true the system will create directly purchase documents instead of using settlement prospects.
+
+The commission entries created by sales documents have no reason code, and never will be extracted by this report, but they must be generated through the procedure of the settlement prospects.
+
+Otherwise you can perform the procedure by making a specific commission reason code in order to create an invoice for each commission reason code.
+
+On the page Commission Entry the % cashed is calculated when connecting customer ledger entries, the report populates the field Payable (LCY):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CommPurchDoc2.jpg"><br>
+
+**Purchase invoice**
+
+On Purchase invoices page the system will also display those related to salespersons, previously created by the report Commission Purch. Doc. Create (CMS)..By posting the purchase invoice, the commission entry is settled.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CommPurchDoc3.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CommPurchDoc4.png"><br>
+
+By clicking on Commission Entry:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CommPurchDoc5.png"><br>
+
+By clicking on value in Settled Amount (LCY) it is possible to open the Detailed Commission Entry table where the posted purchase invoice created is showed:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CommPurchDoc6.png"><br>
+
+| See also                                                                                                                                     |
+|----------------------------------------------------------------------------------------------------------------------------------------------|
+| [Salespersons Setup]({{<relref "commissions-setup">}})|
+| [Commissions Calculation Setup]({{<relref "commissions-calculation-setup">}}) |
+| [Commission Ledger Entries]({{<relref "commission-ledger-entries">}})|
+| [Manage advances and allocations]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Create Purchase Document from Commission Prospect]({{<relref "create-commission-prospect">}})|
+| [Report]({{<relref "report">}})|
+| [Technical Notes]({{<relref "commission-technical-notes">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
