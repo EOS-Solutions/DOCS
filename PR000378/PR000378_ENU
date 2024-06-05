@@ -1,0 +1,64 @@
+
+Provides the possibility to calculate the cost of transport and / or to select the shipping agent / service based on the summary of transport costs compatible with the active price lists.
+
+| ?? **IMPORTANT** |
+|---|
+| For calculations, **the system considers the Location Code on the document header**, not the lines. |
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_001.png"><br>
+
+On the Shipping and Billing Tab, the Order inherits the Shipping agent from the Customer:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_002.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_003.png"><br>
+
+From **Actions-> Functions-> Suggest transport costs**, the system proposes the shippers for which there is a Shipping price compatible with the areas on the document, for example:
+
+departure area-> BLUE warehouse
+
+arrival area of ??the goods -> indicated in the "Ship to" field
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_004.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_005.png"><br>
+
+the system has found two shipping options for DHL and one for FEDEX and proposes freight costs and additional charges for each option, based on the number of packages and weight.
+
+It also specifies the % relative to the transport cost of the total document. Finally, it proposes the total costs in the "Transport cost (Expected)" column. By selecting the line relating to the preferred option (eg FEDEX) and pressing Confirm Shipping Agent, this choice is confirmed and the shipper / service is assigned to the document.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_006.png"><br>
+
+After posting the shipment we open the **Document Shipping Prices (ETC)**.
+
+You can filter the report by Shipping Agent if necessary.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_007.png"><br>
+
+From **Actions->Processing** you can calculate the Transport Costs on Shipments, Purchase and Sales Orders, Transfer Orders / Shipments.
+
+Let's choose the calculation on sales orders:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_008.png"><br>
+
+When the calculation is performed, you can decide how to manage the data relating to previously performed calculations:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_009.png"><br>
+
+* Delete Existing
+* Skip Manually Modified
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_011.png"><br>
+
+From **Related->Document->Card** we can see the details:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_012.png"><br>
+
+In the detail card, the costs can be changed manually and additional charges can also be entered.
+
+If the system cannot identify the costs related to a shipment, it proposes an error message in the "Error message" column, for example:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_013.png"><br>
+
+| ? **NB** |
+|---|
+| From the card we can define the Status of the calculated costs:</BR><img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ENU_014.png"><br> |
+
