@@ -1,0 +1,48 @@
+The procedure allows you to reduce the taxable amount and the amount of the commission present in the individual commission entries (CMS), according to the parameters set in the Commissions Reduction Setup (CMS).
+
+**Setup**
+
+Commissions Reduction Setup (CMS): you need to enter these parameters
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000495-0/CommReduction1.jpg"><br>
+
+| **Field** | **Description**                                                                                                                      |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------------|
+| Disabled  | Through this field it is possible to make a record obsolete so that it will be ignored by the Commission Reduction procedure (CMS).  |
+| Priority  | allows you to change the processing order of the records; it also feeds the Manual Priority flag.                                    |
+
+**How it works**
+
+Execution of the Commission reduction procedure (CMS): the procedure processes only the commission entries, that are not in settlement or already settled.
+
+Using the **Process already reduced** option, it is possible to decide to re-process the records that have already been reduced previously. The period to be processed and any appropriate filters must be set:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000495-0/CommReduction2.jpg"><br>
+
+The procedure historicises the Reduction % and modifies the values ??of the following fields present in the Commission Entry:
+
+Å Base Commission Calculation (LCY)
+
+Å Commission % (Amount) (LCY)
+
+Å Total Commission Amount (LCY)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000495-0/CommReduction3.jpg"><br>
+
+Any amounts that have been reduced are included in the commission settlement procedure.
+<br>
+| [EX010 Commissions]({{<relref "commissions-cms">}})                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Salespersons Setup]({{<relref "commissions-setup">}})|
+| [Import Commission Entries]({{<relref "import-commission-entries">}})|
+| [Commissions Calculation Setup]({{<relref "commissions-calculation-setup">}}) |
+| [Commission Ledger Entries]({{<relref "commission-ledger-entries">}})|
+| [Manage advances and allocations]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Create Purchase Document]({{<relref "commissions-commission-purchase-document">}}) |
+| [Create Purchase Invoice from Commission Prospect]({{<relref "create-commission-prospect">}})|
+| [Commissions - Note tecniche](https://helpbc.eos-solutions.it/main.aspx?lang=en&content=CommissionsNoteTecniche.html)                                            |
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
