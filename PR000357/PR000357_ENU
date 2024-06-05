@@ -1,0 +1,10 @@
+On the Chart of Accounts of Cost Accounting (of the EMA App), the following flowfields are present:
+
+|Field|Description|
+|-----|---------|
+| Budget Amount | Value calculated on the basis of the data in the C/A Budgets for the specific account |
+| Analysis Budget Net Change | Value calculated following the budget data allocation process |
+
+<br>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex027/EMA Budget allocation - Chart of accounts/EMA-BA1-enu.png"><br>
