@@ -1,0 +1,31 @@
+Da una spedizione/ordine Š possibile aprire la pagina di composizione della Packing List tramite Azioni->Funzioni->Packing List oppure da Processo->Packing List:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000555-0/EX055_Packing List Page_ITA_IMG1.png"><br>
+
+La Packing List Š un insieme di **unit… di carico**, che si collegano a righe ordine, ed ha una struttura ad albero.
+
+Innanzitutto Š necessario selezionare le unit… di carico da **"Nuova unit… di carico"**.
+
+Cliccando su Nuova unit… di carico si aprir… l'elenco dei materiali di imballaggio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000555-0/EX055_Packing List Page_ITA_IMG2.png"><br>
+
+Scegliamo ad esempio una scatola e poi aggiungiamo il contenuto da Aggiungi contenuti
+
+La page relativa ai possibili contenuti mostra le righe articolo in base agli ordini/spedizioni. Inseriamo le quantit… per gli articoli da aggiungere e premiamo OK.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000555-0/EX055_Packing List Page_ITA_IMG3.png"><br>
+
+|**Campo**|**Descrizione**|
+|:---|:---|
+|Nr. origine|numero dell'ordine|
+|Nr. / Descrizione|numero e descrizione articolo|
+|Quantit…|quantit… dell'articolo richiesto nell'ordine|
+|Q.t… assegnata|eventuale quantit… gi… assegnata in packing list|
+|Q.t… da gestire|indicare la quantit… da inserire nella scatola che abbiamo selezionato nella Packing List|
+|Cod. ubicazione|collegato al flusso logistico delle Handling Units|
+|Cod. collocazione|collegato al flusso logistico delle Handling Units|
+|Nr. lotto|assegnare il numero di Lotto per gli articoli gestiti appunto per lotti|
+|Nr. seriale|inserire eventualmente il numero di serie|
+
+Per creare pi— contenitori nella stessa Packing List si procede sempre da Nuova unit… di carico e poi definendone il contenuto da Aggiungi contenuti.
