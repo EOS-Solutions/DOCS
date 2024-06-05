@@ -1,0 +1,15 @@
+The App Commissions (CMS) is used to manage and calculate sales commissions for salespeople. The basic flow includes:
+
+* Define setups for each salesperson. At this stage you can define the basic contractual conditions for each agent (prepayment, settlement period, etc.).
+
+* Define salesperson roles and sales networks
+
+* Set the commission calculation method
+
+* Generate commission entries either manually or through sales documents
+
+* Ability to manage prepayments or commission cost allocation
+
+* Commissions settlement directly through the purchase invoices, or from settlement prospects
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000474-0/CommissionImageENU.png"><br>
