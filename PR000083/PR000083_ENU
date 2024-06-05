@@ -1,0 +1,9 @@
+The Setup is the same as that required for using the EMA App. 
+
+**C/A Drivers List (EMA)**
+
+The Drivers relating to the allocation of budget data operate with the same logic as the drivers of the EMA App.
+
+**Work center / Production area Tariff calculation depending on Production work center**
+
+The logic for calculating the budget rates of the individual production area / work center are the same as described in the paragraph relating to the calculation of final rates (EMA APP)
