@@ -1,0 +1,15 @@
+Il monitoraggio Š obbligatorio per gli articoli SIAN. La casella di controllo "Escludi dalla gestione SIAN" consente di disabilitare la gestione SIAN per elementi specifici. Esempio: etichette e tappi tipo non devono essere gestiti tramite il SIAN.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/7wine-sian-ITA.jpg"><br>
+
+Il SIAN prevede di gestire la codifica degli elementi attraverso due codici liberi: definiti come Codice Primario e Secondario.
+
+I campi che compongono i codici sono: Categoria, Classificazione, Atto/Certificato, Stato fisico, Colore, Biologico, DOPIGP, Vigneto, Data Certificato DOP, Numero Certificato DOP, E-Bacchus, Sottozona, Annata, Origine Uve, Paesi Provenienza, Zona viticola, Codice di lotto, Massa.
+
+A questi controlli, Š necessario aggiungere la verifica delle pratiche enologiche. Per pratiche enologiche si intendono: Paesi di origine, Menzioni tradizionali, Pratiche enologiche (manipolazioni), Variet….
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/8wine-sian-ITA.png"><br>
+
+In ogni movimento articolo Š possibile accedere alla Scheda Informativa del Lotto per vedere quale sia il codice SIAN associato ed eventualmente modificare una serie di attributi e ottenere un nuovo codice SIAN.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/9wine-sian-ITA.png"><br>
