@@ -1,0 +1,9 @@
+Default:  Ship-to Address and Source Document Type
+
+* From Combination->Combination Criteria Setup, for each Document Type to ship can be defined one or more criteria setup for a specific shipment location to specific destination
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/6CombinedWarehouseShipment.png"><br>
+
+It is possible to open the combination criteria codes prom "Open Combination Codes".
+
+<br>
