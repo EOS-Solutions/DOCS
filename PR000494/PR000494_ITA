@@ -1,0 +1,40 @@
+Per importare i movimenti di provvigione ancora da liquidare, Š necessario aprire la pagina Movimenti provvigioni, selezionare Azioni-\>Azioni massive-\>Movimenti importati-\>Importa movimenti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000494-0/ImportMovProvv1.jpg"><br>
+
+Nella pagina Giornale provvigioni importate Š possibile inserire, manualmente o tramite Excel, i documenti relativi alle provvigioni ancora da liquidare:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000494-0/ImportMovProvv2.jpg"><br>
+
+Il campo ÃCollega a mov. contabile clienteÄ Š obbligatorio per la registrazione dei movimenti importati.
+
+Contiene il riferimento al movimento contabile cliente di origine della provvigione. Questo campo pu• essere compilato manualmente oppure tramite la funzione ÃAssegna nr. movimento contabileÄ.
+
+| **<img width="15" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/exclamation.png"> NB**                                                                    |
+|---------------------------------------------------------------------------|
+| LÂimporto totale della provvigione deve essere quello da liquidare in BC. |
+
+Dopo aver inserito i movimenti provvigioni da liquidare nella page ÃGiornale provvigioni importateÄ selezionare ÃRegistraÄ per trasferirli nella page ÃMovimenti provvigioniÄ:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000494-0/ImportMovProvv3.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000494-0/ImportMovProvv4.jpg"><br>
+
+Questi movimenti verranno considerati nei prospetti di liquidazione delle provvigioni.
+
+<br>
+
+| [Commissions - Introduction]({{<relref "commissions-cms">}}) |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Setup agenti]({{<relref "commissions-setup">}})|
+| [Setup calcolo provvigioni]({{<relref "commissions-calculation-setup">}})|
+| [Gestione movimenti contabili provvigione]({{<relref "commission-ledger-entries">}})|
+| [Gestione anticipi e stanziamenti provvigione]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Creazione fatture acquisto agenti]({{<relref "commissions-commission-purchase-document">}}) |
+| [Creazione fatture acquisto da prospetto liquidazione]({{<relref "create-commission-prospect">}})|
+| [Note tecniche]({{<relref "commission-technical-notes">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
