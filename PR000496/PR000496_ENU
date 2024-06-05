@@ -1,0 +1,93 @@
+**Commission entries manual posting**
+
+It is possible to add manually some data in the commission settlement journal:
+
+-   Incentives
+-   Expenses reimbursement
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries1.png"><br>
+
+Once posted the entries are reported on page Commissions Entry (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries2.png"><br>
+
+These entries entered manually will add up to the entries automatically calculated by the system.
+
+**Commission entry posting from sales invoice**
+
+On the sales documents (order and invoice) header the system inherits the customer salespersons and then performs the calculation of the commission:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries3.png"><br>
+
+On the header, the system displays the salespersons linked to the document:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries4.png"><br>From Actions-\>Commissions-\>Show Commission you can see the calculation:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries5.png"><br>
+
+On this page you can also manually adjust the amounts of the commissions.
+
+Through the action Reset Linesl changes can always return to the original situation.
+
+Recalculate Lines makes it possible to recalculate according to what defined in setup. If you want to see the setup, simply click on Open setup. On the posting of the invoice, the system automatically populates the table Document entry :
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries6.png"><br>
+
+Related entries are:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries7.png"><br>
+
+The lines are split for:
+
+\- Invoice line
+
+\- Salesperson role
+
+It is possible to modify the commission directly on Commissions Entry (CMS) page (provided they have not been settled or allocated); these lines will be marked in blue.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries8.png"><br>
+
+Actions-\>Massive Actions-\>Recalculate Lines: you can restore the initial situation:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries9.png"><br>
+
+It is possible to see details trough Navigate -\>Open occurrences/Open details:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries10.png"><br>
+
+-   Open occurrences-\>Commission Ledger Entry: this page shows the commission split entries by due date (of the sales invoice). Then one line for each customer ledger entry (occurrence) is created :
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries11.png"><br>
+
+-   Open details-\>Detailed Commission Ledger Entry: This page works similarly to the Detailed Customer ledger entries. It shows the history of the commission line starting with the value to be settled and shows all possible connections of invoices to payments, and finally settlement entries:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries12.png"><br>
+
+This page is used to calculate the percentage of cashed, which is shown on page Commission Entry.
+
+The system will display the line the line with Entry Type "Payable" omly if it is actually to be settled, and therefore in the following situations:
+
+1) If the Salesperson on the Salesperson/Purchaser Card, has Settlement Type=**Invoiced**, the line will be created on posting of the sales invoice;
+
+2) If the Salesperson on the Salesperson/Purchaser Card, has Settlement Type=**Paid (Partially)**, the line will be createdwhen connecting the invoice and payment (even if partial) for each installment of the sales invoice.
+
+3) If the Salesperson on the Salesperson/Purchaser Card, has Settlement Type=**Paid (Totally)**, the line will be created, when connecting the invoice and payment for each installment of the sales invoice.. If the payment is not the total, the field Commission Amount (LCY) field will be zero.
+
+| **<img width="15" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/exclamation.png"> NB**                                                                                                                  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  When archiving and restoring documents the system will show CMS fields (Commission Groups / Exclude from Commission) and Salespersons: <img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/CommLedgEntries13.png"><br> |
+|                                                                                                                                                                                                                                                       |
+
+| See also                                                                                                                                     |
+|----------------------------------------------------------------------------------------------------------------------------------------------|
+| [Salespersons Setup]({{<relref "commissions-setup">}})|
+| [Commissions Calculation Setup]({{<relref "commissions-calculation-setup">}}) |
+| [Manage advances and allocations]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Create Purchase Document]({{<relref "commissions-commission-purchase-document">}})|
+| [Create Purchase Document from Commission Prospect]({{<relref "create-commission-prospect">}})|
+| [Report]({{<relref "report">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
