@@ -7,7 +7,7 @@
 
 Advanced Customer Vendor Statements App offers features to display/print customers' and vendors' aging. From Customers / Vendors List go to Actions-\>Customer/Vendor aging:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/2AdvancedCustomerVendorStatement-en.png"><br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000006-0/2AdvancedCustomerVendorStatement-en.png"><br><br>
 
 The system opens a page which shows customer / vendor entries in a hierarchical structure with filters for key words such as "postng date", "due date" and "document number".
 
@@ -25,13 +25,13 @@ If we post a Credit memo, it will have a residual balance and will therefore be 
 
 Go to Actions-\>Functions--\>Ledger Entries and choose for example the credit memo nr. 20-102013 and then from Functions-\> Apply Entries choose an invoice to connect to (e.g. 20-102021) via Actions-\> Set Applies-to ID. After posting, the Credit memo is linked and closed:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/3AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000006-0/3AdvancedCustomerVendorStatement-en.png"><br>
 
 -   The Credit memo remains open with a remaining amount.
 
 The **fourth level** is represented by dishonored:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/4AdvancedCustomerVendorStatement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000006-0/4AdvancedCustomerVendorStatement-en.png"><br>
 
 | **NB**                                                                                |
 |---------------------------------------------------------------------------------------|
