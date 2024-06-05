@@ -1,0 +1,16 @@
+Eos Solutions' Inventory Valuation and Costing (IVC) app allows you to implement inventory valuation "scenarios" using different costing configurations. It also supports the following features:
+
+* Definition of calculation scenarios
+* Capability of calculating freely defined periods such as date ranges and calculation parameters
+* Valuation at average operating cost, weighted average or LIFO
+* Valuation can be carried out by article or by LIFO category, with the possibility of defining the LIFO cross article categories.
+* Valorisation for article / variant, article / lot, article / nr. of series
+* Management of additional costs aimed at full costing
+* Archive and reuse historical data such as Items , Bills of materials and Routings
+* Drill down to detailed costs to see Capacity / Components / Subcontracting costs
+* Evaluate WIP costs
+* Load pre go-live cost information to enable evaluation in the first year of adoption 
+
+Press ALT + Q e digit "IVC" for a summary of the involved functionalities:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Introduction/1inventory-valuation-and-costing-enu.png"><br>
