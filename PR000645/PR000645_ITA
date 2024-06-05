@@ -1,0 +1,11 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/11CombinedWarehouseShipment_ITA.png">
+<br><br>
+
+E' possibile far creare al sistema un setup iniziale che imposta i criteri di fatturazione di default da utilizzare in spedizioni warehouse
+
+Inizializza setup fatturaz. :
+
+- Crea codici di default (non Š attivo di default. Va abilitata la funzionalit… manualmente)
+- Crea un setup di default per le spedizioni da tutte le ubicazioni / per tutte le destinazioni
+
+<br>
