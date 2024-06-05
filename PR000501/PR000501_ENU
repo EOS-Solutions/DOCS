@@ -1,0 +1,20 @@
+<table>
+	<tr>
+	 <td>1</td>
+	 <td>Define commissions setup and salespersons setup</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Define commissions calculation setup</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Calculate and post commissions</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Settle commisions and create purchase invoices</td>
+	</tr>
+</table>
+
+<br>
