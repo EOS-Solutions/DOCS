@@ -1,0 +1,107 @@
+**Registrazione manuale mov. provvigioni**
+
+EÂ possibile inserire manualmente nel Giornale provvigioni da liquidare (CMS) una serie di dati integrativi, esempio:
+
+-   Registrazione incentivi
+-   Registrazioni rimborsi spese
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv1.jpg"><br>
+
+Una volta registrati questo movimenti vengono riportati sulla page Movimenti provvigioni (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv13.jpg"><br>
+
+Questi movimenti provvigione inseriti manualmente andranno a sommarsi ai movimenti calcolati automaticamente dal sistema.
+
+**Registrazione mov. provvigioni da fattura di vendita**
+
+Sulla testata dei documenti di vendita (ordine e fattura) il sistema eredita gli agenti dal cliente e quindi effettua il calcolo delle provvigioni:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv2.jpg"><br>
+
+Sulla testata del documento il sistema mostra gli agenti ad esso legati:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv3.jpg"><br>
+
+E quindi da Azioni-\>Provvigioni-\>Mostra provvigioni Š possibile vedere il relativo calcolo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv4.jpg"><br>
+
+In questa page Š anche possibile modificare manualmente gli importi delle provvigioni.
+
+Attraverso lÂaction Annulla modifiche manuali Š sempre possibile tornare alla situazione originaria.
+
+Inoltre Ricalcola valori da setup permette di ricalcolare tutto in base a quanto definito a setup. Se si desidera verificare il setup Š sufficiente cliccare su Apri setup. AllÂatto della registrazione della fattura, il sistema popola automaticamente la tabella Movimenti contabili documenti di provvigione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv5.jpg"><br>
+
+I relativi movimenti sono:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv6.jpg"><br>
+
+Le righe create sono spaccate per:
+
+\- Riga fattura
+
+\- Ruolo agente
+
+EÂ possibile modificare la provvigione anche direttamente su Movimenti provvigioni (CMS) (a patto che non siano state liquidate o stanziate), queste righe verranno marcate in blu.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv7.jpg"><br>
+
+Tramite Azioni-\>Azioni massive-\>Ricalcola valori da setup Š possibile ripristinare la situazione iniziale:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv8.jpg"><br>
+
+EÂ possibile analizzare nel dettaglio i movimenti provvigione tramite le action sotto Naviga -\>Apri scadenze/Apri dettagli:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv9.jpg"><br>
+
+-   Apri scadenze-\>Movimenti contabili provvigione: Questa page mostra i movimenti provvigione spaccati per scadenza (della fattura di vendita), viene quindi generata una riga per ogni Movimento contabile cliente (occorrenza):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv10.jpg"><br>
+
+-   Apri dettagli-\>Movimenti contabili provvigione dettagliati: Questa page funziona similarmente alla Dettagli movimenti clienti, sostanzialmente riporta la storia della riga provvigione, inizia con il valore da liquidare e mostra tutti i possibili collegamenti delle fatture ai pagamenti, infine i movimenti di liquidazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv11.jpg"><br>
+
+Questa page viene utilizzata per calcolare correttamente la percentuale di incasso, che viene mostrata sulla page Movimenti provvigione.
+
+Il sistema mostrer… la riga la riga con Tipo movimento Da liquidare solo se effettivamente Š da liquidare, quindi nelle seguenti situazioni:
+
+1) Se lÂagente ha come tipologia di liquidazione **Fatturato**, la riga sar… creata alla registrazione della fattura di vendita;
+
+2) Se lÂagente ha come tipologia di liquidazione **Pagato (parziale)**, la riga sar… creata allÂatto del collegamento fra la fattura e il pagamento (anche se parziale) per ogni rata della fattura di vendita.
+
+3) Se lÂagente ha come tipologia di liquidazione **Pagato (totale)**, la riga sar… creata allÂatto del collegamento fra la fattura e il pagamento per ogni rata della fattura di vendita. Nel caso il pagamento non sia totale il campo Importo provvigione (VL) sar… a zero.
+
+| **<img width="15" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/exclamation.png"> NB**                                                                                                                                                           |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  In fase di archiviazione documenti e ripristino vengono riportati i campi delle CMS (Gruppo provvigioni / Escludi dalla provvigione) e gli agenti addizionali: <img width="" src="https://docs-test.eos-solutions.it/Images/PR000496-0/MovContProvv12.jpg"> |
+
+<br>
+
+| [Commissions - Introduction]({{<relref "commissions-cms">}})|
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Commissions - Setup agenti]({{<relref "commissions-setup">}})|
+| [Commissions - Setup calcolo provvigioni]({{<relref "commissions-calculation-setup">}})|
+| [Commissions - Gestione anticipi e stanziamenti provvigione]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Commissions - Creazione fatture acquisto agenti]({{<relref "commissions-commission-purchase-document">}})|
+| [Commissions - Creazione fatture acquisto da prospetto liquidazione]({{<relref "create-commission-prospect">}})|
+| [Commissions - Note tecniche](https://helpbc.eos-solutions.it/main.aspx?lang=it-it&content=CommissionsNoteTecniche.html)                                            |
+
+<br>
+
+| See also                                                                                                                                     |
+|----------------------------------------------------------------------------------------------------------------------------------------------|
+| [Salespersons Setup]({{<relref "commissions-setup">}})|
+| [Commissions Calculation Setup]({{<relref "commissions-calculation-setup">}}) |
+| [Manage advances and allocations]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Create Purchase Document]({{<relref "commissions-commission-purchase-document">}})|
+| [Create Purchase Document from Commission Prospect]({{<relref "create-commission-prospect">}})|
+| [Report]({{<relref "report">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
