@@ -1,0 +1,21 @@
+Let's open the Shipping Prices Settlement (ETC) and filter by month (January) and Shipping Agent (DHL):
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000380-0/Settlement_ENU_001.png"><br>
+ 
+
+The details of the transport costs for the different types of documents are visible and the total cost is shown below.
+
+Costs can be changed manually.
+
+In the event that the DHL sends us an invoice with an amount higher than that calculated by the system, we enter this amount in the " Invoice amount " field and choose in the " Spread Type " field how to spread the difference on the costs already calculated. Finally we press Apply spread : 
+
+
+
+ <img width="" src="https://docs-test.eos-solutions.it/Images/PR000380-0/Settlement_ENU_002
+.png"><br>
+
+ 
+
+When the lines are definitive, after selecting the lines of interest, from "Set Status to Definitive" the costs are blocked. 
+
