@@ -1,0 +1,48 @@
+**Collegamento movimenti contributi: Collega mov. contributi a mov. fornitori (CMS)**
+
+Nel caso in cui nel Setup provvigioni non risulti attivo il flag ÃCollega automaticamente i movimenti contabili fornitori contributi alla registrazioneÄ, occorre procedere manualmente al collegamento dei movimenti contabili fornitori.
+
+ß quindi necessaria unÂattivit… di collegamento a posteriori dei movimenti sopra citati. Il collegamento pu• essere fatto manualmente in modalit… standard partendo dai movimenti fornitore.
+
+Per facilitare questa operazione, la app Enasarco F.I.R.R and F.I.S.C rende disponibile una page dedicata: Collega mov. contributi a mov. fornitori (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000567-0/ENACollegaMovContr1.png"><br>
+
+Nell'esempio il sistema propone sulla destra un movimento da collegare a quello selezionato. Il movimento viene suggerito partendo dalla data registrazione e dal nr. documento.
+
+| Campo                                   | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Limite data mov. contributi             | Š possibile impostare un filtro data per i movimenti relativi ai contributi                                                                                                                                                                                                                                                                                                                                                                         |
+| Limite data mov. fornitore              | Š possibile impostare un filtro data per i movimenti fornitore                                                                                                                                                                                                                                                                                                                                                                                      |
+| Filtro nr. fornitore                    | filtro che consente di scegliere uno specifico agente                                                                                                                                                                                                                                                                                                                                                                                               |
+| Processo-\>Suggerisci collegamento      | il sistema processa i movimenti fornitore relativi ai contributi e propone quelli non ancora collegati (da funzioni di Riga Š possibile visualizzare i dettagli). Nel caso in cui il sistema proponga pi— occorrenze, solo la prima avr… il flag APPLICA attivato in automatico. E' possibile comunque modificare e impostare il flag su un'altra occorrenza tramite Imposta/Rimuovi applicazione.  !<img width="" src="https://docs-test.eos-solutions.it/Images/PR000567-0/ENACollegaMovContr2.png"><br> |
+| Movimento da collegare                  | propone un movimento che secondo il sistema va collegato al movimento fornitore selezionato                                                                                                                                                                                                                                                                                                                                                         |
+| Risultato                               | Nessun movimento compatibile Movimento compatibile, ma non aperto: indica che il collegamento Š gi… avvenuto in precedenza manualmente e l'importo residuo Š zero. Movimento compatibile: indica che Š possibile effettuare il collegamento Collegato: indica che il movimento fornitore Š stato collegato                                                                                                                                          |
+| Processo-\>Collega movimenti contributi | Dopo aver verificato che il flag su APPLICA nella sezione Movimento da collegare sia attivo per il movimento che abbiamo scelto, da Processo-\>Collega movimenti contributi il sistema chieder… se collegare solo il movimento selezionato oppure tutti i movimenti. Al termine il movimento/i movimenti risulteranno collegati.                                                                                                                    |
+
+| N.B.                                                                                                                                                    |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| La Factbox Movimento contributi fornisce i dettagli relativi ad ogni movimento delle righe nella page.  <img width="" src="https://docs-test.eos-solutions.it/Images/PR000567-0/ENACollegaMovContr3.png"><br> |
+
+Riassumendo, gli step previsti sono:
+
+1\. Analisi dei movimenti fornitore legati a movimenti contributi che risultano ancora aperti e che rispettano eventuali filtri inseriti
+
+2\. Proposta del movimento fornitore al quale collegare il movimento derivante da contributo, con alcune logiche di verifica compatibilit…
+
+3\. Verifica manuale della correttezza di quanto proposto
+
+4\. Collegamento puntuale o massivo dei movimenti
+
+Vedi anche:
+
+| [Introduzione]({{<relref "enasarco-firr-and-fisc-cms">}})                                                                      |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Step operativi]({{<relref "ena-steps">}})                                       |
+| [Distinta contributi / Generazione file]({{<relref "contribution-bill-grandi-ditte">}}) |
+| [Import mov. pregressi]({{<relref "ena-import-previous-contribution-entries">}})                                 |
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
