@@ -1,0 +1,16 @@
+
+Nella Scheda Listino da Correlato->Prezzo->Definizione zone Š possibile impostare le zone di partenza e spedizione relative al listino per tutte le tratte concordate con lo spedizioniere.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000172-0/Setup_ShippingArea_ITA_1.png"><br>
+
+Ogni colonna costituisce un filtro. E' possibile quindi impostare anche combinazioni ad es. "da un codice ad un altro codice, "un codice oppure un altro" ecc.
+
+
+
+| ?? **Attenzione** |
+|---|
+| E' necessario definire laÿ**zona di partenza dal magazzino**ÿdell'azienda barrando l'opzioneÿ**"Area da Cod. ubicazione"** |
+
+Nei calcoli il sistema utilizza i filtri partendo dal pi— dettagliato fino ad arrivare al meno dettagliato: cliente, CAP, comune, provincia, regione, paese.
+
+
