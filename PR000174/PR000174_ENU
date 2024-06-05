@@ -1,0 +1,10 @@
+
+On the Item card page there are two fields in the Warehouse Tab:
+
+*   Units per Pallet
+*   Units per Parcels
+
+where it is defined how many pieces of the item to insert inside the package and on each pallet.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000174-0/Setup_Item_ENU_1.png"><br>
+
