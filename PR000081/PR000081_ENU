@@ -1,0 +1,56 @@
+Set the basic parameters for the application to work properly:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Setup/44Extended Management Accounting-ita.jpg"><br>
+
+The main fields are:
+
+<table>
+  <tbody>
+    <tr>
+      <th align="left">Field</th>
+      <th align="left">Description</th>
+    </tr>
+    <tr>
+      <td>Starting Date for G/L Transfer</td>
+      <td align="left">specifies the date from which to transfer the simulated G/L entries into cost accounting</td>    
+    </tr>
+    <tr>
+      <td>Align G/L Account</td>
+      <td align="left">indica come deve avvenire lÂallineamento tra i conti del PdC COGE e quello di COAN. Le opzioni possibili sono: 
+        <ul>
+          <li>No Alignment</li>
+          <li>Automatic: when a G/L account is created the corresponding account is automatically created in the Chart of cost accounting</li>
+					<li>Prompt: When a G/L account is created, the user is prompted to proceed with the creation of the Cost account (also valuing, 1 to 1, the "G/L Account Range" field of the C/A account).</li>
+        </ul>
+       </td>
+    </tr>
+    <tr>
+      <td>G/L Synch. Account</td>
+      <td align="left">Specifies which type of G/L Account to synchronize. The options are: "Income Statement" or "All"</td>
+    </tr>
+    <tr>
+      <td>Aligns accounts on G/L-C/A synchronization</td>
+      <td align="left">Specifies if the G/L account alignment is automatically executed when running G/L entries synchronization to C/A</td>
+    </tr>
+		<tr>
+      <td>Balance Account. Syncr.</td>
+      <td align="left">is the account that you need to create in the analytical plan of accounts and that the system uses in return for all entries that are reported from G/L to C/A; to be filled-in in the case of synchronization of the income statement only</td>
+    </tr>
+		<tr>
+      <td>Combine Entries</td>
+      <td align="left">Specifies the option to allow for general ledger entries to be posted individually or as a combined posting per day or month</td>
+    </tr>
+		<tr>
+      <td>Monthly Allocation</td>
+      <td align="left">impacts on ÃDriverÄ type allocations. If activated, the monthly amount to be rolled over is allocated based on the performance movements generated for the same period. The value on the date is therefore obtained as the sum of the amounts allocated based on the performance movements calculated monthly</td>
+    </tr>
+		<td>Cost Accounting Dimension</td>
+      <td align="left">You need to specify the Cost Accounting Dimension</td>
+    </tr>
+		<td>UoM Driver Capacity Calculation</td>
+      <td align="left">it is initialized based on the value present in the ÃShow capacity inÄ field of the Manufacturing Setup; can be modified if the times (present in the Capacity Accounting Entries) must be expressed/converted into another unit of measurement</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
