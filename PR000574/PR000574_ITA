@@ -1,0 +1,36 @@
+| **Download**                                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------|
+|<a href="https://docs-test.eos-solutions.it/Images/PR000574-0/Import-contributi.xlsx">File excel di esempio - Import contributi</a>|
+
+**Import mov pregressi**
+
+Nel caso in cui si rendesse necessario importare alcuni movimenti contributi (Enasarco e/o FIRR) derivanti ad esempio da un sistema ERP precedente o di immettere manualmente nuovi movimenti, Š disponibile una lista ad hoc accessibile dai movimenti contributi.
+
+Dalla page Movimenti contributi (CMS) cliccare su Azioni-\> Importa movimenti
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000574-0/ENAImportContrEntr1.png"><br>
+
+La page supporta sia lÂinserimento manuale, il copia/incolla da excel. E' necessario che il file excel riporti gli stessi campi presenti in Business Central. <a href="https://docs-test.eos-solutions.it/Images/PR000574-0/Import-contributi.xlsx">Qui</a> Š possibile scaricare un file di esempio.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000574-0/ENAImportContrEntr2.png"><br>
+
+Una volta incollati i movimenti derivanti dal file excel, premere su Importa.
+
+A questo punto tali movimenti saranno identificati nella lista Mov. contributi dal flag "Importato".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000574-0/ENAImportContrEntr3.png"><br>
+
+Se i record importati necessitano di registrazione in contabilit… generale, lo si pu• fare da **Elabora-\> Registra in CG** il sistema riconosce il flag "Importato" e chiede una conferma (Š possibile che le righe importate siano gi… state registrate).
+
+Vedi anche:
+
+| [Introduzione]({{<relref "enasarco-firr-and-fisc-cms">}}) |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Setup]({{<relref "enasarco-firr-and-fisc-setup">}})   |
+| [Step operativi]({{<relref "ena-steps">}}) |
+| [Distinta contributi / Generazione file]({{<relref "contribution-bill-grandi-ditte">}})|
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
