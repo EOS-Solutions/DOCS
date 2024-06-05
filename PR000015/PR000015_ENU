@@ -1,0 +1,13 @@
+The Extended Management Accounting Eos Solutions app extends the functionality of Cost Accounting and enables the implementation of customer/item profitability analysis.
+
+Press ALT + Q and digit "EMA" for a list of the features involved:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Introduction/1Extended Management Accounting-enu.png">
+
+<br>
+
+| **Task** | **See** |
+|----------|---------|
+| Cost accunting (EMA) | [Ema Extended Management Accounting - Cost Accounting]({{<relref "ema-extended-management-accounting-cost-accounting">}})|
+| Profitability Analysis (EMA) | [Ema Extended Management Accounting - Profitability analysis]({{<relref "ema-extended-management-accounting-profitability-analysis">}}) |
+
