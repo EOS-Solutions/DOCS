@@ -1,0 +1,10 @@
+[**Piano dei conti C/A (EMA)**](http://)
+
+Il Piano dei conti di Contabilit… Analitica pu• essere collegato a quello COGE in modalit… 1 ad 1, N ad 1 o, nel caso in cui sia necessario, 1 ad N: i saldi (COGE + simulati) dei conti COGE vengono riportati in quelli di COAN. Per creare il PdC COAN in funzione di quello COGE, Š possibile eseguire le seguenti due funzioni che troviamo nella pagina del Piano dei Conti C/A:
+
+1. Ottieni conti c/a da piano dei conti: copia i conti del PdC COGE nel PdC COAN, in funzione del campo ÃConti C/G sincronizzatiÄ.
+
+2. Registra conti c/a in piano dei conti: analizza i conti di C/A ed aggiorna (se cambiato) il valore campo ÃNr. conto C/AÄ, dei conti C/G presenti nel campo ÃIntervallo conti C/GÄ.  
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Chart of cost accounts/4Extended Management Accounting-enu.png"><br>
+Il campo ÃIntervallo conto C/GÄ mostra il conto o i conti COGE collegati allo specifico conto C/A. 
