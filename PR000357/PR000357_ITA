@@ -1,0 +1,10 @@
+Sul Piano dei conti di Contabilit… Analitica (dellÂApp EMA), sono presenti i seguenti flowfields: 
+
+| Campo | Descrizione |
+|-------|-----------|
+| Importo budget | Valore calcolato in funzione dei dati presenti nel Budget C/A per lo specifico conto |
+| Importo budget analisi C/A | Valore calcolato a seguito del processo di allocazione dei dati di budget |
+
+<br>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex027/EMA Budget allocation - Chart of accounts/EMA-BA1-ita.png"><br>
