@@ -1,0 +1,67 @@
+
+Fornisce la possibilit… di calcolare il costo del trasporto e/o di selezionare lo spedizioniere / servizio sped. in base al riepilogo dei costi di trasporto compatibili con i listini attivi.
+
+
+| ?? **Attenzione** |
+|---|
+| Per i calcoli **il sistema si basa sul Cod. ubicazione presente in testata** documento, non sulle righe. |
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_001.png"><br>
+
+L'ordine eredita dal Cliente lo spedizioniere nel Tab Spedizione e fatturazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_002.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_003.png"><br>
+
+Da **Azioni->Funzioni->Suggerisci costi di trasporto** il sistema propone gli spedizionieri per i quali esiste un listino compatibile con le zone presenti sul documento, ovvero:
+
+area di partenza->Magazzino BLU
+
+area di arrivo della merce->indicata nel campo "Spedire a"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_004.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_005.png"><br>
+
+il sistema ha trovato due opzioni di spedizione per DHL e una per FEDEX e propone per ciascuna opzione i costi di Nolo e Oneri aggiuntivi, in base al numero dei colli e al peso. Specifica inoltre la % relativa al costo di trasporto sul totale documento.
+
+Infine propone il totale costi nella colonna "Costo trasporto (preventivo)".
+
+Selezionando la riga relativa all'opzione preferita (es. FEDEX) e premendo Conferma spedizioniere, tale scelta viene appunto confermata e lo spedizioniere/servizio viene assegnato al documento.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_006.png"><br>
+
+Dopo aver registrato la spedizione apriamo i **Costi di trasporto per documento (ETC)**.
+
+Si pu• filtrare il prospetto per spedizioniere se necessario.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_008.png"><br>
+
+Da Azioni->Elaborazioni Š possibile calcolare i costi di trasporto su Spedizioni, Ordini Acquisto e Vendita, Ordini e Spedizioni di trasferimento.
+
+Scegliamo ad esempio il calcolo sugli ordini:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_009.png"><br>
+
+Quando viene eseguito il calcolo Š possibile decidere come gestire i dati relativi a calcoli effettuati in precedenza:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_010.png"><br>
+
+* cancellare dati esistenti
+* mantenere i dati modificati manualmente
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_011.png"><br>
+
+Da **Correlato->Documento->Scheda** vediamo il dettaglio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_012.png"><br>
+
+Nella scheda di dettaglio i costi possono essere modificati manualmente e si possono inoltre inserire oneri aggiuntivi.
+
+Se il sistema non riesce ad individuare i costi relativi ad una spedizione propone un messaggio di errore nella colonna "Messaggio di errore" ad esempio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_014.png"><br>
+
+| ? **NB** |
+|---|
+| Dalla Scheda di dettaglio possiamo definire lo stato dei costi calcolati:</BR><img width="" src="https://docs-test.eos-solutions.it/Images/PR000378-0/SO_PriceCalculation_ITA_015.png"><br> |
+
