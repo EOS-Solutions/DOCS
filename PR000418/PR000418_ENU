@@ -1,0 +1,40 @@
+
+On the document LINES (e.g. Sales order) we insert a line Type=Item for example, a quantity and a unit price:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ENU_001.png"><br> 
+
+In addition to the standard "Line Discount %" field, the lines include the "Detailed Line Discount" field where multiple discounts can be entered. From Lines-> Related Information-> Detailed Discounts or by clicking the three dots: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ENU_002.png"><br> 
+
+you can access the "Detailed Discounts" table in which you can view the discounts entered. It is also possible to add more discount lines: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ENU_003.png"><br>
+
+the system has splitted the discounts entered in the document line by creating three detail lines. The last two lines were added manually. 
+
+| ?? **Note** |
+|:---|
+|In the detailed discounts table you can specify the discount Type . In the document lines the discount entered is always as a percentage.|
+
+I campi principali sono:
+
+|**Field** | **Description** |
+|:---|:---|
+|Invoiced|Indicates if this discount line has been invoiced. This only applies to fixed discount amounts.|
+|Type|The options are:<br> **- Discount %:** percentage discount to be applied<br> **- Discount Amount:** fixed amount to be discounted<br> **- Discount Amount per unit:** amount that is discounted for each piece of the item<br> **- Discount Amount per Net Weight:** amount discounted on the net weight of the product|
+|Based on Original | Specifies whether the discount for this line is calculated on the non-discounted original document amount. The system otherwise applies the discounts in succession to the resulting amount each time.<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ENU_004.png">|
+|Process->Update Preview |Allows the system to populate the **Reference Amount - Charge/ Rebate - Progressive Net Amount** fields to preview the discount amounts. It must be performed at each modification.<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ENU_005.png">|
+|Origin Code|if entered, indicates the source of the discount entry (e.g. payment terms / shipment methods)|
+|Ignore Scalar Breakdown|The system, by default, calculates the discounts in scalar way on the amount that gradually decreases as the discounts are added. By enabling this option, the discounts start again from the original amount of the document:<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ENU_006.png">|
+| Reference Amount | Amount taken as the basis for calculating the discount |
+| Charge/Rebate |Amount that is discounted|
+|Progressive Net Amount| 	Net amount of the document with discounts included|
+
+By closing the detail table and returning to the document, the system adds the discounts entered on the detail page:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000418-0/Detailed Document Discounts - Usage_Document Discount Line_ENU_007.png"><br>
+
+| ?? **Note** |
+|:---|
+|The standard field "% discount line" is however populated automatically by the system.|
