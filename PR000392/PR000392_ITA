@@ -1,0 +1,9 @@
+**Costi prepartenza (IVC) - Importazione**
+
+Precondizione per il corretto calcolo dei costi Medio/Medio Ponderato e delle fasce LIFO Š lÂimport dei costi prepartenza (soprattutto se le giacenze iniziali sono state importate come ÃRettifiche positiveÄ).
+
+Nella seguente immagine sono indicate le istruzioni per la preparazione del foglio Excel ÃImport Costi PrepartenzaÄ per il calcolo del CMP (Costo Medio Ponderato):   
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Before Start Item Cost/18inventory-valuation-and-costing-ita.png"><br>
+
+Dopo lÂimportazione massiva, i dati possono essere modificati manualmente accedendo alla pagina ÃCosti Prepartenza (IVC)Ä.
