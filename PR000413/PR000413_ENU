@@ -1,0 +1,6 @@
+[**C/A Budgets (EMA)**](http://)
+
+On this page it is possible to manage the C/A Budget by Period and Dimensions, defining four dimensions for each budget, in addition to the 2 global ones.  <br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/CA Budget/22Extended Management Accounting-enu.png"><br>
+The data entry and display period can be selected by the user; in each column and for each G / L Account - Dimensions combination, you can enter the budget value. It is also possible to export the matrix to Excel and fill it in, re-import the modified budget from Excel and / or create a new budget as a copy of another already present in the system.<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/CA Budget/23Extended Management Accounting-enu.png"><br>
