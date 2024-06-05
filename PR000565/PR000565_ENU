@@ -1,0 +1,125 @@
+As previously mentioned the three possibilities of calculation are:
+
+a) Manually from the contribution entries list
+
+b) By releasing the document
+
+c) Through massive processing report
+
+**a) Example Calculate and post contribution entries in unposted purchase document**
+
+1.  Open the contribution entries list
+2.  Apply changes if needed
+3.  Post entries
+
+In the Purchase invoice / Credit Note there is the Tab Commissions with the section Enasarco:  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc1.png"><br>
+
+So you can check whether the integration calculation is enabled for the specific document (by default it isenabled if the invoice is quarter-end) and navigate the document contribution entries. Contributions entries (contributions calculated by the company and agent system for this invoice) are also shown if they are present. By clicking on the number you can see the details. Otherwise, you can access the contribution entries also from Navigate-\> Invoice-\> Commissions-\> **Contributions Entry**:
+
+when the page is opened, the system calculates the contributions for both the company and the agent
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc2.png"><br>
+
+In the example above, the field "Contribution Amount (LCY)" shows that the entries have not yet been accounted for in General Ledger.
+
+The field "Contribution Amount (LCY)" is editable (if changed the system enables the MODIFIED flag).
+
+From Process -\> Post contributions are placed on the batch indicated in Setup and accounted for, and the Contribution Amount (LCY) field is valued (navigable): the Contribution Register No. field is also valued:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc3.png"><br>
+
+A Register is generated for each posting relating to contributions:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc4.png"><br>
+
+| **N.B.**                                                                                                                                |
+|-----------------------------------------------------------------------------------------------------------------------------------------|
+| If a serial number has not been associated with the posting batch in Setup, the Document No. shows the number of the temporary invoice. |
+
+In the Purchase invoice from Request Approval-\>Withh. Taxes-Contribution Card, the ENASARCO tab summarizes the details:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc5.png"><br>
+
+**b) EXAMPLE Calculate and post contribution entries in unposted purchase document**
+
+1.  Open the purchase document
+2.  Release the document and the system automatically calculates the contributions and post them or accounts them if they have already been calculated previously.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc6.png"><br>
+
+When the document is released, the system realizes that the contribution entries are missing, so it calculates and posts them.
+
+The contribution entries are detailed (if there are several members of the Society, the relative lines will be present):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc7.png"><br>
+
+**b) EXAMPLE Calculate and post contribution entries + Integration in purchase document in the quarter end**
+
+The invoice date is end of the quarter. The system automatically proposes the Integration / Recovery enabled:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc8.png"><br>
+
+Opening the contributions entries from the related field or from Navigate-\> Invoice-\> Commissions-\> Contributions Ledger Entries, the system has calculated the lines relating to contributions and a Recovery negative line (more contributions than expected have been paid)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc9.png"><br>
+
+| N.B.                                                                            |
+|---------------------------------------------------------------------------------|
+| The Integration / Recovery flag is automatically enabled in the related column. |
+
+We release and post the invoice. If the flag "Automatically Apply Contribution Vendor Ledger Entries on Posting" has been activated in the Commission Setup, at the end of the registration of the vendor invoice, the system makes the connection between the vendor accounting entry of Invoice Type and that relating to the contribution paid by agent.
+
+Contribution entries can also be navigated on the posted invoice from the Commissions tab.
+
+**Massive contribution entries calculation**
+
+The operations described above, as well as performed by single document or by releasing the document, can be launched in a massive way through the menu report **Calculate and Post Contr. Ledger Entries**.
+
+This operation allows you to post contributions only on documents in "Open" state and some parameters need to be selected, so that you can decide which of the operations you want to perform on all documents included in the set filters:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc10.png"><br>
+
+In the print, the system shows the filters applied:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc11.png"><br>
+
+| N.B.                                                                                                                                               |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| It is possible to choose whether to execute only the calculations or also to post (based on the filters that are activated in the ACTIONS section) |
+
+**Calculation report**
+
+Let's open Calculate Enasarco Integration (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcRegContrUnpostedPurchDoc12.png"><br>
+
+| **Field**        | **Description**                                                                                                                                                                                                                                                          |
+|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Calculation Date | required field. Specifies the reference date for the integration calculation. The reference quarter will then be considered                                                                                                                                              |
+| Document No.     | required field. Specifies the Document No. that will be used when writing the integration entries                                                                                                                                                                        |
+| Create Entries   | specifies whether the integration movements should be written or whether to produce only a preview (in the second case a page is proposed with the contribution entries that would be written, with Document No. "\*\*\*" to highlight the fact that they are temporary) |
+| Post Entries     | specifies whether the contribution movements generated must also be posted in the G / L                                                                                                                                                                                  |
+
+<table style="width: 11%; height: 56px">
+	<tbody><tr>
+		<td class="auto-style7">&nbsp;&nbsp;IMPORTANT&nbsp;&nbsp;</td>
+	</tr>
+</tbody></table>
+
+By running the report with ÃCreate Entries" **enabled** and ÃPost EntriesÄ **not enabled**, the system creates the movements without posting them in General Ledger.
+
+Running the report again for the same period does not create effects, the movements created and not posted in the G/L must then be posted in the G/L by "Contribution Ledger Entry (CMS)".
+
+See also:
+
+| [Introduction]({{<relref "enasarco-firr-and-fisc-cms">}})                                                                       |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Steps]({{<relref "ena-steps">}}) |
+| [Contribution Bill / Grandi Ditte File]({{<relref "contribution-bill-grandi-ditte">}}) |
+| [Import previous contribution entries]({{<relref "enasarco-firr-and-fisc-cms-calculate-a">}})  |
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
