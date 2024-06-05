@@ -1,0 +1,33 @@
+**Prospetti liquidazione (CMS)**
+
+Dalla page dei prospetti liquidazione Š possibile vedere il dettaglio dei movimenti provvigione lanciando il report Prospetti liquidazione cliccando Report-\>Prospetti liquidazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000500-0/reportita1.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000500-0/reportita2.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000500-0/reportita3.jpg"><br>
+
+**Stampa dettaglio provvigione (CMS)**
+
+Questo report presenta un elenco delle provvigioni maturate in un determinato periodo, con lÂimporto liquidato.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000500-0/reportita4.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000500-0/reportita5.jpg"><br>
+
+
+| Vedi anche|
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Setup calcolo provvigioni]({{<relref "commissions-calculation-setup">}})|
+| [Setup agenti]({{<relref "commissions-setup">}})|
+| [Gestione movimenti contabili provvigione]({{<relref "commission-ledger-entries">}})|
+| [Gestione anticipi e stanziamenti provvigione]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Creazione fatture acquisto agenti]({{<relref "commissions-commission-purchase-document">}}))                       |
+| [Creazione fatture acquisto da prospetto liquidazione]({{<relref "create-commission-prospect">}}) |
+| [Note tecniche]({{<relref "commission-technical-notes">}})|
+
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+
