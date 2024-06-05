@@ -1,0 +1,14 @@
+Open the **Bonus Setup (SPB)** page and fill in the fields for customer and supplier bonus accounts:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000680-0/2SalesPurchaseBonus_en.png"><br>
+
+- **Customer bonus settlement C/G account**
+  Specify the C/G account for settlement of the customer bonus. 
+  - If allocation management is inactive: Specify the income account to be moved when settling the customer bonus
+  - If allocation management is active: Indicate the asset account (e.g.: bonus customers to be settled) used in the allocation procedure (if the same field of the ÁBonus classes (SPB)Â page is empty) and in the lines of the bonus customer settlement document (if the same field of the ÁBonus classes (SPB)Â page is empty).
+
+- **Vendor bonus settlement C/G account**
+  Specifies the C/G account of the vendor bonus settlement. 
+  - If no allocation management is active: Specify the C/G account to be used when settling the customer bonus;
+  - If allocation management is active: indicate the equity counter (e.g.: Suppliers bonus to be settled) used in the allocation procedure (if the same field of the ÁBonus classes (SPB)Â page results to be blank) and in the lines of the customer bonus settlement document (if the same field of the ÁBonus classes (SPB)Â page results to be blank).
