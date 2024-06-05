@@ -1,0 +1,11 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000676-0/11wine-sian-ITA.jpg"><br>
+
+Questa pagina permette di inviare le operazioni a SIAN. Le azioni principali sono:
+
+* **Crea righe**: permette di elaborare le righe che compongono la transazione. Fondamentalmente, quando le varie voci vengono registrate nell'elenco delle operazioni viene caricata solo l'intestazione. Per procedere con l'invio dell'operazione, Š necessario creare le linee operative.
+
+* **Controlla/Apri**: permette di verificare se ci sono errori nell'operazione. Una serie di controlli formali vengono eseguiti sulla registrazione al fine di intercettare eventuali errori prima di inviarla a SIAN.
+
+* **Spedisci al WEB Service**
+
+* **Ottieni Risposta**
