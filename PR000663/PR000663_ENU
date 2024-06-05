@@ -1,0 +1,5 @@
+* Register and transmit winery data to SIAN: items, tanks, vineyards, customers, vendors and operations
+
+* Manage the MVV-E Documents: MVV is the shipping document for some kind of wine items
+
+* SIAN data linked to lot information: the SIAN data are color, physical state, enological practice etc.
