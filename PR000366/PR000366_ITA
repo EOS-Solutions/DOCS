@@ -1,0 +1,13 @@
+La "Scheda allocazione" permette il ribaltamento dei costi indiretti imputati su conto/dimensioni, su altre combinazioni di conto/dimensioni (es.: su CDC, Divisioni, etc.). Come per lÂallocazione di dati consuntivi, Š possibile utilizzare allocazioni statiche e/o dinamiche.
+
+Nelle page "Lista allocazioni" e "Scheda allocazione" Š presente il campo ÃOrigine allocazioneÄ, contenente le seguenti opzioni: 
+
+| Campo | Descrizione |
+|-------|-----------|
+| Consuntivo (valore di default) | Consente lÂallocazione dei movimenti di contabilit… analitica |
+| Budget | Permette lÂallocazione di dati di budget presenti nel ÃBudget C/AÄ |
+
+<br>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex027/EMA Budget allocation - Allocation/EMA-BA2-ita.png"><br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex027/EMA Budget allocation - Allocation/EMA-BA3-ita.png"><br>
