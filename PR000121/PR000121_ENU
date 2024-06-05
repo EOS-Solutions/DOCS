@@ -1,0 +1,13 @@
+SIAN is the Italian National Agricultural Information System and allows companies in the wine sector, through a communication system based on Web Services, to transmit / consult information relating to wine registers: wine operations, entrances and exits, enological treatments, vinification etc.  
+
+The main information are:
+
+* Web Service addresses
+
+* Numbering group that allows you to define the way the SIAN article code is managed, which is made up of the primary code and the secondary code
+
+* Sian prod environment and test environment
+
+* Web Service Log: allow checks on data transmitted to SIAN
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000121-0/14wine-sian-ENU.jpg"><br>
