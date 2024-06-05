@@ -1,0 +1,49 @@
+**Creazione fatture di acquisto**
+
+Per generare le fatture di acquisto relative alle provvigioni Š necessario lanciare il report Crea documenti acquisto (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CreaFattAcq1.jpg"><br>
+
+Se la Causale provvigione (anticipo, incentivo e rimborso spese) presenta il flag Crea documenti di acquisto, viene generata una Fattura di liquidazione provvigioni da batch (manuali), per ogni fornitore-agente contenente tutti i Cod. causale provvigione movimentati nel periodo (una riga fattura per ogni cod. causale provvigione).
+
+Se la Causale ha il flag Crea fattura di acquisto, questa procedura genera la Fattura di liquidazione dedicata.
+
+I movimenti provvigione creati dai documenti di vendita non hanno la causale provvigione, quindi non verranno mai estratti da questo report, ma devono essere generati attraverso la procedura dei prospetti provvigione.
+
+In alterativa Š possibile eseguire la procedura elaborando uno specifico codice causale provvigione in modo da creare una fattura per ogni cod. causale provvigione.
+
+Sulla page dei movimenti contabili provvigione la % incassata viene calcolata allÂatto del collegamento dei movimenti contabili clienti, la generazione del report alimenta il campo Importo liquidazione (VL):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CreaFattAcq2.jpg"><br>
+
+**Fatture di acquisto**
+
+Sulla page Fatture di acquisto verranno visualizzate anche quelle relative agli agenti, precedentemente create dal report Crea documenti acquisto (CMS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CreaFattAcq3.jpg"><br>
+
+Registrando la fattura di acquisto, il movimento contabile provvigione relativo al movimento, risulta liquidato:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CreaFattAcq4.jpg"><br>
+
+Cliccando sul Nr. di movimenti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CreaFattAcq5.jpg"><br>
+
+Cliccando sui valori della colonna Importo liquidato (VL) Š possibile accedere alla tabella Movimenti contabili provv. dettagliati e visualizzare gli estremi della fattura di acquisto registrata:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000498-0/CreaFattAcq6.jpg"><br>
+
+| [Commissions - Introduction]({{<relref "commissions-cms">}})|
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Setup agenti]({{<relref "commissions-setup">}})|
+| [Setup calcolo provvigioni]({{<relref "commissions-calculation-setup">}})|
+| [Gestione movimenti contabili provvigione]({{<relref "commission-ledger-entries">}})|
+| [Gestione anticipi e stanziamenti provvigione]({{<relref "commissions-manage-advances-and-allocations">}})|
+| [Creazione fatture acquisto da prospetto liquidazione]({{<relref "create-commission-prospect">}})|
+| [Note tecniche]({{<relref "commission-technical-notes">}})||
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
