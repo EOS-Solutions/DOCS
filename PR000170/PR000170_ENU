@@ -1,0 +1,18 @@
+On this page we define how to calculate the transport costs, depending on
+
+*   miles of travel
+*   number of pallets
+*   type parcels
+*   hours of travel
+*   gross / net weight of the goods to be shipped
+
+The types listed cover most of the cases. It is however possible to insert further types if necessary.ÿ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000170-0/Setup_PriceList_ENU_1.png"><br>
+
+| Field                | Description                                                                                                                                                                         |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Order Calculation    | allows you to calculate transport costs based on the price list at the time of creating the sales order                                                                             |
+| Shipping Calculation | allows you to calculate transport costs on the basis of the price list at the time of shipment of the goods to the customer and therefore of the creation of the transport document |
+| Invoice Calculation  | it allows to calculate the transport costs after the confirmation of the correctness of the costs by the shipping agent                                                             |
+
