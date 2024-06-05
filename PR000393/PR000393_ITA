@@ -1,0 +1,12 @@
+**Importazione Fasce LIFO anni precedenti per gestione LIFO A SCATTI**
+
+Normalmente le fasce LIFO anni precedenti vengono recuperate dal vecchio sistema ed importate massivamente, utilizzando un tracciato identico a quello della tabella sotto evidenziata.
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/italian LIFO/19inventory-valuation-and-costing-ita.png"><br>
+
+**Procedura per la valorizzazione del Magazzino a LIFO a SCATTI - Calcolo LIFO (IVC)/Stampa valutazione LIFO (IVC)**
+
+IIl LIFO a scatti viene calcolato a fine anno; per effettuare il calcolo ä necessario lanciare Calcolo LIFO (IVC). Nella pagina √Gestione periodi costi articoli (IVC)ƒ deve essere presente un periodo relativo all¬anno LIFO di calcolo con i flags √Definitivoƒ e √Periodo fiscaleƒ valorizzati a Sç.
+
+NB: Attenzione all¬attivazione del flag √Definitivoƒ: deve essere valorizzato solo quando il calcolo LIFO non ä previsionale (in corso di anno) ma ä definitivo (a fine esercizio). Le fasce LIFO definitive non possono pió essere modificate.<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/italian LIFO/20inventory-valuation-and-costing-ita.png"><br>
