@@ -1,0 +1,25 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000649-0/3wine-base-ITA.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000649-0/4wine-base-ITA.jpg"><br>
+
+La Scheda articolo include:
+
+* Grado alcolico, Anno, Zuccheri, Volume Bottiglia etc..
+
+* ß obbligatorio utilizzare la Tracciabilit… Articolo EOS.
+
+* Il campo Formula Nr. Lotto consente il calcolo del numero lotto:
+
+	- DD = Day
+
+	- DDD = Julian Day
+
+	- MM = Month
+
+	- WW = Week
+
+	- Y = Year
+
+	- HH = Hour
+
+	- MI = Minutes
