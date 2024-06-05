@@ -6,7 +6,7 @@
 
 La App Advanced Customer Vendor Statements consente di visualizzare le partite cliente / fornitore dalla relativa lista premendo Azioni-\>Scadenzario clienti/fornitori.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/2AdvancedCustomerVendorStatement.png"><br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000006-0/2AdvancedCustomerVendorStatement.png"><br><br>
 
 Si apre una page con una struttura a 4 livelli in cui la logica di raggruppamento Š la partita. Il primo livello Š il codice partita.
 
@@ -24,13 +24,13 @@ Se registriamo una nota di credito, questa avr… un saldo residuo e quindi sar… u
 
 da Azioni-\>Funzioni-\>Mov. contabili scegliamo ad es. NC 20-102013 e poi da Funzioni-\>Collega scegliamo la fattura a cui collegarla (es. 20-102021) tramite Collegamento-\>Collega a ID. Dopo la registrazione la Nota Credito risulta collegata e chiusa:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/3AdvancedCustomerVendorStatement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000006-0/3AdvancedCustomerVendorStatement.png"><br>
 
 Å La nota di credito resta aperta con un residuo.
 
 Il **quarto livello** Š rappresentato dagli insoluti:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000006-0/4AdvancedCustomerVendorStatement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000006-0/4AdvancedCustomerVendorStatement.png"><br>
 
 | **NB**                                                                                                           |
 |------------------------------------------------------------------------------------------------------------------|
