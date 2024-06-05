@@ -1,10 +1,10 @@
 Da Lista Clienti-\>Report-\>Estratto conto Š possibile stampare i dettagli sui movimenti cliente per il periodo selezionato e il saldo finale:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000533-0/5AdvancedCustomerVendorStatement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000533-0/5AdvancedCustomerVendorStatement.png"><br>
 
 Il report da compilare Š il seguente:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000533-0/6AdvancedCustomerVendorStatement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000533-0/6AdvancedCustomerVendorStatement.png"><br>
 
 | Solo movimenti aperti      | decidere se si desidera vedere solo le partite aperte oppure tutti i movimenti                                                                                                                                                                             |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -18,4 +18,4 @@ E' possibile anche filtrare per Cliente specifico o per Agente.
 
 Esempio di stampa dell'estratto conto con massimo dettaglio per il Cliente Cannon Group SpA:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000533-0/7AdvancedCustomerVendorStatement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000533-0/7AdvancedCustomerVendorStatement.png"><br>
