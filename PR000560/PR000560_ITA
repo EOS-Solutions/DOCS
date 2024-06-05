@@ -1,0 +1,21 @@
+Al fine di poter utilizzare la funzione "Suggerisci riga per imballaggio" Š necessario compilare un setup in "Istruzioni per l'imballaggio":
+
+Tale setup fornisce al sistema le informazioni per creare il packaging per ogni diverso articolo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000560-0/EX055_Setup Instructions_ITA_IMG1.png"><br>
+
+|**Campo**|**Descrizione**|
+|:---|:---|
+|Nr.|numero della riga di setup|
+|Disabilitato|si pu• abilitare o disabilitare la riga una volta creata|
+|Priorit…|Š possibile assegnare una priorit… alla riga indicando dei valori numerici. Il pi— alto ha priorit… massima.|
+|Codice categoria articolo / Nr. articolo / Cod. variante|indicare l'articolo ed eventualmente la categoria e la variante|
+|Cod. unit… di misura|specifica l'unit… di misura dell'articolo|
+|Tipo origine|Š possibile scegliere tra Cliente / Fornitore /Agente ed eventualmente selezionare un Numero e una Cat. registrazione|
+|Default|specificare l'istruzione come predefinita per la combinazione articolo e origine |
+|Nr. materiale di imballaggio|inserire il materiale di imballaggio usato per l'imballaggio dell'articolo. |
+|Nr. portacarico|inserire il portacarico usato per l'imballaggio dell'articolo. |
+|Quantit…|indicare la quantit… di riempimento|
+|Nr. di strati / Qt…. per strato|se pi— imballaggi possono essere impilati indicare gli strati e la quantit… per ciascuno|
+|Obbligatorio|quando Š impostato, Š necessario specificare un imballaggio nel documento di spedizione|
+|Cod. tipo UdC|specifica il tipo unit… di carico|
