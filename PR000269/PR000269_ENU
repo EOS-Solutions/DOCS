@@ -1,0 +1,9 @@
+Open Column Definition Edit:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000269-0/53SimulatedGeneralLedger-en.png"><br>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000269-0/42SimulatedGeneralLedger-en.png"><br>
+
+{{% alert title="NOTE" color="warning" %}}
+When needing to print two sections, it is possible to define at most two column layouts so that the print is legible. This can be useful, for example, to compare two budgets, the current year's with the previous year's.
+{{% /alert %}}
