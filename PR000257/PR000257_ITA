@@ -1,0 +1,41 @@
+Business Central consente di stampare il bilancio della Societ… a sezioni contrapposte: a sinistra vi Š l'attivo e a destra il passivo.
+
+Per fare ci• cercare "Report Finanziari" e poi dai tre puntini scegliere Modifica definizione di riga:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000257-0/52SimulatedGeneralLedger.png"><br>
+
+Nel campo **Sezione** definire se il conto andr… stampato nella sezione "Dare" o "Avere" attraverso le seguenti opzioni:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000257-0/40SimulatedGeneralLedger.png"><br>
+
+**Blank:** non verranno utilizzate le sezioni contrapposte. La stampa sar… su un'unica colonna, in fondo al report
+
+**Dare:** tutti i conti selezionati (attivi) saranno stampati in Dare
+
+**Avere:** tutti i conti selezionati (passivi) saranno stampati in Avere
+
+Riassumendo, se ipotizziamo di avere tre righe di conto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000257-0/50SimulatedGeneralLedger.png.png"><br>
+
+La stampa sar…:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000257-0/51SimulatedGeneralLedger.png.png"><br>
+
+
+Ci sono alcuni conti (es. banche) per i quali non si sa a priori se saranno in Dare o Avere. Ad esempio, pu• capitare che un conto vada in negativo; in quel caso, in una stampa a sezioni contrapposte, tale conto andr… considerato nel passivo. Perci• la situazione contabile dovr… prevedere i conti replicati (saranno presenti sia in Attivo, che in Passivo).
+
+In **Sezione** si dovr… scegliere "Dare saldo positivo" per la parte Attiva e "Dare saldo negativo" per la parte Passiva:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000257-0/41SimulatedGeneralLedger.png.png"><br>
+
+Nel campo Totale andr… impostata una formula in modo che vengano cosiderate le righe totali attive e le righe totali passive. ß bene fare attenzione a mettere eventuali lettere nei campi Numero di riga all'inizio e non alla fine (Es. A0110113 e non 0110113A) altrimenti il sistema non sommer… correttamente tali campi nella formula del Totale.
+
+Il sistema quindi
+
+**Dare saldo positivo:** riporter… il totale nella stampa, nella parte Dare, solo se lo trover… positivo
+
+**Dare saldo negativo:** riporter… il totale nella stampa, nella parte Avere, solo se lo trover… negativo
+
+
+
