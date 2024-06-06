@@ -1,0 +1,17 @@
+It is possible to view missing accounts in a specific accounting situation. This action can be performed for accounting situations that deal with reclassifying G/L or Sim. accounts (if you have the [EMA](https://docs.eos-solutions.it/en/docs/apps-func/ema-extended-management-accounting.html) app).
+
+On the "Financial Reports" page, there is an action called "Verify Accounts" through which you can set filters for the accounts to check:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000256-0/35SimulatedGeneralLedger-en.png"><br>
+
+{{% alert title="Attention" color="warning" %}}
+The purpose of this function is to highlight any potentially missing accounts in the accounting situation. These missing accounts may cause discrepancies between the balance of the Chart of Accounts (Profit and Loss Statement) and that of the accounting situation itself. It is not relevant whether an account is listed in a specific row or in a total/ending total row. In both cases, the account is still included in the reclassification.
+{{% /alert %}}
+
+Using the three dots in the "Filters" field, you can set appropriate filters for various fields in the G/L or Sim. Chart of Accounts (if you have the [EMA](https://docs.eos-solutions.it/en/docs/apps-func/ema-extended-management-accounting.html) app):
+
+The "Account Type" is pre-set to "Analytical."
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000256-0/36SimulatedGeneralLedger-en.png"><br>
+
+After setting the filters, the system will provide a list of any missing accounts in the accounting situation.
