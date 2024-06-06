@@ -1,0 +1,31 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bb5NRfnwQ8M" title="Simulated General Ledger for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<table>
+	<tr>
+		<td>1</td>
+		<td>Set Competence Dates</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Create a Template</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Record Invoices with Accruals or Create Accruals Directly from the Chart of Accounts</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Verify Simulated Entries in the General Ledger</td>
+	</tr>
+</table>
+
+<br>
+
+The Accruals and Simulated General Ledger (SGL) app developed by EOS extends the functionality of the General Ledger module in BC. It allows for the automatic creation of self-reversing adjustment entries, including:
+- Invoices to be received/emitted for goods and services managed with Purchase Orders (OdA) and Sales Orders (OdV).
+- Accruals and deferrals entries.
+- Depreciation entries.
+The intrayear entries typically feed into the Simulated Accounting environment, which is a parallel ledger to the General Ledger. Simulated Accounting entries do not appear in the Journal and General Ledger Cards.
+
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/EX001-0/3SimulatedGeneralLedger(1).png"><br>
