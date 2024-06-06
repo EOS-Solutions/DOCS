@@ -1,0 +1,19 @@
+The Eos Solutions Extended Bank Reconciliation (EBR) app **integrates the standard functionalities already present in Business Central by adding further functionalities within the already foreseen process**:
+
+* Import of reporting flows according to the CBI or SEPA standard and manage all the information about the transactions contained in the flow.
+* "Multi-bank" management (it is possible to import the statements of several banks with a single file).
+* Advanced data consistency checks (SIA Code check, duplicate transaction, file already acquired, etc.).
+* CBI reason management integrated with the automatic connection function, with automatic proposal of the counterpart.
+* Advanced automatic bank statement reconciliation functions
+
+
+Press ALT + Q and digit "**EBR**" for a list of the features involved:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000023-0/EBR_Search_ENU.jpg"><br>
+
+{{% alert title="IMPORTANT" color="warning" %}}
+It is assumed that:
+* the imported flow is unique and valid for all the banks of the single company
+* the imported flow is unique and valid for all companies in the DB
+
+{{% /alert %}}
