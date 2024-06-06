@@ -1,0 +1,10 @@
+Ogni qualvolta viene eseguita una registrazione si crea un Registro nella vista Registri C/G; nella pagina sono integrati anche i movimenti di simulazione, nel momento in cui ci si posiziona su una voce del registro contenente movimenti simulati, la funzione diventa editabile.
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/EX001/gl registers (sgl)/91SimulatedGeneralLedger.png"><br>
+
+# Copia i dati da un giornale COGE in uno SIM
+
+Per copiare i dati su un Registro di contabilit… simulata, aprire la page Registri C/G e selezionare la riga corrispondente al registro da copiare.
+Da Azioni ->Funzioni ->Copia su giornale reg.: selezionare un registro Sim. su cui copiare i dati. L'opzione "Inverti segno" permette di fare la stessa registrazione, ma con i segni opposti (nel caso si debba eseguire uno storno).
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/EX001/gl registers (sgl)/92SimulatedGeneralLedger.png"><br>
