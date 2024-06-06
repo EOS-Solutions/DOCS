@@ -1,0 +1,19 @@
+ß possibile visualizzare i conti mancanti in una determinata situazione contabile. LÂazione Š eseguibile per le situazioni contabili che si occupano di riclassificare i conti COGE o di COAN (se si possiede la App [EMA](https://docs.eos-solutions.it/it/docs/apps-func/ema-extended-management-accounting.html)).
+
+Sulla page "Situazione contabile" Š presente lÂazione "Verifica conti" attraverso la quale Š possibile inserire i filtri sui conti per i quali effettuare il controllo:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000256-0/35SimulatedGeneralLedger.png"><br>
+
+
+{{% alert title="Attenzione" color="warning" %}}
+Lo scopo della funzione Š quello di evidenziare conti eventualmente mancanti nella situazione contabile, che quindi generano una squadratura tra il saldo del PdC e quello della situazione contabile stessa. Non ha quindi rilevanza se un conto sia indicato in apposita riga o in una di totale/fine totale. In entrambi i casi, infatti, il conto Š comunque compreso nella riclassifica. 
+{{% /alert %}}
+
+
+Tramite i tre puntini del campo Filtri Š possibile inserire i filtri opportuni sui vari campi del Piano dei conti COGE o COAN (se si possiede la App [EMA](https://docs.eos-solutions.it/it/docs/apps-func/ema-extended-management-accounting.html)):
+
+Il "Tipo conto" Š pre-impostato ad "Analitico".
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000256-0/36SimulatedGeneralLedger.png"><br>
+
+Dopo aver inserito i filtri tramite Ricalcola il sistema propone la lista di eventuali conti mancanti nella situazione contabile.
