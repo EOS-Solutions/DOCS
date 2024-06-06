@@ -1,0 +1,8 @@
+**Bank transactions are acquired and processed in full by electronic flow**.
+
+All reporting entries must be processed and, in general, manual entries must not be entered (with the exception of the posting of customer bills - SDD \ Riba, dishonored entries, vendor bills).
+
+**The bank transactions in Business Central** will be the exact **copy of the bank transactions**.
+Any reversals \ adjustments on bank transactions will still be accounted for. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000694-0/EBR_Flow_ENU.jpg"><br>
