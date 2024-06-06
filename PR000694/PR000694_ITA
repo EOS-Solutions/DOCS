@@ -1,0 +1,7 @@
+**I movimenti bancari sono acquisiti e processati integralmente tramite flusso elettronico.**
+
+Tutti i movimenti di rendiconto dovranno essere processati e, in linea generale, non dovranno essere effettuate scritture manuali (ad eccezione della registrazione delle Distinte cliente - SDD\Riba, effetti insoluti, distinte fornitori).
+
+I **movimenti bancari in Business Central** saranno la **copia speculare delle transazioni bancarie**. Eventuali storni\rettifiche sulle transazioni bancarie andranno comunque contabilizzati.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000694-0/EBR_Flow_ITA.jpg"><br>
