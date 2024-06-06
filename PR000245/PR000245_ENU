@@ -1,6 +1,6 @@
 For the purposes of accrual accounting, it is possible to calculate simulated depreciation by starting the 'Depreciation Calculation' procedure; the value will be calculated based on the settings present in the fixed asset register.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000245-0/App SGL Slide 28_Andrea Giordani.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000245-0/App SGL Slide 28_Andrea Giordani.png"><br>
 At the end of the procedure, the system inserts the calculated depreciation lines and the related reversal entries the following day, the fixed asset reference is indicated in the description, the entry feeds only G/L accounts.  
 
-<img width="750" src="https://docs.eos-solutions.it/Images/PR000245-0/App SGL Slide 29_Andrea Giordani.png"><br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000245-0/App SGL Slide 29_Andrea Giordani.png"><br>
