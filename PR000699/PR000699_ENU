@@ -1,0 +1,44 @@
+### Payment Application Settings
+
+The "EBR" App uses in the "Payment Reconciliation Journals" and the standard automatic linking functions. Previously, therefore, it is necessary to check the settings proposed by the system in relation to:
+
+* Payment Application Settings
+* Payment Application Rules
+
+The  "Payment Application Settings" page allows you to define general linking criteria. The main parameters are as follows:
+
+| **Name** | **Description** |
+| --- | --- |
+| Related Party Name Matching | defines whether to carry out the recognition on customer \\ vendor \\ banks \\ employees ledger entries for<br><br>*   Whole string (Exact Match with Permutations)<br>*   Partial match (String Nearness)<br>*   No match (Disabled) |
+| Enable Customer Ledger Entries Matching | defines whether to carry out the recognition of customer entries |
+| Enable Vendor Ledger Entries Matching | defines whether to carry out the recognition of vendor entries |
+| Enable Bank Ledger Entries Matching | defines whether to carry out the recognition of bank entries |
+
+<br>
+Setup example proposed by the system:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000699-0/EBR_ApplSetting_ENU.jpg"><br>
+
+### Payment Application Rules
+
+On Payment Application Rules page you can change the automatic linking policies used by the system.
+
+These connections are based on the following parameters:
+
+* Posting Date
+* Document No.
+* External Document No.
+* Name
+* Address
+* City
+* Bank Account
+
+Which are compared with the fields present on the transaction:
+
+* Transaction text
+* Related party name
+* Related party address
+* Related party City
+* Related party bank account number
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000699-0/EBR_ApplRules_ENU.jpg"><br>
