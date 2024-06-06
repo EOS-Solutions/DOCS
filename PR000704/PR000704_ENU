@@ -1,0 +1,21 @@
+The page "Payment Reconciliation Journal" contains various information (including the CBI Reason and the ability to view all the data of the bank transaction)
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000704-0/EBR_Transaction1_ENU.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000704-0/EBR_Transaction2_ENU.jpg"><br>
+
+In the reporting form, the movements will be recognized through the automatic or manual connection procedure.
+
+* The standard linking procedure has been modified to manage linking by CBI reason
+* A new procedure "Apply Automatically" has been integrated, which can be performed on record sets (which is not possible with the standard procedure that always recalculates all links in the report)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000704-0/EBR_Transaction3_ENU.jpg"><br>
+
+The main types of operations that can be managed are the following:
+
+1. Automatic G / L account proposal relating to financial charges / income
+1. Bank-to-bank transfer funds
+1. Automatic proposal for transit account (cash pooling, transit for receipts \ payments recognition)
+1. Link to bank transactions already accounted for (e.g. payments by bill)
+1. Connection Receipts \ payments with batch balance
+1. Differences management with posting on specific accounts
