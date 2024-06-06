@@ -1,0 +1,21 @@
+La pagina "Registrazione riconciliazione pag." contiene diverse informazioni (tra cui la Causale CBI e la possibilit… di visualizzare tutti i dati della transazione bancaria)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000704-0/EBR_Transaction1_ITA.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000704-0/EBR_Transaction2_ITA.jpg"><br>
+
+Nella scheda di rendicontazione si provveder… al riconoscimento dei movimenti tramite la procedura di collegamento automatica o manuale.
+
+* La procedura di collegamento standard Š stata modificata per gestire il collegamento per causale CBI
+* EÂ stata integrata una nuova procedura "Collega automaticamente per causale CBI", che pu• essere eseguita su set di record (cosa non possibile con la procedura standard che ricalcola sempre tutti i collegamenti del prospetto)
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000704-0/EBR_Transaction3_ITA.jpg"><br>
+
+Le principali tipologie di operazioni che possono essere gestite, sono le seguenti:
+
+1. Proposta automatica conto CoGe relativo a oneri\proventi finanziari
+1. Girofondi banca su banca
+1. Proposta automatica conto transito (cash pooling, contro transito riconoscimento incassi\pagamenti)
+1. Collegamento a movimenti bancari gi… contabilizzati (es.: pagamenti tramite distinta)
+1. Collegamento Incassi\pagamenti con saldaconto partita
+1. Gestione differenze con contabilizzazione su conti specifici
