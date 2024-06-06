@@ -1,0 +1,23 @@
+Gli scenari principali di utilizzo sono i seguenti e presuppongono un setup specifico:
+
+**SCENARIO 1**
+
+**Utilizzo di conti transitori come contropartita di incassi\pagamenti**
+
+Nel Rendiconto bancario (Registraz. riconciliazione pagamenti) sar… proposto automaticamente il conto di transito in base alla causale CBI.
+
+Non sar… utilizzata la funzione di riconoscimento automatico delle partite clienti\fornitori\banca.
+
+Il movimento su conto transitorio sar… chiuso con il saldaconto della partita.
+
+Il conto transitorio pu• essere gestito come c/c bancario.  
+
+**SCENARIO 2**
+
+**Registrazione diretta con saldaconto delle partite clienti\fornitori\banca**
+
+ Il collegamento alle partite clienti\fornitori\banca dovr… essere effettuato dal Rendiconto bancario (Registraz. riconciliazione pagamenti).
+
+Potr… essere utilizzata la funzione di riconoscimento automatico delle partite clienti\fornitori\banca.  
+
+ 
