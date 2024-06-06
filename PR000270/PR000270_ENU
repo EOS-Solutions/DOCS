@@ -1,0 +1,28 @@
+Open a Financial Report tab and press Actions->Balance-Opposing Sections:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000270-0/43SimulatedGeneralLedger-en.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000270-0/44SimulatedGeneralLedger-en.png"><br>
+
+
+In View, you can decide whether to show all rows in the printout or only the valued ones.
+
+<ins>Example of Printing bank accounts with all rows/only valued rows:</ins>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000270-0/45SimulatedGeneralLedger.png.png"><br>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000270-0/46SimulatedGeneralLedger.png.png"><br>
+
+
+<ins>Example of printing only Debit/Credit:</ins>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000270-0/47SimulatedGeneralLedger.png.png"><br>
+
+
+<ins>Example of printing with Blank print position (no opposing sections-the rows for which you choose the Blank print position will always be placed at the bottom of the report):</ins>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000270-0/48SimulatedGeneralLedger.png.png"><br>
+
+<ins>Printing comparison between two balances of different years:</ins>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000270-0/49SimulatedGeneralLedger.png.png"><br>
