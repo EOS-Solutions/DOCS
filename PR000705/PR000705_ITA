@@ -1,0 +1,29 @@
+* EÂ possibile registrare il rendiconto solo se tutti i movimenti sono stati "collegati"
+
+* Per ogni movimento bancario il sistema effettua una registrazione in partita doppia avente in contropartita il conto riconosciuto ed assegnando uno specifico Nr. Documento definito nel campo "Nr. movimenti riconc. Registrate" della scheda C/C bancario.
+
+(A differenza della funzionalit… standard che assegna lo stesso nr. documento allÂintero rendiconto anche se i movimenti hanno date differenti).
+
+* Se il movimento Š abbinato ad un movimento bancario gi… contabilizzato il sistema non effettua ulteriori transazioni, ma "collega" il movimento.
+
+* EÂ possibile gestire il "Tipo di documento" in funzione delle causali CBI.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000705-0/EBR_Posting1_ITA.jpg"><br>
+
+Sui movimenti contabili C/C bancari
+
+* E' visibile la Data valuta (1)
+* Ogni movimento riporta il numero di rendiconto da cui esso ha avuto origine (2)
+* Nel "Numero documento esterno" Š sempre referenziata la singola transazione (3)  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000705-0/EBR_Posting2_ITA.jpg"><br>
+
+Dai movimenti C/C bancari o dai movimenti C/G Š sempre possibile risalire a tutte le informazioni della transazione bancaria. Ci• consente la riconciliazione e lÂabbinamento delle partite nel caso di utilizzo di conti transitori di riconoscimento degli incassi e\o dei pagamenti  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000705-0/EBR_Posting3_ITA.jpg"><br>
+
+**Scheda c/c banc.- Accesso ai rendiconti bancari **
+
+Dalla scheda c/c bancario Š possibile accedere rapidamente ai Rendiconti da registrare ("Registrazione riconciliazione pagamenti") e ai Rendiconti registrati (Riconciliazione pagamenti registrati).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000705-0/EBR_Posting4_ITA.jpg"><br>
