@@ -1,0 +1,32 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Definisci i setup principali</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Importa i file di rendicontazione</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Crea i rendiconti bancari</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Collega i movimenti bancari</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Registra il rendiconto bancario</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Riconcilia i C/C bancari</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>Registra l' Estratto Conto e chiudi i movimenti bancari</td>
+	</tr>
+</table>
+
+
