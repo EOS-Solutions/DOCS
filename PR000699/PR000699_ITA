@@ -1,0 +1,44 @@
+### Impostazione collegamento pagamenti 
+
+LÂApp "EBR" utilizza nella "Registrazione riconciliazione pagamenti" le funzioni di collegamento automatico standard. Preliminarmente, quindi, Š necessario verificare le impostazioni proposte dal sistema in relazione a:
+
+* Impostazione collegamento pagamenti
+* Regole collegamento pagamenti
+
+La pagina "Impostazione collegamento pagamenti" permette di definire i criteri generali di collegamento. I parametri principali sono i seguenti:
+
+| **Nome** | **Descrizione** |
+| --- | --- |
+| Corrispondenza nome parte collegata | definisce se effettuare il riconoscimento sui movimenti contabili clienti\\fornitori\\banche\\dipendenti per<br><br>*   stringa intera (Corrispondenza esatta con permutazioni)<br>*   corrispondenza parziale (Prossimit… stringa)<br>*   nessuna corrispondenza (Disabilitato) |
+| Abilita corrispondenza movimenti contabili clienti | definisce se effettuare il riconoscimento delle partite clienti |
+| Abilita corrispondenza movimenti contabili fornitori | definisce se effettuare il riconoscimento delle partite fornitori |
+| Abilita corrispondenza movimenti contabili bancari | definisce se effettuare il riconoscimento dei movimenti bancari |
+
+<br>
+Esempio di setup proposto dal sistema:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000699-0/EBR_ApplSetting_ITA.jpg"><br>
+
+### Regole di collegamento pagamenti 
+
+Nella pagina Regole collegamento pagamenti Š possibile modificare i criteri di collegamento automatico utilizzati dal sistema.
+
+Tali collegamenti si basano sui seguenti parametri
+
+* Data registrazione
+* Nr. Documento
+* Nr. documento esterno
+* Nome
+* Indirizzo
+* Citt…
+* C\C bancario
+
+Che vengono confrontati con i campi presenti sulla transazione:
+
+* Testo transazione
+* Nome parte correlata
+* Indirizzo parte correlata
+* Citt… parte correlata
+* Nr conto bancario parte correlata. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000699-0/EBR_ApplRules_ITA.jpg"><br>
