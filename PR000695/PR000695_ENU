@@ -1,0 +1,19 @@
+The main usage scenarios are the following and assume a specific setup:
+
+**SCENARIO 1**
+
+**Use of transitory accounts as a counterpart of receipts \ payments**
+
+In the bank statement (Payment Reconciliation Journals) the transit account will be automatically proposed based on the CBI reason.
+
+The automatic recognition function of customers \ vendors \ bank numbers will not be used.
+
+The movement on a transitional account will be closed with the settlement of the entry. The transit account can be managed as a bank account.
+
+**SCENARIO 2**
+
+**Direct registration with payment of customer / vendor / bank accounts**
+
+The connection to the customers \ vendors \ bank accounts must be made from the bank statement (Payment Reconciliation Journals).
+
+The automatic recognition function of customers \ vendors \ bank numbers can be used.  
