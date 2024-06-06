@@ -1,0 +1,88 @@
+Dalla Lista Clienti aprire Naviga->Testo avanzato.
+Da Nuovo possiamo inserire un nuovo testo.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TextsPage_ITA.png"><br>
+
+| **Campo** | **Descrizione** |
+| --- | --- |
+| Nuovo | permette di inserire un testo nuovo |
+| Gestione | consente di visualizzare/modificare/eliminare il testo |
+| Copia Testi | permette di copiare un testo da un altro Documento / Cliente / Fornitore |
+
+<br>
+I diversi Gruppi tabella consentono di inserire dei filtri che permetteranno di scegliere in quali casi applicare il testo.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TextsCard_ITA.png"><br>
+
+| **Azione** | **Descrizione** |
+| --- | --- |
+| Descrizione | Descrizione libera |
+| Lingua | Si pu• scegliere per quale codice lingua deve essere applicato il testo. Se non viene inserito nessun codice, il testo vale per tutte le lingue. |
+| Data inizio / fine | Š possibile inserire una intervallo temporale in cui il testo sar… valido |
+| Gruppo tabella 1,2, 3 | Si possono applicare gruppi di tabelle come filtro su cui verranno riportati i testi avanzati (Sono disponibili di default i gruppi tabelle Sales, Purchase, Service, ma tramite Nuovo Š possibile codificare ulteriori raggruppamenti di tabelle) |
+| Tipo | Definisce la tipologia del testo. Tale campo permetter… di filtrare i testi da stampare nel Setup report ADR  <br><img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TextTypeFilter_ITA.png"><br> |
+| Posizione | Scegliere se il testo sar… posizionato nell'intestazione oppure nel piŠ di pagina |
+| Testo | Digitare un teso di lunghezza max 100 caratteri. |
+
+### Gruppi tabelle e Shortcut tabelle
+
+Per definire i gruppi di tabelle sui quali verr… riportato il testo avanzato cliccare sul drlldown del campo Gruppo tabella 1 ad esempio.
+
+Si aprir… la pagina Gruppi tabelle (ADR)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TableGroups_ITA.png"><br>
+
+
+Dal campo Filtro shortcut tabella Š possibile aprire la pagina per effettuare la scelta:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TableShortcuts_ITA.png"><br>
+
+In questo elenco le tabelle vengono codificate con un codice parlante in base alla loro funzione logica. Questo elenco Š gi… presente a sistema di default.
+
+Creando un Ordine vendita e andando a verificare da Naviga->Testi avanzati sar… possibile, nel nostro esempio, vedere che il sistema riporter… solo i testi nominati Text 1 e Text 2 (Text 3 verr… riportato dal sistema solo sugli ordini acquisto):
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TextsList_ITA.png"><br>
+Da Nuovo Š sempre possibile aggiungere Testi avanzati, che in questo caso saranno riferiti all'ordine che stiamo creando e saranno ereditati dalla Fattura registrata.
+
+Aggiungiamo quindi un Text 4:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_NewText_ITA.png"><br>
+
+e, registrando Spedizione e Fattura
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_Post_ITA.png"><br>
+
+e aprendo poi la Fattura registrata vedremo che il sistema riporta sul documento i Testi avanzati impostati per il Cliente pi— il Text 4 che abbiamo aggiunto sull'ordine:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_PostedTexts_ITA.png"><br>
+
+{{% alert title="NOTE" color="warning" %}}
+Sulla Fattura registrata il testo avanzato non Š modificabile.
+Pu• essere eliminato da Gestione->Elimina.
+{{% /alert %}}
+
+
+### Stampa testi avanzati
+
+
+Da Report Setup (ADR) tramite Progetta layout abilitiamo la stampa di Header e Footer:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_Text_LayoutSorting_ITA.png"><br>
+
+Il campo Filtro Tipo Testo consente di scegliere se stampare uno specifico testo. Se vuoto, verranno stampati tutti i Testi Avanzati.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_Text_ReportSetup_ITA.png"><br>
+
+
+Da Selezione Report Vendite verificare che  il report di stampa fattura sia corretto
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_ReportSelection_ITA.png"><br>
+
+e poi lanciare la stampa del documento:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_Text_Sample_ITA.png"><br>
+
+
+
