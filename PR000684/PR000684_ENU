@@ -1,0 +1,86 @@
+On the Customer List open Navigate->Advanced Text:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TextsPage_ENU.png"><br>
+
+| **Action** | **Description** |
+| --- | --- |
+| New | From New it is possible to enter a new text |
+| Manage | Il allows to View / Edit / Delete a text |
+| Copy Texts | It is possible to copy text from Documents / Customers/ Vendors |
+
+<br>
+The Table Groups allow to decide in which cases we want the text to be applied:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TextsCard_ENU.png"><br>
+
+| **Field** | **Description** |
+| --- | --- |
+| Description | Enter a free description |
+| Language | You can choose which language code must be applied to the text. If no code is entered, the text applies to all languages. |
+| Starting / Ending date | You can enter a time interval in which the text will be valid |
+| Table Group 1,2, 3 | You can apply Table Groups as a filter to decide where the advanced text will be applied, Sales, Purchase, Service, are available by default. From New it is possible to encode other table groups. |
+| Type | It defines the type of text. This field will filter texts to be printed in the Report Setup (ADR)  <br><img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TextTypeFilter_ENU.png"><br>|
+| Position | Choose whether the text will be placed in the header or footer |
+| Text | Digit the text (maximum lenght 100). You can write the text directly in the lines or from Manage->**Editor**. |
+
+### Table Groups and Table Shortcut
+
+To define the tables groups which will be reported on advanced text click, for example, on the drlldown botton in the Group 1 field.
+
+The system will open the Table Groups page:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TableGroups_ENU.png"><br>
+
+
+From the field table shortcut, you can open the page to choose:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TableShortcuts_ENU.png"><br>
+
+In this list the tables are encoded with a code based on their logic function. This list is already present in the system by default.
+
+When creating a sales order and verifying from Navigate->Extended Text we will find only Text 1 and Text 2 (Text 3 will be written only on purchase orders):
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_TextsList_ENU.png"><br>
+From New it is always possible to add advanced texts, which in this case will be referred to the order that we are creating and will be inherited by the posted invoice.
+
+Now we add a "Text 4":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_NewText_ENU.png"><br>
+
+and we post Invoice and Shipment:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_Post_ENU.png"><br>
+
+
+and then opening the posted invoice we will see that the system reports on the document the advanced texts on the customer card plus the Text 4 we added to the order:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_PostedTexts_ENU.png"><br>
+
+{{% alert title="NOTE" color="warning" %}}
+On the posted invoice the advanced text is not editable.
+It can be deleted by Manage->Delete.
+{{% /alert %}}
+
+
+### Print Advanced Text
+
+On Report Setup (ADR) from Layout Sorting we can activate the Header and Footer printing:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_Text_LayoutSorting_ENU.png"><br>
+
+
+The Text Type Filter field lets you choose whether to print a specific text. If empty, all Advanced Texts will be printed.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_Text_ReportSetup_ENU.png"><br>
+
+
+From Report Selection - Sales verify that the invoice report is correct:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_ReportSelection_ENU.png"><br>
+
+and print the document
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000684-0/ADR_Text_Sample_ENU.png"><br>
+
+
+
