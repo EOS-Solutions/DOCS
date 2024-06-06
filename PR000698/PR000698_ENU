@@ -1,0 +1,24 @@
+On "Bank Acc. Reconciliation Setup (EBR)" you can set:
+
+1. The data exchange definition to use (set previously).
+1. The SIA codes of the banks for which to enable the acquisition of the statement.
+1. The serial number that will be assigned to the reporting statements.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000698-0/EBR_BankAccReconSetup_ENU.jpg"><br>
+
+### C/C Bank Account Card
+
+On the Bank Account card you need to enter:
+
+1. The serial number to be used in the posting of the reporting reports (field "Posted Reconc. Ledger Entry Nos." in the Posting Tab).
+1. The number to be assigned to the account statements (Last Statement No. in the Posting Tab).
+
+{{% alert title="NOTE" color="warning" %}}
+* The "Bank statement import format" (Transfer Tab) must not be set as it is defined in the "Bank account setup".
+* The "Last Payment Statement No." field (Posting Tab)  is automatically filled in by the system and must not be filled in.    
+
+{{% /alert %}}
+
+On each bank account card, you can set the tolerance parameters used by the payment link function. The "Payment Matching" section is never used.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000698-0/EBR_BankAccCard_ENU.jpg"><br>
