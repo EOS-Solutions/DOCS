@@ -1,3 +1,3 @@
 This procedure allows the creation of competency entries related to invoices issued or received based on shipments and dispatches (including returns) generated within the system. It calculates the entries for which the corresponding Invoice/Credit Memo document has not been accounted for during the calculation period. The entries' amount is retrieved from the relevant order line. Additionally, this procedure enables the generation of entries both in simulated ledger (typically during the year) and in general ledger (usually during the year-end closing process).
 
-<img width="750" src="https://docs.eos-solutions.it/Images/ex001/invoice to receive  issue generation (sgl)/68SimulatedGeneralLedger-en.png"><br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/ex001/invoice to receive  issue generation (sgl)/68SimulatedGeneralLedger-en.png"><br>
