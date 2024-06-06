@@ -1,11 +1,11 @@
 The procedure for closing accruals and deferrals to be used at the end of the fiscal year is carried out directly by General journals using the ÁAccruals/Deferrals ClosureÂ function (a procedure that CANNOT be used in simulated batches).
 
-<img width="750" src="https://docs.eos-solutions.it/Images/EX001/end of fiscal year accr.deferrals closure/App SGL Slide 26_Andrea Giordani.png"><br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/EX001/end of fiscal year accr.deferrals closure/App SGL Slide 26_Andrea Giordani.png"><br>
 
 
 **End of Fiscal Year Accruals and Deferrals Closure**<br> At the end of the procedure, the system creates the lines reporting the end of the fiscal year date and the reversal on the following day
 
-<img width="750" src="https://docs.eos-solutions.it/Images/EX001/end of fiscal year accr.deferrals closure/App SGL Slide 27_Andrea Giordani.png"><br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/EX001/end of fiscal year accr.deferrals closure/App SGL Slide 27_Andrea Giordani.png"><br>
 
 
 Upon the posting of the entries, equal and opposite entries will also be generated in simulated accounting, since the latter already contains the individual postings created previously (see ÁSimulation BalanceÂ flag). The ÁLast Closure DateÂ will also be valued in the Accruals / Deferrals Entries (SGL) page.
