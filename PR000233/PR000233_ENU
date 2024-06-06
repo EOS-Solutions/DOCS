@@ -1,14 +1,14 @@
 **Case 1: Invoice and Credit Note Management with a Single Template** <br><br>Setup:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/64SimulatedGeneralLedger-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000233-0/64SimulatedGeneralLedger-en.png"><br>
 
 Journal entries generated from the invoice:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/60SimulatedGeneralLedger-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000233-0/60SimulatedGeneralLedger-en.png"><br>
 
 Journal entries generated from the credit memo:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/62SimulatedGeneralLedger-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000233-0/62SimulatedGeneralLedger-en.png"><br>
 
 In this case, the credit memo offsets exactly the same accounts as the invoice. Therefore, by posting an incorrect invoice and subsequently an identical credit memo, the system zeroes out the account affected by the A/D template (in the example, the active accrual).
 
@@ -16,14 +16,14 @@ In this case, the credit memo offsets exactly the same accounts as the invoice. 
 
 A/D template setup:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/61SimulatedGeneralLedger-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000233-0/61SimulatedGeneralLedger-en.png"><br>
 
 Journal entries generated from the invoice:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/63SimulatedGeneralLedger-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000233-0/63SimulatedGeneralLedger-en.png"><br>
 
 Journal entries generated from the credit note:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000233-0/59SimulatedGeneralLedger-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000233-0/59SimulatedGeneralLedger-en.png"><br>
 
 In this case, the accounting entry is correct but does not exactly reverse the invoice. This method of recording credit memos is used when there is no direct link between the credit memo and the invoice (e.g., year-end bonuses).
