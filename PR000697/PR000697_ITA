@@ -1,0 +1,34 @@
+EÂ possibile gestire le causali CBI che qualificano i movimenti di rendicontazione per facilitare le operazioni di riconciliazione e registrazione. Tramite "Crea causali predefinite" si possono creare automaticamente le causali CBI attualmente in essere.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000697-0/EBR_Reasons_ITA.jpg"><br>
+
+### Causali CBI - Setup mappatura conto
+
+A ciascuna causale CBI Š possibile associare una contropartita (conto C/G, C/C Bancario, Cliente, Fornitore) che sar… utilizzata automaticamente nella registrazione della transazione contabile.
+
+La contropartita pu• essere generica o specifica per ciascun conto corrente.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000697-0/EBR_ReasonsMapping_ITA.jpg"><br>
+
+### Causali CBI - Contropartita 
+
+La contropartita pu• essere un conto C/G, ma Š possibile gestire il tipo C\C bancario, Cliente, Fornitore, Dipendente.
+
+In particolare Š stata integrata la possibilit… di utilizzare la tipologia C\C bancario che permette di gestire le operazioni di girofondo, conti bancari di transito, conti bancari per operazioni cash pooling.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000697-0/EBR_ReasonsBalance_ITA.jpg"><br>
+
+### Causali CBI Æ Tipo documento in registrazione 
+
+Per ciascuna causale Š possibile definire il "Tipo documento movimenti riconc. registrate" che sar… utilizzato nella registrazione contabile. Le opzioni previste sono:
+<table><tr><td>Default</td><td>abilita il comportamento standard di BC che prevede esclusivamente il tipo di documento ®Pagamento¯ o ®Rimborso¯ in funzione del segno della transazione.</td></tr>
+<tr><td>Blank</td><td>Š possibile utilizzare il tipo di documento "blank" per la rilevazione di oneri\proventi finanziari, giroconti e, in genere, dei movimenti che non sono incassi\pagamenti,
+</td></tr></table>
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000697-0/EBR_ReasonsLedgerType_ITA.jpg"><br>
+
+### Causali CBI - Mappatura testo a conto 
+
+Tramite il menu "Mappatura testo a conto" Š possibile visualizzare le impostazioni generali di mappatura:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000697-0/EBR_TextToAcc_ITA.jpg"><br>
