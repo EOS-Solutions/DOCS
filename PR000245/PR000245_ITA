@@ -1,9 +1,9 @@
 Ai fini del bilancio per competenza Š possibile calcolare lÂammortamento in simulato avviando la procedura ÁCalcolo ammortamentoÂ; il valore verr… calcolato sulla base delle impostazioni presenti in anagrafica cespite.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000245-0/89SimulatedGeneralLedger.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000245-0/89SimulatedGeneralLedger.png"><br>
 Al termine della procedura il sistema inserisce le righe di ammortamento calcolato e le relative scritture di storno il giorno successivo, nella descrizione viene indicato il riferimento del cespite, la scrittura alimenta soli conti C/G.  
 
-<img width="750" src="https://docs.eos-solutions.it/Images/PR000245-0/90SimulatedGeneralLedger.png"><br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000245-0/90SimulatedGeneralLedger.png"><br>
  
 
  
