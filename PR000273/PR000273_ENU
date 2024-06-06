@@ -1,0 +1,10 @@
+Every time a posting is done, a Register is created in the C/G Registers view; the page also integrates simulation entries, when you select a register line containing simulated entries, the function becomes editable.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000273-0/App SGL Slide 32_Andrea Giordani.png"><br>
+# Copy data from a G/L Journal to a Sim. Jnl.
+
+To copy data to a Simulated Accounting Register, open the C/G Registers page and select the row corresponding to the register to be copied.
+From Actions -> Functions -> Copy to reg. journal: select a Sim. register to copy the data to. The "Invert sign" option allows you to make the same registration, but with opposite signs (in case you need to make a reversal).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000273-0/App SGL Slide 33_Andrea Giordani.png"><br>
+
