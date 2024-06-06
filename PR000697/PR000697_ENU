@@ -1,0 +1,33 @@
+It is possible to manage the CBI reasons that qualify the reporting movements to facilitate the reconciliation and posting operations. Through "Create Reason Codes" you can automatically create the current CBI reasons.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000697-0/EBR_Reasons_ENU.jpg"><br>
+
+### CBI Reasons - Account Mapping Setup
+
+To each CBI reason it is possible to associate a counterpart (G/L account, Bank Account, Customer, Vendor) which will be used automatically in the posting of the accounting transaction.
+
+The counterpart can be generic or specific for each current account.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000697-0/EBR_ReasonsMapping_ENU.jpg"><br>
+
+### CBI Reasons - Balance Source Type
+
+The balance source type can be a G/L account, but it is possible to choose also Bank Account.
+
+In particular, the possibility of using the Bank Account Type allows you to manage transfer transactions, transit bank accounts, bank accounts for cash pooling operations.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000697-0/EBR_ReasonsBalance_ENU.jpg"><br>
+
+### CBI Reasons Æ Posted Reconciliation Ledger Entry Doc. Type
+
+For each reason it is possible to define the "CBI Reasons Æ Posted Reconc. Ledger Entry Doc. Type" which will be used in the accounting posting. The options provided are:
+<table><tr><td>Default</td><td>enables the standard BC behavior which only provides the document type "Payment" or "Refund" depending on the sign of the transaction.</td></tr>
+<tr><td>Blank</td><td>it is possible to use the "blank" document type for posting financial charges / income, transfers and, in general, movements that are not receipts \ payments,</td></tr></table>
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000697-0/EBR_ReasonsLedgerType_ENU.jpg"><br>
+
+### CBI Reasons - Text-to-Account Mapping 
+
+Through "Account Mapping " it is possible to view the general mapping settings:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000697-0/EBR_TextToAcc_ENU.jpg"><br>
