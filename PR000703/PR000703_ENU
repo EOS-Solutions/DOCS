@@ -1,0 +1,10 @@
+After importing the file, you can check the Activity Log or view the imported transactions (File Entries):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000703-0/EBR_CreateBankStmt1_ENU.jpg"><br>
+
+It is possible to create the bank statements associated with the imported file using the "**Create bank statement**" function (2).
+
+The Create Bank Statement function will propose any current accounts to be created in order to import the file (these accounts must be qualified in the master data before proceeding).  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000703-0/EBR_CreateBankStmt2_ENU.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000703-0/EBR_CreateBankStmt3_ENU.jpg"><br>
