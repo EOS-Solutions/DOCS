@@ -1,0 +1,38 @@
+Business Central allows you to print the company's balance sheet in opposing sections: on the left is the asset and on the right is the liability.
+
+To do this, search for "Financial Reports" and then from the three dots choose Edit row definition:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000257-0/52SimulatedGeneralLedger-en.png"><br>
+
+In the **Section** field, define whether the account will be printed in the "Debit" or "Credit" section through the following options:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000257-0/40SimulatedGeneralLedger-en.png"><br>
+
+**Blank:** opposing sections will not be used. The printout will be in a single column, at the bottom of the report
+
+**Debit:** all selected accounts (assets) will be printed in Debit
+
+**Credit:** all selected accounts (liabilities) will be printed in Credit
+
+In summary, if we assume to have three account lines:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000257-0/50SimulatedGeneralLedger-en.png"><br>
+
+The printout will be:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000257-0/51SimulatedGeneralLedger-en.png"><br>
+
+
+There are some accounts (e.g. banks) for which it is not known in advance whether they will be in Debit or Credit. For example, an account may go negative; in that case, in a printout with opposing sections, such an account should be considered in the liabilities. Therefore, the accounting situation will have to provide for replicated accounts (they will be present both in Assets and in Liabilities).
+
+In **Section** you will have to choose "Debit positive balance" for the Active part and "Debit negative balance" for the Passive part:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000257-0/41SimulatedGeneralLedger-en.png"><br>
+
+In the Total field, a formula will have to be set so that the total active lines and the total passive lines are considered. Be careful to put any letters in the Line Number fields at the beginning and not at the end (e.g. A0110113 and not 0110113A) otherwise the system will not correctly sum these fields in the Total formula.
+
+The system therefore
+
+**Debit positive balance:** will report the total in the printout, in the Debit part, only if it finds it positive
+
+**Debit negative balance:** will report the total in the printout, in the Credit part, only if it finds it negative
