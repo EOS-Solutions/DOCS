@@ -1,0 +1,28 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ecXeB0Jjdx4" title="Simulated General Ledger per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+<table>
+	<tr>
+		<td>1</td>
+		<td>Impostare le Date competenza</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Creare un template</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Registrare fatture con i ratei o creare i ratei direttamente dal Piano dei Conti</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Verificare le registrazioni simulate nel piano dei conti</td>
+	</tr>
+</table>
+
+<br>
+
+LÂAPP Accruals and Simulated Gen Ledger (SGL) sviluppata da EOS estende le funzionalit… del modulo di Contabilit… Generale di BC, consentendo di generare le seguenti scritture di assestamento automatiche (auto stornanti): Fatture da ricevere / emettere per merci e servizi gestiti con OdA ed OdV. Scritture per competenza: ratei e risconti. Ammortamenti gestionali. Le scritture infrannuali di solito alimentano lÂambiente della Contabilit… Simulata, ossia un piano parallelo a quello di Contabilit… Generale, le cui registrazioni non appaiono sul Libro Giornale e sulle Schede contabili C/G.
+
+<br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/EX001-0/3SimulatedGeneralLedger.png"><br>
+
+
