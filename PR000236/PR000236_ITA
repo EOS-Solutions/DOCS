@@ -2,7 +2,7 @@
 
 La request page ä cosç composta:
 
-<img width="" src="https://docs.eos-solutions.it/Images/EX001/operating logics/18SimulatedGeneralLedger.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/EX001/operating logics/18SimulatedGeneralLedger.png"><br>
 
 **Data inizio**: da quale data di registrazione devono essere considerati i carichi e le spedizioni
 
@@ -20,4 +20,4 @@ Il sistema genera le scritture nel batch dal quale viene eseguita la funzione ÆP
 
 Per agevolare la navigabilitÖ dei movimenti, di default, le registrazioni vengono generate con lo stesso Nr. documento del carico / spedizione dal quale sono state originate.
 
-<img width="" src="https://docs.eos-solutions.it/Images/EX001/operating logics/69SimulatedGeneralLedger.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/EX001/operating logics/69SimulatedGeneralLedger.png"><br>
