@@ -2,4 +2,4 @@ La generazione di scritture relative a ratei e risconti in un dato periodo, oltr
 
 Tale opzione, inoltre, se le Data inizio e fine competenza di una riga di documento o di una scrittura di prima nota dovessero coprire in parte un periodo chiuso ed in parte uno aperto, fa sç che la quota di costo relativa al periodo chiuso, venga spostata nel primo periodo successivo aperto; questa logica puï essere applicata solo nel caso in cui lo storno del costo in contabilitÖ simulata non ricada anch¬esso nel periodo chiuso.
 
-<img width="750" src="https://docs.eos-solutions.it/Images//lock accounting period/9SimulatedGeneralLedger.png"><br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images//lock accounting period/9SimulatedGeneralLedger.png"><br>
