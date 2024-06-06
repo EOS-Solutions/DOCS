@@ -1,3 +1,3 @@
 Tale procedura permette di rilevare le scritture di competenza relative alle fatture da emettere / ricevere in funzione dei carichi e delle spedizioni (compresi i resi) generati a sistema: vengono computati nel calcolo i movimenti per i quali non sia stata contabilizzata, nel periodo di calcolo, il relativo documento Fattura / Nota credito. LÂimporto movimentato viene recuperato dalla relativa riga ordine. La procedura consente inoltre di generare scritture sia in contabilit… simulata, generalmente in corso dÂanno, sia in contabilit… generale (tipicamente in sede di chiusura esercizio).  
 
-<img width="750" src="https://docs.eos-solutions.it/Images/EX001/invoice to receive  issue generation (sgl)/68SimulatedGeneralLedger.png"><br>
+<img width="750" src="https://docs-test.eos-solutions.it/Images/EX001/invoice to receive  issue generation (sgl)/68SimulatedGeneralLedger.png"><br>
