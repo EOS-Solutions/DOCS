@@ -2,7 +2,7 @@
 
 The request page is structured as follows:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000236-0/App SGL Slide 15_Andrea Giordani.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000236-0/App SGL Slide 15_Andrea Giordani.png"><br>
 
 - **Starting Date**: From which registration date should the shipments and deliveries be considered.
 - **Ending Date**: Up to which registration date should the shipments and deliveries be considered.
@@ -16,4 +16,4 @@ The system generates entries in the batch from which the "Get Invoices to Be Iss
 To facilitate navigation, by default, the entries are generated with the same document number as the shipment/delivery from which they originated.
 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000236-0/App SGL Slide 16_Andrea Giordani.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000236-0/App SGL Slide 16_Andrea Giordani.png"><br>
