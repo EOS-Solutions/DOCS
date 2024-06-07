@@ -1,0 +1,16 @@
+In Scheda Cliente, nel Tab DocFinance
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000716-0/IT_2_baseSetup.png"><br>
+
+| **Campo**                   | **Descrizione**                                                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Rating DocFinance           | indica il grado di affidabilit… del cliente in funzione della certezza e puntualit… degli incassi               |
+| Voce finanziaria DocFinance | criterio di classificazione dei Clienti                                                                         |
+| GG medi ritardo DocFinance  | valore che rettifica la Data di scadenza determinando il calcolo della "Data valuta" (data prevista di incasso) |
+| Non esportare DocFinance    | i clienti per i quali questa opzione viene attivata non verranno esportati in DocFinance                        |
+
+**Esportazione banca cliente**: se presente, viene esportato il conto corrente bancario impostato nel campo ÃConto bancario preferitoÄ dell'anagrafica, altrimenti viene esportato il 1ø record presente nelle tabelle "Conti correnti clienti"
+
+**Esportazione Banca di canalizzazione**: viene esportata la banca presente su OdV e sui movimenti contabili clienti, in alternativa viene esportata la banca impostata nel Setup DocFinance.
+
+Il **Rating DocFinance** esportato viene recuperato dal metodo di pagamento del documento o dallÂanagrafica, in alternativa dal Setup DocFinance.
