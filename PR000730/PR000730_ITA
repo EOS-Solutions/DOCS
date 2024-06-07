@@ -1,0 +1,21 @@
+In base al ciclo di vita delle applicazioni (ALM) previsto da EOS Solutions per le proprie app, di seguito trovate il **dettaglio delle versioni supportate e la tipologia di assistenza fornita**.
+
+EOS Solutions ha deciso di estendere il **supporto alla terzÂultima major release disponibile**, in accordo con la modern lifecycle policy di Microsoft.
+
+| **Versione**                                                                                                             | **Tipo assistenza**                                                                                                                     |
+|--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| Ultima e penultima major: nessun cambiamento , come ora per tutti i cumulative update dichiarati stabili dal laboratorio | -\> Risoluzione di bugfix, piccole migliorie/modifiche, change request, nuovi eventi e supporto alle personalizzazioni e fiscal updates |
+| TerzÂultima major: SOLO per ultimo cumulative update disponibile                                                         | -\> Risoluzione di bugfix                                                                                                               |
+| BC14 (Cumulative update 33)                                                                                              | -\> Risoluzione di bugfix e fiscal updates                                                                                              |
+<br>
+<br>
+
+Ad esempio, **dal 2 maggio 2024:**
+
+- **BC24 e BC23 per tutti i cumulative update dichiarati stabili dal Laboratorio**-\> Risoluzione di bugfix, piccole migliorie/modifiche, change request, nuovi eventi e supporto alle personalizzazioni e Fiscal Updates
+
+- **SOLO BC22.12 (e fino al rilascio di BC22.13)** -\> Esclusivamente risoluzione di bugfix
+
+- **BC14 (Cumulative update 33)** -\> Esclusivamente risoluzione di bugfix e Fiscal Updates
+
+- **BC21 ed inferiori** (ad esclusione di BC14) sono fuori supporto
