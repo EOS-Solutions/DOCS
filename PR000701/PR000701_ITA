@@ -1,0 +1,7 @@
+| On Prem | SaaS                                                                  |
+|------|------------------------------------------------------------------------------|
+| Verifico di avere un servizio con autenticazione NavUserPassword e che le API siano abilitate      | 	Contatto l'IT per la creazione di un "App registration" e decido quale utente utilizzare per l'integrazione.|
+| Installo le app | Installo le app. |
+| Effettuo il setup di DocFinance sull'app | Effettuo il setup di DocFinance sull'app |               
+| Creo l'utente BC per l'integrazione con DocFinance e ne creo la web service access key | Assegno i permessi all'utente scelto. |               
+| Setup della connessione su DocFinance al servizio con autenticazione NavUserPassword | 	Setup della connessione su DocFinance |  
