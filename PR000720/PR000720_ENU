@@ -1,0 +1,5 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000720-0/EN_7_baseSetup.jpg"><br>
+
+| **Field**          | **Description**                                                                                                                                                                                                                                                                            |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DCF Due Date Order | If the payment term of the document has this flag, the due dates matched to the sales/purchase order (lines of the "Payment Terms Lines" table) are exported; otherwise, the exported Due Dates are calculated by starting the payment term from the Shipment Date/Expected Receipt Date.  |
