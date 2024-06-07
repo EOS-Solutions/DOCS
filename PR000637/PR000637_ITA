@@ -1,0 +1,15 @@
+**Fatt. Cumulative Estese (ECS)**
+
+Per lanciare il report che crea le fatture Š necessario digitare Fatt. Cumulative Estese nel menu Cerca:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/IT_CreateInvoices.png"><br>
+
+| **Campo** | **Descrizione** |
+|-|-|
+| Data di registrazione, Data esecuzione operazione | se entrambi sono vuoti, prendono il valore di Data Riferimento.  |
+
+Se Š stato impostato un metodo di fatturazione specifico in anagrafica cliente (tab Fatturazione), scegliendo tale metodo sul report, sar… possibile filtrare per tutti i clienti ai quali lo abbiamo assegnato.
+
+{{% alert title="NOTE" color="warning" %}}
+Le fatture create saranno visibili in Fatture vendita.
+{{% /alert %}}
