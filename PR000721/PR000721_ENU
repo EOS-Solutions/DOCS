@@ -1,0 +1,7 @@
+Enter the reason code and the document type related to DocFinance:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000721-0/EN_8_baseSetup.jpg"><br>
+
+{{% alert title="NOTE" color="warning" %}}
+Import entries from DocFinance: if the Document Type decoded by the Reason code is "Payment", together with the Customer in DEBIT or the Vendor in CREDIT, the Document Type is changed to "Refund".
+{{% /alert %}}
