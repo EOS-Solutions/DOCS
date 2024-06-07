@@ -13,7 +13,7 @@ Una volta deciso quale tipo di archiviazione si desidera utilizzare e configurat
 
 <br><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/1_DCSFS_Setup.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000458-0/1_DCSFS_Setup.png"><br>
 
 **ß necessario un amministratore per accedere e concedere l'autorizzazione all'app DocSolutions in Azure**
 
@@ -23,7 +23,7 @@ Una volta deciso quale tipo di archiviazione si desidera utilizzare e configurat
 
 Cercare "Setup tabelle DocSolutions (DCS)", e caricare le impostazioni di default Azioni -> Carica Default:
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_LoadDefaults.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/setup/EX069.03_LoadDefaults.png"><br>
 
 
 
@@ -46,7 +46,7 @@ Il sistema ci offre i predefiniti da caricare, scegli "DocSolution per File Syst
 
 Da Modifica, apri la Libreria dei documenti che desideri abilitare, ad es. "Cliente":
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/2_DCSFS_DocLibrary.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000458-0/2_DCSFS_DocLibrary.png"><br>
 
 | **Campo**                 | **Descrizione**                                                                            |
 |---------------------------|-----------------------------------------------------------------------------|
@@ -72,7 +72,7 @@ Dal menu a tendina sul campo Codice Template Cartella, scegli "Seleziona dall'el
 | Cartella Radice   | percorso dove verranno salvati i file. Nell'esempio saranno posizionati nella sottocartella DocSolutions contenuta nella cartella Documenti                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Abilitato         | puoi creare la scheda di configurazione e abilitarla o disabilitarla secondo necessit…                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |                   |**Composizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Tipo              | Indica il Tipo di Linea. Pu• essere: Testo, Campo, Chiave Primaria, Serie No., Nome Tabella, No. Tabella, Nome Originale Esempio: <img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br><br> <br><br> Se scrivi:<br><img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br> i file caricati verranno salvati in Documenti \\ DocSolutions, in una ulteriore cartella "Cliente", in una ulteriore sottocartella "No. Cliente". |
+| Tipo              | Indica il Tipo di Linea. Pu• essere: Testo, Campo, Chiave Primaria, Serie No., Nome Tabella, No. Tabella, Nome Originale Esempio: <img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br><br> <br><br> Se scrivi:<br><img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br> i file caricati verranno salvati in Documenti \\ DocSolutions, in una ulteriore cartella "Cliente", in una ulteriore sottocartella "No. Cliente". |
 ||||
 
 Premendo Test (Lettura/Scrittura) controlliamo che le connessioni funzionino:
@@ -82,12 +82,12 @@ Premendo Test (Lettura/Scrittura) controlliamo che le connessioni funzionino:
 
 Allo stesso modo, dal menu a tendina sul campo Codice Modello Nome File, selezioniamo "Seleziona dall'elenco completo" e da Gestisci -> Modifica possiamo visualizzare/modificare il nome da assegnare ai documenti:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/3_DCSFS_FolderPattern.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000458-0/3_DCSFS_FolderPattern.png"><br>
 
 <br><br>
 **Permessi**
 
-Dalla scheda Libreria -> Permessi definiamo quale Gruppo Utenti, Utente o set di Permessi pu• leggere / scrivere file in una specifica posizione: <img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PermissionSet.png"><br>
+Dalla scheda Libreria -> Permessi definiamo quale Gruppo Utenti, Utente o set di Permessi pu• leggere / scrivere file in una specifica posizione: <img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/setup/EX069.03_PermissionSet.png"><br>
 
 <br><br>
 **Mappatura**
