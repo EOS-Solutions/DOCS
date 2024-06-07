@@ -1,0 +1,16 @@
+In the Customer cart, Doc Finance Tab:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000716-0/EN_2_baseSetup.jpg"><br>
+
+| **Field**                 | **Description**    |
+|---------------------------|-----------------------------------------------------------------------------------------------|
+| DocFinance Rating         | indicates the level of customer reliability depending on the certainty and prompt payment     |
+| DocFinance Financial Item | customer classification criterion                                                             |
+| Delay Day on Proceed      | value that adjusts the Due Date by calculating the "Currency Date" (expected collection date) |
+| Skip DocFinance           | customers for whom this option is enabled will not be exported to DocFinance                  |
+
+**Customer bank account export**: if present, the bank account entered in the "Preferred Bank Account Code" field of the Customer card is exported, otherwise the 1st record in the "Customer Bank Accounts" tables is exported.
+
+**Funnel Bank Export:** it is exported the Bank account that is in the Sales orders and in the Customer ledger entries , otherwise the bank account entered in the DocFinance Setup is exported.
+
+The **DocFinance Rating** is retrieved from the document payment method or customer card, alternatively from the DocFinance Setup.
