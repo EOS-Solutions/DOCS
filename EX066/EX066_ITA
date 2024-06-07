@@ -1,0 +1,52 @@
+
+<table>
+	<tr>
+		<td>1</td>
+		<td> Definisci il setup Common Data Layer</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td> Crea nuovi documenti scegliendo la combinazione Tipo / Classe</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td> Inserisci causali specifiche    </td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Gestisci i tuoi documenti divisi per classi</td>
+	</tr>	
+</table>
+<br>
+
+
+<br>
+
+## Introduzione
+
+La app Classi Documento (CDL) di Eos Solutions consente di:
+
+-   **Veicolare Nr. di serie specifici** per combinazioni di Tipo documento Æ Classe documento
+-   **Inserire e applicare Causali dedicate**, tramite le quali si pu• anche esegure la **non-fatturazione dei documenti** e/o gestire i **documenti non amministrativi**.
+
+<br>
+
+| **IMPORTANTE**                                                                                                                                                                                                                                                                                                                                                |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| La gestione delle Classi documento Š presente allÂinterno della libreria **Common Data Layer**. Ttale libreria viene installata contestualmente allÂaggiornamento di altre Apps EOS e non richiede alcuna sottoscrizione. LÂutilizzo della Classi documento Š subordinato allÂabilitazione dello specifico setup e richiede un Set di autorizzazioni dedicato |
+
+
+<br>
+
+## Estensibilit…
+
+Per sua natura, la feature delle classi documento costituisce **una base a cui collegare automatismi utili a snellire** e facilitare la creazione e compilazione di nuovi documenti, oltre che alla loro categorizzazione.
+
+Alcuni di questi automatismi, come la selezione del nr. di serie, sono compresi nello standard EOS, altri, pi— specifici per le esigenze del cliente, possono essere integrati tramite eventi.
+
+## Sommario
+
+Premere ALT + Q e digitare "CDL" per vedere un elenco delle funzionalit… coinvolte:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/EX066-0/1ClassiDocumento(1).jpg"><br>
+
