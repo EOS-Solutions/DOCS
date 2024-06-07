@@ -1,0 +1,9 @@
+In Metodi di Pagamento compilare le colonne relative a DocFinance:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000719-0/IT_6_baseSetup.jpg"><br>
+
+| **Campo**                   | **Descrizione**                                                                                                                                                                                                                                                       |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Non esportare in DocFinance | Š possibile scegliere di non esportare i movimenti che presentano determinati metodi di pagamento                                                                                                                                                                     |
+| Metodo Pagamento DocFinance | indica la codifica del metodo di pagamento utilizzata in DocFinance                                                                                                                                                                                                   |
+| Rating DocFinance           | indica il grado di affidabilit… del Cliente in funzione di certezza e puntualit… degli incassi. Viene esportato in DocFinance per primo. Se non Š compilato, il sistema prende quello in Anagrafica Clienti, altrimenti viene esportato quello del Setup DocFinance.  |
