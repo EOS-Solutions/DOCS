@@ -1,0 +1,102 @@
+
+You may test the app for free activating a FREE TRIAL period and decide if you want to continue using it and purchase an YEARLY Subscription.
+
+## IsnÂt the app installed yet?
+
+If not already opened, open your Business Central and search (ALT+Q) for ÄMarkeplaceÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/1GettingStartedEosApps.jpg">
+
+<br>
+<br>
+<br>
+## Already installed the app?
+
+let's activate it! 
+
+After installing the app search (ALT+Q) for ÄSubscription control PanelÄ page and select ÄRequest SubscriptionÄ. Our team will check your request and activate the right subscription or contact you. Trial period are by default 20 Days and can be extended evalating your request up to a maximum of 60 Days
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/2GettingStartedEosApps.jpg">
+
+<br>
+
+
+To activate, setup and use the app you need the proper permisson set: the easier way is to set the user as ÄSUPERÄ. If you donÂt want to set the ÄSUPERÄ permission set, apply all Permission set starting with ÄEOS\*Ä
+
+<br>
+<br>
+
+## No active plan or subscription ?
+
+Maybe your server is not connecting to EOS Online service, try checking the following
+
+**If your Business Central environment is OnPremise:**
+
+\- Check your internet connection
+
+\- Verify that http requests are allowed for the EOS Admin Library app
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/3GettingStartedEosApps.jpg">
+
+<br>
+<br>
+<br>
+
+\- In case of Docker environment check connection and DNS
+
+\- Verify the BC service user reaches <https://publicapi.eos-solutions.it/> : the expected response via browser is 403, in case of error 404 it means that the server cannot reach this address. Check firewall and connection
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/4GettingStartedEosApps.jpg">
+
+<br>
+<br>
+<br>
+
+You can check the connectivity with this PowerShell command taking care of:
+
+\- RUN IT FROM THE SERVER ON WHICH THE BUSINESS CENTRAL SERVICE IS RUNNING
+
+\- RUN IT USING THE USER USED BY THE BUSINESS CENTRAL SERVICE
+
+Invoke-RestMethod <https://publicapi.eos-solutions.it/status>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/5GettingStartedEosApps.jpg">
+
+<br>
+<br>
+
+**If your Business Central environment is OnLine (Saas):**
+
+\- Verify that http requests are allowed for the EOS Admin Library app
+
+\- Consider that for PROD environments this setting is by default=true, while on sandbox environments is by default=false
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/3GettingStartedEosApps.jpg">
+
+
+<br>
+
+After carrying out the checks, the steps to be performed are:
+
+1.  Open Business Central
+2.  Type ALT+Q and search for ÃSubscription Control PanelÄ
+3.  Run the page and click Ã**Refresh from Server**"
+4.  Log off and on again to Business Central
+
+<br>
+<br>
+<br>
+## Read on line help and watch the full demo
+
+All of our apps have the OnLine help available with tutorial videos. Some of them have [extended demo](https://www.youtube.com/results?search_query=EOS+Apps+Demo) up to 60 minutes. 
+
+## Collaborate
+Devs and tech people can reach our Technical Docs and the [Github collaboration repos](https://github.com/EOS-Solutions/IDEAS) to find customization samples, translation or suggest Ideas and new features.
+
+**Looking for OnPrem solutions?**
+
+EOS apps are also available for OnPrem environment. Installing and activating on OnPrem environment require extra steps, please contact us for further information or check the [app availability here](https://app.powerbi.com/view?r=eyJrIjoiMTdlNzE2MjQtYjUyZi00ODMwLWE5OTctODFhM2QyYzRhMDA3IiwidCI6ImNkZDJiMmZmLTY5YWYtNDllMy05MTYxLTY4MGZiNThhMDExZCIsImMiOjh9).
+
+## Prices
+
+Prices are listed on [EOS Solutions website](https://www.eos-solutions.it/en/apps-microsoft-dynamics-365-powerapps-powerbi.html). All prices are intended for a Tenant with unlimited environmenti, unlimited company and users within a TenantID. Your Tenant ID is showed in ÄSubscription control panelÄ page in your Business Central.
