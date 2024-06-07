@@ -1,0 +1,20 @@
+The account statement allows the suggestion from the "Posted Payment Reconciliations" by performing the automatic reconciliation. It is possible to access the "Bank Acc. Reconciliation" directly from the bank account card.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000706-0/EBR_Recon1_ENU.jpg"><br>
+
+By pressing New and then using "Suggest Reconciliation Lines" the system suggests the lines from the posted bank statements (Posted Payment Reconciliations):
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000706-0/EBR_Recon2_ENU.jpg"><br>
+
+**Bank statement / reconciliation of entries**
+
+During the suggestion phase, the system will make an automatic match with bank transactions. However, it is possible to intervene with the standard connection / disconnection functions  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000706-0/EBR_Recon3_ENU.jpg"><br>
+
+**Account statement \ print reconciliation**
+
+There is a specific reconciliation printout which highlights the entries not linked
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000706-0/EBR_Recon4_ENU.jpg"><br>
