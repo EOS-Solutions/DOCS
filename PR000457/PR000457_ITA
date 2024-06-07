@@ -23,9 +23,9 @@ Grazie all'app Eos Solutions DocSolutions For File System (DCS):
 
 <br>
 
-**Vantaggi per l'utente**                                                                                                      * Trascina e rilascia (inclusa l'email)
+**Vantaggi per l'utente**
+* Drag and drop (inclusa l'email)
 * Connessione sicura ad azure tramite https e oauth2
-* DCS Š un APP connessa con APP KEY e Secret (Semplice). Non sono richieste password per singoli utenti
+* DCS Š un APP connessa con APP KEY e Secret. Non sono richieste password per singoli utenti
 * Esplora lo storage e preleva il contenuto dei file direttamente da BC
 * Archiviazione basata su cartelle, definisci i nomi delle cartelle in base ai dati dei campi del record (ad es. Data del documento (Y), Codice cliente ecc.)
-* Sovrascrivi, Rinomina o errore impostazione per i file esistenti
