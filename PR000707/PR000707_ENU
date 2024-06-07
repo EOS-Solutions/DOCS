@@ -1,0 +1,8 @@
+The posting of the bank statement "closes" the bank transactions (the reference to the posted bank statement is always present on the bank transactions).
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000707-0/EBR_Posting_ENU.jpg"><br>
+
+Starting from BC18, the **posting** of the bank statement **can be undone.**
+
+The **posted bank statement can be printed** by standard EC printing.
