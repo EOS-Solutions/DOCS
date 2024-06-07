@@ -1,0 +1,9 @@
+E' necessario scegliere un codice setup da utilizzare di default, nel caso non ne venga indicato uno specifico nell'anagrafica Cliente.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/IT_Setup1.png"><br>
+
+Sulla **Scheda cliente** nel Tab ÃFatturazioneÄ si pu• infatti definire il metodo di fatturazione per ogni singolo Cliente.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/IT_Setup2.png"><br>
+
+Se tale campo non viene compilato il sistema considera quello indicato nel Setup Fatture Cumulative Estese.
