@@ -1,0 +1,9 @@
+From the Chart of Accounts page open a G/L Account card:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000715-0/EN_1_baseSetup.jpg"><br>
+
+DocFinance exports only accounts with POSTING Account Type for which the "Do not export DocFinance" option is not enabled.
+
+{{% alert title="NOTE" color="warning" %}}
+ The accounts linked to the bank account **trough the Bank Acc. Posting Group** must have the option "Skip DocFinance" enabled.
+{{% /alert %}}
