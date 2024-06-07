@@ -21,7 +21,7 @@ Once you have decided what storage type you want to use and you have configured 
 
 **An administrator is needed to login and grant permission to DocSolutions app. in Azure**
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/1_DCSFS_Setup.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000458-0/1_DCSFS_Setup.png"><br>
 
 
 <br><br>
@@ -32,7 +32,7 @@ Once you have decided what storage type you want to use and you have configured 
 
 In DocSolutions (DCS) Table Setup, the default setups must be loaded from Actions-\> Load Default:
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_LoadDefaults.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/setup/EX069.03_LoadDefaults.png"><br>
 <br><br>
 The system offers us the defaults to load, choose "DocSolution for File System". 
 
@@ -43,7 +43,7 @@ The system offers us the defaults to load, choose "DocSolution for File System".
 
 From Edit, open the Document Library(s) you wish to enable, e.g. "Customer":
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/2_DCSFS_DocLibrary.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000458-0/2_DCSFS_DocLibrary.png"><br>
 
 
 
@@ -82,7 +82,7 @@ From the drop-down menu on the Folder Pattern Code field, choose "Select from fu
                                                                                                                                                                                                              |
 | Enabled           | you can create the setup card and enable or disable it as needed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                   |**Composition**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Tipo              | Indicate the Line Type. It can be: Text, Field, Primary Key, No. Series, Table Name, Table No., Original Name E.g.: <img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br><br> <br><br> If you write:<br><img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br> the uploaded files will be saved in Documents \\ DocSolutions, in a further folder "Customer", in a further subfolder "Customer No.". |
+| Tipo              | Indicate the Line Type. It can be: Text, Field, Primary Key, No. Series, Table Name, Table No., Original Name E.g.: <img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br><br> <br><br> If you write:<br><img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/setup/EX069.03_PatternComposition2.png"><br> the uploaded files will be saved in Documents \\ DocSolutions, in a further folder "Customer", in a further subfolder "Customer No.". |
 ||||
 
 
@@ -97,12 +97,12 @@ In the same way, from the drop-down menu on the Filename Pattern Code field, we 
 
 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000458-0/3_DCSFS_FolderPattern.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000458-0/3_DCSFS_FolderPattern.png"><br>
 
 <br><br>
 **Permissions**
 
-From the Library card-\> Permissions we define which User Group, User or Permission set can read / write files in a specific location: <img width="" src="https://docs.eos-solutions.it/Images/ex069.03/setup/EX069.03_PermissionSet.png"><br>
+From the Library card-\> Permissions we define which User Group, User or Permission set can read / write files in a specific location: <img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/setup/EX069.03_PermissionSet.png"><br>
 
 
 <br><br>
