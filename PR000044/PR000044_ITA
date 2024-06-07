@@ -1,0 +1,45 @@
+Creating documents with document classes enable users to keep document separated and filling automatically the reason codes that drives differente behaviour during posting, let' see some sample
+
+## Inserire un nuovo documento con causale "NF" - Non fatturare
+
+Insert a new sales document: example of a sales order combined with Reason "NF "
+
+Dalla pagina ordini di vendita, dopo aver cliccato "nuovo"  il sistema consentir… di selezionare la classe documento tra quelle definite a setup
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/10ClassiDocumento(1).jpg"><br>
+
+
+<br>
+Sull'ordine viene compilato il campo "Classe documento" (e.g. ODV_NF= Ordine da non fatturare. Confronta: 
+[EX041 Close Documents Without Invoicing]({{<relref "close-documents-without-invoicing">}}))
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/5ClassiDocumento(1).jpg">
+<br>
+
+Questa classe pu• essere modificata dall'utente prima dell'inserimento
+
+I campi correlati alla classe vengono automaticamente compilati, tra questi la causale.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/6ClassiDocumento(1).jpg"><br>
+
+La **spedizione** **shipment** viene registrata usando il numeratore documento associato alla classe ODV_NF inoltre la spedizione viene forzata come "fatturata":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/12ClassiDocumento(1).jpg"><br>
+<br>
+<br>
+
+## Inserire un nuovo documento con causale "NA" - Non amministrativo
+
+Basandosi sul setup impostato sulla causale "NA"=ÄNon amministrativoÄ (please refer to [EX041 Close Documents Without Invoicing]({{<relref "close-documents-without-invoicing">}})),
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/11ClassiDocumento(1).jpg"><br>
+<br>
+<br>
+
+il documento Š registrato solamente per fini statistici senza registrazioni contabili ma solamente sulle tabelle delle note credito registrate.
+
+
+Il numero documento della nota credito Š inoltre estratto in base al setup della classe documento
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/8ClassiDocumento(1).jpg">
+<br>
