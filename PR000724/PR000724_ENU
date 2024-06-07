@@ -1,0 +1,25 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000724-0/EN_1_Archive.jpg"><br>
+
+**MasterData Archive (export to DocFinance)**
+
+Navigate-\>MasterData Archive:
+
+on this page you can view the records related to the master data that DocFinance has processed:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000724-0/EN_2_Archive.jpg"><br>
+
+In Show Detail, you can view the records linked to each IDBatch; Using the Last Error column, you can see any anomaly that occurred during the export process.
+
+**Receive/Payable Archive (export to DocFinance)**
+
+Naviga-\>Archivio scadenzari: Navigate-\>Receive/Payable Archive:
+
+on this page you can consult the records related to the Receive and Payable that DocFinance has processed.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000724-0/EN_3_Archive.jpg"><br>
+
+In Show Detail, you can view the records linked to each BATCH ID; Using the Last Error column, you can see any anomaly that occurred during the export process.
+
+{{% alert title="NOTE" color="warning" %}}
+The following items are exported: Chart of Accounts, Bank Accounts, Customers, Vendors. Open Customer/Vendor ledger entries are exported and, if provided by setup, Sales/Purchase orders and posted shipment/receipt are exported. Orders/return orders that have the "No Invoicing" flag and those that have a status other than "Released" are not exported. Filling in the "Pending" field in Customer/Vendor ledger entries causes DocFinance to freeze the due date.
+{{% /alert %}}
