@@ -1,0 +1,78 @@
+In Setup DocFinance (DCF):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/IT_1_DCF.png"><br>
+
+**Tab Generale**
+
+| **Campo**                   | **Descrizione**                                                                                                                                           |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cod. societ…                | identificativo della societ… (fornito da DocFinance)                                                                                                      |
+| Rimuovi Cod. paese da P.IVA | se attivo, nellÂexport delle anagrafiche clienti / fornitori, viene omessa lÂesportazione dei primi 2 caratteri della partita IVA (Es. IT per lÂItalia).  |
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/IT_2_DCF.png"><br>
+
+**Tab Opzioni**
+
+| **Campo**                                                   | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                          |
+|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Prefisso clienti/fornitori                                  | prefisso che consente a DocFinance di distinguere fra cliente e fornitore nel caso in anagrafica siano stati codificati con caratteri numerici. Il prefisso verr… anteposto al codice in fase di esportazione.                                                                                                                                                                                                           |
+| Default rating fornitore/cliente                            | DocFinance esporta questo dato se non Š compilato quello presente in Anagrafica/Metodi pagamento per lo specifico Cliente/Fornitore                                                                                                                                                                                                                                                                                      |
+| Default GG medi ritardo cliente/fornitore                   | se non Š presente un default sull'anagrafica, viene considerato questo valore                                                                                                                                                                                                                                                                                                                                            |
+| Default linea                                               | campo che serve a DocFinance. Indica la linea commerciale                                                                                                                                                                                                                                                                                                                                                                |
+| Default voce fin. cliente                                   | viene preso di default se il sistema non lo trova in Anagrafica cliente nel Tab DocFinance (Voce Finanziaria DocFinance)                                                                                                                                                                                                                                                                                                 |
+| Default voce fin. fornitore                                 | viene preso di default se il sistema non lo trova in Anagrafica fornitore nel Tab DocFinance (Voce Finanziaria DocFinance)                                                                                                                                                                                                                                                                                               |
+| Conto corrente di default                                   | se non Š presente la banca sul cliente/fornitore, viene esportata quella presente in questo campo                                                                                                                                                                                                                                                                                                                        |
+| Metodo pagamento di default                                 | se non Š presente lil metodo di pagamento sul cliente/fornitore, Š possibile inserirne uno da esportare in questo campo                                                                                                                                                                                                                                                                                                  |
+| Rating rate scadute                                         | se, in fase di export scadenzario, il cliente/fornitore ha scadenze nel passato, gli si pu• attribuire un rating particolare che vince gerarchicamente su quelli di default o su quelli presenti sul cliente.                                                                                                                                                                                                            |
+| Nr. campo cod. paese                                        | specifica quale campo della tabella Paesi contiene il codice ISO necessario all'esportazione                                                                                                                                                                                                                                                                                                                             |
+| Esporta ordini                                              | Š possibile decidere se esportare anche ordini di vendita e acquisto in fase di export scadenzario                                                                                                                                                                                                                                                                                                                       |
+| Prefisso ordini vendita                                     | identifica gli ordini di vendita                                                                                                                                                                                                                                                                                                                                                                                         |
+| Prefisso ordini acquisto                                    | identifica gli ordini di acquisto                                                                                                                                                                                                                                                                                                                                                                                        |
+| Esporta dettaglio spedizione                                | se attivo verranno esportati i dettagli spedizioni e carichi                                                                                                                                                                                                                                                                                                                                                             |
+| Prefisso spedizioni vendita                                 | identifica le spedizioni di vendita                                                                                                                                                                                                                                                                                                                                                                                      |
+| Prefisso ricevimenti acquisto                               | identifica i carichi acquisto                                                                                                                                                                                                                                                                                                                                                                                            |
+| Nr. conto C/G utili su cambi Nr. conto C/G perdite su cambi | Se la scrittura per la rilevazione delle differenze cambio non viene esportata direttamente in Euro (apposito flag nel setup "Conti e Causali per Contabilit…" di DF), occorre compilare i campi "Nr. conto C/G utili su cambi" e "Nr. conto C/G perdite su cambi" presenti nel Setup DocFinance: in questo modo i relativi movimenti saranno importati in BC prelevando dal file direttamente il controvalore in Euro.  |
+| File precedente importato completamente registrato          | non consente la registrazione di nuove righe se quelle importate precedentemente non sono state registrate                                                                                                                                                                                                                                                                                                               |
+| Verifica campi CBI obbligatori                              | Controlla se i campi obbligatori CBI (citt…/paese) sono compilati durante l'esportazione da DCF a BC. In caso contrario, viene generato un errore.                                                                                                                                                                                                                                                                       |
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/IT_3_DCF.jpg"><br>
+
+**Tab Numerazione**
+
+| **Campo**     | **Descrizione**                      |
+|---------------|--------------------------------------|
+| Nr. Notula RA | definire un numeratore per le notule |
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/IT_4_DCF.jpg"><br>
+
+**Tab Registrazioni**
+
+| **Campo**                                | **Descrizione**                                                                           |
+|------------------------------------------|-------------------------------------------------------------------------------------------|
+| Def. registrazioni generali              | definire una categoria per le registrazioni che riguardano DocFinance                     |
+| Nome batch contabile                     | definire un batch contabile relativo a DocFinance                                         |
+| Prefisso reg. COGE                       | prefisso per il numero documento nelle righe di importazione                              |
+| Includi numeratore DCF in nr. documento  | Specifica se includere il numeratore DocFinance nel nr. documento delle righe di giornale |
+| Descrizione da NOTE                      | nell'import dei file DocFinance trasferisce il campo NOTE se valorizzato.                 |
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/IT_6_DCF.png"><br>
+
+**Tab DocCredit**
+
+| **Campo**           | **Descrizione**                                       |
+|---------------------|-------------------------------------------------------|
+| Pagamento insoluto  | definire un conto transitorio per eventuali insoluti  |
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/IT_5_DCF.jpg"><br>
+
+**Tab Connessione**
+
+| **Campo**               | **Descrizione**                                                                 |
+|-------------------------|---------------------------------------------------------------------------------|
+| ID Tenant               | visibile solo in SAAS, mostra il tenant sui cui Š presente BC                   |
+| Nome Ambiente           | nome del servizio / ambiente in SAAS                                            |
+| Editore/gruppo/versione | dati riguardanti lÂAPI                                                          |
+| ID Societ…              | ID univoco della societ… corrente, sui cui verr… fatto lÂimport/export dei dati |
+
+I nomi dei campi del Tab Connessione corrispondono esattamente ai campi del servizio DocFinance.
