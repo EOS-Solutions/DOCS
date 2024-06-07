@@ -32,6 +32,6 @@ Thanks to Eos Solutions DocSolutions For File System (DCS) app:
 * DCS is a connected APP with APP KEY and Secret (Simple). No Password are required for single users
 * Storage Explore and pickup files content directly from BC
 * Folder based storage, define folder names based on record fields data (I.E. Document date(Y), Customer Code etc.)
-* Overwrite, Rename or error setting for existing files
+
 
 
