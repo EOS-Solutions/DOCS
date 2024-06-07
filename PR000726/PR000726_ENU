@@ -1,0 +1,33 @@
+This page shows some specifics:
+
+
+**Withh. Taxes-Contribution Notes - Advance Payments Related to Vendors with Withholding Taxes**
+
+-   Vendor Card: the action "Withh. Contrib. Note" allows the opening of the "Withh. Taxes-Contribution Note List" page. Through this page, it is possible to generate the insertion of a new record in the "Purch. Withh. Contr. Note" table using the numerator set in the DocFinance Setup and the "Note" Document Type.
+-   Schedule Export Procedure to DocFinance: exports the "Note" type records present in the "Purch. Withh. Contr. Note" table; the exported amount is the one present in the "Amount to be paid" field, net of the withholding tax.
+-   Movement Import Procedure in BC: intercepts the Payment entries related to Withh. Contrib. Note previously sent in order to split the registration into multiple lines: one with the counterpart being the bank and the other the tax authority for withholdings. It also sets the "Payment Made" flag to Yes in the "Purch. Withh. Contr. Note" table.
+
+**Payments Related to Already Accounted Invoices from Suppliers with Withholding Taxes**
+
+-   Movement Import Procedure in BC: the system intercepts the Payment entries related to previously sent Invoices in order to split the registration into multiple lines: one with the counterpart being the bank and the other the tax authority for withholdings.
+
+**Customer RIBA Management in BC:**
+
+-   In BC: Execution of the "Issue Bank Receipts" procedure. Customer invoices for which the portfolio of effects has been generated are not exported to DocFinance.
+-   In BC: Generation and registration of the Customer Draft on a single bank, creation of the CBI file to be imported into DocFinance.
+-   In BC and DocFinance: Import of unpaid items via file exported from Home banking. It is possible to use the standard Platform procedure, which allows:
+    -   Setting a Temporary Account for unpaid items
+    -   Importing the expenses charged by the bank
+
+        The "Import unpaid items" action is present in the ribbon of the DocFinance Setup.
+
+**Currency Payments and Receipts**
+
+-   Prepayments in currency: payment posting is usually made in DocFinance using the previous day's exchange rate (not yet available the exchange rate of the day) and a Transit Account as balancing account; Payment is then exported to BC. The day after the payment is posted, the user changes the posting exchange rate to DocFinance: a new first-note entry is transferred that closes the Transit Account using the ordinary bank account as balancing and adjusts the euro-value of the payment. The vendor invoice is then posted to BC and, by linking matches, the exchange difference is detected.
+-   Advance receipts in foreign currency: same flow described in the previous step.
+-   Payments / Currency Receipts for invoices posted in BC: DocFinance exports to Business Central the lines related to the exchange rate difference detection and as the "Amount LCY" of the payment /receipt, it exports the same "Amount LCY" of the invoice to be closed; BC therefore does not detect foreign exchange gains/losses.
+
+
+{{% alert title="NOTE" color="warning" %}}
+If the lines for the detection of exchange rate differences are not exported directly to Euro (special flag in DocFinance "Accounts and Reasons" setup), you must fill in the fields "Gain G/L Account No" and "Loss G/L Account No" in the DocFinance Setup: in this way the related movements will be imported into BC by taking the balancing account directly from the file.
+{{% /alert %}}
