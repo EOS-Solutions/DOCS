@@ -1,0 +1,45 @@
+Creating documents with document classes enable users to keep document separated and filling automatically the reason codes that drives differente behaviour during posting, let' see some sample
+
+## Inserting a new document with reason "NF"
+
+Insert a new sales document: example of a sales order combined with Reason "NF "
+
+From the Sales Orders page, click on New and the system let you choose the document class to use, among those set in setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/10ClassiDocumento.jpg"><br>
+
+
+<br>
+On the Order the system fills in the Document Class selected (e.g. ODV_NF= Sales Order not to invoice, see documentation 
+[EX041 Close Documents Without Invoicing]({{<relref "close-documents-without-invoicing">}}))
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/5ClassiDocumento.jpg">
+<br>
+
+This class can be modified by the user before inserting the record.
+
+The related connected fields are then entered.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/6ClassiDocumento.jpg"><br>
+
+The **shipment** is posted using the Document No. associated with the ODV_NF document class; in addition, the shipment was forced as invoiced:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/12ClassiDocumento.jpg"><br>
+<br>
+<br>
+
+## Inserting a new document **with Reason "NA"**
+
+Based on setup made on the reason code "NA"=ÄNon administrative documentÄ (please refer to [EX041 Close Documents Without Invoicing]({{<relref "close-documents-without-invoicing">}})),
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/11ClassiDocumento.jpg"><br>
+<br>
+<br>
+
+the document is posted for statistical purposes only, without filling the tables relating to "accounting entries".
+
+
+The Document No. of the posted Credit Memo was retrieved from the setup of the Document Class; in addition, the tables relating to standard BC "accounting entries" were not added.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000044-0/8ClassiDocumento.jpg">
+<br>
