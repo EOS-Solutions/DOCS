@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+<table>
+	<tr>
+		<td>1</td>
+		<td>Enter the Common Data Layer setup</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Create new documents by choosing the Type / Class combination</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Enter specific reason codes</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Manage your document by classes</td>
+	</tr>	
+</table>
+<br>
+
+
+<br>
+
+
+## Introduction
+
+The Eos Solutions Document Classes (CDL) app allows you to:
+
+-   Define Serial No. specific for Document Type - Document Class combinations
+-   Enter and apply dedicated Reasons, through which you can also perform non-invoicing of documents and / or manage non-administrative documents.
+
+| **IMPORTANT**                                                                                                                                                                                                                                                                                                          |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Document Class management is present in the Common Data Layer library .** **This library is installed at the same time as updating other EOS Apps and does not require any subscription.** **The use of the Document Classes is subject to enabling the specific setup and requires a dedicated set of permissions** |
+
+## Summary
+
+Press ALT + Q and digit "CDL" for a list of the features involved:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/EX066-0/1ClassiDocumento.jpg"><br>
