@@ -1,0 +1,11 @@
+La app Extended Combine Shipment consente di preimpostare dei setup per i metodi di fatturazione. Ad ogni diverso metodo viene associato un codice.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000634-0/IT_ShipmentMethods.png"><br>
+
+| **Campo** | **Descrizione** |
+|-|-|
+| Codice | attribuire un codice al metodo di fatturazione |
+| Descrizione | inserire una descrizione estesa |
+| Fattura a | campo che identifica a chi intestare la fattura. Le opzioni sono:<ul><li>Cliente Fatturare-a: fatturare al nominativo inserito nel campo "Fatturare-a" presente sull'OdV nel Tab Fatturazione (tale opzione Š il default)</li><li>Cliente Vendere-a: fatturare al nominativo inserito nel campo "Vendere-a" presente sull'OdV</li></ul>   |
+| Formula data da/Formula data a  | formula usata per calcolare il periodo di fatturazione (CM/-CM = vengono considerate le spedizioni registrate nell'arco di tutto il mese) |
+| Recupera valori testata da | per creare la fattura Š possibile prendere i valori di testata dall'ordine o dalla spedizione |
