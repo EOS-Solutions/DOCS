@@ -1,0 +1,17 @@
+Credential Type: NavUserPassword
+
+Enable API Services: true
+
+Max Page Size: freely chosen (default: 20'000)
+
+Port: freely chosen (default: 7048)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000709-0/1_OnPrem.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000709-0/2_OnPrem.jpg">
+
+| | |
+|-|-|
+|**Environment Name**| Name of the environment.|
+|**API publisher/group/version**| String that is used to dial the URL to be called (in case of change in the future, you can conveniently get the new URL)|
+|**Company ID**|GUID of company on BC, you also get it by lookup on company list|
