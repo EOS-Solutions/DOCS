@@ -1,0 +1,9 @@
+In Payment methods fill in the DocFinance columns:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000719-0/EN_6_baseSetup.jpg"><br>
+
+| **Field**                 | **Description**                                                                                                                                                                                                                                  |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Ignore DocFinance Export  | you can choose not to export entries that have specific payment methods                                                                                                                                                                          |
+| DocFinance Payment Method | indicates the encoding of the payment method used in DocFinance                                                                                                                                                                                  |
+|  DocFinance Rating        | indicates the level of customer reliability depending on the certainty and prompt payment. It is exported to DocFinance first. If it is not compiled, the system takes the one in the Customer card, otherwise the DocFinance Setup is exported. |
