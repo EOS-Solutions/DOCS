@@ -1,0 +1,19 @@
+The import to Business Central General Journal lines is possible on the page Import batches (DCF) through **Process-\>Process batch.**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000725-0/EN_1_Import.jpg"><br>
+
+The imported lines are present in the GL batch indicated in the setup, which is also accessible through Process-\>General Journal Lines
+
+Any lines with anomalies can be found through Report-\>Show Detail: you can view the records linked to each BatchID and any anomalies present.
+
+{{% alert title="NOTE" color="warning" %}}
+A single posting transferred from DocFinance can contain lines for different document types (e.g.: Payment and Refund): in order to be able to post a line with the same "Document No.", but different "Document Type" in Business Central, you must set it to **No**, the "Force Doc Balance" flag on the "General Journal Templates" page. <img width="" src="https://docs-test.eos-solutions.it/Images/PR000725-0/EN_2_Import.jpg"><br>
+{{% /alert %}}
+
+Lines imported into the General journal lines are stored on the page Setup DocFinance-\>Navigate-\>Import Archive:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000725-0/EN_3_Import.jpg"><br>
+
+{{% alert title="NOTE" color="warning" %}}
+Any validation errors of rlines linked to the individual BatchID (e.g.: one or more duplicate lines) cause the entire BatchID to be discarded; in this case the discarded BatchID is moved directly to this page.
+{{% /alert %}}
