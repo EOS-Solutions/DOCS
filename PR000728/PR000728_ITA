@@ -1,0 +1,97 @@
+
+Puoi testare l'app attivando un periodo di PROVA GRATUITO e decidere se continuare ad utilizzarla e acquistare un abbonamento annuale.
+
+## L'app non risulta ancora installata?
+
+Se non Š gi… aperto, aprire Business Central e cercare "Markeplace" (ALT+Q).
+
+Cerca lÂapp che ti interessa e clicca installa
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/1GettingStartedEosApps.jpg"><br>
+
+<br><br>
+## Hai gi… installato la app?
+
+Attivala! Dopo aver installato l'app cerca (ALT+ Q) per la pagina "**Pannello di controllo sottoscrizioni**" e seleziona "Richiedi abbonamento". Il nostro team controller… la tua richiesta e attiver… la sottoscrizione o ti contatter…. Il periodo di prova Š predefinito, di 20 giorni, e pu• essere esteso, valutando la richiesta, fino a un massimo di 60 giorni.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/2GettingStartedEosApps.jpg">
+<br>
+
+Per attivare, configurare e utilizzare l'app Š necessario il corretto permission set: il modo pi— semplice Š impostare l'utente come "SUPER". Se non si desidera impostare il set di autorizzazioni "SUPER", applicare tutto il set di autorizzazioni che inizia con "EOS\*"
+<br>
+<br>
+
+## Non vedi i piani di sottoscrizione o le sottoscrizioni non si attivano?
+Forse Š un problema di connessione
+<br>
+
+
+**Se il tuo ambiente Business Central Š OnPremise:**
+
+\- Verifica la connessione Internet
+
+\- Verifica che per lÂapp EOS Admin Library siano consentite le http request
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/3GettingStartedEosApps.jpg">
+<br>
+<br>
+
+
+
+\- In caso di ambiente Docker verificate connessione e DNS
+
+\- Verifica lÂutente di servizio di BC raggiunga <https://publicapi.eos-solutions.it/> : la risposta attesa tramite browser Š 403, in caso di errore 404 significa che il server non riesce a raggiungere questo indirizzo. Verificate firewall e connessione
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/4GettingStartedEosApps.jpg">
+<br>
+<br>
+
+Š possibile verificare la connettivit… con questo comando PowerShell avendo la cura di:
+
+\- ESEGUIRLO DAL SERVER SU CUI ß IN ESECUZIONE IL SERVIZIO DI BUSINESS CENTRAL
+
+\- ESEGUIRLO UTILIZZANDO LÂUTENTE UTILIZZATO DAL SERVIZIO DI BUSINESS CENTRAL
+
+| Invoke-RestMethod <https://publicapi.eos-solutions.it/status> |
+|---------------------------------------------------------------|
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/5GettingStartedEosApps.jpg">
+<br>
+<br>
+
+
+**Se il tuo ambiente Business Central Š OnLine (Saas):**
+
+\- Verifica che per lÂapp EOS Admin Library siano consentite le http request
+
+\- Considera che per gli ambienti PROD questa impostazione Š di default=true, mentre sugli ambienti sandbox di default=false
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/3GettingStartedEosApps.jpg">
+<br>
+<br>
+
+
+Dopo aver eseguito i controlli specificati, i passaggi da effettuare sono i seguenti:
+
+1.  Apri Business Central
+2.  Premi ALT+Q e digita ÃPannello di controllo sottoscrizioniÄ
+3.  Apri la page e clicca Ã**Aggiorna da server**"
+4.  Esegui log off e poi rientra in Business Central
+<br>
+<br>
+
+## Consulta l'help online e le demo
+
+Per tutte le nostre app Š disponibile l'help online con video tutorial. Per alcune Š disponibile una demo estesa (fino a 60 min. di durata). Gli sviluppatori e i tecnici possono accedere alla documentazione e al Github collaboration repos per trovare esempi di personalizzazione, tradurre o suggerire idee e nuove funzionalit….
+<br>
+<br>
+
+## Cerchi una soluzione OnPrem?
+
+Le app EOS sono disponibili anche per l'ambiente OnPrem. L'installazione e l'attivazione in ambiente OnPrem richiedono passaggi aggiuntivi, contattaci per ulteriori informazioni o verifica la disponibilit… dell'app qui.
+<br>
+<br>
+
+## Cerchi i prezzi?
+
+I prezzi sono elencati sul sito di EOS Solutions. Tutti i prezzi sono destinati a un tenant con ambiente illimitato, company e utenti illimitati all'interno di un TenantID. L'ID tenant viene visualizzato nella pagina "Pannello di controllo sottoscrizioni" di Business Central.
