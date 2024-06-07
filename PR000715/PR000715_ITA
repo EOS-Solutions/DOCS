@@ -1,0 +1,11 @@
+Dal Piano dei Conti apriamo una Scheda conto c/c:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000715-0/IT_1_baseSetup.png"><br>
+
+Tramite DocFinance vengono esportati i soli conti con Tipo conto ANALITICO per i quali non risulta attivata l'opzione "Non esportare DocFinance".
+
+
+
+{{% alert title="NOTE" color="warning" %}}
+ I conti del Piano dei Conti collegati al C/C bancario **tramite la Cat. reg. C/C bancario** devono avere attiva l'opzione "Non esportare DocFinance".
+{{% /alert %}}
