@@ -1,0 +1,45 @@
+**1) Nel piano dei conti i conti legati a categorie di registrazione devono essere esportati in Docfinance? (ad es Crediti v/clienti, debiti v/fornitori, c/c bancari, ecc?)**
+
+Possono essere esportati tutti i conti, ci• non costituisce un problema. Solitamente per• , come buona pratica, non si esportano i conti CG legati ai conti correnti bancari che vengono gi… esportati dallÂanagrafica C/C bancari di BC e i conti non utilizzati nelle registrazioni (aventi lÂattributoÄ Tipo contoÄ diverso da ÃRegistrazioneÄ o conti obsoleti)
+
+**2) I conti SBF (Salvo buon fine) possono essere codificati solo come conti CG o devono essere codificati anche come c/c bancari?**
+
+I conti SBF (Salvo buon fine) possono essere codificati solo come conti Coge. Ci• in quanto Business Central gestisce solo i conti C\\G nel setup Categoria registrazione effetti.  
+
+Esempio di setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000732-0/IT_1_FAQ.jpg"><br>
+
+&nbsp;
+
+**3) La distinta clienti RB deve essere emessa sul c/c bancario ordinario o SBF? (in caso debba essere utilizzato il c/c bancario ordinario, il flusso di ritorno da Docfinance riesce a chiudere il conto SBF?**
+
+La registrazione della distinta genera il giroconto Effetti salvo buon fine @ Effetti in portafoglio (oppure Effetti salvo buon fine @ Crediti vs Clienti nel caso di impostazione in cui non si usi conto Effetti in portafoglio). Occorrer… poi contabilizzare il giroconto C/C banca @ Effetti salvo buon fine. La rilevazione viene fatta in DocFinance e trasferita a Business Central.  
+
+**4) I pagamenti dei fornitori vengono fatti da Docfinance, quindi non vengono usate le distinte fornitori?**
+
+&nbsp;EÂ corretto. Non devono essere usate le distinte fornitori di Business Central.  
+
+**5) Se da Docfinance creo un flusso di bonifici fornitori:**
+
+**a) in BC con il flusso di ritorno da Docfinance viene chiusa la partita del fornitore su un conto transitorio, per evitare che la partita pagata in Docfinance venga riesportata da BC?**
+
+La modalit… di rilevazione dei pagamenti e, quindi, lÂuso del conto transitorio sono gestiti da DocFinance. Tale modalit… operativa Š usuale nelle aziende con processi di tesoreria pi— evoluti. La partita viene immediatamente chiusa su conto di transito. Successivamente vengono rilevati lÂaddebito in conto corrente, le spese bancarie e le eventuali differenze cambio se il pagamento Š in valuta.
+
+**b) Non avendo trovato nulla in BC, il nr. del conto transitorio dei pagamenti Š a setup in Docfinance?**
+
+&nbsp;Le modalit… di rilevazione dei pagamenti e, quindi, lÂuso del conto transitorio sono gestiti da DocFinance. Business Central importa le registrazioni contabili create in DocFinance
+
+**c) Quando i bonifici sono addebitati in banca, Docfinance riesporta un flusso che chiude il conto transitorio e addebita il c/c bancario?**
+
+&nbsp;          Corretto. Successivamente vengono rilevati: lÂaddebito in conto corrente, le spese bancarie e le eventuali differenze cambio se il pagamento Š in valuta.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000732-0/IT_2_FAQ.jpg"><br>
+
+**d) Nel caso nel punto c) sia addebitato un bonifico in valuta che ha un tasso di cambio differente rispetto a quello registrato allÂatto dellÂemissione della distinta sul conto transitorio, Docfinance/BC riescono a rilevare la differenza cambio?**
+
+&nbsp;EÂ corretto. La fattura da pagare Š chiusa inizialmente al cambio storico sul conto di transito e poi successivamente viene rilevata la differenza cambio (calcolata da DocFinance). Vedi esempio precedente
+
+**e) Il flusso dei pagamenti di ritorno da Docfinance che viene importato in BC viene addebitato sui conti bancari di tipo Conto CG o C/C Bancario?**
+
+&nbsp;Come chiarito nel punto 1, i conti C/G relativi ai conti bancari non vengono esportati in DocFinance che opera con il codice C/C bancario . Il flusso di ritorno utilizza, quindi, sempre i C/C bancari
