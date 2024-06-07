@@ -1,0 +1,24 @@
+-   in the Vendor Card, Doc Finance tab
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000717-0/EN_3_baseSetup.jpg"><br>
+
+| **Field**                 | **Description**                                                                           |
+|---------------------------|-------------------------------------------------------------------------------------------|
+| DocFinance Rating         | indicates the level of vendor importance                                                  |
+| DocFinance Financial Item | vendor classification criterion                                                           |
+| Delay Day on Proceed      | value that adjusts the Due Date by calculating the "Currency Date (expected payment date) |
+| Skip DocFinance           | vendors for whom this option is enabled will not be exported to DocFinance                |
+
+-   Navigate-\>Vendor-\>Withh. Contribution Note
+
+you can enter the Notes with contribution taxes
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000717-0/EN_4_baseSetup.jpg"><br>
+
+**Vendor bank account export**: if present, the bank account entered in the "Preferred Bank Account Code" field of the Vendor card is exported, otherwise the 1st record in the "Vendor Bank Accounts" tables is exported.
+
+**Funnel Bank Export:** it is exported the Bank account that is in the Purchase orders and in the Vendor ledger entries , otherwise the bank account entered in the DocFinance Setup is exported. The bank account in the Vendor card is exported only if the Document type is Withh. Contribution Note.
+
+The **DocFinance Rating** is retrieved from vendor card, alternatively from the DocFinance Setup.
+
+**Withh. Contribution Note export**: to make the procedure work correctly, you must fill in the "Payment date" field, which is exported to the aging generated to DocFinance.
