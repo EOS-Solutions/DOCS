@@ -1,0 +1,13 @@
+Premendo ÃCampiÄ Š possibile scegliere i campi secondo cui raggruppare i documenti. Alcuni sono obbligatori e sono selezionati di default.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000635-0/IT_Fields1.png"><br>
+
+{{% alert title="NOTE" color="warning" %}}
+Per effettuare una fattura per ogni bolla flaggare il campo Documento Nr.
+{{% /alert %}}
+
+Per chi deve fare la fatturazione giornaliera, quindicinale o mensile, consigliamo il seguente setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000635-0/IT_Fields2.png"><br>
+
+
