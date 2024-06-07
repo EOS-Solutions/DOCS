@@ -1,0 +1,11 @@
+By pressing ÃFields,Ä you can choose the fields according to which documents are grouped. Some fields are mandatory and selected by default.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000635-0/EN_Fields1.png"><br>
+
+{{% alert title="NOTE" color="warning" %}}
+To generate an invoice for each delivery note, check the Document No. field.
+{{% /alert %}}
+
+For those who need to do daily, bi-weekly, or monthly invoicing, we recommend the following setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000635-0/EN_Fields2.png"><br>
