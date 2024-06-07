@@ -1,0 +1,58 @@
+Per il SaaS la procedura Š la seguente:
+
+1\. Cercare lÂapp registrations e selezionare ÃNew registrationÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/1_SaaS.jpg"><br>
+2\. Inserire il nome e premere ÃregisterÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/2_SaaS.jpg"><br>
+
+3\. Andare nella pagina application, cliccare su ÃAdd a platformÄ, selezionare ÃMobile and deskop applicationsÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/3_SaaS.jpg"><br>
+
+4\. Selezionare il primo redirect URL e cliccare su ÃconfigureÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/4_SaaS.jpg"><br>
+
+5\. Cambiare il valore del ÃDefault client typeÄ a yes
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/5_SaaS.jpg"><br>
+
+6\. Nella pagina ÃCertificates & secretsÄ creare una nuova client secret tramite lÂapposita azione e salvare il valore. Successivamente non sar… pi— visibile, perci• Š necessario esegure ora tale operazione;
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/6_SaaS.jpg"><br>
+
+7\. Nella pagina ÃAPI PermissionÄ, selezionare ÃAdd a permissionÄ e poi selezionare ÃDynamics 365 Business CentralÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/7_SaaS.jpg"><br>
+
+8\. Nella pagina successiva selezionare ÃApplication permissionÄ e selezionare ÃApp_accessÄ. Completare lÂazione con Ãapp_accessÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/8_SaaS.jpg"><br>
+
+9\. Selezionare ÃAdd a permissionÄ e poi ÃDynamics 365 Business CentralÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/9_SaaS.jpg"><br>
+
+10\. Scegliere ÃDelegated permissionsÄ e Ãuser_impersonationÄ e cliccare su Add permissions
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/10_SaaS.png"><br>
+
+11\. La pagina apparir… cos:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/11_SaaS.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/11_2_SaaS.png"><br>
+
+Nella pagina di Overview si trova il client ID
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/11_3_SaaS.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/11_4_SaaS.jpg"><br>
+
+| | |
+|-|-|
+| **Tenant ID**                   | ID del tenant su cui si sta lavorando |
+| **Environment Name**            | nome dell'environment |
+| **API publisher/group/version** | stringa che serve per comporre l'URL da chiamare (in caso di cambiamento in futuro, si pu• ottenere comodamente l'URL nuovo) |
+| **Company ID**                  | ID della company su BC, Š recuperabile anche con uno zoom sulla lista delle company  |
