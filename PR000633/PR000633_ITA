@@ -1,0 +1,7 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000633-0/IT_SellTo.png"><br>
+
+Se il campo non Š abilitato, il cliente "Vendere a" della fattura verr… recuperato dall'ordine "Vendere a" nel caso di un singolo "Vendere a" tra le spedizioni combinate, altrimenti verr… utilizzato il cliente "Fatturare a". Se questo campo Š abilitato, il cliente "Vendere a" della fattura sar… sempre recuperato dal 'Vendere a' dell'ordine. Ci• potrebbe portare a risultati imprevedibili.
+
+{{% alert title="NOTE" color="warning" %}}
+Tramite il bottone "Inserisci setup di default" viene creato e inserito automaticamente dal sistema un setup con nome DEFAULT e con valori "-CM/CM" per i campi Formula data da/Formula data a.
+{{% /alert %}}
