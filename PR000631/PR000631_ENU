@@ -1,0 +1,10 @@
+It is necessary to choose a setup code to be used by default, in case a specific one is not indicated in the Customer master data.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/EN_Setup1.png"><br>
+
+
+On the **Customer Setup** in the ÃInvoicingÄ Tab you can in fact define the billing method for each individual Customer.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/EN_Setup2.png"><br>
+
+If this field is not filled in, the system considers the one indicated in the Extended Cumulative Invoices Setup.
