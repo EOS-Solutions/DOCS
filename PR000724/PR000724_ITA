@@ -1,0 +1,23 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000724-0/IT_1_Archive.png"><br>
+
+**Archivio anagrafiche (esportazione verso DocFinance)**
+
+Da Naviga-\>Archivio anagrafiche:
+
+in questa pagina possono essere consultati i record relativi alle Anagrafiche che DocFinance ha processato.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000724-0/IT_2_Archive.jpg"><br>
+
+In Mostra Dettaglio Š possibile visualizzare i records collegati ad ogni IDBatch; tramite la colonna Ultimo Errore Š possibile consultare lÂeventuale anomalia che si Š generata durante il processo di export.
+
+**Archivio scadenzari (esportazione verso DocFinance)**
+
+Naviga-\>Archivio scadenzari: in questa pagina possono essere consultati i record relativi allo Scadenzario che DocFinance ha processato.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000724-0/IT_3_Archive.jpg"><br>
+
+In Mostra Dettaglio Š possibile visualizzare i record collegati ad ogni IDBatch; tramite la colonna Ultimo Errore Š possibile consultare lÂeventuale anomalia che si Š generata durante il processo di export.
+
+{{% alert title="NOTE" color="warning" %}}
+The following items are exported: Chart of Accounts, Bank Accounts, Customers, Vendors. Open Customer/Vendor ledger entries are exported and, if provided by setup, Sales/Purchase orders and posted shipment/receipt are exported. Orders/return orders that have the "No Invoicing" flag and those that have a status other than "Released" are not exported. Filling in the "Pending" field in Customer/Vendor ledger entries causes DocFinance to freeze the due date.
+{{% /alert %}}
