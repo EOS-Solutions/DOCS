@@ -1,0 +1,58 @@
+For SaaS, the procedure is as follows:
+
+1\. Search for the registrations app and select ÃNew registrationÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/1_SaaS.jpg"><br>
+2\. Enter the name and press ÃregisterÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/2_SaaS.jpg"><br>
+
+3\. Go to the application page, click on ÃAdd a platform,Ä select ÃMobile and deskop applicationsÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/3_SaaS.jpg"><br>
+
+4\. Select the first redirect URL and click on ÃconfigureÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/4_SaaS.jpg"><br>
+
+5\. Change the value of ÃDefault client typeÄ to yes
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/5_SaaS.jpg"><br>
+
+6\. On the ÃCertificates & secretsÄ page, create a new client secret using the appropriate action and save the value. Afterwards it will no longer be visible, so it is necessary to perform this operation now
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/6_SaaS.jpg"><br>
+
+7\. On the ÃAPI PermissionÄ page, select ÃAdd a permissionÄ and then select ÃDynamics 365 Business CentralÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/7_SaaS.jpg"><br>
+
+8\. On the next page select ÃApplication permissionÄ and select Ãapp_accessÄ. Complete the action with Ãapp_accessÄ
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/8_SaaS.jpg"><br>
+
+9\. Select ÃAdd a permissionÄ and then ÃDynamics 365 Business Central.Ä
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/9_SaaS.jpg"><br>
+
+10\. Choose Ãdelegated permissionsÄ and Ãuser_impersonationÄ and click on Add permissions
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/10_SaaS.png"><br>
+
+11\. The page will look like this:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/11_SaaS.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/11_2_SaaS.png"><br>
+
+On the Overview page you will find the client ID
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/11_3_SaaS.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/11_4_SaaS.jpg"><br>
+
+| | |
+|-|-|
+| **Tenant ID** | Tenant ID of the environment. |
+|**Environment Name**| Name of the environment.|
+|**API publisher/group/version**| String that is used to dial the URL to be called (in case of change in the future, you can conveniently get the new URL)|
+|**Company ID**|GUID of company on BC, you also get it by lookup on company list|
