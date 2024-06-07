@@ -1,0 +1,7 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000718-0/IT_5_baseSetup.jpg"><br>
+
+| **Campo**                | **Descrizione**                                                                                 |
+|--------------------------|-------------------------------------------------------------------------------------------------|
+| Banca DocFinance         | indica la codifica della banca utilizzata in DocFinance                                         |
+| Rapporto Bancario        | identifica il tipo di rapporto bancario utilizzato in DocFinance (es.: CCOR = Conto Corrente)  |
+| Non esportare DocFinance | le banche per cui l'opzione Š attiva non verranno esportate in DocFinance                       |
