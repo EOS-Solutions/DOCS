@@ -1,0 +1,11 @@
+The Extended Combine Shipment app allows you to preset setups for billing methods. Each method is associated with a code.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000634-0/EN_ShipmentMethods.png"><br>
+
+| **Field** | **Description** |
+|-|-|
+| Code | assign a code to the billing method |
+| Description | enter a detailed description |
+| Bill-to | field that identifies the invoice recipient. The options are:<ul><li>Bill-to Customer: invoice the name entered in the "Bill-to" field on the Sales Order in the "Shipping and Billing" Tab (this option is the default)</li><li>Sell-to Customer: invoice the name entered in the "Sell-to" field on the Sales Order</li></ul>   |
+| Formula date from / Formula date to  | formula used to calculate the billing period (CM/-CM = shipments posted throughout the month are considered)) |
+| Retrieve header values from | to create the invoice, header values can be taken from the order or the shipment |
