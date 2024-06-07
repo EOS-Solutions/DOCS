@@ -1,0 +1,3 @@
+| **Should I publish web services?** |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| No, the app to communicate with DocFinance uses API type pages, consequently they are automatically exposed by BC, there is no need to create the web service.  |
