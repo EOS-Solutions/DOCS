@@ -1,0 +1,7 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000633-0/EN_SellTo.png"><br>
+
+If the field is not enabled, the "Sell-to Customer" on the invoice will be retrieved from the "Sell-to" order in the case of a single "Sell-to" among the combined shipments. Otherwise, the "Bill-to Customer" will be used. If this field is enabled, the "Sell-to Customer" on the invoice will always be retrieved from the order's "Sell-to". This may lead to unpredictable results.
+
+{{% alert title="NOTE" color="warning" %}}
+By using the "Insert default setup" button, the system automatically creates and inserts a setup named DEFAULT with values "-CM/CM" for the fields Formula date from/Formula date to.
+{{% /alert %}}
