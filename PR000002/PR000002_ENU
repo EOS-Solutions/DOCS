@@ -1,0 +1,12 @@
+The DocFinance Connector (DCF) app by Eos Solutions enables **data exchange with DocFinance**.
+
+**DocFinance** ([www.docfinance.it](http://www.docfinance.it)) is an application project for **early management of corporate treasury** that includes **Remote Banking Telemaco services**. Integrating Remote Banking services with the corporate information system enhances its completeness.
+
+Daily treasury management provides an ONLINE snapshot of cash flows, availability, and needs.
+
+DocFinance includes CBI and Swift Score services. Features available for both services:
+
+* Collection and payment instructions, SEPA CBI and Swift, notices to pay, outstanding payments
+* Reporting of movements and balances
+
+Business Central provides master data, due date schedules and account movements.
