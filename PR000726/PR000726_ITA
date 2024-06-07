@@ -1,0 +1,32 @@
+In questa pagina riportiamo alcune specifiche:
+
+**Notule fornitori - Pagamenti anticipati relativi a fornitori con ritenute dÂacconto**
+
+-   Scheda Fornitore: l'azione ®Notula RA¯ consente lÂapertura della page ®Lista Notule RA¯. Attraverso tale pagina Š possibile generare lÂinserimento di un nuovo record nella tabella ®Ritenute e contributi¯ utilizzando il numeratore impostato nel Setup DocFinance ed il Tipo documento ®Notula¯.
+-   Procedura di esportazione Scadenzario verso DocFinance: esporta i record di tipo ®Notula¯ presenti nella tabella ®Ritenute e contributi¯; lÂimporto esportato Š quello presente nel campo ®Importo da pagare¯, al netto quindi della ritenuta dÂacconto.
+-   Procedura di importazione movimenti in BC: intercetta le scritture di Pagamento relative a Notule precedentemente inviate in modo da spaccare la registrazione su pi— righe: una con contropartita la banca e lÂaltra lÂerario c/ritenute. Imposta inoltre a S il flag ®Pag. effettuato¯ presente nella tabella ®Ritenute e contributi¯.
+
+**Pagamenti relativi a fatture gi… contabilizzate di fornitori con ritenute dÂacconto**
+
+-   Procedura di importazione movimenti in BC: il sistema intercetta le scritture di Pagamento relative a Fatture precedentemente inviate in modo da spaccare la registrazione su pi— righe: una che ha come contropartita la banca e lÂaltra lÂerario c/ritenute.
+
+**Gestione RIBA clienti In BC:**
+
+-   In BC: Esecuzione della procedura ®Estrazione ricevute bancarie¯. Le fatture cliente per le quali Š stato generato il portafoglio effetti non vengono esportate verso DocFinance.
+-   In BC: Generazione e registrazione Distinta cliente su singola banca, creazione file CBI da importare in DF.
+-   In BC e DocFinance: Import Insoluti tramite file esportato da Home banking. EÂ possibile utilizzare la procedura standard Platform, che consente di:
+    -   Impostare come contropartita un C/Transitorio insoluti
+    -   Importare le spese addebitate dalla banca
+
+        LÂazione ®Importa insoluti¯ Š presente nella barra multifunzione del Setup DocFinance.
+
+**Pagamenti ed Incassi in Valuta**
+
+-   Pagamenti anticipati in valuta: la registrazione del pagamento, di solito, viene effettuata in DocFinance utilizzando il tasso di cambio del giorno precedente (non essendo ancora disponibile il tasso di cambio del giorno) e come contropartita un C/transitorio; tale pagamento viene quindi esportato verso BC. Il giorno seguente alla contabilizzazione del pagamento, lÂutente modifica in DocFinance il tasso di cambio della registrazione: viene quindi trasferita una nuova scrittura di prima nota che chiude il C/transitorio con contropartita il C/C bancario ordinario e rettifica il controvalore in EURO del pagamento. Successivamente viene registrata in BC la fattura fornitore e, effettuando il collegamento partite, viene rilevata la differenza cambio (come da standard BC).
+-   Incassi anticipati in valuta: stesso flusso descritto al punto precedente.
+-   Pagamenti / Incassi in valuta relativi a fatture contabilizzate in BC: DocFinance esporta verso BC la scrittura relativa alla rilevazione della differenza cambio e come ®Importo VL¯ del pagamento / incasso, lo stesso ®Importo VL¯ della fattura da chiudere; BC quindi non procede alla rilevazione degli utili/perdite su cambi.
+
+
+{{% alert title="NOTE" color="warning" %}}
+Se la scrittura per la rilevazione delle differenze cambio non viene esportata direttamente in euro (apposito flag nel setup ®Conti e Causali per Contabilit…¯ di DocFinance), occorre compilare i campi ®Nr. conto C/G utili su cambi¯ e ®Nr. conto C/G perdite su cambi¯ presenti nel Setup DocFinance: in questo modo i relativi movimenti saranno importati in BC prelevando dal file direttamente il controvalore in Euro.
+{{% /alert %}}
