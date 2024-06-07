@@ -1,0 +1,8 @@
+| Step | Description                                                                  |
+|------|------------------------------------------------------------------------------|
+| 1    | Creare i prerequisiti per l'installazione di DocFinance (OnPrem/SaaS)        |
+| 2    | Create the "Setup DocFinance (DCF)" and fill in the necessary fields.        |
+| 3    | Within the DocFinance software, configure the connection to BC.              |               
+| 4    | Export master data and receive payables from BC using DocFinance.            |               
+| 5    | Reconcile payments with DocFinance and export them to BC.                    |  
+| 6    | Process received payments using the "Import COGE Batches (DCF)" page.        |
