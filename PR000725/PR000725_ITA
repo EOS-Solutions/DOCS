@@ -1,0 +1,20 @@
+LÂimport nelle righe registrazioni COGE di Business Central avviene dalla page Importa batches (DCF) tramite **Elabora-\>processa batch COGE**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000725-0/IT_1_import.png"><br>
+
+Le righe importate sono presenti nel batch COGE stabilito a setup, accessibile anche attraverso **Elabora-\>Righe reg. COGE**.
+
+Eventuali righe con anomalie sono consultabili tramite lÂazione **Report-\>Mostra dettagli**: Š possibile visualizzare i records collegati ad ogni BatchID e le eventuali anomalie presenti.
+
+{{% alert title="NOTE" color="warning" %}}
+UnÂunica registrazione trasferita da DocFinance pu• contenere righe relative a differenti tipi di documento (es.: Pagamento e Rimborso): per poter contabilizzare in BC una scrittura con stesso "Nr. documento" ma differente "Tipo documento", Š necessario impostare a **No** il flag "**Forza Saldo Doc**" presente nella pagina "Definizioni Registrazioni COGE"
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000725-0/IT_2_import.jpg"><br>
+{{% /alert %}}
+
+Le righe importate nelle righe registrazioni COGE vengono archiviate nella page raggiungibile da Setup DocFinance-\>Naviga-\>Archivio import:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000725-0/IT_3_import.jpg"><br>
+
+{{% alert title="NOTE" color="warning" %}}
+Eventuali errori di validazione delle righe collegate al singolo BatchID (es.: presenza di una o pi— righe duplicate) determinano lo scarto dellÂintero BatchID; in questo caso il BatchID scartato viene spostato direttamente in questa pagina.
+{{% /alert %}}
