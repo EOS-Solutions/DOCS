@@ -1,0 +1,19 @@
+Based on the application lifecycle management (ALM) provided by EOS Solutions for its apps, the **details of the supported versions and the type of assistance provided are listed below.**
+
+EOS Solutions has decided to extend **support to the third latest major release available**, in accordance with Microsoft's modern lifecycle policy.
+
+| **Version**                                                                                       | **Assistance type**                                                                                                              |
+|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Last and penultimate major: no changes, as now for all cumulative updates declared stable by Labs | -\> Bug fixes, small improvements / modifications, change requests, new events and support for customizations and fiscal updates |
+| Third to last major: ONLY for the latest cumulative update available                              | -\> Bug fixes and fiscal updates                                                                                                 |
+| BC14 (Cumulative update 33)                                                                       | -\> Bug fixes and fiscal updates                                                                                                 |
+
+For example, **from May 2, 2022:**
+
+\- **BC24 and BC23 for all cumulative updates declared stable by Labs**-\> Bugfix resolution, small improvements / modifications, change requests, new events and support for customizations and Fiscal Updates
+
+\- **BC22.12 ONLY (and until BC22.13 release) -\>** Bugfix fixes only
+
+**- BC14 (Cumulative update 33) -\>** Solely bugfix and Fiscal Updates resolution
+
+**- BC21 and previous ((excluding BC14) are out of support**
