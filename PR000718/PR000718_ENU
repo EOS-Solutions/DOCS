@@ -1,0 +1,7 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000718-0/EN_5_baseSetup.jpg"><br>
+
+| **Field**       | **Description**                                                           |
+|-----------------|---------------------------------------------------------------------------|
+| DocFinance Bank | indicates the encoding of the bank used in DocFinance                     |
+| DocFinance RBN  | identifies the type of bank report used in DocFinance                     |
+| Skip DocFinance | banks for which the option is enabled will not be exported to DocFinance  |
