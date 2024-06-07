@@ -1,0 +1,17 @@
+Credential Type: NavUserPassword
+
+Enable API Services: true
+
+Max Page Size: a scelta (default: 20'000)
+
+Port: a scelta (default: 7048)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000709-0/1_OnPrem.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000709-0/2_OnPrem.jpg"><br>
+
+| | |
+|-|-|
+| **Environment Name**            | nome dell'environment  |
+| **API publisher/group/version** | stringa che serve per comporre l'URL da chiamare (in caso di cambiamento in futuro, si pu• ottenere comodamente l'URL nuovo) |
+| **Company ID**                  | ID della company su BC, lo si ottiene anche tramite lookup sulla lista delle company                                         |
