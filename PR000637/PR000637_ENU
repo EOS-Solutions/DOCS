@@ -1,0 +1,15 @@
+**Extended Combine Shipments (ECS)**
+
+To run the report that generates invoices, type Extended Combine Shipments in the Search menu:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/EN_CreateInvoices.png"><br>
+
+| **Field** | **Description** |
+|-|-|
+| Posting Date, Operation Occurred Date | if both are empty, they take the value of Reference Date.  |
+
+If a specific billing method has been set in the customer master data (Invoicing tab), selecting that method on the report will allow filtering for all customers to whom it has been assigned.
+
+{{% alert title="NOTE" color="warning" %}}
+The created invoices will be visible in Sales Invoices.
+{{% /alert %}}
