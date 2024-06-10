@@ -1,0 +1,80 @@
+L’accesso alle funzioni nelle aree di Menu IX-FE è principalmente rivolto ad amministratori di sistema. Questa area di funzioni permette di configurare tutti i parametri necessari ad abilitare l’integrazione tra EOS Platform ed IX-FE al fine di inviare le fatture e Notecredito emesse e di scaricare ed importare in NAV i documenti elettronici passivi ricevuti. In quest’area è altresi possibile monitorare il funzionamento dell’integrazione con i servizi on line forniti da Abletech. Inoltre si possono attivare anche forzatamente alcune operazioni che sono normalmente schedulate o eseguite dagli addetti agli acquisti / vendite tramite altre page. Tra queste funzioni vi sono:
+
+-   Forzare il download dei files ricevuti
+-   Forzare l’invio dei documenti emessi (anche pregressi)
+-   Accettare / Rifiutare i documenti ricevuti, notificandolo all’ SDI e quindi all’emittente
+-   Consultare i log
+-   Testare i parametri di configurazione
+
+**Schedulazione attività**
+
+Fatturazione passiva, Connettore, Fatturazione attiva appartengono a moduli differenti quindi anche a livello di setup è necessario intervenire in punti diversi.
+
+Nel dettaglio:
+
+Codeunit 18123050 EOS Inb. Electr. Doc. Mgt.
+
+Schedulabile da "Setup in entrata". Non richiede parametri, riguarda esclusivamente il ciclo passivo. Si occupa di scaricare i file dalle fonti previste (IX-FE, cartella di sistema) e genera i record in Documenti elettronici (files) ed eventualmente, se previsto a setup, anche le anteprime doc. elettronico.
+
+Report 18123040 Outbound Electr. Doc. Create/Send
+
+Schedulabile da "Setup in uscita". Non richiede parametri stringa, riguarda esclusivamente il ciclo attivo. Si occupa di generare il file xml e inviarlo. Le impostazioni per eventuali filtri sui documenti da trattare e se inviare/creare i file sono configurabili tramite "Pagina di richiesta report"
+
+18123057 EOS IXFE Job Queue
+
+Schedulabile da "Setup IX-FE". Si occupa di scaricare le notifiche e file da IX-FE. Riguarda sia lato attivo che passivo, a seconda della stringa di parametri impostata:
+
+-   INBOUND: scarica file e notifiche da IX-FE e popola la tabella "Lotti documenti in ingresso", NON crea record in Documenti elettronici (files)
+-   OUTBOUND: scarica notifiche da IX-FE e aggiorna lo stato dei documenti attivi inviati
+
+Stringa parametri vuota: compie entrambe le operazioni.
+
+
+**Setup IX-FE (FTE)**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000675-0/26itElectronicInvoiceForItaly.png"><br>
+
+| **Campo**                           | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                           |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome utente                         | Utente servizio IX-FE fornito da Abletech                                                                                                                                                                                                                                                                                                                                                                 |
+| Password                            | Password fornita da Abletech                                                                                                                                                                                                                                                                                                                                                                              |
+| URL                                 | [https://ixapi.arxivar.it](https://ixapi.arxivar.it/) (Se si è in possesso di ambiente di TEST: [https://ixapidemo.arxivar.it](https://ixapidemo.arxivar.it/) )                                                                                                                                                                                                                                           |
+| AOO                                 | Dopo aver inserito URL, UTENTE e PASSWORD aprire la tendina . Apparirà l’elenco delle Aree Organizzative Omogenee (Società). Selezionare quella corretta. Se non appaiono voci, significa che i parametri di connessione non sono corretti o la sottoscrizione al servizio IX-FE non è attiva                                                                                                             |
+| Nome società conferma connessione   | inserire manualmente il nome della **società che contiene i dati reali** relativi alle fatture da inviare a IX-FE. In questo modo, se ci si trova in una società di test, creata copiando i dati della società reale, non si rischia di inviare a IX-FE documenti errati.  N.B. All'atto della creazione di società di test tramite la funzione "Copia da Informazioni Società" tale campo diventa vuoto. |
+| Periodo recupero vendite            | Indicare a partire da quando cercare sul servizio IX-FE i documenti inviati al fine di aggiornare lo stato di invio nella lista fatture di NAV. Default = 1M, ossia da “oggi” ad un mese fa.                                                                                                                                                                                                              |
+| Periodo recupero acquisti           | Indicare a partire da quando cercare sul servizio IX-FE i documenti ricevuti al fine di effettuarne il download e l’import in BC. Default = 1M, ossia da “oggi” ad un mese fa.                                                                                                                                                                                                                            |
+| Cluster di download delle notifiche | specifica il numero di notifiche che verranno scaricate in una singola chiamata del servizio IX-FE. Il valore predefinito è 100. Non è consigliabile usare valori superiori a 1000 poichè le prestazioni del servizio potrebbero rallentare.                                                                                                                                                              |
+| Usa periodo di recupero             | Se spento, il sistema scaricherà solo le notifiche nuove                                                                                                                                                                                                                                                                                                                                                  |
+| Abilita Log                         | Abilita un log a scopo debugging consultabile direttamente dalla page di setup tramite la Action "Logs" (vedi immagine).                                                                                                                                                                                                                                                                                  |
+
+<br>
+
+Ribbon-\>Movimenti coda processo: è possibile pianificare il download dei files dei documenti elettronici in background. Tipicamente questa opzione NON è da utilizzare poiché il download può essere pianificato direttamente nella coda di “Importazione delle fatture di acquisto”. È tuttavia possibile pianificare le attività di Download e import indipendentemente.
+
+Nel tab Avanzate:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000675-0/85itElectronicInvoiceForItaly.png"><br>
+
+**Nr. serie**
+
+Sulla page Nr. Serie, per collegarsi correttamente ad Arxivar, è necessario compilare il campo "Registro IVA IX-FE"
+
+-   se il campo Registro IVA IX-FE è vuoto ad IX-FE viene trasferito il valore del campo “Codice”
+-   se diverso da vuoto viene invece trasferito il valore presente in questo campo
+
+Questo setup va utilizzato solo in situazioni particolari in cui il mapping dei sezionali IVA presente in IXFE non corrisponde alla codifica all’interno di Business Central..
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000675-0/116itElectronicInvoiceForItaly.png"><br>
+
+**Documenti in uscita**
+
+Questa pagina offre funzioni di controllo per amministratori di sistema, non viene normalmente utilizzata dall’operatore addetto alla compilazione e all’invio delle fatture di vendita In questa page è possibile monitorare i documenti attivi inviati e in corso di invio all’intermediario. E’ possibile controllare lo stato dei documenti aggiornando le informazioni dal servizio web o forzare un nuovo invio.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000675-0/27itElectronicInvoiceForItaly.png"><br>
+**Lotto di documenti in entrata**
+
+Questa pagina offre funzioni di controllo per amministratori di sistema, non viene normalmente utilizzata dall’operatore addetto al ricevimento delle fatture di acquisto
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000675-0/28itElectronicInvoiceForItaly.png"><br>
+
+In questa page è possibile monitorare i files ricevuti dal servizio dell’intermediario IX-FE. Ogni file (lotto) potrebbe contenere uno o più documenti di fattura / Nota credito elettronica. È quindi possibile passare alla visualizzazione degli stati di ogni singolo documento.
