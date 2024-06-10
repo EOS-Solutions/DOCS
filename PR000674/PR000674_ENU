@@ -1,0 +1,23 @@
+Electronic invoicing to the Public Administration is an obligation imposed by the Law. All vendors of the Public Administration are obliged to respect the standard language for the creation of electronic invoices, the .XML "Tracciato FatturaPA", and to send invoices via the Exchange System (SdI). The files must be forwarded in a .xml format, digitally signed and the fields must contain all the necessary elements so that they can be accepted by the Exchange System (SdI). For example, they must respect the correct nomenclature such as: unique identifier of the Transmitter and progressive unique number of the file In addition .xml files must have all the mandatory fields required by the law valued. All invoices in XML format must be digitally signed by the vendor with their digital signature. This is necessary as it guarantees both the integrity of the information contained in the invoice and the authenticity of the transmitter. Once properly created and digitally signed, the file can be sent to the SdI. Various transmission channels are provided:
+
+* a certified electronic mail system; 
+* an application cooperation system on the internet, a web service model based on the https protocol 
+* a data transmission system passed on FTP protocol
+ 
+The invoice must be archived and digitally stored for 10 years.
+
+Electronic invoicing between individuals, or B2B electronic invoicing, starts from a similar process, using the same file format, with slight modifications, and the same transmission system (the Exchange System). Specifically, to send an electronic invoice to a private person you must enter the recipient's 7-digit identifier in the "Recipient Code" field if the recipient is registered with the Exchange System (SdI)Master Data , otherwise enter the code 0000000 and value the field " PECDestinatario”with the PEC address of the recipient. The format of the invoice used for the Public Administration is used in the B2B invoice indicating in the "FormatoTrasmissione" field the value "FPR12" while it is possible, for e-invoicing between private individuals, to also use the simplified format called "fattura semplificata", in compliance with the the VAT Law for invoices up to 100 euros. Individuals, in order to receive electronic invoices, must register with the exchange system registry if reception channels such as web services or ftp are used; otherwise you can receive invoices from the SdI to your PEC. The invoice must then be archived and digitally stored for 10 years.
+
+**The main differences are:**
+
+|                                                                    | **PA Invoicing** | **B2B Invoicing**                                                                                         |
+|--------------------------------------------------------------------|------------------|-----------------------------------------------------------------------------------------------------------|
+| Transmission and receiving e-invoices                              | ✔                | ✔                                                                                                         |
+| Mandatory                                                          | ✔                | ✘ Starting from July 1st for the oil sector and PA subcontractors. Starting from January 1st for everyone |
+| Invoices are compliant with xmlpa version 1.2                      | ✔                | ✔                                                                                                         |
+| E-invoices go trough exchange system                               | ✔                | ✔                                                                                                         |
+| Invoices must be archived and digitally stored for 10 years        | ✔                | ✔                                                                                                         |
+| Recipient code displayed on the invoice                            | ✔ 6 digits       | ✘ 7 digits for intermediary, or PEC address. Only VAT number is admitted starting from April 30th         |
+| PEC recipient reported on the invoice (if not registered with SDI) | ✘                | ✔                                                                                                         |
+| Automation of invoice receiving via IX-FE                          | ✔                | ✔                                                                                                         |
+| Automation of invoice transmitting via IX-FE                       | ✔                | ✔                                                                                                         |
