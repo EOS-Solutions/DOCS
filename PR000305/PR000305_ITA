@@ -1,0 +1,111 @@
+|   **Guida Rapida**                                                                                                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------|
+| 1      | Impostare il setup in entrata                                         |
+| 2      | Specificare il setup fornitori definendo la lista Gruppi setup           |
+| 3      | Definire i criteri di riconciliazione righe                                  |
+| 4      | Definire i controlli                                 |
+
+
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/18itElectronicInvoiceForItaly.png"><br>
+
+<br>                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+
+| **Tab**          | **Campo**                                                                                                       | **Descrizione**                                                                                                                                                                                                                                                                                                                     |
+|------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Modello          | Modello XLS PA Salvato Nome file modello XLS PA / Modello XLS ordinario salvato Nome file modello XLS ordinario | Cliccare Modifica modelli predefiniti per caricare i fogli di stile dal cloud: <img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/33itElectronicInvoiceForItaly.png"><br>                                                                                                        |
+|                  | Nr. conto corrente fornitore (Vendor Bank Account Nos.)                                                         | Se il campo è compilato con un numeratore, alla creazione di un fornitore con l’azione “Crea fornitore mancante” nell’”anteprima documenti in entrata (FTE)”, se il file fattura elettronica contiene un codice IBAN, viene creato il conto corrente bancario fornitore con il codice impostato nel Nr. di serie                    |
+| Testate acquisti | Usa data ricezione come data reg.                                                                               | spuntando tale opzione, il sistema utilizzerà la data ricezione di IX-FE come data registrazione quando creerà la fattura acquisto. Altrimenti verrà utilizzata la data del giorno in cui si sta lavorando. N.B. Se l'utente non ha il modulo IX-FE il sistema utilizzerà di default la data odierna.                               |
+|  File System     | Importa cartella Percorso archiviazione file Percorso arch. file scartati                                       | Indicare la cartella di import massivo dei file .xml. Possiamo indicare una cartella di archiviazione in cui salvare i file già elaborati. Indicare una cartella per i file .xml scartati (se viene scartato un file, esso non viene eliminato, ma uscirà dall'elenco dei documenti da elaborare e andrà nella cartella di scarto)  |
+
+<br>
+Altri setup:
+
+| Verifica percorsi file            | è possibile verificare che i percorsi di rete impostati a setup siano raggiungibili. N. B. - L’utente (persona) deve avere i permessi di scrittura - L’utente con cui gira il servizio BC deve avere i permessi di lettura / scrittura |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Naviga-\>Visualizza mapping campi | possiamo visualizzare il mapping dei campi tra il file .xml in ingresso e BC. L'elenco non è editabile.                                                                                                                                |
+| Gruppi setup                      | è il setup principale del modulo per la fatturazione B2B. Consente di salvare dei set di opzioni che si possono poi applicare a tutti i fornitori o a singoli fornitori tramite l'associazione con il codice gruppo setup.             |
+| Setup fornitori                   | permette di associare il codice gruppo setup a uno specifico fornitore a tutti i fornitori   <img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/19itElectronicInvoiceForItaly.png"><br> |
+| Movimenti coda processo           | è possibile schedulare l'import dei file .xml. Indicare la codeunit o il report da eseguire, specificare data e ora inizio/fine e definire eventualmente i giorni.                       
+<br>|
+
+**Gruppi Setup**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/20itElectronicInvoiceForItaly.png"><br>
+
+Da Modifica è possibile impostare le diverse opzioni:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/21itElectronicInvoiceForItaly.png"><br>
+
+| **Generale**                                                        |                                                                                                                                                                                       |
+|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Codice                                                              | assegnare un codice al setup                                                                                                                                                          |
+| Validazione dopo creazione                                          | decidere se far effettuare al sistema una verifica dopo la creazione dell'anteprima doc. elettronico                                                                                  |
+| Ignora file già importati                                           | decidere se far ignorare al sistema i (nomi) file già importati                                                                                                                       |
+| **Criteri di riconciliazione**                                      |                                                                                                                                                                                       |
+| Limite punteggio associazione                                       | definire un punteggio limite per l'associazione di un carico alla riga del documento elettronico                                                                                      |
+| Limite punteggio avviso                                             | definire un punteggio che consenta l'associazione, ma con un avviso                                                                                                                   |
+| Gestisci solo testata documento                                     | viene importata solo la testata del documento e il sistema non farà quadrare i totali                                                                                                 |
+| Permetti solo collegamento                                          | consente di gestire solo la testata del documento e impedisce inoltre la generazione di un documento nuovo all'interno di BC. E' possibile unicamente collegare a documenti esistenti |
+| **Dati di pagamento**                                               |                                                                                                                                                                                       |
+| Dati pagamento da                                                   | specifica se le informazioni sul pagamento e il setup debbano essere prese dal file o dalla Scheda fornitore                                                                          |
+| **Elaborazione batch**                                              |                                                                                                                                                                                       |
+| Creazione batch doc. elettronico Creazione batch documento acquisti | si può decidere quale fase effettuare in automatico se non sono presenti errori bloccanti                                                                                             |
+
+**Unità di misura**
+
+Da Unità di misura si può definire un cross reference per le unità di misura in modo che il sistema riconosca le unita di misura presenti sul file .xml.
+
+**Controlli**
+
+In Controlli sono visibili i controlli che effettua il sistema sui documenti e i possibili codici errore. La lista è modificabile solo nella colonna Descrizione e Tipi di controllo.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/22itElectronicInvoiceForItaly.png"><br>
+
+È possibile scegliere se per ogni controllo il sistema mostri:
+
+-   ERRORE: in tal caso l'utente viene bloccato nell'esecuzione dei passaggi successivi
+-   AVVISO: non blocca l'utente, ma avvisa che è presente qualche anomalia nel documento
+-   NESSUNO: il sistema non esegue la validazione e non compare nessun tipo di messaggio /avviso
+-   SILENTE: il sistema esegue la validazione, ma non emette messaggi / avvisi.
+
+Per la riga in rosso va specificato un ulteriore setup: Punteggi riconciliazione righe
+
+**Punteggi riconciliazione righe**
+
+In Punteggi riconciliazione righe vengono definite le regole secondo le quali il sistema collega in automatico i carichi alle righe del documento. Ciò viene fatto assegnando un punteggio che indica al sistema se il carico ha i requisiti necessari per essere abbinato:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/23itElectronicInvoiceForItaly.png"><br>
+
+Ad esempio:
+
+Se per la riga di un doc. elettronico il sistema trova un DDT che abbia il **numero doc. fornitore corretto (25 punti)** e la **quantità (5 punti)** articolo uguale a quella del documento elettronico in anteprima, assegnerà alla riga un totale punti: **25 + 5 = 30.**
+
+In base al setup impostato il sistema farà o meno l'abbinamento con il carico. Nel nostro esempio, se il setup è il seguente:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/24itElectronicInvoiceForItaly.png"><br>
+
+il carico verrà abbinato alla riga perchè ha superato i 20, ma comparirà un avviso ( AVVISO EI0020: riga riconciliata con avviso) perchè il punteggio non supera i 30.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/25itElectronicInvoiceForItaly.png"><br>
+
+**Altri setup**
+
+Per ogni gruppo di setup fornitore è possibile mappare i Tipi cassa con il conto di destinazione desiderato.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/121itElectronicInvoiceForItaly.png"><br>
+
+| **Campo**                           | **Descrizione**                                                                                                                                                                                                                            |
+|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tipo cassa                          | Inserire il codice previsto nel tracciato fattura elettronica (es. TC01, …)                                                                                                                                                                |
+| Descrizione                         | Descrizione del codice                                                                                                                                                                                                                     |
+| Descrizione 2                       | Descrizione aggiuntiva                                                                                                                                                                                                                     |
+| % IVA                               | % IVA applicata all'importo                                                                                                                                                                                                                |
+| Cat. reg. art./serv. IVA            | Cat. Reg. art./serv. IVA da applicare alla riga                                                                                                                                                                                            |
+| Tipo riga cassa                     | Tipo riga da applicare alla riga (Conto C/G, Articolo)                                                                                                                                                                                     |
+| Nr. riga cassa                      | Nr. da applicare alla riga da compilare con il codice Conto C/G o il codice Articolo (dipende dalla compilazione del campo "Tipo riga cassa)                                                                                               |
+| Contr. integr. cassa professionale  | Se il flag è Sì l'importo viene riportato nel campo "Contr. integr. cassa professionale", se è No viene sommato nell'imponibile. ( es: il valore è No quando si tratta di contributo INPS, il quale è sommato al reddito del percipiente)  |
+
