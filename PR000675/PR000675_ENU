@@ -1,0 +1,63 @@
+Access to functions in the Menu IX-FE areas is mainly aimed at system administrators. This function area allows you to configure all the parameters necessary to enable the integration between EOS Platform and IX-FE in order to send sales invoices and credit memos and to download and import the purchase electronic documents received. In this area it is also possible to monitor the operation of the integration with the online services provided by Abletech. In addition, some operations that are normally scheduled or performed by purchase / sales agents via other pages can also be forced. These features include:
+
+-   Force download of received files
+-   Force sending of issued documents (even previous ones)
+-   Accept / Reject the documents received, notifying the SDI
+-   Consult the log
+-   Test the configuration parameters
+
+**Scheduled activities**
+
+Sales Invoices, Connector, Purchase Invoices belong to different modules so at the setup level it is necessary to make different setup..
+
+In details:
+
+Codeunit 18123050 EOS Inb. Electr. Doc. Mgt.
+
+Scheduled from "Inbound Document Setup". It does not require parameters, it only concerns the sales invoices. It takes care of downloading the files from the possible sources (IX-FE, system folder) and generates the records in electronic documents (files) and eventually, the previews of the electronic documents.
+
+Report 18123040 Outbound Electr. Doc. Create/Send
+
+Schedulable from "Company Information - Electronic Document". It does not require string parameters, it only concerns the purchase invoices. It takes care of generating the xml file and sending it. The settings for any filters on the documents to be processed and whether to send / create files, can be configured via Report request page.
+
+18123057 EOS IXFE Job Queue
+
+Schedulable from "IX-FE Setup". It takes care of downloading notifications and files from IX-FE. It concerns both sales and purchase side, depending on the set parameter string:
+
+-   INBOUND: download files and notifications from IX-FE and populate the "Inbound Document Lots" table, it does NOT create records in Inbound documents (FTE)
+-   OUTBOUND: sownload notifications from IX-FE and update the status of the active documents sent
+
+Empty parameter string: performs both operations.
+
+**IX-FE Setup (FTE)**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000675-0/18ElectronicInvoiceForItaly.png"><br>
+
+| **Field**                            | **Description**                                                                                                                                                                                                                                                                                                                                                                           |
+|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Username                             | IX-FE service user provided by Abletech                                                                                                                                                                                                                                                                                                                                                   |
+| Password                             | Password provided by Abletech                                                                                                                                                                                                                                                                                                                                                             |
+| URL                                  | [https://ixapi.arxivar.it](https://ixapi.arxivar.it/) (if you have a TEST environment: [https://ixapidemo.arxivar.it](https://ixapidemo.arxivar.it/) )                                                                                                                                                                                                                                    |
+| AOO                                  | After entering the URL, USER and PASSWORD open the drop-down menu. The list of Aree Organizzative Omogenee (Companies) will appear. Select the correct one. If no entries appear, it means that the connection parameters are not correct or the IX-FE service subscription is not active                                                                                                 |
+| Check Company Name                   | manually enter the name of the **company that contains the real data** relating to the invoices to be sent to IX-FE. In this way, if you are in a test company, created by copying the data of the real company, you will not risk sending incorrect documents to IX-FE.  N.B. When creating a test company using the "Copy from Company Information" function, this field becomes empty. |
+| Sales Polling Range                  | From when to search on the IX-FE service for the documents sent in order to update the sending status in the NAV invoice list. Default = 1M, that is from "today" back to a month ago.                                                                                                                                                                                                    |
+| Purch. Polling Range                 | From when to search on the IX-FE service for the documents received in order to download them and import them into BC. Default = 1M, that is from "today" back to a month ago.                                                                                                                                                                                                            |
+| Notifications Download Cluster       | specifies the number of notifications that will be downloaded in a single IX-FE service call. The default value is 100. It is not advisable to use values ​​greater than 1000 as the service performance may slow down.                                                                                                                                                                     |
+| Notifications Consider Polling Range | If not enabled, the system will only download new notifications                                                                                                                                                                                                                                                                                                                           |
+| Enable Log                           | Enable a log for debugging purposes that can be consulted directly from the setup page via the "Logs" Action (see image).                                                                                                                                                                                                                                                                 |
+
+Job Queue Entries: it is possible to schedule the download of electronic document files. Typically this option is NOT to be used since the download can be scheduled directly in the Import purchase invoices queue. However, it is possible to schedule Download and Import activities independently.
+
+**Outb. Documents**
+
+This page offers control functions for system administrators, it is not normally used by the operator in charge of creating and sending sales invoices. In this page it is possible to monitor the documents sent and being sent to the intermediary. It is possible to check the status of the documents by updating the information from the web service or to force a new sending.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000675-0/27ElectronicInvoiceForItaly.png"><br>
+
+**Inb. Lotti di documenti**
+
+This page offers control functions for system administrators, it is not normally used by the operator in charge of receiving the purchase invoices:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000675-0/28ElectronicInvoiceForItaly.png"><br>
+
+In this page it is possible to monitor the files received from the IX-FE intermediary service. Each file (lot) could contain one or more invoice documents / electronic credit memo. It is therefore possible to switch to the display of the status of each individual document.
