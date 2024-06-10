@@ -7,19 +7,21 @@ On the Packaging Materials (HUM) page, the HU Types must be defined and, specifi
 ***Package***: simple box, which can be connected to other boxes. Then all together they can be loaded onto a loadcarrier.
 <br>
     
-<img width="" src="https://docs.eos-solutions.it/Images/PR000231-0/EN-EmptiesManagementSetup1.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/EN-EmptiesManagementSetup1.jpg"><br>
      
 For each container it must be defined whether it is a returnable or a non-returnable item. Open the Packaging Material card and choose the option on the ***Warehouse tab*** :
 <br>
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000231-0/EN-EmptiesManagementSetup2.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/EN-EmptiesManagementSetup2.jpg"><br>
      
 The empty management can be carried out either by linking the packaging materials to the items (via the Item No. field, Warehouse tab), or by considering empties as regular items.
 
 On the ***Invoicing tab***, you can specify an account to use in case you want to charge the empties to the customer.
 <br>
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000231-0/EN-EmptiesManagementSetup3.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/EN-EmptiesManagementSetup3.jpg"><br>
+
+
 
 
 
