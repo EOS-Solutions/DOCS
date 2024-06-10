@@ -1,0 +1,89 @@
+Le specifiche del nuovo tracciato 1.6, tra le varie novità, hanno introdotto l’utilizzo di specifici Tipi documento, finalizzati fondamentalmente all’invio allo SdI dei documenti elettronici inerenti il reverse charge interno ed esterno (autofatture) e le integrazioni:
+
+TD16 integrazione fattura reverse charge interno
+
+TD17 integrazione/autofattura per acquisto servizi dall'estero
+
+TD18 integrazione per acquisto di beni intracomunitari
+
+TD19 integrazione/autofattura per acquisto di beni ex art.17 c.2 DPR 633/72
+
+TD20 autofattura per regolarizzazione e integrazione delle fatture (ex art.6 c.8 d.lgs. 471/97 o art.46 c.5 D.L. 331/93)
+
+TD21 autofattura per splafonamento
+
+La generazione del file xml relativo alle autofatture/integrazioni, al momento, continua ad essere un’opzione esercitabile dal singolo cliente, non un obbligo. In virtù di quanto sopra, l’installazione e l’utilizzo del nuovo modulo risulta essere facoltativo.
+
+**Cenni normativi**
+
+Le specifiche tecniche della fattura elettronica, utilizzabili in via facoltativa dal 1° ottobre 2020 e **obbligatoriamente dal 1° gennaio 2021**, introducono sensibili novità soprattutto in merito all’emissione di fatture relative ad operazioni soggette ad inversione contabile, nonché nel procedimento di integrazione via SdI del documento.
+
+Dall’obbligo di fatturazione elettronica erano sorti dubbi sotto il profilo operativo, in merito a come attuare le disposizioni di cui all’art. 17 comma 5 del DPR 633/72, che impongono al cessionario/committente, per determinate operazioni, di integrare il documento emesso dal cedente/prestatore con l’indicazione dell’aliquota e della relativa imposta, procedendo all’annotazione dello stesso nei registri IVA delle fatture e degli acquisti.
+
+Si tratta del cosiddetto “reverse charge interno” che si applica per:
+
+-   le prestazioni di servizi rese da subappaltatori nel settore dell’edilizia (art. 17 comma 6 lett. a) del DPR 633/72);
+-   le cessioni di fabbricati per i quali il cedente ha optato per l’applicazione dell’IVA in atto (art. 17 comma 6 lett. a-bis) del DPR 633/72);
+-   le prestazioni di servizi di pulizia, demolizione, installazione di impianti e di completamento, relative ad edifici (art. 17 comma 6 lett. a-ter) del DPR 633/72);
+-   le cessioni di rottami, cascami e avanzi ferrosi (art. 74 commi 7 e 8 del DPR 633/72).
+
+Posto che la certificazione delle operazioni appena descritte avviene attraverso emissione di fattura in formato elettronico, l’Amministrazione finanziaria, nella FAQ 27 novembre 2018 n. 38 (aggiornata al 19 luglio 2019) e nella successiva circolare n. 14/2019, aveva sottolineato che ogni qual volta sia presente una “fattura elettronica veicolata tramite Sistema di Interscambio, a fronte dell’immodificabilità della stessa, il cessionario/committente può - senza procedere alla sua materializzazione analogica e dopo aver predisposto un altro documento, da allegare al file della fattura in questione, contenente sia i dati necessari per l’integrazione sia gli estremi della fattura stessa - inviare tale documento allo SdI”.
+
+Tale operazione, fino ad oggi troppo complessa, diventa quindi più semplice. **Il soggetto passivo** che riceve una fattura elettronica senza evidenza dell’imposta, contenente un codice “Natura” relativo all’inversione contabile, **potrà, infatti, a sua volta, generare un documento elettronico contraddistinto da una delle nuove codifiche “TipoDocumento”.**
+
+
+{{% alert title="Attenzione!" %}}
+L’integrazione dell’imposta potrà avvenire grazie alla creazione di un file XML con codice TD16 (“Integrazione fattura reverse charge interno”) e inserimento dei dati del fornitore nella sezione “CedentePrestatore” e di quelli del cliente - tenuto all’integrazione - nella sezione “CessionarioCommittente”. 
+{{% /alert %}}
+
+
+I nuovi codici consentono altresì di procedere, per via elettronica, anche agli adempimenti relativi al reverse charge “esterno”. Sono state introdotte, infatti, le seguenti codifiche:
+
+| TD17 | per l’integrazione o autofattura in caso di acquisto di servizi dall’estero                                               |
+|------|---------------------------------------------------------------------------------------------------------------------------|
+| TD18 | per l’acquisto di beni intracomunitari                                                                                    |
+| TD19 |  per l’integrazione o autofattura in caso di acquisto di beni da soggetti non residenti ex art. 17 comma 2 del DPR 633/72 |
+
+Posto che mediante l’adozione della procedura elettronica di reverse charge “esterno” i dati dell’operazione vengono comunicati al Sistema di Interscambio, tale modalità dovrebbe consentire l’esonero dalla presentazione dell’esterometro a partire dal 1° gennaio 2022 (vedasi novità fiscali Legge di Bilancio 2021).
+
+**Setup**
+
+**Setup IVA**
+
+Registrazione documenti di acquisto inerenti le differenti tipologie di documento: linee guida indentificate in funzione delle indicazioni fornite dall’Agenzie delle Entrate e delle successive interpretazioni effettuate dall’associazione di categoria Assosoftware.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000692-0/92itElectronicInvoiceForItaly.png"><br>
+
+
+
+{{% alert title="Attenzione!" %}}
+Se necessario **rivedere i setup IVA** affinchè siano conformi alle specifiche pubblicate dall'Agenzia delle Entrate.
+{{% /alert %}}
+
+**Anagrafica Fornitore**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000692-0/72itElectronicInvoiceForItaly.png"><br>
+
+| **Campo**    | **Descrizione**                                                           |
+|--------------|---------------------------------------------------------------------------|
+| Tipo società | Serve a definire il contenuto che avrà il tag obbligatorio RegimeFiscale  |
+
+<br>
+**Repertori doc. elettronico (tipologia TD):**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000692-0/70itElectronicInvoiceForItaly.png"><br><br>
+
+| **Campo**                         | **Descrizione**                                                                                                                                                                                                                                                                                                     |
+|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Integrazione/Autofattura acquisto | Identifica quali tipi documento (TD) rientrano nella feature in oggetto e sono quindi utilizzabili per le integrazioni/autofatture                                                                                                                                                                                  |
+| Fornitore collegato obbligatorio  | Specifica se il tipo documento necessita che sia specificato un fornitore collegato (nuovo campo) come riferimento dell’autofattura. Si applica nei casi in cui il fornitore intestatario del documento (“Pagare a”) non corrisponda con quello da esportare nel tag “Dati del cedente / prestatore” del file xml.  |
+<br>
+
+**Step operativi**
+
+1.  Creazione manuale documento acquisto per integrazione/autofattura
+2.  Invio tramite connettore IX-FE del documento elettronico creato
+3.  Aggiornamento dello stato del documento elettronico
+4.  Schedulazione massiva processo
+
+Vediamoli nel dettaglio 
