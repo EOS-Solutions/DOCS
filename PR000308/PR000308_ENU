@@ -1,0 +1,131 @@
+|   **Quick Guide**                                                                                                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------|
+| 1      | Import .xml file                                               |
+| 2      | Display the electronic document preview                |
+| 3      | Create a purchase invoice / credit memo                                   |
+| 4      | Post the purchase invoice / credit memo                                      
+
+     		 
+
+
+<br>
+Complete the [SETUP] [Electronic Invoice For Italy - Setup]({{<relref "electronic-invoice-for-italy-setup">}})
+
+
+
+The module allows you to import .xml / p7m files, to view and modify them, if necessary. From the imported file a purchase document preview is created which can be associated with an existing temporary invoice. If you use the IX-FE cloud service (Eos Electronic Invoice for Italy is interfaced with Abletech IX-FE), you can manage all phases of sending and receiving electronic invoices to / from private companies, to the final buyers and to the Public Administration.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/14ElectronicInvoiceForItaly.png"><br>
+
+**Inbound Files (FTE)**
+
+When receiving an electronic invoice go to Inbound Files (FTE) in order to import it into the system. Press:
+
+-   **File-\>Import file** to import a single file
+-   **File-\>Import .Zip** to import files from a folder defined in the setup
+-   **File-\>Import from IX-FE** to import files via the IX-FE connector (function available for those who purchased the Purchases module )
+
+If the import file is in p7m / P7M format (signed XML file), it is converted into .xml by the system. It may be that a file includes batch of documents. In this case, they are unpacked during importation.
+
+| **NB**                                                        |
+|---------------------------------------------------------------------------------------------------------------|
+| The discarded files are in the page Inbound Reected Files (FTE). They can be restored via the Restore action. |
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/15ElectronicInvoiceForItaly.png"><br>
+
+| **Action / Field**                | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Navigate->Details      | From Navigate-\>Details you can view information on the lines of the document ((Dati Beni/Servizi, Dati Riepilogo, Dati Ordine Acquisto, Dati DDT, Dati Pagamento, Dati Sconto/Maggiorazione).                                                                                                                                                                                                                                                                                      |
+| Attachments               | If the received xml file contains a PDF or other attachment, you can view the files from Show-\> Attachments. By clicking on the file name you can open it. Some files attached to incoming documents have a file name with special characters such as "\\" These characters are recognized (see "Transliteration" in the setup) and the system is able to open the file. NB On the preview of the invoice and on the posted invoice, a fowfield allows you to view the attachment. |
+| EOS FE Inb. Lot Entry No. | The "EOS.FE Inbound Lot Entry Number" column shows the progressive numbers of files imported via IX-FE. The "Print receiving tracking protocol" report shows the correspondence between progressive document imported and posted in BC. If the posted document does not come from an imported file through the IX-FE connector, the progressive number will be "XXXXXXXXXXXXXXXXXXXX".                                                                                              |
+| Messages                  | In Messages-\>Show Messages Log the system shows any warning / error messages                                                                                                                                                                                                                                                                                                                                                                                                       |
+
+**DatiRitenuta**
+
+In the inbound files page from Navigate-\>DatiRitenuta it is possible to view the withholding details:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/42ElectronicInvoiceForItaly.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/43ElectronicInvoiceForItaly.png"><br>
+
+In the Inbound Electronic Document Preview card, General Tab, we can view information about Tiporitenuta end it is possible to navigate the details about the lines:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/44ElectronicInvoiceForItaly.png"><br>
+
+**Checks on withholding tax**
+
+There are checks on the Withholding tax types:
+
+EI0042-\>Vendor must have INPS code
+
+EI0040-\>Vendor must have Withh. Tax code
+
+They are set by default as an error, the severity remains editable by vendor group. It is true that in case of withholding tax, in the electronic document preview the vendor has its setup filled in.
+
+**Process inbound files**
+
+Via **Process-\>Validate** the system performs checks on the file.
+
+**Process-\>Create Document Preview** the system generates a preview of the electronic document in which it is possible to make changes / corrections if necessary.
+
+**Process-\>Process**: the system validate the file and create the preview in one step.
+
+**Inbound Documents Preview (FTE)**
+
+In Inbound Documents Preview (FTE) the system shows all the previews created (status = Purchase header):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/35ElectronicInvoiceForItaly.png"><br>
+
+Da **Manage-\>Edit** you can open the preview card. To create the electronic invoice from the preview it is necessary that no errors appear in the Status field. The system shows both errors (blocking) and warnings (non-blocking). If the errors / warnings refer to the lines, they are reported on the specific line to which they refer.
+
+Correct any anomalies in the document eg: check that the Type and No. fields are filled in so that the system recognizes (Messages-\> Validate) the VAT prod. posting group and can therefore calculate the VAT amount. The blocking error disappears and you can proceed with the creation of the purchase header. The totals are shown in red if the system fails to square them.
+
+| **Field**                                                                            | **Description**                                                                                                                                                                                                                                                                                                                                                               |
+|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Status                                                                               | Options: error / warning in case the file is not ready to proceed with the creation of the felectronic document. "Preview" if the .xml file was imported and a preview of the electronic document was created. "Purchase Header" if a temporary electronic document has already been created. "Posted" if the document created by the xml file has already been registered.   |
+| Warnings / Errors                                                                    | specify if something is not correct in the document. Clicking on it you can get the details                                                                                                                                                                                                                                                                                   |
+| Purchase Header Doc. Type/Purchase Header Doc. No./ Posted Purchase Header Doc. Type | fields containing the indications relating to the document created / posted                                                                                                                                                                                                                                                                                                   |
+| Document Type                                                                        | specifies if it is an Invoice / Credit Memo                                                                                                                                                                                                                                                                                                                                   |
+| Pay-To Vendor No. / Pay-To Name                                                      | Number / Name of the vendor. It is possible to manually enter the vendor data if not already present in the system. In the General Tab -\> Pay-To Vendor No.                                                                                                                                                                                                                  |
+
+
+<br>
+
+{{% alert title="Important" %}}
+From the Ribbon you can open the .xml file with or without formatting.
+{{% /alert %}}
+
+
+{{% alert title="Important" %}}
+There is the possibility to manage ONLY the document header by checking the relative option. In this way the system creates the purchase document even without the rows being reconciled.
+{{% /alert %}}
+
+
+**ABBINARE I CARICHI**
+
+In the Preview of the electronic document the system is able to match DDTs to the lines by filling in Type / Nr fields, Item, VAT prod. posting group. Unit Cost and Amount are those passed by the .xml file. The system displays a warning if there is no coincidence between the matched order and the data in the .xml file. From Purchase Header-\>Reconcile posted document lines you can manage the combination with the Posted Transport Document lines:
+
+On the top page there are the document header data, below we see the lines of the electronic document; at the bottom there is a summary of the totals and in the right pane we can see a list of DDTs serched by by Vendor and Currency. The system manages with a rating (which considers Vendor Document No., DDT No., Item, Quantity etc.) the automatic association.
+
+In [Inbound Setup (FTE)-\>Setup Groups](https://helpbc.eos-solutions.it/main.aspx?lang=en&content=ENU_ElectronicInvoiceForItaly_setup.html) we set the rating limit in order to carry out the matching.
+
+Green = combined DDT without warnings, Red = DDT combined with warning based on the setup settings).
+
+On the page it is possible to operate manually by adding lines, connecting them and disconnecting them. You can also view the DDT from the Card.
+
+<br>
+
+
+{{% alert title="Important" %}}
+Added lines can be deleted. Those derived from the .xml file cannot be deleted.
+{{% /alert %}}
+
+Da Purchase Header-\> **Create Purchase Header** it is possible to create the purchase document (or link the document to an existing one eg. to the invoice of a salesperson already present in the purchase invoice list in BC).
+
+In the Posted Purch. Inv. in the "Electronic. Document" Tab there is the link to the original .xml file and the link to the preview of the document.
+
+**Posted documents**
+
+Finally you can post the created document . In Inbound Documents Preview (FTE) the line relating to the newly created invoice will show the purchase header number and the number of the posted document (useful since the protocol number must be returned to the IX-FE Exchange System).
+
+"Posted" will appear in the "Status" field.
