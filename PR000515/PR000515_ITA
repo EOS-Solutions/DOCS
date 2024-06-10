@@ -1,0 +1,26 @@
+
+
+Dal **1 gennaio 2022** il tracciato XML della Fattura Elettronica gestisce nuove specifiche relative alla Dichiarazione di Intento.
+
+Nella pagina **'Setup in uscita (FTE)'** i campi che riguardano la Dich. Intento sono:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000515-0/114itElectronicInvoiceForItaly.png"><br>
+
+| **Campo**                                | **Descrizione**                                                                   |
+|------------------------------------------|-----------------------------------------------------------------------------------|
+| Dich. intento in tag Causale             | abilita la gestione della dichiarazione d’intento nel tag (come da tracciato 1.6) |
+| Dich. intento in tag AltriDatiGestionali | abilita la gestione della dichiarazione d’intento nel tag (come da tracciato 1.7) |
+
+
+<br>
+Nel documento elettronico vanno riportate le seguenti informazioni:
+
+Nel blocco **`<AltriDatiGestionali>`**
+
+- **campo 2.2.1.16.1 `<TipoDato>`** deve riportare la dicitura "INTENTO"
+- **campo 2.2.1.16.2 `<RiferimentoTesto>`** deve riportare il protocollo di ricezione della DI
+- **campo 2.2.1.16.4 `<RiferimentoData>`** deve riportare la data della ricevuta telematica rilasciata dall'AdE
+
+*Esempio:*
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000515-0/115itElectronicInvoiceForItaly.png"><br>
