@@ -1,0 +1,40 @@
+Here is a list of the possible IX-FE status messages of the Electronic Document sent to the Exchange System.
+
+This status is visible in the "Status" field of the posted invoice list and can be updated from Actions-\> Update Status.<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000672-0/30ElectronicInvoiceForItaly.png"><br>
+
+| **STATUS MESSAGES**      |
+|--------------------------|
+| OUTBOUND                 |
+|   VALIDATION_ERROR       |
+| SIGN_ERROR               |
+| DELIVERY_RECEIPT_B2B     |
+| FAILED_DELIVERY_B2B      |
+| REJECTION_B2B            |
+| DELIVERY_RECEIPT_PA      |
+| FAILED_DELIVERY_PA       |
+| REJECTION_PA             |
+| OUTCOME_PA               |
+| DEADLINE_PASSED_PA       |
+| PROOF_OF_TRANSMISSION_PA |
+| CONSERVATION_ERROR       |
+| INBOUND                  |
+| TAKEN_OVER               |
+| OUTCOME_PA               |
+| OUTCOME_REJECTION_PA     |
+|  DEADLINE_PASSED_PA      |
+| CONSERVATION_ERROR       |
+
+
+Invoice statuses in BC are updated based on the schedule made or when the user updates them. It is therefore normal that the state in IXFE is advanced compared to the status seen in BC if a refresh has not been done.
+
+BC statuses:
+
+| BC INVIATO Document sent                                    |
+|-------------------------------------------------------------|
+| BC CREATO Documento created                                 |
+| BC ERRORE_CREAZIONE Error when creating file xml            |
+| BC ERRORE_INVIO Error when sending                          |
+| BC CONFERMATO_MANUALMENTE Manually confirmed document cycle |
+| BC NOTIFICHE_ATTIVE Notifications manually reactivated.     |
