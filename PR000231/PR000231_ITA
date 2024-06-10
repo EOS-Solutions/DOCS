@@ -1,43 +1,43 @@
-LÂapp Empties Management (EPM) utilizza una serie di setup comuni con la gestione delle Unit… di carico e i con la Packing list.
+Lâ€™app Empties Management (EPM) utilizza una serie di setup comuni con la gestione delle UnitÃ  di carico e i con la Packing list.
 <br>
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetup1.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetup1.jpg"><br>
      
-Una parte di setup Š, come detto, in comune con la app Handling Units Management (HUM).
+Una parte di setup Ã¨, come detto, in comune con la app Handling Units Management (HUM).
 
-Sulla page Materiali di imballaggio (HUM) vanno definiti i Tipi Unit… di Carico e, nello specifico, se si tratta di
+Sulla page Materiali di imballaggio (HUM) vanno definiti i Tipi UnitÃ  di Carico e, nello specifico, se si tratta di
 
-***Portacarico*** (es. Pallet): su questo Š possibile caricare scatole con dentro ulteriori pacchetti
+***Portacarico*** (es. Pallet): su questo Ã¨ possibile caricare scatole con dentro ulteriori pacchetti
 
-***Collo:*** scatola semplice, che si pu• collegare ad altre scatole. Poi tutte insieme possono essere legate ad un Portacarico. 
+***Collo:*** scatola semplice, che si puÃ² collegare ad altre scatole. Poi tutte insieme possono essere legate ad un Portacarico. 
 <br>
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetup2.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetup2.jpg"><br>
      
-Per ogni contenitore va definito se esso Š un articolo a rendere o a perdere (se il campo viene lasciato vuoto, l'articolo non verr… considerato nella gestione vuoti).
+Per ogni contenitore va definito se esso Ã¨ un articolo a rendere o a perdere (se il campo viene lasciato vuoto, l'articolo non verrÃ  considerato nella gestione vuoti).
 
 Aprire la scheda Materiale di imballaggio e scegliere l'opzione nel ***tab Warehouse***:
 <br>
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetup3.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetup3.jpg"><br>
      
-***A rendere:*** una volta movimentato, il sistema consentir… di visualizzarne il saldo cliente o fornitore o spedizioniere.
+***A rendere:*** una volta movimentato, il sistema consentirÃ  di visualizzarne il saldo cliente o fornitore o spedizioniere.
 
-***A perdere:*** rientra nella gestione dei vuoti, ma non sar… visualizzato nel saldo.
+***A perdere:*** rientra nella gestione dei vuoti, ma non sarÃ  visualizzato nel saldo.
 
-La gestione vuoti pu• essere effettuata sia collegando i materiali di imballaggio agli articoli (tramite il campo Nr. articolo, tab Warehouse), sia trattando i vuoti come se fossero articoli a tutti gli effetti.
+La gestione vuoti puÃ² essere effettuata sia collegando i materiali di imballaggio agli articoli (tramite il campo Nr. articolo, tab Warehouse), sia trattando i vuoti come se fossero articoli a tutti gli effetti.
 
-Nel ***tab Fatturazione*** Š possibile specificare un conto contabile da utilizzare nel caso si desideri fatturare il vuoto al cliente.
+Nel ***tab Fatturazione*** Ã¨ possibile specificare un conto contabile da utilizzare nel caso si desideri fatturare il vuoto al cliente.
 <br>
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetup4.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetup4.jpg"><br>
      
 ## Setup imballaggio(HUM)
 
-Nella pagina di setup che riguarda la app Handling Units Management (HUM) va indicata la modalit… di calcolo vuoti (la app ha una modalit… di calcolo di default, ma Š possibile customizzarla):
+Nella pagina di setup che riguarda la app Handling Units Management (HUM) va indicata la modalitÃ  di calcolo vuoti (la app ha una modalitÃ  di calcolo di default, ma Ã¨ possibile customizzarla):
 <br>
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetupImb1.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetupImb1.jpg"><br>
 
 
 
