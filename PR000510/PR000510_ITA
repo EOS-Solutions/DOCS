@@ -1,0 +1,88 @@
+|   **Guida rapida**                                                                                                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------|
+| 1      | Effettuare il setup in anagrafica cliente                                               |
+| 2      | Specificare i metodi di pagamento del documento elettronico                |
+| 3      | Specificare le condizioni di pagamento del documento elettronico                                      |
+| 4      | Creare / Inviare il documento elettronico                                      
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/11itElectronicInvoiceForItaly.png"><br>
+
+Eseguire il [SETUP] [Electronic Invoice For Italy - Setup]({{<relref "electronic-invoice-for-italy-setup">}})
+
+**Creare / Inviare il documento elettronico**
+
+Sulle page di Fatture, Ordini, NC vendita/Fatture, Ordini, NC vendita reg. è presente la funzione "Salva/Invia Documento elettr." che consente appunto di creare oppure inviare al SdI i documenti elettronici (Fatt. PA/Fatt. B2B):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/5itElectronicInvoiceForItaly.png"><br>
+
+
+Scegliendo di **inviare** il documento elettronico, il sistema genera un file .Xml e lo invia a IX. In lista fatture vendita registrate è presente il campo Stato che mostra lo [stato del documento restituito da IX](https://helpbc.eos-solutions.it/main.aspx?lang=it-it&content=ITA_ElectronicInvoiceForItaly_StatiIXFE.html).
+
+Scegliendo di **creare** il documento il sistema crea un file .Xml che viene legato alla testata della fattura nel Tab Doc. Elettronico:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/9itElectronicInvoiceForItaly.png"><br>
+
+| **Campo**                  | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tipo doc. elettronico      | il campo è presente sulle testate dei documenti di vendita e assistenza. Tale campo è inizializzato dal sistema secondo delle logiche predefinite e può essere modificato manualmente all’esigenza. I criteri per determinare il valore da proporre nel caso di **fattura** sono (in ordine di priorità):  1- Cliente di fatturazione corrispondente a Cliente autofattura impostato nel setup in uscita  <img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/36itElectronicInvoiceForItaly.png"><br>  2- Condizione di pagamento identificata come **anticipo**  <img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/37itElectronicInvoiceForItaly.png"><br>  3- Default specificato nella scheda della **Categoria Reg. Business IVA** del documento  <img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/38itElectronicInvoiceForItaly.png"><br>  4- Valore TD01 nel caso nessuno dei precedenti dia un riscontro  Per le **note di credito** il valore permesso è unicamente **TD04** |
+| Tipo doc. elettr. manuale  | Specifica se il tipo documento elettronico è stato manualmente forzato e non sarà quindi ricalcolato                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Nome file                  | cliccando sul file XML il sistema chiederà se lo si vuole aprire utilizzando il foglio di stile ministeriale oppure con un foglio di stile alternativo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Dati documenti correlati   | cliccare sul campo per inserire MANUALMENTE le righe relative ai documenti e poi cliccare "Nuovo". In base al "Tipo" scelto nel tab Generale si attiverà il tab di inserimento dati corrispondente. Gli altri tab non saranno attivi.  <img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/13itElectronicInvoiceForItaly.png"><br> N:B: I **documenti correlati** vengono ereditati nel caso di "Copia documento" e Posting. L'Archiviazione non viene gestita. Il tag DatiFattureCollegate viene esportato per le **Note credito** se il campo standard Applies-to Doc. No. in testata è compilato. Per i **Resi** il tag NumeroDDT esportato nell’xml viene popolato con il Nr. Documento esterno (se presente). Per il tag DataDDT viene usata la data documento invece che la data registrazione. E' possibile inserire manualmente N righe da 250 caratteri per il **tag Causale** direttamente dalla sezione Documenti Correlati                                                                                                                                             |
+
+Tramite fogli di stile è possibile visualizzare il file .xml creato:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/12itElectronicInvoiceForItaly.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/10itElectronicInvoiceForItaly.png"><br>
+
+| **Importo sconto**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -Importo sconto: il **numero dei decimali** esportabili nel tag **ImportoSconto** è **8**. <br>-Per questioni di arrotondamenti se lo sconto unitario (sconto riga + sconto fattura / qtà) ha piu di 8 decimali il sistema crea una riga negativa per compensare lo sconto riga sull’Xml.  <br>Nel [Setup in uscita](https://helpbc.eos-solutions.it/main.aspx?lang=it-it&content=ITA_ElectronicInvoiceForItaly_setup.html), nel campo "Metodo esportazione" è possibile decidere di esportare lo sconto in percentuale.  <br>Per la generazione della riga da parte del sistema i criteri sono:  <br>- è presente uno sconto fattura <br>- la fattura è in valuta <br>- il campo Line Discount % ha più di 2 decimali |
+
+| **NB**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Alcuni dati per il file XML sono essenziali, ma non sono essenziali per BC ai fini della registrazione del documento. <br>Le 3 casistiche principali sono: <br>- PI o CF: se il documento viene registrato senza PI o CF il sistema permette di andare ad aggiungere il dato in anagrafica e di esportare nuovamente il documento con i dati corretti; <br>- Metodo di pagamento: se il documento non ha il metodo di pagamento, nel file generato viene comunque aggiunto il TAG che può essere popolato a mano direttamente sul file; <br>- Condizioni di pagamento: se il documento non ha le condizioni di pagamento, nel file generato viene comunque aggiunto il TAG che può essere popolato a mano direttamente sul file;  |
+
+<br>**Fatture "Solo IVA"**
+
+Per chi ha la necessità di effettuare Fatture solo IVA, è possibile seguire queste istruzioni:
+
+usare 2 righe uguali, ma con segni inversi, e sulla seconda riga applicare FUORI CAMPO IVA, ad esempio
+
+| **ART** | **QTA** | **IMP UNI** | **IMP TOT** | **IVA** |
+|---------|---------|-------------|-------------|---------|
+| 1000    | 1       | 10          | 10          | 22%     |
+| 1000    | 1       | -10         | -10         | FCIVA   |
+
+**Fatturazione cumulativa (ECS)**
+
+Le fatture generate dalla procedura in oggetto tramite la app aggiuntiva Extended Combine Shipment (ECS) , possono essere inizializzate con un tipo doc. elettronico specifico, che viene impostato nei parametri di lancio. In questo modo è possibile determinare il TD con cui inizializzare le fatture generate da ogni singolo lancio.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/39itElectronicInvoiceForItaly.png"><br>
+
+Essendo il campo tipo doc. elettronico presente anche in testata ordine di vendita, è un criterio di raggruppamento disponibile nei metodi di fatturazione.
+
+In questo caso il sistema genererà fatture diverse al cambiare del campo, inizializzando il valore di tipo doc. elettronico sulla fattura con quello recuperato dagli ordini; se specificato nei parametri di lancio un valore di default da assegnare, questo sovrascriverà quello ereditato dall’ordine.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/40itElectronicInvoiceForItaly.png"><br>
+
+**Stato di trasmissione del documento elettronico**
+
+Sulla Lista Fatture vendita / Note credito reg. è possibile controllare lo STATO del documento elettronico.
+
+Tale campo consente di monitorare lo stato IX-FE per un documento, limitatamente a un sottoinsieme di stati relativi alla trasmissione, escludendo ad esempio le notifiche sulla conservazione. Viene mostrato, ad esempio, se il documento è stato creato, validato ecc.
+
+Cliccando sullo stato si apre la pagina REGISTRO DI STATO DEI DOCUMENTI ELETTRONICI IN USCITA. Da Azioni è possibile, per uno specifico documento, sospendere l’aggiornamento dello notifiche IX-FE impostando lo stato “Disabilita notifiche".
+
+**Controlli**
+
+Sono presenti alcuni controlli, in fase di posting o di esportazione file: tra il formato di esportazione specificato a setup e
+
+-   Tipo doc. elettronico
+-   Natura
+
+viene controllato che nel caso in cui Data registrazione e Data effettuazione operazione ricadano in mesi differenti, il tipo doc. elettronico debba essere
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/41itElectronicInvoiceForItaly.png"><br>
