@@ -1,0 +1,121 @@
+EOS Electronic Invoice for Italy, using an accredited web service (Abletech IX-FE), extends the functionality of the ERP Dynamics 365 Business Central to allow sending and receiving invoices in electronic format, complying with current legislation. The service is accessible in outsourcing via web portal and integrated with Dynamics 365 Business Central and allows to create, send, receive and archive electronic invoices in accordance with the law.
+
+The exchange system (SdI) manage three different file types:<br>
+•	XML file digitally signed in accordance with the Invoice format specifications. It can contain: a single invoice (a single invoice body) a batch of invoices (several invoice bodies with the same header).<br>
+•	archive file: compressed file (exclusively in zip format) containing one or more Invoice files. The system processes the archive by checking and forwarding to the recipient the individual FatturaElettronica files contained within it. In fact, the FatturaElettronica files are treated as if they were transmitted individually. It should be noted that the archive file must not be signed but all the invoice files must be signed instead.<br>
+•	message file: XML file conforming to a schema (xml schema) described by the file: MessaggiTypes_v1.0.xsd downloadable from the page Documentazione Sistema di Interscambio. <br>
+The Interchange System assigns a different nomenclature to each type of message file. For more information on the nomenclature of message files, see Annex B-1 of the Technical Specifications document relating to the exchange system available in the page Documentazione Sistema di Interscambio.
+
+All messages produced and sent by the exchange system, with the exception of the metadata file, are electronically signed by means of an advanced electronic signature of type XAdES-Bes.
+The "notifica di esito committente", the only notification sent by the recipient to the SdI, provides for the possibility to be signed electronically, always in XAdES-Bes mode, on an optional basis. 
+
+{{% alert title="NB" %}}
+For more details on the client outcome notification, see the section Esplicitare l'esito.
+Business Central interfaces with Invoice Xchange (IX) di Abletech (https://www.arxivar.it) 
+{{% /alert %}}
+
+
+Here is a representation of the message flow:
+
+ <img width="" src="https://docs-test.eos-solutions.it/Images/PR000669-0/29ElectronicInvoiceForItaly.jpg"><br>
+ 
+**Use cases**
+
+1. Preparation of the initial setup:
+
+ * The user accesses the "Company Information" page.
+ * The system presents the page with empty fields
+ * The user clicks "Copy from company information"
+ * The system copies data from the "Company information" table
+ * The user completes the other fields manually, indicating the necessary tax information
+
+2. Sending electronic invoices (Requires IX-FE subscription):
+
+ * The user opens the Posted Sales Invoice list
+ * The user filters and / or selects the invoices concerned
+ * The user clicks Actions Create / Send Electronic Document
+ * Business Central creates Xml files according to Naming Convention IT_CODICEFISCALE_PROGRESSIVO.Xml
+
+**Scenario A - TRANSMISSION (OnPrem e OnLine avaliable)**
+
+* Business Central sends the files to the IX-FE portal
+* IX-FE formally checks the files, renames the files with the intermediary's Fiscal Code and queues them to be sent to the recipient
+* IX-FE completes the files with the data of the transmitter, signs them and sends them to the SDI
+* The SDI receives the files and sends notifications to IX-FE
+* The user sees the transmission status directly in the posted  sales invoice list
+* The user can manually update the transmission status or wait for the scheduled update
+
+**Scenario B - DOWNLOAD XML (OnPrem e OnLine avaliable)**
+
+* User selects "Download XML"
+* XML files are downloaded in a predefined folder
+
+**Scenario C - DOWNLOAD XML to folder (OnPrem avaliable)**
+
+* User selects "Download XML"
+* The files are downloaded in a predefined folder
+* An external system checks the saved files, and sends them to an intermediary accredited with the SDI
+
+**Nomenclature file to be transmitted**
+
+(http://www.fatturapa.gov.it/export/fatturazione/sdi/Specifiche_tecniche_SdI_v1.1.pdf) <br>
+Electronic invoices must be sent to the SdI in a format compliant with one of the methods described below:<br>
+a) a file containing a single invoice;
+b) a file containing a single lot of invoices (where the "lot" is understood in the meaning of Article 21, paragraph 3, Decree of the President of the Republic of 26 October 1972, No. 633);<br>
+c) a file in compressed format containing one or more files of type a) and / or one or more files of type b); the accepted compression format is the ZIP format.<br>
+In cases a) and b) the file name must respect the following nomenclature:
+
+•	the country code must be expressed according to the ISO 3166-1 alpha-2 code standard;<br>
+•	the unique identifier of the transmitting subject, whether it is a natural person or a legal person, is represented by its tax identification number (tax identification number in the case of a transmitting subject resident in Italy, an identifier proper to the country of origin in the case of a transmitting entity resident abroad) ; the length of this identifier is: o 11 characters (minimum) and 16 characters (maximum) in the case of the IT country code; o 2 characters (minimum) and 28 characters (maximum) otherwise;<br>
+•	the unique progressive number of the file is represented by an alphanumeric string with a maximum length of 5 characters and with allowed values [az], [AZ], [0-9]. The file must be signed electronically (as indicated in paragraph 2.1 above); based on the adopted electronic signature format, the file extension takes the value ".xml" or ".xml.p7m".<br>
+•	The separator between the second and third element of the file name is the underscore ("_") character, ASCII code 95.<br>
+
+Ex .: ITAAABBB99T99X999W_00001.xml IT99999999999_00002.xml.p7m
+
+**Modalità di trasmissione delle fatture, ricevute e notifiche**
+
+How to send invoices, receipts and notifications
+
+The transmission of files to the SDI can be carried out using the following methods:
+
+•	a certified electronic mail system, or similar electronic mail system based on technologies that certify the date and time of the sending and receiving of communications and the integrity of the content of the same, "PEC service"; It is not implemented because file signing is required before sending.
+
+•	an application cooperation system, on the Internet, with a service displayed through a "web service" model usable through the HTTPS protocol, defined "SdICoop service";
+
+•	an application cooperation system through domain ports in the Public Cooperation System (SPCoop), defined "SPCoop service";
+
+•	a data transmission system between remote terminals based on the FTP protocol, defined "SdIFtp service";
+
+•	a transmission system via  the exchange system website.
+
+**Checks carried out by the SDI**
+
+The SdI, for each file correctly received, carries out several checks in preparation for forwarding to the recipient. This verification activity is configured as:<br>
+•	an operation necessary to minimize the risk of errors in the process;
+
+•	a filtering tool for the Administration to prevent, on the one hand, possible and costly litigation activities, and to accelerate, on the other hand, any rectification interventions on invoices to the advantage of a more rapid conclusion of the invoicing-payment cycle.
+
+Failure to pass these checks will result in the rejection of the file which, consequently, is not forwarded to the invoice recipient.
+
+**Validation methods**
+
+The types of checks carried out aim to verify:
+
+•	nomenclature and uniqueness of the transmitted file;
+
+•	document integrity;
+
+•	authenticity of the signature certificate;
+
+•	invoice format compliance;
+
+•	validity of the invoice content;
+
+•	uniqueness of the invoice;
+
+•	deliverability of the invoice
+
+
+
+
+
