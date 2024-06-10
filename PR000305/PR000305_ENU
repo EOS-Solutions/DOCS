@@ -1,0 +1,111 @@
+|   **Quick Guide**                                                                                                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------|
+| 1      | Fill in the inbound setup                                               |
+| 2      | Specify the vendor setup by defining the Setup Groups                |
+| 3      | Define the reconcile criteria                                     |
+| 4      | Define the check parameters                                    |
+
+
+
+<br>
+
+**Inbound Setup (FTE)**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/18ElectronicInvoiceForItaly.png"><br>
+
+| **Tab**         | **Campo**                                                                                               | **Descrizione**                                                                                                                                                                                                                                                                                                      |
+|-----------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Template        | PA XLS Template Saved / PA XLS Template File Name / B2B XLS Template Saved / B2B XLS Template File Name | Click Restore Default Tmplates to upload style sheets from the cloud: <img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/33ElectronicInvoiceForItaly.png"><br>                                                                                                                                                |
+|                 | Vendor bank account Nos.                                                                                | If the field is filled in with a numerator, when creating a vendor with the “Create missing vendor” action in the “incoming document preview (FTE)”, if the electronic invoice file contains an IBAN code, the vendor bank account is created with the code set in the serial no                                     |
+| Purchase Header | Use Receipt Date as Posting Date                                                                        | by ticking this option, the system will use the receipt date of IX-FE as the posting date when it will create the purchase invoice. Otherwise the workdate will be used. NB If the user does not have the IX-FE module the system will use the workdate by default.                                                  |
+|  File System    | Import Folder Archive Folder Rejected Folder                                                            | Indicate the massive import folder of the .xml files. we can indicate a storage folder in which to save the files already processed. Indicate a folder for the discarded .xml files (if a file is discarded, it is not deleted, but it will exit the list of documents to be processed and go to the discard folder) |
+
+<br>
+Other setups:
+
+| Test File Paths               | it is possible to verify that the network paths set to setup are reachable. NB - The user (person) must have modify permissions - The user running the BC service must have read / modify permissions   |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Navigate-\>Show Field Mapping | we can display the mapping of the fields between the input .xml file and BC. The list cannot be edited.                                                                                                 |
+| Setup Groups                  | **it is the main setup of the B2B billing module**. It allows you to save sets of options that can then be applied to all vendors or specific vendor through the association with the setup group code. |
+| Vendor Setup                  | it is possible to associate the setup group code to a specific vendor all vendors <img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/19ElectronicInvoiceForItaly.png"><br>                                                                   |
+| Job Queues Entries            | it is possible to schedule the import of .xml files. Indicate the codeunit or report to be executed, specify the start / end date and time and define the days if necessary.                            |
+<br>
+**Setup Groups**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/20ElectronicInvoiceForItaly.png"><br>
+
+From Edit you can set the different options:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/21ElectronicInvoiceForItaly.png"><br>
+
+| **General**                                     |                                                                                                                                                               |
+|-------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Code                                            | assign a code to the setup                                                                                                                                    |
+| Validate on Creation                            | decide whether to have the system checked after the electronic document preview is created                                                                    |
+| Ignore Duplicate Files                          | decide whether to have the system ignore the files (names) already imported                                                                                   |
+| **Reconcile Criteria**                          |                                                                                                                                                               |
+| Link Rating Limit                               | define a minimum rating value for a posted document to be automatically linked                                                                                |
+| Warning Rating Limit                            | define a minimum rating value for a posted document to be automatically linked without warnings                                                               |
+| Handle Document Header                          | only the document header is imported and the system will not square the totals                                                                                |
+| Allow Document Link                             | allows you to manage only the document header and also prevents the generation of a new document within BC. It is only possible to link to existing documents |
+| **Payment Data**                                |                                                                                                                                                               |
+| Payment Data From                               | specifies whether payment and setup information should be taken from the file or from the Vendor Card                                                         |
+| **Batch Processing**                            |                                                                                                                                                               |
+| Batch Electr. Doc. Creation Batch Purch. Docume | you can decide which phase to perform automatically if there are no blocking errors                                                                           |
+
+**Unit of Measure**
+
+From the Unit of Measure, a cross reference can be defined so that the system recognizes the units of measure present in the .xml file.
+
+**Checks**
+
+You can see the checks that the system makes on the documents and the error codes. The list can be modified only in the Description and Check type column.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/22ElectronicInvoiceForItaly.png"><br>
+
+It is possible to choose whether for each check the system shows:
+
+ERROR: in this case the user is blocked in the execution of the following steps
+
+WARNING: it does not block the user, but warns that there is some anomaly in the document
+
+NONE: the system does not perform the validation and no message / warning appears
+
+SILENT: the system performs validation, but does not issue messages / warnings.
+
+For the red line a further setup must be specified: Lines reconciliation ratings.
+
+**Lines reconciliation ratings**
+
+In Lines reconciliation ratings are set rules for automatic reconciliation of posted documents. This is done by assigning a score that indicates to the system whether the posted document has the necessary requirements to be matched:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/23ElectronicInvoiceForItaly.png"><br>
+
+Example:
+
+For a specic electronic document line, If the system finds a DDT that has the **correct Vendor DDT No.**  **(25 points)** and the **exact item quantity (5 points)**, will assign to that line a total points: **25 + 5 = 30**.
+
+Based on the setup, the system will or will not match the document. In our example, if the setup is the following:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/24ElectronicInvoiceForItaly.png"><br>
+
+the document will be linked to the line because it has exceeded 20, but a warning will appear because the rating does not exceed 30.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/25ElectronicInvoiceForItaly.png"><br>
+
+**Other Setups**
+
+For each vendor setup group it is possible to map the Cash Types with the desired destination account.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000305-0/50ElectronicInvoiceForItaly.png"><br>
+
+| **Field**                | **Description**                                                                                                                                                                                                                   |
+|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cash Type                | Enter the code provided in the electronic invoice layout (e.g. TC01, ...)                                                                                                                                                         |
+| Description              | Description of the code                                                                                                                                                                                                           |
+| Description 2            | Additional description                                                                                                                                                                                                            |
+| VAT %                    | % VAT applied to the amount                                                                                                                                                                                                       |
+| VAT Prod. Posting Group  | VAT Prod. Posting Group to be applied to the line                                                                                                                                                                                 |
+| Cash Line Type           | Line type to apply to the line (G/L Account, Item)                                                                                                                                                                                |
+| Cash Line No.            | No. to be applied to the line to be filled in with the G/L Account code or the Item code (depends on the completion of the "Cash line type" field)                                                                                |
+| Professional Tax Amount  | If the flag is YES the amount is reported in the "Professional Tax Amount " field, if it is NO added to the taxable amount. (e.g.: the value is No when it comes to INPS contribution, which is added to the recipient's income)  |
