@@ -1,0 +1,62 @@
+|   **Quick Guide**                                                                                                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------|
+| 1      | Perform the setup in the Customer Card                                            |
+| 2      | Specify the payment methods of the electronic document                |
+| 3      | Specify the payment terms of the electronic document                                   |
+| 4      | Create / Send the electronic document                                     
+
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/11ElectronicInvoiceForItaly.png"><br>
+
+Complete the [SETUP](https://helpbc.eos-solutions.it/main.aspx?lang=en&content=ENU_ElectronicInvoiceForItaly_setup.html).
+
+**Create / Send elettronic document**
+
+In Sales Invoice, Sales Order, Sales Credit Memo List / Posted Sales Invoice, Posted Sales Order, Posted Sales Credit Memo List you can find the Create / Send Electronic Document function which allows you to create or send electronic documents to the SdI (PA Invoice / B2B Invoice):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/5ElectronicInvoiceForItaly.png"><br>
+
+By choosing to **send** the electronic document, the system generates an .Xml file and sends it to IX. In the posted sales invoice list there is the Status field which shows the [Status of the electronic document returned by IX](https://helpbc.eos-solutions.it/main.aspx?lang=en&content=ENU_ElectronicInvoiceForItaly_StatiIXFE.html).
+
+By choosing to **create** the electronic document, the system creates an .Xml file that is linked to the invoice header in the Electronic Document Tab:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/9ElectronicInvoiceForItaly.png"><br>
+
+| **Field**              | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Electr. Document Type  | Specifies type of electronic document (TD) to export.  This field is initialized by the system according to the predefined logic and can be changed manually if needed. The criteria for determining the value to be proposed in the case of invoice are (in order of priority): 1- Billimg customer correspondent to **Self Billed Invoice Customer** set in the Outbound setup <img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/36ElectronicInvoiceForItaly.png"><br> 2- Payment Term set as **advance**  <img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/37ElectronicInvoiceForItaly.png"><br>  3- Default set in the **Vat Business Posting Group** on the document:  <img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/38ElectronicInvoiceForItaly.png"><br> 4- TD01 value if none of the above give feedback The only permitted value of credit notes is **TD04** |
+| File Name              | by clicking on the .xml file the system asks if you want to open it with the ministerial style sheet or with an alternative style sheet (which must be preloaded in the Inbound Setup (FTE)).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Status                 | the system indicates the status of the electronic document (eg created, creation error, sent, etc.).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Related Documents Data | click on the field to MANUALLY insert the lines related to the documents and then click "New". Based on the "Type" selected in the General tab, the corresponding data entry tab will be activated. The other tabs will not be active. <img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/13ElectronicInvoiceForItaly.png"><br>  N: B: **Related documents** are inherited in the case of "Copy Document" and Posting. The archive is not managed. The Tag "DatiFattureCollegate" is exported for the credit memos if the standard field Applies-to Doc. No. in the header is filled. For **Return shipment** the "NumeroDDT" tag exported in the xml is populated with the External Document No. (if present). For the "DataDDT" tag the document date is used instead of the registration date. It is possible to manually enter N-lines of 250 characters for the **"Causale"** tag directly from the Related Documents section.                                                  |
+
+Through style sheets you can view the created .xml file:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/12ElectronicInvoiceForItaly.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/10ElectronicInvoiceForItaly.png"><br>
+
+|  NB                                                                      |
+|--------------------------------------------------------------------------|
+| Discount amount:: the decimals exported for the tag ImportoSconto are 8. |
+
+|  NB                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| NB Some data for the XML file are essential, but are not essential to BC for the posting of the document. The 3 main cases are: VAT Number or Fiscal Code: if the document is posted without VAT Number or Fiscal Code the system allows you to add the data in the customer card and to export the document again with the correct data; Payment method: if the document does not have the payment method, the TAG is added to the generated file which can be populated manually directly in the file; Payment terms: if the document does not have the payment terms, the TAG is added to the generated file which can be populated manually directly in the file;   |
+
+**Extended Combine Shipment (ECS)**
+
+The invoices generated with this app additional app can be initialized with a specific Electrnic Document Type set in the setup options:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/39ElectronicInvoiceForItaly.png"><br>
+
+Being the Electronic Doc.Type also present in the sales order header it becomes a grouping criteria available in the billing methods. In this case the system will generate different invoices when the field changes, by initializing the value of type Doc. Electronic invoice with the one retrieved from the orders; if specified in the launch parameters of a default value to be assigned, this will override the one inherited from the order.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/40ElectronicInvoiceForItaly.png"><br>
+
+**Electronic Document Transmission Status**
+
+On the Sales Invoice List / Posted Cr. Memo List you can check the STATUS of the electronic document.
+
+This field allows you to monitor the IX-FE status for a document (notifications on conservation are excluded). It is shown, for example, if the document was created, validated, etc.
+
+Clicking on the status field the system opens the OUTBOUND ELECTRONIC DOCUMENT STATUS LOG. From Actions you can, for a specific document, suspend the IX-FE notification update by setting the "Disable Notifications" option.
