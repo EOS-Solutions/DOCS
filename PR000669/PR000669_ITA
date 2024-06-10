@@ -1,0 +1,118 @@
+EOS Electronic Invoice for Italy, avvalendosi di un servizio web accreditato (IX-FE di Abletech) , estende le funzionalità dell'ERP Dynamics 365 Business Central per consentire  di inviare e ricevere fatture in formato elettronico adeguandosi alla normativa vigente. Il servizio è accessibile in outsourcing via portale web e integrato con Dynamics 365 Business Central e permette appunto di archiviare/creare, inviare e ricevere, organizzare e conservare a norma le fatture elettroniche.  
+
+Il Sistema di Interscambio distingue tre tipi di file:
+•	file XML firmato digitalmente conforme alle specifiche del formato della Fattura. Può contenere: una fattura singola (un solo corpo fattura)un lotto di fatture (più corpi fattura con la stessa intestazione).Per la firma del file Fattura consultare la sezione Firmare la Fattura.  
+•	file archivio: file compresso (esclusivamente nel formato zip) contenente uno o più file Fattura. Il sistema elabora l’archivio controllando e inoltrando al destinatario i singoli file FatturaElettronica contenuti al suo interno. Di fatto i file FatturaElettronica vengono trattati come se venissero trasmessi singolarmente. Si precisa che il file archivio non deve essere firmato ma devono essere firmati, invece,tutti i file Fattura al suo interno.  
+•	file messaggio: file XML conforme a uno schema (xml schema) descritto dal file: MessaggiTypes_v1.0.xsd scaricabile nella sezione Documentazione Sistema di Interscambio. 
+Il Sistema di Interscambio attribuisce a ogni tipologia di file messaggio una nomenclatura differente. Per maggiori approfondimenti sulla nomenclatura dei file messaggio consultare l'Allegato B-1 del documento Specifiche tecniche relative al Sistema di Interscambio disponibile nella sezione Documentazione Sistema di Interscambio.
+
+Tutti i messaggi prodotti ed inviati dal Sistema di Interscambio, a eccezione del file dei metadati, vengono firmati elettronicamente mediante una firma elettronica avanzata di tipo XAdES-Bes.  
+La notifica di esito committente, unica notifica inviata dal destinatario al SdI, prevede la possibilità di essere firmata elettronicamente, sempre in modalità XAdES-Bes, in via facoltativa. 
+
+
+{{% alert title="NB" %}}
+Per maggiori approfondimenti sulla notifica di esito committente consultare la sezione Esplicitare l'esito.
+Business Central si interfaccia con Invoice Xchange (IX) di Abletech (https://www.arxivar.it)  
+{{% /alert %}}
+
+Di seguito una rappresentazione del flusso dei messaggi:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000669-0/29itElectronicInvoiceForItaly.jpg"><br>
+ 
+**Casi d'uso**
+
+1. Preparazione del Setup iniziale:
+
+* L’utente accede alla Page “Informazioni società-documento elettr."
+* Il sistema presenta la page con i campi vuoti
+* L’utente clicca “Copia da informazioni società"
+* Il sistema copia i campi dalla Tabella “Company information”
+* L’utente completa manualmente gli altri campi indicando i dati fiscali necessari  
+
+2. Invio Fatture elettroniche (Richiede sottoscrizione IX-FE) :
+ * L’utente apre la lista Fatture Registrate
+ * L’utente filtra e/o seleziona le fatture interessate
+ * L’utente clicca Azioni Salva / Invia Documento elettr.
+ * Business Central crea i files Xml secondo Naming Convention IT_CODICEFISCALE_PROGRESSIVO.Xml  
+
+**Scenario A - INVIA (Disponibile OnPrem e OnLine)**
+
+* Business Central invia i  files al portale IX-FE
+* X-FE controlla formalmente i files, rinomina i files con il CODICEFISCALE dell'intermediario e li mette in coda per l'invio al destinatario
+* IX-FE completa i files con i dati del trasmittente , li firma e li invia all ‘SDI’
+* Il SDI riceve i files e inva notifiche ad IX-FE
+* L'utente vede lo stato di invio trasmissione direttamente nella lista fatture registrate
+* L'utente può richiedere manualmente il refresh dello stato di invio o attendere il refresh schedulato 
+
+**Scenario B - SCARICA XML  (Disponibile OnPrem e OnLine)**
+
+* L'utente seleziona "Scarica XML"
+* I  files vengono scaricati in una cartella predefinita
+
+**Scenario C - SCARICA XML su Cartella (Disponibile solo OnPrem)**
+
+* L'utente seleziona "Scarica XML"
+* I files vengono scaricati in una cartella predefinita
+* Un sistema esterno controlla i files salvati , e li invia ad un intermediario accreditato con l'SDI
+
+**Nomenclatura file da trasmettere**
+
+(Fonte http://www.fatturapa.gov.it/export/fatturazione/sdi/Specifiche_tecniche_SdI_v1.1.pdf) <br>
+Le fatture elettroniche devono essere trasmesse al SdI sotto forma di file secondo una delle modalità di seguito descritte:<br>
+a) un file contenente una singola fattura;<br>
+b) un file contenente un singolo lotto di fatture (dove il “lotto” è inteso nell’accezione dell’art. 21, comma 3, Decreto del Presidente della Repubblica del 26 ottobre 1972 n. 633);<br>
+c) un file in formato compresso contenente uno o più file di tipo a) e/o uno o più file di tipo b); il formato di compressione accettato è il formato ZIP.<br>
+Nei casi a) e b) il nome del file deve rispettare la seguente nomenclatura:  
+dove:<br>
+•	il codice paese va espresso secondo lo standard ISO 3166-1 alpha-2 code;<br>
+•	l’identificativo univoco del soggetto trasmittente, sia esso persona fisica o persona giuridica, è rappresentato dal suo identificativo fiscale (codice fiscale nel caso di soggetto trasmittente residente in Italia, identificativo proprio del paese di appartenenza nel caso di soggetto trasmittente residente all’estero); la lunghezza di questo identificativo è di: o 11 caratteri (minimo) e 16 caratteri (massimo) nel caso di codice paese IT; o 2 caratteri (minimo) e 28 caratteri (massimo) altrimenti;<br>
+•	il progressivo univoco del file è rappresentato da una stringa alfanumerica di lunghezza massima di 5 caratteri e con valori ammessi [a-z], [A-Z], [0-9]. Il file deve essere firmato elettronicamente (come indicato al precedente paragrafo 2.1); in base al formato di firma elettronica adottato, l’estensione del file assume il valore “.xml” oppure “.xml.p7m”.<br>
+•	Il separatore tra il secondo ed il terzo elemento del nome file è il carattere underscore (“_”), codice ASCII 95.
+
+Es.: ITAAABBB99T99X999W_00001.xml   IT99999999999_00002.xml.p7m
+
+**Modalità di trasmissione delle fatture, ricevute e notifiche**
+
+La trasmissione dei file verso il SDI può essere effettuata utilizzando le seguenti modalità:
+
+•	un sistema di posta elettronica certificata, o di analogo sistema di posta elettronica basato su tecnologie che certifichino data e ora dell'invio e della ricezione delle comunicazioni e l'integrità del contenuto delle stesse, di seguito “servizio PEC”,; Non viene realizzato poiché è richiesta firma dei file prima dell’invio.
+
+•	un sistema di cooperazione applicativa, su rete Internet, con servizio esposto tramite modello “web service” fruibile attraverso protocollo HTTPS, di seguito “servizio SdICoop”;
+
+•	un sistema di cooperazione applicativa tramite porte di dominio in ambito Sistema Pubblico di Cooperazione (SPCoop), di seguito “servizio SPCoop”;
+
+•	un sistema di trasmissione dati tra terminali remoti basato su protocollo FTP, di seguito “servizio SdIFtp”;
+
+•	un sistema di trasmissione per via telematica attraverso il sito del Sistema d'Interscambio.
+
+**Controlli effettuati dal SDI**
+
+Il SdI, per ogni file correttamente ricevuto, effettua una serie di controlli propedeutici all’inoltro al soggetto destinatario. Questa attività di verifica, nei limiti di ambito in cui è circoscritta, si configura come:<br>
+•	una operazione necessaria a minimizzare i rischi di errore in fase elaborativa;
+
+•	uno strumento di filtro verso l’Amministrazione per prevenire, da un lato, possibili e dispendiose attività di contenzioso, e per accelerare, dall’altro, eventuali interventi di rettifica sulle fatture a vantaggio di una più rapida conclusione del ciclo fatturazione-pagamento.
+
+Il mancato superamento di questi controlli genera lo scarto del file che, conseguentemente, non viene inoltrato al destinatario della fattura.
+
+TIPOLOGIE E MODALITÀ DI VERIFICA
+
+Le tipologie di controllo effettuate mirano a verificare:
+•	nomenclatura ed unicità del file trasmesso;
+
+•	integrità del documento;
+
+•	autenticità del certificato di firma;
+
+•	conformità del formato fattura;
+
+•	validità del contenuto della fattura;
+
+•	unicità della fattura;
+
+•	recapitabilità della fattura
+
+
+
+
+
+
