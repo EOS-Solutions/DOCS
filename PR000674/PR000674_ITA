@@ -1,0 +1,29 @@
+Per quanto riguarda la fatturazione elettronica verso la Pubblica Amministrazione, è bene ricordare che si tratta di un obbligo imposto dalla Legge. Tutte le ditte fornitrici della Pubblica Amministrazione sono tenute a rispettare il linguaggio standard per la creazione delle fatture elettroniche: l’XML“Tracciato FatturaPA”e a passare dal Sistema di Interscambio (SdI) per il relativo invio.I file devono essere inoltrati in un formato .xml, firmati digitalmente, all’interno dei campi devono contenere tutti gli elementi necessari affinché possano essere accettato dal Sistema di Interscambio (SdI). Ad esempio, devono rispettare la corretta nomenclatura quale: Identificativo univoco del Trasmittente e Progressivo univoco del file e avere valorizzati tutti i campi obbligatori richiesti dalla normativa. Tutte le fatture in formato XML devono essere firmate digitalmente dal fornitore con la propria firma digitale. Questa è necessaria in quanto garantisce sia l’integrità delle informazioni contenute nella fattura che l’autenticità dell’emittente. Una volta formato correttamente e firmato digitalmente, il file può essere inviato allo SdI. Sono previsti diversi canali di trasmissione per l’invio dei file:
+
+* un sistema di posta elettronica certificata;
+
+* un sistema di cooperazione applicativa su rete internet, modello web service basato su protocollo https;
+
+* un sistema di trasmissione dati passato su protocollo FTP;
+
+* un sistema di trasmissione su portale web predefinito.
+
+La fattura deve essere conservata sostitutivamente e quindi in digitale per i canonici 10 anni.
+
+La fatturazione elettronica tra privati, o fatturazione elettronica B2B, parte da un processo analogo, utilizzando lo stesso tracciato della PA, con lievi modifiche, e lo stesso sistema di trasmissione, ossia l’inoltro tramite lo SdI. Nello specifico per inviare una fattura elettronica ad un Privato bisogna inserire nel campo “CodiceDestinatario” l’identificativo di 7 cifre del destinatario se questi è iscritto all’anagrafica del Sistema di Interscambio (SdI), altrimenti inserire il codice 0000000 e valorizzare il campo “PECDestinatario” con l’indirizzo PEC del destinatario. Il formato della fattura utilizzato per le Pubblica Amministrazione viene utilizzato nella fattura B2B indicando nel campo “FormatoTrasmissione” il valore “FPR12” mentre è possibile, per lo scambio tra privati, utilizzare anche il formato semplificato denominato “fattura semplificata”, in ottemperanza a quanto previsto dalla Legge IVA per le fatture fino a 100 euro. I Privati, per ricevere le fatture elettroniche, devono iscriversi all’anagrafica del Sistema di Interscambio (SdI) se si utilizzano canali di ricezione come web services o ftp; altrimenti si possono ricevere le fatture dallo SdI alla propria PEC. La fattura deve poi essere conservata sostitutivamente e quindi in digitale per i canonici 10 anni.
+
+Grazie all'adozione della fattura elettronica B2B, sono previste delle agevolazioni fiscali quali: minori obblighi relativi alla sospensione della comunicazione per le operazioni con i paesi black list dell’UE; l’eliminazione dello spesometro; la compilazione dei modelli INTRA, per l’acquisto di beni e servizi, e la lettera d’intento. Un altro punto di forza del provvedimento riguarda l’IVA: i rimborsi avverranno entro tre mesi dalla dichiarazione annuale e non sarà più necessario apporre il visto di conformità delle garanzie per somme che superano i 15 mila euro.
+
+**Riassumiamo in una tabella le principali differenze:**
+
+|                                                                   |  **Fatturazione elettronica verso la PA** | **Fatturazione elettronica tra privati**                                                 |
+|-------------------------------------------------------------------|-------------------------------------------|------------------------------------------------------------------------------------------|
+| Invio e ricezione di fatture elettroniche                         | ✔                                         | ✔                                                                                        |
+| È obbligatoria                                                   | ✔                                         | ✘ Dal 01 luglio per il settore petrolifero e subappaltatori pa. Dal 01 gennaio per tutti |
+|  Le fatture rispettano la versione 1.2 del xmlpa                  | ✔                                         | ✔                                                                                        |
+| Le fatture transitano da SDI                                      | ✔                                         | ✔                                                                                        |
+| Conservazione sostitutiva delle fatture per 10 anni               | ✔                                         | ✔                                                                                        |
+| Codice destinatario riportato in fattura                          | ✔ 6 cifre                                 | ✘ 7 Cifre per intermediario, oppure indirizzo PEC. Dal 30.04 è ammesso anche solo P.IVA  |
+| PEC destinatario riportata in fattura (se non iscritto a SDI)     | ✘                                         | ✔                                                                                        |
+| Automazione dei processi di ricezione delle fatture tramite IX-FE | ✔                                         | ✔                                                                                        |
+| Automazione dei processi di invio delle fatture tramite IX-FE)    | ✔                                         | ✔                                                                                        |
