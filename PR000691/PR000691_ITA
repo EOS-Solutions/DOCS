@@ -1,0 +1,169 @@
+**Electronic Invoice for Italy - Tracciato 1.7 2022**
+
+Tracciato 1.7 in vigore **dal 1 gennaio 2022:**
+
+-Adeguamento specifiche tecniche alle nuove modalità di comunicazione delle operazioni verso e da soggetti non stabiliti in Italia dal 1° gennaio 2022, attraverso l’utilizzo del tracciato della fatturazione elettronica ordinaria ed eliminazione delle indicazioni per l’invio dei dati delle operazioni transfrontaliere (esterometro) utilizzando il tracciato dati fattura
+
+-Introdotte nuove codifiche per il blocco AltriDatiGestionali per operazioni non imponibili nei confronti di un esportatore abituale
+
+-Introdotto nuovo controllo sulla fattura con codice 00475
+
+**Electronic Invoice for Italy - Tracciato 1.6.2 2020**
+
+Di seguito alcune specifiche sul tracciato 1.6 della fatturazione elettronica.
+
+È possibile trovare il dettaglio di tutte le modifiche nel file delle specifiche tecniche scaricabile sul sito dell'[Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/web/guest/specifiche-tecniche-versione-1.6.1)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/47itElectronicInvoiceForItaly.png"><br>
+
+**Cambiamenti al tracciato**
+
+-   Aumentati decimali gestiti nel tag Importo della sezione **ScontoMaggiorazione**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/48itElectronicInvoiceForItaly.png"><br>
+
+-   Introdotti nuovi valori per il tag **TipoDocumento** per la fattura ordinaria: col formato 1.6.1 sono stati introdotti diversi tipi documento in aggiunta a quelli precedentemente utilizzabili.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/49itElectronicInvoiceForItaly.png"><br>
+
+-   Introduzione nuovi valori per il tag **TipoRitenuta**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/51itElectronicInvoiceForItaly.png"><br>
+
+-   Introduzione nuovi valori e dismissione di altri per il **tag Natura**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/54itElectronicInvoiceForItaly.png"><br>
+
+-   Introduzione nuovo valore per il tag **ModalitaPagamento**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/55itElectronicInvoiceForItaly.png"><br>
+
+-   Per la sezione DatiBollo rimossa l’obbligatorietà per l’elemento **ImportoBollo**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/56itElectronicInvoiceForItaly.png"><br>
+
+**Scadenze**
+
+È possibile scaricare il provvedimento con i dettagli normativi al seguente link: <https://www.agenziaentrate.gov.it/portale/web/guest/provvedimento-del-28-febbraio-2020>
+
+Il **tracciato 1.6.1** potrà essere utilizzato a partire dal 1° ottobre 2020, ma sino al 31 dicembre il Sistema di Interscambio continuerà ad accettare anche le attuali fatture elettroniche, basate sulla versione 1.5 delle specifiche tecniche.
+
+**Modifiche software - Fatturazione attiva**
+
+Importo sconto a 8 decimali
+
+Con il tracciato 1.6 il numero dei decimali esportabili nel tag ImportoSconto è 8, contro i 2 accettati precedentemente. Questo non comporta alcuna modifica nell’utilizzo della funzionalità, ma riduce sensibilmente la casistica in per cui veniva generata una riga di quadratura dal sistema nel caso in cui lo sconto unitario calcolato eccedesse i decimali permessi.
+
+Setup
+
+Nella page “Setup in uscita (FTE)” sono ora presenti i campi:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/57itElectronicInvoiceForItaly.png"><br>
+
+| **Campo**               | **Descrizione**                                                                                                                          |
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| Formato esportazione    | Opzioni disponibili 1.2 e 1.6. Determina il formato che il file generato dal sistema deve rispettare                                     |
+| Data inizio formato 1.6 | Tutti i documenti con data registrazione successiva alla data indicata in questo campo dovranno obbligatoriamente avere il formato 1.6.1 |
+
+
+
+
+{{% alert title="Attenzione!" %}}
+Come si evince dalla parte normativa, il passaggio al nuovo tracciato presuppone il cambiamenti di diversi setup. Per questo motivo consigliamo di eseguire i seguenti passaggi: 
+1) Chiudere la fatturazione del mese precedente  
+2) Modificare i setup necessari 
+3) Iniziare il nuovo periodo di fatturazione con il tracciato 1.6.1
+{{% /alert %}}
+
+
+Repertorio documento elettronico
+
+Una nuova page “Repertori doc. elettronico” contiene i codici anagrafici per:
+
+\- TipoDocumento
+
+\- TipoRitenuta
+
+Questo elenco è creato in automatico dal sistema in base alle indicazioni ufficiali dall’AdE e riporta, ove significativa, l’indicazione del formato che li supporta e del tipo documento BC di riferimento.
+
+La page si visualizza da **Categorie reg. business IVA** cliccando sul campo **Tipo doc. elettronico di default**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/69itElectronicInvoiceForItaly.png"><br>
+
+Tipo documento elettronico su Testate documenti
+
+Essendo stata ampliata la lista dei valori possibili **per il tag TipoDocumento**, è ora presente il **campo Tipo doc. elettronico** sulle testate dei documenti di vendita e assistenza. Tale campo è inizializzato dal sistema secondo delle logiche predefinite e può essere modificato manualmente all’esigenza.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/50itElectronicInvoiceForItaly.png"><br>
+
+Criteri per determinare il valore da proporre nel caso di fattura sono (in ordine di priorità):
+
+1.  Cliente di fatturazione corrispondente a **Cliente autofattura** impostato nel setup in uscita
+2.  Condizione di pagamento identificata come **anticipo**
+3.  Valore specificato nella scheda della **Categoria Reg. Business IVA** del documento
+4.  Valore **TD01** nel caso nessuno dei precedenti dia un riscontro
+
+Per le note di credito il valore permesso rimane unicamente TD04.
+
+| **Nello specifico**                                                                               |                                                                                                                                               |
+|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 1. Cliente di fatturazione corrispondente a **Cliente autofattura** impostato nel setup in uscita | <img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/59itElectronicInvoiceForItaly.png"><br>                                                                                      |
+| 2. Condizione di pagamento identificata come **anticipo**                                         | !<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/60itElectronicInvoiceForItaly.png"><br>      |
+| 3. Ora è presente il campo Tipo doc. elettronico di default nelle Cat. Reg. Business IVA          | !<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/61itElectronicInvoiceForItaly.png"><br> |
+
+Fatturazione cumulativa EOS (ECS)
+
+Le fatture generate dalla procedura in oggetto, possono essere inizializzate con un **tipo doc. elettronico** specifico, impostabile nei parametri di lancio. In questo modo è possibile determinare il TD con cui inizializzare le fatture generate da ogni singolo lancio.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/62itElectronicInvoiceForItaly.png"><br>
+
+Essendo il campo **tipo doc. elettronico** ora presente anche in testata ordine di vendita, tale campo diventa un criterio di raggruppamento disponibile nei metodi di fatturazione. In questo caso il sistema genererà fatture diverse al cambiare del campo, inizializzando il valore di tipo doc. elettronico sulla fattura con quello recuperato dagli ordini; se specificato nei parametri di lancio un valore di default da assegnare, questo sovrascriverà quello ereditato dall’ordine.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/63itElectronicInvoiceForItaly.png"><br>
+
+Controlli aggiunti
+
+Sono ora presenti alcuni nuovi controlli, in fase di posting o di esportazione file, di congruenza tra il formato di esportazione specificato a setup e:
+
+-   Tipo doc. elettronico
+-   Natura
+
+È ora controllato che nel caso in cui **Data registrazione e Data effettuazione operazione** ricadano in mesi differenti, il tipo doc. elettronico debba essere
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/64itElectronicInvoiceForItaly.png"><br>
+
+**Modifiche software - Fatturazione passiva**
+
+Importo sconto a 8 decimali
+
+Ora il formato del campo in cui viene recepito il valore dell’importo sconto in modo da accettare 21 caratteri e non solo 15 come da tracciato precedente.
+
+Dati ritenuta
+
+Ora il mapping in ingresso recepisce più record per questo gruppo, il dato è salvato in un nuovo tipo di dettaglio riga
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/65itElectronicInvoiceForItaly.png"><br>
+
+A livello di file in entrata i **DatiRitenuta** sono consultabili tramite nuova action
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/52itElectronicInvoiceForItaly.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/53itElectronicInvoiceForItaly.png"><br>
+
+In anteprima è alimentata la sezione di testata, dove il dato era salvato precedentemente, con l’aggiunta dell’informazione sul TipoRitenuta e la possibilità di navigare il dettaglio completo delle righe ritenuta ricevute
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/67itElectronicInvoiceForItaly.png"><br>
+
+Se il TipoRitenuta è **RT01** o **RT02** (unici codici precedentemente supportati e che identificano la ritenuta standard BC), i valori sono riportati anche in testata anteprima. L’importo ritenuta è poi trasposto della sezione **Ritenute-INPS** standard BC al momento della creazione della fattura acquisto.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/66itElectronicInvoiceForItaly.png"><br>
+
+Controlli aggiunti
+
+Sono ora presenti alcuni nuovi controlli legati ai **tipi ritenuta**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/67itElectronicInvoiceForItaly.png"><br>
+
+Sono di default impostati come **errore.** La severità rimane modificabile per gruppo fornitore. È verificato che in presenza di una ritenuta, il fornitore in anteprima doc. elettronico abbia il relativo setup compilato.
+
+
