@@ -1,0 +1,203 @@
+|   **Guida rapida**                                                                                                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------|
+| 1      | Impostare il setup in uscita                                               |
+| 2      | Compilare il setup bollo                 |
+| 3      | Definire i metodi di pagamento                                      |
+| 4      | Definire le condizioni di pagamento                                      
+
+     
+<table>
+<thead>
+<tr>
+<th><strong>Download transcodifiche per i regimi fiscali</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://docs-test.eos-solutions.it/Images/ex063/electronic%20invoice%20for%20italy%20-%20transmission%20setup/ImportTransco.txt">Import Transcodifiche</a></td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Download fogli di stile per visualizzazione.XML</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://docs-test.eos-solutions.it/Images/ex063/electronic%20invoice%20for%20italy%20-%20transmission%20setup/Foglio_di_stile_fattura_PA_v1.2.2.xsl">Foglio di stile fattura PA</a></td>
+</tr>
+<tr>
+<td><a href="https://docs-test.eos-solutions.it/Images/ex063/electronic%20invoice%20for%20italy%20-%20transmission%20setup/Foglio_di_stile_fatturaordinaria_v1.2.2.xsl">Foglio di stile fattura ordinaria</a></td>
+</tr>
+<tr>
+<td><a href="https://docs-test.eos-solutions.it/Images/ex063/electronic%20invoice%20for%20italy%20-%20transmission%20setup/FoglioStileMyInvoice.xsl">Foglio di stile My Invoice</a></td>
+</tr>
+</tbody>
+</table>
+     
+
+
+
+
+<br>
+
+**Setup in uscita (FTE)**
+In Setup in uscita (FTE) si trova la page che deve contenere le informazioni della società rilevanti ai fini della fatturazione elettronica. Cliccando su "Copia da Informazioni Società" è possibile compilare in automatico le informazioni già definite e completare la compilazione degli altri campi:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/16itElectronicInvoiceForItaly.png"><br>
+
+
+| **Campo**                                             | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tipo di società                                       | specifica il tag "RegimeFiscale". Viene copiato dalle informazioni società se già compilato.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Intermediario**                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Sogg. Emittente / Nr. intermediario trasmittente      | è possibile indicare i dati del soggetto trasmittente nel caso in cui per la trasmissione non ci si avvalga di Abletech.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Iscrizione REA**                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Nr. REA, Prvincia ufficio REA, Stato liquidazione REA | inserire i dati relativi all'iscrizione al Repertorio delle notizie Economiche e Amministrative                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Capitale sociale                                      | valorizzare il campo nel caso di società di capitali (SpA, SApA, SRL)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Stato azionista                                       | nei casi di società per azioni e a responsabilità limitata, l'elemento informativo va valorizzato per indicare se vi è un socio unico oppure se vi sono più soci                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **Comunicazione**                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Nr. di telefono, Nr. fax, E-mail                      | inserire i dati di contatto                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **Numerazione**                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Nr. iniziale ID file                                  | si utilizza un numeratore di tipo alfanumerico (quindi che utilizza e incrementa sia numeri, che lettere) per la generazione dell’ID del file .xml dei documenti attivi. In questo modo gli ID a disposizione aumentano considerevolmente rispetto ai 99999 utilizzabili con i Nr. serie standard. L’utilizzo è alternativo rispetto al campo presente “Nr. serie invio doc. elettronico”.                                                                                                                                                                                                                                                            |
+| Ultimo ID file utilizzato - Ultima data utilizzata    | campi calcolati in automatico dal sistema                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Controlli**                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Data inizio fatturazione elettronica                  | data a partire dalla quale l’utente invierà le fatture in formato elettronico. Dovranno quindi essere rispettati i requisiti minimi per passare i controlli dello SdI. All'atto del posting di un documento, se la Data registrazione del documento è successiva alla Data inizio fatturazione elettronica impostata a setup, il sistema controlla che i seguenti campi siano compilati: -Formato documento elettronico -Metodo pagamento -Condizioni pagamento -Codice destinatario doc. elettronico o PEC cliente -P. IVA o CF cliente In caso uno o più controlli abbiano esito negativo il sistema blocca la registrazione restituendo un errore. |
+| Nr. campo cod. paese                                  | scegliere il campo dell'anagrafica Paesi, che indicherà al sistema il codice ISO corretto da considerare per la fatturazione elettronica. La procedura di controllo sulla data registrazione, verificherà unicamente i documenti per cui il Cod. paese del cliente di fatturazione è “IT”. In tal modo è possibile escludere i paesi esteri (per i quali non è obbligatorio emettere la fattura elettronica) dai controlli del sistema sui campi: Formato documento elettronico, Metodo pagamento, Condizioni pagamento, Codice destinatario doc. elettronico / PEC cliente, P. IVA / CF cliente.                                                     |
+| **Opzioni file**                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Formato esportazione                                  | permette di definire in che formato esportare il file nel periodo in cui è possibile utilizzare sia il formato 1.2, sia il formato 1.6.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Data inizio formato 1.6                               | definisce la data a partire dalla quale tutti i file esportati saranno obbligatoriamente in formato 1.6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Cliente autofattura                                   | specifica un cliente o un filtro che verrà usato per determinare se esportare il documento elettronico come TD20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Cod. Destinatario autofatture/integrazioni            | Se compilato viene riportato nel campo codice destinatario dell’xml integrazioni e autofatture                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Aggiungi commenti di riga                             | barrare l'opzione se si desidera includere nel file XML i commenti di riga dei documenti accodandoli alla descrizione di riga                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Aggiungi codice articolo                              | il cod. articolo non è obbligatorio nel file .xml. È possibile decidere di inserirlo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Non aggiungere allegati al file                       | spuntare l'opzione se non si vuole allegare documenti al file .xml (un file viene scartato dallo SdI se supera i 5 MB)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Documenti in valuta                                   | è possibile definire come trattare i documenti in valuta - Blocca (non sarà possibile esportare il file) - EUR (il file .xml verrà esportato in euro come previsto dalle specifiche)                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Dicitura CONAI                                        | è possibile inserire delle diciture fisse riguardanti il CONAI. Queste diciture verranno esportate nel tag Causale                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Dicitura Ecobonus                                     | è possibile inserire una dicitura fissa riguardanti l'Ecobonus. Se compilato, il testo specifico verrà esportato nel tag AltriDatiGestionali                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Cat. reg. business IVA soloIVA                        | scegliere la categoria reg. business IVA da utilizzare per le righe di sola IVA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Tag dati documento Mgt.                               | specifica quale campo dell'intestazione del documento verrà esportato come tag Dati                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Esporta righe descrittive                             | scegliere se esportare o no le righe di descrizione, se esportarle collegandole alla riga precedente o successiva                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Ignora righe con quantità zero                        | le righe con quantità a zero non vengono esportate nel file .xml                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Metodo esportazione                                   | specifica se gli sconti sulle righe saranno esportati come importo o come percentuale. In caso di differenze dovute all'arrotondamento verrà utilizzato il metodo per importo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **File System**                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Percorso file                                         | cartella in cui vengono salvati i file se non ci si avvale dell'integrazione con IX (avendo precedentemente installato l'app per File System)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+
+
+<br>
+**Altri setup**
+
+Da Movimenti coda processi è possibile schedulare l'invio dei file .xml. Indicare la codeunit o il report da eseguire, specificare data e ora inizio/fine e definire eventualmente i giorni.
+
+Da Setup clienti si può definire un gruppo setup specifico per tutti i clienti e/o definire un gruppo setup differente per un singolo cliente  
+
+Tale setup è raggiungibile nel “Setup in uscita FTE” attraverso le azioni “gruppi setup” e “Setup clienti”.
+
+Nei “gruppi di setup” è possibile impostare più modelli con regole differenti ti esportazione del dato nella fattura/nota credito elettronica in formato xml.
+
+Tali impostazioni riguardano inclusione o l’esclusione dell’allegato pdf della fattura/nota credito, l’esportazione di dati Documento di trasporto, altri dati correlati, ecc.  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/119itElectronicInvoiceForItaly.png"><br>
+
+Nel “setup clienti” è possibile abbinare il setup precedentemente impostato a tutti i clienti, ad un singolo cliente o ad una singola classe documento (se è installata l’app Classi Documento
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/120itElectronicInvoiceForItaly.png.png"><br>
+
+Da Elenco di traslitterazione è possibile valorizzare simboli/caratteri presenti nei file .xml in modo che il sistema li riconosca. (Traslitterare=Trascrivere una parola, una frase, un testo da un sistema alfabetico a un altro)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/32itElectronicInvoiceForItaly.png"><br>
+
+In Setup registrazioni IVA compilare il campo "Natura transazione IVA".
+
+**Setup bollo (FTE)**
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/17itElectronicInvoiceForItaly.png"><br>
+
+| **Generale**                                                                                                           |                                                                                                                                                               |
+|------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Importo bollo                                                                                                          | Costo del bollo (2,00 euro)                                                                                                                                   |
+| Importo minimo fattura (VL)                                                                                            | Va indicato l'importo minimo che deve avere una fattura affinchè sia passibile di applicazione bollo                                                          |
+| Data inizio validità imposta di bollo                                                                                  | Si può inserire una data a partire dalla quale sarà attiva la gestione bolli                                                                                  |
+| **Creazione riga**                                                                                                     |                                                                                                                                                               |
+| Conto C/G Bollo                                                                                                        | Se il bollo viene addebitato al cliente, va indicato un conto C/G sul quale movimentare l'importo. Sulla stampa della fattura comparirà una riga di addebito. |
+| Cat. reg. business bollo Cat. reg. articolo/servizio bollo Cat. reg. business IVA bollo Cat. reg. art./serv. IVA bollo |  Inserire codici specifici per le categorie di registrazione articoli/servizi o business IVA relativamente alla gestione dei bolli                            |
+| **Documento elettronico**                                                                                              |                                                                                                                                                               |
+| Doc. Elettr. testo causale                                                                                             | Testo che comparirà sulla stampa della fattura nel caso il bollo venga pagato dall'azienda                                                                    |
+
+
+<br>
+
+| **NB**                                                                               |
+|--------------------------------------------------------------------------------------|
+| La **creazione riga viene gestita solo sulla fattura di vendita** e non sull’ordine. |
+
+
+
+<br>Oltre a impostare il “Setup Bollo (FTE), per esportare nel tag del tracciato Fattura Elettronica 2.1.1.6 <DatiBollo> i valori 2.1.1.6.1 <BolloVirtuale> e 2.1.1.6.2 <ImportoBollo> è necessario attivare il flag Imposta di bollo per il setup registrazione iva interessato 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/118itElectronicInvoiceForItaly.png"><br>
+
+
+<br>
+**Setup anagrafica cliente**
+
+
+Nella scheda cliente, sotto il Tab Documento elettronico, compilare i seguenti campi:<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/3itElectronicInvoiceForItaly.png"><br>
+
+| **Campo**                   | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Formato doc. elettronico    | indicare se il cliente gestisce: la fatturazione elettronica PA la fatturazione elettronica B2B Se la fatturazione elettronica non viene gestita lasciare il campo vuoto (es. nel caso di cliente estero)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Cod. dest. doc. elettronico | -Nel caso sia stata scelta l'opzione Fattura PA nel campo "Formato documento elettr.", inserire un codice alfa-numerico di **6 caratteri** che individua l’ente pubblico o un ufficio dello stesso, in maniera univoca. Tale codice è reperibile sul sito <http://www.indicepa.gov.it/documentale/index.php.> -Nel caso sia stata scelta l'opzione Fattura B2B nel campo "Formato documento elettr.", inserire un codice alfa-numerico di **7 caratteri**.  Nel caso il cliente utilizzi il servizio di Abletech indicare come codice dest. doc. elettr. A4707H7 Per un cliente iscritto al registro pubblico degli indirizzi indicare 0000000 Per un cliente estero non residente è possibile indicare XXXXXXX  Nel caso non si disponga di un codice destinatario è possibile indicare l'email PEC  |
+| No fatturazione elettronica | Se barrato, il cliente viene escluso dal processo della fatturazione elettronica. Non verrà effettuato alcun controllo in fase di posting e non sarà possibile esportare file xml per tale cliente.  Va attivato per quei clienti che, **da normativa, sono esentati** dall'obbligo di fatturazione elettronica.                                                                                                                                                                                                                                                                                               
+
+<br>
+**Mezzi di comunicazione previsti dallo SdI - casi d'uso-**
+
+
+
+| **Casella PEC**        | nel caso in cui il Cliente ci abbia fornito solo l’e-mail PEC, in anagrafica Cliente popoleremo il relativo campo "e-mail PEC" e inseriremo come Cod. destinatario doc. elettronico: "0000000". Sul file .xml creato verrà riportato tale indirizzo e-mail. Il SdI riconosce quindi il Cliente in base all’indirizzo e-mail. Nel caso il cui sull’anagrafica Cliente non fosse stato inserito il Cod. destinatario, il sistema popolerà il codice automaticamente con ‘0000000’. |
+|-------------------------|------------------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **CodIce destinatario** | se il Cliente ci ha fornito un Cod. destinatario, nel campo "Cod. destinatario documento elettronico" in anagrafica inseriremo tale codice (può essere quello specifico del Cliente o quello del suo intermediario). Nel caso non sia stato specificato alcun codice destinatario, il sistema non permetterà l’estrazione del file .xml.                                                                                                                                         |
+| **Partita IVA / C.F.**  | Se non siamo a conoscenza di nessuno dei dati precedentemente menzionati, allora nel campo Cod. destinatario doc. elettronico riportiamo ‘0000000’. Il SdI riconoscerà il Cliente in base alla PI o CF definito nel file .xml.                                                                                                                                                                                                                                                   |
+| **Fatture estere**      | In caso di fattura emessa verso soggetti non residenti, non stabiliti, non identificati in Italia, e inviata al Sistema di Interscambio al fine di trasmettere i dati per la dichiarazione Dati Fatture, impostiamo ‘XXXXXXX’ nel Cod. destinatario doc. elettronico. Ovviamente il SdI non recapiterà la fattura, quindi si è tenuti ad inviarla anche con le metodologie standard (es. mail con .pdf allegato).                                                                |
+
+
+
+<br>
+
+**Metodi di pagamento**
+
+
+
+In Metodi di pagamento compilare il campo Metodo di pagamento fattura PA: inserire uno dei codici stabiliti dall'Agenzia delle Entrate.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/6itElectronicInvoiceForItaly.png"><br>
+
+**Condizioni di pagamento**
+
+In Condizioni pagamento compilare il campo Cod. condizioni pagamento fattura inserire uno dei codici stabiliti dall'Agenzia delle Entrate:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/7itElectronicInvoiceForItaly.png"><br>
+
+**No fatturazione elettronica su Nr. serie**
+
+In alcuni casi particolari la normativa vigente consente di non effettuare l'invio della Fattura Elettronica allo SdI.
+
+I passaggi da effettuare in questo caso sono i seguenti:
+
+1\. Va creato per questi documenti un Registro IVA separato:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/95itElectronicInvoiceForItaly.png"><br>
+
+2\. Il Registro IVA creato va collegato ad un Nr. serie e va abilitata l'opzione "No fatturazione elettronica": **tutti i documenti** che utilizzano questo Nr. serie possono essere registrati senza che vengano compilati i campi obbligatori relativi alla fattura elettronica.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/96itElectronicInvoiceForItaly.png"><br>
+
+3\. Al momento della creazione di un documento vendita per un Cliente avente dati della Fatturazione Elettronica compilati in anagrafica, scegliendo il Tipo operazione NO-FTE nel caso di esempio, il sistema non compilerà i campi relativi alla fattura elettronica:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/97itElectronicInvoiceForItaly.png"><br>
+
+Nel caso in cui si intervenga manualmente modificando il tipo operazione, i dati sono recuperati nuovamente dalla Scheda cliente:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/98itElectronicInvoiceForItaly.png"><br>
