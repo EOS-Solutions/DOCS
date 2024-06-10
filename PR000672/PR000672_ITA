@@ -1,0 +1,43 @@
+Di seguito elenchiamo i possibili stati stati IX-FE del Documento elettronico inviato al Sistema di Interscambio.
+
+Tale stato è visibile nel campo "Stato doc. elettronico" della Lista fatture registrate ed è possibile aggiornarlo da Ribbon-\>Azioni-\>Aggiorna stato IX-FE.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000672-0/30itElectronicInvoiceForItaly.png"><br>
+
+| **ESEMPI DI MESSAGGI DI STATO RESTITUITI DA IXFE**                                            |
+|-----------------------------------------------------------------------------------------------|
+| OUTBOUND                                                                                      |
+| VALIDATION_ERROR (validazione formale/avanzata IX.FE fallita)                               |
+| SIGN_ERROR (errore di firma)                                                                  |
+| DELIVERY_RECEIPT_B2B (flusso B2B – Notifica di Ricevuta Consegna)                             |
+| FAILED_DELIVERY_B2B (flusso B2B – Notifica di Impossibilità di Recapito)                      |
+| REJECTION_B2B (flusso B2B – Notifica di Scarto)                                               |
+| DELIVERY_RECEIPT_PA (flusso PA – Notifica di Ricevuta Consegna)                               |
+| FAILED_DELIVERY_PA (flusso PA – Notifica di Mancata Consegna)                                 |
+| REJECTION_PA (flusso PA – Notifica di Scarto)                                                 |
+| OUTCOME_PA (flusso PA – Notifica di Esito)                                                    |
+| DEADLINE_PASSED_PA (flusso PA – Notifica di Decorrenza Termini)                               |
+| PROOF_OF_TRANSMISSION_PA (flusso PA – Attestazione Trasmissione con Impossibilità di recapito |
+| CONSERVATION_ERROR (errore di invio in conservazione)                                         |
+| INBOUND                                                                                       |
+| TAKEN_OVER (Ricezione Fattura – Notifica di Presa in Carico da parte di IX.FE)                |
+| OUTCOME_PA (flusso PA – Notifica di Esito trasmessa con successo al SdI)                      |
+| OUTCOME_REJECTION_PA (flusso PA – Notifica di Esito trasmessa con errori al SdI)              |
+| DEADLINE_PASSED_PA (flusso PA – Notifica di Decorrenza Termini)                              |
+| CONSERVATION_ERROR (errore di invio in conservazione)                                         |
+
+<br>
+Gli **stati delle fatture in BC** vengono aggiornati in base alla schedulazione fatta o quando l’utente li aggiorna. E’ normale quindi che lo stato in IXFE sia più “avanti” di quanto si vede in BC se non è stato fatto un refresh.
+
+Possibili stati presentati da BC:
+
+| BC INVIATO Documento inviato                                     |
+|------------------------------------------------------------------|
+| BC CREATO Documento creato                                       |
+| BC ERRORE_CREAZIONE Errore durante la creazione del file xml     |
+| BC ERRORE_INVIO Errore durante l''invio                          |
+| BC CONFERMATO_MANUALMENTE Ciclo documento confermato manualmente |
+| BC NOTIFICHE_ATTIVE Notifiche riattivate manualmente.            |
+
+
+
