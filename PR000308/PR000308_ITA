@@ -1,0 +1,128 @@
+|   **Guida rapida**                                                                                                          |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------|
+| 1      | Importare il file xml                                               |
+| 2      | Visualizzare l'anteprima documento elettronico                |
+| 3      | Creare una fattura / Nota di credito acquisto                                   |
+| 4      | Registrare la fattura / Nota di credito acquisto                                     
+
+<br>
+
+
+
+Eseguire il [SETUP] [Electronic Invoice For Italy - Setup]({{<relref "electronic-invoice-for-italy-setup">}})
+
+
+ll modulo consente di importare i file .xml/p7m, di visualizzarli e di gestirli, modificandoli, se sono presenti anomalie. Dal file importato viene creato un’anteprima documento acquisto che può essere associato ad una fattura provvisoria già esistente. Se ci si avvale del servizio cloud IX-FE (con cui Eos Electronic Invoice for Italy è in grado di interfacciarsi), si possono gestire tutte le fasi di invio e ricezione delle fatture elettroniche da/verso aziende private, verso gli acquirenti finali e verso la Pubblica Amministrazione.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/14itElectronicInvoiceForItaly.png"><br>
+
+**File in entrata (FTE)**
+
+All'atto della ricezione di una fatt. elettronica andare in File in entrata (FTE) per importarla nel sistema. Premere:
+
+-   **Importa file** per importare un singolo file
+-   **Importa zip** per importare i file da una cartella impostata a setup
+-   **Importa da IX-FE** per importare i file tramite il connettore IX-FE (funzione disponibile per chi ha acquistato il modulo relativo)
+
+Se il file di import è in formato p7m / P7M (file XML firmato), esso viene convertito in .xml dal sistema. Può essere che un file comprenda un lotto di documenti. Nel caso, vengono scompattati all'atto dell'importazione.
+
+| NB |
+|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| I file scartati si trovano alla page File rifiutati in entrata (FTE). Da qui possono essere ripristinati tramite l'action Ripristina.         |
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/15itElectronicInvoiceForItaly.png"><br>
+
+| **Azione / Campo**     | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Naviga-\>Dettagli      | Da Naviga è possibile visualizzare le informazioni sulle righe del documento (Dati Beni/Servizi, Dati Riepilogo, Dati Ordine Acquisto, Dati DDT, Dati Pagamento, Dati Sconto/Maggiorazione, Dati Ritenuta).                                                                                                                                                                                                                                                                                                                               |
+| Allegati               | Se il file xml ricevuto contiene un PDF o altro allegato è possibile visualizzare i files da Visualizza-\>Allegati. Cliccando sul nome file è possibile aprirlo. Alcuni file allegati ai documenti in ingresso hanno un nome file con caratteri particolari ad esempio “\\”. Questi caratteri vengono riconosciuti (avendo impostato il setup per la traslitterazione) e il sistema riesce ad aprire il file. N. B. Nelle schede fatture provvisorie / registrate è invece presente un fowfield che consente di visualizzare l'allegato.  |
+| Nr. Progressivo Eos.FE | La colonna Nr. progressivo EOS.FE riporta i numeri progressivi dei file importati tramite IX-FE. Il report "Stampa tracciabilità protocollo ricezione" mostra la corrispondenza tra progressivo documento importato e documento registrato in BC. Se il documento registrato non deriva da un file importato attraverso il connettore IX-FE, il Nr. progressivo sarà "XXXXXXXXXXXXXXXXXXXX".                                                                                                                                              |
+| Messaggi               | In Messaggi-\>Mostra Log messaggi il sistema visualizza eventuali messaggi di errore / avviso                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+
+**Dati Ritenuta**
+
+A livello di file in entrata i DatiRitenuta sono consultabili tramite Naviga-\>Dettagli-\>DatiRitenuta:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/42itElectronicInvoiceForItaly.png"><br>
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/43itElectronicInvoiceForItaly.png"><br>
+
+In Scheda anteprima documento elettronico, nella sezione di testata, troviamo l’informazione sul TipoRitenuta e abbiamo la possibilità di navigare il dettaglio completo delle righe ritenuta ricevute
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/44itElectronicInvoiceForItaly.png"><br>
+
+Se il TipoRitenuta è RT01 o RT02 (identificano la ritenuta standard BC), i valori sono riportati anche in testata anteprima. L’importo ritenuta è poi trasposto della sezione Ritenute-INPS standard BC al momento della creazione della fattura acquisto.
+
+**Controlli sulle ritenute**
+
+Sono presenti alcuni controlli legati ai tipi ritenuta.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/45itElectronicInvoiceForItaly.png"><br>
+
+Sono di default impostati come errore, la severità rimane modificabile per gruppo fornitore.
+
+È verificato che in presenza di una ritenuta, il fornitore in anteprima doc. elettronico abbia il relativo setup compilato.
+
+**Elaborazione file in entrata**
+
+Tramite **Elaborazione-\>Valida** il sistema esegue i controlli sul file.
+
+**Elaborazione-\>Crea anteprima documento elettronico** il sistema genera una anteprima del documento elettronico in cui sarà possibile effettuare modifiche/correzioni se necessario.
+
+Elaborazione-\>Elabora: il sistema valida e genera l'anteprima in un unico passaggio.
+
+**Anteprima documenti in entrata (FTE)**
+
+In Anteprima documenti in entrata il sistema mostra tutte le anteprime create (stato= Testata acquisti):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000308-0/35itElectronicInvoiceForItaly.png"><br>
+
+Da **Gestione-\>Modifica** è possibile aprire la scheda dell'anteprima. Per creare la fattura elettronica dall'anteprima è necessario che nel campo Stato non compaiano errori. Il sistema mostra sia gli errori (bloccanti), che gli avvisi (non bloccanti). Nel caso gli errori / avvisi si riferiscano alle righe, vengono riportati sulla specifica riga cui si riferiscono. Correggere quindi le eventuali anomalie del documento ad es.: controllare che i campi Tipo e Nr. siano compilati in modo che il sistema riconosca (Messaggi-\>Valida) la cat reg. art/serv. iva e riesca quindi a calcolare l'imponibile. L'errore bloccante scompare e a questo punto si può procedere con la creazione della testata acquisti. I totali sono mostrati in rosso se il sistema non riesce a quadrarli.
+
+| **Campo**                                                                 | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Stato                                                                     | Indica lo stato del documento. Può mostrare: errore/avviso in caso il file non sia in regola per procedere con la creazione della fatt. elettronica. la dicitura "Anteprima" se è stato importato il file .xml ed è stata creata un'anteprima del documento elettronico. la dicitura "Testata acquisti" se è già stato creato un documento elettronico provvisorio per il file. la dicitura "Registrato" se il documento creato dall'xml è già stato registrato.   |
+| Avvisi / Errori                                                           | specificano eventuali irregolarità presenti nel documento. Cliccando è possibile avere il dettaglio.                                                                                                                                                                                                                                                                                                                                                               |
+| Tipo di doc. testata acq./Nr. doc. testata acq./Nr. doc testata acq. reg. | campi in cui sono presenti le indicazioni relative al documento creato/registrato                                                                                                                                                                                                                                                                                                                                                                                  |
+| Tipo di documento                                                         | viene specificato se si tratta di Fattura/Nota credito                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Pagare a - Nr. fornitore / Nome                                           | Numero e nome del fornitore. E' possibile inserire manualmente l'anagrafica fornitore se non è presente a sistema. Nel Tab Generale-\>Pagare a Nr. fornitore.                                                                                                                                                                                                                                                                                                      |
+
+Dal Ribbon è possibile aprire il file .xml con formattazione o senza.
+
+
+
+{{% alert title="NB" %}}
+C'è la possibilità di gestire SOLO la testata del documento spuntando l'opzione relativa. In questo modo il sistema crea il documento acquisto anche senza che vengano riconciliate le righe.
+{{% /alert %}}
+
+{{% alert title="NB" %}}
+Importo sconto: il **numero dei decimali** che il sistema accetta nel tag **ImportoSconto** è **21**
+{{% /alert %}}
+
+
+<br>
+**ABBINARE I CARICHI**
+
+Nell'anteprima del doc. elettronico il sistema riesce ad abbinare i carichi alle righe compilando di conseguenza i campi Tipo/Nr. articolo, le categorie art. /serv. IVA. Riguardo a costo unitario e importo valgono invece quelli passati dal file .xml. Il sistema mostra un avviso nel caso non ci sia coincidenza tra ordine abbinato e dati del file .xml. Da Riconcilia righe doc. reg. posso gestire l'abbinamento con il carico:
+
+Nella page in alto sono presenti i dati di testata documento, sotto vediamo le righe del documento elettronico, in basso un riepilogo dei totali e nel riquadro a destra un elenco dei carichi ricercati dal sistema per Fornitore e Valuta. Il sistema gestisce con un punteggio (che considera Nr. documento fornitore, Nr. DDT, Articolo, Quantità ecc.) l'abbinamento automatico dei carichi.
+
+In [Setup in entrata (FTE)-\>Gruppi Setup](https://helpbc.eos-solutions.it/main.aspx?lang=it-it&content=ITA_ElectronicInvoiceForItaly_setup.html) viene impostato quale deve essere il punteggio limite per poter effettuare l'abbinamento. Quando il sistema riesce ad assegnare al carico tale punteggio lo abbina al documento acquisto. In verde= carico abbinato senza avvisi, in rosso= carico abbinato con avviso in base alle impostazioni di setup).
+
+Nella page è possibile operare manualmente aggiungendo righe, collegandole e scollegandole per far quadrare il documento con i carichi. Si può anche visualizzare il DDT da Scheda.
+
+                                        
+
+
+{{% alert title="NB" %}}
+Le righe aggiunte si possono eliminare. Non si possono eliminare quelle derivanti dal file .xml.
+{{% /alert %}}
+
+Da Testata acquisti-\> **Crea Testata acquisti** è possibile creare il documento di acquisto (o collegare il documento ad uno già esistente ad es. alla fattura di un professionista già presente nella lista fatture acquisto provvisorie in BC).
+
+Nella Fattura acq. reg. , nel Tab "Documento elettr." del documento creato è presente il link al file .xml di partenza e il link all'anteprima del documento.
+
+**Documenti registrati**
+
+Infine è possibile **registrare il documento** creato. Andando in Anteprima documenti in entrata (FTE) la riga relativa alla fattura appena creata riporterà il numero testata acquisto. Nel campo "Stato" comparirà "Registrato".
