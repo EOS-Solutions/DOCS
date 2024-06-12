@@ -1,0 +1,29 @@
+It allows to generate the following accounting / simulated records:
+- Customer bonuses: Premiums on sales (CE) @ Customer bonuses to be paid (SP - Liabilities)
+- Vendor bonuses: Vendor bonuses to be paid (SP - Activities) @ Rewards on purchases (CE)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/18SalesPurchaseBonus_en.png"><br>
+
+- **From Date / To Date**: indicate the calculation period of the allocations relating to customer / vendor bonuses.  
+- **Simulated**: it is correctly enabled if in the “Setup bonus (SPB)”, the field “Allocation Sim. Gen. Jnl. Template" is entered
+- **Allocation Automatic Posting**: entered by the system, according to the flag of the same name present in the “Setup bonus (SPB)”. However, it can be modified by the user  
+
+**Simulated Entries Generated**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/19SalesPurchaseBonus_en.png"><br>
+
+On the bonus entry line, the field “Sim. G/L  Register no." allows to consult the generated registers and the related simulated self-reversing records.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/20SalesPurchaseBonus_en.png"><br>
+
+**G/L Entries Generated**
+
+Entries during the year or at the end of the year are generated in the General Ledger as a result of the execution of the procedure with the "Simulated" field disabled:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/21SalesPurchaseBonus_en.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/22SalesPurchaseBonus_en.png"><br>
+
+The bonus accounting entry is marked with the field “G/L register no.” and is no longer processed by the procedure performed in G / L.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/23SalesPurchaseBonus_en.png"><br>
