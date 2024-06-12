@@ -1,0 +1,35 @@
+Si occupa di generare le seguenti scritture contabili / simulate:
+- **Bonus clienti**: Premi su vendite (CE) @ Clienti premi da liquidare (SP - Passività)
+- **Bonus fornitori**: Fornitori premi da liquidare (SP – Attività) @ Premi su acquisti (CE)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/18SalesPurchaseBonus.png"><br>
+ 
+- **Da data / A data**: indicare il periodo di calcolo degli stanziamenti relativi ai bonus clienti / fornitori. 
+- **Simulato**: viene proposto correttamente a Sì se nel “Setup bonus (SPB)” è valorizzato il campo “Template Def. Stanziamenti Sim.”
+- **Registrazione automatica stanziamenti**: precompilato in funzione dell’omonimo flag presente nel “Setup bonus (SPB)”. Può comunque essere modificato dall’utente
+ 
+
+**Scrittura simulata generata**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/19SalesPurchaseBonus.png"><br>
+
+Il movimento contabile bonus presenta il campo “Nr. registri simulati” attraverso il quale è possibile consultare i registri generati e le relative scritture simulate auto stornanti. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/20SalesPurchaseBonus.png"><br>
+
+**Scrittura COGE generata**
+
+Le scritture in corso d’anno o a fine anno vengono generate in COGE per effetto dell’esecuzione della procedura con il flag “Simulato” a No:  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/21SalesPurchaseBonus.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/22SalesPurchaseBonus.png"><br>
+
+ll movimento contabile bonus viene marcato con il campo “Nr. registro C/G” e non viene più processato dalla procedura eseguita in C/G. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/23SalesPurchaseBonus.png"><br>
+ 
+
+
+
+ 
