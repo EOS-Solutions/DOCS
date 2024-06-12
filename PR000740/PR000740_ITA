@@ -1,0 +1,63 @@
+Sono state definite con il Provvedimento firmato dal direttore dell’Agenzia delle Entrate, Ernesto Maria Ruffini, le modalità tecniche per l’emissione e la ricezione delle fatture elettroniche relative alle operazioni commerciali effettuate tra soggetti residenti, stabiliti o identificati in Italia e residenti nella Repubblica di San Marino.
+
+Ricordiamo che **dal 1° ottobre 2021** **prenderà avvio un periodo transitorio che terminerà il 30 giugno 2022**, durante il quale gli operatori sammarinesi e quelli italiani potranno optare per la fatturazione elettronica in luogo di quella cartacea, mentre **a partire dal 1 luglio 2022 potranno invece essere emesse o accettate soltanto e-fatture**.
+
+A partire **dal 1 ottobre 2021** sarà possibile l’invio delle fatture elettroniche **verso San Marino in via sperimentale**, diventerà **obbligatoria dall’01/07/22**.
+
+Le fatture attive e passive scambiate con San Marino, dovranno quindi transitare dallo SDI.
+
+L’Ufficio tributario della Repubblica di San Marino ha diffuso il **codice destinatario** che gli operatori italiani dovranno utilizzare per le fatture elettroniche inviate ai soggetti sammarinesi.
+
+
+{{% alert title="CODICE DESTINATARIO SAN MARINO" %}}
+Codice unico per tutti i rapporti con le controparti di San Marino e rappresentato dalla seguente serie di caratteri: **2R4GTO8**
+{{% /alert %}}
+
+Le fatture relative a cessioni di beni spediti o trasportati nella Repubblica di San Marino, emesse in formato elettronico dal cedente italiano nei confronti di operatori economici di San Marino, vanno spedite allo SdI con **Natura operazione N3.3**.
+
+Per permettere la corretta comunicazione di questi documenti, è stata modificata la procedura di generazione dell’xml in modo che un cliente con paese diverso da IT, sia comunque trattato come cliente italiano nel caso in cui il relativo codice destinatario sia valorizzato **come valido**, ovvero:
+
+-   Diverso da vuoto
+-   Diverso da XXXXXXX
+-   Diverso da 0000000
+
+Nello specifico, le diversità di estrazione sono:
+
+-   Se cliente è estero e **non** **ha un codice destinatario valido (XXXXXXX/0000000/”vuoto”)**:
+    -   **< CodiceDestinatario\>** = XXXXXXX
+    -   **< IdCodice\>**= Partita IVA da documento/anagrafica, se è vuota esporta “99999999999”
+    -   **< CAP\>** = 00000
+
+**Esempio:**
+
+Se il cliente non ha valorizzato nulla in anagrafica nel campo cod. destinatario/PI:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000740-0/108ElectronicInvoiceForItaly.png"><br>
+
+Oppure ha valorizzato con dei valori fittizi:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000740-0/109ElectronicInvoiceForItaly.png"><br>
+
+Allora il sistema esporterà il file Xml valorizzato nel seguente modo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000740-0/111ElectronicInvoiceForItaly.png"><br>
+
+-   Se cliente è IT oppure **ha un codice destinatario valido:**
+    -   \<CodiceDestinatario\> = da documento/anagrafica
+    -   \<IdCodice\>= esporta la Partita IVA da documento/anagrafica
+    -   \<CAP\> = esporta il CAP da documento/anagrafica
+
+**Esempio:**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000740-0/112ElectronicInvoiceForItaly.png"><br>
+
+Allora il sistema esporterà il file Xml valorizzato nel seguente modo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000740-0/113ElectronicInvoiceForItaly.png"><br>
+
+{{% alert title="ATTENZIONE" %}}
+si consiglia di inviare i file contenenti solo partite IVA e non i codici fiscali dei clienti, in quanto questi ultimi potrebbero non riuscire a superare il controllo dell’AdE.
+{{% /alert %}}
+
+
+
