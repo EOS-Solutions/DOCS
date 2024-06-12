@@ -1,0 +1,30 @@
+Si può effettuare la liquidazione sia massivamente, sia per singolo contratto o per singola riga contrattuale.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000745-0/15SalesPurchaseBonus.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000745-0/16SalesPurchaseBonus.png"><br>
+
+E' necessario inserire:
+
+- **Data inizio/data fine**: range di registrazione dei movimenti da liquidare
+- **Tipo di liquidazione**:
+  - **Da setup**: vengono liquidati sui conti C/G o addebito articolo indicati a setup,
+  - **Conto C/G / Addebito articolo**: è necessario inserire il nr del conto o il codice addebito articolo nel campo "Nr. Liquidazione"
+- **Liquida movimenti temporanei**: movimenti originari del piano di liquidazione, i movimenti temporanei rappresentano bonus “provvisori”, solitamente dipendenti da ulteriori condizioni.
+- **Raggruppa per documento**: definisce la logica di accorpamento dei movimenti bonus, il massimo dettaglio è il valore blank, seguito da riga bonus/documento/dimensione fino a riga bonus/dimensione
+
+La liquidazione alimenta il relativo giornale ed il campo Importo su mov. liquidazione dei movimenti bonus e di conseguenza dei contratti, generando i documenti provvisori di liquidazione (note credito di vendita o fatture di acquisto).
+
+**Il giornale** (Abbinamento bonus clienti) è lo **strumento di controllo** delle poste maturate, da qui è possibile eseguire la registrazione dei documenti provvisori generati dalla procedura di liquidazione (funzione Registra doc. provvisori).
+
+ E’ inoltre possibile effettuare l’abbinamento manuale di una posta derivante da un bonus riconosciuto a fronte di documenti esterni al sistema oppure documenti erroneamente registrati senza alcun collegamento con i rispettivi movimenti bonus.
+
+{{% alert color="warning" %}}
+L’eliminazione dei movimenti del giornale di liquidazione o di un documento provvisorio determina la riapertura della posta contrattuale
+{{% /alert %}}
+
+**Modificare gli importi**
+
+Dal giornale è possibile modificare l’importo delle poste, la modifica aggiorna automaticamente il documento provvisorio di liquidazione. L’eliminazione di una riga di bonus comporta l’eliminazione del documento di riferimento.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000745-0/17SalesPurchaseBonus.png"><br>
