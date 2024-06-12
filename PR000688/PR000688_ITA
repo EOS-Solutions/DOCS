@@ -1,0 +1,17 @@
+Sales & Purchase Bonus fornisce un report specifico per il calcolo programmato delle linee bonus tramite JobQueue. Tale report è 18059909 "EOS075 Sched. Bonus Calc." e propone le seguenti opzioni aggiuntive.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000688-0/24SalesPurchaseBonus.png"><br>
+
+- **Calcola per**: Permette di specificare se viene eseguito il calcolo. Ciò influisce principalmente sul funzionamento delle altre opzioni riportate di seguito.
+  - Tutti: tutte le righe bonus verranno calcolate in un'unica transazione. Questo comportamento è quello predefinito.
+  - Testata bonus: viene calcolata un'intestazione alla volta. L'ultima data di calcolo di una testata sarà la data più bassa delle sue righe..
+  - Riga bonus: viene calcolata una riga bonus alla volta. Nel record viene salvata l'ultima data di calcolo di ogni riga.
+- **Nr. max di record**:	Se si inserisce un valore maggiore di zero, il calcolo verrà interrotto dopo che sarà stato effettuato il calcolo per tale numero di record (intestazione o riga, a seconda di ciò che si sceglie in Calcola per) .
+Esempio: si può usare per pianificare il calcolo ogni 30 minuti, ma viene calcolata solo 1 intestazione bonus alla volta. In questo modo ogni 30 minuti verrà calcolata una testata bonus e verrà distribuito il carico sul server.
+- **COMMIT per record**: Specifica se un COMMIT deve essere emesso dopo che ogni record (intestazione o riga, a seconda di ciò che si sceglie in Calculate Per ) è stato calcolato. Tale opzione è automaticamente attiva se "Ignora errori" è abilitato.
+- **Ignora errori**: Se specificato, qualsiasi errore di calcolo di un record (intestazione o riga, a seconda di ciò che si sceglie in Calcola per) non interromperà il calcolo e continuerà con quello successivo. Selezionandolo si abiliterà automaticamente il COMMIT per record. Se questa opzione è abilitata, gli errori verranno registrati in un registro errori.
+- **Calcola record più vecchi di**: Specifica se verranno calcolati solo i record (intestazione o riga, a seconda di ciò che si sceglie in Calcola per) che hanno una data di ultimo calcolo precedente a questo intervallo di tempo. Si può utilizzare insieme a Nr. max di record e COMMIT per record per abilitare il calcolo distribuito e parziale.
+
+Se Ignora errori è abilitato, eventuali errori riscontrati durante il calcolo verranno registrati. Al registro si può accedere da:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000688-0/26SalesPurchaseBonus.png"><br>
