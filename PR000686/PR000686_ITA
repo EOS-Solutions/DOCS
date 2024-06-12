@@ -1,0 +1,28 @@
+Dall'elenco bonus clienti, cliccando sul codice possiamo aprire la Scheda bonus cliente:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000686-0/9SalesPurchaseBonus.png"><br>
+
+La scheda bonus cliente può contenere un numero indefinito di condizioni (righe di contratto). La condizione contrattuale determina le logiche di calcolo da applicare alla posta e le sue modalità di liquidazione.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000686-0/10SalesPurchaseBonus.png"><br>
+
+E’ possibile modificare un contratto solo se in stato In sviluppo ed è possibile calcolare e riconoscere le poste contrattuali solo se questo è in stato Certificato.
+
+Vediamone i campi principali
+- **Classe**: campo relazionato alla tabella delle classi bonus
+- **Descrizione**: descrizione libera
+- **Tipo valore**: specifica in che forma viene riconosciuto il bonus
+- **Valore (% o VL)**: inserire importi / percentuali correlate al Tipo valore indicato oppure i range delle soglie sulla base del Tipo soglia valorizzato
+- **Calcolo base**: indica la logica di calcolo base del premio / bonus
+  - Valore periodo: in base alla data inizio e data fine
+  - Diff. Valore periodo confronto soglia: riconoscimento percentuale o a importo fisso in base alle soglie indicate nel campo Valore (% o VL)
+  - Diff. Limite Soglia: riconosce importi o percentuali differenti in base ai range di soglia inseriti
+  - Margine (costo unitario articolo): riconoscimento sulla base del margine di vendita
+- **Liquidare a – Tipo**:
+  - Cliente: se il bonus viene interamente liquidato ad un'unica anagrafica cliente
+  - Ognuno: se si liquida ai singoli clienti intestatari dei documenti di vendita
+  - Fornitore: se il riconoscimento avviene tramite ricezione di fattura passiva
+- **Periodicità liquidazione**: dove non presente un piano di liquidazione è possibile indicare con quale periodicità vengono liquidati i bonus (es. se mensile (1M) il sistema genererà un documento ogni mese liquidato)
+- **Tipo soglia**: Unità di misura dei valori di soglia inseriti
+  
+L’inclusione / esclusione di clienti, articoli, gerarchie o cluster è definibile tramite gli omonimi campi di filtro.
