@@ -1,0 +1,13 @@
+To calculate bonus entries, we open the Customer/Vendor Bonus List list, select one or more lines, and choose Related -> Bonus -> Calculate Ledger Entries.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000687-0/13SalesPurchaseBonus_en.png"><br>
+
+The calculation can be performed massively or per contract.
+
+Given the average volume of the data, it is recommended to schedule the report.
+
+Business Central will calculate the tax base of the bonus calculation for all certified contracts.
+
+This allows you to view the calculation basis of each contract line and any expected amount, if the forecast is handled.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000687-0/14SalesPurchaseBonus_en.png"><br>
