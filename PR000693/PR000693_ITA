@@ -1,0 +1,147 @@
+Gli step operativi sono:
+
+| **Task**                                                                                                                                                                                                              | **Descrizione**                                                                                                                                          |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [1- Creazione manuale documento acquisto per integrazione/autofattura](https://helpbc.eos-solutions.it/help/it-it/ITA_ElectronicInvoiceForItaly_AutofattStepOperativi.html#1-_Creazione_documento_elettronico)        | L’utente compila i dati necessari per l’integrazione/autofattura (Tipo documento elettronico e ove necessario fornitore collegato) e genera il file xml. |
+| [2- Invio tramite connettore IX-FE del documento elettronico creato](https://helpbc.eos-solutions.it/help/it-it/ITA_ElectronicInvoiceForItaly_AutofattStepOperativi.html#2-_Invio_tramite_connettore_IX-FE)           | Il documento elettronico creato è inviato tramite connettore IX-FE.                                                                                      |
+| [3- Aggiornamento dello stato del documento elettronico](https://helpbc.eos-solutions.it/help/it-it/ITA_ElectronicInvoiceForItaly_AutofattStepOperativi.html#3-_Aggiornamento_dello_stato_del_documento_elettronico_) | Il documento elettronico inviato tramite connettore sarà aggiornato a livello di stato.                                                                  |
+| [4- Schedulazione massiva processo](https://helpbc.eos-solutions.it/help/it-it/ITA_ElectronicInvoiceForItaly_AutofattStepOperativi.html#4-_Schedulazione_massiva_processo_)                                           | Come per i documenti di vendita, è disponibile un report per schedulare creazione e invio dei documenti integrazione /autofattura.                       |
+
+**1- Creazione documento elettronico**
+
+Nella scheda fattura/nota credito acquisto è presente il tab "Doc. elettr. integrazione/autofattura" che riporta i campi necessari a produrre un documento elettronico xml:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/73ElectronicInvoiceForItaly.png"><br>
+
+Specificando il tipo documento elettronico, la fattura/nota credito sarà predisposta per la generazione dell’xml.
+
+Come per la parte vendite, il TD è impostato di default partendo dalla categoria business IVA.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/74ElectronicInvoiceForItaly.png"><br>
+
+E rimane modificabile manualmente per ogni singolo documento
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/75ElectronicInvoiceForItaly.png"><br>
+
+Una volta registrato, come lato vendite, sarà possibile generare il file da lista o scheda documento:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/76ElectronicInvoiceForItaly.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/77ElectronicInvoiceForItaly.png"><br>
+
+
+
+{{% alert title="NB" %}}
+ In scheda documento registrato troveremo il medesimo tab "Doc. elettr. integrazione/autofattura" presente sui documenti temporanei, contenente le informazioni riguardanti il documento elettronico <br>
+ 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/78ElectronicInvoiceForItaly.png">
+
+{{% /alert %}}
+
+
+
+**2- Invio tramite connettore IX-FE**
+
+Una volta creato un file xml è possibile inviarlo da lista o scheda documento registrato:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/79ElectronicInvoiceForItaly.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/80ElectronicInvoiceForItaly.png"><br>
+
+<br>
+
+**Tipo documento**
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/86ElectronicInvoiceForItaly.png"><br>
+
+**TD16: Integrazione fattura reverse charge interno**
+
+Nel caso di Reverse charge interno, il fornitore è italiano e quindi riceveremo la fattura tramite SdI.
+
+In questo caso siamo tenuti ad esportare l’identificativo SdI della stessa nel campo «IdDocumento» nella sezione «DatiFattureCollegate».
+
+Per i clienti che hanno il connettore sarà possibile esportare l’identificativo SdI, il file Xml è presente direttamente sulla fattura ricevuta dal fornitore, quindi lo prendiamo direttamente dal documento.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/87ElectronicInvoiceForItaly.png"><br>
+
+**TD18: integrazione per acquisto di beni intracomunitari**
+
+In questo caso il fornitore è estero e quindi la fattura non verrà ricevuta attraverso lo SdI.
+
+La normativa prevede che si possa riportare il numero della fattura fornitore originaria nel campo «IdDocumento» nella sezione «DatiFattureCollegate».
+
+In questo caso la registrazione avverrà con un’unica fattura che è quella del fornitore UE, non devo quindi specificare alcuna fattura collegata, il sistema popolerà i campi sopra descritti con campo «Nr. documento fornitore» della fattura stessa:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/88ElectronicInvoiceForItaly.png"><br>
+
+**TD17: integrazione/autofattura per acquisto servizi dall'estero**
+
+**TD19: integrazione/autofattura per acquisto di beni ex art.17 c.2 DPR 633/72**
+
+La normativa in caso di **fornitore Extra UE**, prevede la registrazione di 2 fatture separate:
+
+1.  Registrazione della fattura di acquisto estera senza Iva
+2.  Registrazione dell’autofattura (con fornitore autofattura) con Tipologia IVA «Iva Intracomunitaria»
+
+Il TD17 e TD19 per i **fornitori UE** prevede la registrazione del documento originario del fornitore da cui sarà generato direttamente l’Xml (come nell’esempio TD18)
+
+L’autofattura sarà quindi registrata con TD17 o TD19 e dovrà essere collegata con la fattura originaria per poterne ereditare il numero documento originario:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/89ElectronicInvoiceForItaly.png"><br>
+
+**TD20: autofattura per regolarizzazione e integrazione delle fatture (ex art.6 c.8 e 9-bis d.lgs. 471/97 o art.46 c.5 D.L. 331/93)**
+
+In questi casi il fornitore può essere sia italiano che estero.
+
+L' art. 6, comma 8 del d. lgs. 471/1997, prevede che l'acquirente deve procedere alla regolarizzazione con autofattura, in due ipotesi:
+
+1) se non ha ricevuto fattura dal fornitore, entro quattro mesi dalla data di effettuazione dell'operazione
+
+2) se ha ricevuto fattura irregolare (base imponibile e/o Iva errate)
+
+Nel primo caso (mancato ricevimento della fattura) deve essere creata un’autofattura in cui nella sezione finale viene specificato solo il fornitore originario:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/90ElectronicInvoiceForItaly.png"><br>
+
+Nel secondo caso invece (fattura irregolare)andremo a specificare anche i dati che collegano l’autofattura alla fattura originaria:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/91ElectronicInvoiceForItaly.png"><br>
+
+Nel caso in cui questa sia italiana, il sistema erediterà l’IdSdi.
+
+**3- Aggiornamento dello stato del documento elettronico**
+
+Come per i documenti lato attivo, è possibile aggiornare lo stato dei documenti integrazione/autofattura inviati sia dalla lista, sia dalla scheda documento:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/81ElectronicInvoiceForItaly.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/82ElectronicInvoiceForItaly.png"><br>
+
+**4- Schedulazione massiva processo**
+
+È disponibile un report dedicato per creazione e invio dei documenti elettronici autofattura/integrazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/83ElectronicInvoiceForItaly.png"><br>
+
+**Modifica dati registrati**
+
+Al fine di permettere la modifica dei dati specifici del documento elettronico su fatture e note credito di acquisto registrate sono presenti due page cui si accede dal Setup in uscita (FTE):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/84ElectronicInvoiceForItaly.png"><br>
+
+-   Azioni-\>Modifica fatture acquisto reg.
+-   Azioni-\>Modifica note credito acquisto reg.
+
+Queste page, analogamente a quelle esistenti per i documenti di vendita, permettono anche senza licenza di sviluppo di intervenire su
+
+-   Tipo documento (TD)
+-   Collega a – nr. fornitore successivamente alla registrazione del documento.
+
+**Autofatture nella page "File rifiutati in entrata"**
+
+Può capitare che alcune Autofatture inviate "tornino indietro" e vengano scaricate nella page "File rifiutati in entrata"
+
+Tramite l'action **Mostra/Nascondi integrazioni/autofatture** è possibile nascondere, se necessario, i file in modo da rendere più semplice il lavoro.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000693-0/93ElectronicInvoiceForItaly.png"><br>
