@@ -69,6 +69,7 @@ Se necessario **rivedere i setup IVA** affinchè siano conformi alle specifiche 
 | Tipo società | Serve a definire il contenuto che avrà il tag obbligatorio RegimeFiscale  |
 
 <br>
+
 **Repertori doc. elettronico (tipologia TD):**
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000692-0/70itElectronicInvoiceForItaly.png"><br><br>
@@ -86,4 +87,4 @@ Se necessario **rivedere i setup IVA** affinchè siano conformi alle specifiche 
 3.  Aggiornamento dello stato del documento elettronico
 4.  Schedulazione massiva processo
 
-Vediamoli nel dettaglio 
+
