@@ -152,7 +152,7 @@ A livello di file in entrata i **DatiRitenuta** sono consultabili tramite nuova 
 
 In anteprima è alimentata la sezione di testata, dove il dato era salvato precedentemente, con l’aggiunta dell’informazione sul TipoRitenuta e la possibilità di navigare il dettaglio completo delle righe ritenuta ricevute
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/67itElectronicInvoiceForItaly.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/67ElectronicInvoiceForItaly.png"><br>
 
 Se il TipoRitenuta è **RT01** o **RT02** (unici codici precedentemente supportati e che identificano la ritenuta standard BC), i valori sono riportati anche in testata anteprima. L’importo ritenuta è poi trasposto della sezione **Ritenute-INPS** standard BC al momento della creazione della fattura acquisto.
 
@@ -162,7 +162,7 @@ Controlli aggiunti
 
 Sono ora presenti alcuni nuovi controlli legati ai **tipi ritenuta**.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/67itElectronicInvoiceForItaly.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000691-0/67ElectronicInvoiceForItaly.png"><br>
 
 Sono di default impostati come **errore.** La severità rimane modificabile per gruppo fornitore. È verificato che in presenza di una ritenuta, il fornitore in anteprima doc. elettronico abbia il relativo setup compilato.
 
