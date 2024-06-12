@@ -1,0 +1,61 @@
+Il Superbonus è un’agevolazione prevista dal Decreto Rilancio che **eleva al 110% l’aliquota di detrazione delle spese sostenute dal 1° luglio 2020 al 30 giugno 2022,** per specifici interventi in ambito di efficienza energetica, di interventi antisismici, di installazione di impianti fotovoltaici o delle infrastrutture per la ricarica di veicoli elettrici negli edifici. Ulteriori sei mesi di tempo (31 dicembre 2022) per le spese sostenute per lavori condominiali o realizzati sulle parti comuni di edifici composti da due a quattro unità immobiliari distintamente accatastate, posseduti da un unico proprietario o in comproprietà da più persone fisiche se, al 30 giugno 2022, è stato realizzato almeno il 60% dell’intervento complessivo.
+
+Le nuove misure si aggiungono alle detrazioni previste per gli interventi di recupero del patrimonio edilizio, compresi quelli per la riduzione del rischio sismico (**Sismabonus**) e di riqualificazione energetica degli edifici ([**Ecobonus**](https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazione-riqualificazione-energetica-55-2016/cosa-riqualificazione-55-2016)).
+
+Tra le novità introdotte, è prevista la possibilità, al posto della fruizione diretta della detrazione, di optare per un contributo anticipato sotto forma di **sconto praticato dai fornitori** dei beni o servizi o, in alternativa, per la **cessione del credito** corrispondente alla detrazione spettante. In questo caso si dovrà inviare una comunicazione per esercitare l’opzione. Il modello da compilare e inviare online è quello approvato con il provvedimento del 12 ottobre 2020.
+
+Vediamo come gestire lo sconto in fattura e come compilare i setup all'interno di Business Central al fine di compilare correttamente i tag relativi all'Ecobonus nel file XML.
+
+**Documenti**
+
+**Testata**
+
+In testata **documenti di vendita non registrati** (ordini, fatture, ordini reso, note credito, offerte, ordini programmati) e **documenti vendita registrati** (fatture e note credito), nel tab Documento elettronico, in **Dati documenti correlati,** scegliere "Sconto/Maggiorazione":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000739-0/107ElectronicInvoiceForItaly.png"><br>
+
+Successivamente definire i seguenti campi:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000739-0/108ElectronicInvoiceForItaly.png"><br>
+**Righe**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000739-0/101ElectronicInvoiceForItaly.png"><br>
+
+Sulle righe è presente il campo **“Ecobonus”** che permette di identificare la riga relativa.
+
+Il flag "Ecobonus" identificherà le righe soggette ad Ecobonus per le quali sarà esportata la dicitura:
+
+"Sconto in fattura applicato ai sensi dell'art. 16-bis co.1 lett. a) e b) del TUIR e in applicazione delle previsioni dell'articolo 121 del decreto-legge n. 34 del 2020."
+
+Tale dicitura va definita a [setup:](https://helpbc.eos-solutions.it/main.aspx?lang=it-it&content=ITA_ElectronicInvoiceForItaly_setup.html) nella page Setup in uscita:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000739-0/106ElectronicInvoiceForItaly.png"><br>
+
+e verrà poi esportata nel tag \< AltriDatiGestionali \> del file XML.
+
+**File XML**
+
+Creando il file XML per un documento con Ecobonus, il sistema provvede a compilare i tag
+
+-   2.1.1.8.1 **< Tipo\>**: viene ereditato il dato definito sulla scehda documenti correlati nel campo "Tipo (SC/MG)"
+-   2.1.1.8.3 **< Importo\>**: viene ereditato il dato definito sulla scehda documenti correlati nel campo "Importo"
+-   2.2.1.16.1 **< TipoDato\>**: dicitura fissa “ECOBONUS” per le righe identificate come tali
+-   2.2.1.16.2 **< RiferimentoTesto\>**: testi inserito nel Setup in uscita (se presente)
+
+Esempi:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000739-0/102ElectronicInvoiceForItaly.png"><br>
+
+**Controlli**
+
+In fase di esportazione file:
+
+se è presente uno sconto maggiorazione di tipo Ecobonus deve esserci almeno una riga identificata come tale e viceversa
+
+**Categorie di registrazione articoli /servizi**
+
+Nella page “Categorie di registrazione articoli /servizi” è presente il campo “Ecobonus” che consente di determinare un default opzionale:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000739-0/100ElectronicInvoiceForItaly.png"><br>
+
+Al momento del **posting** il flag è portato dal documento temporaneo a quello registrato
