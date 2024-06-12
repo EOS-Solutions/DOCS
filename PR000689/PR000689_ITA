@@ -1,0 +1,15 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000689-0/25SalesPurchaseBonus.png"><br>
+
+A seconda dei contratti bonus, delle impostazioni e delle voci degli importi registrati, il calcolo di una riga e/o di un'intestazione bonus può essere costoso. Il Bonus vendite e acquisti consente di abilitare la registrazione e il tracciamento per rilevare possibili colli di bottiglia delle prestazioni e configurazioni errate.
+
+In Setup Bonus sono presenti 2 opzioni che permettono di abilitare la registrazione dettagliata delle operazioni di calcolo dei bonus. Abilitandole verranno emessi tempi e durate per scopi di debug e ottimizzazione delle prestazioni.
+
+- **Livello logging su telemetria**: Specifica il livello di logging che viene emesso sulla telemetria di ApplicationInsights durante il calcolo del bonus.
+- **Livello logging su database**: Specifica il livello di logging che viene scritto nel database durante il calcolo del bonus. I log vengono registrati nella tabella 18059921 "EOS075 Log Entry".
+
+I valori di questi campi sono:
+- **Nessuno**: non verrà registrato nulla
+- **Minimo**: verranno tracciati solo l'inizio e la fine del calcolo per singola riga
+- **Dettagliato**: verranno tracciati l'inizio e la fine del calcolo nonché le molteplici sottofasi del calcolo per riga. Se viene abilitato "Livello logging su database", si può accedere al registro dalla singola riga bonus: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000689-0/27SalesPurchaseBonus.png"><br>
