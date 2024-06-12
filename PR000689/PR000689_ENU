@@ -1,0 +1,16 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000689-0/25SalesPurchaseBonus_en.png"><br>
+
+Depending on your bonus contracts, setups and amount entries that are posted, calculation of a bonus line and/or header can be expensive. Sales & Purchase Bonus allows to enable logging and tracing to detect possible performance bottlenecks and misconfigurations.
+
+In the Bonus Setup you can find 2 options that allow you to enable detailed logging of bonus calculation operations. Enabling these will emit timings and durations for debugging and performance tuning purposes.
+
+- **Telemetry Logging Level**: Specifies the level of logging that is emitted to ApplicationInsights telemetry during bonus calculation. 
+- **Database Logging Level**: Specifies the level of logging that is written to the database during bonus calculation. These log entries will be written to a dedicated table 18059921 "EOS075 Log Entry".
+
+The values of both these fields are as follows:
+
+- **None**: nothing will be logged
+- **Minimal**: only start and finish of calculation per single line will be traced
+- **Detailed**: start and finish of calculation as well as the multiple sub-steps of the calculation per line will be traced If you enable “Database Logging Level”, you can access the log from the following action on a single bonus line:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000689-0/27SalesPurchaseBonus_en.png"><br>
