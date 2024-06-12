@@ -1,0 +1,36 @@
+In **scheda Cliente / Fornitore** va abilitato il campo "**Identificazione diretta ai fini IVA**" nel **Tab Fatturazione**.
+
+Se non è già presente nella pagina va reso visibile tramite la personalizzazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000741-0/117itElectronicInvoiceForItaly.png"><br>
+
+**Gestione Identificazione diretta ai fini IVA**
+
+| **Caso**                                                                                                                         | **FTE Attiva: sezione Cessionario/Committente**                                           | **FTE Passiva (Integrazioni ed Autofattura): sezione Cedente/Prestatore**                                |
+|----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Cliente estero (UE ed Extra UE) identificato in IT: Cod. Paese estero di anagrafica e P.IVA con prefisso IT                      | IdPaese: IT (Cod. ISO prefisso P.IVA); IdCodice: P.IVA di anagrafica senza il prefisso IT |                                                                                                          |
+| Cliente estero (UE ed Extra UE) identificato in altro paese estero XX: Cod. paese estero di anagrafica e P.IVA con prefisso XX   | IdPaese: XX (Cod. ISO prefisso P.IVA); IdCodice: P.IVA di anagrafica senza il prefisso XX |                                                                                                          |
+| Cliente IT identificato in paese estero YY: Cod. Paese IT di anagrafica e P.IVA con prefisso YY                                  | IdPaese: YY (Cod. ISO prefisso P.IVA); IdCodice: P.IVA di anagrafica senza il prefisso YY |                                                                                                          |
+| Fornitore estero (UE ed Extra UE) identificato in IT: Cod. Paese estero di anagrafica e P.IVA con prefisso IT                    |                                                                                           | IdPaese: Cod. paese estero di anagrafica; IdCodice: 99999999999.                                         |
+| Fornitore IT identificato in paese estero XX: Cod. Paese IT di anagrafica e P.IVA con prefisso XX                                |                                                                                           | IdPaese: prefisso (cod. ISO) della P.IVA di anagrafica; IdCodice: P.IVA di anagrafica senza il prefisso. |
+| Fornitore estero (UE ed Extra UE) identificato in altro paese estero XX: Cod. paese estero di anagrafica e P.IVA con prefisso XX |                                                                                           | IdPaese: Cod. paese estero di anagrafica; IdCodice: 99999999999.                                         |
+
+
+<br>
+
+**Gestione Rappresentante Fiscale**
+
+| **Caso**                                                               | **FTE Attiva**                                                                                                                                                             | **FTE Passiva (Integrazioni ed Autofattura)**                                                                                                                                                                                                                                                                                                                             |
+|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cliente estero (UE ed Extra UE) con rappresentante fiscale in Italia   | _Sezioni Cessionario/Committente e Rappresentante fiscale:_ <br>IdPaese: IT (Cod. ISO prefisso P.IVA del rappr.fiscale); <br>IdCodice: P.IVA del rappr. fiscale senza il prefisso IT |                                                                                                                                                                                                                                                                                                                                                                           |
+| Fornitore estero (UE ed Extra UE) con rappresentante fiscale in Italia |                                                                                                                                                                            | _Sezione Cedente/ Prestatore_: <br>IdPaese: Cod. paese estero dell’anagrafica fornitore; <br>IdCodice: P.IVA estera oppure valore 99999999999 nel caso in cui, nell’anagrafica del fornitore estero, non sia presente una P.IVA . <br><br>_Sezione Rappresentante fiscale:_ <br> IdPaese: IT (Cod. ISO prefisso P.IVA del rappr.fiscale); <br>IdCodice: P.IVA del rappr. fiscale senza il prefisso IT. |
+
+
+<br>
+
+**FTE: Gestione Stabile Organizzazione**
+
+| **Caso**                                                               | **FTE Attiva**                                                                                                                                                                    |
+|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cliente estero (UE ed Extra UE) con stabile organizzazione in Italia   | _Sezioni Cessionario/Committente e Stabile organizzazione:_ <br> IdPaese: IT (Cod. ISO prefisso P.IVA della S.O.); <br>IdCodice: P.IVA della S.O. senza il prefisso IT.                      |
+| Fornitore estero (UE ed Extra UE) con stabile organizzazione in Italia | Nel caso di fornitore con S.O. si riceve una fattura elettronica con IVA (lo si tratta come un fornitore nazionale), non è quindi necessario generare l'integrazione/autofattura. |
