@@ -1,0 +1,13 @@
+Per eseguire il calcolo dei movimenti bonus apriamo la lista Elenco bonus clienti / fornitore, selezioniamo una o più righe e scegliamo Correlato->Bonus->Calcola movimenti contabili.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000687-0/13SalesPurchaseBonus.png"><br>
+
+Si può eseguire il calcolo massivamente o per singolo contratto.
+
+Considerato il volume medio della base dati è consigliata la schedulazione del report
+
+Business Central calcolerà la base imponibile del calcolo bonus per tutti i contratti certificati.
+
+Quest’operazione consente la visualizzazione della base di calcolo di ogni riga di contratto e di un eventuale importo previsto, se viene gestito il forecast.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000687-0/14SalesPurchaseBonus.png"><br>
