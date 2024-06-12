@@ -1,0 +1,27 @@
+From the customer bonus list select a card by clicking on the Code field:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000686-0/9SalesPurchaseBonus_en.png"><br>
+
+The bonus card can contain an indefinite number of terms (contract lines). The contractual terms determine the calculation logic to be applied to the entries and its method of settlement.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000686-0/10SalesPurchaseBonus_en.png"><br>
+
+It is only possible to modify a contract if it is in the "Under Development" status and it is possible to calculate and apply the accrued bonuses only if it is in a "Certified" status.
+
+- **Class**: field related to bonus class table
+- **Description**:	free description
+- **Value Type**: specifies in what form the bonus is paid
+- **Value (% o LCY)**: enter amounts / percentages related to the Value Type indicated or the threshold ranges based on the valued Threshold Type
+- **Base Calculation**: indicates the basic calculation logic of the premium / bonus
+	- Period Value: based on starting date and ending date
+	- Thresh. Comp. Period Value Diff.: percentage or fixed-amount premium based on thresholds in the Value field (% or LCY)
+	- Thresh. Bound Diff.: calculates different amounts or percentages based on the threshold ranges entered
+	- Margin (item unit cost): premium on the basis of the sales margin  
+- **Settle-to Type**:
+  - Customer: if the bonus is fully settled to a single customer card
+  - Each: if you settle to individual customers who have sales documents issued to
+  - Vendor: if the premium is settled by receiving a vendor invoice
+- **Settlement periodicity**: where there is no settlement plan, you can indicate how periodically the bonuses are settled (e.g. if monthly (1M) the system will generate a document each month settled)
+- **Thresh. Type**: units of measure of the threshold values entered
+  
+The inclusion / exclusion of customers, items, hierarchies, or clusters can be defined through the filter fields of the same name.
