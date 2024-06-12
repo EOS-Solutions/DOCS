@@ -1,0 +1,17 @@
+Sales & Purchase Bonus provides a dedicated report for scheduled calculation of bonus lines via JobQueue. This report is 18059909 "EOS075 Sched. Bonus Calc." and has the following additional options:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000688-0/24SalesPurchaseBonus_en.png"><br>
+
+- **Calculate Per**: Allows to specify if calculation is performed. This primarily impacts how the other options below operate.
+  - All: all the bonus lines will be calculated in a single transaction. This is the default behavior.
+  - Bonus Header: the calculation will calculate one header at a time. The last calculation date of a header will be the smallest date of each of its lines.
+  - Bonus Line: the calculation will calculate one bonus line at a time. The last calculation date of a line is saved on the record.  
+- **Max. No. of Records**: If you enter a value greater than zero, the calculation will stop after this number of records (header or line, depending on what you choose in Calculate Per) have been calculated.
+Example: you can use this to schedule calculation every 30min, but only calculate 1 bonus header at a time. This way every 30min a bonus header will be calculated and load on the server is distributed.  
+- **COMMIT per Record**: Specifies if a COMMIT should be issued after each record records (header or line, depending on what you choose in Calculate Per) has been calculated. This will always automatically be enabled if you select ‘Ignore Errors’.  
+- **Ignore Errors**: If specified, any calculation failure of a record (header or line, depending on what you choose in Calculate Per) will not interrupt the calculation and continue with the next one. Selecting this will automatically enable COMMIT per Record. If this is enabled, errors will be logged to an error log.  
+- **Calc. Records Older Than**: Specifies if only records (header or line, depending on what you choose in Calculate Per) that have a last calculation date older than this time span will be calculated. Use this together with Max. No. of Records and COMMIT per Record to enable distributed and partial calculation.
+
+If “Ignore Errors” is enabled, any errors encountered during the calculation will be logged to the log that can be accessed here:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000688-0/26SalesPurchaseBonus_en.png"><br>
