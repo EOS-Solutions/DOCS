@@ -88,6 +88,7 @@ In Setup in uscita (FTE) si trova la page che deve contenere le informazioni del
 
 
 <br>
+
 **Altri setup**
 
 Da Movimenti coda processi è possibile schedulare l'invio dei file .xml. Indicare la codeunit o il report da eseguire, specificare data e ora inizio/fine e definire eventualmente i giorni.
@@ -128,21 +129,21 @@ In Setup registrazioni IVA compilare il campo "Natura transazione IVA".
 
 <br>
 
-| **NB**                                                                               |
-|--------------------------------------------------------------------------------------|
-| La **creazione riga viene gestita solo sulla fattura di vendita** e non sull’ordine. |
-
-
+{{% alert title="NB" %}}
+La **creazione riga viene gestita solo sulla fattura di vendita** e non sull’ordine.
+{{% /alert %}}
 
 <br>Oltre a impostare il “Setup Bollo (FTE), per esportare nel tag del tracciato Fattura Elettronica 2.1.1.6 <DatiBollo> i valori 2.1.1.6.1 <BolloVirtuale> e 2.1.1.6.2 <ImportoBollo> è necessario attivare il flag Imposta di bollo per il setup registrazione iva interessato 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/118itElectronicInvoiceForItaly.png"><br>
 
 
 <br>
+
 **Setup anagrafica cliente**
 
 
 Nella scheda cliente, sotto il Tab Documento elettronico, compilare i seguenti campi:<br>
+
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/3itElectronicInvoiceForItaly.png"><br>
 
 | **Campo**                   | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -152,17 +153,15 @@ Nella scheda cliente, sotto il Tab Documento elettronico, compilare i seguenti c
 | No fatturazione elettronica | Se barrato, il cliente viene escluso dal processo della fatturazione elettronica. Non verrà effettuato alcun controllo in fase di posting e non sarà possibile esportare file xml per tale cliente.  Va attivato per quei clienti che, **da normativa, sono esentati** dall'obbligo di fatturazione elettronica.                                                                                                                                                                                                                                                                                               
 
 <br>
+
 **Mezzi di comunicazione previsti dallo SdI - casi d'uso-**
 
-
-
-| **Casella PEC**        | nel caso in cui il Cliente ci abbia fornito solo l’e-mail PEC, in anagrafica Cliente popoleremo il relativo campo "e-mail PEC" e inseriremo come Cod. destinatario doc. elettronico: "0000000". Sul file .xml creato verrà riportato tale indirizzo e-mail. Il SdI riconosce quindi il Cliente in base all’indirizzo e-mail. Nel caso il cui sull’anagrafica Cliente non fosse stato inserito il Cod. destinatario, il sistema popolerà il codice automaticamente con ‘0000000’. |
-|-------------------------|------------------------------------------------------------------------------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Campo**                   | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **CASELLA PEC**         | nel caso in cui il Cliente ci abbia fornito solo l’e-mail PEC, in anagrafica Cliente popoleremo il relativo campo "e-mail PEC" e inseriremo come Cod. destinatario doc. elettronico: "0000000". Sul file .xml creato verrà riportato tale indirizzo e-mail. Il SdI riconosce quindi il Cliente in base all’indirizzo e-mail. Nel caso il cui sull’anagrafica Cliente non fosse stato inserito il Cod. destinatario, il sistema popolerà il codice automaticamente con ‘0000000’.|
 | **CodIce destinatario** | se il Cliente ci ha fornito un Cod. destinatario, nel campo "Cod. destinatario documento elettronico" in anagrafica inseriremo tale codice (può essere quello specifico del Cliente o quello del suo intermediario). Nel caso non sia stato specificato alcun codice destinatario, il sistema non permetterà l’estrazione del file .xml.                                                                                                                                         |
 | **Partita IVA / C.F.**  | Se non siamo a conoscenza di nessuno dei dati precedentemente menzionati, allora nel campo Cod. destinatario doc. elettronico riportiamo ‘0000000’. Il SdI riconoscerà il Cliente in base alla PI o CF definito nel file .xml.                                                                                                                                                                                                                                                   |
 | **Fatture estere**      | In caso di fattura emessa verso soggetti non residenti, non stabiliti, non identificati in Italia, e inviata al Sistema di Interscambio al fine di trasmettere i dati per la dichiarazione Dati Fatture, impostiamo ‘XXXXXXX’ nel Cod. destinatario doc. elettronico. Ovviamente il SdI non recapiterà la fattura, quindi si è tenuti ad inviarla anche con le metodologie standard (es. mail con .pdf allegato).                                                                |
-
-
 
 <br>
 
