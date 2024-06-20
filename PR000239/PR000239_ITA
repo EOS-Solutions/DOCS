@@ -1,19 +1,19 @@
-Dopo aver compilato i campi della riga uno o pi— articoli per i quali sono state precedentemente create le istruzioni di imballaggio, da Azioni->Vuoti>Calcola vuoti
+Dopo aver compilato i campi della riga uno o piÃ¹ articoli per i quali sono state precedentemente create le istruzioni di imballaggio, da Azioni->Vuoti>Calcola vuoti
 <br>
      
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000239-0/IT-EMPSalesOrder1.jpg"><br>
      
-facciamo generare al sistema una o pi— righe relative ai vuoti per l'ordine:
+facciamo generare al sistema una o piÃ¹ righe relative ai vuoti per l'ordine:
 <br> 
       
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000239-0/IT-EMPSalesOrder2.jpg"><br>
      
-D Azioni->Vuoti Š possibile eliminare i vuoti oppure, tramite modifica, gestirli manualmente.
+D Azioni->Vuoti Ã¨ possibile eliminare i vuoti oppure, tramite modifica, gestirli manualmente.
 <br>
      
 | Nota |
 | --- |
-| Il calcolo vuoti esegue la proposta dei vuoti in base alle istruzioni di imballaggio e genera delle righe nellÂordine di vendita.  <br>Se Š stata compilata la Packing List o le Udc collegate allÂordine i vuoti vengono calcolati a partire dai materiali di imballo utilizzati.       <br>     **Il calcolo non avviene automaticamente, ma deve essere eseguito dallÂutente.** 
+| Il calcolo vuoti esegue la proposta dei vuoti in base alle istruzioni di imballaggio e genera delle righe nellâ€™ordine di vendita.  <br>Se Ã¨ stata compilata la Packing List o le Udc collegate allâ€™ordine i vuoti vengono calcolati a partire dai materiali di imballo utilizzati.       <br>     **Il calcolo non avviene automaticamente, ma deve essere eseguito dallâ€™utente.** 
 <br>
       
 Quando su un documento vengono inseriti i vuoti, questi sono visibili in dettaglio nella relativa factbox:
@@ -25,7 +25,7 @@ Quando su un documento vengono inseriti i vuoti, questi sono visibili in dettagl
      
 **Le righe dei vuoti vengono registrate nel documento di spedizione** (anche nelle spedizioni CWS).
 
-Dalla spedizione Warehouse Š possibile accedere alla sezione contenitori e aggiungere eventuali righe prima della registrazione.
+Dalla spedizione Warehouse Ã¨ possibile accedere alla sezione contenitori e aggiungere eventuali righe prima della registrazione.
 
 N.B. solo se non sono presenti righe calcolate automaticamente a livello di ordine.  
 <br>
