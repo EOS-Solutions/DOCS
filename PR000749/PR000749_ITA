@@ -1,0 +1,24 @@
+I campi obbligatori permettono di inserire dei controlli su dei campi prima di effettuare un cambio stato attraverso dei filtri, questa funzionalità è accessibile dall'azione Campi Obbligatori nella pagina:
+* Setup Tabelle EDS -> Cambio Stato -> Campi Obbligatori
+
+     
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000749-0/ITA-EDS Table Setup.png">
+<br>
+
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000749-0/ITA-EDS Status Transaction.png">
+
+<br>
+     
+<br>
+Questi controlli sono implementabili attraverso delle condizioni che possono essere di 9 tipi:
+<br>
+<br>
+
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000749-0/ITA-EDS Mandatory Fields Conditions.png">
+<br>
+
+<br>
+Per ogni riga dei campi obbligatori si possono aggiungere delle precondizioni che verranno veririficate prima del controllo, se il risultato è negativo allora il controllo non verrà effettuato
