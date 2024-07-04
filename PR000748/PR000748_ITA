@@ -1,0 +1,41 @@
+Le tabelle obbligatorie permettono di inserire dei controlli su dei record prima di effettuare un cambio stato attraverso dei filtri, questa funzionalità è accessibile dall'azione Tabelle obbligatorie nella pagina:
+* Setup Tabelle EDS -> Cambio Stato -> Tabelle obbligatorie
+
+     
+<br>
+<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ITA-EDS Tables Setup.png">
+<br>
+
+<br>
+<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ITA-EDS Status Transaction.png">
+<br>
+     
+<br>
+Questi controlli sono implementabili attraverso delle condizioni che possono essere di 3 tipi:
+<br>
+<br>
+
+|Filtri|Funzionamento|
+|---|---|
+|Vuoto                     |La tabella deve essere vuota, è possibile impostare dei filtri|
+|Non vuoto                 |La tabella deve avere dei racord, è possibile impostare dei filtri|
+|Filtro campo tabella padre|Esegue un paragone tra un campo della tabella selezionata e un campo della tabella padre impostando una formula
+
+<br>
+<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ITA-EDS Mandatory Tables Conditions.png">
+<br>
+
+<br>
+<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ITA-EDS Mandatory Tables Filter.png">
+<br>
+
+<br>
+<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ITA-EDS Mandatory Tables Father Field Filter.png">
+<br>
+
+<br>
+I controlli sono effettuati singolarmente uno ad uno, non vengono combinati i filtri.
+<br>
+
+<br>
+Per ogni riga delle tabelle obbligatorie si possono aggiungere delle precondizioni che verranno veririficate prima del controllo, se il risultato è negativo allora il controllo non verrà effettuato
