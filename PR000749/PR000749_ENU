@@ -1,0 +1,25 @@
+Mandatory fields allow to insert checks on the table fields before making a status transaction through filters. This functionality is accessible from the Mandatory Fields action on the page:
+* EDS Tables Setup -> Status Transactions -> Mandatory Fields
+
+     
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000749-0/ENU-EDS Table Setup.png">
+<br>
+
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000749-0/ENU-EDS Status Transaction.png">
+
+<br>
+     
+<br>
+These controls can be implemented through conditions which can be of 9 types:
+<br>
+<br>
+
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000749-0/ENU-EDS Mandatory Fields Conditions.png">
+<br>
+
+<br>
+For each row of the mandatory fields, preconditions can be added which will be verified before the check, if the result is negative then the check will not be carried out.
+
