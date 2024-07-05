@@ -32,10 +32,10 @@
 
 | Campo                                   | Descrizione                                                                                     |
 | --------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Commessa obbligatoria                   | Specifica se il nr. commessa e il nr. task commessa sono obbligatori nei punti di manutenzione. |
-| Registra movimenti commessa             | Specifica se i movimenti commessa devono essere registrati automaticamente.                     |
-| Nome definizione registrazioni commesse | Specifica il nome della definizione del giornale di registrazione.                              |
-| Nome batch registrazioni commesse       | Specifica il nome batch del giornale di registrazione.                                          |
+| Progetto obbligatoria                   | Specifica se il nr. progetto e il nr. task progetto sono obbligatori nei punti di manutenzione. |
+| Registra movimenti progetto             | Specifica se i movimenti progetto devono essere registrati automaticamente.                     |
+| Nome definizione registrazioni progetti | Specifica il nome della definizione del giornale di registrazione.                              |
+| Nome batch registrazioni progetti       | Specifica il nome batch del giornale di registrazione.                                          |
 
 ## Registrazione
 
