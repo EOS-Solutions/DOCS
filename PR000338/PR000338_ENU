@@ -1,0 +1,6 @@
+The system allows work requests to be created automatically when a work request is completed. This automatism allows maintenance to be performed not on a pre-established date, but in accordance with a predefined period after the completion of a previously performed work request.
+
+To enable this automation it is necessary edit the maintenance point of a machine as follows:
+* Set the period that must elapse between the first maintenance and the next one (DateFormula).
+* Enable "Auto-Create Work Request".
+* Create the first work request using the "Create Work Request" action.
