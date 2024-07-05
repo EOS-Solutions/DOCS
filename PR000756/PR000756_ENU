@@ -1,0 +1,28 @@
+The function allows to create new handling units and add content. The following data are requested: handling unit type, packaging material, location code and optionally the bin code. After confirmation, the handling unit is created and the Barcode is requested for the loading of the contents.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000756-0/EX089-HU1-ENU.png"><br>
+
+<br>
+
+The creation of multi-level handling units is also allowed. To do this, it is necessary to change the scanner setup to one that provides the code of the handling unit. And then enter the parent load unit code.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000756-0/EX089-HU2-ENU.png"><br>
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000756-0/EX089-HU3-ENU.png"><br>
+
+<br>
+
+The details page allows to view information about the handling unit. The actions page contains some features in particular:
+
+-   **Set scan setup**: Allows to change the scanner setup.  
+    **Delete scans**: Erases the scans.  
+    **Change Status**: Allows to change the status of the handling unit from Draft to Loaded.  
+    **Dismantle**: Removes the contents of the handling unit.  
+    **Remove Parent**: Removes the parent of the handling unit.
+
+Through the appropriate function in BC you can add any custom actions.
+
+<br>
+<br>
