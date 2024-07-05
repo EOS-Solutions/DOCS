@@ -1,0 +1,23 @@
+The system allows the creation of a quote or purchase order from the spare parts used in the work request.
+The functions are available through the "Purchase Lines" item in work requests.
+
+
+### Copy From Work Request
+
+Copy spare parts from the work request.
+
+### Create Purchase Document
+
+Allows to create a quote or purchase order with the vendor specified in the lines.
+
+### Open Purchase Document
+
+Allows to view or edit the generated purchase document.
+
+### Create Requistition Request
+
+Allows to create a requisition request with the specified lines.
+
+### Open Requistition Request
+
+Allows to view or edit the generated requisition request.
