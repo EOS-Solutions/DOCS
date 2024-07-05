@@ -1,0 +1,18 @@
+Il sistema, alla registrazione di una richiesta di lavoro genera una serie di movimenti contabili tra cui:
+
+- Movimenti contabili articoli: per ciascun ricambio utilizzato verrà generata una rettifica negativa l'articolo associato al ricambio.
+- Movimenti contabili risorse: viene eseguira una registrazione per ciascuna attività svolta dalle risorse indicate nella richiesta di lavoro.
+
+Il sistema genererà anche "Movimenti contabili lavoro", "Movimento attività" e "Movimenti ciclo richiesta lavoro".
+
+### Movimenti contabili lavoro
+
+Consente di visualizzare i movimenti C/G generati con i relativi costi unitari e importi.
+
+### Movimenti attività
+
+Consente di visualizzare le attività svolta con la richiesta di lavoro.
+
+### Movimenti ciclo richiesta lavoro
+
+Consente di visualizzare i tempi impiegati per lo svolgimento delle attività svolte con la richiesta di lavoro.
