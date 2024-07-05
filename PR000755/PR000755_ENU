@@ -1,0 +1,11 @@
+In WMS setup, a field called Handling Unit Scanner Setup Code has been added where you can indicate the default barcode type for scanning handling units.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000755-0/EX089-Setup1-ENU.png"><br>
+
+<br>
+The features must be activated for each WMS User:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000755-0/EX089-Setup2-ENU.png"><br>
+
+<br>
+<br>
