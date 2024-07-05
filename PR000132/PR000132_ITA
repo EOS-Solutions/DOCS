@@ -1,8 +1,8 @@
-La soluzione Power WMS � composta da una Power App per la gestione del front-end e un App Business Central per la gestione del back-end e si pone come obiettivo quello di eseguire in modo efficiente le operazioni di magazzino partendo dal ricevimento della merce fino al prelievo e alla spedizione dei materiali.
+La soluzione Power WMS è composta da una Power App per la gestione del front-end e un App Business Central per la gestione del back-end e si pone come obiettivo quello di eseguire in modo efficiente le operazioni di magazzino partendo dal ricevimento della merce fino al prelievo e alla spedizione dei materiali.
 
 <br>
 
-**Funzionalit� di Power WMS**
+**Funzionalità di Power WMS**
 
 Grazie alla app Power WMS (WMS) di Eos Solutions:
 
@@ -14,15 +14,22 @@ Grazie alla app Power WMS (WMS) di Eos Solutions:
 **Benefici per l'utente**        
 
 * Eseguire tutte le operazioni di magazzino con dispositivi mobili
-* Visibilit� in tempo reale del livello delle scorte
+* Visibilità in tempo reale del livello delle scorte
 * La scansione del codice a barre consente di eseguire rapidamente operazioni e prevenire la perdita di inventario
 * Ottimizzare le operazioni in entrata e in uscita (ricezione, prelievo, spedizione)
 * Riduce il rischio di errori nella gestione del tracking
 
+**App Aggiuntiva**        
 
+Installa EX089.01 Power WMS for Handling Units per poter:
 
-**Power WMS (WMS) - Panoramica**
+Estendere la soluzione Power WMS con le funzionalità di gestione delle unità di carico, che vengono gestite in tutte le principali funzionalità. Per l’utilizzo dell’App Power WMS for Handling Units come prerequisito oltre all’app Power WMS è necessaria la presenza di una o entrambe queste app:
 
-Per una panoramica delle funzionalit� presenti a menu premere ALT + Q and digitare "WMS" :
+-   EX030 Handling Units Management
+-   EX055 Packing List
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000132-0/EX089-EX089-Quickstart-ITA.png"><br>
+Le app EX030 e EX055 permettono di gestire le unità di carico (pallet, scatole, ecc.) da assegnare ai documenti per poter effettuare le spedizioni, carichi, prelievi, stoccaggi e movimentazioni warehouse.
+
+<br>
+<br>
+     
