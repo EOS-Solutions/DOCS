@@ -1,0 +1,28 @@
+La funzione consente di creare delle nuove unità di carico e di caricare dei contenuti. Vengono richiesti all’operatore i seguenti dati: Tipo unità di carico, materiale di imballaggio, Cod. ubicazione e opzionalmente il cod. collocazione. Dopo la conferma viene creata l’unità di carico e viene richiesto l’eventuale Barcode per il carico dei contenuti. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000756-0/EX089-HU1-ITA.png"><br>
+
+<br>
+
+Viene permessa inoltre la creazione di unità di carico multilivello. Per farlo è necessario cambiare il setup scanner impostandone uno che prevede il codice dell’unità di carico. E poi inserire il codice unità di carico padre.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000756-0/EX089-HU2-ITA.png"><br>
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000756-0/EX089-HU3-ITA.png"><br>
+
+<br>
+
+La pagina dettagli consente di visualizzare le informazioni relative all’unità di carico. La pagina della azioni contiene una serie di funzioni in particolare:
+
+-   **Imposta setup scansione**: consente di cambiare il setup scanner.
+-   **Cancella scansioni**: cancella le scansioni fatte.
+-   **Cambia stato**: consente di cambiare lo stato dell’unità di carico da Bozza a Caricato.
+-   **Distruggi**: Rimuove il contenuto dell’unità di carico.
+-   **Rimuovi padre**: Rimuove il padre dell’unità di carico.
+
+Tramite l’apposita funzione in BC si possono aggiungere eventuali azioni custom.
+
+<br>
+<br>
