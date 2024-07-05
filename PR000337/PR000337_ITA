@@ -1,0 +1,6 @@
+Il sistema consente di creare automaticamente le richieste di lavoro intervallate tra loro da un periodo prestabilito. A differenza della creazione automatica al termine di una richiesta di lavoro, questo automatismo crea immediatamente tutte le richieste di lavoro nel range di date indicato e intervallate secondo quanto definito nel punto di manutenzione.
+
+Per attivare questo automatismo è necessario modificare il punto di manutenzione di una macchina come segue:
+* Impostare la "Data inizio" e "Data fine" come range di date durante le quali si vuole eseguire la manutenzione.
+* Impostare nel campo "Periodicità" il periodo che deve intercorrere tra la prima manutenzione e la successiva (DateFormula).
+* Creare le richieste di lavoro utilizzando l'azione "Crea richiesta lavoro".
