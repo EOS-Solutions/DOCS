@@ -1,0 +1,93 @@
+You can manage machine information through the "Machines (PMM)" page.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000178-0/plm-menu-machines-enu.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000178-0/plm-machines-list-enu.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000178-0/plm-machines-groups-enu.png"><br>
+
+---
+
+## General
+
+| Field                         | Description                                                                                                                     |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| No.                           | Specifies the machine number.                                                                                                   |
+| Description                   | Specifies the machine description.                                                                                              |
+| Description 2                 | Specifies the machine description.                                                                                              |
+| Machine Category              | Specifies the machine category. It's possible to assign a category based on the values defined in "Machine Categories (PMM)".   |
+| Blocked                       | Specifies if the machine is blocked.                                                                                            |
+| Location Code                 | Specifies the machine location.                                                                                                 |
+| Bin Code                      | Specifies the machine bin code. This field is used as default for material consumption in combination with the "Location Code". |
+| Work Center No.               | Specifies the machine work center. (Information only)                                                                           |
+| Machine Center No.            | Specifies the machine center. (Information only)                                                                                |
+| Global Dimension 1 Code       | Specifies the machine global dimension 1.                                                                                       |
+| Global Dimension 2 Code       | Specifies the machine global dimension 2.                                                                                       |
+| Fixed Assets No.              | Specifies the asset number.                                                                                                     |
+| Default Maintenance Point No. | Specifies the default maintenance point no. This field is used as default when creating work requests.                          |
+
+## Machine Information
+
+Contains general information about the machine like manufacturer, purchase, installation and warranty dates and so on.
+
+## Maintenance
+
+| Field      | Description           |
+| ---------- | --------------------- |
+| Vendor No. | Specifies the vendor. |
+
+## Project
+
+| Field                 | Description                                                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------ |
+| Project No. Mandatory | Specifies whether the "Project No." and "Project Task No." fields are mandatory on maintenance points. |
+
+## Data Information
+
+Contains information about the creation date and the name of the user who created or made the last change.
+
+## Actions
+
+### Comments
+
+Allows to view or edit the comments of the machine.
+
+### Copy machine
+
+Allows to create a copy of the machine.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000178-0/plm-machines-actions-copymachine-enu.png"><br>
+
+### Structure
+
+Shows the tree structure of the machine and its components.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000178-0/plm-machines-actions-structure-enu.png"><br>
+
+### Spare Parts
+
+Allows to view or edit the spare parts of the machine. Defined spare parts will be proposed in work requests and maintenance points.
+
+### Components
+
+Allows to view or edit the components of the machine. Defined components make up the structure of the main machine which can be viewed from the "Structure" action.
+
+### Characteristics
+
+Allows to view or edit the characteristics of the machine.
+
+### Dimensions
+
+Allows to view or edit dimensions, such as area, project, or department, that you can assign to sales and purchase documents to distribute costs and analyze transaction history.
+
+### Maintenance Points
+
+Allows to view or edit the maintenace points of the machine.
+
+### Work Requests
+
+Allows to view or edit the work requests of the machine.
