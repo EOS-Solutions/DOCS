@@ -11,16 +11,22 @@ Thanks to Eos Solutions Power WMS (WMS) app:
 
 <br>
 
-**Benefits for the user**                                                                        * Perform all warehouse operation with mobile devices
-* Real time visibility of inventory level
-* Scanning barcode, can perform quickly operations and prevent inventory loss
-* Optimize inbound and oubound operations (Receiving, Picking, Shipping)
-* Reduce risk of errors in tracking management 
+**Benefits for the user**                                                                        -   Free the design and development department from sales support. Even groups of less experienced users can independently use the product configurator to prepare offers and orders.
+-   Reduction of the loading times of the sales documents with consequent increase in the satisfaction of the final customer.
+-   Reduction of errors in the calculation of list prices and of any surcharges / options. The use of rules and relationships allows to sell to the end customer only what is expected by the company.
+-   Reduction of design department errors in creation of Production BOMs and Routings. The reconfiguration function also allows you to regenerate the configurations already created for an easy revision of Production BOMs.
 
+**Additional App**        
 
+Install EX089.01 Power WMS for Handling Units in order to:
+Extend the Power WMS solution with handling unit management capabilities, which are managed across all major functionalities.
+In order to use the Power WMS for Handling Units App as a prerequisite in addition to the Power WMS app, you must have one or both of these apps:
 
-**Power WMS (WMS) - SUMMARY**
+-   EX030 Handling Units Management
+-   EX055 Packing List
 
-Press ALT + Q and digit "WMS" for a list of the features involved:
+The EX030 and EX055 apps allow you to manage the handling units (pallets, boxes, etc.) to be assigned to documents in order to carry out shipments, receipts, picks, put away and warehouse entries.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000132-0/EX089-Quickstart-ENU.png"><br>
+<br>
+<br>
+     
