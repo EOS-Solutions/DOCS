@@ -1,0 +1,119 @@
+You can manage machine work requests through the "Work Requests (PMM)" page.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000191-0/plm-menu-work-request-enu.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000191-0/plm-work-request-list-enu.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000191-0/plm-work-request-groups-enu.png"><br>
+
+---
+
+## General
+
+| Field                      | Description                                                            |
+| -------------------------- | ---------------------------------------------------------------------- |
+| No.                        | Specifies the work request number.                                     |
+| Machine No.                | Specifies the machine.                                                 |
+| Maintenance Point No.      | Specifies the maintenance point.                                       |
+| Maintenance Type           | Specifies the type of maintenance according to the UNI 10147 standard. |
+| Description                | Specifies the description.                                             |
+| Fault Detection DateTime   | Specifies the fault detection date and time.                           |
+| Planned Starting Date      | Specifies the planned starting date.                                   |
+| Planned Starting Time      | Specifies the planned starting time.                                   |
+| Posting Date               | Specifies the posting date.                                            |
+| Resource No.               | Specifies the resource assigned to the work request.                   |
+| Resource Group No.         | Specifies the resource group assigned to the work request.             |
+| Resource Unit of Measure   | Specifies the base unit of measure for the selected resource.          |
+| Predicted Maintenance Time | Specifies the predicted maintenance time.                              |
+| Actual Maintenance Time    | Specifies the actual maintenance time..                                |
+| Maintenance Type Code      | Specifies the maintenance type. (Classification)                       |
+| Maintenance Work Type Code | Specifies the maintenance work type. (Classification)                  |
+| Stop Production            | Specifies if the production is stopped. (Information only)             |
+| External Maintenance       | Specifies if the maintenance is external.                              |
+| Vendor No.                 | Specifies the vendor.                                                  |
+| Priority                   | Specifies the priority.                                                |
+| Status                     | Specifies the status.                                                  |
+| Contract Reference No.     | Specifies the contract reference number.                               |
+| Closing Note               | Specifies the closing notes.                                           |
+| From Work Request          | Specifies the parent work request.                                     |
+| Maintenance Cycle No.      | Specifies the maintenance cycle no..                                   |
+| Maintenance Cycle Version  | Specifies the version of the maintenance cycle.                        |
+
+## Faults
+
+| Field               | Description                                             |
+| ------------------- | ------------------------------------------------------- |
+| Fault Area Code     | Specifies the value of the "Fault Area Code" field.     |
+| Fault Sub Area Code | Specifies the value of the "Fault Sub Area Code" field. |
+| Symptom Code        | Specifies the value of the "Symptom Code" field.        |
+| Fault Code          | Specifies the value of the "Fault Code" field.          |
+| Fault Reason Code   | Specifies the value of the "Fault Reason Code" field.   |
+| Resolution Code     | Specifies the value of the "Resolution Code" field.     |
+
+## Lines
+
+| Field                     | Description                                                       |
+| ------------------------- | ----------------------------------------------------------------- |
+| Position                  | Specifies the value of the "Position" field.                      |
+| Parameter No.             | Specifies the value of the "Parameter No." field.                 |
+| Type                      | Specifies the value of the "Type" field.                          |
+| Type No.                  | Specifies the value of the "Type No." field.                      |
+| Description               | Specifies the value of the "Description" field.                   |
+| Description 2             | Specifies the value of the "Description 2" field.                 |
+| Control Result            | Specifies the value of the "Control Result" field.                |
+| Resolution Code           | Specifies the value of the "Resolution Code" field.               |
+| Executed                  | Specifies the value of the "Executed" field.                      |
+| Maintenance Duration      | Specifies the value of the "Maintenance Duration" field.'         |
+| Unit of Measure Code      | Specifies the value of the "Unit of Measure Code" field.          |
+| Cap. Unit of Measure Code | Specifies the value of the "Capacity Unit of Measure Code" field. |
+| Vendor No.                | Specifies the value of the "Vendor No." field.                    |
+| Reason Code               | Specifies the value of the "Reason Code" field.                   |
+| Comment                   | Specifies the value of the "Comment" field.                       |
+| Starting Date-Time        | Specifies the value of the "Starting Date-Time" field.            |
+| Ending Date-Time          | Specifies the value of the "Ending Date-Time" field.              |
+| Next Operation No.        | Specifies the value of the "Next Operation No." field.            |
+| Previous Operation No.    | Specifies the value of the "Previous Operation No." field.        |
+| Operation Status          | Specifies the status of the maintenance activity.                 |
+| Operation Duration        | Specifies the duration of the maintenance activity.               |
+
+## Data Information
+
+Contains information about the creation date and the name of the user who created or made the last change.
+
+## Actions
+
+### Change Status
+
+Allows to change the work request status.
+
+### Post
+
+Finalize the document or journal by posting the amounts and quantities to the related accounts in your company books.
+
+### Update Cycle
+
+Update the lines with the the maintenance cycle specified in the work request.
+
+### Refresh Work Request
+
+Refresh the work request cycle schedule.
+
+### Purchase Lines
+
+Allows to view or edit the purchase lines of the work request.
+
+### Comments
+
+Allows to view or edit the comments of the work request.
+
+### Spare Sparts
+
+Allows to view or edit the spare parts of the work request.
+
+### PPE
+
+Allows to view or edit the PPEs (Personal Protective Equipment) of the work request.
