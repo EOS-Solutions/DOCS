@@ -1,0 +1,91 @@
+È possibile gestire le informazioni delle macchine tramite la pagina "Macchine (PMM)".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000178-0/plm-menu-machines-ita.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000178-0/plm-machines-list-ita.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000178-0/plm-machines-groups-ita.png"><br>
+
+---
+
+## Generale
+
+| Campo                              | Descrizione                                                                                                                                                    |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nr.                                | Specifica il numero della macchina.                                                                                                                            |
+| Descrizione                        | Specifica la descrizione della macchina.                                                                                                                       |
+| Descrizione 2                      | Specifica la descrizione della macchina.                                                                                                                       |
+| Categoria macchina                 | Specifica la categoria della macchina. È possibile assegnare una categoria in base ai valori definiti in "Categorie macchina (PMM)".                           |
+| Blocked                            | Specifica se la macchina è bloccata.                                                                                                                           |
+| Cod. ubicazione                    | Specifica l'ubicazione della macchina.                                                                                                                         |
+| Cod. collocazione                  | Specifica il codice collocazione della macchina. Questo campo viene utilizzato come default per il consumo materiali in combinazione con il "Cod. ubicazione". |
+| Nr. area produzione                | Specifica l'area di produzione della macchina. (Campo informativo)                                                                                             |
+| Nr. centro lavoro                  | Specifica il centro di lavoro. (Campo informativo)                                                                                                             |
+| Cod. dimens. globale 1             | Specifica la dimensione globale 1 della macchina.                                                                                                              |
+| Cod. dimens. globale 2             | Specifica la dimensione globale 2 della macchina.                                                                                                              |
+| Nr. cespite                        | Specifica il numero del cespite.                                                                                                                               |
+| Nr. punto manutenzione predefinito | Specifica il punto di manutenzione predefinito. Questo campo viene utilizzato come predefinito quando si creano le richieste di lavoro.                        |
+
+## Informazioni macchina
+
+Contiene informazioni generali sulla macchina, come il produttore, la data di acquisto, di installazione, di garanzia e così via.
+
+## Manutenzione
+
+| Campo         | Descrizione             |
+| ------------- | ----------------------- |
+| Nr. fornitore | Specifica il fornitore. |
+
+## Progetto
+
+| Campo                 | Descrizione                                                                                                 |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Progetto obbligatorio | Specifica se i campi "Nr. progetto" e "Nr. attività progetto" sono obbligatori per i punti di manutenzione. |
+
+## Informazioni sui dati
+
+Contiene informazioni relative alla data di creazione e il nome dell'utente che ha creato o che ha effettuato l'ultima modifica.
+
+## Azioni
+
+### Commenti
+
+Consente di visualizzare o modificare i commenti della macchina.
+
+### Copia macchina
+
+Consente di creare una copia della macchina.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000178-0/plm-machines-actions-copymachine-ita.png"><br>
+
+### Struttura
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000178-0/plm-machines-actions-structure-ita.png"><br>
+
+### Ricambi
+
+Consente di visualizzare o modificare i pezzi di ricambio della macchina. I ricambi definiti saranno proposti nelle richieste di lavoro e nei punti di manutenzione.
+
+### Componenti
+
+Consente di visualizzare o modificare i componenti della macchina. I componenti definiti costituiscono la struttura della macchina principale, visualizzabile tramite l'azione "Struttura".
+
+### Caratteristiche
+
+Consente di visualizzare o modificare le caratteristiche della macchina.
+
+### Dimensioni
+
+Consente di visualizzare o modificare le dimensioni, ad esempio l'area, il progetto o il reparto, che è possibile assegnare ai documenti di acquisto e di vendita per distribuire i costi e analizzare lo storico delle transazioni.
+
+### Punti di manutenzione
+
+Consente di visualizzare o modificare i punti di manutenzione della macchina.
+
+### Richieste di lavoro
+
+Consente di visualizzare le richieste di lavoro della macchina.
