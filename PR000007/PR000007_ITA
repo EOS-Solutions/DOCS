@@ -1,0 +1,32 @@
+La App Advanced Document Reporting di Eos Solutions consente di creare e stampare fino a 20 tipi diversi di documento utilizzando solamente 5 report. Per uno stesso documento è possibile inoltre definire diversi layout, modificando tramite setup il logo di testa, il piede del documento, il titolo report (ad esempio per Fatture Proforma o "ad uso interno").
+
+La App Advanced Document Reporting estende le funzionalità standard di invio e-mail dei documenti: consente ad esempio di definire setup avanzati relativamente ai destinatari e al corpo dell'email tramite testi estesi o template HTML. E' possibile ad esempio indicare che le fatture di vendita vengano inviate massivamente non solo all'indirizzo email dell'anagrafica clienti, ma anche a contatti con determinati ruoli professionali.
+Vantaggi per l'utente
+
+### I vantaggi per l'utente sono:
+
+* Avere un unico report per stampare più tipi documenti
+* Possibilità di esportare in PDF
+* Possibilità di stampare i pdf ed inviarli per e-mail.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000007-0/ADR_Introduction_ITA.png"><br>
+
+### Documenti gestiti
+I doumenti gestiti sono i seguenti:
+
+| ID       | Name               | Documents            |
+|----------|--------------------|----------------------|
+| 18122007 | EOS Sales Document | Offerte vendita<br>Ordini Vendita<br>Ordini programmati di vendita |
+| 18122008 | EOS Invoice Document	| Fatture Vendita<br>Fatture assistenza<br>Note credito vendita<br>Note credito assistenza<br>Auto-fattura<br>Fattura provvisoria
+| 18122009 |EOS Shipping Document	| Spedizione vendita<br>Spedizione reso acquisti<br>Spedizione trasferimenti<br>Spedizione assistenza
+| 181220010 | EOS Purchase Document	| Ordine acquisto<br>Ordine programmati acquisto<br>Offerta acquisto
+| 181220011 | EOS Reminder Document	| Solleciti<br>Solleciti emessi
+| 18122531 |  EOS Reminder Document	| Solleciti consegna emessi (il report 18122531 è disponibile previa installazione della app Delivery Reminders - PDR)<br>Solleciti consegna (il report 18122531 è disponibile previa installazione della app Delivery Reminders - PDR)|
+
+### Funzionalità supportate
+La app ADR semplifica il caricamento di dati che normalmente vengono stampati sui documenti. Permette:
+
+* Stampa di testi estesi di testata e righe
+* Stampa delle righe tracciabilità (se presenti)
+* Stampa delle cross-reference (“Nr. Articolo Fornitore” e “Nr. Articolo Cliente”)
+* Immagini header e footer standardizzate
