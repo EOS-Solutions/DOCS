@@ -1,0 +1,109 @@
+È possibile gestire i punti di manutenzione delle macchine tramite la pagina "Punti manutenzione (PMM)".
+
+Maintenance points are used to automatically generate work requests, which can be created based on:
+
+- Automatic (a new work request is created after the completion of the previous one).
+- Schedule (e.g. every day, week, month, year etc.).
+- Planning criteria (e.g. every 10.000 pieces produced etc.).
+
+[Scopri di più sulle regole di creazione automatica delle richieste di lavoro.]({{<relref "automatic-work-request-creation-rules">}})
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000189-0/plm-menu-maintenance-point-ita.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000189-0/plm-maintenance-point-list-ita.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000189-0/plm-maintenance-point-groups-ita.png"><br>
+
+---
+
+## Generale
+
+| Field                                 | Description                                                                  |
+| ------------------------------------- | ---------------------------------------------------------------------------- |
+| Nr.                                   | Specifica il numero del punto di manutenzione.                               |
+| Nr. macchina.                         | Specifica la macchina collegata al punto di manutenzione                     |
+| Descrizione                           | Specifica la descrizione.                                                    |
+| Nr. serie richiesta lavoro            | Specifies the series number to use when creating work requests.              |
+| Nr. risorsa                           | Specifica il numero di serie da usare per creare le richieste di lavoro.     |
+| Nr. gruppo risorse                    | Specifica il gruppo di risorse a cui verrà assegnata la richiesta di lavoro. |
+| Tipo manutenzione                     | Specifica il tipo di manutenzione secondo la norma UNI 10147.                |
+| Codice tipo di manutenzione           | Specifica il tipo di manutenzione. (Classificazione)                         |
+| Codice tipo di lavoro di manutenzione | Specifica il tipo di lavoro di manutenzione. (Classificazione)               |
+| Tempo di manutenzione previsto        | Specifica il tempo di manutenzione previsto.                                 |
+| Ora inizio pianificata                | Specifica l'ora di inizio pianificata.                                       |
+| Interrompe la produzione              | Specifica se la produzione viene interrotta. (Information only)              |
+| Priorità                              | Specifica la priorità.                                                       |
+| Manutenzione esterna                  | Specifica se la manutenzione è esterna.                                      |
+| Nr. fornitore                         | Specifica il fornitore.                                                      |
+| Bloccato                              | Specifica se il punto di manutenzione è bloccato.                            |
+| Nr. ciclo di manutenzione             | Specifica il valore ciclo di manutenzione.                                   |
+| Versione ciclo di manutenzione        | Specifica la versione del ciclo di manutenzione.                             |
+
+## Criteri di pianificazione
+
+| Field                      | Description                              |
+| -------------------------- | ---------------------------------------- |
+| Criterio di pianificazione | Specifica il criterio di pianificazione. |
+| Valore di pianificazione   | Specifica il valore di pianificazione.   |
+| Valore raggiunto           | Specifica il valore raggiunto.           |
+
+## Pianificazione
+
+| Field                                    | Description                                                                                                                                                                                                                     |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Data inizio                              | Specifica la data inizio.                                                                                                                                                                                                       |
+| Data fine                                | Specifica la data fine.                                                                                                                                                                                                         |
+| Data ultima richiesta di lavoro          | Indica la data in cui è stata creata l'ultima richiesta di lavoro.                                                                                                                                                              |
+| Periodicità                              | Specifica la periodicità.                                                                                                                                                                                                       |
+| Prossima data scadenza                   | Indica la prossima data di scadenza del punto di manutenzione.                                                                                                                                                                  |
+| Creazione automatica richiesta di lavoro | Specifica se una nuova richiesta di lavoro viene creata automaticamente durante la registrazione della richiesta di lavoro precedente. L'utente deve creare manualmente la prima richiesta di lavoro dal punto di manutenzione. |
+| Utilizza coda processi                   | Specifica se le richieste di lavoro verranno create automaticamente tramite la coda processi.                                                                                                                                   |
+
+## Fatturazione
+
+| Field                     | Description                                       |
+| ------------------------- | ------------------------------------------------- |
+| Nr. riferimento contratto | Specifica il numero di riferimento del contratto. |
+
+## Progetto
+
+| Field                 | Description                               |
+| --------------------- | ----------------------------------------- |
+| Nr. progetto          | Specifica il campo nr. progetto.          |
+| Nr. attività progetto | Specifica il campo nr. attività progetto. |
+
+## Informazioni sui dati
+
+Contiene informazioni relative alla data di creazione e il nome dell'utente che ha creato o che ha effettuato l'ultima modifica.
+
+## Azioni
+
+### Crea richiesta lavoro
+
+Creare richieste di lavoro secondo il setup definito.
+
+[Scopri di più sulle regole di creazione automatica delle richieste di lavoro.]({{<relref "automatic-work-request-creation-rules">}})
+
+### Copia punto manutenzione
+
+Consente di creare una copia del punto di manutenzione.
+
+### Commenti
+
+Consente di visualizzare o modificare i commenti del punto di manutenzione.
+
+### Ricambi
+
+Consente di visualizzare o modificare i pezzi di ricambio della macchina. I ricambi definiti saranno proposti nelle richieste di lavoro.
+
+### DPI
+
+Consente di visualizzare o modificare i DPI (Dispositivi Protezione Individuale). I DPI definiti saranno proposti nelle richieste di lavoro.
+
+### Richieste lavoro
+
+Consente di visualizzare le richieste di lavoro della macchina e punto di manutenzione.
