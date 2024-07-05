@@ -1,0 +1,20 @@
+L’app EX089.01 Power WMS for Handling Units estende la soluzione Power WMS con le funzionalità di gestione delle unità di carico, che vengono gestite in tutte le principali funzionalità. Per l’utilizzo dell’App Power WMS for Handling Units come prerequisito oltre all’app Power WMS è necessaria la presenza di una o entrambe queste app:
+
+-   EX030 Handling Units Management
+-   EX055 Packing List
+
+Le app EX030 e EX055 permettono di gestire le unità di carico (pallet, scatole, ecc.) da assegnare ai documenti per poter effettuare le spedizioni, carichi, prelievi, stoccaggi e movimentazioni warehouse.
+
+<br>
+
+Le funzionalità realizzate sono le seguenti:
+
+-   Creazione unità di carico
+-   Gestione unità di carico
+-   Riclassificazione unità di carico
+-   Reg. magazzino con unità di carico
+-   Inv. fisico unità di carico
+-   Assegnazione delle unità di carico nei documenti
+
+<br>
+<br>
