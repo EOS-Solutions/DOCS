@@ -1,10 +1,11 @@
 È possibile gestire i punti di manutenzione delle macchine tramite la pagina "Punti manutenzione (PMM)".
 
-Maintenance points are used to automatically generate work requests, which can be created based on:
+I punti di manutenzione vengono utilizzati per generare automaticamente richieste di lavoro, che possono essere create in base a:
 
-- Automatic (a new work request is created after the completion of the previous one).
-- Schedule (e.g. every day, week, month, year etc.).
-- Planning criteria (e.g. every 10.000 pieces produced etc.).
+- Automatico (viene creata una nuova richiesta di lavoro dopo il completamento della precedente).
+- Pianificazione (ad es. ogni giorno, settimana, mese, anno ecc.).
+- Criteri di pianificazione (es. ogni 10.000 pezzi prodotti, ecc.).
+
 
 [Scopri di più sulle regole di creazione automatica delle richieste di lavoro.]({{<relref "automatic-work-request-creation-rules">}})
 
