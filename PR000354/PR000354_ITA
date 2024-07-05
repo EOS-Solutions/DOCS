@@ -1,0 +1,23 @@
+Il sistema permette la creazione di un'offerta o ordine di acquisto partendo dai ricambi utilizzati nella richiesta di lavoro.
+Le funzioni sono disponibili tramite la voce "Righe acquisto" presente nelle richieste di lavoro.
+
+
+### Copia da richiesta di lavoro
+
+Copiare i ricambi dalla richiesta di lavoro.
+
+### Crea documento di acquisto
+
+Consente di creare un'offerta o ordine di acquisto con il fornitore indicato sulle righe.
+
+### Apri documento di acquisto
+
+Consente di visualizzare o modificare il documento di acquisto generato.
+
+### Crea richiesta approvvigionamento
+
+Consente di creare una richiesta di approvvigionamento con le righe specificate.
+
+### Apri richiesta approvvigionamento
+
+Consente di visualizzare o modificare la richiesta di approvvigionamento generata.
