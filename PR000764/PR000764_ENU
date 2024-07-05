@@ -1,0 +1,13 @@
+The function allows to make item journal entries, positive and negative adjustments, creating/adding the content in a handling unit in the same way as it is done in BC.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000764-0/EX089-HU8-ENU.png"><br>
+
+
+After choosing the adjustment type and the location/bin, the following are required:
+
+-   **Handling Unit No.** If indicated, it adds the contents to the handling unit.
+-   **Packaging material**. If indicated, it creates a new handling unit in the loaded state and adds the content to it.
+
+<br>
+<br>
