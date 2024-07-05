@@ -1,0 +1,109 @@
+You can manage machine maintenance points through the "Maintenance Points (PMM)" page.
+
+Maintenance points are used to automatically generate work requests, which can be created based on:
+
+- Automatic (a new work request is created after the completion of the previous one).
+- Schedule (e.g. every day, week, month, year etc.).
+- Planning criteria (e.g. every 10.000 pieces produced etc.).
+
+[Learn more about automatic work request creation rules.]({{<relref "automatic-work-request-creation-rules">}})
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000189-0/plm-menu-maintenance-point-enu.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000189-0/plm-maintenance-point-list-enu.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000189-0/plm-maintenance-point-groups-enu.png"><br>
+
+---
+
+## General
+
+| Field                      | Description                                                               |
+| -------------------------- | ------------------------------------------------------------------------- |
+| No.                        | Specifies the maintenance point number.                                   |
+| Machine No.                | Specifies the machine linked to the maintenance point.                    |
+| Description                | Specifies the description.                                                |
+| Work Request No. Series    | Specifies the series number to use when creating work requests.           |
+| Resource No.               | Specifies the resource to which the work request will be assigned.        |
+| Resource Group No.         | Specifies the resource group to which the work request will be assigned.  |
+| Maintenance Type           | Specifies the type of maintenance according to the UNI 10147 standard.    |
+| Maintenance Type Code      | Specifies the maintenance type. (Classification)                          |
+| Maintenance Work Type Code | Specifies the maintenance work type. (Classification)                     |
+| Predicted Maintenance Time | Specifies the predicted maintenance time.                                 |
+| Planned Starting Time      | Specifies the planned starting time.                                      |
+| Stop Production            | Specifies if the production is stopped. (Information only)                |
+| Priority                   | Specifies the priority.                                                   |
+| External Maintenance       | Specifies if the maintenance is external.                                 |
+| Vendor No.                 | Specifies the vendor.                                                     |
+| Blocked                    | Specifies if the maintenace point is blocked.                             |
+| Maintenance Cycle No.      | Specifies the No. of the Maintenance Cycle.                               |
+| Maintenance Cycle Version  | Specifies the version of the Maintenance Cycle.                           |
+
+## Planning Criteria
+
+| Field                  | Description                      |
+| ---------------------- | -------------------------------- |
+| Planning Criteria Code | Specifies the planning criteria. |
+| Planning Value         | Specifies the planning value.    |
+| Reached Value          | Specifies the reached value.     |
+
+## Scheduling
+
+| Field                    | Description                                                                                                                                                                              |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Starting Date            | Specifies the starting date.                                                                                                                                                             |
+| Ending Date              | Specifies the ending date.                                                                                                                                                               |
+| Last Work Request Date   | Specifies the date when the last work request was created.                                                                                                                               |
+| Periodicity              | Specifies the periodicity.                                                                                                                                                               |
+| Next Date Due            | Specifies the date when this maintenance point is next due.                                                                                                                              |
+| Auto-Create Work Request | Specifies whether a new work request is automatically created when posting the previous work request. The user should create the first work request manually from the maintenance point. |
+| Job Queue Scheduling     | Specifies whether work requests are going to be automatically created via job queue.                                                                                                     |
+
+## Invoicing
+
+| Field                  | Description                              |
+| ---------------------- | ---------------------------------------- |
+| Contract Reference No. | Specifies the contract reference number. |
+
+## Project
+
+| Field            | Description                    |
+| ---------------- | ------------------------------ |
+| Project No.      | Specifies the Project No.      |
+| Project Task No. | Specifies the Project Task No. |
+
+## Data Information
+
+Contains information about the creation date and the name of the user who created or made the last change.
+
+## Actions
+
+### Create Work Request
+
+Create work requests according to the defined setup.
+
+[Learn more about automatic work request creation rules.]({{<relref "automatic-work-request-creation-rules">}})
+
+### Copy Maintenance Point
+
+Allows to create a copy of the maintenance point.
+
+### Comments
+
+Allows to view or edit the comments of the maintenance point.
+
+### Spare Sparts
+
+Allows to view or edit the spare parts of the maintenance point. Defined spare parts will be proposed in work requests.
+
+### PPE
+
+Allows to view or edit the PPEs (Personal Protective Equipment) of the maintenance point. Defined PPEs will be proposed in work requests.
+
+### Work Request
+
+Allows to view or edit the work requests of the machine and maintenance point.
