@@ -1,0 +1,69 @@
+You can perform the setup of the PMM app through the "Plant Maintenance Setup (PMM)" page.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000105-0/plm-menu-setup-enu.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000105-0/plm-setup-groups-enu.png"><br>
+
+---
+
+## General
+
+| Field                         | Description                                                                            |
+| ----------------------------- | -------------------------------------------------------------------------------------- |
+| Machine No. Series            | Specifies the series number of the machine.                                            |
+| Maintenance Point No. Series  | Specifies the series number of the maintenance point.                                  |
+| Work Request No. Series       | Specifies the series number of the work request.                                       |
+| Default Maintenance Work Type | Specifies the default maintenance work type.                                           |
+| Create Absence Entries        | Specifies whether to create absence entries if the maintenance stops the production.   |
+| Req. Wksh. Template Name      | Specifies the requisition worksheet template name.                                     |
+| Req. Wksh. Batch Name         | Specifies the requisition worksheet batch name.                                        |
+| Maintenance Cycle No. Series  | Specifies the series number of the maintenance cycle.                                  |
+| Default Work Req. Status      | Specifies the initial status of the new work request created from a maintenance point. |
+
+## Scheduling
+
+| Field                          | Description                                                                             |
+| ------------------------------ | --------------------------------------------------------------------------------------- |
+| Schedule Work Request Creation | Specifies whether automatic creation of work requests is enabled through the job queue. |
+
+## Project
+
+| Field                     | Description                                                                                |
+| ------------------------- | ------------------------------------------------------------------------------------------ |
+| Job No. Mandatory         | Specifies whether the Job No. and Job Task No. fields are mandatory on maintenance points. |
+| Post Job Entries          | Specifies whether job entries should be automatically posted.                              |
+| Job Journal Template Name | Specifies the journal template name.                                                       |
+| Job Journal Batch Name    | Specifies the journal batch name.                                                          |
+
+## Posting
+
+| Field                                                                   | Description                                                                                         |
+| ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Use Work Req. Cycle Posting                                             | Specifies whether to suggest values to be posted using work request cycle entries.                  |
+| Change Work Request Status On Cycle Completed                           | Specifies whether to change the status of the work request when the maintenance cycle is completed. |
+| Work Request Status On Cycle Completed                                  | Specifies the work request status to set when the maintenance cycle is completed.                   |
+| Use Work Request Description As Activity Description In Journal Posting | Specifies whether to use the work request description as activity description in post activity.     |
+| Allocate Cycle To Resource                                              | Specifies whether to allocate work request cycles to resources when refreshing the work request.    |
+
+## Power PMM
+
+| Field                 | Description                                               |
+| --------------------- | --------------------------------------------------------- |
+| Default Language Code | Specifies the default language to use with Power PMM.     |
+| Default Theme         | Specifies the default theme to use with Power PMM.        |
+| Attachment Provider   | Specifies the attachments provider to use with Power PMM. |
+
+## Actions
+
+| Field               | Description                                                                                                                                                                  |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Initialize Defaults | Initializes the setup with default values. Creates and initializes serial numbers, posting setup and creates job queue entry to perform scheduled creation of work requests. |
+| Fault Areas         | Configure the fault areas.                                                                                                                                                   |
+| Fault Sub Areas     | Configure the fault sub areas.                                                                                                                                               |
+| Symptoms            | Configure the symptoms.                                                                                                                                                      |
+| Faults              | Configure the faults.                                                                                                                                                        |
+| Fault Reasons       | Configure the fault reasons.                                                                                                                                                 |
+| Resolutions         | Configure the resolutions.                                                                                                                                                   |
+| Translations        | Configure the caption translations used by Power PMM.                                                                                                                        |
