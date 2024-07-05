@@ -1,0 +1,14 @@
+La funzione permette di effettuare le registrazioni di magazzino, rettifiche positive e negative, creando / aggiungendo il contenuto in un unità di carico con le stesse modalità in cui viene fatto in BC.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000764-0/EX089-HU8-ITA.png"><br>
+
+
+Dopo aver scelto il tipo di rettifica e l’ubicazione / collocazione vengono richiesti:
+
+-   **Nr. Unità di carico**. Se indicato aggiunge il contenuto all’unità di carico.
+-   **Materiale di imballaggio**. Se indicato crea una nuova unità di carico in stato caricato e aggiunge il contenuto.
+
+
+<br>
+<br>
