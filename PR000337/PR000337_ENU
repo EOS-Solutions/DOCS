@@ -1,0 +1,6 @@
+The system allows the automatic creation of work requests spaced between them by a predetermined period. Unlike automatic creation at the end of a work request, this automation immediately creates all work requests in the specified date range and spaced as defined in the maintenance point.
+
+To activate this automation, it is necessary to change the maintenance point of a machine as follows:
+* Set the "Start Date" and "End Date" as the range of dates during which maintenance is to be performed.
+* Set in the "Periodicity" field the period that must elapse between the first maintenance and the next maintenance (DateFormula).
+* Create work requests using the "Create Work Request" action.
