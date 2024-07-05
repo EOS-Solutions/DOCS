@@ -1,0 +1,6 @@
+The system allows work requests to be automatically created based on the fulfillment of a certain control parameter (e.g., every 10.000 parts produced).
+
+To activate this automation, it is necessary to change the maintenance point of a machine as follows:
+* Set a value for the "Planning Criteria" field.
+* Set in the "Planning Value" field the value that must be reached such that maintenance must be performed.
+* Create work requests manually or using the "Create work request" action.
