@@ -1,0 +1,10 @@
+La funzione permette di eseguire l’inventario fisico per unità di carico sfruttando la funzionalità presente in BC. Prima di poter eseguire l’attività tramite la power app è necessario effettuare il Calcola Giacenze per UdC nell’apposito batch delle Registrazioni inventario fisico.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000765-0/EX089-HU9-ITA.png"><br>
+
+Una volta popolato il batch di registrazione dalla power app è possibile rilevare l’inventario delle varie unità di carico selezionandole singolarmente. Dopo la selezione dell’unità di carico viene mostrato il contenuto e l’utente può procedere alla scansione dei barcode.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000765-0/EX089-HU10-ITA.png"><br>
+
+<br>
+<br>
