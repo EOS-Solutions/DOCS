@@ -1,0 +1,6 @@
+Il sistema consente di creare automaticamente le richieste di lavoro al completamento di una richiesta di lavoro. Questo automatismo consente di eseguire la manutenzione non in una data prestabilita, ma secondo un periodo predefinito dopo il completamento di una richiesta di lavoro precedentemente eseguita.
+
+Per attivare questo automatismo è necessario modificare il punto di manutenzione di una macchina come segue:
+* Impostare il periodo che deve intercorrere tra la prima manutenzione e la successiva (DateFormula).
+* Abilitare "Creazione automatica richiesta di lavoro".
+* Creare la prima richiesta di lavoro utilizzando l'azione "Crea richiesta lavoro".
