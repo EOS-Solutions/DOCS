@@ -1,0 +1,117 @@
+È possibile gestire le richieste di lavoro delle macchine tramite la pagina "Richieste lavoro (PMM)".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000191-0/plm-menu-work-request-ita.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000191-0/plm-work-request-list-ita.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000191-0/plm-work-request-groups-ita.png"><br>
+
+---
+
+## Generale
+
+| Field                                 | Description                                                        |
+| ------------------------------------- | ------------------------------------------------------------------ |
+| Nr.                                   | Specifica il numero della richiesta di lavoro.                     |
+| Nr. macchina                          | Specifica la macchina.                                             |
+| Nr. punto manutenzione                | Specifica il punto di manutenzione.                                |
+| Tipo di manutenzione                  | Specifica il tipo di manutenzione secondo la norma UNI 10147.      |
+| Descrizione                           | Specifica la descrizione.                                          |
+| Data e ora rilevazione guasto         | Specifica la data e l'ora di rilevamento del guasto.               |
+| Data inizio pianificata               | Specifica la data di inizio pianificata.                           |
+| Ora inizio pianificata                | Specifica l'ora di inizio pianificata.                             |
+| Data di registrazione                 | Specifica la data di registrazione.                                |
+| Nr. risorsa                           | Specifica la risorsa assegnata alla richiesta di lavoro.           |
+| Nr. gruppo risorse                    | Specifica il gruppo di risorse assegnato alla richiesta di lavoro. |
+| Unità di misura risorsa               | Specifica l'unità di misura base per la risorsa selezionata.       |
+| Tempo di manutenzione previsto        | Specifica il tempo di manutenzione previsto.                       |
+| Tempo di manutenzione attuale         | Specifica il tempo di manutenzione effettivo.                      |
+| Codice tipo di manutenzione           | Specifica il codice del tipo di manutenzione.                      |
+| Codice tipo di lavoro di manutenzione | Specifica il codice del tipo di lavoro di manutenzione.            |
+| Interrompe la produzione              | Specifica se la produzione è interrotta.                           |
+| Manutenzione esterna                  | Specifica se la manutenzione è esterna.                            |
+| Nr. fornitore                         | Specifica il fornitore.                                            |
+| Priorità                              | Specifica la priorità.                                             |
+| Stato                                 | Specifica lo stato.                                                |
+| Nr. riferimento contratto             | Specifica il numero di riferimento del contratto.                  |
+| Nota di chiusura                      | Specifica le note di chiusura.                                     |
+| Da richiesta lavoro                   | Specifica la richiesta di lavoro principale.                       |
+| Nr. ciclo di manutenzione             | Specifica il numero del ciclo di manutenzione.                     |
+| Versione ciclo di manutenzione        | Specifica la versione del ciclo di manutenzione.                   |
+
+## Guasti
+
+| Field                      | Description                                                 |
+| -------------------------- | ----------------------------------------------------------- |
+| Codice area di guasto      | Specifica il valore del campo "Codice area di guasto".      |
+| Codice sottoarea di guasto | Specifica il valore del campo "Codice sottoarea di guasto". |
+| Codice sintomo             | Specifica il valore del campo "Codice sintomo".             |
+| Codice guasto              | Specifica il valore del campo "Codice guasto".              |
+| Codice motivo guasto       | Specifica il valore del campo "Codice motivo guasto".       |
+| Codice risoluzione         | Specifica il valore del campo "Codice risoluzione".         |
+
+## Righe
+
+| Field                           | Description                                                      |
+| ------------------------------- | ---------------------------------------------------------------- |
+| Posizione                       | Specifica il valore del campo "Posizione".                       |
+| Nr. parametro                   | Specifica il valore del campo "Nr. parametro".                   |
+| Tipo                            | Specifica il valore del campo "Tipo".                            |
+| Nr. tipo                        | Specifica il valore del campo "Nr. tipo".                        |
+| Descrizione                     | Specifica il valore del campo "Descrizione".                     |
+| Descrizione 2                   | Specifica il valore del campo "Descrizione 2".                   |
+| Risultato controllo             | Specifica il valore del campo "Risultato controllo".             |
+| Codice risoluzione              | Specifica il valore del campo "Codice risoluzione".              |
+| Eseguito                        | Specifica il valore del campo "Eseguito".                        |
+| Durata manutenzione             | Specifica il valore del campo "Durata manutenzione".             |
+| Codice unità di misura          | Specifica il valore del campo "Codice unità di misura".          |
+| Codice unità di misura capacità | Specifica il valore del campo "Codice unità di misura capacità". |
+| Nr. fornitore                   | Specifica il valore del campo "Nr. fornitore".                   |
+| Codice motivo                   | Specifica il valore del campo "Codice motivo".                   |
+| Commento                        | Specifica il valore del campo "Commento".                        |
+| Data-ora inizio                 | Specifica il valore del campo "Data-ora inizio".                 |
+| Data-ora fine                   | Specifica il valore del campo "Data-ora fine".                   |
+| Nr. operazione successiva       | Specifica il valore del campo "Nr. operazione successiva".       |
+| Nr. operazione precedente       | Specifica il valore del campo "Nr. operazione precedente".       |
+| Stato operazione                | Specifica lo stato dell'attività di manutenzione.                |
+| Durata operazione               | Specifica la durata dell'attività di manutenzione.               |
+
+## Informazioni sui dati
+
+Contiene informazioni relative alla data di creazione e il nome dell'utente che ha creato o che ha effettuato l'ultima modifica.
+
+## Azioni
+
+### Cambia stato
+
+Permette di cambiare lo stato della richiesta lavoro.
+
+### Registra
+
+Finalizzare il documento o le registrazioni registrando gli importi e le quantità sui relativi conti nei libri societari.
+
+### Aggiorna ciclo
+
+Aggiornare le righe con il ciclo di manutenzione specificato nella richiesta di lavoro.
+
+### Aggiorna richiesta lavoro
+
+Aggiornare la pianificazione del ciclo della richiesta di lavoro.
+
+### Righe acquisto
+
+Consente di visualizzare o modificare le righe di acquisto della richiesta di lavoro.
+
+### Commenti
+
+Consente di visualizzare o modificare i commenti della macchina.
+
+### Ricambi
+
+Consente di visualizzare o modificare i pezzi di ricambio della macchina. I ricambi definiti saranno proposti nelle richieste di lavoro e nei punti di manutenzione.
+
+### DPI
