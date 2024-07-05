@@ -1,0 +1,69 @@
+È possibile eseguire il setup dell'app PMM tramite la pagina "Setup manutenzione impianti (PMM)".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000105-0/plm-menu-setup-ita.png"><br>
+
+---
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000105-0/plm-setup-groups-ita.png"><br>
+
+---
+
+## Generale
+
+| Campo                             | Descrizione                                                                                     |
+| --------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Nr. serie macchina                | Specifica il numero di serie della macchina.                                                    |
+| Nr. serie punto manutenzione      | Specifica il numero di serie del punto di manutenzione.                                         |
+| Nr. serie richiesta lavoro        | Specifica il numero di serie della richiesta di lavoro.                                         |
+| Tipo lavoro manutenzione default  | Specifica il tipo di lavoro di manutenzione predefinito.                                        |
+| Crea movimenti assenze            | Specifica se creare movimenti assenze se la manutenzione interrompe la produzione.              |
+| Nome template rich. approv.       | Specifica il nome del template di richiesta di approvvigionamento.                              |
+| Nome batch rich. approv.          | Specifica il nome batch della richiesta di approvvigionamento.                                  |
+| Nr. serie ciclo di manutenzione   | Specifica il numero di serie del ciclo di manutenzione.                                         |
+| Default stato richiesta di lavoro | Specifica lo stato iniziale della nuova richiesta di lavoro creata da un punto di manutenzione. |
+
+## Pianificazione
+
+| Campo                               | Descrizione                                                                                       |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Schedula creazione richieste lavoro | Specifica se la creazione automatica di richieste di lavoro è abilitata tramite la coda processi. |
+
+## Progetto
+
+| Campo                                   | Descrizione                                                                                     |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Commessa obbligatoria                   | Specifica se il nr. commessa e il nr. task commessa sono obbligatori nei punti di manutenzione. |
+| Registra movimenti commessa             | Specifica se i movimenti commessa devono essere registrati automaticamente.                     |
+| Nome definizione registrazioni commesse | Specifica il nome della definizione del giornale di registrazione.                              |
+| Nome batch registrazioni commesse       | Specifica il nome batch del giornale di registrazione.                                          |
+
+## Registrazione
+
+| Campo                                                                                            | Descrizione                                                                                                             |
+| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| Usa registrazione con Movimenti ciclo richiesta lavoro                                           | Specifica se utilizzare i movimenti ciclo richiesta lavoro per suggerire i valori da registrare.                        |
+| Modifica lo stato della richiesta di lavoro al ciclo completato                                  | Specifica se modificare lo stato della richiesta di lavoro al termine del ciclo di manutenzione.                        |
+| Stato richiesta di lavoro al completamento del ciclo                                             | Specifica lo stato della richiesta di lavoro da impostare al termine del ciclo di manutenzione.                         |
+| Utilizza la descrizione della richiesta di lavoro come descrizione attività in registra attività | Specifica se utilizzare la descrizione della richiesta di lavoro come descrizione attività in registra attività.        |
+| Alloca ciclo a risorsa                                                                           | Specifica se allocare i cicli delle richieste di lavoro alle risorse durante l'aggiornamento della richiesta di lavoro. |
+
+## Power PMM
+
+| Campo                    | Descrizione                                                 |
+| ------------------------ | ----------------------------------------------------------- |
+| Codice lingua di default | Specifica la lingua di default da utilizzare con Power PMM. |
+| Tema di default          | Specifica il tema di default da utilizzare con Power PMM.   |
+| Provider allegati        | Specifica il provider allegati da utilizzare con Power PMM. |
+
+## Azioni
+
+| Campo               | Descrizione                                                                                                                                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Inizializza default | Inizializza il setup con i valori di default. Crea e inizializza i numeri di serie, il setup registrazione e crea il movimento coda processi per eseguire la creazione schedulata delle richieste di lavoro. |
+| Aree guasto         | Configurare le aree guasto.                                                                                                                                                                                  |
+| Sotto-aree guasto   | Configurare le sotto-aree guasto.                                                                                                                                                                            |
+| Sintomi             | Configurare i sintomi.                                                                                                                                                                                       |
+| Guasti              | Configurare i guasti.                                                                                                                                                                                        |
+| Causali guasto      | Configurare le causali guasto.                                                                                                                                                                               |
+| Risoluzioni         | Configurare le risoluzioni.                                                                                                                                                                                  |
+| Traduzioni          | Configura le traduzioni delle etichette utilizzate da Power PMM.                                                                                                                                             |
