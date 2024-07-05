@@ -1,0 +1,20 @@
+The EX089.01 Power WMS for Handling Units app extends the Power WMS solution with handling unit management capabilities, which are managed across all major functionalities. In order to use the Power WMS for Handling Units App as a prerequisite in addition to the Power WMS app, you must have one or both of these apps:
+
+-   EX030 Handling Units Management
+-   EX055 Packing List
+
+The EX030 and EX055 apps allow you to manage the handling units (pallets, boxes, etc.) to be assigned to documents in order to carry out shipments, receipts, picks, put away and warehouse entries.
+
+<br>
+
+The functionalities implemented are the following:
+
+-   Handling Unit Creation
+-   Handling Units Management
+-   Handling Units Reclassification
+-   Item Journal with Handling Units
+-   Handling Units Phys. Inventory
+-   Assign Handling Units in Documents
+
+<br>
+<br>
