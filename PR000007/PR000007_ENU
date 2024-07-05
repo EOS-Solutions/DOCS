@@ -1,0 +1,31 @@
+The Eos Solutions Advanced Document Reporting App allows you to create and print up to 20 different types of documents using only 5 reports . For the same document it is also possible to define different layouts, by editing the document  header, the footer, the report title (for example for Proforma Invoices or "for internal use") through setup.
+The Advanced Document Reporting App extends the standard functionality of sending e-mail documents: it allows for example to define advanced setups related to the recipients and the body of the email through extended texts or HTML templates. It is possible, for example, to indicate that the sales invoices are sent massively not only to the email address of the customer card, but also to contacts with specified professional roles.
+
+**User benefits**
+The advantages for the user are:
+
+* a single report to print multiple document types
+* possibility to print the pdf files and send them by e-mail
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000007-0/ADR_Introduction_ENU.png"><br>
+
+### Documents and reports
+
+| ID       | Name               | Documents            |
+|----------|--------------------|----------------------|
+| 18122007 | EOS Sales Document | Sales quote<br>Sales order<br>Blanket sales orders |
+| 18122008 | EOS Invoice Document	| Sales Invoice<br>Service invoice<br>Sales credit memo<br>Service credit memo<br>Self billing invoice<br>Prof. invoice
+| 18122009 |EOS Shipping Document	| Sales shipment<br>Purchase return shipment<br>Return shipment<br>Service shipment
+| 181220010 | EOS Purchase Document	| Purchase order<br>Blanket purchase orders<br>Purchase quote
+| 181220011 | EOS Reminder Document	| Reminders<br>Issued reminders
+| 18122531 |  EOS Reminder Document	| Delivery reminders (the 18122531 report is available after installing the Delivery Reminders - PDR app)<br>Issued deliv. reminders (the 18122531 report is available after installing the Delivery Reminders - PDR app)
+
+### Supported features
+The ADR app simplifies the loading of data that is normally printed on documents. This app:
+
+* Allows you to print line and header extended texts
+* Allows you to print tracing lines (if present)
+* Allows you to print Cross-reference (“Item Nr.-Vendor” e “Item Nr.-Customer”)
+* Allows you to print standard header and footer images 
+
+ 
