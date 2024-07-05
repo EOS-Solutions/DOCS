@@ -1,0 +1,10 @@
+The function allows to perform physical inventory per handling unit by taking advantage of the functionality present in BC. Before you can perform the activity through the power app, it is necessary to perform the Calculate Inventory By Handling Units in the appropriate batch of the Physical Inventory Journals.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000765-0/EX089-HU9-ENU.png"><br>
+
+Once the batch has been populated from the power app, it is possible to take over the inventory of the various handling units by selecting them individually. After selecting the handling unit, the content is shown and the user can proceed to scan the barcodes.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000765-0/EX089-HU10-ENU.png"><br>
+
+<br>
+<br>
