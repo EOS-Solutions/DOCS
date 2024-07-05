@@ -1,0 +1,18 @@
+The system, upon posting a work request generates a series of ledger entries including:
+
+- Item Ledger Entry: a negative adjustment will be generated for each spare part used for the item associated with the spare part.
+- Resource Ledger Entry: an entry is made for each activity performed by the resources indicated in the work request.
+
+The system will also generate "Work Ledger Entries", "Machine Activity Entries" and "Work Request Cycle Entries".
+
+### Work Ledger Entries
+
+Allows you to view the generated C/G movements with their unit costs and amounts.
+
+### Machine Activity Entries
+
+Allows you to view the activities performed with the work request.
+
+### Work Request Cycle Entries
+
+Allows you to view the time taken to perform the activities performed with the work request.
