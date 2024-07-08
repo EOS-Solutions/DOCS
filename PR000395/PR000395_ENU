@@ -1,4 +1,4 @@
-**WIP calculation**
+**Inventory WIP calculation**
 
 Setup: to perform the WIP calculation it is necessary to activate the "Calculate WIP" flag for the period being processed: 
 
@@ -12,8 +12,8 @@ All production orders included in the calculation are shown and, through Manage-
 <img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/24inventory-valuation-and-costing-enu.png"><br>
 
 * The "Cost Amount" field in the header indicates the WIP value calculated for the specific order.
-* √Prod. Order Component Wipƒ Tab: contains the enhancement of the components used for items not yet stocked in the warehouse as Output (partially or completely). In the example above : 10 pieces were consumed for each component but partial output was recorded (5 out of 10 pieces).
-* Prod. Order Routing WIPƒ Tab: contains the enhancement of the capacity movements (run time + setup time) recorded for items not yet stocked in the warehouse as Output (partially or completely). In the example above : Capacity accounting entries were recorded for 122 minutes (total expected to produce 10 pcs) but a partial Output was booked in the warehouse (5 out of 10 pcs). Generally for internal machining, the calculation is carried out according to the declared / actual times, for the Subcontracting according to the pieces.
+* ‚ÄúProd. Order Component Wip‚Äù Tab: contains the enhancement of the components used for items not yet stocked in the warehouse as Output (partially or completely). In the example above : 10 pieces were consumed for each component but partial output was recorded (5 out of 10 pieces).
+* Prod. Order Routing WIP‚Äù Tab: contains the enhancement of the capacity movements (run time + setup time) recorded for items not yet stocked in the warehouse as Output (partially or completely). In the example above : Capacity accounting entries were recorded for 122 minutes (total expected to produce 10 pcs) but a partial Output was booked in the warehouse (5 out of 10 pcs). Generally for internal machining, the calculation is carried out according to the declared / actual times, for the Subcontracting according to the pieces.
  
 **Wip History (IVC)**
 
