@@ -1,39 +1,43 @@
 **Logiche di calcolo varie tipologie di costo**
 
-A differenza dello standard BC, i costi vengono calcolati computando i soli movimenti di ingresso con Tipo movimento √Acquistoƒ o "Output". Se le giacenze iniziali sono state caricate con Tipo movimento √Rettifica positivaƒ, ä quindi necessario impostare le quantitÖ ed i valori iniziali nella tabella √Costi Articoli Prepartenzaƒ.  
+A differenza dello standard BC, i costi vengono calcolati computando i soli movimenti di ingresso con Tipo movimento ‚ÄúAcquisto‚Äù o "Output". Se le giacenze iniziali sono state caricate con Tipo movimento ‚ÄúRettifica positiva‚Äù, √® quindi necessario impostare le quantit√† ed i valori iniziali nella tabella ‚ÄúCosti Articoli Prepartenza‚Äù.  
 
-**Calcolo Costo medio**: Totale importo acquisto e prodotto / Totale quantitÖ acquistata e prodotta
+**Calcolo Costo medio**: Totale importo acquisto e prodotto / Totale quantit√† acquistata e prodotta
 
 **Setup a DiBa/Cicli standard**: Il costo medio viene calcolato con la seguente logica: consumi da Diba * costo definito nel Setup costi articoli (costo medio, costo medio ponderato o costo standard) + tempi da Ciclo * costo definito nel Setup costi articoli (costo movimento, costo standard o costo budget) + costo C/Lavoro (recuperato in funzione della gerarchia di setup).
 
 **Setup a Movimenti effettivi**: Il costo medio viene calcolato con la seguente logica: consumi effettivi dichiarati * costo definito nel Setup costi articoli (costo medio, costo medio ponderato o costo standard) + tempi effettivi dichiarati * costo definito nel Setup costi articoli (costo movimento, costo standard o costo budget) + costo C/Lavoro (recuperato in funzione della gerarchia di setup).  
 
 > **NB**
-* Un articolo dovrebbe essere solo gestito con sistema di rifornimento Acquisto o Produzione. Nel caso in cui uno stesso articolo venga sia acquistato sia prodotto, il costo calcolato corrisponderÖ alla media dei costi dei due processi; se perï il calcolo viene effettuato a Ciclo standard/DiBa, non sarÖ possibile visualizzare la spaccatura del costo nelle diverse componenti (costo materiale, capacitÖ e c/lavoro) visto che tutto il costo sarÖ evidenziato come componente materiale. 
-* Nel caso di calcolo a Movimenti effettivi: il costo di un movimento di produzione, a differenza dello standard BC, viene determinato considerando i consumi ed i tempi dichiarati, indipendentemente dallo Stato dell¬OdP, e dal fatto che l¬ordine presenti una fase di C/lavoro, etc.  
+* Un articolo dovrebbe essere solo gestito con sistema di rifornimento Acquisto o Produzione. Nel caso in cui uno stesso articolo venga sia acquistato sia prodotto, il costo calcolato corrisponder√† alla media dei costi dei due processi; se per√≤ il calcolo viene effettuato a Ciclo standard/DiBa, non sar√† possibile visualizzare la spaccatura del costo nelle diverse componenti (costo materiale, capacit√† e c/lavoro) visto che tutto il costo sar√† evidenziato come componente materiale. 
+* Nel caso di calcolo a Movimenti effettivi: il costo di un movimento di produzione, a differenza dello standard BC, viene determinato considerando i consumi ed i tempi dichiarati, indipendentemente dallo Stato dell‚ÄôOdP, e dal fatto che l‚Äôordine presenti una fase di C/lavoro, etc.  
 
 **Calcolo Costo medio ponderato**
 
- Il costo medio ponderato viene calcolato in funzione del √Metodo calcolo costo medio ponderatoƒ definito nel Setup costi articoli.
+ Il costo medio ponderato viene calcolato in funzione del ‚ÄúMetodo calcolo costo medio ponderato‚Äù definito nel Setup costi articoli.
 
 **Calcolo Costo FIFO**
 
- Il costo FIFO viene calcolato con la seguente logica: viene determinata la giacenza a fine periodo, quindi vengono recuperati gli ultimi movimenti di acquisto / output sufficienti a coprire la giacenza finale. Costo FIFO: Totale importo costo / Totale quantitÖ (dei movimenti di cui sopra).
+Il costo FIFO viene calcolato con la seguente logica: viene determinata la giacenza a fine periodo, quindi vengono recuperati gli ultimi movimenti di Acquisto/Output/Output assemblaggio sufficienti a coprire la giacenza finale (Totale importo costo / Totale quantit√†).<br />Nel caso in cui i movimenti presenti nel periodo di calcolo non siano sufficienti a coprire la giacenza finale, la restante quantit√† viene recuperata dalla giacenza iniziale, valorizzata al Costo FIFO recuperato dall‚Äôultimo periodo precedente ‚ÄúDefinitivo‚Äù (a parit√† di Cod. setup costi articoli).
+
+Esempio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000391-0/FIFO-IVC-ita.png"><br>
 
 **Calcolo Costo LIFO**
 
-La logica di calcolo ä la stessa descritta per il Costo FIFO computando perï i movimenti con logica contraria, ossia recuperando i movimenti di acquisto /output meno recenti. Costo LIFO: Totale importo costo / Totale quantitÖ (dei movimenti di cui sopra).
+Il costo LIFO viene calcolato con la seguente logica: giacenza iniziale valorizzata al Costo LIFO recuperato dall‚Äôultimo periodo precedente ‚ÄúDefinitivo‚Äù (a parit√† di Cod. setup costi articoli) + somma dai movimenti di Acquisto/Output/Output assemblaggio presenti nel periodo di calcolo, che servono a coprire la giacenza finale (Totale importo costo / Totale quantit√†).
+
+Esempio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000391-0/LIFO-IVC-ita.png"><br>
 
 **Calcolo Costo ultimo**
 
-La logica di calcolo ä la stessa descritta per il Costo FIFO computando perï i movimenti con logica contraria, ossia recuperando i movimenti di acquisto /output meno recenti. Costo LIFO: Totale importo costo / Totale quantitÖ (dei movimenti di cui sopra).
+* **Articolo di tipo Acquisto:**
+	la procedura ordina i movimenti per Data Registrazione e Nr. Movimento ed identifica l‚Äôultimo movimento (pi√π recente) per il quale calcolare il costo. Il Costo ultimo viene determinato con la seguente logica: la procedura recupera l‚Äôultimo movimento contabile articolo di tipo Acquisto (fatturato o non fatturato), accede ai movimenti di valorizzazione filtrandoli per Tipo movimento = Costo diretto ed applica la seguente formula: (Importo acquisto effettivo + Importo acquisto previsto) / Quantit√†.
 
-**Articolo di tipo Acquisto:**
-
-la procedura ordina i movimenti per Data Registrazione e Nr. Movimento ed identifica l¬ultimo movimento (pió recente) per il quale calcolare il costo. Il Costo ultimo viene determinato con la seguente logica: la procedura recupera l¬ultimo movimento contabile articolo di tipo Acquisto (fatturato o non fatturato), accede ai movimenti di valorizzazione filtrandoli per Tipo movimento = Costo diretto ed applica la seguente formula: (Importo acquisto effettivo + Importo acquisto previsto) / QuantitÖ.
-
-**Articolo di tipo Produzione:**
-
-la procedura ordina i movimenti per Data Registrazione e Nr. Movimento ed identifica l¬ultimo movimento (pió recente) per il quale calcolare il costo. Il Costo ultimo viene determinato con la seguente logica: la procedura recupera il Costo Ultimo dei componenti (consumi) utilizzati per lo specifico OdP, poi somma i costi diretti e generali dei relativi movimenti capacitÖ, quindi divide il totale dei due costi per la quantitÖ di Output dell¬OdP. In entrambi i casi, se nel periodo di calcolo non sono presenti movimenti, il Costo ultimo viene recuperato come segue:
-* Il sistema ricerca il Costo ultimo nello Storico costi articoli del periodo precedente (Data fine periodo precedente < Data fine periodo) a paritÖ di Cod. setup costi articoli, ordinando i periodi per Cod. Periodo; recupera quindi il valore del campo Costo ultimo e marca il campo √Forzatura costo ultimoƒ con l¬opzione Ultimo costo precedente.
-* Se anche la precedente ricerca non ha avuto successo (caso remoto: probabilmente in fase di go-live con Rettifiche positive e Costi prepartenza o in casi di periodi precedenti filtrati per determinati articoli), il Costo ultimo viene ereditato dal campo Costo medio dello Storico costi articoli dello stesso periodo e viene marcato il campo √Forzatura costo ultimoƒ = CMP o Standard (ossia viene ereditata la stessa opzione di forzatura presente nel campo √Forzatura Costo medioƒ).  
+* **Articolo di tipo Produzione:**
+	la procedura ordina i movimenti per Data Registrazione e Nr. Movimento ed identifica l‚Äôultimo movimento (pi√π recente) per il quale calcolare il costo. Il Costo ultimo viene determinato con la seguente logica: la procedura recupera il Costo Ultimo dei componenti (consumi) utilizzati per lo specifico OdP, poi somma i costi diretti e generali dei relativi movimenti capacit√†, quindi divide il totale dei due costi per la quantit√† di Output dell‚ÄôOdP. In entrambi i casi, se nel periodo di calcolo non sono presenti movimenti, il Costo ultimo viene recuperato come segue:
+	* Il sistema ricerca il Costo ultimo nello Storico costi articoli del periodo precedente (Data fine periodo precedente < Data fine periodo) a parit√† di Cod. setup costi articoli, ordinando i periodi per Cod. Periodo; recupera quindi il valore del campo Costo ultimo e marca il campo ‚ÄúForzatura costo ultimo‚Äù con l‚Äôopzione Ultimo costo precedente.
+	* Se anche la precedente ricerca non ha avuto successo (caso remoto: probabilmente in fase di go-live con Rettifiche positive e Costi prepartenza o in casi di periodi precedenti filtrati per determinati articoli), il Costo ultimo viene ereditato dal campo Costo medio dello Storico costi articoli dello stesso periodo e viene marcato il campo ‚ÄúForzatura costo ultimo‚Äù = CMP o Standard (ossia viene ereditata la stessa opzione di forzatura presente nel campo ‚ÄúForzatura Costo medio‚Äù).  
