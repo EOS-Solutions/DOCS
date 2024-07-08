@@ -18,21 +18,24 @@ The weighted average cost is calculated based on the "Weighted average cost calc
 
 **FIFO Cost Calculation**
 
-  The FIFO cost is calculated with the following logic: the stock at the end of the period is determined, then the last purchase/output movements sufficient to cover the final stock are recovered. FIFO Cost: Total cost amount / Total quantity (of the above movements).
+The FIFO cost is calculated with the following logic: the stock at the end of the period is determined, then the last Purchase/Output/Assembly Output movements sufficient to cover the final stock are recovered (Total cost amount / Total quantity).<br /> In the event that the movements present in the calculation period are not sufficient to cover the final stock, the remaining quantity is recovered from the initial stock, valued at the FIFO Cost recovered from the last previous "Final" period (with the same Cost Setup Code items).
+
+Example:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000391-0/FIFO-IVC-enu.png"><br>
 
 **LIFO Cost Calculation**
 
-The calculation logic is the same as described for the FIFO Cost, however calculating the movements with the opposite logic, i.e. recovering the least recent purchase/output movements. LIFO Cost: Total cost amount / Total quantity (of the above movements).
+The LIFO cost is calculated with the following logic: initial stock valued at the LIFO Cost recovered from the last previous "Final" period (with the same Item Cost Setup Code) + sum from the Purchase/Output/Assembly Output movements present in the period calculation, which serve to cover the final stock (Total cost amount / Total quantity).
 
-**Final Cost Calculation**
+Example:
 
-**Purchase type item:**
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000391-0/LIFO-IVC-enu.png"><br>
 
-the procedure sorts the movements by Registration Date and Movement No. and identifies the last (most recent) movement for which to calculate the cost. The final cost is determined with the following logic: the procedure recovers the last item accounting entry of the Purchase type (invoiced or not invoiced), accesses the valorisation transactions by filtering them by Entry type = Direct cost and applies the following formula: (Purchase amount Actual + Estimated Purchase Amount) / Quantity.
-
-**Production type item:**
-
-the procedure sorts the movements by Registration Date and Movement No. and identifies the last (most recent) movement for which to calculate the cost. The Ultimate Cost is determined with the following logic: the procedure recovers the Ultimate Cost of the components (consumption) used for the specific Work Order, then adds the direct and general costs of the related capacity movements, then divides the total of the two costs by the quantity of OdP output. In both cases, if there are no movements in the calculation period, the final cost is recovered as follows:
-
-* The system searches for the last Cost in the Item Cost History of the previous period (Previous Period End Date < Period End Date) with the same Item Cost Setup Code, ordering the periods by Period Code; then recover the value of the Last cost field and mark the "Forcing last cost" field with the Previous last cost option.
-* If the previous search was also unsuccessful (remote case: probably in the go-live phase with positive adjustments and pre-departure costs or in cases of previous periods filtered for certain items), the Last Cost is inherited from the Average Cost field of the History item costs of the same period and the ÃForcing last costÄ field is marked = CMP or Standard (i.e. the same forcing option present in the ÃForcing average costÄ field is inherited).
+**Last Direct Cost Calculation**
+ * **Purchase type item:**
+	the procedure sorts the movements by Registration Date and Movement No. and identifies the last (most recent) movement for which to calculate the cost. The final cost is determined with the following logic: the procedure recovers the last item accounting entry of the Purchase type (invoiced or not invoiced), accesses the valorisation transactions by filtering them by Entry type = Direct cost and applies the following formula: (Purchase amount Actual + Estimated Purchase Amount) / Quantity.
+	* **Production type item:**
+	the procedure sorts the movements by Registration Date and Movement No. and identifies the last (most recent) movement for which to calculate the cost. The Ultimate Cost is determined with the following logic: the procedure recovers the Ultimate Cost of the components (consumption) used for the specific Work Order, then adds the direct and general costs of the related capacity movements, then divides the total of the two costs by the quantity of OdP output. In both cases, if there are no movements in the calculation period, the final cost is recovered as follows:
+	* The system searches for the last Cost in the Item Cost History of the previous period (Previous Period End Date < Period End Date) with the same Item Cost Setup Code, ordering the periods by Period Code; then recover the value of the Last cost field and mark the "Forcing last cost" field with the Previous last cost option.
+	* If the previous search was also unsuccessful (remote case: probably in the go-live phase with positive adjustments and pre-departure costs or in cases of previous periods filtered for certain items), the Last Cost is inherited from the Average Cost field of the History item costs of the same period and the â€œForcing last costâ€ field is marked = CMP or Standard (i.e. the same forcing option present in the â€œForcing average costâ€ field is inherited).
