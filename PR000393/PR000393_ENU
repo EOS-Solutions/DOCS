@@ -10,7 +10,7 @@ Il LIFO is calculated at the end of the year; to perform the calculation it is n
 
 On the page "Item Costing Period Management (IVC)" there must be a period relating to the calculation LIFO year with the "Definitive" and "Fiscal Period" flags valued at Yes.
 
-NB: √Definitiveƒ flag: It must be set only when the LIFO calculation is not forecast but it's definitive. The definitive LIFO bands can no longer be changed.
+NB: ‚ÄúDefinitive‚Äù flag: It must be set only when the LIFO calculation is not forecast but it's definitive. The definitive LIFO bands can no longer be changed.
 
 At the end of the calculation process it is necessary to execute the Costing LIFO Print (IVC) report. If a filter is not applied to the item or any information related to the item, all the items with LIFO bands are printed.<br>
 <img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/italian LIFO/20inventory-valuation-and-costing-enu.png"><br>
