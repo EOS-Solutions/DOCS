@@ -1,0 +1,15 @@
+Sostituzione valori permette di rimpiazzare dei valori nella tabella prima di effettuare il cambio di stato, questa funzionalità è accessibile dall'azione Sostituzione valori dei campi nella pagina:
+* Setup Tabelle EDS -> Cambio Stato -> Sostituzione valori dei campi
+
+   
+<br>
+<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000770-0/ITA-EDS Table Setup.png">
+<br>
+
+<br>
+<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000770-0/ITA - Transaction List.png">
+<br>
+
+<br>
+<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000770-0/ITA - EDS Field Replacement.png">
+<br>
