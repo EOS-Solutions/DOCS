@@ -8,7 +8,7 @@ There are market sectors, for example food or jewelry, where products are shippe
 
 Thanks to the Dual Unit of Measure app, on the order lines, we find the usual fields "Quantity" and "Unit of Measure Code" and, in addition to these, there are the fields "Secondary Quantity" and "Secondary Unit of Measure Code" in which you can specify the second unit of measurement.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000033-0/DUM2_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000033-0/DUM2_ENU.png"><br>
 
 <br>
 <br>
@@ -26,7 +26,7 @@ Thanks to the Dual Unit of Measure app, on the order lines, we find the usual fi
 -   Item tracking and inventory with two units of measure.
 -   Invoicing, for sales and purchase, with prices linked to the second unit of measure.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000033-0/DUM3_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000033-0/DUM3_ITA.png"><br>
 
 **N.B.**
 
