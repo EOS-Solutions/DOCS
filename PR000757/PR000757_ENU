@@ -1,0 +1,19 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Setup and insert billig note</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Manage and post billing note in vendor bill</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Manage and post billing note in payment journal</td>
+	</tr>
+	<tr>
+		<td>4</td>
+			<td>Create billing note from salesperson vendor invoice</td>
+	</tr>	
+</table>
+<br>
