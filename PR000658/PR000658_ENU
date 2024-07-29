@@ -9,11 +9,13 @@ This page defines which message to send to each group and how to send it.
 - **No. Series** (mandatory):
   Each message that is sent or received is assigned a number. This field indicates the number series to be used to generate this number and is therefore mandatory.
 - **EDI Standard**.
-  The ÁEDI StandardÂ field is only used inbound, i.e. when importing EDI files. Through this field, the different record types in the file (BGM, DTM, FTX, RFF etc. etc.) are validated. D96 and Euritmo support different record types. If the file is not valid, the system displays an error.
+  The â€˜EDI Standardâ€™ field is only used inbound, i.e. when importing EDI files. Through this field, the different record types in the file (BGM, DTM, FTX, RFF etc. etc.) are validated. D96 and Euritmo support different record types. If the file is not valid, the system displays an error.
 - **Company Name**
   You can select the company from the multi-company list.
 - **Conversion report ID** (mandatory)
   Enter the number of the conversion report. This report is responsible for converting the Business Central document into an EDI message (in the case of outbound) or an EDI message into a Business Central document (in the case of inbound). The EDI app provides a number of standard formats that are already managed. These conversion reports are available open-source at https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI.
+- **File Encoding**
+  This setting can be used to indicate the encoding of the file to be saved or read.
 - **Delete Imported File**
   This setting can be used to indicate that imported files should be deleted after they have been successfully loaded into the system. This setting only applies to inbound.
 - **XMLport ID**
@@ -23,6 +25,10 @@ This page defines which message to send to each group and how to send it.
   - `<DOC>`:  Reference Document No. (Invoice No.)
   - `<DATE>`: today's date in the format YYYYMMDD
   - `<DATETIME>`: today's date/time in the format YYYYMMDDhhmmss
+- **Enable Archive Path**
+  Enables file archiviation after being imported.
+- **Archive Path**
+  Enter the path where the file is to be saved after being imported if **Enable Archive Path** is flagged.
 - **Service Configuration Code** (mandatory)
   Indicates the service configuration to be used to access the filesystem to read or write files.
 - **Log Level**
