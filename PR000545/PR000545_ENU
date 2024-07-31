@@ -1,18 +1,25 @@
-The system, upon posting a work request generates a series of ledger entries including:
+The system, upon posting a work request posts a series of ledger entries including:
 
-- Item Ledger Entry: a negative adjustment will be generated for each spare part used for the item associated with the spare part.
-- Resource Ledger Entry: an entry is made for each activity performed by the resources indicated in the work request.
+- Item Ledger Entry: a negative adjustment will be posted for each spare part (item) used.
+- Resource Ledger Entry: an entry is posted for each activity performed by the resources specified in the work request.
+- Job Ledger Entry: if a project is specified, related records will be posted.
 
-The system will also generate "Work Ledger Entries", "Machine Activity Entries" and "Work Request Cycle Entries".
+The system will also post "Work Ledger Entries", "Machine Activity Entries" and "Work Request Cycle Entries".
 
 ### Work Ledger Entries
 
-Allows you to view the generated C/G movements with their unit costs and amounts.
+Allows you to view spare parts (items) and resourse entries posted with their unit costs and amounts.
+
+The reference to the machine activity entry recorded simultaneously to the work ledger entry is contained in the field "Machine Activity Entry No.".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000545-0/plm-work-ledger-entry-enu.png"><br>
 
 ### Machine Activity Entries
 
-Allows you to view the activities performed with the work request.
+Allows you to view the activities performed with a work request.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000545-0/plm-machine-activity-ledger-entry-enu.png"><br>
 
 ### Work Request Cycle Entries
 
-Allows you to view the time taken to perform the activities performed with the work request.
+Allows you to view the time taken to perform the activities performed with a work request.
