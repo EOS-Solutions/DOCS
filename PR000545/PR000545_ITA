@@ -1,18 +1,25 @@
-Il sistema, alla registrazione di una richiesta di lavoro genera una serie di movimenti contabili tra cui:
+Il sistema, al momento della registrazione di una richiesta di lavoro, registra una serie di movimenti contabili, tra cui:
 
-- Movimenti contabili articoli: per ciascun ricambio utilizzato verrà generata una rettifica negativa l'articolo associato al ricambio.
-- Movimenti contabili risorse: viene eseguira una registrazione per ciascuna attività svolta dalle risorse indicate nella richiesta di lavoro.
+- Movimenti contabili articoli: per ciascun ricambio (articolo) consumato con la richiesta di lavoro verrà generata una rettifica negativa.
+- Movimenti contabili risorse:  per ciascuna attività svolta dalle risorse indicate nella richiesta di lavoro.
+- Movimenti contabili progetti: se è indicato un progetto, verranno eseguite le relative registrazioni.
 
-Il sistema genererà anche "Movimenti contabili lavoro", "Movimento attività" e "Movimenti ciclo richiesta lavoro".
+Il sistema registrerà anche "Movimenti contabili lavoro", "Movimenti attività" e "Movimenti ciclo richiesta lavoro".
 
 ### Movimenti contabili lavoro
 
-Consente di visualizzare i movimenti C/G generati con i relativi costi unitari e importi.
+Consente di visualizzare i movimenti relativi ai ricambi (articoli) e alle risorse registrate con i relativi costi unitari e importi.
+
+Il riferimento alla movimento attività macchina registrata contemporaneamente alla voce del registro lavori è contenuto nel campo "Nr. movimento attività macchina".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000545-0/plm-work-ledger-entry-ita.png"><br>
 
 ### Movimenti attività
 
-Consente di visualizzare le attività svolta con la richiesta di lavoro.
+Permette di visualizzare le attività eseguite con una richiesta di lavoro.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000545-0/plm-machine-activity-ledger-entry-ita.png"><br>
 
 ### Movimenti ciclo richiesta lavoro
 
-Consente di visualizzare i tempi impiegati per lo svolgimento delle attività svolte con la richiesta di lavoro.
+Consente di visualizzare i tempi impiegati per lo svolgimento delle attività indicate nelle righe ciclo della richiesta di lavoro.
