@@ -1,0 +1,15 @@
+La pagina "**Riepilogo bonus (SPB)**" consente di visualizzare un elenco di tutte le righe bonus a cui un determinato cliente (o fornitore) ha attualmente diritto. Questa pagina può essere aperta dalla **Scheda/lista cliente** o dalla **Scheda/lista fornitore**, partendo dal gruppo d'azione **Report**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000776-0/summary_it.png"><br>
+
+Nella pagina sono disponibili le seguenti opzioni:
+- **Mostra solo attivi**: se specificato, vengono visualizzate solo le righe attive. Di base una riga bonus è considerata attiva quando è certificata e la data di riferimento rientra nella data di inizio/fine. Questo comportamento può essere modificato attraverso la personalizzazione del codice.
+- **Data di riferimento**: specifica la data di riferimento per la quale deve essere calcolato il riepilogo. Di base è la data di lavoro corrente. Questa data viene utilizzata per due cose:
+	- per verificare la validità di una riga di bonus (vedi sopra)
+	- per calcolare i livelli gerarchici del cliente/venditore attuale
+
+Nella parte inferiore della pagina è presente un elenco di articoli che la riga bonus attualmente selezionata include. Lo stesso elenco è disponibile anche attraverso l'azione **Correlato** > **Articoli correlati**.  Questo elenco comprende gli articoli specificati tramite il filtro esteso o specificando il filtro degli articoli direttamente sulle righe bonus.
+
+{{% alert title="Warning" color="warning" %}}
+La sottopagina contenente le voci sarà rimossa in una prossima versione e rimarrà solo l'azione.
+{{% /avviso %}}
