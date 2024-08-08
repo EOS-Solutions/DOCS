@@ -1,0 +1,15 @@
+The page "**Bonus Summary (SPB)**" allows you to see a list of all bonus lines that a given customer (or vendor) is currently entitled to. You can open this page from the **Customer Card/List** or from the **Vendor Card/List** from the **Reports** action group.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000776-0/summary_en.png"><br>
+
+The following options are available on the page:
+- **Show Only Active**: if specified, only lines that are active are displayed. By default, a bonus line is considered active when it is certified and the reference date falls within it's starting/ending date. This behaviour can be changed through code customization.
+- **Reference Date**: specifies the reference date for which the summary should be calculated. This defaults to the current workdate. This date is used for two things:
+	- to check if a bonus lines validity (see above)
+	- to calculate the hierarchy levels of the current customer/vendor
+
+In the lower part of the page there is a list of items that the currently selected bonus line includes. The same list is also available through the action **Related** > **Related items**.  This list includes items specified via extended filter and or by specifying the item filter directly on the bonus lines.
+
+{{% alert title="Warning" color="warning" %}}
+The subpage containing the items will be removed in a future release and only the action will remain.
+{{% /alert %}}
