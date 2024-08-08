@@ -20,7 +20,7 @@ for Business Central OnLine a subscription is valid to all Production Environmen
 
 For Business Central OnPremise a subscription is valid to all Production Environments / Sandboxes / Companies and users that mounts the same Business Central license file (.flf or .bclicense). Sharing of the same license between different customer is not admitted and regulated by Microsoft license policies.
 
-## WhatÂs the Customer ID?
+## Whatâ€™s the Customer ID?
 
 **SaaS environment**
 
@@ -35,7 +35,7 @@ The Tenant ID can be found:
 <br>
 
 
-1.  In the ÃSubscription control panelÄ page (available when at least one EOS App is installed)
+1.  In the â€œSubscription control panelâ€ page (available when at least one EOS App is installed)
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000729-0/2custID-subscription.png">
 <br>
