@@ -1,4 +1,4 @@
-Le EOS apps sono vendute ed attivate a sottoscrizione. Ogni sottoscrizione fa riferimento ad una singola app o KIT ed ä caratterizzata da una data di inizio una di fine ed un piano.
+Le EOS apps sono vendute ed attivate a sottoscrizione. Ogni sottoscrizione fa riferimento ad una singola app o KIT ed √® caratterizzata da una data di inizio, una di fine ed un piano.
 
 ## Piani e Sottoscrizioni
 
@@ -8,27 +8,27 @@ I piani possono essere di tre tipi:
 -   FREE DEMO-TRIAL (Gratuito per i primi 20 giorni)
 -   FULL (a Pagamento)
 
-Le sottoscrizioni si attivano in base al codice cliente (Customer ID). Per poter attivare una sottoscrizione ä quindi necessario essere in possesso di un  **Customer ID**
+Le sottoscrizioni si attivano in base al codice cliente (Customer ID). Per poter attivare una sottoscrizione √® quindi necessario essere in possesso di un **Customer ID**.
 
-Il Customer ID ä un identificatore univoco per un certo ambiente Business Central di un cliente. Un cliente puï quindi avere pió di un customer ID
+Il Customer ID √® un identificatore univoco per un certo ambiente Business Central di un cliente. Un cliente pu√≤ quindi avere pi√π di un customer ID.
 
-L'utilizzo dele EOS Apps, se non indicato differentemente, ä valido per utenti illimitati / environments illimitati / societÖ illimitate che facciano riferimento allo stesso Customer ID.
+L'utilizzo delle EOS Apps, se non indicato differentemente, √® valido per utenti illimitati / environments illimitati / societ√† illimitate che facciano riferimento allo stesso Customer ID.
 
 Esempio:
 
-Per Business Central OnLine (Saas) una sottoscrizione ä valida per tutti gli ambienti di produzione / Sandboxes / SocietÖ ed utenti che appartengono allo stesso Azure Tenant. Nel caso di ambienti SaaS il customer ID coincide con il Tenant ID
+Per Business Central OnLine (Saas) una sottoscrizione √® valida per tutti gli ambienti di produzione / Sandboxes / Societ√† ed utenti che appartengono allo stesso Azure Tenant. Nel caso di ambienti SaaS il customer ID coincide con il Tenant ID.
 
-Per Business Central OnPremise una sottoscrizione ä valida per tutti gli ambienti di produzione / Sandboxes / Companies e utenti che montano lo stesso file di licenza (.flf or .bclicense). 
+Per Business Central OnPremise una sottoscrizione √® valida per tutti gli ambienti di produzione / Sandboxes / Companies e utenti che montano lo stesso file di licenza (.flf or .bclicense). 
 
-La condivisione di una stessa licenza per pió ambienti ä limitata e regolamentatata dalle policy del licensing di Microsoft .
+La condivisione di una stessa licenza per pi√π ambienti √® limitata e regolamentatata dalle policy del licensing di Microsoft .
 
-## Cosa ä il  Customer ID?
+## Cosa √® il  Customer ID?
 
 **SaaS environment**
 
-Per Business Central Online (SaaS environment) il  Customer ID corrisponde al Microsoft Azure Tenant ID associato al Business Central Environment
+Per Business Central Online (SaaS environment) il Customer ID corrisponde al Microsoft Azure Tenant ID associato al Business Central Environment.
 
-Il Tenant ID puï essere trovato:
+Il Tenant ID pu√≤ essere trovato:
 
 1.  Nella barra di navigazione del browser utilizzando Business Central URL
 
@@ -37,7 +37,7 @@ Il Tenant ID puï essere trovato:
 <br>
 
 
-2.  Nella pagina "Pannello di controllo sottoscrizioni" (√Subscription control panelƒ) disponibile quando almeno una delle EOS App ä installata
+2.  Nella pagina "Pannello di controllo sottoscrizioni" (‚ÄúSubscription control panel‚Äù) disponibile quando almeno una delle EOS App √® installata
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000729-0/2custID-subscription.png">
 <br>
@@ -45,11 +45,11 @@ Il Tenant ID puï essere trovato:
 
 **OnPrem environment**
 
-Per Business Central OnPremise il Customer ID corrisponde al Microsoft VOICE ID presente nel license file (con estensione .flf or .bclicense) installata sul  Database. Per Business Central OnPremise il Customer ID ä un numero a 7 cifre.
+Per Business Central OnPremise il Customer ID corrisponde al Microsoft VOICE ID presente nel license file (con estensione .flf or .bclicense) installata sul  Database. Per Business Central OnPremise il Customer ID √® un numero a 7 cifre.
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Licenze di Sviluppo (Aka Development License) fornite da Microsoft ai Partner Dynamics sono bloccate da EOS. Per utilizzi di sviluppo e Demo viene generato un codice RANDOM di 32 caratteri al posto dei codice da 7 numeri. Per gli ambienti Dev e Demo vengono attivate solo periodi Trials.  
+| Licenze di Sviluppo (Aka Development License) fornite da Microsoft ai Partner Dynamics sono bloccate da EOS. Per utilizzi di sviluppo e Demo viene generato un codice RANDOM di 32 caratteri al posto dei codice da 7 numeri. Per gli ambienti Dev e Demo vengono attivati solo periodi Trials.  
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000729-0/3custID-subscription.png">
 <br>
