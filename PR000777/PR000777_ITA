@@ -1,0 +1,10 @@
+Le configurazioni dei servizi consentono di specificare i parametri e la configurazione dei servizi esterni attraverso un'unica interfaccia comune. EOS Administration Library fornisce il supporto per una serie di servizi, ma è possibile implementare facilmente le proprie configurazioni di servizio con il minimo sforzo e sfruttando questa interfaccia di configurazione comune.
+
+Per ogni configurazione di servizio esiste solitamente una Codeunit per l'accesso a tale servizio. Per i dettagli si può fare riferimento alla documentazione di quel servizio specifico.
+
+I servizi che EOS Administration Library supporta immediatamente sono:
+- **Azure FileStorage** fornisce l'accesso agli storage account di Azure FileShare. Per ulteriori informazioni, consultare il capitolo **FileSystem**.
+- **EOS Function API** fornisce l'accesso a tutte le funzionalità offerte da EOS Function API.
+- **ApplicationInsights Query** consente di inviare e analizzare le query ad Azure Application Insights.
+- **Azure BlobStorage** consente di accedere agli storage account BLOB di Azure. Per saperne di più, consultate il capitolo **FileSystem**.
+- L'**In-Memory Storage** è uno storage integrato il cui caso d'uso principale è il test e lo sviluppo. Per saperne di più, consultate il capitolo **FileSystem**.
