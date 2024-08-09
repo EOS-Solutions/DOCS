@@ -1,0 +1,14 @@
+È possibile accedere alle configurazioni dei servizi dalla pagina **Lista configurazioni servizio (EAL)**. Questa pagina elenca tutti i servizi attualmente configurati. Da qui è possibile gestire i servizi esistenti o crearne di nuovi.
+
+La configurazione di un servizio è composta da due parti. Nella parte superior si trova un elenco di campi:
+
+- **Codice**: Specifica il codice che si desidera assegnare alla configurazione di questo servizio.
+- **Tipo**: Specifica il tipo di servizio che si sta configurando.
+- **Descrizione**: Consente di fornire una descrizione di facile utilizzo per la configurazione del servizio.
+- **Endpoint Uri**: Permette di specificare l'URL a cui punta il servizio. Questo può essere necessario o meno, a seconda dell'implementazione del servizio. Alcuni servizi lo richiedono, altri no.
+- **Request Timeout (sec)**: Permette di specificare un timeout per le chiamate HTTP effettuate a questo servizio. Se non viene specificato, verrà utilizzato il timeout predefinito del client HTTP. Questo può essere considerato o meno, a seconda dell'implementazione del servizio. Alcuni servizi lo considerano, altri no.
+- **Logging**: consente di configurare come (e se) le richieste e le risposte vengono registrate per questo servizio. Questo dovrebbe essere usato solo per il debug. Per saperne di più, consultare il capitolo **Debugging**.
+
+Di seguito, c'è una sottopagina di parametri specifici del servizio, diversi a seconda del servizio che si sta configurando. Per i dettagli, consultare la documentazione di ciascun servizio.
+
+Ogni parametro di questa sottopagina può essere un parametro normale o un segreto. Questo viene deciso dall'implementazione del servizio. L'unica differenza tra i due è che un valore segreto non può più essere estratto, una volta salvato.
