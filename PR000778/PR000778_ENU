@@ -1,0 +1,14 @@
+You can access the service configurations from the page **Service Configuration List (EAL)**. This page will list all currently configured services. From here you can manage existing services or create new ones.
+
+A service configuration is made of two parts. On top, you will find a list of fields:
+
+- **Code**: Specifies a code you want to assign to this service configration
+- **Type**: Specifies the type of service you are configuring.
+- **Description**: Allows you to provide a user-friendly description for this service configuration.
+- **Endpoint Uri**: Allows you to to specify the URL this service points to. This may or may not be necessary, depending on the services implementation. Some services require this, other's do not.
+- **Request Timeout (sec)**: Allows you to specify a timeout for HTTP calls made to this service. If you don't specify this, the default HTTP client timeout will be used. This may or may not be considered, depending on the services implementation. Some services consider this, other's do not.
+- **Logging**: allows you to configure how (and if) requests and responses are logged for this service. This should only be used for debugging. You can read more on this below in the **Debugging** chapter.
+
+Below, there is a subpage of service-specific parameters that are different, depending on the service that you are configuring. Refer to the documentation of each service for details.
+
+Each parameter in this subpage can either be a normal parameter or a secret. This is decided by the service implementation. The only difference between the two is that a secret value can no longer be extracted, once it has been saved.
