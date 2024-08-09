@@ -1,0 +1,13 @@
+Most services that are configured through a service configuration can be debugged. This is achieved by logging requests and their responses. This, however, depends on the services implementation.
+
+To activate this debug log you must specify a value other than **None** in the field **Logging**. This allows you to log every request (and their response) or only failed ones.
+
+{{% alert title="Be careful!" color="warning" %}}
+Activating this log might leak secrets or passwords to the log and should therefore only be used for debugging and testing.
+{{% /alert %}}
+
+{{% alert title="Note" color="primary" %}}
+The log is not persisted to the database. All entries are stored in a temporary session-wide table and are therefore lost once your session is closed.
+{{% /alert %}}
+
+Once you active the log, all further requests made using this service configuration will be logged. You can access the log from the **Service Configuration** card, from the action **Resquest Log**. This page allows you to see all the requests since activating the log and also allows you to download the request and response data (as JSON).
