@@ -1,0 +1,13 @@
+La maggior parte dei servizi configurati attraverso una configurazione di servizio può essere sottoposta a debug. Ciò si ottiene loggando le richieste e le relative risposte. Questo, tuttavia, dipende dall'implementazione del servizio.
+
+Per attivare questo log di debug, è necessario specificare un valore diverso da **None** nel campo **Logging**. Ciò consente di loggare ogni richiesta (e la relativa risposta) o solo quelle fallite.
+
+{{% alert title="Attenzione!" color="warning" %}}
+L'attivazione di questo log potrebbe far trapelare segreti o password nel log e dovrebbe quindi essere usato solo per il debug e i test.
+{{% /alert %}}
+
+{{% alert title="Nota" color="primary" %}}
+Il log non viene memorizzato nel database. Tutte le voci sono memorizzate in una tabella temporanea a livello di sessione e vengono quindi perse una volta chiusa la sessione.
+{{% /alert %}}
+
+Una volta attivato il log, tutte le ulteriori richieste effettuate utilizzando questa configurazione del servizio saranno loggate. È possibile accedere al registro dalla scheda **Configurazione del servizio**, dall'azione **Request Log**. Questa pagina consente di vedere tutte le richieste effettuate dall'attivazione del log e permette anche di scaricare i dati delle richieste e delle risposte (come JSON).
