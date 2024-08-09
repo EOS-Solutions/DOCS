@@ -12,4 +12,4 @@ Nella parte inferiore della pagina è presente un elenco di articoli che la riga
 
 {{% alert title="Warning" color="warning" %}}
 La sottopagina contenente le voci sarà rimossa in una prossima versione e rimarrà solo l'azione.
-{{% /avviso %}}
+{{% /alert %}}
