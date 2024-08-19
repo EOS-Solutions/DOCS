@@ -16,6 +16,8 @@ In questa pagina si definisce quale messaggio mandare ad ogni Gruppo e come invi
   Inserire il numero del report di conversione. Questo report si occupa di convertire il documento di Business Central in un messaggio EDI (in caso di outbound) oppure un messaggio EDI in un documento di Business Central (in caso di inbound). L'app EDI mette a disposizione una serie di formati standard già gestiti. Questi report di conversione sono disponibili open-source su https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI
 - **Codifica del File**
   Questa impostazione permette di specificare la codifica del file da salvare o da leggere.
+- **Ignora messaggi EDI esistenti**
+  Questa impostazione permette di ignorare all'esportazione i documenti che già possiedono dei messaggi EDI
 - **Cancella File Importato**
   Con questa impostazione è possibile indicare che i file importati devono essere eliminati dopo essere caricati correttamente nel sistema. Questa impostazione vale solo per inbound.
 - **ID XML Port**
