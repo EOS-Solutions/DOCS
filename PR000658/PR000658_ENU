@@ -16,6 +16,8 @@ This page defines which message to send to each group and how to send it.
   Enter the number of the conversion report. This report is responsible for converting the Business Central document into an EDI message (in the case of outbound) or an EDI message into a Business Central document (in the case of inbound). The EDI app provides a number of standard formats that are already managed. These conversion reports are available open-source at https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI.
 - **File Encoding**
   This setting can be used to indicate the encoding of the file to be saved or read.
+- **Skip existing EDI messages**
+  This setting enables to skip documents on exportation that already have an Existing EDI message
 - **Delete Imported File**
   This setting can be used to indicate that imported files should be deleted after they have been successfully loaded into the system. This setting only applies to inbound.
 - **XMLport ID**
