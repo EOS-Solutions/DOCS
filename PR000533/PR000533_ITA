@@ -1,18 +1,18 @@
-Da Lista Clienti-\>Report-\>Estratto conto ä possibile stampare i dettagli sui movimenti cliente per il periodo selezionato e il saldo finale:
+Da Lista Clienti-\>Report-\>Estratto conto √® possibile stampare i dettagli sui movimenti cliente per il periodo selezionato e il saldo finale:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000533-0/5AdvancedCustomerVendorStatement.png"><br>
 
-Il report da compilare ä il seguente:
+Il report da compilare √® il seguente:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000533-0/6AdvancedCustomerVendorStatement.png"><br>
 
 | Solo movimenti aperti      | decidere se si desidera vedere solo le partite aperte oppure tutti i movimenti                                                                                                                                                                             |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mostra movimenti collegati | Dopo ogni partita √fatturaƒ vengono elencate eventuali riba/insoluti. Sono mostrati anche i pagamenti standard (contanti, assegni, etc.). Se il flag √Solo movimenti apertiƒ ä vero saranno mostrati i movimenti collegati delle sole fatture con residuo. |
+| Mostra movimenti collegati | Dopo ogni partita ‚Äúfattura‚Äù vengono elencate eventuali riba/insoluti. Sono mostrati anche i pagamenti standard (contanti, assegni, etc.). Se il flag ‚ÄúSolo movimenti aperti‚Äù √® vero saranno mostrati i movimenti collegati delle sole fatture con residuo. |
 | Filtro data registrazione  | filtro libero per data registrazione sui mov. contabili cliente                                                                                                                                                                                            |
 | Filtro data scadenza       | filtro sulla data scadenza per i movimenti contabili cliente                                                                                                                                                                                               |
 | Filtro metodo pagamento    | filtro sul metodo pagamento dei movimenti contabili cliente                                                                                                                                                                                                |
-| Usa l'agente sul cliente   | I movimenti contabili hanno un agente che deriva dal documento registrato e questo puï differire dall¬agente impostato sul cliente. Questo specifica quale agente usare, se quello del movimento (falso) o quello sul cliente (vero)                       |
+| Usa l'agente sul cliente   | I movimenti contabili hanno un agente che deriva dal documento registrato e questo pu√≤ differire dall‚Äôagente impostato sul cliente. Questo specifica quale agente usare, se quello del movimento (falso) o quello sul cliente (vero)                       |
 
 E' possibile anche filtrare per Cliente specifico o per Agente.
 
