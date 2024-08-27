@@ -1,4 +1,4 @@
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000158-0/Setup_IT.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000158-0/Setup-IT.png"><br>
 <table>
 <tbody><tr>
 				<td><strong>Campo</strong></td>
@@ -6,67 +6,76 @@
 			</tr>
 			<tr>
 				<td>Elimina voci elaborate</td>
-				<td>Quando la coda processi ä in esecuzione, se l'opzione ä 
+				<td>Quando la coda processi √® in esecuzione, se l'opzione √® 
 				attiva, periodicamente verranno eliminati tutti i messaggi nel log tranne:
 				<br>
-				≈ Quelli in errore<br>
-				≈ L¬ultimo messaggio di ogni elemento sincronizzato (es. Se un 
+				‚Ä¢ Quelli in errore<br>
+				‚Ä¢ L‚Äôultimo messaggio di ogni elemento sincronizzato (es. Se un 
 				cliente viene modificato 5 volte, ci saranno 5 log. L'ultimo di 
 				questi viene mantenuto)</td>
 			</tr>
 			<tr>
 				<td>Registra voci locali non riuscite</td>
-				<td>Una sincronizzazione verso una societÖ remota corrisponde ad una chiamata webservice al server della societÖ remota.
-Quando la sincronizzazione fallisce nella societÖ di origine viene registrato l¬errore.
+				<td>Una sincronizzazione verso una societ√† remota corrisponde ad una chiamata webservice al server della societ√† remota.
+Quando la sincronizzazione fallisce nella societ√† di origine viene registrato l‚Äôerrore.
 				<br>
-				Se l'opzione ä attiva viene aggiunto l¬errore ANCHE in quella remota, 
-				cosicchä chi lavora in quella societÖ puï capire se ci sono 
-				problemi senza coinvolgere la societÖ di origine.</td>
+				Se l'opzione √® attiva viene aggiunto l‚Äôerrore ANCHE in quella remota, 
+				cosicch√® chi lavora in quella societ√† pu√≤ capire se ci sono 
+				problemi senza coinvolgere la societ√† di origine.</td>
 			</tr>
 			<tr>
 				<td>Disabilita tutte le sincronizzazioni</td>
 				<td>Serve a bloccare/attivare la app.<br>
-				Quando questa opzione ä attiva vengono ignorate tutte le modifiche fatte nel sistema, non 
-				avvengono log e non vengono fatte chiamate webservice. Serve nel caso di un problema bloccante nell¬app, cosç grave da pregiudicare l¬operativitÖ dell¬azienda.</td>
+				Quando questa opzione √® attiva vengono ignorate tutte le modifiche fatte nel sistema, non 
+				avvengono log e non vengono fatte chiamate webservice. Serve nel caso di un problema bloccante nell‚Äôapp, cos√¨ grave da pregiudicare l‚Äôoperativit√† dell‚Äôazienda.</td>
 			</tr>
 			<tr>
-				<td>Disabilitare i thread della societÖ</td>
+				<td>Disabilitare i thread della societ√†</td>
 				<td>Se attivo vengono disabilitati tutti i sottoprocessi. </td>
 			</tr>
 			<tr>
 				<td>Consenti modifiche a caldo</td>
-				<td>Consente di effettuare modifiche ai setup mentre ä in corso 
+				<td>Consente di effettuare modifiche ai setup mentre √® in corso 
 				una sincronizzazione</td>
 			</tr>
+			<td>ID Client</td>
+      <td>Consente di definire l'ID Client&nbsp;</td>
+			<tr>
+			<td>Client Secret</td>
+      <td>Consente di definire il Client Secret&nbsp;</td>
+			<tr>
+			<tr>
+      <td>Scadenza Client Secret</td>
+      <td>Consente di definire quando scade il Client Secret, una notifica verr√† mostrata in caso si fosse vicini alla data di scadenza&nbsp;</td>
 			<tr>
 				<td>Thread per azienda</td>
 				<td>Consente di definire il<strong> numero massimo di sottoprocessi
 				</strong>che vengono<strong> 
 				</strong>
 				<span>
-				creati per sincronizzare i record nelle altre societÖ</span><br>
-				Se nel setup non inseriamo alcun valore, il valore di default ä 10.<br>
+				creati per sincronizzare i record nelle altre societ√†</span><br>
+				Se nel setup non inseriamo alcun valore, il valore di default √® 10.<br>
 				Se 
-				inseriamo un valore diverso da 0, tale valore verrÖ preso come riferimento.
+				inseriamo un valore diverso da 0, tale valore verr√† preso come riferimento.
 
 				<br>
-				(N.B: quando viene eseguita una sincronizzazione completa, non ä 
+				(N.B: quando viene eseguita una sincronizzazione completa, non √® 
 				detto che vengano creati tutti i sottoprocessi definiti sopra)</td>
 			</tr>
 			<tr>
 				<td>Record per thread</td>
 				<td>Consente di definire il <strong>numero massimo di 
 				record per ogni sottoprocesso.<br>
-				</strong>Se ä impostato a 0, il sistema di default considera 2000.<br>
+				</strong>Se √® impostato a 0, il sistema di default considera 2000.<br>
 				Es. se una tabella ha 10mila record (10mila/2000), il sistema 
-				creerÖ 5 sottoprocessi da 2000 record ciascuno.<br>
+				creer√† 5 sottoprocessi da 2000 record ciascuno.<br>
 				<br>
 				Se una tabella ha 1milione di record: 1milione/2000 -&gt; 500 
-				sottoprocessi, ma interviene il parametro "Thread per azienda" e quindi al massimo ne creerÖ 10.
+				sottoprocessi, ma interviene il parametro "Thread per azienda" e quindi al massimo ne creer√† 10.
 &nbsp;</td>
 			</tr>
 			<tr>
-				<td>ModalitÖ eliminazione:</td>
+				<td>Modalit√† eliminazione:</td>
 				<td>
 				<ul>
 					<li>&nbsp;Completo: cancella tutto subito</li>
@@ -83,8 +92,8 @@ Quando la sincronizzazione fallisce nella societÖ di origine viene registrato l¬
 			</tr>
 			<tr>
 				<td>Dimensione blocco eliminazione</td>
-				<td>Quando la cancellazione ä parziale, ogni volta che la coda 
-				processi gira, cancellerÖ un numero predefinito di log.<br>
+				<td>Quando la cancellazione √® parziale, ogni volta che la coda 
+				processi gira, canceller√† un numero predefinito di log.<br>
 				(Default 1000)</td>
 			</tr>
 		</tbody>
