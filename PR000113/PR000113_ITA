@@ -1,28 +1,29 @@
 # Sharepoint setup
 
-In Sharepoint setup (DCS) ä necessario connettere il proprio client Business Central alla tenant di Sharepoint:
+In Sharepoint setup (DCS) √® necessario connettere il proprio client Business Central alla tenant di Sharepoint:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_SharepointSETUP.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/SharepointSETUP.png"><br>
 <br>
 
 | **Campo** | **Descrizione** |                                                                                                
 |----------|-----|
 | Directory (tenant) ID | ID tenant di Sharepoint online a cui collegare il client. Lo si trova precompilato dal sistema in ambiente SAAS |
 | ID applicazione (client) ID  | client dell'applicazione Azure. Lo si trova precompilato dal sistema.  |
-| Client Secret                | Client Secret dell'applicazione Azure. Lo si trova precompilato dal sistema.        |     
+| Client Secret                | Client Secret dell'applicazione Azure. Lo si trova precompilato dal sistema.        |
+| Scadenza Client Secret    | Consente di definire quando scade il Client Secret, una notifica verr√† mostrata in caso si fosse vicini alla data di scadenza 
 
 
 <br>
 
-Un utente amministratore di Office da Concedi autorizzazioni farÖ in modo che Sharepoint online conceda alla app DCS di accedere ai dati.
+Un utente amministratore di Office da Concedi autorizzazioni far√† in modo che Sharepoint online conceda alla app DCS di accedere ai dati.
 
-Da Login di prova si puï verificare che l'operazione sia andata a buon fine:
+Da Login di prova si pu√≤ verificare che l'operazione sia andata a buon fine:
 <br><br>
 # Setup tabelle DocSolutions (DCS)
 
 In Setup tabelle DocSolutions (DCS) vanno caricati innanzitutto i setup di default da Azioni-\>Load Default:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_LoadDefaults.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_LoadDefaults.png">
 
 
 <br><br>
@@ -34,7 +35,7 @@ Il sistema ci propone i default da caricare, scegliere Sharepoint. Successivamen
 Da Modifica lista aprire la/ le Document Library che si intende abilitare, es. "Cliente":
 <br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_TableSetup.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_TableSetup.png"><br>
 
 
 
@@ -50,7 +51,7 @@ Da Librerie scegliamo una libreria di default e da Apri libreria ne impostiamo i
 
 
 Nel Tab Storage scegliamo il sito di sharepoint e la raccolta documenti cui collegarla.
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_SPLibrarySetup.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_SPLibrarySetup.png"><br>
 
 
 <br><br>
@@ -61,33 +62,33 @@ In fondo alla pagina impostiamo gli attributi da visualizzare nelle pagine di Bu
 <br><br>
 **Pattern cartella**
 
-Dal menó a tendina sul campo Pattern cartella, scegliamo "Seleziona da elenco completo" e da Gestione-\>Modifica visualizziamo e/o modifichiamo il percorso di archiviazione documenti:
+Dal men√π a tendina sul campo Pattern cartella, scegliamo "Seleziona da elenco completo" e da Gestione-\>Modifica visualizziamo e/o modifichiamo il percorso di archiviazione documenti:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_FolderPattern.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_FolderPattern.png"><br>
 
 
 | **Nome**                    | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Generale**                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Codice                      | Codice assegnato al pattern                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Tipo                        | specificare se il pattern verrÖ utilizzato per Cartelle File                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Cartella radice             | percorso in cui verranno salvati i files. Nell'esempio verranno collocati nella sotto cartella DocSolutions che ä contenuta nella cartella Documenti                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Comportamento dei conflitti | stabilire cosa fare se il sistema trova un file giÖ presente nella cartella di destinazione: Fallire: il sistema segnalerÖ con un errore che non ä possibile caricare il file poichä giÖ esistente Sostituire: il sistema sostituirÖ il file giÖ presente con quello caricato Rinominare: il sistema rinomina il file aggiungendo un numero progressivo in fondo al nome                                                                                                                                                                                                                                                                                                                                                              |
-| Abilitato                   | ä possibile creare la scheda di setup e abilitarla o disabilitarla in base alle necessitÖ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Tipo                        | specificare se il pattern verr√† utilizzato per Cartelle File                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Cartella radice             | percorso in cui verranno salvati i files. Nell'esempio verranno collocati nella sotto cartella DocSolutions che √® contenuta nella cartella Documenti                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Comportamento dei conflitti | stabilire cosa fare se il sistema trova un file gi√† presente nella cartella di destinazione: Fallire: il sistema segnaler√† con un errore che non √® possibile caricare il file poich√® gi√† esistente Sostituire: il sistema sostituir√† il file gi√† presente con quello caricato Rinominare: il sistema rinomina il file aggiungendo un numero progressivo in fondo al nome                                                                                                                                                                                                                                                                                                                                                              |
+| Abilitato                   | √® possibile creare la scheda di setup e abilitarla o disabilitarla in base alle necessit√†                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | **Composizione**            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Tipo                        | Indica il Tipo riga. Puï essere Testo, Campo, Chiave primaria, No. Serie, Nome tabella, Nr. tabella, Nome originale  Es. Se indico:<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_PatternComposition.png"><br> i file caricati verranno salvati in Documenti\\DocSolutions, in una ulteriore cartella "18", in una ulteriore sottocartella "Nr. Cliente".  Se indico: <img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_PatternComposition2.png"><br> i file caricati verranno salvati in Documenti\\DocSolutions, in una ulteriore cartella "Clienti", in una ulteriore sottocartella "Nr. Cliente". |
+| Tipo                        | Indica il Tipo riga. Pu√≤ essere Testo, Campo, Chiave primaria, No. Serie, Nome tabella, Nr. tabella, Nome originale  Es. Se indico:<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_PatternComposition.png"><br> i file caricati verranno salvati in Documenti\\DocSolutions, in una ulteriore cartella "18", in una ulteriore sottocartella "Nr. Cliente".  Se indico: <img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_PatternComposition2.png"><br> i file caricati verranno salvati in Documenti\\DocSolutions, in una ulteriore cartella "Clienti", in una ulteriore sottocartella "Nr. Cliente". |
 
 <br><br>
 Da Test (Lettura/Scrittura) verifichiamo che le connessioni siano funzionanti:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_TESTFILE.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_TESTFILE.png"><br>
 
 <br><br>
 **Pattern nome file**
 
-Allo stesso modo, dal menó a tendina sul campo Pattern nome file, scegliamo "Seleziona da elenco completo" e da Gestione-\>Modifica visualizziamo e/o modifichiamo il nome da assegnare ai documenti:
+Allo stesso modo, dal men√π a tendina sul campo Pattern nome file, scegliamo "Seleziona da elenco completo" e da Gestione-\>Modifica visualizziamo e/o modifichiamo il nome da assegnare ai documenti:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_FileNamePattern.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_FileNamePattern.png"><br>
 
 <br><br>
 
@@ -95,25 +96,25 @@ Allo stesso modo, dal menó a tendina sul campo Pattern nome file, scegliamo "Sel
 
 Dalla Scheda Libreria-\> Autorizzazioni definiamo quali Gruppi, Utenti o Permission set possono leggere/scrivere i file in una determinata posizione:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_PermissionSet.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_PermissionSet.png"><br>
 
 <br><br>
 
 **Mapping campi**
 
-Dal Setup tabelle DocSolutions (DCS) ä possibile mappare i campi in modo da scegliere cosa visualizzare su Sharepoint:
+Dal Setup tabelle DocSolutions (DCS) √® possibile mappare i campi in modo da scegliere cosa visualizzare su Sharepoint:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_0FieldMapping.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_0FieldMapping.png"><br>
 <br><br>
 
 Va definita la Libreria, il nome del campo, l'etichetta e va scelta una funzione da associare al campo oppure un valore:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_FieldMapping.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_FieldMapping.png"><br>
 <br><br>
 
 
-Per ogni metadato ä possibile stabilire se deve essere o meno obbligatoriamente compilato
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_FieldRequired.png"><br>
+Per ogni metadato √® possibile stabilire se deve essere o meno obbligatoriamente compilato
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_FieldRequired.png"><br>
 <br><br>
 
 
@@ -121,4 +122,4 @@ Per ogni metadato ä possibile stabilire se deve essere o meno obbligatoriamente 
 
 Al termine, ricordarsi di abilitare la libreria
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000113-0/EX069.03_LibrarySetup.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000113-0/EX069.03_LibrarySetup.png"><br>
