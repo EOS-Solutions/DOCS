@@ -1,4 +1,4 @@
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000158-0/Setup_EN.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000158-0/Setup-EN.png"><br>
 <table><tbody><tr>
 <td><strong>Field</strong></td>
 <td><strong>Description</strong></td>
@@ -7,8 +7,8 @@
 <td>Delete Processed Entries</td>
 <td>When the job queue is running, if this option is enabled, all messages in the log will be deleted periodically except:
 <br>
-Å Those who are in error status<br>
-Å The last message of each synced item (e.g. If a customer is changed 5 times, there will be 5 logs. The last of these is maintained)&nbsp;</td>
+â€¢ Those who are in error status<br>
+â€¢ The last message of each synced item (e.g. If a customer is changed 5 times, there will be 5 logs. The last of these is maintained)&nbsp;</td>
 </tr>
 <tr>
 <td>Log Failed Local Entries</td>
@@ -31,6 +31,18 @@ Useful in the case of a blocking problem in the app, so serious that it affects 
 <tr>
 <td>Allow Hot Changes</td>
 <td>Allows you to make changes to setups while a synchronization is in progress&nbsp;</td>
+</tr>
+<tr>
+<td>Client ID</td>
+<td>Allow to define the Client ID&nbsp;</td>
+</tr>
+<tr>
+<td>Client Secret</td>
+<td>Allow to define the Client Secret&nbsp;</td>
+</tr>
+<tr>
+<td>Client Secret Expiration Date</td>
+<td>Defines when the Client Secret is going to expire, a notification will be shown near the expiration date&nbsp;</td>
 </tr>
 <tr>
 <td>Thread per Company</td>
