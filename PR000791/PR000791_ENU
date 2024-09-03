@@ -1,0 +1,19 @@
+A third type of discount has been introduced in the Outbound Setup (FTE) in order to facilitate the recipient of the document in reading the electronic invoice.
+
+In the "Line Disc Export Method" field, in addition to the existing values ​​"Amount" and "Percentage", the "Detailed discount" type has been added, which would be activated only in the presence of the Detailed Document Discounts APP
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000791-0/PR000791_1_ENU.PNG"><br>
+
+In this way, in front of an invoice that presents detailed discounts, the XML file of the related electronic invoice would accurately report all the discounts both in amount and percentage, faithfully reporting the structure present in the detailed discounts table
+
+All the discount types available in the DDD APP are managed
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000791-0/PR000791_2_ENU.PNG"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000791-0/PR000791_3_ENU.PNG"><br>
+
+which are faithfully reported in the XML file
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000791-0/PR000791_4.PNG"><br>
+
+For more information on how the EX037 DDD APP works, please refer to the dedicated page: [EX037 Detailed Document Discounts]({{<relref "detailed-document-discounts">}})
