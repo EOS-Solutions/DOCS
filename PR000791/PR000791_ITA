@@ -1,0 +1,19 @@
+E' stata introdotta una terza tipologia di sconto nel Setup in uscita (FTE) nell'ottica di facilitare il ricevente del documento nella lettura della fattura elettronica.
+
+Nel campo "Metodo esportazione sconti riga" oltre ai valori già presenti "Importo" e "Percentuale" è stata aggiunta la tipologia "Sconto dettagliato " che verrebbe attivata solo in presenza dell'APP Detailed Document Discounts
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000791-0/PR000791_1_ITA.PNG"><br>
+
+In questa maniera, a fronte di una fattura che presenta degli sconti dettagliati il file XML della relativa fattura elettronica riporterebbe in modo preciso tutti gli sconti sia ad importo che a percentuale, riportando fedelmente la struttura presente nella tabella sconti dettagliati
+
+Vengono gestite tutte le tipologie di sconto disponibili nell'APP DDD
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000791-0/PR000791_2_ITA.PNG"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000791-0/PR000791_3_ITA.PNG"><br>
+
+che vengono riportate fedelmente nel file XML
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000791-0/PR000791_4.PNG"><br>
+
+Per approfondire il funzionamento dell'APP EX037 DDD vi rimandiamo alla pagina dedicata : [EX037 Detailed Document Discounts]({{<relref "detailed-document-discounts">}})
