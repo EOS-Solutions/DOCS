@@ -28,6 +28,16 @@ Thanks to the Dual Unit of Measure app, on the order lines, we find the usual fi
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000033-0/DUM3_ITA.png"><br>
 
+**Additional Apps**        
+
+-   **Dual Unit of Measure for Combined Warehouse Shipment** Allows to store informations in secondary unit of measure in the shipment documents grouped by CWS app. Subscriptions to both base apps EOS Dual Unit of Measure e  EOS Combine Warehouse Shipment are needed. 	
+-   **Dual Unit of Measure for Promotions** Allows you to manage prices and promotions in secondary unit of measure. Subscriptions to both base apps EOS Dual Unit of Measure e EOS Sales and purchase Promotions for WholeSales are needed.
+-   **Dual Unit of Measure for Italy** allows the management of subcontracting orders (not WIP) and related transfer orders with the secondary unit of measure. Subscriptions to base app EOS Dual Unit of Measure is needed.
+-   **Dual Unit of Measure for Handling Units** Allows the use of Handling Units and Packing list with the secondary unit of measure. Subscriptions to both base apps EOS Dual Unit of Measure e EOS Handling Units Management e/o EOS Packing List are needed.
+-   **Dual Unit of Measure for SGL** Allows the management of document invoice entries even in second unit of measurement. Subscriptions to both base apps EOS Dual Unit of Measure e EOS Accruals and Simulated General Ledger are needed.
+-   **Dual Unit of Measure for Product Quality** allows specifying a secondary unit of measure for quantities on test types, as well as specifying the compliant and blocked secondary quantity on both inspection orders and non compliances. Subscriptions to both base apps EOS Dual Unit of Measure e EOS Product Quality Assurance are needed.
+-   **Dual Unit of Measure for Close Documents** Allows closing document lines with a secondary unit of measure. Subscriptions to both base apps EOS Dual Unit of Measure e EOS Close Documents without invoicing are needed.
+
 **N.B.**
 
 some apps/features only work with the main unit of measure:
