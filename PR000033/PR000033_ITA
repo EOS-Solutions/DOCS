@@ -28,6 +28,17 @@ Grazie alla app Dual Unit of Measure, sulle righe ordine, troviamo i campi abitu
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000033-0/DUM3_ITA.png"><br>
 
+**App Aggiuntive**        
+
+-   **Dual Unit of Measure for Combined Warehouse Shipment** Consente di memorizzare le informazioni relative alla seconda unità di misura nei documenti di spedizione raggruppati dell'app CWS. Richiede sottoscrizione alle app EOS Dual Unit of Measure e  EOS Combine Warehouse Shipment. 	
+-   **Dual Unit of Measure for Promotions** Consente di gestire prezzi e promozioni in seconda unità di misura. Richiede sottoscrizione alle app EOS Dual Unit of Measure e EOS Sales and purchase Promotions for WholeSales.
+-   **Dual Unit of Measure for Italy** Consente la gestione in doppia unità di misura degli ordini di conto lavoro (non wip) e dei relativi documenti di trasferimento. Richiede sottoscrizione all'app EOS Dual Unit of Measure.
+-   **Dual Unit of Measure for Handling Units** Consente l’utilizzo della gestione delle unità di carico e delle packing list con la seconda unità di misura. Richiede sottoscrizione alle app EOS Dual Unit of Measure e EOS Handling Units Management e/o EOS Packing List.
+-   **Dual Unit of Measure for SGL** Consente la gestione anche in seconda unità di misura delle scritture simulate dei documenti da emettere e ricevere. Richiede sottoscrizione alle app EOS Dual Unit of Measure e EOS Accruals and Simulated General Ledger.
+-   **Dual Unit of Measure for Product Quality** Consente di gestire la campionatura anche in seconda unità di misura e di definire la quantità secondaria conforme e non conforme su ordini di controllo e non conformità. Richiede sottoscrizione alle app EOS Dual Unit of Measure e EOS Product Quality Assurance.
+-   **Dual Unit of Measure for Close Documents** Consente la chiusura di righe documento anche in seconda unità di misura. Richiede sottoscrizione alle app EOS Dual Unit of Measure e EOS Close Documents without invoicing.
+
+
 **N.B.**
 
 alcune app / features funzionano solo con l'unità di misura principale:
