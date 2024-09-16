@@ -1,0 +1,16 @@
+**Stampa nota spese**
+
+La stampa della nota spese viene lanciata attraverso il report: Risorsa – Nota spese:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000813-0/IMM NOTSPESE 1.png"><br>
+
+Inserire: 
+
+* Data inizio 
+
+* Data fine 
+
+* Risorsa per la quale si vuole stampare la nota spese.
+
+*N.B.: Se non si inserisce il filtro risorsa, verrà stampata la nota spese per tutte le risorse
+*
