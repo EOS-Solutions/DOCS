@@ -1,0 +1,26 @@
+**Impostazione della WBS di progetto **
+
+All’interno del progetto le spese di trasferta possono essere rendicontate sulle diverse attività oppure su linee wbs specifiche, create ad hoc 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000804-0/IMM SETUP 2.png"><br>
+
+In caso di linee WBS specifiche, è necessario impostare le fasi lavoro, definendo: 
+
+* Codice e descrizione della fase 
+
+* Codice unità di misura  
+
+* Integrazione liquidazione – determina come deve essere trasferita la fase in documento di vendita: 
+
+
+
+1. Non trasferire: la fase non deve essere riportata in documento di vendita 
+2. Posizione WBS: nel documento di vendita deve essere riportato il dettaglio di WBS 
+3. Righe budget: nel documento di vendita deve essere riportato il dettaglio della riga budget  
+
+
+* Tipo fattura: indica il tipo riga che si genererà nella fattura di vendita (conto c/g, articolo, risorsa) 
+
+* Nr. fattura: nr. conto c/g, nr. articolo o nr. risorsa in base al tipo fattura  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000804-0/IMM SETUP 3.png"><br>
