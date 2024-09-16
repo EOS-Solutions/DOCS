@@ -1,0 +1,15 @@
+**Expenses Report**
+
+The printing of the expense report is launched through the report: Resource – Expenses:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000813-0/IMM EXPREP 1.png"><br>
+
+It is necessary to insert: 
+
+* Starting date 
+
+* Ending date 
+
+* The resource/resources for which you want to print the expense report 
+
+*N.B.: If you do not use the resource filter, the expense report will be printed for all resources*
