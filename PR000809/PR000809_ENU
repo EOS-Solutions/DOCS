@@ -1,0 +1,39 @@
+Scheduled mailings are available by searching for **Scheduled Mailings (ADR)**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000809-0/page_en.png"><br>
+
+On this page you can configure all the scheduled mailings for your company.
+
+**Fields on this page**
+
+- **Code**:
+  This field allows you to assign an arbitrary code to your mailing.
+- **Description**:
+  This field allows you to give a description to your mailing.
+- **Enabled**:
+  Using this flag you can enable or disable a scheduled mailing. Be advised that only mailings that are enabled are actually processed by the job queue. Also, there are some preliminary checks that ensure the mailing is correctly configured before you can enable it.
+- **Report Setup Code**:
+  Specifies the **Report Setup Code** that will be used for all documents that this mailing will generate. Remember that this will also control recipient addresses and more.
+- **Table No.**:
+Specifies the database table containing the documents you want to send. This will typically be `112` for invoices, `114`  for credit memos a.s.o.
+- **Date Field No. Filter**:
+Allows you to specify the field to use for filtering the date of the documents. This is optional. If you don't specify this, all documents - regardless of date - will be sent.
+- **Date Field No. Filter Formula**:
+This allows you to insert a date formula that will be used to calculate the filter that is put on the field specified by **Date Field No. Filter**. This date formula will be evaluated using the current date as the reference date when the mailing is executed.
+- **Scheduled From**:
+If specified, indicates the start date from when this scheduling is active.
+- **Scheduled To**:
+If specified, indicates the end date until when this scheduling is active.
+- **Exclude Sent Documents**:
+If set, all documents that have already been sent (manually or otherwise) will not be sent again through this scheduled mailing.
+
+**Actions on this page**
+
+- **Table Filter**:
+This action allows you to specify filters on the documents to be sent.
+- **Manual Execution**:
+This action will manually execute the selected scheduled mailing immediatley. The resulting request will then be opened and the user can choose to effectively send the mailing or not. This does not require the job queue to be configured.
+- **Manual Mail Send**:
+This action is the same as **Manual Execution**, only that it will also immediately send the generated request without asking the user for confirmation.
+- **Log**:
+Shows a log of past executions and it's status.
