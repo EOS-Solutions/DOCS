@@ -1,0 +1,29 @@
+L'applicazione EOS P365 Expenses (P365) fornisce soluzioni per la gestione delle spese dei dipendenti per tutti i progetti con Project 365 per l'Italia in Microsoft Dynamics 365 Business Central.  
+
+Project 365 offre la possibilità di gestire:  
+
+- a setup le varie tipologie di spese (rimborsi chilometrici, forfait clienti, spese vive) per ogni progetto.  
+
+- spese da rifatturare al cliente  
+
+- spese da riportare nella nota spese del dipendente  
+
+
+<table>
+	<tr>
+		<td>1</td>
+		<td>Setup</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Registrazione spese</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Approvazioni</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Nota spese</td>
+	</tr>
+</table>
