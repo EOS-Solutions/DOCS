@@ -1,0 +1,33 @@
+**Approvazione spese**
+
+Le ore in stato inviato necessitano l’approvazione da parte dell’utente ID resp. approvazione. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000812-0/IMM APPR SPESE 1.png"><br>
+
+L‘approvatore può dipendere dal progetto oppure dalla scheda risorsa. 
+
+* Se in scheda progetto è impostata l’approvazione ore attraverso il campo Fogli presenza rich. approvazione, l’approvatore delle ore caricate sul progetto sarà il manager di progetto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000812-0/IMM APPR SPESE 2.png"><br>
+
+Se in scheda progetto non è impostata l’approvazione ore attraverso il campo Fogli presenza rich. approvazione, l’approvatore delle ore caricate sul progetto sarà l’utente impostato come ID utente resp. approvazione foglio presenze impostato in scheda risorsa:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000812-0/IMM APPR SPESE 3.png"><br>
+
+L’approvazione delle ore e delle spese avviene tramite la pagina Fogli presenza manager EOS:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000812-0/IMM APPR SPESE 4.png"><br>
+
+La pagina permette la gestione delle ore caricate nei fogli presenza. Per le ore possono essere previste le seguenti azioni: 
+
+* *Approvazione:* le ore passano da inviate ad approvate 
+
+* *Riapertura:* le ore passano dallo stato approvato allo stato inviato.  
+
+* *Rifiuto:* le ore possono essere rifiutate solamente quando si trovano in stato inviato. Per rifiutare ore già approvate sarà quindi necessario prima riaprirle. Le ore in stato rifiutato potranno essere modificate all’interno del foglio ore dalla risorsa che le ha caricate 
+
+*NB. Il rifiuto delle ore genera le righe di storno nei movimenti contabili progetto. *
+
+Selezionando l’azione che si vuole intraprende, per le righe interessate il campo Stato approvazione si compilerà con l’azione selezionata. Per rendere effettiva l’azione è necessario registrare.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000812-0/IMM APPR SPESE 5.png"><br>
