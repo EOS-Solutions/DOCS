@@ -1,0 +1,40 @@
+Gli invii schedulati sono disponibili cercando **Invii Schedulati (ADR)**.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000809-0/page_it.png"><br>
+
+In questa pagina è possibile configurare tutti gli invii schedulati per la propria azienda.
+
+**Campi su questa page**
+
+- **Codice**:
+Questo campo consente di assegnare un codice arbitrario all'invio.
+- **Descrizione**:
+Questo campo consente di assegnare una descrizione all'invio.
+- **Abilitato**:
+Con questo flag è possibile abilitare o disabilitare un invio schedulato. Si noti che solo gli invii abilitati vengono effettivamente elaborati dalla coda processi. Inoltre, ci sono alcuni controlli preliminari che assicurano che l'invio sia configurato correttamente prima di poterlo abilitare.
+- **Cod. setup report**:
+Specifica il **Cod. setup report** che verrà utilizzato per tutti i documenti generati da questo invio. Ricordate che questo controllerà anche gli indirizzi dei destinatari e altro ancora.
+- **Nr. tabella**:
+Specifica la tabella del database contenente i documenti da inviare. In genere si tratta di `112` per le fatture, `114` per le note di credito e così via.
+- **Nr. campo Data filtro**:
+Consente di specificare il campo da utilizzare per filtrare la data dei documenti. È facoltativo. Se non viene specificato, verranno inviati tutti i documenti, indipendentemente dalla data.
+- **Nr. campo Data Formula filtro**:
+Consente di inserire una formula data che verrà utilizzata per calcolare il filtro sul campo specificato da **Nr. campo Data filtro**. Questa formula data verrà valutata utilizzando la data odierne nel momento dell'esecuzione di questo invio schedulato.
+- **Programmato da**:
+Se specificato, indica la data di inizio della pianificazione.
+- **Programmato su**:
+Se specificato, indica la data di fine della pianificazione.
+- **Escludi documenti inviati**:
+Se impostato, tutti i documenti che sono già stati inviati (manualmente o in altro modo) non saranno inviati nuovamente attraverso questa pianificazione.
+
+**Azioni in questa pagina**
+
+- **Filtro tabella**:
+Questa azione consente di specificare i filtri sui documenti da inviare.
+- **Esecuzione manuale**:
+Questa azione esegue manualmente e immediatamente l'invio programmato selezionato. La richiesta risultante verrà aperta e l'utente potrà scegliere se inviare o meno l'invio. Non richiede la configurazione della coda processi.
+- **Invio manuale della posta**:
+Questa azione è identica a **Esecuzione manuale**, solo che invia immediatamente la richiesta generata senza chiedere conferma all'utente.
+- **Log**:
+Mostra un log delle esecuzioni passate e il loro stato.
