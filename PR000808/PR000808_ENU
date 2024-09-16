@@ -1,0 +1,14 @@
+You can let **Advanced Document Reporting** create the necessary job queue automatically for you. To do so, go to **Setup (ADR)** and the click on **Job Queues**. This will let you select which job queue you want to configure.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000808-0/setup_en.png"><br>
+
+Advanced Document Reporting provides 3 differen job queues out-of-the box.
+
+1. **Log CleanUp JobQueue**: 
+This cleans up any ADR log entries that are older than the maximum age that has been specified in the **Setup (ADR)** page on the field **Delete Log records after** and also deletes any attachments that are older than the maximum age specified in the **Setup (ADR)** page on the field **Delete PDF attachments after**.
+
+2. **Deferred Mail Sending Job Queue**:
+Whenever a user or process creates and sends an e-mail request, the user can choose to do so instantly or to put it into a queue for deferred sending. This job queue entry here is responsible for processing all the requests that were put in this queue. If you or your users plan on using deferred sending, make sure this job queue entry has been correctly configured. Read more about deferred sending.
+
+3. **Scheduled Mailing Job Queue**:
+This job queue entry is responsible for processing and sending **Scheduled Mailings**. If you are using scheduled mailings, make sure this job queue entry has been correctly configured. [Read more about Scheduled Mailings]({{< xref "scheduled-mailings" >}}).
