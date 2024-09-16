@@ -1,4 +1,4 @@
-L’app Empties Management (EPM) utilizza una serie di setup comuni con la gestione delle Unità di carico e i con la Packing list.
+L’app Empties Management (EPM) utilizza una serie di setup comuni con la gestione delle Unità di carico e con la Packing list.
 <br>
      
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetup1.jpg"><br>
@@ -7,9 +7,10 @@ Una parte di setup è, come detto, in comune con la app Handling Units Managemen
 
 Sulla page Materiali di imballaggio (HUM) vanno definiti i Tipi Unità di Carico e, nello specifico, se si tratta di
 
-***Portacarico*** (es. Pallet): su questo è possibile caricare scatole con dentro ulteriori pacchetti
+***Portacarico*** Un esempio di Portacarico è il Pallet. Nelle unità di carico i Portacarico possono contenere articoli o altre unità di carico di tipo Collo. Un Portacarico non può contenere un altro portacarico. 
 
-***Collo:*** scatola semplice, che si può collegare ad altre scatole. Poi tutte insieme possono essere legate ad un Portacarico. 
+***Collo:*** Un esempio di Collo è la Scatola. Nelle unità di carico i Colli possono contenere articoli o altre unità di carico di tipo Collo. Un Collo non può contenere un portacarico.
+
 <br>
      
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetup2.jpg"><br>
@@ -34,12 +35,16 @@ Nel ***tab Fatturazione*** è possibile specificare un conto contabile da utiliz
      
 ## Setup imballaggio(HUM)
 
-Nella pagina di setup che riguarda la app Handling Units Management (HUM) va indicata la modalità di calcolo vuoti (la app ha una modalità di calcolo di default, ma è possibile customizzarla):
+Il Setup Imballaggio (HUM) Contiene la sezione Vuoti:
 <br>
      
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/IT-EmptiesManagementSetupImb1.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/SetupHUM_1_ITA.png"><br>
 
+Dove sono presenti i seguenti campi:
 
+* **Calcolo vuoti** definisce la modalità con cui vengono calcolati i vuoti. Lo standard dell'app è Default. Estendendo l'app, tramite interfaccia, è possibile creare modalità di calcolo personalizzate.
+* **Crea Righe GL Account su fatturazione vuoti** Nella generazione della fattura dei vuoti, Report "Contenitori - Crea fattura", le righe vengono generate dando priorità all'utilizzo della tipologia Conto C/G. Se il flag non è attivo le righe vengono generate utilizzando l'articolo presente nel materiale di imballaggio.
+* **Nome batch giornale di registrazione predefinito nella fatturazione vuoti** Specifica il valore del campo Nome batch giornale di registrazione dei vuoti predefinito. Viene utilizzato nella generazione della fattura dei vuoti, Report "Contenitori - Crea fattura", per la creazione delle righe di storno vuoti.
 
 
 
