@@ -1,0 +1,26 @@
+**WBS setup**
+
+In projects travel expenses can be reported on activities or on specific WBS lines. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000805-0/IMG SETUP 2.png"><br>
+
+In case of specific WBS lines, it is necessary to setup work packages, by defining: 
+
+* Code and description 
+
+* Unit of measure code 
+
+* Invoicing integration – it determines how the work package must be transferred to sales document: 
+
+
+1. No transfer: the work package must not be transferred in sales document 
+1. PSP-Line: the sales document must show WBS details 
+1. Budget lines: the sales document must show budget line detail 
+
+
+
+* Billing base: it indicates the type of line that will be generate in the sales invoice (g/l account, item, resource) 
+
+* Billing type: g/l account no., item no., resource no. depending on billing base 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000805-0/IMG SETUP 3.png"><br>
