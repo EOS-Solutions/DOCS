@@ -1,0 +1,14 @@
+È possibile lasciare che **Advanced Document Reporting** crei automaticamente la coda processi necessaria. A tale scopo, andare su **Setup (ADR)** e cliccare su **Coda processi**. In questo modo è possibile selezionare la coda processi che si desidera configurare.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000808-0/setup_it.png"><br>
+
+Advanced Document Reporting offre 3 diverse attività.
+
+1. **Coda Processi pulizia log**: 
+Pulisce tutte le voci di log ADR più vecchie dell'età massima specificata nella pagina **Setup (ADR)** nel campo **Elimina Log dopo** ed elimina anche tutti gli allegati più vecchi dell'età massima specificata nella pagina **Setup (ADR)** nel campo **Elimina allegati PDF dopo**.
+
+2. **Coda processi di invio posta posticipata**:
+Ogni volta che un utente o un processo crea e invia una richiesta di posta elettronica, l'utente può scegliere se farlo istantaneamente o se inserirlo in una coda per l'invio postecipato. Questa voce della coda processi è responsabile dell'elaborazione di tutte le richieste che sono state inserite in questa coda. Se voi o i vostri utenti intendete utilizzare l'invio postecipato, assicuratevi che questa voce della coda di lavoro sia stata configurata correttamente. Per saperne di più sull'invio postecipato.
+
+3. **Coda processi di schedulazione mail**:
+Questa voce della coda di lavoro è responsabile dell'elaborazione e dell'invio di **Invii Schedulati**. Se si utilizzano gli invii schedulati, accertarsi che questa voce della coda processi sia stata configurata correttamente. [Per saperne di più su invii schedulati]({{< xref "scheduled-mailings" >}}).
