@@ -1,0 +1,12 @@
+You can use the Page **"Scheduled Mailings (ADR)"** to periodically send one or more documents to their respective recipients. These documents can be filtered, restricted to only certain dates and you can also exclude documents that have already been previously (either manually or any other way).
+
+Here are some typical scenarios for this functionality:
+- Automatically send all invoices of the last month to all your customers, unless they were already sent.
+- Send all shipment documents to a specific location at the end of the week.
+- Send a copy of all invoices and credit memos to the salespeople who are in charge of the respective customers.
+
+This feature requires the **Job Queue** to be enabled and configured.
+
+{{% alert title="Warning" color="warning" %}}
+Do not confuse this functionality with the asynchronous sending mode. While they both require the job queue to be configured accordingly, they serve a very different purpose. More details on the asynchronous sending mode.
+{{% /alert %}}
