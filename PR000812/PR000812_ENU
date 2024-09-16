@@ -1,0 +1,33 @@
+**Expenses approval**
+
+Submitted hours require approval by Approver ID user.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000812-0/IMM APPR SPESE 1.png"><br>
+
+The approver can depend on the project or on the resource card. 
+
+* If in project card, hours approval is set with the Time Sheet require Approval boolean, the approver is the Project manager of the job. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000812-0/IMM APPR SPESE 2.png"><br>
+
+If in project card, hours approval isn’t set with the Time Sheet require Approval boolean, the approver is the Time Sheet Approver User ID set on resource card. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000812-0/IMM APPR SPESE 3.png"><br>
+
+Approval of hours and expenses is managed in EOS Manager Time Sheet page:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000812-0/IMM APPR SPESE 4.png"><br>
+
+The page allows the management of the hours reported in time sheets. For the hours the following actions are expected: 
+
+* *To approve:* hours move from submitted to approved. 
+
+* *To reopen:* hours move from approved to submitted 
+
+* *To reject:* hours can only be rejected when they are in submitted status. To reject hours already approved it will therefore be necessary to reopen them first. The hours in rejected status can be modified within the time sheet by the resource. 
+
+*NB. Rejecting hours generates reversal lines in Project ledger entries table.* 
+
+By selecting the action you want to take, for the affected lines the Approver Status column will be filled in with the selected action. To make the action effective, it is necessary to register. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000812-0/IMM APPR SPESE 5.png"><br>
