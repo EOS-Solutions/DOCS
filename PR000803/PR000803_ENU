@@ -1,0 +1,28 @@
+The EOS P365 Expenses (P365) application provides solutions for managing employee expenses for all projects with Project 365 for Italy in Microsoft Dynamics 365 Business Central. 
+
+Project 365 offers the possibility to manage: 
+
+- on a setup basis the various types of expenses (mileage reimbursements, customer lump-sum, out of pocket expenses) for each project. 
+
+- expenses to be re-invoiced to the customer 
+
+- expenses to be reported in the employee's expense report 
+
+<table>
+	<tr>
+		<td>1</td>
+		<td>Setup</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Expenses Reporting</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Approval</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Expenses report</td>
+	</tr>
+</table>
