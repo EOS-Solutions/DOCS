@@ -1,0 +1,12 @@
+È possibile utilizzare la pagina **"Invii Schedulati (ADR)"** per inviare periodicamente uno o più documenti ai rispettivi destinatari. Questi documenti possono essere filtrati, limitati solo a determinate date e si possono anche escludere i documenti che sono già stati inviati in precedenza (manualmente o in altro modo).
+
+Ecco alcuni scenari tipici di questa funzionalità:
+- Inviare automaticamente tutte le fatture dell'ultimo mese a tutti i clienti, a meno che non siano già state inviate.
+- Inviare tutti i documenti di spedizione a un magazzino specifico alla fine della settimana.
+- Inviare una copia di tutte le fatture e note di credito agli agenti che si occupano dei rispettivi clienti.
+
+Questa funzione richiede che la **Coda processi** sia abilitata e configurata.
+
+{{% alert title=“Warning” color=“warning” %}}
+Non confondere questa funzionalità con la modalità di invio asincrono. Sebbene entrambe richiedano che la coda processi sia configurata di conseguenza, hanno uno scopo molto diverso. Maggiori dettagli sulla modalità di invio asincrono.
+{{% /alert %}}
