@@ -1,0 +1,34 @@
+**Expenses reporting**
+
+Expenses are recorded together with hours in a dedicated area of ​​the time sheet. 
+
+To report travel expenses on a project, open the EOS Time Sheet List and select the time sheet of interest. By inserting the project in the time sheet line, the system proposes the expenses in the Time Sheet Expense Lines as set in the project's travel agreements. 
+
+*NB. Expenses vary based on the type of trip (outward, return, outward&return, travel) and based on what set in the travel agreements.* 
+
+In case of outbound the following expenses are proposed: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 1.png"><br>
+
+Because in the job the following travel agreements are foreseen: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 2.png"><br>
+
+The time sheet provides a check between the type of trip and the dates in which these are entered: correct recording of expenses must follow the following setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 3.png"><br>
+
+
+**Case: same-day return trip **
+
+In case of daily trip, it is necessary to insert travel type = Outward&Return. In this case, although the travel agreements have a double line of expenses (one for the outward journey and one for the return), in expense sheet lines the expense is proposed once thanks to the Not Accumulable on O/R flag set on return-type lines (in travel agreements). 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 4.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 5.png"><br>
+
+To send the hours and related expenses for approval: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 6.png"><br>
+
+Once submitted, the line will go in submitted status.
