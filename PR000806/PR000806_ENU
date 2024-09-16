@@ -1,0 +1,58 @@
+**Travel agreements setup**
+
+In projects the travel expenses are set up through travel agreements page:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMG SETUP 4.png"><br>
+
+In travel agreements table, all possible travel expenses foreseen for the project are defined. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMG SETUP 5.png"><br>
+
+Columns details: 
+
+* Customer no. and project no.: the system automatically fills in the columns based on the reference project 
+
+* Responsibility center: travel agreements can be project-specific or specific to each responsibility center 
+
+* Resource no.: travel agreements can be valid for all resources within the project team or can be specific on a resource-by-resource basis 
+
+* Travel type: outward/travel/return 
+
+* Not accumulable on O/R: the system automatically activates the flag on the return lines to prevent the expense from being double counted in the case of a return trip 
+
+* Invoicing type: 
+
+
+
+1. On cost
+1. Fixed price 
+1. Without calc. 
+1. Forfait 
+
+
+
+* Work type code: it indicates the type of expense. The work types must be coded in the specific table: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMG SETUP 6.png"><br>
+
+* Posting PSP line no.: the field connects the travel agreement line with a WBS line of the project (usable if specific WBS lines have been created for travel expenses) 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMG SETUP 7.png"><br>
+
+* Starting date and ending date: it is possible to set up travel agreements for specific period 
+
+* Quantity 
+
+* Unit cost: by entering an amount, the system will show this amount on the expense sheet during expense registration 
+
+* Not allow cancellation: the expense line can’t be canceled 
+
+* Blocked  
+
+It is possible to define customer travel agreement templates, recallable when creating new projects. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMG SETUP 8.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMG SETUP 9(1).png"><br>
+
+The columns mirror what was seen for the "Away Agreements" table.
