@@ -1,0 +1,34 @@
+**Inserimento spese**
+
+Le spese vengono registrate insieme alle ore in un’area dedicata del foglio presenze. 
+
+Per registrare le spese di trasferta su progetto aprire la Lista fogli presenza EOS e selezionare il foglio ore di interesse. Inserendo in riga foglio ore il progetto, il sistema propone in Righe Spese foglio presenze le spese così come impostate negli accordi di trasferta del progetto. 
+
+*NB. Le spese variano in base al tipo trasferta (andata, ritorno, andata e ritorno, in trasferta) in base a quanto impostato in accordi di trasferta. *
+
+In caso di andata sono proposte le seguenti spese: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 1.png"><br>
+
+Perché a commessa sono previsti i seguenti accordi: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 2.png"><br>
+
+Il foglio ore prevede un controllo fra il tipo di trasferta e le date in cui queste vengono inserite: una corretta registrazione delle spese deve seguire la seguente impostazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 3.png"><br>
+
+
+**Caso: andata e ritorno in giornata **
+
+Quando la trasferta si conclude in giornata è necessario inserire il tipo di trasferta Andata & Ritorno. In questo caso, nonostante gli accordi di trasferta presentino una doppia riga di spese (una per l’andata e una per il ritorno), nelle righe del foglio spese le spese vengono proposte una sola volta grazie al flag Non cumulare in A/R impostato sulle righe di tipo ritorno:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 4.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 5.png"><br>
+
+Per inviare in approvazione le ore e le relative spese: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000811-0/IMM CAR SPESE 6.png"><br>
+
+Una volta inviata, la riga passerà in stato inviato. 
