@@ -1,0 +1,57 @@
+**Impostazione degli accordi di trasferta **
+
+Le spese di trasferta vengono impostate nel progetto attraverso gli accordi di trasferta 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMM SETUP 4.png"><br>
+
+Nella tabella “accordi di trasferta” si definiscono tutte le possibili spese previste per il progetto. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMM SETUP 5.png"><br>
+
+Dettaglio colonne: 
+
+* *Nr. cliente e nr. progetto:* Il sistema compila automaticamente le colonne in base al progetto di riferimento 
+
+* *Centro di responsabilità:* gli accordi di trasferta possono essere generici di progetto oppure possono essere specifici per ciascun centro di responsabilità 
+
+* *Nr. risorsa:* gli accordi di trasferta possono essere validi per tutte le risorse all’interno del team di progetto oppure possono essere specifici risorsa per risorsa 
+
+* *Tipo di trasferta:* andata/in trasferta/ritorno 
+
+* *Non cumulabile in A/R:* il sistema attiva automaticamente il flag sulle righe di ritorno per evitare che la spesa venga conteggiata doppia in caso di andata e ritorno 
+
+* *Tipo di fatturazione:* indica se e come la spesa deve essere rifatturata al cliente 
+
+
+1. Time material 
+2. A corpo 
+3. Milestone 
+4. Non fatturabile 
+
+
+
+* *Work type code: *indica il tipo di spesa. I work type devono essere codificati nella tabella specifica: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMM SETUP 6.png"><br>
+
+* *Nr. riga PSP di pianificazione:* il campo collega la riga di accordo di trasferta con una riga WBS del progetto (utilizzabile in caso siano state create linee WBS specifiche per le spese di trasferta) 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMM SETUP 7.png"><br>
+
+* *Data inizio e data fine:* è possibile impostare gli accordi di trasferta per periodi specifici 
+
+* *Quantità* 
+
+* *Costo unitario:* inserendo un importo, il sistema riproporrà tale importo sul foglio spese in fase di registrazione spese 
+
+* *Non consentire l’annullamento:* la riga di spesa non può essere annullata 
+
+* *Bloccato *
+
+È possibile definire modelli di accordi di trasferta, richiamabili quando si creano nuovi progetti. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMM SETUP 8.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMM SETUP 9.png"><br>
+
+Le colonne sono speculari a quanto visto per la tabella “Accordi di trasferta”.<br>
