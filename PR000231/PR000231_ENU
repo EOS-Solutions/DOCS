@@ -2,9 +2,9 @@ A setup part is shared with the Handling Units Management (HUM) app.
 
 On the Packaging Materials (HUM) page, the HU Types must be defined and, specifically, you need to choose if they are
 
-***Loadcarrier***: (eg., pallet): on the loadcarrier you can load packages with additional boxes inside
+***Load Carrier*** An example of a Load Carrier is the Pallet. In handling units, Load Carriers can contain items or other handling units of the Package type. A Load Carrier cannot contain another Load Carrier. 
 
-***Package***: simple box, which can be connected to other boxes. Then all together they can be loaded onto a loadcarrier.
+***Package:*** An example of a Package is a Box. Packages in handling units can contain items or other handling units of the Package type. A Package cannot contain a load carrier.
 <br>
     
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/EN-EmptiesManagementSetup1.jpg"><br>
@@ -21,5 +21,16 @@ On the ***Invoicing tab***, you can specify an account to use in case you want t
      
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/EN-EmptiesManagementSetup3.jpg"><br>
 
+## Packaging Setup (HUM)
 
+The Packaging Setup (HUM) contains the Empties section:
+<br>
+     
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000231-0/SetupHUM_1_ENU.png"><br>
+
+Where there are the following fields:
+
+* **Empties Calculation** defines the way in which empties are calculated. The app standard mode is Default. By extending the app, via interface, it is possible to create custom calculation modes.
+* **Create GL Account lines on empties invoice** During empties invoice generation with Report "Container - Create Invoice" if possible generate line of GL Account type. As standard line are created as Item.
+* **Invoicing Container Default Journal Batch Name** Specifies the value of the Default Journal Batch Name field. It is used in the generation of the empties invoice, Report "Container - Create invoice", for the creation of the empties reversal lines.
 
