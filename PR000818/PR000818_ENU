@@ -1,0 +1,9 @@
+In resources setup page it is defined:
+
+* The absence reporting job – Absence Job No.
+
+* If absence hours need to be approved or not
+
+The boolean “Hide Absence Job No. on TS" and "Insert TS Absences on appr." work together: their activation blocks the reporting of hours on the absence job through the time sheet. It becomes mandatory for all resources to follow the approval workflow:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000818-0/setup eng3.png"><br>
