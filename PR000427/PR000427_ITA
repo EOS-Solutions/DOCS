@@ -1,7 +1,35 @@
 Di seguito riepiloghiamo alcuni **consigli per migliorare le performance** del configuratore:
 
--   **Ridurre il numero di caratteristiche associate ad una regola**. In fase di analisi � opportuno considerare se farlo creando pi� codici articoli neutri con regole diverse.
--   **Ridurre il numero di relazioni** associate alle regole anche tramite l�utilizzo dei set di caratteristiche.
--   Impostare i flag �**Escludi dal calcolo delle relazioni**� ed �**Escludi dal calcolo delle relazioni con condizioni**� presenti nelle caratteristiche associate alle regole (tramite la funzione certifica o manualmente).
--   Impostare il flag �**Escludi da calcolo maggiorazioni**� presente nelle caratteristiche associate alle regole.
--   Valutare l�impostazione dei campi presenti nel setup del configuratore. In particolare: �**Abilita riconfigurazione distinte/assemblaggio**�, �**Abilita calcolo caratteristiche sottolivelli DB**�, �**Tipo calcolo sottolivelli DB**�.
+-   **Ridurre il numero di caratteristiche associate ad una regola**. In fase di analisi è opportuno considerare se farlo creando più codici articoli neutri con regole diverse.
+-   **Ridurre il numero di relazioni** associate alle regole anche tramite l’utilizzo dei set di caratteristiche.
+-   Impostare i flag «**Escludi dal calcolo delle relazioni**» ed «**Escludi dal calcolo delle relazioni con condizioni**» presenti nelle caratteristiche associate alle regole (tramite la funzione certifica o manualmente).
+-   Impostare il flag «**Escludi da calcolo maggiorazioni**» presente nelle caratteristiche associate alle regole.
+-   -   Impostare il flag «**Escludi da Calc. Optional**» presente nelle caratteristiche associate alle regole.
+-   Valutare l’impostazione dei campi presenti nel setup del configuratore. In particolare: «**Abilita riconfigurazione distinte/assemblaggio**», «**Abilita calcolo caratteristiche sottolivelli DB**», «**Tipo calcolo sottolivelli DB**».
+-   Valutare l'abilitazione della configurazione predefinita.
+
+La configurazione predefinita è attivabile tramite il campo presente nel Setup (CFG), all’interno della sezione Generale.
+Si consiglia l’attivazione della nuova funzione in presenza di:
+* Elevato numero di caratteristiche.
+* Elevato numero di relazioni.
+* Elevato numero di caratteristiche con un valore di default.
+* Problemi di performance in apertura del configuratore.
+
+Per poterla attivare è comunque necessario utilizzare il configuratore con:
+* Tipo calcolo sottolivelli DB: Chiusura configuratore.
+* Abilita l’esplosione delle distinta base alla chiusura: Abilitato.
+* Nr. Configurazione esterna: valorizzato nel setup. Il calcolo sfrutta questo numero di serie.
+
+Una volta attivato è necessario per ognuno degli articoli «neutri» gestiti dal configuratore salvare la configurazione predefinita.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000427-0/ConfPred1_ITA.png"><br>
+
+L’azione permette di salvare una «fotografia» della configurazione da utilizzare in apertura del configuratore memorizzando in apposite strutture dati tutti i valori delle caratteristiche e delle relazioni applicate (ad esempio opzionale/obbligatorio, relazioni di tipo filtro applicate ecc). In questo modo l’apertura del configuratore diventa immediata in quanto non è più necessario eseguire la validazione di tutti i valori caratteristica che hanno un default.
+Ovviamente il salvataggio della configurazione si deve rieseguire ogni qual volta cambia un elemento della regola (caratteristiche, relazioni, formule) o dei default per l’articolo. La funzione si può lanciare manualmente dalla scheda o dalla lista degli articoli o dal setup del configuratore (la esegue per tutti gli articoli da Neutro a Configurato). 
+
+**Raccomandiamo di effettuare dei test in ambiente di prova prima di attivarlo in produzione.**
+
+
+
+
+
