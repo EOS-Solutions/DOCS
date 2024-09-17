@@ -1,8 +1,8 @@
-In Rule Characteristic itÂs possible to specify the **list of characteristics** associated with the rule, the **sequence** in which they should be shown to the operator, whether they are **mandatory** or **non editable** during the configuration, the calculation logic in **Excel**, the **maximum** and **minimum** values for characteristics of type ®measure¯, and the **styling format**.
+In Rule Characteristic itâ€™s possible to specify the **list of characteristics** associated with the rule, the **sequence** in which they should be shown to the operator, whether they are **mandatory** or **non editable** during the configuration, the calculation logic in **Excel**, the **maximum** and **minimum** values for characteristics of type Â«measureÂ», and the **styling format**.
 
 <br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000289-0/Rule4_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000289-0/Rule4_ENU.png"><br>
 
 These are the main fields present in the rule characteristics:
 
@@ -11,7 +11,7 @@ These are the main fields present in the rule characteristics:
 | Characteristic Code |Characteristic Code.|
 | Characteristic Description |Characteristic Description.|
 | Sequence |Defines the sequence in which the characteristics are requested to the user. The sequence is used to create the configurator's search keys, therefore the change of sequence involves the reconfiguration of any previously generated items.|
-| Mandatory |Defines whether the characteristic is Mandatory or Optional for the rule.|ÿ
+| Mandatory |Defines whether the characteristic is Mandatory or Optional for the rule.|Â 
 | Connection |Indicate the master rule to which this characteristic is linked. Use the "Align Connection" action to update the values.|
 | Disable Characteristic by Key |Excludes the characteristic from the composition of the search keys of the configured items. It is recommended to use only for dummy characteristics used for calculations.|
 | Price |Used to define which characteristics are used in the price matrix for the items associated with the rule.|
@@ -26,7 +26,7 @@ These are the main fields present in the rule characteristics:
 | Process In Excel |If activated during the validation of the value of the characteristic, it recalculates any excel formulas associated with the rule.|
 | Get Output From Excel |If activated during the validation phase of the characteristic value, it recalculates any excel formulas associated with the rule and assigns the value to the characteristic.|
 | Trigger Custom Code |If activated during the validation of the characteristic value, it executes any custom code associated with the rule. Contact your partner for information on how to extend the configurator.|
-| Get Output From Custom Code |If activated during the validation of the characteristic value, it executes any custom code associated with the rule and assigns the value to the characteristic. Contact your partner for information on how to extend the configurator.|ÿ
+| Get Output From Custom Code |If activated during the validation of the characteristic value, it executes any custom code associated with the rule and assigns the value to the characteristic. Contact your partner for information on how to extend the configurator.|Â 
 | Indentation |Allows to set an indentation to the characteristic when prompted to the user.|
 | Exclude from Calc. Surcharge |Excludes the characteristic from the calculation of surcharges. Very important for performance.|
 
