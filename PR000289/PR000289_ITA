@@ -31,6 +31,8 @@ Questi sono i principali campi presenti nelle caratteristiche della regola:
 | Leggi output da codice personalizzato |Se attivato in fase di validazione del valore della caratteristica esegue l’eventuale codice personalizzato associato alla regola e assegna il valore alla caratteristica. Contattare il proprio partner per informazione su come estendere il configuratore.|
 | Indentazione |Consente di impostare una indentazione alla caratteristica quando viene richiesta all’operatore.|
 | Escludi da Calc. Maggiorazioni |Esclude la caratteristica dal calcolo delle maggiorazioni. Molto importante per le performance.| 
+| Escludi da Calc. Optional |Permette di escludere la caratteristica dal calcolo degli optional. In scenari con un alto numero di caratteristiche l’attivazione di questo flag dove il calcolo degli optional non è necessario potrebbe contribuire ad un miglioramento delle performance.| 
+
 
 <br>
 <br>
