@@ -1,0 +1,15 @@
+L'installazione dell'app **EX090.05 Product configurator for Engineering to Order** abilita l’utilizzo del configuratore di prodotto nelle seguenti funzioni di ETO:
+* Righe struttura progetto.
+* Righe template struttura progetto. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000814-0/ETO1_ITA.png"><br>
+
+E’ importante sottolineare che:
+* Viene prevista l’esplosione della distinta e del ciclo anche se il configuratore viene gestito a varianti.
+* Il prezzo viene calcolato utilizzando la matrice prezzi con le stesse modalità previste per i documenti di vendita, prelevando il cliente dalla testata del progetto.
+* Non vengono generate le righe di maggiorazione ma il prezzo di riga sarà comprensivo degli importi di maggiorazione.
+* Non vengono generate le righe optional o quelle relativa alla DB Produzione.
+* Se il campo «Imposta il prezzo dell'articolo dalla configurazione» nel setup del configuratore di prodotto è abilitato il prezzo calcolato dal configuratore viene memorizzato in anagrafica articoli nel campo Prezzo Unitario.
+
+
+
