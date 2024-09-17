@@ -16,3 +16,14 @@ Da Azioni->Crea fatture è possibile eseguire direttamente la fatturazione dei v
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000246-0/IT-EMPEmptiesInventory3.jpg"><br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000246-0/CreateInvoice_1_ITA.png"><br>
 
+La fattura di addebito dei vuoti viene viene create in due modalità diverse in funzione all'impostazione al campo **Crea Righe GL Account su fatturazione vuoti** presente nel Setup Imballaggio (HUM): 
+* Se attivo la fattura viene creata utilizzando il **Nr. conto fatturazione vuoti** presente nel materiale di imballaggio. Utilizzando l’addebito con il conto prezzi e sconti vengono comunque letti dall’anagrafica dell’articolo associato al materiale di imballaggio.  
+* Se disattivato la fattura viene create utilizzando il **Nr. articolo** presente nel materiale di imballaggio.
+
+Nella funzione di creazione fatture è presente inoltre il campo **Crea righe di storno nel giornale di registrazione**. Se attivo oltra alla creazione delle fattura di addebito, la funzione crea anche le righe di storno nel giornale di Registrazione contenitori permettendo l’azzeramento del saldo. La registrazione è manuale.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000246-0/CreateInvoice_2_ITA.png"><br>
+
+
+
+
