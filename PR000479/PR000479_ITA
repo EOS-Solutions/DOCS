@@ -1,6 +1,6 @@
-In Setup controllo qualit… vengono impostati i dati base per il funzionamento del sistema.
+In Setup controllo qualitÃ  vengono impostati i dati base per il funzionamento del sistema.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000479-0/4ProductQualityAssurance-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000479-0/4ProductQualityAssurance-ITA.png"><br>
 
 **Tab Generale**
 
@@ -8,13 +8,14 @@ Nella tabella che segue sono riportati i campi da compilare:
 
 | Campo | Descrizione |
 | --- | --- |
-| Tipo Test Interno | Scegliere il tipo di test necessario (es. per tossicit…, per pericolosit…, test ordinario ecc.). I Tipi di testÿ e relativi codici vengono impostati in Tipi di Test  (PQA) (vedi sotto paragrafo specifico). |
-| Priorit… di default ordine | Serve per definire quale priorit… deve essere associata ai nuovi ordini di controllo che vengono generati dai carichi. |
-| Causale di Default | Serve per indicare la causale per cui si effettua lÂordine di controllo. |
+| Tipo Test Interno | Scegliere il tipo di test necessario (es. per tossicitÃ , per pericolositÃ , test ordinario ecc.). I Tipi di testÂ  e relativi codici vengono impostati in Tipi di Test  (PQA) (vedi sotto paragrafo specifico). |
+| PrioritÃ  di default ordine | Serve per definire quale prioritÃ  deve essere associata ai nuovi ordini di controllo che vengono generati dai carichi. |
+| Causale di Default | Serve per indicare la causale per cui si effettua lâ€™ordine di controllo. |
 | Controlla Numero Risultati | Se attivo verifica che i risultati siano almeno lo stesso numero della dimensione del campione. |
-| ID report Ordine di Controllo | Viene specificato il report per la stampa dellÂordine di controllo. |
-| Nome report Ordine di Controllo | Viene specificato il nome del report per la stampa dellÂordine di controllo |
-| Considera Quantit… in Controllo in MRP | Attivando questo flag la disponibilit… ai SOLI fini dell'MRP viene calcolata includendo la "inspection quantity" degli ordini di controllo. Disattivando questo flag la quantit… Š calcolata come ItemLedgerEntry.RemainingQuantity-ItemLedgerEntry.InspectionQuantity. |
+| ID report Ordine di Controllo | Viene specificato il report per la stampa dellâ€™ordine di controllo. |
+| Nome report Ordine di Controllo | Viene specificato il nome del report per la stampa dellâ€™ordine di controllo |
+| Disabilita il trasferimento dell'output di produzione in qualitÃ  | Se attivo, alla registrazione dell'output di produzione non viene eseguito il trasferimento della quantitÃ  nella collocazione di controllo qualitÃ . |
+| Considera QuantitÃ  in Controllo in MRP | Attivando questo flag la disponibilitÃ  ai SOLI fini dell'MRP viene calcolata includendo la "inspection quantity" degli ordini di controllo. Disattivando questo flag la quantitÃ  Ã¨ calcolata come ItemLedgerEntry.RemainingQuantity-ItemLedgerEntry.InspectionQuantity. |
 
 <br>
 
@@ -25,9 +26,9 @@ Nella tabella che segue sono riportati i campi da compilare:
 | Campo | Descrizione |
 | --- | --- |
 | Nr. Dispositivo | Codice del seriale definito per numerare i dispositivi di misura utilizzati per i controlli. |
-| Nr. Piani | Codice del seriale definito per numerare i piani di controllo qualit…. |
-| Nr. Ordini | Codice del seriale definito per numerare lÂordine di controllo qualit…. |
-| Nr. non-conformit… | Codice del seriale definito per numerare le non conformit…. |
+| Nr. Piani | Codice del seriale definito per numerare i piani di controllo qualitÃ . |
+| Nr. Ordini | Codice del seriale definito per numerare lâ€™ordine di controllo qualitÃ . |
+| Nr. non-conformitÃ  | Codice del seriale definito per numerare le non conformitÃ . |
 
 <br>
 
@@ -38,24 +39,24 @@ Nella tabella che segue sono riportati i campi da compilare:
 | Campo | Descrizione |
 | --- | --- |
 | Specificare i Termini di Consegna al Rilascio | Nel conteggio del punteggio per i fornitori attiva anche il controllo sul ritardo dei pagamenti. |
-| Valutazione Qualit… al Rilascio | Nel conteggio del punteggio per i fornitori attiva anche la gestione della valutazione di qualit…. |
-| Usa criterio qualit… in calcolo | Se attivo, verranno utilizzati i criteri di qualit… nel calcolo della valutazione |
-| Usa criterio quantit… in calcolo | Se attivo, verranno utilizzati i criteri di quantit… nel calcolo della valutazione |
+| Valutazione QualitÃ  al Rilascio | Nel conteggio del punteggio per i fornitori attiva anche la gestione della valutazione di qualitÃ . |
+| Usa criterio qualitÃ  in calcolo | Se attivo, verranno utilizzati i criteri di qualitÃ  nel calcolo della valutazione |
+| Usa criterio quantitÃ  in calcolo | Se attivo, verranno utilizzati i criteri di quantitÃ  nel calcolo della valutazione |
 | Usa criterio data cons. in calcolo | Se attivo, verranno utilizzati i criteri di data nel calcolo della valutazione |
-| Utilizzare Fornitore certificato in Calc. | Se attivo, verr… utilizzato il fornitore di certificazione nel calcolo della valutazione |
+| Utilizzare Fornitore certificato in Calc. | Se attivo, verrÃ  utilizzato il fornitore di certificazione nel calcolo della valutazione |
 | Valore certificazione fornitore | Specifica il valore di certificazione fornitore per il calcolo della valutazione |
 | Utilizzare il servizio globale in Calc. | Specifica se utilizzare il servizio globale nel calcolo |
-| Codice di valutazione della qualit… predefinito | Specifica il codice di classificazione della qualit… predefinito |
+| Codice di valutazione della qualitÃ  predefinito | Specifica il codice di classificazione della qualitÃ  predefinito |
 
 <br>
 
-**Tab Non-Conformit…**
+**Tab Non-ConformitÃ **
 
 I campi da compilare sono:
 
 | Campo | Descrizione |
 | --- | --- |
-| Creazione automatica non conf. | Specifica se creare in automatico una non-conformit… quando il risultato della qualit… non Š soddisfacente |
+| Creazione automatica non conf. | Specifica se creare in automatico una non-conformitÃ  quando il risultato della qualitÃ  non Ã¨ soddisfacente |
 | Nome def. registrazioni | Specifica il nome del modello di giornale di registrazione predefinito |
 | Nome batch contabile | Specifica il nome batch del giornale di registrazione predefinito |
 
@@ -68,5 +69,5 @@ I campi da compilare sono:
 | Campo | Descrizione |
 | --- | --- |
 | Cod. stato in corso ordini controllo | Specifica lo stato dell'ordine di controllo |
-| Cod. stato con non conf. ordini controllo | Specifica lo stato di un ordine di controllo con non-conformit… |
+| Cod. stato con non conf. ordini controllo | Specifica lo stato di un ordine di controllo con non-conformitÃ  |
 | Cod. stato iniziale ordini controllo | Specifica il nuovo stato dell'ordine di controllo |
