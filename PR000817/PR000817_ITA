@@ -1,0 +1,15 @@
+Le ore di assenza sono gestite da Business Central come ore “classiche”: è necessario creare una commessa interna ad hoc.  
+
+La commessa deve avere le seguenti caratteristiche: 
+
+* Il cliente deve coincidere con la ragione sociale della società stessa. Solitamente si utilizza il cliente creato per l’autofattura 
+
+* Come persona responsabile si inserisce la risorsa dell’HR che si occupa della gestione e del controllo delle assenze 
+
+* La commessa è di tipo interno (il tipo commessa ha il flag “lavoro interno” attivo):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000817-0/SETUP1.png"><br>
+
+La struttura WBS della commessa creata per la rendicontazione delle assenze elenca tutte possibili le cause di assenza. Il tipo di fatturazione è “non fatturabile”:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000817-0/setup2.png"><br>
