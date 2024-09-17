@@ -1,5 +1,3 @@
-**Travel agreements setup**
-
 In projects the travel expenses are set up through travel agreements page:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMG SETUP 4.png"><br>
@@ -10,17 +8,17 @@ In travel agreements table, all possible travel expenses foreseen for the projec
 
 Columns details: 
 
-* Customer no. and project no.: the system automatically fills in the columns based on the reference project 
+* *Customer no. and project no.*: the system automatically fills in the columns based on the reference project 
 
-* Responsibility center: travel agreements can be project-specific or specific to each responsibility center 
+* *Responsibility center*: travel agreements can be project-specific or specific to each responsibility center 
 
-* Resource no.: travel agreements can be valid for all resources within the project team or can be specific on a resource-by-resource basis 
+* *Resource no.*: travel agreements can be valid for all resources within the project team or can be specific on a resource-by-resource basis 
 
-* Travel type: outward/travel/return 
+* *Travel type*: outward/travel/return 
 
-* Not accumulable on O/R: the system automatically activates the flag on the return lines to prevent the expense from being double counted in the case of a return trip 
+* *Not accumulable on O/R*: the system automatically activates the flag on the return lines to prevent the expense from being double counted in the case of a return trip 
 
-* Invoicing type: 
+* *Invoicing type*: 
 
 
 
@@ -31,23 +29,23 @@ Columns details:
 
 
 
-* Work type code: it indicates the type of expense. The work types must be coded in the specific table: 
+* *Work type code*: it indicates the type of expense. The work types must be coded in the specific table: 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMG SETUP 6.png"><br>
 
-* Posting PSP line no.: the field connects the travel agreement line with a WBS line of the project (usable if specific WBS lines have been created for travel expenses) 
+* *Posting PSP line no.*: the field connects the travel agreement line with a WBS line of the project (usable if specific WBS lines have been created for travel expenses) 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMG SETUP 7.png"><br>
 
-* Starting date and ending date: it is possible to set up travel agreements for specific period 
+* *Starting date and ending date*: it is possible to set up travel agreements for specific period 
 
-* Quantity 
+* *Quantity *
 
-* Unit cost: by entering an amount, the system will show this amount on the expense sheet during expense registration 
+* *Unit cost*: by entering an amount, the system will show this amount on the expense sheet during expense registration 
 
-* Not allow cancellation: the expense line can’t be canceled 
+* *Not allow cancellation*: the expense line can’t be canceled 
 
-* Blocked  
+* *Blocked * 
 
 It is possible to define customer travel agreement templates, recallable when creating new projects. 
 
