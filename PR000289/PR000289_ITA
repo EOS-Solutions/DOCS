@@ -1,8 +1,8 @@
-In Regole Caratteristiche Š possibile definire lÂ**elenco delle caratteristiche** associate alla regola, la **sequenza** con cui devono essere proposte allÂoperatore, lÂ**obbligatoriet…** e la **non editabilit…** in configurazione, le logiche di calcolo in **Excel**, i valori di **massimo e minimo** per le caratteristiche di tipo misura e la **formattazione stilistica**.
+In Regole Caratteristiche Ã¨ possibile definire lâ€™**elenco delle caratteristiche** associate alla regola, la **sequenza** con cui devono essere proposte allâ€™operatore, lâ€™**obbligatorietÃ ** e la **non editabilitÃ ** in configurazione, le logiche di calcolo in **Excel**, i valori di **massimo e minimo** per le caratteristiche di tipo misura e la **formattazione stilistica**.
 
 <br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000289-0/Rule4_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000289-0/Rule4_ITA.png"><br>
 
 
 Questi sono i principali campi presenti nelle caratteristiche della regola:
@@ -12,24 +12,24 @@ Questi sono i principali campi presenti nelle caratteristiche della regola:
 |------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Codice Caratteristica |Codice caratteristica.|
 | Descrizione |Descrizione caratteristica.|
-| Sequenza |Definisce la sequenza con cui le caratteristiche vengono richieste allÂoperatore. La sequenza viene utilizzata per costruire le chiavi di ricerca del configuratore pertanto Il cambio di sequenza comporta la riconfigurazione degli eventuali articoli precedentemente generati.|  
-| Obbligatorio |Definisce se la caratteristica Š Obbligatoria o Opzionale per la regola.|ÿ
-| Connessione |Indicare la regola master a cui questa caratteristica fa riferimento. Utilizzare l'azione ®Allinea coincidenze¯ per aggiornare i valori. Si consiglia la schedulazione della procedura perch‚ i tempi di esecuzione potrebbero essere lunghi.|
-| Disabilita caratteristica da chiave |Esclude la caratteristica dalla composizione delle chiavi di ricerca degli articoli configurati. Si consiglia lÂutilizzo solo per caratteristiche di appoggio utilizzate per calcoli.| 
+| Sequenza |Definisce la sequenza con cui le caratteristiche vengono richieste allâ€™operatore. La sequenza viene utilizzata per costruire le chiavi di ricerca del configuratore pertanto Il cambio di sequenza comporta la riconfigurazione degli eventuali articoli precedentemente generati.|  
+| Obbligatorio |Definisce se la caratteristica Ã¨ Obbligatoria o Opzionale per la regola.|Â 
+| Connessione |Indicare la regola master a cui questa caratteristica fa riferimento. Utilizzare l'azione Â«Allinea coincidenzeÂ» per aggiornare i valori. Si consiglia la schedulazione della procedura perchÃ© i tempi di esecuzione potrebbero essere lunghi.|
+| Disabilita caratteristica da chiave |Esclude la caratteristica dalla composizione delle chiavi di ricerca degli articoli configurati. Si consiglia lâ€™utilizzo solo per caratteristiche di appoggio utilizzate per calcoli.| 
 | Prezzo |Utilizzato per definire quali caratteristiche vengono utilizzate nella matrice prezzi per gli articoli associati alla regola.|
 | Non editabile |Rende non editabile la caratteristica. Da utilizzare nelle caratteristiche calcolate tramite relazioni o con un valore di default.|
-| Nascondi caratteristica in configurazione |Permette di nascondere la caratteristica allÂoperatore durante la configurazione. Da utilizzare nelle caratteristiche calcolate tramite relazioni o con un valore di default.|
+| Nascondi caratteristica in configurazione |Permette di nascondere la caratteristica allâ€™operatore durante la configurazione. Da utilizzare nelle caratteristiche calcolate tramite relazioni o con un valore di default.|
 | Maggiorazione listino |Permette di definire se la caratteristica viene utilizzata nel calcolo delle maggiorazioni di listino.|
-| Escludi dal calcolo delle relazioni |Esclude la caratteristica dal calcolo delle relazioni. Da attivare per tutte le caratteristiche che non vengono utilizzate nelle relazioni della regola. Molto importante per le performance. Nella regola esiste lÂazione certifica che permette di impostarlo automaticamente.|
-| Escludi dal calcolo delle relazioni con condizioni |Esclude la caratteristica dal calcolo delle relazioni con condizione. Da attivare per tutte le caratteristiche che non vengono utilizzate nelle relazioni con condizione della regola. Molto importante per le performance. Nella regola esiste lÂazione certifica che permette di impostarlo automaticamente.|
+| Escludi dal calcolo delle relazioni |Esclude la caratteristica dal calcolo delle relazioni. Da attivare per tutte le caratteristiche che non vengono utilizzate nelle relazioni della regola. Molto importante per le performance. Nella regola esiste lâ€™azione certifica che permette di impostarlo automaticamente.|
+| Escludi dal calcolo delle relazioni con condizioni |Esclude la caratteristica dal calcolo delle relazioni con condizione. Da attivare per tutte le caratteristiche che non vengono utilizzate nelle relazioni con condizione della regola. Molto importante per le performance. Nella regola esiste lâ€™azione certifica che permette di impostarlo automaticamente.|
 | Da Valore |Utilizzato solo per le caratteristiche di tipo misura consente di impostare un limite inferiore.|
 | A Valore |Utilizzato solo per le caratteristiche di tipo misura consente di impostare un limite superiore.|
-| Stile |Consente di impostare uno stile, colore e stile, alla caratteristica quando viene richiesta allÂoperatore.|
+| Stile |Consente di impostare uno stile, colore e stile, alla caratteristica quando viene richiesta allâ€™operatore.|
 | Processa in excel |Se attivato in fase di validazione del valore della caratteristica ricalcola le eventuali formule excel associate alla regola.|
 | Leggi output da excel |Se attivato in fase di validazione del valore della caratteristica ricalcola le eventuali formule excel associate alla regola e assegna il valore alla caratteristica.|
-| Esegui codice personalizzato |Se attivato in fase di validazione del valore della caratteristica esegue lÂeventuale codice personalizzato associato alla regola. Contattare il proprio partner per informazione su come estendere il configuratore.|ÿ
-| Leggi output da codice personalizzato |Se attivato in fase di validazione del valore della caratteristica esegue lÂeventuale codice personalizzato associato alla regola e assegna il valore alla caratteristica. Contattare il proprio partner per informazione su come estendere il configuratore.|
-| Indentazione |Consente di impostare una indentazione alla caratteristica quando viene richiesta allÂoperatore.|
+| Esegui codice personalizzato |Se attivato in fase di validazione del valore della caratteristica esegue lâ€™eventuale codice personalizzato associato alla regola. Contattare il proprio partner per informazione su come estendere il configuratore.|Â 
+| Leggi output da codice personalizzato |Se attivato in fase di validazione del valore della caratteristica esegue lâ€™eventuale codice personalizzato associato alla regola e assegna il valore alla caratteristica. Contattare il proprio partner per informazione su come estendere il configuratore.|
+| Indentazione |Consente di impostare una indentazione alla caratteristica quando viene richiesta allâ€™operatore.|
 | Escludi da Calc. Maggiorazioni |Esclude la caratteristica dal calcolo delle maggiorazioni. Molto importante per le performance.| 
 
 <br>
