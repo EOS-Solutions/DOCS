@@ -5,8 +5,16 @@ From the Customer card, by pressing Related-> Customer-> Empties balance you can
      
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000246-0/EN-EMPEmptiesInventory1.jpg"><br>
      
-From Actions-> Create Invoices it is possible to perform the empty invoicing directly from the page. 
+From Actions-> Create Invoices it is possible to perform the empties invoicing directly from the page. 
 <br>
      
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000246-0/EN-EMPEmptiesInventory2.jpg"><br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000246-0/CreateInvoice_1_ENU.png"><br>
+
+The debit invoice for empties items is created in two different ways depending on the setting in the **Create GL Account Lines on Empties Invoice** field in the Packaging Setup (HUM):
+* If active, the invoice is created using the **Empties Invoicing Account No.** present in the packaging material. By using the debit with account the price and discount are still read from the price list of the item associated with the packaging material.  
+* If deactivated, the invoice is created using the **Item No.** present in the packaging material.
+
+The invoice creation function also includes the field **Create reverse journal lines**. If active in addition to the creation of the debit invoice, the function also creates the reverse lines in the Container Journal, allowing the balance to be reset. Posting is manual.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000246-0/CreateInvoice_2_ENU.png"><br>
