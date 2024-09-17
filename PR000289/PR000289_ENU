@@ -29,6 +29,8 @@ These are the main fields present in the rule characteristics:
 | Get Output From Custom Code |If activated during the validation of the characteristic value, it executes any custom code associated with the rule and assigns the value to the characteristic. Contact your partner for information on how to extend the configurator.| 
 | Indentation |Allows to set an indentation to the characteristic when prompted to the user.|
 | Exclude from Calc. Surcharge |Excludes the characteristic from the calculation of surcharges. Very important for performance.|
+| Exclude from Calc. Optional |Allows to exclude the characteristic from the calculation of the optional. In scenarios with a high number of characteristics, the activation of this flag where the calculation of the optional is not necessary could contribute to an improvement of the performance.| 
+
 
 <br>
 <br>
