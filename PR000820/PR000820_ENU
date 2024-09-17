@@ -1,0 +1,11 @@
+In Human Resources Setup it is possible to specify causes of absence and define precise units of measurement for the specific causes of absence:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000820-0/setup eng5.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000820-0/setup eng6.png"><br>
+
+The causes of absence are defined in the table and it is possible to associate them with:
+
+* specific units of measurement - unless otherwise specified, absences are recorded in the basic unit of measurement
+
+* the color that highlights absences in Outlook calendar
