@@ -1,0 +1,14 @@
+Installing the app **EX090.05 Product configurator for Engineering to Order** enable the use of the product configurator in the following ETO functions:
+* Project structure lines.
+* Project structure template lines.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000814-0/ETO1_ENU.png"><br>
+
+It is important to underline that:
+
+* The explosion of Production BOM and the routing is provided even if the configurator is managed by variants.
+* The price is calculated using the matrix prices in the same way as for sales documents, taking the customer from the project header.
+* No surcharge lines are generated, but the line price will include the surcharge amounts.
+* Optional lines or lines for the Production BOM are not generated.
+* If the "Set the item price from configuration" field in the product configurator setup is enabled, the price calculated by the configurator is stored in the item.
+
