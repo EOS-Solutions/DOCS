@@ -1,6 +1,6 @@
 In the Inspection Setup page you can specify the information required by the system to perform the checks.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000479-0/4ProductQualityAssurance-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000479-0/4ProductQualityAssurance-ENU.png"><br>
 
 **General**
 
@@ -14,6 +14,7 @@ In the table below are listed the fields to fill in:
 | Check Result Count | Verify that the results are at least the same number as the sample size |
 | Inspection Order Report ID | Specifies the Inspection Order Report |
 | Inspection Order Report Name | Specifies the Inspection Order Report name |
+| Disable Production Output Transfer in Quality | If enabled, the quantity transfer to the quality inspection bin is not performed when posting the production output. |
 | Include Inspection Qty. in MRP | Specifies if Inspection Qty. is included on MRP. If you disable the option the quantity is calculated as ItemLedgerEntry.RemainingQuantity-ItemLedgerEntry.InspectionQuantity. |
 
 <br>
@@ -38,7 +39,7 @@ In the table below are listed the fields to fill in:
 | Field | Description |
 | --- | --- |
 | Assert Delivery Terms on Release | Activate the check on late payments when counting the vendor rating, |
-| Quality Rating on Release | Activate theÿQuality management when counting the vendor rating, |
+| Quality Rating on Release | Activate theÂ Quality management when counting the vendor rating, |
 | Use Quality Criteria in Calc. | Specifies that the system will use quality criteria in rating calculation |
 | Use Quantity Criteria in Calc. | The system uses quantity criteria in rating calculation |
 | Use Date Criteria in Calc. | Specifies that the system will use Date criteria in rating calculation |
