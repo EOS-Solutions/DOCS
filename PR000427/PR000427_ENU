@@ -2,6 +2,31 @@ Below we summarize some **tips to improve the performance** of the configurator:
 
 -   **Reduce the number of characteristics associated with a rule**. When analyzing, consider creating multiple neutral item codes with different rules.
 -   **Reduce the number of relations** associated with rules also by using sets of characteristics.
--   Enable the flags ®**Exclude from relations calc.**¯ and ®**Exclude from relations calc. With conditions**¯ present in the characteristics associated with the rules (either through the Certify function or manually).
--   Enable the flag ®**Exclude from calc. surcharge**¯ present in the characteristic associated with a rule.
--   Evaluate the setting of the fields present in the configurator setup. Especially: ®**Enable reconfiguration of production BOM and BOM component**¯, ®**Enable sublevel charac. Calc.**¯, ®**BOM sublevel calculation type**¯.
+-   Enable the flags Â«**Exclude from relations calc.**Â» and Â«**Exclude from relations calc. With conditions**Â» present in the characteristics associated with the rules (either through the Certify function or manually).
+-   Enable the flag Â«**Exclude from calc. surcharge**Â» present in the characteristic associated with a rule.
+-   -   Enable the flag Â«**Exclude from Calc. Optional**Â» present in the characteristic associated with a rule.
+-   Evaluate the setting of the fields present in the configurator setup. Especially: Â«**Enable reconfiguration of production BOM and BOM component**Â», Â«**Enable sublevel charac. Calc.**Â», Â«**BOM sublevel calculation type**Â».
+-   Consider enabling the default configuration.
+
+The default configuration can be activated via the field in the Setup (CFG), within the General section.
+It is recommended to activate the new function in the presence of:
+
+* High number of characteristics.
+* High number of relations.
+* High number of characteristics with a default value.
+* Performance issues when opening the product configurator.
+
+To activate it, however, it is necessary to use the configurator with:
+
+* BOM Sublevels Calculation Type: Configurator Closing.
+* Enable BOM Explosion on closing: Enabled.
+* External Configuration Nos.: filled out in configurator setup. The calculation uses this serial number.
+
+Once activated, it is necessary to save the default configuration for each of the "neutral" items managed by the configurator.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000427-0/ConfPred1_ENU.png"><br>
+
+The action allows to save a â€œpicture" of the configuration to be used when opening the configurator, storing in special data structures all the values of the characteristics and relations applied (e.g. optional/mandatory, filter type relations applied, etc.). In this way, the opening of the configurator becomes immediate as it is no longer necessary to perform the validation of all the characteristic values that have a default.
+Obviously, the configuration must be saved again every time an element of the rule (characteristics, relations, formulas) or defaults for the item changes. The function can be launched manually from the card or from the list of items or from the configurator setup (it performs it for all items from Neutral to Configuration). 
+
+**We recommend testing in a test environment before activating it in production.**
