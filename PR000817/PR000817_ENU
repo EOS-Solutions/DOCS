@@ -1,0 +1,15 @@
+The absence hours are managed by Business Central as "classic" hours: it is necessary to create a specific internal job.  
+
+The job must have the following characteristics: 
+
+* The customer must coincide with the company name of the company itself. Usually, it is used the customer created for the self-invoice. 
+
+* As responsible person it is included the HR resource who deals with the management and control of absences.  
+
+* The job type is internal (the order type has the “internal work” flag active):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000817-0/setup eng1.png"><br>
+
+The WBS structure of the absences job lists all possible causes of absence. The billing type is “no billing”:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000817-0/setup eng2.png"><br>
