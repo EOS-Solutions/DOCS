@@ -1,5 +1,3 @@
-**Impostazione team di progetto**
-
 Affinché la risorsa possa caricare correttamente le ore e le spese sul progetto è necessario che sia inserita all’interno del team di progetto.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000810-0/IMM SETUP 10.png"><br>
@@ -8,10 +6,10 @@ Affinché la risorsa possa caricare correttamente le ore e le spese sul progetto
 
 La tabella permette di associare alla risorsa, all’interno del team di progetto: 
 
-* Il titolo professionale 
+* *Il titolo professionale* 
 
-* Il ruolo nel team di progetto – i ruoli dovranno essere codificati sul sistema 
+* *Il ruolo nel team di progetto:* i ruoli dovranno essere codificati sul sistema 
 
-* Registrazione tempi: la possibilità di registrare ore e spese 
+* *Registrazione tempi:* la possibilità di registrare ore e spese 
 
-* Suggerimento di fatturazione: la possibilità di rifatturare a cliente le ore e spese caricate dalla risorsa 
+* *Suggerimento di fatturazione:* la possibilità di rifatturare a cliente le ore e spese caricate dalla risorsa 
