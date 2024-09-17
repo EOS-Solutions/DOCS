@@ -1,0 +1,11 @@
+In Setup Gestione Personale è possibile specificare le cause di assenza e definire unità di misura puntuali per le specifiche cause di assenza:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000820-0/setup5.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000820-0/setup6.png"><br>
+
+In tabella si definiscono le Cause d’assenza ed è possibile associare a queste: 
+
+* unità di misura specifiche: se non specificato diversamente, la registrazione delle assenze avviene nell’unità di misura base 
+
+* il colore con cui l’assenza viene evidenziata a calendario Outlook 
