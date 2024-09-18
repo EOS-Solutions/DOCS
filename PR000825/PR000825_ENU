@@ -1,0 +1,15 @@
+The ADR functionalities have been extended for the purpose of saving and sending work reports to customers and/or the project manager, through the usual ADR setup. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000825-0/ADR 02 ENG.png"><br>
+
+On the job card, the field Bill-To E-Mail has been added. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000825-0/ADR 01 ITA.png"><br>
+
+In order to send the work report to this e-mail address, E-Mail Source Type on the ADR e-mail address setup must be set to Job and/or Job/PM. The former is retrieved from the Bill-To E-Mail on the project, the latter from the e-mail address set on the resource card of the project manager. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000825-0/ADR 03 ENG.png"><br>
+
+Therefore, when the e-mail is sent, the recipient addresses will be the followings:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000825-0/ADR 04 ENG.png"><br>
