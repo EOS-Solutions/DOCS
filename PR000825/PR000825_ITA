@@ -1,0 +1,15 @@
+Le funzionalità dell’ADR sono state estese allo scopo di salvare e inviare i rapporti lavoro ai clienti e/o al PM di progetto, attraverso gli usuali setup ADR.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000825-0/ADR 02 ITA.png"><br>
+
+Sulla scheda commessa è stato aggiunto il campo E-mail di fatturazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000825-0/ADR 01 ITA.png"><br>
+
+Per inviare tramite ADR il rapporto lavoro, il Tipo origine e-mail del setup indirizzi e-mail (ADR) deve essere importato su Progetto e/o Progetto/PM. Nel primo caso, l’indirizzo e-mail viene preso dall’E-mail di fatturazione del progetto, nel secondo caso dall’e-mail indicata sulla scheda risorsa del responsabile di progetto.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000825-0/ADR 03 ENG.png"><br>
+
+In questo modo, quando si invia l’e-mail, gli indirizzi di destinazione saranno i seguenti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000825-0/ADR 04 ITA.png"><br>
