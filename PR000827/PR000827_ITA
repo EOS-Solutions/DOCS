@@ -1,0 +1,27 @@
+Sulla testata della richiesta di acquisto, sono stati aggiunti i due campi Dimensione globale 1 e Dimensione globale 2, riportanti le dimensioni di default della risorsa indicata in Nr. Richiedente. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 05 ITA.png"><br>
+
+Sulle righe delle richieste di acquisto, sono stati aggiunti tutti i campi più importanti delle righe WBS e righe budget, in modo da poter marcare i riferimenti ad essi:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 01 ITA.png"><br>
+
+Per compilare tali campi, sono disponibili due nuove funzioni: 
+
+* *Prendi Fase Lavoro - per la riga corrente:* assegna fase lavoro e, eventualmente, nr. ToDo alla riga su cui si è posizionati 
+
+* *Prendi Fase Lavoro - per le righe marcate:* assegna fase lavoro e, eventualmente, nr. ToDo alle righe selezionate con il Seleziona più elementi 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 01 ITA.png"><br>
+
+A seconda di come sia stato impostato, sulla scheda del progetto, il campo Livello registrazione per acquisto, WBS oppure Budget, il sistema aprirà la maschera con le righe WBS, nel primo caso, oppure le righe budget, nel secondo caso, tra cui selezionare quella corretta:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 03 ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 04 ITA.png"><br>
+
+Sulla testata dei gruppi di utenti del workflow, sono stati aggiunti i campi ID utente richiedente e Gruppo utenti richiedenti. Entrambi servono per indicare gli utenti le cui richieste di acquisto devono essere approvate dall’utente sulla riga selezionata. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 06 ENG.png"><br>
+
+Nel caso in cui venga compilato il campo ID utente richiedente, l’utente in riga sarà responsabile di approvare le richieste di acquisto di tale singolo utente; se, invece, viene compilato il Gruppo utenti richiedenti, l’utente in riga sarà responsabile di approvare le richieste dell’intero gruppo di utenti in esso indicato. 
