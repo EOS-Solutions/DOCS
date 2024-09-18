@@ -1,0 +1,26 @@
+On the purchase request header, the fields Global Dimension 1 and Global Dimension 2 were added. They display the default dimensions indicated on the resource set in Requester No..
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 05 ENG.png"><br>
+
+All the most important fields of the WBS and budget lines were added to the purchase request lines, allowing to keep track of this information.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 02 ENG.png"><br>
+
+There are two new function to help fill these fields:
+* *Get Work Package - for current line:* it assigns the work package and, possibly, ToDo No. to the line which the user is positioned on.
+
+* *Get Work Package - for marked lines:* it assigns the work package and, possibly, ToDo No. to the lines selected with Select More.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 01 ENG.png"><br>
+
+Depending on the setup of the field Purchase Posting Level on the project card (it can be set to WBS or Budget), the system will open a pop-up showing WBS lines, in the first scenario, or budget lines, in the secondo scenario, where the user can select the correct one.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 03 ENG.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 04 ENG.png"><br>
+
+On the workflow user group header, the fields Request User ID and Request Group ID were added. Both identify the users whose purchase requests must be approved by the user on the selected line.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000827-0/PRQ 06 ENG.png"><br>
+
+If the Request User ID is filled in, the user on the selected line will be responsible for the approval of the purchase requests of that single user; on the other hand, if the Request Group ID is filled in, the user on the selected line will be responsible for the approval of the purchase requests of the entire user group indicated in it.
