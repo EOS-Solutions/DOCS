@@ -28,13 +28,11 @@ Dettaglio colonne:
 
 
 
-* *Work type code: *indica il tipo di spesa. I work type devono essere codificati nella tabella specifica: 
+* *Work type code:* indica il tipo di spesa. I work type devono essere codificati nella tabella specifica: 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMM SETUP 6.png"><br>
 
-* *Nr. riga PSP di pianificazione:* il campo collega la riga di accordo di trasferta con una riga WBS del progetto (utilizzabile in caso siano state create linee WBS specifiche per le spese di trasferta) 
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMM SETUP 7.png"><br>
+* *Nr. riga PSP di pianificazione:* il campo collega la riga di accordo di trasferta con una riga WBS del progetto riferita alle spese
 
 * *Data inizio e data fine:* è possibile impostare gli accordi di trasferta per periodi specifici 
 
@@ -44,7 +42,7 @@ Dettaglio colonne:
 
 * *Non consentire l’annullamento:* la riga di spesa non può essere annullata 
 
-* *Bloccato *
+* *Bloccato*
 
 È possibile definire modelli di accordi di trasferta, richiamabili quando si creano nuovi progetti. 
 
