@@ -1,9 +1,11 @@
 In setup risorse si definiscono: 
 
-* Il progetto di rendicontazione assenze – nr. commessa assenze 
+* Il progetto di rendicontazione assenze – nr. progetto assenze 
 
-* La possibilità o meno di rendicontare le ore di assenza su commessa come se fossero ore «standard» oppure la necessità di richiederne l’approvazione. 
+* La possibilità o meno di rendicontare le ore di assenza su progetto come se fossero ore «standard» oppure la necessità di richiederne l’approvazione. 
 
-I boolean “Blocca comm. Assenze sui time sheet” e “inserisci TS assenze nell’approvazione” lavorano insieme: la loro attivazione blocca la rendicontazione delle ore sulla commessa inserita come commessa assenze attraverso il foglio presenze. Diventa obbligatorio per tutte le risorse seguire il workflow approvativo:
+I boolean “Blocca comm. Assenze sui time sheet” e “inserisci TS assenze nell’approvazione” lavorano insieme: la loro attivazione blocca la rendicontazione delle ore sul progetto inserito come progetto assenze attraverso il foglio presenze. 
+
+Diventa obbligatorio per tutte le risorse seguire il workflow approvativo:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000818-0/setup3.png"><br>
