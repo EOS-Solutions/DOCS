@@ -1,4 +1,4 @@
-All’interno del progetto le spese di trasferta possono essere rendicontate sulle diverse attività oppure su linee wbs specifiche, create ad hoc 
+All’interno del progetto le spese di trasferta possono essere rendicontate sulle diverse attività oppure su linee wbs specifiche, create ad hoc.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000805-0/IMM SETUP 2 BAR.png"><br>
 
@@ -19,6 +19,6 @@ In caso di linee WBS specifiche, è necessario impostare le fasi lavoro, definen
 
 * *Tipo fattura:* indica il tipo riga che si genererà nella fattura di vendita (conto c/g, articolo, risorsa) 
 
-* *Nr. fattura:* nr. conto c/g, nr. articolo o nr. risorsa in base al tipo fattura  
+* *Nr. fattura:* nr. conto c/g, nr. articolo o nr. risorsa in base al tipo fattura:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000805-0/IMM SETUP 3 BAR.png"><br>
