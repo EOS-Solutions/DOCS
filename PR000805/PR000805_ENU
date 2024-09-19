@@ -19,6 +19,6 @@ In case of specific WBS lines, it is necessary to setup work packages, by defini
 
 * *Billing base:* it indicates the type of line that will be generate in the sales invoice (g/l account, item, resource) 
 
-* *Billing type:* g/l account no., item no., resource no. depending on billing base 
+* *Billing type:* g/l account no., item no., resource no. depending on billing base: 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000805-0/IMG SETUP 3 BAR.png"><br>
