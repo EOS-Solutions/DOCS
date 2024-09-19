@@ -33,9 +33,7 @@ Columns details:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMG SETUP 6.png"><br>
 
-* *Posting PSP line no.*: the field connects the travel agreement line with a WBS line of the project (usable if specific WBS lines have been created for travel expenses) 
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000806-0/IMG SETUP 7.png"><br>
+* *Posting PSP line no.*: the field connects the travel agreement line with a WBS line specific for the traver expenses.
 
 * *Starting date and ending date*: it is possible to set up travel agreements for specific period 
 
