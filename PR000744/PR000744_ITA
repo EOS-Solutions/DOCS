@@ -1,12 +1,12 @@
 Si occupa di generare le seguenti scritture contabili / simulate:
-- **Bonus clienti**: Premi su vendite (CE) @ Clienti premi da liquidare (SP - Passività)
-- **Bonus fornitori**: Fornitori premi da liquidare (SP – Attività) @ Premi su acquisti (CE)
+- **Bonus clienti**: premi su vendite (CE) @ clienti premi da liquidare (SP - Passività)
+- **Bonus fornitori**: fornitori premi da liquidare (SP – Attività) @ premi su acquisti (CE)
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/18SalesPurchaseBonus.png"><br>
  
 - **Da data / A data**: indicare il periodo di calcolo degli stanziamenti relativi ai bonus clienti / fornitori. 
-- **Simulato**: viene proposto correttamente a Sì se nel “Setup bonus (SPB)” è valorizzato il campo “Template Def. Stanziamenti Sim.”
-- **Registrazione automatica stanziamenti**: precompilato in funzione dell’omonimo flag presente nel “Setup bonus (SPB)”. Può comunque essere modificato dall’utente
+- **Simulato**: viene proposto a 'sì' se nel “Setup bonus (SPB)” è valorizzato il campo “Template Def. Stanziamenti Sim.”. Questa opzione è solo disponibile se l'app SGL è installata.
+- **Registrazione automatica stanziamenti**: precompilato in funzione dell’omonimo flag presente nel “Setup bonus (SPB)”. Può comunque essere modificato dall’utente. Questa opzione è solo disponibile se l'app SGL è installata.
  
 
 **Scrittura simulata generata**
@@ -28,8 +28,3 @@ Le scritture in corso d’anno o a fine anno vengono generate in COGE per effett
 ll movimento contabile bonus viene marcato con il campo “Nr. registro C/G” e non viene più processato dalla procedura eseguita in C/G. 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/23SalesPurchaseBonus.png"><br>
- 
-
-
-
- 
