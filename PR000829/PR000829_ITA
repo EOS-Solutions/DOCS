@@ -1,0 +1,3 @@
+{{% alert title="Nota" color="note" %}}
+Se un movimento bonus è stato stanziato (sia in contabilità simulata che reale), questo movimento bonus non può più essere eliminato. Questo include il calcolo di un contratto bonus non-incrementale. In questo caso va stornato il movimento C/G di stanziamento con la funzione **Storno** standard. Questo comporterà anche lo storno del movimento bonus.
+{{% /alert %}}
