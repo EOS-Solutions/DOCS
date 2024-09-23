@@ -1,0 +1,14 @@
+In the **Payment journal** a new action **Select billing notes** has been added:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000762-0/11BillingNote-en.png"><br>
+
+The **Select billing notes** function allows, as in vendor bills, to manually select the **Billing notes** to be reported in the payment journal lines.<br>
+The list is already pre-filtered and shows only the **Billing notes released** that do not have the **On hold** field filled in.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000762-0/12BillingNote.png"><br>
+
+Once the selection has been made, the **Billing notes** will be reported in the journal lines.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000762-0/17BillingNote.png"><br>
+
+The "Document Type" will be Payment and the "External Document No." will show the **Billing Note** No.
