@@ -1,0 +1,5 @@
+A Billing note is displayed in the **Posted Billing Note** page when it is fully paid.
+
+Posted Billing Note have the "Payment Made" flag set to True and the reference to the last "Payment Vendor Bill No."
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000772-0/7BillingNote-en.png"><br>
