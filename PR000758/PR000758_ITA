@@ -1,16 +1,16 @@
-La **notula professionale** è quel documento che i professionisti utilizzano per attestare il lavoro compiuto e per comprovare la **ricezione del relativo pagamento**.
-Infatti, in base alle regole in materia di Imposta sul valore aggiunto (articolo 6 del Dpr 633/1972), **l’emissione della parcella dovrebbe avvenire al saldo dell’importo richiesto da parte del beneficiario del servizio.**
-Tuttavia, resta valida la possibilità di rilasciare questo documento fiscale anche prima del pagamento della prestazione.
+L’App **EBN – Billing Note** consente la gestione delle notule (o fatture proforma) per i professionisti soggetti a ritenuta d’acconto e, più in generale,  la gestione dei pagamenti anticipati per i fornitori italiani o esteri in euro e in valuta.
 
-In senso lato, la notula può essere vista anche come un pagamento anticipato che viene corrisposto a fornitori anche quando non sono soggetti a ritenuta.
+Tale app permette, quindi, l’inserimento e l’archiviazione delle notule\fatture proforma per tutte le tipologie di fornitori: nazionali o esteri, soggetti o no a ritenuta d’acconto e di predisporne il pagamento sia in euro che in valuta.
 
-Attualmente, chi vuole gestire le notule utilizza una funzionalità di DocFinance.
+**Relazioni con l’app DCF – “DocFinance connector”**
 
-Questa funzionalità però è molto limitata in quanto è legata alla scheda fornitore (non esiste una lista consultabile facilmente) e gestisce solo fornitori con ritenuta.
+La gestione delle notule, sia pure in forma semplificata, è attualmente presente nell’App **DCF - DocFinance connector.**
 
-Con la nuova APP si riusciranno a gestire notule per tutte le tipologie di fornitori, anche esteri (per cui senza ritenuta) ed eventualmente anche in valuta.
+Le funzionalità delle due app non presentano conflitti; tuttavia, l’App **EBN – Billing Note** non è integrata con DocFinance.
 
-Le due funzionalità non saranno in conflitto anche se si consiglia l’utilizzo di una sola delle due gestioni
+Nel caso, quindi, di utilizzo di DocFinance le notule inserite tramite l’App **EBN – Billing Note** non saranno gestite da DocFinance e, di fatto, non ne sarà possibile il pagamento.
+
+In questo caso, pertanto, dovrà essere utilizzata la funzionalità *“Notula RA”* dell’app **DCF - DocFinance connector**.
 
 **Billing Note - SOMMARIO**
 
