@@ -1,0 +1,21 @@
+Nella **Distinta fornitore**, per il pagamento delle notule, sono state aggiunte due nuove azioni: **Suggerisci notule** e **Seleziona notule**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000761-0/8BillingNote.png"><br>
+
+La funzione **Suggerisci notule**, in base ai filtri impostati, riporta nelle righe della distinta tutte le **Notule rilasciate** che non presentano il campo **"In sospeso"** compilato.
+
+Sono proposti esclusivamente i documenti nella stessa valuta della distinta.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000761-0/9BillingNote.png"><br>
+
+La funzione **Seleziona notule**, invece, permette di scegliere manualmente le **Notule** da riportare nelle righe della distinta.<br>
+
+In questo caso la lista è già prefiltrata e mostra, quindi, solo le **Notule rilasciate** che non presentano il campo **In sospeso** compilato e nella stessa valuta della distinta.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000761-0/10BillingNote.png"><br>
+
+Una volta effettuata la selezione, le **Notule** verranno riportate nelle righe della distinta.
+Il "Tipo documento" proposto sarà "Fattura", il "Nr. documento" sarà quello della **Notula** e la riga della distinta presenterà il campo "Notule" impostato a "Sì".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000761-0/16BillingNote.png"><br>
+
