@@ -1,0 +1,14 @@
+Per permettere il pagamento degli agenti in base alla fattura proforma è stata prevista la possibilità di poter creare una **Notula** da una fattura di acquisto provvisoria.
+
+Questa funzionalità viene, quindi, utilizzata nel caso di fornitore che sia un agente per il quale viene proposta dal sistema la fattura di acquisto tramite l'App "CMS -Commission"; fattura provvisoria che viene, poi, inviata all'agente come fattura proforma per la verifica e l'emissione della fattura vera e propria.
+
+Tale funzionalità non è visibile a menù, ma può essere visualizzata tramite la personalizzazione della pagina:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000774-0/13BillingNote.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000774-0/14BillingNote.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000774-0/15BillingNote.png"><br>
+
+La **Notula** creata dalla fattura provvisoria potrà essere successivamente modificata o integrata.
+Il riferimento al Nr. della **Notula** sarà presente anche in testata della fattura di acquisto.
