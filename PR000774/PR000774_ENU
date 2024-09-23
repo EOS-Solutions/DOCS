@@ -1,0 +1,13 @@
+The possibility of creating a **Billing note** from a provisional purchase invoice has been foreseen.
+This functionality can be used in the case of a vendor who is also a salesperso, for whom a proforma invoice has been created.
+
+This feature is not visible in the menu, but can be viewed by Personalizing the page:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000774-0/13BillingNote-en.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000774-0/14BillingNote-en.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000774-0/15BillingNote-en.png"><br>
+
+In addition to creating a new **Billing Note**, it will be possible to view and subsequently manage/modify the created document.
+The reference to the **Billing Note** No. will also be present in the header of the purchase invoice.
