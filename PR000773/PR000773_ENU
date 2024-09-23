@@ -1,0 +1,6 @@
+In **Vendor Card** four fields have been added in the **Payments** group:
+these fields report the **Balance of Billing Notes**.
+
+Both Currency balances and expired Billing note balances are managed, the latter filtered on the "Due Date" field
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000773-0/6BillingNote-en.png"><br>
