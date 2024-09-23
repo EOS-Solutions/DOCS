@@ -1,3 +1,3 @@
-{{% alert title="note" color="note" %}}
+{{% alert title="Note" color="note" %}}
 If a bonus entry has been allocated (either in simulated or real general ledger), this bonus entry can no longer be deleted. This includes the calculation of a non-incremental bonus contract. In this case, the appropriation G/L entry must be reversed with the standard **Reverse** function. This will also result in the reversal of the bonus entry.
 {{% /alert %}}
