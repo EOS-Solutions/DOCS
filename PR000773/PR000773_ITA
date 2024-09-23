@@ -1,0 +1,6 @@
+Nella **Scheda Fornitore** sono stati aggiunti quattro campi informativi nel gruppo **Pagamenti**.
+Questi campi riportano le informazioni relative al **saldo delle notule** non ancora pagate.
+
+Vengono esposti i saldi in valuta e in valuta locale (VL) con il dettaglio del saldo delle notule scadute (calcolato in base al campo "Data scadenza").
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000773-0/6BillingNote.png"><br>
