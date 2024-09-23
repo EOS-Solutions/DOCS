@@ -1,0 +1,17 @@
+The **Billing note** page is made up of four groups: General, Billing Note Details, Withholding Taxes, Social Security.
+In the **General** group, the fundamental data for the definition of the Billing note are entered: Vendor, the Vendor reference, the various dates and the amount.
+In the case of Billing notes in currency, it is necessary to specify the relative code and the amounts (LCY) will be modified accordingly.
+
+The **Billign Note Details**, the preferred bank code of the vendor is specified, inherited from the master data, the "On Hold" code can be managed with the same function as the standard field, the payment data (both partial and complete) and the relative protocols of the documents with which they were registered are reported.
+
+The **Withholdings and INPS** groups follow the standard fields and are managed in the same way. 
+The amounts will contribute to the value of the "Payable amount" field present in the General group
+These groups are optional and can only be managed for invoices that do not have the Currency Code field filled in
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000771-0/3BillingNote-en.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000771-0/4BillingNote-en.png"><br>
+
+To be paid, or added as a line in a vendor bill list or in a payment journal batch, the **Billing Note** must be released using the appropriate function which will carry out checks on the mandatory fields to be filled in.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000771-0/5BillingNote-en.png"><br>
