@@ -1,0 +1,16 @@
+Nel **Giornale registrazione pagamenti** è stata aggiunta la nuova azione **Seleziona notule**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000762-0/11BillingNote.png"><br>
+
+La funzione **Seleziona notule** permette, come avviene nelle distinte fornitore, di selezionare manualmente le **Notule** da riportare nelle righe del giornale di pagamento.<br>
+La lista risulta già prefiltrata: infatti, mostra solo le **Notule rilasciate** che non presentano il campo **In sospeso** compilato.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000762-0/12BillingNote.png"><br>
+
+Una volta effettuata la selezione, le **Notule** saranno riportate nelle righe del giornale.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000762-0/17BillingNote.png"><br>
+
+Il "Tipo documento" proposto sarà "Pagamento" e nel "Nr. documento esterno" verrà riportato il numero della **Notula**.
+
+
