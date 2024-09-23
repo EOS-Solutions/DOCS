@@ -1,0 +1,17 @@
+In **Vendor Bill card** two actions have been added: **Suggest billing notes** and **Select Billing notes**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000761-0/8BillingNote-en.png"><br>
+
+The **Suggest billing notes** function, based on the filters set, reports in the rows all the **Billing notes released** that do not have the **On hold** field filled considering the value in the "Currency Code" field in the header of the vendor bill.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000761-0/9BillingNote-en.png"><br>
+
+The **Select Billing notes** function instead allows you to manually choose the **Billing notes** to be reported in the lines of the vendor bill.<br>
+In this case the list is already pre-filtered and therefore shows only the **Billing notes released** that do not have the **On hold** field filled considering the value in the **Currency Code" field in the header of the vendor bill.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000761-0/10BillingNote-en.png"><br>
+
+Once the selection has been made, the **Notule** will be reported in the lines of the bill.
+The "Document type" will be Invoice, the "Document No." will be that of the **Notule** and the bill line will have the "Notule" field flagged.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000761-0/16BillingNote-en.png"><br>
