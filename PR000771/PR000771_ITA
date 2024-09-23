@@ -1,0 +1,22 @@
+La pagina delle **Notule** si compone di quattro schede di dettaglio: Generale, Dettagli notula, Ritenute, INPS.
+
+Nel gruppo **Generale** vengono inseriti i dati fondamentali per la definizione del documento: il fornitore, il numero del documento e la sua data di emissione, la data di ricevimento, la data di scadenza, l'importo.
+Nel caso di documenti in valuta è necessario specificare il codice della valuta; gli importi in valuta locale (VL) saranno calcolati in base al tasso di cambio in vigore alla data del documento ("Data documento esterno").
+Il codice valuta è ereditato dall'anagrafica fornitore, ma è possibile modificarlo.
+
+In **Dettagli Notula** è possibile specificare il conto bancario preferito del fornitore (ereditato in fase di inserimento dall'anagrafica). 
+Può essere gestito, inoltre, il campo "In sospeso" con la stessa funzione del campo standard; 
+Qui sono, poi, riportati automaticamente i dati dei pagamenti effettuati (sia parziali che completi) ed i relativi protocolli di registrazione.
+
+I gruppi **Ritenute ed INPS** riportano i campi presenti nelle funzioni standard e sono gestiti con le stesse modalità. Gli importi relativi a ritenute o contributi INPS andranno a concorrere al calcolo del valore del campo "Importo da pagare" presente nel gruppo "Generale".
+
+Questi gruppi sono opzionali e possono essere gestiti solo per le notule in euro (che non presentano, quindi, il campo "Codice valuta" compilato).
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000771-0/3BillingNote.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000771-0/4BillingNote.png"><br>
+
+Per poter essere pagata, ovvero inserita in una distinta fornitore o in un batch del giornale pagamenti, la **Notula** dovrà essere "rilasciata" tramite l'apposita funzione. Il rilascio comporta l'effettuazione dei controlli sui campi obbligatori da compilare.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000771-0/5BillingNote.png"><br>
