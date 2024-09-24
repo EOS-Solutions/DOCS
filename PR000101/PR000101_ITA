@@ -1,11 +1,11 @@
 **Setup costi articolo (IVC)**
-Aprire la Lista setup costi articolo (IVC) nella quale, per ogni scenario di setup, ä necessario impostare i parametri per il calcolo degli articoli di acquisto, produzione ed assemblaggio costi:
+Aprire la Lista setup costi articolo (IVC) nella quale, per ogni scenario di setup, √® necessario impostare i parametri per il calcolo degli articoli di acquisto, produzione ed assemblaggio costi:
 
 <img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Setup/17inventory-valuation-and-costing-ita.png"><br>
 Vanno specificati alcuni parametri per il corretto funzionamento della procedura:
 
 * Calcolo del costo di produzione;
-* Calcolo costi capacitÖ;
+* Calcolo costi capacit√†;
 * Valutazione articoli acquistati e prodotti
 * Metodo calcolo costo medio ponderato, etc.  
 
@@ -15,26 +15,27 @@ Da Nuovo aprire una nuova Scheda:
 
 |Campo|Opzione|Descrizione|
 |-----|---------|-----------|
-| **Calcolo del costo di produzione** | Cicli Standard/DB | Il calcolo viene effettuato con tempi e consumi standard (da ciclo e distinta); il costo utilizzato dipende da valore del campo Calcolo costi capacitÖ.|
+| **Calcolo del costo di produzione** | Cicli Standard/DB | Il calcolo viene effettuato con tempi e consumi standard (da ciclo e distinta); il costo utilizzato dipende da valore del campo Calcolo costi capacit√†.|
 | |Movimenti Effettivi | Il calcolo viene effettuato utilizzando i movimenti effettivi (tempi e consumi) dichiarati in produzione. |
-|**Considera acquisti nel calcolo a DB standard** Tale campo impatta nelle logiche di calcolo solo nel caso in cui un articolo di produzione presenti anche movimenti di tipo Acquisto ed il valore del campo √Calcolo costo di produzioneƒ risulti valorizzato con l¬opzione √Distinta e ciclo Standardƒ. | Includi | Impostando il campo sul valore √Includiƒ: il sistema nel calcolare il costo degli articoli di produzione considererÖ anche eventuali acquisti effettuati nel periodo;
-||Escludi|Impostando il campo sul valore √Escludiƒ: il sistema invece escluderÖ dal calcolo degli articoli di produzione tutti i movimenti di tipo Acquisto.|
-|**Data di riferimento DB/Cicli**|Data Inizio Periodo/Data Fine Periodo|Permette di definire la data con la quale effettuare il calcolo dei costi di produzione, se a inizio periodo e a fine periodo. Impatta se si utilizzano le versioni delle distinte e cicli, altrimenti ä ininfluente: di solito se si utilizzano le versioni distinte/cicli, si usa il valore Data Fine periodo (versioni pió recenti)|
-|**Stato DB/Ciclo**|Tutti/Solo certificati|	Definisce se considerare tutte le distinte basi/cicli nel calcolo, oppure se utilizzare solo quelle certificate. Impatta se il calcolo avviene a distinte/cicli standard altrimenti ä ininfluente.|
+|**Considera acquisti nel calcolo a DB standard** Tale campo impatta nelle logiche di calcolo solo nel caso in cui un articolo di produzione presenti anche movimenti di tipo Acquisto ed il valore del campo ‚ÄúCalcolo costo di produzione‚Äù risulti valorizzato con l‚Äôopzione ‚ÄúDistinta e ciclo Standard‚Äù. | Includi | Impostando il campo sul valore ‚ÄúIncludi‚Äù: il sistema nel calcolare il costo degli articoli di produzione considerer√† anche eventuali acquisti effettuati nel periodo;
+||Escludi|Impostando il campo sul valore ‚ÄúEscludi‚Äù: il sistema invece escluder√† dal calcolo degli articoli di produzione tutti i movimenti di tipo Acquisto.|
+|**WIP - usa costi effettivi** | | Se questo flag √® attivo, la procedura di Calcolo WIP, utilizza nella determinazione dell‚Äôimporto WIP di capacit√†, il valore del campo Costo operazione previsto presente nelle righe ciclo del singolo OdP; diversamente ricalcola tale valore, applicando la tipologia di costo impostata nel campo ‚ÄúCalcolo costi capacit√†‚Äù.|
+|**Data di riferimento DB/Cicli**|Data Inizio Periodo/Data Fine Periodo|Permette di definire la data con la quale effettuare il calcolo dei costi di produzione, se a inizio periodo e a fine periodo. Impatta se si utilizzano le versioni delle distinte e cicli, altrimenti √® ininfluente: di solito se si utilizzano le versioni distinte/cicli, si usa il valore Data Fine periodo (versioni pi√π recenti)|
+|**Stato DB/Ciclo**|Tutti/Solo certificati|	Definisce se considerare tutte le distinte basi/cicli nel calcolo, oppure se utilizzare solo quelle certificate. Impatta se il calcolo avviene a distinte/cicli standard altrimenti √® ininfluente.|
 |**Valutazione articoli acquistati**|Costo medio / Costo medio ponderato / Costo standard|Costo con il quale valorizzare i consumi delle Materie Prime.|
 |**Valutazione articoli prodotti**|Costo medio / Costo medio ponderato / Costo standard|Costo con il quale valorizzare i consumi dei SemiLavorati.|
-|**Consumo WIP stimato** (utile nel caso in cui i consumi non vengano registrati in back flashing quindi risultino disallineati rispetto ai relativi movimenti di Output)||Se un OdP ä stato prodotto parzialmente (QuantitÖ < QuantitÖ finita), il sistema calcola i consumi dei materiali ed i tempi da costificare come rapporto tra le due quantitÖ. Se invece l'OdP ä stato completamento prodotto (QuantitÖ finita >= QuantitÖ), indipendentemente dallo Stato dell'OdP stesso, il sistema costifica solo i materiali ed tempi effettivi registrati. Questa logica impatta anche nel calcolo degli Importi consuntivi e dei Costi unitari consuntivi presenti nello Storico cicli.|
-|**Metodo calcolo costo medio ponderato**|Metodo fiscale (funziona come un LIFO a scatti con un solo scaglione per la giacenza inziale)|((GI x CMP) + ((GF ∆ GI) x CM)) / GF Dove: <ul><li>GI = giacenza iniziale</li><li>GF = giacenza finale</li><li>CMP = costo medio ponderato esercizio precedente</li><li>CM = costo medio periodo</li></ul>   Note: Se GI>GF viene utilizzato il costo del periodo precedente.| 
+|**Consumo WIP stimato** (utile nel caso in cui i consumi non vengano registrati in back flashing quindi risultino disallineati rispetto ai relativi movimenti di Output)||Se un OdP √® stato prodotto parzialmente (Quantit√† < Quantit√† finita), il sistema calcola i consumi dei materiali ed i tempi da costificare come rapporto tra le due quantit√†. Se invece l'OdP √® stato completamento prodotto (Quantit√† finita >= Quantit√†), indipendentemente dallo Stato dell'OdP stesso, il sistema costifica solo i materiali ed tempi effettivi registrati. Questa logica impatta anche nel calcolo degli Importi consuntivi e dei Costi unitari consuntivi presenti nello Storico cicli.|
+|**Metodo calcolo costo medio ponderato**|Metodo fiscale (funziona come un LIFO a scatti con un solo scaglione per la giacenza inziale)|((GI x CMP) + ((GF ‚Äì GI) x CM)) / GF Dove: <ul><li>GI = giacenza iniziale</li><li>GF = giacenza finale</li><li>CMP = costo medio ponderato esercizio precedente</li><li>CM = costo medio periodo</li></ul>   Note: Se GI>GF viene utilizzato il costo del periodo precedente.| 
 ||Metodo civilistico|((GI x CMP) + (PA x CM)) / (GI + PA) Dove: <ul><li>GI = giacenza iniziale</li><li>PA = progressivo acquisti</li><li>CMP = costo medio ponderato esercizio precedente</li><li>CM = costo medio periodo</li></ul>  |
 |**Costo FIFO**||Se attivo, viene anche calcolato il costo FIFO.|
 |**Costo LIFO**||Se attivo, viene anche calcolato il costo LIFO.|
 |**Abilita costi agg. pers.**||Se attivo, abilita la gestione dei Costi aggiuntivi.|
-|**Metodo calcolo LIFO**  (campo presente se installata l¬APP √IVC for Italyƒ).|Articolo/Categoria LIFO|Determina la logica di calcolo costo con il metodo del LIFO a scatti: Articolo o Categoria LIFO.|
-|**Costo conto lavoro prioritÖ 1, prioritÖ 2, prioritÖ 3**|Movimenti effettivi, Prezzi conto lavoro, Riga ciclo.|Definisce la gerarchia di recupero del costo relativo alle lavorazioni esterne. |
-|**Costo medio - Includi nota di credito di acquisto**||La funzionalitÖ di questo campo ä legata esclusivamente agli articoli con Sistema di rifornimento √Acquistoƒ. L¬attivazione di questo campo permette di poter includere nel calcolo del √Costo medioƒ, per le righe di tipo Articolo, anche i documenti di tipo Nota credito.|
-|**Calcolo costi specifici articoli** (definisce le modalitÖ di calcolo del Costo medio/Costo medio ponderato dell¬articolo nel caso di attivazione del calcolo dei costi specifici per Variante, Lotto, Nr. serie) | Valori progressivi | Il Costo medio/Costo medio ponderato dell¬articolo viene calcolato come progressivo acquisti a valore / progressivo acquisti a quantitÖ (come se i costi specifici non siano attivi). Giacenza|Il Costo medio/Costo medio ponderato dell¬articolo ä dato dalla media ponderata dei lotti/seriali/varianti in giacenza a fine periodo sul totale giacenza finale. |
-|**Calcolo costi capacitÖ**|Costo movimento|Costo recuperato dai movimenti di produzione registrati (Mov. contabili capacitÖ).||
-||Costo budget|Il costo viene recuperato dai campi √Costo unitario diretto eff./budgetƒ, √Coeff. costi generali eff./budgetƒ, √% Costi generali eff./budgetƒ dello Storico Aree di produzione / Storico Centri di lavoro. Utile per effettuare simulazioni di costo derivanti da variazioni delle tariffe orarie.||
+|**Metodo calcolo LIFO**  (campo presente se installata l‚ÄôAPP ‚ÄúIVC for Italy‚Äù).|Articolo/Categoria LIFO|Determina la logica di calcolo costo con il metodo del LIFO a scatti: Articolo o Categoria LIFO.|
+|**Costo conto lavoro priorit√† 1, priorit√† 2, priorit√† 3**|Movimenti effettivi, Prezzi conto lavoro, Riga ciclo.|Definisce la gerarchia di recupero del costo relativo alle lavorazioni esterne. |
+|**Costo medio - Includi nota di credito di acquisto**||La funzionalit√† di questo campo √® legata esclusivamente agli articoli con Sistema di rifornimento ‚ÄúAcquisto‚Äù. L‚Äôattivazione di questo campo permette di poter includere nel calcolo del ‚ÄúCosto medio‚Äù, per le righe di tipo Articolo, anche i documenti di tipo Nota credito.|
+|**Calcolo costi specifici articoli** (definisce le modalit√† di calcolo del Costo medio/Costo medio ponderato dell‚Äôarticolo nel caso di attivazione del calcolo dei costi specifici per Variante, Lotto, Nr. serie) | Valori progressivi | Il Costo medio/Costo medio ponderato dell‚Äôarticolo viene calcolato come progressivo acquisti a valore / progressivo acquisti a quantit√† (come se i costi specifici non siano attivi). Giacenza|Il Costo medio/Costo medio ponderato dell‚Äôarticolo √® dato dalla media ponderata dei lotti/seriali/varianti in giacenza a fine periodo sul totale giacenza finale. |
+|**Calcolo costi capacit√†**|Costo movimento|Costo recuperato dai movimenti di produzione registrati (Mov. contabili capacit√†).||
+||Costo budget|Il costo viene recuperato dai campi ‚ÄúCosto unitario diretto eff./budget‚Äù, ‚ÄúCoeff. costi generali eff./budget‚Äù, ‚Äú% Costi generali eff./budget‚Äù dello Storico Aree di produzione / Storico Centri di lavoro. Utile per effettuare simulazioni di costo derivanti da variazioni delle tariffe orarie.||
 | |Costo standard|Il costo viene recuperato dalle anagrafiche AdP o CdL. ||| 
 
 <br>
@@ -47,26 +48,26 @@ da compilare se si vogliono spaccare, in funzione della tabella dei costi aggiun
 **Setup IVC**
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000101-0/29inventory-valuation-and-costing-ita.jpg"><br>
-In questo setup ä possibile definire se la spaccatura del costo materiale, nella pagina Nature di costo (IVC), debba avvenire in funzione del campo √Cat. reg. articolo/servizioƒ o √√Cat. reg. magazzinoƒ indicato in anagrafica Articoli:
+In questo setup √® possibile definire se la spaccatura del costo materiale, nella pagina Nature di costo (IVC), debba avvenire in funzione del campo ‚ÄúCat. reg. articolo/servizio‚Äù o ‚Äú‚ÄúCat. reg. magazzino‚Äù indicato in anagrafica Articoli:
 
 <br>
 
 **Nature di costo** 
 
-In questa page ä possibile definire le tipologie di costo aggiuntivo che si intendono gestire:
+In questa page √® possibile definire le tipologie di costo aggiuntivo che si intendono gestire:
 <br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000101-0/30inventory-valuation-and-costing-ita.jpg"><br>
 <br>
 
 |Campo|Descrizione|
 |-----|-----------|
-| Costo aggiuntivo | consente di specificare se il costo ä da intendersi come un costo aggiuntivo vero e proprio o se ä una specificazione di una delle componenti di costo gestite dal programma. |
-| Roll up per tipo di costo | Le opzioni sono: Costo materiali, Costo capacitÖ, Costo conto lavoro |
+| Costo aggiuntivo | consente di specificare se il costo √® da intendersi come un costo aggiuntivo vero e proprio o se √® una specificazione di una delle componenti di costo gestite dal programma. |
+| Roll up per tipo di costo | Le opzioni sono: Costo materiali, Costo capacit√†, Costo conto lavoro |
 |Filtro Cod. Addebito Articolo / Filtro Cat. reg. Articolo/Servizio (o Filtro Cat. reg. magazzino) |Consentono di definire il dettaglio della spaccatura del Costo materiale|
 |Filtro Cod. task standard / Filtro Area di produzione |Consentono di definire il dettaglio della spaccatura del Costo conto lavoro.|
 
 <br>
 
-Il dettaglio della spaccatura del Costo capacitÖ va definito attraverso la compilazione della pagina √Nature di costoƒ, collegata alle anagrafiche Aree di produzione / Centri lavoro.
+Il dettaglio della spaccatura del Costo capacit√† va definito attraverso la compilazione della pagina ‚ÄúNature di costo‚Äù, collegata alle anagrafiche Aree di produzione / Centri lavoro.
 
 
