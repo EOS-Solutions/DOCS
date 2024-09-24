@@ -24,12 +24,12 @@ From New open a new card:
 |**BOM/Routing Status**|All/Only Certified|	Defines whether to consider all the BOM/Routings in the calculation, or whether to use only the certified ones. It has an impact if you are working on separate lists / routings, otherwise it is irrelevant.|
 |**Purch. Item Valuation**|Average Cost / Weighed Average Cost||
 |**Prod. Item Valuation**|Average Cost / Weighed Average Cost||
-|**Weighed Average Cost Method**|	Italian Fiscal Method (works like a LIFO a scatti with only one group for the initial stock)|(GI x CMP + (GF ∆ GI) x CM) / GF Where: <ul><li>GI = initial inventory stock</li><li>GF = final inventory stock</li><li>CMP = Weighed Average Cost previous fiscal year</li><li>CM = average cost of the period</li></ul>        NB: If GI> GF the cost of the previous fiscal year is used..| 
+|**Weighed Average Cost Method**|	Italian Fiscal Method (works like a LIFO a scatti with only one group for the initial stock)|(GI x CMP + (GF ‚Äì GI) x CM) / GF Where: <ul><li>GI = initial inventory stock</li><li>GF = final inventory stock</li><li>CMP = Weighed Average Cost previous fiscal year</li><li>CM = average cost of the period</li></ul>        NB: If GI> GF the cost of the previous fiscal year is used..| 
 ||Italian Civil Method|(GI x CMP + PA x CM) / (GI + PA) Where: <ul><li>GI = initial inventory stock</li><li>PA = Cumulated purchases</li><li>CMP = Weighed Average Cost previous fiscal year</li><li>CM = average cost of the period</li></ul>|
 |**Continuous FIFO Cost**||If active on the item, the continuous FIFO cost is calculated, in addition to the cost calculated according to the methodology defined on the master data.|
 |**Continuous LIFO Cost**||If active on the item, the continuous FIFO cost is calculated, in addition to the cost calculated according to the methodology defined on the master data.|
 |**Enable Custom Addit. Cost**||If active, enable the additional management cost|
-|**LIFO Method** (present only if the √IVC for Italyƒ app has been installed).|Item/LIFO Category|Determines the calculation logic with the LIFO a scatti method: Iteme or LIFO Category.|
+|**LIFO Method** (present only if the ‚ÄúIVC for Italy‚Äù app has been installed).|Item/LIFO Category|Determines the calculation logic with the LIFO a scatti method: Iteme or LIFO Category.|
 |**Skip Job Entry** (usually to be set to Yes if job management is used.||If active, the entries, both item accounting and capacity, which refer to the orders, are excluded from the valuation. Normally the flag is activated in the presence of specialized verticals on the management of orders (PSA, Industry).|
 |**Subcontracting Cost Priority 1, priority 2, priority 3**|Routing Line, Actual Entries, Subcontracting Prices|Defines the cost recovery hierarchy relating to external processing. |
 |**Average Cost - Include Purch. Cr. Memo**||The functionality of this field is exclusively linked to items with the "Purchase" replenishment system. Activating this field makes it possible to include credit note documents in the calculation of the "Average cost", for lines of the type Item.|
@@ -48,7 +48,7 @@ to be filled in if you want to split, according to the additional costs table, t
 **Setup IVC**
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000101-0/29inventory-valuation-and-costing-enu.jpg"><br>
-In this setup it is possible to define whether the splitting of the material cost, in the Cost Nature (IVC) page, should occur based on the √Gen. Product Posting Groupƒ indicated in the Item card:
+In this setup it is possible to define whether the splitting of the material cost, in the Cost Nature (IVC) page, should occur based on the ‚ÄúGen. Product Posting Group‚Äù indicated in the Item card:
 
 <br>
 
@@ -61,7 +61,7 @@ On this page it is possible to define the additional cost types that you intend 
 
 |Field|Description|
 |-----|-----------|
-| Additional cost | consente di specificare se il costo ä da intendersi come un costo aggiuntivo vero e proprio o se ä una specificazione di una delle componenti di costo gestite dal programma. |
+| Additional cost | consente di specificare se il costo √® da intendersi come un costo aggiuntivo vero e proprio o se √® una specificazione di una delle componenti di costo gestite dal programma. |
 | Cost type roll-up | the options are: Material Cost, Capacity Cost, Subcontracting Cost |
 |Gen. Product Posting Group / Item Charge Code Filter |They allow you to define the detail of the material cost split. |
 |Standard Task Code / Work Center Filter|They allow you to define the detail of the subcontracting cost split.  |
