@@ -9,7 +9,9 @@ Unlike the BC standard, the costs are calculated by calculating only the input m
 **Setup with Actual Movements**: The average cost is calculated with the following logic: actual consumption declared * cost defined in the Item Costs Setup (average cost, weighted average cost or standard cost) + actual times declared * cost defined in the Costs Setup items (movement cost, standard cost or budget cost) + C/Labor cost (recovered according to the setup hierarchy).
 
 > **NB**
-* An item should only be managed with Purchase or Production replenishment system. In the event that the same item is both purchased and produced, the calculated cost will correspond to the average of the costs of the two processes; However, if the calculation is carried out on a standard/DiBa cycle, it will not be possible to view the breakdown of the cost into the different components (material cost, capacity and labor cost) given that the entire cost will be highlighted as a material component. 
+* An item should only be managed with Purchase or Production replenishment system. In the event that the same item is both purchased and produced, the following situations may occur: 
+	* Item with “Purchase” replenishment system: the cost will be calculated considering only Purchase type movements;
+	* Item with “Production order” or “Assembly” replenishment system: the calculated cost will correspond to the average of the costs of the two processes; however, if the calculation is performed with Standard Cycle/DiBa, it will not be possible to view the cost breakdown in the different components (material cost, capacity and c/labor) since the entire cost will be highlighted as a material component. 
 * In the case of actual movements calculation: the cost of a production movement, unlike the BC standard, is determined by considering the consumption and times declared, regardless of the status of the PO, and of the fact that the order has a phase of C/work, etc.
 
 Calculation of weighted average cost
