@@ -1,0 +1,5 @@
+
+Users can be assigned specific roles, each with the caracteristics listed below:
+* **ADMIN**: can use all the app’s funcionalities (crate, delete, modify the questionnaire and definitive print)
+* **EDIT**: can modify existing questionnaires (edit questionnaire, draft print, or reprint the final version).
+* **VIEW**: can view existing questionnaires (view the questionnaire, print the draft or reprint the final version). 
