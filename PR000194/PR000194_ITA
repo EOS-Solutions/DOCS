@@ -1,0 +1,7 @@
+nelle Registrazioni COGE Intercompany è presente l’apposita funzione "Genera scritture elisione":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000194-0/ITA_IntercompanyAccountingEliminations (4).jpg"><br>
+
+Di solito viene gestito un batch apposito con Contropartita fissa. Al termine della procedura di elisione, il conto di contropartita dovrà presentare saldo pari a 0 (zero).
+
+La procedura dovrà essere eseguita dopo aver effettuato l’import dei saldi di bilancio delle varie società da consolidare, opportunamente marcate tramite la dimensione Intercompany.
