@@ -1,0 +1,21 @@
+È possibile scaricare un report secondo diverse modalità:
+
+* **Bozza **
+* **Stampa definitiva**
+* **Ristampa**
+
+Per generare il report occorre cliccare su Azioni – Stampa Report Questionario dalla schermata di riepilogo del questionario; in alternativa, dalla pagina della Lista dei questionari cliccare su Correlato - Stampa Report Questionario. 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000838-0/report_1-it.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000838-0/report_2-it.png"><br> 
+ 
+In entrambi i casi si aprirà una finestra all’interno della quale sarà possibile scegliere le caratteristiche del report.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000838-0/report_3-it.png"><br>
+ <br>
+**Scelta di stampa**: si può effettuare la stampa come bozza (anche quando il questionario non è completo al 100%), come stampa definitiva (solo se il questionario è completo al 100%) e come ristampa (successiva alla stampa definitiva)<br>
+**Stampa Template**: questo flag, se attivo, fa visualizzare nel report il template delle risposte (non verranno quindi visualizzate le risposte fornite, ma quelle possibili)<br>
+**Stampa Copertina**: questo flag, se attivo, inserisce nel report una copertina sulla quale sono visualizzate le informazioni relative al questionario (logo o grafica dell’azienda, codice e versione, opzione di stampa bozza/definitiva/ristampa, data, ora, utente).
+
+### Stampa definitiva e chiusura del questionario
+Quando viene effettuata la stampa definitiva, il questionario viene automaticamente considerato “chiuso”; non sarà quindi più possibile effettuare modifiche alle risposte. È possibile effettuare la stampa definitiva solo quando la percentuale di completamento del questionario è pari al 100%. Lo stato “chiuso” potrà essere visualizzato cliccando sul numero di versioni, nella Lista Questionari (EED).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000838-0/report_4-it.png"><br>
