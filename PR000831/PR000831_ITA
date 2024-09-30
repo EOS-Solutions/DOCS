@@ -1,0 +1,11 @@
+{{% alert title="NOTA" color="warning" %}}
+Prima di effettuare i seguenti passaggi, è necessario aver configurato le seguenti tabelle:
+* Unità di misura (204)
+* Codice origine (230)
+{{% /alert %}}
+
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000831-0/setup-it.png"><br>
+
+Nella scheda Setup (EED) si possono scaricare e applicare automaticamente il modello del questionario e il pacchetto di configurazione contenente un setup generico del piano dei conti e dei conti statistici e fattori di emissioni più utilizzati in generale in Italia (vedasi paragrafo “Pacchetti di Configurazione”).
