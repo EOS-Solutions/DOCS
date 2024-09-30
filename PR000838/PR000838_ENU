@@ -1,0 +1,23 @@
+You can download the report in different formats:
+* **Draft** 
+* **Definitive print**
+* **Reprint**
+
+To generate the report, click on Actions – Print Questionnaire Report from the questionnaire summary screen. Alternatively, from the Questionnaire List page, click on Related – Print Questionnaire Report. 
+ <img width="" src="https://docs-test.eos-solutions.it/Images/PR000838-0/report_1-en.png"><br>
+ <img width="" src="https://docs-test.eos-solutions.it/Images/PR000838-0/report_2-en.png"><br>
+ 
+In both cases, a window will open where you can choose the characteristics of the report.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000838-0/report_3-en.png"><br>
+ 
+**Print Choice**: you can choose to print it as a draft (even if the questionnaire is not 100% complete), a final print (only if the questionnaire is 100% complete), or a reprint (after final printing)
+
+**Print Template**: if this option is checked, the report will show the template responses (the provided answers will not be displayed, only the possible answers).
+
+**Print Front Page**: if this option is checked, the report will include a cover page showing information related to the questionnaire (company logo or graphic, code and version, draft/final/reprint option, date, time, user).
+
+### Final print and questionnaire closure
+Once the final print is done, the questionnaire is automatically considered "closed"; therefore, it will no longer be possible to modify the answers. You can only perform the final print when the questionnaire completion percentage is 100%. The "closed" status can be viewed by clicking on the version number in the Questionnaire List (EED).
+ 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000838-0/report_4-en.png"><br>
+
