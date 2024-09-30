@@ -1,0 +1,12 @@
+{{% alert title="NOTE" color="warning" %}}
+Before performing the following steps, it is necessary to have set up the following tables:
+* Unit of measure (204)
+* Source code (230)
+
+{{% /alert %}}
+
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000831-0/setup-en.png"><br>
+
+In the Setup (EED) tab, you can automatically download the questionnaire template and the configuration package containing a general setup of chart of sustainability accounts, statistical accounts and most commonly used emission factors in Italy (see the “Configuration Packages” section)
