@@ -1,0 +1,30 @@
+To create a new questionnaire, click the “+New” button
+ <img width="" src="https://docs-test.eos-solutions.it/Images/PR000833-0/newq_1-en.png"><br>
+A window will open where you can enter the specifications for the questionnaire.
+ <img width="" src="https://docs-test.eos-solutions.it/Images/PR000833-0/newq_2-en.png"><br>
+**General**:
+
+* **Code**: an alphanumeric code to assign to the questionnaire. This is a required field.
+* **Language Code**: the language code for filling out the questionnaire. This is a required field.
+* **Questionnaire Number of Versions**: number of version of the same questionnaire. This field fills automatically.
+* **Template Version**: version number of the questionnaire template. This field fills automatically.
+* **Reference Year**: The period to which the data used for completing the questionnaire refer (first day of the reference period).
+
+
+**Modules choice**:
+* **Basic Module**: Disclosures B1, B2 and Basic Metrics (B3 – B12). This module is the target approach for micro-undertakings and constitutes a minimum requirement for other undertakings. Materiality analysis is not required, but disclosures B3-B12 are to be provided when they are applicable to the undertaking’s specific circumstances. 
+* **Narrative – PAT Module (Policies, Actions and Targets)**: This module defines narrative disclosures (N1 – N5) in relation to Policies, Actions and Targets (PAT), which are to be reported in addition to disclosures B1-B12 if the undertaking has them in place. This module is suggested to undertakings that have formalised and implemented the PAT.
+* **Business Partners Module (BP)**: This module defines narrative disclosures (N1 – N5) in relation to Policies, Actions and Targets (PAT), which are to be reported in addition to disclosures B1-B12 if the undertaking has them in place.
+
+You can select or deselect modules to create the following combinations:
+* **Base Module**
+* **Base Module + Narrative – PAT Module**
+* **Base Module + Business Partner Module**
+* **Base Module + Narrative – PAT Module + Business Partner Module**
+
+Once all fields are completed and the module combination is set, click "+New" at the top to create the questionnaire based on the latest available template version.
+The new questionnaire will then be visible in the Questionnaire list (EED) page
+ <img width="" src="https://docs-test.eos-solutions.it/Images/PR000833-0/newq_3-en.png"><br>
+Here you can see a summary of the characteristics of the created questionnaires and their modules.
+Clicking on the questionnaire version number, will display a screen showing the various versions and their status (whether the questionnaire is open and modifiable or closed) and the percentage of completed questions.
+ <img width="" src="https://docs-test.eos-solutions.it/Images/PR000833-0/newq_4-en.png"><br>
