@@ -1,0 +1,5 @@
+È possibile assegnare agli utenti un ruolo specifico, ognuno con le caratteristiche elencate di seguito:
+
+* **ADMIN**: può utilizzare tutte le funzionalità dell’app (creazione, cancellazione e modifica del questionario, stampa definitiva)
+* **EDIT**: può modificare i questionari esistenti (modifica del questionario, stampa di bozza o ristampa della versione definitiva)
+* **VIEW**: può visualizzare i questionari esistenti (visione del questionario, stampa di bozza o ristampa della versione definitiva)
