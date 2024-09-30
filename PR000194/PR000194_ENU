@@ -1,0 +1,7 @@
+The "Create Elision Jour. Entries" function is present in the Intercompany General Journal:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000194-0/ENU_IntercompanyAccountingEliminations (4).jpg"><br>
+
+Usually a special batch is handled with fixed compensation. At the end of the elision procedure, the counterpart account must have a balance equal to 0 (zero).
+
+The procedure must be carried out after importing sheet balances of the various companies to be consolidated, appropriately marked through the Intercompany dimension.
