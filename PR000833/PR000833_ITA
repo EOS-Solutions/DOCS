@@ -1,0 +1,32 @@
+Creazione di un nuovo questionario
+
+Per creare un nuovo questionario, si clicca sul tasto “+Nuovo”
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000833-0/newq_1-it.png"><br>
+Si aprirà una finestra all’interno della quale inserire le specifiche del questionario
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000833-0/newq_2-it.png"><br>
+**Generale**:
+
+* **Codice**: codice alfanumerico da assegnare al questionario. È un campo obbligatorio.
+* **Cod. lingua**: codice della lingua di compilazione del questionario. È un campo obbligatorio.
+* **Nr. Versioni Questionario**: numero di versioni presenti dello stesso questionario. È un campo che si compila in automatico.
+* **Versione Template**: numero della versione applicativa del questionario. È un campo che si compila in automatico.
+* **Periodo Contabile di Riferimento**: periodo al quale faranno riferimento i dati utilizzati per la compilazione del questionario (riferimento al primo giorno del periodo di riferimento)
+
+**Scelta Moduli**:
+* **Modulo Base**: Informativa B1, B2 e Metriche base (B3 - B12). Questo modulo rappresenta l'approccio mirato per le microimprese e costituisce un requisito minimo per le altre imprese. Non è richiesta la valutazione della rilevanza, ma le informazioni B3-B12 devono essere fornite quando sono applicabili alle circostanze specifiche dell'impresa. 
+* **Modulo Narrativo-PAT** (Politiche, azioni e obiettivi): questo modulo definisce le informazioni narrative (N1 - N5) relative alle politiche, alle azioni e agli obiettivi (PAT), che devono essere riportate in aggiunta alle informazioni B1-B12, se l'impresa ne dispone. Questo modulo è suggerito per le imprese che hanno formalizzato e implementato politiche, azioni e obiettivi.
+* **Modulo Business Partner (BP)**: questo modulo individua i dati da riportare in aggiunta alle informazioni B1-B12, che probabilmente sono incluse nelle richieste di dati da parte di finanziatori, investitori e clienti dell'impresa.
+
+I moduli possono essere selezionati o deselezionati per creare le seguenti combinazioni:
+
+* **base**
+* **base + narrativo**
+* **base + business partner**
+* **base + narrativo + business partner**<br>
+
+Una volta compilati tutti i campi e impostata la combinazione di moduli, si clicca su “Nuovo” in alto per creare il questionario a partire dall’ultima versione di template disponibile.
+Una volta creato il nuovo questionario, questo sarà visibile nella pagina Lista Questionari (EED)
+ <img width="" src="https://docs-test.eos-solutions.it/Images/PR000833-0/newq_3-it.png"><br>
+Qui è possibile vedere un riepilogo delle caratteristiche dei questionari creati e i relativi moduli. 
+Cliccando sul numero di versioni del questionario si accede a una schermata che mostra le varie versioni e le loro caratteristiche, quali Stato (che indica se il questionario è aperto, quindi ancora modificabile, oppure chiuso) e Percentuale di completamento domande.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000833-0/newq_4-it.png"><br>
