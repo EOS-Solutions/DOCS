@@ -1,0 +1,15 @@
+In the Business Unit card there is the possibility to import, with the same standard logic, the balances relating to companies external to BC, thanks to the compilation of the specific **Excel Layout**:
+
+{{% alert title="Download Excel" color="warning" %}}
+ [Import saldi Consolidato_soc extra BC](https://helpbc.eos-solutions.it/help/it-it/Download/Import%20saldi%20Consolidato_soc%20extra%20BC.xlsx)
+{{% /alert %}}
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000195-0/ENU_IntercompanyAccountingEliminations (5).jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000195-0/ENU_IntercompanyAccountingEliminations (6).jpg"><br>
+
+| **Field**              | **Description**                                  |
+|------------------------|--------------------------------------------------|
+| File Name              | select the Excel file                            |
+| Document No.           | attributed to imported records                   |
+| Start Import from row  | to exclude any header row indicate the value "2" |
+| Starting / Ending Date | indicate the consolidation period                |
