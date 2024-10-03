@@ -5,7 +5,8 @@ Nella scheda della Business Unit è presente la possibilità di importare, con l
 {{% /alert %}}
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000195-0/ITA_IntercompanyAccountingEliminations (5).jpg"><br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000195-0/ITA_IntercompanyAccountingEliminations (6).jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000195-0/ITA_IntercompanyAccountingEliminations (6)_new.png"><br>
+
 
 | **Campo**                      | **Descrizione**                                                        |
 |--------------------------------|------------------------------------------------------------------------|
@@ -13,3 +14,4 @@ Nella scheda della Business Unit è presente la possibilità di importare, con l
 | Nr. documento                  | attribuito alle registrazioni importate                                |
 | Inizia ad importare dalla riga | per escludere l’eventuale riga di intestazione, indicare il valore “2” |
 | Data inizio / Data fine        | indicare il periodo di consolidamento                                  |
+| Dimensioni                     | tramite assist edit è possibile flaggare le dimensioni presenti nel file da importare. N.B.: l’intestazione della colonna del file Excel deve coincidere con il Codice della dimensione presente nella società consolidante.                                              |
