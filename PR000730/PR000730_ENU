@@ -1,19 +1,54 @@
 Based on the application lifecycle management (ALM) provided by EOS Solutions for its apps, the **details of the supported versions and the type of assistance provided are listed below.**
 
-EOS Solutions has decided to extend **support to the third latest major release available**, in accordance with Microsoft's modern lifecycle policy.
 
 | **Version**                                                                                       | **Assistance type**                                                                                                              |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Last and penultimate major: no changes, as now for all cumulative updates declared stable by Labs | -\> Bug fixes, small improvements / modifications, change requests, new events and support for customizations and fiscal updates |
+| Last and penultimate major: | -\> Bug fixes, small improvements / modifications, change requests, new events and support for customizations and fiscal updates |
 | Third to last major: ONLY for the latest cumulative update available                              | -\> Bug fixes and fiscal updates                                                                                                 |
 | BC14 (Cumulative update 33)                                                                       | -\> Bug fixes and fiscal updates                                                                                                 |
 
-For example, **from May 2, 2022:**
+For example, **from May 2, 2024:**
 
-- **BC24 and BC23 for all cumulative updates declared stable by Labs**-\> Bugfix resolution, small improvements / modifications, change requests, new events and support for customizations and Fiscal Updates
+- **BC24 and BC23 for all cumulative updates-\> Bugfix resolution, small improvements / modifications, change requests, new events and support for customizations and Fiscal Updates
 
 - **BC22.12 ONLY (and until BC22.13 release) -\>** Bugfix fixes only
 
 - **BC14 (Cumulative update 33) -\>** Solely bugfix and Fiscal Updates resolution
 
 - **BC21 and previous ((excluding BC14) are out of support**
+
+
+
+
+
+**Support requests**
+
+
+
+Support requests for EOS Business Central apps and verticals must be open indicating:
+
+**Note**
+**All information must be provided in English language  **
+
+1. If **NAV o BC** 
+2. **Infrastructure **(OnPremise / SAAS)
+3. **Version** and **Cumulative Update**
+4. Reference** customer** (customer ID)
+5. Check **if the apps are up to date**. If they are not, update them. If the    issue is still present, proceed with the support request
+6.List the **installed apps** by copying them in text format from the Page     "Extensions" (SAAS)
+7. Include all custom apps
+8. Full-screen print screen **including company name and operating system**  9. **Explain the issue in detail**, providing screenshots.
+   **In case of a bug, show the error, the last known error (see example        below)**.
+Send error logs. files and any useful additional data.
+If the request is a **Change Request**, explain in detail the desired feature. Verify that the request is not already logged in <https://github.com/EOS-Solutions/IDEAS/issues>
+10. Provide **screenshots of any useful general setups** and attach setups in text format (CTRL + C, CTRL + V) to allow faster reproduction on Labs environments.
+
+### Specification to include
+
+-   The **version** can be found in **? -> Help and Support** (attach printscreen). Also send the **last known error** in case of a bug
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000730-0/supp001(1).png"><br>
+
+-   To attach installed app use the Open in Excel feature in the Extensions list:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000730-0/supp004(1).png"><br>
