@@ -1,0 +1,33 @@
+Nuova versione gennaio 2024
+
+
+È stata rilasciata una nuova versione dell'App ECU, per recepire le modifiche effettuate dall'Agenzia delle Entrate nelle specifiche tecniche pubblicate il 15/01/2024. In breve, le novità riguardano:
+
+-   Modello di stampa pdf che può essere aggiornato dalla pagina setup certificazioni uniche (ECU) con l'azione "importa modello" 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/10ECU-update.png"><br>
+
+-   Aggiunta valori N1, N2 e N3 per il campo AU001001 "Causale" 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/11ECU-update.png"><br>
+-   Aggiunta valore 20 per il campo AU001006 "Tipo di reddito non imponibile"  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/12ECU-update.png"><br>
+
+Si precisa che non sono necessari nuovi setup.
+
+Ricordiamo che l'implementazione di EOS stampa solamente il MODELLO SINTETICO relativamente alle pagine contenenti dati gestiti dall'E.R.P (1,5,8,9) Quest'anno il PDF del modello sintetico ha subito una modifica: è stata aggiunta la pagina 6 relativa alla Certificazione di Lavoro dipendente a seguito dell'aggiunta delle sezioni 3-BIS e 3-TER ai Dati Previdenziali ed Assistenziali, che noi non gestiamo. Pertanto, nel nostro modello sintetico la pagina è stata rimossa. 
+
+Potete scaricare il modello SINTETICO (da cui sono state eliminate le pagine 4 e 6) dalla pagina [Download Models (ECU)]({{<relref "ecu-download-models">}})
+
+Le nuove modifiche sono state rilasciate onprem per BC14, BC21, BC22 e BC23 nelle seguenti versioni:
+
+14.0.86
+
+21.0.27
+
+22.0.10
+
+23.0.24 (anche su SaaS)
+
+Le modifiche sono disponibili [qui](https://hg.eos-solutions.it/scm/hg/Eos.Nav.Platform_2018/rev/ea0293a244f9)
