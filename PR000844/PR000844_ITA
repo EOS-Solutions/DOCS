@@ -1,0 +1,20 @@
+
+Nuovo modello LI.PE. 2024
+
+Il 14 marzo 2024, il Direttore dell'Agenzia delle Entrate ha emanato un proprio provvedimento (prot. n. 125654/2024) che ha apportato alcune modifiche al modello di comunicazione delle liquidazioni periodiche, conosciuto come LIPE.
+
+Di seguito le novità del modello:
+
+1\. La modifica al modello si è resa necessaria, in particolare, per aggiornare la soglia prevista per il versamento minimo dell'IVA periodica. Se l'importo dovuto non supera la soglia di 100 euro, il versamento è effettuato insieme a quello relativo al mese successivo
+
+2\. la descrizione del rigo VP10 è sostituita dalla seguente: "Versamenti auto F24 elementi identificativi";
+
+3\. leggero spostamento dei tre campi di seguito:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000844-0/1EVS-update.png"><br>
+
+Il punto 3 è l'unico che ha richiesto una modifica software, implementata nell'app Electronic VAT Settlement For Italy (EVS), per le seguenti versioni Business Central: BC24, BC23, BC22 e BC14.
+
+**È sufficiente installare l'aggiornamento dell'app, non sono necessari setup aggiuntivi.**
+
+Ne approfittiamo per ricordare che dal 2024 l'importo minimo il versamento IVA è passato ad € 100, da impostare nel setup contabilità generale.
