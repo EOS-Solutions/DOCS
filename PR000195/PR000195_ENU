@@ -5,7 +5,7 @@ In the Business Unit card there is the possibility to import, with the same stan
 {{% /alert %}}
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000195-0/ENU_IntercompanyAccountingEliminations (5).jpg"><br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000195-0/ENU_IntercompanyAccountingEliminations (6).jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000195-0/ENU_IntercompanyAccountingEliminations (6)_new.jpg"><br>
 
 | **Field**              | **Description**                                  |
 |------------------------|--------------------------------------------------|
@@ -13,3 +13,4 @@ In the Business Unit card there is the possibility to import, with the same stan
 | Document No.           | attributed to imported records                   |
 | Start Import from row  | to exclude any header row indicate the value "2" |
 | Starting / Ending Date | indicate the consolidation period                |
+| Dimensions             | Via assist edit it is possible to flag the dimensions present in the file to be imported. N.B.: the column header of the Excel file must coincide with the Dimension code present in the consolidating company.                                       |
