@@ -1,19 +1,76 @@
 In base al ciclo di vita delle applicazioni (ALM) previsto da EOS Solutions per le proprie app, di seguito trovate il **dettaglio delle versioni supportate e la tipologia di assistenza fornita**.
 
-EOS Solutions ha deciso di estendere il **supporto alla terz’ultima major release disponibile**, in accordo con la modern lifecycle policy di Microsoft.
 
 | **Versione**                                                                                                             | **Tipo assistenza**                                                                                                                     |
 |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Ultima e penultima major: nessun cambiamento , come ora per tutti i cumulative update dichiarati stabili dal laboratorio | -\> Risoluzione di bugfix, piccole migliorie/modifiche, change request, nuovi eventi e supporto alle personalizzazioni e fiscal updates |
+| Ultima e penultima major: per tutti i cumulative update | -\> Risoluzione di bugfix, piccole migliorie/modifiche, change request, nuovi eventi e supporto alle personalizzazioni e fiscal updates |
 | Terz’ultima major: SOLO per ultimo cumulative update disponibile                                                         | -\> Risoluzione di bugfix                                                                                                               |
 | BC14 (Cumulative update 33)                                                                                              | -\> Risoluzione di bugfix e fiscal updates                                                                                              |
 
 Ad esempio, **dal 2 maggio 2024:**
 
-- **BC24 e BC23 per tutti i cumulative update dichiarati stabili dal Laboratorio**-\> Risoluzione di bugfix, piccole migliorie/modifiche, change request, nuovi eventi e supporto alle personalizzazioni e Fiscal Updates
+- **BC24 e BC23 per tutti i cumulative update-\> Risoluzione di bugfix, piccole migliorie/modifiche, change request, nuovi eventi e supporto alle personalizzazioni e Fiscal Updates
 
 - **SOLO BC22.12 (e fino al rilascio di BC22.13)** -\> Esclusivamente risoluzione di bugfix
 
 - **BC14 (Cumulative update 33)** -\> Esclusivamente risoluzione di bugfix e Fiscal Updates
 
 - **BC21 ed inferiori** (ad esclusione di BC14) sono fuori supporto
+
+
+
+
+
+
+
+**Richieste di supporto**
+
+
+Le richieste di supporto su BC e verticali aperte indicando:
+
+1. Se si tratta di **NAV o BC**
+
+2. **Infrastruttura** (OnPremise/SAAS)
+
+3. **Versione** e **Cumulative Update**
+
+4. **Cliente** di riferimento (customer ID)
+
+5. Verificare se le **app sono aggiornate**. Se non lo sono aggiornarle. Se l'anomalia è ancora presente procedere con la segnalazione (vedi punto successivo)
+
+6. Elencare le **app installate **copiandole in formato testo da Gordon o dalla Page "Extensions" (SAAS)
+
+7. App **custom** eventuali
+
+8. Print screen a tutto schermo che includa **company name e sistema operativo** (vedi esempio sotto)
+Link ad ambiente Integration (per chi ha accesso) dov'è stata replicata l'anomalia.
+
+9. **Spiegare in dettaglio** l'anomalia, fornendo print screen.
+Nel caso di bug, mostrare l'errore, l'**ultimo errore noto **(vedi esempio sotto).
+Eventualmente inviare log di errore (es. Event Viewer), file a supporto o copia di dati.
+Nel caso di **Change Request**, spiegare in dettaglio cosa si vorrebbe. Verificare che la richiesta non sia già presente in <https://github.com/EOS-Solutions/IDEAS/issues>
+
+10. Fornire print screen dei **setup **e allegare setup in formato testo (CTRL+C, CTRL+V) per consentirne la replica.
+
+ 
+
+**Specifiche su cosa includere nella segnalazione**
+
+-   La **versione** si trova in** ?->Guida e supporto** (allegare printscreen). Inviare anche** l'ultimo errore noto** nel caso di bug
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000730-0/supp001.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000730-0/supp002.png"><br>
+-   Company name e sistema operativo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000730-0/supp005.png"><br>
+
+-   per compilare la tabella relativa alle app installate utilizzare la funzionalità Apri in Excel presente nell'elenco delle Extensions:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000730-0/supp004.png"><br>
+
+
+
+-   Inviare i printscreen a tutto schermo. Esempio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000730-0/supp003.png"><br>
