@@ -1,0 +1,15 @@
+Using the "Bank Account Reconciliation" function, you can periodically reconcile your bank statement with the recorded bank movements.
+
+You can access the "Bank Account Reconciliation" directly from the Bank Account tab.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000798-0/ENU_S36.01_Riconc CC banc.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000798-0/ENU_S36.02_Riconc CC banc_02.jpg"><br>
+
+The possibility of suggesting statement lines from the recorded Payment Reconciliation statements using the Eos "Suggest Lines (EOS)" function has been provided.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000798-0/ENU_S37.01_Riconc CC banc_Sugg.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000798-0/ENU_S37.02_Riconc CC banc_Sugg_02.jpg"><br>
+
+During the suggestion phase, the system will automatically connect with the bank movements present in the system; however, it is possible to intervene with the standard connection\disconnection functions.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000798-0/ENU_S38_Reg Estratto Conto_Corrispondenza.jpg"><br>
