@@ -1,0 +1,12 @@
+I possibile scaricare e consultare transazioni bancarie e saldi bancari dalla pagina «Scambio dati C/C bancari (EOS)». Dalla voce di menu «Open Banking» è possibile selezionare le azioni desiderate.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000794-0/ITA_S27_Scambio dati.jpg"><br>
+
+**Importa movimenti**:  scarica le transazioni contabili e le informazioni sui saldi.
+**Movimenti bancari**:  permette la consultazione dei movimenti scaricati.
+**Saldi**: visualizza le informazioni sui saldi scaricati.
+
+
+Importati i movimenti bancari sarà possibile consultare, sulla scheda C/C bancario, il «Saldo contabile» e il «Saldo disponibile».
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000794-0/ITA_S28_CCbancario_Saldi.jpg"><br>
