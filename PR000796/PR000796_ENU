@@ -1,0 +1,11 @@
+In the payment reconciliation registration form, it is possible to perform the recognition of movements through the connection procedure «Connect automatically (EOS).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000796-0/ENU_S31_Reg riconciliazione pag_collega.jpg"><br>
+
+The main types of operations that can be managed by the automatic connection are the following.
+* Automatic proposal of CoGe account relating to financial charges\income.
+* Bank to bank transfer.
+* Automatic proposal of transit account (cash pooling, against transit recognition of collections\payments).
+* Connection to bank movements already accounted for (e.g. payments via list).
+* Connection of Collections\payments with item account settlement
+* Management of differences with accounting on specific accounts.
