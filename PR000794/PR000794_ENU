@@ -1,0 +1,11 @@
+You can download and view bank transactions and bank balances from the «Bank Account Data Exchange (EOS)» page. From the «Open Banking» menu item you can select the desired actions.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000794-0/ENU_S27_Scambio dati.jpg"><br>
+
+**Import movements**: downloads accounting transactions and balance information.
+**Bank movements**: allows you to view downloaded movements.
+**Balances**: displays information on downloaded balances.
+
+Once the bank movements have been imported, you can view the «Accounting balance» and the «Available balance» on the Bank Account tab.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000794-0/ENU_S28_CCbancario_Saldi.jpg"><br>
