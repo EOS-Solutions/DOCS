@@ -1,0 +1,25 @@
+Through the «Open Banking Setup (OBN)» page, you can perform the «Onboarding» operation and enable the connection with the company's bank accounts.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000786-0/ENU_S13_Setup Open Banking.jpg"><br>
+
+### General detail sheet
+The following fields are present in the «General» detail sheet.
+
+**Transaction recovery period**: allows you to define the period of time, from today, for which the transactions will be downloaded.
+The default is -10G.
+
+> *Note: the first time you download the movements, you must set a suitable period of time.*
+
+**Payment reconciliation statement no.**: sets the series no. of the Payment reconciliation statements that will be created automatically.
+
+### Linked Bank Accounts Detail Sheet
+In the «Linked Bank Accounts» detail sheet, using the «Link Bank Accounts» and «Unlink Bank Accounts» actions, it is possible, after the «Onboarding», to enable or disable the company bank accounts.
+
+The «**Automatic Processing**» field sets automatic processing on the accounts processed by the bank transaction import function.
+
+### User Information
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000786-0/ENU_S16_InfoUtente.jpg"><br>
+
+On the «User Information» page, the data of the user used for login will be visible.
+> *Note: the data will be completely visible only to the login user, other users will only be able to view the Name and Surname fields*
