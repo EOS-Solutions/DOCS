@@ -1,0 +1,39 @@
+The Payment Systems Directive (PSD2, EU Directive 2015/2366) is the European directive that regulates payment services and payment service providers within the European Union.
+
+The regulation (which introduces the activities of new players, Third Party Providers), has as its main objectives the creation of an integrated and efficient competitive market that at the same time places the safety of end consumers at the center.
+
+**Objectives of PSD2**
+1. Increase competition within the payment services market, encouraging the entry of new players from outside (Third Party Providers).
+1. Create a more efficient and integrated market: Open Banking.
+1. Ensuring the security of end-consumer information and data: Strong Customer Authentication
+
+**Main innovations**
+1. **Offer of new payment services regulated by PSD2**
+	* online payment account information services, which allow aggregate information to be obtained on one or more online accounts held even at different institutions (Account Information Services – AIS).
+	* online payment initiation services that allow an online payment to be initiated via a payment service provider other than the one where the account is held (Payment Initiation Services – PIS).
+	* fund availability confirmation services provided for payments made with debit cards issued by an operator other than the one where the account is held (CISP).
+1. **Strengthening of security measures in the context of online payment services. **
+Mandatory parameters for SCA (Strong Customer Authentication). It introduces the obligation for banks and other payment service providers to implement two or more factor authentication systems of different types.
+
+1. **Open Banking**
+	All new services are provided with the so-called "Open Banking" paradigm, through software APIs, to exchange data between the various parties quickly and openly, to improve or create new digital products or services.
+
+	**The new introduces the obligation for banks to open APIs and customer data to third-party companies with their consent.**
+
+	PSD2 therefore requires banks and credit institutions to allow access to information and/or payment transactions that can be initiated from their users' current accounts, following their authorization, to Third Party Providers.
+
+	PSD2 is based on the standards and systems created by Open Banking Limited, a non-profit organization, founded specifically for this purpose.
+
+<br>
+
+Eos has signed a partnership with Fabrick, a leading company in the Open Banking sector.
+
+Fabrick is a company of the Sella Group that was founded in 2018 with an open platform project aimed at promoting collaboration between banks, fintechs and companies, taking advantage of the opportunities offered by Open Banking.
+
+**Main services offered in the PSD2 context**
+* **Account aggregation - AISP**: access to bank transactional data.
+* **Open Banking payments - PISP**: “account-to-account” (A2A) payments, to improve security, reconciliation and execution speed.
+* **IBAN validity check**
+* **Enrichment of bank transaction metadata** (e.g. categories: restaurants, hotels, tolls, etc.)
+
+The (OBN) Open Banking app allows you to take advantage of the opportunities offered by new payment instruments (PSD2) by allowing access to bank transactional data quickly and easily through Open APIs.
