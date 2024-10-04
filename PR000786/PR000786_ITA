@@ -1,0 +1,30 @@
+Tramite la pagina «Open Banking Setup (OBN)» è possibile effettuare l’operazione di «Onboarding e abilitare il collegamento con i conti correnti bancari dell’azienda.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000786-0/ITA_S13_Setup Open Banking.jpg"><br>
+
+### Scheda di dettaglio «Generale» 
+Nella scheda di dettaglio «Generale» sono presenti i seguenti campi.
+
+**Periodo recupero transazioni**: permette di definire il periodo di tempo, dalla data odierna, per il quale saranno scaricate le transazioni.
+Il default è -10G.
+
+> *Nota: la prima volta che si esegue il download dei movimenti è necessario impostare un periodo di tempo congruo.*
+
+**Nr. prospetto riconciliazione pagam.**: imposta il Nr. serie dei Prospetti di riconciliazione pagamento che saranno creati automaticamente.
+
+
+### Scheda di dettaglio «C/C bancari collegati» 
+Nella scheda di dettaglio «C/C bancari collegati», tramite le azioni «Collega C\C bancari» e «Scollega C\C bancari,  è  possibile, successivamente all’»Onboarding», abilitare o disabilitare i conti correnti bancari aziendali.
+
+Il campo «**Elaborazione automatica**», imposta l’elaborazione automatica sui conti processati dalla funzione di importazione delle transazioni bancarie. 
+
+### Informazioni Utente
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000786-0/ITA_S16_InfoUtente.jpg"><br>
+
+Nella pagina «Informazioni utente» saranno visibili i dati dell’utente utilizzato per il login.
+> *Nota: i dati saranno completamente visibili solo all’utente di login, gli altri utenti potranno visualizzare solo i campi Nome e Cognome*
+
+
+
+
