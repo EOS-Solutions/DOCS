@@ -1,0 +1,24 @@
+Using the "Field Mapping (OBN)" table, it is possible to dynamically define, for each bank, how to feed the content of the information fields in the Payment Reconciliation Record form.
+It is possible to map some source fields of the Open Banking Movements table with the destination fields of the Payment Reconciliation Record form.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000788-0/ENU_S19_Setup Mappatura campi.jpg"><br>
+
+The destination fields for which mapping is possible are:
+* Transaction text,
+* Name of the related party,
+* Address of the related party,
+* City of the related party,
+* Bank account number of the related party,
+* Additional transaction information.
+
+The mapping can be differentiated by:
+* Current account number
+* Type
+* Operation type
+* Transaction owner code
+
+### Example
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000788-0/ENU_S21.01_Esempio Mappatura campi.jpg"><br>
+
+### Mapping
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000788-0/ENU_S21.02_Esempio Mappatura campi_02.jpg"><br>
