@@ -1,0 +1,7 @@
+* Il presupposto di base è che le transazioni bancarie siano acquisite e processate integralmente tramite flusso elettronico.
+* Tutte le transazioni dovranno essere processate e, in linea generale, non dovranno essere effettuate scritture manuali (ad eccezione della registrazione delle Distinte cliente Riba\SDD, Effetti insoluti, Distinte fornitori).
+* I movimenti bancari in BC saranno, quindi, la copia speculare delle transazioni bancarie. Eventuali storni\rettifiche sulle transazioni bancarie andranno comunque processati e contabilizzati.
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000784-0/ITA_S09_Flusso Operativo.jpg"><br>
