@@ -1,0 +1,16 @@
+On the «Bank transaction types (OBN)» page, you can encode the values of the main attributes that characterize the bank transaction. The attributes are as follows.
+* Operation type: usually income, outcome (income\expenditure).
+* Category.
+* Subcategory.
+* Transaction owner code: owner code assigned by the banking institution.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000787-0/ENU_S17_Tipol Transazioni.jpg"><br>
+
+The table can be automatically filled in using the «Import from movements» function.
+Once the first import of bank movements has been carried out, it will be possible to fill the table with the values present on the movements.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000787-0/ENU_S18.01_Tipol Transaz Imp mov.jpg"><br>
+
+You access the «Bank transaction types (OBN)» page from the «Account mapping setup (OBN) 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000787-0/ENU_S18.02_Tipol Transaz Imp mov_02.jpg"><br>
