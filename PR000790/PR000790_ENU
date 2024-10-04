@@ -1,0 +1,4 @@
+In the Bank C/C tab, you must define the serial number to be used in the registration of the payment reconciliation registration statements (field «Bank transaction registration number».
+It is recommended to also set the number to be assigned to the account statements (field «Last E/C number»).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000790-0/ENU_S24_Setup CCbancario.jpg"><br>
