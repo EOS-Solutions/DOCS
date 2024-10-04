@@ -1,0 +1,17 @@
+Tramite la pagina «Setup mappatura conti (OBN)» è possibile impostare i conti C/G di contropartita da assegnare alle transazioni bancarie, in base agli attributi ad esse associati. 
+
+A ciascuna combinazione di attributi, infatti,  è possibile associare una contropartita (conto C/G, C/C Bancario, Cliente, Fornitore) che sarà utilizzata automaticamente nella registrazione della transazione contabile.
+
+La contropartita può essere generica o specifica per ciascun conto corrente e sarà proposta dalla funzione «Collega automaticamente (EOS)» nel Prospetto registrazione riconciliazione pagamenti.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000789-0/ITA_S22_Setup mappatura conti.jpg"><br>
+
+Per ciascuna riga di setup è possibile definire il «Tipo di documento» che sarà utilizzato nella registrazione contabile (le opzioni previste sono «Default» e «Blank).
+
+L’opzione «Default» abilita il comportamento standard di BC che prevede esclusivamente il tipo di documento «Pagamento» o «Rimborso» in funzione del segno della transazione.
+
+Per la rilevazione di oneri/proventi finanziari, giroconti e, in genere, dei movimenti che non sono incassi o pagamenti, è quindi possibile utilizzare il tipo di documento «blank».
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000789-0/ITA_S23_Tipo documento.jpg"><br>
