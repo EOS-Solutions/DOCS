@@ -1,0 +1,16 @@
+Nella pagina «Tipologie transazioni bancarie (OBN)» è possibile codificare i valori dei principali attributi che caratterizzano la transazione bancaria. Gli attributi sono i seguenti.
+* Tipo operazione: solitamente income, outcome (entrate\uscite).
+* Categoria.
+* Sottocategoria.
+* Cod. proprietario transazione: codice proprietario assegnato dall’Istituto bancario.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000787-0/ITA_S17_Tipol Transazioni.jpg"><br>
+
+E’ possibile compilare automaticamente la tabella tramite la funzione «Importa da movimenti».
+Una volta effettuata la prima importazione dei movimenti bancari sarà possibile alimentare la tabella con i valori presenti sui movimenti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000787-0/ITA_S18.01_Tipol Transaz Imp mov.jpg"><br>
+
+Si accede alla pagina «Tipologie transazioni bancarie (OBN)» dalla pagina «Setup mappatura conti (OBN)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000787-0/ITA_S18.02_Tipol Transaz Imp mov_02.jpg"><br>
