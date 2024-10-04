@@ -1,0 +1,18 @@
+* It is possible to record the payment reconciliation registration statement only if all the movements have been "linked".
+* For each bank movement, the system performs a double-entry registration with the recognized account as a counterpart, assigning the specific Series No. defined in the bank C/C card, in the "Bank transaction registration No." field.
+(This is unlike the standard functionality that assigns the same document no. to the entire statement even if the movements have different dates).
+* If the movement is associated with a bank movement already accounted for, the system does not perform further transactions, but "reconciles" the movement without making any entries.
+
+### Information on bank accounting movements
+The OBN App integrates the information present on bank accounting movements. In fact, the "Value date", "Payment reconciliation statement No." and the reference to the single bank transaction referenced in the "External document No." field have been implemented.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000797-0/ENU_S34_Mov banc.jpg"><br>
+
+### Bank transaction details (OBN)
+From the bank C/C movements or from the G/L movements it is always possible to trace all the information of the bank transaction.
+
+This allows the reconciliation and matching of the entries in the case of using transitory accounts for the recognition of collections and/or payments.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000797-0/ENU_S35.01_Dett Transazione.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000797-0/ENU_S35.02_Dett Transazione_02.jpg"><br>
