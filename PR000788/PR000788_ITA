@@ -1,0 +1,25 @@
+Tramite la tabella «Mappatura campi (OBN)» è possibile definire dinamicamente, per ciascuna banca, come alimentare il contenuto dei campi informativi presenti nel prospetto Registrazione riconciliazione pagamenti.
+E’ possibile mappare alcuni campi di origine della tabella Movimenti Open Banking con i campi destinazione del prospetto Registrazione riconciliazione pagamenti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000788-0/ITA_S19_Setup Mappatura campi.jpg"><br>
+
+I campi destinazione per cui è possibile effettuare la mappatura sono:
+* Testo transazione,
+* Nome della parte correlata,
+* Indirizzo della parte correlata,
+* Citta parte correlata,
+* Nr. conto bancario parte correlata,
+* Informazioni transazioni aggiuntive.
+
+La mappatura può essere differenziata per:
+* Nr. conto corrente
+* Tipo
+* Tipo operazione
+* Cod. proprietario transazione
+
+
+### Esempio
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000788-0/ITA_S21.01_Esempio Mappatura campi.jpg"><br>
+
+### Mappatura
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000788-0/ITA_S21.02_Esempio Mappatura campi_02.jpg"><br>
