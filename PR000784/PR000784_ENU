@@ -1,0 +1,6 @@
+* The basic assumption is that bank transactions are acquired and processed entirely via electronic flow.
+* All transactions must be processed and, in general, no manual entries must be made (with the exception of the registration of Customer Lists Riba\SDD, Unpaid Bills, Supplier Lists).
+* The bank movements in BC will therefore be the mirror copy of the bank transactions. Any reversals\corrections on bank transactions will still be processed and accounted for.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000784-0/ENU_S09_Flusso Operativo.jpg"><br>
