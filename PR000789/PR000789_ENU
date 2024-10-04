@@ -1,0 +1,15 @@
+Through the «Account mapping setup (OBN)» page, it is possible to set up the G/L counterpart accounts to be assigned to bank transactions, based on the attributes associated with them.
+
+In fact, it is possible to associate a counterpart (G/L account, Bank Account, Customer, Supplier) to each combination of attributes, which will be used automatically in the recording of the accounting transaction.
+
+The counterpart can be generic or specific for each current account and will be proposed by the «Automatically connect (EOS)» function in the Payment reconciliation recording form.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000789-0/ENU_S22_Setup mappatura conti.jpg"><br>
+
+For each setup line, it is possible to define the «Document type» that will be used in the accounting recording (the options provided are «Default» and «Blank).
+
+The «Default» option enables the standard behavior of BC that provides only the «Payment» or «Refund» document type depending on the sign of the transaction.
+
+For the detection of financial charges/income, transfers and, in general, movements that are not collections or payments, it is therefore possible to use the «blank» document type.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000789-0/ENU_S23_Tipo documento.jpg"><br>
