@@ -1,0 +1,11 @@
+Nel prospetto registrazione riconciliazione pagamenti è possibile eseguire il riconoscimento dei movimenti tramite la procedura di collegamento «Collega automaticamente (EOS).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000796-0/ITA_S31_Reg riconciliazione pag_collega.jpg"><br>
+
+Le principali tipologie di operazioni che possono essere gestite dal collegamento automatico sono le seguenti.
+* Proposta automatica conto CoGe relativo a oneri\proventi finanziari.
+* Giroconto banca su banca.
+* Proposta automatica conto transito (cash pooling, contro transito riconoscimento incassi\pagamenti).
+* Collegamento a movimenti bancari già contabilizzati (es pagamenti tramite distinta).
+* Collegamento Incassi\pagamenti con saldaconto partita
+* Gestione differenze con contabilizzazione su conti specifici.
