@@ -1,0 +1,20 @@
+* E’ possibile registrare il prospetto registrazione riconciliazione pagamenti solo se tutti i movimenti sono stati «collegati».
+* Per ogni movimento bancario il sistema effettua una registrazione in partita doppia avente in contropartita il conto riconosciuto assegnando lo specifico Nr. serie definito nella scheda del C/C bancario, nel campo «Nr. registrazione transazioni bancarie».
+(Ciò a differenza della funzionalità standard che assegna lo stesso nr. documento all’intero prospetto anche se i movimenti hanno date differenti).
+* Se il movimento è abbinato ad un movimento bancario già contabilizzato il sistema non effettua ulteriori transazioni, ma «riconcilia» il movimento senza effettuare registrazioni.
+
+### Informazioni su movimenti contabili bancari
+L’App OBN integra le informazioni presenti sui movimenti contabili bancari. Sono stati implementati, infatti, i campi «Data valuta», «Nr. prospetto riconciliazione pagamento» e il riferimento alla singola transazione bancaria referenziata nel campo «Nr. documento esterno».
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000797-0/ITA_S34_Mov banc.jpg"><br>
+
+### Dettagli transazione bancaria (OBN)
+Dai movimenti C/C bancari o dai movimenti C/G è sempre possibile risalire a tutte le informazioni della transazione bancaria.
+
+Ciò consente la riconciliazione e l’abbinamento delle partite nel caso di utilizzo di conti transitori di riconoscimento degli incassi e/o dei pagamenti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000797-0/ITA_S35.01_Dett Transazione.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000797-0/ITA_S35.02_Dett Transazione_02.jpg"><br>
+
+
