@@ -1,3 +1,5 @@
+## **15/02/24**
+
 Nuova versione gennaio 2024
 
 
@@ -30,4 +32,56 @@ Le nuove modifiche sono state rilasciate onprem per BC14, BC21, BC22 e BC23 nell
 
 23.0.24 (anche su SaaS)
 
-Le modifiche sono disponibili [qui](https://hg.eos-solutions.it/scm/hg/Eos.Nav.Platform_2018/rev/ea0293a244f9)
+Le modifiche sono disponibili [qui](https://hg.eos-solutions.it/scm/hg/Eos.Nav.Platform_2018/rev/ea0293a244f9).
+
+
+
+
+
+
+
+## **13/02/23**
+
+Nuovi valori su campi standard,per tutte le versioni C/AL e BC in manutenzione
+
+Nuovo Codice somme esenti
+
+-   15 - nel caso di somme che non hanno concorso a formare il reddito imponibile (90% dell'ammontare erogato), relative ai compensi percepiti dai docenti e ricercatori rientrati in Italia prima del 2020 e che alla data del 31 dicembre 2019 risultano beneficiari del regime previsto dall'art. 44 del D.L 31 maggio 2010, n. 78 che hanno esercitato l'opzione di cui al provvedimento del Direttore dell'Agenzia delle entrate del 31 marzo 2022, i restanti codici conservano il significato degli anni precedenti
+
+Nuovo codice Tipi Reddito
+
+-   J-compensi corrisposti ai raccoglitori occasionali di tartufi non identificati ai fini dell'imposta sul valore aggiunto, in relazione alla cessione di tartufi; i restanti codici conservano il significato degli anni precedenti  
+
+Contenuto dei campi e controlli:  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/1ECU-update(1).bmp"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/2ECU-update.bmp"><br> 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/3ECU-update.bmp"><br>
+
+Migliorie App ECU per le versioni BC in manutenzione:
+
+1) Migliorata la gestione delle somme esenti
+
+Già all'atto dell'inserimento della fattura del fornitore è possibile indicare le somme esenti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/4ECU-update(1).jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/5ECU-update(1).jpg"><br>
+
+Il campo Importi non soggetti a ritenuta della scheda Ritenute non è direttamente editabile ma è compilato dal sistema come sommatoria delle righe di dettaglio. Cliccando sull'importo si apre la tabella di dettaglio dove è possibile indicare le somme non soggette e i relativi codici:  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/7ECU-update(1).jpg"><br>
+
+Il campo Tipo reddito non imponibile identifica solo il codice relativo alla quota non imponibile 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/8ECU-update.jpg"><br>
+
+Le informazioni del tipo reddito non imponibile e degli importi non soggetti sono state aggiunte anche alle page delle ritenute dei pagamenti e delle distinte fornitori 
+
+2) La causale è reperita automaticamente dalla tabella Codici Ritenuta:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/9ECU-update.jpg"><br>
+
+3) Aggiunta del carattere "&" a quelli permessi nell'esportazione dei testi (es. denominazione)
