@@ -1,56 +1,56 @@
 [**Scenari Analisi C/A**](http://)
 
-ß possibile creare per ciascun periodo di analisi uno o pi— scenari diversi attraverso lÂutilizzo della pagina Scheda Analisi C/A.
+Ãˆ possibile creare per ciascun periodo di analisi uno o piÃ¹ scenari diversi attraverso lâ€™utilizzo della pagina Scheda Analisi C/A.
 
 * Estrae i valori contabili per competenza di un determinato periodo
 * Applica le allocazioni e i driver
-* Ogni scenario pu• avere una sequenza di allocazioni personalizzata
+* Ogni scenario puÃ² avere una sequenza di allocazioni personalizzata
 * Permette le analisi tramite le visualizzazioni per dimensioni
-* Permette lÂanalisi dei dati tramite le funzionalit… delle Analisi per dimensioni e delle Situazioni contabili.
+* Permette lâ€™analisi dei dati tramite le funzionalitÃ  delle Analisi per dimensioni e delle Situazioni contabili.
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000412-0/18Extended Management Accounting-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/18Extended Management Accounting-ita.png"><br>
 
-Dalla scheda Analisi C/A, eseguendo le funzioni ÃAggiorna Archivio DriverÄ e successivamente ÃAggiorna Analisi C/AÄ, Š possibile eseguire tutte le allocazioni che sono state inserite allÂinterno della lista allocazioni o solo quelle selezionate tramite il pulsante ÃSequenza allocazioniÄ e calcolare altres la tariffa del centro di costo produttivo. 
+Dalla scheda Analisi C/A, eseguendo le funzioni â€œAggiorna Archivio Driverâ€ e successivamente â€œAggiorna Analisi C/Aâ€, Ã¨ possibile eseguire tutte le allocazioni che sono state inserite allâ€™interno della lista allocazioni o solo quelle selezionate tramite il pulsante â€œSequenza allocazioniâ€ e calcolare altresÃ¬ la tariffa del centro di costo produttivo. 
 
 |Azione|Descrizione|
 |-----|---------|
 | Aggiorna archivio driver | aggiorna i Movimenti prestazioni dei driver codificati a sistema |
-| Aggiorna analisi C/A | esegue le schede di allocazione in Stato ®Certificata¯, in ordine di Livello e Sequenza/Codice |
-|Aggiorna analisi per dimensione|aggiorna i dati relativi allÂanalisi per dimensione di COAN eventualmente impostata nel campo ®Analisi per Dimensione¯|
+| Aggiorna analisi C/A | esegue le schede di allocazione in Stato Â«CertificataÂ», in ordine di Livello e Sequenza/Codice |
+|Aggiorna analisi per dimensione|aggiorna i dati relativi allâ€™analisi per dimensione di COAN eventualmente impostata nel campo Â«Analisi per DimensioneÂ»|
 <br>
 
- Quando lÂelaborazione Š terminata viene in automatico compilato il campo ÃStato C/AÄ che passa da vuoto a ÃAllocati Mov.Ä<br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000412-0/19Extended Management Accounting-ita.png"><br>
+ Quando lâ€™elaborazione Ã¨ terminata viene in automatico compilato il campo â€œStato C/Aâ€ che passa da vuoto a â€œAllocati Mov.â€<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/19Extended Management Accounting-ita.png"><br>
 
-**Sequenza allocazioni: funzione di ÃCopia sequenza allocazioneÄ  **
+**Sequenza allocazioni: funzione di â€œCopia sequenza allocazioneâ€  **
 
-La funzione consente di copiare da uno scenario di partenza selezionato dallÂutente, la sequenza delle allocazioni nello scenario di destinazione. Nel caso in cui la funzione venga eseguita senza abilitare l'opzione ÃElimina sequenza esistenteÄ il sistema aggiunger… le allocazioni copiate a quelle eventualmente presenti allÂinterno dello stesso scenario.<br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000412-0/35Extended Management Accounting-ita.png"><br>
-Cliccando sulla funzione il sistema propone la seguente maschera allÂinterno della quale indica in automatico il codice dello scenario di analisi di partenza (nellÂesempio TEST_2), mentre Š necessario inserire il codice dello scenario in cui si desidera che la sequenza allocazioni venga copiata (nellÂesempio TEST_1):<br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000412-0/36Extended Management Accounting-ita.png"><br>
+La funzione consente di copiare da uno scenario di partenza selezionato dallâ€™utente, la sequenza delle allocazioni nello scenario di destinazione. Nel caso in cui la funzione venga eseguita senza abilitare l'opzione â€œElimina sequenza esistenteâ€ il sistema aggiungerÃ  le allocazioni copiate a quelle eventualmente presenti allâ€™interno dello stesso scenario.<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/35Extended Management Accounting-ita.png"><br>
+Cliccando sulla funzione il sistema propone la seguente maschera allâ€™interno della quale indica in automatico il codice dello scenario di analisi di partenza (nellâ€™esempio TEST_2), mentre Ã¨ necessario inserire il codice dello scenario in cui si desidera che la sequenza allocazioni venga copiata (nellâ€™esempio TEST_1):<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/36Extended Management Accounting-ita.png"><br>
 
 **Verifica dati generati tramite il processo di allocazione**
 
-ß possibile aprire direttamente il Piano dei conti C/A dalla scheda di analisi C/A cliccando lÂazione Naviga Æ ÃPiano dei Conti C/A: questÂultimo risulter… gi… filtrato per lÂAnalisi C/A che abbiamo appena eseguito. In alternativa Š possibile accedere alla pagina ÃPiano dei conti C/AÄ ed applicare i filtri opportuni: <br> 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000412-0/20Extended Management Accounting-ita.png"><br>
+Ãˆ possibile aprire direttamente il Piano dei conti C/A dalla scheda di analisi C/A cliccando lâ€™azione Naviga â€“ â€œPiano dei Conti C/A: questâ€™ultimo risulterÃ  giÃ  filtrato per lâ€™Analisi C/A che abbiamo appena eseguito. In alternativa Ã¨ possibile accedere alla pagina â€œPiano dei conti C/Aâ€ ed applicare i filtri opportuni: <br> 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/20Extended Management Accounting-ita.png"><br>
 
 |Campo|Description|
 |-----|---------|
 | Saldo periodo | saldo derivante dalla sommatoria dei movimenti trasferiti da C/G e da quelli eventualmente registrati direttamente in COAN |
 | Saldo periodo analisi c/a | saldo derivante da processo di allocazione |
 <br>
-Tramite il Drilldown della colonna ®Saldo periodo analisi c/a¯ Š possibile accedere al dettaglio movimenti, analizzabile anche tramite lÂazione "Tracciabilit… origine".
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000412-0/21Extended Management Accounting-ita.png"><br>
-Se si dovesse rendere necessaria una nuova esecuzione della stessa analisi, per esempio a seguito dellÂeffettuazione di ulteriori scritture contabili o per il cambiamento di alcune allocazioni, Š possibile eseguire nuovamente la scheda, azzerando preventivamente lÂallocazione precedente.
+Tramite il Drilldown della colonna Â«Saldo periodo analisi c/aÂ» Ã¨ possibile accedere al dettaglio movimenti, analizzabile anche tramite lâ€™azione "TracciabilitÃ  origine".
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/21Extended Management Accounting-ita.png"><br>
+Se si dovesse rendere necessaria una nuova esecuzione della stessa analisi, per esempio a seguito dellâ€™effettuazione di ulteriori scritture contabili o per il cambiamento di alcune allocazioni, Ã¨ possibile eseguire nuovamente la scheda, azzerando preventivamente lâ€™allocazione precedente.
 
-**Report Finanziari Æ Lettura dei dati di analitica da uno specifico scenario di analisi C/A**
+**Report Finanziari â€“ Lettura dei dati di analitica da uno specifico scenario di analisi C/A**
 
-Le impostazioni sotto riportate consentono di visualizzare allÂinterno di un Report Finanziario i saldi, per conto o gruppi di conti, calcolati in uno specifico scenario di analisi C/A, ovvero, dopo aver eseguito il processo di ribaltamento costi in contabilit… analitica. Nella pagina ÃReport FinanziariÄ creare un nuovo report finanziario a cui abbinare una specifica ÃDefinizione rigaÄ e una specifica ÃDefinizione colonnaÄ. Nella pagina ÃModifica Definizione rigaÄ impostare le righe che si vogliono visualizzare allÂinterno del Report Finanziario: <br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000412-0/37Extended Management Accounting-ita.png"><br>
-Nella colonna ÃTipo totaleÄ inserire lÂopzione ÃConti di analiticaÄ e nella colonna ÃTotaleÄ inserire invece il conto, o i conti, di cui dovr… essere mostrato il saldo. ß possibile per ogni riga selezionare anche le dimensioni per le quali il saldo di conti deve essere filtrato (esempio: colonna ÃCdc Codice TotaleÄ). Nella pagina ÃModifica definizione colonnaÄ impostare le colonne che si vogliono visualizzare allÂinterno del Report Finanziario. Occorre impostare la colonna ÃTipo colonnaÄ indicando il Saldo periodo, e compilare lÂapposita colonna ÃCod. analisi C/AÄ indicando il codice dello scenario di analisi C/A da cui si vuole che il sistema recuperi i saldi post allocazione (nellÂesempio SCENARIO_1).  <br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000412-0/38Extended Management Accounting-ita.png"><br>
-A questo punto possiamo visualizzare i dati accedendo alla pagina ÃModifica report finanziarioÄ.  <br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000412-0/39Extended Management Accounting-ita.png"><br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000412-0/40Extended Management Accounting-ita.png"><br>
-Nel caso in cui si vogliano visualizzare dati derivanti da uno scenario di analisi C/A di Budget lÂunica differenza rispetto a quanto esposto sopra consiste nel valorizzare il campo ÃTipo mov. ContabileÄ della pagina ÃModifica definizione colonnaÄ con il valore ÃMovimenti budgetÄ. <br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000412-0/41Extended Management Accounting-ita.png"><br>
+Le impostazioni sotto riportate consentono di visualizzare allâ€™interno di un Report Finanziario i saldi, per conto o gruppi di conti, calcolati in uno specifico scenario di analisi C/A, ovvero, dopo aver eseguito il processo di ribaltamento costi in contabilitÃ  analitica. Nella pagina â€œReport Finanziariâ€ creare un nuovo report finanziario a cui abbinare una specifica â€œDefinizione rigaâ€ e una specifica â€œDefinizione colonnaâ€. Nella pagina â€œModifica Definizione rigaâ€ impostare le righe che si vogliono visualizzare allâ€™interno del Report Finanziario: <br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/37Extended Management Accounting-ita.png"><br>
+Nella colonna â€œTipo totaleâ€ inserire lâ€™opzione â€œConti di analiticaâ€ e nella colonna â€œTotaleâ€ inserire invece il conto, o i conti, di cui dovrÃ  essere mostrato il saldo. Ãˆ possibile per ogni riga selezionare anche le dimensioni per le quali il saldo di conti deve essere filtrato (esempio: colonna â€œCdc Codice Totaleâ€). Nella pagina â€œModifica definizione colonnaâ€ impostare le colonne che si vogliono visualizzare allâ€™interno del Report Finanziario. Occorre impostare la colonna â€œTipo colonnaâ€ indicando il Saldo periodo, e compilare lâ€™apposita colonna â€œCod. analisi C/Aâ€ indicando il codice dello scenario di analisi C/A da cui si vuole che il sistema recuperi i saldi post allocazione (nellâ€™esempio SCENARIO_1).  <br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/38Extended Management Accounting-ita.png"><br>
+A questo punto possiamo visualizzare i dati accedendo alla pagina â€œModifica report finanziarioâ€.  <br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/39Extended Management Accounting-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/40Extended Management Accounting-ita.png"><br>
+Nel caso in cui si vogliano visualizzare dati derivanti da uno scenario di analisi C/A di Budget lâ€™unica differenza rispetto a quanto esposto sopra consiste nel valorizzare il campo â€œTipo mov. Contabileâ€ della pagina â€œModifica definizione colonnaâ€ con il valore â€œMovimenti budgetâ€. <br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/41Extended Management Accounting-ita.png"><br>
