@@ -1,0 +1,126 @@
+
+Aggiornamenti Tracciato 1.7.1, versioni BC14, BC19, BC20
+
+
+- Introduzione nuovo tipo documento TD28
+
+- TD22-TD23: obbligo di compilazione della sezione "AltriDatiGestionali"
+
+ - Autofattura: informazioni "qualitative" nel campo 2.2.1.4 <Descrizione >
+
+Setup
+
+1) Caricamento default versione 1.7.1
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/1FTE-update-tracciato171.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/2FTE-update-tracciato171.jpg"><br> 
+
+Questo setup abilita i tipi documento TD22 e TD23 all'utilizzo come autofatture ed aggiunge il nuovo tipo documento TD28 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/3FTE-update-tracciato171.jpg"><br>
+
+Logiche di funzionamento
+
+Introduzione nuovo tipo documento TD28  
+
+Il nuovo tipo documento TD28 va utilizzato nel caso di acquisto da San Marino con fattura cartacea, nel caso in cui il cedente sanmarinese non sia obbligato all'emissione della fattura elettronica ai sensi del decreto delegato 5.8.2021 n. 147 della Repubblica di San Marino ovvero si riceva una fattura cartacea emessa prima dell'entrata in vigore dell'obbligo stesso.
+
+La fattura va registrata nel solo registro degli acquisti.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/4FTE-update-tracciato171.jpg"><br> 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/5FTE-update-tracciato171.jpg"><br> 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/6FTE-update-tracciato171.jpg"><br> 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/7FTE-update-tracciato171.jpg"><br> 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/8FTE-update-tracciato171.jpg"><br>
+
+TD22-TD23: obbligo di compilazione della sezione "AltriDatiGestionali"
+
+Casistiche di utilizzo:
+
+TD22 Estrazione beni da Deposito IVA
+
+TD23 Estrazione beni da Deposito IVA con versamento dell'IVA  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/9FTE-update-tracciato171.jpg"><br>
+
+Per i due tipi documento varrà il regime del reverse charge nel caso di acquisti da fornitori UE o nazionali mentre per gli acquisti da fornitori extra-UE l'integrazione andrà fatta in forma di autofattura (registrazione furi campo della fattura di acquisto e successiva emissione di documento autofattura registrata sia sul registro iva acquisti che sul registro iva vendite)
+
+Nell'utilizzo dei tipi documento TD22 e TD23 sorge l'obbligo di indicare negli AltriDatiGestionali il TipoDato che può assumere i seguenti valori:
+
+- Al fine di riportare in fattura l'informazione circa l'avvenuta regolarizzazione dell'imposta a debito con versamento tramite modello di versamento F24 in sede di liquidazione periodica dell'IVA, l'elemento TipoDato va valorizzato con la stringa "F24".
+
+- Nel caso di operazioni di estrazione beni da deposito IVA, al fine di riportare in fattura il riferimento al corretto periodo di imposta dell'operazione, l'elemento TipoDato va valorizzato con la stringa:
+
+-   "NellAnno" nel caso in cui l'estrazione dal deposito IVA avvenga nello stesso periodo d'imposta in cui è stata effettuata l'immissione o l'acquisto del bene custodito in deposito;
+
+-   "AnniPreced" nel caso in cui l'estrazione dal deposito avvenga in un periodo d'imposta successivo a quello in cui è stato effettuato l'acquisto senza pagamento d'imposta.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/10FTE-update-tracciato171.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/11FTE-update-tracciato171.jpg"><br> 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/12FTE-update-tracciato171(1).jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/13FTE-update-tracciato171.jpg"><br>
+
+NOTE
+
+1) Gli "AltriDatiGestionali" possono essere immessi sia sulla fattura provvisoria ancora da registrare sia sulla fattura registrata e sono modificabili in qualsiasi fase
+
+2) Il campo TipoDato non è controllato, qualsiasi valore è accettato, resta a carico dell'Utente la corretta valorizzazione del campo stesso
+
+3) In caso di presenza di più righe di fattura con lo stesso Codice IVA e più AltriDatiGestionali ad esse legati verrà riportato sull'autofattura solo il primo inserito.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/14FTE-update-tracciato171.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/15FTE-update-tracciato171.jpg"><br> 
+
+Autofattura: informazioni "qualitative" nel campo 2.2.1.4 <Descrizione>
+
+In occasione del rilascio delle modifiche per il tracciato 1.7.1 abbiamo provveduto ad implementare anche la seguente miglioria:
+
+con la circolare n.26 del 13 luglio l'AdE in risposta a specifico quesito ha precisato che i dati contenuti nella sezione
+
+<DatiBeniServizi>
+
+<DettaglioLinee>
+
+possano, in via semplificata, essere raggruppati per natura specificando nella tag la parola BENI o SERVIZI. Nel Setup registrazioni IVA esiste il campo Assistenza UE già utilizzato in altri contesti per l'identificazione della natura  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/16FTE-update-tracciato171.jpg"><br> 
+
+quando il campo è spuntato la descrizione assumerà il valore "SERVIZI" 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/17FTE-update-tracciato171.jpg"><br>
+
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+
+<Descrizione>SERVIZI</Descrizione>
+
+ <Quantita>1.00000000</Quantita>
+
+<PrezzoUnitario>54492.35000000</PrezzoUnitario>
+
+<PrezzoTotale>54492.35000000</PrezzoTotale>
+
+ <AliquotaIVA>22.00</AliquotaIVA>
+
+ </DettaglioLinee>  
+
+mentre se non è spuntato la descrizione assumerà il valore "BENI"  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000847-0/18FTE-update-tracciato171.jpg"><br>
+
+<DettaglioLinee>
+<NumeroLinea>1</NumeroLinea>
+<Descrizione>BENI</Descrizione>
+<Quantita>1.00000000</Quantita>
+<PrezzoUnitario>54492.35000000</PrezzoUnitario>
+<PrezzoTotale>54492.35000000</PrezzoTotale>
+<AliquotaIVA>22.00</AliquotaIVA>
+</DettaglioLinee>
