@@ -2,7 +2,7 @@
 
 Normally the LIFO bands from previous years are recovered from the old system and imported massively, using a path identical to that of the table below.
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/italian LIFO/19inventory-valuation-and-costing-enu.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/italian LIFO/19inventory-valuation-and-costing-enu.png"><br>
 
 **LIFO Calculation (IVC) / Costing LIFO Official Report (IVC)**
 
@@ -13,4 +13,4 @@ On the page "Item Costing Period Management (IVC)" there must be a period relati
 NB: “Definitive” flag: It must be set only when the LIFO calculation is not forecast but it's definitive. The definitive LIFO bands can no longer be changed.
 
 At the end of the calculation process it is necessary to execute the Costing LIFO Print (IVC) report. If a filter is not applied to the item or any information related to the item, all the items with LIFO bands are printed.<br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/italian LIFO/20inventory-valuation-and-costing-enu.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/italian LIFO/20inventory-valuation-and-costing-enu.png"><br>
