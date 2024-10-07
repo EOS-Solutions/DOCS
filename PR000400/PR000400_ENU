@@ -11,13 +11,13 @@ The Allocation Cards allow allow the overturning of indirect costs charged to ac
 * Fixed: they are allocation percentages indicated in the lines of the allocation card.
 * Dynamic: the system reads the "driver entries" tables on the basis of which it calculates the allocation percentages to be used.
 <br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/7Extended Management Accounting-enu.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/7Extended Management Accounting-enu.png"><br>
 
 The different allocation cards are performed in increasing order of Level; at the same level, execution takes place according to the "Sequence" field or, alternatively (if the sequence value is equal to zero), according to the "Code" field (alphanumeric order).
 
 **Allocation List Card**
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/8Extended Management Accounting-enu.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/8Extended Management Accounting-enu.png"><br>
 
 **Note**
 > The formula showed allows to determine the amount to be allocated to the destination (e.g. Work Center, Division, etc.).
@@ -31,19 +31,19 @@ The Allocation Card contains four tabs:
 
 **General Tab**
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/9Extended Management Accounting-enu.png"><br>
-In this section you must enter the allocation code with its description. The √Starting Dateƒ and √Ending Dateƒ fields indicate, if entered, the validity period of the allocation card. A card can also be made obsolete by activating the √Blockedƒ option.
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/9Extended Management Accounting-enu.png"><br>
+In this section you must enter the allocation code with its description. The ‚ÄúStarting Date‚Äù and ‚ÄúEnding Date‚Äù fields indicate, if entered, the validity period of the allocation card. A card can also be made obsolete by activating the ‚ÄúBlocked‚Äù option.
 
 The system will only execute the valid allocation cards, with the value "Certified" in the "Status" field.  
 
 **Source Tab ** 
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/10Extended Management Accounting-enu.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/10Extended Management Accounting-enu.png"><br>
 In this section, the accounts and dimensions that identify the balance to be allocated must be entered. The dimension filter can be performed on the global dimensions or also on the other dimensions: in this case you will have to use the "Source Dimension" action: 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/11Extended Management Accounting-enu.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/11Extended Management Accounting-enu.png"><br>
 **Alloc. Lines Tab**
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/12Extended Management Accounting-enu.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/12Extended Management Accounting-enu.png"><br>
 Allows you to indicate how the balances identified in the Source Tab are to be allocated. The basic fields are as follows:
 
 **Type**: values:
@@ -68,13 +68,13 @@ Allows you to indicate how the balances identified in the Source Tab are to be a
 
 **Assignments Tab**
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/13Extended Management Accounting-enu.png"><br>
-It allows you to define the destination of the allocation: if the destination account is not indicated (field √C/A Account No.ƒ), the allocation takes place on the source account itself. The values of the destination dimensions will change.
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/13Extended Management Accounting-enu.png"><br>
+It allows you to define the destination of the allocation: if the destination account is not indicated (field ‚ÄúC/A Account No.‚Äù), the allocation takes place on the source account itself. The values of the destination dimensions will change.
 
 **Allocation list: "Copy Allocation" function**
 
 This feature allows you to create a new allocation card starting from an already existing card. The new file created will be identical to the starting one in terms of header, lines, assignments and filters. From the "Allocation list (EMA)" page or directly within the allocation form, you can access the function:<br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/33Extended Management Accounting-enu.png"><br>
-By clicking on the function, the system proposes the following form in which it automatically indicates the code of the starting allocation list (in the example REP-IMB), while it is necessary to enter the new code to be assigned to the allocation list which will be created (in the example √COPIAƒ):<br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/34Extended Management Accounting-enu.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/33Extended Management Accounting-enu.png"><br>
+By clicking on the function, the system proposes the following form in which it automatically indicates the code of the starting allocation list (in the example REP-IMB), while it is necessary to enter the new code to be assigned to the allocation list which will be created (in the example ‚ÄúCOPIA‚Äù):<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/34Extended Management Accounting-enu.png"><br>
 At the end of the operation, the newly created card contains all the header, line, assignment and filter information contained in the original card. The user can intervene to modify the form, where necessary, and can subsequently proceed with its certification.
