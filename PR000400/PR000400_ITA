@@ -2,25 +2,25 @@
 
 Le allocazioni possono essere utilizzate per:
 
-* Raggruppare valori: totalizzare tutti i costi rilevati dalla contabilit… in un unico conto di analitica che identifica un oggetto di costo;
-* Ripartire valori: suddividere i costi rilevati in un unico conto di contabilit… generale in pi— conti di analitica che identificano oggetti di costo differenti.
+* Raggruppare valori: totalizzare tutti i costi rilevati dalla contabilitÃ  in un unico conto di analitica che identifica un oggetto di costo;
+* Ripartire valori: suddividere i costi rilevati in un unico conto di contabilitÃ  generale in piÃ¹ conti di analitica che identificano oggetti di costo differenti.
 
 Le "Schede di Allocazione" permettono il ribaltamento dei costi indiretti imputati su conto/dimensioni, su altre combinazioni di conto/dimensioni (es.: su CDC, Divisioni, etc.). I driver utilizzati nelle allocazioni possono essere di 2 tipologie:
 
 * Fissi: ovvero percentuali di allocazione indicate nelle righe della scheda di allocazione.
-* Dinamici: il sistema legge le tabelle di ®movimenti driver¯ in base alle quali calcola le percentuali di allocazione da utilizzare.    
+* Dinamici: il sistema legge le tabelle di Â«movimenti driverÂ» in base alle quali calcola le percentuali di allocazione da utilizzare.    
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/7Extended Management Accounting-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/7Extended Management Accounting-ita.png"><br>
 
-Le differenti schede di allocazione vengono eseguite in ordine crescente di Livello; a parit… di livello lÂesecuzione avviene in funzione del campo ÃSequenzaÄ o, in alternativa (se il valore della sequenza Š pari a zero), in base al campo Codice (ordine alfanumerico).
+Le differenti schede di allocazione vengono eseguite in ordine crescente di Livello; a paritÃ  di livello lâ€™esecuzione avviene in funzione del campo â€œSequenzaâ€ o, in alternativa (se il valore della sequenza Ã¨ pari a zero), in base al campo Codice (ordine alfanumerico).
 
 **Struttura scheda allocazione**
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/8Extended Management Accounting-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/8Extended Management Accounting-ita.png"><br>
 **NB**
-> La Formula indicata serve a determinare lÂimporto da assegnare alla destinazione del costo (per es.: CDC, Divisione, ecc).
+> La Formula indicata serve a determinare lâ€™importo da assegnare alla destinazione del costo (per es.: CDC, Divisione, ecc).
 
-La scheda di allocazione Š suddivisa in varie sezioni:
+La scheda di allocazione Ã¨ suddivisa in varie sezioni:
 
 * Generale;
 * Origine
@@ -29,28 +29,28 @@ La scheda di allocazione Š suddivisa in varie sezioni:
 
 **Tab Generale**
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/9Extended Management Accounting-ita.png"><br>
-In questa sezione si deve inserire il Codice dellÂallocazione con la relativa descrizione. I campi ÃData InizioÄ e ÃData Fine indicano, se valorizzati, il periodo di validit… della specifica scheda di allocazione. Una scheda pu• essere resa obsoleta anche attraverso il flag ÃBloccatoÄ.
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/9Extended Management Accounting-ita.png"><br>
+In questa sezione si deve inserire il Codice dellâ€™allocazione con la relativa descrizione. I campi â€œData Inizioâ€ e â€œData Fine indicano, se valorizzati, il periodo di validitÃ  della specifica scheda di allocazione. Una scheda puÃ² essere resa obsoleta anche attraverso il flag â€œBloccatoâ€.
 
-Il sistema eseguir… solo le schede di allocazione valide, con in valore ÃCertificataÄ del campo ÃStatoÄ.   
+Il sistema eseguirÃ  solo le schede di allocazione valide, con in valore â€œCertificataâ€ del campo â€œStatoâ€.   
 
 **Tab Origine** 
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/10Extended Management Accounting-ita.png"><br>
-In questa sezione devono essere inseriti i conti e le dimensioni che identificano il saldo da allocare. Il filtro dimensioni pu• essere eseguito sulle dimensioni globali o anche sulle altre dimensioni: in questo caso si dovr… utilizzare lÂazione ÃDimensioni origineÄ:   
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/11Extended Management Accounting-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/10Extended Management Accounting-ita.png"><br>
+In questa sezione devono essere inseriti i conti e le dimensioni che identificano il saldo da allocare. Il filtro dimensioni puÃ² essere eseguito sulle dimensioni globali o anche sulle altre dimensioni: in questo caso si dovrÃ  utilizzare lâ€™azione â€œDimensioni origineâ€:   
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/11Extended Management Accounting-ita.png"><br>
 **Tab Allocaz. righe**
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/12Extended Management Accounting-ita.png"><br>
-Permette di indicare la modalit… di allocazione dei saldi individuati nella sezione origine. I campi fondamentali sono i seguenti: 
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/12Extended Management Accounting-ita.png"><br>
+Permette di indicare la modalitÃ  di allocazione dei saldi individuati nella sezione origine. I campi fondamentali sono i seguenti: 
 
 **Tipo**: valori:
 
-* Percentuale: lÂallocazione avviene sulla base di % fisse inserite dallÂutente nella pagina ÃAssegnazioniÄ.
-* Variabile: lÂallocazione viene effettuata in funzione di percentuali dinamiche calcolate dal sistema in base al rapporto tra saldi (es.: un costo di una specifica Divisione o Linea di prodotto viene allocato in funzione del relativo fatturato di vendita).
-* Driver: lÂallocazione viene eseguita in funzione di percentuali dinamiche calcolate dal sistema in base alle regole definite nel Driver specifico (es.: Nr. dipendenti per CDC, ore macchina/uomo lavorate, MQ di una superficie).
+* Percentuale: lâ€™allocazione avviene sulla base di % fisse inserite dallâ€™utente nella pagina â€œAssegnazioniâ€.
+* Variabile: lâ€™allocazione viene effettuata in funzione di percentuali dinamiche calcolate dal sistema in base al rapporto tra saldi (es.: un costo di una specifica Divisione o Linea di prodotto viene allocato in funzione del relativo fatturato di vendita).
+* Driver: lâ€™allocazione viene eseguita in funzione di percentuali dinamiche calcolate dal sistema in base alle regole definite nel Driver specifico (es.: Nr. dipendenti per CDC, ore macchina/uomo lavorate, MQ di una superficie).
 
-**Driver Allocazione**: nel caso di utilizzo di un Driver nel campo ÃTipoÄ, in questo campo si deve inserire il codice del Driver da utilizzare
+**Driver Allocazione**: nel caso di utilizzo di un Driver nel campo â€œTipoâ€, in questo campo si deve inserire il codice del Driver da utilizzare
 
 **% Allocazione**:  indica la percentuale da allocare del saldo derivante dai filtri applicati nella scheda Origine
 
@@ -58,17 +58,17 @@ Permette di indicare la modalit… di allocazione dei saldi individuati nella sezi
 
 * Mantieni dimensioni mov. -> vengono mantenute le dimensioni di origine per i saldi allocati (es. per spostare il saldo da un conto C/A ad un altro)
 * Modifica dimensioni mov. -> vengono mantenute tutte le dimensioni dei movimenti originari ad eccezione della dimensione oggetto di allocazione (es.: centro di costo)
-* Sostituisci dimensioni mov. -> in questo caso vengono cancellate tutte le dimensioni dei movimenti originari ed assegnate quelle di destinazione, inserite nelle righe ÃAssegnazioniÄ 
+* Sostituisci dimensioni mov. -> in questo caso vengono cancellate tutte le dimensioni dei movimenti originari ed assegnate quelle di destinazione, inserite nelle righe â€œAssegnazioniâ€ 
 
 **Tab Assegnazione**
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/13Extended Management Accounting-ita.png"><br>
-Consente di definire la destinazione dellÂallocazione: se non viene indicato il conto di destinazione (campo ÃNr. conto C/AÄ), lÂallocazione avviene sul conto stesso di origine, quello che cambia saranno i valori delle dimensioni di destinazione. 
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/13Extended Management Accounting-ita.png"><br>
+Consente di definire la destinazione dellâ€™allocazione: se non viene indicato il conto di destinazione (campo â€œNr. conto C/Aâ€), lâ€™allocazione avviene sul conto stesso di origine, quello che cambia saranno i valori delle dimensioni di destinazione. 
 
-**Lista allocazioni: funzione di ÃCopia scheda allocazioneÄ**
+**Lista allocazioni: funzione di â€œCopia scheda allocazioneâ€**
 
-La funzionalit… consente di creare una nuova scheda di allocazione partendo da una scheda gi… presente. La nuova scheda creata sar… identica a quella di partenza per testata, righe, assegnazioni e filtri. Dalla pagina ÃLista allocazioni (EMA)Ä oppure direttamente allÂinterno della scheda di allocazione, si accede alla funzionalit…: <br> 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/33Extended Management Accounting-ita.png"><br>
-Cliccando sulla funzione, il sistema propone la seguente maschera allÂinterno della quale indica in automatico il codice della lista di allocazione di partenza (nellÂesempio REP-IMB), mentre Š necessario inserire il nuovo codice da assegnare alla lista di allocazione che sar… creata (nellÂesempio ÃCOPIAÄ): <br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/34Extended Management Accounting-ita.png"><br>
-Al termine dellÂoperazione la nuova scheda appena creata contiene tutte le informazioni di testata, riga, assegnazione e filtri contenute nella scheda di origine. LÂutente pu• intervenire per modificare la scheda, dove necessario, e successivamente potr… procedere alla sua certificazione. 
+La funzionalitÃ  consente di creare una nuova scheda di allocazione partendo da una scheda giÃ  presente. La nuova scheda creata sarÃ  identica a quella di partenza per testata, righe, assegnazioni e filtri. Dalla pagina â€œLista allocazioni (EMA)â€ oppure direttamente allâ€™interno della scheda di allocazione, si accede alla funzionalitÃ : <br> 
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/33Extended Management Accounting-ita.png"><br>
+Cliccando sulla funzione, il sistema propone la seguente maschera allâ€™interno della quale indica in automatico il codice della lista di allocazione di partenza (nellâ€™esempio REP-IMB), mentre Ã¨ necessario inserire il nuovo codice da assegnare alla lista di allocazione che sarÃ  creata (nellâ€™esempio â€œCOPIAâ€): <br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/34Extended Management Accounting-ita.png"><br>
+Al termine dellâ€™operazione la nuova scheda appena creata contiene tutte le informazioni di testata, riga, assegnazione e filtri contenute nella scheda di origine. Lâ€™utente puÃ² intervenire per modificare la scheda, dove necessario, e successivamente potrÃ  procedere alla sua certificazione. 
