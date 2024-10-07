@@ -2,15 +2,15 @@
 
 Setup: per effettuare il calcolo del WIP è necessario attivare il flag “Calcola WIP periodo” per il periodo oggetto di elaborazione: 
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/12inventory-valuation-and-costing-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/12inventory-valuation-and-costing-ita.png"><br>
 
 Elaborazione: dopo aver eseguito le funzionalità “Archivia dati periodo” e “Calcola dati consuntivi” è possibile accedere allo “Storico wip”: <br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/13inventory-valuation-and-costing-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/13inventory-valuation-and-costing-ita.png"><br>
 
 Vengono mostrati tutti gli ordini di produzione inclusi nel calcolo e, tramite Gestione->Visualizza è possibile accedere alla scheda di dettaglio del singolo ordine.<br> 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/23inventory-valuation-and-costing-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/23inventory-valuation-and-costing-ita.png"><br>
 Esempio scheda di dettaglio:<br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/24inventory-valuation-and-costing-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/24inventory-valuation-and-costing-ita.png"><br>
 
 * Il campo “Importo costo” della testata indica il valore del WIP calcolato per lo specifico ordine.
 * Subpage “Wip componenti ordini prod”: contiene la valorizzazione dei componenti utilizzati per articoli non ancora versati a magazzino come Output (parzialmente o completamente). Nell’esempio sopra: sono stati consumati 10 pz per ogni componente ma è stato registrato un Output parziale (5 su 10 pz).
@@ -19,6 +19,6 @@ Esempio scheda di dettaglio:<br>
 **Storico wip (IVC)**
 
 I dati calcolati posso essere visualizzati attraverso il report Storico wip (IVC):
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/27inventory-valuation-and-costing-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/27inventory-valuation-and-costing-ita.png"><br>
 Esempio di stampa<br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/28inventory-valuation-and-costing-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/28inventory-valuation-and-costing-ita.png"><br>
