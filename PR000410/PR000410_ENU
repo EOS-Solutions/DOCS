@@ -2,7 +2,7 @@
 
 Page dedicated to the coding of the cost accounting drivers.
 <br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/driver CA/14Extended Management Accounting-enu.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/driver CA/14Extended Management Accounting-enu.png">
 <br>
 
 |Field|Description|
@@ -18,8 +18,8 @@ It is also possible to create calculated Drivers (e.g. Formula or Union type) de
 
 **C/A Driver Objects (EMA)**
 
-Through the action "Synchronize cost center dimension" all the values ??of the system-coded cost centers are entered:
+Through the action "Synchronize cost center dimension" all the values ​​of the system-coded cost centers are entered:
 <br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/driver CA/15Extended Management Accounting-enu.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/driver CA/15Extended Management Accounting-enu.png">
 <br>
 The user can then modify the proposed list and, if necessary, insert other driver objects, not connected to the cost centers.
