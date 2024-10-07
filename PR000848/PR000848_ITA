@@ -1,0 +1,50 @@
+[**C/E di Profittabilità**](http://)
+
+Nella pagina Conti di profittabilità è stato integrato il flowfield “Importo budget analisi di profittabilità”, alimentato a seguito dell’esecuzione della funzione “Aggiorna analisi della profittabilità” della Scheda analisi C/A. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EBA-CE-Profittabilita01-ita.png"><br>
+
+Nella scheda del conto di profittabilità, inoltre, sono stati aggiunti i campi evidenziati sotto, che operano con la stessa logica descritta all’interno dell’app EMA.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EBA-CE-Profittabilita02-ita.png"><br>
+<br>
+
+Il campo «Tipo origine budget» determina la logica di alimentazione del singolo conto e prevede una serie di opzioni pre-definite. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EBA-CE-Profittabilita03-ita.png"><br>
+<br>
+
+L’opzione Ricavi eredita i valori del budget delle vendite dall’apposita pagina “Movimenti budget vendita (EBA)”. 
+Tale tabella può essere alimentata tramite l’apposita funzionalità “Importa il budget delle vendite da PowerBudget” della Scheda analisi C/A o tramite pacchetto di configurazione.
+  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EBA-CE-Profittabilita04-ita.png"><br>
+
+Nel caso in cui un conto di profittabilità presenti il «Tipo Origine budget» = C/A, occorre impostare il collegamento tra i vari conti e definire la logica di spalmatura del costo di budget sulle righe di vendita preventive. 
+
+Il collegamento tra i 2 conti economici va impostato sul conto di C/A: dovrà essere indicato il conto di profittabilità di destinazione (l’indicazione va fatta nel campo “Nr. conto profittabilità budget”) ed il driver da utilizzare (campo “Cod. Driver budget”) per la spalmatura del costo sul fatturato di vendita. In alternativa al codice driver, si possono utilizzare direttamente i campi “Nr. conto profitt. Driver budget” e “Spalmatura budget”.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EBA-CE-Profittabilita05-ita.png"><br>
+ 
+[**Driver di profittabilità**](http://)
+
+Al momento non sono state previste integrazioni a questa pagina, valorizzata tramite l’utilizzo dell’App EMA. 
+ 
+[**Scenari di analisi (EMA)**](http://)
+
+L’installazione di EMA Budget Allocation determina, nelle pagine Scenari di analisi e Scheda analisi C/A, l’introduzione del seguente nuovo campo:
+* “Filtro budget vendite”: valorizzabile, se il campo Origine allocazione presenta l’opzione Budget, per indicare il periodo di budget vendite dal quale recuperare i dati oggetto di allocazione.
+<br>
+ <img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/30Extended Management Accounting-ita.png">
+ <br>
+ 
+L’app EMA Budget Allocation rende inoltre disponibile la funzione “Importa il budget delle vendite da PowerBudget”.
+Per alimentare il C/E di Profittabilità preventivo, dopo aver calcolato il costo di budget del singolo articolo (per es. tramite App “IVC”) ed aver allocato i dati del budget C/A, è necessario eseguire la funzione “Aggiorna analisi della profittabilità”. 
+Al termine dell’elaborazione il campo “Stato profittabilità” nella sezione Statistiche, riporterà il valore “Allocati Indiretti”.
+* «Aggiorna l’analisi della profittabilità: alimenta la tabella di dettaglio “Movimenti budget analisi profittabilità”, consultabile tramite il C/E di Profittabilità.
+* Tramite il pulsante Correlato - Analisi - «Scheda di analisi della profittabilità»: è possibile accedere al C/E di Profittabilità, filtrato in funzione del Cod. analisi di partenza. 
+
+<br>
+
+[**Verifica dati generati tramite il Conto economico profittabilità (EMA)**](http://)
+
+Le logiche sono le stesse descritte nel medesimo paragrafo dell’App EMA. 
