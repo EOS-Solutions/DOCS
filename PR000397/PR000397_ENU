@@ -1,5 +1,5 @@
 [**Transfer Entries to C/A (EMA)**](http://)
 
-To synchronize the balances, you need to execute the task:  ÃTransfer Entries to C/A (EMA)Ä:<br>
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Transfer Entries to CA/5Extended Management Accounting-enu.png"><br>
+To synchronize the balances, you need to execute the task:  â€œTransfer Entries to C/A (EMA)â€:<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Transfer Entries to CA/5Extended Management Accounting-enu.png"><br>
 Firstly the feature executes the "Register Cost Account in Chart of Accounts" action and then transfers the G/L and simulated entries to the Cost Accounting, starting from the latest performed synchronisation.
