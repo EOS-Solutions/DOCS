@@ -1,0 +1,11 @@
+To enable the management of the Ownershio of records/documents, activate the flag in **EDS Tables Setup -> Ownership enabled**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000854-0/eng-1.png"><br>
+
+**EDS Tables Setup -> Status**: Use the **Ownership enabled** column to manage who can change the ownership of the records/documents in question:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000854-0/eng-2.png"><br>
+
+In the setup of the EDS status transactions list, the column relating to the Owning permissions has been added where it is specified who between «**All users**» or «**Owner only**» has the permissions to perform the selected status change.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000854-0/eng-3.png"><br>
