@@ -1,0 +1,4 @@
+* Sapere chi ha in gestione un determinato record / documento
+* Consentire di assegnare un record ad un gruppo o ad un altro utente
+* Filtrare i “miei record”
+* Limitare tramite assegnazione di permessi i cambi stati e di conseguenza le modifiche sui record a utenti diversi dall’owner o a gruppi diversi dal gruppo a cui è assegnato il record
