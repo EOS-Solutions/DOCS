@@ -1,0 +1,4 @@
+* Know who manages a certain record / document
+* Allow assigning a record to a group or another user
+* Filter “my records”
+* Limit status changes and consequently record modifications to users other than the owner or groups other than the group to which the record is assigned by assigning permissions
