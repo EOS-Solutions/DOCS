@@ -1,0 +1,14 @@
+Per abilitare la gestione dell'associazione dei record/documenti, attivare il flag in **Setup Tabelle EDS -> Assegnazione abilitata**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000854-0/Screenshot 2024-10-07 173626.png"><br>
+
+<br>
+
+**Setup Tabelle EDS -> Stati**: Utilizzare la colonna **Assegnazione abilitata** per gestire chi può cambiare l’assegnazione dei record/documenti i questione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000854-0/Immagine1.png"><br>
+
+<br>
+Nel setup della lista transazioni stati EDS è stata aggiunta la colonna relativa ai permessi assegnatario dove si specifica chi tra «**Tutti gli utenti**» o «**Solo proprietario**» ha i permessi per effettuare il cambio stato selezionato.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000854-0/Immagine2.png"><br>
