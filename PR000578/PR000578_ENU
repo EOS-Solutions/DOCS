@@ -2,6 +2,8 @@ Email notifications can be set when changing a status. Contextual info can be ad
 
 Go to EDS Notification Text List and press New
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000578-0/14DataSecurity(1).png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000578-0/14DataSecurity(1).png"><br>
 
 Fill in the requested fields in the General Tab and enter the message in the lines using the placeholders set in the tab below.
+
+If it is necessary to insert '%' as a character within the lines, use '%%' instead, since is going to be replaced with one single '%'
