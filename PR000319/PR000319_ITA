@@ -1,52 +1,52 @@
-Premere ALT + Q e digitare "CDW" per vedere un elenco delle funzionalitÖ coinvolte:
+Premere ALT + Q e digitare "CDW" per vedere un elenco delle funzionalit√† coinvolte:
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/1CDW.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/1CDW.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/1CDW.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/1CDW.png"></a><br>
 
 **Codici causali**
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/10CDW.jpg" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/10CDW.jpg"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/10CDW.jpg" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/10CDW.jpg"></a><br>
 
-Per ogni **codice Causale** ä possibile valorizzare i seguenti campi:
+Per ogni **codice Causale** √® possibile valorizzare i seguenti campi:
 
 | **Campo**                                  | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Criterio di registrazione                  | **Non scrivere movimenti contabili -\>** Non fatturare / Forza come fatturato** Non scrivere fatturazione e movimenti contabili -\>** Documento statistico                                                                                                                                                                                                                                                                                              |
 | Tipo registrazione costi                   | **Importo previsto:** nel caso in cui un documento venga forzato come fatturato, questa opzione fa in modo che il costo effettivo del movimento contabile articolo / valorizzazione risulti essere pari al Costo previsto.** Zero**: nel caso in cui un documento venga forzato come fatturato, questa opzione fa in modo che il costo effettivo del movimento contabile articolo / valorizzazione risulti essere pari a zero.                          |
-| Tipo registrazione ricavi                  | **Importo previsto:** nel caso in cui un documento venga forzato come fatturato, questa opzione fa in modo che l¬Importo vendita (effettivo) del movimento contabile articolo / valorizzazione risulti essere pari all¬Importo vendita (previsto).** Zero**: nel caso in cui un documento venga forzato come fatturato, questa opzione fa in modo che il ricavo effettivo del movimento contabile articolo / valorizzazione risulti essere pari a zero. |
-| Criterio di generazione movimenti articoli | **Blank (vuoto):** non determina alcun impatto sulle logiche standard di registrazione dei documenti.** Non scrivere movimenti articolo:** determina la non alimentazione delle tabelle Movimenti contabili articoli / Movimenti valorizzazione anche in presenza di righe documento con Tipo √Articoloƒ (di magazzino).                                                                                                                                |
+| Tipo registrazione ricavi                  | **Importo previsto:** nel caso in cui un documento venga forzato come fatturato, questa opzione fa in modo che l‚ÄôImporto vendita (effettivo) del movimento contabile articolo / valorizzazione risulti essere pari all‚ÄôImporto vendita (previsto).** Zero**: nel caso in cui un documento venga forzato come fatturato, questa opzione fa in modo che il ricavo effettivo del movimento contabile articolo / valorizzazione risulti essere pari a zero. |
+| Criterio di generazione movimenti articoli | **Blank (vuoto):** non determina alcun impatto sulle logiche standard di registrazione dei documenti.** Non scrivere movimenti articolo:** determina la non alimentazione delle tabelle Movimenti contabili articoli / Movimenti valorizzazione anche in presenza di righe documento con Tipo ‚ÄúArticolo‚Äù (di magazzino).                                                                                                                                |
 
 **Esempi**
 
--   **Creazione ordine di acquisto e registrazione del relativo carico con Causale √NFƒ (Documento da non fatturare):**
+-   **Creazione ordine di acquisto e registrazione del relativo carico con Causale ‚ÄúNF‚Äù (Documento da non fatturare):**
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/12CDW.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/12CDW.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/12CDW.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/12CDW.png"></a><br>
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/13CDW.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/13CDW.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/13CDW.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/13CDW.png"></a><br>
 
-Nei Movimenti di valorizzazione collegati alla ricezione ä presente il record relativo alla forzatura della ricezione come fatturata: in funzione del setup impostato per la specifica Causale, l¬Importo costo effettivo ä stato forzato pari all¬Importo costo previsto.
+Nei Movimenti di valorizzazione collegati alla ricezione √® presente il record relativo alla forzatura della ricezione come fatturata: in funzione del setup impostato per la specifica Causale, l‚ÄôImporto costo effettivo √® stato forzato pari all‚ÄôImporto costo previsto.
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/14CDW.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/14CDW.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/14CDW.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/14CDW.png"></a><br>
 
-Il documento quindi NON sarÖ quindi incluso nella procedura di calcolo delle fatture da emettere / ricevere (App SGL).
+Il documento quindi NON sar√† quindi incluso nella procedura di calcolo delle fatture da emettere / ricevere (App SGL).
 
--   **Creazione Nota Credito di vendita con Causale √NAƒ (Documento non amministrativo), contenente righe di Tipo √Articoloƒ:**
+-   **Creazione Nota Credito di vendita con Causale ‚ÄúNA‚Äù (Documento non amministrativo), contenente righe di Tipo ‚ÄúArticolo‚Äù:**
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/15CDW.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/15CDW.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/15CDW.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/15CDW.png"></a><br>
 
-La riga di Tipo √Articoloƒ presenta delle provvigioni, la registrazione del documento ha quindi alimentato solo le seguenti tabelle:
+La riga di Tipo ‚ÄúArticolo‚Äù presenta delle provvigioni, la registrazione del documento ha quindi alimentato solo le seguenti tabelle:
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/16CDW.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/16CDW.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/16CDW.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/16CDW.png"></a><br>
 
 **Giornale chiudi documenti (CDW)**
 
-Sezione **Giornale chiudi documenti (CDW):** ä possibile forzare come fatturati, direttamente da apposito giornale, i carichi / spedizioni registrati in precedenza:
+Sezione **Giornale chiudi documenti (CDW):** √® possibile forzare come fatturati, direttamente da apposito giornale, i carichi / spedizioni registrati in precedenza:
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/17CDW.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/17CDW.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/17CDW.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/17CDW.png"></a><br>
 
 
-Attraverso Azioni -\> √Prendi righeƒ ä possibile selezionare un documento (es. una spedizione di vendita) non ancora fatturato. Nel campo "Q.tÖ da chiudere" occorre inserire la quantitÖ da forzare come fatturata, mentre nel campo Cod. causale ä necessario selezionare la Causale da applicare alla registrazione (nell¬esempio sopra √NFƒ).
+Attraverso Azioni -\> ‚ÄúPrendi righe‚Äù √® possibile selezionare un documento (es. una spedizione di vendita) non ancora fatturato. Nel campo "Q.t√† da chiudere" occorre inserire la quantit√† da forzare come fatturata, mentre nel campo Cod. causale √® necessario selezionare la Causale da applicare alla registrazione (nell‚Äôesempio sopra ‚ÄúNF‚Äù).
 
-Tramite la page **Movimenti chiudi documenti (CDW)** ä possibile consultare l¬elenco dei documenti forzati come fatturati:
+Tramite la page **Movimenti chiudi documenti (CDW)** √® possibile consultare l‚Äôelenco dei documenti forzati come fatturati:
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/18CDW.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/18CDW.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/18CDW.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/18CDW.png"></a><br>
 
