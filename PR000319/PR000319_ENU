@@ -1,10 +1,10 @@
 Press ALT + Q and digit "CDW" for a list of the features involved:
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/1CDW_EN.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/1CDW_EN.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/1CDW_EN.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/1CDW_EN.png"></a><br>
 
 **Reason codes**
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/10CDW_EN.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/10CDW_EN.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/10CDW_EN.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/10CDW_EN.png"></a><br>
 
 On the Reason Codes page, in the field "Posting Policy" choose the options:
 
@@ -27,7 +27,7 @@ We choose not to register the invoice, nor the ledger entries. We enter the fiel
 -   Reason Code
 -   Posting Policy
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/4CDW_EN.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/4CDW_EN.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/4CDW_EN.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/4CDW_EN.png"></a><br>
 
 The posting will not create the invoice nor the ledger entries and the starting order will be canceled.
 
@@ -35,28 +35,34 @@ The posting will not create the invoice nor the ledger entries and the starting 
 
 By choosing the document Reason NO LEDG, when creating an order and posting the posted sales invoice will be created:
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/5CDW_EN.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/5CDW_EN.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/5CDW_EN.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/5CDW_EN.png"></a><br>
 
 From the List, pressing Invoice-\>Navigate we do not find posted entries:
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/6CDW_EN.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/6CDW_EN.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/6CDW_EN.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/6CDW_EN.png"></a><br>
 
 **Close Document Batches (CDW)**
 
 The page shows the batches on which registrations can be made:
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/7CDW_EN.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/7CDW_EN.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/7CDW_EN.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/7CDW_EN.png"></a><br>
 
 **Close Document Journal (CDW)**
 
 It is possible to close the lines directly from the journal:
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/8CDW_EN.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/8CDW_EN.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/8CDW_EN.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/8CDW_EN.png"></a><br>
 
 
 We select a batch and then from Actions-\> Get lines we import, for example, a sales shipment not yet invoiced. In the "Q.ty to close" field we enter the quantity to be invoiced, while in the "Reason Code" field we choose the reason (and the posting policy) to be applied to the posting, for example NO LEDG.
 
 On the page Close Documents Entries (CDW) we can see the entry relating to the posting and from Actions-\> Navigate it is possible to check the details.
 
-<a href="https://docs.eos-solutions.it/Images/PR000319-0/9CDW_EN.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/PR000319-0/9CDW_EN.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/PR000319-0/9CDW_EN.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/9CDW_EN.png"></a><br>
 
+
+
+{{% alert title="NOTE" color="warning" %}}
+Once the documents has been closed, these can't be reopened.
+
+{{% /alert %}}
