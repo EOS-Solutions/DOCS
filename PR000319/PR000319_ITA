@@ -50,3 +50,9 @@ Tramite la page **Movimenti chiudi documenti (CDW)** è possibile consultare l�
 
 <a href="https://docs-test.eos-solutions.it/Images/PR000319-0/18CDW.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/PR000319-0/18CDW.png"></a><br>
 
+
+
+{{% alert title="NOTE" color="warning" %}}
+Una volta che i documenti sono stati chiusi, non è più possibile riaprirli.
+
+{{% /alert %}}
