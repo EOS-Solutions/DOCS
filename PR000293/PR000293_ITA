@@ -1,3 +1,10 @@
-Nella pagina seguente � possibile avere una panoramica delle limitazioni previste, tabella per tabella:
+Nella pagina seguente è possibile avere una panoramica delle limitazioni previste, tabella per tabella:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000293-0/TableLimitations.png"><br>
+
+
+Questa entità è inclusa in automatico nei profili di sincronizzazione perché garantisce il controllo delle operazioni che possono essere fatte nelle società slave.
+
+Nelle società master questa tabella riporta tutte le sincronizzazioni previste per ID Tabella e cod. società di destinazione. Nelle società slave è riportato un unico record per ID Tabella senza riferimento alla società perché si intende la società stessa in cui si devono applicare i controlli di inserimento, modifica e cancellazione.
+
+I valori Permetti inserimenti, modifica e cancellazione sono ereditati automaticamente dal profilo di sincronizzazione della relativa tabella.
