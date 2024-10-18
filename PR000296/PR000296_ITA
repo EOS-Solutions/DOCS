@@ -1,3 +1,4 @@
+
 Nella pagina Log sincronizzazione (MDI) o nella pagina Profilo di sincronizzazione premendo Log di sincronizzazione si accede alla pagina dove è possibile visualizzare tutte le voci sincronizzate ed eventuali errori.
 
 Eventualmente è possibile eseguire nuovamente le sincronizzazioni.
@@ -14,3 +15,32 @@ Non riuscito (possibilmente con un messaggio che spiega l'errore nel campo "Ulti
 Da "Mostra Contenuto" puoi verificare quali dati sono stati passati all'azienda target ed eventuali problemi.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000296-0/Log sincronizzazione 2 ITA.png"><br>
+
+
+
+
+
+
+### Stati sincronizzazione
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000296-0/Stati sinc. ITA.png"><br>
+
+- Accodato: significa che la coda processi non ha ancora elaborato il record.   Può verificarsi solo per sincronizzazioni asincrone o con comunicazione di   tipo Local
+
+- Eseguito: significa che la sincronizzazione del record è andata a buon       fine
+
+- Operazione non riuscita: corrisponde a Fallito dell'attuale documentazione
+
+- Ripetuta: significa che è stato eseguito nuovamente il log manualmente ma     l'operazione non è riuscita
+
+- Elaborazioni: significa che il record è in sincronizzazione in corso
+
+- AttesaRemota: significa che la società slave non risponde. Può verificarsi   solo per sincronizzazioni asincrone o con comunicazione di tipo Local
+
+- Ignorato: significa che il record non è stato processato. Questo può         verificarsi se è stata fatta immediatamente un'altra modifica senza aver     salvato l'ultimo movimento.
+
+Nel log sincronizzazione il flag "Ultimo movimento" identifica l'ultimo movimento relativo ad un certo record ed è quello che verrà sincronizzato. Se questo record è in stato Eseguito significa che anche tutte le modifiche applicate in precedenza possono considerarsi andate a buon fine perché l'operazione di sincronizzazione non agisce sul modifica del campo puntuale ma sull'intero record.
+
+
+
