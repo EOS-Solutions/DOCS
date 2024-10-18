@@ -1,0 +1,11 @@
+**Gli ultimi log di sincronizzazione verso una società slave sono tutti in stato "Attesa Remota". Cosa fare?** 
+
+Probabilmente si è verificato un errore nelle code processi nella società master o slave, per questo suggeriamo di eseguire questi passaggi, nell'ordine:
+
+1. riavviare le code processi in entrambe le società
+
+2. controllare che i profili di sincronizzazione siano abilitati nella società master e che in Setup MDI il flag "Disabilita tutte le sincronizzazioni" sia disattivato in entrambe le società
+
+3. controllare se sia stato superato il limite di MaxBackgroundTask
+
+4. eliminare il log in attesa (sia dalla master che dalla slave).
