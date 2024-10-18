@@ -7,3 +7,7 @@ This entity is authomatically included in the synchronization profiles because i
 In the master company this table reports al the planned synchronizations for Table ID, and Destination company code. In the slave company is reported a single record for Table ID without reference to the company because it means the company itself in which the check about inserting, modifying and deleting must be appied.
 
 Values Insert allowed, Modify allowed and Delete allowed are automatically inherited from the synchronization profile of the related table.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000293-0/Limitaz. tabelle ENU 2.png"><br>
+
+In table limitations list, the column Rename isn't visible because it corresponds to a insert and delete action. 
