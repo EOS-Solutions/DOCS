@@ -1,0 +1,11 @@
+Last synchronization logs towards a slave company have all status 'Waiting remote"; what to do?
+
+Probably an error in job queues of the master or slave company  occurred, so we suggest to execute the following steps, in this order:
+
+1. restart job queues in both companies
+
+2. check that synchronization profiles are enabled in the master company and that in MDI setup the flag "Disable all synchronization" is disabled in both companies.
+
+3. check if the MaxBackgroundTask limit has been exceeded
+
+4. delete the log in waiting status ( both on the master company and on the slave one).
