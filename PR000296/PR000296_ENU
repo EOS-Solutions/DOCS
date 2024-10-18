@@ -1,3 +1,4 @@
+
 On the page MDI Synchronization Entries or form Synchronization Prifile page by pressing Synchronization Log you can access the page where you can view all synchronized entries and any errors.
 
 You can eventually re-perform synchronizations.
@@ -14,3 +15,29 @@ Failed (possibly with a message explaining the error in "Last Error Message" fie
 From "Show Content" you can check what data has been passed to the target company and any problems.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000296-0/SynchEntryContent.png"><br>
+
+
+
+
+
+
+### Synchronization status
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000296-0/Stati sinc. ENU.png"><br>
+
+
+- Enqueued: it means that the job queue still hasn't processed the record. It   can only occur for asynchronous synchronizations or with Local                 communication
+- Executed: it means that the synchronization of the record has been           successful
+
+- Failed: Synchronization failed
+
+- Retried: it means that the log has been executed again manually, but the     synchronization has failed
+
+- Processing: it means that the synchronization of the record is in progress
+
+- WaitingRemote: it means that the slave company doesn't respond. It can only   occur for asynchronous synchronizations or with Local communication
+
+- Ignored: it means that the record hasn't been processed. This can occur if   immediately another change has been done without saving the last entry.
+
+
+In Synchronization entries the flag "Last entry" identifies last entry related to a certain record and it's the one that will be synchronized. If this record has status Executed, it means that also all applied changes previously made can be considered successful, because the synchronization operation doesn't act on the modify of the punctual field, but on the whole record.
