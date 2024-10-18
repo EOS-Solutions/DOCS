@@ -18,7 +18,7 @@ Scheduled from "Inbound Document Setup". It does not require parameters, it only
 
 Report 18123040 Outbound Electr. Doc. Create/Send
 
-Schedulable from "Company Information - Electronic Document". It does not require string parameters, it only concerns the purchase invoices. It takes care of generating the xml file and sending it. The settings for any filters on the documents to be processed and whether to send / create files, can be configured via Report request page.
+Schedulable from "Company Information - Electronic Document". It does not require string parameters, it only concerns the sales invoices. It takes care of generating the xml file and sending it. The settings for any filters on the documents to be processed and whether to send / create files, can be configured via Report request page.
 
 18123057 EOS IXFE Job Queue
 
