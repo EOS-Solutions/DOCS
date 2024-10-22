@@ -1,6 +1,6 @@
-The warehouse pick feature has been implemented with the possibility of scanning with the "Pick & Pack" mode which allows the items to be placed on a handling unit at the same time as the items are picked which will then be assigned to the warehouse shipment associated with the pick. The Pick & Pack activity must be activated in the appropriate setup:
+In the documents, the possibility of activating the feature called Pick & Pack has been provided. The feature created for Picking, where it allows at the same time as the picking of the items to put them on a handling unit that will then be assigned to the linked warehouse shipment, has also been extended to other documents. The documents in which it can be activated are: Purchase Receipt, Warehouse Receipt, Put-away, Sales Shipment, Warehouse Shipment, Picking, Transfer Shipment, Purchase Return Shipment.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000823-0/PickPack1_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000823-0/PickPack6_ENU.png"><br>
 
 After activation in the power app, inside the pick, the new section called P&P appears where the user can add or create new handling units in Draft status. In this example, 2 handling units have been created, and the second one is the one in use.
 
