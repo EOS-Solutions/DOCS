@@ -16,16 +16,19 @@ Thanks to Eos Solutions Power WMS (WMS) app:
 -   Reduction of errors in the calculation of list prices and of any surcharges / options. The use of rules and relationships allows to sell to the end customer only what is expected by the company.
 -   Reduction of design department errors in creation of Production BOMs and Routings. The reconfiguration function also allows you to regenerate the configurations already created for an easy revision of Production BOMs.
 
-**Additional App**        
+**Additional Apps**        
 
-Install EX089.01 Power WMS for Handling Units in order to:
-Extend the Power WMS solution with handling unit management capabilities, which are managed across all major functionalities.
-In order to use the Power WMS for Handling Units App as a prerequisite in addition to the Power WMS app, you must have one or both of these apps:
-
--   EX030 Handling Units Management
--   EX055 Packing List
-
+-   **EX089.01 Power WMS for Handling Units**
+The EX089.01 Power WMS for Handling Units app extends the Power WMS solution with handling unit management capabilities, which are managed across all major functionalities. In order to use the Power WMS for Handling Units App as a prerequisite in addition to the Power WMS app, you must have one or both of these apps:
+EX030 Handling Units Management
+EX055 Packing List
 The EX030 and EX055 apps allow you to manage the handling units (pallets, boxes, etc.) to be assigned to documents in order to carry out shipments, receipts, picks, put away and warehouse entries.
+
+-   **EX089.02 Power WMS for Packing List**
+The EX089.02 Power WMS for Packing List app extends the Power WMS solution with the features of packing instructions, which are managed in all the main functionalities.
+
+-   **EX089.03 Power WMS for Over and Under Delivery**
+The EX089.083 Power WMS for Over and Under Delivery app extends Power WMS to the use of the OVR App functionalities.
 
 <br>
 <br>
