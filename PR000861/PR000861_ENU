@@ -1,7 +1,20 @@
 The EX089.02 Power WMS for Packing List app extends the Power WMS solution with the features of packing instructions, which are managed in all the main functionalities. In order to use the Power WMS App for Packing List as a prerequisite, in addition to the Power WMS App, the following apps are required:
 
-EX055 Packing List (Mandatory)
-EX030 Handling Units Management (Optional)
+* EX055 Packing List (Mandatory)
+* EX030 Handling Units Management (Optional)
+
+The features implemented are as follows:
+
+* Viewing/editing packaging instructions
+* Suggest Packaging Instructions
+
+The documents in which it can be activated are: Purchase Receipts, Warehouse Receipts, Sales Shipments, Warehouse Shipments, Transfer Shipment, Purchase Return Shipment.
+ 
+The suggest line function is the one used in Business Central. For items with tracking, it is advisable to evaluate the use of Business Central for the management / generation of the packing list or to evaluate custom actions that allow the generation of handling units with lots and serials.
+
+Some functions present in the Power WMS for Handling Units are also available according to the following scheme:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000861-0/EX089-PL1-ENU.png"><br>
 
 <br>
 <br>
