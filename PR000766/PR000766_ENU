@@ -1,5 +1,6 @@
-In all documents managed by the power app, it has been possible to assign previously created handling units. For example, in a sales order, from the Handling Unit section, I can assign the previously created handling units via barcode.
+In all documents managed by the power app, it has been possible to assign previously created handling units. The feature must be activated through the appropriate flag for each document (Users WMS). For example, in a sales order, from the Handling Unit section, I can assign the previously created handling units via barcode.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000766-0/EX089-HU14-ENU.png"><br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000766-0/EX089-HU11-ENU.png"><br>
 
 After saving, the handling unit is assigned to the document. The document can be recorded without further barcode scanning. The cancellation of an assigned HU can be done both from BC and from the Power app through the button:
