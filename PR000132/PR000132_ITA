@@ -19,16 +19,19 @@ Grazie alla app Power WMS (WMS) di Eos Solutions:
 * Ottimizzare le operazioni in entrata e in uscita (ricezione, prelievo, spedizione)
 * Riduce il rischio di errori nella gestione del tracking
 
-**App Aggiuntiva**        
+**App Aggiuntive**        
 
-Installa EX089.01 Power WMS for Handling Units per poter:
-
-Estendere la soluzione Power WMS con le funzionalità di gestione delle unità di carico, che vengono gestite in tutte le principali funzionalità. Per l’utilizzo dell’App Power WMS for Handling Units come prerequisito oltre all’app Power WMS è necessaria la presenza di una o entrambe queste app:
-
--   EX030 Handling Units Management
--   EX055 Packing List
-
+-   **EX089.01 Power WMS for Handling Units**
+L’app EX089.01 Power WMS for Handling Units estende la soluzione Power WMS con le funzionalità di gestione delle unità di carico, che vengono gestite in tutte le principali funzionalità. Per l’utilizzo dell’App Power WMS for Handling Units come prerequisito oltre all’app Power WMS è necessaria la presenza di una o entrambe queste app:
+EX030 Handling Units Management
+EX055 Packing List
 Le app EX030 e EX055 permettono di gestire le unità di carico (pallet, scatole, ecc.) da assegnare ai documenti per poter effettuare le spedizioni, carichi, prelievi, stoccaggi e movimentazioni warehouse.
+
+-   **EX089.02 Power WMS for Packing List**
+L’app EX089.02 Power WMS for Packing List estende la soluzione Power WMS con le funzionalità di gestione delle istruzioni di imballaggio, che vengono gestite in tutte le principali funzionalità.
+
+-   **EX089.03 Power WMS for Over and Under Delivery**
+L’app EX089.083 Power WMS for Over and Under Delivery estende il Power WMS all’utilizzo delle funzionalità dell’App OVR
 
 <br>
 <br>
