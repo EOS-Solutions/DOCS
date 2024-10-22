@@ -3,7 +3,7 @@ In questa pagina è possibile consultare tutte le informazioni relative agli agg
 | DATA | ARGOMENTO | DESCRIZIONE |
 | :---- | :---- | :---- |
 | **[14/03/24]({{<relref "fiscal-update-evs">}})** | EVS \- Electronic VAT Settlement For Italy | modifiche al modello di comunicazione delle liquidazioni periodiche, conosciuto come LIPE |
-| **[15/02/24]({{<relref "fiscal-update-ecu#15/02/24">}})** | ECU \- Withholding Tax Certificazioni Uniche For Italy | nuova versione dell’App ECU per recepire le modifiche effettuate dall’Agenzia delle Entrate nelle specifiche tecniche pubblicate il 15/01/2024 |
+| **[15/02/24]({{<relref "fiscal-update-ecu">}})** | ECU \- Withholding Tax Certificazioni Uniche For Italy | nuova versione dell’App ECU per recepire le modifiche effettuate dall’Agenzia delle Entrate nelle specifiche tecniche pubblicate il 15/01/2024 |
 | **[10/01/24]({{<relref "fiscal-update-bnk">}})** | BNK \- Bank Files for Italy | supporto nuovi tracciati CBI |
-| **[13/02/23]({{<relref "fiscal-update-ecu#13/02/23">}})** | ECU \- Withholding Tax Certificazioni Uniche For Italy | nuovi valori per campi std, nuovo codice somme esenti, migliorie |
+| **[13/02/23]({{<relref "fiscal-update-ecu">}})** | ECU \- Withholding Tax Certificazioni Uniche For Italy | nuovi valori per campi std, nuovo codice somme esenti, migliorie |
 | **[01/10/22]({{<relref "fiscal-update-fte">}})** | FTE \- Electronic Invoice For Italy | novità introdotte con il **nuovo tracciato 1.7.1** |
