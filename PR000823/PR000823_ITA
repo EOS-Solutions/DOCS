@@ -1,6 +1,6 @@
-Questa funzionalità permette di eseguire la scansione dei prelievi con la modalità denominata «Pick & Pack» che consente contestualmente al prelievo della merce di metterla su un unità di carico che verrà poi assegnata alla spedizione warehouse associata al prelievo. L’attività di Pick & Pack deve essere attività nell’apposito setup:
+Nei documenti è stata prevista la possibilità di attivare la gestione denominata Pick & Pack. La funzione nata per i Prelievi, dove consente contestualmente al prelievo della merce di metterla su un unità di carico che verrà poi assegnata alla spedizione warehouse collegata, è stata estesa anche agli altri documenti. I documenti in cui è attivabile sono: Carichi acquisto, Carichi Warehouse, Stoccaggi, Spedizioni Vendita, Spedizioni Warehouse, Prelievi, Spedizione trasferimento, Reso Acquisto.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000823-0/PickPack1_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000823-0/PickPack6_ITA.png"><br>
 
 Dopo l’attivazione nella power app, all’interno del prelievo, compare la nuova sezione Denominata P&P dove l’utente può aggiungere o creare delle nuove unità di carico in stato Bozza. Nell’esempio sono state create 2 unità di carico e la seconda è quella in uso.
 
