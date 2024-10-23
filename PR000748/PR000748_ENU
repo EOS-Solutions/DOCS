@@ -1,5 +1,5 @@
-Required tables allow to insert checks on records before making a status transaction through filters. This functionality is accessible from the Required Tables action on the page:
-* EDS Tables Setup -> Status Transactions -> Required Tables
+Tables Requirements allow to insert checks on records before making a status transaction through filters. This functionality is accessible from the Required Tables action on the page:
+* EDS Tables Setup -> Status Transactions -> Tables Requirements
 
      
 <br>
@@ -33,7 +33,7 @@ These controls can be implemented through conditions which can be of 2 types:
 <br>
 
 <br>
-For each row of the required tables, you can add relationships with the parent table that allow to relate the parent table with the table where you apply the filters
+For each row of the Tables Requirements, you can add relationships with the parent table that allow to relate the parent table with the table where you apply the filters
 <br>
 
 <br>
