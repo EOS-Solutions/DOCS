@@ -5,3 +5,5 @@ Before you can use the package management features in Gordon you need to define 
 - **Folder**: This provider reads packages from any file system folder. UNC paths and network shares are supported. Folders that require authentication are **not** supported.
 - **MS Apps**: This feed is essentially the same as the **NuGet** provider, but already uses the correct configuration to access the MS Apps feed.
 - **AppSourceSymbols**: This, similar to **MS Apps** is also just a **NuGet** provider with a specific configuration to access the AppSource symbols feed. Be aware that this package feed does not contain actual app packages, but only the symbols packages.
+
+The configuration of feeds (as well as any other configuration) is shared across all of three Gordon clients. That is: **Gordon UI**, **Gordon VS Code** and **Gordon PowerShell**. Any change you make in one client, is automatically available in all others.
