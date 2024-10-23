@@ -1,0 +1,11 @@
+Gordon chooses the package feeds to use based on the server you are connecting to. This means that you can have one set of package feeds for a **BC24** development environment and a different set of package feeds for a **BC25** development environment. 
+
+Gordon VS Code does this by using your `launch.config` to determine which target you are working with. This is essential, because the various package management related actions that are available in Gordon VS Code will be based on this concept.
+
+To choose which feeds you want to use with wich server, you can go to list of servers in Gordon and using the **Select Package Feeds** action you can select one or more feeds to be used with this target.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000870-0/gordon_vscode_03.png"><br>
+
+This will open the list of all available package feeds and you can select one or more that you want to use with this target server / service.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000870-0/gordon_vscode_04.png"><br>
