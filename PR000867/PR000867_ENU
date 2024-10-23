@@ -1,0 +1,7 @@
+Before you can use the package management features in Gordon you need to define your package feeds where you want Gordon to get the packages from. At the moment Gordon supports the following feed types
+
+- **NuGet**: Can be used for any Nuget (v3+) compatible package feed. This includes Azure Artifacts or any other provider. It supports various configuration parameters. By using it's default settings, this provider is fully compatible with the Microsoft Nuget AL package feeds.
+- **Proget / Inedo Upack**: If you are using Inedo Proget, you can opt to use it's [proprietary Upack format](https://docs.inedo.com/docs/proget/upack/upack-overview). This is not to be confused with "Universal Packages" on Azure Artifacts. The latter are **not** supported.
+- **Folder**: This provider reads packages from any file system folder. UNC paths and network shares are supported. Folders that require authentication are **not** supported.
+- **MS Apps**: This feed is essentially the same as the **NuGet** provider, but already uses the correct configuration to access the MS Apps feed.
+- **AppSourceSymbols**: This, similar to **MS Apps** is also just a **NuGet** provider with a specific configuration to access the AppSource symbols feed. Be aware that this package feed does not contain actual app packages, but only the symbols packages.
