@@ -1,0 +1,7 @@
+**Gordon for VS Code** is a VS Code extension that adds package management features for AL projects (and more) to your VS Code.
+
+The main features you get with Gordon for VS Code are:
+
+- Package management for AL projects (currently supported: Nuget, [Inedo Upack](https://docs.inedo.com/docs/proget/upack/upack-overview), Filesystem folders)
+- Minimal container management (start, stop, service list)
+- Build and deployment configurations
