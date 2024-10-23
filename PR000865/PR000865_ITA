@@ -1,0 +1,7 @@
+**Gordon for VS Code** è un'estensione di VS Code che aggiunge funzioni di gestione dei pacchetti per i progetti AL (e altro) al vostro VS Code.
+
+Le caratteristiche principali di Gordon per VS Code sono:
+
+- Gestione dei pacchetti per i progetti AL (attualmente supportati: Nuget, [Inedo Upack](https://docs.inedo.com/docs/proget/upack/upack-overview), cartelle del filesystem)
+- Gestione minima dei contenitori (avvio, arresto, elenco dei servizi)
+- Configurazioni di compilazione e distribuzione
