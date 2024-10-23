@@ -1,0 +1,14 @@
+{{% alert title="Warning" color="warning" %}}
+This function is only available if you have the **Gordon Service** installed on the target machine.
+{{% /alert %}}
+
+Gordon VS Code has an action **Restore Dependencies** that you can use to install all the required dependencies of your current project to a given BC service or environment.
+
+To execut this action you have two possibilities:
+
+1. You run the **Restore Dependencies (Project)** action from the command palette. Gordon will ask you for the target service you want to restore the depencies on. If you only have one configured, Gordon will automatically use this.
+2. From the list of target services, you can run the context action **Restore Dependencies (Project)** that will restore the dependencies for this selected target.
+
+Gordon will now look at your `app.json` and analyze all the dependencies that you have defined. It will then look at the service you selected and check which apps are installed and which are not.
+
+The missing dependencies Gordon will then try to download and install to the service by looking them up on the package manager.
