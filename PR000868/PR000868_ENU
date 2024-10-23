@@ -1,0 +1,15 @@
+To configure package feeds directly in VS Code, you can go - from the Gordon icon - to the "Package Feeds" entry.
+
+Click the **+** icon on the "Package Feeds" item to create a new feed.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000868-0/gordon_vscode_02.png"><br>
+
+This will create a new package feed and open it in the editor. The configuration is essentially a `.json` file. The following properties are common to all feeds:
+
+- **$schema**: This is the schema of the JSON file. Do not modify this. It is provided to allow intellisense in VS Code to work.
+- **Name**: Gives a unique name to the feed.
+- **Description**: Gives a description to the feed.
+- **Enabled** [Obsolete]: This exists for backwards compatibility only and can be ignored.
+- **ProviderName**: specifies the provider to be used for this feed.
+- **ProviderType** [Obsolete]: This exists for backwards compatibility only and can be ignored.
+- **Configuration**: the configuration for this package feeds. This objects depends on which package provider you choose. The schema is availble in **$schema** and VS Code will give you a hand in discovering the possible values and how to define them.
