@@ -1,4 +1,4 @@
-Tables Requirements allow to insert checks on records before making a status transaction through filters. This functionality is accessible from the Required Tables action on the page:
+Tables Requirements allow to insert checks on records before making a status transaction through filters. This functionality is accessible from the Tables Requirements action on the page:
 * EDS Tables Setup -> Status Transactions -> Tables Requirements
 
      
