@@ -1,5 +1,5 @@
-Mandatory tables allow to insert checks on records before making a status transaction through filters. This functionality is accessible from the Mandatory Tables action on the page:
-* EDS Tables Setup -> Status Transactions -> Mandatory Tables
+Required tables allow to insert checks on records before making a status transaction through filters. This functionality is accessible from the Required Tables action on the page:
+* EDS Tables Setup -> Status Transactions -> Required Tables
 
      
 <br>
@@ -7,36 +7,42 @@ Mandatory tables allow to insert checks on records before making a status transa
 <br>
 
 <br>
-<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ENU-EDS Status Transaction.png">
+<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ENU-EDS Required Tables Transaction.png"><br>
+<br>
+
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ENU-EDS Required Tables Setup.png"><br>
 <br>
      
 <br>
-These controls can be implemented through conditions which can be of 3 types:
+These controls can be implemented through conditions which can be of 2 types:
 <br>
 <br>
 
-|Filters|Behavior|
+|Condition|Behavior|
 |---|---|
-|Empty                     |Table must be empty, it's possible to set filters|
-|Not Empty                 |Table must not be empty, it's possible to set filters|
-|Father Field Filter       |Performs a comparison between a field in the selected table and a field in the father table by setting a formula
+|Not Exist                     |Table must be empty, it's possible to set filters|
+|Exist                 |Table must not be empty, it's possible to set filters|
 
 <br>
-<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ENU-EDS Mandatory Tables Conditions.png">
-<br>
-
-<br>
-<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ENU-EDS Mandatory Tables Filter.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ENU-EDS Required Tables Condition.png"><br>
 <br>
 
 <br>
-<img width="800" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ENU-EDS Mandatory Tables Father Field Filter.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ENU-EDS Required Tables Filter.png"><br>
 <br>
 
 <br>
-The checks are carried out individually one by one, the filters are not combined.
+For each row of the required tables, you can add relationships with the parent table that allow to relate the parent table with the table where you apply the filters
 <br>
 
 <br>
-For each row of the mandatory tables, preconditions can be added which will be verified before the check, if the result is negative then the check will not be carried out.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ENU-EDS Required Tables Parent Tables Relations.png"><br>
+<br>
+
+
+
+      
+
+
 
