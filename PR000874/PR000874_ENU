@@ -1,0 +1,11 @@
+Gordon allows you to add or update dependencies to a project. Because Gordon always uses the target service to decide which package manager to use, you have access to the dependencies from below your launch configuration:
+
+When you expand the **Dependencies** entry, you can see a list of all the dependencies currently in your project. You will also get an information if the given dependency is currently satisfied on the selected service and/or if there are updates to the given dependency available on the package manager.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000874-0/gordon_vscode_05.png"><br>
+
+- There is an **up arrow** icon: an update is available. You can right-click on the the dependency or expand the item to see the available versions and update your `app.json` with the selected version.
+- There is a **checkmark** icon: the requested dependency is already available and installed on the service
+- The item has a **(missing)** indicator: the dependency is not installed on the service or the installed version does not satisfy the requested version.
+
+After you are done modifying your dependencies, you can run **Restore Dependencies** to restore them to your service.
