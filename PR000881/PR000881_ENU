@@ -1,0 +1,20 @@
+Gordon have a consistent UI, some elements are the same in each pages
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000881-0/basic.png"><br>
+
+| **number** | **Description** |
+|------------|-----------------|
+|1|Toggle Dark/Light mode|
+|2|Open the Log|
+|3|Show the Help for the current page|
+|4|Export table as excel file|
+|5|Create a new Item (it will open a panel asking for the data)|
+|6|Will delte the Item|
+|7|Will edit the Item|
+|8|Toggle Search Filter and Toggle the sorting order |
+|9|When pages that are not the HomePage you will be able to navigate back|
+|10|Will open the GitHub repository for sending feedback/feature requests/issues|
+
+<br>
+**When you are in a card page, usually you will have at the bottom of the page the SAVE button**
