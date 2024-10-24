@@ -1,0 +1,12 @@
+You have two ways to update **Gordon**:
+
+### With the built-in Auto-Update
+When the app starts, it will automatically check if an update is available. 
+If so the program will ask you to install it or not. 
+
+By choosing "Yes" it will first download the update, then when it will be ready it will ask you to start the upgrade.
+After that the program will restart.
+
+
+### From the EOS Gordon Installer
+Same as the installation process
