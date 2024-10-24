@@ -1,0 +1,9 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000880-0/Feeds.png"><br>
+
+### Page Actions
+
+| **Name** | **Description** | **Page Action** | **Grid Action** |
+|----------|-----------------|-----------------|-----------------|
+|Show Apps|Will show the list of apps in the selected Feed|✅|❌|
+|Import Configuratio|Will ask you a ZIP file containing some feed configurations|✅|❌|
+|Export Configuration|Will export a ZIP file containing the selected Feed configurations|✅|❌|
