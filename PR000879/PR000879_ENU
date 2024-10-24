@@ -1,0 +1,35 @@
+Here you will able to manage Apps in a BC Service
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000879-0/AppManager.png"><br>
+
+### Header Fields
+
+1. **show**: define what to show in the List:
+	* Service Apps: The app installed or published in the service
+	* Feed Apps: The app Available in the selected Feed
+	* Update Available: The app installe in the service that can be updated from the selected feed
+2. **FeedName**: Choose which feed to use: Multiple can be selected
+3. **Hide MS Apps**: Will filter out all the apps that have "Microsoft" as publisher
+
+### App List
+
+This is the list of the apps. 
+
+### Page Actions
+
+| **Name** | **Description** | **Page Action** | **Grid Action** |
+|----------|-----------------|-----------------|-----------------|
+|Refresh|Will refresh the page|✅|❌|
+|Open Web Client|Will open the Web Client|✅|❌|
+|Copy as Dependencies|Will copy the selected app as Dependecy (for App.json)|✅|❌|
+|Install|Will install the selected app|✅|✅|
+|Install from File|Will ask you for an .app file to install|✅|❌|
+|Publish|Will Publish the selected app|✅|✅|
+|Publish from File|Will ask you for an .app file to publish|✅|❌|
+|Uninstall|Will Uninstall the selected app|✅|✅|
+|Uninstall (Delete Data)|Will Uninstall and deleting all the data of the selected app|✅|❌|
+|Unpublish|Will unpublish the selected app|✅|✅|
+|Unpublish (Delete Data)|Will Unpublish and deleting all the data of the selected app|✅|✅|
+|Synch (synchronize)|Will synchronize the selected app|✅|❌|
+|Synch (ForceSynch)|Will synchronize with Force (will delete data if table schema has changed) the selected app|✅|❌|
+|Synch (Clean)|Will synchronize (BUT ALL THE DATA WILL BE DELETED) the selected app|✅|❌|
