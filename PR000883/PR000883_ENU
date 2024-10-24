@@ -1,0 +1,23 @@
+This page will contain some settings for the Gordon App
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000883-0/Settings.png"><br>
+
+| **Field Name** | **Description** |
+|----------------|-----------------|
+|Show AppManager advanced options|If enabled will show in the app manager the dependecy resolution mode|
+|Reduce to TrayIcon|if enabled, the app will not close but will be reduced to the tray icon|
+|Show Preview Features|will show in the menu the Preview Features (that are still in beta)|
+|Use Powershell 7 to run scripts|When executing powershell scripts, choose to use Powershell 7 or Powershell 5|
+|Docker Host|If you are using a different docker host, use this field to change it (usually it is empty)|
+|||
+|**CONTAINER WIZARD DEFAULTS**|all this settings are related ONLY for the container wizard|
+|Default License Path|Where to get the license|
+|Generate Container Name|if true it will generate the container Name based of Version and Country|
+|Default Container Username|default username when using NavUserPassword|
+|Default Container Password|default password when using NavUserPassword|
+|Default Container DB Server|default DB Server when using External SQL Database|
+|Default Container DB Instance|default DB Instance when using External SQL Database|
+|Default Container DB Name|default DB Name when using External SQL Database|
+|Default Container DB Username|default DB Username when using External SQL Database|
+|Default Container DB Password|default DB Password when using External SQL Database|
+|Default Container Bak File|default bak file location when using a Custom DB|
