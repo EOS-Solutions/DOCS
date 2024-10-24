@@ -1,0 +1,33 @@
+### Servers
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000877-0/servers.png"><br>
+
+By clicking on the Server Name, it will open the list of BC Services
+
+### Page Actions
+
+| **Name** | **Description** | **Page Action** | **Grid Action** |
+|----------|-----------------|-----------------|-----------------|
+|Services|Will open the list of BC services of the selecte server|✅|❌|
+
+
+### Services
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000877-0/services.png"><br>
+
+By clicking on the Service Name, it will open the App Manager Page
+
+### Page Actions
+
+| **Name** | **Description** | **Page Action** | **Grid Action** |
+|----------|-----------------|-----------------|-----------------|
+|Apps|Will open the App Manager page for the selected service|✅|✅|
+|Select Feed|You will be able to select the default feeds for the selected service|✅|✅|
+|Active Session|You will see the BC Active Sessions for the selected service|✅|❌|
+|Service Configuration|Will open the BC Service configuration Page|✅|✅|
+|Refresh|Will refresh the page|✅|❌|
+|Start Service|Will start the selected BC Service|✅|✅|
+|Stop Service|Will stop the selected BC Service|✅|✅|
+|Restart Service|Will restart the selected BC Service|✅|✅|
+|Upload License|Will Upload the License in the selected BC Service|✅|✅|
+|Show License|Will show the License in the selected BC Service|✅|✅|
+|Open Web Client|Will open the Web Client|✅|✅|
