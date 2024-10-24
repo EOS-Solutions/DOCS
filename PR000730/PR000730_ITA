@@ -4,7 +4,7 @@ In base al ciclo di vita delle applicazioni (ALM) previsto da EOS Solutions per 
 | **Versione**                                                                                                             | **Tipo assistenza**                                                                                                                     |
 |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Ultima e penultima major: per tutti i cumulative update | -\> Risoluzione di bugfix, piccole migliorie/modifiche, change request, nuovi eventi e supporto alle personalizzazioni e fiscal updates |
-| Terz’ultima major: SOLO per ultimo cumulative update disponibile                                                         | -\> Risoluzione di bugfix                                                                                                               |
+| Terz’ultima major: SOLO per ultimo cumulative update disponibile                                                         | -\> Risoluzione di bugfix e fiscal updates                                                                                                               |
 | BC14 (Cumulative update 33)                                                                                              | -\> Risoluzione di bugfix e fiscal updates                                                                                              |
 
 Ad esempio, **dal 1 Aprile 2024:**
