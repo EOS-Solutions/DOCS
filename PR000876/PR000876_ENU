@@ -1,0 +1,23 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000876-0/Docker.png"><br>
+
+By clicking on the Container Name, you will open the AppManager of the Docker Service
+
+### Page Actions
+
+| **Name** | **Description** | **Page Action** | **Grid Action** |
+|----------|-----------------|-----------------|-----------------|
+|Start Container|Will start the selected container|✅|✅|
+|Stop Container|Will stop the selected container|✅|✅|
+|Remove Container|Will remove the selected container|✅|❌|
+|Select Feed|You will be able to select the default feeds for the selected container|✅|✅|
+|Apps|Will open the App Manager page for the selected container|✅|✅|
+|Active Session|You will see the BC Active Sessions for the selected container|✅|❌|
+|Refresh|Will refresh the page|✅|❌|
+|Start Service|Will start the selected container BC Service|✅|❌|
+|Stop Service|Will stop the selected container BC Service|✅|❌|
+|Restart Service|Will restart the selected container BC Service|✅|❌|
+|Upload License|Will Upload the License in the selected container BC Service|✅|✅|
+|Show License|Will show the License in the selected container BC Service|✅|✅|
+|Service Configuration|Will open the BC Service configuration Page|✅|✅|
+|Services|Will open the list of BC Services|✅|✅|
+|Open Web Client|Will open the Web Client|❌|✅|
