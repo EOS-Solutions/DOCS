@@ -1,0 +1,8 @@
+**Gordon** is a tool that specializes in managing and configuring Business Central Environments.
+
+With Gordon you can: 
+* Manage Apps on BC Services: Install, Uninstall, Publish, Synch
+* Manage Docker containers: Start, Stop, Delete, Create
+* Manage BC services: Edit config, Import License, Start & Stop
+
+And you can do it all without using Powershell! 
