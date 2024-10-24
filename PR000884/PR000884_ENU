@@ -1,0 +1,5 @@
+This is a simple wizard that help you create (and run) the script for generating a new BC Container. 
+
+The script will use BcContainerHelper from Microsoft.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000884-0/ContainerWizard.png"><br>
