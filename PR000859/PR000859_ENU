@@ -1,4 +1,4 @@
-Last synchronization logs towards a slave company have all status 'Waiting remote"; what to do?
+**Last synchronization logs towards a slave company have all status 'Waiting remote"; what to do?**
 
 Probably an error in job queues of the master or slave company  occurred, so we suggest to execute the following steps, in this order:
 
