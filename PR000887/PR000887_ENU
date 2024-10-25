@@ -1,0 +1,22 @@
+The **FID – Factoring and Invoice discounting** App allows the management of processes related to forms of corporate financing through factoring tools (both pro soluto and pro solvendo) and invoice discountings.
+
+### Factoring
+Factoring is the contract with which a company assigns its trade receivables to a factoring company (Factor) in order to immediately obtain liquidity and a series of services related to the management of the assigned credit: their management and administration, collection and discounting of the credits before their due date. The assignment of the credit must be notified to the debtor who must accept it.
+The following types of factoring are distinguished based on the subject on whom the risk of insolvency falls.
+* Pro soluto: The factor assumes the risk of insolvency of the assigned credits.
+The factoring company purchases the credits without the right of recourse in the event of default by the seller. The factoring company takes on the risk that the debtor does not pay.
+* Pro solvendo: the risk of any insolvency of the assigned credits remains with the customer company. The factoring company purchases the credits with the right of recourse in the event of default by the debtor.
+
+### Invoice discounting
+
+Invoice discounting is a type of financing through which the company asks its bank to discounting the payment of invoices already issued but not yet collected.
+There are two different types of invoice discounting, depending on whether the burden of proceeding with collection remains with the company or is taken over by the bank.
+* In the first case, we speak of a collection mandate, therefore the company will take care of collecting the debt of the debtor. The sum is generally paid into the company current account and the bank will retain the money that it has already discountingd to the company, in addition to the agreed interest.
+* When, on the other hand, it is the bank that takes care of collection, it is a real assignment of the credit. This assignment may or may not be notified to the debtor.
+
+### Factoring and invoice discounting - SUMMARY
+
+The main functions of the app can be searched with the acronym **FID**
+To view the list of functions, press ALT + Q and type **FID**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000887-0/1_FID-en.png"><br>
