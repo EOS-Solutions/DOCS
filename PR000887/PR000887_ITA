@@ -1,0 +1,22 @@
+L’App **FID – Factoring ed Anticipo fatture** consente la gestione dei processi relativi alle forme di finanziamento aziendale tramite gli strumenti del factoring (sia pro soluto che pro solvendo) e dell’anticipo fatture.
+
+### Factoring
+Il factoring è il contratto con il quale un’azienda cede ad una società di factoring (Factor) i propri crediti commerciali al fine di ottenere subito liquidità e una serie di servizi correlati alla gestione del credito ceduto: la loro gestione e amministrazione, l’incasso e l’anticipazione dei crediti prima della loro scadenza. La cessione del credito deve essere notificata al debitore che deve accettarla.
+Si distinguono le seguenti tipologie di factoring in base al soggetto su cui ricade il  rischio di insolvenza.
+* Pro soluto: Il factor si assume il rischio di insolvenza dei crediti ceduti.
+La società di factoring acquista i crediti senza diritto di rivalsa in caso di inadempimento del venditore. La società di factoring si accolla il rischio che il debitore non paghi.
+* Pro solvendo: il rischio dell’eventuale insolvenza dei crediti ceduti rimane in campo all’azienda cliente. La società di factoring acquista i crediti con diritto di rivalsa in caso di inadempimento del debitore.
+
+### Anticipo fatture
+
+L’anticipo fatture è un tipo di finanziamento mediante il quale l’impresa chiede alla propria banca di anticipare il pagamento di fatture già emesse ma non ancora incassate.
+Si possono distinguere due diverse tipologie di anticipo fatture, in funzione del fatto che l’onere di procedere alla riscossione rimanga all’impresa o sia preso in carico dalla banca.
+* Nel primo caso si parla di mandato all’incasso, sarà quindi l’impresa ad occuparsi della riscossione del debito del debitore. La somma in genere viene versata sul conto corrente aziendale e la banca tratterà il denaro che ha già anticipato all’impresa, oltre agli interessi pattuiti.
+* Quando invece è la banca a occuparsi della riscossione, si configura una vera e propria cessione del credito. Tale cessione può essere o meno notificata al debitore. 
+
+### Factoring and invoice discounting - SOMMARIO
+
+Le principali funzioni dell’app sono ricercabili con l’acronimo **FID**
+Per visualizzare l’elenco delle funzionalità premere ALT + Q e digitare **FID**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000887-0/1_FID.png"><br>
