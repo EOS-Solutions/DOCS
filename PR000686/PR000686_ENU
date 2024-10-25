@@ -12,7 +12,7 @@ It is only possible to modify a contract if it is in the "Under Development" sta
 - **Description**:	free description
 - **Value Type**: specifies in what form the bonus is paid
 - **Value (% o LCY)**: enter amounts / percentages related to the Value Type indicated or the threshold ranges based on the valued Threshold Type
-- **Entry Amount Distribution**: This field specifies the amounts on bonus ledger entries are distributed.
+- **Entry Amount Distribution**: This field specifies the amounts on bonus ledger entries are distributed. If the value of this field is changed, the next calculation of this line will be a complete calculation, even if _incremental_ is chosen.
 	- **Proportional**: This is the default setting. After the bonus amount for a given line have been calculated, that amount is then distributed across all related lines based on the base amount of the entry.
 	- **Actual Value**: This is only available for lines where **Value Type** is either a quantity or net weight. This will apply **Value** to the actual quantity or net weight of the single entry.
 - **Base Calculation**: indicates the basic calculation logic of the premium / bonus
