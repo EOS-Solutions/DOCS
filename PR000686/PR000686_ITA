@@ -13,6 +13,9 @@ Vediamone i campi principali
 - **Descrizione**: descrizione libera
 - **Tipo valore**: specifica in che forma viene riconosciuto il bonus
 - **Valore (% o VL)**: inserire importi / percentuali correlate al Tipo valore indicato oppure i range delle soglie sulla base del Tipo soglia valorizzato
+- **Distribuzione importo movimenti**: Questo campo specifica la distribuzione degli importi dei movimenti bonus.
+  - **Proporzionale**: È l'impostazione predefinita. Dopo aver calcolato l'importo del bonus per una determinata riga, tale importo viene distribuito su tutte le righe correlate in base all'importo di base del singolo movimento.
+	- **Valore effettivo**: È disponibile solo per le righe in cui il **Tipo valore** è una quantità o un peso netto. Applicherà **Valore** alla quantità o al peso netto effettivo del singolo movimento.
 - **Calcolo base**: indica la logica di calcolo base del premio / bonus
   - Valore periodo: in base alla data inizio e data fine
   - Diff. Valore periodo confronto soglia: riconoscimento percentuale o a importo fisso in base alle soglie indicate nel campo Valore (% o VL)
