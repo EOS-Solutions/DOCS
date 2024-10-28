@@ -1,21 +1,25 @@
-Al fine di poter utilizzare la funzione "Suggerisci riga per imballaggio" ä necessario compilare un setup in "Istruzioni per l'imballaggio":
+Al fine di poter utilizzare la funzione "Suggerisci riga per imballaggio" √® necessario compilare un setup in "Istruzioni per l'imballaggio":
 
 Tale setup fornisce al sistema le informazioni per creare il packaging per ogni diverso articolo:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000560-0/EX055_Setup Instructions_ITA_IMG1.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000560-0/EX055-PL-01-ITA.png"><br>
+<br>
 
 |**Campo**|**Descrizione**|
 |:---|:---|
-|Nr.|numero della riga di setup|
-|Disabilitato|si puï abilitare o disabilitare la riga una volta creata|
-|PrioritÖ|ä possibile assegnare una prioritÖ alla riga indicando dei valori numerici. Il pió alto ha prioritÖ massima.|
-|Codice categoria articolo / Nr. articolo / Cod. variante|indicare l'articolo ed eventualmente la categoria e la variante|
-|Cod. unitÖ di misura|specifica l'unitÖ di misura dell'articolo|
-|Tipo origine|ä possibile scegliere tra Cliente / Fornitore /Agente ed eventualmente selezionare un Numero e una Cat. registrazione|
-|Default|specificare l'istruzione come predefinita per la combinazione articolo e origine |
-|Nr. materiale di imballaggio|inserire il materiale di imballaggio usato per l'imballaggio dell'articolo. |
-|Nr. portacarico|inserire il portacarico usato per l'imballaggio dell'articolo. |
-|QuantitÖ|indicare la quantitÖ di riempimento|
-|Nr. di strati / QtÖ. per strato|se pió imballaggi possono essere impilati indicare gli strati e la quantitÖ per ciascuno|
-|Obbligatorio|quando ä impostato, ä necessario specificare un imballaggio nel documento di spedizione|
-|Cod. tipo UdC|specifica il tipo unitÖ di carico|
+|Nr.|Nr. istruzione di imballaggio.|
+|Disabilitato|Si pu√≤ abilitare o disabilitare la riga una volta creata|
+|Priorit√†|E' possibile assegnare una priorit√† alla riga indicando dei valori numerici. Il pi√π alto ha priorit√† massima.|
+|Codice categoria articolo / Nr. articolo / Cod. variante|Indicare l'articolo ed eventualmente la categoria e la variante|
+|Cod. unit√† di misura|Specifica l'unit√† di misura dell'articolo|
+|Tipo origine|E' possibile scegliere tra Cliente / Fornitore /Agente ed eventualmente selezionare un Numero e una Cat. registrazione|
+|Default|Specificare l'istruzione come predefinita per la combinazione articolo e origine |
+|Nr. materiale di imballaggio|inserire il materiale di imballaggio usato per l'imballaggio dell'articolo.|
+|Nr. portacarico|Inserire il portacarico usato per l'imballaggio dell'articolo.|
+|Quantit√†|Quantit√† per materiale di imballaggio (ad esempio 20 pz per scatola). Se l'istruzione non prevede un materiale di imballaggio ma solo un portacarico si intende quantit√† per portacarico.|
+|Nr. di strati|Nr. di strati con cui vengono disposti i materiali di imballaggio all'interno del portacarico. Se l'istruzione non contiene un materiale di imballaggio indica il numero di strati con cui vengono disposti gli articoli nel portacarico.|
+|Qt√†. per strato|Quantit√† del materiale di imballaggio per ogni strato del portacarico. Da utilizzare solo se l'istruzione prevede sia un materiale di imballaggio che un portacarico, in caso contrario impostare 1.|
+|Suggerisci unit√† di carico|Specifica quali unit√† di carico vengono create durante il suggerimento della Packing List per questa istruzione. I valori ammessi sono: **Entrambi**, **Imballaggi**, **Portacarichi**.|
+|Codice unit√† di misura secondaria|Specifica un'unit√† di misura secondaria calcolata in aggiunta alle quantit√† predefinite.|
+|Fattore unit√† di misura secondaria|Specifica un fattore di unit√† di misura secondario calcolato in aggiunta alle quantit√† predefinite.|
+|Obbligatorio|quando √® impostato, √® necessario specificare un imballaggio nel documento di spedizione|
