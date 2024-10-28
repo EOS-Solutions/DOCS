@@ -7,3 +7,6 @@ Eos Solutions Packing List (PCK) app, allows the creation of a packing list conn
 * Transfer Orders
 * Return Shipments
 * Warehouse Receipts
+
+The app can be used alone or in combination with the **EX030 Handling Units Management** app.
+If used alone, it does not allow all the handling units movements (for example put-away, pick, reclassification, Item Journals, etc.).
