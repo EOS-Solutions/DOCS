@@ -71,7 +71,7 @@ La scheda utente contiene i seguenti campi:
 
 Per ognuna delle attività è inoltre possibile definire i campi che vengono visualizzati. All’interno della scheda attività ci sono tre azioni che consentono di definire l’elenco dei campi.
 
-Gestire i campi personalizzati sottoscrivendosi all’evento **OnManageUserActivityField** nella codeunit **18060025 “EOS089 WMS User Activity Mgmt.”**
+Gestire i campi personalizzati sottoscrivendosi all’evento **OnManageUserActivityField** nella codeunit **18060025 EOS089 WMS User Activity Mgmt.**
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000141-0/EX089-User1-ITA.png"><br>
 
