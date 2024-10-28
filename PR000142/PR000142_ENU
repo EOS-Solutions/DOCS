@@ -1,28 +1,30 @@
 A configuration table called Scanner Setup is provided, which allows you to define the various methods of managing the "barcodes" to be requested from the operator during the activity declaration phase. The types are Linear, Sequential, Positional, Different Separators, Custom.
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex089/setup scanner/EX089-ScannerLinear-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex089/setup scanner/EX089-ScannerLinear-ENU.png"><br>
 
 Linear allows you to select the elements that make up the single barcode in addition to the separator character. For example, by selecting Item ID, Tracking, and Quantity with separator character | The Power App will accept barcodes of this format ITEM001|LOT001|10.
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex089/setup scanner/EX089-ScannerSeq-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex089/setup scanner/EX089-ScannerSeq-ENU.png"><br>
 
 Sequential allows you to define what information should be requested from the operator and in what order. In the specific example, the operator will be asked for 3 barcodes: the first contains the item identifier, the second the traceability code and the third the quantity.
 
 One of the components of the barcode is the Item ID field. By Item ID we mean not only the item code but the set of its references:
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex089/setup scanner/EX089-ItemRef-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex089/setup scanner/EX089-ItemRef-ENU.png"><br>
 
 Positional which provides for a single barcode and the elements are identified by defining their sequence and maximum length.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000142-0/EX089-ScanPos-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000142-0/EX089-ScanPos-ENU.png"><br>
 
 Different Separator similar to linear but with the ability to define different types of identifiers/separators and their position (e.g. it can be used for ENA128). N.B. Replace Instance is used to indicate whether it should break at the first or last occurrence of the separator found in the string.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000142-0/EX089-ScanSep-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000142-0/EX089-ScanSep-ENU.png"><br>
 
 Custom managed via custom in Business Central.
+Sample source code available on EOS Sample.
+You must extend enum **EOS089 WMS Barcode Type** and implement interface **EOS089 WMS Custom Barcode Int.**
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000142-0/EX089-ScanCus-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000142-0/EX089-ScanCus-ENU.png"><br>
 
 
 <br>
