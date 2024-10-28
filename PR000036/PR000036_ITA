@@ -7,3 +7,9 @@ La app Packing List di Eos Solutions consente di creare una lista di imballaggio
 * Ordini trasferimento
 * Ordini di reso
 * Ricezioni warehouse
+
+
+L'app può essere usata da sola o in combinata con l'app **EX030 Handling Units Management**.
+Se utilizzata da sola non consente tutte le operazioni di movimentazione delle unità di carico (ad esempio stoccaggi, prelievi, riclassificazioni, registrazioni emagazzino ecc).
+
+
