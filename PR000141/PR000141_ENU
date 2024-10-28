@@ -70,6 +70,9 @@ The user card contains the following fields:
 
 For each activities, you can also define the fields that are displayed. In the activity card, there are three actions that allow to define the list of fields.
 
+Manage custom fields with a subsctiption to **OnManageUserActivityField** event in codeunit **18060025 “EOS089 WMS User Activity Mgmt.”**
+
+
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000141-0/EX089-User1-ENU.png"><br>
 
 List Fields 1 contains the fields displayed in the document lists.
