@@ -1,6 +1,6 @@
 La pagina permette di inserire per ognuna delle attività gestite nella Power App una serie di Azioni custom. Le azioni vengono poi visualizzate nell’apposita sezione dell’attività. Vengono previsti in business central degli appositi eventi a cui agganciarsi per realizzare l’azione (tramite codice AL).
 
-Gestire le azioni sottoscrivendosi all’evento **OnExecuteActivityAction** nella codeunit **18060020 “EOS089 WMS Activity Task Mgmt.”**
+Gestire le azioni sottoscrivendosi all’evento **OnExecuteActivityAction** nella codeunit **18060020 EOS089 WMS Activity Task Mgmt.**
 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp12-ITA.png"><br>
