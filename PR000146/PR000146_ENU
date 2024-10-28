@@ -1,10 +1,14 @@
-# Activity Actions
-
 The page allows you to enter a series of custom Actions for each of the activities managed in the Power App. The actions are then displayed in the appropriate section of the activity in Power WMS. In Business Central, there are events that you can subscribe to in order to create the feature (via AL code).
+Manage actions with a subscription to **OnExecuteActivityAction** event in codeunit 
+**18060020 “EOS089 WMS Activity Task Mgmt.”**
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000146-0/EX089-PowerApp12-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp12-ENU.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000146-0/EX089-PowerApp13-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp13-ENU.png"><br>
+
+<br>
+<br>
+     
 
 
 
