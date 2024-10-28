@@ -1,19 +1,25 @@
 In order to use the "Suggest Line For Packing" function, you must fill in a setup in "Packaging Instructions". This setup provides the system with the information to create the packaging for each different item:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000560-0/EX055_Setup Instructions_ENU_IMG1.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000560-0/EX055-PL-01-ENU.png"><br>
+<br>
+
 
 |**Field**|**Description**|
 |:---|:---|
-|No.	record number|
-|Disabled	you can enable or disable the row after creation|
-|Priority	You can prioritize the row by indicating numeric values. The highest has top priority.|
-|Item Category Code / Item No. / Variant Code	indicate the article and possibly the category and variant|
-|Unit of Measure Code	Insert the unit of measure of the packed item, f.e. box|
-|Source Type	you can choose between Customer/ Vendor /Salesperson and optionally select a Number and a Posting Group|
-|Default	Specify the instruction as default for the item and source combination.|
-|Packaging Material No.	 Insert the packaging material used to pack the item.|
-|Load Carrier No.	 Insert the load carrier used to pack the item.|
-|Qty. per Packaging Material	Filling quantity |
-|No. of Layers / Qty. per Layer	 No. of layers / packages if more packagings could be stacked|
-|Mandatory	When set, then a packaging must be specified on the shipment|
-|HU Type Code	 Specify the handling unit type.|
+|No.|Packaging instructions No.|
+|Disabled|You can enable or disable the row after creation.|
+|Priority|You can prioritize the row by indicating numeric values. The highest has top priority.|
+|Item Category Code / Item No. / Variant Code|Indicate the item or the item category code or item variant.|
+|Unit of Measure Code|Insert the unit of measure of the packed item, f.e. box.|
+|Source Type|You can choose between Customer/ Vendor /Salesperson and optionally select a Number and a Posting Group.|
+|Default|Specify the instruction as default for the item and source combination.|
+|Packaging Material No.|Insert the packaging material used to pack the item.|
+|Load Carrier No.|Insert the load carrier used to pack the item.|
+|Qty. per Packaging Material|Quantity per packaging material (e.g. 20 pcs per box). If the instruction does not specify a packaging material but only a load carrier, the quantity per load carrier is intended.|
+|No. of Layers|Number of layers in which the packaging materials are arranged inside the load carrier. If the instruction does not contain a packaging material, indicate the number of layers in which the items are arranged in the load carrier.|
+|Qty. per Layer|Number of packaging material for each layer of the load carrier. Use only if the instruction contains both packaging material and a load carrier, otherwise set to 1.|
+|Suggest handling units|Specifies which handling units are created during suggestion of the packing list for this instruction.|
+|Secondary unit of measure code|Specifies a secondary unit of measure that is calculated in addition to the default quantities.|
+|Secondary unit of measure factor|Specifies a secondary unit of measure factor that is calculated in addition to the default quantities.|
+|Mandatory|When set, then a packaging must be specified on the shipment|
+
