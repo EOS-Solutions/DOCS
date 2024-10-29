@@ -1,0 +1,15 @@
+|**Campo**|**Descrizione**|
+|:---|:---|
+|Calcolo istruzioni per l'imballaggio|Impostare l'implementazione del motore di calcolo dell'imballaggio. Il campo può essere esteso per realizzare un calcolo personalizzato.|
+|Criteri di controllo giacenza|Indica il modo in cui vengono eseguiti i controlli di giacenza UdC durante la registrazione di movimenti articolo. Se si utilizza la sola app Packing List è oppurtuno impostarlo a Nessuno.|
+|Suggerimento Packing List|Specifica come e se è possibile selezionare diversi metodi di suggerimento quando si suggerisce una Packing List. Si consiglia dim impostare il valore Fisso. Il valore Legacy è il precedente metodo di calcolo.|
+|Calcolo suggerimento Packing List|Specifica il metodo di suggerimento della Packing List. Questo è applicabile solo se 'Suggerimento Packing List' è "Fisso". Il campo può essere esteso per realizzare un calcolo personalizzato.|
+|Abilita Assegnazione Packing List per Riga Origine|Abilita le assegnazioni sulla Packing List per la riga origine selezionata.|
+|Nr. report packing list|Specifica il valore del campo "Nr. report packing list".|
+|Calcolo peso|Specifica il metodo di calcolo da utilizzare per i pesi totali; ad esempio, se il peso totale deve includere il contenuto e il contenitore, o solo il peso del contenitore nel caso in cui il contenuto sia già caricato quando viene pesato.|
+|Direzione Arrotondamento|Direzione Arrotondamento della quantità nella Packing List suggerita.|
+|Fattore di conversione|Il volume articolo verrà diviso per questo valore per ottenere la conversione in metri cubi (m³).|
+|Precisione arrotondamento|Il volume articolo verrà arrotondato per questo valore decimale; ad esempio, il valore 0,001 specifica tre cifre decimali. Il valore predefinito è cinque cifre decimali.|
+|Nr. serie materiale di imballaggio.|Inserire il nr. di serie di default per i materiali di imballaggio.|
+|Nr. serie istruzioni per l'imballaggio|Inserire il nr. di serie di default per le istruzioni per l'imballaggio.|
+****
