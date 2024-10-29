@@ -23,3 +23,24 @@ Tale setup fornisce al sistema le informazioni per creare il packaging per ogni 
 |Codice unità di misura secondaria|Specifica un'unità di misura secondaria calcolata in aggiunta alle quantità predefinite.|
 |Fattore unità di misura secondaria|Specifica un fattore di unità di misura secondario calcolato in aggiunta alle quantità predefinite.|
 |Obbligatorio|quando è impostato, è necessario specificare un imballaggio nel documento di spedizione|
+
+
+Ad esempio inserendo una riga ordine per l'articolo 1000 con quantità 20 con le seguenti istruzioni di carico:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000560-0/EX055-PL-02-ITA.png"><br>
+
+* Materiale di imballaggio BOX01.
+* Portacarico PALLET01.
+* Quantità 4. Significa che in ogni BOX01 ci sono 4 unità dell'articolo 1000.
+* Nr. di strati 2. Nel portacarico PALLET01 vengono previsti due strati.
+* Qtà per strato 2. Significa che per ogni strato sono previste 2 BOX01. Per un totale di 4 BOX01. 
+
+Ottengo il seguente calcolo del Packing List:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000560-0/EX055-PL-03-ITA.png"><br>
+
+* 2 PALLET01.
+* 5 BOX01.
+* 20 unità dell'articolo 1000.
+* il primo PALLET01 è completo e quindi contiene 4 BOX01 e 16 unità dell'articolo 1000.
+* Il secondo PALLET01 invece contiene il resto e cioè 1 BOX01 con 4 unità dell'articolo 1000.
