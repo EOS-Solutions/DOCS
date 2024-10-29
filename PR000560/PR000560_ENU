@@ -23,3 +23,23 @@ In order to use the "Suggest Line For Packing" function, you must fill in a setu
 |Secondary unit of measure factor|Specifies a secondary unit of measure factor that is calculated in addition to the default quantities.|
 |Mandatory|When set, then a packaging must be specified on the shipment|
 
+
+For example, entering a sales line for item 1000 with quantity 20 with the following packaging instructions:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000560-0/EX055-PL-02-ENU.png"><br>
+
+* Packaging material BOX01.
+* Load carrier PALLET01.
+* Quantity 4. This means that in each BOX01 there are 4 units of item 1000.
+* Nr. of layers 2. Load carrier PALLET01 has two layers.
+* Quantity for layer 2. That means that for each layer there are 2 BOX01. for a total of 4 BOX01. 
+
+I get the following packing list calculation:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000560-0/EX055-PL-03-ENU.png"><br>
+
+* 2 PALLET01.
+* 5 BOX01.
+* 20 units of item 1000.
+* The first PALLET01 is complete and therefore contains 4 BOX01 and 16 units of item 1000.
+* The second PALLET01 instead contains the remaining, that is 1 BOX01 with 4 units of item 1000.
