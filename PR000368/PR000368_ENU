@@ -37,7 +37,8 @@ During the extraction phase we can indicate a cost adjustment percentage which w
 
 The declaration lines are retrieved from the posted document lines: Purchase invoices, Purchase credit memos, Sales invoices, Sales credit memos, Service invoices, Service credit memos
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000368-0/25AdvIntrastatForItaly-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000368-0/INTRA tipi ENU.png"><br>
+
 
 The proposed lines can then be modified manually and possibly excluded from the declaration using the appropriate flag.
 
