@@ -1,43 +1,43 @@
-Creazione del conto contabile (SP) da utilizzare come conto anticipi dedicato (possono essere utilizzati anche pi— conti in base alle esigenze del cliente).
+Creazione del conto contabile (SP) da utilizzare come conto anticipi dedicato (possono essere utilizzati anche piÃ¹ conti in base alle esigenze del cliente).
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/2InvoicingPlan-ITA.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/2InvoicingPlan-ITA.jpg"><br>
 
-Dalla ricerca di BC Š possibile verificare ed eventualmente personalizzare il setup dei numeri di serie di default dei
+Dalla ricerca di BC Ã¨ possibile verificare ed eventualmente personalizzare il setup dei numeri di serie di default dei
 
 * Piani di fatturazione
 
 * Modelli dei piani di fatturazione
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/3InvoicingPlan-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/3InvoicingPlan-ITA.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/4InvoicingPlan-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/4InvoicingPlan-ITA.png"><br>
 
-NellÂapp IPL a livello di setup, Š possibile gestire i **"Template dei piani di fatturazione"**: modelli configurabili e richiamabili a livello di singolo piano di fatturazione specifico, utili a semplificare lÂinserimento e la gestione per ordine.
+Nellâ€™app IPL a livello di setup, Ã¨ possibile gestire i **"Template dei piani di fatturazione"**: modelli configurabili e richiamabili a livello di singolo piano di fatturazione specifico, utili a semplificare lâ€™inserimento e la gestione per ordine.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/5InvoicingPlan-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/5InvoicingPlan-ITA.png"><br>
 
 **Lista dei template dei piani di fatturazione:**
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/6InvoicingPlan-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/6InvoicingPlan-ITA.png"><br>
 
-Il template del piano di fatturazione Š suddiviso in testata e righe.
+Il template del piano di fatturazione Ã¨ suddiviso in testata e righe.
 
-Nella **TESTATA** Š possibile inserire le seguenti informazioni:
+Nella **TESTATA** Ã¨ possibile inserire le seguenti informazioni:
 
 | Descrizione | Descrizione del template |
 | --- | --- |
-| Descrizione piano di pagamento 1 e 2 | descrizione del piano di pagamento che verr… ereditata sullÂordine di vendita. |
-| Cat. Reg. articolo/servizio | solitamente viene utilizzata una categoria generica (es: ®VARIE¯ o ®COGE¯) in virt— del fatto che la fattura di anticipo viene generata con una riga di tipo Conto C/G. |
-| Cat. Reg. art./serv. IVA | la sua compilazione non risulta obbligatoria in quanto il processo di fatturazione anticipata Š in grado di recepire automaticamente la categoria IVA delle righe dellÂordine di vendita. |
+| Descrizione piano di pagamento 1 e 2 | descrizione del piano di pagamento che verrÃ  ereditata sullâ€™ordine di vendita. |
+| Cat. Reg. articolo/servizio | solitamente viene utilizzata una categoria generica (es: Â«VARIEÂ» o Â«COGEÂ») in virtÃ¹ del fatto che la fattura di anticipo viene generata con una riga di tipo Conto C/G. |
+| Cat. Reg. art./serv. IVA | la sua compilazione non risulta obbligatoria in quanto il processo di fatturazione anticipata Ã¨ in grado di recepire automaticamente la categoria IVA delle righe dellâ€™ordine di vendita. |
 	
-Nelle **RIGHE** del template piano di fatturazione Š possibile inserire le seguenti informazioni:
+Nelle **RIGHE** del template piano di fatturazione Ã¨ possibile inserire le seguenti informazioni:
 	
 | Opzione    |  Descrizione   |
 | --- | --- |
-| Tipo fattura | identifica la tipologia di fattura che dovr… essere generata dal piano di fatturazione, le opzioni gestite sono:<br><br> Fattura di pagamento anticipata: fattura di anticipo<br> Fattura di chiusura: fattura a saldo, ultimo documento che dovr… essere generato dal piano di fatturazione<br> Fattura di chiusura parziale: fattura a saldo intermedia<br> Fattura di chiusura parziale con detrazioni: fattura a saldo intermedia con recupero, pro quota, dellÂanticipo precedentemente contabilizzato. |
+| Tipo fattura | identifica la tipologia di fattura che dovrÃ  essere generata dal piano di fatturazione, le opzioni gestite sono:<br><br> Fattura di pagamento anticipata: fattura di anticipo<br> Fattura di chiusura: fattura a saldo, ultimo documento che dovrÃ  essere generato dal piano di fatturazione<br> Fattura di chiusura parziale: fattura a saldo intermedia<br> Fattura di chiusura parziale con detrazioni: fattura a saldo intermedia con recupero, pro quota, dellâ€™anticipo precedentemente contabilizzato. |
 | Quota in % | indica la percentuale di anticipo per le righe di tipo: "Fattura pagamento anticipata" |
-| Descrizione | descrizione di riga che verr… ereditata sulla fattura di anticipo o a saldo |
+| Descrizione | descrizione di riga che verrÃ  ereditata sulla fattura di anticipo o a saldo |
 | Cod. condizioni di pagamento | gestibile per singolo documento |
 | Cod. metodo di pagamento | gestibile per singolo documento |
 	
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/7InvoicingPlan-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/7InvoicingPlan-ITA.png"><br>
