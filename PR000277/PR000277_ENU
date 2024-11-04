@@ -1,6 +1,6 @@
 You need to create the ledger account to be used as a dedicated advance account (multiple accounts can also be used according to customer needs). 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/2InvoicingPlan-ENU.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/2InvoicingPlan-ENU.jpg"><br>
 
 From the BC search it is possible to verify and possibly customize the setup of the default serial numbers of the
 
@@ -8,17 +8,17 @@ From the BC search it is possible to verify and possibly customize the setup of 
 
 * Invoice plan templates
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/3InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/3InvoicingPlan-ENU.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/4InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/4InvoicingPlan-ENU.png"><br>
 
 In the IPL app at the setup level, it is possible to manage the "Invoice Plan Templates": configurable and recallable models at the level of a single specific billing plan, useful for simplifying the insertion and management by order.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/5InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/5InvoicingPlan-ENU.png"><br>
 
 **Invoice Plan Template List**
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/6InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/6InvoicingPlan-ENU.png"><br>
 
 The invoice plan template is divided into header and lines.
 
@@ -40,4 +40,4 @@ The following information can be entered in the LINES of the invoice plan templa
 | Payment Terms Code | manageable for single document |
 | Payment Method Code | manageable for single document |
 	
-<img width="" src="https://docs.eos-solutions.it/Images/PR000277-0/7InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/7InvoicingPlan-ENU.png"><br>
