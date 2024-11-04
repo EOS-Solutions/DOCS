@@ -1,14 +1,14 @@
 From the **Released** sales order it is possible to create the dedicated invoicing plan using the appropriate function "Invoice plan (IPL)".
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/8InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/8InvoicingPlan-ENU.png"><br>
 
 In the newly created invoice plan, it will be possible to recall a preconfigured template, possibly varying the header and / or line data according to the needs of the individual order:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/9InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/9InvoicingPlan-ENU.png"><br>
 
 Various amounts are displayed in the invoice plan, including:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/10InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/10InvoicingPlan-ENU.png"><br>
 
 | Option    |  Description   |
 | --- | --- |
@@ -18,21 +18,21 @@ Various amounts are displayed in the invoice plan, including:
 
 If necessary, complete the configuration of the registration fields of the invoice plan: 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/11InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/11InvoicingPlan-ENU.png"><br>
 
 At the line level of the billing plan, you can fill in or change some fields:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/12InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/12InvoicingPlan-ENU.png"><br>
 
 The values relating to the percentages or amounts of the advance invoice lines can be calculated as:
 
 * Percentage of the total amount of the sales order (the amount will be recalculated automatically)
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/13InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/13InvoicingPlan-ENU.png"><br>
 
 * Fixed amount compared to the total of the sales order (the percentages will be recalculated automatically).
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/14InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/14InvoicingPlan-ENU.png"><br>
 
 If the values or quantities in the sales order are changed, you can use the "Re-Calculate Invoice Plan" function with two options:
 * **Recalculate percentages:** the amounts will remain unchanged and the percentages will be adjusted to the new total;
@@ -42,21 +42,21 @@ If the values or quantities in the sales order are changed, you can use the "Re-
 | --- |
 | The recalculation will only affect down payment invoices not yet posted |
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/15InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/15InvoicingPlan-ENU.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/16InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/16InvoicingPlan-ENU.png"><br>
 
 Each line can have different payment methods and conditions so that each invoice is created with the pre-established payment terms without further intervention by the user:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/17InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/17InvoicingPlan-ENU.png"><br>
 
 To create sales invoices / credit notes from the billing plan, it is always necessary to indicate which line you want to process, using the "**Execute Action**" flag.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/18InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/18InvoicingPlan-ENU.png"><br>
 
 Then, to generate the different types of document it is necessary to use the following functions present in the header:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/19InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/19InvoicingPlan-ENU.png"><br>
 
 | Option    |  Description   |
 | --- | --- |
@@ -68,23 +68,23 @@ The actions described generate the provisional sales documents, **the last docum
 
 By creating the anticipated payment invoice, a request page is proposed in which you can set the "Posting date" with which you want to generate the anticipated payment document and enable the option "Split lines by VAT " (enabled by default); this option allows you to generate as many lines in the advance invoice as there are VAT charges present in the lines of the sales order, to which the invoice plan is connected (e.g .: line with VAT at 10% and line with VAT at 22 %)
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/20InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/20InvoicingPlan-ENU.png"><br>
 
 The first advance sales invoice generated by the invoice plan in the example contains the split lines by VAT code ("IVA22" and "IVA10") because in the sales order the item lines have two different VAT codes (VAT22 and VAT10).
 
 **Anticipated invoice**
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/21InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/21InvoicingPlan-ENU.png"><br>
 
 **Sales order**
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/22InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/22InvoicingPlan-ENU.png"><br>
 
 Once the advance invoice has been recorded on the invoice plan, the following information will be shown:
 
 **Line information:**
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/23InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/23InvoicingPlan-ENU.png"><br>
 
 * Invoiced amount:  total of the invoiced advance line (excluding VAT)
 
@@ -94,7 +94,7 @@ Once the advance invoice has been recorded on the invoice plan, the following in
 
 **Header information:**
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/24InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/24InvoicingPlan-ENU.png"><br>
 
 * Posted Anticipated Amount: taxable amount of invoiced advances
 
@@ -102,11 +102,11 @@ Once the advance invoice has been recorded on the invoice plan, the following in
 
 If you want to reverse the posted anticipated payment invoice, you must use the appropriate function: "Create credit memo", in this case BC will generate a sales credit memo with total reversal of the advance payment.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/25InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/25InvoicingPlan-ENU.png"><br>
 
 Sales credit memo to reverse the anticipated payment invoice:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/26InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/26InvoicingPlan-ENU.png"><br>
 
 From the invoice plan you will be able to view at line level:
 
@@ -114,46 +114,46 @@ From the invoice plan you will be able to view at line level:
 
 * Credit Memo Amount: the reversal value of the advance posted with the credit memo
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/27InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/27InvoicingPlan-ENU.png"><br>
 
 The header amounts will also be updated accordingly:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/28InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/28InvoicingPlan-ENU.png"><br>
 
 After having posted the advance invoices and having carried out the partial or complete shipment of the items present in the sales order, it is possible to generate the **Partial Closing Invoice**, the Partial Closing Invoice with deductions (if present in the invoice plan) and finally the final **Closing invoice**, using the "Create Closing Invoice" function:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/29InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/29InvoicingPlan-ENU.png"><br>
 
 By clicking on the Create Closing Invoice function, a request page will open in which it will be possible to choose whether to generate the reversal lines of the previously invoiced advance, directly in the final invoice (default option) or create a special credit memo containing only the lines reversal of the advance:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/30InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/30InvoicingPlan-ENU.png"><br>
 
 The final invoice will be generated with a posting date equal to the Planned Invoice Date set in the line of the invoice plan:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/31InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/31InvoicingPlan-ENU.png"><br>
 
 If you choose to create the closing invoice with reversal of the advance lines directly on the invoice, the system will generate a single document (sales invoice) containing the item lines (balance) and the reversal lines of the advance (split by VAT code):
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/32InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/32InvoicingPlan-ENU.png"><br>
 
 If, on the other hand, you choose the option to generate the reversal lines of the advance with a specific credit memo, two documents will be created:
 
 * The credit memo containing only the advance reversal lines
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/33InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/33InvoicingPlan-ENU.png"><br>
 
 * The balance invoice (without reversal lines)
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/34InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/34InvoicingPlan-ENU.png"><br>
 
 Once the final invoice has been posted, the invoice plan will be fully invoiced: 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/35InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/35InvoicingPlan-ENU.png"><br>
 
 From the invoice plan it is possible to view the posted revenues related to the invoices posted by the invoice plan, through the fields Collected Amount and Collected Amount (LCY): 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/36InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/36InvoicingPlan-ENU.png"><br>
 
 In the customer ledger entries, you can view the invoice plan number on all entries generated through the IPL app, including revenues linked to invoices generated from the invoice plan:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000286-0/37InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/37InvoicingPlan-ENU.png"><br>
