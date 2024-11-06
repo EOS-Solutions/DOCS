@@ -1,6 +1,6 @@
 Set the basic parameters for the application to work properly:
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Setup/44Extended Management Accounting-ita.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000081-0/EMA Setup.png"><br>
 
 The main fields are:
 
@@ -16,7 +16,7 @@ The main fields are:
     </tr>
     <tr>
       <td>Align G/L Account</td>
-      <td align="left">indica come deve avvenire l¬allineamento tra i conti del PdC COGE e quello di COAN. Le opzioni possibili sono: 
+      <td align="left">indica come deve avvenire l‚Äôallineamento tra i conti del PdC COGE e quello di COAN. Le opzioni possibili sono: 
         <ul>
           <li>No Alignment</li>
           <li>Automatic: when a G/L account is created the corresponding account is automatically created in the Chart of cost accounting</li>
@@ -42,13 +42,13 @@ The main fields are:
     </tr>
 		<tr>
       <td>Monthly Allocation</td>
-      <td align="left">impacts on √Driverƒ type allocations. If activated, the monthly amount to be rolled over is allocated based on the performance movements generated for the same period. The value on the date is therefore obtained as the sum of the amounts allocated based on the performance movements calculated monthly</td>
+      <td align="left">impacts on ‚ÄúDriver‚Äù type allocations. If activated, the monthly amount to be rolled over is allocated based on the performance movements generated for the same period. The value on the date is therefore obtained as the sum of the amounts allocated based on the performance movements calculated monthly</td>
     </tr>
 		<td>Cost Accounting Dimension</td>
       <td align="left">You need to specify the Cost Accounting Dimension</td>
     </tr>
 		<td>UoM Driver Capacity Calculation</td>
-      <td align="left">it is initialized based on the value present in the √Show capacity inƒ field of the Manufacturing Setup; can be modified if the times (present in the Capacity Accounting Entries) must be expressed/converted into another unit of measurement</td>
+      <td align="left">it is initialized based on the value present in the ‚ÄúShow capacity in‚Äù field of the Manufacturing Setup; can be modified if the times (present in the Capacity Accounting Entries) must be expressed/converted into another unit of measurement</td>
     </tr>
   </tbody>
 </table>
