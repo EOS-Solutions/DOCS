@@ -1,4 +1,3 @@
-[**C/E di Profittabilità**](http://)
 
 Nella pagina Conti di profittabilità è stato integrato il flowfield “Importo budget analisi di profittabilità”, alimentato a seguito dell’esecuzione della funzione “Aggiorna analisi della profittabilità” della Scheda analisi C/A. 
 
@@ -25,11 +24,11 @@ Il collegamento tra i 2 conti economici va impostato sul conto di C/A: dovrà es
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EBA-CE-Profittabilita05-ita.png"><br>
  
-[**Driver di profittabilità**](http://)
+**Driver di profittabilità**
 
 Al momento non sono state previste integrazioni a questa pagina, valorizzata tramite l’utilizzo dell’App EMA. 
  
-[**Scenari di analisi (EMA)**](http://)
+**Scenari di analisi (EMA)**
 
 L’installazione di EMA Budget Allocation determina, nelle pagine Scenari di analisi e Scheda analisi C/A, l’introduzione del seguente nuovo campo:
 * “Filtro budget vendite”: valorizzabile, se il campo Origine allocazione presenta l’opzione Budget, per indicare il periodo di budget vendite dal quale recuperare i dati oggetto di allocazione.
@@ -45,6 +44,6 @@ Al termine dell’elaborazione il campo “Stato profittabilità” nella sezion
 
 <br>
 
-[**Verifica dati generati tramite il Conto economico profittabilità (EMA)**](http://)
+**Verifica dati generati tramite il Conto economico profittabilità (EMA)**
 
 Le logiche sono le stesse descritte nel medesimo paragrafo dell’App EMA. 
