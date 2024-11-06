@@ -1,4 +1,4 @@
-Consente di impostare i parametri di base per il corretto funzionamento dell¬applicazione:
+Consente di impostare i parametri di base per il corretto funzionamento dell‚Äôapplicazione:
 
 <img width="750" src="https://docs-test.eos-solutions.it/Images/ex023/Setup/44Extended Management Accounting-ita.jpg"><br>
 
@@ -16,39 +16,39 @@ Dettaglio principali campi:
     </tr>
     <tr>
       <td>Allinea conto C/G</td>
-      <td align="left">indica come deve avvenire l¬allineamento tra i conti del PdC COGE e quello di COAN. Le opzioni possibili sono: 
+      <td align="left">indica come deve avvenire l‚Äôallineamento tra i conti del PdC COGE e quello di COAN. Le opzioni possibili sono: 
         <ul>
           <li>Nessun Allineamento </li>
           <li>Automatico: quando viene creato un conto C/G, viene creato automaticamente il relativo conto nel PdC C/A.</li>
-					<li>Richiesta di conferma: quando viene creato un conto C/G, viene richiesta conferma all¬utente per procedere alla creazione del relativo conto C/A (valorizzando anche, 1 ad 1, il campo √Range conti C/Gƒ del conto C/A) </li>
+					<li>Richiesta di conferma: quando viene creato un conto C/G, viene richiesta conferma all‚Äôutente per procedere alla creazione del relativo conto C/A (valorizzando anche, 1 ad 1, il campo ‚ÄúRange conti C/G‚Äù del conto C/A) </li>
         </ul>
        </td>
     </tr>
     <tr>
       <td>Conti C/G Sincronizzati</td>
-      <td align="left">consente di indicare quali conti debbano essere riportati in C/A, le opzioni sono √Tuttiƒ oppure √Conti Economiciƒ</td>
+      <td align="left">consente di indicare quali conti debbano essere riportati in C/A, le opzioni sono ‚ÄúTutti‚Äù oppure ‚ÄúConti Economici‚Äù</td>
     </tr>
     <tr>
       <td>Allinea i conti sulla sincronizzazione C/G-C/A</td>
-      <td align="left">indica se allineare automaticamente il PdC COAN con quello COGE, in sede di esecuzione della procedura √Sincronizza CG con CAƒ</td>
+      <td align="left">indica se allineare automaticamente il PdC COAN con quello COGE, in sede di esecuzione della procedura ‚ÄúSincronizza CG con CA‚Äù</td>
     </tr>
 		<tr>
       <td>Conto ripresa saldi C/G</td>
-      <td align="left">ä il conto che ä necessario creare nel piano dei conti di analitica e che il sistema utilizza come contropartita di tutti i movimenti che vengono riportati dalla C/G alla C/A; da valorizzare nel caso di sincronizzazione del solo conto economico</td>
+      <td align="left">√® il conto che √® necessario creare nel piano dei conti di analitica e che il sistema utilizza come contropartita di tutti i movimenti che vengono riportati dalla C/G alla C/A; da valorizzare nel caso di sincronizzazione del solo conto economico</td>
     </tr>
 		<tr>
       <td>Compressione movimenti</td>
-      <td align="left">indica la logica di accorpamento dati con cui vengono trasferiti i record dalla COGE alla COAN. La compressione minima dei movimenti ä sempre il giorno anche se ä presente l¬opzione √Nessunoƒ. I valori vengono accorpati per Periodo-Conto-Dimensioni</td>
+      <td align="left">indica la logica di accorpamento dati con cui vengono trasferiti i record dalla COGE alla COAN. La compressione minima dei movimenti √® sempre il giorno anche se √® presente l‚Äôopzione ‚ÄúNessuno‚Äù. I valori vengono accorpati per Periodo-Conto-Dimensioni</td>
     </tr>
 		<tr>
       <td>Allocazione Mensile</td>
-      <td align="left">impatta sulle allocazioni di Tipo √Driverƒ. Se attivato, l¬importo mensile oggetto di ribaltamento viene allocato in funzione dei movimenti performance generati per lo stesso periodo. Il valore alla data ä quindi ottenuto come somma degli importi allocati in funzione dei movimenti performance calcolati mensilmente</td>
+      <td align="left">impatta sulle allocazioni di Tipo ‚ÄúDriver‚Äù. Se attivato, l‚Äôimporto mensile oggetto di ribaltamento viene allocato in funzione dei movimenti performance generati per lo stesso periodo. Il valore alla data √® quindi ottenuto come somma degli importi allocati in funzione dei movimenti performance calcolati mensilmente</td>
     </tr>
 		<td>Dim. Centro di Costo</td>
-      <td align="left">ä necessario indicare il codice della dimensione globale a cui sono associati i centri di costo</td>
+      <td align="left">√® necessario indicare il codice della dimensione globale a cui sono associati i centri di costo</td>
     </tr>
-		<td>UdM Calcolo driver capacitÖ</td>
-      <td align="left">viene inizializzato in funzione del valore presente nel campo √Mostra capacitÖ inƒ del Setup manufacturing; puï essere modificato nel caso in cui i tempi (presenti nei Movimenti contabili capacitÖ) debbano essere sono espressi/convertiti in altra unitÖ di misura </td>
+		<td>UdM Calcolo driver capacit√†</td>
+      <td align="left">viene inizializzato in funzione del valore presente nel campo ‚ÄúMostra capacit√† in‚Äù del Setup manufacturing; pu√≤ essere modificato nel caso in cui i tempi (presenti nei Movimenti contabili capacit√†) debbano essere sono espressi/convertiti in altra unit√† di misura </td>
     </tr>
   </tbody>
 </table>
