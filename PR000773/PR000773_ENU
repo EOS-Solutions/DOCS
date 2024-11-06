@@ -1,4 +1,4 @@
-In **Vendor Card** four fields have been added in the **Payments** group:
+In **Vendor Card** there are four fields in the **Payments** group:
 these fields report the **Balance of Billing Notes**.
 
 Both Currency balances and expired Billing note balances are managed, the latter filtered on the "Due Date" field
