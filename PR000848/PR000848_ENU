@@ -1,41 +1,35 @@
-[**Profitability Account**](http://)
 
 The “Profitability analysis budget amount” flowfield has been integrated into the Profitability Accounts page, which is populated following the execution of the “Update profitability analysis” function of the C/A analysis sheet. 
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EBA-CE-Profittabilita01-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EX027 Profitability analysis (2).png"><br>
 
 In addition, the fields highlighted below have been added to the profitability account tab, which operate with the same logic described within the EMA app.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EBA-CE-Profittabilita02-ita.png"><br>
-<br>
-
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/Profitability account card.png"><br>
 The "Budget source type" field determines the feeding logic of the individual account and provides a series of pre-defined options. 
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EBA-CE-Profittabilita03-ita.png"><br>
-<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/Profitability card.png"><br>
 
 The Revenue option inherits the sales budget values ​​from the specific “Sales budget movements (EBA)” page.
 This table can be populated using the specific “Import sales budget from PowerBudget” feature of the C/A Analysis Sheet or via a configuration package.
   
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EBA-CE-Profittabilita04-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EX027 Budget entries.png"><br>
 
 In the event that a profitability account has the "Budget Origin Type" = C/A, it is necessary to set up the connection between the various accounts and define the logic for spreading the budget cost on the preventive sales lines.
 
 The connection between the 2 economic accounts must be set up on the C/A account: the destination profitability account must be indicated (the indication must be made in the "Budget Profitability Account No." field) and the driver to be used (the "Budget Driver Code" field) for spreading the cost on the sales turnover. As an alternative to the driver code, the "Budget Driver Profitability Account No." and "Budget Spreading" fields can be used directly.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EBA-CE-Profittabilita05-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EX027 Cost Account Card.png"><br>
  
-[**Profitability Driver**](http://)
+**Profitability Driver**
 
-Al momento non sono state previste integrazioni a questa pagina, valorizzata tramite l’utilizzo dell’App EMA. 
+At the moment no integrations aren't provided integrations at this page, valued through the use of the app EMA.
  
-[**Anaysis Scenario (EMA)**](http://)
+**Anaysis Scenario (EMA)**
 
 The installation of EMA Budget Allocation determines, in the Analysis Scenarios and C/A Analysis Sheet pages, the introduction of the following new field:
 * “Sales budget filter”: can be enhanced, if the Allocation source field has the Budget option, to indicate the sales budget period from which to retrieve the data subject to allocation.
-<br>
- <img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/30Extended Management Accounting-ita.png">
- <br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000848-0/EX027 CA analysis card.png"><br>
  
 The EMA Budget Allocation app also makes the “Import sales budget from PowerBudget” function available.
 To feed the preventive Profitability C/E, after having calculated the budget cost of the single item (for example via the “IVC” App) and allocated the C/A budget data, it is necessary to execute the “Update profitability analysis” function.
@@ -45,6 +39,6 @@ At the end of the processing, the “Profitability status” field in the Statis
 
 <br>
 
-[**Check data generated through the Profitability Account (EMA)**](http://)
+**Check data generated through the Profitability Account (EMA)**
 
 The logic is the same as described in the same paragraph of the EMA App. 
