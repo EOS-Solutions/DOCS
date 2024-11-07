@@ -1,5 +1,9 @@
-The "EMA Budget Allocation" App, certified for Microsoft Dynamics BC, extends the cost accounting features that can be implemented through the "EMA - Extended Management Accounting" App: it allows you to manage allocations and determine the tariffs of production work center, based on budget data (entered into Cost Accounting Budget).
+The “EMA Budget Allocation” App, certified for Microsoft Dynamics BC, extends the Analytical Accounting functions that can be implemented through the “EMA – Extended Management Accounting” App.
 
-The cost accounting procedures to be performed to allocate the budget data are the same as those explained for the EMA App ; the fields and functions integrated with the installation of EMA Budget Allocation are clarified below.
+It therefore allows you to:
+* manage allocations and determine the rates of production CDCs, based on budget data (loaded into the Budget C/A);
+* calculate a preventive C/E of Profitability Analysis.
+
+The analytical accounting and profitability analysis procedures to be performed are the same as those explained in the online help section relating to the EMA App; the fields and functions integrated with the installation of the EMA Budget Allocation application are clarified below.
 
 EMA Budget Allocation therefore depends on the use of the EMA App.
