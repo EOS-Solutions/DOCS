@@ -1,5 +1,9 @@
-LÂApp ÃEMA Budget AllocationÄ, certificata per Microsoft Dynamics BC, estende le funzionalit… di Contabilit… Analitica implementabili tramite lÂApp ÃEMA Æ Extended Management AccountingÄ: consente di gestire le allocazioni e di determinare le tariffe dei CDC produttivi, in funzione dei dati di budget (caricati nel Budget C/A).
+Lâ€™App â€œEMA Budget Allocationâ€, certificata per Microsoft Dynamics BC, estende le funzionalitÃ  di ContabilitÃ  Analitica implementabili tramite lâ€™App â€œEMA â€“ Extended Management Accountingâ€.
 
-Le procedure di contabilit… analitica da eseguire per allocare i dati di budget sono le stesse esplicitate per la App EMA; di seguito vengono chiariti i campi e le funzionalit… integrati con lÂinstallazione di EMA Budget Allocation.
+Consente quindi di:
+* gestire le allocazioni e di determinare le tariffe dei CDC produttivi, in funzione dei dati di budget (caricati nel Budget C/A);
+* calcolare un C/E preventivo di Analisi della profittabilitÃ .
 
-EMA Budget Allocation ha quindi come dipendenza lÂutilizzo dellÂApp EMA.
+Le procedure di contabilitÃ  analitica ed analisi di profittabilitÃ  da eseguire le stesse esplicitate nella sezione dellâ€™help on line relativa allâ€™App EMA; di seguito vengono chiariti i campi e le funzionalitÃ  integrati con lâ€™installazione dellâ€™applicazione EMA Budget Allocation.
+
+EMA Budget Allocation ha quindi come dipendenza lâ€™utilizzo dellâ€™App EMA.
