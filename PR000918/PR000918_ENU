@@ -1,0 +1,25 @@
+The MAPS app is used by the system to:
+
+-   manage the geolocation for customers, vendors, contacts, locations, ship to addresses, order addresses.
+
+-   calculate geolocation using Bing and Google Maps services. 
+
+  Press ALT + Q and digit "MAPS"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000918-0/3DeliveryRoutePlanner(1).png"><br>
+
+Setup
+
+On the Setup page you can define the service to be used for geolocation and enter the serial Nr. used to save the coordinates.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000918-0/2DeliveryRoutePlanner(1).png"><br>
+
+GeoLocations (MAPS)
+
+ In GeoLocations MAPS you can set all the data for the management of geolocation for customers, vendors, contacts, locations, send to addresses, order addresses:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000918-0/4DeliveryRoutePlanner(1).png"><br>
+
+The information can then be viewed in the Customer Card from Related->GeoLocations
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000918-0/5DeliveryRoutePlanner(1).png"><br>
