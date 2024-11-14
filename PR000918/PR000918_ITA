@@ -1,0 +1,25 @@
+L'app MAPS viene utilizzata dal sistema per:
+
+-   gestire la geolocalizzazione per clienti, fornitori, contatti, ubicazioni, spedire a indirizzi, indirizzi ordine.
+
+-   calcolare la geolocalizzazione tramite i servizi di Bing e Google Maps. 
+
+  Premere ALT + Q e digitare "MAPS"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000918-0/3DeliveryRoutePlanner.png"><br>
+
+Setup MAPS
+
+Nella pagina di Setup è possibile definire il servizio da utilizzare per la geolocalizzazione e inserire il Nr. di serie utilizzato per salvare le coordinate.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000918-0/2DeliveryRoutePlanner.png"><br>
+
+Geolocalizzazioni MAPS
+
+In Geolocalizzazioni MAPS si possono impostare tutti i dati per la gestione della geolocalizzazione per clienti, fornitori, contatti, ubicazioni, spedire a indirizzi, indirizzi ordine:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000918-0/4DeliveryRoutePlanner.png"><br>
+
+Le informazioni sono poi visualizzabili nella Scheda cliente da Correlato->Geolocalizzazioni:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000918-0/5DeliveryRoutePlanner.png"><br>
