@@ -1,0 +1,18 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Calculation of transport costs from the route plan</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Visualization of costs with their totals</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>View the price list of the shipping agent</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Suggest Transport Costs for CWS Groups</td>
+	</tr>
+</table>
