@@ -1,0 +1,12 @@
+The new features added in the route plans are:
+* **Calculate transport costs for Route Plan.** The feature allows to calculate transport costs for all the documents that make up the tour. The calculation is made based on the Document Param. Source field in the Transport Cost Setup (ETC). 
+* **Route Plan Shipping Prices.** Displays the transport costs calculation with their totals. It also allows the change in the amount of the transport cost.
+* **Shipping Price.** View the price list of the shipping agent present in the header of the route plan.
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000754-0/Immagine1.png"><br>
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000754-0/Immagine2.png"><br>
