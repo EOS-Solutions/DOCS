@@ -1,0 +1,44 @@
+I costi di trasporto dal giro di consegna possono essere calcolati per:
+* Viaggio.
+* Km
+* Ore
+* Peso Netto
+* Peso Lordo
+* Volume
+* Nr. Pallet
+
+Il calcolo avviene sfruttando i listini ETC con le modalità di seguito descritte.
+
+<br>
+
+In testata del giro di consegna è stato aggiunto un nuovo campo denominato **Origine parametri (ETC)** che permette di definire l’origine dei dati per il calcolo delle spese di trasporto. I valori ammessi sono:
+* **Documento di origine.** I dati relativi a Peso Netto e Lordo, Volume, KM Viaggio, Ore viaggio e Nr. di pallet vengono prelevati dai documenti di origine inseriti nel giro di consegna seguendo quanto definito nei rispettivi setup.
+* **Testata Giro di Consegna.** I dati vengono prelevati dagli appositi campi presenti in testata del giro di consegna. Di seguito verranno elencate le modalità con cui avviene il calcolo per le varie tipologie di dato. 
+ 
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000767-0/Immagine3_ITA.png"><br>
+<br>
+
+In testata del giro di consegna sono presenti i campi evidenziati utilizzati nel calcolo per **Testata Giro di Consegna**. I campi Km viaggio, Ore viaggio, Volume e Nr. Pallet sono ad inserimento manuale e non è previsto il calcolo automatico. I campi Peso Netto e Peso Lordo non sono editabili e sono la somma dei rispettivi pesi netti e lordi presenti nelle righe del giro di consegna. 
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000767-0/Immagine4_ITA.png"><br>
+<br>
+
+In testata del giro di consegna è stato aggiunto un nuovo campo denominato **Tipo calcolo (ETC)** che permette di definire la modalità di calcolo delle spese di trasporto. I valori ammessi sono:
+* **Documento origine.** I costi di trasporto vengono calcolati considerando i documenti di origine presenti nel giro di consegna.
+* **Documento registrato.** I costi di trasporto vengono calcolati considerando i documenti registrati presenti nel giro di consegna.     
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000767-0/Immagine5_ITA.png"><br>
+<br>
+
+Dopo il calcolo dei costi di trasporto è possibile visualizzarli tramite l’apposita funzione:     
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000767-0/Immagine6_ITA.png"><br>
+
+L'azione **Totali per giro** consente di  modificare l’importo del totale giro. La modifica del nolo giro viene comunque «spalmata» su tutti i documenti proporzionalmente all’importo base (VL).
+  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000767-0/Immagine7_ITA.png"><br>
