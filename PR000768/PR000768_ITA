@@ -1,0 +1,29 @@
+Il listino per viaggio viene applicato all’intero giro di consegna. Nella lettura del prezzo di listino non vengono considerate le zone e gli scaglioni di quantità in quanto il listino è per viaggio (ad esempio per codice giro periodico).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000768-0/Immagine8_ITA.png"><br>
+
+<br>
+
+Il calcolo relativo al viaggio avviene con modalità diverse in funzione all’**Origine parametri ETC** impostata in testata del giro di consegna.
+* Se vale **Testata Giro di Consegna**: l’importo del viaggio viene spalmato nella varie righe che compongono il viaggio proporzionalmente in base all’importo Base (VL).  
+
+* Se vale **Documento di origine**: l’importo del viaggio viene applicato a tutte le righe dei documenti che compongono il viaggio.
+
+<br>
+
+**1. Esempio** con Viaggio e Origine parametri ETC impostata a Testata Giro Consegna. 
+Dato un Viaggio il cui listino è di 1000 Euro e un giro di consegna con i seguenti documenti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000768-0/Immagine9_ITA.png"><br>
+
+Per ognuno delle righe l’importo del Nolo viene calcolato proporzionalmente all’Importo Base (VL). Ad esempio per la prima riga è 1000\*8000/42000=190,48.
+
+<br>
+
+**2. Esempio** con Viaggio e Origine parametri ETC impostata a Testata Giro Consegna. 
+Dato un Viaggio il cui listino è di 1000 Euro e un giro di consegna con i seguenti documenti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000768-0/Immagine10_ITA.png"><br>
+
+Per ognuna delle righe viene applicato il prezzo del viaggio.
+
