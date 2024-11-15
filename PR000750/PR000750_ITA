@@ -1,0 +1,18 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Calcolo dei costi di trasporto dal giro di consegna</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Visualizzazione costi con i loro totali</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Visualizzazione listino dello spedizioniere</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Suggerire i costi di trasporto per i gruppi CWS delle spedizioni warehouse</td>
+	</tr>
+</table>
