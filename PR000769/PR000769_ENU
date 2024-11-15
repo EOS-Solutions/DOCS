@@ -1,0 +1,63 @@
+The calculation of KM and Hours is carried out in different ways depending on the **Parameters Source (ETC)** set in route plan header. 
+* If it is **Route Plan Header**, the price list is read using the Trip KM or Trip Hours fields in the Route Plan Header. Zones are not taken into account in the price list reading. The unit price is per KM or hour and can be differentiated, for example, by periodic tour code. The amount obtained by multiplying the Total KM by the price list is spread over the various lines that make up the route plan proportionally based on the Base Amount (LCY). 
+
+* If it is **Source Document**, the calculation is made for each individual document present in the route plan lines. The KM and Hours of the individual documents are taken from the fields in the headers. Zones are taken into account when reading the list price.
+
+<br>
+
+For example, in sales orders, you can set km and hours:    
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine11.png"><br>
+
+<table>
+<tr>
+<th>
+N.B.
+</th>
+<td>The fields must be made visible in the various documents.<br>There are no automatic valuation procedures.<br>At the moment the fields are not available for CWS documents.
+</td>
+</tr>
+</table>
+
+<br>
+
+**1. Example** with KM and Parameters Source (ETC) set to Route Plan Header. Given a KM price list that includes the following minimum quantities:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine12.png"><br>
+
+A route plan that includes the following data in the header:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine13.png"><br>
+
+And the following lines: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine14.png"><br>
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine15.png"><br>
+
+The total number of KM is 1200 and therefore the price per KM taken from the list is 0,4 Euro.
+The total tariff (expected) is 1200\*0,4=480 Euro.
+The total is then distributed in the various lines in proportion to the Base Amount (LCY). For example, in the first line: 480\*8000/42000=91,43.  
+<br>
+
+**2. Example** with KM and Parameters Source (ETC) set to Source Document. Given a KM price list that includes the following minimum quantities:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine16.png"><br>
+
+And the following lines:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine17.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine18.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine19.png"><br>
+
+The price list is read for each individual line using the respective KM.
+The first line is 64 KM, so according to the minimum quantity the price per KM is 0,5 Euro.
+The second line is 285 KM, so according to the minimum quantity the price per KM is 0,4 Euro.
+Then the tariff (expected) is calculated as a multiplication of the price by the KM of the single document.
+<br>
+
