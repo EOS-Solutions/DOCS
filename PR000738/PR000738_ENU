@@ -1,0 +1,30 @@
+Added **CWS Shipment No.** in route plans:
+<br><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000738-0/2DRPforCWS.png"><br>
+<br>
+
+In the route plans, the ability to manage **CWS shipments** has been added through two new features:
+
+| **Action** | **Description** |
+| --- | --- |
+| **CWS Shipments** |Add the selected CWS Shipments to the route plan |
+| **CWS Posted Source Documents** |Add the source documents that make up the CWS Shipments, such as sales shipments, to the route plan |
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000738-0/3DRPforCWS.png"><br>
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000738-0/4DRPforCWS.png"><br><br>
+
+In the route plans, the ability to manage **Warehouse shipments / receipts** has been added through two new features: 
+
+| **Action** | **Description** |
+| --- | --- |
+| **Get Warehouse Shipments** |Add source documents from CWS groups in a warehouse shipment |
+| **Get Warehouse Receipts** |Add source documents from a warehouse receipt |
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000738-0/5DRPforCWS.png"><br><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000738-0/6DRPforCWS.png"><br>
