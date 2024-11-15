@@ -1,0 +1,18 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Added Periodic tour code in CWS combination criteria fields</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Added CWS Shipment No. in route plans</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Route plan management for CWS Shipments</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Route plan management for warehouse shipment / receipt</td>
+	</tr>
+</table>
