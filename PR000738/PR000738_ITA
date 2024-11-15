@@ -1,0 +1,30 @@
+Aggiunta del **Nr. spedizione CWS** nei giri di consegna:
+<br><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000738-0/2DRPforCWS_ITA.png"><br>
+<br>
+
+Nei giri di consegna è stata aggiunta la possibilità di gestire le **spedizioni CWS** attraverso due nuove funzionalità:
+
+| **Azione** | **Descrizione** |
+| --- | --- |
+| **Spedizioni CWS** |Aggiunge le spedizioni CWS registrate selezionate al piano di consegna |
+| **Documenti Registrati CWS** |Aggiunge al piano di consegna i documenti di origine che compongono la CWS come le spedizioni  di vendita |
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000738-0/3DRPforCWS_ITA.png"><br>
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000738-0/4DRPforCWS_ITA.png"><br><br>
+
+Nei giri di consegna è stata aggiunta la possibilità di gestire le **spedizioni/carichi Warehouse** attraverso due nuove funzionalità: 
+
+| **Azione** | **Descrizione** |
+| --- | --- |
+| **Prendi Spedizioni Warehouse** |Aggiunge i documenti origine partendo dai gruppi CWS di una spedizione warehouse |
+| **Prendi Carichi Warehouse** |Aggiunge I documenti di origine partendo da un carico warehouse |
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000738-0/5DRPforCWS_ITA.png"><br><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000738-0/6DRPforCWS_ITA.png"><br>
