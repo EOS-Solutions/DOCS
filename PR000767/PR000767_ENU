@@ -1,0 +1,46 @@
+Transport costs from the route plan can be calculated by:
+* Travel
+* Km
+* Hours
+* Net weigth
+* Gross weigth
+* Volume
+* Pallet number
+
+The calculation is made using the ETC price lists as described below.
+
+<br>
+
+In the header of route plan, a new field called **Parameter Source (ETC)** it has been added, which allows to define the source of the data for the calculation of transport costs. The allowed values are:
+* **Source Document**. The data relating to Net and Gross Weight, Volume, Trip KM, Trip Hours and No. of pallets are taken from the source documents entered in the route plan following what is defined in the respective setups.
+* **Route Plan Header.** The data are taken from the appropriate fields in the header of route plan. The calculation methods for the various types of data will be listed below.
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000767-0/Immagine3.png"><br>
+<br>
+
+In the header of the route plan there are the highlighted fields used in the calculation for the **Route Plan Header**. The Tour Mileage, Tour Hours, Volume and Pallet No. fields are manually entered and there is no automatic calculation. The Net Weight and Gross Weight fields are not editable and are the sum of the respective net and gross weights present in the lines of the route plan. 
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000767-0/Immagine4.png"><br>
+<br>
+
+A new field called **Calculation Type (ETC)** has been added to the header of the route plan, which allows to define how the transport costs are calculated. The allowed values are:
+* **Source Document.** Transport costs are calculated with the source documents present in the route plan.
+* **Posted Document.** Transport costs are calculated with the posted documents present in the route plan.  
+
+  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000767-0/Immagine5.png"><br>
+<br>
+
+After the calculation of the transport costs, it is possible to view them using the appropriate function:     
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000767-0/Immagine6.png"><br>
+
+The feature **Tour Summary** allows to change the amount of the tour. The new amount is "spread" over all documents in proportion to the Basic Amount (LCY).  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000767-0/Immagine7.png"><br>
+
+
