@@ -80,6 +80,10 @@ Allows to view or edit the components of the machine. Defined components make up
 
 Allows to view or edit the characteristics of the machine.
 
+### Characteristics
+
+Allows to view or edit the risks of the machine.
+
 ### Dimensions
 
 Allows to view or edit dimensions, such as area, project, or department, that you can assign to sales and purchase documents to distribute costs and analyze transaction history.
