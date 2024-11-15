@@ -1,0 +1,210 @@
+**Does the configurator generate both variants and items?**
+
+The product configurator can generate Items or Item Variants, according to the general setup or to the specific instruction on the rule that the item uses.  
+By enabling the "Enable Variant Management" option in the configurator setup, you specify that the default behavior is the generation of variants. If not activated, the default will be the generation of items.
+In the Rules table there is a field called «Configuration Type» that allows to choose the configuration mode. The values are:
+* **Default**: the configuration follows the behavior defined in the general setup;
+* **Item**: the configurator generates new items;
+* **Variant**: the configurator generates new variants for the same item.
+ 
+<br>
+**The configurator always creates new items or variants?**
+
+The configurator's function is to generate new item codes or variants only if the requested configuration does not already exist. When the configuration, meaning the set of  characteristics and characteristic’s values (questions and answers), matches an existing item, the configurator does not create anything but retrieves the existing item. The uniqueness of a configuration is ensured by a unique key associated with each created item or variant.
+
+<br>
+**How does the configurator recognize if an item already exists?**
+
+Every configured item or variant is identified by a unique search key automatically generated at the end of the configuration. The key contains information about all the "key" characteristics, which are indicated in the rule as "Disable feature from key: No." It is thanks to this that the configurator can determine whether to generate a new configuration or retrieve an existing one.
+There are situations where it might be necessary to regenerate the keys, for example, after the initial data import or if the "Disable feature from key" property has been activated on one or more features.
+To do this, simply open the "Configured Items" page from the configurable item, select the rows, and launch the "Reconfigure Key" function.
+
+<br>
+**What is a characteristic?**
+
+Characteristics are fundamental for the use of the configurator. They are the starting unit of the entire configuration structure and conceptually correspond to the “questions” that must be asked during configuration. They are used to identify variants or items created by the configurator.
+They can be of two types:
+* **Structure**: characteristics that take a defined list of pre-encoded alphanumeric or numeric values;
+* **Measure**: characteristics that accept only free-entry numeric values.
+
+<br>
+**What is a configuration rule?**
+
+A configuration rule is a **set of instructions** that must be applied to an item during configuration. The rule is associated with the encoding mode for the new item code and its description, the "questions" (characteristics) to display during configuration, the predefined "answers" (characteristics values), and how characteristics should interact if a value needs to automatically condition others (rule relationships).
+For each rule it’s possible to define:
+
+* The list and sequence of characteristics that should be prompted to the operator;
+* The list of values that the characteristic can have for that rule; 
+* A **codification algorithm** for the item **code** and **description**;
+* The **business logic** among the characteristics as defined by the «Relations» table:
+   1. Mandatory or optional characteristics;
+   2. Automatic filling of secondary characteristics depending from an input characteristic;
+   3. The compatibility of values for a characteristic according to other chosen values.
+
+<br>
+**Is it possible to use the same characteristic values on different characteristics without having to duplicate them?**
+
+When there are several characteristics with the same values, it is possible to define a «Master» characteristic that stores the default values, and the other characteristics can be defined as «Connected» to the first one, so they can utilize the same set of values.
+In order to synchronize the available values of a connected characteristic from the master, select the master characteristic and click on the action «Align Connection».
+The alignment can have an impact on system performance and should be scheduled when the number of characteristics and values to synchronize is high.
+
+<br>
+**Is it possible to have characteristics with free text values?**
+
+In some cases, it is useful to define alphanumeric characteristics that contain comments. This is possible by selecting the option «**Without Values**» on a characteristic of type «Structure».
+This option ensures that during configuration the user can enter a free value, not conditioned by the previous association of values.
+
+<br>
+**What are the logics to use to set the encoding of the new items created?**
+
+Within the Rules table, it is necessary to specify the “Format Code” in the designated field, indicating how you want to encode the item identifier. In the “Format Description” field, you need to enter the desired format for the encoding of the item description. The directives to follow are as follows:
+* Curly brackets {}: If the characteristic’s code is enclosed in curly braces, the description of the characteristic will be used;
+* Square brackets []: If the code of a characteristic is enclosed in square brackets, the code of the characteristic will be used;
+* [ITEMNO%]: constant that allows to insert the item code
+
+If the digit counter or No. series are specified, a progressive number is added to the item code defined in the Format Code.
+
+<br>
+**
+What does it mean to disable a characteristic from the key?**
+
+Disabling a characteristic from the key means ensuring that the indicated characteristic is not included in the key of the configured item. To provide a practical example: let's say we have three numeric characteristics:
+* A
+* B
+* C
+
+The characteristic C is disabled from the key.
+Initially, the item "ITEM 1" is generated with the following values:
+* A: 7
+* B: 4
+* C: 9
+
+Assuming its unique key is A7B4.
+Later, the following configuration is generated:
+* A: 7
+* B: 4
+* C: 17
+
+The values of characteristics A and B are the same, only the value of characteristic C, which does not contribute to the key, changes. Therefore, the generated key remains A7B4, the same as the existing "ITEM 1". In this case, the configurator retrieves "ITEM 1" and updates the value of characteristic C.
+For this reason, it is advisable to disable a characteristic from the key only for auxiliary characteristics, such as those needed for calculations.
+To disable a key characteristic it is necessary to enter the rules, then Characteristics and set the Disable key characteristic option.
+
+<br>
+**Is it possible to hide some characteristics from the configuration?**
+
+Yes, it is possible. To do this you need to go to rules, click on characteristics and select the "Hide in configuration" option.
+
+<br>
+**Is it possible to create automatic characteristics compilation during configuration?**
+
+The main way to automate characteristic compilation is to create relations. To do this, you need to enter rules and select relations. Relations can be of different types:
+* **Mandatory/Optional**: a characteristic can be mandatory or optional according to the value of another characteristic; the value of the primary characteristic makes the secondary characteristic mandatory or optional;
+* **Transfer Value**: the value of the primary characteristic determines the automatic compilation of the secondary characteristic with the value compiled in the Secondary Characteristic Value field;
+* **Filter**: limits the possible values for the secondary characteristics;
+* **Check Condition**: verifies the relation between characteristics and handle a message or an error. The message goes into the «Message» field, while the condition goes into the «Condition code» field;
+* **Transfer (Higher Level)**: transfers the value of the characteristic from the higher levels (going up the BOM tree) to the child article;
+* * * **Filter (Higher Level) **: limits the possible values for the secondary characteristics. Use only if the filter returns a single value. 
+* **Calculation (Higher Level)**: can involve characteristic formulas configured in higher levels.
+
+Another way valid only for the item being configured is to pre-set values directly on the neutral article. It is necessary to enter the item, search for the “Default item characteristic” action, and enter the default values.
+
+<br>
+**How to make an item configurable?**
+
+The Configurator section on the item tab is used to enable an item for configurator management.
+The Configuration Type field indicates the behavior of an item in the configurator module and can be:
+* **Fix**: it is a standard item, not configurable, or already configured;
+* **Neutral to configuration**: the item is configurable according to the rules established in the Rule Code field;
+* **Neutral to fix**: the item is fictitious and, following the logic of "neutral items" or "neutral rules," must be replaced in the base bill of materials by a point item according to the rules established in the Rule Code field;
+
+In the Rule Code field, the association between the item and a set of instructions that it must adhere to during configuration is made, first of all the set of characteristics.
+
+<br>
+**How to configure an item?**
+
+The points from which it is possible to configure an item are:
+* Items
+* Sales documents (quotes, orders, invoices)
+* Purchase documents (quotes, orders)
+* Transfer orders
+* Released and confirmed production orders
+* Project (job) planning lines
+
+To configure from documents, simply enter the neutral item code in the Nr. field, and the configuration starts automatically.
+You can re-enter the configuration by selecting the "Configuration" function or using the Ctrl+G shortcut.
+
+<br>
+**Is it possible to pause the configuration without losing the entered information?**
+
+When the configuration is initiated from sales and purchase documents, you can pause the configuration of an item using the "Save without configuration" option among the functions in the configuration batch. The configuration pauses, allowing the user to exit, but the list of characteristics is saved in a specific table, providing the option to resume the configuration at a later time.
+
+<br>
+**Not all users are authorized to finalize the configuration; is it possible to apply restrictions?**
+Lite configuration is a mode that prevents specified users from completing the configuration. Lite mode can be used only when the configuration starts from sales and purchase documents. In User Setup, you can define the configuration mode to which the user is subject in the "Product Configurator Mode" field. The options are:
+* **Empty**: The user can create the configured item;
+* **Lite Mode**: The user cannot create the configured item, and there are no checks on the filled characteristics;
+* **Lite Mode + Mandatory Characteristics**: The user cannot create the configured item but is obliged to fill in the mandatory characteristics.
+
+Exiting the lite configuration mode, the neutral item remains on the source document line, and the configuration remains pending.
+
+<br>
+**Does the Matrix Prices only work with Characteristic Type “Structure” or is it possible to do Matrix Prices with Characteristic Type “Measure”?**
+
+Yes, it's possible to define price depending on characteristics of type Measure. The price can been define for a range value, or by a formula.
+To use formula, must be activated “Enable Price origin” on Configurator Setup
+To specify a range value, in Matrix prices add the fields "To characteristics value 1,2.." with "Personalize" tool.
+If the price is not suggested, you should check the following setup:
+* Characteristic rule must have the field "Price" enable
+* Pay attention to the order in which characteristics are inserted on Matrix price, this must be equal to the order in the rule characteristics (field Sequence)
+The price calculation method is the standard Business Central best price logic.
+
+<br>
+**Is it possible for the configured price to update the Unit Price on the Item card?**
+
+Yes, it is possible if the **Set Item Price from Configuration** field in the configurator setup is enabled.
+
+The app allows the creation of sales/purchase pricelist only if 
+1. the configured items are created from orders
+2. the general setup is active (Fields Enable Sales Price and Enable Purchase Price). 
+
+<br>
+**How to setup a configurable description?**
+
+You can set a Description formula in the rules. If you enable “Use Item Description” the product configurator start with the neutral item description.
+Then in “Format Description” and “Format Description 2” you can use costant or Characteristcs. if you enter a characteristic in square brackets [] it means you want to enter the characteristic code.
+If you enter a characteristic in curly brackets {} it means you want to enter the characteristic description.
+
+<br>
+**Is it possible to configure the item description translation?**
+
+The "Enable Item Translations" field, present in the product configurator setup, allows to save the language configured description in items / variants. The description is composed with the rules already provided by the configurator and uses the language descriptions present in the characteristics and their values.
+During configuration, descriptions are generated for all languages in the neutral item. 
+
+Alternatively for the documents print we have an App "Product Configurator for Adv Document Reporting" (but you must have Adv Document Reporting App) and we print the translations in the documents.
+
+<br>
+**Is it possible to import the neutral rules?**
+
+Yes, it is. To allow the import of the neutral rule table via configuration package, a new table has been created named: 18091294 "EOS028 CFG Neutral Rule Import".Direct import into the neutral rules table (18091268 "EOS028 CFG Neutral Rule") is not possible because the Key Code field, present in the primary key, cannot be valued externally to BC.In the setup of the product configurator, a special function has been inserted to empty the contents of the table 18091294 "EOS028 CFG Neutral Rule Import".
+
+<br>
+**Is it possible to reconfigure a variant? I am not seeing a way to choose different characteristic values for a variant after the variant has been created**
+
+It’s not possible to reconfigure a variant because the characteristics choosen may affect the item variant information.
+The only way is to delete the wrong one and create a new configured item variant.
+the reconfigure action recalculates the description, prices, bom and other parameters, if the rule has been changed.
+If you have chosen a wrong characteristic you have to create a new configured item variant.
+
+<br>
+**How to use formula inside a phantom BOM?**
+
+This feature is not available. As workaround it’s possible to create the item with the same code of phantom BOM, assign to it the production BOM phantom and the right rule to transfer the characteristic's values from the finished good. 
+Note that the configurator will also create new items/variants, you could set as Blocked this “fake” configurable item.
+
+<br>
+**How does “BOM reconfiguration” work?**
+
+If the field “Enable BOM Reconfiguration” in Configurator Setup is active and the neutral BOM or routing are changed, the configured ones are updated when that characteristics set is entered in a document or by manually performing the “Reconfigure Items/Variants” action  from Item Configurator Keys page
+
+<br>
+<br>
