@@ -1,0 +1,50 @@
+The calculation of the Net Weight is carried out in different ways depending on the Parameters Source (ETC) set in route plan header. If **Route Plan Header** applies, the price list is read using the Net Weight field in the route plan header. In this case, zones can be used. Then, given the price list, the calculation is made with the weight present in the individual documents that make up the route plan.
+
+If it is **Source Document** the calculation is made for each individual document present in the lines of the route plan. The net weight with which the price list is read is taken from the individual documents that make up the round.
+In this case, zones can be used.
+
+<br>
+
+**1. Example** with Net Weight and Parameters Source (ETC) set to Route Plan Header. Given a Net Weight price list that includes the following minimum quantities:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine20.png"><br>
+
+And the following lines:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine21.png"><br>
+<br>
+
+I get the following calculation of transport costs:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine22.png"><br>
+
+Where the unit price per KG is 2,5 Euro because it is taken with the total weight of the route plan equal to 192 KG.
+Then the tariff (Expected) is calculated as a multiplication of the price by the weight of the single document.
+
+<br>
+
+**2. Example** with Net Weight and Parameters Source (ETC) set to Source Document. Given a Net Weight price list that includes the following minimum quantities:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine23.png"><br>
+
+And the following lines:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine24.png"><br>
+
+<br>
+
+I get the following calculation of transport costs:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine25.png"><br>
+
+The price list is read for each individual line using the respective net weight.
+In the first line, the net weight is 36 KG, so according to the minimum quantity the price per KG is 3 Euros.
+In the second row, the net weight is 135 KG, so according to the minimum quantity the price per KG is 2,5 Euro.
+Then the Tariff (Expected) is calculated as a multiplication of the price by the weight of the single document.
+
+<br>
+
+**Gross Weigth, Volume, Parcel No. Calculation**
+
+The calculation method used for gross weight, volume and Parcels is the same as net weight.   
+
