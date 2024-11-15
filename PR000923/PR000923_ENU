@@ -1,0 +1,23 @@
+It is important to point out that within a route plan:
+* All documents must have the same shipping agent.
+* All documents must have the same periodic tour code.
+* All documents must have the same Source Doc. type. 
+
+<br>
+
+It is recommended to keep the values of the **Document Param. Source** in the Transport Cost Setup and **Weight Calc. Source** in the Delivery Route Setup "aligned".<br>
+The CWS value has been deliberately omitted from the Delivery Route Setup because in the event that the source document is a CWS shipment, weights and pallets are taken from the relevant CWS shipment data.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000923-0/Immagine28.png"><br>
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000923-0/Immagine29.png"><br>
+
+<br>
+
+In addition, a new field called **"Make Weights/Pallets Editable"** has been added to the delivery route setup.<br>
+It is recommended that you do not enable the new field if you are using transport calculation. The calculation of transport costs is always done with weights and pallets present in the source documents.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000923-0/Immagine30.png"><br>
+
