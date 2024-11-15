@@ -1,0 +1,62 @@
+Il calcolo relativo ai KM e alle Ore avviene con modalità diverse in funzione all’**Origine parametri ETC** impostata in testata del giro di consegna. 
+* Se vale **Testata Giro di Consegna**, il listino viene letto utilizzando i campi KM viaggio o ore viaggio presenti in testata del giro. Nella lettura del prezzo di listino non vengono considerate le zone. Il prezzo unitario si intende per KM o ora e si può differenziare ad esempio per codice giro periodico. L’importo ottenuto moltiplicando i KM Totali per il listino viene spalmato nella varie righe che compongono il viaggio proporzionalmente in base all’importo Base (VL). 
+
+* Se vale **Documento di origine**, il calcolo viene fatto per ogni singolo documento presente nelle righe del giro di consegna. I KM e le Ore dei singoli documenti vengono presi dai campi presenti nelle testate. Nella lettura del prezzo di listino vengono considerate le zone.
+
+<br>
+
+Ad esempio negli ordini di vendita è possibile impostare i km e le ore:    
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine11_ITA.png"><br>
+
+<table>
+<tr>
+<th>
+N.B.
+</th>
+<td>I campi vanno resi visibili nei vari documenti.<br>Non esistono procedure di valorizzazione automatica.<br>Al momento non sono presenti in testata dei documenti CWS.</td>
+</tr>
+</table>
+
+<br>
+
+**1. Esempio** con KM e Origine parametri ETC impostata a Testata Giro Consegna. Dato un listino a KM che prevede i seguenti scaglioni:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine12_ITA.png"><br>
+
+Un giro di consegna che prevede in testata i seguenti dati:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine13_ITA.png"><br>
+
+E le seguenti righe:  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine14_ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine15_ITA.png"><br>
+
+Il numero totale dei KM è di 1200 e pertanto il prezzo al KM prelevato dal listino è di 0,4 Euro.
+Il totale del nolo è di 1200\*0,4=480 Euro.
+Il totale poi viene ripartito nelle varie righe in modo proporzionale rispetto all’Importo Base (VL). Ad esempio nella prima riga: 480\*8000/42000=91,43.  
+  
+<br>
+
+**2. Esempio** con KM e Origine parametri ETC impostata a Documenti di origine. Dato un listino a KM che prevede i seguenti scaglioni:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine16_ITA.png"><br>
+
+E le seguenti righe: 
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine17_ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine18_ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000769-0/Immagine19_ITA.png"><br>
+
+Il prezzo di listino viene letto per ogni singola riga utilizzando i rispettivi KM.
+La prima riga è di 64 KM pertanto in base allo scaglione il prezzo al KM è di 0,5 Euro.
+La seconda riga è di 285 KM pertanto in base allo scaglione il prezzo al KM è di 0,4 Euro.
+Poi il nolo è calcolato come moltiplicazione del prezzo per i KM del singolo documento.
+<br>
