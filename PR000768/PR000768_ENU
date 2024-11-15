@@ -1,0 +1,31 @@
+The price list per travel is applied to the entire route plan. In the reading of the price list, the zones and minimum quantity are not considered as the price list is by travel (for example by periodic tour code).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000768-0/Immagine8.png"><br>
+
+<br>
+
+The calculation of the travel is carried out in different ways depending on the **Parameters Source (ETC)** set in the route plan header. 
+* If it is worth **Route Plan Header**: the amount of the travel is spread over the various lines that make up the route plan proportionally based on the Base Amount (LCY).  
+
+* If it is **Source Document**: The travel amount is applied to all lines of the documents that make up the route plan.
+
+<br>
+
+**1. Example** with Travel and Parameters Source (ETC) set to Route Plan Header. 
+Given a travel whose price list is 1000 Euro and a route plan with the following documents:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000768-0/Immagine9.png"><br>
+
+For each of the lines, the tariff (Expected) amount is calculated in proportion to the Base Amount (LCY). For example, for the first row it is 1000\*8000/42000=190,48.
+
+<br>
+
+**2. Example** with Travel and Parameters Source (ETC) set to Source Document. 
+Given a travel whose price list is 1000 Euro and a route plan with the following documents:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000768-0/Immagine10.png"><br>
+
+For each of the lines, the price of the travel is applied.
+
+
+
