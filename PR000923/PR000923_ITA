@@ -1,0 +1,26 @@
+E’ importante sottolineare che all’interno di un giro di consegna:
+* Tutti i documenti devono avere lo stesso spedizioniere.
+* Tutti i documenti devono avere lo stesso cod. tour periodico.
+* Tutti i documenti devono avere lo stesso tipo doc. origine. 
+
+
+<br>
+
+Si consiglia di mantenere «allineati» i valori dei campi **Origine parametri documenti** presente nel Setup costi trasporto e **Origine calcolo peso** presente nel setup giri di consegna.<br>
+Nel Setup giri di consegna è stato volutamente omesso il valore CWS  in quanto nel caso in cui il documento origine sia una spedizione CWS pesi e pallet vengono presi dai relativi dati spedizione CWS. 
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000923-0/Immagine28_ITA.png"><br>
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000923-0/Immagine29_ITA.png"><br>
+
+<br>
+
+Nel setup dei giri di consegna inoltre è stato inserito un nuovo campo denominato **«Rendi modificabili Pesi/Pallet»**. <br>
+Si consiglia di non abilitare il nuovo campo in caso di utilizzo di calcolo spese di trasporto. Il calcolo delle spese di trasporto avviene sempre e comunque con pesi e pallet presenti nei documenti di origine.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000923-0/Immagine30_ITA.png"><br>
+
