@@ -1,0 +1,12 @@
+Le nuove funzioni aggiunte nei giri di consegna sono:
+* **Calcola costi di trasporto per giro.** La funzionalità consente di calcolare i costi di trasporto per tutti i documenti che compongono il giro. Il calcolo viene fatto in base al campo Origine parametri doc presente nel Setup costi di trasporto (ETC). 
+* **Costi di trasporto per giro.** Consente di visualizzare il calcolo dei costi di trasporto con i relativi totali. Consente anche la modifica dell’importo del costo di trasporto.
+* **Listino.** Visualizza il listino dello spedizioniere presente in testata del giro di consegna.
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000754-0/Immagine1_ITA.png"><br>
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000754-0/Immagine2_ITA.png"><br>
