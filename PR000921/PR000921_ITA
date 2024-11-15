@@ -1,0 +1,53 @@
+Il calcolo relativo al Peso Netto avviene con modalità diverse in funzione all’Origine parametri ETC impostata in testata del giro di consegna. 
+Se vale **Testata Giro di Consegna** il listino viene letto utilizzando il campo peso netto presente in testata del giro. In questo caso si possono utilizzare le zone. Poi dato il listino il calcolo viene fatto con il peso presente nei singoli documenti che compongono il giro.
+
+Se vale **Documento di origine** il calcolo viene fatto per ogni singolo documento presente nelle righe del giro di consegna. Il peso netto con cui viene letto il listino viene preso dai singoli documenti che compongono il giro.
+In questo caso si possono utilizzare le zone.  
+
+<br>
+
+**1. Esempio** con Peso Netto e Origine parametri ETC impostata a Testata Giro Consegna. Dato un listino a Peso Netto che prevede i seguenti scaglioni:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine20_ITA.png"><br>
+
+E le seguenti righe:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine21_ITA.png"><br>
+
+<br>
+
+Ottengo il seguente calcolo dei costi di trasporto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine22_ITA.png"><br>
+
+Dove il prezzo unitario al KG è di 2,5 Euro perché prelevato con il peso totale del giro pari a 192 KG.
+Poi il nolo è calcolato come moltiplicazione del prezzo per il peso del singolo documento.
+
+<br>
+
+**2. Esempio** con Peso Netto e Origine parametri ETC impostata a Documento di Origine. Dato un listino a Peso Netto che prevede i seguenti scaglioni:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine23_ITA.png"><br>
+
+E le seguenti righe:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine24_ITA.png"><br>
+
+<br>
+
+Ottengo il seguente calcolo dei costi di trasporto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000921-0/Immagine25_ITA.png"><br>
+
+Il prezzo di listino viene letto per ogni singola riga utilizzando il rispettivo peso netto.
+Nella prima riga il peso netto è di 36 KG pertanto in base allo scaglione il prezzo al KG è di 3 Euro.
+Nella seconda riga il peso netto è di 135 KG pertanto in base allo scaglione il prezzo al KG è di 2,5 Euro.
+Poi il nolo è calcolato come moltiplicazione del prezzo per il peso del singolo documento.
+
+
+<br>
+
+**Calcolo Peso Lordo, Volume, Nr. Colli**
+
+La modalità di calcolo utilizzata per peso lordo, volume e nr. Colli è la stessa del peso netto.    
+ 
