@@ -44,7 +44,7 @@ La modalità di rilevazione dei pagamenti e, quindi, l’uso del conto transitor
 
 &nbsp;Come chiarito nel punto 1, i conti C/G relativi ai conti bancari non vengono esportati in DocFinance che opera con il codice C/C bancario . Il flusso di ritorno utilizza, quindi, sempre i C/C bancari
 
-**f) E’ possibile inviare a DocFinance ABI e CAB relativi ai conti correnti clienti/fornitori? **
+**6) E’ possibile inviare a DocFinance ABI e CAB relativi ai conti correnti clienti/fornitori?**
 
 Sì, ABI e CAB vengono inviati automaticamente se è stata installata l’app gratuita “DocFinance Connector for Italy”, non è richiesto abilitare alcun setup.
 ABI e CAB devono essere inseriti in BC nel conto corrente cliente/fornitore, che viene ricercato nei movimenti contabili cliente/fornitore.
