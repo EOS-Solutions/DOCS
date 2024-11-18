@@ -7,15 +7,15 @@ Nella scheda Setup provvigioni, Tab Contributi, si possono impostare i conti cos
 | **Campo**                                                                              | **Definizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nr. distinte contributi                                                                | nr. serie per le distinte dei contributi                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Nome def. reg. contributi/ Nome batch contributi                                       | rappresentano i batch per le scritture contabili prima della registrazione (il batch puï avere o meno un nr. serie impostato) <img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupIT2.png"><br>                                                                                                                                                                                                                                                                                                                               |
+| Nome def. reg. contributi/ Nome batch contributi                                       | rappresentano i batch per le scritture contabili prima della registrazione (il batch pu√≤ avere o meno un nr. serie impostato) <img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupIT2.png"><br>                                                                                                                                                                                                                                                                                                                               |
 | **ENASARCO**                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Nr. protocollo Enasarco / Nr. posizione Enasarco                                       | inserire il numero protocollo e il numero posizione (matricola) Enasarco. Tali campi saranno poi esposti nel file generato dal sistema.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | **PREVIDENZA /ASSISTENZA / F.I.R.R. / F.I.S.C.**                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Nr. conto costo                                                                        | inserire il conto di costo relativo alla singola tipologia di contributo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Nr. conto debito                                                                       | inserire il conto di debito relativo alla singola tipologia di contributo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | **CONTRIBUTI**                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Registra contributi in periodi chiusi                                                  | ≈ Mostra Errore (opzione di default): la registrazione C/G dello stanziamento contributi non ä consentita; ≈ Prima data disponibile: la registrazione C/G dello stanziamento contributi avverrÖ nel primo giorno disponibile; ≈ Data di registrazione del documento: la registrazione C/G dello stanziamento contributi avverrÖ in Data registrazione fattura.  N.B.: nel caso delle due procedure relative al calcolo dei Contributi FIRR e FISC, l¬opzione √Data di registrazione del documentoƒ assume lo stesso comportamento dell¬opzione √Prima data disponibileƒ.  |
-| Collega automaticamente i movimenti contabili fornitori contributi alla registrazione  | se attivato, in coda alla registrazione della fattura fornitore, il sistema effettua il collegamento tra il movimento contabile fornitore di Tipo Fattura e quello relativo al contributo a carico dell¬agente.                                                                                                                                                                                                                                                                                                                                                           |
+| Registra contributi in periodi chiusi                                                  | ‚Ä¢ Mostra Errore (opzione di default): la registrazione C/G dello stanziamento contributi non √® consentita; ‚Ä¢ Prima data disponibile: la registrazione C/G dello stanziamento contributi avverr√† nel primo giorno disponibile; ‚Ä¢ Data di registrazione del documento: la registrazione C/G dello stanziamento contributi avverr√† in Data registrazione fattura.  N.B.: nel caso delle due procedure relative al calcolo dei Contributi FIRR e FISC, l‚Äôopzione ‚ÄúData di registrazione del documento‚Äù assume lo stesso comportamento dell‚Äôopzione ‚ÄúPrima data disponibile‚Äù.  |
+| Collega automaticamente i movimenti contabili fornitori contributi alla registrazione  | se attivato, in coda alla registrazione della fattura fornitore, il sistema effettua il collegamento tra il movimento contabile fornitore di Tipo Fattura e quello relativo al contributo a carico dell‚Äôagente.                                                                                                                                                                                                                                                                                                                                                           |
 
 **Setup Enasarco previdenza (CMS)**
 
@@ -27,8 +27,8 @@ In Setup Enasarco previdenza da Nuovo inserire i dati relativi alla tipologia Pr
 
 | **Campo**           | **Descrizione**                                                                                                                         |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Data inizio         | data inizio validitÖ contributo                                                                                                         |
-| % carico societÖ    | indicare la % a carico della societÖ                                                                                                    |
+| Data inizio         | data inizio validit√† contributo                                                                                                         |
+| % carico societ√†    | indicare la % a carico della societ√†                                                                                                    |
 | % carico agente     | indicare la % a carico dell'agente                                                                                                      |
 | Minimali /massimali | A seconda che l'agente sia monomandatario o plurimandatario vanno indicati i massimali e i minimali (questi ultimi su base trimestrale) |
 
@@ -38,7 +38,7 @@ In Setup Enasarco assistenza (CMS) da Nuovo inserire i dati relativi alla tipolo
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupIT5.png"><br>
 
-Il fondo assistenza ä per scaglioni quindi per ogni anno occorre inserire fino a 4 scaglioni con le relative percentuali a carico di azienda e agente.
+Il fondo assistenza √® per scaglioni quindi per ogni anno occorre inserire fino a 4 scaglioni con le relative percentuali a carico di azienda e agente.
 
 **Setup F.I.R.R (CMS)**
 
@@ -46,7 +46,7 @@ Il fondo assistenza ä per scaglioni quindi per ogni anno occorre inserire fino a
 
 Da Modifica entriamo nella scheda setup.
 
-Indicare la data inizio validitÖ.
+Indicare la data inizio validit√†.
 
 Successivamente inserire per l'agente monomandatario /plurimandatario gli scaglioni e le percentuali relative come da esempio.
 
@@ -54,62 +54,62 @@ Successivamente inserire per l'agente monomandatario /plurimandatario gli scagli
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupIT7.png"><br>
 
-Per singolo anno di validitÖ vanno impostati i vari dettagli (Commercio e Industria)
+Per singolo anno di validit√† vanno impostati i vari dettagli (Commercio e Industria)
 
 Si possono aggiornare se cambiano i parametri durante l'anno.
 
 **Setup Anagrafica Agenti**
 
-Ogni agente soggetto al calcolo contributi dovrÖ essere abbinato al relativo fornitore
+Ogni agente soggetto al calcolo contributi dovr√† essere abbinato al relativo fornitore
 
-Nella scheda Agente/add. acquisti ä presente un gruppo dedicato alle impostazioni necessarie per la gestione dei contributi:
+Nella scheda Agente/add. acquisti √® presente un gruppo dedicato alle impostazioni necessarie per la gestione dei contributi:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupIT8.png"><br>
 
 | **Campo**                       | **Descrizione**                                                                                                                                                                                                                                                                                                                |
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo di societÖ                 | Agente individuale SocietÖ di persone: per gli Agenti/add. acquisti che rientrano nella casistica in oggetto, deve essere indicato nell¬anagrafica che rappresenta la societÖ di persone, il fornitore di riferimento. (la societÖ di persone ä soggetta a fondo previdenza) SocietÖ di capitali (soggetta a fondo assistenza) |
-| Socio di / Quota societaria     | campi da compilare nel caso di SocietÖ di persone (vedi ultimo paragrafo)                                                                                                                                                                                                                                                      |
+| Tipo di societ√†                 | Agente individuale Societ√† di persone: per gli Agenti/add. acquisti che rientrano nella casistica in oggetto, deve essere indicato nell‚Äôanagrafica che rappresenta la societ√† di persone, il fornitore di riferimento. (la societ√† di persone √® soggetta a fondo previdenza) Societ√† di capitali (soggetta a fondo assistenza) |
+| Socio di / Quota societaria     | campi da compilare nel caso di Societ√† di persone (vedi ultimo paragrafo)                                                                                                                                                                                                                                                      |
 | Tipologia agente                | Monomandatario Plurimandatario                                                                                                                                                                                                                                                                                                 |
 | Data inizio/fine collaborazione | Indicare la data di inizio/eventuale fine collaborazione.                                                                                                                                                                                                                                                                      |
-| Soggetto a Enasarco             | ä possibile attivare o meno il calcolo Enasarco                                                                                                                                                                                                                                                                                |
+| Soggetto a Enasarco             | √® possibile attivare o meno il calcolo Enasarco                                                                                                                                                                                                                                                                                |
 | Nr. marticola Enasarco          | inserire il numero di matricola                                                                                                                                                                                                                                                                                                |
 | Tipo contribuzione Enasarco     | indicare la tipologia di contributo scegliendo fra: Previdenza Assistenza                                                                                                                                                                                                                                                      |
 | Maturato previdenza/assistenza  | campi calcolati che vengono alimentati man mano che il sistema calcola i contributi                                                                                                                                                                                                                                            |
-| Soggetto a F.I.R.R              | ä possibile attivare o meno il F.I.R.R                                                                                                                                                                                                                                                                                         |
+| Soggetto a F.I.R.R              | √® possibile attivare o meno il F.I.R.R                                                                                                                                                                                                                                                                                         |
 | Maturato F.I.R.R:               | campo calcolato dal sistema                                                                                                                                                                                                                                                                                                    |
-| Soggetto a F.I.S.C.             | ä possibile attivare o meno il F.I.S.C.                                                                                                                                                                                                                                                                                        |
+| Soggetto a F.I.S.C.             | √® possibile attivare o meno il F.I.S.C.                                                                                                                                                                                                                                                                                        |
 | Tipo AEC                        | indicare il tipo di contratto fra: Commercio Industria / Confapi                                                                                                                                                                                                                                                               |
 | Storico F.I.S.C. accantonato    | inserire un eventuale storico F.I.S.C. relativo ad una genstione precedente                                                                                                                                                                                                                                                    |
 | Maturato F.I.S.C.               | campo calcolato dal sistema                                                                                                                                                                                                                                                                                                    |
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupIT9.png"><br>
 
-ä fondamentale la compilazione del Codice fornitore nel gruppo Provvigioni
+√® fondamentale la compilazione del Codice fornitore nel gruppo Provvigioni
 
 | **Campo**     | **Descrizione**                                                                                           |
 |---------------|-----------------------------------------------------------------------------------------------------------|
-| Nr. fornitore | Specifica il fornitore correlato all'agente/add. acquisti. VerrÖ utilizzato nel processo di liquidazione. |
+| Nr. fornitore | Specifica il fornitore correlato all'agente/add. acquisti. Verr√† utilizzato nel processo di liquidazione. |
 
 **Setup Anagrafica Fornitore**
 
-Nella Scheda Fornitore, analogamente a quanto mostrato per gli agenti/add. Acquisti, ä presente un gruppo dedicato alle impostazioni necessarie per la gestione dei contributi. In questo caso, i dati sono visualizzati unicamente a scopo informativo, la loro modifica deve essere effettuata dalla scheda agente/add. acquisti, che ä l¬entitÖ proprietaria del dato.
+Nella Scheda Fornitore, analogamente a quanto mostrato per gli agenti/add. Acquisti, √® presente un gruppo dedicato alle impostazioni necessarie per la gestione dei contributi. In questo caso, i dati sono visualizzati unicamente a scopo informativo, la loro modifica deve essere effettuata dalla scheda agente/add. acquisti, che √® l‚Äôentit√† proprietaria del dato.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupIT10.png"><br>
 
 | **N.B.**                                                                                                                                                                                                                                 |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nr. di agenti collegati: se l'agente a sistema ä stato gestito pió volte possiamo collegare pió anagrafiche agenti allo stesso fornitore. Tutti gli agenti collegati allo stesso fornitore devono avere gli stessi parametri di calcolo. |
+| Nr. di agenti collegati: se l'agente a sistema √® stato gestito pi√π volte possiamo collegare pi√π anagrafiche agenti allo stesso fornitore. Tutti gli agenti collegati allo stesso fornitore devono avere gli stessi parametri di calcolo. |
 
-**SocietÖ di persone con soci**
+**Societ√† di persone con soci**
 
-Per gli Agenti/add. acquisti che rientrano nella casistica in oggetto, deve essere indicato nell¬anagrafica che rappresenta la societÖ di persone, il fornitore di riferimento.
+Per gli Agenti/add. acquisti che rientrano nella casistica in oggetto, deve essere indicato nell‚Äôanagrafica che rappresenta la societ√† di persone, il fornitore di riferimento.
 
-Nella scheda agente dovrÖ essere indicato che ä SocietÖ di persone:
+Nella scheda agente dovr√† essere indicato che √® Societ√† di persone:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupIT11.png"><br>
 
-In socio 1 e socio 2 verrÖ specificata la societÖ cui sono collegati e le relative quote societarie:
+In socio 1 e socio 2 verr√† specificata la societ√† cui sono collegati e le relative quote societarie:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000561-0/ENASetupIT12.png"><br>
 
@@ -118,10 +118,10 @@ Vedi anche:
 | [Introduzione]({{<relref "enasarco-firr-and-fisc-cms">}})                                                                        |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Step operativi]({{<relref "ena-steps">}})                                                  |
-| [Distinta contributi / Generazione file]({{<relref "contribution-bill-grandi-ditte">}})|
+| [Distinta contributi / generazione file]({{<relref "distinta-contributi-generazione-file">}})|
 | [Import mov. pregressi]({{<relref "ena-import-previous-contribution-entries">}})|
 
 <br><br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
 
-Copyright — EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.o:p\>
+Copyright ¬© EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.o:p\>
