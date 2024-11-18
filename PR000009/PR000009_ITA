@@ -1,4 +1,4 @@
-La Fondazione Enasarco ([www.enasarco.it)](http://www.enasarco.it/) provvede alla previdenza e all¬assistenza degli agenti e dei rappresentanti di commercio.
+La Fondazione Enasarco ([www.enasarco.it)](http://www.enasarco.it/) provvede alla previdenza e all‚Äôassistenza degli agenti e dei rappresentanti di commercio.
 
 **Introduzione**
 
@@ -6,21 +6,21 @@ La app Enasarco FIRR and FISC (CMS) di Eos Solutions consente di gestire il calc
 
 -   Assegnazione di parametri contributivi a fornitori/agenti
 -   Calcolo dei contributi per le tipologie previste (Enasarco, FIRR, FISC)
--   Registrazione in contabilitÖ dei contributi calcolati
--   PossibilitÖ di intervenire con modifiche e correzioni
+-   Registrazione in contabilit√† dei contributi calcolati
+-   Possibilit√† di intervenire con modifiche e correzioni
 -   Esportazione, ove previsto, del file "Grandi ditte" tramite apposita distinta
 -   Collegamento facilitato movimenti fornitore legati ai contributi con movimenti fornitore derivanti dalla registrazione del documento di acquisto relativo
 
 
-L¬app Enasarco FIRR and FISC ä basata sulla app Commissions: la base imponibile per il calcolo dei contributi ä rappresentata dalle provvigioni del modulo CMS che risultano liquidate o in liquidazione. Per questo motivo, la parte di gestione contributi ä identificata anch¬essa dall¬acronimo CMS.
+L‚Äôapp Enasarco FIRR and FISC √® basata sulla app Commissions: la base imponibile per il calcolo dei contributi √® rappresentata dalle provvigioni del modulo CMS che risultano liquidate o in liquidazione. Per questo motivo, la parte di gestione contributi √® identificata anch‚Äôessa dall‚Äôacronimo CMS.
 
 | **N.B.**                                                                                                              |
 |-----------------------------------------------------------------------------------------------------------------------|
-| Per poter scaricare ed installare la app Enasarco FIRR and FISC ä necessario avere giÖ installato la app Commissions. |
+| Per poter scaricare ed installare la app Enasarco FIRR and FISC √® necessario avere gi√† installato la app Commissions. |
 
 **Enasarco FIRR and FISC - SUMMARY**
 
-Premere ALT + Q e digitare "CMS" per vedere un elenco delle funzionalitÖ coinvolte:
+Premere ALT + Q e digitare "CMS" per vedere un elenco delle funzionalit√† coinvolte:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000009-0/ENAIntroduzione1.png"><br>
 
@@ -33,10 +33,10 @@ Premere ALT + Q e digitare "CMS" per vedere un elenco delle funzionalitÖ coinvol
 |F.I.R.R. / F.I.S.C.: Calcola F.I.R.R. (CMS) , Calcolo F.I.S.C (CMS)|[Calcolo e registrazione in C/G movimenti contributi tramiteapposito report presente a menu]({{<relref "ena-calculate-and-post-contribution-entries-through-specific-report">}})|
 |Estrarre i contributi in una distinta e generare il file Grandi Ditte: Distinte contributi (CMS)|[Distinta contributi / Generazione file]({{<relref "contribution-bill-grandi-ditte">}})|
 |Importare movimenti di una gestione precedente o in corso d'opera: Movimenti contributi (CMS)|[Import mov. pregressi]({{<relref "ena-import-previous-contribution-entries">}})|
-|Integrazioni gestione contributi ENASARCO per normativa (agevolazione) √Giovani agentiƒ|[Giovani agenti]({{<relref "ena-giovani-agenti-facilitation">}})|
+|Integrazioni gestione contributi ENASARCO per normativa (agevolazione) ‚ÄúGiovani agenti‚Äù|[Giovani agenti]({{<relref "ena-giovani-agenti-facilitation">}})|
 
 
 <br><br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
 
-Copyright — EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
+Copyright ¬© EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
