@@ -1,0 +1,5 @@
+**a) Is it possible to send ABI and CAB codes related to customer/vendor bank accounts to DocFinance?**
+
+Yes, ABI and CAB codes are automatically sent if the free app "DocFinance Connector for Italy" is installed; no setup activation is required.
+ABI and CAB codes must be entered in BC under the customer/vendor bank account, which is identified in the customer/vendor ledger entries.
+If the bank account is not specified in the entry, the first bank account associated with the customer/vendor is used.
