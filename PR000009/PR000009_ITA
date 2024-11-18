@@ -31,7 +31,7 @@ Premere ALT + Q e digitare "CMS" per vedere un elenco delle funzionalità coinvo
 |Vedere il flusso operativo|[Step operativi]({{<relref "ena-steps">}})|
 |Enasarco Previdenza/Assistenza: Movimenti contributi (CMS), Calcola e registra Enasarco documenti (CMS), Collega mov. contributi a mov. fornitori (CMS)|[Calcolo e registrazione in C/G movimenti contributi in documento di acquisto non registrato]({{<relref "enasarco-firr-and-fisc-cms-calculate-a">}})<br>[Collegamento assistito tramite page ad hoc dei movimenti fornitore generati dalla registrazione dei contributi con i movimenti fornitore relativi alla registrazione del documento di acquisto]({{<relref "ena-apply-contributions-ledger-entries">}})|
 |F.I.R.R. / F.I.S.C.: Calcola F.I.R.R. (CMS) , Calcolo F.I.S.C (CMS)|[Calcolo e registrazione in C/G movimenti contributi tramiteapposito report presente a menu]({{<relref "ena-calculate-and-post-contribution-entries-through-specific-report">}})|
-|Estrarre i contributi in una distinta e generare il file Grandi Ditte: Distinte contributi (CMS)|[Distinta contributi / Generazione file]({{<relref "contribution-bill-grandi-ditte">}})|
+|Estrarre i contributi in una distinta e generare il file Grandi Ditte: Distinte contributi (CMS)|[Distinta contributi / Generazione file]({{<relref "distinta-contributi-generazione-file">}})|
 |Importare movimenti di una gestione precedente o in corso d'opera: Movimenti contributi (CMS)|[Import mov. pregressi]({{<relref "ena-import-previous-contribution-entries">}})|
 |Integrazioni gestione contributi ENASARCO per normativa (agevolazione) “Giovani agenti”|[Giovani agenti]({{<relref "ena-giovani-agenti-facilitation">}})|
 
