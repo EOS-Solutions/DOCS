@@ -1,6 +1,6 @@
 **Causali provvigione (CMS)**
 
-In Causali Provvigioni Š presente il campo Escludi da calcolo F.I.R.R. e F.I.S.C.
+In Causali Provvigioni Ã¨ presente il campo Escludi da calcolo F.I.R.R. e F.I.S.C.
 
 Il sistema, quando genera la fattura di liquidazione relativa ai mov. provvigionali per la causale con il flag abilitato, non deve considerare tali movimenti per il calcolo F.I.R.R. e F.I.S.C..
 
@@ -8,17 +8,17 @@ Il sistema, quando genera la fattura di liquidazione relativa ai mov. provvigion
 
 **Calcola F.I.R.R. (CMS)**
 
-Il calcolo del F.I.R.R. Š eseguito tramite funzione a menu: Calcola F.I.R.R. (CMS)
+Il calcolo del F.I.R.R. Ã¨ eseguito tramite funzione a menu: Calcola F.I.R.R. (CMS)
 
-Il report prevede lÂimmissione dei parametri di calcolo necessari e la possibilit… di visualizzare unÂanteprima del calcolo senza effettuare registrazioni.
+Il report prevede lâ€™immissione dei parametri di calcolo necessari e la possibilitÃ  di visualizzare unâ€™anteprima del calcolo senza effettuare registrazioni.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegTramiteReport2.png"><br>
 
 | **Opzione**   | **Descrizione**                                                                                                                                                                  |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Data calcolo  | indicare la data calcolo (alcune aziende effettuano il calcolo su base mensile, altre su base trimestrale, altre ancora su base annuale)                                         |
-| Nr. documento | se non Š stato attivato il numeratore automatico nel setup batch Š necessario indicare un Nr. documento (di solito Š il singolo utente che indica il numero nel presente report) |
-| Registra      |  se non viene attivato il sistema fornisce un' anteprima del calcolo dei contributi, ma non genera movimenti in contabilit… generale                                             |
+| Nr. documento | se non Ã¨ stato attivato il numeratore automatico nel setup batch Ã¨ necessario indicare un Nr. documento (di solito Ã¨ il singolo utente che indica il numero nel presente report) |
+| Registra      |  se non viene attivato il sistema fornisce un' anteprima del calcolo dei contributi, ma non genera movimenti in contabilitÃ  generale                                             |
 
 Per ogni agente viene mostrato il codice, la tipologia e la data inizio collaborazione. Inoltre il report riporta l'imponibile provvigionale, l'importo calcolato sull'imponibile, eventuali accantonamenti e l'importo da registrare:
 
@@ -32,7 +32,7 @@ In Mov Contributi vediamo i movimenti contributi per il fornitore
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegTramiteReport5.png"><br>
 
-Come per l' Enasarco l'Importo contributo Š modificabile. Successivamente da Elabora-\>Registra correzione in C/G viene registrata la correzione in contabilit… generale.
+Come per l' Enasarco l'Importo contributo Ã¨ modificabile. Successivamente da Elabora-\>Registra correzione in C/G viene registrata la correzione in contabilitÃ  generale.
 
 Il campo Importo contributo diventa navigabile e mostra il dettaglio della correzione.
 
@@ -40,17 +40,17 @@ Il campo Importo contributo diventa navigabile e mostra il dettaglio della corre
 
 **Calcolo FISC**
 
-Il calcolo del F.I.S.C. Š eseguito tramite funzione a menu Il report prevede lÂimmissione dei parametri di calcolo necessari e la possibilit… di visualizzare unÂanteprima del calcolo senza effettuare registrazioni
+Il calcolo del F.I.S.C. Ã¨ eseguito tramite funzione a menu Il report prevede lâ€™immissione dei parametri di calcolo necessari e la possibilitÃ  di visualizzare unâ€™anteprima del calcolo senza effettuare registrazioni
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegTramiteReport7.png"><br>
 
 | **Opzione**   | **Descrizione**                                                                                                                                                                  |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Data calcolo  | indicare la data calcolo (alcune aziende effettuano il calcolo su base mensile, altre su base trimestrale, altre ancora su base annuale)                                         |
-| Nr. documento | se non Š stato attivato il numeratore automatico nel setup batch Š necessario indicare un Nr. documento (di solito Š il singolo utente che indica il numero nel presente report) |
+| Nr. documento | se non Ã¨ stato attivato il numeratore automatico nel setup batch Ã¨ necessario indicare un Nr. documento (di solito Ã¨ il singolo utente che indica il numero nel presente report) |
 | Registra      |                                                                                                                                                                                  |
 
-|  se non viene attivato il sistema fornisce un' anteprima del calcolo dei contributi, ma non genera movimenti in contabilit… generale |
+|  se non viene attivato il sistema fornisce un' anteprima del calcolo dei contributi, ma non genera movimenti in contabilitÃ  generale |
 |--------------------------------------------------------------------------------------------------------------------------------------|
 
 Per ogni agente viene stampata una testata con il nome e la tipologia di contratto. Le righe sono tante quanti sono gli scaglioni degli anni di calcolo del F.I.S.C. e ciascuna riporta l'imponibile provvigionale, l'importo calcolato, eventuali accantonamenti e l'importo da registrare:
@@ -61,12 +61,12 @@ importo da accantonare:
 
 | **N.B**.                                                                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Importo da accantonare: se Š presente un accantonamento per anni precedenti, tale importo va inserito nello specifico campo in anagrafica agente, tab Contributi: 
-|<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegTramiteReport9.png"><br>   e nel report di calcolo F.I.S.C. il sistema sommer… l'importo. |
+| Importo da accantonare: se Ã¨ presente un accantonamento per anni precedenti, tale importo va inserito nello specifico campo in anagrafica agente, tab Contributi: 
+|<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegTramiteReport9.png"><br>   e nel report di calcolo F.I.S.C. il sistema sommerÃ  l'importo. |
 
 Dopo aver attivato il flag Registra sul report e dopo averlo eseguito (anche in anteprima), in Registri contributi (CMS), vediamo le scritture contabili generate.
 
-In Mov Contributi Š presente il dettaglio movimenti contributi per il fornitore. Anche in questo caso l'Importo contributo Š modificabile. Successivamente da Elabora-\>Registra correzione in C/G viene registrata la correzione in contabilit… generale.
+In Mov Contributi Ã¨ presente il dettaglio movimenti contributi per il fornitore. Anche in questo caso l'Importo contributo Ã¨ modificabile. Successivamente da Elabora-\>Registra correzione in C/G viene registrata la correzione in contabilitÃ  generale.
 
 Il campo Importo contributo diventa navigabile e mostra il dettaglio della correzione.
 
@@ -75,10 +75,10 @@ Vedi anche:
 | [Introduzione]({{<relref "enasarco-firr-and-fisc-cms">}})                                                             |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Step operativi]({{<relref "ena-steps">}})                                |
-| [Distinta contributi / Generazione file]({{<relref "contribution-bill-grandi-ditte">}})  |
+| [Distinta contributi / Generazione file]({{<relref "distinta-contributi-generazione-file">}})  |
 | [Import mov. pregressi]({{<relref "ena-import-previous-contribution-entries">}})                                   |
 
 <br><br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
 
-Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
+Copyright Â© EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
