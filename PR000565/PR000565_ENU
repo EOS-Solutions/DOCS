@@ -107,7 +107,7 @@ Let's open Calculate Enasarco Integration (CMS):
 	</tr>
 </tbody></table>
 
-By running the report with √Create Entries" **enabled** and √Post Entriesƒ **not enabled**, the system creates the movements without posting them in General Ledger.
+By running the report with ‚ÄúCreate Entries" **enabled** and ‚ÄúPost Entries‚Äù **not enabled**, the system creates the movements without posting them in General Ledger.
 
 Running the report again for the same period does not create effects, the movements created and not posted in the G/L must then be posted in the G/L by "Contribution Ledger Entry (CMS)".
 
@@ -116,10 +116,10 @@ See also:
 | [Introduction]({{<relref "enasarco-firr-and-fisc-cms">}})                                                                       |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Steps]({{<relref "ena-steps">}}) |
-| [Contribution Bill / Grandi Ditte File]({{<relref "contribution-bill-grandi-ditte">}}) |
+| [Contribution bill / File generation]({{<relref "distinta-contributi-generazione-file">}}) |
 | [Import previous contribution entries]({{<relref "enasarco-firr-and-fisc-cms-calculate-a">}})  |
 
 <br><br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
 
-Copyright — EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
+Copyright ¬© EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
