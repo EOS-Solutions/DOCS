@@ -1,0 +1,26 @@
+Once the contribution entries have been posted, they can be extracted in a list that groups them by type and reference period. The bill is preparatory to the generation of the Grandi Ditte file, for this reason it deals with FIRR or Enasarco type entries.
+
+With the "Suggest contributions entries" function it is possible to populate the bill lines by analyzing the contributions entries corresponding to the filters entered. In Contributions Bill List (CMS) we find all the lists already created. Opening a Card:  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000924-0/37Enasarco FIRR and FISC(1).png"><br>
+
+
+| Field    |      Description     |		
+|----------|:---------------------|		
+| No. | serial number assigned by the system based on the numerator set in commission setup         |		
+| Contribution Type | specifies contribution type of contributions bill:<br> - Enasarco<br> - FiRR     |                                                                                                     
+| Bill Date Specifies | specifies the date of the contributions bill. The systems suggests the workdate      |		
+| Starting / Ending Date | if it is an Enasarco bill, set the quarter start date. The system automatically will insert the quarter-end date.<br>If it is a FIRR bill, set the start date. The system automatically inserts the year end date       | 
+
+
+
+From **Suggest contributions entries** the system generates the lines of the bill: it proposes the contributions entries for each vendor and salesperson. The fields in the lines are useful for generating the Grandi Ditte file (for companies with a number of salespeople>100). In fact, in the Grandi Ditte file will be necessary to export the Relationship Code field and the Total Document Amount given by the sum of the Document Amount (LCY) fields in the lines.
+
+After releasing the bill, you can generate and subsequently send the large company file from **Create File**. The **File **Tab contains the details.
+
+| **N.B.** |
+| The file name is encoded. The system takes the information from the fields set in the Commission setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000924-0/38Enasarco FIRR and FISC(1).png"><br>
+
+From Download file or by clicking on the file name you can download and view it.
