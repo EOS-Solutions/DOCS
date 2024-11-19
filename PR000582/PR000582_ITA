@@ -1,8 +1,8 @@
 **Introduzione**
 
-La Fondazione ha introdotto delle variazioni al Regolamento delle attivit… istituzionali, per agevolare lÂingresso e la permanenza nella professione dei giovani agenti. In particolare, con lÂArticolo 5 Bis, Š possibile usufruire di importanti agevolazioni contributive.
+La Fondazione ha introdotto delle variazioni al Regolamento delle attivitÃ  istituzionali, per agevolare lâ€™ingresso e la permanenza nella professione dei giovani agenti. In particolare, con lâ€™Articolo 5 Bis, Ã¨ possibile usufruire di importanti agevolazioni contributive.
 
-La documentazione dettagliata relativa lÂagevolazione contributiva ÃGiovani agentiÄ Š presente al link <https://www.enasarco.it/guida/nuove-misure-art-5-bis/>
+La documentazione dettagliata relativa lâ€™agevolazione contributiva â€œGiovani agentiâ€ Ã¨ presente al link <https://www.enasarco.it/guida/nuove-misure-art-5-bis/>
 
 **Scheda Agente/Add. Acquisti**
 
@@ -10,9 +10,9 @@ Nella scheda Agente / Add. Acquisti vanno indicate le date di inizio e fine agev
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000582-0/GiovaniAgenti1.png"><br>
 
-La compilazione dei campi ÃData inizio agevolazioneÄ e ÃData fine agevolazioneÄ Š possibile solo se i controlli sui campi
+La compilazione dei campi â€œData inizio agevolazioneâ€ e â€œData fine agevolazioneâ€ Ã¨ possibile solo se i controlli sui campi
 
-| Tipo societ…                |
+| Tipo societÃ                 |
 |-----------------------------|
 | Soggetto a Enasarco         |
 | Tipo contribuzione Enasarco |
@@ -21,17 +21,17 @@ vanno a buon fine.
 
 **Anagrafica Fornitore**
 
-In anagrafica Fornitore collegata allÂanagrafica Agente sono presenti gli stessi campi data (campi non editabili e sincronizzati):
+In anagrafica Fornitore collegata allâ€™anagrafica Agente sono presenti gli stessi campi data (campi non editabili e sincronizzati):
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000582-0/GiovaniAgenti2.png"><br>
 
-Nella pagina Setup Enasarco Previdenza, in ÃSetup agevolazioniÄ vanno impostati i periodi
+Nella pagina Setup Enasarco Previdenza, in â€œSetup agevolazioniâ€ vanno impostati i periodi
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000582-0/GiovaniAgenti3.png"><br>
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000582-0/GiovaniAgenti4.png"><br>
 
-Per pre-caricare i valori di default, occorre eseguire lÂazione ÃRipristina predefinitoÄ. Si possono poi apportare eventuali modifiche al setup.
+Per pre-caricare i valori di default, occorre eseguire lâ€™azione â€œRipristina predefinitoâ€. Si possono poi apportare eventuali modifiche al setup.
 
 Il calcolo dei contributi Enasarco, delle integrazioni/recuperi segue la logica standard.
 
@@ -41,10 +41,10 @@ Vedi anche:
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Setup]({{<relref "enasarco-firr-and-fisc-setup">}})         |
 | [Step operativi]({{<relref "ena-steps">}})  |
-| [Distinta contributi / Generazione file]({{<relref "contribution-bill-grandi-ditte">}}) |
+| [Distinta contributi / Generazione file]({{<relref "distinta-contributi-generazione-file">}}) |
 | [Import mov. pregressi]({{<relref "ena-import-previous-contribution-entries">}})   |
 
 <br><br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
 
-Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
+Copyright Â© EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
