@@ -24,3 +24,21 @@ After releasing the bill, you can generate and subsequently send the large compa
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000924-0/38Enasarco FIRR and FISC(1).png"><br>
 
 From Download file or by clicking on the file name you can download and view it.
+
+
+See also:
+
+| [Introduction]({{<relref "enasarco-firr-and-fisc-cms">}})                                                                        |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Enasarco FIRR and FISC - Setup]({{<relref "enasarco-firr-and-fisc-setup">}})                                                                         |
+| [ENA steps]({{<relref "ena-steps">}})  |
+| [Calculate and post contribution entries in unposted purchase document]({{<relref "enasarco-firr-and-fisc-cms-calculate-a">}})
+| [Apply Contributions Ledger Entries]({{<relref "ena-apply-contributions-ledger-entries">}})                                                                         |
+| [Calculate and post contribution entries through specific report]({{<relref "ena-calculate-and-post-contribution-entries-through-specific-report">}})                                                                         |
+| [Import previous contribution entries]({{<relref "ena-import-previous-contribution-entries">}})                                                                         |
+| ["Giovani Agenti" facilitation"]({{<relref "ena-giovani-agenti-facilitation">}})                                                                         |
+
+<br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
+
+Copyright © EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.o:p\>
