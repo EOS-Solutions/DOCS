@@ -2,20 +2,22 @@ Nella page di setup:
 
 <br>
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/3CombinedWarehouseShipment_ITA.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/SetupCWS_1_ITA.png"><br>
 <br><br>
 
 | **Campo** | **Descrizione** |
 | --- | --- |
 | **Spedizione** |
-| Nr. spedizioni | Specifica il codice di numerazione da utilizzare per assegnare i numeri ai documenti di spedizione CWS. Puï essere un numero generico oppure specifico per singola ubicazione. |
-| Cumula spedizioni | Va abilitato se si vuole che le spedizioni si possano cumulare, altrimenti vale la gestione standard 1 ordine = 1 documento di spedizione.<br> **Va abilitato nel setup CWS e per singola ubicazione.**<br>N.B.<br>Se viene abilitato nel Setup CWS e a sistema esistono ubicazioni precedentemente inserite e impostate, BC chiederÖ se aggiornare anche tutte le ubicazioni. |
+| Nr. spedizioni | Specifica il codice di numerazione da utilizzare per assegnare i numeri ai documenti di spedizione CWS. Pu√≤ essere un numero generico oppure specifico per singola ubicazione. |
+| Cumula spedizioni | Va abilitato se si vuole che le spedizioni si possano cumulare, altrimenti vale la gestione standard 1 ordine = 1 documento di spedizione.<br> **Va abilitato nel setup CWS e per singola ubicazione.**<br>N.B.<br>Se viene abilitato nel Setup CWS e a sistema esistono ubicazioni precedentemente inserite e impostate, BC chieder√† se aggiornare anche tutte le ubicazioni. |
 | Metodo cancellazione docum. whse. | Specifica le azioni successive alla registrazione della spedizione warehouse, riguardo alla sua cancellazione.<br><ul><li>Default: vengono cancellate solo le righe completamente registrate</li><li>Dopo la prima registrazione</li><li>Righe parzialmente spedite</li></ul>|
-| AbilitÖ raggruppamento per attivitÖ | Serve a migliorare le performance delle CWS in particolare quando si utilizzano spedizioni warehouse con molte righe. Se attivato, il calcolo dei gruppi non avviene pió riga per riga ma solo alla fine delle diverse azioni utilizzate per il recupero delle righe. Nel caso si utilizzino delle gestioni personalizzate per la creazione delle righe delle spedizioni warehouse ä necessario adeguare la funzione alla nuova funzionalitÖ. |
-| Spedisci sempre tutte le righe | Lo standard di Business Central permette di impostare dei filtri sulle righe della spedizione warehouse e in fase di registrazione vengono registrate solo le righe filtrate. Attivando questa nuova funzionalitÖ i filtri impostati vengono ignorati e vengono spedite tutte le righe. |
+| Abilit√† raggruppamento per attivit√† | Serve a migliorare le performance delle CWS in particolare quando si utilizzano spedizioni warehouse con molte righe. Se attivato, il calcolo dei gruppi non avviene pi√π riga per riga ma solo alla fine delle diverse azioni utilizzate per il recupero delle righe. Nel caso si utilizzino delle gestioni personalizzate per la creazione delle righe delle spedizioni warehouse √® necessario adeguare la funzione alla nuova funzionalit√†. |
+| Spedisci sempre tutte le righe | Lo standard di Business Central permette di impostare dei filtri sulle righe della spedizione warehouse e in fase di registrazione vengono registrate solo le righe filtrate. Attivando questa nuova funzionalit√† i filtri impostati vengono ignorati e vengono spedite tutte le righe. |
+| **Carico** |
+| Metodo cancellazione carico whse. | Specifica le azioni successive alla registrazione del carico warehouse, riguardo alla sua cancellazione.<br><ul><li>Default: vengono cancellate solo le righe completamente registrate</li><li>Dopo la prima registrazione</li><li>Righe parzialmente caricate</li></ul>|
 | **Vendita** |
 | Registra righe non-articolo | Specifica se registrare righe di tipo non articolo nel documento di origine durante la registrazione di una spedizione warehouse. |
-| Riga descrittiva nr. ordine | Specifica se aggiungere una riga descrittiva con il numero ordine nella fattura. Il riferimento alla spedizione CWS con la data di registrazione viene sempre riportato. Nella seconda riga si puï scegliere se inserire il  numero d'ordine, il numero documento esterno, Vs. riferimento oppure nulla.<br>Nell'esempio ä stato scelto di inserire il numero d'ordine interno:<br> <img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/29CombinedWarehouseShipment_ITA.png"><br> |
+| Riga descrittiva nr. ordine | Specifica se aggiungere una riga descrittiva con il numero ordine nella fattura. Il riferimento alla spedizione CWS con la data di registrazione viene sempre riportato. Nella seconda riga si pu√≤ scegliere se inserire il  numero d'ordine, il numero documento esterno, Vs. riferimento oppure nulla.<br>Nell'esempio √® stato scelto di inserire il numero d'ordine interno:<br> <img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/29CombinedWarehouseShipment_ITA.png"><br> |
 | **Acquisto** |
 | Registra righe non-articolo | Specifica se registrare righe di tipo non articolo nel documento di origine durante la registrazione di un carico warehouse o di una spedizione warehouse. |
 | Riga descrittiva nr. ordine | Specifica se aggiungere una riga descrittiva con il numero ordine nella fattura. |
