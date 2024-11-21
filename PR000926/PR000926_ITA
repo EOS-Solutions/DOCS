@@ -1,0 +1,8 @@
+L'app Combine Warehouse Shipment nei carichi warehouse sotituisce la funzione standard **Prendi documenti origine**, che permette di selezionare le testate dei documenti di origine, con una nuova funzione denominata **Prendi righe documenti origine** che permette di selezionare le singole righe dei documenti di origine. 
+Fra i vari campi esposti nella page esiste la colonna editabile quantità da ricevere, attraverso la quale è possibile digitare la quantità ricevuta in fase di importazione righe documento. 
+Questa funzionalità consente di velocizzare le operazioni di inserimento dei DDT fornitore. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000926-0/WhseReceipt_1_ITA.png"><br>
+
+<br>
+<br>
