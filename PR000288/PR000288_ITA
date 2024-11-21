@@ -1,20 +1,20 @@
-Le regole definiscono lÂ**insieme massimo delle caratteristiche** da associare ad ogni singolo articolo ®neutro¯ configurabile. Sono il **contenitore di tutte le ®istruzioni¯** che il sistema deve considerare durante la configurazione.
+Le regole definiscono lâ€™**insieme massimo delle caratteristiche** da associare ad ogni singolo articolo Â«neutroÂ» configurabile. Sono il **contenitore di tutte le Â«istruzioniÂ»** che il sistema deve considerare durante la configurazione.
 
-Per ogni regola Š possibile definire:
+Per ogni regola Ã¨ possibile definire:
 
--   LÂ**elenco** e la **sequenza** delle caratteristiche da richiedere allÂoperatore;
--   L**Âelenco** dei **valori** che la caratteristica pu• assumere per la regola;
--   Un **algoritmo di codifica** per il **codice** e la **descrizione** dellÂarticolo;
--   Le **logiche di interfacciamento fra le caratteristiche** attraverso la compilazione della tabella ®Relazioni¯ e quindi:
+-   Lâ€™**elenco** e la **sequenza** delle caratteristiche da richiedere allâ€™operatore;
+-   L**â€™elenco** dei **valori** che la caratteristica puÃ² assumere per la regola;
+-   Un **algoritmo di codifica** per il **codice** e la **descrizione** dellâ€™articolo;
+-   Le **logiche di interfacciamento fra le caratteristiche** attraverso la compilazione della tabella Â«RelazioniÂ» e quindi:
     -   Le caratteristiche obbligatorie o opzionali;
     -   Gli automatismi di compilazione di caratteristiche secondarie dipendenti da una caratteristica di input;
-    -   La compatibilit… di valori per una caratteristica a fronte della scelta di altri valori.
+    -   La compatibilitÃ  di valori per una caratteristica a fronte della scelta di altri valori.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000288-0/Rule1_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000288-0/Rule1_ITA.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000288-0/Rule2_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000288-0/Rule2_ITA.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000288-0/Rule3_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000288-0/Rule3_ITA.png"><br>
 
 
 Questi sono i principali campi presenti nelle regole:
@@ -23,20 +23,20 @@ Questi sono i principali campi presenti nelle regole:
 |------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Codice |Codice regola.|
 | Descrizione |Descrizione regola.|
+| Stato |I valori ammessi sono: **Aperto** e **Rilasciato**. Una regola in stato **Aperto**: Eâ€™ editabile. Gli articoli che la utilizzano non sono configurabili. Il configuratore restituisce lâ€™errore: Stato deve essere uguale a Rilasciato in Regole: Codice=XXXX. Il valore corrente Ã¨ Aperto. Una regola in stato **Rilasciato**: Non Ã¨ editabile e non lo sono tutte le tabelle collegate: caratteristiche, relazioni ecc. Gli articoli che la utilizzano sono configurabili.|
 | Master |Indica che le caratteristiche e i relativi valori di una regola possono essere utilizzati da altre regole collegate. Il collegamento avviene tramite il campo connessione presente nelle caratteristiche delle regole.|
 | Abilita Formato Codice |Viene utilizzato per abilitare la formattazione dei codici articolo/variante creati dal configuratore tramite una formula definita nel campo Formato Codice. Se non abilitato gli articoli / varianti vengono creati con il nr. di serie impostato nel Setup Configuratore.|
-| Formato Codice |Definisce la formula con cui viene calcolato il codice articolo/variante generato dal configuratore. EÂ possibile inserire caratteri liberi oppure utilizzare i valori delle caratteristiche. Codice caratteristica fra Parentesi Graffe {} per utilizzare la descrizione del valore. Codice caratteristica fra Parentesi Quadre [] per utilizzare il valore. EÂ possibile inoltre utilizzare [ITEMNO%] per inserire il codice dellÂarticolo neutro.|
+| Formato Codice |Definisce la formula con cui viene calcolato il codice articolo/variante generato dal configuratore. Eâ€™ possibile inserire caratteri liberi oppure utilizzare i valori delle caratteristiche. Codice caratteristica fra Parentesi Graffe {} per utilizzare la descrizione del valore. Codice caratteristica fra Parentesi Quadre [] per utilizzare il valore. Eâ€™ possibile inoltre utilizzare [ITEMNO%] per inserire il codice dellâ€™articolo neutro.|
 | Contatore per codice |Viene utilizzato nel caso in cui si voglia aggiungere un progressivo al formato codice.|
 | Nr. Cifre Contatore |Identifica il numero di cifre da usare nel Contatore per codice.|
-| Usa Descrizione Articolo |Serve per utilizzare la descrizione del codice artico neutro (viene aggiunta prima dellaÿdescrizione costruita tramite il formato descrizione).|
-| Formato Descrizione |Definisce la formula con cui viene calcolata la descrizione dellÂarticolo/variante generato dal configuratore. EÂ possibile inserire caratteri liberi oppure utilizzare i valori delle caratteristiche. Codice caratteristica fra Parentesi Graffe {} per utilizzare la descrizione del valore. Codice caratteristica fra Parentesi Quadre [] per utilizzare il valore. EÂ possibile inoltre utilizzare [ITEMNO%] per inserire il codice dellÂarticolo neutro. ÿÿ
-| Formato Descrizione 2 |Definisce la formula con cui viene calcolata la descrizione 2 dellÂarticolo/variante generato dal configuratore. EÂ possibile inserire caratteri liberi oppure utilizzare i valori delle caratteristiche. Codice caratteristica fra Parentesi Graffe {} per utilizzare la descrizione del valore. Codice caratteristica fra Parentesi Quadre [] per utilizzare il valore. EÂ possibile inoltre utilizzare [ITEMNO%] per inserire il codice dellÂarticolo neutro. ÿÿ
-| Utilizza Excel |Il configuratore prevede la possibilit… di associare alla regola un foglio Excel per la gestione delle relazioni. Tramite lÂutilizzo di questo campo Š possibile decidere quando le formule previste nel foglio Excel vengono eseguite. I valori ammessi sono: **Vuoto** che corrisponde a  mai, **Durante il processo**, **Alla fine del processo**. 
-| Ha contenuto (Excel) |Attivo se alla regola Š stato associato un foglio di calcolo delle relazioni.|
-| Esegui codice personalizzato |Consente di abilitare lÂesecuzione di codice personalizzato durante la digitazione dei valori delle caratteristiche. Il codice pu• essere eseguito durante il processo o alla chiusura del configuratore. Contattare il proprio partner per informazione su come estendere il configuratore.|
-| Utilizzare il ciclo standard |Il configuratore per tutti gli articoli con questa regola non genera un ciclo configurato ma utilizza lo stesso ciclo dellÂarticolo neutro.|
+| Usa Descrizione Articolo |Serve per utilizzare la descrizione del codice artico neutro (viene aggiunta prima dellaÂ descrizione costruita tramite il formato descrizione).|
+| Formato Descrizione |Definisce la formula con cui viene calcolata la descrizione dellâ€™articolo/variante generato dal configuratore. Eâ€™ possibile inserire caratteri liberi oppure utilizzare i valori delle caratteristiche. Codice caratteristica fra Parentesi Graffe {} per utilizzare la descrizione del valore. Codice caratteristica fra Parentesi Quadre [] per utilizzare il valore. Eâ€™ possibile inoltre utilizzare [ITEMNO%] per inserire il codice dellâ€™articolo neutro. Â Â 
+| Formato Descrizione 2 |Definisce la formula con cui viene calcolata la descrizione 2 dellâ€™articolo/variante generato dal configuratore. Eâ€™ possibile inserire caratteri liberi oppure utilizzare i valori delle caratteristiche. Codice caratteristica fra Parentesi Graffe {} per utilizzare la descrizione del valore. Codice caratteristica fra Parentesi Quadre [] per utilizzare il valore. Eâ€™ possibile inoltre utilizzare [ITEMNO%] per inserire il codice dellâ€™articolo neutro. Â Â 
+| Utilizza Excel |Il configuratore prevede la possibilitÃ  di associare alla regola un foglio Excel per la gestione delle relazioni. Tramite lâ€™utilizzo di questo campo Ã¨ possibile decidere quando le formule previste nel foglio Excel vengono eseguite. I valori ammessi sono: **Vuoto** che corrisponde a  mai, **Durante il processo**, **Alla fine del processo**. 
+| Ha contenuto (Excel) |Attivo se alla regola Ã¨ stato associato un foglio di calcolo delle relazioni.|
+| Esegui codice personalizzato |Consente di abilitare lâ€™esecuzione di codice personalizzato durante la digitazione dei valori delle caratteristiche. Il codice puÃ² essere eseguito durante il processo o alla chiusura del configuratore. Contattare il proprio partner per informazione su come estendere il configuratore.|
+| Utilizzare il ciclo standard |Il configuratore per tutti gli articoli con questa regola non genera un ciclo configurato ma utilizza lo stesso ciclo dellâ€™articolo neutro.|
 | Tipo di Configurazione |Specifica il funzionamento del configuratore (articoli o varianti). Il tipo predefinito utilizza la configurazione a Setup.|
-
 
 <br>
 <br>
