@@ -1,0 +1,20 @@
+The Manufacturing Masterdata Management app allows to manage both at **Routing** and **Production order routing** levels a table in which to insert possible routing alternatives intended as work centers or machine centers in which the operation can be performed.
+The data is informative.
+
+In Routing:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000928-0/RtngAlt1_ENU.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000928-0/RtngAlt2_ENU.png"><br>
+
+In production order:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000928-0/RtngAlt3_ENU.png"><br>
+
+A function called **Replace routing line with alternate routing line** has been added to the Production Order Routing, which allows to replace the current routing line with the selected alternative routing line.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000928-0/RtngAlt4_enu.png"><br>
+
+<br>
+<br>
