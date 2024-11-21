@@ -1,0 +1,25 @@
+The allowed values for the field Status are: **Open** and **Released**.
+
+A rule in **Open** status:
+* It is editable.
+* The items that use it are not configurable. The configurator returns the error: Status must be equal to Released in Rules: Code=XXXX. Current value is Open. 
+
+A rule in **Released** status:
+* The rule and the linked tables are not editable: characteristics, relations, etc.
+* The items that use it are configurable. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000927-0/Rule12_ENU.png"><br>
+
+The change of status must be done through the appropriate functions in Actions: **Reopen Selected Rules** and **Release Selected Rules**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000927-0/Rule13_ENU.png"><br>
+
+
+When a rule is **Released**:
+* The product configurator performs the **Certify** operation. The certify operation automatically sets the field values **Exclude From Relations Calc.** and **Exclude From Relations Calc. With Conditions** in the characteristics of the rule. Set the field **Conditions Characteristics Filter** in the rule relations. Plus any custom actions. An event has been set up to avoid automatic certification: OnBeforeCertifyOnReleaseRule.
+* The product configurator performs the **Save Default Configuration** if provided by the setup. An event has been arranged to avoid the Save Default Configuration: OnBeforeSetDefaultConfigurationOnReleaseRule.
+* The operation **Add Rules** present in the values of the characteristics can also be executed when the rule is released.
+* The operations **Align Connection**, **Align Rule/Characteristics**, **Certify**, **Excel** can also be performed when the rule is released.  
+
+<br>
+<br>
