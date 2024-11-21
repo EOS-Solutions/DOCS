@@ -1,0 +1,8 @@
+The Combine Warehouse Shipment app in warehouse receipt replaces the standard **Get Source Documents** function, which allows to select the headers of the source documents, with a new function called **Get Source Document Lines** that allows to select the individual lines of the source documents.
+Among the various fields displayed on the page there is the editable column **Quantity to Receive**, through which it is possible to type the quantity received during the import of document lines.
+This feature allows to speed up the operations of entering Vendor Receipts.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000926-0/WhseReceipt_1_ENU.png"><br>
+
+<br>
+<br>
