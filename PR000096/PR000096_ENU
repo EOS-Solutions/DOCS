@@ -1,10 +1,18 @@
-The fields present in the OVR Setup are used to enable or disable the management of excess quantities for theblanket purchase/sales orders:
+The fields present in the OVR Setup are:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000096-0/02OverandUnderDeliveryQuantities.jpg"><br>
+| **Field** | **Description** |
+| --- | --- |
+| Enable OVR | The OVR app is installed as a dependency of other apps but is often not used. If so, you should disable it. The effect obtained is an improvement in performance. |
+| Over Qty in Blanket Purchase Order | Allow to enable/disable the over quantity in blanket purchase order. |
+| Over Qty in Blanket Sales Order | Allow to enable/disable the over quantity in blanket sales order. |
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000096-0/EX047-SetupOVR-1-ENU.png"><br>
 
 Press Over-/Underdelivery Setup (OVR):
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000096-0/03OverandUnderDeliveryQuantities.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000096-0/03OverandUnderDeliveryQuantities.jpg"><br>
 
 
 | **Field**          | **Option**      | **Description**                                                                                                                                                                      |
@@ -34,4 +42,4 @@ Press Over-/Underdelivery Setup (OVR):
 
 **Note 2**
 > The "Line Closed" field is present on the purchase/sales document lines. If enabled, manually closes the line by not considering the setup. 
-> <img width="" src="https://docs.eos-solutions.it/Images/PR000096-0/04OverandUnderDeliveryQuantities.jpg"><br>
+> <img width="" src="https://docs-test.eos-solutions.it/Images/PR000096-0/04OverandUnderDeliveryQuantities.jpg"><br>
