@@ -14,6 +14,7 @@ On the Setup page:
 | Whse. Document Delete Policy | Specifies what should happen after posting warehouse document regarding its deletion. <br><ul><li>Default (Only completely posted lines are deleted)</li><li>After First Posting</li><li>Partially Shipped Lines</li></ul>|
 | Enable Grouping By Activity | Specifies if lines groups are calculated at the end of one of the different action used to retrieve source lines |
 | Always Ship All Lines | Specifies if all lines in a warehouse shipment should always be shipped, ignoring filters applied on the page |
+| Update Source Documents on Validate Destination Type | If enabled in the **Get source documents** phase from warehouse shipments, the page re-extracts the source document lines whenever the destination type is changed. |
 | **Receipt** |
 | Whse. Receipt Delete Policy | Specifies what should happen after posting warehouse receipt regarding its deletion. <br><ul><li>Default (Only completely posted lines are deleted)</li><li>After First Posting</li><li>Partially Received Lines</li></ul>|
 | **Sales** |
