@@ -1,0 +1,25 @@
+L'app Manufacturing Masterdata Management permette di gestire sia a livello di **Ciclo** che di **Ciclo ordine di produzione** una tabella in cui inserire delle possibili alternative di ciclo intese come centri di lavoro o aree di produzione in cui l'operazione può essere svolta.
+Il dato è informativo.
+
+Nel Ciclo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000928-0/RtngAlt1_ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000928-0/RtngAlt2_ITA.png"><br>
+
+Nell'ordine di produzione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000928-0/RtngAlt3_ITA.png"><br>
+
+Nelle Righe cicli ordini produzione è presente funzione denominata **Sostituisci riga ciclo con riga ciclo alternativa** che permette di sostituire la riga ciclo corrente con quelle alternativa selezionata. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000928-0/RtngAlt4_ITA.png"><br>
+
+<br>
+<br>
+
+
+
+
+
+
