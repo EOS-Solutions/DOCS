@@ -1,0 +1,25 @@
+Il campo Stato presente nelle regole può assumere 2 valori: **Aperto**, **Rilasciato**.
+
+Una regola in stato **Aperto**:
+* E’ editabile.
+* Gli articoli che la utilizzano non sono configurabili. Il configuratore restituisce l’errore: Stato deve essere uguale a Rilasciato in Regole: Codice=XXXX. Il valore corrente è Aperto. 
+
+Una regola in stato **Rilasciato**:
+* Non è editabile e non lo sono tutte le tabelle collegate: caratteristiche, relazioni ecc.
+* Gli articoli che la utilizzano sono configurabili. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000927-0/Rule12_ITA.png"><br>
+
+Il cambio di stato deve essere fatto tramite le apposite funzioni presenti in Azioni: **Riapri Regole Selezionate** e **Rilascia le Regole Selezionate**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000927-0/Rule13_ITA.png"><br>
+
+
+Quando una regola viene Rilasciata:
+* Il configuratore di prodotto esegue l’operazione di **Certifica**. L’operazione di certifica imposta in automatico i valori dei campi **Escludi dal Calcolo delle Relazioni** e **Escludi dal Calcolo delle Relazioni con Condizione** nelle caratteristiche della regola. Imposta il campo **Filtro Caratteristiche Condizione** nelle relazioni della regola. Più eventuali azioni custom. E’ stato predisposto un evento per evitare la Certificazione automatica: OnBeforeCertifyOnReleaseRule.
+* Il configuratore di prodotto esegue l’operazione di **Salva Operazione Predefinita** se previsto dal setup. E’ stato predisposto un evento per evitare il Salva Operazione Predefinita: OnBeforeSetDefaultConfigurationOnReleaseRule.
+* L’operazione **Aggiungi Regole** presente nei valori delle caratteristiche si può eseguire anche a Regola rilasciata.
+* Le operazioni **Allinea Coincidenze**, **Allinea Regole/Caratteristiche**, **Certifica**, **Excel** si possono eseguire anche a Regola rilasciata.  
+
+<br>
+<br>
