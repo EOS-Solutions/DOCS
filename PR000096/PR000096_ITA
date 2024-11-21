@@ -1,40 +1,48 @@
-I campi presenti nel Setup OVR servono ad abilitare o disabilitare la gestione delle quantitÖ in eccesso per gli ordini d¬acquisto/vendita programmati:
+I campi presenti nel Setup OVR sono:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000096-0/IT_2OverandUnderDeliveryQuantities.jpg"><br>
+| **Campo** | **Descrizione** |
+| --- | --- |
+| Abilita OVR | L‚Äôapp OVR viene installata come dipendenza di altre app ma spesso non viene utilizzata. In tal caso √® opportuno disabilitarla. L‚Äôeffetto che si ottiene √® un miglioramento delle performance. |
+| Quantit√† per eccesso Ordine Acquisto Programmato | Consente di abilitare/disabilitare la quantit√† per eccesso nell'ordine di acquisto programmato. |
+| Quantit√† per eccesso Ordine Vendita Programmato | Consente di abilitare/disabilitare la quantit√† per eccesso nell'ordine di vendita programmato. |
+
+<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000096-0/EX047-SetupOVR-1-ITA.png"><br>
 
 Premere Setup consegne per eccesso/difetto (OVR):
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000096-0/IT_3OverandUnderDeliveryQuantities.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000096-0/IT_3OverandUnderDeliveryQuantities.jpg"><br>
 
 
 | **Campo**               | **Opzione**     | **Descrizione**                                                                                                                                                                                                         |
 |-------------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipo                    | Per eccesso     | consente l'invio o la ricezione di quantitÖ superiori a quelle ordinate                                                                                                                                                 |
-|                         | Per difetto     | consente l'invio o la ricezione e la chiusura di righe con quantitÖ inferiori a quelle ordinate                                                                                                                         |
+| Tipo                    | Per eccesso     | consente l'invio o la ricezione di quantit√† superiori a quelle ordinate                                                                                                                                                 |
+|                         | Per difetto     | consente l'invio o la ricezione e la chiusura di righe con quantit√† inferiori a quelle ordinate                                                                                                                         |
 | Direzione               | In entrata      | definisce se si tratta di merce in ingresso (carichi o resi)                                                                                                                                                            |
 |                         | In uscita       | definisce se si tratta di merce in uscita (spedizione)                                                                                                                                                                  |
-|                         | Entrambi        | la riga di setup ä valida sia per merce in ingresso, che in uscita                                                                                                                                                      |
-| Tipo origine            | Cliente         | la tolleranza quantitÖ ä valida lato Clienti                                                                                                                                                                            |
-|                         | Fornitore       | la tolleranza quantitÖ ä valida lato Fornitori                                                                                                                                                                          |
-| Nr. origine             |                 | ä possibile indicare un Cliente / Fornitore specifico. Se non compilato la riga di setup ä valida per tutti i Clienti / Fornitori (in base a quanto inserito nel campo Tipo origine)                                    |
-| Cod. categoria articolo |                 | si puï indicare una categoria generica per gli articoli. La riga di setup sarÖ valida per tutti gli articoli appartenenti alla categoria indicata.                                                                      |
-| Nr. articolo            |                 | si puï indicare uno specifico articolo per il quale sarÖ valido il setup                                                                                                                                                |
-| Cod. variante           |                 | se scelto uno specifico articolo, sarÖ possibile indicarne una specifica variante                                                                                                                                       |
-| Tipo tolleranza         | Non consentito  | la tolleranza per eccesso / difetto non ä consentita                                                                                                                                                                    |
-|                         | Illimitato      | la tolleranza per eccesso / difetto ä permessa illimitatamente                                                                                                                                                          |
-|                         | QuantitÖ (base) | la tolleranza per eccesso / difetto ä consentita in quantitÖ base                                                                                                                                                       |
-|                         | Percentuale     | la tolleranza per eccesso / difetto ä consentitÖ in percentuale                                                                                                                                                         |
+|                         | Entrambi        | la riga di setup √® valida sia per merce in ingresso, che in uscita                                                                                                                                                      |
+| Tipo origine            | Cliente         | la tolleranza quantit√† √® valida lato Clienti                                                                                                                                                                            |
+|                         | Fornitore       | la tolleranza quantit√† √® valida lato Fornitori                                                                                                                                                                          |
+| Nr. origine             |                 | √® possibile indicare un Cliente / Fornitore specifico. Se non compilato la riga di setup √® valida per tutti i Clienti / Fornitori (in base a quanto inserito nel campo Tipo origine)                                    |
+| Cod. categoria articolo |                 | si pu√≤ indicare una categoria generica per gli articoli. La riga di setup sar√† valida per tutti gli articoli appartenenti alla categoria indicata.                                                                      |
+| Nr. articolo            |                 | si pu√≤ indicare uno specifico articolo per il quale sar√† valido il setup                                                                                                                                                |
+| Cod. variante           |                 | se scelto uno specifico articolo, sar√† possibile indicarne una specifica variante                                                                                                                                       |
+| Tipo tolleranza         | Non consentito  | la tolleranza per eccesso / difetto non √® consentita                                                                                                                                                                    |
+|                         | Illimitato      | la tolleranza per eccesso / difetto √® permessa illimitatamente                                                                                                                                                          |
+|                         | Quantit√† (base) | la tolleranza per eccesso / difetto √® consentita in quantit√† base                                                                                                                                                       |
+|                         | Percentuale     | la tolleranza per eccesso / difetto √® consentit√† in percentuale                                                                                                                                                         |
 | Bloccato                |                 | disattiva la riga di setup                                                                                                                                                                                              |
-| Valore tolleranza       |                 | indicare il valore nel caso sia stato scelto QuantitÖ (base) o Percentuale nel campo Tipo tolleranza                                                                                                                    |
-| Mostra avviso           |                 | nel caso di Tolleranza **per eccesso** l¡utente puï scegliere se essere avvisato quando inserisce una quantitÖ eccessiva; se l¡utente non conferma, l¡operazione viene annullata                                        |
-| PrioritÖ                |                 | ä possibile impostare un valore che indichi un ordine di prioritÖ (utile, ad esempio, se vengono compilate pió righe di setup per lo stesso Cliente oppure per lo stesso Articolo o per la medesima Categoria articolo) |
+| Valore tolleranza       |                 | indicare il valore nel caso sia stato scelto Quantit√† (base) o Percentuale nel campo Tipo tolleranza                                                                                                                    |
+| Mostra avviso           |                 | nel caso di Tolleranza **per eccesso** l‚Äòutente pu√≤ scegliere se essere avvisato quando inserisce una quantit√† eccessiva; se l‚Äòutente non conferma, l‚Äòoperazione viene annullata                                        |
+| Priorit√†                |                 | √® possibile impostare un valore che indichi un ordine di priorit√† (utile, ad esempio, se vengono compilate pi√π righe di setup per lo stesso Cliente oppure per lo stesso Articolo o per la medesima Categoria articolo) |
 
 <br>
 
 **NOTA 1**
-> L'utente sceglierÖ se indicare una Categoria articolo **oppure** un Articolo specifico. L'uno esclude l'altro.
+> L'utente sceglier√† se indicare una Categoria articolo **oppure** un Articolo specifico. L'uno esclude l'altro.
 
 
 **NOTA 2**
-> Sulle righe documento acquisto / vendita ä presente il campo "Riga chiusa". Se abilitato, chiude manualmente la riga non considerando il setup pre-impostato. 
-> <img width="" src="https://docs.eos-solutions.it/Images/PR000096-0/IT_4OverandUnderDeliveryQuantities.jpg"> <br>
+> Sulle righe documento acquisto / vendita √® presente il campo "Riga chiusa". Se abilitato, chiude manualmente la riga non considerando il setup pre-impostato. 
+> <img width="" src="https://docs-test.eos-solutions.it/Images/PR000096-0/IT_4OverandUnderDeliveryQuantities.jpg"> <br>
