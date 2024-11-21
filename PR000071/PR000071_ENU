@@ -3,7 +3,7 @@ On the Setup page:
 
 <br>
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/3CombinedWarehouseShipment.png">
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/SetupCWS_1_ENU.png"><br>
 <br><br>
 
 | **Field** | **Description** |
@@ -14,6 +14,8 @@ On the Setup page:
 | Whse. Document Delete Policy | Specifies what should happen after posting warehouse document regarding its deletion. <br><ul><li>Default (Only completely posted lines are deleted)</li><li>After First Posting</li><li>Partially Shipped Lines</li></ul>|
 | Enable Grouping By Activity | Specifies if lines groups are calculated at the end of one of the different action used to retrieve source lines |
 | Always Ship All Lines | Specifies if all lines in a warehouse shipment should always be shipped, ignoring filters applied on the page |
+| **Receipt** |
+| Whse. Receipt Delete Policy | Specifies what should happen after posting warehouse receipt regarding its deletion. <br><ul><li>Default (Only completely posted lines are deleted)</li><li>After First Posting</li><li>Partially Received Lines</li></ul>|
 | **Sales** |
 | Post Not Item Lines | Specifies if post non-item lines on source document while post warehouse shipment. |
 | Order Line Description | Specifies if add a description line with order No. on invoice document. The reference to CWS shipment with the posting date is always shown. On the second line you can choose to add: None, Order No., External Document No., Your Reference.<br>In the example below "Our Order No." is shown:<br> <img width="" src="https://docs-test.eos-solutions.it/Images/PR000071-0/29CombinedWarehouseShipment.png"><br> |
