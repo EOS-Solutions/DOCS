@@ -23,7 +23,10 @@ For example, **from April 1, 2024:**
 
 
 
-**Support requests**
+
+
+
+# **Support requests**
 
 
 
@@ -35,7 +38,8 @@ Support requests for EOS Business Central apps and verticals must be open indica
 1. If **NAV o BC** 
 2. **Infrastructure **(OnPremise / SAAS)
 3. **Version** and **Cumulative Update**
-4. Reference** customer** (customer ID)
+4. Reference** customer**. Provide **customer ID**:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000730-0/2024-11-25 11_44_09-Subscription Control Panel (EAL) (LABS) e altre 5 pagine - Lavoro - Microsoft​ E(1).png"><br>
 5. Check **if the apps are up to date**. If they are not, update them. If the    issue is still present, proceed with the support request
 6.List the **installed apps** by copying them in text format from the Page     "Extensions" (SAAS)
 7. Include all custom apps
