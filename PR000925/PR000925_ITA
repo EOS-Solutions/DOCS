@@ -1,0 +1,24 @@
+A partire dalle versioni **23.0.115, 24.0.69, 25.0.19** è stata resa obbligatoria la compilazione univoca di CIG (Codice identificativo gare) e CUP (Codice unico di progetto).
+Per cui, all'interno di uno stesso documento, sarà possibile specificare un solo codice CIG e un solo codice CUP.
+
+Oltre ai campi standard il controllo è stato esteso alla compilazione dei Dati documenti correlati.
+Un’eventuale modifica/inserimento nei Dati documenti correlati, nel caso i campi standard siano vuoti, avrà come effetto l’aggiornamento anche dei campi standard.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000925-0/PR000925_2_ITA.PNG"><br>
+
+I valori presenti nei due campi standard di testata Codice identificativo gara (CIG) e Codice unico di progetto (CUP), al posting del documento fattura o nota credito, oltre ad essere riportati nei relativi documenti registrati vengono ereditati anche nei due campi presenti nei movimenti contabili clienti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000925-0/PR000925_3_ITA.PNG"><br>
+
+Dato che la nostra APP FTE permette di aggiungere informazioni relative a CIG e CUP, tramite i Dati documenti correlati, anche ai documenti già registrati è stato previsto oltre ai controlli in merito all’univocità ove possibile l’aggiornamento del dato presente nel movimento contabile cliente.
+L’utente viene informato che la modifica non avrà effetto sui dati già trasmessi a sistemi esterni (SDI, tesoreria, banche). 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000925-0/PR000925_5_ITA.PNG"><br>
+
+La retrocompatibilità viene garantita da un flag “Abilità la modalità legacy CIG e CUP” introdotto nel Setup in uscita (FTE) che permette di bypassare i controlli introdotti di cui sopra e riportare la gestione di CIG e CUP alle versioni precedenti la modifica.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000925-0/PR000925_1_ITA.PNG"><br>
+
+Nulla cambia per quanto riguarda il file XML generato dal sistema :
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000925-0/PR000925_4_ITA.PNG"><br>
