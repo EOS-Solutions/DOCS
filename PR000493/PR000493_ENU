@@ -1,10 +1,11 @@
-**Commission Reason Codes (CMS)**
+## **Commission Reason Codes (CMS)**
 
 On the page Commission Reason Codes you can define the reason codes, G/L Account Numbers and VAT Product Posting Groups:   
   
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup1.png"><br>
 
-**Commission Jnl. Templates (CMS)**
+
+## **Commission Jnl. Templates (CMS)**
 
 On this page you can set the journal templates:
 
@@ -35,7 +36,8 @@ In Commission Jnl Template, from New-\>Batch you can set the specific batch for 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup4.png"><br>
 
-**Commissions Setup (CMS)**
+
+## **Commissions Setup (CMS)**
 
 You need to enter the Commissions setup:
 
@@ -58,11 +60,11 @@ You need to enter the Commissions setup:
 | **CALCULATION**                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Def. Base Incl. Inv. Disc.                                                                                       | Defines if the amount on which to calculate the commission must include the invoice discount                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Def. Base Incl. Line Disc.                                                                                       | Defines if the amount on which to calculate the commission must include the line discount                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Priority 1 Æ 2- 3                                                                                                | Specifies the first-second-third parameter in order of importance used to calculate commissions on documents.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Priority 1 â€“ 2- 3                                                                                                | Specifies the first-second-third parameter in order of importance used to calculate commissions on documents.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | No Sales Comm. Calc. on Release/Posting Specifies if the commission does not be calculated on posting.           | Specifies if the commission does not be calculated on posting. It recommended only in case of high transaction volumes with deterioration of performance.                                                                                                                                                                                                                                                                                                                                                                                                 |
 | **REASON CODE**                                                                                                  |  Specifies the reasons codes for the different types of posting                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-**Commission Period (CMS)**
+## **Commission Period (CMS)**
 
 On this page you can define the commission periods that will be used to make settlement:
 
@@ -72,35 +74,36 @@ It is possible to create periods automatically using the specific button:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup7.png"><br>
 
-**Commissions Calculation Setup (CMS)**
+
+## **Commissions Calculation Setup (CMS)**
 
 In the Commissions Calculation Setup (CMS) you can set up commissions with the following criteria:
 
-Å Sales network
+â€¢ Sales network
 
-Å Salesperson role
+â€¢ Salesperson role
 
-Å Salesperson
+â€¢ Salesperson
 
-Å Customer Commission Group
+â€¢ Customer Commission Group
 
-Å Customer
+â€¢ Customer
 
-Å Line type
+â€¢ Line type
 
-Å Product
+â€¢ Product
 
-Å Product Commission Group
+â€¢ Product Commission Group
 
-Å Date
+â€¢ Date
 
 If the line of the sales document is applicable to multiple criteria, the system selects the criterion based on the priorities defined in the Commissions Setup (CMS). The commissions can be calculated for:
 
-Å Percentage: to be calculated on the base amount (taxable VAT, with or without discounts according to the Commissions Setup (CMS)) for each sales line falling within the setup parameters.
+â€¢ Percentage: to be calculated on the base amount (taxable VAT, with or without discounts according to the Commissions Setup (CMS)) for each sales line falling within the setup parameters.
 
-Å Fixed Amount: commission amount that is assigned to the salesperson for each sales line that falls within the parameter setup. The fixed amount may be defined on the same line of the percentage, the two fields are not mutually exclusive.
+â€¢ Fixed Amount: commission amount that is assigned to the salesperson for each sales line that falls within the parameter setup. The fixed amount may be defined on the same line of the percentage, the two fields are not mutually exclusive.
 
-Å Threshold: threshold are defined for the calculation of commission. The threshold are calculated thanks to the Set Threshold button.
+â€¢ Threshold: threshold are defined for the calculation of commission. The threshold are calculated thanks to the Set Threshold button.
 
 At the top we can find all the possible filters::
 
@@ -125,4 +128,4 @@ Through the Set Threshold button it is possible to define the % commission and /
 <br><br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
 
-Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
+Copyright Â© EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
