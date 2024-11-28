@@ -1,0 +1,48 @@
+To install the EOS Function API you need to download the official installer: [EOS Gordon Installer](http://https://apps.microsoft.com/detail/9n3qdl62gmzw?mode=direct)
+
+> You will need to **open the installer as Administrator**, as the EOS Function API will be installed as a Windows service.
+
+Let's change the installation "scope" to **Machine Wide**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000801-0/Machine Wide.png"><br>
+
+Moving to the "Not Installed" group we could go to install the product.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000801-0/Install.png"><br>
+
+By clicking on the "Install" button, the EOS Function API will be installed on the machine.
+
+Once installed, we could go to the browser and go to the address http://localhost:9977
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000801-0/LandingPage.png"><br>
+
+From here we can choose to see:
+1. The configuration page
+2. The Swagger page, containing the information to call the APIs
+
+We choose the Configuration page.
+
+You will be asked to log in
+
+> The first time it is installed, leaving the field empty and clicking on Login, you can set a new password
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000801-0/Login.png"><br>
+
+This will be the main password to configure the ApiKeys, it is recommended to create a strong one
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000801-0/Change Password.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000801-0/Password Changed.png"><br>
+
+Once you have logged in/changed your password, you can create new API Keys.
+
+On the left group, click on **"+ New"**. You can add a description of your choice. Afterwards, by clicking on "save" the new key will be created.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000801-0/NewApiKey.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000801-0/NewApiKey2.png"><br>
+
+By selecting an ApiKey, in the right group you can configure it and choose which services to enable.
+
+> **Once the necessary APIKeys have been created, it is MANDATORY to save the changes just made, by clicking on the orange "SAVE" buttons at the top or bottom right of the page **
+
+The FileSystem service, for security reasons, also requires a root folder. This is used to limit the possible readable and writable paths
