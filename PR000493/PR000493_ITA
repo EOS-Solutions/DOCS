@@ -1,11 +1,11 @@
-## **Causali provvigioni (CMS)**
+## Causali provvigioni (CMS)
 
 Sulla page Causali provvigione vengono definite le causali, con i relativi conti C/G e Cat. reg. art/serv. IVA:   
   
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/SetupCalcProvv1.jpg"><br>
 
 
-## **Def. registrazioni provvigioni (CMS)**
+## Def. registrazioni provvigioni (CMS)
 
 In questa page è possibile definire dei giornali di registrazione provvigioni:
 
@@ -37,7 +37,7 @@ In Def. Registrazioni Provvigioni (CMS), da Nuovo-\>Batch è possibile definire 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/SetupCalcProvv4.jpg"><br>
 
 
-## **Setup provvigioni (CMS)**
+## Setup provvigioni (CMS)
 
 È necessario definire il setup delle provvigioni:
 
@@ -68,7 +68,7 @@ In Def. Registrazioni Provvigioni (CMS), da Nuovo-\>Batch è possibile definire 
 | **CODICE CAUSALE**                                                                                                               |  Codici causali delle varie registrazioni.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 
-## **Periodi provvigione (CMS)**
+## Periodi provvigione (CMS)
 
 In questa page è possibile definire i periodi provvigione che saranno utilizzati per fare le liquidazioni:
 
@@ -79,7 +79,7 @@ E’ possibile creare automaticamente i periodi utilizzando il pulsante Creazion
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/SetupCalcProvv7.jpg"><br>
 
 
-## **Setup calcolo provvigioni (CMS)**
+## Setup calcolo provvigioni (CMS)
 
 Nel Setup calcolo provvigioni (CMS) è possibile impostare le provvigioni coni seguenti criteri:
 
