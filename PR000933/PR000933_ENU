@@ -1,0 +1,69 @@
+First we need to create a new AppService. 
+
+Open the azure portal (portal.azure.com) and search for "App Service"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000933-0/AppService.png"><br>
+
+Then click on "+ Create" to create a new app service
+
+1. Choose your Subscription and Resource Group
+1. Choose a Name
+1. Select Publish to «Code»
+1. Runtime Stack: .NET 6 (LTS)
+1. Choose your region
+1. Choose your service Plan
+1. Click Review+Create and then Create
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000933-0/Create.png"><br>
+
+
+After creating a new AppService, we need to edit some settings: 
+
+Go to Configuration (in the left menu) and create a new Application Setting: 
+
+**Name** : "WEBSITE_RUN_FROM_PACKAGE"
+**Value** : 1
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000933-0/Settings.png"><br>
+
+
+Then go to the tab "General Settings"
+1. Change Platform to **64bit**
+2. Change to HTTPS Only to **On**
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000933-0/GeneralSettings.png"><br>
+
+
+Now we can add the EOS Function API. 
+
+> **Due to problems linked to AppService, you cannot use the EOS Function API Configuration Page. All the setups need to be made beforehand **
+
+To make this process simplier, first Install the EOS Function API on your PC and Configure the desired API Keys
+
+> File System is not available on AppService
+
+After creating the right configuration, go to the installation folder ("C:\ProgramData\Programs\EOS Solutions\eos-function-api\") and copy it under a new location. 
+
+The we **need to modify the file "web.config"**
+
+locate the tag "aspNetCore" and after the attribute "processPath" add a new one  `arguments="--console" `
+
+the tag will be like that:
+ `<aspNetCore processPath=".\Eos.FunctionApi.exe" arguments="--console" stdoutLogEnabled="false" stdoutLogFile=".\logs\stdout" hostingModel="inprocess" />`
+ 
+ 
+ Then you need to create a zip file containing the app (the files need to be in the root of the zip) 
+ 
+ With your zip file go to Azure Portal, search for "Advanced Tools" in the left menu of the app service and click on the link "Go".
+ 
+ You will be redirect to another site called "Kudu". 
+ 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000933-0/Kudu.png"><br>
+ 
+ In Kudu, go to "Tools" and then "Zip Push Deploy". You can now upload the zip file.  
+ 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000933-0/ZipDeploy.png"><br>
+
+You have configured the EOS Function Api in Azure App Service
+
