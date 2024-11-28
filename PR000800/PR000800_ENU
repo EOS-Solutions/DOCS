@@ -1,0 +1,12 @@
+The EOS Function API is a tool that can be used in OnPremise installations that allows you to bypass the limitation of Universal Code (the impossibility of using .Net).
+
+Once installed on the server, the EOS Function API will expose several APIs that can be consumed directly and conveniently from Business Central.
+
+The Available APIs are:
+* Generation of Barcodes and QR Codes
+* Reading and writing of Files and Folders
+* Decoding of P7M files
+* Manipulation of PDFs
+* Connection to Databases
+
+All these APIs are configurable and made secure through an authentication based on API-Key.
