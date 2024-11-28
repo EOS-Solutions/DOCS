@@ -1,11 +1,11 @@
-## **Commission Reason Codes (CMS)**
+## Commission Reason Codes (CMS)
 
 On the page Commission Reason Codes you can define the reason codes, G/L Account Numbers and VAT Product Posting Groups:   
   
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup1.png"><br>
 
 
-## **Commission Jnl. Templates (CMS)**
+## Commission Jnl. Templates (CMS)
 
 On this page you can set the journal templates:
 
@@ -37,7 +37,7 @@ In Commission Jnl Template, from New-\>Batch you can set the specific batch for 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup4.png"><br>
 
 
-## **Commissions Setup (CMS)**
+## Commissions Setup (CMS)
 
 You need to enter the Commissions setup:
 
@@ -71,7 +71,7 @@ You need to enter the Commissions setup:
 
 
 
-## **Commission Period (CMS)**
+## Commission Period (CMS)
 
 On this page you can define the commission periods that will be used to make settlement:
 
@@ -82,7 +82,7 @@ It is possible to create periods automatically using the specific button:
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup7.png"><br>
 
 
-## **Commissions Calculation Setup (CMS)**
+## Commissions Calculation Setup (CMS)
 
 In the Commissions Calculation Setup (CMS) you can set up commissions with the following criteria:
 
