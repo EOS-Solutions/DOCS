@@ -1,0 +1,18 @@
+This feature only intervenes when the "Extended Combine Shipment" app is used, and the grouping criterion is set to "Discount Set ID".
+
+**Feature Enabled**
+
+When the feature is enabled, grouping is done based on the order's "Discount Set ID", grouping orders with the same "Discount Set ID".
+
+**Feature Disabled**
+
+If disabled, the behavior is as follows:
+
+- If the detailed discount includes discounts that are not percentages (e.g., discount amount, discount amount per unit, or discount amount per net weight), a unique ID is generated for each shipment line, leading to an invoice for each shipped line.
+- Otherwise, the order's "Discount Set ID" is used.
+
+{{% alert title="NOTE" color="warning" %}}
+When non-percentage discounts are present (e.g., discount amount, discount amount per unit, or discount amount per net weight), the discount set ID is not "reused" across documents.
+
+Therefore, even if identical values are present, two documents with the same amount-based discounts will have different discount set IDs.
+{{% /alert %}}
