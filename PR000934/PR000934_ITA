@@ -1,0 +1,19 @@
+Questa feature interviene solamente quando viene utilizzata l'app "Extended Combine Shipment" e si utilizza come criterio di raggruppamente l'"ID Set Sconti".
+
+**Feature abilitata**
+
+Quando la feature viene abilitata il raggruppamento è fatto sulla base del "ID Set Sconti" dell'ordine, quindi vengono raggruppati gli ordini con il medesimo "ID Set Sconti".
+
+**Feature disabilitata**
+
+Se disabilitata il comportamento è il seguente:
+
+se nello sconto dettagliato sono presenti sconti che non sono percentuali (importo sconto, importo sconto per unità o importo sconto per peso netto) viene generato un ID univoco per ogni riga della spedizione, quindi verrà generata una fattura per ogni riga spedita.
+
+Altrimenti viene utilizzato l'"ID Set Sconti" dell'ordine.
+ 
+{{% alert title="NOTE" color="warning" %}}
+Quando sono presenti sconti non percentuali (importo sconto, importo sconto per unità o importo sconto per peso netto) l'ID set sconti non viene "riutilizzato" nei vari documenti.
+
+Perciò anche se sono presenti i medesimi valori due documenti con gli stessi sconti per import avranno due ID set sconti differenti.
+{{% /alert %}}
