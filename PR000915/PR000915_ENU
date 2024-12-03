@@ -1,0 +1,18 @@
+The Packaging Setup (HUM) contains a series of parameters to set for using the app. The fields related to the packing list are the following: 
+
+|**Campo**|**Descrizione**|
+|:---|:---|
+|Packaging Instruction Calculation|Set the implementation of the packaging calculation engine. The field can be extended to make a custom calculation.|
+|Inventory Check Policy|Indicates the way HU inventory checks are performed when posting item entries. If you only use the Packing List app, it is a good idea to set it to None.|
+|Packing List Suggestion|Specifies how and if different suggestion methods can be selected when suggesting a packing list. It is recommended to set the value to Fixed. Legacy value is the previous calculation method.|
+|Packing List Suggestion Calculation|Specifies the packing list suggestion method. This is only applicable if the suggestion policy is **Fixed**. The field can be extended to make a custom calculation.|
+|Enable Assignment Packing List for Source Line|Enables the assignments on the Packing List for the selected source line. The feature can only be used with the Packing List app and using the assignment made on the dedicated page for adding content.|
+|Transfer Outbound Handling Units| If is active enables the transfer of the outbound handling units after posting a transfer shipment. The transfer of handling units takes place, at the moment, only when the receipt location does not provide for warehouse management. There is an event (OnAfterSetIsEnabledTransferOutboundHu Codeunit 70491904 EOS055.01 HU Assignment) to which to hook and enable the move also for receipt locations with warehouses as long as the handling unit contains items from the same transfer order. However, development is planned to manage this scenario as well.|
+|Packing List Report No.|Specifies the value of the "Packing List Report No." field. The default report for the app is 70491920.|
+|Weight Calculation|Specifies the calculation method to use for total weights. Allowed values are: **Content+Container**, **Container**.|
+|Rounding Direction|Rounding Direction of the quantity in the Packing List suggestion. The allowed values are: **Round up**, **Round down**|
+|Volume Conversion Factor|The Item Volume will be divided by this value to achieve conversion to cubic meters (m³).|
+|Volume Rounding Precision|The Item Volume will be rounded for this decimal value; for example the value 0,001 specifies three decimal places. The default is five decimal places.|
+|Packaging Material Nos.|Insert the default number series for packaging materials.|
+|Packaging Instruction Nos.|Insert the default number series for packaging instructions.|
+****
