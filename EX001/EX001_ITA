@@ -20,7 +20,7 @@
 
 <br>
 
-LÂAPP Accruals and Simulated Gen Ledger (SGL) sviluppata da EOS estende le funzionalit… del modulo di Contabilit… Generale di BC, consentendo di generare le seguenti scritture di assestamento automatiche (auto stornanti): Fatture da ricevere / emettere per merci e servizi gestiti con OdA ed OdV. Scritture per competenza: ratei e risconti. Ammortamenti gestionali. Le scritture infrannuali di solito alimentano lÂambiente della Contabilit… Simulata, ossia un piano parallelo a quello di Contabilit… Generale, le cui registrazioni non appaiono sul Libro Giornale e sulle Schede contabili C/G.
+Lâ€™APP Accruals and Simulated Gen Ledger (SGL) sviluppata da EOS estende le funzionalitÃ  del modulo di ContabilitÃ  Generale di BC, consentendo di generare le seguenti scritture di assestamento automatiche (auto stornanti): Fatture da ricevere / emettere per merci e servizi gestiti con OdA ed OdV. Scritture per competenza: ratei e risconti. Ammortamenti gestionali. Le scritture infrannuali di solito alimentano lâ€™ambiente della ContabilitÃ  Simulata, ossia un piano parallelo a quello di ContabilitÃ  Generale, le cui registrazioni non appaiono sul Libro Giornale e sulle Schede contabili C/G.
 
 <br>
 <img width="750" src="https://docs-test.eos-solutions.it/Images/EX001-0/3SimulatedGeneralLedger.png"><br>
