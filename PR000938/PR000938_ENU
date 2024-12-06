@@ -1,0 +1,122 @@
+## Apps
+- `Deploy-NAVApp`
+- `Get-NavAlObject`
+- `Get-NAVAppInfo`
+    Retrieve information about apps from a service or package feed.
+- `Get-NAVAppRuntimePackage`
+- `Install-NAVApp`
+- `Publish-NAVApp`
+- `Resolve-NAVAppDependencies`
+    Resolves dependencies of an app.
+- `Sync-NAVApp`
+- `Uninstall-NAVApp`
+- `Unpublish-NAVApp`
+## Config
+- `Get-Configuration`
+    Retrieves the configuration for a channel or configuration key.
+- `Get-ConfigurationKey`
+    Returns the configuration key for an on-prem or SaaS server instance.
+- `Get-EnabledPackageFeed`
+    Get a list of enabled package feeds on service.
+- `Get-PackageFeed`
+- `New-NugetPackageFeed`
+    Creates a new package feed using NuGet as the provider.
+- `New-PackageFeed`
+    Creates a new package feed.
+- `New-UpackPackageFeed`
+    Creates a new package feed using Inedo ProGet UPack as the provider.
+- `Remove-PackageFeed`
+    Removes a package feed.
+- `Get-ServiceHost`
+- `New-ServiceHost`
+    Creates a new service host.
+- `Remove-ServiceHost`
+    Removes a service host.
+- `Set-EnabledPackageFeed`
+    Enable or disable a package feed on service.
+## Database
+- `Backup-Database`
+- `Get-Database`
+- `Invoke-ShrinkDatabase`
+- `New-DatabaseConnection`
+- `Remove-Database`
+- `Restore-Database`
+## Development
+- `Add-ProjectDependencies`
+- `Download-Symbols`
+    Downloads symbols for an AL project from one or more symbol sources.
+- `Export-AlDocumentation`
+- `Export-Changelog`
+    Extracts a changelog from a git repository using tags and DevOps work items.
+- `Get-AlCompiler`
+    Retrieves or downloads the AL compiler by a provided runtime version.
+- `Get-AlProject`
+- `Get-ObsoleteCodeItems`
+    Retrieves all obsolete code items for a given project.
+- `Get-ProjectDependencies`
+- `Initialize-AppSourceCop`
+- `Invoke-Build`
+    Builds a project or a workspace.
+- `Invoke-NAVAppTests`
+    Runs tests of a BC app.
+- `Remove-ProjectDependencies`
+- `Select-AlLanguageExtension`
+- `Update-BuildProperties`
+    Updates the build properties file for the an AL project.
+- `Write-TestResults`
+## Management
+- `Get-AadTenantEnvironment`
+- `New-Channel`
+    Creates a management channel that can be used as a target for the other cmdlets in this module.
+- `Register-Credential`
+    Registers a credential on the package manager credential cache.
+- `Unregister-Credential`
+    Unregisters a credential on the package manager credential cache.
+## PackageManagement
+- `Add-DefaultPackageFeed`
+    Adds one or more default, predefined package feeds to the configuration store.
+- `Find-FeedAppPackage`
+    Retrieves the given app package from a package manager.
+- `Get-FeedAppPackage`
+    Retrieves the given app package from a package manager.
+- `Get-PackageProvider`
+    Get all currently available package providers.
+- `New-FolderPackageProvider`
+- `New-NugetPackageProvider`
+- `New-PackageManager`
+    Creates a package manager.
+- `New-PackageProvider`
+    Create an instance of a package provider.
+- `New-UpackPackageProvider`
+    Creates one or more Inedo UPack package provider for use in a package manager. If multiple package providers are created, a single multi-source package provider will be created.
+- `Promote-FeedAppPackage`
+    Promotes app package on a package manager.
+- `Publish-FeedAppPackage`
+    Publishes an app package to a package manager.
+- `Register-PackageProvider`
+    Register a package provider in the current workspace.
+- `Remove-FeedAppPackage`
+    Deletes the given app package(s) from a package manager.
+## Security
+- `Get-NAVServerUser`
+- `Get-NAVServerUserPermissionSet`
+- `New-NAVServerUser`
+- `New-NAVServerUserPermissionSet`
+- `Remove-NAVServerUserPermissionSet`
+- `Set-NAVServerUser`
+## Service
+- `Export-NAVServerLicenseInformation`
+- `Get-NAVCompany`
+- `Get-NAVServer`
+- `Get-NAVServerConfiguration`
+- `Get-NAVServerSession`
+- `Get-NAVTenant`
+- `Import-NAVServerLicense`
+- `Invoke-NAVCodeunit`
+- `Remove-NAVServerSession`
+    Kills one or more sessions on a NAV/BC server.
+- `Restart-NAVServer`
+- `Set-NAVServerConfiguration`
+- `Start-NAVServer`
+- `Stop-NAVServer`
+- `Sync-NAVTenant`
