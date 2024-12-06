@@ -1,0 +1,21 @@
+To begin using Gordon PowerShell:
+
+**Installation**
+
+Gordon PowerShell is available as a module installable from the PowerShell Gallery at https://www.powershellgallery.com/packages/Gordon
+
+You can simply install the module from the PowerShell Gallery using the command:
+
+```powershell
+Install-Module -Name Gordon
+```
+
+or if you are already using PSResourceGet:
+
+```powershell
+Install-PSResource -Name Gordon
+```
+
+You can explore its cmdlets using `Get-Command -Module GordonPowerShell`, and start managing BC services and apps with ease.
+
+You can get help for each cmdlet by running `Get-Help <cmdlet-name> -Detailed` and get an in-depth explanation of each cmdlet and parameter.
