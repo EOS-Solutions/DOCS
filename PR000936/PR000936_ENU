@@ -1,0 +1,9 @@
+**Gordon PowerShell** is the PowerShell-Version of Gordon, a module designed to streamline and automate tasks related to managing Microsoft Dynamics 365 Business Central (BC) services, applications, and development environments.
+
+Gordon PowerShell is an invaluable tool for Business Central professionals who need to juggle various aspects of application lifecycle management, from service maintenance to app deployment and build automation. It reduces the need for manual intervention, minimizes errors, and accelerates processes, allowing teams to focus on delivering value rather than managing infrastructure.
+
+Common use cases include:
+
+- **Developers**: Automate builds, manage app dependencies, and streamline local development.
+- **System Administrators**: Easily handle multiple Business Central instances, monitor services, and manage app installations.
+- **DevOps Teams**: Integrate Gordon PowerShell with CI/CD tools like Azure DevOps or GitHub Actions for automated deployment and testing pipelines.
