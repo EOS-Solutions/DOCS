@@ -90,6 +90,22 @@ In addition to the setting “Duty Stamp Setup (FTE)", in ordet to export the va
 | **Electronic Document**                                                                                             |                                                                                                                                                           |
 | Electronic Doc. Causale text                                                                                        | Text that will appear on the invoice print if the stamp is paid by the company                                                                            |
 
+<br>
+It's possible to obtain reference "Duty stamp virtually absolved" in the print of the PDF invoice filling field "Print" in Duty stamp setup and the related extended text:
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/Duty stamp setup last.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/Extended text en.png"><br>
+
+<br>
+Then enable flag "Duty stamps texts" in Report setup (ADR):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/Report.png"><br>
+
+<br>
+<br>
+<br>
+
 **Customer Card Setup**
 
 In the Customer card, in the Electronic Document Tab, fill in the following fields:
