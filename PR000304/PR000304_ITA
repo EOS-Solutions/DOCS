@@ -141,13 +141,15 @@ La **creazione riga viene gestita solo sulla fattura di vendita** e non sull’o
 <br>
 E' possibile ottenere la dicitura "imposta di bollo assolta virtualmente" nella stampa della fattura pdf compilando il campo "stampa" del Setup bollo e il relativo testo esteso:
 <br>
+<br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/Bollo Ita1.png"><br>
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/Testi estesi Ita.png"><br>
 
 <br>
+<br>
 Successivamente attivare il flag in corrispondenza di "Testi bollo virtuale" nel setup report (ADR):
-
+<br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/Report ADR Ita.png"><br>
 
 <br>
