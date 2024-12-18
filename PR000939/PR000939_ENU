@@ -1,0 +1,66 @@
+The standard solution in Business Central is based on the mechanism whereby a child company subscribes to data change events on one and only one "Parent" company and then inherits the changes from a single source that must necessarily reside on the same database and therefore share the same localization, the same apps and customizations.
+
+ Communication is one-way from "Parent" to "Child" and synchronization takes place only on a scheduled basis.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000939-0/33MasterDataIntercompany.png"><br>
+
+Each synchronization setup must be performed on the company receiving the data and manually replicated on the other companies.
+
+The EOS MDI Master data intercompany app offers two basic setup modes:
+
+**"LOCAL"**: transfers the changes from one or more MASTER companies to the daughter companies as long as they reside in the same database. The Master company notifies the changes synchronously or asynchronously to the daughter companies which update the data through a scheduled activity. Communication is two-way.
+
+**"SOAP / OAUTH2"**:transfers changes from ONE or MORE MASTER companies to daughter companies on any local or remote database, OnPremise or OnLine even if they operate on different localizations and mount different apps and different customizations. The Master company notifies the changes synchronously or asynchronously to the daughter companies which update the data. Communication is two-way. The setup of tables and fields to be synchronized are managed on the "parent" company, making configuration, copying and modification of the settings easier and faster.
+
+The EOS MDI app is suitable both for small companies with a few companies to synchronize and for larger and more complex realities where it is necessary to transform data during synchronization (currencies, languages) in multinational contexts and with many companies to synchronize. It also offers specific features for:
+
+-   Restrict editability of data on child companies
+
+-   Monitor sync status with consolidated and cross-company views
+
+-   Synchronize chart of accounts
+
+-   Sync dimensions
+
+-   Manual and selective synchronizations of subsets of data
+
+-   Copy and duplicate sync profiles
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000939-0/34MasterDataIntercompany.png"><br>
+
+
+| Feature       | EOS MDI               | Standard feat            |
+|----------|--------------------|----------------------|
+| **Synch Master Data** | Yes | Yes |
+| Synch Documents / Entries | No	| No
+| Modes |1) Local (same DB with Job queues)<br>2) Soap with OAuth2	| Local (same DB with Job queues)
+| **Synch on same DataBase (Environment)** | Yes	| Yes
+| **Synch on different Environment** | Yes	| No
+| **Synch on Hybrid environment (Saas to OnPrem, OnPrem to Saas)** |  Yes	| No
+| Multiple localization Synch (es. US vs IT vs FR etc…) | Yes | No |
+| Underlying Technology | Soap with OAuth2 /Job Queues	| Events (29) Subscriber/ Change Company / Job Queues
+| Job Queue usage |One Job Queue entry for company with a load balancer that splits into sub processes	| One Job Queue entry for each Table (this easily reach Max Concurrent session and provoke longer running enqueuement)
+| Extensible | Yes	| Yes
+| Setup Management | Can be centralized in one single “Parent” company pushing data to “Child” or in peer-to-peer mode in each “sending” company	| All subscriber companies must be setup as “child”, each table receiving data must be setup in each company
+| Duplicate table profiles |  Yes	| No, each Table profile must be setup in the receiving company
+| Peer2Peer aka Multiple sources | Yes, every company can send or receive data | No, the model is one Master company and all the other are subsidiaries |
+| **Table Limitation** | Yes , avoid that users modify data on subsidiaries based on field defined policy or table defined policy	| No
+| Table Record Filter |Yes (Table Limitation non appliable in this case)	| Yes
+| Select table Fields | Yes	| Yes
+| Field Validation |  Validate Yes / No<br>OverWrite Remote value:  Always, OnCreation only, If Empty, If Different.	| Validate Yes / No<br>OverWrite local value Yes / No
+| **Data Transformation** | Yes (i.e. change “EUR” to “USD” ) | No |
+| Pre validation for LookUp values | Yes	| No
+| Coupling Criteria |No	| Yes. Match record based on field selection
+| **Table Triggers Options** | Yes, execute remote Insert, Modify, Delete	| No
+| Record Synchronization Type | Automatic: all Records)<br>Setup based: Only record listed in an admin setup.<br>Manual: Only record synched by end user	| No
+| Synchronous option |  Synchronous (Trigger a new Jobqueue creation)<br>Asynchronous (Wait until Job queue is scheduled)	| Asynchronous (Wait until Job queue is scheduled)
+| **Master Child** | Yes | Yes |
+| **Bi-directional synch** | Yes	| No
+| **Massive Synch** |Yes	| Yes
+| **Blob field** | Yes	| Yes
+| **Mediaset field** | No (Es. picture on item)	| No (Es. picture on item)
+| **Factbox on cards for Manual Synch** |  Yes	| No
+| **Chart Of Account** | Specific feature To synch a General Master Chart of account to subsidiaries with Matrix to spread specific accounts to subsidiaries | No |
+| **Dimensions** | Yes (Table 349)	| No
+| **Multicompany Table Matrix** |Yes: show a consolidated view for records counts across all companies and drill down	| No
+| **Multicompany Record Matrix** | Yes: show a consolidated view for records details across all companies with a field by field comparison	| No
