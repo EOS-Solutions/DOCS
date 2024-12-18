@@ -1,0 +1,68 @@
+La soluzione standard in Business Central si basa sul meccanismo per cui una società di destinazione sottoscrive eventi di cambio dati su una ed un'unica società di origine e poi eredita i cambiamenti da una singola origine che deve necessariamente risiedere sullo stesso database e poi condividere la stessa destinazione, le stesse app e personalizzazioni.
+
+La comunicazione è di tipo one-way da "Origine" to "Destinazione" e la sincronizzazione ha luogo solo su base schedulata.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000939-0/33MasterDataIntercompany.png"><br>
+
+Ogni setup di sincronizzazionedeve essere eseguito sulla società che riceve i dati e manualmente replicato sulle altre società.
+
+L'EOS MDI Master data intercompany offre due modalità di setup base:
+
+**"LOCAL"**: trasferisce le modifiche da una o più società di ORIGINE a quella o quelle di destinazione companies finchè risiedono sullo stesso database. La società di origine notifica le modifiche sincronicamente o asincronicamente a quelle di destinazione le quali aggiornano i dati attraverso un'attività schedulata.
+La comunicazione è a due vie.
+
+**"SOAP / OAUTH2"**: trasferisce le modifiche da UNA o PIU' società a società di destinazione su qualunque database remoto o locale, OnPremise oppure OnLine anche se operano su differenti localizzazioni e montano differenti app e differenti personalizzazioni. La società di origine notifica le modifiche sincronicamente o asincronicamente a quelle di destinazione le quali aggiornano i dati. 
+La comunicazione è a due vie. Il setup delle tabelle e dei campi da sincronizzare sono gestiti sulla società di origine, rendendo configurazione, copia e modifica delle impostazioni più semplice e veloce.
+
+L'app EOS MDI è adatta sia per piccole società con poche società da sincronizzare e per grandi e più complesse realtà dove è necessario trasformare i dati durante la sincronizzazione (valute, lingue) in contesti multinazionali e con molte società da sincronizzare. Offre anche specifiche possibilità:
+
+-   Limitare editabilità dei dati sulle società di destinazione
+
+-   Monitorare lo stato di sincronizzazione con viste consolidate ed interaziendali
+
+-   Sincronizzare il piano dei conti
+
+-   Sincronizzare dimensioni
+
+-   Sincronizzazioni manuali e selettive dei soggetti dei dati
+
+-   Copiare e duplicare profili di sincronizzazione
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000939-0/34MasterDataIntercompany.png"><br>
+
+
+| Funzionalità       | EOS MDI               | Funzionalità standard            |
+|----------|--------------------|----------------------|
+| **Sincronizzare Master Data** | Si | Si |
+| Sincronizzare documenti / Movimenti | No	| No
+| Modalità |1) Local (stesso database con code processi)<br>2) Soap con OAuth2	| Local (stesso database con code processi)
+| **Sincronizza su stesso DataBase (ambiente)** | Si	| Si
+| **Sincronizza su differenti ambienti** | Si	| No
+| **Sincronizza su ambienti ibridi (da Saas a OnPrem, da OnPrem a Saas)** |  Si	| No
+| Sincronizzazione localizzazione multipla (es. US vs IT vs FR ecc…) | Si | No |
+| Tecnologia di base | Soap con OAuth2 /code processi	| Eventi (29) Sottoscrittore/ Cambia società / Code processi
+| Uso code processi |Un movimento coda processi per società con bilanciatore del carico che suddivide in sottoprocessi	| Un movimento coda processi per ogni tabella (questo facilmente raggiunge la massima sessione parallela e provoca una più lunga attesa di incodamento)
+| Estensibile | Si	| Si
+| Gestione del setup | Può essere centralizzata in una singola società "di origine" inviando i dati a quella "di destinazione"to “Child” o in modalità peer-to-peer in ogni società di invio	| Per tutte le società che si sottoscrivono deve essere eseguito un setup come “di destinazione”, per ogni tabella che riceve i dati deve essere eseguito il setup in ogni società
+| Duplicare tabelle di profilo |  Si	| No, per ogni tabella di profilo deve essere eseguito il setup nella società di destinazione
+| Peer2Peer ovvero origini multiple | Si, ogni società può inviare o ricevere dati | No, il modello è società di origine e tutte le altre sussidiarie |
+| **Limitazioni tabella** | Si , evitare che gli utenti modifichino i dati sulle sussidiarie basate sul campo defined policy o tabella defined policy	| No
+| Filtro Record tabella | Si (limitazioni di tabella non applicabile in questo caso)	| Si
+| Seleziona campi tabella | Si	| Si
+| Validazione campo |  Valida Si / No<br>Sovrascrivi valore remoto:  Sempre, Solo su creazione, Se vuoto, Se diverso.	| Valida Si / No<br>Sovrascrivi valore local Si / No
+| **Trasformazione dati** | Si (es. cambia “EUR” in “USD” ) | No |
+| Prevalidazione per valori di lookup | Si	| No
+	| Criteri di accoppiamento |No	| Si. Corrispondenza di record basati sulla selezione del campo
+| **Opzioni trigger di tabella** | Si, esegui inserimento remoto, Modifica, cancellazione	| No
+| Tipo di sincronizzazione del record | Automatico: (tutti i record)<br>Basato sul setup: Solo record presenti nell'Admin setup.<br>Manuale: Solo record sincronizzati dall'utente finale	| No
+| Opzione sincrona |  Sincrona (innesca la creazione di una nuova coda processi)<br>Asincrona (attende finchè la coda processi non è schedulata )	| Asincrona (attende finchè la coda processi non è schedulata)
+| **Origine Destinazione** | Si | Si |
+| **Sincronizzazione bi-direzionale** | Si	| No
+| **Sincronizzazione massiva** |Si	| Si
+| **Campi Blob** | Si	| Si
+| **Campi Mediaset** | No (Es. immagine su articolo)	| No (Es. immagine su articolo)
+| **Factbox sulle schede per synch manuale** |  Si	| No
+| **Piano dei conti** | Funzionalità specifica per sincronizzare un piano dei conti generale dalla società di origine alle sussidiarie with con matrice per distribuire conti specifici alle sussidiarie | No |
+| **Dimensions** | Si (Tabella 349)	| No
+| **Matrice tabella multicompany** | Si: mostra una vista consolidata per il conteggio dei record attraverso tutte le società e drill down	| No
+| **Matrice record Multicompany** | Si: mostra una vista consolidata per i dettagli di record details attraverso tutte le società with una comparazione campo per campo	| No
