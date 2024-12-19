@@ -6,14 +6,14 @@ To enable file logging, you must open the `appsettings.json` of your EOS Functio
 
 ````
 {
-  "Logging": {
-    ...
-    ...
-    "File": {
-      "Path": "path/to/your/log.txt"
-      "Append": true
-    }
-  }
+  "Logging": {
+    ...
+    ...
+    "File": {
+      "Path": "path/to/your/log.txt"
+      "Append": true
+    }
+  }
 }
 ````
 
