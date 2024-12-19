@@ -1,0 +1,38 @@
+You can configure EOS FunctionAPI to emit logs to an Application Insights account. You must first create an Application Insights account on Azure and get the **Instrumentation Key** or **Connection String**. One of them is required to set up logging to Application Insights.
+
+After you have configured the use of Application Insights, you must restart your service instance. Please note that it can take up to 5min until the log messages appear on your Application Insights storage.
+
+**Using Connection String**
+
+After you have obtained the connection string for your Application Insights account, you can connect your EOS FunctionAPI to it. Open the `appsettings.json` file of your service instance and create the following section anywhere inside the main JSON object:
+
+````
+{
+  ...
+  "ApplicationInsights": {
+    "ConnectionString": "<your-connection-string-goes-here>"
+  }
+  ...
+}
+````
+
+
+**Using Instrumentation Key**
+
+{{% alert title="Warning" color="warning" %}}
+Using an instrumentation key is deprecated and you should switch to using connection strings.
+{{% /alert %}}
+
+After you have obtained the instrumentation key for your Application Insights account, you can connect your EOS FunctionAPI to it. Open the `appsettings.json` file of your service instance. Then create or locate the general configuration setting for EOS FunctionAPI called **EosFunctionApi** and create a property called **ApplicationInsightsInstrumentationKey** like so:
+
+````
+{
+  ...
+  "EosFunctionApi": {
+    ...
+    "ApplicationInsightsInstrumentationKey": "<your-instrumentation-key-goes-here>"
+    ...
+  }
+  ...
+}
+````
