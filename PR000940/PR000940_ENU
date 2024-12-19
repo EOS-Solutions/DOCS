@@ -1,0 +1,9 @@
+EOS FunctionAPI leverages the .NET core logging architecture for logging messages and diagnostics. This allows EOS FunctionAPI to log to different log storages including files, event log or Application Insights.
+
+Logging is configured by modifying the `appsettings.json` file of your service instance. This file is found in the folder of EOS FunctionAPI and can be modified with your text editor of choice.
+
+As of today, EOS FunctionAPI supports logging to the following storages:
+- Console
+- Application Insights
+- Event Log
+- Local file
