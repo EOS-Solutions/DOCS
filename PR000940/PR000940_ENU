@@ -7,3 +7,5 @@ As of today, EOS FunctionAPI supports logging to the following storages:
 - Application Insights
 - Event Log
 - Local file
+
+Thos logging infrastructure allows you to select which messages are logged and which are not. You can filter them by log source, or severity, or even configure the severity to be logged based on the log source. You can find more information on the documentation of [Logging in .NET Core and ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-6.0)
