@@ -1,0 +1,20 @@
+EOS FunctionAPI supports logging to a local file system. While this is very convenient for debugging issues or diagnostics sessions, we discourage it's use in production environments. Using local file logging may in some cases slow down the response times of EOS FunctionAPI or even not write correctly to the file when the FunctionAPI is under high concurrent use or heavy load.
+
+EOS FunctionAPI uses **Nreco.Logging** for logging to the file system. You can find more information about this component, how to configure it and what features it supports here: https://github.com/nreco/logging
+
+To enable file logging, you must open the `appsettings.json` of your EOS FunctionAPI instance. In this file, under the section **Logging** you must add the following JSON object:
+
+````
+{
+  "Logging": {
+    ...
+    ...
+    "File": {
+      "Path": "path/to/your/log.txt"
+      "Append": true
+    }
+  }
+}
+````
+
+This is the basic configuration you need to enable for file logging to work. For mor information about each setting and what else you can configure, please check the documentation of [**Nreco.Logging**](https://github.com/nreco/logging).
