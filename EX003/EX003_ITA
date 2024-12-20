@@ -1,36 +1,46 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KMmMlSSOg1s" title="Data Security per Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <br>
-La App Data Security consente di proteggere i dati importanti dalle modifiche accidentali. Data Security ä il modo pió semplice per aggiungere workflows (flussi) ai dati stessi o al processo di approvazione dei documenti. E' possibile filtrare i record in base a stati predefiniti, ad esempio si puï cercare un ordine o un cliente sulla base dello stato "non approvato" oppure "obsoleto".
+La App Data Security consente di proteggere i dati importanti dalle modifiche accidentali. Data Security √® il modo pi√π semplice per aggiungere workflows (flussi) ai dati stessi o al processo di approvazione dei documenti. E' possibile filtrare i record in base a stati predefiniti, ad esempio si pu√≤ cercare un ordine o un cliente sulla base dello stato "non approvato" oppure "obsoleto".
 
-Data Security app inoltre assicura la protezione dei dati attraverso funzionalitÖ che consentono di:
+Data Security app inoltre assicura la protezione dei dati attraverso funzionalit√† che consentono di:
 
 Bloccare i record non certificati (es. Cliente senza numero di P. IVA)
 
--   Gestire i permessi di singoli utenti o di gruppi affinchä solo persone autorizzate possano cambiare lo stato dei record
+-   Gestire i permessi di singoli utenti o di gruppi affinch√® solo persone autorizzate possano cambiare lo stato dei record
 -   Inviare email associate al cambiamento di stato
--   Creare diversi workflow approvativi per specifiche entitÖ ad esempio: approvazione √rapidaƒ ordine o approvazione √dettagliataƒ
+-   Creare diversi workflow approvativi per specifiche entit√† ad esempio: approvazione ‚Äúrapida‚Äù ordine o approvazione ‚Äúdettagliata‚Äù
 
 Riassumendo la app Data Security di Eos Solutions permette di:
 
--   Gestire diversi stati associati a un¬entitÖ
+-   Gestire diversi stati associati a un‚Äôentit√†
 -   Regolare i passaggi di stato
 -   Inviare email associate al cambiamento di stato
 
-Le tabelle entitÖ possono essere:
+Le tabelle supportate di default sono:
+
+-   Clienti
+-   Fornitori
+-   Ordini di vendita
+-   Fatture vendite
+-   Ordini di acquisto
+-   Fatture acquisto
+-   Conto corrente fornitore
+
+E' possibile aggiungere ulteriori tabelle seguendo questo [sample](https://github.com/EOS-Solutions/Sample/tree/master/EX003.DataSecurity/01_SampleExtension), le tabelle entit√† possono essere:
 
 -   Anagrafiche
 -   Documenti (Acquisto, Vendita Produzione)
 -   Movimenti
 
-A ogni elemento dell¬entitÖ ä possibile associare pió stati, partendo da uno stato iniziale e arrivando ad uno stato finale, passando per quelli intermedi.
+A ogni elemento dell‚Äôentit√† √® possibile associare pi√π stati, partendo da uno stato iniziale e arrivando ad uno stato finale, passando per quelli intermedi.
 
-<img width="" src="https://docs.eos-solutions.it/Images/EX003-0/9DataSecurity.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/EX003-0/9DataSecurity.png"><br>
 
 Ad ogni stato si possono associare colori e permessi quali:
 
 -   Modifica / Elimina
 -   Rilascio / Registrazione / Stampa (per documenti Acquisto e Vendita)
 
-Inoltre ä possibile definire dei percorsi di cambio stato:
+Inoltre √® possibile definire dei percorsi di cambio stato:
 
