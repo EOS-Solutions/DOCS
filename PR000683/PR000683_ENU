@@ -30,7 +30,8 @@ This feature allows you to quickly set up the reports provided by the Advanced D
 | Delete Log records after | Indicating the date formula 1M the system deletes log records that are older than a month (it is necessary to aenable the scheduling). Note: deleting log records implies that pdf files are deleted too. |
 | Report Header / Footer Image No. | choose an image for the header / footer of the documents (a maximum of two bitmap for a logo or other images). Dimensions:<br><br>*   Header 18,5cm x 3,3cm<br><br><br>*   Footer 18,5cm x 1,5cm<br><br><br>Supported file extensions: PNG, BMP, GIF, JPEG.<br><br>Minimum recommended resolution: 300 DPI.<br><br>The space for the image logo is as wide as the page is large. So you have the possibility to place the image where you need, before applying it.<br><br>Sandard Nav positioning options are not supported. It is possible to include Company information or another type of text inside the logo. E.g.: you can place a logo in the header and an image containing company information in the footer of the document.<br><br>NB Images can also be uploaded directly to the Report image list (ADR) page.ADR. |
 | Enable Document To Address | In the Customer card, in the "Address & Contact" tab there is the "Documents-To Contact No." field. This field is also reported in the sales documents header and on the registered documents. When an invoice is created, for example, the system takes the billing address from this field, if filled in. The option is automatically ACTIVATED when the app is installed. |
-
+| Service Config Code | In order to Merge PDF into a single file, this field need to be validated with a valid EOS Function API Configuration. See [Service configurations]({{<relref "eal-service-configuration">}}) and  [EOS Function API]({{<relref "eos-function-api">}})|
+| Filename in language | The filenames will be generated in Customer Language |
 
 ### Report Setup (ADR)
 
@@ -70,11 +71,13 @@ In E-Mail Texts (ADR) it is possible to define the text of the e-mail body by pr
 | Table No. | specify the table |
 | Email Subject | indicate an email subject |
 | HTML Template | By "Import template" you can choose a template to better view the emails. Once the template is imported, the option is automatically activated. |
-| Avaliable Variables | through placeholder it is possible to insert dynamic values ??in the text |
+| Avaliable Variables | through placeholder it is possible to insert dynamic values ​​in the text |
 
 
 ### Mailboxes (ADR)
 Unlimited mailbox setups can be configurated. Fill in a code, a description and a sender address.
+
+You have also to add the "Email Account Name". See <a href="https://learn.microsoft.com/en-us/dynamics365/business-central/admin-how-setup-email#add-email-accounts">Setup Email in Business Central</a>
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000683-0/ADR_MailBox_ENU.png"><br>
 
@@ -89,7 +92,7 @@ It is possible to choose a report code.
 | **Field** | **Description** |
 | --- | --- |
 | Table No. | indicate the reference table |
-| Address Type | specify if the address should be entered in the field� "From / CC / BCC / To" of the e-mail |
+| Address Type | specify if the address should be entered in the field  "From / CC / BCC / To" of the e-mail |
 | Priority | it is possible to define a priority with a number between 0 and 100 |
 | E-Mail Source Type | specify where to get the e-mail address (eg from the Customer / Vendor card, from the Contact card, from Contacts with specific professional roles, etc.) |
 | E-Mail Source Code | specify the contact or the professional role |
@@ -113,6 +116,9 @@ Emails are added to a queue and it is possible to monitor the outcome of the sen
 ### Save
 
 The system will ask whether to use a specific setup report. Choose it and then save.
+
+### Scheduled Mailings
+[Scheduled Mailings]({{<relref "scheduled-mailings">}})
 
 ### Processing Log (ADR)
 A Log is available to monitor the sending / saving actions:
