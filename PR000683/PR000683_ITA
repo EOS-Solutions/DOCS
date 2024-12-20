@@ -2,22 +2,22 @@
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000683-0/ADR_Sample.png"><br>
 
 {{% alert title="NOTE" color="warning" %}}
-ß possibile impostare una Categoria IVA nella tabella standard "VAT Clauses", per poter stampare sui documenti le informazioni aggiuntive sul tipo di IVA che viene applicata.
+Ãˆ possibile impostare una Categoria IVA nella tabella standard "VAT Clauses", per poter stampare sui documenti le informazioni aggiuntive sul tipo di IVA che viene applicata.
 {{% /alert %}}
 
 ### Setup (ADR)
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000683-0/ADR_Setup_ITA.png"><br>
 
-Tramite "**Ord. progettaz. pred.**" Š possibile definire i dettagli che il pdf dovr… contenere (es. se i prezzi verranno o meno stampati, se verranno stampate righe di commento ecc). Le frecce Sposta su e Sposta gi— consentono di modificare l'impaginazione.
+Tramite "**Ord. progettaz. pred.**" Ã¨ possibile definire i dettagli che il pdf dovrÃ  contenere (es. se i prezzi verranno o meno stampati, se verranno stampate righe di commento ecc). Le frecce Sposta su e Sposta giÃ¹ consentono di modificare l'impaginazione.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000683-0/ADR_LayoutSorting_ITA.png"><br>
 
-Tramite **Ord. process. pred.**  Š possibile scegliere l'ordine in cui verranno processati i documenti. Le frecce Sposta su e Sposta gi— consentono di modificare l'ordinamento.
+Tramite **Ord. process. pred.**  Ã¨ possibile scegliere l'ordine in cui verranno processati i documenti. Le frecce Sposta su e Sposta giÃ¹ consentono di modificare l'ordinamento.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000683-0/ADR_Processor_ITA.png"><br>
 
 {{% alert title="Quick Report Selection" color="warning" %}}
-Tale funzionalit… consente di impostare velocemente i report forniti dalla applicazione Advanced Document Reporting.
+Tale funzionalitÃ  consente di impostare velocemente i report forniti dalla applicazione Advanced Document Reporting.
 {{% /alert %}}
 
 | **Campo** | **Descrizione** |
@@ -25,23 +25,24 @@ Tale funzionalit… consente di impostare velocemente i report forniti dalla appli
 | Cod. Setup Report default | selezionare dall'elenco il codice report da utilizzare come default |
 | Cod. Mailbox Default | selezionare dall'elenco le impostazioni mailbox da utilizzare come default |
 | Posizione Indirizzo | specificare la posizione dell'indirizzo:<br><br>*   destra<br>*   sinistra |
-| Blocca ordinamento del layout | tale opzione, se attiva, impedisce la personalizzazione del layout in Setup report. In Setup report sar… possibile solamente decidere cosa stampare e cosa non stampare. L'ordinamento invece sar… definito nel Setup generale. |
-| Elimina allegati PDF dopo | Indicando una date formula (es. 1M) il sistema elimina i file pdf dalla tabella di log che sono pi— vecchi di un mese (Š necessario attivare la schedulazione per attivare la pulizia) |
-| Elimina Log dopo | Indicando una date formula (es. 1M) il sistema elimina i log che sono pi— vecchi di un mese (Š necessario attivare la schedulazione per attivare la pulizia) |
-| Nr. immagine header / footer report | scegliere un'immagine per la testata / piede del documento (un massimo di due bitmap per logo ed altro). Dimensioni:<br><br>*   Testata18,5cm x 3,3cm<br><br>*   Piede18,5cm x 1,5cm<br><br>I tipi di file supportati sono: PNG, BMP, GIF, JPEG.<br><br>La risoluzione minima consigliata e': 300 DPI.<br><br>Lo spazio riservato per ilÿlogo Š largo quanto Š larga la pagina stessa. In questo modo si ha il massimo controllo possibile su dove posizionare il logo quando viene creata l'immagine, prima di applicarla.<br><br>Di conseguenza le opzioni standard di posizionamento non sono supportate. EÂ possibile includere nel logo informazioni societarie e testo vario. Ad esempio, Š possibile inserire l'immagine del logo in testata e l'immagine delle informazioni societarie nel piede del documento. ÿ<br><br>N.B. Le immagini possono essere caricate anche direttamente alla page Lista immagini report (ADR). |
-| Abilita "Documento a indirizzo" | In anagrafica Cliente, nel Tab "Indirizzo e Contatto" Š presente il campo "Documenti-A Nr. Contatto". Tale campo viene riportato anche in testata documenti di vendita e poi sui documenti registrati. Quando viene creata una fattura, ad esempio, il sistema prende da questo campo, se compilato, l'indirizzo di fatturazione.. L' opzione Š automaticamente ATTIVA quando si installa l'app ex novo. |
-
+| Blocca ordinamento del layout | tale opzione, se attiva, impedisce la personalizzazione del layout in Setup report. In Setup report sarÃ  possibile solamente decidere cosa stampare e cosa non stampare. L'ordinamento invece sarÃ  definito nel Setup generale. |
+| Elimina allegati PDF dopo | Indicando una date formula (es. 1M) il sistema elimina i file pdf dalla tabella di log che sono piÃ¹ vecchi di un mese (Ã¨ necessario attivare la schedulazione per attivare la pulizia) |
+| Elimina Log dopo | Indicando una date formula (es. 1M) il sistema elimina i log che sono piÃ¹ vecchi di un mese (Ã¨ necessario attivare la schedulazione per attivare la pulizia) |
+| Nr. immagine header / footer report | scegliere un'immagine per la testata / piede del documento (un massimo di due bitmap per logo ed altro). Dimensioni:<br><br>*   Testata18,5cm x 3,3cm<br><br>*   Piede18,5cm x 1,5cm<br><br>I tipi di file supportati sono: PNG, BMP, GIF, JPEG.<br><br>La risoluzione minima consigliata e': 300 DPI.<br><br>Lo spazio riservato per ilÂ logo Ã¨ largo quanto Ã¨ larga la pagina stessa. In questo modo si ha il massimo controllo possibile su dove posizionare il logo quando viene creata l'immagine, prima di applicarla.<br><br>Di conseguenza le opzioni standard di posizionamento non sono supportate. Eâ€™ possibile includere nel logo informazioni societarie e testo vario. Ad esempio, Ã¨ possibile inserire l'immagine del logo in testata e l'immagine delle informazioni societarie nel piede del documento. Â <br><br>N.B. Le immagini possono essere caricate anche direttamente alla page Lista immagini report (ADR). |
+| Abilita "Documento a indirizzo" | In anagrafica Cliente, nel Tab "Indirizzo e Contatto" Ã¨ presente il campo "Documenti-A Nr. Contatto". Tale campo viene riportato anche in testata documenti di vendita e poi sui documenti registrati. Quando viene creata una fattura, ad esempio, il sistema prende da questo campo, se compilato, l'indirizzo di fatturazione.. L' opzione Ã¨ automaticamente ATTIVA quando si installa l'app ex novo. |
+| Codice Configurazione Servizio| Per l'unione dei PDF in un file unico Ã¨ necessario compilare questo campo in modo che punti ad una configurazione di una EOS Function API ([Service configurations]({{<relref "eal-service-configuration">}}) e  [EOS Function API]({{<relref "eos-function-api">}}))|
+| Nome del file nella lingua| I Nomi dei file generati verranno tradotti nella lingua cliente|
 
 ### Setup Report (ADR)
 
-Il Setup Report (ADR) consente di definire un codice report e per quale documento utilizzarlo. Inoltre Š possibile specificare se per tale report vanno stampati i loghi e l'indirizzo e dove stamparli. Infine si sceglie quante copie stampare.
+Il Setup Report (ADR) consente di definire un codice report e per quale documento utilizzarlo. Inoltre Ã¨ possibile specificare se per tale report vanno stampati i loghi e l'indirizzo e dove stamparli. Infine si sceglie quante copie stampare.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000683-0/ADR_SetupReport_ITA.png"><br>
 
 | **Campo** | **Descrizione** |
 | --- | --- |
 | Codice | assegnare un codice al report |
-| Descrizione | Š possibile inserire una descrizione |
+| Descrizione | Ã¨ possibile inserire una descrizione |
 | Stampa loghi | decidere se stampare o meno i loghi |
 | Origine nr. di copie | scegliere se prendere il numero di copie dall'anagrafica Cliente / Fornitore |
 | Nr. di copie | indicare il numero di copie del documento che vanno stampate |
@@ -49,17 +50,17 @@ Il Setup Report (ADR) consente di definire un codice report e per quale document
 | Nr. immagine header | scegliere dall'elenco l'immagine della testata documento |
 | Nr. immagine footer | scegliere dall'elenco l'immagine del piede documento |
 | Posizione indirizzo | stabilire la posizione dell'indirizzo (destra o sinistra) |
-| Titolo report | Š possibile assegnare un titolo al report |
+| Titolo report | Ã¨ possibile assegnare un titolo al report |
 
 
 {{% alert title="NOTE" color="warning" %}}
-**Progetta layout**: si pu• modificare il layout del documento (se non Š stata attivata l'opzione Blocca ordinamento del layout nel setup generale) e scegliere cosa stampare.
+**Progetta layout**: si puÃ² modificare il layout del documento (se non Ã¨ stata attivata l'opzione Blocca ordinamento del layout nel setup generale) e scegliere cosa stampare.
 {{% /alert %}}
 
 ## Impostazione e invio testi per Email
 
 ### Testi E-Mail (ADR)
-In Testi E-Mail (ADR) Š possibile definire il testo del corpo email premendo Nuovo:
+In Testi E-Mail (ADR) Ã¨ possibile definire il testo del corpo email premendo Nuovo:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000683-0/ADR_Email_ITA.png"><br>
 
@@ -67,16 +68,18 @@ In Testi E-Mail (ADR) Š possibile definire il testo del corpo email premendo Nuo
 | **Campo** | **Descrizione** |
 | --- | --- |
 | Codice | assegnare un codice |
-| Cod. lingua | il testo pu• essere multilingua. Selezionare la lingua di interesse |
-| Descrizione | Š possibile inserire una descrizione |
+| Cod. lingua | il testo puÃ² essere multilingua. Selezionare la lingua di interesse |
+| Descrizione | Ã¨ possibile inserire una descrizione |
 | Nr. Tabella | specificare la tabella relativa |
 | Oggetto Email | indicare un oggetto della email |
-| HTML Template | tramite "Importa template" si pu• scegliere un template per visualizzare meglio le email. Una volta importato il template l'opzione viene attivata automaticamente. |
+| HTML Template | tramite "Importa template" si puÃ² scegliere un template per visualizzare meglio le email. Una volta importato il template l'opzione viene attivata automaticamente. |
 | Variabili disponibili | tramite placeholder si possono inserire valori dinamici nel testo |
 
 
 ### Mailboxes (ADR)
 Si possono configurare setup mailbox illimitati. Indicare un codice, una descrizione e l'indirizzo mittente.
+
+E' necessario aggiungere il "Nome account e-mail". Consulta <a href="https://learn.microsoft.com/en-us/dynamics365/business-central/admin-how-setup-email#add-email-accounts">Configurare la posta elettronica in Business Central</a>
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000683-0/ADR_MailBox_ITA.png"><br>
 
@@ -92,30 +95,34 @@ E' possibile scegliere un codice report.
 | --- | --- |
 | Nr. Tabella | Indicare la tabella di riferimento |
 | Tipo indirizzo | specificare se l'indirizzo va inserito nel campo Da/CC/BCC/A della e-mail |
-| Priorit… | Š possibile definire una priorit… con un numero intero che va da zero a 100. |
-| Tipo origine e-mail | specificare dove prendere l'indirizzo email (es. dall'anagrafica Cliente / Fornitore,ÿ dall'anagrafical Contatto, da Contatti con determinati Ruoli professionali, ecc.) |
+| PrioritÃ  | Ã¨ possibile definire una prioritÃ  con un numero intero che va da zero a 100. |
+| Tipo origine e-mail | specificare dove prendere l'indirizzo email (es. dall'anagrafica Cliente / Fornitore,Â  dall'anagrafical Contatto, da Contatti con determinati Ruoli professionali, ecc.) |
 | Cod. origine e-mail | specificare l'eventuale contatto o ruolo professionale |
 | E-mail | Se nel Tipo origine email viene scelta l'opzione "E-mail" indicare un indirizzo |
 | Abilitato | scegliere se abilitare la riga configurata |
 
 ### Invia documenti tramite email/ Salva documenti
-Dalla Lista delle fatture registrate, ad esempio, selezionare uno o pi— documenti e premere Reporting avanzato->Salva / Invia
+Dalla Lista delle fatture registrate, ad esempio, selezionare uno o piÃ¹ documenti e premere Reporting avanzato->Salva / Invia
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000683-0/ADR_SendSave_ITA.png"><br>
 
 ### Invia
-Nella finestra successiva scegliere se inviare una email singola a pi— destinatari oppure N-email a N-destinatari. Si possono compilare i campi indirizzo sia manualmente, sia scegliendo i destinatari premendo sui tre puntini.
+Nella finestra successiva scegliere se inviare una email singola a piÃ¹ destinatari oppure N-email a N-destinatari. Si possono compilare i campi indirizzo sia manualmente, sia scegliendo i destinatari premendo sui tre puntini.
 
 Nel tab Generale si possono modificare o mantenere i default proposti 
 
-Le email vengono aggiunte ad una coda ed Š possibile monitorare l'esito dell'invio.
+Le email vengono aggiunte ad una coda ed Ã¨ possibile monitorare l'esito dell'invio.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000683-0/ADR_Send_ITA.png"><br>
 
 
 ### Salva
 
-Il sistema chieder… se utilizzare un setup report specifico. Sceglierlo e poi salvare.
+Il sistema chiederÃ  se utilizzare un setup report specifico. Sceglierlo e poi salvare.
+
+
+### Scheduled Mailings
+[Scheduled Mailings]({{<relref "scheduled-mailings">}})
 
 ### Log elaborazione (ADR)
 E' disponibile un Log che consente di monitorare le azioni di invio / salvataggio:
