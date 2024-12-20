@@ -8,19 +8,29 @@ Data Security App for Microsoft Dynamics Business Central allows the creation of
 
 It ensures the security and protection of data through functions that enable to:
 
-Å Block records not completely qualified (e.g. Customer without VAT No)
+â€¢ Block records not completely qualified (e.g. Customer without VAT No)
 
-Å Manage user or group policy and permit to change record status only to granted people
+â€¢ Manage user or group policy and permit to change record status only to granted people
 
-Å Send email when a record changes status; include context info
+â€¢ Send email when a record changes status; include context info
 
-Å Create different approval path for a specific entity for example:Order quick approval or detailed approvals
+â€¢ Create different approval path for a specific entity for example:Order quick approval or detailed approvals
 
 -   Managing different status associated to an entity
 -   Regulate status change
 -   Send email associated to status change
 
-Entity tables can be:
+Default supported tables are
+
+-   Customer
+-   Vendor
+-   Sales Order
+-   Sales Invoice
+-   Purchase Order
+-   Purchase Invoice
+-   Vendor Bank Account
+
+It's possible to add other tables following this [sample](https://github.com/EOS-Solutions/Sample/tree/master/EX003.DataSecurity/01_SampleExtension), entity tables can be:
 
 -   Personal data
 -   Documents (Purchase, sales, manufacturing)
