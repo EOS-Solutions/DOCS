@@ -1,0 +1,22 @@
+The out of the box supported pages for Docsolution integration are:
+
+* Customer
+* Vendor
+* Item
+* Sales Quote
+* Sales Order
+* Sales Invoice
+* Purchase Quote
+* Purchase Order
+* Purchase Invoice
+* Purchase Credit Memo
+* Service Order
+* Service Invoice
+* Service Credit Memo
+* Service Quote
+* Job
+* Service Item
+* Service Contract
+* Service Contract Quotes
+* Sales Return Order
+* Purchase Return Order
