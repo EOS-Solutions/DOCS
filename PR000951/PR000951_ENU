@@ -1,0 +1,16 @@
+Premise: In the case of using an invoicing method that requires a split for each individual shipment (1 shipment → 1 Invoice), it is necessary to first verify whether CWS shipments or registered sales shipments will be used at the project level. This is because the splitting criterion configurable in the field editor will differ and must be set as follows:
+
+* **CWS Shipments:** Set the flag to TRUE for the field "CWS Shipment No."
+* **Registered Sales Shipments:** Set the flag to TRUE for the field "No."
+
+This is because a single CWS shipment may group multiple registered sales shipments.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000951-0/ES1_1_ENU.png"><br>
+
+In this case, in the invoicing report, we will include the billing method code filter: 1SHIP1INV, associated with all customers for whom the issuance of one invoice per individual shipment with a 1:1 criterion is planned.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000951-0/ES1_2_ENU.png"><br>
+
+N separate sales invoices are generated, containing the various shipments made.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000951-0/ES1_3_ENU.png"><br>
