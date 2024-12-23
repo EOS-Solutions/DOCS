@@ -1,0 +1,33 @@
+**Is there a default secondary unit of measure? ?**
+No, for each item the item unit of measure and the quantity per unit of measure must be defined and then set as the secondary unit of measure.
+
+<br>
+
+**If I enable the second unit of measure in a company, is it mandatory to specify it for all items ?**
+
+No, enabling the second unit of measure is necessary to make the fields visible to manage the second unit of measure.
+The secondary quantity will be tracked only for items that have the **Secondary Unit of Measure Code** field compiled.
+To make the compilation of this field mandatory for certain types of items, you can install the app [EX003 Data Security]({{<relref "data-security">}}).
+
+<br>
+
+**Where do I define the rounding precision to use ?**
+The app uses the **Rounding Type** and **Rounding Precision** defined for the unit of measure (BC standard).
+[Dual Unit Of Measure - Setup]({{<relref "dual-unit-of-measure-setup">}})
+
+The **Quantity Rounding Precision** value in the item units of measure is not used by the app and it is recommended not to set it.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000952-0/Item5_ENU.png"><br>
+
+<br>
+
+**Using the Default calculation method, what happens if the primary quantity is used (e.g. shipped) completely but the secondary quantity is not ?**
+When a positive movement is no longer open, the secondary residual quantity is automatically reset to zero.
+
+<br>
+
+**Using the Default calculation method, what happens if the secondary quantity is used (e.g. shipped) completely but the primary quantity is not ?**
+The residual quantity check follows the standard BC logic, so only the residual quantity expressed in the main unit of measure is checked.
+There is no block if you declare a secondary quantity to be shipped/consumed that is greater than the residual secondary quantity, as long as there are open movements with sufficient residual (main) quantity to record the negative movement.
+
+<br>
+<br>
