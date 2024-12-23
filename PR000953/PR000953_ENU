@@ -1,0 +1,16 @@
+Premise: Typically, in destination-based invoicing, it is necessary to first verify the project logic used to set up destinations/delivery points in the customer master data.
+
+Usually, the "shipping addresses" master data is used. However, in some cases, particularly in the retail sector, due to pricing or promotional logic specific to delivery points, a structure is chosen that uses the "Sell-to Customer" master data associated with a single billing customer "Bill-to Customer," corresponding to the parent company. In this case, the splitting criterion "Sell-to Customer No." must be flagged to generate one invoice per delivery point.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000953-0/ES2_1_ENU.png"><br>
+
+In this case, in the invoicing report, we will include the billing method code filter: MENS-DEST, which provides a split by "Ship-to Address."
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000953-0/ES2_2_ENU.png"><br>
+
+In this example, two invoices have been generated containing:
+
+* **First Invoice:** 2 Shipments with destination VITERBO
+* **Second Invoice:** 1 Shipment with destination ROME
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000953-0/ES2_3_ENU.png"><br>
