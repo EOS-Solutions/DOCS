@@ -1,0 +1,15 @@
+Premessa: In caso venga utilizzato un metodo di fatturazione che preveda una spaccatura per singola spedizione (1 DDT à 1 Fattura) è necessario prima verificare se a livello di progetto verranno utilizzate le spedizione CWS oppure le spedizioni di vendita registrate, in quanto il criterio di spaccatura impostabile nell’edito campi sarà differente, e dovrà essere impostato come segue:
+* Spedizioni CWS: impostare il flag a TRUE per il campo «Nr. spedizione CWS»
+* Spedizioni di vendita registrate: impostare il flag a TURE per il campo «Nr.»
+    
+Questo perchè in un’unica spedizione CWS potrebbero essere raggruppate più spedizioni di vendita registrate 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000951-0/ES1_1_ITA.png"><br>
+
+In questo caso nel report di fatturazione andremo ad inserire nel filtro clienti il codice metodo di fatturazione: 1DDT1FT associato a tutti quei clienti per i quali è prevista l’emissione di una fattura per ogni singolo DDT con criterio 1:1
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000951-0/ES1_2_ITA.png"><br>
+
+Vengono generate N fatture di vendita provvisorie separate contenenti le diverse spedizione effettuate 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000951-0/ES1_3_ITA.png"><br>
