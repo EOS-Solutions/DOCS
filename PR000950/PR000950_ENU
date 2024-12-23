@@ -1,0 +1,6 @@
+* Example 1: one invoice for each shipment (with active CWS shipments)
+* Example 2: one invoice per destination (using ship to:)
+* Example 3: monthly consolidation of multiple sales shipments into the same sales invoice
+* Example 4: generation of an invoice for each reason code:
+    * Reason code VEN: standard
+    * Reason code NO_MAG: does not affect warehouse stock
