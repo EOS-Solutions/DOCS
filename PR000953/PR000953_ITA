@@ -1,0 +1,15 @@
+Premessa: solitamente nella fatturazione per destinazione è necessario prima verificare le logiche di progetto con le quali si è deciso di impostare le destinazioni / punti di consegna in anagrafica clienti.
+
+Solitamente viene utilizzata l’anagrafica degli «indirizzi di spedizione» ma a volte, soprattutto nella GDO, per necessità derivanti da logiche di listino prezzi/ promozioni differenti per punti di consegna, si sceglie di optare per una struttura che prevede l’utilizzo dell’anagrafica cliente «Vendere a:» associata ad un unico cliente di fatturazione «Fatturare a:» che corrisponde alla capogruppo, in questo caso è necessario fleggare come criterio di spaccatura «Vendere a Nr. – cliente» per generare una fattura per ogni punto di consegna.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000953-0/ES2_1_ITA.png"><br>
+
+In questo caso nel report di fatturazione andremo ad inserire nel filtro clienti il codice metodo di fatturazione: MENS-DEST che prevede una spaccatura per «spedire a indirizzo»
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000953-0/ES2_2_ITA.png"><br>
+
+Sono state generate in questo esempio, due fatture contenenti:
+* La prima fattura: 2 DDT con destinazione VITERBO nella prima fattura
+* La seconda fattura: 1 DDT con destinazione ROMA nella seconda fattura
+    
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000953-0/ES2_3_ITA.png"><br>
