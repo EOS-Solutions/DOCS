@@ -1,0 +1,6 @@
+* Esempio 1: una fattura per ogni spedizione (con spedizioni CWS attive) 
+* Esempio 2: una fattura per destinazione (con spedire a:)
+* Esempio 3: cumulazione mensile di più DDT nella stessa fattura di vendita
+* Esempio 4: generazione di una fattura per ogni causale:
+	* Causale VEN: standard
+	* Causale NO_MAG: non movimenta giacenza di magazzino
