@@ -1,6 +1,8 @@
 The Secondary Quantity, the Secondary Invoiced Quantity and the Secondary Remaining Quantity are managed in the item ledger entries.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000442-0/ItemLdg1_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000442-0/ItemLdg1_ENU.png"><br>
+
+**Please note** there is no control over the secondary residual quantity, which is used to calculate availability.
 
 <br>
 <br>
