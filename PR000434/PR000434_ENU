@@ -1,8 +1,13 @@
 Item Tracking is provided for all documents.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000434-0/Tracking1_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000434-0/Tracking1_ENU.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000434-0/Tracking2_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000434-0/Tracking2_ENU.png"><br>
+
+In all documents there is a line function, called **Fill sec. qty. from tracking**, to automatically set the secondary quantity to be managed equal to the sum of the secondary quantities declared in the tracking information:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000434-0/Tracking3_ENU.png"><br>
+
+If in the item card the **Secondary Qty. Calc. Method** is set to **Fixed**, this action also updates the quantity to be managed in the primary unit of measure.
 
 <br>
 <br>
