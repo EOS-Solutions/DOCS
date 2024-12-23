@@ -1,8 +1,15 @@
-La gestione della tracciabilit� articolo � prevista in tutti i documenti.
+La gestione della tracciabilità articolo è prevista in tutti i documenti.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000434-0/Tracking1_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000434-0/Tracking1_ITA.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000434-0/Tracking2_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000434-0/Tracking2_ITA.png"><br>
+
+
+In tutti i documenti esiste una funzione di riga, denominata **Compila qtà. sec. da tracciabilità** per impostare automaticamente la quantità secondaria da gestire pari alla somma delle quantità secondarie dichiarate nelle informazioni tracciabilità:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000434-0/Tracking3_ITA.png"><br>
+
+Se in anagrafica articolo il **Metodo calcolo qtà secondaria** è impostato a **Fisso**, questa azione aggiorna anche la quantità da gestire nell’unità di misura principale.
 
 <br>
 <br>
