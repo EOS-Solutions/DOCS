@@ -1,0 +1,35 @@
+**È prevista una unità di misura secondaria predefinita ?**
+No, per ciascun articolo deve essere definita l’unità di misura articolo e la quantità per unità di misura e quindi impostarla come unità di misura secondaria.
+
+<br>
+
+**Se abilito la seconda unità di misura in una società, è obbligatorio specificarla per tutti gli articoli ?**
+
+No, abilitare la seconda unità di misura è necessario per rendere visibili i campi con cui gestire la seconda unità di misura.
+La quantità secondaria sarà tracciata solo per gli articoli che hanno il campo **Cod. unità di misura secondaria** compilato.
+Per rendere obbligatoria la compilazione di questo campo per certe tipologie di articoli, puoi installare l’app [EX003 Data Security]({{<relref "data-security">}}).
+
+<br>
+
+**Dove definisco la precisione di arrotondamento da utilizzare ?**
+L’app utilizza il **Tipo Arrorondamento** e la **Precisione Arrotondamento** definiti per l’unità di misura (standard BC).
+[Dual Unit Of Measure - Setup]({{<relref "dual-unit-of-measure-setup">}})
+
+Il valore **Precisione arrotondamento quantità** presente nelle u8nità di misura articoli non viene utilizzato dall'app e si consiglia di non impostarlo.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000952-0/Item5_ITA.png"><br>
+
+<br>
+
+**Utilizzando il metodo di calcolo Default, cosa succede se la quantità principale è utilizzata (ad esempio spedita) completamente ma la quantità secondaria no ?**
+Quando un movimento positivo non è più aperto, automaticamente la quantità residua secondaria viene azzerata
+
+<br>
+
+**Utilizzando il metodo di calcolo Default, cosa succede se la quantità secondaria è utilizzata (ad esempio spedita) completamente ma la quantità principale no ?**
+Il controllo sulla quantità residua segue le logiche standard di BC, quindi si verifica solo la quantità residua espressa nell’unità di misura principale.
+Non vi è alcun blocco se si dichiara una quantità secondaria da spedire/consumare maggiore della quantità secondaria residua, finché esistono movimenti aperti con quantità residua (principale) sufficiente a registrare il movimento negativo.
+
+<br>
+<br>
+
+
