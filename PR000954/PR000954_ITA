@@ -1,0 +1,15 @@
+Premessa: nella fatturazione cumulativa di più DDT in un’unica fattura di vendita, che solitamente viene generata a fine mese, si consiglia di stabilire con il cliente quali possono essere eventuali criteri di spaccatura da attivare che debbano essere imprescindibili rispetto al cumulo della fattura.
+
+Ad esempio: nel caso in cui, fosse lecito modificare il metodo e/o la condizione di pagamento a livello di ordine di vendita; in fase di fatturazione cumulativa, devo tenere in considerazione tale variazione e quindi generare due fatture differenti con metodi e condizioni differenti.
+
+Il consiglio è quello di impostare sempre in ogni metodo di fatturazione questi due criteri di spaccatura per condizione e metodo di pagamento.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000954-0/ES3_1_ITA.png"><br>
+
+In questo caso nel report di fatturazione andremo ad inserire nel filtro clienti il codice metodo di fatturazione: MENS che prevede una fatturazione cumulata mensile. In questo caso imposteremo come «data riferimento» la fine del mese:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000954-0/ES3_2_ITA.png"><br>
+
+In questo esempio è stata generata un’unica fattura di vendita mensile contenente tutte le spedizioni del mese del cliente Grafiche Magiche:​
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000954-0/ES3_3_ITA.png"><br>
