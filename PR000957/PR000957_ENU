@@ -1,4 +1,4 @@
-The app EX051.07 Dual Unit of Measure for Close Documents extends the features of app [EX041 Close Documents Without Invoicing]({{<relref "close-documents-without-invoicing">}}) and allows closing document lines with a secondary unit of measure.
+The EX051.07 Dual Unit of Measure for Close Documents app extends the features of app [EX041 Close Documents Without Invoicing]({{<relref "close-documents-without-invoicing">}}) and allows closing document lines with a secondary unit of measure.
 
 The feature allows to specify the secondary quantity on the journal; the secondary quantity is also automatically suggested according to what was actually shipped or received.
 
