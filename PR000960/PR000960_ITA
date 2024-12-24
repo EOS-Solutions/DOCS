@@ -1,0 +1,16 @@
+L'app EX051.04 Dual UOM for Handling Units, che estende l'app [EX030 Handling Units Management]({{<relref "handling-units-management">}}) e l'app [EX055 Packing List]({{<relref "packing-list-pck">}}), consente l’utilizzo della gestione delle unità di carico e delle packing list con la seconda unità di misura. Le principali funzionalità aggiunte sono:
+* Gestione in doppia unità di misura di tutti i contenuti delle unità di carico.
+* Integrazione di tutte le registrazioni che consentono la creazione di unità di carico: magazzino, spedizioni, carichi, trasferimenti, documenti warehouse ecc.
+* Gestione tracciabilità, prelievi warehouse, stoccaggi warehouse ecc.
+* Generazione e gestione delle unità di carico.
+* Generazione e gestione della packing list. 
+
+**Nota Bene**
+Seguono alcune importanti indicazioni relative all'app:
+
+* Le movimentazioni in unità di misura secondaria delle unità di carico non sono soggette al controllo giacenza che rimane previsto solo per l’unità di misura principale.
+* La gestione delle istruzioni di imballaggio non è stata implementata con la doppia unità di misura. La generazione della packing list dalle istruzioni di imballaggio calcola anche la quantità in unità di misura secondaria e lo fa' in base al fattore di conversione previsto in anagrafica articoli.
+* Le stampe della packing list non sono state implementate con la doppia unità di misura. 
+
+<br>
+<br>
