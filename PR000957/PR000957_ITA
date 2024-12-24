@@ -1,0 +1,20 @@
+L'app EX051.07 Dual Unit of Measure for Close Documents estende le funzionalità dell'app [EX041 Close Documents Without Invoicing]({{<relref "close-documents-without-invoicing">}}) consentendo la chiusura di righe documento anche in seconda unità di misura.
+La funzionalità consente di compilare anche la quantità in seconda unità di misura sul giornale; quest’ultima, inoltre, viene suggerita automaticamente in base a quanto effettivamente spedito o ricevuto.
+
+Esempio di Giornale chiudi documenti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000957-0/CDW1_ITA.png"><br>
+
+Esempio di Movimenti chiudi documenti:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000957-0/CDW2_ITA.png"><br>
+
+**Nota Bene**
+Non è possibile chiudere solamente la quantità secondaria senza chiudere almeno parzialmente la principale:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000957-0/CDW3_ITA.png"><br>
+
+
+<br>
+<br>
+
