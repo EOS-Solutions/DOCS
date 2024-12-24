@@ -1,0 +1,18 @@
+L'app EX051.06 Dual Unit of Measure for Product Quality estende le funzionalità dell'app [EX061 Product Quality Assurance]({{<relref "product-quality-assurance">}}) e consente di gestire la campionatura anche in seconda unità di misura e di definire la quantità secondaria conforme e non conforme su ordini di controllo e non conformità.
+
+Sulla campionatura è possibile definire se le quantità specificate sono in unità di misura della riga del documento da controllare, o in unità di misura secondaria:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000958-0/PQA1_ITA.png"><br>
+
+Negli ordini di controllo consente di gestire la campionatura anche in seconda unità di misura e di definire la quantità secondaria conforme e non conforme:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000958-0/PQA2_ITA.png"><br>
+
+Nelle non conformità è possibile definire la quantità secondaria non conforme:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000958-0/PQA3_ITA.png"><br>
+
+<br>
+<br>
+
+
