@@ -1,0 +1,22 @@
+The app EX051.07 Dual Unit of Measure for Close Documents extends the features of app [EX041 Close Documents Without Invoicing]({{<relref "close-documents-without-invoicing">}}) and allows closing document lines with a secondary unit of measure.
+
+The feature allows to specify the secondary quantity on the journal; the secondary quantity is also automatically suggested according to what was actually shipped or received.
+
+Example of Close Document Journal:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000957-0/CDW1_ENU.png"><br>
+
+Example of Close Document Entries:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000957-0/CDW2_ENU.png"><br>
+
+**Please note**
+Closing the secondary quantity without closing the main quantity is not allowed:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000957-0/CDW3_ENU.png"><br>
+
+
+<br>
+<br>
+
+
