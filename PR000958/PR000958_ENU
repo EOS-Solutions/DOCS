@@ -1,4 +1,4 @@
-The app EX051.06 Dual Unit of Measure for Product Quality extends the features of app [EX061 Product Quality Assurance]({{<relref "product-quality-assurance">}}) and allows specifying a secondary unit of measure for quantities on test types, as well as specifying the compliant and blocked secondary quantity on both inspection orders and non compliances.
+The EX051.06 Dual Unit of Measure for Product Quality app extends the features of app [EX061 Product Quality Assurance]({{<relref "product-quality-assurance">}}) and allows specifying a secondary unit of measure for quantities on test types, as well as specifying the compliant and blocked secondary quantity on both inspection orders and non compliances.
 
 In Test table size is possible to specify if a test should be conducted on primary or secondary quantity:
 
