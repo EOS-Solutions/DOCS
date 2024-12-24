@@ -1,0 +1,12 @@
+The EX051.05 Dual Unit of Measure for SGL app extends the features of app [EX001 Accruals and Simulated General Ledger]({{<relref "accruals-and-simulated-general-ledger">}}) and allows the management of document invoice entries even in second unit of measure.
+
+The writing of documents invoice entries has been implemented with the secondary quantity:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000959-0/SGL1_ENU.png"><br>
+
+The calculation and posting of settlement entries were implemented with the management of the second unit of measure:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000959-0/SGL2_ENU.png"><br>
+
+<br>
+<br>
