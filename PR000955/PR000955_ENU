@@ -1,0 +1,11 @@
+Premise: In the event that we need to divide the generation of sales invoices based on the reason used in the sales order, it is possible to do so by checking the field: "Reason code".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000955-0/ES4_1_ENU.png"><br>
+
+In this case, in the invoicing report, we will insert the billing method code: REASON into the customer filter.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000955-0/ES4_2_ENU.png"><br>
+
+Two sales invoices have been generated with different reasons derived from the sales order, in the example: VENDITA and NOMAG.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000955-0/ES4_3_ENU.png"><br>
