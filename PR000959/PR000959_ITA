@@ -1,0 +1,12 @@
+L'app EX051.05 Dual Unit of Measure for SGL estende l'app [EX001 Accruals and Simulated General Ledger]({{<relref "accruals-and-simulated-general-ledger">}}) e consente la gestione anche in seconda unità di misura delle scritture simulate dei documenti da emettere e ricevere.
+
+La scrittura di tutti i movimenti fatt. documento è stata implementata con la quantità secondaria:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000959-0/SGL1_ITA.png"><br>
+
+Il calcolo e la registrazione dei movimenti di liquidazione sono stati implementati con la gestione della seconda unità di misura:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000959-0/SGL2_ITA.png"><br>
+
+<br>
+<br>
