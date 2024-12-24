@@ -1,0 +1,15 @@
+Premise: In cumulative invoicing of multiple shipments into a single sales invoice, which is typically generated at the end of the month, it is advisable to establish with the customer any splitting criteria that must be mandatory regardless of the invoice aggregation.
+
+For example: if it is permissible to modify the payment method and/or terms at the sales order level, during cumulative invoicing, this variation must be considered. Consequently, two separate invoices with different methods and terms should be generated.
+
+The recommendation is to always set these two splitting criteria for payment terms and payment method in every invoicing method.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000954-0/ES3_1_ENU.png"><br>
+
+In this case, in the invoicing report, we will include the billing method code filter: MENS, which provides for monthly cumulative invoicing. In this scenario, the "reference date" will be set to the end of the month:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000954-0/ES3_2_ENU.png"><br>
+
+In this example, a single monthly sales invoice was generated containing all the customer Rotadent ingranaggi's shipments for the month
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000954-0/ES3_3_ENU.png"><br>
