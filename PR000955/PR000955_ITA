@@ -1,0 +1,12 @@
+Premessa: nel caso in cui avessimo la necessità di dividere la generazione delle fattura di vendita in funzione della causale utilizzata nell’ordine di vendita è possibile farlo fleggando nei criteri di spaccatura il campo: «Cod. causale» introdotto di recente nell’app ECS.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000955-0/ES4_1_ITA.png"><br>
+
+​ In questo caso nel report di fatturazione andremo ad inserire nel filtro clienti il codice metodo di fatturazione: CAUSALE ​
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000955-0/ES4_2_ITA.png"><br>
+
+
+Sono state generate due fatture di vendita con causale differente derivante dall’ordine di vendita, nell’esempio: VEN e NO_MAG
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000955-0/ES4_3_ITA.png"><br>
