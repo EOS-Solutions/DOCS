@@ -1,0 +1,15 @@
+The EX051.04 Dual UOM for Handling Units app, that extends the [EX030 Handling Units Management]({{<relref "handling-units-management">}}) app and the [EX055 Packing List]({{<relref "packing-list-pck">}}), allows the use of Handling Units and Packing list with the dual unit of measure. The main features added are:
+* Management in dual unit of measure of all the contents of handling units.
+* Integration of all registrations allowing the creation of handling units: item journal, shipments, receipts, transfers, warehouse documents, etc.
+* Tracking, Warehouse Picks, Warehouse Put away, etc.
+* Creation and management of handling units.
+* Creation and management of packing list. 
+
+**Please Note**
+Here are some important information about the app:
+* Movements in secondary unit of measure of handling units are not subject to inventory control which is provided only for the main unit of measure.
+* The packaging instructions have not been implemented with the dual unit of measure. The generation of the packing list from the packaging instructions also calculates the quantity in secondary units of measure and does so based on the conversion factor provided in the item (qty. for unit of measure).
+* The packing list reports have not been implemented with the dual unit of measure. 
+
+<br>
+<br>
