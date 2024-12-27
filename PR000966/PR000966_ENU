@@ -1,0 +1,19 @@
+The app supports bin mandatory locations:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000966-0/HUM6_ENU.png"><br>
+
+All dual unit of measure informations are also recorded in Warehouse Entries:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000966-0/HUM7_ENU.png"><br>
+
+Vengono gestite in doppia unità di misura tutte le principali operazioni:
+* Warehouse Receipt
+* Warehouse Shipment
+* Put-away
+* Pick
+* Whse. Item Journal
+* Whse. Reclassification Journal
+* Whse. Phys. Invt. Journal
+* Warehouse Movements
+
+<br>
