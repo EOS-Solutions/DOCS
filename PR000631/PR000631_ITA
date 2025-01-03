@@ -1,8 +1,14 @@
-E' necessario scegliere un codice setup da utilizzare di default, nel caso non ne venga indicato uno specifico nell'anagrafica Cliente.
+Nel setup di fatturazione cumulativa estesa (ECS) sono stati integrati campi e setup inerenti alle tre nuove funzionalità implementate:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/IT_Setup1.png"><br>
+* **Gestione Log errori ECS:** integrato con la pagina «Sessioni di fatturazione (ECS)» nella quale è possibile visualizzare il log di fatturazione con diversi livelli di dettaglio
+* **Gestione dello stato del Data Security:** integra la possibilità di avanzare le fattura di vendita provvisorie generate da ECS in uno stato specifico identificato da setup e che può essere sottoposto al controllo campi standard dell’EDS.
+* **Assegnare una specifica classe documento:** integra la possibilità di assegnare una classe documentale dedicata alle fatture di vendita generate dal processo di fatturazione ECS
 
-Sulla **Scheda cliente** nel Tab �Fatturazione� si pu� infatti definire il metodo di fatturazione per ogni singolo Cliente.
+E' inoltre, necessario scegliere un codice setup da utilizzare di default, nel caso non ne venga indicato uno specifico nell'anagrafica Cliente.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/ECS_Slide7_ITA.png"><br>
+
+Sulla **Scheda cliente** nel Tab “Fatturazione” si può infatti definire il metodo di fatturazione per ogni singolo Cliente.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/IT_Setup2.png"><br>
 
