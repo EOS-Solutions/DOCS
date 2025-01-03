@@ -1,0 +1,42 @@
+### Activation of Surplus Settlement Reverse:
+
+In the **Bonus Setup (SPB)**, it is possible to enable the management of surplus write-offs directly from settlement without generating an accounting write-off document:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_1_ENU.png"><br>
+
+On the contract lines, there are functions to view the following:
+* Bonus accounting movements
+* Settlement movements
+* Surplus settlement movements (to be accrued)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_2_ENU.png"><br>
+
+When a settled amount includes a surplus (to be accrued), there are two options:
+
+**Option 1**: Write-off of the surplus only, followed by the full settlement write-off
+
+* With the "*write off surplus settlement*" flag set to true in the bonus setup, the surplus write-off function in the "*surplus movements*" allows you to reverse the movement without generating an accounting document by unchecking the "*Create document*" flag in the write-off report:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_3_ENU.png"><br>
+
+* Setting the "Create document" flag to false allows you to reverse the surplus without generating an accounting write-off document.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_4_ENU.png"><br>
+
+* The system will close the surplus, restoring the settlement to its original value:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_5_ENU.png"><br>
+
+**Option 2**: Write-off of the full settlement (including surplus):
+
+* Starting with a settlement that includes a surplus, you can access the settlement movements (NOT surplus movements).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_6_ENU.png"><br>
+
+* Using the write-off function, reverse the movements related to the invoice you want to settle (it is not necessary to select all movements; selecting just one linked to that document number is sufficient):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_7_ENU.png"><br>
+
+* With a single action, both the settlement and the surplus (to be accrued) will be reversed:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_8_ENU.png"><br>
