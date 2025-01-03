@@ -1,14 +1,39 @@
 **Extended Combine Shipments (ECS)**
 
-To run the report that generates invoices, type Extended Combine Shipments in the Search menu:
+To run the report that creates the invoices, type **Extended Cumulative Invoicing** in the Search menu:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/EN_CreateInvoices.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/CI_ENU_1.png"><br>  
 
-| **Field** | **Description** |
-|-|-|
-| Posting Date, Operation Occurred Date | if both are empty, they take the value of Reference Date.  |
+### **Options**
 
-If a specific billing method has been set in the customer master data (Invoicing tab), selecting that method on the report will allow filtering for all customers to whom it has been assigned.
+- **Schedule Execution:** Schedules the execution of the report via the job queue.  
+- **Reference Date:** Used by the "Invoicing Method" to filter within the "From Date"/"To Date" range.  
+- **Copy Text Lines:** Button that allows you to copy manually written text from the Shipment Lines onto the Invoices.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/CI_ENU_2.png"><br>
+
+### **Invoice Data**
+
+- **Posting Date and Operation Execution Date:** If not filled in, the "Reference Date" will be used.  
+- **Default Invoicing Method Code:** Used only when the customer does not have a specific one. Specifies the grouping fields.  
+- **Electronic Document Type:** Used to generate all invoices with a specific TD set in the report.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/CI_ENU_3.png"><br>
+
+### **Filter - Customer**
+
+The customer filter allows specifying filtering parameters for customer master data. For example, if you want to invoice only customers with a specific "Invoicing Method Code," such as **1SHIP1INV**, you can enter it directly in the dedicated field.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/CI_ENU_4.png"><br>
+
+### **Filter - Sales Shipment Headers**
+
+The filter on sales shipment headers allows starting extended cumulative invoicing for a specific set of billable shipments.  
+
+**Note:**  
+If CWS shipments are active, filter using the field **"CWS Shipment No."**; if they are not active, use the field **"No."**
+
+If a specific invoicing method has been set up in the customer master data (Billing tab), selecting that method in the report will enable filtering for all customers to whom it has been assigned.
 
 {{% alert title="NOTE" color="warning" %}}
 The created invoices will be visible in Sales Invoices.
