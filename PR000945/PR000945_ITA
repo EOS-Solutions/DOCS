@@ -1,0 +1,6 @@
+Nel tab: **Classe documento** del setup è stato integrato il seguente campo:
+
+* **Classe documento fattura:** consigliabile da compilare nel caso in cui si voglia impostare un percorso EDS per le fatture di vendita automatiche generate dall’ECS
+* **Stato EDS fattura:** stato EDS di destinazione delle fatture di vendita generate da ECS.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000945-0/ECS_Slide13_ITA.png"><br>
