@@ -1,0 +1,8 @@
+Nel tab: **generale** del setup sono stati integrati i seguenti campi:
+
+* **Pianifica la creazione della fattura:** se il flag viene impostato uguale a «ture» il sistema imposta automaticamente tale flag al report di fatturazione cumulativa (ECS), che verrà di conseguenza inizializzata con coda processi «pianificata»
+* **Filtro:** Cliente: permette di preimpostare dei filtri predefiniti sull’anagrafica cliente
+* **Filtro Testate sped. Vendita:** permette di preimpostare dei filtri predefiniti sulle spedizioni di vendita
+* **Livello minimo del log:** permette di definire il livello di dettaglio che dovrà avere il log di fatturazione
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000943-0/ECS_Slide11_ITA.png"><br>
