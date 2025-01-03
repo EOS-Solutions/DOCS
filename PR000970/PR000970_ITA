@@ -1,0 +1,42 @@
+### Attivazione storno Liquidazione in Esubero:
+
+Nel **Setup Bonus (SPB)** è possibile attivare la gestione dello storno esubero diretto da liquidazione e senza generazione del documento contabile di storno:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_1_ITA.png"><br>
+
+Sulle righe del contratto, sono presenti delle funzioni per visualizzazione i:
+* Movimenti contabili bonus
+* Movimenti di liquidazione
+* Movimenti di liquidazione (in esubero (da maturare))
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_2_ITA.png"><br>
+
+Quando è presente un importo liquidato con esubero (da maturare) ci sono due possibilità:
+
+**Possibilità 1**: storno del solo esubero e successivamente dell’intera liquidazione
+
+* Con il flag “*storna liquidazione in esubero*” = *true* nel setup bonus, la funzione di storno subero presente nei “*movimenti in esubero*” da la possibilità di stornare il movimento senza generare il documento contabile, defleggando nel report di storno il flag “*Crea documento*”:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_3_ITA.png"><br>
+
+* Gestendo a false il flag “Crea documento” è possibile decidere di stornare l’esubero senza la generazione del documento contabile di storno.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_4_ITA.png"><br>
+
+* Il sistema chiuderà l’esubero riportando la liquidazione al valore originale:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_5_ITA.png"><br>
+
+**Possibilità 2**: storno dell’intera liquidazione (esubero compreso):
+
+* Partendo sempre da una liquidazione con esubero è possibile entrare nei movimenti di liquidazione (NON in esubero)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_6_ITA.png"><br>
+
+* Dalla funzione di storno, stornate i movimenti relativi alla fattura che si vuole liquidare (non è necessario selezionare tutti i movimenti, basta selezionarne solo uno riferito a quel nr. documento):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_7_ITA.png"><br>
+
+* Con un’unica azione verrà stornata sia la liquidazione che l’esubero (da maturare):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000970-0/SPB_8_ITA.png"><br>
