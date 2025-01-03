@@ -1,14 +1,41 @@
 **Fatt. Cumulative Estese (ECS)**
 
-Per lanciare il report che crea le fatture � necessario digitare Fatt. Cumulative Estese nel menu Cerca:
+Per lanciare il report che crea le fatture è necessario digitare Fatt. Cumulative Estese nel menu Cerca:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/IT_CreateInvoices.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/CI_ITA_1.png"><br>  
 
-| **Campo** | **Descrizione** |
-|-|-|
-| Data di registrazione, Data esecuzione operazione | se entrambi sono vuoti, prendono il valore di Data Riferimento.  |
+**Opzioni**
 
-Se � stato impostato un metodo di fatturazione specifico in anagrafica cliente (tab Fatturazione), scegliendo tale metodo sul report, sar� possibile filtrare per tutti i clienti ai quali lo abbiamo assegnato.
+* Pianifica l'esecuzione: pianifica l'esecuzione del report tramite coda processi.
+* Data riferimento: viene utilizzata dal "Metodo fatturazione" per filtrare nell'intervallo «Da data»/»A data».
+    
+* Copia righe di testo: pulsante che permette di copiare sulle Fatture il testo scritto manualmente nelle Righe di Spedizione
+    
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/CI_ITA_2.png"><br>
+
+**Dati fattura**
+
+-   Data di registrazione e data esecuzione operazione: se non vengono compilate sarà utilizzata la «Data riferimento».
+    
+-   Cod. metodo fatt. default: viene utilizzato solo quando il cliente non ne ha uno specifico. Specifica i campi di raggruppamento.
+    
+-   Tipo doc. elettronico: utilizzato per generare tutte le fatture con uno specifico TD impostato nel report 
+    
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/CI_ITA_3.png"><br>
+
+**Filtro -  Cliente**
+
+Il filtro cliente permette di indicare dei parametri di filtro per l’anagrafica cliente, ad esempio: se volessimo fatturare solo i clienti che hanno un determinato «Codice metodo di fatturazione» 1DDT1FATTURA abbiamo la possibilità di inserirlo direttamente nell’apposito campo.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000637-0/CI_ITA_4.png"><br>
+
+**Filtro - Testate spedizioni vendita**
+
+l filtro sulle testate delle spedizioni di vendita permette di avviare la fatturazione cumulativa estesa per un determinato set di spedizioni fatturabili.
+
+NB: anche in questo caso è necessario fare attenzione all’utilizzo delle spedizioni CWS, se sono attive, sarà opportuno filtrare per il campo «Nr. spedizione CWS» se non sono attive si utilizzerà il campo «Nr.»
+
+Se è stato impostato un metodo di fatturazione specifico in anagrafica cliente (tab Fatturazione), scegliendo tale metodo sul report, sarà possibile filtrare per tutti i clienti ai quali lo abbiamo assegnato.
 
 {{% alert title="NOTE" color="warning" %}}
 Le fatture create saranno visibili in Fatture vendita.
