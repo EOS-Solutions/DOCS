@@ -1,0 +1,3 @@
+If document classes are activated and a dedicated document class is configured in the extended invoicing setup (ECS), Business Central will automatically assign a dedicated document class to all invoices generated through the ECS app.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000969-0/ECS_Slide46_ENG.png"><br>
