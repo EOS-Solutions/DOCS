@@ -1,1 +1,8 @@
-The Extended Combine Shipment app allows, after specific setup, to indicate how to group documents, to whom to invoice, how often to invoice.
+The Extended Combine Shipment (ECS) app is used as a substitute for the standard Business Central function "Cumulative Invoicing" and allows you to:
+
+•	Define "invoicing methods" to specify the grouping criteria of documents based on the customer.
+•	Set invoicing frequency to determine the shipping recovery period.
+•	Speed up the process of generating preliminary sales invoices.
+•	Schedule the invoicing process.
+•	Subject the invoicing process to Data Security Workflow.
+•	Assign a specific document class to invoices generated automatically by ECS.
