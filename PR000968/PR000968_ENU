@@ -1,0 +1,4 @@
+If the approval workflow is activated for the provisional sales invoice, with the functionality managed by ECS, the generated invoices *will automatically transition* to a workflow state defined by the setup (e.g., **RELEASED**).
+If errors occur during the state transition, for example, if a mandatory field is missing between the initial state and the state defined in the setup, the system will generate the invoice but leave the state unchanged (e.g., **OPEN**), *and the error will be logged in the billing log*.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000968-0/ECS_Slide45_ENG.png"><br>
