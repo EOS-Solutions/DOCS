@@ -1,0 +1,7 @@
+Nel tab: **Conservazione del registro** del setup sono stati integrati i seguenti campi:
+
+* **Abilita criterio di conservazione dei log:** se fleggato a «true» abilità i criteri di eliminazione del registro del log di fatturazione in modo da ottimizzare le prestazioni del database in caso di utilizzo massivo di tale funzionalità
+* **Dimensioni blocco eliminazione:** numero di record
+* **Elimina registro precedente (giorni):** numero di giorni dal quale si desidera che venga eliminato il log
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000946-0/ECS_Slide14_ITA.png"><br>
