@@ -1,0 +1,36 @@
+Executing the Extended Cumulative Billing Report (ECS) with the flag: "**Schedule Execution**" enabled
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000967-0/ECS_Slide39_ENG.png"><br>
+
+Business Central pianificherà una nuova «**Sessione di fatturazione (ECS)**» con i parametri (date, impostazioni e filtri) presenti al momento dell’esecuzione del report.
+
+### Invoicing Sessions (ECS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000967-0/ECS_Slide40_ENG.png"><br>
+
+From the page titled "**Invoicing Sessions (ECS)**", you can verify:
+
+* The **session ID** of the Invoicing session, which also identifies the documents generated during the entire billing session.
+* The **date** and **time** when the session was scheduled, as well as the start and end date and time for completed sessions.
+* The **user ID** who scheduled the billing session.
+* You can also check the status of the billing session, which can be:
+**Scheduled**: The session has been scheduled and will be executed at the next scheduled queue run.
+**In Progress**: The session is currently being executed.
+**Completed**: The billing session has been completed.
+* It also provides a count of any errors (marked in red) that may have occurred within the billing session.
+
+In addition to the information mentioned in the previous slide, from the "**Invoicing Sessions (ECS)**" page, you can also:
+
+* Open the **Dashboard** of the Invoicing session's execution log when its status is "**In Progress**" or "**Completed**".
+* Delete a "**Scheduled**" session.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000967-0/ECS_Slide42_ENG.png"><br>
+
+The **Dashboard** (Invoicing log) allows you to view, with varying levels of detail depending on the setup, the progress of billing in terms of billed customers, generated documents, and any *Warnings* or *Errors* during billing.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000967-0/ECS_Slide43_ENG.png"><br>
+
+From the **Dashboard** (Invoicing log), you can also "**View the source**" of the highlighted log entry (e.g., Customer or Invoice) and, in case of errors, view the "**last error stack code**" as well.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000967-0/ECS_Slide44_ENG.png"><br>
+
