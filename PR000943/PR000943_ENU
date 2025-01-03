@@ -1,0 +1,8 @@
+In the **General** tab of the setup, the following fields have been integrated:
+
+* **Schedule Invoice Creation:** if the flag is set to "true," the system automatically applies this flag to the cumulative billing report (ECS), which will subsequently be initialized with the "scheduled" process queue.
+* **Filter Customer:** allows predefined filters to be set on the customer records.
+* **Filter Sales Shipment Headers:** allows predefined filters to be set on sales shipments.
+* **Minimum Log Level:** allows defining the level of detail required for the billing log.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000943-0/ECS_Slide11_ENG.png"><br>
