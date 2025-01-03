@@ -1,1 +1,8 @@
-La app Extended Combine Shipment consente, dopo aver effettuato uno specifico setup, di indicare come raggruppare i documenti, a chi intestare le fatture, con quale frequenza fatturare.
+L’app Extended Combine Shipment (ECS) viene utilizzata in sostituzione della funzione standard Business Central «Fatt. cumulativa» e consente di: 
+
+* Impostare i «metodi di fatturazione» per indicare il criterio di raggruppamento dei documenti in base al cliente
+* Impostare la frequenza di fatturazione determinando il periodo di recupero delle spedizioni. 
+* Velocizzare il processo di generazione delle fatture di vendita provvisorie
+* Schedulare il processo di fatturazione
+* Sottoporre a Workflow del Data Security il processo di fatturazione
+* Attribuire alle fatture generate automaticamente da ECS una specifica classe documentale
