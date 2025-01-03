@@ -1,0 +1,6 @@
+Nel tab: **Data Security** del setup sono stati integrati i seguenti campi:
+
+* **Percorso EDS fattura:** consigliabile da compilare nel caso in cui si voglia impostare un percorso EDS per le fatture di vendita automatiche generate dall’ECS
+* **Stato EDS fattura:** stato EDS di destinazione delle fatture di vendita generate da ECS.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000944-0/ECS_Slide12_ITA.png"><br>
