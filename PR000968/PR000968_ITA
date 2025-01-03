@@ -1,0 +1,3 @@
+In caso di attivazione del workflow approvativo nella fattura di vendita provvisoria, con la funzionalità gestita dall’ECS le fatture generate *saranno automaticamente* passate ad uno stato di workflow definito da setup (es. **RELEASED**), se si dovessero verificare errori durante il passaggio di stato, ad esempio nel caso in cui venga a mancare un campo obbligatorio tra il passaggio di stato iniziale e lo stato definito a setup, il sistema genererà la fattura lasciando invariato lo stato (es. **OPEN**) e *nel log di fatturazione verrà segnalato l’errore*. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000968-0/ECS_Slide45_ITA.png"><br>
