@@ -1,0 +1,36 @@
+Eseguendo il report di Fatturazione cumulativa estese (ECS) con il flag: «**Pianifica esecuzione**» attivo
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000967-0/ECS_Slide39_ITA.png"><br>
+
+
+Business Central pianificherà una nuova «**Sessione di fatturazione (ECS)**» con i parametri (date, impostazioni e filtri) presenti al momento dell’esecuzione del report.
+
+### Sessioni di fatturazione (ECS):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000967-0/ECS_Slide40_ITA.png"><br>
+
+Dalla pagina denominata «**Sessioni di fatturazione (ECS)**» è possibile verificare:
+
+* **l’ID sessione** di fatturazione che identifica anche i documenti generati dall’intera sessione di fatturazione.
+* la **data** e **ora** in cui la sessione è stata programmata e la data e ora di inizio e fine sessione in case di sessioni completate.
+* L’**ID utente** che ha pianificato la sessione di fatturazione
+* Verificare lo stato della sessione di fatturazione, che può essere:
+**Panificato**: la sessione è stata pianificata e verrà eseguita alla prossima esecuzioni pianificata della coda
+**In esecuzione**: la sessione è in fase di esecuzione
+**Completato:** la sessione di fatturazione è stata completata
+* Conteggio di eventuali errori (marcati in «rosso») che possono essersi verificati all’interno della sessione di fatturazione.
+
+Oltre alle informazioni indicate nella slide precedente, dalla pagina denominata «**Sessioni di fatturazione (ECS)**» è possibile: 
+
+* Aprire la «**Dashboard**» del log di esecuzione della sessione di fatturazione, in stato: «**In esecuzione**» o «**Completata**»
+* Eliminare una sessione «**Pianificata**»
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000967-0/ECS_Slide42_ITA.png"><br>
+
+La **Dashboard** (log di fatturazione) permette di visualizzare, in modo più o meno dettagliato in base all’impostazione definita da setup, l’andamento della fatturazione in termini di clienti fatturati, documenti generati ed eventuali *Avvisi* o *Errori* di fatturazione.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000967-0/ECS_Slide43_ITA.png"><br>
+
+Dalla **Dashboard** (log di fatturazione) è possibile anche «**Visualizzare la sorgente**» della riga di log evidenziata (es. Cliente o fattura) e in caso di errore visualizzare anche il codice «**dell’ultimo stack di errore**»
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000967-0/ECS_Slide44_ITA.png"><br>
