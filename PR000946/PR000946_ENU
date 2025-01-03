@@ -1,0 +1,7 @@
+In the **Log Retention tab** of the setup, the following fields have been integrated:
+
+* **Enable Log Retention Policy:** if flagged as "true," enables log deletion policies for the billing log to optimize database performance in case of extensive use of this functionality.
+* **Deletion Block Size:** number of records.
+* **Delete Previous Log (Days):** number of days after which the log should be deleted.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000946-0/ECS_Slide14_ENG.png"><br>
