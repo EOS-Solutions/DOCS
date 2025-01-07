@@ -1,0 +1,35 @@
+La procedura “Stanziamento costi di trasporto (ETC)” si occupa di generare le scritture di competenza **Costi di trasporto @ Fatture da ricevere** relative ai costi di trasporto calcolati tramite l’app ETC. Il processo di calcolo elabora i costi non ancora liquidati, oppure liquidati con **Data di registrazione** successiva a quella di generazione della scrittura di competenza.
+
+<u>Movimenti processati:</u>
+
+Il report elabora i record presenti nella pagina “Costi di trasporto per documento (ETC)”, applicando le seguenti condizioni:
+* Righe relative ai Tipi documento Spedizione, Ricezione acquisto, Carico da reso, Spedizione di reso, Spedizione per trasferimento;
+* Documenti registrati nel periodo compreso nei valori dei campi Data inizio e Data fine;
+* Righe che presentano un costo trasporto preventivo o consuntivo non liquidate oppure liquidate con Data di registrazione successiva alla Data fine indicata nella Request page della procedura (ossia fattura di acquisto registrata con una Data di registrazione successiva alla Data fine della procedura di stanziamento costi).
+
+I conti movimentati vengono recuperati dall’apposito record del **“Setup liquidazione costi di trasporto (ETC)”**:
+
+* “Fatture da ricevere”: tramite la “Cat. reg fornitore” del fornitore indicato nel campo “Liquidare a Nr.”; 
+* “Costi di trasporto”: tramite i campi “Codice riga acquisto”, “Codice riga vendita” o “Trasferisci codice riga”.
+
+<u>Esecuzione procedura:</u>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000971-0/ETC_1.jpg"><br>
+ 
+La request page presenta i seguenti campi
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000971-0/ETC_2.jpg"><br>
+ 
+* **Data inizio**: data di registrazione dalla quale devono essere considerati i movimenti che presentano un costo di trasporto calcolato;
+* **Data fine**: data di registrazione fino alla quale devono essere considerati i movimenti che presentano un costo di trasporto calcolato;
+* **Data di registrazione**: data di registrazione con la quale vengono generate le scritture contabili;
+* **Con storno**: se selezionato, saranno generate anche le relative scritture autostornanti, in Data di registrazione + “Formula data confronto”.
+* **Formula data storno**: formula che definisce la data di registrazione delle scritture di storno.
+
+Il sistema genera le scritture nel batch dal quale viene eseguita la funzione “Stanziamento costi di trasporto”:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000971-0/ETC_2.jpg"><br>
+ 
+In caso di scritture simulate, le registrazioni vengono create nella Data di registrazione selezionata ed auto stornate il giorno successivo; nel caso vengano generate in COGE, la scrittura di storno viene creata automaticamente in fase di registrazione della relativa fattura (nell’esercizio successivo).
+
+Per agevolare la navigabilità dei movimenti, di default, le registrazioni vengono generate con lo stesso Nr. documento del carico / spedizione dal quale sono state originate.
