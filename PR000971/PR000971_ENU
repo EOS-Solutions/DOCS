@@ -1,0 +1,34 @@
+The “Transport Cost Allocation (ETC)” procedure generates the accounting entries for **Transport Costs @ Invoices to be Received** related to transport costs calculated through the ETC app. The calculation process includes costs that have not yet been settled or those settled with a **Posting Date** later than the date of generating the accounting entry.
+
+<u>Processed Movements:</u>
+
+The report processes the records found on the “Transport Costs by Document (ETC)” page, applying the following conditions:
+* Lines related to the following document types: Shipment, Purchase Receipt, Return Inbound, Return Shipment, Transfer Shipment;
+* Documents posted within the period specified in the Start Date and End Date fields;
+* Lines with either estimated or actual transport costs that are Not settled or Settled with a Posting Date later than the End Date specified in the procedure's Request Page (for example a purchase invoice posted with a Posting Date after the procedure's End Date for cost allocation).
+
+The accounts to be used are retrieved from the specific record in the **“Transport Cost Settlement Setup (ETC)”:**
+* “Invoices to be Received”: determined via the Vendor Posting Group of the vendor specified in the Settle to No. field;
+* “Transport Costs”: determined via the fields “Purchase Line Code”, “Sales Line Code” or “Transfer Line Code”.
+
+<u>Procedure execution</u>:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000971-0/ETC_1_ENG.jpg"><br>
+ 
+The request page presents the following fields:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000971-0/ETC_2_ENG.jpg"><br>
+ 
+* **Starting date**: the posting date from which movements with a calculated transportation cost should be considered.
+* **Ending date**: the posting date until which movements with a calculated transportation cost should be considered.
+* **Posting date**: the posting date with which accounting entries are generated.
+* **With Reversal**: if selected, the corresponding self-reversing entries will also be generated, on Posting date + "Reversal date formula".
+* **Reversal Date formula**: formula that defines the posting date of the reversal entries.
+
+The system generates the entries in the batch from which the "Transportation cost provisioning" function is executed.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000971-0/ETC_3_ENG.jpg"><br>
+ 
+In case of simulated entries, the records are created on the selected Posting date and automatically reversed the following day; if they are generated in the General Ledger (COGE), the reversal entry is automatically created when the related invoice is posted (in the following fiscal year).
+
+To facilitate the navigability of movements, by default, the records are generated with the same document number as the load/shipment from which they originated.
