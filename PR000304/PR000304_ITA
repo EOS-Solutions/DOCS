@@ -102,6 +102,9 @@ Nei “gruppi di setup” è possibile impostare più modelli con regole differe
 Tali impostazioni riguardano inclusione o l’esclusione dell’allegato pdf della fattura/nota credito, l’esportazione di dati Documento di trasporto, altri dati correlati, ecc.  
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/119itElectronicInvoiceForItaly.png"><br>
 
+Nel campo Formato cliente è possibile specificare un tracciato predefinito già standardizzato per la maggior parte dei clienti della GDO.
+Le specifiche dei tracciati sono disponibili [nella pagina dedicata di github](https://github.com/EOS-Solutions/Sample/tree/master/EX063.ElectronicInvoice.IT/Custom%20E-Doc%20Format)
+
 Nel “setup clienti” è possibile abbinare il setup precedentemente impostato a tutti i clienti, ad un singolo cliente o ad una singola classe documento (se è installata l’app Classi Documento
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/120itElectronicInvoiceForItaly.png.png"><br>
