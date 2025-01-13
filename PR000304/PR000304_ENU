@@ -60,6 +60,9 @@ These settings concern the inclusion or exclusion of the PDF attachment of the i
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/48ElectronicInvoiceForItaly.png"><br>
 
+In the Customer Format field, you can specify a default XML format that is already standardized for most GDO customers.
+The path specifications are available on the [dedicated github page](https://github.com/EOS-Solutions/Sample/tree/master/EX063.ElectronicInvoice.IT/Custom%20E-Doc%20Format)
+
 In the "customer setup" it is possible to combine the setup previously set to all customers, to a single customer or to a single [document class](https://helpbc.eos-solutions.it/main.aspx?lang=en&content=ClassiDocumento.html)
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/48ElectronicInvoiceForItaly.png"><br>
