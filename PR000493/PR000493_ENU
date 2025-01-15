@@ -1,42 +1,3 @@
-## Commission Reason Codes (CMS)
-
-On the page Commission Reason Codes you can define the reason codes, G/L Account Numbers and VAT Product Posting Groups:   
-  
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup1.png"><br>
-
-
-## Commission Jnl. Templates (CMS)
-
-On this page you can set the journal templates:
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup2.png"><br>
-
-Details:
-
-| **Field**              |  **Description**                                                                                                                                                                                                                                                                                                                                                                              |
-|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name and Description   | Name and journal description                                                                                                                                                                                                                                                                                                                                                                  |
-| Type                   | Options: - Payable: journals will be used to insert entries manually (eg. expenses) - Settlement: will be used to settle commission entries within the journal, without opening the invoice                                                                                                                                                                                                   |
-| Page ID                |  According to what is specified in the Type field, the system automatically proposes two different pages: - Payable = commissions to be paid: this journal is to add any additions to commissions (eg. to add an amount on the invoice to pay the expense). - Settlement = commissions to be settled: this journal is used to settle commissions without opening an invoice (no G/L entries). |
-| Source Code            |  It defines the source code to be used in the journal                                                                                                                                                                                                                                                                                                                                         |
-| Commission Reason Code | It defines the reason code to be used in the journal                                                                                                                                                                                                                                                                                                                                          |
-
-Reason codes have this setup:
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup3.png"><br>
-
-| **Field**               | **Description**                                                                                                            |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Code and Description    | Code and description of the commission                                                                                     |
-| Create Purchase Invoice | Create Purchase Invoice Specifies if system will create directly purchase documents instead of using settlement prospects. |
-| G/L Account No.         | Specifies the G/L account no. to use when creating purchase documents.                                                     |
-| VAT Prod. Posting Group | Specifies the VAT posting group to use when creating purchase documents.                                                   |
-
-In Commission Jnl Template, from New-\>Batch you can set the specific batch for each journal:
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup4.png"><br>
-
-
 ## Commissions Setup (CMS)
 
 You need to enter the Commissions setup:
@@ -121,6 +82,48 @@ Through the Set Threshold button it is possible to define the % commission and /
 | **<img width="15" src="https://docs-test.eos-solutions.it/Images/ex010/salespeople  purchasers setup/exclamation.png"> NB**                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | In the case of lines having the same parameters (salesperson, customer, product), the system will use the priorities set in the Commissions Setup (CMS) in the fields Priority 1 - 2 - 3 |
+
+## Commission Reason Codes (CMS)
+
+On the page Commission Reason Codes you can define the reason codes, G/L Account Numbers and VAT Product Posting Groups:   
+  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup1.png"><br>
+
+
+## Commission Jnl. Templates (CMS)
+
+On this page you can set the journal templates:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup2.png"><br>
+
+Details:
+
+| **Field**              |  **Description**                                                                                                                                                                                                                                                                                                                                                                              |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name and Description   | Name and journal description                                                                                                                                                                                                                                                                                                                                                                  |
+| Type                   | Options: - Payable: journals will be used to insert entries manually (eg. expenses) - Settlement: will be used to settle commission entries within the journal, without opening the invoice                                                                                                                                                                                                   |
+| Page ID                |  According to what is specified in the Type field, the system automatically proposes two different pages: - Payable = commissions to be paid: this journal is to add any additions to commissions (eg. to add an amount on the invoice to pay the expense). - Settlement = commissions to be settled: this journal is used to settle commissions without opening an invoice (no G/L entries). |
+| Source Code            |  It defines the source code to be used in the journal                                                                                                                                                                                                                                                                                                                                         |
+| Commission Reason Code | It defines the reason code to be used in the journal                                                                                                                                                                                                                                                                                                                                          |
+
+Reason codes have this setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup3.png"><br>
+
+| **Field**               | **Description**                                                                                                            |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| Code and Description    | Code and description of the commission                                                                                     |
+| Create Purchase Invoice | Create Purchase Invoice Specifies if system will create directly purchase documents instead of using settlement prospects. |
+| G/L Account No.         | Specifies the G/L account no. to use when creating purchase documents.                                                     |
+| VAT Prod. Posting Group | Specifies the VAT posting group to use when creating purchase documents.                                                   |
+
+In Commission Jnl Template, from New-\>Batch you can set the specific batch for each journal:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/CommCalcSetup4.png"><br>
+
+
+
+
 
 | See also                                                                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------------------------|
