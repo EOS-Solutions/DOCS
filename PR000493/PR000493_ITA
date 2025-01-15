@@ -1,42 +1,3 @@
-## Causali provvigioni (CMS)
-
-Sulla page Causali provvigione vengono definite le causali, con i relativi conti C/G e Cat. reg. art/serv. IVA:   
-  
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/SetupCalcProvv1.jpg"><br>
-
-
-## Def. registrazioni provvigioni (CMS)
-
-In questa page è possibile definire dei giornali di registrazione provvigioni:
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/SetupCalcProvv2.jpg"><br>
-
-Dettaglio campi:
-
-| **Campo**                  |  **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nome e descrizione         | Nome e descrizione giornale                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Tipo                       | Le opzioni sono: - Manuale: i giornali con questa tipologia verranno utilizzati per inserire delle integrazioni manuali ai movimenti provvigioni (es. rimborsi spese). - Liquidazione: i giornali con questa tipologia verranno utilizzati per liquidare dei mov. provvigioni su un giornale, senza passare dalla fattura (es. se devono essere decurtate delle provvigioni, che non devono andare in fattura).                                                                  |
-| ID Pagina                  |  In base a quanto specificato nel campo Tipo, il sistema propone automaticamente due pagine differenti: - Manuale = giornale provvigioni da liquidare: questo giornale serve per aggiungere delle integrazioni alle provvigioni (es. per aggiungere un importo in fattura per pagare delle note spese). - Liquidazione = giornale provvigioni liquidazione: questo giornale viene utilizzato per liquidare delle provvigioni senza passare da fattura (senza registrazioni C/G). |
-| Codice origine             |  Definisce il codice origine da utilizzare nel giornale                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Codice causale provvigione |  Definisce la causale provvigioni da utilizzare nel giornale                                                                                                                                                                                                                                                                                                                                                                                                                     |
-
-Le causali provvigioni hanno il seguente setup:
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/SetupCalcProvv3.jpg"><br>
-
-| **Campo**                |  **Descrizione**                                                                                                                                                                                                                                                                                            |
-|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Codice e descrizione     | Codice e descrizione della causale                                                                                                                                                                                                                                                                          |
-| Crea fattura di acquisto | Se è presente questo flag i movimenti provvigione con questa causale saranno liquidati nella fattura di acquisto.  Se non è presente, i movimenti provvigione con questa causale saranno liquidati solamente attraverso il prospetto di liquidazione (dal quale poi verrà generata la fattura di acquisto). |
-| Nr. conto C/G            | Definisce il conto C/G da utilizzare per creare le righe sui documenti di acquisto.                                                                                                                                                                                                                         |
-| Cat. reg. art/serv. IVA  | Definisce la Cat. reg. art/serv IVA da utilizzare per creare le righe sui documenti di acquisto.                                                                                                                                                                                                            |
-
-In Def. Registrazioni Provvigioni (CMS), da Nuovo-\>Batch è possibile definire i batch per ogni giornale:
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/SetupCalcProvv4.jpg"><br>
-
-
 ## Setup provvigioni (CMS)
 
 È necessario definire il setup delle provvigioni:
@@ -120,6 +81,48 @@ Attraverso il pulsante Imposta soglia è possibile definire la % provvigione e/o
 | **<img width="15" src="https://docs-test.eos-solutions.it/Images/PR000493-0/exclamation.png"> NB**                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  In caso di righe aventi gli stessi parametri (agente, cliente, prodotto) il sistema utilizzerà le priorità impostate nel Setup provvigioni nei campi Priorità 1 – 2 - 3 |
+
+## Causali provvigioni (CMS)
+
+Sulla page Causali provvigione vengono definite le causali, con i relativi conti C/G e Cat. reg. art/serv. IVA:   
+  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/SetupCalcProvv1.jpg"><br>
+
+
+## Def. registrazioni provvigioni (CMS)
+
+In questa page è possibile definire dei giornali di registrazione provvigioni:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/SetupCalcProvv2.jpg"><br>
+
+Dettaglio campi:
+
+| **Campo**                  |  **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome e descrizione         | Nome e descrizione giornale                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Tipo                       | Le opzioni sono: - Manuale: i giornali con questa tipologia verranno utilizzati per inserire delle integrazioni manuali ai movimenti provvigioni (es. rimborsi spese). - Liquidazione: i giornali con questa tipologia verranno utilizzati per liquidare dei mov. provvigioni su un giornale, senza passare dalla fattura (es. se devono essere decurtate delle provvigioni, che non devono andare in fattura).                                                                  |
+| ID Pagina                  |  In base a quanto specificato nel campo Tipo, il sistema propone automaticamente due pagine differenti: - Manuale = giornale provvigioni da liquidare: questo giornale serve per aggiungere delle integrazioni alle provvigioni (es. per aggiungere un importo in fattura per pagare delle note spese). - Liquidazione = giornale provvigioni liquidazione: questo giornale viene utilizzato per liquidare delle provvigioni senza passare da fattura (senza registrazioni C/G). |
+| Codice origine             |  Definisce il codice origine da utilizzare nel giornale                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Codice causale provvigione |  Definisce la causale provvigioni da utilizzare nel giornale                                                                                                                                                                                                                                                                                                                                                                                                                     |
+
+Le causali provvigioni hanno il seguente setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/SetupCalcProvv3.jpg"><br>
+
+| **Campo**                |  **Descrizione**                                                                                                                                                                                                                                                                                            |
+|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Codice e descrizione     | Codice e descrizione della causale                                                                                                                                                                                                                                                                          |
+| Crea fattura di acquisto | Se è presente questo flag i movimenti provvigione con questa causale saranno liquidati nella fattura di acquisto.  Se non è presente, i movimenti provvigione con questa causale saranno liquidati solamente attraverso il prospetto di liquidazione (dal quale poi verrà generata la fattura di acquisto). |
+| Nr. conto C/G            | Definisce il conto C/G da utilizzare per creare le righe sui documenti di acquisto.                                                                                                                                                                                                                         |
+| Cat. reg. art/serv. IVA  | Definisce la Cat. reg. art/serv IVA da utilizzare per creare le righe sui documenti di acquisto.                                                                                                                                                                                                            |
+
+In Def. Registrazioni Provvigioni (CMS), da Nuovo-\>Batch è possibile definire i batch per ogni giornale:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000493-0/SetupCalcProvv4.jpg"><br>
+
+
+
+
 
 <br>
 
