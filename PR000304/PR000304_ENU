@@ -93,6 +93,11 @@ In addition to the setting “Duty Stamp Setup (FTE)", in ordet to export the va
 | **Electronic Document**                                                                                             |                                                                                                                                                           |
 | Electronic Doc. Causale text                                                                                        | Text that will appear on the invoice print if the stamp is paid by the company                                                                            |
 
+
+If the duty stamp flag is “disabled” in the Duty Stamp Setup, it is possible to activate or deactivate the same flag directly in the individual customer records. In this case, therefore, the following flag prevails:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/BolloENU.png"><br>
+
 <br>
 It's possible to obtain reference "Duty stamp virtually absolved" in the print of the PDF invoice filling field "Print" in Duty stamp setup and the related extended text:
 <br>
