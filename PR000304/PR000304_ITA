@@ -131,6 +131,11 @@ In Setup registrazioni IVA compilare il campo "Natura transazione IVA".
 | Doc. Elettr. testo causale                                                                                             | Testo che comparirà sulla stampa della fattura nel caso il bollo venga pagato dall'azienda                                                                    |
 
 
+
+Se il flag “disabilitato” nel Setup Bollo non è attivo, è possibile attivare o disattivare lo stesso flag direttamente nelle singole anagrafiche clienti. In questo caso quindi prevale il seguente flag:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000304-0/Bollo.png"><br>
+
 <br>
 
 {{% alert title="NB" %}}
