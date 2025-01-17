@@ -70,6 +70,9 @@ Let's see the main fields:
 
 **The new setup wizard function, to be used in the DEMO or TEST environment, allows to create demo data to start using the configurator. In particular, the BLANKET and PLAID items are created, with which configurations can be created.**
 
+The BLANKET item is an example where the product configurator generates item codes.
+The PLAID item is an example where the product configurator generates item variants.
+
 <br>
 <br>
  
