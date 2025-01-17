@@ -1,0 +1,18 @@
+**La funzione nuovo setup wizard, da utilizzare in ambiente DEMO o TEST, permette di creare dei dati dimostrativi per cominciare a utilizzare il configurare.
+In particolare vengono creati gli articoli BLANKET e PLAID con i quali si possono creare delle configurazioni.** 
+
+L'articolo BLANKET è un esempio in cui il configuratore di prodotto genera codici articolo.
+L'articolo PLAID è un esempio in cui il configuratore di prodotto genera varianti articolo.
+
+Per effettuare una prova è possibile accedere all'anagrafica dell'articolo BLANKET o PLAID e aprire il configuratore di prodotto tramite l'apposita azione **Configuratore** o premendo CTRL+G.
+In alternativa creare un nuovo ordine di vendita e dopo aver selezionato il codice cliente inserire una riga con l'articolo BLANKET o PLAID. 
+
+Ad esempio inserendo una riga ordine per l'articolo BLANKET vengono richieste le caratteristiche previste dalla regola di configurazione associata all'articolo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000973-0/SW1_ITA.png"><br>
+
+Calcolando, se previsto dalle matrici prezzo, il prezzo dell'articolo e le relative maggiorazioni.
+
+
+
+
