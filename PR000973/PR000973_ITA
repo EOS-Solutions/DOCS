@@ -13,6 +13,20 @@ Ad esempio inserendo una riga ordine per l'articolo BLANKET vengono richieste le
 
 Calcolando, se previsto dalle matrici prezzo, il prezzo dell'articolo e le relative maggiorazioni.
 
+Una volta confermata la selezione il configuratore di prodotto crea un nuovo articolo o una nuova variante articolo in funzione alla selezione delle caratteristiche.
+Segue l'esempio del nuovo articolo:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000973-0/SW2_ITA.png"><br>
 
+Se l'articolo è gestito a varianti:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000973-0/SW3_ITA.png"><br>
+
+Se l'articolo neutro prevede un DB produzione e un ciclo ed è presente l'app Product Configurator for Manufacturing il configuratore di prodotto crea cicli e DB produzione con centri di lavoro, tempi di lavorazione e componenti di distinta variabili in funzione al valore delle caratteristiche.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000973-0/SW4_ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000973-0/SW5_ITA.png"><br>
+
+<br>
+<br>
 
 
