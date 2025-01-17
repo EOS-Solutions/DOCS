@@ -11,3 +11,19 @@ For example, when inserting an order line for the item BLANKET, the characterist
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000973-0/SW1_ENU.png"><br>
 
 Calculating, if provided for by the matrix prices, the price of the item and the related surcharges.
+
+Once the selection is confirmed, the product configurator creates a new item or a new item variant based on the selection of characteristics.
+The following is an example of the new item:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000973-0/SW2_ENU.png"><br>
+
+If the item is managed by variants:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000973-0/SW3_ENU.png"><br>
+
+If the neutral item includes a production BOM and a routing and the Product Configurator for Manufacturing app is installed, the product configurator creates routings and production BOMs with work centers, run times and variable BOM components based on the value of the characteristics.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000973-0/SW4_ENU.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000973-0/SW5_ENU.png"><br>
+
+<br>
+<br>
