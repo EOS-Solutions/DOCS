@@ -1,0 +1,13 @@
+**The new setup wizard function, to be used in the DEMO or TEST environment, allows to create demo data to start using the configurator. In particular, the BLANKET and PLAID items are created, with which configurations can be created.**
+
+The BLANKET item is an example where the product configurator generates item codes.
+The PLAID item is an example where the product configurator generates item variants.
+
+To perform a test, you can access the item card of the BLANKET or PLAID item and open the product configurator using the specific **Configurator** action or by pressing CTRL+G.
+Alternatively, create a new sales order and after selecting the customer code, insert a line with the BLANKET or PLAID item.
+
+For example, when inserting an order line for the item BLANKET, the characteristics required by the configuration rule associated with the item are requested:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000973-0/SW1_ENU.png"><br>
+
+Calculating, if provided for by the matrix prices, the price of the item and the related surcharges.
