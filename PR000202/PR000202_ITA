@@ -71,7 +71,12 @@ Vediamo i campi principali:
 <br>
 
 **La funzione nuovo setup wizard, da utilizzare in ambiente DEMO o TEST, permette di creare dei dati dimostrativi per cominciare a utilizzare il configurare.
-In particole vengono creati gli articoli BLANKET e PLAID con i quali si possono creare delle configurazioni.** 
+In particolare vengono creati gli articoli BLANKET e PLAID con i quali si possono creare delle configurazioni.** 
+
+L'articolo BLANKET è un esempio in cui il configuratore di prodotto genera codici articolo.
+L'articolo PLAID è un esempio in cui il configuratore di prodotto genera varianti articolo.
+
+
 
 <br>
 <br>
