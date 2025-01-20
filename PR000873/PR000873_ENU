@@ -13,3 +13,12 @@ From the EOS Gordon Installer, go to the "Not Installed" tab, **find the Gordon 
 
 After the installation, you will find the **Gordon** program in the Start Bar!
 
+
+### Run Gordon with shared configurations
+
+Gordon can now read configuration from different location. 
+In order to use this feature, you just need to add a startup argument. 
+
+`gordon.wpf.exe -ConfigurationFolder "Path/To/Configurations"`
+
+> **note: this feature will make Gordon ReadOnly!!**
