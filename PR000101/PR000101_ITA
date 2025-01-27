@@ -1,18 +1,19 @@
 **Setup costi articolo (IVC)**
-Aprire la Lista setup costi articolo (IVC) nella quale, per ogni scenario di setup, è necessario impostare i parametri per il calcolo degli articoli di acquisto, produzione ed assemblaggio costi:
 
+Aprire la Lista setup costi articolo (IVC) nella quale, per ogni scenario di setup, è necessario impostare i parametri per il calcolo degli articoli di acquisto, produzione ed assemblaggio costi:
+ 
 <img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Setup/17inventory-valuation-and-costing-ita.png"><br>
 Vanno specificati alcuni parametri per il corretto funzionamento della procedura:
-
+ 
 * Calcolo del costo di produzione;
 * Calcolo costi capacità;
 * Valutazione articoli acquistati e prodotti
 * Metodo calcolo costo medio ponderato, etc.  
-
+ 
 Da Nuovo aprire una nuova Scheda:
-
+ 
 <img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Setup/2inventory-valuation-and-costing-ita.png"><br>
-
+ 
 |Campo|Opzione|Descrizione|
 |-----|---------|-----------|
 | **Calcolo del costo di produzione** | Cicli Standard/DB | Il calcolo viene effettuato con tempi e consumi standard (da ciclo e distinta); il costo utilizzato dipende da valore del campo Calcolo costi capacità.|
@@ -33,41 +34,40 @@ Da Nuovo aprire una nuova Scheda:
 |**Metodo calcolo LIFO**  (campo presente se installata l’APP “IVC for Italy”).|Articolo/Categoria LIFO|Determina la logica di calcolo costo con il metodo del LIFO a scatti: Articolo o Categoria LIFO.|
 |**Costo conto lavoro priorità 1, priorità 2, priorità 3**|Movimenti effettivi, Prezzi conto lavoro, Riga ciclo.|Definisce la gerarchia di recupero del costo relativo alle lavorazioni esterne. |
 |**Costo medio - Includi nota di credito di acquisto**||La funzionalità di questo campo è legata esclusivamente agli articoli con Sistema di rifornimento “Acquisto”. L’attivazione di questo campo permette di poter includere nel calcolo del “Costo medio”, per le righe di tipo Articolo, anche i documenti di tipo Nota credito.|
+|**Includi addebito articolo sui trasferimenti**||Se questo flag è attivo, nel calcolo dei costi di acquisto, vengono inclusi anche gli addebiti articolo collegati a movimenti di Trasferimento (oltre a quelli collegati agli acquisti stessi).|
 |**Calcolo costi specifici articoli** (definisce le modalità di calcolo del Costo medio/Costo medio ponderato dell’articolo nel caso di attivazione del calcolo dei costi specifici per Variante, Lotto, Nr. serie) | Valori progressivi | Il Costo medio/Costo medio ponderato dell’articolo viene calcolato come progressivo acquisti a valore / progressivo acquisti a quantità (come se i costi specifici non siano attivi). Giacenza|Il Costo medio/Costo medio ponderato dell’articolo è dato dalla media ponderata dei lotti/seriali/varianti in giacenza a fine periodo sul totale giacenza finale. |
 |**Calcolo costi capacità**|Costo movimento|Costo recuperato dai movimenti di produzione registrati (Mov. contabili capacità).||
 ||Costo budget|Il costo viene recuperato dai campi “Costo unitario diretto eff./budget”, “Coeff. costi generali eff./budget”, “% Costi generali eff./budget” dello Storico Aree di produzione / Storico Centri di lavoro. Utile per effettuare simulazioni di costo derivanti da variazioni delle tariffe orarie.||
-| |Costo standard|Il costo viene recuperato dalle anagrafiche AdP o CdL. ||| 
-
+| |Costo standard|Il costo viene recuperato dalle anagrafiche AdP o CdL. |||
+ 
 <br>
-
+ 
 **Tab Rollup tipo costo**:  
-da compilare se si vogliono spaccare, in funzione della tabella dei costi aggiuntivi, le 3 componenti di costo in ulteriori dettagli (es.: la materia prima suddivisa per tipologia di articolo) e/o scorporare i costi accessori di acquisto gestiti come Addebiti articolo. 
-
+da compilare se si vogliono spaccare, in funzione della tabella dei costi aggiuntivi, le 3 componenti di costo in ulteriori dettagli (es.: la materia prima suddivisa per tipologia di articolo) e/o scorporare i costi accessori di acquisto gestiti come Addebiti articolo.
+ 
 <img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Setup/3inventory-valuation-and-costing-ita.png"><br>
-
+ 
 **Setup IVC**
-
+ 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000101-0/29inventory-valuation-and-costing-ita.jpg"><br>
 In questo setup è possibile definire se la spaccatura del costo materiale, nella pagina Nature di costo (IVC), debba avvenire in funzione del campo “Cat. reg. articolo/servizio” o ““Cat. reg. magazzino” indicato in anagrafica Articoli:
-
+ 
 <br>
-
-**Nature di costo** 
-
+ 
+**Nature di costo**
+ 
 In questa page è possibile definire le tipologie di costo aggiuntivo che si intendono gestire:
 <br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000101-0/30inventory-valuation-and-costing-ita.jpg"><br>
 <br>
-
+ 
 |Campo|Descrizione|
 |-----|-----------|
 | Costo aggiuntivo | consente di specificare se il costo è da intendersi come un costo aggiuntivo vero e proprio o se è una specificazione di una delle componenti di costo gestite dal programma. |
 | Roll up per tipo di costo | Le opzioni sono: Costo materiali, Costo capacità, Costo conto lavoro |
 |Filtro Cod. Addebito Articolo / Filtro Cat. reg. Articolo/Servizio (o Filtro Cat. reg. magazzino) |Consentono di definire il dettaglio della spaccatura del Costo materiale|
 |Filtro Cod. task standard / Filtro Area di produzione |Consentono di definire il dettaglio della spaccatura del Costo conto lavoro.|
-
+ 
 <br>
-
+ 
 Il dettaglio della spaccatura del Costo capacità va definito attraverso la compilazione della pagina “Nature di costo”, collegata alle anagrafiche Aree di produzione / Centri lavoro.
-
-
