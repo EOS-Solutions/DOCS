@@ -1,0 +1,37 @@
+In previous versions, a field called **Transfer Outbound HU** was inserted in the Packing Setup to enable the transfer of outbound handling units after a transfer shipment is posted, but this field has been deprecated and replaced by the **Handling Unit Mgt. in Transfer order** field. 
+The allowed values are as follows:
+* **Default**. It is the old way of managing handling units that does not provide for the automatic assignment of the same. To be used, for example, in case there are customs. 
+* **Transfer Outbound HU**. Allows the transfer of handling units from the transfer-from (outbound) location to the transfer-to location (Inbound). Handling units are assigned to the transfer order if the transfer-to location does not require the warehouse receipt, otherwise they are assigned in the creation of the warehouse receipt from the transfer order.
+* **Ship Outbound HU**. Change the status to "Shipped" and empty handling units when a transfer shipment is posted.
+
+The **Handling Unit Mgt. in Transfer** order field is present in the following tables:
+* **Packaging Setup (HUM)**. It represents the default at the company level.
+* **Transfer routes**. For each transfer route, it is possible to define different ways of managing the load units. 
+* **Transfer Order Header**. When creating the transfer order header, if a transfer route exists for the selected locations, the value is taken from this table, alternatively from the Packaging Setup (HUM). For the individual transfer order, the user can manually change the value.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO1ENU.png"><br>
+
+If the value of **Handling Unit Mgt. in Transfer order** field in transfer order is **Default**, the handling units are not transferred from the transfer-from location to the transfer-to location. The assignment must be done manually through the actions in the header of the transfer order.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO2ENU.png"><br>
+
+If the value of **Handling Unit Mgt. in Transfer order** field in transfer order is **Transfer outbound HU**, the handling units are automatically transferred from the outbound location to the inbound location. In two different ways, depending on whether the inbound location is managed through warehouse receipt or not. If the inbound location does not have warehouse receipt, the handling units are automatically assigned after the transfer shipment is posted:  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO3ENU.png"><br>
+
+If the inbound location has warehouse receipt, the handling units are assigned when the warehouse receipt is created by the transfer order.
+If the warehouse receipt is created from the warehouse receipt page, a new function called **Assign HUs for Transfer Orders** is available, which allows to assign the corresponding handling units once the transfer lines have been selected.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO4ENU.png"><br>
+
+After the receipt has been registered, however it occurs, the handling units will be in the loaded state and will be located at the inbound location/bin code:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO5ENU.png"><br>
+
+If the value of **Handling Unit Mgt. in Transfer order** field in Transfer Order is **Ship outbound HU**, after the shipment of the transfer order is posted, the handling units are emptied and their status changes from **Loaded** to **Shipped**. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO6ENU.png"><br>
+
+<br>
+<br>
+
