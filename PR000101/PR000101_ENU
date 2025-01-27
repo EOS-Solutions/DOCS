@@ -1,19 +1,20 @@
 **Item Costing Setup (IVC)**
-Open Item Costing Setup List (IVC):
 
+Open Item Costing Setup List (IVC):
+ 
 <img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Setup/17inventory-valuation-and-costing-enu.png">
 <br>
 Some parameters must be specified for the correct operation of the procedure:
-
+ 
 * Calculation of the production cost;
 * Calculation of capacity costs;
 * Evaluation of purchased items and products;
 * Weighted average cost calculation method, etc.
-
+ 
 From New open a new card:
-
+ 
 <img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Setup/2inventory-valuation-and-costing-enu.png"><br>
-
+ 
 |Field|Option|Description|
 |-----|---------|----------|
 | **Production Cost Calculation** | Standard Routing/BOM | The calculation is carried out with standard times and consumptions; the cost used depends on the value of the Capacity Cost Calculation field.|
@@ -33,39 +34,40 @@ From New open a new card:
 |**Skip Job Entry** (usually to be set to Yes if job management is used.||If active, the entries, both item accounting and capacity, which refer to the orders, are excluded from the valuation. Normally the flag is activated in the presence of specialized verticals on the management of orders (PSA, Industry).|
 |**Subcontracting Cost Priority 1, priority 2, priority 3**|Routing Line, Actual Entries, Subcontracting Prices|Defines the cost recovery hierarchy relating to external processing. |
 |**Average Cost - Include Purch. Cr. Memo**||The functionality of this field is exclusively linked to items with the "Purchase" replenishment system. Activating this field makes it possible to include credit note documents in the calculation of the "Average cost", for lines of the type Item.|
+|**Include Item Charge on Transfer**||If this flag is active, the item charges linked to Transfer entries (in addition to those linked to the purchases themselves) are also included in the purchase cost calculation.|
 |**Item Specific Cost Calc.**(defines the method for calculating the Average Cost / Weighted Average Cost of the item, if the specific costs calculation by variant, lot, series no. is active|Inventory|The average cost / weighted average cost of the item is calculated as inventory value / quantity (as if the specific costs are not active).|
 ||Amount|The average cost / weighted average cost of the item is the weighted average of the lots / serial / variants in stock at the end of the period on the total final stock.|
 |**Capacity Cost Calculation**|Entry Actual Cost|Cost recovered from posted production entries (Capacity accounting entries).|
 ||Budget Cost|Cost recovered from Work Centers.  Useful for carrying out cost simulations deriving from changes in hourly rates.|
 | |Standard Cost| ||
 <br>
-
+ 
 **Cost Type Rollup**: 
 to be filled in if you want to split, according to the additional costs table, the 3 cost components in further details (e.g. the raw material divided by type of item) and / or to separate the accessory purchase costs managed as Article Charges.
-
+ 
 <img width="750" src="https://docs-test.eos-solutions.it/Images/ex053/Setup/3inventory-valuation-and-costing-enu.png"><br>
-
+ 
 **Setup IVC**
-
+ 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000101-0/29inventory-valuation-and-costing-enu.jpg"><br>
 In this setup it is possible to define whether the splitting of the material cost, in the Cost Nature (IVC) page, should occur based on the “Gen. Product Posting Group” indicated in the Item card:
-
+ 
 <br>
-
-**Cost Nature** 
-
+ 
+**Cost Nature**
+ 
 On this page it is possible to define the additional cost types that you intend to manage:
 <br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000101-0/30inventory-valuation-and-costing-enu.jpg"><br>
 <br>
-
+ 
 |Field|Description|
 |-----|-----------|
 | Additional cost | consente di specificare se il costo è da intendersi come un costo aggiuntivo vero e proprio o se è una specificazione di una delle componenti di costo gestite dal programma. |
 | Cost type roll-up | the options are: Material Cost, Capacity Cost, Subcontracting Cost |
 |Gen. Product Posting Group / Item Charge Code Filter |They allow you to define the detail of the material cost split. |
 |Standard Task Code / Work Center Filter|They allow you to define the detail of the subcontracting cost split.  |
-
+ 
 <br>
-
+ 
 The detail of the Capacity Cost split must be defined by completing the "Cost Nature" page, linked to the Production Areas / Work Centers master data.
