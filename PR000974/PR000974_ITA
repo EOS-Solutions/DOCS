@@ -1,0 +1,37 @@
+Nelle precedenti versioni nel Setup imballaggio era stato inserito un campo denominato **Trasferisci unità di carico in uscita** per abilitare il trasferimento delle unità di carico in uscita dopo la registrazione di una spedizione di trasferimento, tale campo è stato reso obsoleto e sostituito dal campo **Gestione Unità di carico in Ordine di Trasferimento**. 
+I valori ammessi sono i seguenti:
+* **Default**. E’ la vecchia modalità di gestione delle unità di carico che non prevede l’assegnazione automatica delle stesse. Da utilizzare nel caso cui sia presenti dei custom. 
+* **Trasferisci HU in uscita**. Consente il trasferimento delle unità di carico dall’ubicazione di partenza (in uscita) a quella di arrivo (in entrata). Le unità di carico sono assegnate all'ordine di trasferimento se l'ubicazione di arrivo non richiede il carico warehouse, altrimenti vengono assegnate alla creazione del carico warehouse dall’ordine di trasferimento. 
+* **Spedisci HU in uscita**. Consente di modificare lo stato in "Spedito" e di svuotare le unità di carico alla registrazione di una spedizione di trasferimento.
+
+Il campo **Gestione Unità di carico in Ordine di Trasferimento** è presente nelle seguenti tabelle:
+* **Setup Imballaggio (HUM)**. Rappresenta il default a livello di società. 
+* **Percorsi di trasferimento**. Per ogni percorso trasferimento è possibile definire diverse modalità di gestione delle unità di carico. 
+* **Testata Ordine di Trasferimento**. In fase di creazione testata ordine di trasferimento se per le ubicazioni selezionate esiste un percorso trasferimento il valore viene preso da questa tabella in alternativa dal Setup imballaggio (HUM). Per il singolo ordine di trasferimento l’utente può cambiare manualmente il valore.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO1ITA.png"><br>
+
+Se il campo **Gestione Unità di carico in Ordine di Trasferimento** vale **Default** le unità di carico non vengono trasferite dall’ubicazione di partenza a quella di arrivo. L’assegnazione deve avvenire manualmente tramite le azioni presenti in testata dell’ordine di trasferimento.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO2ITA.png"><br>
+
+Se il campo **Gestione Unità di carico in Ordine di Trasferimento** vale **Trasferisci HU in uscita** le unità di carico vengono trasferite automaticamente dall’ubicazione in uscita a quella in ingresso. Con due modalità differenti in funziona al fatto che l’ubicazione di arrivo sia gestita o meno tramite carico warehouse. Se l’ubicazione di arrivo non prevede il carico warehouse le unità di carico vengono automaticamente assegnate dopo la registrazione della spedizione di trasferimento:  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO3ITA.png"><br>
+
+Se l’ubicazione di arrivo prevede il carico warehouse le unità di carico vengono assegnate alla creazione del carico warehouse fatta dall’ordine di trasferimento. 
+Qualora il carico warehouse venga creato dall’apposita page è disponibile una nuova funzione denominata **Assegna Unità di carico per gli ordini di trasferimento** che permette, una volta selezionate le righe dei trasferimenti, di assegnare le relative unità di carico.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO4ITA.png"><br>
+
+Dopo la registrazione del carico, in qualsiasi modo avvenga, le unità di carico saranno in stato caricato e si troveranno sull’ubicazione / collocazione di arrivo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO5ITA.png"><br>
+
+Se il campo **Gestione Unità di carico in Ordine di Trasferimento** vale **Spedisci HU in uscita** dopo la registrazione della spedizione dell’ordine di trasferimento le unità di carico vengono svuotate e il loro stato passa da **Caricato** a **Spedito**. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000974-0/EX055TO6ITA.png"><br>
+
+<br>
+<br>
+
