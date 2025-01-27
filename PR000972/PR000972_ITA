@@ -1,0 +1,48 @@
+Tramite la pagina “Dettaglio costi articolo”, accessibile dalla page “Lista storico costi articoli”, è possibile visualizzare il costo di un articolo di produzione con diversi livelli di dettaglio ed in base a differenti tipologie di costo. È inoltre possibile confrontare schede costi relative a due differenti periodi.
+
+I costi visualizzati dipendono dai valori impostati nel “Setup costi articoli (IVC)”, abbinato al periodo oggetto di calcolo. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000972-0/Immagine1-DettaglioCostiArticoli-ita.png"><br>
+
+I dettagli di analisi possono essere i seguenti: 
+* Esplosione della distinta base/ciclo ricalcolo (multilivello);
+* Esplosione della distinta base/ciclo per livello singolo;
+* Dettaglio per nature di costo ricalcolo;
+* Dettaglio per nature di costo livello singolo.
+
+I parametri quindi selezionabili nella pagina “Dettaglio costi articolo”, sono i seguenti:
+* Tipo di costo: Medio, Medio Ponderato, Standard;
+* Livello dettaglio: DB/Ciclo, Natura del Costo;
+* Distribuzione dei costi: Livello Singolo, Ricalcolo.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000972-0/Immagine2-DettaglioCostiArticoli-ita.png"><br>
+
+Le combinazioni selezionabili quindi sono:
+
+|Livello dettaglio|Tipo di costo|Distribuzione dei costi|Descrizione|
+|-----|---------|-----------|-----------|
+| DB/ciclo | Medio | Livello singolo | Mostra la distinta base di ultimo livello valorizzata con il costo medio di periodo dei componenti.  |
+| DB/ciclo | Medio | Ricalcolo | Mostra la distinta base di tutto il processo produttivo valorizzata con il costo medio di periodo dei componenti. |
+| DB/ciclo | Medio Ponderato | Livello singolo | Mostra la distinta base di ultimo livello valorizzata con il costo medio ponderato dei componenti. |
+| DB/ciclo | Medio Ponderato | Ricalcolo | Mostra la distinta base di tutto il processo produttivo valorizzata con il costo medio ponderato dei componenti. |
+| DB/ciclo | Standard | Livello singolo | Mostra la distinta base di ultimo livello valorizzata con il costo standard dei componenti.  |
+| DB/ciclo | Standard | Ricalcolo | Mostra la distinta base di tutto il processo produttivo valorizzata con il costo standard dei componenti. |			
+| Natura del costo | Medio | Livello singolo | Mostra il costo medio dell’articolo splittato nelle nature di costo coinvolte nell'ultimo livello del processo produttivo. |
+| Natura del costo | Medio | Ricalcolo | Mostra il costo medio dell’articolo splittato nelle nature di costo coinvolte nell'intero processo produttivo. |
+| Natura del costo | Medio Ponderato | Livello singolo | Mostra il costo medio ponderato dell’articolo splittato nelle nature di costo coinvolte nell'ultimo livello del processo produttivo. |		
+| Natura del costo | Medio Ponderato | Ricalcolo | Mostra il costo medio ponderato dell’articolo splittato nelle nature di costo coinvolte nell'intero processo produttivo. |
+| Natura del costo | Standard | Livello singolo | Mostra il costo standard dell’articolo splittato nelle nature di costo coinvolte nell'ultimo livello del processo produttivo. |
+| Natura del costo | Standard | Ricalcolo | Mostra il costo standard dell’articolo splittato nelle nature di costo coinvolte nell'intero processo produttivo. |
+
+<br>	
+
+**Nota relativa alla visualizzazione del costo articolo in funzione del costo Medio Ponderato:** in virtù dell’algoritmo di calcolo del costo Medio Ponderato, il costo dell’articolo oggetto di analisi (o di uno dei suoi componenti di livello più basso), non può coincidere con la sommatoria del costo Medio Ponderato dei relativi componenti. 
+
+**Esempio di Calcolo**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000972-0/Immagine3-DettaglioCostiArticoli-ita.png"><br>
+
+Come mostrato nell’esempio sopra, infatti, il Costo medio ponderato dell’articolo “PF001” non è dato dalla somma del Costo medio ponderato dei relativi componenti (CMP01 E CMP02); i componenti sottostanti, valorizzati a loro volta a Costo medio ponderato, concorrono infatti a formare il Costo medio (di periodo) del prodotto finito. 
+Il Costo medio ponderato del prodotto finito è invece influenzato dal valore della giacenza inziale (vedasi formula presente nel campo G8).
+
+
