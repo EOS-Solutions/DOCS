@@ -1,0 +1,41 @@
+Through the "Item Cost Shares" page, accessible from the "Item Cost History List" page, it is possible to view the cost of a production item with various levels of detail and based on different types of costs. It is also possible to compare cost sheets for two different periods.
+The displayed costs depend on the values set in the "Item Costing Setup List (IVC)," associated with the calculation period.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000972-0/Immagine1-DettaglioCostiArticoli-enu.png"><br>
+
+The analysis details can be as follows: 
+* Explosion of the BOM/Routing Rolled-Up;
+* Explosion of the BOM/Routing Single Level;
+* Detail by cost nature Rolled-Up;
+* Detail by cost nature Single Level.
+
+The selectable parameters are as follows:
+* Cost Type: Average, Weighted Average, Standard;
+* Detail level: Production BOM/Routing, Cost Nature;
+* Cost Distribution: Single Level, Rolled-Up.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000972-0/Immagine2-DettaglioCostiArticoli-enu.png"><br>
+
+|Detail level|Cost type|Cost distribution|Description|
+|-----|----------|-----------|-----------|
+| DB/cycle | Average | Single level | The Average cost of the item being analyzed is shown, with the components present in the relevant bill of materials and the phases present in the relevant production cycle. |
+| DB/cycle | Average | Recalculation | The Average cost of the item being analyzed is shown, with the components present in the bill of materials and the phases present in the cycle of all the items involved in the production process. |
+| DB/cycle | Weighted Average | Single level | The Weighted Average cost of the item being analyzed is shown, with the components present in the relevant bill of materials and the phases present in the relevant production cycle. |
+| DB/cycle | Weighted Average | Recalculation | The Weighted Average cost of the item being analyzed is shown, with the components present in the bill of materials and the phases present in the cycle of all the items involved in the production process. |
+| DB/cycle | Standard | Single level | The Standard cost of the item being analyzed is shown, with the components present in the bill of materials and the phases present in the cycle of all the items involved in the production process. Unlike the previous cases, the components and production phases will always be valued based on the Standard cost / rate. |
+| DB/cycle | Standard | Recalculation | The Standard cost of the item being analyzed is shown, with the components present in the bill of materials and the phases present in the cycle of all the items involved in the production process. Unlike the previous cases, the components and production phases will always be valued based on the Standard cost / rate. |
+| Nature of the cost | Average | Single level | The Average cost of the item being analyzed is shown, broken down into the natures of material/capacity cost involved in the last level of the production process. |
+| Nature of the cost | Average | Recalculation | The Average cost of the item being analyzed is shown, broken down into the natures of material/capacity costs involved in the entire production process. |
+| Nature of the cost | Weighted Average | Single level | The Weighted Average cost of the item being analyzed is shown, broken down into the natures of material/capacity costs involved in the last level of the production process. |
+| Nature of the cost | Weighted Average | Recalculation | The Weighted Average cost of the item being analyzed is shown, broken down into the natures of material/capacity costs involved in the entire production process. |
+| Nature of the cost | Standard | Single level | Show the standard cost of the item, split by the cost natures (cost categories) involved in the final level of the production process. |
+| Nature of the cost | Standard | Rolled Up | Show standard cost of the item, split by the cost natures (cost categories) involved in the entire production process. |
+<br>
+
+**Note regarding the display of the item cost based on the Weighted Average Cost:** Due to the calculation algorithm for the Weighted Average Cost, the cost of the item under analysis (or one of its lower-level components) may not match the sum of the Weighted Average Cost of its respective components.
+
+**Example:**
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000972-0/Immagine3-DettaglioCostiArticoli-enu.png"><br>
+
+As shown in the example above, the Weighted Average Cost of the item “PF001” is not derived from the sum of the Weighted Average Cost of its components (CMP01 and CMP02). The underlying components, which are themselves valued at Weighted Average Cost, contribute to forming the Average Cost (for the period) of the finished product.
+The Weighted Average Cost of the finished product, however, is influenced by the value of the initial inventory (see the formula in field G8).
