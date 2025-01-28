@@ -1,22 +1,22 @@
-Aprire la page Registro IVA. E' possibile la stampa di pió registri IVA contemporaneamente, usando la selezione multipla dei registri direttamente sulla lista:
+Aprire la page Registro IVA. E' possibile la stampa di pi√π registri IVA contemporaneamente, usando la selezione multipla dei registri direttamente sulla lista:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000624-0/25VatManagement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000624-0/25VatManagement.png"><br>
 
 | **Campo**                           | **Descrizione**                                                          |
 |-------------------------------------|--------------------------------------------------------------------------|
-| Ultima pagina stampata registro IVA | permette di tenere traccia dell¬ultima pagina stampata                   |
-| Stampa registri IVA                 | permette di stampare un registro Iva singolo o pió registri IVA separati |
+| Ultima pagina stampata registro IVA | permette di tenere traccia dell‚Äôultima pagina stampata                   |
+| Stampa registri IVA                 | permette di stampare un registro Iva singolo o pi√π registri IVA separati |
 | Stampa registri IVA (raggruppati)   | consente la stampa di registri IVA multipli raggruppati in un unico .zip |
 
-Scegliendo **Stampa Registri IVA** il sistema chiede se la stampa ä
+Scegliendo **Stampa Registri IVA** il sistema chiede se la stampa √®
 
 -   stampa test
 -   stampa definitiva
 -   ristampa
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000624-0/26VatManagement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000624-0/26VatManagement-2025.png"><br>
 
-E' possibile filtrare per Codice, Data ultima stampa, Descrizione, Tipo, Ultima pagina stampata registro IVA
+Inoltre √® possibile tramite un flag dedicato, solo per la tipologia di stampa Test, effettuare la verifica sequenzialit√† protocolli all'interno del periodo selezionato.
 
 Scegliendo **Stampa Registri IVA (raggruppati)**
 
