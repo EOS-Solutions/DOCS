@@ -40,6 +40,14 @@ Per ogni riga nei requisiti tabelle si possono aggiungere delle relazioni con la
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ITA-EDS Required Tables Parent Tables Relations.png"><br>
 <br>
 
+<br>
+È possibile applicare i requisiti delle tabelle solo al record principale che soddisfa alcuni prerequisiti, per farlo è necessario un Filtro Tabella d'Origine.
+<br>
+
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ITA-EDS Required Tables Parent Filter.png"><br>
+<br>
+
 
           
 
