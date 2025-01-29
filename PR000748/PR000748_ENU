@@ -40,6 +40,17 @@ For each row of the Tables Requirements, you can add relationships with the pare
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ENU-EDS Required Tables Parent Tables Relations.png"><br>
 <br>
 
+<br>
+It's possible to apply the required tables filters only to the parent record that meet some prerequisites, to do so it's needed a Parent Table Filter
+<br>
+
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000748-0/ENU-EDS Required Tables Parent Filter.png"><br>
+<br>
+
+
+
+
 
 
       
