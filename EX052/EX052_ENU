@@ -16,8 +16,9 @@
 </table>
 
 
-<br>{{% alert title="Download Excel" color="warning" %}}
- [Import Consolidating balance_com extra BC](https://docs-test.eos-solutions.it/Images/EX052-0/Import Consolidating balance_com extra BC.xlsx)
+<br>
+{{% alert title="Download Excel" color="warning" %}}
+ <a href="https://docs-test.eos-solutions.it/Images/EX052-0/Import Consolidating balance_com extra BC.xlsx">Import Consolidating balance_com extra BC</a>
 {{% /alert %}}
 
 The Intercompany Accounting Eliminations (IAE) App extends the functionality of the BC basic module for the generation of the Consolidated Financial Statements, allowing you to:
