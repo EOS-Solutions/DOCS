@@ -6,7 +6,7 @@
 	</tr>
 	<tr>
 		<td>2</td>
-		<td>Attiva su specifici conti lÂopzione relativa alla procedura di calcolo delle scritture di elisione</td>
+		<td>Attiva su specifici conti lâ€™opzione relativa alla procedura di calcolo delle scritture di elisione</td>
 	</tr>
 	<tr>
 		<td>3</td>
@@ -21,8 +21,8 @@
 {{% /alert %}}
 
 
-LÂApp Intercompany Accounting Eliminations (IAE) estende le funzionalit… del modulo base BC per la generazione del Bilancio consolidato, consentendo di:
+Lâ€™App Intercompany Accounting Eliminations (IAE) estende le funzionalitÃ  del modulo base BC per la generazione del Bilancio consolidato, consentendo di:
 
-Å Generare automaticamente le scritture di elisione dei debiti/crediti, costi/ricavi commerciali infra gruppo;
+â€¢ Generare automaticamente le scritture di elisione dei debiti/crediti, costi/ricavi commerciali infra gruppo;
 
-Å Utilizzare un tracciato Excel standard per lÂimport dei saldi di bilancio relativi a societ… gestite extra BC (tramite software terzi).
+â€¢ Utilizzare un tracciato Excel standard per lâ€™import dei saldi di bilancio relativi a societÃ  gestite extra BC (tramite software terzi).
