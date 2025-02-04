@@ -1,0 +1,26 @@
+Tramite i valori lista lookup è possibile definire una serie di parametri da richiedere all’utente nelle azioni attività:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000975-0/EX089-LUp1-ITA.png"><br>
+
+I valori liste lookup possono avere 3 tipo origini diverse: **Fisso**, **Tabella**, **Personalizzato**. Il tipo **Fisso** permette di creare un parametro che assume un numero fisso di valori. Nell’esempio viene definita una lista lookup con Tipo Origine Fisso che può assumere i valori EXT, SMA e STD. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000975-0/EX089-LUp2-ITA.png"><br>
+
+ll tipo **Tabella** permette di creare un parametro che assume i valori ammessi da una tabella di Business Central. Nell’esempio viene definita una lista lookup con Tipo Origine Tabella che può assumere i valori della tabella dei clienti, sulla quale è possibile impostare un filtro. Il campo valori dinamici si utilizza per tabelle che devono essere prefiltrate ad esempio le collocazioni da prefiltrare con l’ubicazione.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000975-0/EX089-LUp3-ITA.png"><br>
+
+Le liste di lookup si possono utilizzare all’interno delle Azioni Attività per inserire dei campi da editare e da gestire poi attraverso codice custom agganciandosi a specifici eventi. Nell’esempio si vedono le due liste di lookup associate all’attività di carico di acquisto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000975-0/EX089-LUp4-ITA.png"><br>
+
+La power app visualizza fra le azioni l’azione attività appena inserita. Permettendo l’inserimento dei valori per i parametri previsti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000975-0/EX089-LUp5-ITA.png"><br>
+
+<br>
+<br>
+
+
+
+
