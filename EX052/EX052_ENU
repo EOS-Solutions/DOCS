@@ -17,11 +17,11 @@
 
 
 <br>{{% alert title="Download Excel" color="warning" %}}
- [Import saldi Consolidato_soc extra BC](https://helpbc.eos-solutions.it/help/it-it/Download/Import%20saldi%20Consolidato_soc%20extra%20BC.xlsx)
+ [Import Consolidating balance_com extra BC](https://docs-test.eos-solutions.it/Images/EX052-0/Import Consolidating balance_com extra BC.xlsx)
 {{% /alert %}}
 
 The Intercompany Accounting Eliminations (IAE) App extends the functionality of the BC basic module for the generation of the Consolidated Financial Statements, allowing you to:
 
-Å Automatically generate the records for the elimination of debts / credits, intra-group commercial costs / revenues
+â€¢ Automatically generate the records for the elimination of debts / credits, intra-group commercial costs / revenues
 
-Å Use a standard Excel layout for importing balance sheet balances for non-BC managed companies (through third party software)
+â€¢ Use a standard Excel layout for importing balance sheet balances for non-BC managed companies (through third party software)
