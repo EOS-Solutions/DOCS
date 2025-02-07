@@ -19,8 +19,29 @@ In BC sono presenti due pagine che contengono:
 * Attività personalizzate (WMS)
 * Attività personalizzate registrate (WMS)
 
+Prima dell’operazione di registrazione:
+
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA3-ITA.png"><br>
 
+Dopo l’operazione di registrazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA4-ITA.png"><br>
+
+La soluzione delle Attività Custom si basa su 4 tabelle:
+* EOS089 WMS Custom Act. Header (18060040)
+* EOS089 WMS Custom Act. Line (18060041) 
+
+Utilizzate per la gestione delle attività personalizzate.
+
+* EOS089 WMS Reg. Cus. Act. Hdr. (18060042)
+* EOS089 WMS Reg. Cus. Act. Line (18060043)
+
+Utilizzate per la gestione delle attività personalizzate registrate.
+
+Le tabelle contengono i principali campi necessari una gestione testata / righe. Si possono estendere aggiungendo gli eventuali campi mancanti o necessari per la personalizzazione.
+
+<br>
+<br>
 
 
 
