@@ -3,9 +3,11 @@ La pagina permette di inserire per ognuna delle attività gestite nella Power Ap
 Gestire le azioni sottoscrivendosi all’evento **OnExecuteActivityAction** nella codeunit **18060020 EOS089 WMS Activity Task Mgmt.**
 
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp12-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp12OK-ITA.png"><br>
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp13-ITA.png"><br>
+
+Il campo **Proseguimento Azione** permette di definire il comportamento della power app dopo l’esecuzione dell’operazione. I valori ammessi oltre al vuoto sono **Home**, **Lista**  e **Dettaglio**.
 
 <br>
 <br>
