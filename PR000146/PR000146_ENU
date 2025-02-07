@@ -2,9 +2,11 @@ The page allows you to enter a series of custom Actions for each of the activiti
 Manage actions with a subscription to **OnExecuteActivityAction** event in codeunit 
 **18060020 EOS089 WMS Activity Task Mgmt.**
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp12-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp12OK-ENU.png"><br>
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp13-ENU.png"><br>
+
+The **Action Go To** field allows to define the behavior of the power app after the operation has been performed. The allowed values in addition to blank are **Home**, **List** and **Detail**.
 
 <br>
 <br>
