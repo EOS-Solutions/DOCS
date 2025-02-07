@@ -1,10 +1,12 @@
 In the Business Unit card there is the possibility to import, with the same standard logic, the balances relating to companies external to BC, thanks to the compilation of the specific **Excel Layout**:
 
 {{% alert title="Download Excel" color="warning" %}}
- [Import saldi Consolidato_soc extra BC](https://helpbc.eos-solutions.it/help/it-it/Download/Import%20saldi%20Consolidato_soc%20extra%20BC.xlsx)
+ <a href="https://docs-test.eos-solutions.it/Images/EX052-0/Import Consolidating balance_com extra BC.xlsx">Import Consolidating balance_com extra BC</a>
 {{% /alert %}}
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000195-0/ENU_IntercompanyAccountingEliminations (5).jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000195-0/IAE Business ENU.png">
+<br>
+<br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000195-0/ENU_IntercompanyAccountingEliminations (6)_new.jpg"><br>
 
 | **Field**              | **Description**                                  |
