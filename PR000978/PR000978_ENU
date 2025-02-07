@@ -1,0 +1,6 @@
+**Can I perform inventory extraction on a certain date?**
+
+The app does not provide for the extraction of the inventory at a certain date.
+The inventory calculated by the system must represent the current snapshot of the warehouse stock, which I then eventually correct based on deviations between the physical quantity and the calculated quantity. Calculating the balance at a certain date exposes me to the risk of correcting a quantity that at the workdate would already be aligned with the physical stock.
+
+<br>
