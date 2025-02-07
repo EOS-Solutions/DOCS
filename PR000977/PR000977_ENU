@@ -8,11 +8,11 @@ The current release allows the insertion of "Free Scans" type Lists.
 
 In the example provided, an implementation has been created that, in response to a series of free scans, allows the creation of transfer orders. On the BC side, the activity has the same setups as those available for standard activities and can be assigned to WMS users.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA1-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA1-ENU.png"><br>
 
 The Power app allows to use the new activity entered by performing free scans. Allowing saving and posting in BC.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA2-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA2-ENU.png"><br>
 
 In BC there are two pages containing:
 
@@ -21,11 +21,11 @@ In BC there are two pages containing:
 
 Before the registration operation:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA3-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA3-ENU.png"><br>
 
 After the registration operation:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA4-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA4-ENU.png"><br>
 
 The Custom Activities solution is based on 4 tables:
 * EOS089 WMS Custom Act. Header (18060040)
