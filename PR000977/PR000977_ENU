@@ -1,0 +1,44 @@
+This represents an important implementation of the Power WMS app and allows to insert new, completely custom activities into the Power App menu.
+
+We have prepared an example available on the SAMPLE environment:
+
+[Sample/EX089.PowerWMS at master · EOS-Solutions/Sample](http://)
+
+The current release allows the insertion of "Free Scans" type Lists.
+
+In the example provided, an implementation has been created that, in response to a series of free scans, allows the creation of transfer orders. On the BC side, the activity has the same setups as those available for standard activities and can be assigned to WMS users.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA1-ITA.png"><br>
+
+Power allows to use the new activity entered by performing free scans. Allowing saving and posting in BC.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA2-ITA.png"><br>
+
+In BC there are two pages containing:
+
+* Custom Activities (WMS)
+* Registered Custom Activities (WMS)
+
+Before the registration operation:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA3-ITA.png"><br>
+
+After the registration operation:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA4-ITA.png"><br>
+
+The Custom Activities solution is based on 4 tables:
+* EOS089 WMS Custom Act. Header (18060040)
+* EOS089 WMS Custom Act. Line (18060041) 
+
+Used for managing custom activities.
+
+* EOS089 WMS Reg. Cus. Act. Hdr. (18060042)
+* EOS089 WMS Reg. Cus. Act. Line (18060043)
+
+Used to manage registered custom activities.
+
+The tables contain the main fields needed for header/lines management. They can be extended by adding any missing or customization fields.
+
+<br>
+<br>
