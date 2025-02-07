@@ -18,6 +18,24 @@ La power app visualizza fra le azioni l’azione attività appena inserita. Perm
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000975-0/EX089-LUp5-ITA.png"><br>
 
+Le liste di Lookup si possono utilizzare anche nei campi editabili legati alle attività utente. Tramite le relazioni di lookup è possibile gestire tutte le casistiche in cui esistono delle relazioni fra i due campi richiesti ad esempio Ubicazione e Collocazione. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000975-0/EX089-LUp6-ITA.png"><br>
+
+La power app permette l’inserimento dei valori per i parametri previsti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000975-0/EX089-LUp7-ITA.png"><br>
+
+E' possibile impostare come editabile anche i campi **Personalizzati**, in questi casi per gestire la modifica è necessario utilizzare l'evento seguente della codeunit **18060051 "EOS089 WMS Add. Fields Mgmt."**:
+
+**OnValidateCustomField(EmployeeNo, EOS089WMSUserActField, RecordRef, NewValue, IsHandled)**
+
+Sono presenti due eventi per verificare, nel caso di campi obbligatori, che siano effettivamente da verificare, nella codeunit **18060025 "EOS089 WMS User Activity Mgmt."**:
+
+**OnCheckMandatoryFieldByFieldValue(RecordRef: RecordRef; FieldRef: FieldRef; EOS089WMSUserActField: Record "EOS089 WMS User Act. Field"; FieldValue: Variant; var IsHandled: Boolean)**
+
+**OnCheckMandatoryFieldByCustomValue(RecordRef: RecordRef; EOS089WMSUserActField: Record "EOS089 WMS User Act. Field"; FieldValue: Variant; var IsHandled: Boolean)**
+
 <br>
 <br>
 
