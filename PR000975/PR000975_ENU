@@ -18,5 +18,23 @@ The power app displays the newly inserted activity action among the actions. All
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000975-0/EX089-LUp5-ENU.png"><br>
 
+Lookup lists can also be used in editable fields related to user activities. Through lookup relations it is possible to manage all cases in which there are relations between the two required fields, for example Location and Bin.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000975-0/EX089-LUp6-ENU.png"><br>
+
+The power app allows to enter values for the expected parameters.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000975-0/EX089-LUp7-ENU.png"><br>
+
+**Custom** fields can also be set to editable, in these cases to manage the change you need to use the following event of the codeunit **18060051 "EOS089 WMS Add. Fields Mgmt."**:
+
+**OnValidateCustomField(EmployeeNo, EOS089WMSUserActField, RecordRef, NewValue, IsHandled)**
+
+There are two events to check, in the case of mandatory fields, that they actually need to be checked, in the codeunit **18060025 "EOS089 WMS User Activity Mgmt."**:
+
+**OnCheckMandatoryFieldByFieldValue(RecordRef: RecordRef; FieldRef: FieldRef; EOS089WMSUserActField: Record "EOS089 WMS User Act. Field"; FieldValue: Variant; var IsHandled: Boolean)**
+
+**OnCheckMandatoryFieldByCustomValue(RecordRef: RecordRef; EOS089WMSUserActField: Record "EOS089 WMS User Act. Field"; FieldValue: Variant; var IsHandled: Boolean)**
+
 <br>
 <br>
