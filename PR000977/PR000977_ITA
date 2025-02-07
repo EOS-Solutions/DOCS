@@ -1,0 +1,28 @@
+Rappresenta una importante implementazione dell’app Power WMS e consente di inserire delle nuove attività completamente custom nel menu della power app.
+
+Abbiamo preparato un esempio disponibile sull’ambiente SAMPLE:
+
+[Sample/EX089.PowerWMS at master · EOS-Solutions/Sample](http://)
+
+L’attuale rilascio permette l’inserimento di Liste di tipo "Scansioni Libere".
+
+Nell’esempio fornito è stata realizzata un implementazione che a fronte di una serie di scansioni libere permette di creare degli ordini di trasferimento. Lato BC l’attività ha gli stessi setup di quelli disponibili per le  attività standard ed è assegnabile agli utenti WMS.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA1-ITA.png"><br>
+
+La Power permette di utilizzare la nuova attività inserita effettuando le scansioni libere. Permettendo la salvataggio e la registrazione in BC.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA2-ITA.png"><br>
+
+In BC sono presenti due pagine che contengono:
+
+* Attività personalizzate (WMS)
+* Attività personalizzate registrate (WMS)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000977-0/EX089-AA3-ITA.png"><br>
+
+
+
+
+
+
