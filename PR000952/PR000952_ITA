@@ -30,6 +30,13 @@ Il controllo sulla quantità residua segue le logiche standard di BC, quindi si 
 Non vi è alcun blocco se si dichiara una quantità secondaria da spedire/consumare maggiore della quantità secondaria residua, finché esistono movimenti aperti con quantità residua (principale) sufficiente a registrare il movimento negativo.
 
 <br>
+
+**Tramite la funzione Calcola magazzino per Nr. Seriale / Lotto (DUM) Posso effettuare l'estrazione dell'inventario fisico a una certa data ?**
+
+L'app non prevede l'estrazione dell'inventario ad una certa data.
+L'inventario calcolato dal sistema deve rappresentare la fotografia attuale della giacenza di magazzino, che eventualmente vado poi a rettificare in funzione a scostamenti fra quantità fisica e quantità calcolata. Calcolare il saldo ad una certa data mi espone al rischio di rettificare una quantità che invece alla workdate sarebbe già allineata con la giacenza fisica.
+
+<br>
 <br>
 
 
