@@ -1,4 +1,4 @@
-**Posso effettuare l'estrazione dell'inventario a una certa data ?**
+**Posso effettuare l'estrazione dell'inventario fisico a una certa data ?**
 
 L'app non prevede l'estrazione dell'inventorio ad una certa data.
 L'inventario calcolato dal sistema deve rappresentare la fotografia attuale della giacenza di magazzino, che eventualmente vado poi a rettificare in funzione a scostamenti fra quantità fisica e quantità calcolata. Calcolare il saldo ad una certa data mi espone al rischio di rettificare una quantità che invece alla workdate sarebbe già allineata con la giacenza fisica.
