@@ -1,0 +1,27 @@
+Lo split payment, o scissione dei pagamenti, è un particolare regime che stabilisce che **il debitore dell’IVA sia il cessionario/committente** anziché, come avviene normalmente, il cedente/prestatore.
+
+Ne consegue che, per le operazioni soggette a split payment, il cessionario/committente non corrisponde **l’IVA** al proprio cedente/prestatore in considerazione del fatto che la stessa **è “pagata” direttamente all’erario.**
+
+**Setup procedura**
+
+Nella pagina “Setup registrazioni IVA” occorre creare gli opportuni record con flag “Split Payment” valorizzato a Sì:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000742-0/SP_ITA_1.jpg"><br>
+
+**Logiche di funzionamento**
+
+Registrando il documento di vendita con la combinazione di setup definita, il sistema automaticamente si occupa di generare il giroconto dell’IVA, IVA che sarà versata all’Erario direttamente dal cliente (cessionario/committente):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000742-0/SP_ITA_2.jpg"><br>
+
+**Movimenti IVA generati**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000742-0/SP_ITA_3.jpg"><br>
+
+**Movimenti contabili clienti generati**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000742-0/SP_ITA_4.jpg"><br>
+
+**Movimenti C/G generati**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000742-0/SP_ITA_5.jpg"><br>
