@@ -1,0 +1,17 @@
+To install Gordon Service (and all the other tools from the Gordon Suite) you need to use the EOS Gordon Installer.
+
+First of all you need to download the installer:
+
+1. Go to https://eos-solutions.github.io/Gordon/
+1. Click on Download
+1. When downloaded, open it and click on “Install”
+1. After that, the EOS Gordon Installer will automatically open
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000979-0/GordonInstall.png"><br>
+
+**Gordon Service must be installed machine-wide**
+With the EOS Gordon Installer, the Gordon Service can be installed as follow: 
+1. Open the EOS Gordon Installer as Administrator
+2. Click on the setting button in the top right corner
+3. Change the scope to **"machine-wide"** and close the setting page
+4. go to the “Not Installed” tab, find **Gordon Service** and click on Install.
