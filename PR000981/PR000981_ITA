@@ -1,0 +1,55 @@
+**Autofattura per acquisti da imprenditore agricolo esonerato da Fattura Elettronica**
+
+**Cenni normativi**
+
+Nella normativa italiana è previsto che l'imprenditore agricolo con un volume di affari inferiore a 7.000,00 euro sia esonerato da qualsiasi obbligo contabile e dichiarativo. Tuttavia, i suoi cessionari e committenti, quando acquistano i beni o utilizzano i servizi nell'esercizio dell'impresa, devono emettere autofattura, in luogo del cedente esonerato, indicandovi la relativa imposta, determinata applicando le aliquote corrispondenti alle percentuali di compensazione. L'autofattura così emessa dovrà essere registrata dal cessionario o committente nel registro degli acquisti, e dal cedente numerata e conservata assieme agli altri documenti. Detta autofattura deve essere emessa con il tipo documento TD01. La numerazione dell'autofattura può essere fatta con qualsiasi tipologia di numerazione, purchè venga garantita l'identificazione univoca della fattura.
+
+**Setup**
+
+In “Setup in uscita (FTE) abilitare il flag “Abilita gestione autofattura conto terzi” e impostare il conto transitorio che si vuole utilizzare nelle righe del documento fattura di acquisto nel campo “Conto per righe documento collegato”:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/setup in uscita.png"><br>
+
+Nella tabella “Repertori doc. elettronico” deve essere abilitato il flag “integrazione/acquisto” e il flag “Documento conto Terzi”
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/Repertori.png"><br>
+
+È consigliabile definire una categoria business IVA apposita per il fornitore autofattura con il tipo documento elettronico impostato con il TD01.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/Cat Bus Iva.png"><br>
+
+**Step operativi**
+
+La procedura da seguire è assimilabile a quella seguita per l’autofattura per acquisti di servizi extracee.
+
+1.	Registrazione di una fattura di acquisto fuori campo IVA per l’acquisto dal fornitore azienda agricola da cui emerge costo e debito verso fornitore.
+
+2.	Registrazione di una fattura di acquisto con un fornitore autofattura intestato all’azienda per la generazione della fattura xml da inviare a SDI. Il setup registrazione IVA collegato alla categoria business IVA di questa anagrafica fornitore dovrà avere tipologia IVA “Intracomunitaria”. Si consiglia di utilizzare un metodo di pagamento con contropartita fissa che andrà a chiudere il debito verso il fornitore autofattura con un conto transitorio.
+Nel documento fattura di acquisto al punto 2., da cui sarà esportata l’autofattura in formato xml, sarà necessario collegare la fattura di acquisto da azienda agricola (punto 1.) nel tab “doc.elettr. integrazione/autofattura” compilando i campi:
+
+•	Collega-a Nr. fornitore: indicare il fornitore della fattura di acquisto al punto 1.
+
+•	Collega-a Nr. documento: indicare il numero della fattura di acquisto per cui si sta emettendo l’autofattura.
+
+Infine, per far sì che nel tag “descrizione” venga riportata la corretta descrizione dei beni/servizi acquistati dall’imprenditore agricolo, impostare il campo “Origine righe del documento XML” il valore “Documento corrente”.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/Fat Acquisto.png"><br>
+
+**N.B.** L’autofattura potrà essere creata soltanto con una riga. Se la fattura originaria è compilata con più di una riga queste saranno accorpate in una riga unica di autofattura.
+Per la compilazione della riga del documento autofattura è stata prevista l’azione “copia righe del documento collegato” che prevede di copiare le righe dal documento collegato impostando di default:
+•	Tipo = Conto G/G
+•	Nr. = conto transitorio impostato nel setup in uscita FTE (vedi sezione “setup”)
+•	Descrizione/commento = a righe della fattura di acquisto collegata
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/Importa righe.png"><br>
+
+L’autofattura così compilata riporterà correttamente iva e la descrizione effettiva di quanto acquisto nel tag “descrizione”:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/Descrizione.png"><br>
+
+Nel file xml sarà compilato il tag “Terzo Intermediario Soggetto Emittente”
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/File xml.png"><br>
+
+
+
