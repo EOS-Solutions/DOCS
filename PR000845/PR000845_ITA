@@ -1,3 +1,84 @@
+## **20/02/25**
+
+Nuova versione febbraio 2025
+
+E' stata rilasciata una **nuova versione dell'App "EX036 Withholding Tax Certificazioni Uniche for Italy**" per recepire le modifiche effettuate dall'Agenzia delle Entrate nelle specifiche tecniche pubblicate il 05/02/2025.
+
+Riassumiamo quindi le novità relative alle Certificazioni Uniche 2025.
+
+**Modello sintetico in PDF**:
+
+Innanzitutto ricordiamo che l'implementazione di EOS stampa solamente il MODELLO SINTETICO relativamente alle pagine contenenti dati gestiti dall'E.R.P (1,6,8,9)
+
+Per queste pagine il nuovo modello ha la stessa conformazione del modello dell'anno scorso, a meno di qualche modifica relativa a dati che non vengono gestiti da BC.
+
+Il **Modello di stampa pdf** può essere aggiornato dalla pagina setup certificazioni uniche (ECU) con l'azione "importa modello"
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/ECU-13.png"><br>
+<br>
+**In ogni caso è possibile scaricare il modello SINTETICO** (da cui sono state eliminate le pagine 4 e 6) **dal nostro help**
+
+**File per la trasmissione telematica**:
+
+Analizzando le nuove specifiche tecniche, le novità relative ai dati gestiti da Business Central sono solamente le seguenti:
+
+**sul file delle specifiche tecniche a pag. 91**:
+
+è stato aggiunto il seguente valore "F" per il campo AU001001 "Causale":
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/ECU-14.png"><br>
+<br>
+Il **valore "F"** è stato aggiunto alla lista dei valori selezionabili per il campo "**Causale**":
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/ECU-15.png"><br>
+<br>
+**sul file delle istruzioni a pag. 84 viene riportato**:
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/ECU-16.png"><br>
+<br>
+**Sempre sul file delle specifiche tecniche a pag. 91**:
+
+sono stati aggiunti i valori **16,17,25,26** per il campo AU001006 "**Tipo di reddito non imponibile**"
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/ECU-17.png"><br>
+<br>
+I valori "16,17,25,26" sono stato aggiunti in coda alle option esistenti del campo "**Tipo di reddito non imponibile**"
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/ECU-18.png"><br>
+<br>
+
+
+**sul file delle istruzioni a pag. 87 viene riportato**:
+<br>
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/ECU-19.png"><br>
+<br>
+**sul file delle specifiche tecniche a pag. 92**:
+
+rispetto alle specifiche dell'anno scorso è stato rimosso il codice AU001021 e sostituito, sia nella stampa modello sintetico che nel file di esportazione dal codice AU001022
+
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/ECU-20.png"><br>
+<br>
+<br>
+Le nuove modifiche sono state rilasciate OnPrem per BC14, BC23, BC24 e BC25 nelle seguenti versioni:
+
+- **OnPrem BC14 : 14.0.89 o superiori**
+
+- **OnPrem BC23 : 23.0.25 o superiori**
+
+- **OnPrem e Saas : 24.0.19 o superiori**
+
+- **OnPrem e Saas : 25.0.15 o superiori**
+
+
+
+
+
+
+<br>
+<br>
+
 ## **15/02/24**
 
 Nuova versione gennaio 2024
@@ -39,6 +120,8 @@ Le modifiche sono disponibili [qui](https://hg.eos-solutions.it/scm/hg/Eos.Nav.
 
 
 
+<br>
+<br>
 
 ## **13/02/23**
 
