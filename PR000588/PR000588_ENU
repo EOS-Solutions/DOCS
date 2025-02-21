@@ -96,7 +96,7 @@ On the "Cash Flow Setup" page you can see the "Receiv. CF Account No. - Exp." fi
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF9.jpg"><br>
 
 -   If "Cash account No. - Customer exposure" is valued, this account is used in the "Suggest Worksheet Lines (CSF)" procedure to view the customer exposure; this logic applies only to customer ledger entries of "Document Type: Payment, Bank Receipt: Yes, Open: Yes". Otherwise the logic applied will be the standard one.
--   If the ÃSuggest Worksheet Lines (CSF)Ä report is executed with the ÃReceivablesÄ option enabled, then both the standard account combined with the accounts receivable and the new ÃNr. Cash account - Customer exposure ".
+-   If the â€œSuggest Worksheet Lines (CSF)â€ report is executed with the â€œReceivablesâ€ option enabled, then both the standard account combined with the accounts receivable and the new â€œNr. Cash account - Customer exposure ".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/ENU_CSF10.jpg"><br>
 
@@ -166,4 +166,4 @@ the calculation of the "Cash flow date" is correct: in fact, the 3 days of delay
 <br><br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
 
-Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
+Copyright Â© EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
