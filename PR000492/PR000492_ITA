@@ -1,9 +1,8 @@
-**Contabilit… analitica**
 
-ß una contabilit… analitica gestita con il sistema duplice contabile
+Ãˆ una contabilitÃ  analitica gestita con il sistema duplice contabile
 
 * Ha un piano dei conti dei conti separato e lavora in partita doppia;
-* Sincronizza la contabilit… generale e la contabilit… per competenza;
+* Sincronizza la contabilitÃ  generale e la contabilitÃ  per competenza;
 * Ha una gestione delle allocazioni e dei driver facilmente implementabili;
 * Ha un modello di gestione dei costi libero (direct costing, full costing, etc.).  
 
