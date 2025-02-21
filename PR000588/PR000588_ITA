@@ -1,17 +1,17 @@
 <iframe width="560" height="316" src="https://www.youtube.com/embed/Vffg_5mOZHU" title="Advanced Cash Flow for Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br><br>
 
-Premere ALT + Q e digitare "CSF" per vedere un elenco delle funzionalit… coinvolte:
+Premere ALT + Q e digitare "CSF" per vedere un elenco delle funzionalitÃ  coinvolte:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF1.jpg"><br>
 
 | **Task**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [1](#part1). Determinare le scadenze degli ordini di vendita / acquisto con decorrenza delle condizioni di pagamento dalle date spedizione / consegna prevista presenti in testata o riga ordine.                                                                     |
-| [2](#part2). Determinare le scadenze degli ordini di vendita con decorrenza delle condizioni di pagamento dalla data fatturazione prevista presente nelle righe del Piano di fatturazione collegato allÂordine.                       |
-| [3](#part3). Visualizzare lÂesposizione clienti in apposita riga del Piano dei conti di cassa, in funzione delle scadenze delle partite in attesa di esitazione.                                                                                                                                |
+| [2](#part2). Determinare le scadenze degli ordini di vendita con decorrenza delle condizioni di pagamento dalla data fatturazione prevista presente nelle righe del Piano di fatturazione collegato allâ€™ordine.                       |
+| [3](#part3). Visualizzare lâ€™esposizione clienti in apposita riga del Piano dei conti di cassa, in funzione delle scadenze delle partite in attesa di esitazione.                                                                                                                                |
 | [4](#part4). Modificare la data di scadenza calcolata nel Prospetto flusso di cassa di un Nr. di giorni indicato sul metodo di pagamento della singola partita/ordine o in anagrafica cliente / fornitore.                                                    |
-| [5](#part5). Ridefinire scadenze ed importi da incassare / pagare delle singole partite clienti o fornitori scadute, in funzione di parametri indicati nellÂapposita nuova tabella ÃCSF Æ Calcolo importi scadutiÄ. |
+| [5](#part5). Ridefinire scadenze ed importi da incassare / pagare delle singole partite clienti o fornitori scadute, in funzione di parametri indicati nellâ€™apposita nuova tabella â€œCSF â€“ Calcolo importi scadutiâ€. |
 
 <br>
 <a name="part1">
@@ -23,7 +23,7 @@ Premere ALT + Q e digitare "CSF" per vedere un elenco delle funzionalit… coinvol
 
 # Determinare le scadenze degli ordini di vendita / acquisto con decorrenza delle condizioni di pagamento dalle date spedizione / consegna prevista presenti in testata o riga ordine.
 
-Sulla page Setup flusso di cassa, nel Tab ÃFlusso di cassa avanzatoÄ sono presenti le opzioni:
+Sulla page Setup flusso di cassa, nel Tab â€œFlusso di cassa avanzatoâ€ sono presenti le opzioni:
 
 | Scad. O.d.V. - Data Spedizione     |
 |------------------------------------|
@@ -31,23 +31,23 @@ Sulla page Setup flusso di cassa, nel Tab ÃFlusso di cassa avanzatoÄ sono presen
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF2.jpg"><br>
 
-La logica definita per il calcolo delle date di scadenza relative agli ordini di vendita / acquisto viene applicata dallÂapposita funzione ÃSuggerisci righe prospetto (CSF)Ä sulla page "Prospetto flusso di cassa":
+La logica definita per il calcolo delle date di scadenza relative agli ordini di vendita / acquisto viene applicata dallâ€™apposita funzione â€œSuggerisci righe prospetto (CSF)â€ sulla page "Prospetto flusso di cassa":
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF3.jpg"><br>
 
-Se la procedura viene eseguita con **l'opzione ÃRaggruppa per tipo documentoÄ abilitata:**
+Se la procedura viene eseguita con **l'opzione â€œRaggruppa per tipo documentoâ€ abilitata:**
 
--   OdV - Data flusso di cassa = Data spedizione di testata + scadenze da condizione di pagamento presente nellÂordine
--   OdA - Data flusso di cassa = Data consegna promessa di testata (o in alternativa la Data consegna richiesta di testata)+ scadenze da condizione di pagamento presente nellÂordine
--   In entrambi i casi, se le date spedizione o consegna promessa / prevista risultano essere nel passato ed Š attivo il flag ®Sposta date flusso di cassa alla data del lavoro¯ nella Scheda previsioni flusso di cassa, nel calcolo della Data flusso di cassa, vengono sostituite dalla Work date impostata al momento di esecuzione della funzione.
+-   OdV - Data flusso di cassa = Data spedizione di testata + scadenze da condizione di pagamento presente nellâ€™ordine
+-   OdA - Data flusso di cassa = Data consegna promessa di testata (o in alternativa la Data consegna richiesta di testata)+ scadenze da condizione di pagamento presente nellâ€™ordine
+-   In entrambi i casi, se le date spedizione o consegna promessa / prevista risultano essere nel passato ed Ã¨ attivo il flag Â«Sposta date flusso di cassa alla data del lavoroÂ» nella Scheda previsioni flusso di cassa, nel calcolo della Data flusso di cassa, vengono sostituite dalla Work date impostata al momento di esecuzione della funzione.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF4.jpg"><br>
 
-Se la procedura viene eseguita con **l'opzione ÃRaggruppa per tipo documentoÄ disabilitata:**
+Se la procedura viene eseguita con **l'opzione â€œRaggruppa per tipo documentoâ€ disabilitata:**
 
--   OdV - Data flusso di cassa = Data spedizione di riga + scadenze da condizione di pagamento presente nellÂordine;
--   OdA - Data flusso di cassa = Data consegna promessa di riga (o in alternativa la Data consegna richiesta di riga) + scadenze da condizione di pagamento presente nellÂordine;
--   In entrambi i casi, se le date spedizione o consegna promessa / prevista risultano essere nel passato ed Š attivo il flag ®Sposta date flusso di cassa alla data del lavoro¯ nella Scheda previsioni flusso di cassa, nel calcolo della Data flusso di cassa, vengono sostituite dalla Work date impostata al momento di esecuzione della funzione.
+-   OdV - Data flusso di cassa = Data spedizione di riga + scadenze da condizione di pagamento presente nellâ€™ordine;
+-   OdA - Data flusso di cassa = Data consegna promessa di riga (o in alternativa la Data consegna richiesta di riga) + scadenze da condizione di pagamento presente nellâ€™ordine;
+-   In entrambi i casi, se le date spedizione o consegna promessa / prevista risultano essere nel passato ed Ã¨ attivo il flag Â«Sposta date flusso di cassa alla data del lavoroÂ» nella Scheda previsioni flusso di cassa, nel calcolo della Data flusso di cassa, vengono sostituite dalla Work date impostata al momento di esecuzione della funzione.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF5.jpg"><br>
 
@@ -59,12 +59,12 @@ Se la procedura viene eseguita con **l'opzione ÃRaggruppa per tipo documentoÄ di
 <br>
 <br>
 
-# Determinare le scadenze degli ordini di vendita con decorrenza delle condizioni di pagamento dalla data fatturazione prevista presente nelle righe del Piano di fatturazione collegato allÂordine.
+# Determinare le scadenze degli ordini di vendita con decorrenza delle condizioni di pagamento dalla data fatturazione prevista presente nelle righe del Piano di fatturazione collegato allâ€™ordine.
 
-Se allÂOdV Š abbinato un Piano di fatturazione (vedere la APP [Invoicing Plan (IPL)]({{<relref "invoicing-plan-ipl">}})), lÂimporto e le scadenze dello ordine non ancora fatturato, vengono calcolati in funzione delle righe presenti nel Piano di fatturazione stesso:
+Se allâ€™OdV Ã¨ abbinato un Piano di fatturazione (vedere la APP [Invoicing Plan (IPL)]({{<relref "invoicing-plan-ipl">}})), lâ€™importo e le scadenze dello ordine non ancora fatturato, vengono calcolati in funzione delle righe presenti nel Piano di fatturazione stesso:
 
--   Vengono incluse nellÂelaborazione solo le righe piano fatturazione con flag "Fattura registrata" impostato a No
--   La data utilizzata per determinare la ÃData flusso di cassaÄ Š presente su ogni riga del Piano fatturazione ed Š la "Data fatturazione prevista" se \>/= workdate, altrimenti la workdate alla quale si applica la condizione di pagamento presente sulla riga del piano di fatturazione.
+-   Vengono incluse nellâ€™elaborazione solo le righe piano fatturazione con flag "Fattura registrata" impostato a No
+-   La data utilizzata per determinare la â€œData flusso di cassaâ€ Ã¨ presente su ogni riga del Piano fatturazione ed Ã¨ la "Data fatturazione prevista" se \>/= workdate, altrimenti la workdate alla quale si applica la condizione di pagamento presente sulla riga del piano di fatturazione.
 
 Piano di fatturazione abbinato ad OdV (nr. 1070):
 
@@ -72,13 +72,13 @@ Piano di fatturazione abbinato ad OdV (nr. 1070):
 
 Prospetto flusso di cassa generato
 
-Le righe generate nel Prospetto flusso di cassa presentano correttamente una ÃData flusso di cassaÄ determinata da:
+Le righe generate nel Prospetto flusso di cassa presentano correttamente una â€œData flusso di cassaâ€ determinata da:
 
-**Data fatturazione prevista** del piano di fatturazione (**o workdate** se questÂultima Š maggiore) **+** **condizione di pagamento** indicata nella riga stessa del piano di fatturazione:
+**Data fatturazione prevista** del piano di fatturazione (**o workdate** se questâ€™ultima Ã¨ maggiore) **+** **condizione di pagamento** indicata nella riga stessa del piano di fatturazione:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF7.jpg"><br>
 
-Dopo aver fatturato la 1ø riga (Fattura pagamento anticipata) del piano di fatturazione, nel Prospetto flusso di cassa viene inclusa solo la scadenza relativa alla 2ø riga (non fatturata):
+Dopo aver fatturato la 1Â° riga (Fattura pagamento anticipata) del piano di fatturazione, nel Prospetto flusso di cassa viene inclusa solo la scadenza relativa alla 2Â° riga (non fatturata):
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF8.jpg"><br>
 
@@ -89,18 +89,18 @@ Dopo aver fatturato la 1ø riga (Fattura pagamento anticipata) del piano di fattu
 <br>
 <br>
 
-# Visualizzare lÂesposizione clienti in apposita riga del Piano dei conti di cassa, in funzione delle scadenze delle partite in attesa di esitazione.
+# Visualizzare lâ€™esposizione clienti in apposita riga del Piano dei conti di cassa, in funzione delle scadenze delle partite in attesa di esitazione.
 
-Nella page "Setup flusso di cassa" Š presente il campo "Nr. Conto di cassa Æ Esposizione clienti":
+Nella page "Setup flusso di cassa" Ã¨ presente il campo "Nr. Conto di cassa â€“ Esposizione clienti":
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF9.jpg"><br>
 
--   Se "Nr. Conto di cassa - Esposizione clienti" risulta essere valorizzato, tale conto viene utilizzato nella procedura ÃSuggerisci righe prospetto (CSF)Ä per visualizzare lÂesposizione dei clienti; questa logica si applica solo per i movimenti contabili clienti di "Tipo documento: Pagamento, Ricevuta bancaria: S, Aperto: S". Diversamente la logica applicata sar… quella standard.
--   Se il Report ÃSuggerisci righe prospetto (CSF)Ä viene eseguito con l'opzione ÃContabilit… clientiÄ attiva, allora dovr… essere movimentato sia il conto standard abbinato alla contabilit… clienti sia il nuovo ÃNr. Conto di cassa Æ Esposizione clientiÄ.
+-   Se "Nr. Conto di cassa - Esposizione clienti" risulta essere valorizzato, tale conto viene utilizzato nella procedura â€œSuggerisci righe prospetto (CSF)â€ per visualizzare lâ€™esposizione dei clienti; questa logica si applica solo per i movimenti contabili clienti di "Tipo documento: Pagamento, Ricevuta bancaria: SÃ¬, Aperto: SÃ¬". Diversamente la logica applicata sarÃ  quella standard.
+-   Se il Report â€œSuggerisci righe prospetto (CSF)â€ viene eseguito con l'opzione â€œContabilitÃ  clientiâ€ attiva, allora dovrÃ  essere movimentato sia il conto standard abbinato alla contabilitÃ  clienti sia il nuovo â€œNr. Conto di cassa â€“ Esposizione clientiâ€.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF10.jpg"><br>
 
-La riga relativa allÂemissione Riba (Pagamento) viene generata sul conto 0015 indicato nel campo "Nr. Conto di cassa - Esposizione clienti". La relativa riga di fattura (riga evidenziata in azzurro) rimane sul conto standard:
+La riga relativa allâ€™emissione Riba (Pagamento) viene generata sul conto 0015 indicato nel campo "Nr. Conto di cassa - Esposizione clienti". La relativa riga di fattura (riga evidenziata in azzurro) rimane sul conto standard:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF11.jpg"><br>
 
@@ -113,13 +113,13 @@ La riga relativa allÂemissione Riba (Pagamento) viene generata sul conto 0015 in
 
 # Modificare la data di scadenza calcolata nel Prospetto flusso di cassa di un Nr. di giorni indicato sul metodo di pagamento della singola partita/ordine o in anagrafica cliente / fornitore.
 
-Esiste la possibilit… di impostare sui Metodi di pagamento e nelle anagrafiche Clienti/Fornitori il campo "CF Æ Giorni medi ritardo": tale valore dovr… rettificare la Data di scadenza calcolata nel cash flow per le relative movimentazioni ed ordini clienti/fornitori.
+Esiste la possibilitÃ  di impostare sui Metodi di pagamento e nelle anagrafiche Clienti/Fornitori il campo "CF â€“ Giorni medi ritardo": tale valore dovrÃ  rettificare la Data di scadenza calcolata nel cash flow per le relative movimentazioni ed ordini clienti/fornitori.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF12.jpg"><br>
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF13.jpg"><br>
 
-Le righe generate nel Prospetto flusso di cassa presentano correttamente una ÃData flusso di cassaÄ rettificata del valore presente nel campo ÃCSF Æ Giorni medi ritardoÄ del metodo di pagamento o, in alternativa, nello stesso campo dellÂanagrafica cliente/fornitore.
+Le righe generate nel Prospetto flusso di cassa presentano correttamente una â€œData flusso di cassaâ€ rettificata del valore presente nel campo â€œCSF â€“ Giorni medi ritardoâ€ del metodo di pagamento o, in alternativa, nello stesso campo dellâ€™anagrafica cliente/fornitore.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF14.jpg"><br>
 
@@ -130,34 +130,34 @@ Le righe generate nel Prospetto flusso di cassa presentano correttamente una ÃDa
 <br>
 <br>
 
-# Ridefinire scadenze ed importi da incassare / pagare delle singole partite clienti o fornitori scadute, in funzione di parametri indicati nellÂapposita nuova tabella ÃCSF Æ Calcolo importi scadutiÄ
+# Ridefinire scadenze ed importi da incassare / pagare delle singole partite clienti o fornitori scadute, in funzione di parametri indicati nellâ€™apposita nuova tabella â€œCSF â€“ Calcolo importi scadutiâ€
 
-Prevedere la possibilit… per singolo movimento contabile cliente/fornitore di modificare lÂimporto da incassare/pagare e la relativa scadenza, attraverso la compilazione del campo ÃCSF Æ Cod. calcolo importi scadutiÄ.
+Prevedere la possibilitÃ  per singolo movimento contabile cliente/fornitore di modificare lâ€™importo da incassare/pagare e la relativa scadenza, attraverso la compilazione del campo â€œCSF â€“ Cod. calcolo importi scadutiâ€.
 
 Tale campo si basa su un'apposita tabella contente i seguenti campi:
 
 -   Codice
 -   Descrizione del blocco
--   30gg - % Incasso/Pagamento: da utilizzare nel calcolo dellÂimporto rettificando la data di scadenza (o la workdate nel caso di scaduto) di 30 gg.
--   60gg - % Incasso/Pagamento: da utilizzare nel calcolo dellÂimporto rettificando la data di scadenza (o la workdate nel caso di scaduto) di 60 gg.
--   90gg - % Incasso/Pagamento: da utilizzare nel calcolo dellÂimporto rettificando la data di scadenza (o la workdate nel caso di scaduto) di 90 gg.
+-   30gg - % Incasso/Pagamento: da utilizzare nel calcolo dellâ€™importo rettificando la data di scadenza (o la workdate nel caso di scaduto) di 30 gg.
+-   60gg - % Incasso/Pagamento: da utilizzare nel calcolo dellâ€™importo rettificando la data di scadenza (o la workdate nel caso di scaduto) di 60 gg.
+-   90gg - % Incasso/Pagamento: da utilizzare nel calcolo dellâ€™importo rettificando la data di scadenza (o la workdate nel caso di scaduto) di 90 gg.
 -   Tipo calcolo: determina la logica di calcolo delle nuove scadenze in funzione di un nr. di giorni (30G, 60G, 90G) oppure di un nr. di mesi (1M, 2M, 3M).
 
-Nel caso in cui le 3 colonne presentino % pari a 0 (zero) la partita sar… esclusa dal calcolo.
+Nel caso in cui le 3 colonne presentino % pari a 0 (zero) la partita sarÃ  esclusa dal calcolo.
 
-Tabella / page ÃCSF Æ Calcolo importi scadutiÄ:
+Tabella / page â€œCSF â€“ Calcolo importi scadutiâ€:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF15.jpg"><br>
 
 Movimenti contabili clienti o fornitori:
 
-il movimento contabile Š stato marcato con il valore Ã01Ä del campo ÃCSF Æ Cod. calcolo importi scadutiÄ:
+il movimento contabile Ã¨ stato marcato con il valore â€œ01â€ del campo â€œCSF â€“ Cod. calcolo importi scadutiâ€:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF16.jpg"><br>
 
 Prospetto flusso di cassa generato:
 
-il calcolo della ÃData flusso di cassaÄ risulta essere corretto: alla Data scadenza originaria (31/01/21) sono stati aggiunti, infatti, i 3 gg di ritardo presenti sul metodo di pagamento (Banca), poi Š stata applicata la logica di calcolo abbinata al codice Ã01Ä:
+il calcolo della â€œData flusso di cassaâ€ risulta essere corretto: alla Data scadenza originaria (31/01/21) sono stati aggiunti, infatti, i 3 gg di ritardo presenti sul metodo di pagamento (Banca), poi Ã¨ stata applicata la logica di calcolo abbinata al codice â€œ01â€:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000588-0/CSF17.jpg"><br>
 
@@ -170,4 +170,4 @@ il calcolo della ÃData flusso di cassaÄ risulta essere corretto: alla Data scade
 <br><br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000475-0/EOS.gif"><br>
 
-Copyright Ñ EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
+Copyright Â© EOS Solutions Via G. Di Vittorio 23 - 39100 Bolzano, Italia. Tutti i diritti riservati.
