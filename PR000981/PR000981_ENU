@@ -1,0 +1,60 @@
+**Self-invoice for purchase from an agricultural entrepreneur exempted from Electronic Invoicing**
+
+**Regulatory changes**
+
+In the Italian legislation it is provided that the agricultural entrepreneur with a turnover of less than 7.000.00. euro is exempted from any accounting and declaration obligations. However, its assignees and principals, when they purchase the goods or use the services in the course of the business, must issue a self-invoice, in place of the exempt transferor, indicating the tax relating, determined by applying the rates corresponding to the compensation percentages. The self-invoice issued in this way shall be registered by the transferee or customer in the register of purchases, and by the transferor numbered and kept together with the other documents. This self-invoice must be issued with document type TD01. The numbering of the self-invoice can be done with any type of numbering, as long as the unique identification of the invoice is guaranteed.
+
+**Setup**
+
+In "Outbound setup (FTE)", enable the flag "Enable third-party self-invoice management" and set the temporary account that you want to use in the lines of the purchase invoice document in the field "third-party self-invoice account":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/Outbound setup.png"><br>
+
+In the table "Electr. Doc. Catalogs" must be enabled the flag "Purch. self-invoice" and the flag "Third-party document"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/Catalogs.png"><br>
+
+It is advisable to define a specific VAT business posting groups for the self-invoice supplier with the electronic document type set with the TD01.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/VAT Bus Post Gruoup.png"><br>
+
+**Operation steps**
+
+The procedure to be followed is similar to that followed for self-invoicing for purchases of services outside (Extracee).
+
+1.  Registration of a purchase invoice without VAT for the purchase from the supplier agricultural holding showing cost and debt to supplier.
+
+2.  Registration of a purchase invoice with a self-invoice supplier in the name of the company for the generation of the xml invoice to be sent to SDI. The VAT registration setup linked to the VAT business category of this supplier must have "Intra-community" VAT typology. It is recommended to use a payment method with fixed consideration that will close the debt towards the self-invoice provider with a temporary account.
+
+In the purchase invoice document at point 2., from which the self-invoice will be exported in xml format, it will be necessary to link the farm purchase invoice (point 1.) in the tab "Self-invoice Electr. Doc." by filling in the fields:
+
+
+• Applies-to Vendor No.: indicate the supplier of the purchase invoice to the point 1.
+
+•	Applies-to Document No: indicate the number of the purchase invoice for which you are issuing your self-invoice.
+
+
+Finally, in order to ensure that the "description" tag contains the correct description of the goods/services purchased by the farmer, set the field "XML Document Lines Origin" to the value "Current document".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/Pur invoice.png"><br>
+
+**N.B.** The self-invoice can only be created with one line. If the original invoice is filled in with more than one line, these will be merged into a single self-invoice line.
+For the compilation of the line of the self-invoice document, the action "Import document lines for third-party self-invoice(FTE)" has been provided that provides to copy the lines from the linked document setting by default:
+• Type = G/L account
+• No. = temporary account set up in the FTE outbound setup (see "setup" section)
+• Description/comment = line by line on the linked purchase invoice
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/Import.png"><br>
+
+The self-invoice thus filled will correctly indicate VAT and the actual description of what purchase in the "description" tag:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/Description.png"><br>
+
+The tag "Terzo Intermediario Soggetto Emittente" will be filled in the xml file:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000981-0/File xml.png"><br>
+
+
+
+
+
