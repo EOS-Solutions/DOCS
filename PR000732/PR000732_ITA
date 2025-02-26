@@ -48,4 +48,4 @@ La modalità di rilevazione dei pagamenti e, quindi, l’uso del conto transitor
 
 Sì, ABI e CAB vengono inviati automaticamente se è stata installata l’app gratuita “DocFinance Connector for Italy”, non è richiesto abilitare alcun setup.
 ABI e CAB devono essere inseriti in BC nel conto corrente cliente/fornitore, che viene ricercato nei movimenti contabili cliente/fornitore.
-Se il conto corrente non è specificato nel movimento, viene recuperato dal primo conto corrente associato al cliente/fornitore.
+Se il conto corrente non è specificato nel movimento, viene recuperato dal primo conto corrente associato al cliente / fornitore.
