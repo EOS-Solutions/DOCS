@@ -1,9 +1,14 @@
 In this setup, it is possible to define the posting period for simulated entries, specifically related to **accruals and deferrals**.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000228-0/sgl_setup_en.png"><br>
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000228-0/1SimulatedGeneralLedger(1).png"><br>
-
-| Field                                       | Description                                                                                             |
-|---------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Allow simulated posting from / to       | These dates allow you to define a period during which you cannot generate simulated entries, except for those related to **accruals and deferrals**. |
-| Allow accruals/deferrals posting from / to | These dates allow defining a period within which it is possible to generate accrual/deferral entries generated through the indication of the template and the starting/ending dates of competence, **regardless** of what is indicated in the fields "Allow simulated posting from / to"
+- **Allow simulated posting from / to**
+  These dates allow you to define a period during which you can generate simulated entries, except for those related to **accruals and deferrals**. Periods outside of this range are **not** allowed.
+- **Allow accruals/deferrals posting from / to**:
+  These dates allow defining a period within which it is possible to generate accrual/deferral entries generated through the indication of the template and the starting/ending dates of competence, **regardless** of what is indicated in the fields **Allow simulated posting from / to**
+- **Allow G/L Accruals**
+  Specifies which accounts can be accrual. The following values are available:
+	- `All Accounts`: all accounts can be accrued, without any limitations. This is the default value.
+	- `Income Statement Accounts`: Only income statement accounts can be accrued.
+	- `Direct Posting Accounts`: Only accounts that have been marked as direct posting can be accrued. This means having the field **Direct Posting** enabled when accruing into the G/L entry and having either **Direct Posting** or **Sim. Posting** enabled when accruing into the sim. G/L entry.
+- **Copy Accrual Information In General Journal**: if this is enabled, fields like the accrual template, period and method are copied from the previous line when inserting a new line to the general journal.
