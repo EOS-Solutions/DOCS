@@ -24,6 +24,29 @@ Attivala! Dopo aver installato l'app cerca (ALT+ Q) per la pagina "**Pannello di
 Per attivare, configurare e utilizzare l'app è necessario il corretto permission set: il modo più semplice è impostare l'utente come "SUPER". Se non si desidera impostare il set di autorizzazioni "SUPER", applicare tutto il set di autorizzazioni che inizia con "EOS\*"
 <br>
 <br>
+<br>
+
+## Setup assistito
+
+Comincia ad usare l'app EOS con la procedura di setup assistito, che può essere lanciata in due modi:
+
+   - collegamento diretto al "Setup assistito" disponibile
+   
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/Assited setup1 ITA.png"><br>
+<br>
+   - cerca "Gestione estensioni", seleziona l'app e clicca su "Imposta"  
+   
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/Assisted setup2 ITA.png"><br>
+<br>
+<br>
+Al momento, il setup assistito è disponibile per le seguenti app: 
+- DocSolutions for Sharepoint
+- Master Data Intercompany
+- Product Configurator
+- Packing List
+<br>
+<br>
+<br>
 
 ## Non vedi i piani di sottoscrizione o le sottoscrizioni non si attivano?
 Forse è un problema di connessione
