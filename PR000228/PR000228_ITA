@@ -1,9 +1,14 @@
-In questo setup Š possibile delimitare il periodo di registrazione delle scritture simulate e, nello specifico, delle registrazioni relative ai ratei e risconti.
+In questo setup Ã¨ possibile definire il periodo di registrazione per le registrazioni simulate, in particolare per quanto riguarda i **risconti e le dilazioni**.
 
-<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000228-0/1SimulatedGeneralLedger.png"><br><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000228-0/sgl_setup_it.png"><br>
 
-
-| Campo                                       | Descrizione                                                                                                                                                            |
-|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Consenti registraz. sim. da / fino a        | queste date consentono di definire un periodo allÂinterno del quale Š possibile generare scritture simulate;  |
-| Consenti reg. ratei/risconti. da / fino a"  | queste date consentono di definire un periodo allÂinterno del quale Š possibile generare scritture di rateo/risconto generate tramite lÂindicazione del template e delle data di inizio/fine competenza, **indipendentemente** da quanto indicato nei campi "Consenti registraz. sim. da / fino a" |
+- **Consenti registraz, sim. da/a**
+  Queste date consentono di definire un periodo durante il quale Ã¨ possibile generare registrazioni simulate, ad eccezione di quelle relative a **Consenti reg. ratei e risconti da/a**. I periodi al di fuori di questo intervallo non sono ammessi.
+- **Consenti reg. ratei e risconti da/a**:
+  Queste date consentono di definire un periodo all'interno del quale Ã¨ possibile generare registrazioni di ratei e risconti generati attraverso lo schema e le date di inizio/fine dei ratei e risconti, **indipendentemente** da quanto indicato nei campi **Consenti registraz, sim. da/a**.
+- **Consenti reg. ratei e risconti**
+  Specifica quali conti possono essere rateizzati. Sono disponibili i seguenti valori:
+	- `Tutti i conti C/G`: tutti i conti possono essere rateizzati, senza alcuna limitazione. Questo Ã¨ il valore predefinito.
+	- `Conti C/G economici`: Solo conti del conto economico possono essere rateizzati.
+	- `Conti C/G conm reg. diretta`: Possono essere rateizzati solo i conti che sono stati segnati come registrazione diretta. CiÃ² significa che il campo **Registrazione diretta** deve essere abilitato quando si registrano i ratei in C/G e che il campo **Registrazione diretta** o **Consenti registraz. sim.** quando si registrano i ratei nei movimenti G/L simulati.
+- **Copia delle informazioni sui ratei nel giornale generale**: se questa opzione Ã¨ attivata, i campi come il modello di competenza, il periodo e il metodo vengono copiati dalla riga precedente quando si inserisce una nuova riga nel giornale generale.
