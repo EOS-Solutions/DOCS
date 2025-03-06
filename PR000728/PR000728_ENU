@@ -29,6 +29,32 @@ To activate, setup and use the app you need the proper permisson set: the easier
 
 <br>
 <br>
+<br>
+
+
+## Assisted setup
+
+Start using the EOS app with the assisted setup wizard, that can be run in two ways:
+
+- direct link to the available "Assisted setup"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/Assisted setup1 ENU.png"><br>
+<br>
+
+- search for "Extension management", select the app and click on "Set up"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/Assisted setup2 ENU.png"><br>
+<br>
+<br>
+At the moment, the assisted setup is available for the following apps: 
+- DocSolutions for Sharepoint
+- Master Data Intercompany
+- Product Configurator
+- Packing List
+<br>
+<br>
+<br>
+
 
 ## No active plan or subscription ?
 
