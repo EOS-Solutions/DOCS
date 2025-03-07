@@ -21,6 +21,7 @@ From New open a new card:
 | |Actual Entries | Everything is taken into account with the actual production entries |
 |**Consider Purchase in Standard BOM** |Include|By setting the field to the value "Include": when calculating the cost of production items, the system will also consider any purchases made during the period; |
 ||Exclude|By setting the field to the value "Exclude": the system will exclude all Purchase type movements from the calculation of the production items|
+|**Reading actual entries with Standard BOM/Routing** | Include Mfg./ Exclude consumption - internal capacities / Exclude consumption - all capacities | Allows you to define whether in the case of cost calculation at "Standard BOM/Routing" the actual consumption entries and the capacity entries relating to internal/external operation must still be read
 |**BOM/Routing Reference Date**|Start/End Period Date|It allows you to define the date with which you calculate the production costs, if at the beginning of the period and at the end of the period. It is relevant if the versions of the lists and routings are used, otherwise it is irrelevant: usually if the versions of the lists / routings are used, the End Period value is used (more recent versions)|
 |**BOM/Routing Status**|All/Only Certified|	Defines whether to consider all the BOM/Routings in the calculation, or whether to use only the certified ones. It has an impact if you are working on separate lists / routings, otherwise it is irrelevant.|
 |**Purch. Item Valuation**|Average Cost / Weighed Average Cost||
