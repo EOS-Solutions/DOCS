@@ -1,0 +1,7 @@
+The units of measure and the capacity units of measure in standard BC are managed with two different tables with no connection. For the correct use of plant maintenance, the table of units of measure has been extended by adding the Capacity Unit of Measure field that allows the connection between the two tables. **Filling in the field becomes mandatory when you use cycle lines that have a different unit of measure than the base unit defined for the resource, or when you post entries with a different unit of measure.** 
+It is advisable to always fill it out.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000988-0/UoM1_ENU.png"><br>
+
+<br>
+<br>
