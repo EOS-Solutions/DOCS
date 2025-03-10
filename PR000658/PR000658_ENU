@@ -23,7 +23,7 @@ This page defines which message to send to each group and how to send it.
 - **XMLport ID**
   This field indicates the XMLport to be used for both reading and writing the EDI message to or from the file-system. If this is not set, EDI uses a default XMLport that writes/reads the file 1:1 as it is in the **EDI Message** table.
 - **Export Path** (mandatory)
-  Enter the path where the file is to be saved or read from. This path supports the use of placeholders that are replaced with system values. At this time, the following placeholders are supported:
+  Enter the path where the file is to be saved or read from. This path supports the use of placeholders to define the file name (definition of filename is mandatory) that are replaced with system values. At this time, the following placeholders are supported:
   - `<DOC>`:  Reference Document No. (Invoice No.)
   - `<DATE>`: today's date in the format YYYYMMDD
   - `<DATETIME>`: today's date/time in the format YYYYMMDDhhmmss
