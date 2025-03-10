@@ -46,6 +46,8 @@
 | Stato richiesta di lavoro al completamento del ciclo                                             | Specifica lo stato della richiesta di lavoro da impostare al termine del ciclo di manutenzione.                         |
 | Utilizza la descrizione della richiesta di lavoro come descrizione attività in registra attività | Specifica se utilizzare la descrizione della richiesta di lavoro come descrizione attività in registra attività.        |
 | Alloca ciclo a risorsa                                                                           | Specifica se allocare i cicli delle richieste di lavoro alle risorse durante l'aggiornamento della richiesta di lavoro. |
+| Elimina la capacità allocata al completamento del ciclo                                                                           | Consente di eliminare automaticamente le capacità necessarie al termine del ciclo di lavorazione di una richiesta di lavoro. |
+| Calcola capacità necessaria al rilascio                                                                           | Consente di calcolare automaticamente la capacità necessaria al rilascio di una richiesta di lavoro. |
 
 ## Power PMM
 
