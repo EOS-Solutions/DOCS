@@ -23,7 +23,7 @@ In questa pagina si definisce quale messaggio mandare ad ogni Gruppo e come invi
 - **ID XML Port**
   Questo campo indica l'XMLport da usare sia per leggere che per scrivere il messaggio EDI su o da file-system. Se questo non viene impostato, EDI usa un XMLport di default che scrive/legge il file 1:1 come è presente nella tabella **Messaggio EDI**.
 - **Percorso Export** (obbligatorio)
-  Inserire il percorso in cui salvare o da cui leggere il file. Questo percorso supporta l'utilizzo di placeholder che vengono sostituti da valori del sistema. In questo momento i seguenti placeholder sono supportati:
+  Inserire il percorso in cui salvare o da cui leggere il file. Questo percorso supporta l'utilizzo di placeholder per definire il nome del file (definire il nome del file è obbligatorio) che vengono sostituti da valori del sistema. In questo momento i seguenti placeholder sono supportati:
   - `<DOC>`:  Nr. documento di riferimento (Nr. fattura)
   - `<DATE>`: data di oggi nel formato YYYYMMDD
   - `<DATETIME>`: data/ora di oggi nel formato YYYYMMDDhhmmss
