@@ -1,0 +1,8 @@
+Le unità di misura e le unità di misura capacità sono gestite a standard BC con due diverse tabelle fra le quali non esiste nessun collegamento.
+Per l’utilizzo corretto della manutenzione impianti la tabella delle unità di misura è stata estesa aggiungendo il campo Unità di misura capacità che permette il collegamento fra le due tabelle. **La compilazione del campo diventa necessaria quando si utilizzano righe ciclo di manutenzione con unità di misura diversa rispetto a quella base definita per la risorsa oppure quando vengono eseguite registrazioni in un'unità di misura diversa.** 
+Si consiglia di compilarlo sempre.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000988-0/UoM1_ITA.png"><br>
+
+<br>
+<br>
