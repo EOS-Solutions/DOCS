@@ -36,7 +36,7 @@
 | Manutenzione esterna                  | Specifica se la manutenzione è esterna.                            |
 | Nr. fornitore                         | Specifica il fornitore.                                            |
 | Priorità                              | Specifica la priorità.                                             |
-| Stato                                 | Specifica lo stato.                                                |
+| Stato                                 | Specifica lo stato. Se lo stato è **Rilasciato**, **Completato**, **Da Approvare** e **Annullato** non saranno più modificabili i seguenti campi: **Data inizio pianificata**, **Ora inizio pianificata**, **Nr. risorsa**, **Nr. gruppo risorse**, **Nr. ciclo di manutenzione**, **Versione ciclo di manutenzione**, **Righe ciclo**.                                                |
 | Nr. riferimento contratto             | Specifica il numero di riferimento del contratto.                  |
 | Nota di chiusura                      | Specifica le note di chiusura.                                     |
 | Da richiesta lavoro                   | Specifica la richiesta di lavoro principale.                       |
