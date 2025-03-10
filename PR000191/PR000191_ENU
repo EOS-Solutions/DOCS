@@ -36,7 +36,8 @@ You can manage machine work requests through the "Work Requests (PMM)" page.
 | External Maintenance       | Specifies if the maintenance is external.                              |
 | Vendor No.                 | Specifies the vendor.                                                  |
 | Priority                   | Specifies the priority.                                                |
-| Status                     | Specifies the status.                                                  |
+| Status                     | Specifies the status. When the status is **Released**, **Finished**, **To Approve** and **Canceled**, the following fields will no longer be editable on work requests: **Planned Starting Date**, **Planned Starting Time**, **Resource No.**, **Resource Group No.**, **Maintenance Cycle No.**, **Maintenance Cycle Version**, **Cycle Lines**.
+                                                  |
 | Contract Reference No.     | Specifies the contract reference number.                               |
 | Closing Note               | Specifies the closing notes.                                           |
 | From Work Request          | Specifies the parent work request.                                     |
