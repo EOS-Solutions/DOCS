@@ -1,0 +1,25 @@
+L'app estende i giornali di registrazione Output e Consumi con una serie di nuove funzionalità:
+
+* **Registra righe filtrate**: la funzione prova a registrare tutte le righe nella visualizzazione corrente (rispettando i filtri applicati).Questa funzione è stata inserita anche in Registrazioni di produzione presente  negli ordini di produzione rilasciati.
+* **Registra batch**: la funzione prova a registrare tutte le righe presenti nel batch corrente (ignorando eventuali filtri applicati).
+* **Registra ordine produzione selezionato**: la funzione prova a registrare le righe presenti nel batch appartenenti allo stesso ordine di produzione della riga selezionata. 
+
+A differenza della funzione di registrazione standard queste funzioni non si fermano al primo errore ma proseguono nella registrazione lasciando nel giornale le righe non registrate a causa di errori. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000986-0/PostBatch1_ITA.png"><br>
+
+La factbox Verifica registrazione è una funzionalità standard non utilizzata dalle funzionalità di registrazione dell’app MMM. 
+
+E’ possibile attivare la scrittura di un log per avere i messaggi di errore delle righe che non sono state registrate. Nel setup Manufacturing è presente un campo denominato **Abilita log delle registrazioni di produzione**: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000986-0/PostBatch2_ITA.png"><br>
+
+Se il log è abilitato nei giornali di registrazioni output e consumi è possibile per ogni singola riga vedere il messaggio di errore nell’apposita factbox. Se la registrazione avviene tramite coda processi i log sono disponibili nella pagina **Registro messaggi di errore**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000986-0/PostBatch3_ITA.png"><br>
+
+La funzione **Registra batch** è pianificabile tramite code processi. Entrando ad esempio nella Registrazione consumi è possibile utilizzare l’azione **Schedula la registrazione consumi con coda processi (MMM)** ed effettuare la pianificazione di uno specifico batch. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000986-0/PostBatch4_ITA.png"><br>
+
+Nei giornali di registrazione consumi e output è presete inoltre una funzione denominata **Cancella tutte le righe (MMM)** per eliminare tutte le righe nella visualizzazione corrente. L’azione risulta molto utile quando è necessario cancellare giornali di registrazione con molte righe. 
