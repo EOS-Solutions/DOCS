@@ -46,6 +46,8 @@ You can perform the setup of the PMM app through the "Plant Maintenance Setup (P
 | Work Request Status On Cycle Completed                                  | Specifies the work request status to set when the maintenance cycle is completed.                   |
 | Use Work Request Description As Activity Description In Journal Posting | Specifies whether to use the work request description as activity description in post activity.     |
 | Allocate Cycle To Resource                                              | Specifies whether to allocate work request cycles to resources when refreshing the work request.    |
+| Delete Capacity Need On Cycle Completed                                              | Allows to automatically delete the required capacity at the end of the cycle of a work request.    |
+| Calculate Cap. Need On Release                                              | Allows to automatically calculate the capacity required when a work request is released.    |
 
 ## Power PMM
 
