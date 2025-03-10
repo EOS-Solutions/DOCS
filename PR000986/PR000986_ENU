@@ -1,0 +1,26 @@
+The app extends the Output and Consumption journals with a series of features:
+
+* **Post Filtered Lines**: The function tries to record all lines in the current view (respecting the applied filters). This function has also been included in Production journals that are present in released production orders.
+* **Post Batch**: The function tries to register all lines in the current batch (ignoring any filters applied).
+* **Post Selected Prod Order**: The function tries to register the lines in the batch that belong to the same production order as the selected line. 
+
+Unlike the standard posting function, the these functions do not stop at the first error, but continue to post, leaving the unposted lines due to errors in the journal.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000986-0/PostBatch1_ENU.png"><br>
+
+The **Journal Check factbox** is a standard feature not used by the registration features of the MMM app.
+
+It is possible to activate the writing of a log to get the error messages of the lines that have not been posted. In Manufacturing Setup there is a field called **Enable Production Posting Log** :
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000986-0/PostBatch2_ENU.png"><br>
+
+If log is enabled in the journals, output, and consumption, you can see the error message in the appropriate factbox for each individual line. If log is done via job queue, the logs are available on the **Error Message Register page**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000986-0/PostBatch3_ENU.png"><br>
+
+The **Post Batch** feature can be scheduled through job queues. For example, by entering the Consumption Journal, you can use the **Schedule Consumption Posting with Job Queue (MMM)** action and schedule a specific batch.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000986-0/PostBatch4_ENU.png"><br>
+
+In consumption and output journals there is a function called **Delete All Lines (MMM)** that allow to delete all lines in the current view. This action is very useful when you need to delete journals with many lines. 
