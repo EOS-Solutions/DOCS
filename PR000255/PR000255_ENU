@@ -9,3 +9,7 @@ The app integrates two different pieces of information:
 -   Sim. filter: option that allows you to determine which balances should be taken into consideration, G/L entries, sim. G/L entries or both
 
 <img width="750" src="https://docs-test.eos-solutions.it/Images/PR000255-0/App SGL Slide 37_Andrea Giordani.png"><br>
+
+It is also possible to include simulated entries in the data generated through the Analysis View Card:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000255-0/PR255_ENG.png"><br>
