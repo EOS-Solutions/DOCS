@@ -1,0 +1,17 @@
+The SGL app integrates the "Entry Type Filter" field in the Column Definitions page; the selectable values are:
+
+- Normal: all movements for the period are included in the column balance, except for those related to the opening/closure of the fiscal year;
+
+- Closure: only the closure entries for the fiscal year are included in the column balance;
+
+- Opening: only the opening entries for the fiscal year are included in the column balance;
+
+- All: all movements are included in the column balance.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000989-0/PR000989_EN.png"><br>
+
+**N.B.:**
+
+- To display the opening balance net of the opening entries in the balance sheet, the following setup must be configured: the "Net Change" option in the "Column Type" field and the "Opening" value in the "Entry Type Filter" field;
+
+- The "Entry Type Filter" field does not apply when the financial report is linked to an Analysis View.
