@@ -1,0 +1,17 @@
+L'app SGL integra il campo "Filtro movimento" nella pagina Definizioni di colonna; i valori selezionabili sono:
+
+- Normale: nel saldo di colonna sono inclusi tutti i movimenti del periodo ad eccezione di quelli di chiusura/apertura esercizio;
+
+- Chiusura: nel saldo di colonna sono inclusi i soli movimenti di chiusura esercizio;
+
+- Apertura: nel saldo di colonna sono inclusi i soli movimenti di apertura esercizio;
+
+- Tutti: nel saldo di colonna sono inclusi tutti i movimenti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000989-0/PR000989_IT.png"><br>
+
+**N.B.:**
+
+- Per visualizzare il Saldo di apertura al netto delle scritture di apertura dello Stato patrimoniale, occorre impostare il seguente setup: opzione "Saldo periodo" del campo "Tipo colonna" e valore "Apertura" del campo "Filtro tipo movimento";
+
+- Il campo "Filtro tipo movimento" non agisce nel caso in cui il report finanziario sia collegato ad una Visualizzazione analisi.
