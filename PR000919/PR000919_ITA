@@ -7,11 +7,13 @@ Nella tabella delle Regole c'è un campo chiamato «Tipo di Configurazione» che
 * **Variante**: il configuratore genera nuove varianti per lo stesso articolo.
  
 <br>
+
 **Il configuratore crea sempre nuovi articoli o varianti?**
 
 La funzione del configuratore è quella di generare nuovi codici articolo o varianti solo se la configurazione richiesta non esiste già. Quando la configurazione, ovvero l'insieme delle caratteristiche e dei valori delle caratteristiche (domande e risposte), corrisponde a un articolo esistente, il configuratore non crea nulla ma recupera l'articolo esistente. L'unicità di una configurazione è garantita da una chiave univoca associata a ogni articolo o variante creata.
 
 <br>
+
 **Come fa il configuratore a riconoscere se un articolo esiste già?**
 
 Ogni articolo o variante configurata è identificata da una chiave di ricerca univoca generata automaticamente alla fine della configurazione. La chiave contiene informazioni su tutte le caratteristiche "chiave", che sono indicate nella regola come "Disabilita funzionalità dalla chiave: No." È grazie a questo che il configuratore può determinare se generare una nuova configurazione o recuperarne una esistente.
@@ -19,6 +21,7 @@ Ci sono situazioni in cui potrebbe essere necessario rigenerare le chiavi, ad es
 Per fare ciò, basta aprire la pagina "Elementi configurati" dall'elemento configurabile, selezionare le righe e avviare la funzione "Riconfigura chiave".
 
 <br>
+
 **Che cosa è una caratteristica?**
 
 Le caratteristiche sono fondamentali per l'utilizzo del configuratore. Sono l'unità di partenza dell'intera struttura di configurazione e corrispondono concettualmente alle "domande" che devono essere poste durante la configurazione. Servono per identificare varianti o articoli creati dal configuratore. Possono essere di due tipi:
@@ -26,6 +29,7 @@ Le caratteristiche sono fondamentali per l'utilizzo del configuratore. Sono l'un
 * **Misura**: caratteristiche che accettano solo valori numerici a immissione libera.
 
 <br>
+
 **Che cosa è una regola di configurazione?**
 
 Una regola di configurazione è un **set di istruzioni** che deve essere applicato a un articolo durante la configurazione. Alla regola è associata alla modalità di codifica per il nuovo codice articolo e la sua descrizione, le "domande" (caratteristiche) da visualizzare durante la configurazione, le "risposte" predefinite (valori delle caratteristiche) e come le caratteristiche devono interagire se un valore deve condizionare automaticamente gli altri (relazioni delle regole). Per ogni regola è possibile definire:
@@ -39,6 +43,7 @@ Una regola di configurazione è un **set di istruzioni** che deve essere applica
    3. La compatibilità dei valori di una caratteristica in base ad altri valori scelti.
 
 <br>
+
 **È possibile utilizzare gli stessi valori caratteristica su caratteristiche diverse senza doverli duplicare?**
 
 Quando ci sono diverse caratteristiche con gli stessi valori, è possibile definire una caratteristica «Master» che memorizza i valori predefiniti e le altre caratteristiche possono essere definite come «Connesse» alla prima, in modo che possano utilizzare lo stesso set di valori.
@@ -46,12 +51,14 @@ Per sincronizzare i valori disponibili di una caratteristica connessa dal master
 L'allineamento può avere un impatto sulle prestazioni del sistema e dovrebbe essere pianificato quando il numero di caratteristiche e valori da sincronizzare è elevato.
 
 <br>
+
 **È possibile avere caratteristiche con valori di testo libero?**
 
 Nei casi in cui fosse necessario avere delle caratteristiche alfanumeriche ad inserimento libero è possibile utilizzare l’opzione «**Senza valori**» avendo prima impostato il «Tipo decodifica» come «Struttura».
 Questa opzione fa sì che durante la configurazione l’utente possa inserire **un valore libero**, non condizionato alla precedente associazione di valori.
 
 <br>
+
 **Quali sono le logiche da utilizzare per impostare la codifica dei nuovi articoli creati?**
 
 All'interno della tabella Rules, è necessario specificare il “Formato Codice” nel campo designato, indicando come si desidera codificare l'identificativo dell'articolo. Nel campo “Formato Descrizione”, è necessario immettere il formato desiderato per la codifica della descrizione dell'articolo. Le direttive da seguire sono le seguenti:
@@ -62,6 +69,7 @@ All'interno della tabella Rules, è necessario specificare il “Formato Codice�
 Inserendo il Nr. cifre codice o il Nr. di serie alla codifica dell'articolo definita nel Formato Codice viene aggiunto un numero progressivo.
 
 <br>
+
 **Cosa significa disabilitare una caratteristica dalla chiave?**
 
 Disabilitare una caratteristica dalla chiave significa assicurarsi che la caratteristica indicata non sia inclusa nella chiave dell'elemento configurato. Per fare un esempio pratico: supponiamo di avere tre caratteristiche numeriche:
@@ -85,11 +93,13 @@ Per questo motivo, è consigliabile disabilitare una caratteristica dalla chiave
 Per disabilitare una caratteristica chiave è necessario immettere le Regole, quindi nella Caratteristiche e impostare l'opzione Disabilita caratteristica chiave.
 
 <br>
+
 **È possibile nascondere alcune caratteristiche dalla configurazione?**
 
 Sì, è possibile. Per farlo, bisogna aprire le regole, cliccare su caratteristiche e selezionare l'opzione "Nasconfi Caratteristica in Configurazione".
 
 <br>
+
 **È possibile creare la compilazione automatica delle caratteristiche durante la configurazione?**
 
 Il modo principale per automatizzare la compilazione delle caratteristiche è creare relazioni. Per fare ciò, è necessario immettere regole e selezionare relazioni. Le relazioni possono essere di diversi tipi:
@@ -104,6 +114,7 @@ Il modo principale per automatizzare la compilazione delle caratteristiche è cr
 Un altro modo valido solo per l'articolo che si sta configurando è quello di preimpostare i valori direttamente sull'articolo neutro. È necessario entrare nell'articolo, cercare l'azione "Default carat. articolo" e inserire i valori predefiniti.
 
 <br>
+
 **Come rendere configurabile un articolo?**
 
 La sezione Configuratore nella scheda articolo viene utilizzata per abilitare un articolo per la gestione del configuratore. Il campo Tipo di configurazione indica il comportamento di un articolo nel modulo configuratore e può essere:
@@ -114,6 +125,7 @@ La sezione Configuratore nella scheda articolo viene utilizzata per abilitare un
 Nel campo Codice Regola si effettua l'associazione tra l'articolo e un insieme di istruzioni a cui deve attenersi durante la configurazione, innanzitutto l'insieme delle caratteristiche.
 
 <br>
+
 **Come configurare un articolo?**
 
 I punti da cui è possibile configurare un elemento sono:
@@ -129,11 +141,13 @@ Per configurare dai documenti **basta inserire il codice articolo neutro nel cam
 È possibile rientrare nella configurazione selezionando la funzione «Configurazione» oppure la scorciatoia **Ctrl+G**.
 
 <br>
+
 **È possibile mettere in pausa la configurazione senza perdere le informazioni inserite?**
 
 Quando la configurazione viene avviata da documenti di vendita e acquisto, è possibile mettere in pausa la configurazione di un articolo utilizzando l'opzione "Salva senza configurazione" tra le funzioni nel batch di configurazione. La configurazione si interrompe, consentendo all'utente di uscire, ma l'elenco delle caratteristiche viene salvato in una tabella specifica, offrendo l'opzione di riprendere la configurazione in un secondo momento.
 
 <br>
+
 **Non tutti gli utenti sono autorizzati a finalizzare la configurazione; è possibile applicare delle restrizioni?**
 La configurazione Lite è una modalità che impedisce agli utenti specificati di completare la configurazione. La modalità Lite può essere utilizzata solo quando la configurazione inizia da documenti di vendita e acquisto. In Configurazione utente, è possibile definire la modalità di configurazione a cui è soggetto l'utente nel campo "Modalità configuratore prodotto". Le opzioni sono:
 * **Vuoto**: l'utente può creare l'articolo configurato;
@@ -143,6 +157,7 @@ La configurazione Lite è una modalità che impedisce agli utenti specificati di
 Uscendo dalla modalità di configurazione Lite, l'articolo neutro rimane sulla riga del documento di origine e la configurazione rimane in sospeso.
 
 <br>
+
 **I prezzi della matrice funzionano solo con il tipo di caratteristica "Struttura" oppure è possibile fare prezzi della matrice con il tipo di caratteristica "Misura"?**
 
 Sì, è possibile definire il prezzo in base alle caratteristiche del tipo Misura. Il prezzo può essere definito per un valore di intervallo o tramite una formula.
@@ -154,6 +169,7 @@ Se il prezzo non è suggerito, è necessario controllare la seguente configurazi
 Il metodo di calcolo del prezzo è la logica standard del miglior prezzo di Business Central.
 
 <br>
+
 **È possibile che il prezzo configurato aggiorni il prezzo unitario sulla scheda articolo?**
 
 Si è possibile se il campo **Imposta il prezzo dell'articolo dalla configurazione** presente nel setup del configuratore è abilitato.
@@ -164,6 +180,7 @@ L'app consente in oltre la creazione di listini prezzi di vendita/acquisto solo 
 
 
 <br>
+
 **Come impostare una descrizione configurabile?**
 
 Puoi impostare una formula Descrizione nelle regole. Se abiliti "Usa Descrizione Articolo", il configuratore di prodotto inizia con la descrizione neutra dell'articolo.
@@ -171,6 +188,7 @@ Quindi in "Formato Descrizione" e "Formato Descrizione 2" puoi usare costante o 
 Se inserisci una caratteristica tra parentesi graffe {} significa che vuoi inserire la descrizione della caratteristica.
 
 <br>
+
 **È possibile configurare la traduzione della descrizione dell'articolo?**
 
 Il campo "Abilita Traduzioni Articolo" presente nel setup del configuratore di prodotto, consente di salvare in anagrafica articoli / varianti la descrizione configurata in lingua. La descrizione viene composta con le regole già previste dal configuratore e sfrutta le descrizioni in lingua presenti nelle caratteristiche e nei relativi valori.
@@ -179,11 +197,13 @@ In fase di configurazione vengono generate le descrizioni per tutte le lingue pr
 In alternativa per la stampa dei documenti abbiamo un'app "Product Configurator per Adv Document Reporting" (ma devi usare l'app Adv Document Reporting) e stampiamo le traduzioni nei documenti.
 
 <br>
+
 **È possibile importare le regole dei neutri?**
 
 Sì, lo è. Per consentire l'importazione della tabella delle regole neutre tramite pacchetto di configurazione, è stata creata una nuova tabella denominata: 18091294 "EOS028 CFG Neutral Rule Import". L'importazione diretta nella tabella delle regole neutre (18091268 "EOS028 CFG Neutral Rule") non è possibile perché il campo Codice chiave, presente nella chiave primaria, non può essere valorizzato esternamente a BC. Nell'impostazione del configuratore di prodotto, è stata inserita una funzione speciale per svuotare il contenuto della tabella 18091294 "EOS028 CFG Neutral Rule Import".
 
 <br>
+
 **È possibile riconfigurare una variante? Non vedo un modo per scegliere valori caratteristici diversi per una variante dopo che la variante è stata creata**
 
 Non è possibile riconfigurare una variante perché le caratteristiche scelte potrebbero influenzare le informazioni sulla variante dell'articolo.
@@ -192,11 +212,13 @@ L'azione di riconfigurazione ricalcola la descrizione, i prezzi, la distinta bas
 Se hai scelto una caratteristica sbagliata, devi creare una nuova variante dell'articolo configurata.
 
 <br>
+
 **Come utilizzare la formula all'interno di un BOM fantasma?**
 
 Questa funzionalità non è disponibile. Come soluzione alternativa è possibile creare l'articolo con lo stesso codice della BOM fantasma, assegnargli la BOM fantasma di produzione e la regola giusta per trasferire i valori delle caratteristiche dal prodotto finito. Nota che il configuratore creerà anche nuovi articoli/varianti, potresti impostare come Bloccato questo articolo configurabile "fittizio".
 
 <br>
+
 **Come funziona la “riconfigurazione BOM”?**
 
 Se il campo "Abilita riconfigurazione BOM" nel setup del configuratore è attivo e la BOM neutra o il routing vengono modificati, quelli configurati vengono aggiornati quando tale set di caratteristiche viene inserito in un documento o eseguendo manualmente l'azione "Riconfigura articoli/varianti" dalla pagina Chiavi Configurazione Articoli
