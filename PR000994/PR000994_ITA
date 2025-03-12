@@ -1,0 +1,19 @@
+Gli utenti abilitati all'utilizzo della Power App si devono inserire nella pagina **Utenti (PMM)**.
+L'utente deve essere prima inserito nelle seguenti tabelle:
+* **Dipendenti**. Dove viene specificato il badge utilizzato per accedere alla Power App.
+* **Risorse**. Il codice della risorsa è collegato al dipendente. In anagrafica risorse sono presnti i campi: Capacità, Efficenza, Unità di misura capacità e Nr. area di produzione utilizzati per il calcolo dei calendari, assenze.
+
+Per ogni utente, oltre all'abilitazione, è possibile definire quali sono le attività abilitate.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000994-0/User1_ITA.png"><br>
+
+Per ogni attività è possibile definire, oltre all’abilitazione, l’ordinamento e un eventuale filtro per limitare i dati visualizzati.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000994-0/User2_ITA.png"><br>
+
+Per l’attività Articolo, utilizzata ad esempio nella sezione Ricambi di una richiesta di lavoro, è possibile inoltre definire quali campi visualizzare nel Dettaglio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000994-0/User3_ITA.png"><br>
+
+<br>
+<br>
