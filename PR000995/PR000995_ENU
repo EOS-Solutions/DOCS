@@ -2,5 +2,9 @@ The page Activity Actions allows to enter a series of custom Actions for each of
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000995-0/Activity1_ENU.png"><br>
 
+In the activity actions, there is a field, called **Action Go To**, that allows to define the behavior of the power app after the operation has been performed. The allowed values in addition to the blank are **Home** and **List**. Among the functions it is also possible to define the Parameters that will be requested from the operator (see Lookup lists for parameters and fields).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000995-0/Activity2_ENU.png"><br>
+
 <br>
 <br>
