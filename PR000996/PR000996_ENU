@@ -1,0 +1,22 @@
+Through the lookup list values it is possible to define a series of parameters to be requested from the user in the activity actions:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000996-0/Lookup1_ENU.png"><br>
+
+Lookup list values can have 3 different source types: Fixed, Table, Custom. The Fixed type allows to create a parameter that takes a fixed number of values. In the example, a lookup list is defined with Fixed Source Type that can take the values A, B and C.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000996-0/Lookup2_ENU.png"><br>
+
+The Table type allows to create a parameter that takes the values allowed by a Business Central table. In the example, a lookup list is defined with Table Source Type that can take the values of the location table, on which a filter can be set. The dynamic values field is used for tables that need to be pre-filtered, such as bins to be pre-filtered with the location.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000996-0/Lookup3_ENU.png"><br>
+
+The lookup lists can be used within the Activity Actions to insert fields to be edited and then managed through custom code by hooking up to specific events. In the example, you can see the two lookup lists associated with the Machine activity:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000996-0/Lookup4_ENU.png"><br>
+
+The power app displays the activity action you have just entered among the actions. Allowing the insertion of values for the expected parameters.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000996-0/Lookup5_ENU.png"><br>
+
+<br>
+<br>
