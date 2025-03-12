@@ -1,0 +1,7 @@
+La pagina **Azioni Attività** permette di inserire per ognuna delle attività gestite nella Power App una serie di Azioni custom. Le azioni vengono poi visualizzate, nella Power App, nell’apposita sezione dell’attività. Vengono previsti in business central degli appositi eventi a cui agganciarsi per realizzare l’azione (tramite codice AL).
+Gestire le azioni sottoscrivendosi all’evento **OnExecuteActivityAction** nella codeunit  **18122625 EOS060 User Activity Mgmt.**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000995-0/Activity1_ITA.png"><br>
+
+<br>
+<br>
