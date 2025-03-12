@@ -3,5 +3,9 @@ Gestire le azioni sottoscrivendosi all’evento **OnExecuteActivityAction** ne
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000995-0/Activity1_ITA.png"><br>
 
+Nelle azioni attività è presente un campo, denominato **Proseguimento Azione**, che permette di definire il comportamento della power app dopo l’esecuzione dell’operazione. I valori ammessi oltre al vuoto sono **Home** e **Lista**. Fra le funzioni è possibile inoltre definire i Parametri che verranno richiesti all’operatore (vedi Liste lookup per parametri e campi).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000995-0/Activity2_ITA.png"><br>
+
 <br>
 <br>
