@@ -1,0 +1,6 @@
+The page Activity Actions allows to enter a series of custom Actions for each of the activities managed in the Power App. The actions are then displayed in the appropriate section of the activity in Power WMS. In Business Central, there are events that you can subscribe in order to create the feature (via AL code). Handle actions by subscribing to the **OnExecuteActivityAction** event in the **18122625 EOS060 User Activity Mgmt.** codeunit.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000995-0/Activity1_ENU.png"><br>
+
+<br>
+<br>
