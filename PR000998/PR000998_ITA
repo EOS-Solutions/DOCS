@@ -1,0 +1,12 @@
+Lo stesso report può essere utilizzato a fine anno per la rilevazione in contabilità generale al 31/12.
+<img width="500" src="https://docs-test.eos-solutions.it/Images/PR000987-0/WIP_20_ITA.png"><br>
+
+E stornare al 01/01: 
+
+<img width="500" src="https://docs-test.eos-solutions.it/Images/PR000987-0/WIP_21_ITA.png"><br>
+
+
+Dato che in COGE si vuole evitare di avere troppe scritture, è possibile lanciare il report con il flag "Comprimi": 
+<img width="500" src="https://docs-test.eos-solutions.it/Images/PR000998-0/WIP_22_ITA.png"><br>
+
+Con questo flag le scritture contabili generate sul batch verranno accorpate per conto coge. 
