@@ -1,0 +1,6 @@
+E' inoltre possibile calcolare il WIP e registrare direttamente in contabilità generale direttamente, senza passare dai batch del giornale. 
+Per farlo basta lanciare il report Registrazione movimenti WIP in C/G progetto: 
+
+<img width="500" src="https://docs-test.eos-solutions.it/Images/PR000999-0/WIP_23_ITA.png"><br>
+
+Questo report ricalca il funzionamento del report standard BC di calcolo del WIP. 
