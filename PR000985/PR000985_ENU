@@ -1,0 +1,13 @@
+Specifies how to recording WIP: 
+* *For the project:* total WIP costs and sales value are used to calculate WIP. 
+* *For project accounting entries:* accumulated values of WIP costs and sales are used to calculate WIP. 
+
+On the WBS rows, it is necessary to insert 2 informations:
+* The first is entered in the header as "WIP Method," which is automatically pre-filled but can be adjusted as needed. 
+* The second is managed by the "Total WIP" selector. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000985-0/WIP_5_ENU(1).png"><br>
+
+Total WIP can assume the following values: 
+* *Total:* To calculate all cost or revenue rows. 
+* *Exclude:* To exclude the row from the WIP calculation. 
