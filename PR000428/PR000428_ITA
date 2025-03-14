@@ -2,8 +2,8 @@ Con l’**obiettivo di utilizzare il configuratore anche da strumenti esterni** 
 
 Lo strumento è in uso presso alcune installazioni dove è stato utilizzato per l’integrazione con pagine web.
 
-E' disponibile una codeunit con un esempio per utilizzarla:
-[EX028.CFG](http://)
+E' disponibile una codeunit denominata CFG External Configuration.al con un esempio per utilizzarla:
+https://github.com/EOS-Solutions/Sample/tree/master/EX028.CFG
 
 **L'integrazione con un eventuale sito web deve essere sviluppato come custom.**
 
