@@ -1,0 +1,11 @@
+The same report can be used at the end of the year for the detection in general accounting at 31/12:
+<img width="500" src="https://docs-test.eos-solutions.it/Images/PR000987-0/WIP_20_ENU.png"><br>
+
+And reverse on 01/01:
+
+<img width="500" src="https://docs-test.eos-solutions.it/Images/PR000987-0/WIP_21_ENU.png"><br>
+
+Since you want to avoid having too many entries in G/L, you can launch the report with the ‘Compress’ flag: 
+<img width="500" src="https://docs-test.eos-solutions.it/Images/PR000998-0/WIP_22_ENU.png"><br>
+
+With this flag, the accounting entries generated on the batch will be merged per coge account. 
