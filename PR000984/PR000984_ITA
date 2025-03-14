@@ -1,0 +1,13 @@
+Altri 2 campi da settare sono il Metodo WIP e Metodo di registrazione WIP:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000984-0/WIP_3_ITA.png"><br>
+
+La codifica del metodo consente di indicare il momento temporale in cui riconoscere i costi e i ricavi. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000984-0/WIP_4_ITA(1).png"><br>
+
+**IMPORTNATE: l'app supporta solamente i 2 metodi cerchiati in arancione: "COMMESSA COMPLETATA" e "PERCCOMPL".**
+
+*Nota: l'ultima colonna distingue tra i metodi definiti dal sistema e quelli che possono essere personalizzati. Ovviamente, le righe con questo flag non sono modificabili.*
+
+Questo setup è standard, per informazioni: 
+https://learn.microsoft.com/en-us/dynamics365/business-central/projects-understanding-wip
