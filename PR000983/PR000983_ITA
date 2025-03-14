@@ -1,0 +1,10 @@
+L’attivazione del calcolo WIP avviene solo se sono state configurare le “categorie di registrazione di Progetto”, che andremo ad inserire nell’area generale del progetto. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000983-0/WIP_1_ITA.png"><br>
+
+**Categorie di registrazione progetti: **
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000983-0/WIP_2_ITA.png"><br>
+
+Questo setup è standard, potete trovare ulteriori informazioni su: 
+https://learn.microsoft.com/en-us/dynamics365/business-central/projects-how-setup-jobs?tabs=current-experience
