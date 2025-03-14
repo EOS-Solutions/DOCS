@@ -1,0 +1,6 @@
+It is also possible to calculate the WIP and record it directly in G/L, without going through the journal batches. 
+To do this, simply launch the Job Post WIP to G/L report: 
+
+<img width="500" src="https://docs-test.eos-solutions.it/Images/PR000999-0/WIP_23_ENU.png"><br>
+
+This report follows the operation of the standard BC report for calculating WIP. 
