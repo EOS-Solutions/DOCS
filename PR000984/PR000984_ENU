@@ -1,0 +1,15 @@
+Others important setup are WIP Method and WIP Posting Method:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000984-0/WIP_3 BIS_ENU.png"><br>
+
+The method encoding allows you to specify the timing for recognizing costs and revenues, giving you the flexibility to manage the two pieces of information differently. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000984-0/WIP_3_ENU(1).png"><br>
+
+**IMPORTANT:the app only supports the 2 methods circled in orange: ‘JOB COMPLETED’ and ‘PERCCOMPL’.**
+
+*Note: The last column distinguishes between system-defined methods and those that can be custom-defined. Obviously, the rows with this flag are not modifiable.*
+
+
+This is a standard setup, for more information: 
+https://learn.microsoft.com/en-us/dynamics365/business-central/projects-understanding-wip
