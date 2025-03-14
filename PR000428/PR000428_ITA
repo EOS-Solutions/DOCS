@@ -1,10 +1,11 @@
-Con lÂ**obiettivo di utilizzare il configuratore anche da strumenti esterni** Š stata creata la ®**configurazione esterna**¯, che **ne consente lÂuso ®via codice¯** attraverso un ID configurazione. In questo modo Š possibile aprire una configurazione, eseguire lÂinserimento delle caratteristiche ottenendo informazioni interattive sulle altre caratteristiche ®collegate¯, sui prezzi ecc. ecc. e poi eventualmente completare la configurazione creando articoli, DB Produzione cicli ecc. ecc.
+Con lâ€™**obiettivo di utilizzare il configuratore anche da strumenti esterni** Ã¨ stata creata la Â«**configurazione esterna**Â», che **ne consente lâ€™uso Â«via codiceÂ»** attraverso un ID configurazione. In questo modo Ã¨ possibile aprire una configurazione, eseguire lâ€™inserimento delle caratteristiche ottenendo informazioni interattive sulle altre caratteristiche Â«collegateÂ», sui prezzi ecc. ecc. e poi eventualmente completare la configurazione creando articoli, DB Produzione cicli ecc. ecc.
 
-Lo strumento Š in uso presso alcune installazioni dove Š stato utilizzato per lÂintegrazione con pagine web.
+Lo strumento Ã¨ in uso presso alcune installazioni dove Ã¨ stato utilizzato per lâ€™integrazione con pagine web.
+
+E' disponibile una codeunit con un esempio per utilizzarla:
+EX028.CFG/CFG External Configuration.al
 
 **L'integrazione con un eventuale sito web deve essere sviluppato come custom.**
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000428-0/External1.png"><br>
 
 <br>
 <br>
