@@ -1,0 +1,13 @@
+The activation of WIP calculation occurs only if 'Project Posting Categories' have been configured, which we will enter in the project's general area. 
+Entering the category will automatically populate the field at the WBS line level as well. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000983-0/WIP_1_enu.png"><br>
+
+
+**Project Posting Categories** 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000983-0/WIP_2_ENU.png"><br>
+
+
+This is a standard setup, for more information: 
+https://learn.microsoft.com/en-us/dynamics365/business-central/projects-how-setup-jobs?tabs=current-experience
