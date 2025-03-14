@@ -1,0 +1,18 @@
+L'applicazione **EOS WIP in Simulated GL for P365** offre soluzioni per il calcolo del Work in Progress (WIP) per competenza dei progetti all'interno della contabilità generale e della contabilità simulata. Questo vale per tutti i progetti che utilizzano Project 365 per l'Italia in Microsoft Dynamics 365 Business Central.  
+  
+
+**EOS WIP in Simulated GL for P365** offre la possibilità di gestire:  
+* Gestire le registrazioni contabili WIP in base ai costi e ai ricavi della WBS.  
+* Registrare il valore contabile di competenza dei progetti in contabilità generale e contabilità simulata 
+* Possibilità di calcolare i movimenti per singola riga della WBS o accorpate per conto G/L 
+
+<table>
+	<tr>
+		<td>1</td>
+		<td>Setup WIP</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Calcolo WIP</td>
+	</tr>
+
