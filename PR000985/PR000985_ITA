@@ -1,0 +1,12 @@
+Specifica la modalità di esecuzione della registrazione WIP. 
+* *Per progetto:* i costi WIP totali e il valore delle vendite vengono utilizzati per calcolare il WIP. 
+* *Per movimento contabile progetto:* i valori accumulati dei costi e delle vendite WIP vengono utilizzati per calcolare il WIP. 
+
+Sulle righe WBS è necessario compilare due informazioni, la prima inserita anche in testata “Metodo WIP”, che viene precompilata in automatico ma può essere variata in base all’esigenza.
+La seconda gestita dal selettore “WIP Totale”.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000985-0/WIP_5_ITA.png"><br>
+
+WIP totale può assumere il valore: 
+* *Totale* per calcolare tutte le righe di costo o ricavo, 
+* *Escluso* per escludere la riga dal calcolo WIP. 
