@@ -1,0 +1,28 @@
+It is possible to post the WIP in simulated accounting during the year, and in general accounting at the end of the year. 
+
+You can detect WIP in simulated accounting during the year, and in general accounting at the end of the year. 
+
+Firstly, it is always necessary to detect provisional WIP entries: by launching the provisional WIP report, the calculations are performed based on the selections set. 
+
+<img width="500" src="https://docs-test.eos-solutions.it/Images/PR000987-0/WIP_9_ENU.png"><br>
+
+The system will store the calculated WIP values in the Project WIP entries. 
+
+Once you have verified that the calculated amounts are correct, you can bring them into simulated accounting through the following report: 
+
+<img width="500" src="https://docs-test.eos-solutions.it/Images/PR000987-0/WIP_8_ENU.png"><br>
+
+For the purposes of correct recording of periodic skills in simulation, using the same report it is possible to reverse by enabling the “Reversal only” field. 
+<img width="500" src="https://docs-test.eos-solutions.it/Images/PR000997-0/WIP_18_ENU.png"><br>
+
+
+The “Reversal date” field allows you to indicate a different reversal date. 
+
+You can then proceed with the simulated detection of the following period, repeating the same steps. 
+
+
+The Project WIP G/C Entries will be periodically marked as reversed, since the system calculation logic is Year to date. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000987-0/WIP_19_ENU.png"><br>
+
+This report also allows you to write in compressed mode, by enabling the “Compress” flag. 
