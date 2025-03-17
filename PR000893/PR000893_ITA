@@ -1,0 +1,9 @@
+Dal menu **«Distinta anticipo fatture e factoring (FID)»** si accede alla pagina delle distinte provvisorie; qui sono visualizzate le distinte inserite e non ancora registrate.
+
+E' possibile creare una nuova distinta , tramite l'azione **«Nuovo»**.
+
+**Come prima azione è necessario selezionare il Tipo distinta.**
+
+In base al Tipo distinta (*«Factoring pro soluto», «Factoring pro solvendo», «Anticipo fatture»*) saranno visualizzati dinamicamente, sulla testata della distinta, i parametri da impostare.
+
+Il tipo distinta definirà **la rilevazione contabile che sarà effettuata alla registrazione della distinta.**
