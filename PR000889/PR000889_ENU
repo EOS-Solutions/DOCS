@@ -1,3 +1,6 @@
 For factoring (both pro soluto and pro solvendo), it is necessary to set up a specific payment method.
 
 A bill code must be associated with the payment method.
+
+
+The bill code must contain the "Final Bill No." and the "Bill Source Code"
