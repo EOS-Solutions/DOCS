@@ -1,0 +1,12 @@
+Similmente al factoring, anche per l'anticipo fattura, è necessario abilitare l'uso del C/C bancario impostando il campo **«Banca anticipo»**.
+
+Nella sezione **«Anticipo fatture»** della scheda C/C bancario, è possibile specificare le seguenti informazioni:
+
+* **«Tipo anticipo»**: definisce se utilizzare un Conto C/G o un C/ C bancario per le scritture contabili.
+* **«Nr conto anticipo fatture»**: definisce il Nr. conto C/G o il C/C bancario da utilizzare nelle scritture.
+* **«% anticipo»**: permette di impostare la percentuale di anticipo concordata.
+* **«Periodo data scadenza»**: permette di ricalcolare la data scadenza aggiungendo un periodo prefissato.
+
+#### Categoria registrazione effetti
+
+Per la gestione degli anticipi fatture <u>non andrà inserita</u> alcuna categoria registrazione effetti specifica per il C/C bancario utilizzato.
