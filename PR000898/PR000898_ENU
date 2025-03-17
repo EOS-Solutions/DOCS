@@ -1,0 +1,15 @@
+From the Issued pro soluto factoring bill, it is possible, upon maturity, to proceed with the refund through the specific **«Refund»** procedure.
+
+Once the movements have been selected through the line action **«Calculate amount to be refunded»**, it will be possible to enhance the field **«Factoring Amt. To Close (LCY)»**.
+
+By selecting the **«Refund»** action, the accounting movements will be created in the Batch indicated in setup.
+
+Through the **«General Journals»** action, it will be possible to access the provisional accounting entry.
+
+From the registration batch, it will be possible to verify / integrate the entries and post it.
+
+The posting of the refund movements will make the following general ledger entry:
+
+**Bank C\C (Factor)  @ Factoring Acc. No. (Factor Credits)**
+
+The posting of the refund entries will update the Closed Factoring Amount (LCY) on the lines of the bill.
