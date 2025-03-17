@@ -1,0 +1,12 @@
+Similar to factoring, also for the advance invoice, it is necessary to enable the use of the bank account by setting the **«Advance Bank»** field.
+
+In the **«Advance Invoice»** section of the Bank account tab, you can specify the following information:
+
+* **«Advance type»**: defines whether to use a G/L account or a bank account for accounting entries.
+* **«Adv. Inv. G/L Account / Bank Account No.»**: defines the G/L account number or the bank account to use in the entries.
+* **«Advance %»**: allows you to set the agreed advance percentage.
+* **«Postpone Due Date»**: allows you to recalculate the due date by adding a pre-established period.
+
+#### Bill posting group
+
+For the management of invoice advances, <u>no specific bill posting group should be entered</u> for the bank account used.
