@@ -7,6 +7,7 @@ In primo luogo, è sempre necessario rilevare le voci WIP provvisorie: lanciando
 Il sistema memorizzerà i valori WIP calcolati nelle voci WIP del progetto.  
 
 Una volta verificata la correttezza degli importi calcolati, è possibile riportarli nella contabilità simulata attraverso il seguente report: 
+
 <img width="500" src="https://docs-test.eos-solutions.it/Images/PR000987-0/WIP_8_ITA.png"><br>
 
 Ai fini della corretta registrazione delle competenze periodiche in simulazione, utilizzando lo stesso report è possibile effettuare l'inversione abilitando il campo “Solo inversione”. 
@@ -18,5 +19,6 @@ Il campo “Data di inversione” consente di indicare una data di inversione di
 Si può quindi procedere con la rilevazione simulata del periodo successivo, ripetendo gli stessi passaggi.  
 
 Le voci WIP G/C del progetto saranno periodicamente contrassegnate come stornate, poiché la logica di calcolo del sistema è Year to date. 
+
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000987-0/WIP_19_ITA.png"><br>
 
