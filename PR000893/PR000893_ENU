@@ -1,0 +1,9 @@
+From the **«Invoice discounting and Factoring Bills (FID)»** menu you can access the provisional list page; the bills entered and not yet posted are displayed here.
+
+It is possible to create a new bill, using the **«New»** action.
+
+**The first action is to select the Bill Type.**
+
+Based on the Bill type (*«Factoring pro soluto», «Factoring pro solvendo», «Advance»*), the parameters to be set will be dynamically displayed on the list header.
+
+The bill type will define **the accounting entry that will be made when the list is posted.**
