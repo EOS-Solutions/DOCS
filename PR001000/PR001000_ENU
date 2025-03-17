@@ -1,0 +1,3 @@
+For pro soluto factoring, in the bank account master data it is necessary to enable the bank via the **Factor bank** field.
+
+On the **«Bill posting group»** page relating to the bank account, the **«Factoring Acc. No.»** will be set, which is the account to be moved when the list is registered.
