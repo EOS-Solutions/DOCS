@@ -1,0 +1,15 @@
+Dalla distinta factoring pro soluto emessa è possibile, a scadenza, procedere alla liquidazione tramite la specifica procedura di **«Liquidazione»**.
+
+Selezionati i  movimenti tramite l'azione di riga **«Calcola importo da liquidare»** sarà possibile valorizzare il campo **«Importo da liquidare»**.
+
+Selezionando l'azione **«Liquidazione»** saranno creati i  movimenti contabili nel Batch indicato a setup.
+
+Tramite l'azione **«Registrazioni Coge»** sarà possibile accedere alla registrazione contabile provvisoria.
+
+Dal batch di registrazione sarà possibile verificare / integrare la scrittura e contabilizzarla.
+
+La registrazione dei movimenti di liquidazione effettuerà la seguente scrittura contabile:
+
+**Banca C\C (Factor)  @ Conto factoring (Crediti vs Factor)**
+
+La registrazione dei movimenti di liquidazione aggiornerà l'Importo liquidato sulle righe della distinta.
