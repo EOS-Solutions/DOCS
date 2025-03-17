@@ -1,0 +1,21 @@
+Nella pagina «Setup anticipo fatture e factoring" è possibile impostare i principali parametri per il funzionamento dell'APP.
+
+I principali campi da impostare sono i seguenti.
+
+**«Nr. distinta anticipo fatture e factoring»**:  definisce il numero di serie della distinta provvisoria.
+
+**«Nr. distinta anticipo fatture e factoring emessa»**: definisce il numero di serie della distinta emessa.
+
+### Sezione Factoring
+
+**«Cod. metodo di pagamento factoring»**: impostare il metodo pagamento che sarà utilizzato nella distinta di tipo factoring, attraverso il quale vengono recuperati i conti da utilizzare, il cod. origine, il nr effetto.
+
+Nel riquadro **«Liquidazione»** sono presenti i campi: **«Def. reg. liquidaz. Factoring», «Nome Batch liquidaz. Factoring», «Descrizione liquidaz. Factoring»** che permettono di definire il giornale di registrazione ed il batch usati dal sistema per le scritture di liquidazione e la descrizione che sarà proposta.
+
+Nel riquadro **«Incassi»** sono presenti i campi: **«Def. reg. incassi Factoring», «Nome batch incassi factoring», «Descrizione incassi Factoring»** che permettono di definire il giornale di registrazione ed il batch usati dal sistema per le scritture relative agli incassi factoring e la descrizione che sarà proposta.
+
+### Sezione Anticipo fatture
+
+**«Cod. origine anticipo fatture»**: permette di impostare il codice origine usato per la registrazione della distinta anticipi.
+
+Nel riquadro **«Chiusura anticipi»** sono presenti i campi: **«Def. reg. chiusura Anticipi», «Nome Batch chiusura Anticipi», «Descrizione chiusura anticipi fatture»**. Essi permettono di definire il giornale di registrazione ed il batch usati per le scritture di chiusura anticipi nonché la descrizione proposta.
