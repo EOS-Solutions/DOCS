@@ -1,0 +1,21 @@
+In the "Invoice Discounting and Factoring Setup" page, you can set the main parameters for the APP to work.
+
+The main fields to set are the following.
+
+**"Advance and Factoring No."**: defines the serial number of the provisional list.
+
+**"Issued Advance and Factoring No."**: defines the serial number of the issued list.
+
+### Factoring Section
+
+**"Factoring Payment Method Code"**: set the payment method that will be used in the factoring type list, through which the accounts to be used, the origin code, the Bill code are retrieved.
+
+In the **"Settlement"** box, there are the fields: **"Def. Template Factoring Settlement", "Def. Batch Factoring Settlement", "Factoring Settlement Description"** that allow you to define the journal and batch used by the system for the settlement entries and the description that will be proposed.
+
+In the **"Cash Receipts"** box, there are the fields: **"Def. Template Factoring Receipts", "Def. Batch Factoring Receipts", "Factoring Receipts Description"** that allow you to define the journal and batch used by the system for the cash receipts entries and the description that will be proposed.
+
+### Advance Invoice Section
+
+**"Advance Invoice Source code"**: allows you to set the source code used for recording the advance list.
+
+In the **"Closing Advance"** box, there are the fields: **"Def. Template Closing Advance", "Def. Batch Closing Advance", "Close Advance Invoice Description"**. They allow you to define the journal and batch used for the closing advance entries as well as the proposed description.
