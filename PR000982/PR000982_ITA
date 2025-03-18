@@ -6,13 +6,4 @@ L'applicazione **EOS WIP in Simulated GL for P365** offre soluzioni per il calco
 * Registrare il valore contabile di competenza dei progetti in contabilità generale e contabilità simulata 
 * Possibilità di calcolare i movimenti per singola riga della WBS o accorpate per conto G/L 
 
-<table>
-	<tr>
-		<td>1</td>
-		<td>Setup WIP</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>Calcolo WIP</td>
-	</tr>
-</table>
+
