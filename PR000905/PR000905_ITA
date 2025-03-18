@@ -1,3 +1,15 @@
 La liquidazione dell'anticipo si esegue selezionando le righe della distinta da liquidare e poi utilizzando l'azione **«Calcola importo da liquidare»**.
 
-Il sistema valorizzerà il campo **«Importo da liquidare»** applicando la **«% factoring»** presente nella testata della distinta (Importo da liquidare = Importo * % Factoring).
+Il sistema valorizzerà il campo **«Importo da liquidare (VL)»** applicando la **«% factoring»** presente nella testata della distinta (Importo da liquidare = Importo * % factoring).
+
+Selezionando l'azione **«Liquidazione»** saranno proposte le scritture contabili da verificare e contabilizzare.
+
+
+
+Le registrazioni saranno proposte nel batch di default cui si accede con l'azione **«Registrazioni Coge»**.
+
+L'avvenuta contabilizzazione sarà indicata dal campo **«Importo liquidato (VL)»** presente nelle righe della distinta.
+
+La registrazione della liquidazione effettuerà la seguente rilevazione contabile:
+
+**Banca C\C (Factor)  @ Conto factoring (Crediti vs Factor)**
