@@ -1,0 +1,5 @@
+The selection of documents to be advanced is usually done through the **«Select Invoices»** action.
+
+Only open invoices with a payment method other than Riba and not factored (Factor Code = blank) will be visible in the selection window.
+
+The filter for **«Our Bank Account No.»** will also be applied if set.
