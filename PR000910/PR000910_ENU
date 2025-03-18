@@ -3,3 +3,8 @@ The selection of documents to be advanced is usually done through the **«Select
 Only open invoices with a payment method other than Riba and not factored (Factor Code = blank) will be visible in the selection window.
 
 The filter for **«Our Bank Account No.»** will also be applied if set.
+
+In the case of an invoice discounting bill, the **«Advance %»** will be displayed on the lines and the **«Advance amount (LCY)»** and the **«Due date»** will be calculated (to be communicated to the bank), based on the parameters set in the header (proposed by the advance bank account entered in the bill header).
+
+These values can be modified by the user. 
+The **Advance amount (LCY)** will be the one detected during registration.
