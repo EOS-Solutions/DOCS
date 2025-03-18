@@ -7,14 +7,3 @@ This applies to all projects using Project 365 for Italy in Microsoft Dynamics 3
 * Manage the work brakedown structure (WBS) ledger entries based on WBS costs and revenues 
 * Posting accounting value of projects within the general ledger and simulation general ledger 
 * Possibility of calculating entries either per individual WBS line or merged by G/L account 
-
-<table>
-	<tr>
-		<td>1</td>
-		<td>WIP Setup</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>WIP Calculation</td>
-	</tr>
-</table>
