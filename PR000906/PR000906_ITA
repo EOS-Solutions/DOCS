@@ -1,0 +1,7 @@
+La rilevazione degli incassi si esegue selezionando le righe della distinta desiderate e, poi, scegliendo l'azione **«Incassi»**.
+
+L'incasso avviene sempre al valore nominale.
+
+Gli incassi saranno proposti nel batch di default cui si accede con l'azione **«Registrazioni Incassi»**.
+
+L'avvenuta contabilizzazione sarà indicata dal flag **«Incasso Registrato»** presente nelle righe della distinta.
