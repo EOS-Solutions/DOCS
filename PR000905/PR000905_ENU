@@ -1,0 +1,3 @@
+The advance payment is settled by selecting the lines of the list to be settled and then using the **«Calculate amount to be paid»** action.
+
+The system will fill in the **«Factoring Amt. to Close (LCY)»** field by applying the **«Factoring %»** present in the header of the list (Amount to close = Amount * Factoring %).
