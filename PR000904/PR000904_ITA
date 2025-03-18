@@ -1,0 +1,9 @@
+Il processo di gestione del factoring pro solvendo si articola nelle seguenti fasi :
+
+
+
+Dalla distinta emessa sono eseguibili direttamente le seguenti procedure:
+
+1. Liquidazione anticipo (azione **«Liquidazione»**)
+2. Registrazione incassi (azione **«Registrazione incassi»**)
+3. Liquidazione residuo (eseguibile dalla stessa azione **«Liquidazione»**)
