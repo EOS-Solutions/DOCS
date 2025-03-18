@@ -1,3 +1,12 @@
 The advance payment is settled by selecting the lines of the list to be settled and then using the **«Calculate amount to be paid»** action.
 
 The system will fill in the **«Factoring Amt. to Close (LCY)»** field by applying the **«Factoring %»** present in the header of the list (Amount to close = Amount * Factoring %).
+
+
+The posting lines will be proposed in the default batch that is accessed with the **«General Journals»** action.
+
+The posting will be indicated by the **«Closed Factoring Amount (LCY)»** field present in the lines of the bill.
+
+The settlement registration will make the following accounting entry:
+
+**Bank C\C (Factor)  @ Factoring account no. (Factor Credits)**
