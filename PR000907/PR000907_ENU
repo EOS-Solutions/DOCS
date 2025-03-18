@@ -1,0 +1,5 @@
+The settlement of the remaining amount is performed with the same methods as the advance settlement.
+
+The lines of the bill to be settled will be selected and then the **«Calculate amount to be paid»** action will be chosen.
+
+The system will fill in the **«Factoring Amt. To Close (LCY)»** field by calculating the residual amount still to be liquidated according to the following formula: *Factoring Amt. To Close (LCY) = Amount (LCY) - Closed Factoring Amount (LCY)*.
