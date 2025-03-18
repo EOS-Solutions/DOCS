@@ -1,0 +1,4 @@
+From the issued invoice discount bill it is possible to:
+* Print the communication to the bank of the advances to be credited.
+* Print the communication of the refunds to be debited.
+* Produce a zip file with the XML files of the invoices contained in the bill.
