@@ -1,0 +1,7 @@
+Con la registrazione la distinta viene emessa e archiviata nell'archivio **«Distinta anticipo fatture e factoring emessa»**.
+
+La registrazione della distinta anticipi effettuerà la seguente rilevazione contabile:
+
+**Banca C\C Anticipi @ Anticipo fatture**
+
+Non sarà movimentato il partitario cliente. Le fatture anticipate, quindi, non saranno saldate con la registrazione della distinta.
