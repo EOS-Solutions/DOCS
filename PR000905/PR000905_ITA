@@ -1,0 +1,3 @@
+La liquidazione dell'anticipo si esegue selezionando le righe della distinta da liquidare e poi utilizzando l'azione **«Calcola importo da liquidare»**.
+
+Il sistema valorizzerà il campo **«Importo da liquidare»** applicando la **«% factoring»** presente nella testata della distinta (Importo da liquidare = Importo * % Factoring).
