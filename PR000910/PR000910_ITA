@@ -1,0 +1,4 @@
+La selezione dei documenti da anticipare viene effettuata, solitamente, tramite l'azione **«Seleziona fatture»**.
+
+Saranno visibili, nella finestra di selezione, esclusivamente le fatture aperte, con metodo di pagamento diverso da Riba e non fattorizzate (Cod. Factor = blank). 
+Sarà, inoltre, applicato il filtro per **«Banca di canalizzazione»** se impostato.
