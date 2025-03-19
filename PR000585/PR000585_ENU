@@ -1,3 +1,7 @@
 Through "Verify AdE validity" it is possible to reach the appropriate web page of the Agenzia delle Entrate website to check whether the declaration has been properly submitted or not:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000585-0/12VatManagement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000585-0/12VatManagement-en.png"><br>
+
+The correct functioning of the opened web page may vary from browser to browser, in case of malfunction:
+1. try again by clicking the button again
+2. on the same browser first open [this page](https://telematici.agenziaentrate.gov.it/VerIntent/VerificaIntent.do?evento=carica) and then click the button again
