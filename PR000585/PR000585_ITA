@@ -1,3 +1,8 @@
-Tramite "Verificare validit… AdE" Š possibile raggiungere l'apposita pagina web del sito dellÂAgenzia delle Entrate per controllare se la dichiarazione sia stata presentata o meno:
+Tramite "Verificare validitÃ  AdE" Ã¨ possibile raggiungere l'apposita pagina web del sito dellâ€™Agenzia delle Entrate per controllare se la dichiarazione sia stata presentata o meno:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000585-0/12VatManagement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000585-0/12VatManagement.png"><br>
+
+Il corretto funzionamento della pagina web aperta puÃ² variare da browser a browser, in caso di malfunzionamento:
+1. riprovare cliccando di nuovo il bottone
+2. sullo stesso browser aprire prima [questa pagina](https://telematici.agenziaentrate.gov.it/VerIntent/VerificaIntent.do?evento=carica) e quindi ricliccare il bottone
+ 
