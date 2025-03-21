@@ -1,9 +1,10 @@
-La app Extended Bank Reconciliation (EBR) di Eos Solutions **integra le funzionalità standard già presenti in Business Central aggiungendo ulteriori funzionalità all’interno del processo già previsto**:
+La app Extended Bank Reconciliation (EBR) di Eos Solutions **integra le funzionalità  di rendicontazione bancaria presenti in Business Central**.
 
-* Importazione flussi di rendicontazione secondo lo standard CBI e SEPA con gestione dell’intero set informativo della transazione contenuto nel flusso.
+In particolare sono state previste le seguenti funzioni.
+* Importazione dei flussi di rendicontazione, secondo lo standard CBI e SEPA, con gestione dell’intero set informativo della transazione contenuto nel flusso.
 * Gestione «multibanca» (è possibile importare i rendiconti di più banche con un unico file).
 * Controlli di congruenza dati avanzati (controllo Codice SIA, di transazione duplicata, di file già acquisito, etc.).
-* Gestione causali CBI integrate con la funzione di collegamento automatico, con proposta automatica della contropartita.
+* Gestione causali CBI integrate con la funzione di collegamento automatico con proposta automatica della contropartita.
 * Funzioni avanzate di riconciliazione automatica E/C.
 
 
@@ -11,9 +12,6 @@ Premere ALT + Q e digitare "**EBR**" per vedere un elenco delle funzionalità co
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000023-0/EBR_ITA_Search.jpg"><br>
 
-{{% alert title="IMPORTANT" color="warning" %}}
-l’installazione dell’App EBR presuppone che:
-* Il flusso importato sia unico e valido per tutte le banche della singola società
-* Il flusso importato sia unico e valido per tutte le società presenti nel DB
-
+{{% alert title="IMPORTANTE" color="warning" %}}
+l’installazione dell’App EBR presuppone che il flusso importato sia unico per tutte le banche della  società.
 {{% /alert %}}
