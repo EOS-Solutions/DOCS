@@ -1,8 +1,10 @@
+Once all transactions in the reconciliation page have been linked, it is possible to proceed with posting.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000705-0/EBR_ENU_Posting_00.jpg"><br>
+
 * It is possible to post the statement only if all the movements have been "linked"
 
-* For each bank transaction, the system carries out a double-entry posting with the recognized account as a counterpart and assigning a specific Document No. defined in the "Posted Reconc. Ledger Entry Nos." field of the bank account.
-
-(Unlike the standard functionality that assigns the same document number to the entire statement even if the transactions have different dates).
+* For each bank transaction, the system carries out a double-entry posting with the recognized account as a counterpart and assigning a specific Document No. defined in the "Posted Reconc. Ledger Entry Nos." field of the bank account. (Unlike the standard functionality that assigns the same document number to the entire statement even if the transactions have different dates).
 
 * If the movement is combined with an already accounted bank movement, the system does not carry out further transactions, but "links" the movement.
 
@@ -11,11 +13,10 @@
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000705-0/EBR_Posting1_ENU.jpg"><br>
 
-On bank accountancy movements
-
-* The value date is visible (1)
-* Each movement reports the number of the statement from which it originated (2)
-* The single transaction is always referenced in the "External document number" (3)
+On bank accountancy movements:
+* the Value Date is visible (1):
+* each movement reports the number of the statement from which it originated (2):
+* the single transaction is always referenced in the "External document number" (3).
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000705-0/EBR_Posting2_ENU.jpg"><br>
 
