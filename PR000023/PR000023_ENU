@@ -12,8 +12,5 @@ Press ALT + Q and digit "**EBR**" for a list of the features involved:
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000023-0/EBR_ENU_Search.jpg"><br>
 
 {{% alert title="IMPORTANT" color="warning" %}}
-It is assumed that:
-* the imported flow is unique and valid for all the banks of the single company
-* the imported flow is unique and valid for all companies in the DB
-
+It is assumed that the imported flow is unique and valid for all the banks of the single company.
 {{% /alert %}}
