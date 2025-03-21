@@ -7,9 +7,9 @@ The page "Payment Reconciliation Journal" contains various information (includin
 In the reporting form, the movements will be recognized through the automatic or manual connection procedure.
 
 * The standard linking procedure has been modified to manage linking by CBI reason
-* A new procedure "Apply Automatically" has been integrated, which can be performed on record sets (which is not possible with the standard procedure that always recalculates all links in the report)
+* A new procedure "Apply Automatically (EOS)" has been integrated, which can be performed on record sets (which is not possible with the standard procedure that always recalculates all links in the report)
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000704-0/EBR_Transaction3_ENU.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000704-0/EBR_ENU_Transaction3.jpg"><br>
 
 The main types of operations that can be managed are the following:
 
