@@ -1,24 +1,27 @@
-Nel "Setup rendicontazione C/C bancari" Š possibile impostare:
+Nel "Setup rendicontazione C/C bancari" Ã¨ possibile impostare:
 
 1. La definizione scambio dati da utilizzare (impostata precedentemente).
-1. I codici SIA delle banche per le quali abilitare lÂacquisizione del rendiconto.
-1. Il numero serie che verr… assegnato ai prospetti rendicontazione.  
+1. I codici SIA delle banche per le quali abilitare lâ€™acquisizione del rendiconto.
+1. Il numero serie che verrÃ  assegnato ai prospetti rendicontazione.  
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000698-0/EBR_BankAccReconSetup_ITA.jpg"><br>
 
 ### Scheda C/C bancari 
 
-Sulla scheda C/C Bancario Š necessario definire:
+Sulla scheda C/C Bancario Ã¨ necessario definire:
 
-1. Il numero serie da utilizzare nella registrazione dei prospetti di rendicontazione (campo ®Nr. movimenti riconc. Registrate¯).
-1. Il numero da assegnare agli estratti conto (campo ®Nr ultimo E/C¯).
+1. Il numero serie da utilizzare nella registrazione dei prospetti di rendicontazione (campo Â«Nr. registrazione transazioni bancarieÂ»).
+1. Il numero da assegnare agli estratti conto (campo Â«Nr. ultimo E/CÂ»).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000698-0/EBR_ITA_Bank_AccCard_01.jpg"><br>
+
 
 {{% alert title="NOTE" color="warning" %}}
-* il "Formato importazione rendiconto bancario" non deve essere impostato in quanto definito nel "Setup rendicontazione C/C bancari".  
+* il "Formato importazione rendiconto bancario" non deve essere impostato in quanto definito nel "Setup rendicontazione C/C bancari (EBR)".  
 * Il campo "Nr. ultimo rendiconto pagamenti" viene alimentato automaticamente dal sistema e non deve essere valorizzato.
 
 {{% /alert %}}
 
-Su ciascuna Scheda C/C bancario Š possibile impostare i parametri di tolleranza utilizzati dalla funzione di collegamento pagamenti. La sezione "Corrispondenza pagamento" non Š, invece, mai utilizzata.  
+Su ciascuna Scheda C/C bancario Ã¨ possibile impostare i parametri di tolleranza utilizzati dalla funzione di collegamento pagamenti. La sezione "Corrispondenza pagamento" non Ã¨, invece, mai utilizzata.  
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000698-0/EBR_BankAccCard_ITA.jpg"><br>
