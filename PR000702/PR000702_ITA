@@ -1,11 +1,11 @@
-EÂ possibile importare i file di rendicontazione dalla pagina "Scambio dati C/C bancari" tramite la funzione "Importa file" (1).  
+Eâ€™ possibile importare i file di rendicontazione dalla pagina "Scambio dati C/C bancari" tramite la funzione "Importa file".  
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000702-0/EBR_FileImport_ITA.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000702-0/EBR_ITA_FileImport.jpg"><br>
 
 Il sistema effettua un controllo di congruenza, verificando che:
 
 * il file provenga da un gruppo bancario abilitato (tramite codice SIA)
-* il file non sia stato gi… importato
+* il file non sia stato giÃ  importato
 * la banca sia presente e correttamente impostata in anagrafica
 
- EÂ presente una funzione di Log che espone gli eventuali errori di importazione e creazione del rendiconto bancario.  
+ Eâ€™ presente una funzione di Log che espone gli eventuali errori di importazione e creazione del rendiconto bancario.  
