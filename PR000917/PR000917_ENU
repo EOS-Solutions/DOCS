@@ -1,0 +1,19 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000917-0/Screenshot 2024-11-19 175241.png"><br>
+
+#### Setup Procedure
+**Control Management**:
+   - Access the "App Runtime Check (EAL)" page.
+   - Compatible APPs will appear in the setup page list where the control can be enabled.
+   - Select the desired APP.
+   - Enable (or disable) the control for the specific APP using the "Enable Runtime Check" and "Disable Runtime Check" actions.
+   - The first time the control is activated, all external calls of the APP will be blocked in test environments. To activate the control but unblock calls in this environment, click "Unlock".
+   - Whenever an environment (or company) is cloned, it is possible to manually unblock calls for that specific test environment/company using the "Unblock" action.
+ 
+{{% alert title="N.B." color="warning" %}}
+- In **on-premises** environments, identification is done through the **database name.**
+- In **SaaS** environments, identification is facilitated by access to the **Tenant ID, and the environment name and type.**
+{{% /alert %}}
+
+#### Setup Cleanup
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000917-0/Screenshot 2024-11-19 175327.png"><br>
+It is possible to delete the setup for all uninstalled APPs that are no longer needed to keep the environment clean and organized.
