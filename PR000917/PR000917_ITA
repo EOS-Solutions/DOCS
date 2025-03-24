@@ -1,0 +1,22 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000917-0/Screenshot 2024-11-19 175241.png"><br>
+
+#### Procedura di Setup
+**Gestione del Controllo**:
+   - Accedere alla page "Setup Controllo Accesso App (EAL)".
+   - Le APP compatibili appariranno nell'elenco della pagina di setup dove è possibile abilitare il controllo.
+   - Selezionare l'APP desiderata.
+   - Attivare (o disattivare) il controllo per l'APP specifica tramite le action "Abilita Controllo Accesso" e "Disabilita Controllo Accesso".
+   - La prima volta che si attiva il controllo, tutte le chiamate esterne dell'APP saranno bloccate in ambienti di test. Per attivare il controllo, ma sbloccare le chiamate su questo ambiente, cliccare su "Sblocca".
+   - Ogni qualvolta un environment (o company) viene clonato, è possibile sbloccare manualmente le chiamate per quel specifico ambiente/company di "test" tramite l'apposita action "Sblocca".
+ 
+     
+
+{{% alert title="N.B." color="warning" %}}
+- In ambienti **on-premises**, l'identificazione avviene tramite il **nome del database.**
+- In ambienti **SaaS**, l'identificazione è facilitata dall'accesso al **Tenant ID, e al nome e tipo dell'ambiente.**
+{{% /alert %}}
+
+
+#### Pulizia del Setup
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000917-0/Screenshot 2024-11-19 175327.png"><br>
+È possibile cancellare il setup per tutte le APP non installate, e che non si desidera più gestire, per mantenere l'ambiente pulito e ordinato.
