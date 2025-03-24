@@ -1,6 +1,6 @@
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000656-0/4EDI_en.jpg"><br>
 
-Under **EDI Groups**, the groups for which the EDI system is to be activated must be defined. A ÁgroupÂ is a logical grouping, to which a contract corresponds. Thus, it may be a single customer or a group (thus including several companies, e.g. a chain of supermarkets).
+Under **EDI Groups**, the groups for which the EDI system is to be activated must be defined. A â€˜groupâ€™ is a logical grouping, to which a contract corresponds. Thus, it may be a single customer or a group (thus including several companies, e.g. a chain of supermarkets).
 
 - **Code**:
   Free field in which to write a number or an abbreviation identifying the customer
@@ -17,16 +17,16 @@ Under **EDI Groups**, the groups for which the EDI system is to be activated mus
 - **EDI-SUPP Out**.
   This is the field that identifies the sender. If the fields are not filled in, the system takes by default what has been entered in company information
   - **VAT**: Corresponds to the VAT field in company information
-  - **ILN (Geographic Identifier)**: Corresponds to the ÁEDI IdentifierÂ field of the company information
-  - **Fixed Company Information**: Corresponds to the ÁID-EDI-MITT1Â field of the Company Information
+  - **ILN (Geographic Identifier)**: Corresponds to the â€˜EDI Identifierâ€™ field of the company information
+  - **Fixed Company Information**: Corresponds to the â€˜ID-EDI-MITT1â€™ field of the Company Information
 - **EDI-SEND Out**.
   As above, but related to the recipient
 - **EDI-CODFATT Out**.
   This is the field that identifies the customer for billing purposes
 	- **VAT**: VAT NUMBER
-	- **ILN 14**: Corresponds to the ÁEDI IdentifierÂ field of the customer card
-	- **ILN 91**: Corresponds to the ÁEDI IdentifierÂ field of the customer card
-	- **ILN 92**: Corresponds to the ÁEDI IdentifierÂ field of the customer card
+	- **ILN 14**: Corresponds to the â€˜EDI Identifierâ€™ field of the customer card
+	- **ILN 91**: Corresponds to the â€˜EDI Identifierâ€™ field of the customer card
+	- **ILN 92**: Corresponds to the â€˜EDI Identifierâ€™ field of the customer card
 - **EDI-DELIV Out**:
   As above, but related to the delivery address
 - **DET Quantity Out**:
