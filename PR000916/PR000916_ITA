@@ -1,0 +1,32 @@
+### Controllo Accesso APP
+
+
+Il **Controllo Accesso APP** è una nuova funzionalità nella EOS Administration Library. Questa feature permette di disabilitare chiamate ad API, web service, database e qualsiasi tipo di risorsa esterna a livello di singola applicazione (APP). L'obiettivo principale è prevenire chiamate accidentali a servizi esterni configurati sull'ambiente di produzione quando si lavora in ambienti copiati/clonati dall'ambiente di produzione.
+
+#### Funzionalità Principali
+
+<table>
+	<tr>
+		<td><b>Disabilitazione delle Chiamate Esterne</td>
+		<td>Blocca le chiamate a servizi esterni quando un ambiente di produzione viene copiato in un secondo ambiente.</td>
+	</tr>
+	<tr>
+		<td><b>Configurazione per Singola APP</td>
+		<td> Ogni APP deve essere configurata individualmente per supportare questa funzionalità.</td>
+	</tr>
+	<tr>
+		<td><b>Supporto per copia società</td>
+		<td>L'APP che utilizzerà questa feature può decidere di effettuare il controllo anche per il clone della singola company del database.</td>
+		</tr>
+		<tr>
+		<td><b>Blocco Automatico</td>
+		<td>Il blocco delle chiamate esterne avviene automaticamente quando viene rilevato un cambio di ambiente (es. da produzione a test), e viene effettuato il primo login di sessione successivo al cambio</td>
+	</tr>
+</table>
+
+#### Esempio di Implementazione
+Un esempio di implementazione è fornito come parte della documentazione di rilascio nella sezione **[Samples di EOS GitHub](https://github.com/EOS-Solutions/Sample/tree/master/EX004.EosAdminLib/TestEnvironmentKey)**
+
+Questo esempio mostrerà come attivare il controllo per una APP personalizzata, sottoscrivendosi ad un evento e dichiarandosi compatibile.
+
+
