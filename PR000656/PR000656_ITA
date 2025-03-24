@@ -1,35 +1,35 @@
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000656-0/4EDI_it.jpg"><br>
 
-In Gruppi EDI vanno definiti i gruppi per i quali si vuole attivare il sistema EDI. Un "gruppo" ä un raggruppamento logico, cui corrisponde un contratto. Quindi puï trattarsi di un singolo cliente o un gruppo (che comprende quindi varie societÖ, ad es. una catena di supermercati).
+In Gruppi EDI vanno definiti i gruppi per i quali si vuole attivare il sistema EDI. Un "gruppo" √® un raggruppamento logico, cui corrisponde un contratto. Quindi pu√≤ trattarsi di un singolo cliente o un gruppo (che comprende quindi varie societ√†, ad es. una catena di supermercati).
 
 - **Codice**:
   Campo libero in cui scrivere un numero o una sigla che identifica il cliente
 - **Descrizione**
-  Campo libero in cui ä possibile mettere una descrizione
+  Campo libero in cui √® possibile mettere una descrizione
 - **Nome partner**
-  Nome dell'intermediario che effettua il servizio di messaggistica (es. Euritmo, HoGast). Questo ä un campo facoltativo.
+  Nome dell'intermediario che effettua il servizio di messaggistica (es. Euritmo, HoGast). Questo √® un campo facoltativo.
 - **Abilita fatture**
   Il flag abilita l'invio di fatture al cliente
 - **Abilita note credito**:
   Il flag abilita l'invio di note di credito al cliente
 - **Formato Nr. Doc.**:
-  L'intermediario ha un suo formato standard, ma si puï scegliere se tenerlo o modificarlo (da numerico ad alfanumerico o viceversa)
+  L'intermediario ha un suo formato standard, ma si pu√≤ scegliere se tenerlo o modificarlo (da numerico ad alfanumerico o viceversa)
 - **EDI-SUPP Out**
-  ﬂ il campo che identifica il mittente. Se i campi non vengono compilati, il sistema prende di default ciï che ä stato inserito in informazioni societÖ
-  - **IVA**: Corrisponde al campo P.IVA delle informazioni societÖ
-  - **ILN (identificatore geografico)**: Corrisponde al campo "Identificatore EDI" delle Informazioni societÖ
-  - **Informazioni aziendali fisse**: Corrisponde al campo √ID-EDI-MITT1ƒ delle Informazioni societÖ.
+  √à il campo che identifica il mittente. Se i campi non vengono compilati, il sistema prende di default ci√≤ che √® stato inserito in informazioni societ√†
+  - **IVA**: Corrisponde al campo P.IVA delle informazioni societ√†
+  - **ILN (identificatore geografico)**: Corrisponde al campo "Identificatore EDI" delle Informazioni societ√†
+  - **Informazioni aziendali fisse**: Corrisponde al campo ‚ÄúID-EDI-MITT1‚Äù delle Informazioni societ√†.
 - **EDI-SEND Out**
-  Come sopra, perï riferito al destinatario
+  Come sopra, per√≤ riferito al destinatario
 - **EDI-CODFATT Out**
-  ﬂ il campo che identifica il cliente per la fatturazione
+  √à il campo che identifica il cliente per la fatturazione
 	- **VAT**: P. IVA
 	- **ILN 14**: Corrisponde al campo "Identificatore EDI" della scheda cliente
 	- **ILN 91**: Corrisponde al campo "Identificatore EDI" della scheda cliente
 	- **ILN 92**: Corrisponde al campo "Identificatore EDI" della scheda cliente
 - **EDI-DELIV Out**:
-  Come sopra, perï relativo all'indirizzo di consegna
-- **DET QuantitÖ in uscita**:
-  Indica cosa viene inviato come quantitÖ nelle righe (Misto, Solo KG, Pezzi, Colli)  
+  Come sopra, per√≤ relativo all'indirizzo di consegna
+- **DET Quantit√† in uscita**:
+  Indica cosa viene inviato come quantit√† nelle righe (Misto, Solo KG, Pezzi, Colli)  
 - **Importo Riga in Uscita**:
   Indica cosa viene inviato come importo nelle righe (Lordo: senza sconti, Netto: con sconti detratti)
