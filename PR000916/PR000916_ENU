@@ -1,0 +1,29 @@
+### APP Runtime Check
+
+The **APP Runtime Check** is a new feature in the EOS Administration Library. This feature allows disabling calls to APIs, web services, databases, and any type of external resource at the level of a single application (APP). The main goal is to prevent accidental calls to external services configured in the production environment when working in environments copied/cloned from the production environment.
+
+#### Main Features
+
+<table>
+	<tr>
+		<td><b>Disabling External Calls</b></td>
+		<td>Blocks calls to external services when a production environment is copied to another environment.</td>
+	</tr>
+	<tr>
+		<td><b>Configuration for Single APP</b></td>
+		<td>Each APP must be individually configured to support this feature.</td>
+	</tr>
+	<tr>
+		<td><b>Support for Company Copy</b></td>
+		<td>The APP using this feature can choose to perform the control even for the clone of a single company in the database.</td>
+	</tr>
+	<tr>
+		<td><b>Automatic Blocking</b></td>
+		<td>The blocking of external calls occurs automatically when an environment change is detected (e.g., from production to test), and the first login session after the change is performed.</td>
+	</tr>
+</table>
+
+#### Implementation Example
+An implementation example is provided as part of the release documentation in the **[EOS GitHub Samples](https://github.com/EOS-Solutions/Sample/tree/master/EX004.EosAdminLib/TestEnvironmentKey)** section.
+
+This example will show how to activate the control for a custom APP by subscribing to an event and declaring compatibility.
