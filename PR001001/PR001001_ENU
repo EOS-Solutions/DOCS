@@ -1,0 +1,1 @@
+EOS Administration Library is the base layer of all EOS Apps containing common functionality and utilities, like subscription management, FunctionAPI access, service configurations, FileSystem access and much more.
