@@ -1,5 +1,7 @@
 Similar to factoring, also for the advance invoice, it is necessary to enable the use of the bank account by setting the **«Advance Bank»** field.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000892-0/FID_ENU_10_Setup Banca anticipo.png"><br>
+
 In the **«Advance Invoice»** section of the Bank account tab, you can specify the following information:
 
 * **«Advance type»**: defines whether to use a G/L account or a bank account for accounting entries.
@@ -7,6 +9,8 @@ In the **«Advance Invoice»** section of the Bank account tab, you can specify 
 * **«Advance %»**: allows you to set the agreed advance percentage.
 * **«Postpone Due Date»**: allows you to recalculate the due date by adding a pre-established period.
 
-#### Bill posting group
+### Bill posting group
 
 For the management of invoice advances, <u>no specific bill posting group should be entered</u> for the bank account used.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000892-0/FID_ENU_11_Setup anticipi cat effetti.png"><br>
