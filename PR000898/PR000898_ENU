@@ -2,14 +2,25 @@ From the Issued pro soluto factoring bill, it is possible, upon maturity, to pro
 
 Once the movements have been selected through the line action **«Calculate amount to be refunded»**, it will be possible to enhance the field **«Factoring Amt. To Close (LCY)»**.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000898-0/FID_ENU_18_Factoring prosoluto liquid.png"><br>
+
 By selecting the **«Refund»** action, the accounting movements will be created in the Batch indicated in setup.
 
 Through the **«General Journals»** action, it will be possible to access the provisional accounting entry.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000898-0/FID_ENU_19_Factoring prosoluto liquid02.png"><br>
+
 From the registration batch, it will be possible to verify / integrate the entries and post it.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000898-0/FID_ENU_20_Factoring prosoluto batch reg.png"><br>
+
+
+**Refund - G/L entries**
 
 The posting of the refund movements will make the following general ledger entry:
 
-**Bank C\C (Factor)  @ Factoring Acc. No. (Factor Credits)**
+***Bank C\C (Factor)  @ Factoring Acc. No. (Factor Credits)***
 
 The posting of the refund entries will update the Closed Factoring Amount (LCY) on the lines of the bill.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000898-0/FID_ENU_21_Factoring prosoluto liquid03.png"><br>
