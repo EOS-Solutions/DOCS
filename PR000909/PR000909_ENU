@@ -1,3 +1,5 @@
 For the advance invoice discounting bill, it is necessary to set the **«Advance Bank Account No.»** and, if applicable, the filter for **«Our Bank Account No.»**.
 
 By selecting the advance bank account no., the **«Advance Type»**, **«Advance Inv. G/L Account / Bank Account No.»**, the **«Advance %»** and the **«Postpone Due Date»** will be proposed (data present on the bank account card).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000909-0/FID_ENU_31_Anticipo inserimento.png"><br>
