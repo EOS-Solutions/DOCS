@@ -2,6 +2,8 @@ The cash receipts are recorded by selecting the desired lines of the bill and th
 
 The cash receipts are always at nominal value.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000906-0/FID_ENU_29_Factoring prosolv liq inc.png"><br>
+
 The cash receipts will be proposed in the default batch accessed with the **«Cash Receipt Journals»** action.
 
-The accounting will be indicated by the **«Poster Receivables»** flag present in the lines of the list.
+The accounting will be indicated by the **«Posted Receivables»** flag present in the lines of the list.
