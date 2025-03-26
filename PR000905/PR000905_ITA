@@ -2,9 +2,11 @@ La liquidazione dell'anticipo si esegue selezionando le righe della distinta da 
 
 Il sistema valorizzerà il campo **«Importo da liquidare (VL)»** applicando la **«% factoring»** presente nella testata della distinta (Importo da liquidare = Importo * % factoring).
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000905-0/FID_ITA_27_Factoring prosolv liq ant01.png"><br>
+
 Selezionando l'azione **«Liquidazione»** saranno proposte le scritture contabili da verificare e contabilizzare.
 
-
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000905-0/FID_ITA_28_Factoring prosolv liq ant02.png"><br>
 
 Le registrazioni saranno proposte nel batch di default cui si accede con l'azione **«Registrazioni Coge»**.
 
