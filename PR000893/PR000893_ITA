@@ -4,6 +4,8 @@ E' possibile creare una nuova distinta , tramite l'azione **«Nuovo»**.
 
 **Come prima azione è necessario selezionare il Tipo distinta.**
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000893-0/FID_ITA_12_Distinta inserimento.png"><br>
+
 In base al Tipo distinta (*«Factoring pro soluto», «Factoring pro solvendo», «Anticipo fatture»*) saranno visualizzati dinamicamente, sulla testata della distinta, i parametri da impostare.
 
 Il tipo distinta definirà **la rilevazione contabile che sarà effettuata alla registrazione della distinta.**
