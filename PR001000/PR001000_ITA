@@ -1,3 +1,7 @@
-Per il factoring pro soluto, nell'anagrafica del C/C bancario è necessario abilitare la banca tramite il campo **Banca factor**.
+Per il factoring pro soluto, nell'anagrafica del C/C bancario è necessario abilitare la banca tramite il campo **«Banca factor»**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001000-0/FID_ITA_05_Setup prosoluto banca.png"><br>
 
 Nella pagina **«Categ. Registraz. effetti»** relativa al C/C bancario si imposterà il **«Conto factoring»**, conto da movimentare alla registrazione della distinta.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001000-0/FID_ENU_06_Setup prosoluto categ effetti.png"><br>
