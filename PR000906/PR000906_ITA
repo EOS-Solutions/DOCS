@@ -2,6 +2,8 @@ La rilevazione degli incassi si esegue selezionando le righe della distinta desi
 
 L'incasso avviene sempre al valore nominale.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000906-0/FID_ITA_29_Factoring prosolv liq inc.png"><br>
+
 Gli incassi saranno proposti nel batch di default cui si accede con l'azione **«Registrazioni Incassi»**.
 
 L'avvenuta contabilizzazione sarà indicata dal flag **«Incasso Registrato»** presente nelle righe della distinta.
