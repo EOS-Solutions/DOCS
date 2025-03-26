@@ -4,7 +4,11 @@ Only open invoices with a payment method other than Riba and not factored (Facto
 
 The filter for **«Our Bank Account No.»** will also be applied if set.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000910-0/FID_ENU_32_Anticipo selezione doc.png"><br>
+
 In the case of an invoice discounting bill, the **«Advance %»** will be displayed on the lines and the **«Advance amount (LCY)»** and the **«Due date»** will be calculated (to be communicated to the bank), based on the parameters set in the header (proposed by the advance bank account entered in the bill header).
 
 These values can be modified by the user. 
 The **Advance amount (LCY)** will be the one detected during registration.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000910-0/FID_ENU_33_Anticipo distinta preparata.png"><br>
