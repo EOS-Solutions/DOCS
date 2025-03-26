@@ -4,6 +4,8 @@ It is possible to create a new bill, using the **«New»** action.
 
 **The first action is to select the Bill Type.**
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000893-0/FID_ENU_12_Distinta inserimento.png"><br>
+
 Based on the Bill type (*«Factoring pro soluto», «Factoring pro solvendo», «Advance»*), the parameters to be set will be dynamically displayed on the list header.
 
 The bill type will define **the accounting entry that will be made when the list is posted.**
