@@ -1,3 +1,7 @@
 When entering a factoring bill, the Bill Type must be set to **«Factoring pro solvendo»** and then the **«Factoring Bank Account No.»** must be filled in.
 
 The **«Payment Method Code»** and the **«Factoring %»** will be automatically proposed.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000900-0/FID_ENU_23_Factoring prosolv inserimento.png"><br>
+
+The method for preparing and posting the Factoring pro solvendo bill is very similar to the Factoring pro soluto bill.
