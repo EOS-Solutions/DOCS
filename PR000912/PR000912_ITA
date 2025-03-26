@@ -1,3 +1,21 @@
 Dalla distinta anticipi emessa è possibile, a scadenza, procedere al rimborso degli importi anticipati tramite la specifica procedura.
 
-Selezionati i  movimenti, tramite l'azione di riga **«Calcola importo da rimborsare»**, sarà possibile valorizzare il campo **«Importo da rimborsare (VL)»** e procedere al rimborso con l'azione **«Rimborso»**
+Selezionati i  movimenti, tramite l'azione di riga **«Calcola importo da rimborsare»**, sarà possibile valorizzare il campo **«Importo da rimborsare (VL)»** e procedere al rimborso con l'azione **«Rimborso»**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000912-0/FID_ITA_35_Anticipo rimborso.png"><br>
+
+Selezionando quindi l’azione **«Rimborso»** saranno creati i movimenti contabili nel Batch indicato a setup.
+
+Tramite l’azione **«Registrazioni Coge»** sarà possibile accedere alla registrazione contabile provvisoria.  
+
+Dal batch di registrazione sarà possibile verificare / integrare la scrittura e contabilizzarla.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000912-0/FID_ITA_36_Anticipo rimborso batch.png"><br>
+
+La registrazione dei movimenti di rimborso effettuerà la seguente scrittura contabile:
+
+**Anticipo fatture  @ Banca C/C anticipi**
+
+La registrazione dei movimenti di rimborso aggiornerà l'**«Importo rimborsato (VL)»** nelle righe della distinta.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000912-0/FID_ITA_37_Anticipo rimborso effettuato.png"><br>
