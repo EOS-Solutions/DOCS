@@ -3,3 +3,5 @@ La liquidazione del residuo si esegue con le stesse modalità della liquidazione
 Si selezioneranno le righe della distinta da liquidare e poi si sceglierà l'azione **«Calcola importo da liquidare»**.
 
 Il sistema valorizzerà il campo **«Importo da liquidare (VL)»** calcolando il residuo ancora da liquidare in funzione della seguente formula: *Importo da liquidare (VL) = Importo (VL) - Importo liquidato (VL)*.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000907-0/FID_ITA_30_Factoring prosolv liq res.png"><br>
