@@ -1,5 +1,9 @@
 Per il factoring (sia pro soluto che pro solvendo) è necessario impostare uno specifico metodo di pagamento.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000889-0/FID_ITA_03_Setup metodo pagamento.png"><br>
+
 Al metodo di pagamento è necessario associare un Cod. effetto.
 
 Il codice effetto dovrà riportare il «Nr. finale effetto» e il «Codice origine effetto cli.».
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000889-0/FID_ITA_04_Setup effetto.png"><br>
