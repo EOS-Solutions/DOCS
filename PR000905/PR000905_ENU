@@ -2,8 +2,11 @@ The advance payment is settled by selecting the lines of the list to be settled 
 
 The system will fill in the **«Factoring Amt. to Close (LCY)»** field by applying the **«Factoring %»** present in the header of the list (Amount to close = Amount * Factoring %).
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000905-0/FID_ENU_27_Factoring prosolv liq ant01.png"><br>
 
 The posting lines will be proposed in the default batch that is accessed with the **«General Journals»** action.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000905-0/FID_ENU_28_Factoring prosolv liq ant02.png"><br>
 
 The posting will be indicated by the **«Closed Factoring Amount (LCY)»** field present in the lines of the bill.
 
