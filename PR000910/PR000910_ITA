@@ -3,7 +3,10 @@ La selezione dei documenti da anticipare viene effettuata, solitamente, tramite 
 Saranno visibili, nella finestra di selezione, esclusivamente le fatture aperte, con metodo di pagamento diverso da Riba e non fattorizzate (Cod. Factor = blank). 
 Sarà, inoltre, applicato il filtro per **«Banca di canalizzazione»** se impostato.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000910-0/FID_ITA_32_Anticipo selezione doc.png"><br>
 
 Nel caso di distinta di anticipo, sulle righe sarà visualizzata la **«% anticipo»** e saranno calcolati l'**«Importo anticipo (VL)»** e la **«Data scadenza»** (da comunicare alla banca), sulla base dei paramenti impostati in testata (proposti dal C/C bancario anticipo inserito in testata distinta).
 
 Tali valori, sono modificabili dall'utente. L'**«Importo anticipo (VL)»** sarà quello rilevato in fase di registrazione.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000910-0/FID_ITA_33_Anticipo distinta preparata.png"><br>
