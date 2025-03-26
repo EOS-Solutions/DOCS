@@ -1,3 +1,7 @@
 Nel caso di factoring pro solvendo, nell'anagrafica del C/C bancario, è necessario abilitare l'uso della banca tramite il campo **«Banca factor»** ed impostare il campo **«% factoring»**, che definisce la percentuale che sarà anticipata dalla banca.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000890-0/FID_ITA_07_Setup prosolvendo banca.png"><br>
+
 Nella pagina **«Categ. Registraz. effetti»** relativa al C/C bancario si imposteranno il **«Conto factoring»** e il **«Conto transitorio clienti»**. Tali conti saranno movimentare alla registrazione della distinta.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000890-0/FID_ITA_08_Setup prosolvendo cat effetti.png"><br>
