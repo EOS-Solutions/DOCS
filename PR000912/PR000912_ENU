@@ -1,3 +1,21 @@
 From the Issued invoice discounting bill, it is possible, upon expiry, to proceed with the refund of the amounts advanced through the specific procedure.
 
-Once the records have been selected, through the line action **«Calculate amount to be refunded»**, it will be possible to enhance the field **«Advance Amount to Close (LCY)»** and proceed with the refund with the action **«Refund»**
+Once the records have been selected, through the line action **«Calculate amount to be refunded»**, it will be possible to enhance the field **«Advance Amount to Close (LCY)»** and proceed with the refund with the action **«Refund»**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000912-0/FID_ENU_35_Anticipo rimborso.png"><br>
+
+By selecting the **«Refund»** action, the posting lines will be created in the Batch indicated in setup.
+
+Through the **«General Journals»** action, it will be possible to access the provisional posting lines.
+
+From the posting batch it will be possible to verify / integrate the records and post.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000912-0/FID_ENU_36_Anticipo rimborso batch.png"><br>
+
+The posting of the refund records will make the following accounting entry:
+
+**Advance invoices @ Bank C/C advances**
+
+Posting refund records will update the **«Closed Advance Amount (LCY)»** in the lines of the bill.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000912-0/FID_ENU_37_Anticipo rimborso effettuato.png"><br>
