@@ -2,14 +2,25 @@ Dalla distinta factoring pro soluto emessa è possibile, a scadenza, procedere a
 
 Selezionati i  movimenti tramite l'azione di riga **«Calcola importo da liquidare»** sarà possibile valorizzare il campo **«Importo da liquidare»**.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000898-0/FID_ITA_18_Factoring prosoluto liquid.png"><br>
+
 Selezionando l'azione **«Liquidazione»** saranno creati i  movimenti contabili nel Batch indicato a setup.
 
 Tramite l'azione **«Registrazioni Coge»** sarà possibile accedere alla registrazione contabile provvisoria.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000898-0/FID_ITA_19_Factoring prosoluto liquid02.png"><br>
+
 Dal batch di registrazione sarà possibile verificare / integrare la scrittura e contabilizzarla.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000898-0/FID_ITA_20_Factoring prosoluto batch reg.png"><br>
+
+
+**Liquidazione - Scritture contabili**
 
 La registrazione dei movimenti di liquidazione effettuerà la seguente scrittura contabile:
 
-**Banca C\C (Factor)  @ Conto factoring (Crediti vs Factor)**
+***Banca C\C (Factor)  @ Conto factoring (Crediti vs Factor)***
 
 La registrazione dei movimenti di liquidazione aggiornerà l'Importo liquidato sulle righe della distinta.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000898-0/FID_ITA_21_Factoring prosoluto liquid03.png"><br>
