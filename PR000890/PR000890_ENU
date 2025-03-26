@@ -1,3 +1,7 @@
 In the case of pro solvendo factoring, in the bank account master data, it is necessary to enable the use of the bank through the **«Factor Bank»** field and set the **«Factoring %»** field, which defines the percentage that will be advanced by the bank.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000890-0/FID_ENU_07_Setup prosolvendo banca.png"><br>
+
 On the **«Bill posting group»** page relating to the bank account, the **«Factoring Acc. No.»** and the **«Factoring Trans Acc. No.»** will be set. These accounts will be moved when the list is posted.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000890-0/FID_ENU_08_Setup prosolvendo cat effetti.png"><br>
