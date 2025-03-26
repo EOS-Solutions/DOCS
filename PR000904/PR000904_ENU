@@ -1,9 +1,11 @@
-The pro solvendo factoring management process is divided into the following phases:
+The pro solvendo factoring management process is divided into the following phases.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000904-0/FID_ENU_25_Factoring prosolv processo.png"><br>
 
+The following procedures can be directly performed from the issued list.
 
-The following procedures can be directly performed from the issued list:
+1. Advance payment settlement (action **«Settlement»**).
+2. Cash receipt (action **«Cash Receipt Journals»**).
+3. Residual payment settlement (performed from the same action **«Settlement»**).
 
-1. Advance payment settlement (action **«Settlement»**)
-2. Cash receipt (action **«Cash Receipt Journals»**)
-3. Residual payment settlement (performed from the same action **«Settlement»**)
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000904-0/FID_ENU_26_Factoring prosolv procedura.png"><br>
