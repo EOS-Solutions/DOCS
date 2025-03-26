@@ -1,3 +1,7 @@
-For pro soluto factoring, in the bank account master data it is necessary to enable the bank via the **Factor bank** field.
+For pro soluto factoring, in the bank account master data it is necessary to enable the bank via the **"Factor bank"** field.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001000-0/FID_ENU_05_Setup prosoluto banca.png"><br>
 
 On the **«Bill posting group»** page relating to the bank account, the **«Factoring Acc. No.»** will be set, which is the account to be moved when the list is registered.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001000-0/FID_ENU_06_Setup prosoluto categ effetti.png"><br>
