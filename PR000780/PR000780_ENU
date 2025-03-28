@@ -1,0 +1,11 @@
+In order for EOS apps to be fully [Universal Code](https://aka.ms/BCUniversalCode) compliant, they leverage the use web services and APIs instead of direct file-system access. EOS Administration Library facilitates the uptake of this initiative by providing a simple and flexible interface to access different types of file systems using the same Codeunit. This allows you to seamlessly switch from one file-system to another.
+
+The following file-systems are currently supported by EOS Administration Library:
+- Azure BLOB Storage
+- Azure FileShare Storage
+- EOS Function API (access to the local file-system)
+- In-Memory
+
+Each of those file-systems is configured through the [Service configurations]({{<relref "eal-service-configuration">}}) feature of EOS Administration Library.
+
+All of these file-systems are accessed through the use of the codeunit `18122353 EOS004 IFileSystem Wrapper`. The single implementations are then provided by enum `18122318 EOS004 FileSystem` and the corresponding interface `EOS004 IFileSystem`. This allows you also to easily add custom file-systems and use the across all of EOS apps.
