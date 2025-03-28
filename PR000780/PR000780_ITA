@@ -6,6 +6,6 @@ I seguenti file system sono attualmente supportati da EOS Administration Library
 - EOS Function API (accesso al file system locale)
 - In-Memory storage (dev + test)
 
-Ognuno di questi file system è configurato attraverso la funzione [Service configurations]({{<relref “eal-service-configuration”>}}) di EOS Administration Library.
+Ognuno di questi file system è configurato attraverso la funzione [Service configurations]({{<relref "eal-service-configuration">}}) di EOS Administration Library.
 
 A tutti questi file system si accede tramite la Codeunit `18122353 EOS004 IFileSystem Wrapper`. Le singole implementazioni sono fornite dall'enum `18122318 EOS004 FileSystem` e dalla corrispondente interfaccia `EOS004 IFileSystem`. Ciò consente di aggiungere facilmente file system personalizzati e di utilizzarli in tutte le applicazioni EOS.
