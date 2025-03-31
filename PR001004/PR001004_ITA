@@ -1,0 +1,59 @@
+La procedura di Onboarding per la packing list prevede:
+
+* Banner
+* Elenco di controllo
+* Suggerimenti didattici e tour
+* Setup assistito
+* Setup wizard 
+<br>
+
+Dopo l’installazione dell’app, sul Banner nella pagina principale di BC compare l’elenco di controllo con una nuova attività da completare:<br>il **Setup Assistito** della packing list.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001004-0/ONB1_ITA.png"><br>
+
+Il Setup Assistito può essere lanciato a mano in un secondo momento dalla lista correlata.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001004-0/ONB2_ITA.png"><br>
+<br>
+
+Il **Banner** per le nostre app viene attivato per i seguenti Ruoli: BUSINESS MANAGER, BUSINESS MANAGER EVALUATION, O365 SALES oltre all’eventuale ruolo dell’utente che esegue l’installazione dell’app. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001004-0/ONB3_ITA.png"><br>
+<br>
+
+
+Dopo aver avviato il **Setup Assistito**, compare la finestra di benvenuto con la possibilità di:
+* Accedere alla guida dell’app
+* Guardare il video introduttivo
+* Guardare il video della Demo estesa
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001004-0/ONB4_ITA_EX055.png"><br>
+<br>
+
+La fase successiva prevede la possibilità di lanciare il **Nuovo Setup Wizard**, che consente di creare una serie di dati predefiniti per poter provare l’app Packing List. Da utilizzare in un ambiente di Test o Demo.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001004-0/ONB5_ITA_EX055.png"><br>
+<br>
+
+Dopo la creazione dei dati predefiniti, è possibile creare un **Nuovo Ordine di Vendita** con una packing list assegnata.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001004-0/ONB6_ITA_EX055.png"><br>
+<br>
+
+Le fasi successive visualizzano in modalità passo dopo passo tutti i setup necessari per l’utilizzo della packing list.
+
+* Setup imballaggio
+* Tipi di unità di carico
+* Materiali di imballaggio
+* Istruzioni di imballaggio
+* Unità di carico 
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001004-0/ONB7_ITA_EX055.png"><br>
+<br>
+
+Se attivi, per le pagine descritte in precedenza, sono disponibili i **Suggerimenti Didattici**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001004-0/ONB8_ITA.png"><br>
