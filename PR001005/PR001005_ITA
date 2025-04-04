@@ -1,0 +1,29 @@
+Per effettuare la migrazione dei dati da un un altro software gestionale o da un altro configuratore bisogna importare i dati nelle tabelle di base. Segue un elenco delle principali tabelle:
+
+* Caratteristiche, Valori Caratteristiche.
+* Formule.
+* Condizioni.
+* Regole, Caratteristiche associate alle regola, Valori caratteristiche associate alla regola, Relazioni della regola.
+* Articoli.
+* DB Produzione e Cicli.
+
+Dopo l'importazione degli articoli neutri è necessario:
+
+* Impostare in anagrafica degli articoli neutri il **Codice Regola** e il campo **Tipo Configurazione** a **Da Neutro a Configurato**.
+
+Dopo l'importazione degli articoli neutri è necessario:
+* Inserire le caratteristiche associate all'articolo configurato in tabella **EOS028 CFG Item Var. Charac.** (18091267).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001005-0/DC1_ITA.png"><br>
+
+* Per ogni articolo configurato inserire un record nella tabella **EOS028 CFG Item Config. Key (18091278)** che contiene la chiave di ricerca. Valorizzando i campi **Nr. articolo** (codice articolo neutro) **Nr. articolo nuovo** (codice articolo configurato) ed eventualmente il **Cod. variante**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001005-0/DC2_ITA.png"><br>
+
+* Infine per ogni articolo importato lanciare la funzione **Riconfigura chiave**.
+
+<br>
+<br>
+
+
+
