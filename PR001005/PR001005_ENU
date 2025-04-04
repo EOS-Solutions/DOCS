@@ -1,0 +1,26 @@
+To migrate data from another ERP software or another configurator, you need to import the data into the basic tables. Here is a list of the main tables:
+
+* Characteristics, Characteristic Values.
+* Formulas.
+* Conditions.
+* Rules, Characteristics associated with the rule, Characteristic values ​​associated with the rule, Rule relations.
+* Items.
+* Production BOMs and Routings.
+
+After importing the neutral items, you need to:
+
+* Set the **Rule Code** and the **Configuration Type** field to **From Neutral to Configured** in the neutral items master data.
+
+After importing the neutral items, you must:
+* Enter the characteristics associated with the configured item in the **EOS028 CFG Item Var. Charac.** table (18091267).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001005-0/DC1_ENU.png"><br>
+
+* For each configured item, insert a record in the table **EOS028 CFG Item Config. Key (18091278)** that contains the search key. Fill in the fields **Item No.** (neutral item code) **New item No.** (configured item code) and, if applicable, the **Variant Code**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001005-0/DC2_ENU.png"><br>
+
+	* Finally, for each imported item, launch the **Recreate Configured Items Key** function.
+
+<br>
+<br>
