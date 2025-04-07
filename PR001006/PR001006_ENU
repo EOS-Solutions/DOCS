@@ -1,0 +1,10 @@
+The migration of the price matrix cannot be performed directly in the table **EOS028 CFG Prices Matrix (18091282)** because in the primary key there is a field, called **Key Code**, which is encrypted and cannot be calculated from the outside, for example by importing with configuration packages.
+
+Data import can be done in the Price Matrix WORKSHEET (CFG) table **EOS028 CFG Prices Matrix Wksh. (18090702)**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001006-0/DC3_ENU.png"><br>
+
+Finally executing the action **Implement price matrix change**.
+
+<br>
+<br>
