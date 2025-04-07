@@ -1,8 +1,10 @@
-La migrazione della matrice prezzi non si può eseguire direttamente nella tabella EOS028 CFG Prices Matrix (18091282) in quanto nella chiave primaria è presente un campo, denominato  criptato non calcolabile ad esempio effettuado l'importazione con dei pacchetti.
+La migrazione della matrice prezzi non si può eseguire direttamente nella tabella **EOS028 CFG Prices Matrix (18091282)** in quanto nella chiave primaria è presente un campo, denominato **Key Code**, criptato non calcolabile dall'esterno ad esempio effettuado l'importazione con dei pacchetti di configurazione.
 
-L'importazione dei dati và fatta nella tabella del Prospetto Matrice Prezzi del (CFG):
+L'importazione dei dati si può fare nella tabella del Prospetto Matrice Prezzi del (CFG) tabella **EOS028 CFG Prices Matrix Wksh. (18090702)**:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001006-0/DC3_ITA.png"><br>
 
-Eseguando alla fine l'implementazione.
+Eseguendo alla fine l'azione **Implementazione varizione matrice prezzi**.
 
+<br>
+<br>
