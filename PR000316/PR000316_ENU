@@ -4,14 +4,17 @@ Supported mathematical operators are: +-*/ ^ e and the constant PI.
 
 For example, formulas can be inserted directly into relations in the Transfer Value Formula field:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000316-0/Formula1_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000316-0/Formula1_ENU.png"><br>
 
 In the event that a formula is recurring, or in any case used in several places, it can be created and then recalled (eg in production BOM).
 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000316-0/Formula2_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000316-0/Formula2_ENU.png"><br>
 
-In the TAG section you can enter the characteristics to be used in the formula.
+In the TAG section you can enter the characteristics (or other formulas) to be used in the formula.
+
+On the Formula lines, there is a field **Enable formula rounding**, which can be activated for Formula type lines. By default, a formula inserted into another formula is not rounded (rounding only occurs at the end). By activating the flag, you can change this behavior.
+
 The formula must be expressed using the values assigned in the TAGs.
 By using the conditions enabler, you can insert different formulas based on conditions.
 
