@@ -4,15 +4,18 @@ Gli operatori matematici supportati sono: +-*/ ^ e and the constant PI (Pi Greco
 
 Le formule, ad esempio, si possono inserire direttamente nelle relazioni nel campo Formula Trasferimento Valore:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000316-0/Formula1_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000316-0/Formula1_ITA.png"><br>
 
-Nel caso in cui una formula sia ricorrente, o comunque utilizzata in pi— punti, pu• essere creata per poi essere richiamata (es. nelle distinte base). 
+Nel caso in cui una formula sia ricorrente, o comunque utilizzata in piÃ¹ punti, puÃ² essere creata per poi essere richiamata (es. nelle distinte base). 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000316-0/Formula2_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000316-0/Formula2_ITA.png"><br>
 
-Nella sezione TAG Š possibile inserire le caratteristiche da utilizzare nella formula.
+Nella sezione TAG Ã¨ possibile inserire le caratteristiche (o altre formule) da utilizzare nella formula.
 La formula va espressa utilizzando i valori assegnati nei TAG.
-Tramite lÂabilita condizioni Š possibile inserire formule diverse in base a condizioni.
+
+Sulle righe delle Formule, Ã¨ presente il campo **Abilita arrotondamento formula**, attivabile per le righe di tipo Formula. Da standard, una formula inserita in un'altra formula, non viene arrotondata (l'arrotondamento avviene solo alla fine). Attivando il flag Ã¨ possibile modificare questo comportamento.
+
+Tramite lâ€™**Abilita condizioni** Ã¨ possibile inserire formule diverse in base a condizioni.
 
 <br>
 <br>
