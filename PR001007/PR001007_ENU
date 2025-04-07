@@ -1,0 +1,6 @@
+Direct import of neutral rules into the **18091268 EOS028 CFG Neutral Rule** table is not possible because the **Key Code** field (primary key) cannot be populated externally to **Business Central**.
+The **18091294 EOS028 CFG Neutral Rule Import** table is available for importing neutral rules via configuration package.
+The **Delete table Import Neutral Rule** function has been added to the product configurator setup to empty the contents of the **18091294 EOS028 CFG Neutral Rule Import** table.
+
+<br>
+<br>
