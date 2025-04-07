@@ -4,15 +4,15 @@ Per gestire gli attributi:
 1.  Abilitare la gestione Attributi dal setup configuratore
 2.  Inserire i valori degli attributi nelle caratteristiche e nei valori caratteristiche
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000340-0/PCS1_ITA.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000340-0/Attributes1_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000340-0/Attributes2_ITA.png"><br>
 
+Negli articoli configurati vengono riportati gli attributi valorizzati in funzione al valore delle caratteristiche utilizzate. Funzionalità disponibile solo se si utilizza il configuratore in generazione di codici articolo.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000340-0/Attributes2_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000340-0/Attributes3_ITA.png"><br>
 
-Negli articoli configurati vengono riportati gli attributi valorizzati in funzione al valore delle caratteristiche utilizzate. Funzionalit� disponibile solo se si utilizza il configuratore in generazione di codici articolo.
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000340-0/Attributes3_ITA.png"><br>
+Nel setup del configuratore di prodotto è presente inoltre un campo, denominato **Copia attributi da articolo neutro**, che se abilitato copia dall’articolo neutro all’articolo configurato tutti gli attributi (quelli non associati a una caratteristica).
 
 <br>
 <br>
