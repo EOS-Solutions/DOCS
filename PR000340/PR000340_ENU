@@ -1,17 +1,17 @@
-The configurator allows you to associate specific item attributes to configured items. To manage attributes:
+The configurator allows to associate specific item attributes to configured items. To manage attributes:
 
 1.  Enable Attributes management from the Configurator Setup
 2.  Enter Attribute Values in Characteristic and in Characteristic Values
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000340-0/PCS1_ENU.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000340-0/Attributes1_ENU.png"><br>
-
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000340-0/Attributes2_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000340-0/Attributes2_ENU.png"><br>
 
 The configured items show the attribute values according to the value of the characteristics used. Functionality available only if you use the configurator to generate item codes.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000340-0/Attributes3_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000340-0/Attributes3_ENU.png"><br>
+
+In the product configurator setup there is also a field, called **Copy attributes from neutral item**, which, if enabled, copies all attributes (those not associated with a characteristic) from the neutral item to the configured item.
 
 <br>
 <br>
