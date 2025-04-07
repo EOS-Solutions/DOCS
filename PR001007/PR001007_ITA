@@ -1,0 +1,8 @@
+L’importazione diretta delle regole dei neutri nella tabella **18091268 EOS028 CFG Neutral Rule** non è possibile perché il campo **Key Code** (chiave primaria) non è valorizzabile esternamente a **Business Central**.
+E' disponibile la tabella **18091294 EOS028 CFG Neutral Rule Import** per l’importazione delle regole dei neutri tramite pacchetto di configurazione.
+Nel setup del configuratore di prodotto è stata inserita la funzione **Elimina tabella Regole Neutri** per svuotare il contenuto della tabella **18091294 EOS028 CFG Neutral Rule Import**.
+
+<br>
+<br>
+
+
