@@ -1,12 +1,19 @@
 "App Logging" è un framework di logging che consente di emettere informazioni di logging e debug a più destinazioni. Questi log possono essere suddivisi in categorie e possono essere configurati per ogni app e categoria e anche per ogni utente e dove i log devono essere emessi. Attualmente sono supportate le seguenti destinazioni di log:
 
+Utilizzare questo logger è davvero semplice. È sufficiente seguire i seguenti passaggi:
+1. Dichiarare una variabile per `codeunit 70623694 EOS004 App Logger`.
+2. Inizializzare la codeunit utilizzando `Initialize` o `InitializeForCaller`.
+3. Emettere messaggi di log usando i metodi `LogMessage`. Sono molto simili a quelli usati da `Session.LogMessage` e quindi non dovrebbero dare molti problemi.
+
+Si può trovare un esempio più dettagliato su https://github.com/EOS-Solutions/Sample/tree/master/EX004.EosAdminLib/Logging.
+
 **Application Insights (Default)**
 È essenzialmente la stessa cosa che usare `Session.LogMessage`. I log saranno inviati all'account Application Insights definito nell'applicazione e/o nel servizio. Il vantaggio di usare il framework App Logging invece di chiamare direttamente `Session.LogMessage` è che questo fa parte del framework “App Logging” e quindi questi messaggi di log sono ora configurabili per utente/app/categoria.
 
 **Application Insights (Custom)**
 È simile ad `Application Insights (Default)`, ma consente di emettere messaggi di log a un account Application Insights arbitrario e non è limitato a quelli definiti nell'app/servizio.
 
-{{% alert title=“Warning” color=“warning” %}}
+{{% alert title="Warning" color="warning" %}}
 Questo logger non utilizza `Session.LogMessage` e quindi non può beneficiare della natura asincrona di tale metodo. Ciò significa che qualsiasi messaggio di log emesso avrà un impatto sulle prestazioni, anche perché verranno effettuate chiamate HTTP ad Application Insights. Usare con cautela e usare `AutoFlushLimit` per ridurre il numero di chiamate HTTP effettuate.
 {{% /alert %}}
 
