@@ -9,7 +9,7 @@ Qui è possibile vedere un elenco di tutti i logger attualmente attivi e configu
 - **Enabled** specifica se la configurazione è attualmente abilitata.
 - **Enabled From** / **Enabled to** specifica l'intervallo di data/ora in cui il logger sarà abilitato. Se non viene specificato, il logger è sempre attivo. Oltre a questo intervallo di date/ore, deve essere attivo anche il flag **Abilitato**.
 - **Logger** specifica il logger su cui questa configurazione scriverà i suoi messaggi di log.
-- **Service Config. Code** specifica la configurazione del servizio da utilizzare per il logger specificato in **Logger**. Potrebbe non essere necessario e dipende dal logger selezionato in **Logger** come e cosa deve essere selezionato qui. Al momento, solo **Application Insights (Custom)** richiede una configurazione di servizio. Per saperne di più, consultare [Configurazioni del servizio]({{<relref “eal-service-configuration”>}}).
+- **Service Config. Code** specifica la configurazione del servizio da utilizzare per il logger specificato in **Logger**. Potrebbe non essere necessario e dipende dal logger selezionato in **Logger** come e cosa deve essere selezionato qui. Al momento, solo **Application Insights (Custom)** richiede una configurazione di servizio. Per saperne di più, consultare [Configurazioni del servizio]({{<relref "eal-service-configuration">}}).
 - **Diagnostics Key** è una chiave generata in modo casuale che viene inviata insieme a tutti i messaggi di log scritti per questa configurazione. Aiuta a identificare la configurazione quando si analizzano i log.
 
 Con l'azione **Nuovo** è possibile creare una nuova configurazione.
