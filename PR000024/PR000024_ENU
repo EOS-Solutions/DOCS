@@ -1,1 +1,4 @@
-This is in english
+The Expiration Monitor for Azure Secrets (AZE) app allows you to monitor the expiration of Azure secrets within a specific tenant, as well as the expiration of additional manually entered tokens or certificates. If it expires soon, the app will send a notification via email.
+
+Press ALT + Q and type "AZE" to see a list of the involved features: 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000024-0/EN_Summary.png"><br>
