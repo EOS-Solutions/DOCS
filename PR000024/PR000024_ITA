@@ -1,0 +1,5 @@
+L’app Azure Secret Expiration (AZE) consente di monitorare la scadenza dei secret Azure all'interno di un tenant specifico, così come delle scadenze di token o certificati aggiuntivi inseriti manualmente. In caso di scadenza prossima, l'app invierà una notifica via email.
+
+Premere ALT + Q e digitare "AZE" per vedere un elenco delle funzionalità coinvolte: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000024-0/IT_Summary.png"><br>
