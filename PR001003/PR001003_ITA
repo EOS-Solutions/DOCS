@@ -1,0 +1,55 @@
+I seguenti servizi sono supportati dalla EOS Administration Library.
+
+**Azure FileStorage**
+
+Questo servizio fornisce l'accesso allo storage Azure FileShare per la lettura e la scrittura di file. Sono disponibili i seguenti parametri di configurazione:
+- `AccessKey`: Le credenziali di accesso da utilizzare.
+- `AccountName`: Il nome dello storage account Azure.
+- `FileShareName`: Il nome del fileshare all'interno dello storage account  Azure.
+
+{{% alert title="Note" color="info" %}}
+Specificare il campo **Endpoint Uri** solo se si conosce il motivo per cui è necessario farlo. Per la maggior parte dei casi d'uso, lasciare vuoto questo campo, poiché l'URI dell'endpoint verrà creato automaticamente.
+{{% /alert %}}
+
+**EOS FunctionAPI**
+
+Fornisce l'accesso a un'istanza di un'installazione di [EOS Function API]({{<relref "eos-function-api">}}). Sono disponibili i seguenti parametri di configurazione:
+- `X-EOS-Api-Key`: La chiave API da utilizzare quando si effettuano le richieste.
+
+**ApplicationInsights Query**
+
+Consente di eseguire query KustoQL contro un account Application Insights. Sono disponibili i seguenti parametri di configurazione:
+- `ApiKey`: La chiave API creata nell'account Application Insights da utilizzare.
+- `ApplicationId`: L'ID dell'applicazione dell'account da utilizzare. È possibile trovarlo nella configurazione dell'account Application Insights.
+
+{{% alert title="Warning" color="warning" %}}
+Questo tipo di configurazione del servizio è ora deprecato ed è stato sostituito da **Application Insights**. Utilizzare invece questo tipo di configurazione.
+{{% /alert %}}
+
+**Azure BlobStorage**
+
+Questo servizio fornisce l'accesso allo storage Azure BLOB per la lettura e la scrittura di file. Questa configurazione utilizzerà il modulo di archiviazione della base application. Sono disponibili i seguenti parametri di configurazione:
+- `SharedKey`: La chiave di accesso da utilizzare.
+- `StorageAccount`: Il nome dello storage account  Azure.
+- `ContainerName`: Il nome del contenitore BLOB all'interno dello storage account Azure.
+
+{{% alert title="Note" color="info" %}}
+Specificare il campo **Endpoint Uri** solo se si conosce il motivo per cui è necessario farlo. Per la maggior parte dei casi d'uso, lasciare vuoto questo campo, poiché l'URI dell'endpoint verrà creato automaticamente.
+{{% /alert %}}
+
+**In-Memory Storage**
+
+Si tratta di un finto archivio da usare con l'interfaccia IFileSystem. È utile per i test e lo sviluppo quando non si ha a disposizione un file system reale. I file sono memorizzati in memoria solo per la propria sessione e non sono visibili a nessun altro. Inoltre, i file vengono persi quando si chiude la sessione. Sono disponibili i seguenti parametri di configurazione:
+- `NomeStorage`: È possibile avere più archivi in memoria contemporaneamente. Ciascuno di essi è identificato da questo nome. È possibile scegliere qualsiasi nome.
+
+**Application Insights**
+
+Sostituisce l'obsoleto `ApplicationInsights Querey`. Questa nuova implementazione consente di eseguire query KustoQL, proprio come faceva il suo predecessore. Inoltre, consente anche di inviare i log a un endpoint di ingestione di Application Insights. A tale scopo, è necessario specificare la stringa di connessione di Application Insights, dove si desidera inviare i log, nel campo **Endpoint Uri**.
+
+Sono disponibili i seguenti parametri di configurazione:
+- `ApiKey`: è richiesto solo per l'esecuzione delle query. Le credenziali della chiave API create nell'account di Application Insights da utilizzare.
+- `ApplicationId`: è richiesto solo per l'esecuzione delle query. L'ID dell'applicazione dell'account da utilizzare. Si trova nella configurazione dell'account Application Insights.
+
+{{% alert title="Note" color="info" %}}
+Il campo **Endpoint Uri** per questo tipo deve essere impostato sulla stringa di connessione di Application Insights solo se si desidera utilizzarlo per la pubblicazione dei messaggi di log. Se lo si vuole usare solo per leggere le query, non è necessario specificarlo.
+{{% /alert %}}
