@@ -1,0 +1,14 @@
+"App Logging" is a logging framework that enables to emit logging and debug information to multiple destinations. These logs can be categorized into categories and can be configured for each app and category and even user and where logs should be emitted. The following log destinations are currently supported:
+
+**Application Insights (Default)**
+This is essentially the same as using `Session.LogMessage`. This will emit logs to the application insights account that is defined on the app and/or on the service. The benefit of using the App Logging framework instead of calling `Session.LogMessage` directly is that this is part of the "App Logging" framework, and thus these log messages are now configurable per user/app/category.
+
+**Application Insights (Custom)**
+This is similar to `Application Insights (Default)`, but allows to you to emit log messages to an arbitrary Application Insights account and is not limited to the ones defined in the app / service.
+
+{{% alert title="Warning" color="warning" %}}
+This logger does **not** use `Session.LogMessage` and thus can not benefit from the asynchronous nature of that method. This means that any log message you emit will impact performance, also because there are HTTP calls to Application Insights will be made. Use with caution and use `AutoFlushLimit` to reduce the number of HTTP cals made.
+{{% /alert %}}
+
+**Internal**
+This is a logger that will log messages into a global temporary table that lives as long as the user session lives. You can use `codeunit 70623696 EOS004 Internal Logger` to access the logs that have been collected and export or persist them in whatever way you need.
