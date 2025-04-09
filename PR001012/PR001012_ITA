@@ -1,0 +1,25 @@
+L'impostazione di "App Logging" si trova alla pagina **Setup log app (EAL)**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001012-0/app-log-setup.png"><br>
+
+Qui è possibile vedere un elenco di tutti i logger attualmente attivi e configurati.
+- **Nome app** indica l'applicazione per questa configurazione di logger.
+- **Nome** specifica la categoria per questa configurazione di logger.
+- **Username** specifica l'utente per il quale questa configurazione di logger è attiva. Può essere un singolo utente o tutti gli utenti.
+- **Enabled** specifica se la configurazione è attualmente abilitata.
+- **Enabled From** / **Enabled to** specifica l'intervallo di data/ora in cui il logger sarà abilitato. Se non viene specificato, il logger è sempre attivo. Oltre a questo intervallo di date/ore, deve essere attivo anche il flag **Abilitato**.
+- **Logger** specifica il logger su cui questa configurazione scriverà i suoi messaggi di log.
+- **Service Config. Code** specifica la configurazione del servizio da utilizzare per il logger specificato in **Logger**. Potrebbe non essere necessario e dipende dal logger selezionato in **Logger** come e cosa deve essere selezionato qui. Al momento, solo **Application Insights (Custom)** richiede una configurazione di servizio. Per saperne di più, consultare [Configurazioni del servizio]({{<relref “eal-service-configuration”>}}).
+- **Diagnostics Key** è una chiave generata in modo casuale che viene inviata insieme a tutti i messaggi di log scritti per questa configurazione. Aiuta a identificare la configurazione quando si analizzano i log.
+
+Con l'azione **Nuovo** è possibile creare una nuova configurazione.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001012-0/app-log-create.png"><br>
+
+I seguenti campi sono obbligatori:
+
+- **Id app** specifica l'applicazione per la quale creare una configurazione di logger. In questo elenco verranno visualizzate solo le app che hanno sottoscritto l'evento `OnCollectLogCategories` e che hanno fornito almeno una categoria di log. Controllare l'esempio su GitHub per i dettagli su come implementarlo.
+- **Nome app** mostra il nome dell'applicazione selezionata.
+- **Categoria** permette di scegliere la categoria di log per la quale si vuole creare la configurazione. I valori disponibili sono quelli forniti dall'applicazione tramite `OnCollectLogCategories`.
+- **Abilitato per** permette di scegliere se la configurazione deve essere valida per tutti gli utenti, per l'utente attualmente connesso o solo per un utente specifico.
+- **Username** consente di scegliere l'utente per il quale si desidera configurare questo registro, se si è selezionato **Utente specifico** in **Abilitato per**.
