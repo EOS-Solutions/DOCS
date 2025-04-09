@@ -1,0 +1,25 @@
+You can find the setup for "App Logging" on the page **App Log Setup (EAL)**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001012-0/app-log-setup.png"><br>
+
+Here you can see a list of all currently active and configured loggers.
+- **App Name** indicates the app fpr this logger  configuration.
+- **Name** specifies the category for this logger configuration.
+- **Username** specifies the user for whom this logger configuration is active. This can be a single user or all users.
+- **Enabled** specifies if theconfiguration is currently enabled
+- **Enabled From** / **Enabled to** specifies the date/time range in which this logger will be enabled. If this is not specified, the logger is always active. In addition to this date/time range, the flag **Enabled** also needs to be active.
+- **Logger** specifies the logger to which this configuration will write its log messages to.
+- **Service Config. Code** specifies the service configration to use for the logger specified in **Logger**. This might not be necessary and it depends on the logger selected in **Logger** how and what should be selected here. At the moment, only **Application Insights (Custom)** requires a service configuration. Read more on this in [Service configurations]({{<relref "eal-service-configuration">}}).
+- **Diagnostics Key** is a randomly generated key that is sent along with any log messages that are written for this configuration. This helps you identify the configuration when analyzing your logs.
+
+Using the **New** action, a new configuration can be created.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001012-0/app-log-create.png"><br>
+
+The following fields are required:
+
+- **App Id** specifies the app for which to create a logger configuration. You will only see apps in this list that have subscribed to the event `OnCollectLogCategories` and have provided at least one log category. Check the sample on GitHub for details on how to implement this.
+- **App Name** shows the name of the app you selected.
+- **Category** lets you choose the log category for which you want to create the configuration. The values available are the value that the app provides through `OnCollectLogCategories`.
+- **Enabled For** lets you choose if the configuration should be valid for all users, the currently logged in user or a specific user only.
+- **Username** lets you choose the user for which you want to configure this log, if you have selected **Specific User** in **Enabled For**.
