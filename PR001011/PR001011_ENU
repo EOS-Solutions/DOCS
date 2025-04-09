@@ -1,4 +1,13 @@
-"App Logging" is a logging framework that enables to emit logging and debug information to multiple destinations. These logs can be categorized into categories and can be configured for each app and category and even user and where logs should be emitted. The following log destinations are currently supported:
+"App Logging" is a logging framework that enables to emit logging and debug information to multiple destinations. These logs can be categorized into categories and can be configured for each app and category and even user and where logs should be emitted. 
+
+Using this logger is really simple. You just have to follow these steps:
+1. Declare a variable for `codeunit 70623694 EOS004 App Logger`
+2. Initialize the codeunit using either `Initialize` or `InitializeForCaller`
+3. Emit log messages using the `LogMessage` methods. They are very similar to the ones used by `Session.LogMessage` and therefore shouldn't give you much trouble.
+
+You can find a more detailed example on https://github.com/EOS-Solutions/Sample/tree/master/EX004.EosAdminLib/Logging
+
+The following log destinations are currently supported:
 
 **Application Insights (Default)**
 This is essentially the same as using `Session.LogMessage`. This will emit logs to the application insights account that is defined on the app and/or on the service. The benefit of using the App Logging framework instead of calling `Session.LogMessage` directly is that this is part of the "App Logging" framework, and thus these log messages are now configurable per user/app/category.
