@@ -1,0 +1,54 @@
+The following services are supported out-of-the box by EOS Administration Library.
+
+**Azure FileStorage**
+
+This service provides access to the Azure FileShare storage for reading and writing files. The following configuration parameters are available:
+- `AccessKey`: The access key credential to use.
+- `AccountName`: The name of the Azure storage account.
+- `FileShareName`: The name of the file share inside the Azure storage account.
+
+{{% alert title="Note" color="info" %}}
+Only specify the field **Endpoint Uri** if you know why you need to do so. For most use cases leave this empty, as the endpoint URI will be built automatically.
+{{% /alert %}}
+
+**EOS FunctionAPI**
+
+Provides access to an instance of an [EOS Function API]({{<relref "eos-function-api">}}) installation. The following configuration parameters are available:
+- `X-EOS-Api-Key`: The API key to use when calling making requests.
+
+**ApplicationInsights Query**
+Allows executing KustoQL queries against an Application Insights account. The following configuration parameters are available:
+- `ApiKey`: The API key credentials you have created on your application insights account to use.
+- `ApplicationId`: The application ID of the account to use. You can find this in the configuration of your application insights account.
+
+{{% alert title="Warning" color="warning" %}}
+This service configuration type is now deprecated and has been replaced with **Application Insights**. Use that one instead.
+{{% /alert %}}
+
+**Azure BlobStorage**
+
+This service provides access to the Azure BLOB storage for reading and writing files. This configuration will use the storage module of the base application. The following configuration parameters are available:
+- `SharedKey`: The access key credential to use.
+- `StorageAccount`: The name of the Azure storage account.
+- `ContainerName`: The name of BLOB container inside the Azure storage account.
+
+{{% alert title="Note" color="info" %}}
+Only specify the field **Endpoint Uri** if you know why you need to do so. For most use cases leave this empty, as the endpoint URI will be built automatically.
+{{% /alert %}}
+
+**In-Memory Storage**
+
+This is a mock storage for use with the IFileSystem interface. This is useful for testing and development whenever you don't have an actual file-system available. The files are stored in-memory for your session only and are not visible to anyone else. Also, any files are lost when you close your session. The following configuration parameters are available:
+- `StorageName`: You can have multiple in-memory storages at the same time. Each one is identified by this name. You can choose any name you want.
+
+**Application Insights**
+
+This replaces the obsolete `ApplicationInsights Query`. This new implementation allows executing KustoQL queries, just like it's predecessor did. In addition, it also allows to post logs to an application insights ingestion endpoint. For this, you need to specify the application insights connection string, where you want to post your logs to, in the **Endpoint Uri** field.
+
+The following configuration parameters are available:
+- `ApiKey`: this is only required when executing queries. The API key credentials you have created on your application insights account to use.
+- `ApplicationId`: this is only required when executing queries. The application ID of the account to use. You can find this in the configuration of your application insights account.
+
+{{% alert title="Note" color="info" %}}
+The field **Endpoint Uri** for this type needs to be set to the application insights connection string only if you want to use it for posting log messages. If you only want to use this for reading queries, you don't need to specify it at all.
+{{% /alert %}}
