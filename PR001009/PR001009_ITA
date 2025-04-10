@@ -1,0 +1,14 @@
+In Scadenze Tenant Azure si possono inserire e monitorare i diversi tenant
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001009-0/IT_Tenant1.png"><br>
+
+>  Sulla pagina di Azure API Permissions va impostato il permesso Application.Read.All che leggerà tutte le app registration presenti nel tenant per identificare i relativi Secret.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001009-0/IT_Azure.png"><br>
+
+ Da Apps si possono vedere tutti i secret relativi alle app presenti nel tenant:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001009-0/IT_Tenant2.png"><br>
+
+ Per ogni app viene mostrato il numero di Secret, quanti secret sono in scadenza e quanti sono già scaduti
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001009-0/IT_Tenant3.png"><br>
