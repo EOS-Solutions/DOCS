@@ -1,4 +1,4 @@
- Sempre nella page di setup viene stabilito a chi mandare le notifiche e il tipo di notifiche (In scadenza / Scaduto):
+ Nella page di Setup è possibile impostare utenti che riceveranno sempre le notifiche. Non sono quindi utenti associati ad un tenant specifico.
  
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001013-0/IT_Notification1.png"><br>
 
@@ -11,3 +11,8 @@ In Movimenti notifiche si possono visualizzare le notifiche che saranno inviate:
 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001013-0/IT_Notification3.png"><br>
+
+>  In Setup utente deve essere associato all'utente un indirizzo email e in Account e-mail deve essere impostato un account funzionante.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001013-0/IT_Notification4.png"><br>
