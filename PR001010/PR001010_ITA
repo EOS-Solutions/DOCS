@@ -1,0 +1,25 @@
+ Oltre agli Azure secret, si possono monitorare altri secret o certificati per essere avvisati in caso di scadenza imminente:
+ 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001010-0/IT_User1.png"><br>
+
+| Campo              | Descrizione                                                                 |
+|--------------------|------------------------------------------------------------------------------|
+| Tipo               | Scegliere se si tratta di Certificato, Token o altro                        |
+| Descrizione        | Descrizione libera                                                          |
+| Data scadenza      | Indicare la data di scadenza                                                |
+| Abilita notifica   | Abilitare l'invio                                                           |
+| Soglia scaduto     | Definire quanti giorni dopo la scadenza si vuole essere avvisati           |
+| Soglia in scadenza | Definire quanti giorni prima della scadenza si vuole essere avvisati       |
+| Nr. cliente        | Inserire il Nr. Cliente                                                     |
+
+
+
+ Per impostare gli utenti che riceveranno le notifiche aprire la page Setup Notifiche: scegliendo il Tenant ID è possibile visualizzare tutte le notifiche e gli utenti a cui verranno inviate.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001010-0/IT_User2.png"><br>
+
+ Impostando come Tenant ID "Definito dall'utente" si può scegliere manualmente il tipo di notifica e lo user a cui inviarla.
+ 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001010-0/IT_User3.png"><br>
+
