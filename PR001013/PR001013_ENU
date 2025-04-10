@@ -1,4 +1,4 @@
-On the Setup page, you specify to whom notifications should be sent and the type of notifications (Expiring / Expired):
+On the Setup page you can set users who will always receive notifications. They are therefore not users associated with a specific tenant.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001013-0/EN_Notification1.png"><br>
 
@@ -11,3 +11,9 @@ In the Notifications entries, you can view the notifications that will be sent:
 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001013-0/EN_Notification3.png"><br>
+
+
+>In User Setup the user must have an email address associated with them and a working account must be set up in Email Accounts.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001013-0/EN_Notification4.png"><br>
