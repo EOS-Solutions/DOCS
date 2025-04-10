@@ -1,0 +1,7 @@
+Nella pagina di Setup va impostata la coda processi che periodicamente controllerà le varie scadenze (se la coda processi non è stata impostata, il sistema chiederà di farlo)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001008-0/IT_Setup1.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001008-0/IT_Setup2.png"><br>
+
+ Per stabilire quando un secret è da considerarsi In scadenza oppure Scaduto è necessario valorizzare i campi relativi nel Setup:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001008-0/IT_Setup3.png"><br>
