@@ -1,0 +1,13 @@
+On the Setup page, you specify to whom notifications should be sent and the type of notifications (Expiring / Expired):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001013-0/EN_Notification1.png"><br>
+
+The process queue that runs every day will check the secrets, update them, and send email notifications to the users configured in the setup.
+
+In the Notifications entries, you can view the notifications that will be sent:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001013-0/EN_Notification2.png"><br>
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001013-0/EN_Notification3.png"><br>
