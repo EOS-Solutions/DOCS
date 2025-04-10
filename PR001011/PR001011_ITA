@@ -5,6 +5,10 @@ Utilizzare questo logger è davvero semplice. È sufficiente seguire i seguenti 
 2. Inizializzare la codeunit utilizzando `Initialize` o `InitializeForCaller`.
 3. Emettere messaggi di log usando i metodi `LogMessage`. Sono molto simili a quelli usati da `Session.LogMessage` e quindi non dovrebbero dare molti problemi.
 
+{{% alert title="Note" color="info" %}}
+La chiamata di uno degli overload di `LogMessage` non invia immediatamente il messaggio di log alla destinazione. Tutti i messaggi di log sono bufferizzati internamente (per ragioni di prestazioni) e vengono inviati alla destinazione solo quando si chiama `Flush`. È possibile configurare il flush in modo che avvenga automaticamente dopo un certo numero di messaggi, utilizzando `AutoFlush`. In ogni caso, assicurarsi di chiamare `Flush` alla fine della procedura, per assicurarsi che i messaggi residui vengano inviati.
+{{% /alert %}}
+
 Si può trovare un esempio più dettagliato su https://github.com/EOS-Solutions/Sample/tree/master/EX004.EosAdminLib/Logging.
 
 **Application Insights (Default)**
