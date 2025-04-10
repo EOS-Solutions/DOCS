@@ -6,20 +6,26 @@ Utilizzare questo logger è davvero semplice. È sufficiente seguire i seguenti 
 3. Emettere messaggi di log usando i metodi `LogMessage`. Sono molto simili a quelli usati da `Session.LogMessage` e quindi non dovrebbero dare molti problemi.
 
 {{% alert title="Note" color="info" %}}
-La chiamata di uno degli overload di `LogMessage` non invia immediatamente il messaggio di log alla destinazione. Tutti i messaggi di log sono bufferizzati internamente (per ragioni di prestazioni) e vengono inviati alla destinazione solo quando si chiama `Flush`. È possibile configurare il flush in modo che avvenga automaticamente dopo un certo numero di messaggi, utilizzando `AutoFlush`. In ogni caso, assicurarsi di chiamare `Flush` alla fine della procedura, per assicurarsi che i messaggi residui vengano inviati.
+Non è garantito che la chiamata a uno degli overload di `LogMessage` invii immediatamente il messaggio di log alla destinazione. I messaggi di log potrebbero essere bufferizzati internamente (per motivi di prestazioni) e inviati alla destinazione solo quando si chiama `Flush`. Ciò dipende dall'implementazione del logger (vedere sotto). È possibile configurare il flush in modo che avvenga automaticamente dopo un certo numero di messaggi, utilizzando `AutoFlushLimit`. In ogni caso, assicurarsi di chiamare `Flush` alla fine della procedura, per assicurarsi che i messaggi residui vengano inviati.
 {{% /alert %}}
 
 Si può trovare un esempio più dettagliato su https://github.com/EOS-Solutions/Sample/tree/master/EX004.EosAdminLib/Logging.
 
 **Application Insights (Default)**
+
 È essenzialmente la stessa cosa che usare `Session.LogMessage`. I log saranno inviati all'account Application Insights definito nell'applicazione e/o nel servizio. Il vantaggio di usare il framework App Logging invece di chiamare direttamente `Session.LogMessage` è che questo fa parte del framework “App Logging” e quindi questi messaggi di log sono ora configurabili per utente/app/categoria.
+Questo logger non bufferizza i messaggi e quindi non richiede flushing.
 
 **Application Insights (Custom)**
+
 È simile ad `Application Insights (Default)`, ma consente di emettere messaggi di log a un account Application Insights arbitrario e non è limitato a quelli definiti nell'app/servizio.
+Questo logger bufferizza i messaggi e quindi richiede il flushing per inviarli.
 
 {{% alert title="Warning" color="warning" %}}
 Questo logger non utilizza `Session.LogMessage` e quindi non può beneficiare della natura asincrona di tale metodo. Ciò significa che qualsiasi messaggio di log emesso avrà un impatto sulle prestazioni, anche perché verranno effettuate chiamate HTTP ad Application Insights. Usare con cautela e usare `AutoFlushLimit` per ridurre il numero di chiamate HTTP effettuate.
 {{% /alert %}}
 
 **Internal**
+
 Si tratta di un logger che registra i messaggi in una tabella temporanea globale, che rimane in vita finché dura la sessione dell'utente. È possibile utilizzare `codeunit 70623696 EOS004 Internal Logger` per accedere ai log raccolti ed esportarli o conservarli in qualsiasi modo.
+Questo logger non bufferizza i messaggi e quindi non richiede flushing.
