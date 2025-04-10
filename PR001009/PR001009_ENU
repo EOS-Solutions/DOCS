@@ -1,0 +1,15 @@
+In Azure Tenant Expirations, you can add and monitor different tenants.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001009-0/EN_Tenant.png"><br>
+
+Dedicated Client ID and Client Secret are required.
+
+> On the Azure API Permissions page, set the Application.Read.All permission to read all app registrations in the tenant to identify their respective Secrets.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001009-0/EN_Azure.png"><br>
+
+ You can view all secrets related to apps in the tenant from the Apps section:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001009-0/EN_Tenant2.png"><br>
+ For each app, it displays the number of Secrets, how many secrets are expiring, and how many have already expired.
+ 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001009-0/EN_Tenant3.png"><br>
