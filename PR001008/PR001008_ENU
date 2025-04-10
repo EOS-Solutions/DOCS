@@ -1,0 +1,6 @@
+On the Setup page, you need to configure the process queue that will periodically check various expiration dates (if the process queue has not been set, the system will prompt you to do so).
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001008-0/EN_Setup1.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001008-0/EN_Setup2.png"><br>
+
+ To determine when a secret is considered "Expiring" or "Expired," you need to set the relevant fields in the Setup:
+ <img width="" src="https://docs-test.eos-solutions.it/Images/PR001008-0/EN_Setup3.png"><br>
