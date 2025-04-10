@@ -1,0 +1,22 @@
+In addition to Azure secrets, you can monitor other secrets or certificates to be notified in case of imminent expiration:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001010-0/EN_User1.png"><br>
+
+| Field               | Description                                                                 |
+|---------------------|-----------------------------------------------------------------------------|
+| Type                | Choose whether it's a Certificate, Token, or other                          |
+| Description         | Freeform description                                                        |
+| Expiration Date     | Specify the expiration date                                                 |
+| Enable Notification | Enable sending                                                              |
+| Expired Threshold   | Define how many days after expiration you want to be notified               |
+| Expiring Threshold  | Define how many days before expiration you want to be notified              |
+| Customer No.        | Enter the Customer No.                                                      |
+
+
+To set up users who will receive notifications, open the All Notification Setup: by choosing the Tenant ID you can view all the notifications and the users to whom they will be sent.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001010-0/EN_User2.png"><br>
+By setting the Tenant ID to " User Defined ", you can manually choose the type of notification and the user to send it to.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001010-0/EN_User3.png"><br>
