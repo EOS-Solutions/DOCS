@@ -6,6 +6,7 @@ The points from which you can configure an item are:
 -   Transfer orders
 -   Released and confirmed production orders
 -   Project (job) planning lines
+-   Production BOM and Assembly BOM
 
 To configure from the documents just **enter the neutral item code** in the No. field and the configuration starts automatically.
 
