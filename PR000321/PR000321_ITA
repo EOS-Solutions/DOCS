@@ -1,4 +1,4 @@
-I punti da cui Š possibile configurare un articolo sono:
+I punti da cui Ã¨ possibile configurare un articolo sono:
 
 -   Articoli
 -   Documenti di vendita (offerte, ordini, fatture)
@@ -6,10 +6,11 @@ I punti da cui Š possibile configurare un articolo sono:
 -   Ordini di trasferimento
 -   Ordini di produzione rilasciati e confermati
 -   Righe pianificazione progetti (commesse)
+-   Righe DB Produzione e DB Assemblaggio
 
 Per configurare dai documenti **basta inserire il codice articolo neutro nel campo Nr.** e la configurazione parte in automatico.
 
-ß possibile rientrare nella configurazione selezionando la funzione ®Configurazione¯ oppure la scorciatoia **Ctrl+G**.
+Ãˆ possibile rientrare nella configurazione selezionando la funzione Â«ConfigurazioneÂ» oppure la scorciatoia **Ctrl+G**.
 
 <br>
 <br>
