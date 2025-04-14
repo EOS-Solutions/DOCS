@@ -1,0 +1,33 @@
+With the Environment Groups, you can logically group different BC Services. 
+This feature let you install and check apps in multiple services at once.
+
+The groups have only two fields: Name and Description
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001014-0/List.png"><br>
+
+By clicking the Group Name, you will see the assigned services.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001014-0/Services.png"><br>
+
+To add a service (or a docker container) to a certain group, there is a dedicated action in Docker Container list and Server's Services list. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001014-0/add.png"><br>
+
+
+By clicking the action "Install Apps" in the Environment group Page, you will be redirected to an App Manager page. 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001014-0/action.png"><br>
+
+In this list, after selecting one or multiple feed, the list of apps will be loaded. 
+The apps will have one of these status: 
+
+| **Status**         | **Description**                                                                 |
+|--------------------|---------------------------------------------------------------------------------|
+| Installed          | The app is installed and up-to-date                                             |
+| Update Available   | The app can be updated to a newer version                                       |
+| Consolidate        | The app is not aligned across all the services. It may be installed in one service but not in another, or they have different versions. |
+| Not Installed      | The app is not present in all services                                          |
+
+
+From this page, you may install/update the apps from the selected feed. 
+
+> Destructive changes (uninstall, Synch, etc.) must be perfoment in the specific app manager. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001014-0/apps.png"><br>
