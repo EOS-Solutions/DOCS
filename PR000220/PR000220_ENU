@@ -1,0 +1,38 @@
+By specific setup, you can define CONAI packages directly from the Item Card, or from the Item List (by selecting the item of interest)
+
+Item LIst/Card-\>Navigate-\>CONAI-\>CONAI Packages
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/39CONAI(1).png"><br>
+
+We can define the different packaging per item, variant and unit of measure:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/40CONAI(1).png"><br>
+
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/41CONAI(1).png"><br>
+
+
+{{% alert title="NOTE" color="warning" %}}
+The same package code can be used on multiple items
+{{% /alert %}}
+
+
+If you want to to set up a packaging for each item, from CONAI Setup you can activate the option 1 item / 1 Packaging:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/42CONAI(1).png"><br>
+
+
+Thus, by choosing an item and selecting CONAI Package
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/44CONAI(1).png"><br>
+
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/43CONAI(1).png"><br>
+
+
+the system automatically creates a CONAI Package for which we can indicate the weights directly. The package is automatically created with the same Item ID:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/45CONAI(1).png"><br>
+
+
+Disabling "1 Item / 1 Package" in CONAI Setup the database is not altered, but navigation is the initial one. At any time you can choose which mode to use.
+
