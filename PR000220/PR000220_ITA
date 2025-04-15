@@ -1,0 +1,32 @@
+Tramite specifico setup è possibile definire direttamente dalla Scheda Articolo gli imballi CONAI, sia dalla LIsta articoli (selezionando l'articolo di interesse), sia dall'interno della Scheda articolo.
+
+Lista/Scheda articolo-\>Naviga-\>CONAI-\>Imballo CONAI:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/39CONAI.png"><br>
+
+Per ogni articolo possiamo definire degli imballi diversi per articolo, variante e unità di misura:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/40CONAI.png"><br>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/41CONAI.png"><br>
+
+
+
+{{% alert title="NOTA" color="warning" %}}
+uno stesso codice imballo può essere utilizzato su più articoli
+{{% /alert %}}
+
+Questa modalità complessapuò essere semplificata per chi intende impostare un imballo per ogni articolo. Da Configurazione CONAI infatti è possibile attivare l'opzione 1 articolo/1 imballo:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/42CONAI.png"><br>
+In tal modo scegliendo un articolo e selezionando Imballo CONAI.
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/44CONAI.png"><br>
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/43CONAI.png"><br>
+
+il sistema crea in automatico un Imballo CONAI per il quale possiamo indicare direttamente i pesi. L'imballo viene automaticamente creato con lo stesso ID dell'articolo:
+
+<img width="750" src="https://docs-test.eos-solutions.it/Images/PR000220-0/45CONAI.png"><br>
+
+Disattivando in Configurazione CONAI il flag su 1 Articolo/1 imballo non viene alterata la banca dati, ma la navigazione torna ad essere quella iniziale. E' possibile in ogni momento scegliere quale modalità operativa utilizzare.
