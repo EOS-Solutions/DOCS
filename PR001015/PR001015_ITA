@@ -1,8 +1,11 @@
-Disabilitando nel setup CONAI il **Calcolo Esenzione sul Peso** il calcolo avviene la percentuale di esenzione sullo sconto di riga: 
+Disabilitando nel setup CONAI il **Calcolo Esenzione sul Peso** il calcolo avviene impostando la percentuale di esenzione sullo sconto di riga: 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001015-0/EP2_ITA.png"><br>
 
 Se il flag è attivato la percentuale di esenzione viene applicata sul peso e quindi sul campo quantità della riga di addebito CONAI.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001015-0/EP1_ITA.png"><br>
+
+<br>
+<br>
 
