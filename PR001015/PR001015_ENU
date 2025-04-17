@@ -1,0 +1,10 @@
+By disabling **Weight Exemption Calc.** in the CONAI setup, the calculation occurs by setting the exemption percentage on the line discount: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001015-0/EP2_ENU.png"><br>
+
+If the flag is activated, the exemption percentage is applied to the weight and therefore to the quantity field of the CONAI charge line.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001015-0/EP1_ENU.png"><br>
+
+<br>
+<br>
