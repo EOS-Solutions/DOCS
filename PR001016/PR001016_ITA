@@ -1,0 +1,19 @@
+Nel setup del Conai sono presenti due seguenti campi utili per migliorare le performance dell’app in presenza di molti materiali Conai e di fatture con molte righe. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001016-0/EMF1_ITA.png"><br>
+
+Il calcolo viene eseguito con queste modalità:
+* Con Abilita filtro materiali documento attivo per ogni riga documento vengono eseguiti i calcoli per tutti i materiali utilizzati nel documento.
+* Con Abilita filtro materiali riga attivo per ogni riga documento vengono eseguiti i calcoli per tutti i materiali con peso diverso da zero.
+* Con entrambi i flag disattivi per ogni riga documento vengono eseguiti i calcoli per tutti i materiali indipendentemente dal fatto che l’articolo li utilizzi o meno (precedente funzionamento dell’app Conai). 
+
+Esempio con Abilita filtro materiali documento attivo. Per ogni riga nel documento vengono calcolati e visualizzati tutti i materiali utilizzati nel documento: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001016-0/EMF2_ITA.png"><br>
+
+Esempio con Abilita filtro materiali riga attivo. Per ogni riga nel documento vengono calcolati e visualizzati solo i materiali effettivamente utilizzati in ogni singola riga del documento:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001016-0/EMF3_ITA.png"><br>
+
+<br>
+<br>
