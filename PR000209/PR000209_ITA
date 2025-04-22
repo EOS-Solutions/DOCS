@@ -1,15 +1,22 @@
 Rappresentano le tipologie di imballaggio, che si differenziano tra loro per la sola caratteristica di composizione dei materiali, che vengono definiti cliccando su Imballi CONAI-\>Modifica.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000209-0/9CONAI.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000209-0/9CONAI.png"><br>
 
-Imballaggi identici ma, ad esempio, di colore o aspetto differente sono assimilabili purch‚ le materie prime siano in quantit… identiche.
+Imballaggi identici ma, ad esempio, di colore o aspetto differente sono assimilabili purchÃ© le materie prime siano in quantitÃ  identiche.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000209-0/10CONAI.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000209-0/10CONAI.png"><br>
 
 N.B. Il peso viene definito come primario oppure secondario/terziario. Il primo va comunicato separatamente dai secondi.
 
-\- imballaggio per la vendita o **imballaggio primario**: imballaggio concepito in modo da costituire, nel punto vendita, unÂunit… di vendita per lÂutente finale o il consumatore;
+\- imballaggio per la vendita o **imballaggio primario**: imballaggio concepito in modo da costituire, nel punto vendita, unâ€™unitÃ  di vendita per lâ€™utente finale o il consumatore;
 
-\- imballaggio multiplo o **imballaggio secondario**: imballaggio concepito in modo da costituire, nel punto vendita, il raggruppamento di un certo numero di unit… di vendita, indipendentemente dal fatto che sia venduto come tale allÂutente finale o al consumatore, o che serva soltanto a facilitare il rifornimento degli scaffali nel punto vendita. Esso pu• essere rimosso dal prodotto senza alterarne le caratteristiche;
+\- imballaggio multiplo o **imballaggio secondario**: imballaggio concepito in modo da costituire, nel punto vendita, il raggruppamento di un certo numero di unitÃ  di vendita, indipendentemente dal fatto che sia venduto come tale allâ€™utente finale o al consumatore, o che serva soltanto a facilitare il rifornimento degli scaffali nel punto vendita. Esso puÃ² essere rimosso dal prodotto senza alterarne le caratteristiche;
 
-\- imballaggio per il trasporto o **imballaggio terziario**: imballaggio concepito in modo da facilitare la manipolazione ed il trasporto di merci, dalle materie prime ai prodotti finiti, di un certo numero di unit… di vendita oppure di imballaggi multipli per evitare la loro manipolazione ed i danni connessi al trasporto, esclusi i container per i trasporti stradali, ferroviari marittimi ed aerei.
+\- imballaggio per il trasporto o **imballaggio terziario**: imballaggio concepito in modo da facilitare la manipolazione ed il trasporto di merci, dalle materie prime ai prodotti finiti, di un certo numero di unitÃ  di vendita oppure di imballaggi multipli per evitare la loro manipolazione ed i danni connessi al trasporto, esclusi i container per i trasporti stradali, ferroviari marittimi ed aerei.
+
+Nel setup CONAI Ã¨ disponibile un campo, denominato **Abilita le date di validitÃ  sui materiali di imballaggio**, che consente di abilitare la gestione delle date di validitÃ  nei materiali dell'imballo CONAI e il loro conseguente utilizzo allâ€™interno dei documenti.
+Nelle gestioni dei documenti il calcolo degli imballi CONAI viene effettuato considerando la data di registrazione del documento. Questo rimane valido per le fatture di vendita e di acquisto.
+Per i documenti di tipo nota di credito Ã¨ disponibile un campo, denominato **Data di Riferimento (CONAI)** che se valorizzato viene utilizzato per il calcolo degli imballi CONAI e delle contribuzioni al posto nella data di registrazione. In fase di creazione della nota di credito se generata a fronte di una fattura viene valorizzata con la data di registrazione presente nella fattura di vendita. Lâ€™utente puÃ² comunque procedere alla modifica manuale.
+
+<br>
+<br>
