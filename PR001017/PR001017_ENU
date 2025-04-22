@@ -1,0 +1,18 @@
+In the CONAI setup there's a field, called **Enable Calculation on Base Unit of Measure**, that allows to enable the calculation of CONAI based on the base unit of measure of the item.
+
+For example, let's take item 1000 which has two units of measure:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001017-0/CUOM1_ENU.png"><br>
+
+Without the new flag in the setup, the item packaging's must be coded for each unit of measure.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001017-0/CUOM2_ENU.png"><br>
+
+On the other hand, by enabling the new setup flag, it is sufficient to code the item packaging's for the base unit of measure:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001017-0/CUOM3_ENU.png"><br>
+
+Enabling the new flag can be very useful, especially for packaging manufacturing companies where the package code is usually the same for all the units of measure with which that item is managed.
+
+<br>
+<br>
