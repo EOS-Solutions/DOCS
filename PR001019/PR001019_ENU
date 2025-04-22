@@ -1,0 +1,31 @@
+I cicli di manutenzione consentono di definire una check list delle attività da svolgere per eseguire una manutenzione ad un impianto.
+Per ognuna delle righe del ciclo di manutenzione è possibile specificare:
+* **Posizione**. Che definisce l'ordinamento con cui l'operazione deve essere eseguita.
+* **Nr. Parametro**. Definisce l'operazione che deve essere eseguita all'interno del ciclo di manutenzione. I parametri, non obbligatori, si possono codificare nell'apposita tabella.
+* **Tipo**. Assieme al **Nr. Tipo** definisce a chi viene assegnata l'operazione. I valori ammessi sono: **Risorsa**, **Gruppo Risorse**.
+* **Nr. Tipo**. Vedi **Tipo**.
+* **Descrizione**. Descrizione operazione.
+* **Cod. Unità di misura**.
+* **Cod. Unità di misura capacità**.
+* **Durata manutenzione**. 
+* **Nr. operazione successivo**. Si può utilizzare assieme al Nr. operazione precedente per rendere il ciclo di manutenzione seriale o parallelo.   
+* **Nr. operazione precedente**. Si può utilizzare assieme al Nr. operazione successivo per rendere il ciclo di manutenzione seriale o parallelo.
+
+
+Per ognuna delle righe è possibile gestire:
+* **Commenti**.
+* **Codici di Risoluzione**. I codici di risoluzione consentono di definire un elenco di possibili risposte nella dichiarazione di avanzamento attività e delle eventuali azioni da eseguire in fase di avanzamento dell'attività stessa. Le azioni ammesse sono le seguenti: **Crea richiesta di lavoro (copia)**, **Crea richiesta di lavoro veloce**, **Crea richiesta di lavoro (Nr. punto di manutenzione predefinito)**, **Crea richiesta di lavoro (interattiva)**.
+
+Per ogni ciclo di manutenzione è possibile gestire n versioni, ognuna con la propria data di inizio validità.
+
+Il ciclo di manutenzione prima di essere utilizzato deve essere in stato **Certificato**.
+
+Il ciclo di manutenzione e la sua versione si possono associare a punto di manutenzione. In fase poi di creazione richieste di lavoro se indicati vengono automaticamente ereditati.
+
+Nel Setup manutenzione impianti (PMM) è presente un campo, denominato **Usa registrazione con Movimenti ciclo richiesta lavoro** che se abilitato permette di utilizzare i movimenti ciclo richiesta lavoro per suggerire i valori da registrare.
+
+L'utilizzo dei cicli ci manutenzione anche con una solo attività è consigliato.
+
+<br>
+<br>
+
