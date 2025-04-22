@@ -1,0 +1,18 @@
+Nel setup Conai è presente campo, denominato **Abilita Calcolo sull'Unità di Misura Base**, che consente di abilitare il calcolo del CONAI in base all’unità di misura base dell’articolo.
+
+Ad esempio prendiamo l’articolo 1000 che ha due unità di misura: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001017-0/CUOM1_ITA.png"><br>
+
+Senza il nuovo flag nel setup gli imballaggi articolo si devono codificare per ogni unità di misura.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001017-0/CUOM2_ITA.png"><br>
+
+Abilitando invece il nuovo flag a setup è sufficiente codificare gli imballaggi articolo per l’unità di misura base:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001017-0/CUOM3_ITA.png"><br>
+
+L’abilitazione del nuovo flag può risultare molto utile in modo particolare per le aziende produttrici di imballaggi dove la distinta di imballo abitualmente è la stessa per tutte le unità di misura con cui quell’articolo viene gestito.
+
+<br>
+<br>
