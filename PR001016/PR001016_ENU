@@ -1,0 +1,19 @@
+In the Conai setup there are two useful fields to improve the performance of the app in the presence of many Conai materials and invoices with many lines. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001016-0/EMF1_ENU.png"><br>
+
+The calculation is carried out in the following ways:
+* With Enable Document Materials Filter active for each document line, calculations are performed for all materials used in the document. 
+* With Enable Line Materials Filter active for each document line, calculations are performed for all materials with non-zero weight.
+* With both flags off for each document line, calculations are performed for all materials, regardless of whether the item uses them or not (same as in the previous version of the app). 
+
+Example with Enable Document Materials Filter active. For each row in the document, all materials used in the document are calculated and displayed: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001016-0/EMF2_ENU.png"><br>
+
+Example with Enable Line Materials Filter active. For each row in the document, only the materials that are actually used in each individual line of the document are calculated and displayed:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001016-0/EMF3_ENU.png"><br>
+
+<br>
+<br>
