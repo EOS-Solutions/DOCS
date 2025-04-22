@@ -1,10 +1,10 @@
 They represent the types of packaging, which differ from each other only in the composition of the materials, which are defined by clicking on CONAI Packaging-\> Edit.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000209-0/9CONAI(1).png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000209-0/9CONAI(1).png"><br>
 
 Identical packaging but, for example, of different color or appearance are comparable as long as the raw materials are in identical quantities.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000209-0/10CONAI(1).png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000209-0/10CONAI(1).png"><br>
 
 N.B. The weight is defined as primary or secondary / tertiary. The former must be communicated separately from the latter.
 
@@ -13,3 +13,12 @@ N.B. The weight is defined as primary or secondary / tertiary. The former must b
 \- multiple packaging or **secondary packaging** : packaging designed in such a way as to constitute, at the point of sale, the grouping of a certain number of sales units, regardless of whether it is sold as such to the end user or to the consumer, or whether it serves only to facilitate the replenishment of shelves at the point of sale. It can be removed from the product without altering its characteristics;
 
 \- transport packaging or **tertiary packaging** : packaging designed to facilitate the handling and transport of goods, from raw materials to finished products, of a certain number of sales units or of multiple packaging to avoid their manipulation and damage related to transport, excluding containers for road, rail, sea and air transport.
+
+
+
+In the CONAI setup there is a field available, called **Enable validity dates on packaging lines**, which allows to enable the management of validity dates in CONAI packaging materials and their consequent use within documents.
+In document management, the calculation of CONAI packaging is carried out considering the document posting date. This remains valid for sales and purchase invoices.
+For credit memo documents (sales & purchase), a field called **Reference Date (CONAI)** is available, which if filled in is used to calculate CONAI packaging and contributions instead of the registration date. When creating the credit note, if generated against an invoice, it is filled in with the registration date present in the sales invoice. The user can still proceed with manual modification.
+
+<br>
+<br>
