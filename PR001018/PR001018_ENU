@@ -1,0 +1,21 @@
+In the Conai setup there is a field, called **Enable advanced weights management**, which allows to enable the CONAI calculation separately by primary and/or secondary weight.
+there is also a field, called **VAT Bus. Posting Group Private Customers**, that allows to perform a filter on the VAT business posting group categories to identify private customers and exclude the CONAI chargeback on the invoice.
+
+The purpose of the two fields is to respond to the requests of some of our customers, packaging manufacturers.
+In order to comply with the various Conai declarations, it is now possible to manage the following cases.
+**Sales Italy**
+* Primary packaging: chargeback on the invoice and optional generation of CONAI entries.
+* Secondary packaging: no chargeback on the invoice and optional generation of CONAI entries.
+* Private customers. Possibility to exclude the chargeback on the invoice, but with generation of CONAI entries.
+
+**International Sales**
+* No chargebacks on the invoice. Generation of CONAI entries for both primary and secondary weights.
+
+In addition to the fields in the CONAI setup, the following fields have been added in the CONAI Purchase/Sale Setup:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001018-0/AWM1_ENU.png"><br>
+
+Both fields take on the values Both, Primary Weight and Secondary/Tertiary Weight and are used when generating invoice lines and CONAI entries.
+
+<br>
+<br>
