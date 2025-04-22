@@ -1,0 +1,21 @@
+Nel setup Conai è presente un campo, denominato **Abilita la gestione avanzata dei pesi**, che consente di abilitare il calcolo CONAI in modo distinto per peso primario e\o secondario.
+Inoltre è presente un campo, denominato **Cat reg. business IVA Clienti Privati**, che consente di eseguire un filtro sulle categorie reg. business IVA per identificare i clienti privati ed escludere il riaddebito CONAI in fattura.
+
+Lo scopo dei due campi è quello di rispondere alle richieste dei produttori di imballaggi. 
+Per adempiere alle diverse dichiarazioni Conai è possibile, ora, gestire le seguenti fattispecie.
+**Vendite Italia**
+* Imballaggi primari: riaddebito in fattura e generazione opzionale dei movimenti CONAI.
+* Imballaggi secondari: nessun riaddebito in fattura e generazione opzionale dei movimenti CONAI.
+* Clienti privati. Possibilità di escludere il riaddebito in fattura, ma con generazione dei movimenti CONAI.
+
+**Vendite Estero**
+Nessun riaddebito in fattura. Generazione dei movimenti CONAI sia per il peso primario che per il secondario.
+
+Oltre ai campi presenti nel **Setup CONAI** sono stati inseriti i seguenti campi nel **Setup acquisto/vendita CONAI**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001018-0/AWM1_ITA.png"><br>
+
+Entrambi i campi possono assumere i valori **Entrambi**, **Peso primario** e **Peso secondario/terziario** e vengono utilizzati in fase di generazione delle righe CONAI in fattura e sui movimenti CONAI.
+
+<br>
+<br>
