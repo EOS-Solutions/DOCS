@@ -1,30 +1,30 @@
-I cicli di manutenzione consentono di definire una check list delle attività da svolgere per eseguire una manutenzione ad un impianto.
-Per ognuna delle righe del ciclo di manutenzione è possibile specificare:
-* **Posizione**. Che definisce l'ordinamento con cui l'operazione deve essere eseguita.
-* **Nr. Parametro**. Definisce l'operazione che deve essere eseguita all'interno del ciclo di manutenzione. I parametri, non obbligatori, si possono codificare nell'apposita tabella.
-* **Tipo**. Assieme al **Nr. Tipo** definisce a chi viene assegnata l'operazione. I valori ammessi sono: **Risorsa**, **Gruppo Risorse**.
-* **Nr. Tipo**. Vedi **Tipo**.
-* **Descrizione**. Descrizione operazione.
-* **Cod. Unità di misura**.
-* **Cod. Unità di misura capacità**.
-* **Durata manutenzione**. 
-* **Nr. operazione successivo**. Si può utilizzare assieme al Nr. operazione precedente per rendere il ciclo di manutenzione seriale o parallelo.   
-* **Nr. operazione precedente**. Si può utilizzare assieme al Nr. operazione successivo per rendere il ciclo di manutenzione seriale o parallelo.
+Maintenance cycles allow to define a checklist of activities to be do to perform maintenance on a machine.
+For each of the maintenance cycle lines, you can specify:
+* **Position**. Which defines the order in which the operation must be performed.
+* **Parameter No.**. Defines the operation that must be performed within the maintenance cycle. The parameters, which are not mandatory, can be added in the appropriate table.
+* **Type**. Together with the **Type No.** it defines who the operation is assigned to. The permitted values are: **Resource**, **Resource Group**.
+* **Type No.**. See **Type**.
+* **Description**. Operation description.
+* **Unit of Measure Code**.
+* **Cap. Unit of Measure Code**.
+* **Maintenance Duration**. 
+* **Next Operation No.**. It can be used together with the **Previous Operation No.** to make the maintenance cycle serial or parallel.   
+* **Previous Operation No.**. It can be used together with the **Next Operation No.** to make the maintenance cycle serial or parallel.
 
 
-Per ognuna delle righe è possibile gestire:
-* **Commenti**.
-* **Codici di Risoluzione**. I codici di risoluzione consentono di definire un elenco di possibili risposte nella dichiarazione di avanzamento attività e delle eventuali azioni da eseguire in fase di avanzamento dell'attività stessa. Le azioni ammesse sono le seguenti: **Crea richiesta di lavoro (copia)**, **Crea richiesta di lavoro veloce**, **Crea richiesta di lavoro (Nr. punto di manutenzione predefinito)**, **Crea richiesta di lavoro (interattiva)**.
+For each of the lines it is possible to manage:
+* **Comments**.
+* **Resolution Codes**. Resolution codes allow to define a list of possible responses in the activity progress statement and a follow up action to be performed. The following actions are permitted: **Create Work Request (Copy)**, **Create Fast Work Request**, **Create Work Request (Default Maintenance Point No.)**, **Create Work Request (Interactive)**.
 
-Per ogni ciclo di manutenzione è possibile gestire n versioni, ognuna con la propria data di inizio validità.
+For each maintenance cycle it is possible to manage n versions, each with its own validity start date.
 
-Il ciclo di manutenzione prima di essere utilizzato deve essere in stato **Certificato**.
+The maintenance cycle must be in **Certified** status before being used.
 
-Il ciclo di manutenzione e la sua versione si possono associare a punto di manutenzione. In fase poi di creazione richieste di lavoro se indicati vengono automaticamente ereditati.
+The maintenance cycle and its version can be associated with a maintenance point. When creating work requests, if indicated, they are automatically inherited.
 
-Nel Setup manutenzione impianti (PMM) è presente un campo, denominato **Usa registrazione con Movimenti ciclo richiesta lavoro** che se abilitato permette di utilizzare i movimenti ciclo richiesta lavoro per suggerire i valori da registrare.
+In the Plant Maintenance Setup (PMM) there is a field called **Use Work Req. Cycle Posting** which, if enabled, allows to use the work request cycle movements to suggest the values to post.
 
-L'utilizzo dei cicli ci manutenzione anche con una solo attività è consigliato.
+The use of maintenance cycles even with a single activity is recommended.
 
 <br>
 <br>
