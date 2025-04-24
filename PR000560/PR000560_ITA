@@ -12,7 +12,7 @@ Tale setup fornisce al sistema le informazioni per creare il packaging per ogni 
 |Priorità|E' possibile assegnare una priorità alla riga indicando dei valori numerici. Il più alto ha priorità massima.|
 |Codice categoria articolo / Nr. articolo / Cod. variante|Indicare l'articolo ed eventualmente la categoria e la variante|
 |Cod. unità di misura|Specifica l'unità di misura dell'articolo|
-|Tipo origine|E' possibile scegliere tra Cliente / Fornitore /Agente ed eventualmente selezionare un Numero e una Cat. registrazione|
+|Tipo origine|E' possibile scegliere tra Cliente / Fornitore / Agente / Output ed eventualmente selezionare un Numero e una Cat. registrazione|
 |Default|Specificare l'istruzione come predefinita per la combinazione articolo e origine |
 |Nr. materiale di imballaggio|inserire il materiale di imballaggio usato per l'imballaggio dell'articolo.|
 |Nr. portacarico|Inserire il portacarico usato per l'imballaggio dell'articolo.|
