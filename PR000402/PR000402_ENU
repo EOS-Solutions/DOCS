@@ -8,19 +8,19 @@ Example: item "paint" without color that in the final BOM must be "red paint".
 
 **1** Create "From neutral to fix" item with an associated rule code having only the characteristics on which the choice of the definitive item depends
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM3_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM3_ENU.png"><br>
 
 **2** Within the Characteristic Values fill in the field **Purchase item number** with the item that must be replaced by the neutral item. In this case the ratio is 1:1 between characteristic value and item code.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM4_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM4_ENU.png"><br>
 
 **3** Inside the configurable BOM insert the neutral item.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM5_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM5_ENU.png"><br>
 
-**4** When configuring the configured item BOM, the system replaces the neutral item with the item associated with the value of the chosen characteristic. 
+**4** When configuring the configured item BOM, the system replaces the neutral item with the item, and the possible variant code, associated with the value of the chosen characteristic. 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM6_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM6_ENU.png"><br>
 
 <br>
 
@@ -30,21 +30,21 @@ If the choice of the final item does not depend on a single value of a character
 
 **1** The management of **neutral rules** is the same as the neutral item, so it is necessary to have an item "From neutral to fix" with an associated rule code that has only the characteristics on which the choice of the definitive item depends
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM9_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM9_ENU.png"><br>
 
 **2** From the neutral item, select the action "Neutral rules".
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM10_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM10_ENU.png"><br>
 
 **3** Set all possible combinations of characteristics and values according to the sequence (this is important!) in which the characteristics are entered on the "Characteristic rules" page.
 
-**4** In the Ã**Fix item no."** field, indicate which item number must be substituted for the neutral item in the BOM of the configured item.
+**4** In the â€œ**Fix item no."** field, indicate which item number must be substituted for the neutral item in the BOM of the configured item. The neutral rule also allows to indicate a possible variant code in the **Fix variant code** field.
 
 **ENABLE NEUTRAL REQUEST**
 
 Activating the **Enable neutral requests** option in CFG setup ensures that, in the absence of a neutral rule that satisfies the configuration, a page must be opened while configuring to insert a new neutral rule and "teach" the configurator a new setting.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM7_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM7_ENU.png"><br>
 
 <br>
 <br>
