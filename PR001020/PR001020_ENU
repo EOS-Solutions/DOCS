@@ -1,0 +1,44 @@
+The app allows to manage the handling units related to production orders. The main features implemented are the following:
+* Management of **packaging instructions** for **Output Origin Type** to be used specifically for production orders (NOTE: Valid instructions for a production order are those with output type or blank).
+* Management of packaging instructions in production order lines (displayed only in firm planned/released orders). Packaging instructions are automatically valued based on the setup when inserting/updating the production order.
+* In production orders, you can use the Suggest Packing List action to create all handling units based on the packaging instructions by "assigning" them to the production order.
+* Handling units can still be managed and “assigned” manually via the **Handling unit assignments** factbox available on the production order and on the handling unit list/card.
+* Management of the **Handling Unit No.** field in production order lines. If valued during the output declaration phase, it is automatically proposed.
+* The **packaging instructions** are only available if the **EX055 Packing List** is also present in addition to the **EX030 Handling Unit Management App**.
+
+The packaging instructions table has been implemented with the new Output type to be used for packaging instructions related to production orders. N.B. the valid instructions for a production order are those with type output or empty.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001020-0/Output1_ENU.png"><br>
+
+The following fields have been entered in the firm planned and released production orders: **Packaging Instructions No.**, **Load Carrier No.**, **Packaging Material No.**, **Packaging Quantity**, **No. of Layers**, **Q.ty per Layer**, **Handling Unit No.**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001020-0/Output2_ENU.png"><br>
+
+* Packaging instructions are automatically valued based on the setup during the insertion/update of the production order.
+* The user can manually change the packaging instructions.
+* If the **EX076 Manufacturing Toolkit Base** app is also present and the production order was generated from a sales order, the packing instructions are inherited from the sales order line (if applicable).
+
+The **Suggest Packing List (HUM)** action has been added to the header and lines of production orders, which allows to generate all the handling units required by the packaging instructions. The handling units are created in Draft status and “assigned” to the production order.   
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001020-0/Output3_ENU.png"><br>
+
+The handling units assigned to the production order can be consulted via the **Handling Unit Assignments (HUM)** page and the **Handling Unit Assignments** factbox.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001020-0/Output4_ENU.png"><br>
+
+* The factbox also allows to perform the following operations: **Card**, **Assign**, **Unassign**, **Unassign all**.
+* It is important to underline that the handling units, in addition to being generated and assigned according to the packaging instructions, can be assigned manually (via the **Assign** operation). The same handling unit can be assigned to multiple production order lines. Handling units can be assigned in Draft, Loaded status.
+* The function for **suggesting lines** based on packaging instructions is only available if the **Packing List** app is present. The Assign function is also available with the **Handling Unit Management** app only.
+* In the production order lines, you can also set the **Handling Unit No.** that will be proposed in the **Output posting phase**. In this phase, the user can select any load unit, even if not assigned to the document, in unshipped status and with empty location/placement or equal to the line.
+
+In the output posting pages, you can select the handling unit using the appropriate selection or using the new function (linked to the field drill-down) that allows to select the handling units assigned to the production order.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001020-0/Output5_ENU.png"><br>
+
+* When you first post an output on a handling unit, the status will change from Draft to Loaded (also for the related load carrier).
+* If I do an output on a handling unit that is not assigned to the production order, it will automatically be “assigned”.
+* Assignments are deleted when the production order line and/or load unit are deleted. 
+* Assignments are deleted when a production order is closed. 	 
+
+<br>
+<br>
