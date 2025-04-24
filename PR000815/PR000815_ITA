@@ -1,3 +1,3 @@
-In tutte le gestione dei documenti dove è già attivo il configuratore di prodotto per gli articoli con tipo di configurazione **Da Neutro a Configurato** sarà ora possibile utilizzarlo anche per gli articoli con tipo di configurazione **Da Neutro a Puntuale**. Utilizzando questo tipo di configurazione nelle riga del documento il configuratore imposterà l’articolo puntuale definito nelle regola dei neutri.
+In tutte le gestione dei documenti dove è già attivo il configuratore di prodotto per gli articoli con tipo di configurazione **Da Neutro a Configurato** sarà ora possibile utilizzarlo anche per gli articoli con tipo di configurazione **Da Neutro a Puntuale**. Utilizzando questo tipo di configurazione nelle riga del documento il configuratore imposterà l’articolo puntuale, e l'eventuale variante, definito nelle regola dei neutri.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000815-0/NeutralToFix1_ITA.png"><br>
