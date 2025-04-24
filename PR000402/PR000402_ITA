@@ -1,50 +1,50 @@
-Il **secondo modo** per configurare le righe di DB Š utilizzare gli articoli neutri.
+Il **secondo modo** per configurare le righe di DB Ã¨ utilizzare gli articoli neutri.
 
-La ®gestione degli **articoli neutri**¯, il cui livello avanzato Š la gestione delle ®**regole neutri**¯ riguarda la **sostituzione di un articolo fittizio presente nella DB configurabile con un articolo pi— significativo nella DB dellÂarticolo configurato**.
+La Â«gestione degli **articoli neutri**Â», il cui livello avanzato Ã¨ la gestione delle Â«**regole neutri**Â» riguarda la **sostituzione di un articolo fittizio presente nella DB configurabile con un articolo piÃ¹ significativo nella DB dellâ€™articolo configurato**.
 
-Esempio: articolo ®vernice¯ senza colore che nella DB finale deve essere ®vernice rossa¯.
+Esempio: articolo Â«verniceÂ» senza colore che nella DB finale deve essere Â«vernice rossaÂ».
 
 **ARTICOLO NEUTRO**
 
-**1** Creare articolo ®Da neutro a puntuale¯ con associato un Codice regola avente solo le caratteristiche da cui dipende la scelta dellÂarticolo definitivo
+**1** Creare articolo Â«Da neutro a puntualeÂ» con associato un Codice regola avente solo le caratteristiche da cui dipende la scelta dellâ€™articolo definitivo
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM3_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM3_ITA.png"><br>
 
-**2** AllÂinterno dei Valori caratteristica compilare il campo **Nr. articolo acquisto** con lÂarticolo che deve essere sostituito allÂarticolo neutro. In questo caso il rapporto Š 1:1 fra valore caratteristica e codice articolo.
+**2** Allâ€™interno dei Valori caratteristica compilare il campo **Nr. articolo acquisto** con lâ€™articolo che deve essere sostituito allâ€™articolo neutro. In questo caso il rapporto Ã¨ 1:1 fra valore caratteristica e codice articolo.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM4_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM4_ITA.png"><br>
 
-**3** AllÂinterno della DB configurabile inserire lÂarticolo neutro.
+**3** Allâ€™interno della DB configurabile inserire lâ€™articolo neutro.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM5_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM5_ITA.png"><br>
 
-**4** Durante la configurazione della distinta base dellÂarticolo configurato, il sistema sostituisce lÂarticolo neutro con lÂarticolo associato al valore della caratteristica scelta. 
+**4** Durante la configurazione della distinta base dellâ€™articolo configurato, il sistema sostituisce lâ€™articolo neutro con lâ€™articolo, e l'eventuale variante, associato al valore della caratteristica scelta. 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM6_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM6_ITA.png"><br>
 
 <br>
 
-Qualora la scelta dellÂarticolo finale dipende non da un singolo valore di una caratteristica ma dalla combinazione di pi— valori Š necessario utilizzare le regole neutri.
+Qualora la scelta dellâ€™articolo finale dipende non da un singolo valore di una caratteristica ma dalla combinazione di piÃ¹ valori Ã¨ necessario utilizzare le regole neutri.
 
 **REGOLE NEUTRI**
 
-**1** La gestione delle **regole neutri** Š uguale a quella dellÂarticolo neutro, quindi occorre avere un articolo ®Da neutro a puntuale¯ con associato un Codice regola che avente solo le caratteristiche da cui dipende la scelta dellÂarticolo definitivo.
+**1** La gestione delle **regole neutri** Ã¨ uguale a quella dellâ€™articolo neutro, quindi occorre avere un articolo Â«Da neutro a puntualeÂ» con associato un Codice regola che avente solo le caratteristiche da cui dipende la scelta dellâ€™articolo definitivo.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM9_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM9_ITA.png"><br>
 
-**2** DallÂarticolo neutro selezionare lÂazione ®**Regole neutri**¯.
+**2** Dallâ€™articolo neutro selezionare lâ€™azione Â«**Regole neutri**Â».
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM10_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM10_ITA.png"><br>
 
-**3** Impostare tutte le possibili combinazioni di caratteristiche e valori rispettando la sequenza (importante!) con cui le caratteristiche sono inserite nella pagina ®Regole caratteristiche¯.
+**3** Impostare tutte le possibili combinazioni di caratteristiche e valori rispettando la sequenza (importante!) con cui le caratteristiche sono inserite nella pagina Â«Regole caratteristicheÂ».
 
-**4** Nel campo ®**Codice articolo puntuale**¯ indicare il codice articolo deve essere sostituito allÂarticolo neutro nella DB dellÂarticolo configurato.
+**4** Nel campo Â«**Codice articolo puntuale**Â» indicare il codice articolo deve essere sostituito allâ€™articolo neutro nella DB dellâ€™articolo configurato. La regola dei neutri consente di indicare anche un eventuale codice variante nel campo **Codice variante articolo puntuale**.
 
 **RICHIESTA REGOLE NEUTRI**
 
-Attivando lÂopzione **Abilita richieste regole neutri** in setup CFG si fa in modo che, in mancanza di una regola neutri che soddisfi la configurazione, deve essere aperta una pagina mentre si configura per inserire una nuova regola neutri e ®insegnare¯ al configuratore una nuova impostazione.
+Attivando lâ€™opzione **Abilita richieste regole neutri** in setup CFG si fa in modo che, in mancanza di una regola neutri che soddisfi la configurazione, deve essere aperta una pagina mentre si configura per inserire una nuova regola neutri e Â«insegnareÂ» al configuratore una nuova impostazione.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000402-0/ProdBOM7_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000402-0/ProdBOM7_ITA.png"><br>
 
 <br>
 <br>
