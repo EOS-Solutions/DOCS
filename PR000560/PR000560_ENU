@@ -11,7 +11,7 @@ In order to use the "Suggest Line For Packing" function, you must fill in a setu
 |Priority|You can prioritize the row by indicating numeric values. The highest has top priority.|
 |Item Category Code / Item No. / Variant Code|Indicate the item or the item category code or item variant.|
 |Unit of Measure Code|Insert the unit of measure of the packed item, f.e. box.|
-|Source Type|You can choose between Customer/ Vendor /Salesperson and optionally select a Number and a Posting Group.|
+|Source Type|You can choose between Customer/ Vendor / Salesperson / Output and optionally select a Number and a Posting Group.|
 |Default|Specify the instruction as default for the item and source combination.|
 |Packaging Material No.|Insert the packaging material used to pack the item.|
 |Load Carrier No.|Insert the load carrier used to pack the item.|
