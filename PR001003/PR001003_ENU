@@ -52,3 +52,10 @@ The following configuration parameters are available:
 {{% alert title="Note" color="info" %}}
 The field **Endpoint Uri** for this type needs to be set to the application insights connection string only if you want to use it for posting log messages. If you only want to use this for reading queries, you don't need to specify it at all.
 {{% /alert %}}
+
+**Generic API**
+
+This is a generic service configuration type that can be used to configure generic API/REST services. The following configuration parameters are available:
+- `API Key Header Name`: if your service is authenticated via API key, you can specify the name of the header where your API key is specified. If this is not set, no API key will be applied.
+- `API Key`: if your service is authenticated via API key, you can specify the API key to use here. This will only be applied if you also specify `API Key Header Name`.
+- `Authorization Header`: use this if your service requires a specifiy `Authorization` header value.
