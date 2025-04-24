@@ -1,3 +1,3 @@
-In all documents management where the product configurator is already active for items with the configuration type From Neutral to Configuration, it will now also be possible to use it for items with the configuration type From Neutral to Fix. Using this type of configuration in the document line, the configurator will set the Fix Item No. defined in the neutral rule.
+In all documents management where the product configurator is already active for items with the configuration type From Neutral to Configuration, it will now also be possible to use it for items with the configuration type From Neutral to Fix. Using this type of configuration in the document line, the configurator will set the Fix Item No., and the possible variant, defined in the neutral rule.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000815-0/NeutralToFix1_ENU.png"><br>
