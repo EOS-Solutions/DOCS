@@ -1,0 +1,41 @@
+L'app permette di gestire le unità di carico relative agli ordini di produzione. Le principali funzionalità realizzate sono le seguenti:
+* Gestione delle **istruzioni di imballaggio** per **Tipo Origine Output** da utilizzare in modo specifico per gli ordini di produzione (N.B. le istruzioni valide per un ordine di produzione sono quelle con tipo output o vuoto).
+* Gestione delle istruzioni di imballaggio nelle righe degli ordini di produzione (vengono visualizzate solo negli ordini  confermati / rilasciati). Le istruzioni di imballaggio vengono valorizzate automaticamente in base al setup in fase di inserimento/aggiornamento ordine di produzione.
+* Negli ordini di produzione è possibile, tramite l’azione **Suggerisci Riga per Imballaggio**, creare tutte le unità di carico in base alle istruzioni di imballaggio «assegnandole» all’ordine di produzione.
+* Le unità di carico si possono comunque gestire e «assegnare» manualmente tramite la factbox **Assegnazioni unità di carico** disponibile sull’ordine di produzione e sulla lista/scheda delle unità di carico.
+* Gestione  del campo **Nr. Unità di carico** nelle righe degli ordini di produzione. Se valorizzata in fase di dichiarazione output viene proposta in automatico.
+* Le **istruzioni di imballaggio** sono disponibili solo se presente oltre all’App **EX030 Handling Unit Management** anche la **EX055 Packing List**. 
+
+La tabella delle istruzioni di imballaggio è stata implementata con il nuovo tipo Output da utilizzare per le istruzioni di imballaggio relative agli ordini di produzione. N.B. le istruzioni valide per un ordine di produzione sono quelle con tipo output o vuoto.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001020-0/Output1_ITA.png"><br>
+
+Negli ordini di produzione confermati e rilasciati sono presenti i seguenti campi: **Nr. Istruzioni di imballaggio**, **Nr. portacarico**, **Nr. materiale di imballaggio**, **Quantità imballaggio**, **Nr. Di strati**, **Qtà. Per strato**, **Nr. Unità di carico**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001020-0/Output2_ITA.png"><br>
+
+* Le istruzioni di imballaggio vengono valorizzate automaticamente in base al setup in fase di inserimento/aggiornamento ordine di produzione. 
+* L’utente può variare manualmente le istruzioni di imballaggio.
+* Se presente anche l’app **EX076 Manufacturing Toolkit Base** e l’ordine di produzione è stato generato da un ordine di vendita le istruzioni di imballaggio vengono ereditate dalla riga dell’ordine di vendita (se previste).
+
+In testata e nelle righe degli ordini di produzione è stata aggiunta l’azione **Suggerisci riga per imballaggio (HUM)** che consente di generare tutte le unità di carico previste dalle istruzioni di imballaggio. Le unità di carico vengono create in stato Bozza e «assegnate» all’ordine di produzione.   
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001020-0/Output3_ITA.png"><br>
+
+Le unità di carico assegnate all’ordine di produzione sono consultabili tramite la page **Assegnazioni Unità di Carico (HUM)** e la factbox **Assegnazioni Unità di Carico**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001020-0/Output4_ITA.png"><br>
+
+* La factbox permette inoltre l’esecuzione delle seguenti operazioni: **Scheda**, **Assegna**, **Annulla assegnazione**, **Annulla tutte le assegnazioni**.
+* E’ importante sottolineare che le unità di carico oltre ad essere generate e assegnate in base alle istruzioni di imballaggio si possono assegnare manualmente (tramite l’operazione **Assegna**). La stessa Unità di carico può essere assegnata a più righe ordine di produzione. Si possono assegnare unità di carico in stato **Bozza**, **Caricato**.
+* La funzione per il **suggerimento delle righe** in base alle istruzioni di imballaggio è disponibile sole se presente l’app **Packing List**. La funzione **Assegna** invece è disponibile anche con la sola App **Handling Unit Management**.
+* Nelle righe ordine di produzione si può impostare anche il **Nr. unità di carico** che verrà proposta in **fase di registrazione Output**. L’utente in questa fase può selezionare una qualsiasi unità di carico, anche se non assegnata al documento, in stato non spedito e con ubicazione/collocazione vuota o uguale alla riga.  
+
+Nelle pagine di registrazione output si può selezionare l’unità di carico tramite l’apposita selezione o tramite la nuova funzione (agganciata al drill-down del campo) che permette di selezionare le unità di carico assegnate all’ordine di produzione.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001020-0/Output5_ITA.png"><br>
+
+Alla prima registrazione di un output su un unità di carico lo stato passerà da Bozza a Caricato (anche per il relativo portacarico).
+Se eseguo l’output su un unità di carico che non risulta assegnata all’ordine di produzione verrà automaticamente «assegnata».
+Le assegnazioni vengono cancellate quando viene eliminata la riga dell’ordine di produzione e/o l’unità di carico. 
+Le assegnazioni vengono cancellate quando un ordine di produzione viene chiuso. 
