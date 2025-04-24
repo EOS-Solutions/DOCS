@@ -53,3 +53,10 @@ Sono disponibili i seguenti parametri di configurazione:
 {{% alert title="Note" color="info" %}}
 Il campo **Endpoint Uri** per questo tipo deve essere impostato sulla stringa di connessione di Application Insights solo se si desidera utilizzarlo per la pubblicazione dei messaggi di log. Se lo si vuole usare solo per leggere le query, non è necessario specificarlo.
 {{% /alert %}}
+
+**Generic API**
+
+È un tipo di configurazione di servizio generico che può essere usato per configurare servizi API/REST generici. Sono disponibili i seguenti parametri di configurazione:
+- `API Key Header Name`: se il servizio è autenticato tramite chiave API, è possibile specificare il nome del header in cui è specificata la chiave API. Se non viene impostato, non verrà applicata alcuna chiave API.
+- `API Key`: se il servizio è autenticato tramite chiave API, è possibile specificare la chiave API da utilizzare. Verrà applicata solo se si specifica anche `API Key Header Name`.
+- `Authorization Header`: utilizzare questa opzione se il servizio richiede un valore di intestazione `Authorization` specifico.
