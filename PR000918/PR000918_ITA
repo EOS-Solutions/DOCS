@@ -1,8 +1,16 @@
+Premesso che l'app **EX0102 Eos MAP Services (MAPS)** è:
+* Library gratuita
+* Non vendibile o installabile singolarmente
+* Si installa solo come dipendenza
+* Non a listino
+* Non verrà pubblicata come offerta su AppSource
+* Richiede sottoscrizioni Google o Bing
+
 L'app MAPS viene utilizzata dal sistema per:
-
--   gestire la geolocalizzazione per clienti, fornitori, contatti, ubicazioni, spedire a indirizzi, indirizzi ordine.
-
--   calcolare la geolocalizzazione tramite i servizi di Bing e Google Maps. 
+* Integrazione con Bing Maps o Google Maps
+* Geocoding: convertire indirizzi in coordinate geografiche di : Clienti, Fornitori, Contatti, Ubicazioni, Spedire a indirizzi, Indirizzi ordine
+* Visualizzazione mappe embedded in BC
+* Estendibile anche ad altri servizi.
 
   Premere ALT + Q e digitare "MAPS"
 
