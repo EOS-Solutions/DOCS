@@ -1,0 +1,52 @@
+For information about BING service licenses, please visit the following link:
+
+[https://www.microsoft.com/en-us/maps/licensing/licensing-options/](http://)
+
+Up to 125,000 requests / year it is easy to get a free KEY.
+
+For "enterprise" access, contact Microsoft and request an offer.
+
+To start with a free license, the following links are available:
+
+[https://www.microsoft.com/en-us/maps/create-a-bing-maps-key#basic
+](http://)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing1.png"><br>
+
+To create a KEY to use the subscription you need:
+**1 Register or login at :**
+
+[https://www.bingmapsportal.com/
+](http://)
+
+**2 Go to "My Account -> My Keys" to create a new API key.**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing2.png"><br>
+
+**3 Copy and paste the key into Business Central.**
+
+In Business Central you then need to create a **Service Configuration (EAL)**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing3_ENU.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing4_ENU.png"><br>
+
+Setting the following Endpoint Uri = https://dev.virtualearth.net/REST/v1/
+and the KEY just created in the ApiKey field.
+
+The newly created Service Configuration (EAL) must then be set in **Map Services Setup (MAPS)**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing5_ENU.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing6_ENU.png"><br>
+
+The connection test can be done, for example, from a customer's page and using the **GeoLocations** function:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing7_ENU.png"><br>
+
+or from page **GeoLocations (MAPS)**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing8_ENU.png"><br>
+
+<br>
+<br>
