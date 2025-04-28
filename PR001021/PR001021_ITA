@@ -1,0 +1,60 @@
+Per informazioni sulle licenze del servizio BING è disponibile il seguente link:
+
+[https://www.microsoft.com/en-us/maps/licensing/licensing-options/](http://)
+
+Fino a 125.000 richieste / anno è semplice ottenere una KEY gratuita.
+
+Per accessi di tipo «enterprise» è necessario contattare Microsoft e richiedere un offerta.
+
+Per partire con una licenza gratuita sono disponibili i seguenti link:
+
+[https://www.microsoft.com/en-us/maps/create-a-bing-maps-key#basic
+](http://)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing1.png"><br>
+
+Per creare una KEY per utilizzare la sottoscrizione è necessario:
+**1 Registrarsi o loggarsi a :**
+
+[https://www.bingmapsportal.com/
+](http://)
+
+**2 Spostarsi su «My Account -> My Keys»  creare una nuova API key.**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing2.png"><br>
+
+**3 Copiare ed incollare la key in Business Central.**
+
+In Business Central è necessario poi creare una **Configurazione Servizi (EAL)**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing3_ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing4_ITA.png"><br>
+
+Impostando il seguente Endpoint Uri = https://dev.virtualearth.net/REST/v1/
+e la KEY appena creata nel campo ApiKey.
+
+La Configurazione servizi (EAL) appena creata si deve poi impostare in **Setup Servizi (MAPS)**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing5_ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing6_ITA.png"><br>
+
+Il test della connessione può essere fatto ad esempio spostandosi in anagrafica di un cliente e utilizzando la funzione **Geolocalizzazioni**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing7_ITA.png"><br>
+
+e dalla pagina **Geolocalizzazioni (MAPS)**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001021-0/Bing8_ITA.png"><br>
+
+<br>
+<br>
+
+
+
+
+
+
+
+
