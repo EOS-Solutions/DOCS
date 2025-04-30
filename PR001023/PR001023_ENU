@@ -1,0 +1,7 @@
+The block reasons are as follows:
+* Partially paid occurrency : the occurrency amount is different from the remaining amount
+* Occurrency in a customer bill: the "Bank Receipt Temp. No." field is filled in
+* Occurrency present in a journal line as "Applies-to"
+* Occurrency with the "Applies-to ID" field filled in
+* Occurrency present in a reminder
+* Occurrency present in an issued reminder (only if "Reminder Level Policy" in the DDM setup is set to 'Block Posting'
