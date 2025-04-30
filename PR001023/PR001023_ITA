@@ -1,7 +1,18 @@
 Le causali di blocco sono le seguenti :
-* Rata parzialmente pagata : l'importo della rata è diverso dall'importo residuo
-* Rata in un effetto cliente : risulta compilato il campo "Nr. temp. ricevuta bancaria"
-* Rata presente in una riga di giornale come "Collega-a"
-* Rata con il campo "Collega-a ID" compilato
-* Rata presente in un sollecito
-* Rata presente in un sollecito emesso (solo se "Criteri livello di sollecito" nel setup DDM è impostato su 'Blocca Registrazione'
+
+* Movimenti contabili clienti
+	* Rata parzialmente pagata : l'importo della rata è diverso dall'importo residuo
+	* Rata in un effetto cliente : risulta compilato il campo "Nr. temp. ricevuta bancaria"
+	* Rata presente in una riga di giornale come "Collega-a"
+	* Rata con il campo "Collega-a ID" compilato
+	* Rata presente in un sollecito
+	* Rata presente in un sollecito emesso (solo se "Criteri livello di sollecito" nel setup DDM è impostato su 'Blocca Registrazione'
+
+* Movimenti contabili fornitori
+	* Rata parzialmente pagata : l'importo della rata è diverso dall'importo residuo
+	* Rata in un effetto fornitore : risulta compilato uno tra questi campi
+		* "Nr. effetto fornitore"
+		* "Distinta effetto fornitore"
+	* Rata presente in una riga di Distinta fornitore
+	* Rata presente in una riga di giornale come "Collega-a"
+	* Rata con il campo "Collega-a ID" compilato
