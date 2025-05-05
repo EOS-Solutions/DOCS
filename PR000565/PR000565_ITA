@@ -127,6 +127,8 @@ Nel caso in cui le integrazioni/recuperi dei contributi Enasarco non si vogliano
 
 Eseguendo il report con “Crea movimenti= SI” e “Registra movimenti in C/G = NO”, il sistema crea i movimenti senza registrarli in CG.
 
+La data fine utilizzata per verificare se un agente deve rientrare nel calcolo è "Data di fine liquidazione" presente in Scheda Agente/Add. Acquisti
+
 Eseguendo di nuovo il report per lo stesso periodo non crea effetti, i movimenti creati e non registrati in CG vanno poi registrati in CG da “Movimenti contributi”.
 
 Vedi anche:
