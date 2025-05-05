@@ -14,3 +14,17 @@ Il servizio offerto da Google MAPS prevede un Bonus inziale di 200$:
 **3 Collegare i servizi Maps API  al profilo di fatturazione:**
 
 [https://console.cloud.google.com/apis](http://)
+
+
+Le api di Google utilizzate sono le seguenti:
+* Directions: < di 10 way point per percorso
+* Directions Advanced: 11-22 Waypoint
+* API Maps Jscript: visualizzazione mappa
+* Geocoding: Trasforma indirizzi in coordinate
+
+con i seguenti costi (*):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google2.png"><br>
+
+(*) costi validi alla data di scrittura della documentazione e potrebbero subire variazioni.
+
