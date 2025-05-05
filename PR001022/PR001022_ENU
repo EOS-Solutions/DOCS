@@ -14,3 +14,16 @@ The service offered by Google MAPS includes an initial bonus of $200:
 **3 Link Maps API services to Billing profile:**
 
 [https://console.cloud.google.com/apis](http://)
+
+
+The Google APIs used are as follows:
+* Directions: < di 10 way point for route
+* Directions Advanced: 11-22 Waypoint
+* API Maps Jscript: map view
+* Geocoding: transform addresses into coordinates
+
+with the following costs (*):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google2.png"><br>
+
+(*) costs valid at the date of writing of the documentation and may be subject to change.
