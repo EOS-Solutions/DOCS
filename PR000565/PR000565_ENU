@@ -109,6 +109,8 @@ Let's open Calculate Enasarco Integration (CMS):
 
 By running the report with “Create Entries" **enabled** and “Post Entries” **not enabled**, the system creates the movements without posting them in General Ledger.
 
+The ending date used to check if a salesperson should be included in the calculation is "Settlement Ending Date" present in the Salespeople/Purchasers Card
+
 Running the report again for the same period does not create effects, the movements created and not posted in the G/L must then be posted in the G/L by "Contribution Ledger Entry (CMS)".
 
 See also:
