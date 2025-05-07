@@ -27,3 +27,48 @@ with the following costs (*):
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google2.png"><br>
 
 (*) costs valid at the date of writing of the documentation and may be subject to change.
+
+a simulation of the cost estimate follows:
+
+**PRICING**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google3_ENU.png"><br>
+
+Estimated Customer per month with :
+1.000 shipments,  100 new addresses, 10 users
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google4_ENU.png"><br>
+
+To complete the service setup you need to enter your personal data and payment method:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google5.png"><br>
+
+Set the billing account for project:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google6.png"><br>
+
+It is possible to set an expense limit. By setting usage limits on the APIs associated with a Key. The risk of "unwanted" calls is reduced.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google7.png"><br>
+
+By setting usage limits, you reduce the risk of excessive or unexpected usage.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google8.png"><br>
+
+From the dashboard it is possible monitor the number of requests made and the performances:
+
+[https://console.cloud.google.com/apis/dashboard?](http://)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google9.png"><br>
+
+In Business Central you then need to create a **Service Configuration (EAL)**:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google10_ENU.png"><br>
+
+Setting the following Endpoint Uri = https://maps.googleapis.com/maps/api/
+and the KEY just created in the ApiKey field.
+
+The newly created Service Configuration (EAL) must then be set in **Map Services Setup (MAPS)**:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google11_ENU.png"><br>
+
+<br>
+<br>
