@@ -28,3 +28,47 @@ con i seguenti costi (*):
 
 (*) costi validi alla data di scrittura della documentazione e potrebbero subire variazioni.
 
+segue una simulazione della stima dei costi:
+
+**PRICING**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google3_ITA.png"><br>
+
+Stima Cliente mese con:
+1.000 spedizioni,  100 nuovi indirizzi/mese, 10 utenti
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google4_ITA.png"><br>
+
+per completare il setup del servizio è necessario inserire i dati personali e il metodo pagamento:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google5.png"><br>
+
+Abbinare il profilo di fatturazione con il Progetto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google6.png"><br>
+
+E’ possibile impostare un tetto di spesa Impostando limiti di utilizzo sulle API associate ad una Key, riducendo il rischio di chiamate «indesiderate».
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google7.png"><br>
+
+Impostando limiti di utilizzo si riducono rischi di utilizzo eccessivi o non previsti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google8.png"><br>
+
+Dalla dashboard è possibile monitorare il numero di chiamate effettuate e le performance:
+
+[https://console.cloud.google.com/apis/dashboard?](http://)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google9.png"><br>
+
+In Business Central è necessario poi creare una **Configurazione Servizi (EAL)**:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google10_ITA.png"><br>
+
+impostando Endpoint Uri = https://maps.googleapis.com/maps/api/
+e la KEY appena creata nel campo ApiKey.
+
+La Configurazione servizi (EAL) appena creata si deve poi impostare in **Setup Servizi (MAPS)**:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001022-0/Google11_ITA.png"><br>
+
+<br>
+<br>
