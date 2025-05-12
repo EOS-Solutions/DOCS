@@ -1,16 +1,16 @@
 Il configuratore di Prodotto permette di definire quali Caratteristiche incidono sul prezzo del Prodotto Configurato.
 
-Per impostare i prezzi Š quindi Obbligatorio:
+Per impostare i prezzi Ã¨ quindi Obbligatorio:
 
--   Specificare quali caratteristiche della regola determineranno il prezzo dellÂarticolo configurato.
+-   Specificare quali caratteristiche della regola determineranno il prezzo dellâ€™articolo configurato.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000325-0/Price1_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000325-0/Price1_ITA.png"><br>
 
 <br>
 
-Inserire le caratteristiche allÂinterno della matrice prezzi rispettando la stessa sequenza con cui vengono inserite le caratteristiche nella regola. La combinazione delle caratteristiche determiner… il prezzo dellÂarticolo. La matrice prezzi permette di inserire fino a un massimo di 10 caratteristiche anche in modalit… da/a.
+Inserire le caratteristiche allâ€™interno della matrice prezzi rispettando la stessa sequenza con cui vengono inserite le caratteristiche nella regola. La combinazione delle caratteristiche determinerÃ  il prezzo dellâ€™articolo. La matrice prezzi permette di inserire fino a un massimo di 10 caratteristiche anche in modalitÃ  da/a.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000325-0/Price2_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000325-0/Price2_ITA.png"><br>
 
 <br>
 
@@ -22,22 +22,24 @@ Nella matrice si possono gestire prezzi per i seguenti tipi di listino:
 * **Fornitore.** Utilizzato in tutti i documenti di acquisto.
 * **Tutti i fornitori.** Utilizzato in tutti i documenti di acquisto.
 
-I prezzi dellÂarticolo configurato da un documento di vendita possono essere recuperati da:
+I prezzi dellâ€™articolo configurato da un documento di vendita possono essere recuperati da:
 -   Vendere a Cliente o Fatturare a Cliente a seconda di quanto impostato a Setup nel campo "Ottieni prezzi per cliente".
 
-Se la configurazione di prodotto viene lanciata dallÂanagrafica articolo verranno proposti i prezzi presenti nel listino impostato come Default nel Setup Configuratore.
+La prioritÃ  con cui vengono ricercati i prezzi e le maggiorazioni Ã¨ definibile nel setup del configuratore di prodotto tramite i campi **Metodo di calcolo dei prezzi di vendita** e **Metodo di calcolo dei prezzi di acquisto**. Vedi [Product Configurator - Setup]({{<relref "product-configurator-setup">}}).
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000325-0/Price3_ITA.png"><br>
+Se la configurazione di prodotto viene lanciata dallâ€™anagrafica articolo verranno proposti i prezzi presenti nel listino impostato come Default nel Setup Configuratore.
 
-Vi Š la possibilit… di creare in automatico una riga di listino al termine della configurazione (listini standard Business Central), attivando rispettivamente i campi "Abilita creazione listini di vendita" e "Abilita creazione listini d'acquisto".
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000325-0/Price3_ITA.png"><br>
+
+Vi Ã¨ la possibilitÃ  di creare in automatico una riga di listino al termine della configurazione (listini standard Business Central), attivando rispettivamente i campi "Abilita creazione listini di vendita" e "Abilita creazione listini d'acquisto".
 
 <br>
 
 I prezzi possono essere aggiornati tramite il Prospetto Matrice Prezzi CFG. Similare al prospetto Prezzi Standard, presenta due funzioni fondamentali, Suggerisci Matrice Prezzi e Implementa Matrice Prezzi.
 
-Il prospetto prezzi clienti si pu• utilizzare anche per lÂimportazione dati tramite pacchetti di configurazione (lÂimportazione diretta nella tabella della matrice prezzi Š possibile solo tramite un eventuale import da foglio excel ma non tramite pacchetti di configurazione).
+Il prospetto prezzi clienti si puÃ² utilizzare anche per lâ€™importazione dati tramite pacchetti di configurazione (lâ€™importazione diretta nella tabella della matrice prezzi Ã¨ possibile solo tramite un eventuale import da foglio excel ma non tramite pacchetti di configurazione).
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000325-0/Price4_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000325-0/Price4_ITA.png"><br>
 
 <br>
 <br>
