@@ -3,7 +3,7 @@ The product configurator allows you to define which characteristics affect the p
 To set prices it is therefore mandatory to:  
 \- Specify which characteristic rules will determine the configured item price.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000325-0/Price1_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000325-0/Price1_ENU.png"><br>
 
 <br>
 
@@ -17,7 +17,7 @@ In the matrix, you can manage prices for the following types of price lists:
 * **Vendor.** Used in all purchase documents.
 * **All vendors**. Used in all purchase documents.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000325-0/Price2_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000325-0/Price2_ENU.png"><br>
 
 <br>
 In the matrix, you can manage prices for the following types of price lists:
@@ -31,9 +31,11 @@ In the matrix, you can manage prices for the following types of price lists:
 The prices of the item configured by a Sales document can be retrieved from:
 -   Sell-to Customer or Bill-to Customer, depending on what is set in Setup  field "Get prices for customer".
 
+The priority with which prices and surcharges are searched can be defined in the product configurator setup using the fields **Sales Price Matrix Calc. Method** and **Purchase Price Matrix Calc. Method**. See [Product Configurator - Setup]({{<relref "product-configurator-setup">}}).
+
 If the Product configuration is launched from the item card, the prices in the price list set as Default in the configurator Setup will be proposed.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000325-0/Price3_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000325-0/Price3_ENU.png"><br>
 
 It is possible to automatically create a price list line (Business Central standard prices) at the end of the configuration, activating the Enable Sales Price flag or the Enable purchase price flag.
 
@@ -43,7 +45,7 @@ Prices can be updated via the Price Matrix Worksheet (CFG). Similar to the Stand
 The price matrix worksheet can also be used for data import via configuration packages (direct import into the price matrix table is only possible via import from excel sheets, but not through configuration packages).
 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000325-0/Price4_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000325-0/Price4_ENU.png"><br>
 
 <br>
 <br>
