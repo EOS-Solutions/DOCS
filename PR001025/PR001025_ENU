@@ -1,0 +1,12 @@
+* To assign Sales Free Goods in sales documents, it is necessary to fill in the 'Gift Code' field in the sales line you want to gift
+* Upon the release of the document, the gift lines will be automatically added, in accordance with the setup of the indicated gift code
+* Gift lines can also be added manually using the 'Insert Free Goods Lines' action
+* The manual mode is mandatory in cases where document approval workflows are required
+
+
+    
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001025-0/Introduzione righe omaggio ENU.png"><br>
+    
+		
+		
+		
