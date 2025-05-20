@@ -2,7 +2,7 @@
 
 Il setup viene impostato nella pagina Setup omaggio (SFG):
 
-<a href="https://docs.eos-solutions.it/Images/ex043/setup/2SalesfreeGoods.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/ex043/setup/2SalesfreeGoods.png"></a>
+<a href="https://docs-test.eos-solutions.it/Images/ex043/setup/2SalesfreeGoods.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/ex043/setup/2SalesfreeGoods.png"></a>
 <br>
 
 | **Campo**                | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -11,7 +11,7 @@ Il setup viene impostato nella pagina Setup omaggio (SFG):
 | Tipo omaggio             | scegliere tra: Rivalsa Senza rivalsa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Tipo                     | scegliere tra: Addebito (Articolo) Conto C/G                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Nr.                      | selezionare l'addebito articolo o il conto in base all'opzione scelta nel campo Tipo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Cat. reg. art./serv. IVA | -Se viene scelto come Tipo omaggio "Senza rivalsa" il sistema lascia la possibilit… di scegliere la Cat. reg. art./serv. IVA.  Se la Cat. reg. art./serv. IVA non viene selezionata, il sistema in automatico la calcoler… in base alla riga articolo cui si riferisce.  In fase di rilascio dell'ordine, in cui creiamo la riga addebito, il sistema verifica che l'importo riga Iva inclusa" sommato fra le 2 righe vada a zero.  -Se viene scelto come Tipo omaggio "Rivalsa" il sistema lascia la possibilit… di scegliere la Cat. reg. art./serv. IVA (sar… una categoria per cui non viene prevista IVA) |
+| Cat. reg. art./serv. IVA | -Se viene scelto come Tipo omaggio "Senza rivalsa" il sistema lascia la possibilitÃ  di scegliere la Cat. reg. art./serv. IVA.  Se la Cat. reg. art./serv. IVA non viene selezionata, il sistema in automatico la calcolerÃ  in base alla riga articolo cui si riferisce.  In fase di rilascio dell'ordine, in cui creiamo la riga addebito, il sistema verifica che l'importo riga Iva inclusa" sommato fra le 2 righe vada a zero.  -Se viene scelto come Tipo omaggio "Rivalsa" il sistema lascia la possibilitÃ  di scegliere la Cat. reg. art./serv. IVA (sarÃ  una categoria per cui non viene prevista IVA) |
 | Codice origine           | Codice che consente di distinguere le registrazioni omaggi in modo che siano facilmente identificabili.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 <br>
@@ -19,9 +19,9 @@ Il setup viene impostato nella pagina Setup omaggio (SFG):
 
 N.B.
 
-LÂ**omaggio** **gestito con lÂaddebito articolo** deve essere contabilizzato su un conto specifico degli omaggi. Il sistema quindi erediter… la cat. reg. art/serv settata sull'addebito articolo se popolata:
+Lâ€™**omaggio** **gestito con lâ€™addebito articolo** deve essere contabilizzato su un conto specifico degli omaggi. Il sistema quindi erediterÃ  la cat. reg. art/serv settata sull'addebito articolo se popolata:
 
-<a href="https://docs.eos-solutions.it/Images/ex043/setup/7SalesfreeGoods.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/ex043/setup/7SalesfreeGoods.png"></a>
+<a href="https://docs-test.eos-solutions.it/Images/ex043/setup/7SalesfreeGoods.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/ex043/setup/7SalesfreeGoods.png"></a>
 <br>
 
 Se invece sul setup dell'addebito articolo non viene specificata, allora eredita la cat. reg. art/serv della riga di articolo di origine.
