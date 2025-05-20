@@ -1,0 +1,11 @@
+* Per assegnare degli omaggi nei documenti di vendita è necessario compilare il campo “codice omaggio” nella riga di vendita che si vuole omaggiare
+* Al rilascio del documento verranno automaticamente aggiunte le righe di omaggio, coerentemente con il setup del codice omaggio indicato
+* Le righe omaggio possono essere aggiunte anche manualmente tramite l’azione “Crea righe omaggio”
+* La modalità manuale è obbligatoria nel caso in cui sono previsti dei flussi approvativi dei documenti
+
+   
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001025-0/Introduzione righe omaggio ITA.png"><br>
+   
+	 
+	 
+
