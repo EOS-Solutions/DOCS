@@ -2,7 +2,7 @@
 
 You can define the specific rules on the page Free Gifts Setup (SFG):
 
-<a href="https://docs.eos-solutions.it/Images/ex043/setup/2SalesfreeGoods_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/ex043/setup/2SalesfreeGoods_ENU.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/ex043/setup/2SalesfreeGoods_ENU.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/ex043/setup/2SalesfreeGoods_ENU.png"></a><br>
 
 | **Field**               | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -19,7 +19,7 @@ N.B.
 
 The **free gift managed with the Item Charge** must be accounted for in a specific account of the free gifts. The system will then inherit the General Product Posting Group set on item charge if populated:
 
-<a href="https://docs.eos-solutions.it/Images/ex043/setup/7SalesfreeGoods_ENU.png" target="_blank"><img width="" src="https://docs.eos-solutions.it/Images/ex043/setup/7SalesfreeGoods_ENU.png"></a><br>
+<a href="https://docs-test.eos-solutions.it/Images/ex043/setup/7SalesfreeGoods_ENU.png" target="_blank"><img width="" src="https://docs-test.eos-solutions.it/Images/ex043/setup/7SalesfreeGoods_ENU.png"></a><br>
 
 If the Item Charge setup is not specified, then the free gift will inherit the General Product Posting Group on the source item line.
 
