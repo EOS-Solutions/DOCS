@@ -4,9 +4,12 @@ In tutte le gestioni dei documenti gestiti dalla power app è stata data la poss
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000766-0/EX089-HU11-ITA.png"><br>
 
 Dopo il salvataggio l’unità di carico viene assegnata al documento. Il documento risulta registrabile senza ulteriori scansioni di barcode. L’annullamento di una HU assegnata si può fare sia da BC che dalla Power app attraverso il tasto: 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000766-0/EX089-HU13.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000766-0/SetupHU1_ITA.png"><br>
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000766-0/EX089-HU12-ITA.png"><br>
+
+Nella sezione unità di carico è inoltre presente un campo, denominato **Salvataggio automatico scansioni unità di carico**, che se abilitato consente la scansione delle unità di carico dalle righe del documento e l'assegnazione automatica al documento.
 
 <br>
 <br>
