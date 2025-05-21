@@ -4,9 +4,12 @@ In all documents managed by the power app, it has been possible to assign previo
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000766-0/EX089-HU11-ENU.png"><br>
 
 After saving, the handling unit is assigned to the document. The document can be recorded without further barcode scanning. The cancellation of an assigned HU can be done both from BC and from the Power app through the button:
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000766-0/EX089-HU13.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000766-0/SetupHU1_ENU.png"><br>
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000766-0/EX089-HU12-ENU.png"><br>
+
+In the handling units section there is also a field, called **Auto save load unit scans**, which if enabled allows the scanning of the load units from the document lines and automatic assignment to the document.
 
 <br>
 <br>
