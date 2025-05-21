@@ -26,6 +26,7 @@ You must extend enum **EOS089 WMS Barcode Type** and implement interface **EOS08
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000142-0/EX089-ScanCus-ENU.png"><br>
 
+In the **Barcode Part** field, you can also manage up to 10 **Free Text** type fields. For each of the fields, you can also manage the name and value of the label. The fields can be managed via code by hooking up to the appropriate events.
 
 <br>
 <br>
