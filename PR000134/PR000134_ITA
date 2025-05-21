@@ -1,6 +1,6 @@
-Setup WMS contiene i campi necessari per inziare ad utilizzare l'app. Molti dei dati presenti nel setup vengono poi utilizzati come default per gli utenti WMS e le attivit… che possono svolgere. LÂazione inizializza compila in modo automatico i dati del setup consentendo un rapido avvio dellÂapp. 
+Setup WMS contiene i campi necessari per inziare ad utilizzare l'app. Molti dei dati presenti nel setup vengono poi utilizzati come default per gli utenti WMS e le attivitÃ  che possono svolgere. Lâ€™azione inizializza compila in modo automatico i dati del setup consentendo un rapido avvio dellâ€™app. 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000134-0/EX089-Setup-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000134-0/EX089-Setup-ITA.png"><br>
 
 
 | **Campo**                    | **Descrizione**                                                                                                 |
@@ -8,19 +8,19 @@ Setup WMS contiene i campi necessari per inziare ad utilizzare l'app. Molti dei 
 | **Cod. lingua** |Codice lingua predefinito per Power WMS. Utilizzato come default in fase di inserimento utente.|
 | **Nome tema** |Nome tema predefinito. Utilizzato come default in fase di inserimento utente.|
 | **OmniSearch** |Se attivo, Power WMS si avvia proponendo la pagina di ricerca universale. Utilizzato come default in fase di inserimento utente.|
-| **Number Sequence attivit…** |Indica la sequenza numerica utilizzata come numeratore per le attivit…. Il campo Š obbligatorio e non editabile manualmente viene impostato automaticamente con lÂazione Inizializza o Inizializza sequenza numerica.|
-| **Modalit… di esecuzione attivit…** |Consente di definire la modalit… predefinita di esecuzione delle operazioni. I valori sono: **Asincrono**: l'esecuzione avviene in background come task; **Sincrono**: l'esecuzione avviene in tempo reale; **Schedulato**: l'esecuzione viene serializzata e gestita dalla coda processi. La modalit… di esecuzione pu• essere poi definita in modo diverso in ogni singola attivit… associata agli utenti.|
-| **Modalit… di scansione** |Impostazione predefinita per la modalit… di scansione. I valori ammessi sono **Per riga**: i barcode vengono richiesti per ogni singola riga del documento, **Per gruppo**: I barcode vengono richiesti per raggruppamento di articolo / variante / unit… di misura / ubicazione / collocazione, **Per documento**: i barcode vengono richiesti sullÂintero documento e raggruppati per articolo / variante / unit… di misura / ubicazione / collocazione. La modalit… di esecuzione pu• essere poi definita in modo diverso in ogni singola attivit… associata agli utenti. |
-| **Notifica esecuzione corretta** |Impostazione predefinita per notificare le attivit… eseguite con successo.|
-| **Scansioni in unit… di misura base** |Impostazione predefinita per gestire le scansioni in unit… di misura base.|
-| **Focus su quantit…** |Permette lÂimpostazione automatica del focus sulla quantit… in modalit… scansione Per Riga. |
-| **Scansiona tutte le righe** |Impostazione predefinita per iniziare con la scansione di tutte le righe in modalit… ®Per riga¯.|
-| **Cod. setup scanner** |Setup scanner predefinito. Il codice di setup scanner consente di definire la modalit… con cui viene gestita la richiesta dei barcode nelle varie operazioni. Possono essere di cinque tipi: **Lineare** che prevede un unico barcode in cui gli elementi vengono divisi utilizzando uno specifico separatore, **Sequenziale** in cui vengono previsti n barcode che verranno richiesti allÂoperatore poi in modo separato, **Posizionale** che prevede un unico barcode e gli elementi vengono identificati definendone sequenza e lunghezza massima, **Separatori Differenti** simile al lineare ma con la possibilit… di definire diversi tipi di identificativi/separatori e la loro posizione (ad esempio utilizzabile per ENA128), **Personalizzato** gestito tramite custom in Business Central.|
+| **Number Sequence attivitÃ ** |Indica la sequenza numerica utilizzata come numeratore per le attivitÃ . Il campo Ã¨ obbligatorio e non editabile manualmente viene impostato automaticamente con lâ€™azione Inizializza o Inizializza sequenza numerica.|
+| **ModalitÃ  di esecuzione attivitÃ ** |Consente di definire la modalitÃ  predefinita di esecuzione delle operazioni. I valori sono: **Asincrono**: l'esecuzione avviene in background come task; **Sincrono**: l'esecuzione avviene in tempo reale; **Schedulato**: l'esecuzione viene serializzata e gestita dalla coda processi. La modalitÃ  di esecuzione puÃ² essere poi definita in modo diverso in ogni singola attivitÃ  associata agli utenti.|
+| **ModalitÃ  di scansione** |Impostazione predefinita per la modalitÃ  di scansione. I valori ammessi sono **Per riga**: i barcode vengono richiesti per ogni singola riga del documento, **Per gruppo**: I barcode vengono richiesti per raggruppamento di articolo / variante / unitÃ  di misura / ubicazione / collocazione, **Per documento**: i barcode vengono richiesti sullâ€™intero documento e raggruppati per articolo / variante / unitÃ  di misura / ubicazione / collocazione. La modalitÃ  di esecuzione puÃ² essere poi definita in modo diverso in ogni singola attivitÃ  associata agli utenti. |
+| **Notifica esecuzione corretta** |Impostazione predefinita per notificare le attivitÃ  eseguite con successo.|
+| **Scansioni in unitÃ  di misura base** |Impostazione predefinita per gestire le scansioni in unitÃ  di misura base.|
+| **Focus su quantitÃ ** |Permette lâ€™impostazione automatica del focus sulla quantitÃ  in modalitÃ  scansione Per Riga. |
+| **Scansiona tutte le righe** |Impostazione predefinita per iniziare con la scansione di tutte le righe in modalitÃ  Â«Per rigaÂ».|
+| **Cod. setup scanner** |Setup scanner predefinito. Il codice di setup scanner consente di definire la modalitÃ  con cui viene gestita la richiesta dei barcode nelle varie operazioni. Possono essere di cinque tipi: **Lineare** che prevede un unico barcode in cui gli elementi vengono divisi utilizzando uno specifico separatore, **Sequenziale** in cui vengono previsti n barcode che verranno richiesti allâ€™operatore poi in modo separato, **Posizionale** che prevede un unico barcode e gli elementi vengono identificati definendone sequenza e lunghezza massima, **Separatori Differenti** simile al lineare ma con la possibilitÃ  di definire diversi tipi di identificativi/separatori e la loro posizione (ad esempio utilizzabile per ENA128), **Personalizzato** gestito tramite custom in Business Central.|
 | **Separatore.** |Separatore predefinito.|
-| **Consenti tutte le ubicazioni** |Impostazione predefinita per abilitare tutti i magazzini nelle attivit….|
+| **Consenti tutte le ubicazioni** |Impostazione predefinita per abilitare tutti i magazzini nelle attivitÃ .|
 | **Cod. ubicazione predefinito** |Cod. ubicazione predefinito.|
-| **Applica filtro per ID utente** |Impostazione predefinita per filtrare le entit… di origine per l'utente collegato al dipendente.|
-| **Consenti utenti non impostati** |Impostazione predefinita per abilitare le entit… di origine senza utente assegnato.|
+| **Applica filtro per ID utente** |Impostazione predefinita per filtrare le entitÃ  di origine per l'utente collegato al dipendente.|
+| **Consenti utenti non impostati** |Impostazione predefinita per abilitare le entitÃ  di origine senza utente assegnato.|
 | **Crea giornali per utente** |Se attivo, i giornali verranno creati per utente.|
 | **Consenti tutti i giornali di riclassificazione articolo** |Impostazione di default per abilitare tutti i giornali di riclassificazione.|
 | **Consenti tutti i giornali di registrazione articolo** |Impostazione di default per abilitare tutti i giornali di registrazione articolo.|
@@ -31,14 +31,17 @@ Setup WMS contiene i campi necessari per inziare ad utilizzare l'app. Molti dei 
 | **Giornale di registrazione articolo predefinito** |Giornale predefinito di registrazione articolo, utilizzato come modello per i giornali utente.|
 | **Def. registrazione inventario fisico predefinito** |Def. registrazione predefinito di inventario fisico, utilizzato come modello per i giornali utente.|
 | **Giornale di inventario fisico predefinito** |Giornale predefinito di inventario fisico, utilizzato come modello per i giornali utente.|
-| **Consenti registrazione** |Impostazione predefinita per abilitare la registrazione dell'entit… di origine.|
-| **Modalit… di esecuzione registrazione** |Modalit… di esecuzione predefinita della richiesta di registrazione.|
+| **Consenti registrazione** |Impostazione predefinita per abilitare la registrazione dell'entitÃ  di origine.|
+| **ModalitÃ  di esecuzione registrazione** |ModalitÃ  di esecuzione predefinita della richiesta di registrazione.|
 | **Azione predefinita** |Azione predefinita del pulsante "Conferma" di Power WMS. I valori ammessi sono Salva e Registra.|
-| **Consenti ripristino entit… di origine** |Impostazione predefinita per abilitare il ripristino dell'entit… di origine.|
-| **Consenti tracciabilit… automatica** |Impostazione predefinita per abilitare la tracciabilit… automatica.|
+| **Consenti ripristino entitÃ  di origine** |Impostazione predefinita per abilitare il ripristino dell'entitÃ  di origine.|
+| **Consenti tracciabilitÃ  automatica** |Impostazione predefinita per abilitare la tracciabilitÃ  automatica.|
 | **Consenti modifica scansioni** |Impostazione predefinita per abilitare la modifica delle scansioni.|
 | **Sincronizza scansioni prelievo** |Se attivo, le scansioni fatte nel prelievo warehouse vengono associate direttamente alla relativa spedizione warehouse.|
-| **Azzera quantit… inv. fisico** |Se attivo, la quantit… delle righe inventario fisico non scansionate con PowerWMS verr… impostata a 0 prima della registrazione del giornale.|
+| **Prelievo per righe "prendere"** |Se attivo, le attivitÃ  di prelievo utilizzeranno le righe di tipo "prendere" come origine.|
+| **Azzera quantitÃ  inv. fisico** |Se attivo, la quantitÃ  delle righe inventario fisico non scansionate con PowerWMS verrÃ  impostata a 0 prima della registrazione del giornale.|
+| **Nr. serie attivitÃ  personalizzate** |Nr. serie per attivitÃ  personalizzate.|
+| **Nr. serie registrazione attivitÃ  personalizzate** |Nr. serie per attivitÃ  personalizzate registrate.|
 
 <br>
 <br>
