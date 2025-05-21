@@ -1,11 +1,12 @@
 On the Setup page you can enable the management of the double unit of measure and choose some options:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000430-0/Setup1_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000430-0/Setup1_ENU.png"><br>
 
 | **Field**                       | **Description**                                                              |
 |---------------------------------|------------------------------------------------------------------------------|
 | Enable Dual Unit of Measure     | allows you to enable the DUM app for the Company                             |
 | Suggest Sec. Qty. to Handle     | you can choose to have the system suggest the secondary quantity             |
+| Sec. Outstanding Quantity Mgt.            | specifies the secondary outstanding quantity management. It can assume the values **Standard** and **Reset Sec. Outst. Qty. at line close**. The value **Reset Sec. Outst. Qty. at line close** indicates that the residual quantity sec. is set to zero when the line is closed in the main unit of measure.             
 | Sales Price Rounding Precision  | allows you to define how many decimals round the prices in the active cycle  |
 | Purch. Price Rounding Precision | allows you to define how many decimals round prices in the passive cycle     |
 
