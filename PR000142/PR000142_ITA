@@ -26,6 +26,10 @@ E’ necessario estendere l’enum **EOS089 WMS Barcode Type** e implementare l�
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000142-0/EX089-ScanCus-ITA.png"><br>
 
+
+Nel campo **Parte Barcode** è possibile inoltre gestire fino a 10 campi di tipo **Testo Libero**. Per ognuno dei campi è inoltre possibile gestire il nome e il valore dell’etichetta. I campi si possono poi gestire via codice agganciadosi agli opportuni eventi.
+
+
 <br>
 <br>
      
