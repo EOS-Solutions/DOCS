@@ -1,12 +1,13 @@
-Nella pagina di Setup � possibile abilitare la gestione della doppia unit� di misura e scegliere alcune opzioni:
+Nella pagina di Setup è possibile abilitare la gestione della doppia unità di misura e scegliere alcune opzioni:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000430-0/Setup1_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000430-0/Setup1_ITA.png"><br>
 
 
 | **Campo**                                  | **Descrizione**                                                                 |
 |--------------------------------------------|---------------------------------------------------------------------------------|
-| Abilita doppia unit� di misura             | consente di abilitare, per societ�, la DUM                                      |
-| Suggerisci q.t� sec. da gestire            | si pu� scegliere di far suggerire al sistema la quantit� secondaria             |
+| Abilita doppia unità di misura             | consente di abilitare, per società, la DUM                                      |
+| Suggerisci q.tà sec. da gestire            | si può scegliere di far suggerire al sistema la quantità secondaria             |
+| Gestione Quantità Residua Sec.            | specifica la gestione delle quantità residua secondaria. Può assumere i valori **Standard** e **Azzera quantità residua sec. alla chiusura della riga**. Il valore **Azzera quantità residua sec. alla chiusura della riga** indica che la quantità residua sec. viene azzerata quando la riga viene chiusa nell'unità di misura principale.             |
 | Precisione arrotondamento prezzi vendita   | permette di definire con quanti decimali arrotondare i prezzi nel ciclo attivo  |
 | Precisione arrotondamento prezzi acquisto  | permette di definire con quanti decimali arrotondare i prezzi nel ciclo passivo |
 
