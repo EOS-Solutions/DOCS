@@ -1,6 +1,6 @@
 PowerWMS Setup contains the fields needed to start using the app. Many of the fields in the setup are then used as default for WMS users and the tasks they can perform. The init setup action automatically populates the setup data, allowing the application to start quickly. 
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000134-0/EX089-Setup-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000134-0/EX089-Setup-ENU.png"><br>
 
 | **Code**                    | **Description**                                                                                                 |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -37,7 +37,10 @@ PowerWMS Setup contains the fields needed to start using the app. Many of the fi
 | **Allow Automatic Tracking** |Default setting for allow auto track in activities.|
 | **Allow Scan Edit** |Default setting for allow scan edit in activities.|
 | **Picking - Whse. Shipment Sync** |If enabled, Picking scans will sync with the Warehouse Shipment lines.|
+| **Picking By Place Lines** |If enabled, picking activities will use "Place" lines as source.|
 | **Blank Phys. Inventory Quantity** |If enabled, quantity on phys. inventory lines not processed by PowerWMS will be set to 0 before posting batch.|
+| **Custom Activity Nos.** |No. Series for custom activity.|
+| **Registered Custom Activity Nos.** |No. Series for registered custom activity.|
 
 <br>
 <br>
