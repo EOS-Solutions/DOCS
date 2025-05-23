@@ -1,0 +1,7 @@
+{{% pageinfo color="info" %}}
+Using OData 2.0 with OnPrem services is supported.
+
+Follow the Microsoft guide to prepare your Business Central environment to work with Entra ID by visiting the following link:
+
+[Configure Microsoft Entra authentication with OpenID Connect](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/authenticating-users-with-azure-ad-openid-connect)
+{{% /pageinfo %}}
