@@ -1,74 +1,166 @@
-In Setup DocFinance (DCF):
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_1_DCF.jpg"><br>
+On the DocFinance Setup page it is possible to define the main parameters for operating the interface.
 
 **Tab General**
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_Setupdcf_01_DCF.png"><br>
+
+
 | **Field**                             | **Description**                                                                                                                               |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Company Code                          | enter the Company's name                                                                                                                      |
-| Remove Country Code from VAT Reg. No. | if active, it is omitted the export of the first two characters of the VAT (Ex. IT for Italy) while exporting the customer / vendor card data |
+| Company Code                          | Company identifier (provided by DocFinance)                                                                                                   |
+| Remove Country Code from VAT Reg. No. | If the option is enabled, it is omitted the export of the first two characters of the VAT number ("IT") while exporting the national customer/vendor card data. |
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_2_DCF.jpg"><br>
+
 
 **Tab Options**
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_Setupdcf_02_DCF.png"><br>
 
-| **Field**                                      | **Description**                                                                                                                                                                                                                                                                                                                                                                                           |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Customer / Vendor Export Prefix                | prefix that allows DocFinance to distinguish between customer and vendor in case master data have been encoded with numeric characters                                                                                                                                                                                                                                                                    |
-| Default Customer / Vendor rating               | DocFinance exports this value if it is not filled in the field in the customer/vendor card or in the payment methods                                                                                                                                                                                                                                                                                      |
-| Customer / Vendor Default Delay Day on Proceed | if it is not entered a default value in the customer / vendor card, this value is considered                                                                                                                                                                                                                                                                                                              |
-| Default Line Value                             | field useful to DocFinance. Identifies the commercial line                                                                                                                                                                                                                                                                                                                                                |
-| Default Customer Financial Item                | default value if not entered in the customer card, Tab DocFinance (Financial Item DocFinance)                                                                                                                                                                                                                                                                                                             |
-| Default Vendor Financial Item                  | vdefault value if not entered in the vendor card, Tab DocFinance (Financial Item DocFinance)                                                                                                                                                                                                                                                                                                              |
-| Default Bank Account                           | exported if the Bank account field is non filled in in the customer / vendor card                                                                                                                                                                                                                                                                                                                         |
-| Default Payment Method                         | exported if not entered in the customer / vendor card                                                                                                                                                                                                                                                                                                                                                     |
-| Expired Installments                           | If, during the Receive/Payable export, the customer/vendor has due dates in the past, he can be given a particular rating that wins hierarchically on the default ones or on those present on the customer/vendor card                                                                                                                                                                                    |
-| Country Code Field No.                         | specifies which field in the Countries table contains the ISO code required for the export                                                                                                                                                                                                                                                                                                                |
-| Export Orders                                  | you can decide whether to export sales and purchase orders when exporting receive/payable                                                                                                                                                                                                                                                                                                                 |
-| Sales Order Prefix                             | identifies sales orders                                                                                                                                                                                                                                                                                                                                                                                   |
-| Purchase Order Prefix                          | identifies purchase orders                                                                                                                                                                                                                                                                                                                                                                                |
-| Export Detail Shipment / Receipt               | if active, shipment and receipt details will be exported                                                                                                                                                                                                                                                                                                                                                  |
-| Sales Shipment Prefix                          | identifies sales shipments                                                                                                                                                                                                                                                                                                                                                                                |
-| Purchase Receipt Prefix                        | identifies purchase receipts                                                                                                                                                                                                                                                                                                                                                                              |
-| Gain G/L Account No Loss G/L Account No        | If the writing for the detection of exchange differences is not exported directly to Euro (flag in the "Accounts and Reasons for Accounting" setup of DocFinance), you must fill in the fields "Gain G/L account No."and "Loss G/L Account No." present in the DocFinance Setup: in this way the related entries will be imported into BC by taking from the file directly the equivalent amount in Euro. |
-| Previously imported file completely posted     | does not allow the posting of new lines if previously imported lines have not been posted    
-| Check mandatory CBI fields | checks if the mandatory CBI fields (city/country) are filled in during the export. Otherwise an error is thrown.    |
+| **Field**                                      | **Description**                                                                                                                               |
+|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| Customer/Vendor Export Prefix                  | Prefix that allows DocFinance to distinguish between customer and vendor in case master data have been encoded with numeric characters.       |                                                                                                                                                                                                                                                
+| Default Customer/Vendor Rating                 | DocFinance exports this value if it is not filled in the field in the customer/vendor card or in the payment meyhods.                         |                                                                                                                                                                                                                                                
+| Customer/Vendor Default Delay Day on Proceed   | If it is not entered a default value in the customer / vendor card, this value is considered.                                                 |                                                                                                                                                                                                                                                
+| Default Line Value                             | Field useful to DocFinance. Identifies the commercial line.                                                                                   |                                                                                                                                                                                                                                                
+| Default Customer/Vendor Financial Item         | Default value if not entered in the customer/vendor card (Tab DocFinance, field DocFinance Financial Item.                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                      
+| Default Bank Account                           | Exported if the Bank account field is non filled in in the customer/vendor card.                                                              |                                                                                                                                                                                                                                                 
+| Default Payment Method                         | Exported if not entered in the customer / vendor card                                                                                         |                                                                                                                                                                                                                                                
+| Expired Installments Rating                    | If, during the Receive/Payable export, the customer/vendor has due dates in the past, he can be given a particular rating that wins hierarchically on the default ones or on those present on the customer/vendor card.                                                                                                                                                                         |                                    
+| Country Code Field No.                         | Specifies which field in the Countries table contains the ISO code required for the export.                                                   |                                                                                                                                                                                                                                                
+| Previously imported file completely posted     | Does not allow the posting of new lines if previously imported lines have not been posted.                                                    |
+| Check mandatory CBI fields                     | Checks if the mandatory CBI fields (City/Country) are filled in during the export. Otherwise an error is thrown.                              |
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_3_DCF.jpg"><br>
 
 **Tab Numbering**
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_Setupdcf_03_DCF.png"><br>
+
+
 | **Field**                 | **Description**                                        |
 |---------------------------|--------------------------------------------------------|
-| Note Withh. Contrib. Nos. | define the numbering for the Withh. Contribution Notes |
+| Note Withh. Contrib. Nos. | Define the numbering for the Withh. Contribution Notes.|
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_4_DCF.jpg"><br>
+
 
 **Tab Journals**
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_Setupdcf_04_DCF.png"><br>
+
+
 | **Field**             | **Description**                                                     |
 |-----------------------|---------------------------------------------------------------------|
-| Gen. Jnl. Template    | define a category for postings related to DocFinance                |
-| Gen. Jnl. Batch       | define a posting batch for DocFinance                               |
-| Gen. Jnl. Prefix      | prefix for document number on import lines                          |
-| Description from NOTE | DocFinance transfers the NOTE field if valued while importing files |
+| Gen. Jnl. Template    | Define a category for postings related to DocFinance.               |
+| Gen. Jnl. Batch       | Define a posting batch for DocFinance.                              |
+| Gen. Jnl. Prefix      | Prefix for document number on import lines.                         |
+| Description from NOTE | DocFinance transfers the NOTE field if valued while importing files.|
 
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_6_DCF.png"><br>
-**Tab DocCredit**
+**Tab DocCredit**<br>
+In the DocCredit tab, it is possible to enable the data flow for the DocCredit module and manage the main export parameters.
+If DocCredit is enabled, the "Receive/Payable Batches" data flow will be enriched with the required information.
 
-| **Campo**           | **Descrizione**                                       |
-|---------------------|-------------------------------------------------------|
-| Dishonored Payment  | Establish a transitional account for any outstanding balances  |
+Specifically, the following data will be exported:
+* In the "Notes" field, the assigned salesperson and information about unpaid invoices (for invoices with RIBA or SDD payment methods) will be exported. This information regards only to the customer ledger entries.
+* Information related to sales and purchase orders/return orders.
+* Information  related to shipments and receipts, including return shipments/receipts (the specific setup must be enabled).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_Setupdcf_Doccred_05_DCF.png"><br>
+
+| **Field**             | **Description**                                                                                             |
+|---------------------|---------------------------------------------------------------------------------------------------------------|
+| DocCredit Enabled                 | Allows to export the data required by DocCredit (Agent code, Unpaid code).                    |   
+| Export Orders                     | Allows to decide whether to also export sales and purchase orders when exporting receive/payable.  |                                                                                                                                                                                                                                                             
+| Sales Order Code                | Defines a code for sales orders document number.                                                   |                                                                                              
+| Purchase Order Code             | Defines a code for purchase orders document number.                                                | 
+| Sales Return Order Code         | Defines a code for sales return orders document number.                                            |
+| Purchase Return Order Code      | Defines a code for purchase return orders document number.                                         |
+| Export Detail Shipment/Receipt    | if active, shipment and receipt details will be exported (included return documents).              |                                                                                                                              
+| Sales Shipment Code             | Defines a code for sales shipments.                                                                |                                                                                                                                  
+| Purchase Receipt Code           | Defines a code for purchase receipts.                                                              |          
+| Sales Return Receipt Code       | Defines a code for sales return receipts.                                                          |
+| Purchase Return Shipment Code   | Defines a code for purchase return shipments.                                                    |
+| Payment Type Dishonored           | Code to be assigned to unpaid invoices (The defualt value to be set is “IN”).                      |
+
+<br>***Note***: codes assigned to orders, shipments, receptions are exported:
+* in the “Origin” field
+* as a suffix to the document number in the “C/G key” field.
+
+**Enable DocCredit**<br>
+If DocCredit is enabled, the "Notes" field of the "Receive/Payable Batches" flow will export information about the agent and unpaid invoice (this information regards the customer ledger entries only).
+
+***Agent Code***<br>
+The "Notes" field will display the salesperson code. The information will be exposed with the string: "DCA:" + "Salesperson Code".
+
+Note: is exported the salesperson code present on the customer ledger entries (which shows the agent entered in the "Salesperson Code" field of the invoice or credit note document header).
+
+In case you are using the "CMS" (Commission) app, please note that the agent automatically set in the "Salesperson Code" field of the document is the agent having the role defined in Commission Setup - "Primary Salesperson Role".
+
+***Unpaid Payment Type***<br>
+If the invoice, with Riba or SDD payment method, is unpaid the string "DCN:" + "Effect No." (where the Effect No. is taken from the "Final Customer Effect No." field present on the line of the Issued Customer Bill) will be exported in the "Notes" field.
+
+**Export order**<br>
+The information in the "Notes" field will be displayed in the following order: the information on the unpaid amount will be shown first, then the salesperson code.
+
+**Order and Shipment Due Date Information**<br>
+Enabling the "Export Orders" field will export, in the "Receive/Payable Batches" flow, the information  related to sales and purchase return orders/orders.
+Export is done according to the following rules.
+* Orders in “Released” status that are billable (that do not have a reason code non-billability) are exported for the unpaid quantity and for the quantity yet to be invoiced.
+* Due dates are reproportioned based on the number of due dates in the payment terms on the order.
+* Due date is calculated based on the date on the **lines** of the document:
+    - from the "Shipment Date" for sales orders;
+    - from the "Expected Receipt Date" for purchase orders.
+
+* Currency Date is calculated as "Due Date" + "Default Delay Day".
+Delay Days are taken from the customer/vendor card and, if not present, from the "Customer/vendor default delay day on proceed" field in Docfinance Setup.
+
+* If the Shipment date/Expected Receipt Date is not present on the document lines, it will be inferred from the corresponding field on the header. If the reference date not even present on the document header, the "Workdate" will be used.
+
+* If the payment condition is not present on the order or the payment terms does not have the setup for calculating due dates, then a "sight" due date ("0G") is assumed.
 
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_5_DCF.jpg"><br>
+**Option "Export Detail Shipment/Receipt**<br>
+In case "Export Detail Shipment/Receipt" option is enabled, information related to shipments and receipts (including of return documents) will be exported. 
+The export criteria are: 
+* information for shipments/receipts not yet invoiced are calculated from the ***recording date*** of the document.
+* For orders, only the unfulfilled portion is exported (if the option "Export Detail Shipment/Receipt" is not active, however, the unfulfilled portion and the unbilled shipped portion is exported).
+
+
+**Log Retention**<br>
+Through the log retention criteria, it is possible to define the period of time for which the archives of the data exchange with DocFinance are kept.
+
+The archives in question are as follows.
+* COGE Batches Archive. 
+* MasterData Batches Archive.
+* Receive/Payable Batches Archive. 
+
+Data prior to the retention period can, therefore, be deleted.
+Deletion is done by job queue, that can be created through the action "Job Queue - Retention Policy".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_Setupdcf_Logret_06_DCF.png"><br>
+
+
+| **Field**               | **Description**                                                                 |
+|-------------------------|---------------------------------------------------------------------------------|
+|Data Deletion Mode           | ***Complete***: The deletion of all data that meet the defined criteria takes place during the execution of a single job queue run. The deletion is performed in record batches, according to the value specified in the "Deletion Chunk Size" field.<br> ***Partial***: for each job queue execution, only the number of records specified in the Deletion Block Size field will be deleted from each of the three archive tables. This mode uses fewer system resources, but until all archives have been completely deleted, some archives may be only partially removed. Deletion is performed in batches of 1,000 records until the specified "Deletion Chunk Size" is reached. |
+| Deletion Chunk Size          | Specifies the number of records to be deleted per execution instance for each of the archive tables. If set to 0, the following default values will be used based on the mode: Complete – 1'000; Partial – 10'000. |
+| Import Archive Ret. Period        | Defines the retention period, in days, of the import archive "COGE Batches Archive".                            |
+| Export Archive Ret. Period           | Defines the retention period, in days, of the export archive "Master Data Batches Archive" and Receive/Payable Batches Archive".                                               |
+
+<br>
+Note: retention period set to value "0" is not considered. For security reasons, if you enable the job queue without setting a period greater than zero, no records will be deleted.
+
+If both fields "Import Archive Ret. Period " and "Export Archive Ret. Period" are not set, the job queue will produce an error, warning that a period must be set for at least one archive type.
+
 
 **Tab Connection**
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000722-0/EN_Setupdcf_Conness_07_DCF.png"><br>
+
 | **Field**                  | **Description**                                                                                                                                                                                         |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Environment Name           | define the working environment                                                                                                                                                                          |
-| API Publisher/GroupVersion | it is a string generated by your DCF app, which indicates the connection parameters to Business Central to set in DocFinance. API Publisher: EOS API Group: DocFinance Version: number of your version  |
-| Company ID                 | ID that identifies the Company                                                                                                                                                                          |
+| ID Tenant               | Visible only in SAAS environments, shows the tenant of BC.                   |
+| Environment Name           | Service name / Environment name |
+| API Publisher/Group/Version | API related data  |
+| Company ID                 | Unique identifier of the current company. |
+
+<br>The field names in the Connection tab exactly match the fields of the BC service you are logged into and that must be specified within the DocFinance software.
+In an On-Prem installation, there might be a dedicated service for API calls. In such cases, the environment name to be specified in DocFinance may differ from the one shown in the "Setup DocFinance" section in BC.
