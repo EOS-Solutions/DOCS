@@ -5,3 +5,6 @@
 | DocFinance Bank | indicates the encoding of the bank used in DocFinance                     |
 | DocFinance RBN  | identifies the type of bank report used in DocFinance                     |
 | Skip DocFinance | banks for which the option is enabled will not be exported to DocFinance  |
+
+Note
+The accounts linked to the bank account should not be exported. This is possible by the option "Skip DocFinance"
