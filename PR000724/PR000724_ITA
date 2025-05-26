@@ -8,7 +8,7 @@ in questa pagina possono essere consultati i record relativi alle Anagrafiche ch
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000724-0/IT_2_Archive.jpg"><br>
 
-In Mostra Dettaglio ä possibile visualizzare i records collegati ad ogni IDBatch; tramite la colonna Ultimo Errore ä possibile consultare l¬eventuale anomalia che si ä generata durante il processo di export.
+In Mostra Dettaglio √® possibile visualizzare i records collegati ad ogni IDBatch; tramite la colonna Ultimo Errore √® possibile consultare l‚Äôeventuale anomalia che si √® generata durante il processo di export.
 
 **Archivio scadenzari (esportazione verso DocFinance)**
 
@@ -16,8 +16,17 @@ Naviga-\>Archivio scadenzari: in questa pagina possono essere consultati i recor
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000724-0/IT_3_Archive.jpg"><br>
 
-In Mostra Dettaglio ä possibile visualizzare i record collegati ad ogni IDBatch; tramite la colonna Ultimo Errore ä possibile consultare l¬eventuale anomalia che si ä generata durante il processo di export.
+In Mostra Dettaglio √® possibile visualizzare i record collegati ad ogni IDBatch; tramite la colonna Ultimo Errore √® possibile consultare l‚Äôeventuale anomalia che si √® generata durante il processo di export.
+
 
 {{% alert title="NOTE" color="warning" %}}
-The following items are exported: Chart of Accounts, Bank Accounts, Customers, Vendors. Open Customer/Vendor ledger entries are exported and, if provided by setup, Sales/Purchase orders and posted shipment/receipt are exported. Orders/return orders that have the "No Invoicing" flag and those that have a status other than "Released" are not exported. Filling in the "Pending" field in Customer/Vendor ledger entries causes DocFinance to freeze the due date.
+Sono esportati i seguenti archivi.<br>
+**Archivio anagrafiche**<br>
+Piano dei conti, Conti bancari, Clienti, Fornitori.<br>
+**Archivio scadenzari:**<br>
+Sono esportate le partite aperte clienti/fornitori.
+Se previsto dalle impostazioni sono esportate opzionalmente anche le scadenze relative agli ordini di vendita/acquisto (inclusi di documenti di reso) e le spedizioni/ricezioni registrate. 
+Sono  esportati esclusivamente gli ordini/ordini di reso in stato "Rilasciato" e che non hanno l'attributo "Criterio di registrazione" impostato a "Non¬†fatturare/Forza¬†come¬†fatturato".
+
+La compilazione del campo ‚ÄúIn sospeso‚Äù nei partitari clienti/fornitori provoca la sospensione della scadenza in DocFinance.
 {{% /alert %}}
