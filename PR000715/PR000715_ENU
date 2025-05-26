@@ -1,9 +1,9 @@
-From the Chart of Accounts page open a G/L Account card:
+From the G/L Account Card it is possible to define the accounts, in the Chart of Accounts, to be exported to DocFinance by the “Skip DocFinance Export” field.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000715-0/EN_1_baseSetup.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000715-0/EN_01_baseSetup.png"><br>
 
-DocFinance exports only accounts with POSTING Account Type for which the "Do not export DocFinance" option is not enabled.
+DocFinance exports only accounts with "Posting" Account Type for which the "Skip DocFinance Export" option is not enabled.
 
 {{% alert title="NOTE" color="warning" %}}
- The accounts linked to the bank account **trough the Bank Acc. Posting Group** must have the option "Skip DocFinance" enabled.
+ The accounts linked to the bank account trough the **Bank Acc. Posting Group** must have the option "Skip DocFinance" enabled.
 {{% /alert %}}
