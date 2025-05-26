@@ -3,5 +3,9 @@
 | **Campo**                | **Descrizione**                                                                                 |
 |--------------------------|-------------------------------------------------------------------------------------------------|
 | Banca DocFinance         | indica la codifica della banca utilizzata in DocFinance                                         |
-| Rapporto Bancario        | identifica il tipo di rapporto bancario utilizzato in DocFinance (es.: CCOR = Conto Corrente)  |
-| Non esportare DocFinance | le banche per cui l'opzione � attiva non verranno esportate in DocFinance                       |
+| Rapporto Bancario        | identifica il tipo di rapporto bancario utilizzato in DocFinance (es.: CCOR = Conto Corrente)   |
+| Non esportare DocFinance | le banche per cui l'opzione è attiva non verranno esportate in DocFinance                       |
+
+
+Note
+I conti del Piano dei conti collegati al C/C bancario non devono essere esportati. Ciò è possibile tramite l'opzione "Non esportare DocFinance".
