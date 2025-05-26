@@ -1,0 +1,9 @@
+Gordon Service is an ASP.NET WebAPI and therefore uses the [.NET configuration framework](https://learn.microsoft.com/en-gb/dotnet/core/extensions/configuration). You therefore configure it basically by modifying the `appsettings.json` file that you find the root folder of the Gordon Service installation.
+
+The following settings are currently supported:
+
+- **URL / Port settings**: These settings are the default settings for the [.NET Kestrel WebServer](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel/endpoints?view=aspnetcore-9.0) and can be used to configure the port and address at which Gordon Service listens. You can find more details on the official documentation. By default, Gordon Service will listen at port **9462** on any address.
+
+- **MaxClientSaturationLevel**: Due to a memory leak introduced in BC24 with the use of PowerShell 7 modules, after a a while the powershell instance will run out of TCP connections and subsequent calls will fail. In order to mitigate this, a maximum saturation level has been introduced. This means that each BC-service connection can sustain this maximum number of powershell cmdlet calls. After that, the connection from Gordon Service to the BC service will be killed and re-established. This is only required for BC24.
+
+- **ServiceClientMapPath**: Gordon Service uses the target BC service to decide which PowerShell module to load. With the advent of BC24, now there is also support for PowerShell 7. This setting points to a configuration file that lets you configure which version of PowerShell is used for which version of BC. You will most probably never need to modify this.
