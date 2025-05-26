@@ -1,0 +1,9 @@
+Gordon Service è una WebAPI ASP.NET e pertanto utilizza il [.NET configuration framework](https://learn.microsoft.com/en-gb/dotnet/core/extensions/configuration). Pertanto, per configurarlo, è sufficiente modificare il file `appsettings.json` che si trova nella cartella radice dell'installazione del servizio Gordon.
+
+Attualmente sono supportate le seguenti impostazioni:
+
+- **Impostazioni URL/porta**: queste impostazioni sono quelle predefinite per [.NET Kestrel WebServer](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel/endpoints?view=aspnetcore-9.0) e possono essere utilizzate per configurare la porta e l'indirizzo su cui è in ascolto il servizio Gordon. Potete trovare maggiori dettagli nella documentazione ufficiale. Per impostazione predefinita, il servizio Gordon ascolterà sulla porta **9462** su qualsiasi indirizzo.
+
+- **MaxClientSaturationLevel**: A causa di un memory leak introdotta in BC24 con l'uso dei moduli PowerShell 7, dopo un po' di tempo l'istanza di PowerShell esaurirà le connessioni TCP e le chiamate successive falliranno. Per attenuare questo problema è stato introdotto un livello massimo di saturazione. Ciò significa che ogni connessione al servizio BC può sostenere questo numero massimo di chiamate ai cmdlet di PowerShell. Dopodiché la connessione dal servizio Gordon al servizio BC verrà interrotta e ristabilita. Questo è richiesto solo per BC24.
+
+- **ServiceClientMapPath**: il servizio Gordon utilizza il servizio BC di destinazione per decidere quale modulo PowerShell caricare. Con l'avvento di BC24, ora è disponibile anche il supporto per PowerShell 7. Questa impostazione punta a un file di configurazione che consente di specificare quale versione di PowerShell utilizzare per quale versione di BC. Molto probabilmente non avrai mai bisogno di modificarlo.
