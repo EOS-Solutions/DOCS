@@ -21,5 +21,9 @@ on this page you can consult the records related to the Receive and Payable that
 In Show Detail, you can view the records linked to each BATCH ID; Using the Last Error column, you can see any anomaly that occurred during the export process.
 
 {{% alert title="NOTE" color="warning" %}}
-The following items are exported: Chart of Accounts, Bank Accounts, Customers, Vendors. Open Customer/Vendor ledger entries are exported and, if provided by setup, Sales/Purchase orders and posted shipment/receipt are exported. Orders/return orders that have the "No Invoicing" flag and those that have a status other than "Released" are not exported. Filling in the "Pending" field in Customer/Vendor ledger entries causes DocFinance to freeze the due date.
+The following archives are exported.
+**MasterData Archive:** Chart of Accounts, Bank Accounts, Customers, Vendors.
+**Receive/Payable Archive:** Open Customer/Vendor ledger entries are exported and, if provided by setup, Sales/Purchase orders and posted shipment/receipt are exported.
+Are exported orders/return order that have the status "Released" and the Posting Policy attribute other than "No invoicing/Force as invoiced".
+Filling in the "On Hold" field in Customer/Vendor ledger entries causes DocFinance to freeze the due date.
 {{% /alert %}}
