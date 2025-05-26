@@ -4,21 +4,21 @@
 
 | **Campo**                   | **Descrizione**                                                                                                   |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Rating DocFinance           | Indica il grado di importanza / priorit… del Fornitore                                                            |
+| Rating DocFinance           | Indica il grado di importanza / prioritÃ  del Fornitore                                                            |
 | Voce finanziaria DocFinance | Criterio di classificazione dei Fornitori                                                                         |
 | GG Medi Ritardo DocFinance  | Valore che rettifica la Data di scadenza determinando il calcolo della "Data valuta" (data prevista di pagamento) |
 | Non esportare DocFinance    | I fornitori per i quali questa opzione viene attivata non verranno esportati in DocFinance                        |
 
 -   In Naviga-\>Fornitore-\>Notula RA
 
-Š possibile effettuare lÂinserimento delle Notule relative ai Fornitori con ritenuta dÂacconto:
+Ã¨ possibile effettuare lâ€™inserimento delle Notule relative ai Fornitori con ritenuta dâ€™acconto:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000717-0/IT_4_baseSetup.jpg"><br>
 
-**Esportazione banca fornitore**: se presente, viene esportato il conto corrente bancario impostato nel campo ÃConto bancario preferitoÄ dell'anagrafica, altrimenti viene esportato il 1ø record presente nella tabella "Conti correnti fornitori".
+**Esportazione banca fornitore**: se presente, viene esportato il conto corrente bancario impostato nel campo â€œConto bancario preferitoâ€ dell'anagrafica, altrimenti viene esportato il 1Â° record presente nella tabella "Conti correnti fornitori".
 
 **Esportazione Banca di canalizzazione**: viene esportata la banca presente su OdA (ordine di acquisto) e sui movimenti contabili fornitori, in alternativa viene esportata la banca impostata nel Setup DocFinance. La banca presente in anagrafica fornitore viene trasferita solo in caso di tipo documento "Notula".
 
-Il **Rating DocFinance** esportato viene recuperato dallÂanagrafica o in alternativa dal Setup DocFinance.
+Il **Rating DocFinance** esportato viene recuperato dallâ€™anagrafica o in alternativa dal Setup DocFinance.
 
 **Esportazione Notule**: per il corretto funzionamento della procedura occorre compilare il campo "Data pagamento", data esportata nello scadenzario generato verso DocFinance.
