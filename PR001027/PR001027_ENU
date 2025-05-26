@@ -7,3 +7,5 @@ The following settings are currently supported:
 - **MaxClientSaturationLevel**: Due to a memory leak introduced in BC24 with the use of PowerShell 7 modules, after a a while the powershell instance will run out of TCP connections and subsequent calls will fail. In order to mitigate this, a maximum saturation level has been introduced. This means that each BC-service connection can sustain this maximum number of powershell cmdlet calls. After that, the connection from Gordon Service to the BC service will be killed and re-established. This is only required for BC24.
 
 - **ServiceClientMapPath**: Gordon Service uses the target BC service to decide which PowerShell module to load. With the advent of BC24, now there is also support for PowerShell 7. This setting points to a configuration file that lets you configure which version of PowerShell is used for which version of BC. You will most probably never need to modify this.
+
+- **ApiKeys**: This allows you to configure which BC services are accessibly by which API key to Gordon. See the section below for more details.
