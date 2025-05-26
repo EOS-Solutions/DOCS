@@ -1,12 +1,11 @@
 La app DocFinance Connector (DCF) di Eos Solutions consente lo **scambio dati con DocFinance**.
 
-**DocFinance** [(www.docfinance.it)](http://www.docfinance.it/) Š un progetto applicativo per la **gestione anticipata di tesoreria aziendale** che contiene i **servizi Remote Banking Telemaco**. LÂintegrazione dei servizi Remote Banking con il sistema informativo aziendale ne caratterizza la completezza.
+**DocFinance** [(www.docfinance.it)](http://www.docfinance.it/) Ã¨ un'applicazione per la **gestione della tesoreria aziendale** che contiene i **servizi Remote Banking Telemaco**. Lâ€™integrazione dei servizi di Remote Banking con il sistema informativo aziendale ne caratterizza la completezza.
 
-La gestione quotidiana della tesoreria fornisce una fotografia ONLINE della situazione dei flussi, delle disponibilit… e dei fabbisogni.
+La gestione quotidiana della tesoreria fornisce una fotografia in tempo reale della situazione dei flussi, delle disponibilitÃ  e dei fabbisogni.
 
-DocFinance contiene i servizi dei CBI e dello Swift Score. Funzionalit… disponibili per entrambi i servizi:
+DocFinance gestisce i servizi di CBI e dello Swift Score. FunzionalitÃ  disponibili per entrambi i servizi:
+-   Disposizioni d'incasso e di pagamento, CBI SEPA e Swift, avvisi di pagamento, insoluti.
+-   Rendicontazione movimenti e saldi di conto corrente.
 
--   Disposizioni d'incasso e di pagamento, cbi sepa e swift, avvisi da pagare, insoluti
--   Rendicontazione movimenti e saldi
-
-Business Central mette a disposizione le anagrafiche, gli scadenzari e alcuni movimenti di conto corrente.
+Business Central mette a disposizione di DocFinance le anagrafiche (Piano dei conti, Banche, clienti, fornitori), gli scadenzari clienti e fornitori, le distinte Riba.
