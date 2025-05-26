@@ -3,5 +3,5 @@ Inserire le causali e il tipo documento relativamente a DocFinance:
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000721-0/IT_8_baseSetup.jpg"><br>
 
 {{% alert title="NOTE" color="warning" %}}
-Import movimenti da DF: se il Tipo documento decodificato tramite la Causale Š ÃPagamentoÄ, ma il Cliente risulta movimentato in DARE o il Fornitore in AVERE, il Tipo documento viene modificato in ÃRimborsoÄ.
+Import movimenti da DF: se il Tipo documento decodificato tramite la Causale Ã¨ â€œPagamentoâ€, ma il Cliente risulta movimentato in DARE o il Fornitore in AVERE, il Tipo documento viene modificato in â€œRimborsoâ€.
 {{% /alert %}}
