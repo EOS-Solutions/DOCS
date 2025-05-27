@@ -1,0 +1,36 @@
+**The new setup wizard function, to be used in the DEMO or TEST environment, allows to create demo data to start using the plant maintenance. In particular, a machine, a maintenance point, a maintenance cycle and a work request are created.**
+
+The setup wizard creates the following main information:
+** Plant Maintenance Setup (PMM) **
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001029-0/SW1_ENU.png"><br>
+
+In which the main serial numbers are set: Machine No. Series, Maintenance Point No. Series, Work Request No. Series, Maintenance Cycle No. Series.
+The **Use Work Req. Cycle Posting** field is also enabled, which allows to use the work request cycle movements to suggest the values to post.
+
+A **machine** called **PURIFIER** is created which is the object of the maintenance process.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001029-0/SW2_ENU.png"><br>
+
+In addition to the general data, the **Default Maintenance Point No.** is set in the machine.
+
+A **maintenance point** is created which defines the type of maintenance to be performed on the machine, and therefore the work requests that can be created.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001029-0/SW3_ENU.png"><br>
+
+Maintenance points define the type of maintenance to be performed on a machine and are used to automatically create work requests. The types managed are: **Automatic creation** if enabled the new work request is automatically created when the previous one is completed, **Recurring creation based on a time limit and periodicity**, **Creation via planning criteria** for example the work request is created after 100 hours of operation or after 10000 pieces, **Creation via job queue**.
+
+In the maintenance point, the following data are set: the resource, the resource group, the maintenance cycle, the maintenance type and the expected time, etc. etc.
+
+A **maintenance cycle** is created which represents the set of work phases of a request. For each phase it is possible to define: the parameter to be verified and its description, the resource or resource group and the expected duration. For each maintenance cycle it is possible to manage n versions, each with its own validity start date. The maintenance cycle and its version can be associated with a maintenance point. Then, during the creation of work requests, if indicated, they are automatically inherited.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001029-0/SW4_ENU.png"><br>
+
+Finally a **work request** is created:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001029-0/SW5_ENU.png"><br>
+
+Work requests are used to plan and execute maintenance activities. They can be created manually or through maintenance points. The main features are: Ability to assign them to a group/resource, Define a planned start date, Define any necessary spare parts, Define the maintenance cycle, Estimated time, Purchasing management: ability to issue purchase orders/quotes, Status management: Planned, Released, In Progress, Completed etc.
+
+<br>
+<br>
