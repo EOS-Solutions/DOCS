@@ -1,0 +1,37 @@
+Dalle versioni **23.0.41, 24.0.28, 25.0.13**, i dati relativi a CIG (Codice identificativo gara)  e CUP (Codice unico di progetto) sono gestiti nelle disposizioni di incasso tramite Riba e nei pagamenti fornitori tramite bonifico Sepa.<br>
+I campi CIG e CUP sono presenti nella distinta cliente e nella distinta fornitore e sono visibili nelle pagine movimenti contabili clienti e movimenti contabili fornitori.
+La compilazione di questi campi, sul partitario clienti e sul partitario fornitori, avviene alla registrazione del documento (fattura\nota credito), utilizzando i valori dei campi CIG e CUP presenti nella testata del documento.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000931-0/PR000931_1_ITA.PNG"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000931-0/PR000931_2_ITA.PNG"><br>
+
+#### CIG e CUP in distinta cliente Riba
+Sulle righe della distinta cliente e della distinta cliente emessa sono stati aggiunti i campi Codice identificativo gara (CIG) e Codice unico di progetto (CUP). Tali campi sono valorizzati dai movimenti contabili clienti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000931-0/PR000931_3_ITA.PNG"><br>
+
+E' stato previsto un controllo che impedisce di cumulare gli effetti per lo stesso cliente e per la stessa data scadenza se il CIG e/o il CUP sono differenti. Il messaggio di errore è esposto in fase di creazione del file "EFFETTI.TXT".
+
+
+#### CIG e CUP sulla disposizione di incasso Riba (file EFFETTI.TXT)
+I dati di CIG e CUP sono esposti nel file della disposizione di incasso Riba (file EFFETTI.TXT).<br>
+Tale infomazioni sono riportate nel Record50 assieme alle informazioni del Nr. documento e della data scadenza.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000931-0/PR000931_4.PNG"><br>
+
+In caso di effetti cumulativi, gli effetti verranno raggruppati per data scadenza, ma solo a parità di CIG e CUP.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000931-0/PR000931_5.PNG"><br>
+
+
+#### CIG e CUP in distinta fornitore
+Sulle righe della distinta fornitore e della distinta fornitore emessa sono stati aggiunti i campi Codice identificativo gara (CIG) e Codice unico di progetto (CUP). Tali campi sono letti dagli omologhi campi presenti nei movimenti contabili fornitori.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000931-0/PR000931_6_ITA.PNG"><br>
+
+
+#### CIG e CUP sul bonifico Sepa (file XML)
+I riferimenti di CIG e CUP, se presenti, sono riportati nel file XML generato dalla funzione "Esporta distinta effetti su file"; le informazioni sono esposte nel TAG "Ustrd".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000931-0/PR000931_7_ITA.PNG"><br>
