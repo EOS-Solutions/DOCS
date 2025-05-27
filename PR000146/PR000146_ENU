@@ -8,6 +8,61 @@ Manage actions with a subscription to **OnExecuteActivityAction** event in codeu
 
 The **Action Go To** field allows to define the behavior of the power app after the operation has been performed. The allowed values in addition to blank are **Home**, **List** and **Detail**.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp12OK-ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp13-ENU.png"><br>
+
+Il campo **Proseguimento Azione** permette di definire il comportamento della power app dopo l’esecuzione dell’operazione. I valori ammessi oltre al vuoto sono **Home**, **Lista**  e **Dettaglio**.
+
+Here is an example of a task action, with the following setup in BC:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/AA1_ENU.png"><br>
+
+displayed in Power App:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/AA2_ENU.png"><br>
+
+the payload is as follows:
+{
+  "action": "ITEM_PRINTLABELS",
+  "actionParameters": [
+    {
+      "code": "NUMBER",
+      "inputValue": "5",
+      "typeCaption": "Integer",
+      "typeInt": 2
+    },
+    {
+      "code": "TYPE",
+      "inputValue": "BIG",
+      "typeCaption": "Text",
+      "typeInt": 0
+    }
+  ],
+  "activity": "Item Information",
+  "batch": "",
+  "employee": "EOS001",
+  "languageId": 1033,
+  "sourceId": null,
+  "sourceSubtype": 0,
+  "sourceType": 27,
+  "systemId": null,
+  "template": ""
+}
+
+The codeunit with the subscriber and a small helper function are available in our SAMPLE environment:
+[https://github.com/EOS-Solutions/Sample/tree/master/EX089.PowerWMS](http://)
+
+**06 - Activity Action - How to manage parameters**
+
+
+Results:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/AA3_ITA.png"><br>
+
+Note:
+* Mandatory parameters are checked automatically. If the value is empty, there is the **OnCheckMandatoryParameterValueOnBeforeExecuteActivityAction** event that allows you to “assign” a value if necessary.
+* If the action is not handled, a generic error is shown.
+* The error can be triggered with an error or by modifying the returns in the subscriber.
+
 <br>
 <br>
      
