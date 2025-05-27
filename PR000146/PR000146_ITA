@@ -2,12 +2,60 @@ La pagina permette di inserire per ognuna delle attività gestite nella Power Ap
 
 Gestire le azioni sottoscrivendosi all’evento **OnExecuteActivityAction** nella codeunit **18060020 EOS089 WMS Activity Task Mgmt.**
 
-
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp12OK-ITA.png"><br>
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/EX089-PowerApp13-ITA.png"><br>
 
 Il campo **Proseguimento Azione** permette di definire il comportamento della power app dopo l’esecuzione dell’operazione. I valori ammessi oltre al vuoto sono **Home**, **Lista**  e **Dettaglio**.
+
+Segue un esempio di azione attività, con il seguente setup in BC:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/AA1_ITA.png"><br>
+
+visualizzato nella Power App:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/AA2BIS_ITA.png"><br>
+
+il payload è il seguente:
+{
+  "action": "ITEM_PRINTLABELS",
+  "actionParameters": [
+    {
+      "code": "NUMBER",
+      "inputValue": "5",
+      "typeCaption": "Integer",
+      "typeInt": 2
+    },
+    {
+      "code": "TYPE",
+      "inputValue": "BIG",
+      "typeCaption": "Text",
+      "typeInt": 0
+    }
+  ],
+  "activity": "Item Information",
+  "batch": "",
+  "employee": "EOS001",
+  "languageId": 1033,
+  "sourceId": null,
+  "sourceSubtype": 0,
+  "sourceType": 27,
+  "systemId": null,
+  "template": ""
+}
+
+La codeunit con il subscriber e una piccola funzione helper sono disponibili nel ns. ambiente di SAMPLE:
+[https://github.com/EOS-Solutions/Sample/tree/master/EX089.PowerWMS](http://)
+
+**06 - Activity Action - How to manage parameters**
+
+
+Risultati:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000146-0/AA3_ITA.png"><br>
+
+Note:
+* i parametri obbligatori sono controllati in automatico. Nel caso il valore sia vuoto, c’è l’evento **OnCheckMandatoryParameterValueOnBeforeExecuteActivityAction** che consente di “assegnare” un valore se necessario.
+* Se l’azione non è gestita, viene mostrato un errore generico.
+* L’errore può essere scatenato con una error oppure modificando nel subscriber i ritorni
 
 <br>
 <br>
