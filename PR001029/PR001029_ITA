@@ -1,4 +1,4 @@
-**La funzione nuovo setup wizard, da utilizzare in ambiente DEMO o TEST, permette di creare dei dati dimostrativi per cominciare a utilizzare la manutenzione impianti.
+**La funzione nuovo setup wizard, presente nel Setup manutenzione impianti e nella procedura di onboarding, si deve utilizzare in ambiente DEMO o TEST e permette di creare dei dati dimostrativi per cominciare a utilizzare la manutenzione impianti.
 In particolare vengono create una macchina, un punto di manutenzione, un ciclo di manutenzione e una richiesta di lavoro.** 
 
 Il setup wizard crea le seguenti principali informazioni:
