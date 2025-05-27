@@ -1,0 +1,38 @@
+**La funzione nuovo setup wizard, presente nel Setup Imballaggio e nella procedura di onboarding, si deve utilizzare in ambiente DEMO o TEST e permette di creare dei dati dimostrativi per cominciare a utilizzare la packing list.
+In particolare vengono creati dei materiali di imballaggio, delle istruziomi di imballaggio, delle unità di carico e un ordine di vendita dal quale è possibile gestire e stampare la packing list.** 
+
+Il setup wizard crea le seguenti principali informazioni:
+** Setup Imballaggio (HUM) **
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW1_ITA.png"><br>
+
+In cui vengono impostati i principali numeri di serie: Nr. serie materiale di imballaggio, Nr. serie istruzioni per l'imballaggio, il Nr. report per la stampa del packing list, i principali campi di gestione delle unità di carico e per il calcolo dei pesi e dei volumi.
+
+Vengono creati dei **tipi unità di carico** con i relativi numeri di serie:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW2_ITA.png"><br>
+
+Vengono creati dei **materiali di imballaggio**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW3_ITA.png"><br>
+
+Infine vengono create le **istruzioni di imballaggio**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW4_ITA.png"><br>
+
+Le istruzioni di imballaggio vengono utilizzate per definire il modo in cui gli articoli vengono imballati nelle unità di carico. Le istruzioni di imballaggio servono a suggerire la packing list per il documento.
+
+Viene poi richiesto all'utente **Vuoi creare un nuovo Ordine di vendita e la packing list**? se la risposta è si il setup crea un ordine di vendita:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW5_ITA.png"><br>
+
+con la relativa packing list dove si possono vedere le unità di carco create in base alle istruzioni di imballaggio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW6_ITA.png"><br>
+
+La Packing List si può stampare con l'apposito report:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW7.png"><br>
+
+<br>
+<br>
