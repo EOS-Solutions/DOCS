@@ -1,0 +1,38 @@
+**The new setup wizard function, present in the Packaging Setup and in the onboarding procedure, must be used in a DEMO or TEST environment and allows you to create demonstration data to start using the packing list.
+In particular, packaging materials, packaging instructions, Handling units and a sales order are created from which it is possible to manage and print the packing list.**
+
+The setup wizard creates the following main information:
+** Packaging Setup (HUM) **
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW1_ENU.png"><br>
+
+Where the main serial numbers are set: Packaging materials Nos., Packaging instructions Nos., the report number for printing the packing list, the main fields for managing handling units and for calculating weights and volumes.
+
+**Handling unit types** are created with their corresponding serial nos.:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW2_ENU.png"><br>
+
+**Packaging materials** are created:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW3_ENU.png"><br>
+
+Finally the **packaging instructions** are created:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW4_ENU.png"><br>
+
+Packaging instructions are used to define how items are packed into handling units. The packaging instructions are used to suggest the packing list for the document.
+
+The user is then asked **Do you want to create a new Sales Order and the packing list**? If the answer is yes setup create a sales order:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW5_ENU.png"><br>
+
+with the relative packing list where you can see the handling units created according to the packaging instructions:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW6_ENU.png"><br>
+
+The Packing List can be printed with the appropriate report:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001030-0/SW7.png"><br>
+
+<br>
+<br>
