@@ -6,7 +6,7 @@ Il setup wizard crea le seguenti principali informazioni:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001029-0/SW1_ITA.png"><br>
 
-In cui vengono impostati i proncipali numeri di serie: Nr. serie macchina, Nr. serie punto manutenzione, Nr. serie richiesta di lavoro, Nr serie ciclo di manutenzione.
+In cui vengono impostati i principali numeri di serie: Nr. serie macchina, Nr. serie punto manutenzione, Nr. serie richiesta di lavoro, Nr serie ciclo di manutenzione.
 Viene abilitato inoltre il campo **Usa registrazione con Movimenti ciclo richiesta lavoro** che permette di utilizzare i movimenti ciclo richiesta lavoro per suggerire i valori da registrare.
 
 Viene creata una **Macchina** denominata **PURIFIER** che è l'oggetto del processo di manutenzione.
