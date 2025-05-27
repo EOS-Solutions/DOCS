@@ -1,26 +1,96 @@
-| **Record type CBI**                                                                                                            |
-|--------------------------------------------------------------------------------------------------------------------------------|
-| IB-EF                                                                                                                          |
-|<img width="" src="https://docs.eos-solutions.it/Images/PR000385-0/2BFForItaly-en.png"><br>  |
+The function allows importing the unpaid bills file provided by the bank.
 
-Let's see an example:
+**Import Customer Dishonored (CBI) – SUMMARY**
+To access the function press ALT + Q and type “CBI” to search for the functionality.
 
-after posting a sales invoice with Payment method = RIBA:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000385-0/EN_CBI_InsolutiRB_Menu_01.png"><br>
 
-you send the RIBA file (it is only in CBI format, not SEPA) from standard italian Business Central to the Bank. Now there are two options:
 
--   the customer pay - \> the Bank doesn't give any advise
--   the customer does not pay -\> after the expiry date and the days of risk (usually 15 days), **thanks to the Bank Files for Italy app,** it is possible to **import into BC a file that shows the dishonored**, after downloading it by homebanking.  
-    Then you can post the dishonored (Document type: Dishonored).
+Select "Import Customer Dishonored (CBI)" to open the following page.
 
-The report is **Import customer dishonored (CBI)**:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000385-0/EN_CBI_InsolutiRB_02.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000385-0/3BFForItaly-en.png"><br>
+Parameters to be entered:
 
-| **Options**            |                                            |
-|------------------------|--------------------------------------------|
-| Template name          | Choose a template from the general journal |
-| Batch name             | Indicate a batch for the posting           |
-| Transitory Account No. | Choose a transitory account number         |
+| **Option**                   |  **Description**                                |
+|------------------------------|-------------------------------------------------|
+|Template Name            | Select the journal to use. |
+|Batch Name               | Select the batch to use.   |
+|Transitory Account No.   | If using a transitory account, it can be selected. |
+|Used as posting date       | Define the proposed posting date for accounting entries. <br>Payment Date: proposed posting date will be the due date of the RiBa (pos. 23–28, record 14).<br>Creation Date: posting date will be the creation date in the unpaid file (pos. 14–19, record IB).|
 
-Then press OK and load the file.
+
+**Notes**<br>
+The bank account must match the ABI, CAB, and account number in the unpaid file. If payments are credited to a different account than the one used for submission, a specific bank account must be created.
+
+**Procedure**
+1. The RiBa file is created in Business Central from "Customer Bill Card".
+1. Upon maturity, wait for the bank to process the results (usually 1–5 days), then download the unpaid file from Remote Banking.
+1. **Import the unpaid file into Business Central using the “Import Customer Dishonored (CBI)” function and post the accounting entries.**
+1. Run the “Closing Bank Receipts” procedure to apply the invoice with the payment entry.
+
+Closing must occur after posting the unpaid bills, as the unpaid import assumes the related entry is still open. If few unpaid bills exist, you can close them at maturity and manually reopen them before importing.
+
+
+**Accounting Entries**<br>
+The accounting entries proposed by the system are summarized here.
+
+***Unpaid import without transitory account***<br>
+Depending on whether the S.B.F. account or the regular bank account is debited.
+
+*S.B.F account debt*.
+
+| Debit                         |     |          Credit          | 
+|-------------------------------|-----|--------------------------|
+| Customer &ensp;&ensp;         |  &ensp; @ &ensp; | S.B.F. account &ensp;&ensp;   |
+
+
+
+<br>*Ordinary bank account debt*
+
+| Debit                         |     |          Credit          | 
+|-------------------------------|-----|--------------------------|
+| Customer &ensp;&ensp;         |  &ensp; @ &ensp; |  Bank account &ensp;&ensp;   |
+
+
+
+<br>Note:
+to automate balance account entry, set a default balance account no. on the batch used for import.
+
+<br>***Unpaid import without transitory account***<br>
+Usually the use of the transitory account is provided in case the treasury is managed with the DocFinance application.
+The accounting entries can be summarized as follows.
+
+*1. Accounting unpaid debit and bank charges*
+
+| Debit                         |     |          Credit           | 
+|-------------------------------|-----|--------------------------|
+| Transitory account            |  &ensp; @ &ensp; |             | 
+|                               |     | Bank account &ensp;     | 
+|                               |     | Bank charges &ensp;   | 
+
+
+<br>*2. Accounting unpaid by “Customer Unpaid Bills Import (CBI)” procedure*
+
+| Debit                         |     |          Credit           | 
+|-------------------------------|-----|--------------------------|
+| Customer                      |  &ensp; @ &ensp; |             | 
+|                               |     | Transitory account &ensp;     | 
+
+
+<br>**Technical Information**<br>
+The unpaid file follows CBI (Corporate Banking Interbancario) standards.
+The record format is defined by document "CBI-RIB-001 - Ricevute Bancarie (RiBa)", revision 6.03 (25/02/2019).
+The function used is “Flusso di ritorno Ri.Ba.".
+The file must start with a header record of type “IB”.
+
+
+<br>**Note**<br>
+Data used includes:
+* Payment Date: from record 14, pos. 23–28.
+* Creation Date: from header record “IB”, pos. 14–19.
+* Reason Code: from record 14, pos. 29–33. Must be “42010” (unpaid bill) to proceed.
+
+<br>**Outline summary of CBI services**  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000385-0/EN_CBI_InsolutiRB_Schema_03.png"><br>  
