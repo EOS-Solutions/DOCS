@@ -1,28 +1,114 @@
-| **Tipo record CBI**                                                                                                         |
-|-----------------------------------------------------------------------------------------------------------------------------|
-| IB-EF                                                                                                                       |
-|<img width="" src="https://docs.eos-solutions.it/Images/PR000385-0/2BFForItaly.png"><br>  |
+La funzione di importazione degli insoluti Riba clienti consente di acquisire il file degli insoluti messo a disposizione dall'Istituto bancario.
+
+***Importazione Insoluti Cliente (CBI) - SOMMARIO***
+<br>Premere ALT + Q e digitare “CBI" per ricercare la funzionalità:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000385-0/IT_CBI_InsolutiRB_Menu_01.png"><br>
+
+Selezionando "Importazione Insoluti Clienti (CBI)" si aprirà le seguente pagina:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000385-0/EN_CBI_InsolutiRB_02.png"><br>
+
+I parametri da inserire sono i seguenti.
+ 
+| **Opzione**                   |  **Descrizione**                                |
+|-------------------------------|-------------------------------------------------|
+| Nome template                 | Consente di selezionare il giornale di registrazione da utilizzare. |
+| Nome batch contabile          | Consente di selezionare il batch da utilizzare.                     |
+| Conto transitorio.            | Nel caso si utilizzi un conto transitorio di contropartita è possibile selezionarlo.      |
+| Imposta data registrazione    | Consente di definire la data registrazione proposta nelle scritture contabili. <br>**Data pagamento**: la data registrazione proposta sarà la data scadenza della Riba (pos. 23-28 record 14). <br>**Data creazione**: la data registrazione proposta sarà la data di creazione presente sul file degli insoluti (pos. 14-19 record IB).                                         |
 
 
-Vediamo un esempio:
+**Note**<br>
+C/C bancario di accredito (Banca "Assuntrice"): in anagrafica C/C bancari deve essere presente una banca  avente ABI, CAB e Nr. conto corrente coincidenti con i dati bancari presenti sul file.
 
-dopo aver registrato una fattura vendita con metodo pagamento = RIBA:
-
-Il file RIBA (standard BC) viene inviato da Business Central alla banca (il file � in formato CBI, non SEPA). A questo punto le opzioni sono:
-
--   il cliente paga -\> la banca non da alcun avviso del pagamento
--   il cliente non paga -\> trascorsa scadenza pi� i giorni di rischio (di solito 15gg), **grazie alla app Bank Files for Italy,** dopo aver scaricato tramite homebanking **il file che ritorna le scadenze insolute**, lo si pu� **importare in Business Central**.  
-    Dopodich� � possibile registrare gli insoluti (Tipo documento= Insoluto).
-
-Lanciare il report **Import insoluti clienti (CBI)**:
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000385-0/3BFForItaly.png"><br>  
-
-| **Opzioni**             |                                                 |
-|-------------------------|-------------------------------------------------|
-| Nome def. registrazioni | Scegliere un template per le registrazioni COGE |
-| Nome batch contabile    | Indicare un batch per le registrazioni          |
-| Conto transitorio.      | Scegliere un numero conto transitorio           |
+Può succedere, infatti, che gli incassi siano accreditati su un conto corrente specifico, diverso dal conto utilizzato per la presentazione delle disposizioni (dipende dal tipo di contratto con la banca).
+In questo caso dovrà essere creato uno specifico C/C bancario per poter importare il file.
 
 
-Successivamente premere OK e caricare il file.
+**Procedura**<br>
+La procedura per la gestione degli incassi Riba è la seguente.
+
+1. Il file di presentazione delle disposizioni di incasso Riba viene creato, in Business Central, tramite la "Distinta cliente".
+
+1. Alla scadenza delle ricevute bancarie, si attende ancora il tempo necessario alla banca per elaborare l'esito degli incassi, il cosiddetto periodo di "rischio Riba" (di solito da 1 a 5 gg); quindi si provvede a scaricare dall'applicazione di Remote Banking il file degli insoluti.
+
+1. **Si importa il file degli insoluti in Business Central tramite la funzione "Importazione Insoluti Clienti (CBI)" e si provvede alla registrazione delle scritture contabili.**
+
+1. Si esegue, infine, la procedura "Chiusura ricevure bancarie" che chiude la ricevuta bancaria collegando la fattura presentata in banca con il movimento contabile di presentazione (di tipo "pagamento").
+
+La chiusura delle ricevuta bancarie deve avvenire necessariamente dopo la contabilizzazione degli insoluti; questo poichè l'importazione degli insoluti presuppone che la partita da collegare all'insoluto sia aperta.
+
+Alternativamente, se gli insoluti non sono molti, è possibile chiudere a scadenza le ricevute bancarie, in questo caso, però, prima di importare il file degli insoluti sarà necessario riaprire, manualmente, le partite impagate.
+
+
+
+**Scritture contabili**<br>
+Le scritture contabili proposte dal sistema sono qui riepilogate.
+
+***Importazione insoluti senza uso del conto transitorio***<br>
+Nel caso non si utilizzi il conto transitorio le scritture sono, alternativamente, quelle sotto esposte, a secondo che di addebiti il conto S.B.F. o il C/C bancario ordinario.
+
+*Addebito conto S.B.F*.
+
+| Dare                          |     |          Avere           | 
+|-------------------------------|-----|--------------------------|
+| Cliente &ensp;&ensp;&ensp;   | &ensp; @ &ensp; |    Conto S.B.F.        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;     
+
+
+
+<br>*Addebito conto C/C bancario ordinario*
+
+| Dare                          |     |          Avere           | 
+|-------------------------------|-----|--------------------------|
+| Cliente &ensp;&ensp;&ensp;    | &ensp; @ &ensp; |    Banca C/C Ordinario&ensp;&ensp;&ensp;  | 
+
+
+
+<br>Nota:
+per automatizzare l'inserimento della contropartita solitamente si imposta la contropartita di default sul batch usato per l'import degli insoluti.
+
+
+<br>***Importazione insoluti con utilizzo del conto transitorio***<br>
+Solitamente l'utilizzo del conto transitorio è previsto nel caso la tesoreria sia gestita con l'applicazione DocFinance.
+
+Le scritture si possono così riassumere.
+
+*1.Rilevazione addebito insoluti e spese bancarie*
+
+| Dare                          |     |          Avere           | 
+|-------------------------------|-----|--------------------------|
+| Conto transitorio insoluti    |  &ensp; @ &ensp; |                          | 
+|                               |     |          Banca C\C       | 
+|                               |     |         Spese bancarie   | 
+
+
+
+<br>*2.Rilevazione insoluti tramite la procedura "Importazione Insoluti Clienti (CBI)"*
+
+| Dare                          |     |          Avere              | 
+|-------------------------------|-----|-----------------------------|
+| Cliente  &ensp;&ensp;&ensp;&ensp;     | &ensp; @ &ensp; |                             | 
+|                                       |                 |Conto transitorio insoluti   | 
+
+
+<br>**Informazione tecniche**<br>
+Il file degli insoluti è sottoposto agli standard del servizio CBI (Corporate Banking Interbancario).
+Il tracciato attuale è disciplinato dal manuale tecnico "CBI-RIB-001 - Ricevute Bancarie (RiBa)", revisione 6.03 del 25/02/2019.
+
+La funzione del servizio CBI relativa agli insoluti è la funzione "Flusso di ritorno Ri.Ba.".  
+Il file degli insoluti deve avere, come record di testa, il tipo record "IB".  
+
+<br>**Note**<br>
+La procedura di importazione degli insoluti, legge e utilizza, tra gli altri, i seguenti dati.
+* Data pagamento: l'informazione è desunta dal record 14, posizione 23-28.
+* Data creazione: l'informazione è desunta dal record di testa "IB", posizione 14-19.
+* Causale: l'informazione viene letta dal record 14, posizione 29-33. Viene effettuato un controllo per cui la causale deve avere esclusivamente il valore "42010" (ricevuta impagata) per poter procedere con l'importazione.
+
+
+<br>**Schema di sintesi dei servizi CBI**  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000385-0/IT_CBI_InsolutiRB_Schema_03.png"><br>  
+
+
+
