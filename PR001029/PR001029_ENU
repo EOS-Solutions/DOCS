@@ -1,4 +1,4 @@
-**The new setup wizard function, to be used in the DEMO or TEST environment, allows to create demo data to start using the plant maintenance. In particular, a machine, a maintenance point, a maintenance cycle and a work request are created.**
+**The new setup wizard function, present in the Plant Maintenance Setup and in the onboarding procedure, must be used in the DEMO or TEST environment and allows to create demo data to start using the plant maintenance. In particular, a machine, a maintenance point, a maintenance cycle and a work request are created.**
 
 The setup wizard creates the following main information:
 ** Plant Maintenance Setup (PMM) **
