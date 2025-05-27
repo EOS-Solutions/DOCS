@@ -1,0 +1,37 @@
+**La funzione nuovo setup wizard, da utilizzare in ambiente DEMO o TEST, permette di creare dei dati dimostrativi per cominciare a utilizzare la manutenzione impianti.
+In particolare vengono create una macchina, un punto di manutenzione, un ciclo di manutenzione e una richiesta di lavoro.** 
+
+Il setup wizard crea le seguenti principali informazioni:
+** Setup manutenzione impianti (PMM) **
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001029-0/SW1_ITA.png"><br>
+
+In cui vengono impostati i proncipali numeri di serie: Nr. serie macchina, Nr. serie punto manutenzione, Nr. serie richiesta di lavoro, Nr serie ciclo di manutenzione.
+Viene abilitato inoltre il campo **Usa registrazione con Movimenti ciclo richiesta lavoro** che permette di utilizzare i movimenti ciclo richiesta lavoro per suggerire i valori da registrare.
+
+Viene creata una **Macchina** denominata **PURIFIER** che è l'oggetto del processo di manutenzione.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001029-0/SW2_ITA.png"><br>
+
+Nella macchina oltre ai dati anagrafici viene impostato il **Nr. punto manutenzione predefinito**.
+
+Viene creato un **punto di manutenzione** che definisce il tipo di manutenzione da eseguire sulla macchina, quindi le richieste di lavoro che possono essere create.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001029-0/SW3_ITA.png"><br>
+
+I punti di manutenzione definiscono il tipo di manutenzione da eseguire su una macchina e si utilizzano per creare in modo automatico le richieste di lavoro. Le tipologie gestite sono: **Creazione automatica** Se abilitata la nuova richiesta di lavoro viene creata in modo automatico al completamento della precedente, **Creazione ricorrente in base a un limite temporale e a una periodicità**, **Creazione tramite criteri di pianificazione**: ad esempio la richiesta di lavoro viene creata dopo 100 ore di funzionamento oppure dopo 10000 pezzi, **Creazione tramite coda processi**.
+
+Nel punto di manutenzione vengono impostati: la risorsa, il gruppo risorse, il ciclo di manutenzione, il tipo di manutenzione e il tempo previsto ecc ecc.
+
+Viene creato un **ciclo di manutenzione** che rappresenta l'insieme delle fasi di lavoro di una richiesta. Per ogni fase è possibile definire: il parametro da verificare e la sua descrizione, la risorsa o il gruppo risorse e la durata prevista. Per ogni ciclo di manutenzione è possibile gestire n versioni, ognuna con la propria data di inizio validità. Il ciclo di manutenzione e la sua versione si possono associare a punto di manutenzione. In fase poi di creazione richieste di lavoro se indicati vengono automaticamente ereditati.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001029-0/SW4_ITA.png"><br>
+
+Infine viene creata una **richiesta di lavoro**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001029-0/SW5_ITA.png"><br>
+
+Le richieste di lavoro si utilizzano per pianificare ed eseguire le attività di manutenzione. Si possono creare manualmente o tramite i punti di manutenzione. Le principali caratteristiche sono: Possibilità di assegnarle a un gruppo/risorsa, Definire una data di inizio pianificata, Definire degli eventuali ricambi necessari, Definire il ciclo di manutenzione, Tempo previsto, Gestione acquisti: possibilità di emettere ordini/offerte di acquisto, Gestione stato: Pianificato, Rilasciato, In Corso, Completato ecc.
+
+<br>
+<br>
