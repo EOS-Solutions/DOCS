@@ -1,12 +1,36 @@
-| **Tipo record CBI**                                                                                                        |
-|----------------------------------------------------------------------------------------------------------------------------|
-| RH-EF                                                                                                                      |
-| <img width="" src="https://docs.eos-solutions.it/Images/PR000387-0/6BFForItaly.png"><br>  |
+La funzione di importazione dei pagamenti clienti consente di acquisire il file di rendicontazione messo a disposizione dall'Istituto bancario.
 
-La procedura � simile a SEPA Importazione insoluti clienti (CBI), ma i pagamenti vengono importati tramite il file delle Rendicontazioni, tipicamente quelli non gestiti da SEPA, ovvero gli esteri extra-europei.
+Tale funzionalità viene utilizzata per importare le transazioni bancarie, tra cui gli incassi.
 
-Lanciare il report **Importazione pagamenti clienti (CBI):**
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000387-0/7BFForItaly.png"><br>
+***Importazione pagamenti clienti (CBI) - SOMMARIO***
+<br>Premere ALT + Q e digitare “CBI" per ricercare la funzionalità:
 
-Specificare un numero di conto corrente sul quale importare i pagamenti.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000387-0/IT_CBI_Pagamenti_Cli_Menu_01.png"><br>
+
+Selezionando "Importazione pagamenti clienti (CBI)" si aprirà le seguente pagina:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000387-0/IT_CBI_Pagamenti_Cli_02.png"><br>
+
+
+I parametri da inserire sono i seguenti.
+ 
+| **Opzione**                   |  **Descrizione**                                |
+|-------------------------------|-------------------------------------------------|
+| Nome template                 | Inserire il giornale di registrazione da utilizzare. |
+| Nome batch contabile          | Inserire il batch da utilizzare.                     |
+| Nr. conto corrente            | Specificare il numero di conto corrente su quale rilevare i movimenti bancari. |
+
+
+**Note**<br>
+La funzione di importazione dei movimenti bancari presenta alcune limitazioni.
+* I movimenti non sono filtrati per la causale bancaria di tipo incasso, pertanto sono importate tutte le transazioni presenti nel file di rendicontazione e non soltanto, quindi, gli incassi.
+* I movimenti non sono filtrati per C/C bancario, quindi, se nel file sono presenti le transazioni di più conti bancari, esse saranno importate tutte sul conto bancario di contropartita specificato nella pagina di richiesta.
+* Non viene valorizzato il conto di riferimento. Il movimenti sono importati con tipo conto "Cliente", ma il campo Nr. conto non sarà mai valorizzato.
+
+
+
+<br>**Schema di sintesi dei servizi CBI**  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000387-0/6BFForItaly.png"><br>
+
