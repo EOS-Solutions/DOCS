@@ -1,14 +1,32 @@
-| **Record type CBI**                                                                                                           |
-|-------------------------------------------------------------------------------------------------------------------------------|
-| RH-EF                                                                                                                         |
-| <img width="" src="https://docs.eos-solutions.it/Images/PR000387-0/6BFForItaly-en.png"><br>  |
+The customer payment import feature allows you to import the reporting file made available by the bank.
 
-The procedure is similar to the Import SEPA DD Dishonored (CBI), but payments are imported using the Account Statement file (these payments are extra UE, not managed by SEPA).
+This functionality is used to import bank transactions, including collections.
 
-Payments are imported in the General Journal.
+**Import Customer Payment (CBI) – SUMMARY**<br>
+To access the function press ALT + Q and type “CBI” to search for the functionality.
 
-The report to fill is **Import customer payments (CBI):**
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000387-0/EN_CBI_Pagamenti_Cli_Menu_01.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000387-0/7BFForItaly-en.png"><br>
 
-Specify a Bank account for the payments to import.
+Select "Import Customer Payment (CBI)" to open the following page.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000387-0/EN_CBI_Pagamenti_Cli_02.png"><br>
+
+Parameters to be entered.
+
+| **Option**                   |  **Description**                                |
+|------------------------------|-------------------------------------------------|
+|Template Name            | Select the journal to use. |
+|Batch Name               | Select the batch to use.   |                  |
+|Bank Account             | Specify the bank account number for bank transactions. |
+
+
+**Notes**
+The import function for bank transactions has some limitations.
+* Transactions are not filtered by the bank reason for collection type, so all transactions in the reporting file are imported, not just, therefore, collections.
+* Transactions are not filtered by bank account, so if there are transactions from multiple bank accounts in the file, they will all be imported to the balance bank account specified on the request page.
+* The account number is not valued. Transactions are imported with account type “Customer”, but the Account No. field will not be valorized.
+
+
+**Record type CBI**                                                                              
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000387-0/6BFForItaly-en.png"><br>
