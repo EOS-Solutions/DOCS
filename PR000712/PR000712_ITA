@@ -1,3 +1,7 @@
+{{% alert title="NOTE" color="warning" %}}
+Si consiglia vivamente di eseguire questa configurazione con il supporto del consulente DocFinance di riferimento del cliente.
+{{% /alert %}}
+
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DocFinance_OauthNew.png"><br>
 
 | **Tipo installazione**          | **OnPrem**                                                                                                                                                                                                             | **SaaS**                                                                                                                                          |
@@ -15,3 +19,18 @@
 | TenantID                        | Non disponibile                                                                                                                                                                                                        | Disponibile sul setup DocFinance nel gruppo connessione                                                                                           |
 | ClientID                        | Non disponibile                                                                                                                                                                                                        | Ottenuto con la procedura disponibile in [Installation requirements]({{<relref "installation-requirements">}})   |
 | Percorso di backup degli scambi | Cartella su cui vengono salvate le chiamate effettuate da DocFinance a BC ed il loro contenuto, utile per il debug in caso di problemi                                                                                 |                                                                                                                                                   |
+
+
+<br>
+**Solo per le installazioni SaaS**
+
+Terminato l'inserimento di dati all'interno del setup:
+1. eseguire l'azione "Richiesta del DeviceCode"
+2. apparirà un codice di colore <text style="color:red"> ROSSO </text> e verrà aperto la pagina di un browser al seguente link: https://microsoft.com/devicelogin
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DeviceLoginRed.png">
+3. Inserire il codice all'interno della pagina
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DeviceLoginPage.png">
+4. completare il login con un utente amministratore in modo da autorizzare l'app registration
+5. completati i passaggi chiudere il browser
+6. nella configurazione di DocFinance il codice deve apparire di colore <text style="color:green"> VERDE </text>
+
