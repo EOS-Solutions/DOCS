@@ -1,0 +1,91 @@
+### 5.0  Setup
+The basic settings for creating SEPA Credit Transfers payments are as follows.
+
+
+#### 5.1 Bank Export/import Setup
+A new export format code will need to be created in the Bank export/import setup.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_01.png"><br>
+
+
+•	Processing Codeunit ID: **1220** - "SEPA CT-Export Fil"e.
+•	Processign XMLport ID: **18123333 - "SEPA CT pain.001.001.09 CBI v00.04.01"**.
+•	Check Export Codeunit: **1223** - "SEPA CT-Check Line".
+
+**Notes**<br>
+Regarding the “Check Export Codeunit” to be set, it should be noted that codeunit 12178 of the Italian localization is present in the system. However, this object appears to be updated with a long delay.
+It is suggested, therefore, for the control when exporting the file to use codeunit 1223, as it is updated regularly.
+
+
+#### 5.2 Bank Account Card setup
+In the “Transfer” tab of the bank account card the following parameters should be set.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_02.png"><br>
+
+* **Payment Export Format (1)**: set the export format created.
+* **IBAN (2)**: IBAN code is mandatory.
+
+
+In the “General” tab of the bank account card, the parameter should be set: **Credit Transfer Msg. Nos.**.
+Here the Serial No. to be assigned to the name of the SCT file that will be created should be indicated.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_03.png"><br>
+
+
+**CUC Field**<br>
+According to CBI standards, the CUC code (CBI Unique Code) is mandatory.
+It is an 8-character alphanumeric code that is assigned by the banking system.
+However, this data element is not always required by the bank, and to ensure continuity with previous versions, a specific check has not been implemented.
+
+Therefore, it is suggested that the “CUC” field on the bank account card be valorized in order not to risk the discarding of the provision.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_04.png"><br>
+
+
+#### 5.3 Company Information Setup
+The VAT number of the company is a mandatory data element in the XML file of transfers.
+The “VAT Registration No.” field on the “Company Information” tab must be mandatorily filled in.
+
+
+#### 5.4 Creation of the SCT file (SEPA Credit Transfers)
+**Vendor Bill List Sent Card**
+To export the SCT file from the Vendor Bill List Sent Card, select the “Export Bill List to File” action.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_05.png"><br>
+
+
+#### 5.5 Credit Transfer Cumulative Debit
+It is possible to define how the bank should report the payments of the bill list on the periodic statement.
+
+The credit transfer cumulative debit reporting request covers the entire bill list and with it, in practice, you are asking the bank to report, on the statement, a single transaction for the total of the bill and not the individual payment.
+
+This mode of reporting is consistent with that used in Business Central in the bank entry, which creates a debit line on the bank account for the total of the bill.
+
+The reporting mode should not be confused with the “cumulative transfers” option, which allows a single transfer to be arranged to pay multiple invoices for the same supplier.
+
+***Tag "BtchBookg"***<br>
+The information, in the XML file, is carried via the tag “BtchBookg”.
+If “BtchBookg” is true the cumulative bill charge is requested.
+
+<br>*Example*<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_Addcum_06.png"><br>
+
+
+**Credit Transfer Cumulative Debit - Bank Account Card**<br>
+Credit transfer cumulative debit is selectable, on the bank account, via the “Credit Transfer Cumulative Debit” field in the “General” tab.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_Addcum_07.png"><br>
+
+**Credit Transfer Cumulative Debit - Vendor Bill List Card**<br>
+All payments, issued on a given bank, will automatically carry the bank's “Cumulative Bill Debit” setting.
+The information is not editable in the Vendor Bill List and Vendor Bill List Sent Card.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_Addcum_08.png"><br>
+
+
+#### 5.6 **Technical Information**
+The SCT file in Italy is subject to the standards of the CBI (Corporate Banking Interbancario) service, which adopts the ISO20022 standard format.
+The current version is defined by the technical manual “STIP-MO-001 Payments-v.00.04.01 ENG” version ***00.04.01*** dated 02/11/2023.
+
+**Reference ISO20022 format**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
