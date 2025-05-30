@@ -1,3 +1,7 @@
+{{% alert title="NOTE" color="warning" %}}
+It is strongly recommended to carry out this configuration with the support of the customer's designated DocFinance consultant.
+{{% /alert %}}
+
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DocFinance_OauthNew.png"><br>
 
 | **Tipo installazione**          | **OnPrem**                                                                                                                                                                                                             | **SaaS**                                                                                                                                          |
@@ -15,3 +19,18 @@
 | TenantID                        | Not available                                                                                                                                                                                                        | Available on the DocFinance setup in the connection group                                                                                           |
 | ClientID                        | Not available                                                                                                                                                                                                        | Obtained by the procedure available in [Installation requirements]({{<relref "installation-requirements">}})   |
 | Percorso di backup degli scambi | Folder on which calls made by DocFinance to BC and their contents are saved, useful for debugging in case of problems                                                                                 |                                                                                                                                                   |
+
+<br>
+**For SaaS installations only**
+
+After completing data entry in the setup:
+
+1. execute the action "Richiesta del DeviceCode"  
+2. a <text style="color:red"> RED </text> code will appear and a browser page will open at the following link: https://microsoft.com/devicelogin  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DeviceLoginRed.png">  
+3. enter the code on the page  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DeviceLoginPage.png">  
+4. complete the login with an administrator user to authorize the app registration  
+5. after completing the steps, close the browser  
+6. in the DocFinance configuration, the code must appear in <text style="color:green"> GREEN </text> color
+
