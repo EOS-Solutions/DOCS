@@ -1,16 +1,67 @@
-| **Tipo record CBI**                                                                                                      |
-|--------------------------------------------------------------------------------------------------------------------------|
-| CBISDDStsRptLogMsg.00.01.00 CBIBdySDDStsRpt.00.01.00                                                                     |
-| <img width="" src="https://docs.eos-solutions.it/Images/PR000388-0/8BFForItaly.png"><br>  |
+### 4.1 Setup
+Le impostazioni di base per la creazione delle disposizioni di incasso SEPA Direct Debit (SDD) sono le seguenti.
 
-Per esportare
 
-gli addebiti diretti per l�italia � necessario configurare l�XML PORT 18123330 nel Setup importazione/esportazione banca
+#### 4.1 Setup  importazione/esportazione  banca
+Nel setup  importazione/esportazione  banca  deve  essere  creato  un  nuovo  codice  per l'esportazione con le caratteristiche evidenziate nell'immagine sotto esposta.
 
-NOME XMLPORT ELABORAZIONE: **SEPA DD pain.008.001.02 IT**
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000388-0/IT_Incassi_SDD_01.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000388-0/9BFForItaly.png"><br>
 
-Aprire una Scheda distinta cliente emessa ed esportare il file:
+Nota: è stato  implementato, per  l'elaborazione  dei  dati, il  nuovo  XMLport ***18123335 - "SEPA  DD  pain.008.001.08".***
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000388-0/10BFForItaly.png"><br>
+
+
+#### 4.2 Setup Scheda conto corrente bancario
+
+Nella cartella "Generale" della scheda C/C bancario devono essere impostati i seguenti parametri.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000388-0/IT_Incassi_SDD_02.png"><br>
+
+
+* **Formato esportaz. addebito dir. SEPA (1)**: impostare il corretto codice di esportazione.
+* **Nr. Creditore (2)**: in questo campo è necessario impostare il "***Codice Identificativo del Creditore***" (Creditor Identifier).
+Il Codice Identificativo Creditore è un codice univoco che consente di identificare il creditore nell'area SEPA. E' importante perché associato univocamente al numero del mandato SEPA. Si tratta di un’informazione obbligatoria.
+* **Nr. messaggi addebito diretto (3)**: indicare il Nr. serie da assegnare al nome del file SDD che sarà creato.
+
+
+Nella cartella "Trasferimento" della scheda C/C bancario deve essere inserito un valore nel campo "CUC"
+Il codice CUC (Codice Univoco CBI) è obbligatorio.
+Si tratta di un codice alfanumerico di 8 caratteri assegnato dal sistema bancario.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000388-0/IT_Incassi_SDD_03.png"><br>
+
+
+#### 4.5 Tipologia SDD B2B\Core
+La tipologia di SDD ("B2B"\"Core") è selezionabile tramite il campo "Tipo di partner" della Distinta cliente.
+
+Tipo di partner "Società": SDD "B2B".
+Tipo di partner "Persona": SDD "Core".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000388-0/IT_Incassi_SDD_04.png"><br>
+
+
+#### 4.6 Creazione del file SDD
+**Distinta cliente**
+Per esportare il file SDD dalla distinta cliente selezionare l'azione "Esporta effetto su file".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000388-0/IT_Incassi_SDD_05.png"><br>
+
+**Distinta cliente emessa**
+Per esportare il file SDD dalla distinta cliente emessa selezionare l'azione "Esporta effetto emesso su file".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000388-0/IT_Incassi_SDD_06.png"><br>
+
+
+<br>**Informazioni tecniche**<br>
+Il file SDD, in Italia, è soggetto agli standard del servizio CBI (Corporate Banking Interbancario), che integra il tracciato standard ISO20022.
+Il tracciato attuale è disciplinato dal manuale tecnico "STIN-MO-001 - Incassi Sepa Direct Debit", versione ***00.01.01*** del 02/11/2023.
+
+**Tracciato ISO20022 di riferimento**: CustomerDirectDebitInitiation V08 - ***Pain.008.001.08***
+
+
+<br>
+### Configurazione di base per la gestione degli SDD in Business Central
+Si illustrano brevemente le configurazioni per l'utilizzo degli SDD in Business Central
+
+
