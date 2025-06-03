@@ -33,3 +33,8 @@ Il sistema genera le scritture nel batch dal quale viene eseguita la funzione �
 In caso di scritture simulate, le registrazioni vengono create nella Data di registrazione selezionata ed auto stornate il giorno successivo; nel caso vengano generate in COGE, la scrittura di storno viene creata automaticamente in fase di registrazione della relativa fattura (nell’esercizio successivo).
 
 Per agevolare la navigabilità dei movimenti, di default, le registrazioni vengono generate con lo stesso Nr. documento del carico / spedizione dal quale sono state originate.
+
+**NOTA**
+
+Per l'utilizzo della funzionalità di stanziamento costi è necessario installare l'app: 
+[https://appsource.microsoft.com/en-us/product/DynamicsBC/PUBID.eos_solutions%7CAID.ex03801_transportcostsforximulatedglentries%7CPAPPID.563d20c9-0cc5-4924-8f5a-bc6f6d76ac7f](http://)
