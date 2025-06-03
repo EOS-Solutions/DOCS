@@ -32,3 +32,8 @@ The system generates the entries in the batch from which the "Transportation cos
 In case of simulated entries, the records are created on the selected Posting date and automatically reversed the following day; if they are generated in the General Ledger (COGE), the reversal entry is automatically created when the related invoice is posted (in the following fiscal year).
 
 To facilitate the navigability of movements, by default, the records are generated with the same document number as the load/shipment from which they originated.
+
+**NOTE**
+
+To use the cost allocation feature, you must install the app: 
+**EX038.01 Transport Costs for Simulated GL entries**
