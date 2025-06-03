@@ -1,3 +1,19 @@
+Affinchè il sistema possa calcolare correttamente i costi di trasporto, è necessario compilare prima i setup per gli oneri aggiuntivi, i listini di trasporto e i listini spedizionieri.
 
-Affinch� il sistema possa calcolare correttamente i costi di trasporto, � necessario compilare prima i setup per gli oneri aggiuntivi, i listini di trasporto e i listini spedizionieri.
+**Setup Costi di Trasporto**
+
+Il setup dei costi di trasporto ci consente di definire che tipi di documenti vogliamo considerare nei nostri calcoli e l’eventuale spalmatura degli addebiti assegnati.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000193-0/Setup1_ITA.png"><br>
+
+I campi contenuti nel setup costi di trasporto sono i seguenti:
+
+* **Origine Parametri Doc.** base di calcolo dei costi di trasporto, i valori ammessi sono: **Informazioni spedizione**, ***Standard**, **CWS**.
+* **Tipo spalmatura assegnazione add.art.** questo campo individua la modalità di assegnazione del costo di trasporto alle righe articolo nella tabella Value Entries. La spalmatura può essere: **Uguale**, **Per valore**, **Per peso** e **Per volume**.
+* **Metodo combinazione fatture di acquisto** specifica il metodo per combinare i documenti durante la creazione delle fatture di acquisto nella pagina delle liquidazioni dei costi di trasporto. Due opzioni: **Cod. Spedizioniere** e **Cod. Spedizioniere e Dimension Set ID**.
+* **Escludi Conto Lavoro** permette di escludere dal calcolo dei costi di trasporto gli ordini di conto lavoro e i relativi carichi d'acquisto. 
+* **Crea fatture di acquisto su righe selezionate** se abilitato consente la generazione delle fatture di acquisto dalla liquidazione dei costi di trasporto selezionando le righe.
+* **Nascondi i totali dei costi di trasporto** se abilitato nasconde i totali sulla pagina dei costi di trasporto per document.
+
+
 
