@@ -1,3 +1,18 @@
 
 In order for the system to correctly calculate the transport costs, it is necessary to first fill in the setups for additional charges, the shipping agents and the shipping price lists.
 
+
+**Transport Cost Setup**
+
+The transport cost setup allows to define what types of documents we want to consider in our calculations and any spread of the assigned charges.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000193-0/Setup1_ENU.png"><br>
+
+The fields contained in the transport costs setup are as follows:
+
+* **Document Param. Source** basis for calculating transport costs, the permitted values are: **Shipping info**, ***Standard**, **CWS**.
+* **Settl. Item Charge Spread Type** this field identifies the method of assigning the transport cost to the item rows in the Value Entries table. The spreading can be: **Equally**, **By Amount**, **By Weight** and **By Volume**.
+* **Purchase Invoice Combination Method** Specifies the method for combining documents when creating purchase invoices on the freight settlement page. Two options: **Shipping Agent Code** e **Shippimg Agent Code and Dimension Set ID**.
+* **Exclude Subcontracting Orders** allows to exclude subcontracting orders and related purchase receiptss from the calculation of transport costs. 
+* **Create Purchase Invoice on selected lines** if enabled, it allows the generation of purchase invoices from the settlement of transport costs by selecting the lines.
+* **Hide Transport Costs Totals** if enabled, hides totals on the shipping costs page for documents.
