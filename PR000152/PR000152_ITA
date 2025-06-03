@@ -1,13 +1,20 @@
 
 
-1.ÿÿÿÿÿ Imposta i setup per le zone di spedizione, i tipi di listino, gli oneri aggiuntivi e le anagrafiche
+1.Â Â Â Â Â  Imposta i setup per le zone di spedizione, i tipi di listino, gli oneri aggiuntivi e le anagrafiche
 
-2.ÿÿÿÿÿ Crea i listini costi di trasporto
+2.Â Â Â Â Â  Crea i listini costi di trasporto
 
-3.ÿÿÿÿÿ Lascia calcolare i costi al sistema poi esegui la liquidazione
+3.Â Â Â Â Â  Lascia calcolare i costi al sistema poi esegui la liquidazione
 
-La app Transport Costs (ETC) di Eos Solutions consente di calcolare i costi di trasporto sostenuti per la spedizione/ricevimento della merce a partire dai documenti di BC (ordini di vendita, spedizioni di vendita, ordini di acquisto, carichi di acquisto, spedizioni di trasferimento, ecc.). Consente inoltre di monitorare e tenere sotto controllo quanto sar… addebitato per i costi di trasporto da parte degli spedizionieri.
+La app Transport Costs (ETC) di Eos Solutions consente di calcolare i costi di trasporto sostenuti per la spedizione/ricevimento della merce a partire dai documenti di BC (ordini di vendita, spedizioni di vendita, ordini di acquisto, carichi di acquisto, spedizioni di trasferimento, ecc.). Consente inoltre di monitorare e tenere sotto controllo quanto sarÃ  addebitato per i costi di trasporto da parte degli spedizionieri.
 
 E' possibile uilizzare i costi calcolati nel controllo di gestione ([EMA Extended Management Accounting (EMA) EX023]({{<relref "ema-extended-management-accounting">}})).
 
-A partire da un listino fornito dallo spedizioniere Š possibileÿ**risalire ad un costo di trasporto previsto**ÿper una determinata spedizione (listino per peso, nr. colli, nr. pallet, ecc.). In seguitoÿ**tale costo pu• essere confrontato con la fattura**ÿdello spedizioniere. 
+A partire da un listino fornito dallo spedizioniere Ã¨ possibileÂ **risalire ad un costo di trasporto previsto**Â per una determinata spedizione (listino per peso, nr. colli, nr. pallet, ecc.). In seguitoÂ **tale costo puÃ² essere confrontato con la fattura**Â dello spedizioniere. 
+
+
+**App Aggiuntive**        
+
+Installa **EX038.01 Transport Costs for Simulated GL entries** per poter:
+
+* La procedura â€œStanziamento costi di trasporto (ETC)â€ si occupa di generare le scritture di competenza **Costi di trasporto @ Fatture da ricevere** relative ai costi di trasporto calcolati tramite lâ€™app ETC. Il processo di calcolo elabora i costi non ancora liquidati, oppure liquidati con **Data di registrazione** successiva a quella di generazione della scrittura di competenza. Oltre all'app EX038.01 Transport Costs for Simulated GL entries Ã¨ necessario installare l'App Accruals and Simulated General Ledger.
