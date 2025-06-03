@@ -1,13 +1,19 @@
 
 
-1.ÿÿÿÿÿ Set the setups for the shipping areas, the types of shipping price lists, the additional charges and the master data
+1.Â Â Â Â Â  Set the setups for the shipping areas, the types of shipping price lists, the additional charges and the master data
 
-2.ÿÿÿÿÿ Create shipping price lists
+2.Â Â Â Â Â  Create shipping price lists
 
-3.ÿÿÿÿÿ Let the system calculate the costs then run the settlement
+3.Â Â Â Â Â  Let the system calculate the costs then run the settlement
 
-The Eos Solutions Transport Costs (ETC) app allows you to calculate the transport costs incurred for the shipment / receipt of goods from BC's documents (sales orders, sales shipments, purchase orders, purchase receipts,ÿ transfer shipments, etc.). It also allows you to monitor and monitor how much will be charged for transport costs by shippers.
+The Eos Solutions Transport Costs (ETC) app allows you to calculate the transport costs incurred for the shipment / receipt of goods from BC's documents (sales orders, sales shipments, purchase orders, purchase receipts,Â  transfer shipments, etc.). It also allows you to monitor and monitor how much will be charged for transport costs by shippers.
 
-ÿIt is possible to use the costs calculated in the management accounting ([EMA Extended Management Accounting (EMA) EX023]({{<relref "ema-extended-management-accounting">}})).
+Â It is possible to use the costs calculated in the management accounting ([EMA Extended Management Accounting (EMA) EX023]({{<relref "ema-extended-management-accounting">}})).
 
-Starting from a price list provided by the shipper, it is possible toÿ**trace a transport cost foreseen for a specific shipment**ÿ(price list by weight, number of parcels, number of pallets, etc.). This cost can then beÿ**compared with the carrier's invoice**. ÿ
+Starting from a price list provided by the shipper, it is possible toÂ **trace a transport cost foreseen for a specific shipment**Â (price list by weight, number of parcels, number of pallets, etc.). This cost can then beÂ **compared with the carrier's invoice**. Â 
+
+**Additional App**        
+
+Install **EX038.01 Transport Costs for Simulated GL entries** to be able to:
+
+* The â€œTransport Cost Allocation (ETC)â€ procedure generates the accounting entries for **Transport Costs @ Invoices to be Received** related to transport costs calculated through the ETC app. The calculation process includes costs that have not yet been settled or those settled with a **Posting Date** later than the date of generating the accounting entry. In addition to the EX038.01 Transport Costs for Simulated GL entries app, it is necessary to install the Accruals and Simulated General Ledger App.
