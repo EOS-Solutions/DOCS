@@ -1,9 +1,94 @@
-| **Record type CBI**                                                                                                                                       |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| PE-EF                                                                                                                                                     |
-| <img width="" src="https://docs.eos-solutions.it/Images/PR000389-0/11BFForItaly-en.png"><br>  |
+### 6.0 Setup
+The basic settings for creating XML Foreign Transfer payment are, below, reported.
 
-Go to the page **Vendor bill list issued**. Choose a record and click Edit. In Actions-\> Create CBI transfer file you can export the payments in CBI format:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000389-0/12BFForItaly-en.png"><br>
+#### 6.1 Bank Export/import Setup
+A new export format code will need to be created in the Bank export/import setup.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/EN_EST_01.png"><br>
+
+
+* Processing Codeunit ID:**18123337** - "EOS005 Foreign CT-Export File".
+* Processign XMLport ID: **18123334** - "CBI CrossBorder Payment Request.00.01.01".
+* Check Export Codeunit: **18123336** - "EOS005 Foreign CT-Check Line".
+
+
+#### 6.2 Bank Account Card setup
+In the “Transfer” tab of the bank account card the following parameters should be set.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/EN_EST_02.png"><br>
+
+
+* **Foreign Exp.Format (1)**: impostare il formato esportazione creato allo scopo.
+* **IBAN (2)**: IBAN code is mandatory.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/EN_EST_CUC_03.png"><br>
+
+**CUC Field**<br>
+According to CBI standards, the CUC code (CBI Unique Code) is mandatory.
+It is an 8-character alphanumeric code that is assigned by the banking system.
+However, this data element is not always required by the bank, and to ensure continuity with previous versions, a specific check has not been implemented.
+
+Therefore, it is suggested that the “CUC” field on the bank account card be valorized in order not to risk the discarding of the provision.
+
+In the “General” tab of the bank account card, the parameter should be set: **Credit Transfer Msg. Nos.**.
+Here the Serial No. to be assigned to the name of the SCT file that will be created should be indicated.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/EN_EST_CCGeneral_04.png"><br>
+
+**Note: foreign currency payments**
+<br>To make transfers in a foreign currency, a bank in the same currency must be set up.
+
+
+#### 6.3 Company Information Setup
+The VAT number of the company is a mandatory data element in the XML file of transfers.
+The “VAT Registration No.” field on the “Company Information” tab must be mandatorily filled in.
+
+
+#### 6.4 Information to be included in the provisions on the the vendor bill lines
+The following information must be set on the rows of the vendor bill for foreign transfers.
+
+**Bank Charges**<br>
+Specifies which party will bear the charges associated with the transaction.
+Takes one of the following values:
+* Our Charge ("DEBT")
+* Shared ("SHAR")
+* Beneficiary ("CRED")
+
+
+**Notes**<br>
+* The commission type must be the same for the entire bill.
+* According to CBI rules, the commission type field mandatorily takes the value “SHAR” if the payee is valorized with IBAN coordinate that contains a Country Code belonging to the European Economic Area.
+
+
+**Reason CVS**<br>
+May take the following values:
+* "INF" (below CVS threshold).
+* “SNR” (non-resident party).
+* "CVA" (assignment of a single currency code).
+* "CDV" (transfer of currency between residents).
+
+
+**CVS Tariff Number**<br>
+The field must be completed in the case of Reason CVS = "CVA", in other cases it is optional.
+
+
+#### 6.5 Creation of the XML foreign transfer payment file
+**Vendor Bill List Sent Card**<br>
+To export the XML foreign transfer payment file from the Vendor Bill List Sent Card, select the “Create foreign XML bank transfer” action.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/EN_EST_Distinta_05.png"><br>
+
+
+#### 6.6 Currency Management
+The ability to define the exchange rate to be used in the Bill List entry has been implemented.
+The exchange rate is proposed based on the **List Date**, but can be changed by selecting the assist edit of the Currency Code field.   
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/EN_EST_Distval_06.png"><br>
+
+
+#### 6.7 **Technical Information**
+The SCT file in Italy is subject to the standards of the CBI (Corporate Banking Interbancario) service, which adopts the ISO20022 standard format.
+<br>The current version is defined by the technical manual “STIP-MO-001 Payments-v.00.04.01 ENG” version ***00.04.01*** dated 02/11/2023.
+
+**Reference ISO20022 format**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
