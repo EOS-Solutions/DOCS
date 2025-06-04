@@ -7,12 +7,11 @@ A new export format code will need to be created in the Bank export/import setup
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_01.png"><br>
 
+* Processing Codeunit ID: **1220** - "SEPA CT-Export Fil"e.
+* Processign XMLport ID: **18123333 - "SEPA CT pain.001.001.09 CBI v00.04.01"**.
+* Check Export Codeunit: **1223** - "SEPA CT-Check Line".
 
-•	Processing Codeunit ID: **1220** - "SEPA CT-Export Fil"e.
-•	Processign XMLport ID: **18123333 - "SEPA CT pain.001.001.09 CBI v00.04.01"**.
-•	Check Export Codeunit: **1223** - "SEPA CT-Check Line".
-
-**Notes**<br>
+**Notes “Check Export Codeunit”**<br>
 Regarding the “Check Export Codeunit” to be set, it should be noted that codeunit 12178 of the Italian localization is present in the system. However, this object appears to be updated with a long delay.
 It is suggested, therefore, for the control when exporting the file to use codeunit 1223, as it is updated regularly.
 
@@ -48,7 +47,7 @@ The “VAT Registration No.” field on the “Company Information” tab must b
 
 
 #### 5.4 Creation of the SCT file (SEPA Credit Transfers)
-**Vendor Bill List Sent Card**
+**Vendor Bill List Sent Card**<br>
 To export the SCT file from the Vendor Bill List Sent Card, select the “Export Bill List to File” action.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_05.png"><br>
@@ -62,13 +61,6 @@ The credit transfer cumulative debit reporting request covers the entire bill li
 This mode of reporting is consistent with that used in Business Central in the bank entry, which creates a debit line on the bank account for the total of the bill.
 
 The reporting mode should not be confused with the “cumulative transfers” option, which allows a single transfer to be arranged to pay multiple invoices for the same supplier.
-
-***Tag "BtchBookg"***<br>
-The information, in the XML file, is carried via the tag “BtchBookg”.
-If “BtchBookg” is true the cumulative bill charge is requested.
-
-<br>*Example*<br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_Addcum_06.png"><br>
 
 
 **Credit Transfer Cumulative Debit - Bank Account Card**<br>
@@ -84,8 +76,14 @@ The information is not editable in the Vendor Bill List and Vendor Bill List Sen
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_Addcum_08.png"><br>
 
 
-#### 5.6 **Technical Information**
-The SCT file in Italy is subject to the standards of the CBI (Corporate Banking Interbancario) service, which adopts the ISO20022 standard format.
-The current version is defined by the technical manual “STIP-MO-001 Payments-v.00.04.01 ENG” version ***00.04.01*** dated 02/11/2023.
+***Tag "BtchBookg"***<br>
+The information, in the XML file, is carried via the tag “BtchBookg”.
+If “BtchBookg” is true the cumulative bill charge is requested.
 
-**Reference ISO20022 format**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
+<br>*Example*<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_Addcum_06.png"><br>
+
+#### 5.6 Technical Information
+The SCT file in Italy is subject to the standards of the CBI (Corporate Banking Interbancario) service, which adopts the ISO20022 standard format.
+<br>The current version is defined by the technical manual “STIP-MO-001 Payments-v.00.04.01 ENG” version ***00.04.01*** dated 02/11/2023.
+<br>**Reference ISO20022 format**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
