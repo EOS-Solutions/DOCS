@@ -8,12 +8,12 @@ Nel setup importazione\esportazione banca dovrà essere creato un nuovo codice d
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_01.png"><br>
 
 
-•	ID codeunit elaborazione: **1220** - "SEPA CT-Export Fil"e.
-•	ID XMLport  elaborazione: **18123333 - "SEPA CT pain.001.001.09 CBI v00.04.01"**.
-•	Codeunit per controllo esportazioni: **1223** - "SEPA CT-Check Line".
+* ID codeunit elaborazione: **1220** - "SEPA CT-Export File".
+* ID XMLport  elaborazione: **18123333 - "SEPA CT pain.001.001.09 CBI v00.04.01"**.
+* Codeunit per controllo esportazioni: **1223** - "SEPA CT-Check Line".
 
 
-**Note**<br>
+**Note "Codeunit per controllo esportazioni"**<br>
 Per quanto riguarda la "Codeunit per controllo esportazioni" da impostare, si sottolinea che è presente, a sistema, la codeunit 12178 della localizzazione italiana. Tuttavia, tale oggetto risulta aggiornato con molto ritardo.
 Si suggerisce, quindi, per il controllo in fase di esportazione del file di utilizzare la codeunit 1223, in quanto aggiornata regolarmente.
 
@@ -35,7 +35,7 @@ Nella cartella "Generale" della scheda conto corrente bancario dovrà essere imp
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_03.png"><br>
 
 
-**Campo  CUC**
+**Campo  CUC**<br>
 Secondo le  norme CBI, il codice CUC (Codice Univoco CBI) è obbligatorio.
 Si tratta di un codice alfanumerico di 8 caratteri che viene assegnato dal sistema bancario.
 Tuttavia, tale dato non sempre è richiesto dalla banca e, per garantire la continuità con le precedenti versioni, non è stato implementato uno specifico controllo di obbligatorietà.
@@ -51,7 +51,7 @@ Il campo "Partita IVA" della scheda "Informazioni Società" dovrà essere obblig
 
 
 #### 5.4 Creazione del file SCT (Bonifico SEPA)
-**Distinta fornitore**
+**Distinta effetti fornitore emessa**<br>
 Per esportare il file SCT dalla "Distinta effetti forn. emessa" selezionare l'azione "Esporta distinta emessa su file".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_05.png"><br>
@@ -66,12 +66,6 @@ Tale modalità di rendicontazione è coerente con quella utilizzata in Business 
 
 La modalità di rendicontazione non va confusa con l'opzione "bonifico cumulativo" che permette di disporre un unico bonifico per il pagamento di più fatture per lo stesso fornitore.
 
-***Tag "BtchBookg"***<br>
-L'informazione, nel file XML, è veicolata tramite il tag "BtchBookg".
-Se BtchBookg" è true si richiede l'addebito cumulativo della distinta.
-
-<br>*Esempio*<br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_Addcum_06.png"><br>
 
 **Addebito cumulativo distinta - Setup C/C bancario**<br>
 L'addebito cumulativo della distinta è selezionabile, sul C/C bancario, tramite il campo "Addebito cumulativo distinta" del tab "Generale".
@@ -84,9 +78,15 @@ Questa informazione non è modificabile né nella Distinta effetti fornitori, n�
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_Addcum_08.png"><br>
 
+***Tag "BtchBookg"***<br>
+L'informazione, nel file XML, è veicolata tramite il tag "BtchBookg".
+Se BtchBookg" è true si richiede l'addebito cumulativo della distinta.
 
-#### 5.6 Informazioni tecniche*
+<br>*Esempio*<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_Addcum_06.png"><br>
+
+
+#### 5.6 Informazioni tecniche
 Il file SCT, in Italia, è soggetto agli standard del servizio CBI (Corporate Banking Interbancario), che integra il tracciato standard ISO20022.
-Il tracciato attuale è disciplinato dal manuale tecnico "STPE-MO-001 Pagamenti- v.00.01.01", versione ***00.01.01*** del 02/11/2023.
-
-**Tracciato ISO20022 di riferimento**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
+<br>Il tracciato attuale è disciplinato dal manuale tecnico "STIP-MO-001 Pagamenti- v.00.04.01", versione ***00.04.01*** del 02/11/2023.
+<br>**Tracciato ISO20022 di riferimento**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
