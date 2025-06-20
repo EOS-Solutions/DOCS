@@ -1,0 +1,15 @@
+The app EX029.01 Empties Management for Close Documents is used to link app EX029 Empties Management and app EX041 Close Document Without Invoicing. The purpose of the app is to manage the automatic closing, without invoicing, of sales shipment lines relating to empties that are managed with the reusable mode.
+
+To enable the feature, it is necessary to fill the **Close Documents Without Invoice Posting Batch** field in the Packaging Setup (HUM) in which to indicate the CDW batch to be used for the automatic closing of the voids.
+
+In packaging instructions there is a field called **Empty not Billable**. If enabled, it indicates that the empties (load carrier and/or packaging material) are not billable. It is proposed as default in the documents and the user can change it manually. The field can be activated in all the packaging instructions but is only applied to reusable empties.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001037-0/CDW1_ENU.png"><br>
+
+In sales documents there is a field called **Empty not billable**, inherited from the packaging instructions. Users can change it manually. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001037-0/CDW2_ENU.png"><br>
+
+After the shipment has been registered, the line containing the empty items will already be invoiced, as per CDW standard. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001037-0/CDW3_ENU.png"><br>
