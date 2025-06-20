@@ -4,4 +4,9 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Pm7ob2_AOOo" title="EOS Apps Demo: Product Quality Assurance per Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Permette in particolare di gestire i dispositivi di controllo, di redigere i piani di controllo, di effettuare gli ordini di controllo e registrarne i risultati. Il tutto al fine di adempiere alla normativa �UNI ISO 9001", che ha l'obiettivo di garantire la conformit� del prodotto ai requisiti espressi dal cliente effettuando, prima della consegna, tutti i controlli, le prove e le misurazioni necessarie per eliminare quei prodotti che non corrispondono ai requisiti espressi nelle specifiche.
+Permette in particolare di gestire i dispositivi di controllo, di redigere i piani di controllo, di effettuare gli ordini di controllo e registrarne i risultati. Il tutto al fine di adempiere alla normativa “UNI ISO 9001", che ha l'obiettivo di garantire la conformità del prodotto ai requisiti espressi dal cliente effettuando, prima della consegna, tutti i controlli, le prove e le misurazioni necessarie per eliminare quei prodotti che non corrispondono ai requisiti espressi nelle specifiche.
+
+**App Aggiuntive**        
+
+-   **EX061.01 Product Quality Assurance for CWS** Viene utilizzata per collegare l’app EX061 Product Quality Assurance e l’app EX006 Combine Warehouse Shipment. Lo scopo dell’app è quello di permettere di collegare le non conformità della PQA anche alle spedizioni CWS. L'operazione deve essere fatta manualmente.
+
