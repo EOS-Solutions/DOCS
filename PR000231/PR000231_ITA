@@ -45,6 +45,7 @@ Dove sono presenti i seguenti campi:
 * **Calcolo vuoti** definisce la modalità con cui vengono calcolati i vuoti. Lo standard dell'app è Default. Estendendo l'app, tramite interfaccia, è possibile creare modalità di calcolo personalizzate.
 * **Crea Righe GL Account su fatturazione vuoti** Nella generazione della fattura dei vuoti, Report "Contenitori - Crea fattura", le righe vengono generate dando priorità all'utilizzo della tipologia Conto C/G. Se il flag non è attivo le righe vengono generate utilizzando l'articolo presente nel materiale di imballaggio.
 * **Nome batch giornale di registrazione predefinito nella fatturazione vuoti** Specifica il valore del campo Nome batch giornale di registrazione dei vuoti predefinito. Viene utilizzato nella generazione della fattura dei vuoti, Report "Contenitori - Crea fattura", per la creazione delle righe di storno vuoti.
+* **Batch di registrazione per la chiusura documenti senza fatturazione** Specifica il nome del batch per la chiusura di righe con vuoti senza fatturazione. Viene utilizzato nell'app EX029.01 Empties Management for Close Documents, il cui scopo è quello di gestire la chiusura automatica, senza fatturazione, delle righe spedizione di vendita relative a vuoti che siano gestiti con modalità a rendere.
 
 
 
