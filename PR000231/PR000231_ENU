@@ -33,4 +33,5 @@ Where there are the following fields:
 * **Empties Calculation** defines the way in which empties are calculated. The app standard mode is Default. By extending the app, via interface, it is possible to create custom calculation modes.
 * **Create GL Account lines on empties invoice** During empties invoice generation with Report "Container - Create Invoice" if possible generate line of GL Account type. As standard line are created as Item.
 * **Invoicing Container Default Journal Batch Name** Specifies the value of the Default Journal Batch Name field. It is used in the generation of the empties invoice, Report "Container - Create invoice", for the creation of the empties reversal lines.
+* **Close Documents Without Invoice Posting Batch** Specifies the name of the batch for closing lines with empties without invoicing. It is used in the EX029.01 Empties Management for Close Documents app, whose purpose is to manage the automatic closing, without invoicing, of sales shipment lines relating to empties that are managed with the reusable mode.
 
