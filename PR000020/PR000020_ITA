@@ -2,7 +2,11 @@ La app Empties Management (EPM) di Eos Solutions consente di gestire i vuoti (co
 
 ## Empties Management (EPM) - SUMMARY
 
-Premere ALT + Q e digitare "EPM" per vedere un elenco delle funzionalit� coinvolte: 
+Premere ALT + Q e digitare "EPM" per vedere un elenco delle funzionalità coinvolte: 
 <br>
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000020-0/EPMSummary1.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000020-0/EPMSummary1.jpg"><br>
+
+**App Aggiuntive**        
+
+-   **EX029.01 Empties Management for Close Documents** L'app EX029.01 Empties Management for Close Documents viene utilizzata per collegare l’app EX029 Empties Management e l’app EX041 Close Document Without Invoicing. Lo scopo dell’app è quello di gestire la chiusura automatica, senza fatturazione, delle righe spedizione di vendita relative a vuoti che siano gestiti con modalità a rendere. 	
