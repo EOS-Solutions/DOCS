@@ -1,7 +1,7 @@
 The table defines the packages in detail so that the system can correctly assign the empties based on the order lines:
 <br>
      
-<img width="" src="https://docs.eos-solutions.it/Images/PR000234-0/EN-EmptiesManagementHUM1.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000234-0/EN-EmptiesManagementHUM1.jpg"><br>
      
 		 
 
@@ -18,5 +18,6 @@ The table defines the packages in detail so that the system can correctly assign
 | Load Carrier No. | insert the loadcarrier used for packing the article. |
 | Load Carrier No. | indicate the filling quantity |
 | Load Carrier No. / Qty. per Layer | if more packages can be stacked, indicate the layers and quantity for each |
+| Empty not Billable | if enabled, it indicates that the empties (load carrier and/or packaging material) are not billable. It is proposed as default in the documents and the user can change it manually. The field can be activated in all the packaging instructions but is only applied to reusable empties |
 | Mandatory | if set, a package must be specified in the shipping document |
 | Suggest Handling Units | suggests the HU type |
