@@ -2,11 +2,11 @@ L'app EX029.01 Empties Management for Close Documents viene utilizzata per colle
 
 Per abilitare la gestione è necessario compilare nel Setup Imballaggio (HUM) il nuovo campo **Batch di registrazione per la chiusura documenti senza fatturazione** in cui indicare il batch della CDW da utilizzare per la chiusura automatica dei vuoti. 
 
-Nelle Istruzioni per l’imballaggio è stato aggiunto un nuovo campo denominato **Vuoto non fatturabile**. Se abilitato indica che il vuoto (porta carico e materiale di imballaggio) non sono fatturabili. Viene proposto come default nei documenti e l’utente può variarlo manualmente. Il campo è attivabile in tutte le istruzioni di imballaggio ma viene applicato solo ai vuoti a rendere.
+Nelle Istruzioni per l’imballaggio è presente un campo denominato **Vuoto non fatturabile**. Se abilitato indica che il vuoto (porta carico e materiale di imballaggio) non sono fatturabili. Viene proposto come default nei documenti e l’utente può variarlo manualmente. Il campo è attivabile in tutte le istruzioni di imballaggio ma viene applicato solo ai vuoti a rendere.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001037-0/CDW1_ITA.png"><br>
 
-Nei documenti di vendita è stato aggiunto il nuovo campo Vuoto non fatturabile, ereditato dalle istruzioni di imballaggio, e modificabile manualmente.
+Nei documenti di vendita è presente il campo **Vuoto non fatturabile**, ereditato dalle istruzioni di imballaggio, e modificabile manualmente.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001037-0/CDW2_ITA.png"><br>
 
