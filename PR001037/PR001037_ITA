@@ -1,0 +1,15 @@
+L'app EX029.01 Empties Management for Close Documents viene utilizzata per collegare l’app EX029 Empties Management e l’app EX041 Close Document Without Invoicing. Lo scopo dell’app è quello di gestire la chiusura automatica, senza fatturazione, delle righe spedizione di vendita relative a vuoti che siano gestiti con modalità a rendere.
+
+Per abilitare la gestione è necessario compilare nel Setup Imballaggio (HUM) il nuovo campo **Batch di registrazione per la chiusura documenti senza fatturazione** in cui indicare il batch della CDW da utilizzare per la chiusura automatica dei vuoti. 
+
+Nelle Istruzioni per l’imballaggio è stato aggiunto un nuovo campo denominato **Vuoto non fatturabile**. Se abilitato indica che il vuoto (porta carico e materiale di imballaggio) non sono fatturabili. Viene proposto come default nei documenti e l’utente può variarlo manualmente. Il campo è attivabile in tutte le istruzioni di imballaggio ma viene applicato solo ai vuoti a rendere.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001037-0/CDW1_ITA.png"><br>
+
+Nei documenti di vendita è stato aggiunto il nuovo campo Vuoto non fatturabile, ereditato dalle istruzioni di imballaggio, e modificabile manualmente.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001037-0/CDW2_ITA.png"><br>
+
+Dopo la registrazione della spedizione, la riga contenente gli articoli vuoti risulterà già fatturata, come da standard CDW. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001037-0/CDW3_ITA.png"><br>
