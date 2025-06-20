@@ -15,6 +15,7 @@ The debit invoice for empties items is created in two different ways depending o
 * If active, the invoice is created using the **Empties Invoicing Account No.** present in the packaging material. By using the debit with account the price and discount are still read from the price list of the item associated with the packaging material.  
 * If deactivated, the invoice is created using the **Item No.** present in the packaging material.
 
-The invoice creation function also includes the field **Create reverse journal lines**. If active in addition to the creation of the debit invoice, the function also creates the reverse lines in the Container Journal, allowing the balance to be reset. Posting is manual.
+The invoice creation function also includes the field **Create reverse journal lines**. If active in addition to the creation of the debit invoice, the function also creates the reverse lines in the Container Journal, allowing the balance to be reset. 
+The **Auto Post reverse journal lines** field perform automatic posting of the reversal lines (N.B. they are recorded when the invoice is generated and not when it is registered), otherwise the recording is manual.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000246-0/CreateInvoice_2_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000246-0/CreateInvoice_3_ENU.png"><br>
