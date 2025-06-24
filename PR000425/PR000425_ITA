@@ -1,22 +1,61 @@
 [**Analisi della Profittabilità**](http://)
 
-L’analisi della profittabilità consente di ottenere tramite EMA un conto economico di marginalità per cliente/articolo (ed aggregati di queste due entità). Si tratta di uno schema di conto economico a costo del venduto. La struttura di questo conto economico è pressoché libera, una volta definite le righe, sarà necessario indicare per ciascuna riga l’origine del dato. Il setup relativo all’Analisi delle profittabilità viene eseguito all’interno del “Setup C/A – profittabilità” nella sezione denominata appunto “Analisi profittabilità”. I campi importanti sono i seguenti:
+L’analisi della profittabilità consente di ottenere tramite EMA un conto economico di marginalità per cliente/articolo (ed aggregati di queste due entità). Si tratta di uno schema di conto economico a costo del venduto. La struttura di questo conto economico è pressoché libera, una volta definite le righe, sarà necessario indicare per ciascuna riga l’origine del dato. 
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/42Extended Management Accounting-ita.jpg">
-<br>
+Il setup relativo all’Analisi delle profittabilità viene eseguito all’interno del “Setup C/A – profittabilità” ” ed opera in funzione dell’abilitazione o meno del flag “Calcolo fatturato incrementale”:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/Prof 01_ITA.jpg"><br>
+
+* Sezione “Calcolo fatturato incrementale”: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/Prof 02_ITA.jpg"><br>
 
 |Campo|Description|
 |-----|-----------|
-| Compressione mov. profittabilità | Nessuno, Mese, Giorno, Massimo -> identifica la logica di accorpamento dei movimenti di vendita. Il valore “Nessuno” consente da visualizzare le righe dei singoli documenti di vendita, alle quali vengono assegnate le differenti tipologie di costo. Il livello “Massimo” di compressione gestito è dato da cliente-articolo-periodo-combinazioni di dimensioni |
+| Data inizio calcolo fatt. incrementale | data (inizio esercizio) a partire dalla quale sarà calcolato il fatturato incrementale |
+| Compressione mov. incrementali | le opzioni possibili sono Mese, Massimo. Indica la logica di accorpamento con la quale i dati vengono trasferiti dalla tabella “Fatturato incrementale (EMA)” ai “Movimenti analisi profittabilità (EMA)”. La chiave standard di accorpamento movimenti è Periodo – Nr. cliente (di fatturazione) – Nr. articolo – ID set dimensioni |
+| Dettaglio per Tipo documento, Dettaglio per Cod. agente, Dettaglio per Cod. variante, Dettaglio per Nr. seriale, Dettaglio per Nr. lotto | flag che integrano la logica standard di accorpamento dati indicata nel campo precedente. |
+|Includi altri ricavi di vendita | se abilitato, vengono processate ed inserite in tabella anche le righe Fattura / Nota Credito relative a Cod. Articolo di Assistenza / Non inventario, Conto C/G, Risorsa.|
+|Calcola addebiti in data reg. articolo | specifica se le righe relative agli Addebiti articolo debbano essere caricate in tabella in funzione della Data di registrazione della riga documento Articolo collegata.|
+|Origine costo del venduto da | specifica l'origine dalla quale recuperare il costo da utilizzare nel calcolo del costo del venduto.|
+|Tipo Costo|costo con il quale valorizzare il costo del venduto nel caso in cui il valore del campo “Origine costo del venduto” sia uguale ad IVC.|
+|Filtro data reg. alla data fattura|consente di definire se considerare la Data di registrazione della fattura o della spedizione nel calcolo dei movimenti di fatturato|
+|Driver dimensione 1, 2, 3, 4 |consentono di indicare 4 dimensioni (oltre alle 2 globali) da utilizzare nel calcolo dei “Driver analisi profittabilità (EMA)”|
+
+* Sezione “Analisi profittabilità”: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/42Extended Management Accounting-ita.jpg"><br>
+
+|Campo|Description|
+|-----|-----------|
+| Compressione mov. profittabilità | Nessuno, Giorno -> identifica la logica di accorpamento dei movimenti di vendita. Il valore “Nessuno” consente da visualizzare le righe dei singoli documenti di vendita, alle quali vengono assegnate le differenti tipologie di costo.|
 | No compressione per spedizione diretta, cod. ubicazione, cod. variante, nr. lotto, nr. seriale  | impattano nella logica di creazione delle righe relative ai Ricavi/Ricavi netti del C/E di profittabilità, nel caso in cui la compressione dati sia attiva. Possono quindi essere valorizzati o modificati solo nel caso in cui il campo “Compressione mov. profittabilità” presenti un valore diverso da Nessuno |
-|Origine costo del venduto da|Specifies where to retrieve the item's cost. You can choose from standard cost worksheet or IVC extension.|
+|Origine costo del venduto da | specifica l'origine dalla quale recuperare il costo da utilizzare nel calcolo del costo del venduto..|
 |Tipo Costo|costo con il quale valorizzare il costo del venduto|
 |Filtro data reg. alla data fattura|consente di definire se considerare la Data di registrazione della fattura o della spedizione nel calcolo dei movimenti di fatturato|
 |Driver dimensione 1, 2, 3, 4 |consentono di indicare 4 dimensioni (oltre alle 2 globali) da utilizzare nel calcolo dei “Driver analisi profittabilità (EMA)”|
 
-<br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/26Extended Management Accounting-ita.png">
-<br>
+**N.B.**: è consigliato attivare la logica di calcolo del fatturato incrementale al fine di ridurre i tempi di elaborazione del C/E di Analisi della profittabilità.
+
+
+[**Fatturato incrementale (EMA)**](http://)
+
+La pagina “Fatturato incrementale (EMA)” presenta dati calcolati in funzione della seguente logica:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/Prof 03_ITA.jpg"><br>
+
+* I dati vengono generati su base mensile (Data = fine mese), sommando i valori (Quantità, Importo (VL), Importo sconto riga (VL), Importo sconto fattura (VL)), a parità di Nr. articolo, Nr. cliente, ID set dimensioni; da setup possono essere attivati altri criteri di spaccatura dei dati (es.: Cod. Agente, Nr. lotto, etc.).
+* Per le righe Fattura / Nota Credito relative ad Addebiti articolo di vendita/acquisto, vengono inserite tante righe quante sono quelle Articolo collegate: nella colonna "Nr. articolo" viene riportato il Cod. articolo collegato, nella colonna "Importo (VL), l'importo assegnato.
+* Per le righe Fattura / Nota Credito relative ad articoli gestiti con tracciabilità per Lotto/Seriale, vengono inserite tante righe quanti sono i Nr. lotto/seriale abbinati alla riga di vendita: nella colonna "Importo (VL)" è presente l'importo calcolato per ogni Nr. lotto/seriale.
+* Se nel Setup C/A – profittabilità è presente il flag "Includi altri ricavi vendita", vengono processate ed inserite in tabella anche le righe Fattura / Nota Credito relative a Cod. Articolo di Assistenza / Non inventario, Conto C/G, Risorsa. I dati vengono accorpati in funzione del campo "Nr. conto C/G" (recuperato dal “Setup registrazioni COGE”).
+
+Il calcolo del fatturato incrementale può essere effettuato eseguendo/schedulando periodicamente l’esecuzione dell’apposita funzionalità “Calcolo incrementale” (codeunit 18006617 "EOS023 Incremental Profitabil.").
+Il calcolo incrementale viene quindi eseguito, a partire dall’apposita data indicata nel “Setup C/A – profittabilità”, elaborando solo i documenti/movimenti non processati in precedenza.
+
+Ove necessario, è anche possibile eseguire le seguenti funzioni:
+* Calcola: consente di ricalcolare un periodo specifico in funzione dei campi Data inizio e Data fine presenti nella pagina;
+* Ricalcola tutto: cancella i record presenti nella pagina e ricalcola il fatturato incrementale a partire dall’apposita data indicata nel Setup C/A – profittabilità.
+
 
 [**Esempio C/E di Profittabilità**](http://)
 
@@ -25,8 +64,7 @@ L’analisi della profittabilità consente di ottenere tramite EMA un conto econ
 
 Il campo "Tipo origine" determina la logica di alimentazione del singolo conto e prevede una serie di opzioni predefinite. 
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/26Extended Management Accounting-ita.png">
-<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/Prof 07_ITA.jpg"><br>
 
 È comunque possibile definire, attraverso il valore “Costo vendita pers.”, una codeunit ed una funzione ad hoc attraverso le quali recuperare dati altre tabelle presenti a sistema, secondo una logica specifica.
 
@@ -60,14 +98,13 @@ Consentono di allocare costi sul fatturato di vendita («Colonna driver») in fu
 [**Scenari di analisi (EMA)**](http://)
 
 Per alimentare il CE di Profittabilità, dopo aver calcolato il costo del singolo articolo (per es. tramite App “IVC”), è necessario tornare nella Scheda Analisi C/A ed eseguire la funzione “Aggiorna analisi della profittabilità”. Al termine dell’elaborazione il campo “Stato profittabilità” nella sezione Statistiche riporterà il valore “Allocati Indiretti”. 
-<br>
- <img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/30Extended Management Accounting-ita.png">
- <br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/Prof 06_ITA.jpg"><br>
  
 |Campo|Descrizione|
 |-----|-----------|
-| Aggiorna l’analisi della profittabilità | alimenta la tabella di dettaglio "Movimenti C/IND", consultabile tramite il C/E di Profittabilit |
-| Naviga -> Scheda di analisi della profittabilità | tramite il pulsante  è possibile accedere al C/E di Profittabilità, filtrato in funzione de Cod. analisi di partenza |
+| Aggiorna l’analisi della profittabilità | alimenta la tabella di dettaglio "Movimenti analisi profittabilità", consultabile tramite il C/E di Profittabilità |
+| Correlato -> Analisi -> Scheda di analisi della profittabilità | tramite questa funzione  è possibile accedere al C/E di Profittabilità, filtrato in funzione de Cod. analisi di partenza. |
 
 <br>
 
