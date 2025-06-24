@@ -1,22 +1,61 @@
 [**Profitability analysis**](http://)
 
-Profitability analysis allows you to obtain through EMA a margin income statement per customer/item (and aggregates of these two entities). This is an income statement scheme at the cost of sales. The structure of this income statement is almost free, once the lines have been defined, it will be necessary to indicate for each line the origin of the data. The setup for profitability analysis is performed within the "Setup C/A – profitability" in the tab called "Profitability analysis":
+Profitability analysis allows you to obtain through EMA a margin income statement per customer/item (and aggregates of these two entities). This is an income statement scheme at the cost of sales. The structure of this income statement is almost free, once the lines have been defined, it will be necessary to indicate for each line the origin of the data. 
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/44Extended Management Accounting-enu.jpg">
-<br>
+The setup for profitability analysis is performed within the "Setup C/A – profitability" and operates depending on whether the “Activate Incremental Calculation” flag is enabled or not:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/Prof 01_ENG.jpg"><br>
+
+* “Incremental Sales Calculation” section:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/Prof 02_ENG.jpg"><br>
 
 |Field|Description|
 |-----|-----------|
-| Combine Entries C/Ind | None, Day, Month, Maximum ->specifies the option to allow for industrial ledger entries to be posted individually or as a combined posting per day or month. |
+| Start Date Incremental Entries | date (start of financial year) from which the incremental turnover will be calculated. |
+| Combine Incremental Entries | possible options are Month, Maximum. Indicates the data transfer logic from the “Incremental turnover (EMA)” table to the “Profitability analysis entries (EMA)”. The standard key for grouping entries is Period – Customer No. (billing) – Item No. – Dimension set ID. |
+| Details by field Document Type, Details by field Salesperson Code, Details by field Variant Code, Details by field Serial No., Details by field Lot No. | flags that integrate the standard data grouping logic indicated in the previous field. |
+| Include Other Sales Revenues | if enabled, the Invoice / Credit Memo lines relating to the Service / Non-inventory Item Code, G/L Account, Resource are also processed and inserted into the table. |
+| Calc. Charges in Item Posting Date | specifies whether the lines relating to Item Charges should be loaded into the table based on the Posting Date of the linked Item document line. |
+|Item Cost From|Specifies where to retrieve the item's cost. You can choose from standard cost worksheet or IVC extension.|
+|Cost Type|Specifies which type of cost to analyze. Costing method available are = Average, Weighed Average, Standard|
+|Match on Invoice Date|Specifies if consider the posting date of the invoice or the posting date of the shipment when calculating sales analysis|
+|Driver Dimension 1, 2, 3, 4|allow you to indicate 4 dimensions (in addition to the 2 global ones) to be used in the calculation of the Profitability Drivers|
+
+
+* “Profitability analysis” section:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/Prof 08_ENG.jpg"><br>
+
+
+|Field|Description|
+|-----|-----------|
+| Combine Entries C/Ind | None, Day ->specifies the option to allow for Profitability analysis entries to be posted individually or as a combined posting per day. |
 | No Profitability compression by field Drop shipment, by Location code, by Variant code, by Lot no, by Serial no | these fields refer to creating lines about Revenues/Net Revenues of the profitability C/E, in the event that data compression is active. They can therefore be enhanced or modified only if the field "Combine Entries C/Ind" has a value other than None |
 |Item Cost From|Specifies where to retrieve the item's cost. You can choose from standard cost worksheet or IVC extension.|
 |Cost Type|Specifies which type of cost to analyze. Costing method available are = Average, Weighed Average, Standard|
 |Match on Invoice Date|Specifies if consider the posting date of the invoice or the posting date of the shipment when calculating sales analysis|
 |Driver Dimension 1, 2, 3, 4|allow you to indicate 4 dimensions (in addition to the 2 global ones) to be used in the calculation of the Profitability Drivers|
 
-<br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/26Extended Management Accounting-enu.png">
-<br>
+
+[**Incremental Profitability (EMA)**](http://)
+The “Incremental Profitability (EMA)” page presents data calculated according to the following logic:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/Prof 03_ENG.jpg"><br>
+
+
+* The data is generated on a monthly basis (Date = end of month), by adding the values (Quantity, Amount (VL), Line discount amount (VL), Invoice discount amount (VL)), with the same Item No., Customer No., Size set ID; other data splitting criteria can be activated from setup (e.g.: Salesperson Code, Lot No., etc.).
+* For Invoice / Credit Memo lines relating to Sales/Purchase Item Charges, as many lines are inserted as there are linked Items: the "Item No." column shows the linked Item Code, the "Amount (VL)" column shows the assigned amount.
+* For Invoice / Credit Memo lines relating to items managed with traceability by Lot/Serial, as many lines are inserted as there are Lot/Serial No. associated with the sales line: the "Amount (VL)" column shows the amount calculated for each Lot/Serial No.
+* If the "Include other sales revenues" flag is present in the C/A Setup – profitability, the Invoice / Credit Memo lines relating to Service / Non-inventory Item Code, G/L Account, Resource are also processed and inserted into the table. The data is grouped according to the "G/L Account No." field (retrieved from the "General Posting Setup").
+
+The calculation of incremental turnover can be performed by periodically executing/scheduling the execution of the specific “Incremental Calculation” function (codeunit 18006617 "EOS023 Incremental Profitabil.").
+
+The incremental calculation is then performed, starting from the specific date indicated in the “C/A Setup – profitability”, processing only the documents/movements not previously processed.
+
+Where necessary, it is also possible to perform the following functions:
+* Calculate: allows you to recalculate a specific period based on the Start date and End date fields present on the page;
+* Recalculate all: deletes the records present on the page and recalculates the incremental turnover starting from the specific date indicated in the C/A Setup – profitability.
 
 [**Profitability income statement example**](http://)
 
@@ -25,8 +64,7 @@ Profitability analysis allows you to obtain through EMA a margin income statemen
 
 The field "Source Type" defines the way the single account is filled in and provides a series of pre-defined options.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/26Extended Management Accounting-enu.png">
-<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/Prof 07_ENG.jpg"><br>
 
 In any case, through “Sales cost custom calculation”, it is possible to define a codeunit and a custom function through which to retrieve data from other tables present in the system, according to a specific logic.
 
@@ -61,15 +99,16 @@ They allow you to allocate costs on sales turnover ("Driver column") according t
  
 [**Scenario Analysis (EMA)**](http://)
 
-To feed the Profitability Analysis Account, after calculating the cost of the single item (eg through the “IVC” App), it is necessary to go back to the Scenario Analysis Card and execute the “Update C/IND Analysis” function. At the end of the processing, the "Status C/IND" field in the Statistics tab will show the value "Allocated Indirects". 
+To feed the Profitability Analysis Account, after calculating the cost of the single item (eg through the “IVC” App), it is necessary to go back to the Scenario Analysis Card and execute the “Update profitability analysis” function. At the end of the processing, the "Status C/IND" field in the Statistics tab will show the value "Allocated Indirects". 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/Prof 06_ENG.jpg"><br>
 <br> 
- <img width="" src="https://docs-test.eos-solutions.it/Images/PR000425-0/30Extended Management Accounting-enu.jpg">
- <br>
+
  
 |Field|Description|
 |-----|---------|
-| Update C/IND Analysis | feeds the detailed table C/IND Entries which you can open from the C/IND Account |
-| Navigate -> C/IND Card Analysis | il is possible to access the C/IND Analysis Account, filtered according to the initial Analysis Code |
+| Update profitability analysis | feeds the detailed table Profitability Analysis Entries which you can open from the profitability Account Card |
+| Related -> Analysis -> Profitability Analysis Card | it is possible to access the Profitability Analysis, filtered according to the initial Analysis Code |
 
 <br>
 
