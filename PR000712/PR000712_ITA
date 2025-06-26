@@ -22,6 +22,7 @@ Si consiglia vivamente di eseguire questa configurazione con il supporto del con
 
 
 <br>
+
 **Solo per le installazioni SaaS**
 
 Terminato l'inserimento di dati all'interno del setup:
@@ -30,7 +31,7 @@ Terminato l'inserimento di dati all'interno del setup:
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DeviceLoginRed.png">
 3. Inserire il codice all'interno della pagina
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DeviceLoginPage.png">
-4. completare il login con un utente amministratore in modo da autorizzare l'app registration
+4. completare il login con l'utente specificato nel campo "Nome utente" in DocFinance in modo da autorizzare l'app registration
 5. completati i passaggi chiudere il browser
 6. nella configurazione di DocFinance il codice deve apparire di colore <text style="color:green"> VERDE </text>
 
