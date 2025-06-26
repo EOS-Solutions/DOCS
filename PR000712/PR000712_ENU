@@ -30,7 +30,7 @@ After completing data entry in the setup:
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DeviceLoginRed.png">  
 3. enter the code on the page  
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DeviceLoginPage.png">  
-4. complete the login with an administrator user to authorize the app registration  
+4. complete the login with the user specified in the "Nome utente" in DocFinance to authorize the app registration  
 5. after completing the steps, close the browser  
 6. in the DocFinance configuration, the code must appear in <text style="color:green"> GREEN </text> color
 
