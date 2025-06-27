@@ -38,7 +38,7 @@ The main fields are:
     </tr>
 		<tr>
       <td>Combine Entries</td>
-      <td align="left">Specifies the option to allow for general ledger entries to be posted individually or as a combined posting per day or month</td>
+      <td align="left">indicates the data grouping logic with which the records are transferred from the general accounting to the analytical accounting. The values are grouped by Period-Account-Dimensions</td>
     </tr>
 		<tr>
       <td>Monthly Allocation</td>
