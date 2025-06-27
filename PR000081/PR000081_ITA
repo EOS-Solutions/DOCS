@@ -37,8 +37,8 @@ Dettaglio principali campi:
       <td align="left">è il conto che è necessario creare nel piano dei conti di analitica e che il sistema utilizza come contropartita di tutti i movimenti che vengono riportati dalla C/G alla C/A; da valorizzare nel caso di sincronizzazione del solo conto economico</td>
     </tr>
 		<tr>
-      <td>Compressione movimenti</td>
-      <td align="left">indica la logica di accorpamento dati con cui vengono trasferiti i record dalla COGE alla COAN. La compressione minima dei movimenti è sempre il giorno anche se è presente l’opzione “Nessuno”. I valori vengono accorpati per Periodo-Conto-Dimensioni</td>
+      <td>Compressione mov. sincronizzazione C/G con C/A</td>
+      <td align="left">indica la logica di accorpamento dati con cui vengono trasferiti i record dalla COGE alla COAN. I valori vengono accorpati per Periodo-Conto-Dimensioni</td>
     </tr>
 		<tr>
       <td>Allocazione Mensile</td>
