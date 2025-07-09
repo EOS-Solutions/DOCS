@@ -9,10 +9,11 @@ The Allocation Cards allow allow the overturning of indirect costs charged to ac
 
 * Fixed: they are allocation percentages indicated in the lines of the allocation card.
 * Dynamic: the system reads the "driver entries" tables on the basis of which it calculates the allocation percentages to be used.
-<br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/7Extended Management Accounting-enu.png"><br>
 
-The different allocation cards are performed in increasing order of Level; at the same level, execution takes place according to the "Sequence" field or, alternatively (if the sequence value is equal to zero), according to the "Code" field (alphanumeric order).
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000400-0/COAN_001_ENG.jpg"><br>
+
+
+The different allocation cards with the “Certified” status are performed in increasing order of Level.
 
 **Allocation List Card**
 
@@ -30,8 +31,11 @@ The Allocation Card contains four tabs:
 
 **General Tab**
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/9Extended Management Accounting-enu.png"><br>
-In this section you must enter the allocation code with its description. The “Starting Date” and “Ending Date” fields indicate, if entered, the validity period of the allocation card. A card can also be made obsolete by activating the “Blocked” option.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000400-0/COAN_002_ENG.jpg"><br>
+
+
+In this section you must enter the allocation code with its description. The “Starting Date” and “Ending Date” fields indicate, if entered, the validity period of the allocation card. 
+A card can also be made obsolete by activating the “Blocked” option.
 
 The system will only execute the valid allocation cards, with the value "Certified" in the "Status" field.  
 
