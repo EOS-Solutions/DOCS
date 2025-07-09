@@ -7,11 +7,11 @@ Le allocazioni possono essere utilizzate per:
 Le "Schede di Allocazione" permettono il ribaltamento dei costi indiretti imputati su conto/dimensioni, su altre combinazioni di conto/dimensioni (es.: su CDC, Divisioni, etc.). I driver utilizzati nelle allocazioni possono essere di 2 tipologie:
 
 * Fissi: ovvero percentuali di allocazione indicate nelle righe della scheda di allocazione.
-* Dinamici: il sistema legge le tabelle di «movimenti driver» in base alle quali calcola le percentuali di allocazione da utilizzare.    
+* Dinamici: il sistema legge le tabelle di «movimenti driver» in base alle quali calcola le percentuali di allocazione da utilizzare.   
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/7Extended Management Accounting-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000400-0/COAN_001_ITA.jpg"><br>
 
-Le differenti schede di allocazione vengono eseguite in ordine crescente di Livello; a parità di livello l’esecuzione avviene in funzione del campo “Sequenza” o, in alternativa (se il valore della sequenza è pari a zero), in base al campo Codice (ordine alfanumerico).
+Le schede di allocazione che presentano lo Stato “Certificata” vengono eseguite in ordine crescente di Livello.
 
 **Struttura scheda allocazione**
 
@@ -28,8 +28,10 @@ La scheda di allocazione è suddivisa in varie sezioni:
 
 **Tab Generale**
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex023/Allocation/9Extended Management Accounting-ita.png"><br>
-In questa sezione si deve inserire il Codice dell’allocazione con la relativa descrizione. I campi “Data Inizio” e “Data Fine indicano, se valorizzati, il periodo di validità della specifica scheda di allocazione. Una scheda può essere resa obsoleta anche attraverso il flag “Bloccato”.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000400-0/COAN_002_ITA.jpg"><br>
+
+In questa sezione occorre inserire il “Codice” dell’allocazione, il relativo “Nome” e l’eventuale “Codice 2” (alfanumerico di 20 caratteri). I campi “Data Inizio” e “Data Fine” indicano, se valorizzati, il periodo di validità della specifica scheda di allocazione. 
+Una scheda può essere resa obsoleta anche attraverso il flag “Bloccato”..
 
 Il sistema eseguirà solo le schede di allocazione valide, con in valore “Certificata” del campo “Stato”.   
 
