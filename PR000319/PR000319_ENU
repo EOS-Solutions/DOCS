@@ -14,7 +14,8 @@ On the Reason Codes page, in the field "Posting Policy" choose the options:
 | No Invoicing and Ledger Entries | for the related reason code, the system will post neither the invoice nor the ledger entries |
 | No Ledger Entries               | for the related reason code, the system will post the invoice, but not the ledger entries    |
 
-<br>
+<BR>
+N.B.: The statistic document option can only be used in the sales documents.
 
 **Sales order creation**
 
