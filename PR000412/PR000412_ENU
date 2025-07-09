@@ -1,4 +1,3 @@
-[**Scenario Analysis (EMA)**](http://)
 
 It is possible to create one or more different scenarios for each analysis period using the Scenario Analysis List page.
 
@@ -8,7 +7,7 @@ It is possible to create one or more different scenarios for each analysis perio
 * Allows analysis through views by dimensions
 * Allows the analysis of data through the functions of the Analysis by dimensions and of the Financial statements.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/18Extended Management Accounting-enu.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000412-0/18EMA-enu.png"><br>
 
 From the C/A Analysis Card, by executing the "Update Driver History" and then "Update Analysis C/A" functions, it is possible to execute all the allocations that have been entered in the allocation list or only those selected using the "Sequence allocations ”and also calculate the tariff of the production cost center. 
 
