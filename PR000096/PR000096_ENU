@@ -24,7 +24,10 @@ Press Over-/Underdelivery Setup (OVR):
 |                    | Both            | setup line is valid for both inbound and outbound goods                                                                                                                              |
 | Source Type        | Customer        | over-/underdelivery is allowed Sales side                                                                                                                                            |
 |                    | Vendor          | over-/underdelivery is allowed Purchase side                                                                                                                                         |
+|                         | Location       | the quantity tolerance is valid on the Location side. It is used to manage the OVR in shipments related to transfer orders                                                                                                                                                                           |
+|                         | Service       | quantity tolerance is valid on the Service (Customer) side. It is used to manage the OVR in shipments related to service orders                                                                                                                                                                          |
 | Source No.         |                 | you can indicate a specific Customer/Vendor. If the setup line is not filled in, it applies to all Customers/Vendors (based on what is entered in the Source Type field)             |
+| Location Code             |                 | You can specify a location. The setup line will be valid for all purchase, sales, or service orders that have the same location code                                    |
 | Item Category Code |                 | you can indicate a generic Category for items. The setup line will be valid for all items in the category indicated.                                                                 |
 | Item No.           |                 | you can specify a specific item for which the setup will be valid                                                                                                                    |
 | Variant Code       |                 | if you choose a specific item, you can indicate a specific variant                                                                                                                   |
@@ -43,3 +46,6 @@ Press Over-/Underdelivery Setup (OVR):
 **Note 2**
 > The "Line Closed" field is present on the purchase/sales document lines. If enabled, manually closes the line by not considering the setup. 
 > <img width="" src="https://docs-test.eos-solutions.it/Images/PR000096-0/04OverandUnderDeliveryQuantities.jpg"><br>
+
+**Note 3**
+> OVR management is provided for subcontracting receipts and shipments relating to subcontracting transfer orders.
