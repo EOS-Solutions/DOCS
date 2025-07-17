@@ -1,0 +1,18 @@
+A seguito della dismissione da parte di Microsoft dei servizi di Bing, le app Map Services e Delivery Route Planner sono state implementate con il supporto ai nuovi servizi di Azure Maps.
+Per informazioni sui servizi e sui prezzi è disponibile il seguente link: [https://azure.microsoft.com/it-it/products/azure-maps](http://)
+ 
+I servizi usati, al momento, sono i seguenti (N.B. prezzi indicativi consultare il sito per i prezzi validi):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure1_ITA.png"><br>
+
+
+Per l’utilizzo di Azure Maps, dopo aver creato la propria sottoscrizione, è necessario poi creare una Configurazione Servizi (EAL): 
+Impostando il seguente Endpoint Uri = https://atlas.microsoft.com
+Impostare inoltre i campi Client ID e Primary Key appena creati con la sottoscrizione al servizio.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure2_ITA.png"><br>
+
+
+La Configurazione servizi (EAL) appena creata si deve poi impostare in **Setup Servizi (MAPS)**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure3_ITA.png"><br>
