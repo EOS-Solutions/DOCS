@@ -7,8 +7,8 @@ I servizi usati, al momento, sono i seguenti (N.B. prezzi indicativi consultare 
 
 
 Per l’utilizzo di Azure Maps, dopo aver creato la propria sottoscrizione, è necessario poi creare una Configurazione Servizi (EAL): 
-Impostando il seguente Endpoint Uri = https://atlas.microsoft.com
-Impostare inoltre i campi Client ID e Primary Key appena creati con la sottoscrizione al servizio.
+Impostando il seguente Endpoint Uri = **https://atlas.microsoft.com**
+Impostare inoltre i campi **Client ID** e **Primary Key** appena creati con la sottoscrizione al servizio.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure2_ITA.png"><br>
 
@@ -16,3 +16,20 @@ Impostare inoltre i campi Client ID e Primary Key appena creati con la sottoscri
 La Configurazione servizi (EAL) appena creata si deve poi impostare in **Setup Servizi (MAPS)**:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure3_ITA.png"><br>
+
+Il test della connessione può essere fatto ad esempio spostandosi in anagrafica di un cliente e utilizzando la funzione **Geolocalizzazioni**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure4_ITA.png"><br>
+
+e dalla pagina **Geolocalizzazioni (MAPS)**:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure5_ITA.png"><br>
+
+Nel **setup DRP** sono stati aggiunti 2 nuovi campi che attivano le seguenti funzionalità, attive solo per Azure Maps:
+
+* **Mappa percorso default.** Che assume i seguenti valori: **Google Maps**, **Bing Maps**. Azure Maps non prevede, almeno al momento, una visualizzazione del percorso. Pertanto è possibile in modo opzionale utilizzare Google Maps o Bing Maps per visualizzare il percorso in una mappa.
+* **Modalità di viaggio default.** Che assume i seguenti valori: **Camion**, **Auto**. Viene utilizzato come parametro nel calcolo del percorso. L'ottimizzazione del percorso viene invece calcolata sempre con il mezzo Camion (default non modificabile di Azure Maps).
+
+<br>
+<br>
+
