@@ -1,0 +1,35 @@
+Following Microsoft's deprecation of Bing services, Map Services and Delivery Route Planner apps have been rolled out with support for the new Azure Maps services.
+For information on services and prices, the following link is available: [https://azure.microsoft.com/it-it/products/azure-maps](http://) 
+ 
+The services used, at the moment, are the following (N.B. indicative prices consult the website for valid prices):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure1_ENU.png"><br>
+
+
+To use Azure Maps, after creating your subscription, you then need to create a Service Configuration (EAL): 
+Setting the following Endpoint Uri = **https://atlas.microsoft.com**
+Also, set the **Client ID** and **Primary Key** fields that you just created with your subscription to the service.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure2_ENU.png"><br>
+
+
+The newly created Service Configuration (EAL) must then be set up in the **Map Services Setup (MAPS)**: 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure3_ENU.png"><br>
+
+The connection test can be done, for example, by moving to a customer's personal data and using the **Geolocations** function:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure4_ENU.png"><br>
+
+and from the **Geolocations (MAPS)** page :
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001053-0/Azure5_ENU.png"><br>
+
+In the **Delivery Route Setup**, two new fields have been added that activate the following features, active only for Azure Maps:
+
+* **Default route map.** Which takes on the following values: **Google Maps**, **Bing Maps**. Azure Maps does not provide, at least at this time, a route view. Therefore, you can optionally use Google Maps or Bing Maps to display your route on a map.
+* **Default travel mode.** Which assumes the following values: **Truck**, **Car**. It is used as a parameter in route calculation. The route optimization is instead always calculated with the Truck vehicle (default not modifiable of Azure Maps).
+
+<br>
+<br>
+
