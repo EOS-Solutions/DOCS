@@ -1,0 +1,10 @@
+The **Inventory with Serial and Lot Number** app has the ability to calculate physical inventory for Package No., as well as lot and serial. To implement the new feature, a new report called **18004144 EOS056 Calc Inv SerialLotPack** has been created. The previous report, **18004143 EOS056 Calculate Inv SerialLot**, has been set to obsolete pending (**it will be permanently deleted in BC30**). The activation of the new report must be done via Feature Flags (EAL):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001054-0/Package1_ENU.png"><br>
+
+After the Feature Flag (EAL) is enabled, you can use the new report to calculate the physical inventory. **Any customizations made in the previous calculation report must be redone in the new one. The new report can also be used by those who do not manage the Package No.**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001054-0/Package2_ENU.png"><br>
+
+<br>
+<br>
