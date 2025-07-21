@@ -1,0 +1,10 @@
+L’app **Dual Unit of Measure** ha la possibilità di calcolare l’inventario fisico anche per Nr. collo, oltre a lotto e seriale. Per implementare la funzionalità è stato creato un nuovo report denominato **70624432 EOS051 Calc Inv SerialLotPack**. Il precedente report, **70624430 EOS051 Calculate Inv SerialLot**, è stato reso obsoleto (**obsolete pending, verrà definitivamente eliminato in BC30**). L’attivazione del nuovo report deve avvenire tramite Feature Flag (EAL):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001055-0/Package1_ITA.png"><br>
+
+Dopo l’attivazione del Feature Flag (EAL) è possibile utilizzare il nuovo report per il calcolo dell’inventario fisico. **Eventuali personalizzazioni fatte nel precedente report di calcolo devono essere riportate nel nuovo. Il nuovo report può essere utilizzato anche da chi non gestisce i Colli.**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001055-0/Package2_ITA.png"><br>
+
+<br>
+<br>
