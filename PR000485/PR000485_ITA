@@ -1,19 +1,19 @@
-ß il setup che consente di stabilire quando va generato un ordine di controllo automatico. Dopo aver generato una riga di setup e possibile disattivarla, se necessario, mettendo il flag su **Bloccato**.
+Ãˆ il setup che consente di stabilire quando va generato un ordine di controllo automatico. Dopo aver generato una riga di setup e possibile disattivarla, se necessario, mettendo il flag su **Bloccato**.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000485-0/6ProductQualityAssurance-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000485-0/6ProductQualityAssurance-ITA.png"><br>
 
 | Tipo di controllo | Descrizione |
 | --- | --- |
-| Carico | Utilizzato per magazzini con e senza warehouse. Alla registrazione del documento di carico, da ordine di acquisto o carico whse, verr… creato in automatico un ordine di controllo qualit…. |
-| In corso | Utilizzata in caso di cicli multifase. In un ordine di produzione alla registrazione del movimento contabile di capacit… verr… creato in automatico un ordine di controllo qualit…. |
-| Output | In un ordine di produzione alla registrazione del movimento contabile articolo verr… creato in automatico un ordine di controllo qualit…. Se vengono fatti X versamenti verranno creati X ordini di controllo. |
-| Ordine vendita | Utilizzato per magazzini senza warehouse. LÂapp permette di staccare un ordine di controllo qualit… dallÂordine di vendita. |
-| Spedizione | Utilizzato per magazzini senza warehouse. LÂapp permette di staccare un ordine di controllo qualit… dalla spedizione di vendita registrata, da attivare tramite custom. |
-| Ordine acquisto | Utilizzato per magazzini senza warehouse. Prima della registrazione del documento di carico lÂapp permette di staccare un ordine di controllo dallÂordine di acquisto. Questa tipologia definita ®controllo in ingresso¯ Š tipica del food in quanto i controlli sul camion vengono fatti prima dellÂaccettazione merce. |
-| Carico whse. | Utilizzato per magazzini con warehouse. Prima della registrazione del documento di carico lÂapp permette di staccare un ordine di controllo qualit… dal carico whse. Come detto sopra questa tipologia definita ®controllo in ingresso¯. |
-| Spedizione whse. | Utilizzato per magazzini con warehouse. LÂapp permette di staccare un ordine di controllo qualit… manualmente dalla spedizione whse. |
+| Carico | Utilizzato per magazzini con e senza warehouse. Alla registrazione del documento di carico, da ordine di acquisto o carico whse, verrÃ  creato in automatico un ordine di controllo qualitÃ . |
+| In corso | Utilizzata in caso di cicli multifase. In un ordine di produzione alla registrazione del movimento contabile di capacitÃ  verrÃ  creato in automatico un ordine di controllo qualitÃ . |
+| Output | In un ordine di produzione alla registrazione del movimento contabile articolo verrÃ  creato in automatico un ordine di controllo qualitÃ . Se vengono fatti X versamenti verranno creati X ordini di controllo. |
+| Ordine vendita | Utilizzato per magazzini senza warehouse. Lâ€™app permette di staccare un ordine di controllo qualitÃ  dallâ€™ordine di vendita. |
+| Spedizione | Utilizzato per magazzini senza warehouse. Lâ€™app permette di staccare un ordine di controllo qualitÃ  dalla spedizione di vendita registrata, da attivare tramite custom. |
+| Ordine acquisto | Utilizzato per magazzini senza warehouse. Prima della registrazione del documento di carico lâ€™app permette di staccare un ordine di controllo dallâ€™ordine di acquisto. Questa tipologia definita Â«controllo in ingressoÂ» Ã¨ tipica del food in quanto i controlli sul camion vengono fatti prima dellâ€™accettazione merce. |
+| Carico whse. | Utilizzato per magazzini con warehouse. Prima della registrazione del documento di carico lâ€™app permette di staccare un ordine di controllo qualitÃ  dal carico whse. Come detto sopra questa tipologia definita Â«controllo in ingressoÂ». |
+| Spedizione whse. | Utilizzato per magazzini con warehouse. Lâ€™app permette di staccare un ordine di controllo qualitÃ  manualmente dalla spedizione whse. |
 
-Una volta definito il tipo di controllo, Š necessario specificare dei filtri per definire in quali particolari casistiche effettuare i test.  EÂ possibile filtrare per:
+Una volta definito il tipo di controllo, Ã¨ necessario specificare dei filtri per definire in quali particolari casistiche effettuare i test.  Eâ€™ possibile filtrare per:
 
 * Cod. categoria articolo
 
@@ -25,19 +25,21 @@ Una volta definito il tipo di controllo, Š necessario specificare dei filtri per
 
 * Tipo di test
 
-Nei campi ÃTipoÄ e ÃNr.Ä Š possibile filtrare per:
+Nei campi **Tipo** e **Nr.** Ã¨ possibile filtrare per:
 
-* Fornitore: se il Tipo di controllo Š ÃCaricoÄ
+* Fornitore: se il Tipo di controllo Ã¨ **Carico**
 
-* Area di produzione se il Tipo di controllo Š ÃIn corsoÄ
+* Area di produzione se il Tipo di controllo Ã¨ **In corso** o **Output**
 
-* Centro di lavoro
+* Centro di lavoro se il Tipo di controllo Ã¨ **In corso** o **Output**
 
 * Cliente
 
-Il campo "CQ in carichi conto lavoro" specifica se tale setup matrice Š attivo anche per l'ordine di produzione del conto lavoro: 
+Il campo **CQ in carichi conto lavoro** specifica se tale setup matrice Ã¨ attivo anche per l'ordine di produzione del conto lavoro: 
 
 | Nome | Descrizione |
 | --- | --- |
-| ULTIMA FASE | attivo se il conto lavoro Š l'ultima fase dell'ordine di produzione |
+| ULTIMA FASE | attivo se il conto lavoro Ã¨ l'ultima fase dell'ordine di produzione |
 | TUTTE LE FASI | attivo in tutte le fasi dell'ordine di produzione |
+
+Il campo **Cumula Outut**, se abilitato, permette a fronte di registrazioni di output successive dello stesso ordine di produzione e dello stesso lotto/seriale di cumulare la quantitÃ  versata sull'ordine di controllo giÃ  aperto. 
