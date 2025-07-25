@@ -34,7 +34,7 @@ Nelle **RIGHE** del template piano di fatturazione è possibile inserire le segu
 	
 | Opzione    |  Descrizione   |
 | --- | --- |
-| Tipo fattura | identifica la tipologia di fattura che dovrà essere generata dal piano di fatturazione, le opzioni gestite sono:<br><br> Fattura di pagamento anticipata: fattura di anticipo<br> Fattura di chiusura: fattura a saldo, ultimo documento che dovrà essere generato dal piano di fatturazione<br> Fattura di chiusura parziale: fattura a saldo intermedia<br> Fattura di chiusura parziale con detrazioni: fattura a saldo intermedia con recupero, pro quota, dell’anticipo precedentemente contabilizzato. |
+| Tipo fattura | identifica la tipologia di fattura che dovrà essere generata dal piano di fatturazione, le opzioni gestite sono:<br><br> **Fattura di pagamento anticipata:** fattura di anticipo<br> **Fattura di chiusura:** fattura a saldo, ultimo documento che dovrà essere generato dal piano di fatturazione<br> Fattura di chiusura parziale: fattura a saldo intermedia<br> **Fattura di chiusura parziale:** fattura a saldo intermedia senza lo storno anticipo.<br> **Fattura di chiusura parziale con detrazioni:** fattura a saldo intermedia con recupero, pro quota, dell’anticipo precedentemente contabilizzato.<br> **Fattura di chiusura parziale con detrazioni fino a capienza:** fattura a saldo intermedia con recupero, totale fino a capienza, dell’anticipo precedentemente contabilizzato.|
 | Quota in % | indica la percentuale di anticipo per le righe di tipo: "Fattura pagamento anticipata" |
 | Descrizione | descrizione di riga che verrà ereditata sulla fattura di anticipo o a saldo |
 | Cod. condizioni di pagamento | gestibile per singolo documento |
