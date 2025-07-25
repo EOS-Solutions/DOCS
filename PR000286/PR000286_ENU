@@ -120,7 +120,7 @@ The header amounts will also be updated accordingly:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/28InvoicingPlan-ENU.png"><br>
 
-After having posted the advance invoices and having carried out the partial or complete shipment of the items present in the sales order, it is possible to generate the **Partial Closing Invoice**, the Partial Closing Invoice with deductions (if present in the invoice plan) and finally the final **Closing invoice**, using the "Create Closing Invoice" function:
+After having posted the advance invoices and having carried out the partial or complete shipment of the items present in the sales order, it is possible to generate the **Partial Closing Invoice**, the **Partial Closing Invoice with deductions**, the **Partial Closing Invoice with deductions up to capacity**(if present in the invoice plan) and finally the final **Closing invoice**, using the "Create Closing Invoice" function:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/29InvoicingPlan-ENU.png"><br>
 
@@ -157,3 +157,47 @@ From the invoice plan it is possible to view the posted revenues related to the 
 In the customer ledger entries, you can view the invoice plan number on all entries generated through the IPL app, including revenues linked to invoices generated from the invoice plan:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/37InvoicingPlan-ENU.png"><br>
+
+## Managing Partial Invoices with Deductions
+As described in the previous chapters of this documentation, there are two different types of partial closing invoices with deductions:
+
+* **Partial closing invoice with deductions:** An intermediate invoice that applies a proportional deduction from the previously posted prepayment.
+
+* **Partial closing invoice with deductions up to capacity:** An intermediate invoice that applies the maximum allowable deduction, based on the value of goods delivered, from the previously posted prepayment.
+
+The following example highlights the difference between these two invoice types.
+
+### Sales Order Creation
+The process begins with the creation of a sales order, to which a billing plan template is applied. This template has been previously configured in the system setup and is designed to automatically issue a 50% prepayment invoice upon order confirmation.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/38InvoicingPlan-ENU.png"><br>
+
+### Issuing the Prepayment Invoice
+Once the order is confirmed and the billing plan is active, the system generates a prepayment invoice for 50% of the order value.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/39InvoicingPlan-ENU.png"><br>
+
+This prepayment is now available to be automatically deducted from subsequent closing invoices, based on the progress of the shipments.
+
+### Partial Shipment of Goods
+After the prepayment is recorded, a partial shipment of the ordered goods is processed. In this example, the shipment corresponds to half the total value of the order. The shipment is posted using the standard shipment process in the sales document.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/40InvoicingPlan-ENU.png"><br>
+
+The quantity shipped determines the base value for calculating the corresponding closing invoice.
+
+### Generating a Partial Closing Invoice with Deductions up to Capacity
+Once the partial shipment is complete, a partial closing invoice with deductions up to cap is generated. The system automatically calculates the invoice amount based on the quantity shipped and applies the deduction of the prepayment up to the full value of the shipped items.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/41InvoicingPlan-ENU.png"><br>
+
+In this specific case, since both the prepayment and the shipment correspond to 50% of the order value, the invoice amount is fully covered by the available prepayment, and the resulting document is generated with a net amount of zero.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/42InvoicingPlan-ENU.png"><br>
+
+### Difference Compared to a Partial Closing Invoice with Proportional Deduction
+Alternatively, when a partial closing invoice with proportional deduction (not up to cap) is generated, the system behaves differently. In this case, the prepayment deduction is applied proportionally to the shipped amount. For instance, if the prepayment is 50% of the order and half of the goods are shipped, the deduction line on the invoice will reflect only 50% of the shipment's value, not the full value.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/44InvoicingPlan-ENU.png"><br>
+
+
