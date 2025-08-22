@@ -1,0 +1,169 @@
+Con l'app BNK è possibile effettuare disposizioni di rimborso ai clienti tramite bonifico SEPA.
+La funzionalità consente di rimborsare le note di credito registrate o di inserire disposizioni di rimborso manuali.
+
+***Bonifici di pagamento a clienti - SOMMARIO***
+<br>Premere ALT + Q e digitare "BNK" o “CBI" per ricercare le diverse voci della funzionalità:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_01_Bonclienti_Menu.png"><br>
+
+### **8.1 Setup**
+Le impostazioni di base per la creazione delle disposizioni di rimborso ai clienti tramite bonifico SEPA sono le seguenti.
+
+**Setup BNK**<br>
+Nella pagina "Setup BNK" dovrà essere inserito il numero di serie relativo alla distinta bonifico cliente provvisoria.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_02_Bonclienti_Setup.png"><br>
+
+**Setup metodo di pagamento e codice effetto**<br>
+Dovrà essere creato un metodo di pagamento collegato a un codice effetto specifico.
+
+***Metodo di pagamento***
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_03_Bonclienti_Setup metodo pagam.png"><br>
+
+***Codice effetto***
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_04_Bonclienti_Setup effetto.png"><br><br>
+
+
+**Setup importazione/esportazione banca**<br>
+Nel setup importazione/esportazione banca dovrà essere creato codice formato esportazione specifico da associare ai C/C bancari.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_05_Bonclienti_Setup esportaz banca.png"><br>
+
+I parametri da impostare sono i seguenti.
+* ID codeunit elaborazione: **18123342** “EOS SEPA Cust. CT-Export File”.
+* ID XMLport elaborazione: **18123338** “SEPA CT Customer pain.001.001.09 CBI v00.04.01”.
+* ID Codeunit per controllo esportazioni: **1223** "SEPA CT-Check Line".
+
+
+**Setup Scheda conto corrente bancario**<br>
+Nella cartella "Trasferimento" della scheda conto corrente bancario
+dovranno essere impostati i seguenti parametri.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_06_Bonclienti_Setup banca_01.png"><br>
+
+
+* **Formato esportaz. pagamento clienti (1)**: impostare il formato esportazione creato a tale scopo.
+* **IBAN (2)**: inserire il codice IBAN poichè obbligatorio.
+
+
+Nella cartella "Generale" della scheda conto corrente bancario dovrà essere impostato il campo **Nr. messaggi bonifico**.
+<br>Qui andrà indicato il numero di serie da assegnare al nome del file SEPA che sarà creato.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_07_Bonclienti_Setup banca_02.png"><br>
+
+***Nota***: il numero di serie che definisce il nome del file SEPA sarà il medesimo per i bonifici ai fornitori e i bonifici ai clienti.
+
+
+**Campo  CUC - Note**<br>
+Secondo le  norme CBI, il codice CUC (Codice Univoco CBI) è obbligatorio.
+Si tratta di un codice alfanumerico di 8 caratteri che viene assegnato dal sistema bancario.
+Tuttavia, tale dato non sempre è richiesto dalla banca e, per garantire la continuità con le precedenti versioni, non è stato implementato uno specifico controllo di obbligatorietà.
+
+Si consiglia, comunque, di valorizzare il campo "CUC" presente nella scheda conto corrente bancario per non rischiare lo scarto della disposizione.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_08_Bonclienti_Setup banca_03.png"><br>
+
+
+**Setup Informazioni Società**<br>
+La partita IVA della società è un dato obbligatorio nel file XML dei bonifici.
+Il campo "Partita IVA" della scheda "Informazioni Società" deve, pertanto, essere obbligatoriamente compilato.
+
+
+### 8.2 Inserimento della distinta di pagamento e creazione del file bonifico SEPA
+
+**Distinta bonifico clienti (CBI) - Creazione**<br>
+Per inserire la distinta di pagamento selezionare la voce di menu "Distinta bonifico clienti (CBI)".<br>
+Dalla "Distinta bonifico clienti (CBI)", infatti, si accede alla pagina delle distinte bonifico clienti provvisorie; qui sono visualizzate le distinte inserite e non ancora registrate.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_09_Bonclienti_Distinta menu.png"><br>
+
+E’ possibile creare una nuova distinta, tramite l’azione «Nuovo».<br>
+Nella distinta dovranno essere specificati:
+* **"Nr. conto corrente" (1)**: il C/C bancario su cui sarà effettuato il pagamento.
+* **"Cod. metodo di pagamento" (2)**: il metodo di pagamento associato ai documenti (note di credito) da estrarre in distinta tramite l'azione "Suggerisci note credito".
+
+Data di registrazione e Data distinta saranno proposte, invece, automaticamente in base alla workdate.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_10_Bonclienti_Distinta inserimento.png"><br>
+
+***Nota***: la distinta sarà creata in Stato "Aperto".
+Per la creazione del file di pagamento e la registrazione della distinta sarà necessario porla in stato "Rilasciato"
+
+**Distinta bonifico clienti (CBI) - Inserimento disposizioni pagamento**<br>
+E' possibile inserire le disposizioni di pagamento con due distinte funzioni:
+* **"Suggerisci note credito" (1)**
+* **"Inserisci bonifico manuale" (2)**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_11_Bonclienti_Distinta funzioni disposizioni.png"><br>
+
+**Distinta bonifico clienti (CBI) - Suggerisci note credito<br>**
+La funzione "Suggerisci note credito" consente di includere automaticamente nella distinta le note di credito da rimborsare, seguendo criteri ben precisi.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_12_Bonclienti_Distinta suggerisci note credito.png"><br>
+
+Saranno proposte, infatti, le note credito aventi:
+* lo stesso metodo di pagamento di quello indicato in distinta,
+* in valuta Euro,
+* con il campo "In sospeso" non valorizzato.
+
+**Distinta bonifico clienti (CBI) - Inserisci bonifico manuale<br>**
+Tramite la funzione "Inserisci bonifico manuale" è possibile predisporre, invece, disposizioni di pagamento non legate a note di credito già registrate.
+
+Selezionando "Inserisci bonifico manuale" si aprirà una pagina ove sarà possibile inserire la disposizione di pagamento.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_13_Bonclienti_Distinta inserimento manuale 01.png"><br>
+
+Le informazioni da inserire sono:
+* Codice cliente.
+* Descrizione della disposizione (per i bonifici singoli, non cumulativi, tale informazione sarà inserita nella disposizione.
+* Importo in Euro.
+* Il numero documento: questo è sempre inserito nella disposizione di pagamento anche nel caso di bonifici cumulativi.
+* la data documento: il dato ha solo valenza informativa e non viene inserito nel file SEPA.
+* il C/C bancario del cliente.
+
+La disposizione sarà inserita nella distinta e evidenziata con l'attributo "Riga manuale".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_14_Bonclienti_Distinta inserimento manuale 02.png"><br>
+
+**Distinta bonifico clienti (CBI) - Rilascio della distinta<br>**
+Per la creazione del file di pagamento e procedere, poi, con la registrazione della distinta è necessario porla in stato “Rilasciato”.
+
+E' possibile rilasciare la distinta con l'azione "Cambia stato" - "Rilasciato".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_15_Bonclienti_Distinta rilascio.png"><br>
+
+**Distinta bonifico clienti (CBI) - Esportazione file SEPA<br>**
+
+Per esportare il file SEPA selezionare l'azione "Esporta distinta su file".
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_16_Bonclienti_Distinta creazione file.png"><br>
+
+Eventuali errori nella creazione dei file sono riportati nel riquadro "Errori esportazione".
+
+**Distinta bonifico clienti (CBI) - Registrazione della distinta**<br>
+La registrazione della distinta effettuerà la seguente rilevazione contabile:
+<br>**C/C bancario   @   Crediti vs Clienti**
+
+Il tipo documento della rilevazione contabile sarà "Rimborso".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_17_Bonclienti_Distinta registrazione_movimenti CG.png"><br>
+
+**Distinta bonifico cliente registrata (CBI)**<br>
+Con la registrazione la distinta viene archiviata nell'archivio **«Distinta bonifico cliente registrata»**.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_18_Bonclienti_Distinta registrata menu.png"><br>
+
+E' possibile esportare nuovamente il file SEPA dalla distinta registrata tramite l'azione "Esporta distinta su file".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/IT_19_Bonclienti_Distinta registrata.png"><br>
+
+
+### **8.3 Addebito cumulativo distinta**
+Come per i bonifici SEPA ai fornitori, è possibile definire le modalità di rendicontazione della distinta di pagamento sull’estratto conto periodico da parte della banca.
+
+La richiesta di addebito cumulativo riguarda l’intera distinta; con essa si chiede alla banca di rendicontare, sull'estratto conto, un'unica operazione per il totale della distinta e non le singole disposizioni di pagamento.
+
+Per maggiori informazioni si rimanda al capitolo "5.5 Addebito cumulativo distinta".
+
+
+### **8.4 Informazioni tecniche**
+Il file SCT, in Italia, è soggetto agli standard del servizio CBI (Corporate Banking Interbancario), che integra il tracciato standard ISO20022.
+<br>Il tracciato attuale è disciplinato dal manuale tecnico "STIP-MO-001 Pagamenti- v.00.04.01", versione ***00.04.01*** del 02/11/2023.
+<br>**Tracciato ISO20022 di riferimento**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
