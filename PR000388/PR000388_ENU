@@ -13,14 +13,14 @@ Note: The new XMLport ***18123335 - “SEPA DD pain.008.001.08”.*** has been i
 
 
 #### 4.2 Bank Account Card Setup
-In "General" Tab of the Bank Account card the following parameters should be set.
+In the "General" tab of the Bank Account card the following parameters should be set.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000388-0/EN_Incassi_SDD_02.png"><br>
 
 
-* **SEPA Direct Debit Exp. Format (1)**: Set the correct export code.
-* **Creditor No. (2)**: This field must contain the “**Creditor Identifier Code**”.
-The Creditor Identifier Code is a unique code that allows the creditor to be identified in the SEPA area. It is important because it is uniquely associated with the Sepa mandate number. It is mandatory information.
+* **SEPA Direct Debit Exp. Format (1)**: set the correct export code.
+* **Creditor No. (2)**: this field must contain the “**Creditor Identifier Code**”.
+The Creditor Identifier Code is a unique code that allows the creditor to be identified in the SEPA area. It is important because it is uniquely associated with the SEPA mandate number. It is mandatory information.
 * **Direct Debit Msg. Nos. (3)**: enter the No. Series to be assigned to the name of the SDD file that will be created.
 
 
@@ -33,7 +33,7 @@ It is an 8-character alphanumeric code that is assigned by the banking system.
 
 
 #### 4.5 SDD B2B\Core
-The type of SDD (“B2B”\“Core”) can be selected via the “Partner Type” field of the Customer Bill card.
+The type of SDD (B2B\Core) can be selected via the “Partner Type” field of the Customer Bill card.
 
 “Partner Type “Company”: SDD “B2B”.
 “Partner Type “Person”: SDD “Core”.
@@ -43,20 +43,20 @@ The type of SDD (“B2B”\“Core”) can be selected via the “Partner Type�
 
 
 #### 4.6 Creation of the SDD file
-**Customer Bill Card**
+**Customer Bill Card**<br>
 To export the SDD file from the customer bill card, select the “Export Bill to File” action.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000388-0/EN_Incassi_SDD_05.png"><br>
 
-**Issued Customer Bill Card**
+**Issued Customer Bill Card**<br>
 To export the SDD file from the Issued Customer Bill card, select the “Export Issued Bill to File” action.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000388-0/EN_Incassi_SDD_06.png"><br>
 
 
-<br>**Informazione tecniche**<br>
+<br>**Technical Information**<br>
 The SDD file, in Italy, is subject to the standards of the CBI (Interbank Corporate Banking) service, which incorporates the ISO20022 standard layout.
-The current format is governed by the technical manual “STIN-MO-001 - Sepa Direct Debit collections,” version ***00.01.01*** dated 02/11/2023.
+<br>The current format is governed by the technical manual “STIN-MO-001 - Sepa Direct Debit collections,” version ***00.01.01*** dated 02/11/2023.
 
 **Reference ISO20022 path**: CustomerDirectDebitInitiation V08 - ***Pain.008.001.08***
 
