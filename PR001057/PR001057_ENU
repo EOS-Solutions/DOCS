@@ -1,0 +1,21 @@
+### Setup
+If you wish to use the SEPA format based on ISO 20022 specifications instead of the SEPA-CBI format, a different setup must be configured.
+
+This is because the rules defined by CBI (Corporate Banking Interbancario) are not mandatory for all banks operating in Italy.
+Some foreign banks operating in Italy use the SEPA format based on ISO 20022 specifications as an alternative to the SEPA-CBI format.
+
+Additionally, there may be cases where SEPA payment instructions need to be sent directly to foreign banks that are part of the SEPA network.
+
+
+#### Setup importazione\esportazione banca
+In the bank import/export setup, a specific export format code must be created with the following parameters.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001057-0/EN_01_BonSepaISO_Setup esportaz banca.png"><br>
+
+* Processing Codeunit ID: **1220** - "SEPA CT-Export File".
+* Processing XMLport ID: **1001** - "SEPA CT pain.001.001.09".
+* Check Export Codeunit: **1223** - "SEPA CT-Check Line".
+
+
+#### Technical Information
+**Reference ISO20022 format** : CustomerCreditTransferInitiationV03 - pain.001.001.09
