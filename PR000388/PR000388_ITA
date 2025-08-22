@@ -33,7 +33,7 @@ Si tratta di un codice alfanumerico di 8 caratteri assegnato dal sistema bancari
 
 
 #### 4.5 Tipologia SDD B2B\Core
-La tipologia di SDD ("B2B"\"Core") è selezionabile tramite il campo "Tipo di partner" della Distinta cliente.
+La tipologia di SDD (B2B\Core) è selezionabile tramite il campo "Tipo di partner" della Distinta cliente.
 
 Tipo di partner "Società": SDD "B2B".
 Tipo di partner "Persona": SDD "Core".
@@ -42,12 +42,12 @@ Tipo di partner "Persona": SDD "Core".
 
 
 #### 4.6 Creazione del file SDD
-**Distinta cliente**
+**Distinta cliente**<br>
 Per esportare il file SDD dalla distinta cliente selezionare l'azione "Esporta effetto su file".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000388-0/IT_Incassi_SDD_05.png"><br>
 
-**Distinta cliente emessa**
+**Distinta cliente emessa**<br>
 Per esportare il file SDD dalla distinta cliente emessa selezionare l'azione "Esporta effetto emesso su file".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000388-0/IT_Incassi_SDD_06.png"><br>
@@ -55,13 +55,8 @@ Per esportare il file SDD dalla distinta cliente emessa selezionare l'azione "Es
 
 <br>**Informazioni tecniche**<br>
 Il file SDD, in Italia, è soggetto agli standard del servizio CBI (Corporate Banking Interbancario), che integra il tracciato standard ISO20022.
-Il tracciato attuale è disciplinato dal manuale tecnico "STIN-MO-001 - Incassi Sepa Direct Debit", versione ***00.01.01*** del 02/11/2023.
+<br>Il tracciato attuale è disciplinato dal manuale tecnico "STIN-MO-001 - Incassi Sepa Direct Debit", versione ***00.01.01*** del 02/11/2023.
 
 **Tracciato ISO20022 di riferimento**: CustomerDirectDebitInitiation V08 - ***Pain.008.001.08***
-
-
-<br>
-### Configurazione di base per la gestione degli SDD in Business Central
-Si illustrano brevemente le configurazioni per l'utilizzo degli SDD in Business Central
 
 
