@@ -1,0 +1,20 @@
+### Setup
+Nel caso si desideri utilizzare, per le disposizioni di pagamento, il tracciato SEPA con le specifiche ISO 20022 e non il tracciato SEPA-CBI dovrà essere impostato un diverso setup.
+
+Infatti, le regole definite da CBI (Corporate Banking Interbancario) non sono vincolanti per tutte le banche operanti sul territorio italiano. Alcune banche estere operanti in Italia utilizzano, in alternativa al tracciato SEPA-CBI, il tracciato SEPA con le specifiche ISO 20022.
+
+Così come può esserci la necessità di inviare le disposizioni di pagamento SEPA direttamente a banche estere aderenti al circuito SEPA.
+
+
+#### Setup importazione\esportazione banca
+Nel setup importazione\esportazione  banca dovrà essere creato uno specifico codice formato esportazione con i seguenti parametri.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001057-0/IT_01_BonSepaISO_Setup esportaz banca.png"><br>
+
+* ID codeunit elaborazione: **1220** - "SEPA CT-Export File".
+* ID XMLport  elaborazione: **1001** - "SEPA CT pain.001.001.09".
+* Codeunit per controllo esportazioni: **1223** - "SEPA CT-Check Line".
+
+
+#### Informazioni tecniche
+**Tracciato ISO20022 di riferimento** : CustomerCreditTransferInitiationV03 - pain.001.001.09
