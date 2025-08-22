@@ -1,0 +1,168 @@
+With the BNK app, it is possible to issue customer refund transactions via SEPA bank transfer.
+This feature allows you to refund posted credit memos or to enter manual refund transactions.
+
+***Bank transfers to customers" - SUMMARY***
+<br>Press ALT + Q and type "BNK" or "CBI" to search for the different items of the functionality.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_01_Bonclienti_Menu.png"><br>
+
+### **8.1 Setup**
+The basic settings for creating customer refund transactions via SEPA bank transfer are as follows.
+
+**Setup BNK**<br>
+In the "BNK Setup" page, you will need to enter the serial number related to the provisional customer bank transfer batch.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_02_Bonclienti_Setup.png"><br>
+
+**Setup payment method and bill code**<br>
+A payment method must be created and linked to a specific bill code.
+
+
+***Payment method***
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_03_Bonclienti_Setup metodo pagam.png"><br>
+
+***Bill code***
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_04_Bonclienti_Setup effetto.png"><br><br>
+
+
+**Bank Export/Import Setup**<br>
+In the bank import/export setup, a specific export format code must be created and associated with the bank accounts.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_05_Bonclienti_Setup esportaz banca.png"><br>
+
+The parameters to be set are as follows.
+* Processing Codeunit ID: **18123342** “EOS SEPA Cust. CT-Export File”.
+* Processing XMLport ID: **18123338** “SEPA CT Customer pain.001.001.09 CBI v00.04.01”.
+* Check Export Codeunit: **1223** "SEPA CT-Check Line".
+
+
+**Bank Account Card Setup**<br>
+In the "Transfer" tab of the bank account card, the following parameters must be set.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_06_Bonclienti_Setup banca_01.png"><br>
+
+
+* **Customer Payment Export Format (1)**: set the export format created for this purpose.
+* **IBAN (2)**: the IBAN code must be entered, as it is required.
+
+In the "General" tab of the bank account card, the field **Credit Transfer Msg. Nos.** must be set.
+<br>Here, you should specify the serial number to be assigned to the name of the SEPA file that will be created.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_07_Bonclienti_Setup banca_02.png"><br>
+
+**Note**: The serial number that defines the name of the SEPA file will be the same for both vendor and customer transfers."
+
+**Field CUC - Note**<br>
+According to CBI regulations, the CUC (Unique CBI Code) is mandatory.
+It is an alphanumeric code consisting of 8 characters, assigned by the banking system.
+However, this information is not always required by the bank and, in order to maintain compatibility with previous versions, no specific mandatory check has been implemented.
+
+Nevertheless, it is recommended to fill in the 'CUC' field on the bank account card to avoid the risk of the payment being rejected.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_08_Bonclienti_Setup banca_03.png"><br>
+
+**Company Information Setup**<br>
+The company's VAT number is a mandatory field in the XML file for bank transfers.
+The 'VAT Number' field in the 'Company Information' tab must be filled in.
+
+### 8.2 Entering Customer Transfer Bill and generating the SEPA Transfer File
+
+
+**Customer Transfer Bill (CBI) - Entering**<br>
+To enter a transfer bill for customer payments, select the menu item "Customer Transfer Bill (CBI)".<br>
+From the Customer Transfer Bill (CBI) page, you will access the list of draft customer transfer bills.
+Here, you can view all payment dispositions that have been entered but not yet posted.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_09_Bonclienti_Distinta menu.png"><br>
+
+To create a new transfer bill, click the "New" action.<br>
+In the document, the following fields must be specified:
+* **"Bank Account No." (1)**: the bank account from which the payment will be made.
+* **"Payment Method Code" (2)**: the payment method associated with the documents (credit notes) to be included in the proposal using the "Suggest Credit Note" action.
+The Posting Date and List Date will be automatically suggested based on the current work date.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_10_Bonclienti_Distinta inserimento.png"><br>
+
+***Note***: The bill will be created with the status "Open".
+To generate the payment file and post the bill, it must first be set to "Released".
+
+**Customer Transfer Bill (CBI) - Entering payment disposals**<br>
+Payment instructions can be entered using two different functions:
+* **"Suggest Credit Note" (1)**
+* **"Insert Cust. Transfer Bill Line Manual" (2)**
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_11_Bonclienti_Distinta funzioni disposizioni.png"><br>
+
+**Customer Transfer Bill (CBI) - Suggest Credit Note<br>**
+The "Suggest Credit Note" function automatically retrieves all credit notes that match the selected payment method and bank account. It is useful for quickly populating the proposal with eligible documents.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_12_Bonclienti_Distinta suggerisci note credito.png"><br>
+
+Credit notes will be proposed that have:
+* the same payment method as that indicated in the statement,
+* in Euro currency,
+* with the “On Hold” field not filled in.
+
+**Customer Transfer Bill (CBI) - Insert Cust. Transfer Bill Line Manual<br>**
+Using the function "Insert Cust. Transfer Bill Line Manual", you can enter payment instructions that are not linked to previously posted credit memos.
+
+When you select "Insert Cust. Transfer Bill Line Manual", a page will open where you can manually enter the payment instruction details.
+
+This function is particularly useful for managing manual payments or exceptional cases that require direct input.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_13_Bonclienti_Distinta inserimento manuale 01.png"><br>
+
+The information to be entered is:
+* Customer code.
+* Description of the transaction (for single, non-cumulative transfers, this information will be included in the transaction).
+* Amount in euros.
+* Document number: the document number is always included in the payment instruction, even in the case of cumulative transfers.
+* Document date: this information is for reference only and is not included in the SEPA file.
+* Customer's bank account number.
+
+The instruction will be included in the list and highlighted with the attribute “Manual line.”
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_14_Bonclienti_Distinta inserimento manuale 02.png"><br>
+
+**Customer Transfer Bill (CBI) - Release of the bill<br>**
+To create the payment file and then proceed with posting the bill, you must set its status to “Released.”
+
+You can release the bill by selecting “Change status” - “Released.”
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_15_Bonclienti_Distinta rilascio.png"><br>
+
+**Customer Transfer Bill (CBI) - SEPA file export<br>**
+To export the SEPA file, select the “Export Customer Transfer Bill to File” action.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_16_Bonclienti_Distinta creazione file.png"><br>
+
+Any errors in creating the files are reported in the “File Export Errors” factbox.
+
+**Customer Transfer Bill (CBI) - Posting of the bill<br>**
+Posting the bill result in the following accounting entry:
+<br>**Bank C/C  @  Customers Credits**
+
+The document type for the accounting entry will be “Refund.”
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_17_Bonclienti_Distinta registrazione_movimenti CG.png"><br>
+
+**Posted Customer Transfer Bill (CBI)**<br>
+Once the bill is posted, it is archived in the **“Posted Customer Transfer Bill”** archive.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_18_Bonclienti_Distinta registrata menu.png"><br>
+
+You can export the SEPA file again from the Posted Customer Transfer Bill using the “Export Posted Customer Transfer Bill to File” action.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001056-0/EN_19_Bonclienti_Distinta registrata.png"><br>
+
+
+### **8.3 Credit Transfer Cumulative Debit**
+As with SEPA transfers to vendors, it is possible to define how the bank should report the payments of the bill list on the periodic statement.
+
+The credit transfer cumulative debit reporting request covers the entire bill list and with it, in practice, you are asking the bank to report, on the statement, a single transaction for the total of the bill and not the individual payments.
+
+For more information, please refer to chapter “5.5 Cumulative statement debit.”
+
+
+### **8.4 Technical Information**
+The SCT file in Italy is subject to the standards of the CBI (Corporate Banking Interbancario) service, which adopts the ISO20022 standard format.
+<br>The current version is defined by the technical manual “STIP-MO-001 Payments-v.00.04.01 ENG” version ***00.04.01*** dated 02/11/2023.
+<br>**Reference ISO20022 format**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
+
