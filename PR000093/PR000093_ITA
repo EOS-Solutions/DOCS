@@ -2,6 +2,15 @@
 
 Sulla page Setup CDW è possibile scegliere tra le opzioni:
 
+* I flag “*Elimina doc…*”: hanno impatto sulla registrazione delle fatture da ordine: se attivo, elimina il rispettivo ordine completamente fatturato, altrimenti l’ordine non viene cancellato.
+
+* L'option "*Verifica del codice motivo*": specifica il modo in cui le modifiche apportate ai criteri di registrazione in un codice causale vengono verificate rispetto ai documenti registrati esistenti nel periodo contabile corrente. 
+
+  * Se il campo "Verifica del codice motivo" è uguale e Nessuna non succede nulla.
+  * Se invece ha come valori "Conferma" oppure "Errore" scatta una procedura che controlla i seguenti documenti che hanno indicata la causale che sto modificando (spedizioni, carichi, sped. reso e carichi reso), se ce ne è almeno uno non fatturato da :
+   * un errore se "Verifica del codice motivo" = Errore
+   * un messaggio di conferma "Verifica del codice motivo" = "Conferma"
+
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000093-0/CDW ITA.png"><br>
 
 
