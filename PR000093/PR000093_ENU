@@ -2,5 +2,8 @@
 
 On the CDW Setup page you can choose between the options:
 
+* The flag “*Delete doc…*”: it impacts invoice posting from orders. If enabled, it deletes the respective fully invoiced order; otherwise, the order is not deleted.
+
+* The option “*Reason code check*”: specifies how the changes made to posting setups in a reason code are checked against the existing posted documents in the current accounting period.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000093-0/CDW ENG.png"><br>
