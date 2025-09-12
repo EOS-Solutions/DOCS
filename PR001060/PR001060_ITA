@@ -1,0 +1,4 @@
+# Azioni POS
+Per consentire la selezione della tipologia di fattura (immediata o differtita) da emettere da POS oppure in generale la creazione di un documento fattura o nota credito in cassa, è necessaria la definizione di una specifica azione POS.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001060-0/POSActions.jpg"><br>
