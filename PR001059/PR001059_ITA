@@ -1,0 +1,18 @@
+# Causali
+Nel caso in cui si voglia attivare l'emissione di fatture o note credito di vendita da POS, è necessario inserire almeno una causale; la causale andrà poi specificata come default per le classi documento di tipo fattura e di tipo nota credito.
+Le causali create a tale scopo dovranno necessariamente avere:
+* "Criterio di registrazione" = "Documento statistico (non scrivere movimenti contabili)
+* "Criterio di generazione movimenti articoli" = "Non scrivere movimenti articolo"
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001059-0/Causali.jpg"><br> 
+
+# Classi documento vendita
+Oltre alla definizione di almeno una causale come descritto al precedente paragrafo, è necessaria la creazione di almeno una classe documento di vendita per i documenti di tipo fattura ed una per i documenti di tipo nota credito.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001059-0/ClassiDoc.jpg"><br>
+
+Il numero di serie documento ed il numero serie registrazione da specificare per ogni classe documento, dovrà necessariamente essere diverso da quello utilizzato per le fatture e note credito di vendita non retail.
+
+Ad ogni classe creata dovrà essere inoltre legata la causale creata in precedenza e definita come causale di default per la classe.
+
+Le due classi andranno poi inserite all'interno di ogni anagrafica negozio nel caso in cui questo debba essere in grado di emettere fatture e note credito di vendita da POS.
+
