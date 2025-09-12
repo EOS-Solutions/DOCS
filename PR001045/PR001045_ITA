@@ -1,0 +1,16 @@
+# Setup IVA
+Ai fini dell'emissione di un documento commerciale di vendita, reso o annullo, è necessaio definire un legame tra i codici IVA POS di LS Central ed i reparti fiscali parametrizzati sul setup del registratore telematico Epson.
+Il setup è unico in tutto il sistema e non dipendente dal negozio o terminale POS quindi è obbligatorio parametrizzate tutti i registratori telematici con i medesimi reparti IVA.
+
+Nel setup dei codici "POS Codici IVA", sono stati aggiunti tutti i parametri impostabili direttamente nella parametrizzazione dei reparti nel registratore telematico. 
+L'unico campo obbligatorio è il campo "ID Fiscale", in cui è necessario valorizzare il numero del reparto IVA corrispondente al codice IVA di LS Central.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001045-0/SetupIVA.jpg"><br>
+
+Riportare quindi nel campo "ID Fiscale", il numero del reparto corrispondente presente sul setup del registratore telematico.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001045-0/Reparti.jpg"><br>
+
+
+
+
