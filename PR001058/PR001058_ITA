@@ -1,0 +1,16 @@
+# Anagrafica negozio
+All'interno della scheda anagrafica del negozio sono state aggiunti alcuni campi che definiscono alcune funzionalità aggiuntive rispetto allo standard.
+## Fatturazione elettronica
+Ai fini della creazione ed registrazione di fatture e note credito di vendita direttamente dal POS, sono necessarie la definizione di almeno due classi documento di vendita che prevedano una causale di default con criterio di registrazione "Documento statistico" e criterio di generazione movimenti articoli "Non scrivere movimenti articolo".
+Tali classi devono poi essere indicate nell'anagrafica del negozio; è quindi possibile definire classi diverse, con umeratori diversi, per ogni singolo negozio.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001058-0/Negozio1.jpg"><br>
+"Tipo classe documento fatture vendita": indica il tipo di classe documento di vendita da utilizzare per la creazione della fattura di vendita da POS
+"Cod. classe documento fatture vendita": indica il codice della classe documento di vendita da utilizzare per la creazione della fattura di vendita da POS
+"Cod. classe nota cr. vendita": indica il tipo di classe documento di vendita da utilizzare per la creazione della nota credito di vendita da POS
+"Cod. classe nota cr. vendita": indica il codice della classe documento di vendita da utilizzare per la creazione della nota credito di vendita da POS
+## Setup aggiuntivi
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001058-0/Negozio2.jpg"><br>
+"Tipo mov. dati POS": indica se a fronte di ...
+"Tipo pagamento monouso di default": indica il metodo di pagamento che identifica l'emissione di un buono monouso da POS.
+"Tipo pagamento differito": indica il metodo di pagamento che identifica il pagamento "differito". Nel caso per un cliente sia previsto il pagamento differito di una vendita, e quindi non direttamente in cassa, la transazione viene chiusa automaticamente con il metodo di pagamento indicato come default nell'anagrafica del negozio.
+"Cod. mailbox negozio": indica la mailbox, e quindi l'indirizzo email da utilizzare per l'invio di documenti (ad esempio ordini di acquisto) legati al negozio.
