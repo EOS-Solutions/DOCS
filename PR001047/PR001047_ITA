@@ -1,0 +1,67 @@
+# Dispositivi POS
+Il setup dell'hardware profile è fondamentale per la corretta emissione dei documenti commerciali di vendita o dei documenti gestionali.
+Prima della creazione di uno specifico hardware profile, è necessaria la creazione dei seguenti dispositivi POS:
+* Stampante POS
+* Visualizzazione riga POS
+* Cassetto POS
+* Dispositivo Seriale
+
+## Stampante POS
+Il setup della stampante POS, che consente la stampa di documenti gestionali dal registratore telematico, prevede dal definizione di:
+
+* ID = l'ID della stampante così come definito nel setup dell'hardware station
+* Stampante = OPOS
+* Nome Dispositivo Stampante = il nome del dispositivo così come definito nel setup dell'hardware station
+* Descrizione = un'eventuale descrizione che si vuole dare alla stampante
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001047-0/StampanteNF(1).jpg"><br>
+
+## Visualizzazione riga POS
+Il setup del visualizzatore di riga POS (o "Line Display", o "display di cortesia"), consente la visualizzazione di diverse informazioni sul display collegato al registratore telematico.
+Il suo setup prevede la definizione di:
+
+* ID = l'ID del line display così come definito nel setup dell'hardware station
+* Visualizza = OPOS
+* Nome del dispositivo = il nome del dispositivo così come definito nel setup dell'hardware station
+* Descrizione = un'eventuale descrizione che si vuole dare al display
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001047-0/LineDisplay.jpg"><br>
+
+## Cassetto POS
+Il setup del cassetto POS (o "Cash Drawer" o "Cassetto fiscale"), consente l'apertura del cassetto fiscale per tutte le operazioni in cui è previsto come ad esempio al termine di una vendita oppure durante la chiusura di giornata. Senza la definizione di un cassetto POS, l'apertura dovrebbe avvenire manualmente da parte dell'utente.
+Il suo setup prevede la definizione di:
+
+* ID = l'ID del cassetto così come definito nel setup dell'hardware station
+* Cassetto = OPOS
+* Nome del dispositivo = il nome del dispositivo così come definito nel setup dell'hardware station
+* Descrizione = un'eventuale descrizione che si vuole dare al cassetto
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001047-0/CashDrawer.jpg"><br>
+
+## Dispositivo seriale
+Il setup del dispositivo seriale, consente la stampa dei documenti commerciali di vendita, reso o annullo. L'integrazione con i registratori telematici Epson è infatti gestita e di conseguenza configurata come dispositivo seriale per l'hardware station.
+Il suo setup prevede la definizione di:
+
+* ID = l'ID del dispositivo seriale così come definito nel setup dell'hardware station. In questo caso è obbligatorio inserire l'ID SERIAL1.
+* Descrizione = un'eventuale descrizione che si vuole dare al dispositivo seriale
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001047-0/SerialDevice.jpg"><br>
+
+## Setup hardware station
+E' possibile inserire in modo semi automatico alcuni dei setup legati ai device e all'hardware profile.
+Dopo aver eseguito tutti gli step presenti alla pagina "Setup hardware station", nella scheda dell'hardare profile, eseguire la funzione "Sincronizza profilo hardware".  
+
+Nel caso in cui si voglia inserire i setup manualmente, sarà necessario inserire una o più righe di dettaglio nela scheda dell'hardware profile, in base ai dispositivi che si vuole gestire.
+
+Nel caso di un setup minimo ai fini del funzionamento del registratore telematico, è necessario inserire:
+* Uno o più record per la sezione "Stampanti POS"
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001047-0/HwProfile1.jpg"><br>
+* Un record nella sezione "POS Cassetti"
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001047-0/HwProfile4.jpg"><br>
+* Un record nella sezione "Visualizzazioni riga POS"
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001047-0/HwProfile2.jpg"><br>
+* Un record nella sezione "Dispositivi di serie POS"
+* <img width="" src="https://docs-test.eos-solutions.it/Images/PR001047-0/HwProfile3.jpg"><br>
+
+
+
