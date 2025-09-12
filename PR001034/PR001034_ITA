@@ -1,0 +1,10 @@
+E' possibile definire fino a 5 attributi "hard" legati all'anagrafica cliente.
+Tali attributi sono visibili, valorizzabili ed infine filtrabili come qualsiasi altro campo presente all'interno della scheda anagrafica di un cliente.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001034-0/SetAttributi.jpg"><br>
+
+Dopo aver definito gli eventuali attributi "hard", alla riapertura di Business Central, i campi definiti saranno visibili direttamente nella scheda anagrafica dei clienti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001034-0/SetAttributi2.jpg"><br>
+
+
