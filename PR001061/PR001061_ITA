@@ -1,0 +1,18 @@
+# Web service
+L'app prevede la creazione e l'utilizzo di alcuni web services aggiuntivi rispetto a quelli standard di LS Central.
+E' quindi necessario prima pubblicare tali web services in head office e successivamente creare i setup dei web services v2.0 come previsto da LS Central.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001061-0/WS1New.jpg"><br>
+
+# Web Service V2.0
+Dopo aver correttamente inserito e pubblicato i web service come indicato al paragrafo precedente, sarà necessaria la registrazione degli stessi web service tra le Web Request 2.0.
+Accedere quindi al setup dei web services di LS Central.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001061-0/WS2_1.jpg"><br>
+
+Aprire quindi la lista dei Web Service V2.0 ed inserire un record per ogni web request da attivare.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001061-0/WS2_2.jpg"><br>
+
+Per ogni record inserito, eseguire l'azione "Richiesta di registrazione".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001061-0/WS2_3.jpg"><br>
