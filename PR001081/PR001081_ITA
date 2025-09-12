@@ -1,0 +1,20 @@
+# Registratore Telematico
+L'app prevede l'utilizzo di un registratore telematico, ai fini dell'emissione e conservazione dei documenti commerciali di vendita o prestrazione, come da disposizioni dell'agenza delle entrate.
+
+A seguito della registrazione quindi di una transazione di vendita in cassa, il sistema esegue quindi la stampa del documento commerciale di vendita dal registratore telematico.
+In aggiunta, l'app consente la stampa di tutti i documenti gestionali (non fiscali) così come previsto dallo standard di LS Central.
+
+## Operazioni di stampa aggiuntive
+L'app prevede la possibilità di eseguire la stampa di "documenti gestionali" o comunque l'esecuzione di alcune funzionalità legate alla stampa di documenti su registratore telematico.
+Le funzioni legate alle transazioni registrate che comportano l'emissione di documenti commerciali o gestionali, sono normalmente presenti all'inetrno della lista transazioni in cassa.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001081-0/ListaTransazioni.jpg"><br>
+
+Tali operazioni sono:
+* Annullo -> Consente l'emissione di un documento commerciale di vendita emesso per annullamento. Attenzione!: in caso di annullo, va annullato l'intera transazione di vendita
+* Reso -> Consente l'emissione di un documento commerciale di vendita emesso per reso.
+* Stampa copia -> Consente la stampa della copia come da DGFE (Dispositivo Giornale di Fondo Elettronico)
+* Stampa fattura -> Funzionalità non attiva
+* Copia -> Consente di copiare la transazione registrata in una nuova transazione di vendita 
+* Ristampa fiscale -> Consente di riemettere un documento commerciale di vendita a partire da una transazione precedentemente registrata. Attenzione!: la funzione va eseguita solo edesclusivamente nel caso in cui non sia stato emesso un documento commerciale per la specifica transazione. La funzione richiede tuttavia all'utente una successiva conferma di esecuzione.
+* Annulla e copia -> esegue l'emissione di un documento commerciale per annullamento e crea una nuova transazione di vendita in cassa a partire dalla transazione di vendita registrata
