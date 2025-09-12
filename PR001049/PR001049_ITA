@@ -1,0 +1,43 @@
+# Functionality Profile
+All'interno della scheda del setup del functionality profile, sono stati aggiunte alcune sezioni ed alcuni campi di setup.
+## Setup aggiuntivi
+### Stampa
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001049-0/FuncProf1.jpg"><br>
+
+I setup presenti nella sezione "Stampa", pilotano alcune funzionalità aggiuntive rispetto allo standard di LS Central.
+* "Stampa scontrino sospeso": se attivo, al momento in cui l'utente esegue la sospensione di una transaizone di vendita sul POS, LS Central stampa un documento gestionale che riporta alcune informazioni della transazione sospesa; se disattivo, non viene stampato nulla.
+* "Stampa importi in scontrino transaione sospesa": se attivo, nel documento gestionale stampato a partire da una transazione sospesa, viene stampato il totale della transazione; se disattivo, non vengono stampati importi relativi alla transazione sospesa.
+* "Stampa informazioni loyalty custom": se attivo, vengono stampate alcune informazioni legate alla member card ed al member legato alla transazione di vendita. Tali informazioni in includo il numero di card, gli eventuali punti utilizzati e/o accumulati ed infine il saldo punti.
+* "Stampa inc./exp. in vendita": se attivo, abilita la stampa di righe di transazioni di vendita di tipo income/expense. Tale setup deve necessariamente essere attivo nel caso in cui si decida che la vendita di giftcard (o più in generale di buoni) debba avvenire tramite income/expense account e non tramite articoli.
+* "Metodo stampa dich. cassa": il campo può assumere due distinti valori
+	* Standard: vengono stampati tanti documenti gestionali di chiusura cassa quanti ne sono previsti dallo standard di LS Central
+	 Custom: è possibile definire nel campo "Nr. di ricevute dich. cassa" il numero di documenti gestionali di chiusura cassa che devono essere stampati
+* 	 "Stampa Z Report standard": se attivo, oltre allo Z Report fiscale emesso dal registratore telematico, viene anche stampato lo Z Report con il layout previsto da LS Central
+* 	 "Dati cliente in reso": se attivo, nel documento commerciale di reso, vengono stampati degli appositi spazi bianchi in cui è possibile inserire:
+	* 	 Nome e cognome del cliente
+	* 	 	 	 	 Firma del cliente
+	* 	 Firma dello staff che ha effettuato il reso
+## Fatture retail
+I setup presenti nella sezione "Fatture retail" sono legati alla possibilità di creare fatture e note credito di vendita a partire dalla registrazione di una transazione di vendita sul POS.L'app consente comunque la creazione di una fattura o nota credito di vendita a partire dalla scheda di una transazione direttamente da Business Central.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001049-0/FuncProf2.jpg"><br>
+* "Gestione fattura retail": se abilitato, è possibil creare fatture o note credito di vendita direttamente dal POS
+* "Azione registrazione fattura POS": il campo può assumere tre distinti valori:
+	* "Registra & Stampa": a seguito della registrazione di una fattura o nota credito di vendita, viene eseguita la stampa del documento
+	* "Registra & E-Mail": a seguito della registrazione di una fattura o nota credito di vendita, viene eseguito l'invio via mail del documento
+	* "Registra": viene eseguita solamente la registrazione della fattura o della nota credito di vendita
+"Stampa ricevuta con fattura": se attivo, nel caso di registrazione di una fattura o di una nota credito dal POS, a partire da una transazione di vendita, viene stampato anche il documento commerciale di vendita o reso dal registratore telematico; in caso contrario viene solamente effettuata la registrazione della fattura o nota credito di vendita.
+"Cod. SDI di default": in fase di creazione di un nuovo cliente da POS, se il campo di setup è valorizzato, viene proposto come codice SDI di default per l'anagrafica cliente
+## Vario
+I setup presenti nella sezione "Vario" non sono legati a macro processi del sistema ma piuttosto a micro funzionalità e utilizzabilità del sistema.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001049-0/FuncProf3.jpg"><br>
+"Riemissione fiscale attiva": se attivo, è possibile riemettere fiscalmente una transazione di vendita già registrata
+"Verifica data ristampa fiscale": se attivo, è consentita la riemissione fiscale di una transazione di vendita registrata solo se della stessa giornata
+"Richiedi conferma sospensione": se attivo, al momento della sospensione di una transaizone in vendita, viene chiesta all'utente 
+"Codice fiscale obbligatorio": se attivo, alla creazione di un nuovo cliente da POS, sarà obbligatorio l'inserimento del codice fiscale del cliente
+"Mostra diff. in chiusura cassa": se attivo, nella schermata di chiusura di cassa, sarà possibile mostrare l'eventual e differenza tra l'importo calcolato da LS Central e l'importo contato dallo staff
+
+
+
+
+
