@@ -1,0 +1,153 @@
+# Software ed hardware station
+Ai fini della comunicazione con il registratore telematico Epson, sono necessari alcuni software e setup non strettamente legati a Business Central.
+
+## Software necessari
+I software necessari per l'utilizzo del registratore telematico ed altri dispositivi a lui collegato sono:
+* LS Hardware Station
+* OPOS CCO (Common control objects) 
+* Epson FPSuite: si raccomanda di non installare FPMate
+* EpsonOPOSForFiscalSetup
+* POSforDotNet
+
+A seguito dell'installazione dei software presenti nella lista, sarà necessario utilizzare alcune DLL specifiche per l'integrazione tra LS hardware station ed i registratori telematici Epson.
+Per la corretta gestione dei documenti commerciali di vendita e dei documenti gestionali sarà poi necessario l'inserimento di una specifica chiave di registro.
+
+## Configurazione della comunicazione con il registratore telematico
+La comunicazione tra il PC ce fungerà da POS ed il registratore telematico può avvenire tramite tre tipologie di connessione:
+* USB
+* Ethernet
+* Seriale
+
+Per eseguire il corretto setup della connessione sarà necessario seguire i seguenti passi:
+* Attivare la modalità di connessione scelta direttamente sul registratore telematico (fare riferimento al manuale operatore o rivolgersi all'installatore del registratore telematico)
+* Arrestare il servizio "LS Hardware Station" nel caso questo sia attivo
+* Eseguire il programma "Setup POS"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOS.jpg"><br>
+
+Una volta aperto il programma, eseguire la funzione "Add" per aggiungere i dispsitivi. 
+Dovranno essere inseriti tutti i dispositivi previsti:
+* FiscalPrinter
+* LineDisplay
+* CashDrawer
+
+Per ogni tipologia di dispositivo, dovranno essere definiti i seguenti setup:
+* Logical Device Name
+* Device Category
+* Device Name
+* Port Type
+* Indirizzo della porta USB, Seriale o indirizzo IP del dispositivo
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOSFisc1.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOSFisc2.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOSFisc3.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOSFisc4.jpg"><br>
+
+Una volta inserita la configurazione della comunicazione con il dispositivo, eseguire la funzione "Save".
+
+La stessa operazione dovrà essere eseguita anche per gli altri dispositivi connessi come il display di cortesia ed il cassetto fiscale.
+
+Per il cassetto fiscale ed il display di cortesia, non è prevista la compilazione di setup nella sezione "Fiscal Properties".
+
+## Inserimento chiave di registro
+Per la gestione della stampa di documenti commerciali e di documenti gestionali su un unico registratore telematico, è necessario l'inserimento di una specifica chiave di registro.
+
+La chiave di registro da inserire è:
+
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\OLEforRetail\ServiceOPOS\POSPrinter]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\OLEforRetail\ServiceOPOS\POSPrinter\FP-81II]
+@="SOEPSON.FiscalPrinterService.1130"
+"DriverName"="EPSON UPOS FiscalDriver"
+"InstallFolderPath"="C:\\Program Files (x86)\\EPSON\\UPOSDriverForFiscal\\OPOS"
+
+Una volta inserita la chiave di registro, nel programma "Setup POS", sarà visibile un nuovo dispositivo, nominato "POSPrinter" nella sezione "Other".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOSFisc5.jpg"><br>
+
+## Ulteriori verifiche e configurazioni
+Verificare la versione di Framework .NET installata tramite la navigazione della chiave di registro
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/Framework.jpg"><br>
+
+Nel caso la versione sia precedente alla 6.02, è necessario procedere all’installazione di una versione più recente la
+quale può essere scaricata online.
+Se necessario, procedere quindi all’installazione ed attivazione del Framework .NET scaricato.
+L’attivazione del framework .NET dovrà essere completata da:
+- Pannello di controllo\Tutti gli elementi del Pannello di Controllo\Programmi e Funzionalità
+- Attivazione o disattivazione delle funzionalità Windows
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/WindowsFeatures.jpg"><br>
+
+NB. Lo screenshot qui riportato potrebbe essere differente rispetto a quello presente nel PC di cassa (lingua ed altri
+componenti installati)
+
+## Installazione DLL
+La comunicazione tra l'hardware station ed il registratore telematico Epson è gestita tramite specifiche DLL.
+Le DLL, fornite da EOS, vanno copiate nella cartella di installazione dell'hardware station al percorso: C:\Program Files (x86)\LS Retail\LSHardwareStation
+
+Nella cartella C:\Program Files (x86)\LS Retail\LSHardwareStation\Devices\OPOS andranno copiati i file:
+* LSOposSerialDevice.dll
+* LSOPOSFiscalPrinter.dll
+
+Nella cartella C:\Program Files (x86)\LS Retail\LSHardwareStation\bin\LSHardwareStation andranno copiati i file:
+* Interop.OposFiscalPrinter_CCO.dll
+* LSOposControls.dll
+
+Dopo aver copiato i file indicati, sarà possibile avviare il servizio windows "LS Hardware Station".
+
+## Configurazione hardware station
+Dopo aver avviato il servizio "LS Hadrwaare Station", aprire da browser il pannello di configurazione all'indirizzo http://localhost:8088/
+Inserire le credenziali di accesso per poter accedere al pannello di gestione.
+
+Aggiungere i dispositivi precedentemente configurati:
+* Printers -> Stampanti non fiscali (configurazione necessaria ai fini della stampa di documenti gestionali)
+* Line display -> Display di cortesia
+* Cash Drawer -> Cassetto fiscale
+* Serial Devices -> Registratore telematico RT
+
+### Creazione printer non fiscale
+Per aggiungere o modificare la configurazione di un dispositivo, selezionare la tipologia (esempio Printers) e premere “Create Printer".
+Inserire i parametri come specificato nel seguente screenshot:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/HwsNF.jpg"><br>
+Nel campo “Implementation DLL” inserire la seguente stringa:
+C:\Program Files (x86)\LS Retail\LSHardwareStation\Devices\OPOS\LSOPOSFiscalPrinter.dll
+Nel campo “Implementation Type” inserire la seguente stringa:
+LSRetail.NAV.Opos.Epson.NonFiscalPrinter
+Premere poi “Create device”.
+Selezionare nuovamente poi “Printers” ed “EPSON-NF” per riaprire la configurazione appena inserita.
+Premere “Load” e verificare che non siano presenti errori; nel caso di errori riavviare il servizio LS Hardware Station e
+riprovare.
+### Creazione display di cortesia
+Per aggiungere o modificare la configurazione di un line display, selezionare la tipologia “Line Displays” e premere “Create Line Display”.
+Inserire i parametri come specificato nel seguente screenshot:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/HwsLD.jpg"><br>
+Premere poi “Create device”.
+Selezionare nuovamente “Line Displays” ed “EPSON-LD” per riaprire la configurazione appena inserita.
+Premere “Load” e verificare che non siano presenti errori; nel caso di errori riavviare il servizio LS Hardware Station e
+riprovare.
+### Creazione cassetto fiscale
+Per aggiungere o modificare la configurazione di un line display, selezionare la tipologia “Cash Drawer” e premere “Create Drawer”.
+Inserire i parametri come specificato nel seguente screenshot:
+
+Premere poi “Create device”.
+Selezionare nuovamente “Cash Drawer” ed “EPSON-CD” per riaprire la configurazione appena inserita.
+Premere “Load” e verificare che non siano presenti errori; nel caso di errori riavviare il servizio LS Hardware Station e
+riprovare.
+
+### Creazione serial device
+Per aggiungere o modificare la configurazione di una stampante fiscale, selezionare la tipologia “Serial Device” e premere “Create Serial Device”.
+Inserire i parametri come specificato nel seguente screenshot:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SerialDeviceCreazione.jpg"><br>
+Premere poi “Create device”.
+Selezionare nuovamente “Serial Devices” ed “SERIAL1” per riaprire la configurazione appena inserita.
+Premere “Load” e verificare che non siano presenti errori; nel caso di errori riavviare il servizio LS Hardware Station e
+riprovare.
+
+### Riavvio servizio Hardware Station
+Una volta terminata la configurazione dei dispositivi, riavviare il servizio “LS Hardware Station”.
+
