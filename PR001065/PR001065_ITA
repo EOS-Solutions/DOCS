@@ -1,0 +1,24 @@
+# Codici Comunali
+Per consentire la corretta valorizzazione della città di nascita a partire dal codice fiscale alla creazione di un member, è necessario importare o comunque compilare la tabella dei codici comunali.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001065-0/CodComunali1.jpg"><br>
+
+La tabella è composta dai campi:
+* Codice -> indica il codice comunale individuabile sul portale dell'agenzia delle entrate
+* Città -> indica la città corrispondente al codice comunale inserito nel campo Codice
+
+## Import codici comunali
+E' possibile eseguire l'import di un file CSV contenente la lista dei codici comunali tramite la funzione "Importa dati da file".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001065-0/CodComunali2.jpg"><br>
+
+L'esecuzione della funzione, aprirà una nuova pagina dove sarà possibile:
+* Selezionare il file CSV da importare
+* Indicare il delimitatore di campo (di default ;)
+* Indicare se la prima riga presente nel file è un'intestazione e quindi non oggetto di import
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001065-0/CodComunali3.jpg"><br>
+
+Una volta importato il file, se non presenti errori, il sistema visualizzerà il seguente messaggio di conferma:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001065-0/CodComunali4.jpg"><br>
