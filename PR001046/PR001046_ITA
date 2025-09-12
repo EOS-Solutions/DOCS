@@ -1,0 +1,11 @@
+# Ruoli dispositivo
+Per instradare correttamente la stampa dei documento commerciali rispetto alla stampa dei documento gestionali, è necessaria la definizione di almeno un "Ruolo dispositivo" di tipo "fiscale" 
+Nella definizione dei ruoli dispositivi di LS Central, definire quindi un record con di tipo "Serial", Role "SALES" e campo "Stampante fiscale" valorizzato. 
+In aggiunta, per usufruire di ulteriori funzionalità rispetto alla stampa di doscumenti commerciali e documenti gestionali, è necessaria la definizione di ulteriori record; tali record piloteranno la stampa dei documenti commerciali o gestionali:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001046-0/TipiDisp.jpg"><br>
+
+Il record di tipo "Serial", role "SALES" e campo "Stampante fiscale" attivo, consentirà la stampa di un documeto commerciale di vendita, reso od annullo.
+Il record di tipo "Serial", role "SALES", sotto ruolo "INCEXP" e campo "Stampante fiscale" attivo, consentirà la stampa di un documeto commerciale di vendita nel caso di vendita di giftcard come income/expense.
+Il record di tipo "Printer", role "SALES" e sotto ruolo "COPY", consentirà la stampa della copia di un documento commerciale di vendita.
+Il record di tipo "Printer", "SALES" e campo "Stampante fiscale" non attivo, consentirà la stampa di documenti gestionali derivanti da transazioni di vendita con altri income/expense come ad esempio spese di negozio o altri ingressi di denaro non derivanti da vendite.
