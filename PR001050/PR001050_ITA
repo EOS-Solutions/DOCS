@@ -1,0 +1,17 @@
+# POS Command
+Ai fini dell'utilizzo completo dell'app, è necessario eseguire la registrazione di alcuni comandi esterni POS.
+
+Dalla lista "POS Comandi Esterni", eseguire la funzione "Registro":
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001050-0/POSCommand1.jpg"><br>
+
+Registrare le seguenti codeunit:
+* 18091484 "EOS077 Customer Command"
+* 18091488 "EOS077 Expense POS Command"
+* 18091489 "EOS077 External POS Command"
+* 18091499 "EOS077 Invoice Mgmt.Command"
+* 18091515 "EOS077 POS Lottery Management"
+
+Al termine della registrazione, dovranno essere presenti nella lista tutti i comandi esterni legati alle codeunit elencate.
+
+
+
