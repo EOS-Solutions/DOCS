@@ -1,0 +1,19 @@
+# Metodi di pagamento
+Ai fini dell'emissione di un documento commerciale di vendita, reso od annullo,  tramite registratore telematico Epson, è necessaio definire per ogni metodo di pagamento (tender type) utilizzabile in negozio, la rispettiva tipologia di pagamento come da indicazioni dell'Agenzia delle entrate.
+Le varie tipologie definibili e le relative speficihe sono fornite dall'Agenzia delle entrate.
+Si riporta di seguito una tabella contenente le tipologie accettate:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001044-0/PaymentMethods.jpg"><br>
+
+In business central, nell'anagrafica di ogni metodo di pagamento legato ad ogni singolo negozio, è possibile definire:
+* "ID fiscale": secondo la tabella qui sopra riportata
+* "Descrizione ID fiscale": la descrizione che si vuole venga stampata all'interno del documento commerciale
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001044-0/TenderType.jpg"><br>
+
+Nel caso in cui si voglia consentire la registrazione di fatture di vendita direttamente dal POS, è necessaria la valorizzazione di campi aggiuntivi che legano il medoto di pagamento del negozio, con un metodo di pagamento ed un terme di pagamento di Business Central. 
+I due campi vengono utilizzati durante la creazione e la registrazione della fattura di vendita a partire dalla transazione di vendita registrata in LS Central.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001044-0/TenderType2.jpg"><br>
+
+
+
