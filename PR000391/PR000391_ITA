@@ -45,3 +45,14 @@ Esempio:
 	la procedura ordina i movimenti per Data Registrazione e Nr. Movimento ed identifica l’ultimo movimento (più recente) per il quale calcolare il costo. Il Costo ultimo viene determinato con la seguente logica: la procedura recupera il Costo Ultimo dei componenti (consumi) utilizzati per lo specifico OdP, poi somma i costi diretti e generali dei relativi movimenti capacità, quindi divide il totale dei due costi per la quantità di Output dell’OdP. In entrambi i casi, se nel periodo di calcolo non sono presenti movimenti, il Costo ultimo viene recuperato come segue:
 	* Il sistema ricerca il Costo ultimo nello Storico costi articoli del periodo precedente (Data fine periodo precedente < Data fine periodo) a parità di Cod. setup costi articoli, ordinando i periodi per Cod. Periodo; recupera quindi il valore del campo Costo ultimo e marca il campo “Forzatura costo ultimo” con l’opzione Ultimo costo precedente.
 	* Se anche la precedente ricerca non ha avuto successo (caso remoto: probabilmente in fase di go-live con Rettifiche positive e Costi prepartenza o in casi di periodi precedenti filtrati per determinati articoli), il Costo ultimo viene ereditato dal campo Costo medio dello Storico costi articoli dello stesso periodo e viene marcato il campo “Forzatura costo ultimo” = CMP o Standard (ossia viene ereditata la stessa opzione di forzatura presente nel campo “Forzatura Costo medio”). 
+
+
+**Punti di attenzione inerenti la logica di calcolo Roll up e la corretta definizione del Cod. ultimo livello**:
+
+* **Rilavorazioni:**
+	Ordini di produzione (OdP) che versano e consumano lo stesso articolo: le tipologie di rilavorazioni gestite nello standard dell’app IVC, sono indicate nel file contenuto al seguente link:
+https://docs-test.eos-solutions.it/Images/PR000391-0/IVC_Rilavorazioni_ed_Autoconsumi.pptx
+
+	
+* **Ricorsività:**
+ Esempio: OdP che versa l’articolo A consumando l’articolo B, successivo OdP che versa l’articolo B consumando l’articolo A: in questi casi non è possibile calcolare correttamente i costi di produzione.
