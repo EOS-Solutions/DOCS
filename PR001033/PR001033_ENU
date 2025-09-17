@@ -1,0 +1,3 @@
+The "EOS LS Central for Italy" app allows to issue fiscal recepits in Italy using "Registratore Telematico" printers, issues invoices and credit memos from the POSs and add some feature to LS Central to make it more compliant with regulations from italian tax authority.
+
+The app must be used in combination with the **EX041 Close Documents Without Invoicing** app and **EX063 Electronic Invoice for Italy** app.
