@@ -50,14 +50,69 @@ La partita IVA della società è un dato obbligatorio nel file XML dei bonifici.
 Il campo "Partita IVA" della scheda "Informazioni Società" dovrà essere obbligatoriamente compilato.
 
 
-#### 5.4 Creazione del file SCT (Bonifico SEPA)
+#### 5.4 Inserimento della distinta di pagamento
+Per inserire la distinta di pagamento selezionare la voce di menu “Distinta fornitore”. Da qui, infatti, si accede alla pagina delle distinte bonifico fornitori provvisorie, dove sono visualizzate le distinte inserite e non ancora registrate.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_B01_Menu.png"><br>
+
+E’ possibile creare una nuova distinta, tramite l’azione “Nuovo”.
+Nella distinta dovranno essere specificati:
+* **"Nr. conto corrente" (1)**: il C/C bancario su cui sarà effettuato il pagamento.
+* **"Cod. metodo di pagamento" (2)**: il metodo di pagamento associato ai documenti da estrarre in distinta.
+* **"Tipo beneficiario" (3)**: la tipologia di beneficiario (Fornitore, Conto C/G, C/C bancario).
+
+La data di registrazione e la data distinta saranno proposte automaticamente in base alla workdate.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_B02_Distinta_fornitore.png"><br><br>
+
+
+**Tipo beneficiario**<br>
+Tramite il "Tipo beneficiario" è possibile definire il tipo di conto da movimentare in contropartita.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_B03_Distinta_tipo_beneficiario.png"><br>
+
+Le opzioni sono le seguenti.
+
+| **Campo**                                    | **Descrizione**                                                                                                                                                                                                                                                                                                                                    |
+|----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| **Fornitore**                                | E' l'opzione di default. Permette di effettuare il pagamento delle fatture fornitori o di disporre pagamenti manuali a un fornitore. Le disposizioni generano un pagamento sul partitario fornitori.                                                                                                                                              |
+|**Conto C/G**                                 | Tramite questa opzione è possibile effettuare il bonifico addebitando l'importo direttamente su conto C/G.                                             |
+| **C/C bancario**                             | Permette di effettuare il bonifico su un altro conto corrente bancario dell'azienda.                                                        |
+
+
+**Nota**<br>
+Non è possibile inserire disposizioni con "Tipo beneficiario" diverso nella stessa distinta.
+
+**Inserimento delle disposizioni**<br>
+Per le distinte con "Tipo beneficiario" ***Conto C/G*** o ***C/C bancario*** è possibile inserire le disposizioni esclusivamente tramite l'azione "**Inserisci riga effetti fornitori manuali**".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_B04_Distinta_pagamenti_manuali.png"><br>
+
+**Informazioni sul beneficiario**<br>
+Nella pagina "Crea riga effetti fornitori manuali" è stata aggiunta la sezione "Beneficiario" che consente di inserire le informazioni sul beneficiario richieste per l'esecuzione della disposizione.
+
+
+**Distinta di tipo "Conto C/G"**<br>
+Nel caso di distinta di tipo "C/C bancario" i dati del beneficiario dovranno essere inseriti manualmente.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_B05_Distinta_conto_coge.png"><br>
+
+**Distinta di tipo "C/C bancario"**<br>
+Nel caso di distinta di tipo "C/C bancario", le informazioni relative al nome beneficiario e all'indirizzo postale sono proposte automaticamente da Informazioni società, mentre l'IBAN e lo SWIFT sono ereditati dall'anagrafica della banca selezionata. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_B06_Distinta_conto_banca.png"><br>
+
+
+**Nota**: i bonifici di tipo Conto C/G e C/C bancario non possono essere cumulati.
+
+#### 5.5 Creazione del file SCT (Bonifico SEPA)
 **Distinta effetti fornitore emessa**<br>
 Per esportare il file SCT dalla "Distinta effetti forn. emessa" selezionare l'azione "Esporta distinta emessa su file".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_05.png"><br>
 
 
-#### 5.5 Addebito cumulativo distinta
+#### 5.6 Addebito cumulativo distinta
 E' possibile definire le modalità di rendicontazione della distinta di pagamento sull’estratto conto periodico da parte della banca.
 
 La richiesta di addebito cumulativo riguarda l’intera distinta e con essa, in pratica, si chiede alla banca di rendicontare, sull'estratto conto, un'unica operazione per il totale della distinta e non le singole disposizioni di pagamento.
@@ -86,7 +141,21 @@ Se BtchBookg" è true si richiede l'addebito cumulativo della distinta.
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_Addcum_06.png"><br>
 
 
-#### 5.6 Informazioni tecniche
+#### 5.7 Pagamenti a soggetti terzi (beneficiario diverso dal fornitore)
+È possibile indicare un beneficiario diverso per i pagamenti, nell’anagrafica delle banche fornitori, al fine di gestire correttamente le operazioni di factoring o, in generale, di cessione del credito del fornitore.
+
+In questo modo, i bonifici verranno indirizzati al soggetto terzo (es. società di factoring) anziché al fornitore, pur mantenendo la corretta imputazione contabile.
+
+Nell'anagrafica C/C/ bancari fornitore è stata implementata la sezione "Cessionario" che permette di inserire un beneficiario differente dal fornitore per il pagamento delle fatture.
+
+E' sufficiente, quindi, compilare i campi relativi al beneficiario alternativo (nome, indirizzo, IBAN, etc...) per far sì che tali dati vengano utilizzati nelle disposizioni di pagamento.
+
+Questa funzionalità consente, quindi,  di effettuare il bonifico direttamente al cessionario pur mantenendo la registrazione contabile sul partitario del fornitore originario.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_B07_Factoring.png"><br>
+
+
+#### 5.8 Informazioni tecniche
 Il file SCT, in Italia, è soggetto agli standard del servizio CBI (Corporate Banking Interbancario), che integra il tracciato standard ISO20022.
 <br>Il tracciato attuale è disciplinato dal manuale tecnico "STIP-MO-001 Pagamenti- v.00.04.01", versione ***00.04.01*** del 02/11/2023.
 <br>**Tracciato ISO20022 di riferimento**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
