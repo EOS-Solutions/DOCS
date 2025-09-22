@@ -46,14 +46,66 @@ The VAT number of the company is a mandatory data element in the XML file of tra
 The “VAT Registration No.” field on the “Company Information” tab must be mandatorily filled in.
 
 
-#### 5.4 Creation of the SCT file (SEPA Credit Transfers)
+#### 5.4 Entering Vendor Transfer Bill
+To enter a transfer bill for vendor payments, select the menu item "Vendor Bill Card".<br>
+From the Vendor Bill Card page, you can access the list of draft vendor transfer bills.
+Here, you can view all payment instructions that have been entered but not yet posted.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_B01_Menu.png"><br>
+
+To create a new transfer bill, click the "New" action. In the document, the following fields must be filled in:
+* **"Bank Account No." (1)**: The bank account used to make the payment.
+* **"Payment Method Code" (2)**: the payment method associated with the documents to be included in the payment proposal.
+* **"Beneficiary Type" (3)**: the beneficiary type (Vendor, G/L Account, Bank Account).
+
+Posting Date and List Date are automatically suggested based on the current work date.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_B02_Distinta_fornitore.png"><br><br>
+
+
+**Beneficiary Type**<br>
+The "Beneficiary Type" field allows you to specify the type of account to be posted as the counterpart.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_B03_Distinta_tipo_beneficiario.png"><br>
+
+The available options are as follows.
+
+| **Field**                                    | **Description**                                                                                                                                                                                                                                                                                                                                    |
+|----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| **Vendor**                                | This is the default setting. It enables the payment of vendor invoices or the manual creation of vendor payments. The dispositions result in a posting to the vendor subledger.                                                                                                                                              |
+|**G/L Account**                            | This option allows you to execute a bank transfer by posting the amount directly to a general ledger account.                                     |
+| **Bank Account**                          | This option enables you to execute a bank transfer to a different bank account belonging to the company.                                        |
+
+**Note**<br> It is not possible to include dispositions with different "Beneficiary Type" values in the same payment proposal.
+
+**Entering Dispositions**<br>
+When the "Beneficiary Type" is set to G/L Account or Bank Account, dispositions must be added exclusively via the "Insert Vend. Bill Line Manual" function.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_B04_Distinta_pagamenti_manuali.png"><br>
+
+**Beneficiary Information**<br>
+The "Create Manual Bill Vendor Line" page includes a newly added "Beneficiary" section, which enables the entry of beneficiary information necessary for processing the payment instruction.
+
+**Vendor Transfer Bill of type "G/L Account"**<br>
+In payment proposals of type "Bank Account", the beneficiary's information must be manually entered by the user.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_B05_Distinta_conto_coge.png"><br>
+
+**Vendor Transfer Bill of type "Bank Account"**<br>
+In payment proposals of type "Bank Account", beneficiary details such as name and postal address are retrieved from Company Information, whereas IBAN and SWIFT codes are sourced from the selected bank record.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_B06_Distinta_conto_banca.png"><br>
+
+**Note:** Transfers of type "Conto C/G" and "C/C bancario" cannot be combined.
+
+#### 5.5 Creation of the SCT file (SEPA Credit Transfers)
 **Vendor Bill List Sent Card**<br>
 To export the SCT file from the Vendor Bill List Sent Card, select the “Export Bill List to File” action.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_05.png"><br>
 
 
-#### 5.5 Credit Transfer Cumulative Debit
+#### 5.6 Credit Transfer Cumulative Debit
 It is possible to define how the bank should report the payments of the bill list on the periodic statement.
 
 The credit transfer cumulative debit reporting request covers the entire bill list and with it, in practice, you are asking the bank to report, on the statement, a single transaction for the total of the bill and not the individual payment.
@@ -83,7 +135,22 @@ If “BtchBookg” is true the cumulative bill charge is requested.
 <br>*Example*<br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_Addcum_06.png"><br>
 
-#### 5.6 Technical Information
+
+#### 5.7 Payments to Third Parties (Beneficiary Different from Supplier)
+In cases where a supplier has transferred its receivables to a third party, such as a factoring company, it is possible to manage payments correctly by specifying an alternative beneficiary in the vendor’s bank account card.
+
+This functionality allows the payment to be directed to the third party (e.g., the factoring company), while maintaining the correct accounting entry on the supplier’s ledger.
+
+A dedicated "Transferee" section has been added to the vendor bank account card, enabling the entry of beneficiary details different from the supplier for invoice payments.
+
+To activate this functionality, simply fill in the relevant fields for the alternative beneficiary (name, address, IBAN, etc.). These details will then be used in the payment proposals.
+
+This ensures that the payment is executed in favor of the transferee, while the accounting remains correctly posted to the original supplier.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_B07_Factoring.png"><br>
+
+
+#### 5.8 Technical Information
 The SCT file in Italy is subject to the standards of the CBI (Corporate Banking Interbancario) service, which adopts the ISO20022 standard format.
 <br>The current version is defined by the technical manual “STIP-MO-001 Payments-v.00.04.01 ENG” version ***00.04.01*** dated 02/11/2023.
 <br>**Reference ISO20022 format**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
