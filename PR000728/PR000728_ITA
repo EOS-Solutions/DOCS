@@ -1,7 +1,10 @@
 
-Puoi testare l'app attivando un periodo di PROVA GRATUITO e decidere se continuare ad utilizzarla e acquistare un abbonamento annuale.
+Tutte le app EOS sono disponibili per Business Central SaaS e On-Premise.
 
-## L'app non risulta ancora installata?
+Puoi testare le app attivando un periodo di PROVA GRATUITO e decidere se continuare ad utilizzarla e acquistare un abbonamento annuale.
+ 
+
+### Business Central Online (SaaS)
 
 Se non è già installata, aprire Business Central e cercare (ALT+Q) "App Microsoft Appsource".
 <br>
@@ -14,9 +17,28 @@ Cerca l'app a cui sei interessato, clicca sul nome dell'app ed esegui l'azione �
 
 <br><br>
 <br>
-## Hai già installato la app?
 
-Attivala! Dopo aver installato l'app cerca (ALT+ Q) per la pagina "**Pannello di controllo sottoscrizioni**" e seleziona "Richiedi abbonamento". Il nostro team controllerà la tua richiesta e attiverà la sottoscrizione o ti contatterà. Il periodo di prova è predefinito, di 20 giorni, e può essere esteso, valutando la richiesta, fino a un massimo di 60 giorni.
+### Business Central On-Premise
+Le nostre app sono disponibili come feed NuGet. Visita la [nostra pagina dei feed](https://feed.eos-solutions.app ) e usala per ottenere le ultime versioni delle nostre app!
+
+Dai un'occhiata qui per vedere le versioni supportate: [Versioni supportate e servizi di supporto]({{<relref "support-and-versions">}})
+
+#### Hai problemi con i feed NuGet?
+
+Prova l'ultimo strumento di EOS Solution per la gestione degli ambienti Business Central
+
+<img width="200" src="https://docs-test.eos-solutions.it/Images/PR000728-0/Gordon.png"><br>
+
+[**Prova Gordon Suite**](https://gordon.eos-solutions.it)
+
+
+## Richiedi una sottoscrizione
+
+Dopo aver installato l'app cerca (ALT+ Q) per la pagina "**Pannello di controllo sottoscrizioni**" e seleziona "Richiedi sottoscrizione". 
+
+Completando il wizard per richiedere la trial, la sottoscrizione verrà attivata automaticamente in pochi minuti. Riceverai una mail di conferma quando potrai iniziare ad utilizzare l'app! 
+
+Il periodo di prova è predefinito, di 20 giorni, e può essere esteso, valutando la richiesta, fino a un massimo di 60 giorni.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/2GettingStartedEosApps.jpg">
 <br>
@@ -30,11 +52,11 @@ Per attivare, configurare e utilizzare l'app è necessario il corretto permissio
 
 Comincia ad usare l'app EOS con la procedura di setup assistito, che può essere lanciata in due modi:
 
-   - collegamento diretto al "Setup assistito" disponibile.
+ 1. collegamento diretto al "Setup assistito" disponibile.
    
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/Assited setup1 ITA.png"><br>
 <br>
-   - cerca "Gestione estensioni", seleziona l'app e clicca su "Imposta".  
+ 2. cerca "Gestione estensioni", seleziona l'app e clicca su "Imposta".  
    
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/Assisted setup2 ITA.png"><br>
 <br>
@@ -47,6 +69,28 @@ Al momento, il setup assistito è disponibile per le seguenti app:
 <br>
 <br>
 <br>
+
+
+### Consulta l'help online e guarda le demo
+
+Per tutte le nostre app è disponibile l'help online con video tutorial. Per alcune è disponibile una [demo estesa](https://www.youtube.com/results?search_query=EOS+Apps+Demo) (fino a 60 min. di durata). 
+
+## Estendibilità e collaborazione
+Tutte le nostre app sono estendibili e puoi collaborare con il team di sviluppo proponendo nuove implementazioni, suggerire idee e nuove funzionalità nel canale Github dedicato [EOS-Solutions/IDEAS](https://github.com/EOS-Solutions/IDEAS): IDEAS for Apps and Features
+
+Per estendere le app mettiamo a disposizione degli sviluppatori:
+
+- Documentazione tecnica, per consultare la struttura di tutti gli oggetti, eventi e metodi disponibili: [Documentazione](https://docs.eos-solutions.it/en/docs/apps-tech.html)
+- Esempi di personalizzazioni [EOS-Solutions/Sample](https://github.com/EOS-Solutions/Sample): Include samples for EOS Apps
+- I file delle traduzioni per personalizzare le caption[EOS-Solutions/Translations](https://github.com/EOS-Solutions/Translations)
+Se sei uno sviluppatore, ti consigliamo l’adozione di una serie di tool gratuiti [Developer Tools | EOS Docs](https://docs.eos-solutions.it/en/docs/dev-tools.html).
+
+## Prezzi
+
+Vai nel nostro [AppStore](https://appstore.eos-solutions.it/Subscription/App) per conoscere i prezzi aggiornati di tutte le nostre app e i kit.
+
+I prezzi sono elencati sul sito di EOS Solutions. Tutti i prezzi sono destinati a un tenant con ambiente illimitato, company e utenti illimitati all'interno di un TenantID. L'ID tenant viene visualizzato nella pagina "Pannello di controllo sottoscrizioni" di Business Central.
+
 
 ## Non vedi i piani di sottoscrizione o le sottoscrizioni non si attivano?
 Forse è un problema di connessione
@@ -107,18 +151,3 @@ Dopo aver eseguito i controlli specificati, i passaggi da effettuare sono i segu
 <br>
 <br>
 
-## Consulta l'help online e le demo
-
-Per tutte le nostre app è disponibile l'help online con video tutorial. Per alcune è disponibile una demo estesa (fino a 60 min. di durata). Gli sviluppatori e i tecnici possono accedere alla documentazione e al Github collaboration repos per trovare esempi di personalizzazione, tradurre o suggerire idee e nuove funzionalità.
-<br>
-<br>
-
-## Cerchi una soluzione OnPrem?
-
-Le app EOS sono disponibili anche per l'ambiente OnPrem. L'installazione e l'attivazione in ambiente OnPrem richiedono passaggi aggiuntivi, contattaci per ulteriori informazioni o verifica la disponibilità dell'app qui.
-<br>
-<br>
-
-## Cerchi i prezzi?
-
-I prezzi sono elencati sul sito di EOS Solutions. Tutti i prezzi sono destinati a un tenant con ambiente illimitato, company e utenti illimitati all'interno di un TenantID. L'ID tenant viene visualizzato nella pagina "Pannello di controllo sottoscrizioni" di Business Central.
