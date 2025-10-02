@@ -1,31 +1,50 @@
 
-You may test the app for free activating a FREE TRIAL period and decide if you want to continue using it and purchase an YEARLY Subscription.
+All EOS apps are available for Business Central SaaS and On-Premise.
 
-## Isn’t the app installed yet?
+You can test the apps by activating a FREE TRIAL period and decide whether to continue using them or purchase an annual subscription.
+
+
+### Business Central Online (SaaS)
 
 If not already installed, open your Business Central and search (ALT+Q) for page ”Microsoft AppSource apps”.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/AppSource1 ENU.png"><br>
 
 <br>
-Search for the app you are interested on, click on the app name and perform the action "Install app". 
+Search for the app you are interested in, click on the app name, and perform the action "Install app". 
 
 <br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/AppSource2 ENU.png"><br>
 <br>
 <br>
-## Already installed the app?
 
-let's activate it! 
+### Business Central On-Premise
+Our apps are available as NuGet feed. Go to [our feeds page](https://feed.eos-solutions.app ) and use it for getting the latest versions of our apps!
 
-After installing the app search (ALT+Q) for ”Subscription control Panel” page and select ”Request Subscription”. Our team will check your request and activate the right subscription or contact you. Trial period are by default 20 Days and can be extended evalating your request up to a maximum of 60 Days
+Take a look here to see the supported versions: [Supported Versions and support services]({{<relref "support-and-versions">}})
+
+
+#### Having trouble using Nuget Feeds? 
+
+Try EOS Solution's latest tool for managing your business central environments! 
+
+<img width="200" src="https://docs-test.eos-solutions.it/Images/PR000728-0/Gordon.png"><br>
+
+[**Try Gordon Suite**](https://gordon.eos-solutions.it)
+## Request a subscription
+
+**After installing** the app search (ALT+Q) for ”**Subscription control Panel**” page and select ”**Request Subscription**”. 
+
+By completing the wizard to request a trial, your request will be activated automatically within a few minutes. You will receive an email confirmation to start using the app! 
+
+Trial periods are by default 20 Days and can be extended, evaluating your request, up to a maximum of 60 Days
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/2GettingStartedEosApps.jpg">
 
 <br>
 
 
-To activate, setup and use the app you need the proper permisson set: the easier way is to set the user as ”SUPER”. If you don’t want to set the ”SUPER” permission set, apply all Permission set starting with ”EOS\*”
+To activate, set up, and use the app, you need the proper permission set. The easier way is to set the user as ”SUPER”. If you don’t want to set the ”SUPER” permission set, apply all Permission set starting with ”EOS\*”
 
 <br>
 <br>
@@ -34,20 +53,20 @@ To activate, setup and use the app you need the proper permisson set: the easier
 
 ## Assisted setup
 
-Start using the EOS app with the assisted setup wizard, that can be run in two ways:
+Start using the EOS app with the assisted setup wizard, which can be run in two ways:
 
-- direct link to the available "Assisted setup".
+1. Direct link to the available "Assisted setup".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/Assisted setup1 ENU.png"><br>
 <br>
 
-- search for "Extension management", select the app and click on "Set up".
+2. Search for "Extension management", select the app, and click on "Set up".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/Assisted setup2 ENU.png"><br>
 <br>
 <br>
 At the moment, the assisted setup is available for the following apps: 
-- DocSolutions for Sharepoint
+- DocSolutions for SharePoint
 - Master Data Intercompany
 - Product Configurator
 - Packing List
@@ -55,16 +74,45 @@ At the moment, the assisted setup is available for the following apps:
 <br>
 <br>
 
+### Read online help and watch the full demo
+
+All of our apps have the OnLine help available with tutorial videos. Some of them have [extended demo](https://www.youtube.com/results?search_query=EOS+Apps+Demo) up to 60 minutes. 
+
+## Collaborate
+All our apps are extensible, and you can collaborate with the development team by proposing new implementations, suggesting ideas, and adding new features in the dedicated Github channel EOS-Solutions/IDEAS: IDEAS for Apps and Features
+
+To extend our apps, we provide developers with:
+
+- Technical documentation, to view the structure of all available objects, events, and methods: [Documentation](https://docs.eos-solutions.it/en/docs/apps-tech.html) 
+- Customization examples: [EOS-Solutions/Sample](https://github.com/EOS-Solutions/Sample): Includes samples for EOS Apps 
+- Translation files for customizing captions: [EOS-Solutions/Translations](https://github.com/EOS-Solutions/Translations) 
+
+If you are a developer, we recommend using a series of free tools: [Developer Tools | EOS Docs](https://docs.eos-solutions.it/en/docs/dev-tools.html).
+
+## Prices
+
+Visit our [AppStore](https://appstore.eos-solutions.it/Subscription/App) for up-to-date pricing on all our apps and kits.
+
+All prices are intended for a Tenant with unlimited environmenti, unlimited company and users within a TenantID. Your Tenant ID is showed in ”Subscription control panel” page in your Business Central.
+
+
+
 
 ## No active plan or subscription ?
 
-Maybe your server is not connecting to EOS Online service, try checking the following
+Maybe your server is not connecting to the EOS Online service. <br>
+Execute the action "**Test API Connection**" in the Subscription control panel.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/TestConnection.png"><br>
+<br>
+
+If not, try checking the following:
 
 **If your Business Central environment is OnPremise:**
 
-\- Check your internet connection
+ 1. Check your internet connection
 
-\- Verify that http requests are allowed for the EOS Admin Library app
+ 2. Verify that HTTP requests are allowed for the EOS Admin Library app
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/3GettingStartedEosApps.jpg">
 
@@ -72,9 +120,9 @@ Maybe your server is not connecting to EOS Online service, try checking the foll
 <br>
 <br>
 
-\- In case of Docker environment check connection and DNS
+ 3. In case of Docker environment, check the connection and DNS
 
-\- Verify the BC service user reaches <https://publicapi.eos-solutions.it/> : the expected response via browser is 403, in case of error 404 it means that the server cannot reach this address. Check firewall and connection
+ 4. Verify the BC service user reaches <https://publicapi.eos-solutions.it/> : the expected response via browser is 403, in case of error 404 it means that the server cannot reach this address. Check firewall and connection
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/4GettingStartedEosApps.jpg">
 
@@ -84,9 +132,9 @@ Maybe your server is not connecting to EOS Online service, try checking the foll
 
 You can check the connectivity with this PowerShell command taking care of:
 
-\- RUN IT FROM THE SERVER ON WHICH THE BUSINESS CENTRAL SERVICE IS RUNNING
+ 1. RUN IT FROM THE SERVER ON WHICH THE BUSINESS CENTRAL SERVICE IS RUNNING
 
-\- RUN IT USING THE USER USED BY THE BUSINESS CENTRAL SERVICE
+ 2. RUN IT USING THE USER USED BY THE BUSINESS CENTRAL SERVICE
 
 Invoke-RestMethod <https://publicapi.eos-solutions.it/status>
 
@@ -97,9 +145,9 @@ Invoke-RestMethod <https://publicapi.eos-solutions.it/status>
 
 **If your Business Central environment is OnLine (Saas):**
 
-\- Verify that http requests are allowed for the EOS Admin Library app
+ 1. Verify that http requests are allowed for the EOS Admin Library app
 
-\- Consider that for PROD environments this setting is by default=true, while on sandbox environments is by default=false
+ 2. Consider that for PROD environments this setting is by default=true, while on sandbox environments is by default=false
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/3GettingStartedEosApps.jpg">
 
@@ -116,17 +164,4 @@ After carrying out the checks, the steps to be performed are:
 <br>
 <br>
 <br>
-## Read on line help and watch the full demo
 
-All of our apps have the OnLine help available with tutorial videos. Some of them have [extended demo](https://www.youtube.com/results?search_query=EOS+Apps+Demo) up to 60 minutes. 
-
-## Collaborate
-Devs and tech people can reach our Technical Docs and the [Github collaboration repos](https://github.com/EOS-Solutions/IDEAS) to find customization samples, translation or suggest Ideas and new features.
-
-**Looking for OnPrem solutions?**
-
-EOS apps are also available for OnPrem environment. Installing and activating on OnPrem environment require extra steps, please contact us for further information or check the [app availability here](https://app.powerbi.com/view?r=eyJrIjoiMTdlNzE2MjQtYjUyZi00ODMwLWE5OTctODFhM2QyYzRhMDA3IiwidCI6ImNkZDJiMmZmLTY5YWYtNDllMy05MTYxLTY4MGZiNThhMDExZCIsImMiOjh9).
-
-## Prices
-
-Prices are listed on [EOS Solutions website](https://www.eos-solutions.it/en/apps-microsoft-dynamics-365-powerapps-powerbi.html). All prices are intended for a Tenant with unlimited environmenti, unlimited company and users within a TenantID. Your Tenant ID is showed in ”Subscription control panel” page in your Business Central.
