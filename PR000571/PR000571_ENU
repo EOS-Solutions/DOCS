@@ -60,6 +60,27 @@ In Contributions Ledger Entries there is the detail of vendor contributions entr
 
 Also in this case the contribution amount can be modified. Subsequently, from Process-\> from Process-\> Post G/L Correction the correction is posted to general ledger. The Contribution amount field becomes navigable and shows the detail of the correction.
 
+**Example of FISC Calculation (AEC Commerce)**
+
+Calculation of *FISC (AEC Commerce)* performed on the FISC agent with collaboration start date 01/01/2014 and FISC contribution calculation date 12/31/2024.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegThroughReport10.png"><br>
+
+By printing the calculation report, we obtain:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegThroughReport12.png"><br>
+
+
+**Example of FISC Calculation (AEC Industry)**
+
+Calculation of *FISC (AEC Industry)* performed on the agent with collaboration start date 01/01/2014 and FISC contribution calculation date 12/31/2024.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegThroughReport11.png"><br>
+
+By printing the calculation report, we obtain:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegThroughReport13.png"><br>
+
 See also:
 
 | [Introduction]({{<relref "enasarco-firr-and-fisc-cms">}})                                                                      |
