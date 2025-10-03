@@ -40,6 +40,7 @@ Il campo Importo contributo diventa navigabile e mostra il dettaglio della corre
 
 **Calcolo FISC**
 
+
 Il calcolo del F.I.S.C. è eseguito tramite funzione a menu Il report prevede l’immissione dei parametri di calcolo necessari e la possibilità di visualizzare un’anteprima del calcolo senza effettuare registrazioni
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegTramiteReport7.png"><br>
@@ -69,6 +70,27 @@ Dopo aver attivato il flag Registra sul report e dopo averlo eseguito (anche in 
 In Mov Contributi è presente il dettaglio movimenti contributi per il fornitore. Anche in questo caso l'Importo contributo è modificabile. Successivamente da Elabora-\>Registra correzione in C/G viene registrata la correzione in contabilità generale.
 
 Il campo Importo contributo diventa navigabile e mostra il dettaglio della correzione.
+
+**Esempio di calcolo FISC (AEC commercio)**
+
+Calcolo *FISC (EAC Commercio)* eseguito sull’agente FISC con data di inizio collaborazione 01/01/2014 e data di calcolo contributi FISC 31/12/2024.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegTramiteReport10.png"><br>
+
+Stampando il report di calcolo otteniamo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegTramiteReport12.png"><br>
+
+
+**Esempio di calcolo FISC (AEC industria)**
+
+Calcolo *FISC (EAC industria)* eseguito sull’agente con data di inizio collaborazione 01/01/2014 e data di calcolo contributi FISC 31/12/2024.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegTramiteReport11.png"><br>
+
+Stampando il report di calcolo otteniamo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000571-0/ENACalcRegTramiteReport13.png"><br>
 
 Vedi anche:
 
