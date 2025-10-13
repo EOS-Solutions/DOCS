@@ -3,6 +3,7 @@ I campi presenti nel Setup OVR sono:
 | **Campo** | **Descrizione** |
 | --- | --- |
 | Abilita OVR | L’app OVR viene installata come dipendenza di altre app ma spesso non viene utilizzata. In tal caso è opportuno disabilitarla. L’effetto che si ottiene è un miglioramento delle performance. |
+| Abilita quantità in eccesso sul prelievo | Abilita/disabilita la quantità in eccesso sul prelievo warehouse e prelievo di magazzino. |
 | Quantità per eccesso Ordine Acquisto Programmato | Consente di abilitare/disabilitare la quantità per eccesso nell'ordine di acquisto programmato. |
 | Quantità per eccesso Ordine Vendita Programmato | Consente di abilitare/disabilitare la quantità per eccesso nell'ordine di vendita programmato. |
 
