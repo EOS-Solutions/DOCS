@@ -3,6 +3,7 @@ The fields present in the OVR Setup are:
 | **Field** | **Description** |
 | --- | --- |
 | Enable OVR | The OVR app is installed as a dependency of other apps but is often not used. If so, you should disable it. The effect obtained is an improvement in performance. |
+| Enable Over Qty on Pick | Enable/Disable the Over Quantity on warehouse pick and inventory pick. |
 | Over Qty in Blanket Purchase Order | Allow to enable/disable the over quantity in blanket purchase order. |
 | Over Qty in Blanket Sales Order | Allow to enable/disable the over quantity in blanket sales order. |
 
