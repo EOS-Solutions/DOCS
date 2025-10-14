@@ -1,0 +1,3 @@
+Il sistema stamperà i prezzi senza informazioni sullo sconto.
+
+*Esempio: Se una riga ha un prezzo di 1000€ con uno sconto del 10%, la riga stampata avrà un prezzo di 900€ senza mostrare alcuno sconto.*
