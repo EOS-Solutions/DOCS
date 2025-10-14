@@ -1,0 +1,2 @@
+Nella scheda di "Setup report ADR" sono presenti due campi: "Codice Testo Fisso Intestazione" e "Codice Testo Fisso Piè Pagina". Questi campi sono collegati a un Testo Standard.
+Se compilati, il report stamperà i testi nelle rispettive posizioni: all’inizio del corpo o alla fine.
