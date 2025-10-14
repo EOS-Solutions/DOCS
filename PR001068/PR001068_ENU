@@ -1,0 +1,2 @@
+In the card page of "ADR Report Setup", there are two fields: "Header Fixed Text Code" and "Footer Fixed Text Code". These fields are linked to a Standard Text.
+If populated, the report will print the texts in their respective positions: at the beginning of the body or at the end.
