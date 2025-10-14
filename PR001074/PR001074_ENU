@@ -1,0 +1,4 @@
+The system will print the Advanced Texts related to the document. Can be enabled to print Footer or/and Header texts. 
+
+The texts to print can be filtered based on an expression added to the current Report Setup in the field "Text Type Filter". If this is empty all the texts will be printed.
+
