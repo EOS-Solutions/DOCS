@@ -1,0 +1,5 @@
+The system will add a summary grouped by item tariff no. to the end of the document body. The following values will be reported:
+
+* Quantity
+* Gross Weight
+* Net Weight
