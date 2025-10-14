@@ -1,0 +1,3 @@
+Il sistema stamperà i testi avanzati relativi al documento. È possibile abilitare la stampa dei testi di piè di pagina e/o intestazione.
+
+I testi da stampare possono essere filtrati in base a un'espressione aggiunta al setup report corrente nel campo "Filtro tipo testo". Se questo campo è vuoto, verranno stampati tutti i testi.
