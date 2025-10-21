@@ -1,0 +1,13 @@
+**La funzione nuovo setup wizard, da utilizzare in ambiente DEMO o TEST, permette di creare dei dati dimostrativi per cominciare a utilizzare i costi di trasporto. In particolare vengono creati i listini di trasporto DHL e FEDEX, che possono essere usati per suggerire i costi di trasporto.**
+
+Il listino DHL (basato sul peso lordo) è un esempio dove ci sono le zone. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001091-0/Gross Weight - ITA.png"><br>
+
+Il listino FEDEX (basato sui km) è un esempio dove ci sono i servizi. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001091-0/KM - ITA.png"><br>
+
+Quando si esegue il setup wizard, su richiesta, è possibile anche creare un ordine di vendita di prova in cui eseguire il suggerimento dei costi di trasporto. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001091-0/Suggestion transport costs on sales order - ITA.png"><br>
