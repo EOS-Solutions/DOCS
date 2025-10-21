@@ -1,11 +1,11 @@
 Questa tabella consente di gestire i risultati dei test associandoli ad un codice:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000481-0/5ProductQualityAssurance-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000481-0/5ProductQualityAssurance-ITA.png"><br>
 
 | Campo | Descrizione |
 | --- | --- |
 | Codice | inserire un codice da associare ad ogni risultato |
 | Descrizione | campo libero per un'eventuale descrizione |
-| Risultato controllo | ≈ **Rilasciato**: la merce quindi non ä pió bloccata per il controllo ma ä libera di essere consumata o spedita.<br><br>≈ **Concessione**: una parte delle merce potrebbe essere utilizzabile e una parte invece non ä conforme quindi verrÖ fatta una riclassifica della merce in un'area a setup in ubicazione.<br><br>≈ **Bloccato**: la merce ä non conforme quindi verrÖ fatta una riclassifica della merce in un'area a setup in ubicazione. |
-| Registrazione permessa | flag che consente di registrare, ad esempio un carico, con un ordine di controllo collegato indipendentemente dal risultato del test di controllo |
+| Risultato controllo | ‚Ä¢ **Rilasciato**: la merce quindi non √® pi√π bloccata per il controllo ma √® libera di essere consumata o spedita.<br><br>‚Ä¢ **Concessione**: una parte delle merce potrebbe essere utilizzabile e una parte invece non √® conforme quindi verr√† fatta una riclassifica della merce in un'area a setup in ubicazione.<br><br>‚Ä¢ **Bloccato**: la merce √® non conforme quindi verr√† fatta una riclassifica della merce in un'area a setup in ubicazione. |
+| Registrazione permessa | flag che autorizza le registrazioni successive del documento di origine: ad esempio con un carico ricevuto parzialmente, se si vuole continuare a ricevere la merce, gli eventuali ordini di controllo staccati in precedenza devono essere in uno stato che permetta la registrazione, altrimenti quelle successive non sono permesse. |
 | Consenti modifica | flag che consente di apportare modifiche sulla scheda controllo |
