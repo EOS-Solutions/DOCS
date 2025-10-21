@@ -1,0 +1,13 @@
+**The new setup wizard function, to be used in the DEMO or TEST environment, allows to create demo data to start using transport costs. In particular DHL and FEDEX shipping prices are created, which can be used to suggest transport costs.**
+
+The DHL shipping price (based on gross weight) is an example where there are areas. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001091-0/Gross Weight - ENU.png"><br>
+
+The FEDEX shipping price (based on km) is an example where there are services. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001091-0/KM - ENU.png"><br>
+
+When running setup wizard, on demand, it is possible to also create a test sales order where executing transport costs suggestion. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001091-0/Suggestion transport costs on sales order - ENU.png"><br>
