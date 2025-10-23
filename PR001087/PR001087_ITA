@@ -1,0 +1,39 @@
+## Calcolo previsione della domanda
+
+Con l’app SCM è possibile calcolare e generare una previsione della domanda analizzando i dati storici presenti a sistema.
+
+Tramite il prospetto previsione vengono gestiti i dati relativi alle previsioni. Tali dati vengono alimentati da due fonti:
+<table>
+	<tr>
+		<td>1</td>
+		<td>Funzioni di elaborazioni BC
+</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Power Predictive</td>
+	</tr>
+</table>
+
+La procedura di calcolo prevede diversi step che riguardano:
+
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001087-0/Immagine_stepcalcolo.png"><br>
+
+È possibile parametrizzare il calcolo dello status dell’articolo all’interno del periodo di analisi
+
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001087-0/immagine_9.png"><br>
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001087-0/immagine_10.png"><br>
+
+Per ogni status articolo è possibile assegnare un elenco di formule possibili da utilizzare durante la fase di analisi e calcolo del forecast.
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001087-0/Immagine2.png"><br>
+
+Lanciando la procedura di analisi l’app esegue il calcolo applicando la formula di un determinato set di periodi.
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001087-0/immagine_14.png"><br>
+Tramite il MAPE (Mean absolute percentage error) viene determinata la miglior formula.
+
+
+Completata la fase di analisi è possibile lanciare il calcolo del forecast.
+
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001087-0/Immagine3.png"><br>
+
+Nella request page va selezionata la tipologia «Previsione» e indicato il nr. di periodi da calcolare. I periodi successivi verranno calcolati a partire dalla data fine di analisi definita nel batch di previsione
