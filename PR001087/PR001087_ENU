@@ -1,0 +1,36 @@
+## Demand Forecast Calculation
+
+With the SCM app, it is possible to calculate and generate a demand forecast by analyzing historical data present in the system.
+
+The forecast overview manages the forecast-related data. This data is fed from two sources:
+
+<table>
+	<tr>
+		<td>1</td>
+		<td>BC Processing Functions
+</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Power Predictive</td>
+	</tr>
+</table>
+
+The calculation procedure involves several steps concerning:
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001087-0/image_calcSteps.png"><br>
+
+It is possible to parameterize the calculation of item status within the analysis period.
+
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001087-0/immagine_9.png"><br>
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001087-0/immagine_10.png"><br>
+
+For each item status, a list of possible formulas can be assigned to be used during the analysis and forecast calculation phase.
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001087-0/Immagine2.png"><br>
+By launching the analysis procedure, the app performs the calculation by applying the formula over a defined set of periods.
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001087-0/immagine_14.png"><br>
+The best formula is determined using MAPE (Mean Absolute Percentage Error).
+
+
+Once the analysis phase is completed, the forecast calculation can be launched.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001087-0/Immagine3.png"><br>
+In the request page, select the "Forecast" type and indicate the number of periods to calculate. The subsequent periods will be calculated starting from the analysis end date defined in the forecast batch.
