@@ -1,0 +1,10 @@
+## General Setup
+
+The general setup can be accessed from the menu under "Setup (SCM)" where you can select some default values used by the app and the expected connections with external integrations related to PowerPredictive. Below is a detailed view.
+
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001086-0/immagine_4.png"><br>
+
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001086-0/immagine_5.png"><br>
+
+Using the "Create installation data" button, the app initializes the general setup and creates the base formulas for forecast calculation.
+
