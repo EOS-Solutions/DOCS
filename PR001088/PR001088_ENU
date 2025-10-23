@@ -1,0 +1,61 @@
+## Reorder Point Calculation
+
+Using implemented functions, it is possible to calculate and update planning parameters related to the reorder point (ROP) and safety stock to optimize inventory levels.
+
+The app's features include:
+
+- SKU Management
+  - Management via SKU allowing calculation differentiation by location
+- 4 ROP calculation formulas
+  - 4 calculation formulas are provided that may or may not consider demand variability and/or lead time
+- Reading forecast or scheduled orders
+  - Through appropriate setup, it is possible to consider the forecast or scheduled sales orders in parameter calculation
+
+## Reorder Point Calculation - Setup
+
+Through a setup card, the formula to use and related input parameters can be defined.
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001088-0/immagine_34.png"><br>
+The ROP setup code is assigned in the item or SKU master data to define the calculation rules for updating safety stock and reorder point if the item has a "Fixed reorder quantity" method.
+
+By enabling the "include forecast" and/or "include scheduled orders" flags, the app considers the forecast defined in the setup or all scheduled sales orders as the historical series to analyze.
+
+If the "safety stock" flag is active, the procedure calculates and updates the safety stock.
+
+The service level corresponds to the Z parameter in the formulas.
+
+The grouping period defines the period within which the system will sum all movements.
+
+The Start Date Formula defines the start date of the periods to consider in the historical series. The End Date Formula defines the end date of the period.
+
+At the bottom of the page, the dates are shown based on the work date.
+
+## Reorder Point Calculation - Formulas
+
+If SKUs are present, the procedure performs calculations by splitting the historical series by location, calculating differentiated values for each SKU.
+
+In the "Replenishment" tab of the item and SKU master data, the calculation setup card assignment is present.
+
+## Reorder Point Calculation - Formulas
+
+Below is the detail of the formulas that can be assigned to each ROP setup.
+
+## Reorder Point Calculation - Calculation Report
+
+The calculation is performed using the following schedulable report:
+
+- If the flag is disabled, the report considers the input parameters defined in the ROP setup card.
+- If the flag is enabled, the parameters in the master data setup card are overridden by those entered in the report page.
+
+## Reorder Point Calculation - Batch
+
+The calculated values from the procedure are reported in a batch, allowing them to be confirmed to update the master data.
+
+The batch shows various calculation-related information and allows value modification before registration.
+
+If the item is managed via SKU, the calculation is split by location and the batch suggests the reference location.
+
+Once the calculated values are verified, they can be confirmed using the registration button to update the master data.
+
+The ROP calculation can also be executed using the ROP calculation button.
+
+Additionally, the page of historical movement changes can be accessed.
