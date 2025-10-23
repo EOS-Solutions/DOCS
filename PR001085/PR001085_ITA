@@ -1,0 +1,24 @@
+## Introduzione
+
+L’app SCM consente di importare e gestire un forecast tramite l’utilizzo di PowerPredictive. Inoltre, permette il calcolo e ottimizzazione di alcuni parametri di pianificazione. Di seguito l’elenco delle funzionalità implementate:
+
+<table>
+	<tr>
+		<td>1</td>
+		<td>Esportazione dati per PowerPredictive tramite API</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Importazione forecast da PowerPredictive</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Calcolo status articoli e forecast tramite formule</td>
+	</tr>
+		<tr>
+		<td>4</td>
+		<td>Aggiornamento del punto di riordino e scorta di sicurezza</td>
+	</tr>
+
+</table>
+
