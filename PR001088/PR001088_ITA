@@ -1,0 +1,70 @@
+## Calcolo punto di riordino
+
+Tramite delle funzioni implementate è possibile calcolare e aggiornare i parametri di pianificazione relativi il punto di riordino (ROP) e scorta di sicurezza al fine di ottimizzare i livelli di scorta in magazzino.
+
+Le funzionalità presenti nell’app riguardano:
+
+
+
+- 4 formule di calcolo del ROP
+
+	- Sono previste 4 formule di calcolo che considerano o meno la variabilità della domanda e/o lead time di approvvigionamento
+
+- Lettura del forecast o ordini programmati
+
+	- Tramite opportunuo setup è possible considerare il forecast o gli ordini programmati nel calcolo dei parametri
+- Gestione per SKU
+
+	- È prevista la gestione tramite SKU potendo differenziare il calcolo per ubicazione
+
+## Calcolo punto di riordino - Setup
+
+Tramite una scheda di setup è possibile definire la formula da utilizzare e relativi parametri di input.
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001088-0/immagine_34.png"><br>
+Il codice setup ROP viene assegnato in anagrafica o SKU così da definire per ogni articolo le regole di calcolo per aggiornare la scorta di sicurezza e punto di riordino se l’articolo ha un metodo di riordino «Qtà riordino fissa».
+
+Attivando il flag «includi previsione» e/o «includi ordini programmati» l’app considera come serie storica da analizzare la previsione definita a setup o tutti gli ordini programmati di vendita
+
+Se il flag «scorta di sicurezza» è attivo la procedura calcola e aggiorna la scorta di sicurezza
+
+Il livello di servizio corrisponde al parametro Z delle formule
+
+Il periodo di raggruppamento definisce il periodo all’interno del quale il sistema andrà a sommare tutti i movimenti del periodo
+
+La Formula data inizio definisce la data di inizio dei periodi da considerare nella serie storica. Tramite la formula calcolo periodo viene definita la data di fine del periodo.
+
+In fondo alla pagina vengono riportate le date in funzione della workdate
+
+
+## Calcolo punto di riordino - Formule
+
+Se sono presenti le SKU la procedura effettua i calcoli suddividendo la serie storica dei periodi per ubicazione calcolando i valori differenziati per ogni SKU.
+
+Nel tab «Rifornimento» dell’anagrafica articolo e SKU è presente l’assegnazione della scheda di setup di calcolo:
+
+
+Di seguito il dettaglio delle formule che è possibile assegnare ad ogni setup ROP
+
+
+## Calcolo punto di riordino - Report di calcolo
+
+Il calcolo viene eseguito tramite il seguente report schedulabile:
+
+Se il flag è disabilitato il report considera i parametri di input definiti nella scheda di setup ROP
+
+Se il flag è attivo i parametri della scheda di setup in anagrafica vengono surclassati da quelli inseriti nella pagina del report
+
+
+## Calcolo punto di riordino - Batch
+
+Il risultato dei valori calcolati dalla procedura vengono riportati in un batch dando la possibilità di confermarli così da aggiornare le anagrafiche.
+
+Nel batch vengono riportate diverse informazioni relative al calcolo ed è possibile modificare i valori prima della registrazione.
+
+Se l’articolo è gestito tramite SKU il calcolo viene suddiviso per ubicazione e il batch propone l’ubicazione di riferimento.
+
+Una volta verificati i valori calcolati dalla procedura è possibile confermarli tramite il tasto di registrazione andando ad aggiornare i valori in anagrafica
+
+È possibile eseguire il calcolo tramite il tasto di calcolo ROP.
+
+Inoltre, è possibile richiamare la pagina dei movimenti di storico delle modifiche effettuate.
