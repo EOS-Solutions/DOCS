@@ -1,0 +1,8 @@
+**EDI** provides a framework for handling different types of message exchanges. It therefore provides a framework for reading and writing messages, including logs and notifications. However, message exchanges are commonly customized and different partners or customers require different specifics. There are a number of ways how the formats specified above can be customized and adapted to the specific needs of your customer:
+
+First of all, all conversion reports that are shipped with the app have been open sourced on [https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI](https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI). You are free to download them, modify them, and then include them as a custom conversion report in your solutione.
+
+As far as outbound documents go, it is very simple to include a new table and/or support those tables that are not supported out-of-the-box. You would:
+- Add a new value to the enum **enum 70491811 "EOS074 Message Type"** for the message type (if required)
+- Use the event **OnAfterCollectingDocuments** to provide specify the records that need to be exported
+- Thereafter, every run of the report **70491821 "EOS074 EDI Messages Out (v2)"** will automatically also handle your custom message type / table. You can find an example at [https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI/NewTable](https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI/NewTable)
