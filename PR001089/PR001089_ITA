@@ -1,0 +1,20 @@
+EDI supporta diversi scenari per i messaggi **in uscita** e **in entrata**. Sebbene l'app fornisca un framework per supportare più tipi di messaggi e direzioni di trasmissione, non tutti i tipi sono supportati immediatamente.
+
+I seguenti tipi di messaggi sono supportati per impostazione predefinita:
+
+| Tipo di messaggio    | Descrizione             | Direzione | Incluso | Report di conversione                        |
+|-----------------|-------------------------|-----------|----------|-------------------------------------------|
+| ORDERS In       | Inbound purchase orders | Inbound   | Yes      | 70491818 "EOS074 Euritmo Orders In"       |
+|                 |                         |           |          | 70491816 "EOS074 Eancom Orders In"        |
+|                 |                         |           |          | 70491814 "EOS074 Edifact Eancom OrdersIn" |
+| ORDERS RSP      |                         | Outbound  | No       | n/a                                       |
+| DESADV OUT      | Despatch advice         | Outbound  | No       | n/a                                       |
+| INVOIC OUT      | Outbound sales invoices | Outbound  | Yes      | 70491812 "EOS074 Invoice Out HoGast"      |
+|                 |                         |           |          | 70491813 "EOS074 Euritmo Invoice Out"     |
+|                 |                         |           |          | 70491815 "EOS074 Edifact Inv. Out ALDI"   |
+|                 |                         |           |          | 70491817 "EOS074 Edifact Inv. Out Mpreis" |
+| SALES INVOIC    |                         | Outbound  | No       | n/a                                       |
+| SALES INVOIC IN |                         | Inbound   | No       | n/a                                       |
+| RECADV IN       | Receiving advice        | Inbound   | No       | n/a                                       |
+| IFTMIN          |                         | Inbound   | No       | n/a                                       |
+| PRICAT OUT      |                         | Outbound  | No       | n/a                                       |
