@@ -1,0 +1,20 @@
+EDI supports different scenarios for **outbound** and **inbound** messages. While the app does provide a framework for supporting multiple types of messages and transmission directions, not all types are supported out-of-the-box.
+
+The following message types are supported by default:
+
+| Message Type    | Description             | Direction | Included | Conversion Reports                        |
+|-----------------|-------------------------|-----------|----------|-------------------------------------------|
+| ORDERS In       | Inbound purchase orders | Inbound   | Yes      | 70491818 "EOS074 Euritmo Orders In"       |
+|                 |                         |           |          | 70491816 "EOS074 Eancom Orders In"        |
+|                 |                         |           |          | 70491814 "EOS074 Edifact Eancom OrdersIn" |
+| ORDERS RSP      |                         | Outbound  | No       | n/a                                       |
+| DESADV OUT      | Despatch advice         | Outbound  | No       | n/a                                       |
+| INVOIC OUT      | Outbound sales invoices | Outbound  | Yes      | 70491812 "EOS074 Invoice Out HoGast"      |
+|                 |                         |           |          | 70491813 "EOS074 Euritmo Invoice Out"     |
+|                 |                         |           |          | 70491815 "EOS074 Edifact Inv. Out ALDI"   |
+|                 |                         |           |          | 70491817 "EOS074 Edifact Inv. Out Mpreis" |
+| SALES INVOIC    |                         | Outbound  | No       | n/a                                       |
+| SALES INVOIC IN |                         | Inbound   | No       | n/a                                       |
+| RECADV IN       | Receiving advice        | Inbound   | No       | n/a                                       |
+| IFTMIN          |                         | Inbound   | No       | n/a                                       |
+| PRICAT OUT      |                         | Outbound  | No       | n/a                                       |
