@@ -1,0 +1,8 @@
+**EDI** fornisce un framework per la gestione di diversi tipi di scambi di messaggi. Fornisce quindi un framework per la lettura e la scrittura di messaggi, inclusi log e notifiche. Tuttavia, gli scambi di messaggi sono comunemente personalizzati e partner o clienti diversi richiedono specifiche diverse. Esistono diversi modi per personalizzare e adattare i formati sopra specificati alle esigenze specifiche del cliente:
+
+Innanzitutto, tutti i report di conversione forniti con l'app sono stati resi open source su [https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI](https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI). È possibile scaricarli, modificarli e includerli come report di conversione personalizzati nella propria soluzione.
+
+Per quanto riguarda i documenti in uscita, è molto semplice includere una nuova tabella e/o supportare quelle tabelle che non sono supportate immediatamente. È necessario:
+- Aggiungere un nuovo valore all'enumerazione **enum 70491811 “EOS074 Message Type”** per il tipo di messaggio (se richiesto)
+- Utilizzare l'evento **OnAfterCollectingDocuments** per specificare i record che devono essere esportati
+- Successivamente, ogni esecuzione del report **70491821 “EOS074 Messaggi EDI in uscita (v2)”** gestirà automaticamente anche il tipo di messaggio/tabella personalizzato. È possibile trovare un esempio all'indirizzo [https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI/NewTable](https://github.com/EOS-Solutions/Sample/tree/master/EX074.EDI/NewTable)
