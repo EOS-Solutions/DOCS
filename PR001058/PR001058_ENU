@@ -1,0 +1,16 @@
+Within the store master data card, some additional fields have been added to define extra functionalities compared to the standard setup.
+## Electronic Invoicing
+For the creation and posting of sales invoices and credit memos directly from the POS, it is necessary to define at least two sales document classes that include a default posting setup with posting type “Statistical Document” and item ledger entry generation “Do not create item entries”.
+These classes must then be specified in the store master data; it is therefore possible to define different classes, with different number series, for each individual store.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001058-0/Negozio1_ENU.jpg"><br>
+* "Sales Invoice Document Class Type”: indicates the sales document class type to be used for creating sales invoices from the POS
+* “Sales Invoice Document Class Code”: indicates the sales document class code to be used for creating sales invoices from the POS
+* “Sales Credit Memo Document Class Type”: indicates the sales document class type to be used for creating sales credit memos from the POS
+* “Sales Credit Memo Document Class Code”: indicates the sales document class code to be used for creating sales credit memos from the POS
+## Additional Setup
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001058-0/Negozio2_ENU.jpg"><br>
+* "POS Data Entry Type": indicates whether the system must manage the issuance of vouchers as ‘single-use vouchers’ or ‘multi-use vouchers’.
+* “Def. Tender Type Inc.Exp.”: indicates the payment method that identifies the issuance of a single-use voucher from the POS.
+* “Tender Type Deferred Payment”: indicates the payment method that identifies a “deferred” payment. If a customer is assigned deferred payment for a sale, meaning not settled directly at the cash register, the transaction is automatically closed with the default payment method specified in the store master data.
+* “Store Mailbox Code”: not used
