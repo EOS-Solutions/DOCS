@@ -1,4 +1,3 @@
-# Ruoli dispositivo
 Per instradare correttamente la stampa dei documento commerciali rispetto alla stampa dei documento gestionali, è necessaria la definizione di almeno un "Ruolo dispositivo" di tipo "fiscale" 
 Nella definizione dei ruoli dispositivi di LS Central, definire quindi un record con di tipo "Serial", Role "SALES" e campo "Stampante fiscale" valorizzato. 
 In aggiunta, per usufruire di ulteriori funzionalità rispetto alla stampa di doscumenti commerciali e documenti gestionali, è necessaria la definizione di ulteriori record; tali record piloteranno la stampa dei documenti commerciali o gestionali:
