@@ -1,0 +1,42 @@
+Within the Functionality Profile setup card, several sections and setup fields have been added.
+## Additional setups
+### Print
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001049-0/FuncProf1_ENU.jpg"><br>
+
+* “Print suspended slip”: if enabled, when a user suspends a sales transaction on the POS, LS Central prints a management document with some information from the suspended transaction; if disabled, nothing is printed.
+* “Print amounts in suspended slip”: if enabled, the management document generated from a suspended transaction includes the transaction total; if disabled, no amounts are printed.
+* “Print custom loyalty info”: if enabled, information related to the member card and member associated with the sales transaction is printed. This includes the card number, any points used or accumulated, and the point balance.
+* “Print inc/exp. in sales”: if enabled, it allows printing of sales transaction lines of type income/expense. This setup must be enabled if gift card sales (or, more generally, voucher sales) are handled via income/expense accounts instead of items.
+* “Tend. decl. printing method”: this field can take two values:
+	* Standard: the number of tender declaration management documents printed follows the LS Central standard.
+	* Custom: the number of tender declaration management documents to print can be defined in the field “No. Tend. Decl. Slips”.
+
+* “Print standard Z Report”: if enabled, in addition to the fiscal Z Report issued by the fiscal printer, a Z Report with the LS Central layout is printed.
+* “Customer data on refund”: if enabled, the commercial refund document will include blank spaces where the following can be filled in:
+	* Customer name and surname
+	* Customer signature
+	* Staff signature who performed the return
+## Retail invoices
+The setups in the Retail Invoices section relate to creating sales invoices and credit notes directly from POS transactions. The app also allows invoice or credit note creation directly from a transaction card in Business Central.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001049-0/FuncProf2_ENU.jpg"><br>
+* “Retail invoice management”: if enabled, it is possible to create invoices or credit notes directly from the POS.
+* "POS invoice posting action”: this field can take three values:
+	* “Post & Print”: after posting an invoice or credit note, the document is printed.
+	* “Post & E-Mail”: after posting, the document is sent via email.
+	* “Post”: only posting is executed, no print or email.
+“Print receipt with invoice”: if enabled, when registering an invoice or credit note from the POS based on a sales transaction, the fiscal sales or return document is also printed; otherwise, only the invoice or credit note is posted.
+“Def. Electr. Doc. Recipient”: when creating a new customer from the POS, if this field is populated, it will be proposed as the default SDI code for the customer master data.
+## Various
+Setups in the "Various" section are related to micro-functionalities and system usability rather than major processes:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001049-0/FuncProf3_ENU.jpg"><br>
+“Reissue Fiscal Active”: if enabled, it is possible to reissue a previously posted sales transaction fiscally.
+“Check date for fiscal reissue”: if enabled, fiscal reissue is allowed only for transactions of the same day.
+“Ask for suspension”: if enabled, the user is prompted for confirmation when suspending a sales transaction.
+“Fiscal code mandatory”: if enabled, when creating a new customer from POS, entering the tax code is mandatory.
+"Show Differnce in Tender Delcaration": if enabled, the tender declaration screen will show any difference between the amount calculated by LS Central and the amount counted by the staff.
+
+
+
+
+
