@@ -1,19 +1,19 @@
-La funzionalit… principale Š lo scambio dei componenti **negli ordini di produzione e nelle distinte base**. Sostituisce la funzionalit… standard "Scambio art. DB produzione" che prevede lo scambio di articoli sulla DB per crearne una nuova versione. Si tratta di un worksheet che permette il calcolo dei componenti che si vuole scambiare.
+La funzionalitÃ  principale Ã¨ lo scambio dei componenti **negli ordini di produzione e nelle distinte base**. Sostituisce la funzionalitÃ  standard "Scambio art. DB produzione" che prevede lo scambio di articoli sulla DB per crearne una nuova versione. Si tratta di un worksheet che permette il calcolo dei componenti che si vuole scambiare.
 
 Tramite Alt + Q digitare "MMM" e aprire la page Prospetto componenti (MMM):
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000621-0/11ManufacturingBaseToolkit-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000621-0/11ManufacturingBaseToolkit-ITA.png"><br>
 
 Il messaggio di azione ci permette di scegliere cosa fare:
 
 | Campo | Descrizione |
 | --- | --- |
-| Sostituisci | il sistema sostituisceÿil componente all'interno della distinta base o degli Odp |
-| Nuovo | il sistema crea un nuovo componente nella distinta baseÿo negli Odp |
-| Elimina | il sistema elimina il componente dalla distinta baseÿo dall'Odp |
+| Sostituisci | il sistema sostituisceÂ il componente all'interno della distinta base o degli Odp |
+| Nuovo | il sistema crea un nuovo componente nella distinta baseÂ o negli Odp |
+| Elimina | il sistema elimina il componente dalla distinta baseÂ o dall'Odp |
 
 <br>
 
 Spuntando "**Accetta messaggio azione**" l'azione selezionata viene eseguita. 
 
-In alternativa Š possibile selezionare le righe e premere Accetta messaggio azione in alto. 
+In alternativa Ã¨ possibile selezionare le righe e premere Accetta messaggio azione in alto. 
