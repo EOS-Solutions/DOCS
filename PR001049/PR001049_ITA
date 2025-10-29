@@ -1,4 +1,3 @@
-# Functionality Profile
 All'interno della scheda del setup del functionality profile, sono stati aggiunte alcune sezioni ed alcuni campi di setup.
 ## Setup aggiuntivi
 ### Stampa
@@ -12,7 +11,7 @@ I setup presenti nella sezione "Stampa", pilotano alcune funzionalità aggiuntiv
 * "Stampa inc./exp. in vendita": se attivo, abilita la stampa di righe di transazioni di vendita di tipo income/expense. Tale setup deve necessariamente essere attivo nel caso in cui si decida che la vendita di giftcard (o più in generale di buoni) debba avvenire tramite income/expense account e non tramite articoli.
 * "Metodo stampa dich. cassa": il campo può assumere due distinti valori
 	* Standard: vengono stampati tanti documenti gestionali di chiusura cassa quanti ne sono previsti dallo standard di LS Central
-	 Custom: è possibile definire nel campo "Nr. di ricevute dich. cassa" il numero di documenti gestionali di chiusura cassa che devono essere stampati
+* 	 Custom: è possibile definire nel campo "Nr. di ricevute dich. cassa" il numero di documenti gestionali di chiusura cassa che devono essere stampati
 * 	 "Stampa Z Report standard": se attivo, oltre allo Z Report fiscale emesso dal registratore telematico, viene anche stampato lo Z Report con il layout previsto da LS Central
 * 	 "Dati cliente in reso": se attivo, nel documento commerciale di reso, vengono stampati degli appositi spazi bianchi in cui è possibile inserire:
 	* 	 Nome e cognome del cliente
