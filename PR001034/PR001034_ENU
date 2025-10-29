@@ -1,0 +1,8 @@
+It is possible to define up to 5 "hard" attributes linked to the customer master data.
+These attributes can be viewed, populated, and filtered just like any other field within the customer card.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001034-0/SetAttributi_ENU.jpg"><br>
+
+After defining the "hard" attributes, once Business Central is reopened, the defined fields will be directly visible in the customer master data card.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001034-0/SetAttributi2_ENU.jpg"><br>
