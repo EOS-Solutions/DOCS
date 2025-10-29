@@ -1,0 +1,11 @@
+For the purpose of issuing a sales, return, or cancellation receipt, it is necessary to define a mapping between the POS VAT codes in LS Central and the fiscal departments configured in the setup of the Epson fiscal printer.
+The setup is unique across the entire system and is not dependent on the store or POS terminal; therefore, it is mandatory to configure all fiscal printers with the same VAT departments.
+
+In the setup of the “POS VAT Codes”, all the parameters that can be configured directly in the fiscal printer department setup have been added.
+The only mandatory field is the “Fiscal ID” field, where the VAT department number corresponding to the LS Central VAT code must be entered.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001045-0/SetupIVA_ENU.jpg"><br>
+
+Therefore, in the “Fiscal ID” field, enter the number of the corresponding department as defined in the fiscal printer setup.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001045-0/Reparti.jpg"><br>
