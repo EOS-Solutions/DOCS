@@ -1,0 +1,30 @@
+Within the LS Central retail setup, some new sections and setup fields have been added.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001051-0/SetupRetail_ENU.jpg"><br>
+* Architecture Type: the field can take two distinct values:
+	* Offline: used when the architecture is hybrid or OnPrem and stores have their own Business Central instance separate from the head office.
+	* Online: used when the whole system is SaaS (both stores and head office).
+This field controls how retail invoices and credit memos are managed, and where they are created and posted.
+"Statement calc. location": the field can take two distinct values:
+	* "Head Office": the statement calculation for the store is executed in head office.
+	* "Store": the statement calculation is executed locally in the store, and then replicated to head office for posting.
+
+* "Main Staff Manager ID": during the guided procedure for creating a new store, indicates the staff ID to be considered as the store manager and therefore copied from the template store.
+* "Check Z Report": if enabled, during settlement calculation the system verifies that all transactions to be included are part of a Z Report. If some transactions are missing from a Z Report, the settlement calculation stops with a specific error.
+* "Member Account Mask & Member Card Mask": define the “mask” of characters used to recognize a member in the POS via their member card or member number directly in the input field for barcodes or item codes.
+* "Return Allowed": if enabled, POS users can process returns and issue a commercial return document. If disabled, only cancellation operations are allowed, resulting in a commercial cancellation document.
+* "Copy Global Dimensions in Safe Transfer": when creating a safe transfer, the store’s Global Dimension 1 and 2 are copied to the transfer document.
+* "Allow storno operation": allows the insertion and management, via POS, of negative value/quantity transaction lines. If disabled, the system requires entry of the original commercial document details (document number, issue date, and fiscal printer serial number) for returns or cancellations.
+* "Allow refund without receipt: allows processing a return not linked to a registered transaction. The system will prompt for manual entry of the commercial document number, date, and fiscal printer serial number. These details can be retrieved from the printed receipt provided by the customer.
+
+The Statement section contains setup fields related to the calculation and posting of daily store settlements.
+* "Statement Calculation Type:": the field can take two distinct values:
+	* Store: settlement can only be calculated locally in a store. This option is only valid for OnPrem architectures; the settlement must then be replicated to head office for further processing. The field can take two distinct values:
+	* Head Office: settlement can only be calculated in head office.
+* "Keep statement No. on Posting": the system does not allow the creation of a new statement if there is already one open and not fully posted. This setup is only valid when the statement is calculated locally in the store.
+* “Prevent statement numbering gaps”: the system does not allow the deletion of open statements in order to avoid the creation of empty posted statements.
+* “Default Activity Code”: specifies the activity code the system must use when posting a statement.
+* “Post only sales transactions”: allows only the posting of item ledger entries from a statement.
+
+The “Fiscal Code” section contains some setup options required if you want to use an external service (web service) for fiscal code validation during the creation of a member contact.
+* “Use web service for fiscal code”: enables the possibility to use an external service for validation and, if applicable, calculation of certain information based on the fiscal code. If not enabled, the information (age, gender, and place of birth) is calculated directly by the system.
+* “Fiscal code web service endpoint”: allows you to define the endpoint of the service to be used for validating the entered fiscal code.
