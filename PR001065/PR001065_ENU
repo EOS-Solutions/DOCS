@@ -1,0 +1,23 @@
+To ensure the correct assignment of the city of birth from the tax code when creating a member, it is necessary to import or otherwise populate the Municipal Codes table.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001065-0/CodComunali1_ENU.jpg"><br>
+
+The table consists of the following fields:
+* Code: indicates the municipal code as defined on the Italian Tax Authority portal
+* City: indicates the city corresponding to the municipal code entered in the Code field
+
+## Importing Municipal Codes
+It is possible to import a CSV file containing the list of municipal codes using the “Import data from file” function.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001065-0/CodComunali2_ENU.jpg"><br>
+
+When executing the function, a new page will open where it is possible to:
+* Select the CSV file to import
+* Specify the field delimiter (default ;)
+* Indicate whether the first row in the file is a header and therefore should not be imported
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001065-0/CodComunali3_ENU.jpg"><br>
+
+Once the file has been imported, if no errors are found, the system will display the following confirmation message:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001065-0/CodComunali4_ENU.jpg"><br>
