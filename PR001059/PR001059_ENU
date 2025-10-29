@@ -1,0 +1,20 @@
+# Reason Codes
+If you want to enable the issuance of sales invoices or credit memos from the POS, you must create at least one reason code.
+The reason must then be specified as the default for document classes of type Invoice and Credit Memo.
+
+The reasons created for this purpose must have:
+* "Posting Policy" = "Statistic Document (No Ledger Entries)
+* "Item Entries Policy" = "No Item Entries"
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001059-0/Causali_ENU.jpg"><br>
+
+# Sales Document Class
+In addition to defining at least one reason as described in the previous section, it is necessary to create at least one sales document class for invoice documents and one for credit memo documents.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001059-0/ClassiDoc_ENU.jpg"><br>
+
+The document number series and the posting number series specified for each document class must be different from those used for non-retail sales invoices and credit memos.
+
+Each class created must also be linked to the previously created reason and defined as the default reason for the class.
+
+The two classes must then be added to each store master record if that store is required to issue sales invoices and credit memos from the POS.
+
