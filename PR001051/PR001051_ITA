@@ -1,4 +1,3 @@
-# Setup Retail
 All'interno del setup retail di LS Central, sono stati aggiunte alcune sezioni ed alcuni campi di setup.
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001051-0/SetupRetail.jpg"><br>
 * "Tipo architettura": il campo può assumere due distinti valori:
@@ -8,25 +7,27 @@ Il campo pilota la gestione delle fatture e note credito retail e dove queste ve
 "Ubicazione calc. rendicontazione": il campo può assumere due distinti valori:
 	* "Head Office": caso in cui si vuole che il calcolo della rendicontazione di negozio avvenga in head office
 	* "Negozio": caso in cui si vuole che il calcolo della rendicontazione di negozio avvega direttamente in negozio e che poi questa venga replicata verso head office per la registrazione
-"ID Staff manager principale": nella procedura di creazione guidata di un'anagrafica negozio, indica qual è lo staff ID da considerare come manager del negozio e quindi da ricopiare dal negozio template
-"Controlla Z Report": se attivo, durante l'esecuzione del calcolo della rendicontazione, il sistema verifica che tutte le transazioni da includere nella rendicontazione siano state incluse in uno Z Report; nel caso ci siano transazioni non incluse in uno Z Report, il calcolo della rendicontazione si interrompe con uno specifico errore.
-"Maschera member account" & "Maschera member card": i due campi identificano le eventuali "maschere" di caratteri necessarie al fine di poter riconoscere un member nel POS tramite la propria member card o il proprio numero member direttamente nelo spazio dedicato alla lettura ed inserimento dei barcode o dei codici articolo
-"Infocode stat. real time negozio": ......
-"Reso consentito": se attivo, è consentita l'operazione di reso dal POS e quindi l'emissione di un documento commerciale per reso; in caso contrario l'unica operazione consentita dal POS è l'annullamento e quindi l'emissione d un documento commerciale per annullo
-"Copia dim. globali trasf. cassaforte": nella creazione di un trasferimento cassaforte, vengono riportate le dimensioni globali 1 e 2 del negozio oggetto del trasferimento
-"Consenti operazione Storno": consente l’inserimento e la gestione, tramite POS, di righe di transazione a valore e quantità negativa. Se disabilitata, il sistema impone l’inserimento obbligatorio dei dati identificativi del documento commerciale originario oggetto di reso o annullo, quali numero documento, data di emissione e seriale del registratore telematico emittente.
-"Consenti reso senza ricevuta": consente di effettuare il reso senza che l'operazione parta da una transazione registrata. Il sistema chiederà l'inserimento manuale del numero di documento commerciale, la data ed il seriale del registratore telematico della transazione oggetto del reso; tutti i dati sono presenti nel documento commerciale cartaceo oggetto del reso.
+
+* "ID Staff manager principale": nella procedura di creazione guidata di un'anagrafica negozio, indica qual è lo staff ID da considerare come manager del negozio e quindi da ricopiare dal negozio template
+* "Controlla Z Report": se attivo, durante l'esecuzione del calcolo della rendicontazione, il sistema verifica che tutte le transazioni da includere nella rendicontazione siano state incluse in uno Z Report; nel caso ci siano transazioni non incluse in uno Z Report, il calcolo della rendicontazione si interrompe con uno specifico errore.
+* "Maschera member account" & "Maschera member card": i due campi identificano le eventuali "maschere" di caratteri necessarie al fine di poter riconoscere un member nel POS tramite la propria member card o il proprio numero member direttamente nelo spazio dedicato alla lettura ed inserimento dei barcode o dei codici articolo
+* "Infocode stat. real time negozio": ......
+* "Reso consentito": se attivo, è consentita l'operazione di reso dal POS e quindi l'emissione di un documento commerciale per reso; in caso contrario l'unica operazione consentita dal POS è l'annullamento e quindi l'emissione d un documento commerciale per annullo
+* "Copia dim. globali trasf. cassaforte": nella creazione di un trasferimento cassaforte, vengono riportate le dimensioni globali 1 e 2 del negozio oggetto del trasferimento
+* "Consenti operazione Storno": consente l’inserimento e la gestione, tramite POS, di righe di transazione a valore e quantità negativa. Se disabilitata, il sistema impone l’inserimento obbligatorio dei dati identificativi del documento commerciale originario oggetto di reso o annullo, quali numero documento, data di emissione e seriale del registratore telematico emittente.
+* "Consenti reso senza ricevuta": consente di effettuare il reso senza che l'operazione parta da una transazione registrata. Il sistema chiederà l'inserimento manuale del numero di documento commerciale, la data ed il seriale del registratore telematico della transazione oggetto del reso; tutti i dati sono presenti nel documento commerciale cartaceo oggetto del reso.
 
 La sezione "Rendicontazione" contiene alcuni setup relativi al calcolo ed alla registrazione delle rendicontazioni giornaliere di negozio.
 "Tipo calcolo rendicontazione": il campo può assumere due distinti valori:
-	* Negozio: la rendicontazione può essere calcolata solamente localmente in un negozio. L'opzione può essere utilizzata solamente nel caso in cui i negozi abbiano architettura OnPrem; in tal caso la rendicontazione deve essere poi replicata verso head office per le successive operazioni.
-	* Head Office: la rendicontazione può essere calcolata solamente in head office.
-"Mantieni numerazione rendicontazione in registrazione": la numerazione di una rendicontazione registrata non viene ricalcolata al momento della registrazione in quanto viene mantenuta la numerazione della rendicontazione aperta.
-"Forza unica rendicontazione aperta": il sistema non permette la creazione di una nuova rendicontazione nel caso ne esista già una aperta e non completamente registrata. Il setup è valido solamente nel caso in cui la rendicontazione viene calcolata localemnte in negozio.
-"Evita gap numerazione rendicontazione": il sistema non consente l'eliminazione di rendicontazioni aperte per evitare la creazione di rendicontazioni registrate vuote.
-"Cod. attività di default": indica il codice attività che il sistema deve utilizzare durante la registrazione di una rendicontazione.
-"Registra solo movimenti vendita": consente la sola registrazione dei movimenti contabili articoli a partire da una rendicontazione
+* Negozio: la rendicontazione può essere calcolata solamente localmente in un negozio. L'opzione può essere utilizzata solamente nel caso in cui i negozi abbiano architettura OnPrem; in tal caso la rendicontazione deve essere poi replicata verso head office per le successive operazioni.
+* Head Office: la rendicontazione può essere calcolata solamente in head office.
+
+* "Mantieni numerazione rendicontazione in registrazione": la numerazione di una rendicontazione registrata non viene ricalcolata al momento della registrazione in quanto viene mantenuta la numerazione della rendicontazione aperta.
+* "Forza unica rendicontazione aperta": il sistema non permette la creazione di una nuova rendicontazione nel caso ne esista già una aperta e non completamente registrata. Il setup è valido solamente nel caso in cui la rendicontazione viene calcolata localemnte in negozio.
+* "Evita gap numerazione rendicontazione": il sistema non consente l'eliminazione di rendicontazioni aperte per evitare la creazione di rendicontazioni registrate vuote.
+* "Cod. attività di default": indica il codice attività che il sistema deve utilizzare durante la registrazione di una rendicontazione.
+* "Registra solo movimenti vendita": consente la sola registrazione dei movimenti contabili articoli a partire da una rendicontazione
 
 La sezione "Codice Fiscale" contiene alcuni setup necessari nel caso in cui si voglia utilizzare un servizio esterno (web service) ai fini della validazione del codice fiscale durante la creazione di un contatto member.
-"Utilizza web service per codice fiscale": attiva la possibilità di utilizzare un servizio esterno per la convalida ed eventualmente il calcolo di alcune informazioni a partire dal codice fiscale. Nel caso non sia attivo, le informazioni (età, sesso e leuogo di nascita) vengono calcolate autonomamente dal sistema.
-"Endpoint web service codice fiscale": consente di definire l'endpoint del servizio da utilizzare per la convalida del codice fiscale inserito
+* "Utilizza web service per codice fiscale": attiva la possibilità di utilizzare un servizio esterno per la convalida ed eventualmente il calcolo di alcune informazioni a partire dal codice fiscale. Nel caso non sia attivo, le informazioni (età, sesso e leuogo di nascita) vengono calcolate autonomamente dal sistema.
+* "Endpoint web service codice fiscale": consente di definire l'endpoint del servizio da utilizzare per la convalida del codice fiscale inserito
