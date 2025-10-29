@@ -1,4 +1,3 @@
-# Registratore Telematico
 L'app prevede l'utilizzo di un registratore telematico, ai fini dell'emissione e conservazione dei documenti commerciali di vendita o prestrazione, come da disposizioni dell'agenza delle entrate.
 
 A seguito della registrazione quindi di una transazione di vendita in cassa, il sistema esegue quindi la stampa del documento commerciale di vendita dal registratore telematico.
