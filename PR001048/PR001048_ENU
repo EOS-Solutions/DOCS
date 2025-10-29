@@ -1,0 +1,144 @@
+# Software & hardware station
+For communication with the Epson fiscal printer, some software and setups are required that are not strictly related to Business Central.
+
+## Required software
+The software required to use the fiscal printer and other connected devices includes:
+
+* LS Hardware Station
+* OPOS CCO (Common Control Objects)
+* Epson FPSuite: it is recommended not to install FPMate
+* EpsonOPOSForFiscalSetup
+* POSforDotNet
+
+After installing the software listed above, specific DLLs must be used for the integration between LS Hardware Station and Epson fiscal printers.
+For correct management of fiscal sales documents and management documents, a specific registry key must also be added.
+
+## Setup of communication with the fiscal printer
+The communication between the PC acting as the POS and the fiscal printer can occur via three connection types:
+* USB
+* Ethernet
+* Serial
+
+To set up the connection correctly, follow these steps:
+* Activate the chosen connection mode directly on the fiscal printer (refer to the operator manual or contact the fiscal printer installer).
+* Stop the LS Hardware Station service if it is running.
+* Run the "Setup POS" program.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOS.jpg"><br>
+
+Once the program is open, use the “Add” function to add the devices. 
+All required devices must be added:
+* FiscalPrinter
+* LineDisplay
+* CashDrawer
+
+For each type of device, define the following setup:
+* Logical Device Name
+* Device Category
+* Device Name
+* Port Type
+* Indirizzo della porta USB, Seriale o indirizzo IP del dispositivo
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOSFisc1.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOSFisc2.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOSFisc3.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOSFisc4.jpg"><br>
+
+After entering the device communication configuration, press “Save”.
+
+The same procedure must be followed for other connected devices, such as the customer-facing display and the cash drawer.
+
+For the cash drawer and line display, no setup in the “Fiscal Properties” section is required.
+
+## Register key
+To manage the printing of fiscal and management documents on a single fiscal printer, a specific registry key must be added.
+
+The registry key to be added is:
+
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\OLEforRetail\ServiceOPOS\POSPrinter]
+@=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\OLEforRetail\ServiceOPOS\POSPrinter\FP-81II]
+@="SOEPSON.FiscalPrinterService.1130"
+"DriverName"="EPSON UPOS FiscalDriver"
+"InstallFolderPath"="C:\\Program Files (x86)\\EPSON\\UPOSDriverForFiscal\\OPOS"
+
+Once the registry key is entered, a new device named "POS Printer" will appear in the "Other section of the "Setup POS" program.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SetupPOSFisc5.jpg"><br>
+
+## Ulteriori verifiche e configurazioni
+Check the installed .NET Framework version via the registry key
+Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/Framework.jpg"><br>
+
+If the version is earlier than 6.02, a more recent version must be installed, which can be downloaded online.
+If necessary, install and activate the downloaded .NET Framework.
+Activation of the .NET Framework must be completed via:
+- Control Panel → All Control Panel Items → Programs and Features
+- Turn Windows features on or off
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/WindowsFeatures.jpg"><br>
+
+Note: The screenshot shown may differ from the POS PC (language and installed components).
+
+## DLL Install
+The communication between LS Hardware Station and the Epson fiscal printer is managed via specific DLLs.
+The DLLs, provided by EOS, must be copied to the Hardware Station installation folder at:
+
+In the folder C:\Program Files (x86)\LS Retail\LSHardwareStation\Devices\OPOS, copy the files:
+* LSOposSerialDevice.dll
+* LSOPOSFiscalPrinter.dll
+
+In the folder C:\Program Files (x86)\LS Retail\LSHardwareStation\bin\LSHardwareStation, copy the files:
+* Interop.OposFiscalPrinter_CCO.dll
+* LSOposControls.dll
+
+After copying the files, start the Windows service LS Hardware Station.
+
+## Hardware station configuration
+Open the configuration panel in a browser at http://localhost:8088/.
+Enter your login credentials to access the management panel.
+
+Add the previously configured devices:
+* Printers -> Non-fiscal printers (required for management document printing)
+* Line display -> Customer-facing display
+* Cash Drawer -> Cash drawer
+* Serial Devices -> Fiscal printer
+
+### Non-fiscal printer setup
+To add or modify a device configuration, select the type Printers and press “Create Printer”.
+Enter the parameters as specified:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/HwsNF.jpg"><br>
+For Implementation DLL, enter:
+C:\Program Files (x86)\LS Retail\LSHardwareStation\Devices\OPOS\LSOPOSFiscalPrinter.dll
+For Implementation Type, enter:
+LSRetail.NAV.Opos.Epson.NonFiscalPrinter
+Press “Create Device”.
+Select Printers → EPSON-NF to reopen the configuration, press Load, and verify that no errors are present. If errors occur, restart the LS Hardware Station service and try again.
+### Line Display setup
+To add or modify a line display, select "Line Displays" and press "Create Line Display"
+Enter the parameters as specified:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/HwsLD.jpg"><br>
+Press “Create Device”.
+Select “Line Displays” and “EPSON-LD” to reopen the configuration, press Load, and verify that no errors are present. If errors occur, restart the LS Hardware Station service and try again.
+### Cash Drawer setup
+To add or modify a cash drawer, select “Cash Drawer” and press “Create Drawer”.
+Enter the parameters as specified:
+
+Press “Create Device”.
+Select “Cash Drawer” and “EPSON-CD” to reopen the configuration, press Load, and verify that no errors are present. If errors occur, restart the LS Hardware Station service and try again.
+
+### Creazione serial device
+To add or modify fiscal printer, select “Serial Device” and press “Create Serial Device”.
+Enter the parameters as specified:
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001048-0/SerialDeviceCreazione.jpg"><br>
+Press “Create device”.
+Select “Serial Devices” and “SERIAL1” to reopen the configuration, press Load, and verify that no errors are present. If errors occur, restart the LS Hardware Station service and try again.
+
+### Restart Hardware Station service
+Once the device configuration is complete, restart the LS Hardware Station service.
+
