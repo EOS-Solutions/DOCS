@@ -1,6 +1,4 @@
-# Fatturazione retail
-L'app consente la fatturazione a partire da transazioni di vendita registrate.
-La fatturazione può avvenire subito a seguito della registrazione della vendita, che in una fase successiva in head office.
+L'app consente la fatturazione a partire da transazioni di vendita registrate. La fatturazione può avvenire subito a seguito della registrazione della vendita, che in una fase successiva in head office.
 
 L'app consente di emettere due tipologie di documenti di vendita:
 * Fattura/nota credito di vendita immediata
@@ -18,14 +16,11 @@ Nel caso in cui il campo "Richiesta conferma registrazione fattura" sia attivo n
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/Fatt1.jpg"><br>
 
-In base al valore del campo "Tipo Fattura POS", il sistema mostra un differente messagio in cassa a seguito dell'esecuzione dell'azione "Totale".
-Nel caso in cui il valore sia "Richiedi", l'utente dovrà scegliere la tipologia di fatturazione da applicare per quella specifica transazione di vendita:
+In base al valore del campo "Tipo Fattura POS", il sistema mostra un differente messagio in cassa a seguito dell'esecuzione dell'azione "Totale". Nel caso in cui il valore sia "Richiedi", l'utente dovrà scegliere la tipologia di fatturazione da applicare per quella specifica transazione di vendita:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/FattRichiedi.jpg"><br>
 
-
 Nel caso in cui il valore sia "Fattura diretta", il messaggio visualizzato è:
-
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/FattImmediata.jpg"><br>
 
