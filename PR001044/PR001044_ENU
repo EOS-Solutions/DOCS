@@ -1,0 +1,18 @@
+For the purpose of issuing a sales document, return, or cancellation through an Epson fiscal printer, it is necessary to define, for each payment method (tender type) available in the store, the corresponding payment category as required by the Italian Revenue Agency.
+The various definable categories and their specifications are provided by the Italian Revenue Agency.
+Below is a table listing the accepted categories:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001044-0/PaymentMethods.jpg"><br>
+
+
+In Business Central, within the master data of each payment method linked to each individual store, it is possible to define:
+* “Fiscal ID”: according to the table provided above
+* “Fiscal ID Description”: the description to be printed on the sales document
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001044-0/TenderType_ENU.jpg"><br>
+
+In case you want to allow the posting of sales invoices directly from the POS, it is necessary to populate additional fields that link the store payment method with a Business Central payment method and a payment term.
+These two fields are used during the creation and posting of the sales invoice starting from the sales transaction recorded in LS Central.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001044-0/TenderType2_ENU.jpg"><br>
