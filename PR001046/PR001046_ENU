@@ -1,0 +1,10 @@
+To correctly route the printing of fiscal documents versus management documents, it is necessary to define at least one Device Role of type Fiscal.
+In the definition of Device Roles in LS Central, create a record with Type = Serial, Role = SALES, and the Fiscal Printer field populated.
+In addition, to take advantage of further functionalities related to the printing of fiscal and management documents, it is necessary to define additional records; these records will control the printing of fiscal or management documents.i:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001046-0/TipiDisp_ENU.jpg"><br>
+
+The record with Type "Serial", Role "SALES", and Fiscal Printer enabled will allow the printing of a fiscal document (sales, return, or cancellation).
+The record with Type "Serial", Role "SALES", Subrole "INCEXP", and Fiscal Printer enabled will allow the printing of a fiscal sales document in the case of gift card sales as income/expense.
+The record with Type "Printer", Role "SALES", and Subrole "COPY" will allow the printing of a copy of a fiscal sales document.
+The record with Type "Printer", Role "SALES", and Fiscal Printer not enabled will allow the printing of management documents derived from sales transactions with other income/expenses, such as store expenses or other cash inflows not originating from sales.
