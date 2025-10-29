@@ -1,0 +1,18 @@
+The app provides support for the use of a Fiscal Printer (Registratore Telematico), in order to issue and store commercial sales or service documents, as required by the Italian Revenue Agency.
+
+After a sales transaction is registered at the POS, the system issues the commercial sales document via the fiscal printer.
+In addition, the app also allows printing of all management (non-fiscal) documents, as provided by LS Central standard.
+## Additional Printing Operations
+The app allows printing of management documents or executing specific functions related to document printing on the fiscal printer.
+The functions related to registered transactions that involve issuing commercial or management documents are usually available within the transaction list at the POS.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001081-0/ListaTransazioni.jpg"><br>
+
+The available operations are:
+* Void (Annullo) → Allows the issuance of a commercial sales document for cancellation. Warning! In case of void, the entire sales transaction must be cancelled.
+* Return (Reso) → Allows the issuance of a commercial sales document for return.
+* Print Copy (Stampa copia) → Allows printing a copy as per DGFE (Electronic Journal Device).
+* Print Invoice (Stampa fattura) → Function not active.
+* Copy (Copia) → Allows copying the registered transaction into a new sales transaction.
+* Fiscal Reprint (Ristampa fiscale) → Allows reissuing a commercial sales document based on a previously registered transaction. Warning! This function must be used only if no commercial document was issued for the specific transaction. The function also requires a confirmation from the user before execution.
+* Void and Copy (Annulla e copia) → Issues a commercial sales document for cancellation and creates a new sales transaction at the POS based on the registered sales transaction.
