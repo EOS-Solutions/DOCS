@@ -1,6 +1,6 @@
 In VAT Exemption Setup (VMI), **General Tab**, enter a sales and purchase protocol number.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/14VatManagement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000587-0/14VatManagement-en.png"><br>
 
 In **Fiscal Data Tab**:
 
@@ -8,18 +8,24 @@ In **Fiscal Data Tab**:
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Intermediary No.       | Fill in the Intermediary number who transmits the declaration, if present                                                                                                                                                                         |
 | Tax Repres. Vendor No. | Indicates the tax representative signing the declaration, if different from the declarant                                                                                                                                                         |
-| Appointment Code       | usually 1, 6, 9 <img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/15VatManagement-en.png"><br>                                                                               |
+| Appointment Code       | usually 1, 6, 9 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000587-0/15VatManagement-en.png"><br>                                                                               |
 | Vendor Type            | Indicates the subject responsible for the electronic transmission Option values: 1 : subjects who send their own declaration 10 : CAF; companies belonging to a group, which send the declaration on behalf of the various companies of the group |
 | Commitment Date        | On this date the intermediary undertakes to transmit the declaration of intent                                                                                                                                                                    |
 
 In **Signatures Tab** enter the Signatures images.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/16VatManagement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000587-0/16VatManagement-en.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/17VatManagement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000587-0/17VatManagement-en.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/18VatManagement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000587-0/18VatManagement-en.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/19VatManagement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000587-0/19VatManagement-en.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000587-0/20VatManagement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000587-0/20VatManagement.png"><br>
+
+The ministerial printout will check the **Customs** box, section RECIPIENT OF THE DECLARATION, if the vendor code is present in the Customs Authority Vendors table
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000587-0/Customs authority vendors.PNG"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000587-0/Customs authority vendors 2.PNG"><br>
