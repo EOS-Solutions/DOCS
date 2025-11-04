@@ -1,6 +1,6 @@
 Pressing Exchange components (after accepting the action message) you can confirm the lines of the report. The page opens where we make the various options effective:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000623-0/16ManufacturingBaseToolkit-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000623-0/16ManufacturingBaseToolkit-ENU.png"><br>
 
 In addition, it is possible to define the exchange options:
 
@@ -18,8 +18,15 @@ You can create the new version already in Certified status and force a new versi
 
 At the end, the lines do not disappear from the report, but have the flag **Processed** active.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000623-0/17ManufacturingBaseToolkit-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000623-0/17ManufacturingBaseToolkit-ENU.png"><br>
 
 In the BOM the item has been changed:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000623-0/18ManufacturingBaseToolkit-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000623-0/18ManufacturingBaseToolkit-ENU.png"><br>
+
+If a BOM is already certified, for allowing editing it is put on "Under Development" state. 
+Only if "Certify Bom" request page flag is enabled, modified BOM is certified. 
+
+To make any type of change, the BOM must be in an editable state, such as **"New"** or **"Under Development"**.
+If the BOM is in the **"Certified"** state, it is automatically set to **"Under Development"** from the component worksheet to allow for changes.
+Once changes are complete, the BOM is certified only if the **"Certify Bom"** flag is enabled on the request page; otherwise, it remains in the edit state. 
