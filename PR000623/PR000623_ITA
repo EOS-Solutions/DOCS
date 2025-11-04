@@ -1,12 +1,12 @@
-Premendo Cambia componenti (dopo aver accettato il messaggio azione) Š possibile confermare le righe del prospetto. Si apre la page in cui rendiamo effettive le varie opzioni:
+Premendo Cambia componenti (dopo aver accettato il messaggio azione) Ã¨ possibile confermare le righe del prospetto. Si apre la page in cui rendiamo effettive le varie opzioni:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000623-0/16ManufacturingBaseToolkit-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000623-0/16ManufacturingBaseToolkit-ITA.png"><br>
 
-Inoltre, Š possibile definire le opzioni di cambio:
+Inoltre, Ã¨ possibile definire le opzioni di cambio:
 
 * Cambio del componente
 
-* Cambio della quantit…
+* Cambio della quantitÃ 
 
 * Cambio della % di scarto
 
@@ -14,12 +14,16 @@ Inoltre, Š possibile definire le opzioni di cambio:
 
 * Cambio della posizione
 
-ß possibile creare la nuova versione gi… in stato Certificato e imporre una nuova data di inizio versione.
+Ãˆ possibile creare la nuova versione giÃ  in stato Certificato e imporre una nuova data di inizio versione.
 
 Al termine le righe non spariscono dal prospetto, ma presentano il flag **Elaborato** attivo.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000623-0/17ManufacturingBaseToolkit-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000623-0/17ManufacturingBaseToolkit-ITA.png"><br>
 
 Nella Distinta Base avremo l'articolo cambiato:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000623-0/18ManufacturingBaseToolkit-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000623-0/18ManufacturingBaseToolkit-ITA.png"><br>
+
+Per poter effettuare qualsiasi tipo di modifica, la distinta base deve trovarsi in uno stato modificabile, ovvero **"Nuovo"** o **"In sviluppo"**.
+Se la distinta base risulta nello stato **"Certificato"**, viene automaticamente portata nello stato **"In sviluppo"** dal prospetto componenti per consentirne la modifica.
+Al termine delle modifiche, la distinta base viene certificata solo se, nella request page, Ã¨ attivo il flag **"Certificare Bom"**; in caso contrario, rimane nello stato di modifica. 
