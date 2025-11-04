@@ -1,0 +1,12 @@
+In Manufacturing Setup there is the flag "Enable BOM Lines Dates Management" that activates the use of validity dates on BOM lines. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001092-0/EnableValDatesMgt-ENU.png"><br>
+
+Validity dates for old and new component can be chosen from "Calculate Components" report request page and these dates are used for populating all created worksheet lines. 
+Then they can be manually modified on worksheet. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001092-0/CalcCompValDates-ENU.png"><img width="" src="https://docs-test.eos-solutions.it/Images/PR001092-0/ValStartingDate-ENU.png"><img width="" src="https://docs-test.eos-solutions.it/Images/PR001092-0/NewValStartingDate-ENU.png"><br>
+
+When lines are run, only for "New" action messages, processing fills old and new BOM components with relative validity dates taken from worksheet. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001092-0/BOMLinesValDates-ENU.png"><br>
