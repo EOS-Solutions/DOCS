@@ -1,0 +1,13 @@
+In assembly orders it is available configurator management. The configurator opens manually by action or automatically on item validation. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001094-0/AssemblyOrdersConf-ENU.png"><br>
+
+To be able to configure, it is necessary to have an item with: 
+* **"Neutral to Configuration"** as type;
+* a **rule**;
+* **"Assembly"** as replenishment system;
+* an **Assembly BOM**. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001094-0/ItemChar1-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001094-0/ItemChar2-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001094-0/ItemAssemblyBOM-ENU.png"><br>
