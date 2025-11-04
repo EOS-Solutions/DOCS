@@ -1,0 +1,12 @@
+Nel Setup Manufacturing c'è il flag "Abilita gestione date righe DB" che attiva l'uso delle date di validità sulle righe di distinta base. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001092-0/EnableValDatesMgt-ITA.png"><br>
+
+Le date di validità per i componenti di partenza e nuovo possono essere scelti dalla request page del report "Calcola componenti" e queste date sono usate per popolare tutte le righe prospetto create. 
+Poi possono essere modificate manualmente sul prospetto. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001092-0/CalcCompValDates-ITA.png"><img width="" src="https://docs-test.eos-solutions.it/Images/PR001092-0/ValStartingDate-ITA.png"><img width="" src="https://docs-test.eos-solutions.it/Images/PR001092-0/NewValStartingDate-ITA.png"><br>
+
+Quando le righe sono eseguite, solo per messaggi di azione "Nuovo", l'elaborazione compila i componenti originale e nuovo di distinta con le relative date di validità prese dal prospetto. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001092-0/BOMLinesValDates-ITA.png"><br>
