@@ -1,22 +1,24 @@
 Per valorizzare il prospetto da Calcola componenti compilare la page
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000622-0/12ManufacturingBaseToolkit-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000622-0/12ManufacturingBaseToolkit-ITA.png"><br>
 
-Il calcolo dei componenti pu• avvenire **in base all'origine**: DB di produzione o Ordini di produzione. Con questa funzionalit… Š infatti possibile cambiare dei componenti direttamente sugli ODP esistenti.
+Il calcolo dei componenti puÃ² avvenire **in base all'origine**: DB di produzione o Ordini di produzione. Con questa funzionalitÃ  Ã¨ infatti possibile cambiare dei componenti direttamente sugli ODP esistenti.
 
-Lo scambio pu• essere di un articolo o di una Distinta Base. ß possibile specificare il Nr. dellÂarticolo in questo campo, oppure filtrare per articolo nella sezione Filtro: Articolo.
+Lo scambio puÃ² essere di un articolo o di una Distinta Base. Ãˆ possibile specificare il Nr. dellâ€™articolo in questo campo, oppure filtrare per articolo nella sezione Filtro: Articolo.
 
-Si pu• indicare nel **tab "Con"** l'articolo con cui effettuare la sostituzione:
+Si puÃ² indicare nel **tab "Con"** l'articolo con cui effettuare la sostituzione:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000622-0/13ManufacturingBaseToolkit-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000622-0/CalcCompWith-ITA.png"><br>
 
 E' possibile anche:
 
 * Controllare articoli sostitutivi
 
-* Creare una nuova versione (come nella funzionalit… standard)
+* Creare una nuova versione (come nella funzionalitÃ  standard)
 
-* Moltiplicare la quantit… dei componenti per un certo fattore
+* Mantenere la percentuale di scarto originale dal componente di partenza a quello nuovo (solo per articoli)
+
+* Moltiplicare la quantitÃ  dei componenti per un certo fattore
 
 * Filtrare solo per determinate versioni
 
@@ -24,16 +26,16 @@ E' possibile anche:
 
 Dopo aver eseguito il calcolo il sistema propone le righe identificate nella Distinta base contenenti l'articolo da sostituire (non modificabile manualmente) e il nuovo articolo che vogliamo inserire al suo posto (i campi relativi al nuovo articolo sono modificabili manualmente):
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000622-0/14ManufacturingBaseToolkit-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000622-0/14ManufacturingBaseToolkit-ITA.png"><br>
 
-e la nuova quantit…:
+e la nuova quantitÃ :
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000622-0/15ManufacturingBaseToolkit-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000622-0/15ManufacturingBaseToolkit-ITA.png"><br>
 
-Si pu• inoltre indicare un nuovo codice di collegamento ciclo e una nuova posizione.
+Si puÃ² inoltre indicare un nuovo codice di collegamento ciclo e una nuova posizione.
 
-Si pu• decidere, se non Š stato specificato in precedenza nella page di calcolo, di creare una nuova versione dell'articolo barrando l'opzione relativa.
+Si puÃ² decidere, se non Ã¨ stato specificato in precedenza nella page di calcolo, di creare una nuova versione dell'articolo barrando l'opzione relativa.
 
-| Attenzioneÿ|
+| AttenzioneÂ |
 | --- |
 | Ad ogni calcolo successivo il sistema aggiunge le righe nel prospetto senza cancellare quelle precedenti. |
