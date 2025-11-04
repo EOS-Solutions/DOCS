@@ -1,0 +1,13 @@
+Negli ordini di assemblaggio è disponibile la gestione del configuratore. Il configuratore si apre manualmente tramite azione o automaticamente alla validazione dell'articolo. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001094-0/AssemblyOrdersConf-ITA.png"><br>
+
+Per poter configurare, è necessario avere un articolo con: 
+* **"Da Neutro a Configurato"** come tipo;
+* una **regola**
+* **"Assemblaggio"** come sistema di rifornimento;
+* una **Distinta di Assemblaggio**. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001094-0/ItemChar1-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001094-0/ItemChar2-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001094-0/ItemAssemblyBOM-ITA.png"><br>
