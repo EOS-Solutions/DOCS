@@ -122,7 +122,7 @@ Anche gli importi di testata verranno aggiornati di conseguenza:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/28InvoicingPlan-ITA.png"><br>
 
-Dopo aver registrato le fatture di anticipo e effettuato la spedizione parziale o completa degli articoli presenti nell’ordine di vendita, è possibile generare la **Fattura a chiusura parziale**, la **Fattura a chiusura parziale con detrazioni**, la **Fattura a chiusura parziale con detrazioni fino a capieza** (se presenti nel piano di fatturazione) ed infine la fattura di chiusura a saldo **Fattura di chiusura**, utilizzando la funzione "Crea fattura":
+Dopo aver registrato le fatture di anticipo e effettuato la spedizione parziale o completa degli articoli presenti nell’ordine di vendita, è possibile generare la **Fattura a chiusura parziale**, la **Fattura a chiusura parziale con detrazioni**, la **Fattura a chiusura parziale con detrazioni fino a capienza** (se presenti nel piano di fatturazione) ed infine la fattura di chiusura a saldo **Fattura di chiusura**, utilizzando la funzione "Crea fattura":
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/29InvoicingPlan-ITA.png"><br>
 
@@ -189,7 +189,7 @@ Successivamente, viene effettuata una spedizione parziale della merce ordinata, 
 La quantità effettivamente spedita rappresenta la base sulla quale verrà calcolata la fattura di chiusura.
 
 ### Generazione della fattura di chiusura parziale con detrazioni fino a capienza
-Una volta completata la spedizione parziale, si procede con la creazione della fattura di **chiusura parziale con detrazioni fino a capieza**. Il sistema calcola automaticamente l’importo da fatturare sulla base delle quantità spedite e applica la detrazione dell’anticipo registrato, fino a capienza.
+Una volta completata la spedizione parziale, si procede con la creazione della fattura di **chiusura parziale con detrazioni fino a capienza**. Il sistema calcola automaticamente l’importo da fatturare sulla base delle quantità spedite e applica la detrazione dell’anticipo registrato, fino a capienza.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/41InvoicingPlan-ITA.png"><br>
 
@@ -198,7 +198,7 @@ Nel caso specifico, poiché sia l’anticipo che la spedizione corrispondono al 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/42InvoicingPlan-ITA.png"><br>
 
 ### Differenza con fattura di chiusura parziale con detrazione (non a capienza)
-Generando invece una **fattura di chiusura parziale con detrazione** (non a capieza) il documento risulta differente in quanto la riga di storno anticipo avrà un valore relativo alla quota-parte dell'anticipo, ovvero il 50% 
+Generando invece una **fattura di chiusura parziale con detrazione** (non a capienza) il documento risulta differente in quanto la riga di storno anticipo avrà un valore relativo alla quota-parte dell'anticipo, ovvero il 50% 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/44InvoicingPlan-ITA.png"><br>
 
