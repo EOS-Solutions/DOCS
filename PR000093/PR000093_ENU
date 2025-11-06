@@ -4,11 +4,11 @@ On the CDW Setup page you can choose between the options:
 
 * The flag “*Delete doc…*”: it impacts invoice posting from orders. If enabled, it deletes the respective fully invoiced order; otherwise, the order is not deleted.
 
-* The option “*Reason code check*”: specifies how the changes made to posting setups in a reason code are checked against the existing posted documents in the current accounting period.
+* The option “*Reason Code Verification*”: specifies how the changes made to posting setups in a reason code are checked against the existing posted documents in the current accounting period.
 
- * If the "Reason Code Check" field is set to None, nothing happens.
+ * If the "Reason Code Verification" field is set to None, nothing happens.
  * If instead it is set to Confirm or Error, a procedure is triggered that checks the following documents that reference the reason code being modified (shipments, receipts, return shipments, and return receipts). If there is at least one that has not been invoiced:
-   * an error is raised if "Reason Code Check" = Error
-   * a confirmation message is displayed if "Reason Code Check" = Confirm
+   * an error is raised if "Reason Code Verification" = Error
+   * a confirmation message is displayed if "Reason Code Verification" = Confirm
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000093-0/CDW ENG.png"><br>
