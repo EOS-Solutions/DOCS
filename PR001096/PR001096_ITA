@@ -1,0 +1,48 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Setup metodi di pagamento</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Setup hardware station</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Setup dispositivi e hardware profile</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Setup comandi POS e azioni POS</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Setup classi ed anagrafica negozio</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Setup functionality profile</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>Setup web services</td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>Setup POS menu</td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>Emissione di documenti fiscali</td>
+	</tr>
+</table>
+
+<br>
+ 
+
+# LS Retail for Italy (LSR) - SUMMARY
+
+Premere ALT + Q e digitare "CWS" per vedere un elenco delle funzionalità coinvolte:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001096-0/LSR_ITA.jpg"><br>
