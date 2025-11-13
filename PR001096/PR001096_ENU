@@ -1,0 +1,48 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Setup Tender Types</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Setup hardware station</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Setup devices and hardware profile</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Setup POS Commands and POS Action</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Setup classes and store card</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Setup functionality profile</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>Setup web services</td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>Setup POS menu</td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>Issue and manage Italian fiscal documents</td>
+	</tr>
+</table>
+
+<br>
+ 
+
+# LS Retail for Italy (LSR) - SUMMARY
+
+Press ALT + Q and digit “LSR” for a list of the features involved:
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001096-0/LSR_ENU.jpg"><br>
