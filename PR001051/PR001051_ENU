@@ -1,10 +1,11 @@
-Within the LS Central retail setup, some new sections and setup fields have been added.
+Within the LS Central retail setup, there are some sections and setup fields.
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001051-0/SetupRetail_ENU.jpg"><br>
 * Architecture Type: the field can take two distinct values:
 	* Offline: used when the architecture is hybrid or OnPrem and stores have their own Business Central instance separate from the head office.
 	* Online: used when the whole system is SaaS (both stores and head office).
 This field controls how retail invoices and credit memos are managed, and where they are created and posted.
-"Statement calc. location": the field can take two distinct values:
+
+* "Statement calc. location": the field can take two distinct values:
 	* "Head Office": the statement calculation for the store is executed in head office.
 	* "Store": the statement calculation is executed locally in the store, and then replicated to head office for posting.
 
