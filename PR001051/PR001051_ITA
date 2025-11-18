@@ -1,10 +1,11 @@
-All'interno del setup retail di LS Central, sono stati aggiunte alcune sezioni ed alcuni campi di setup.
+All'interno del setup retail di LS Central, sono presenti alcune sezioni ed alcuni campi di setup.
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001051-0/SetupRetail.jpg"><br>
 * "Tipo architettura": il campo può assumere due distinti valori:
 	* Offline: caso in cui l'architettura sia ibrida oppure OnPrem ed i negozi abbiano una propria istanza di Business Central diversa da quella dell'head office
 	* 	 Online: caso in cui tutto il sistema sia in SaaS (sia negozi che head office)
 Il campo pilota la gestione delle fatture e note credito retail e dove queste vengono create e registrate.
-"Ubicazione calc. rendicontazione": il campo può assumere due distinti valori:
+
+* "Ubicazione calc. rendicontazione": il campo può assumere due distinti valori:
 	* "Head Office": caso in cui si vuole che il calcolo della rendicontazione di negozio avvenga in head office
 	* "Negozio": caso in cui si vuole che il calcolo della rendicontazione di negozio avvega direttamente in negozio e che poi questa venga replicata verso head office per la registrazione
 
@@ -18,9 +19,9 @@ Il campo pilota la gestione delle fatture e note credito retail e dove queste ve
 * "Consenti reso senza ricevuta": consente di effettuare il reso senza che l'operazione parta da una transazione registrata. Il sistema chiederà l'inserimento manuale del numero di documento commerciale, la data ed il seriale del registratore telematico della transazione oggetto del reso; tutti i dati sono presenti nel documento commerciale cartaceo oggetto del reso.
 
 La sezione "Rendicontazione" contiene alcuni setup relativi al calcolo ed alla registrazione delle rendicontazioni giornaliere di negozio.
-"Tipo calcolo rendicontazione": il campo può assumere due distinti valori:
-* Negozio: la rendicontazione può essere calcolata solamente localmente in un negozio. L'opzione può essere utilizzata solamente nel caso in cui i negozi abbiano architettura OnPrem; in tal caso la rendicontazione deve essere poi replicata verso head office per le successive operazioni.
-* Head Office: la rendicontazione può essere calcolata solamente in head office.
+* "Tipo calcolo rendicontazione": il campo può assumere due distinti valori:
+	* Negozio: la rendicontazione può essere calcolata solamente localmente in un negozio. L'opzione può essere utilizzata solamente nel caso in cui i negozi abbiano architettura OnPrem; in tal caso la rendicontazione deve essere poi replicata verso head office per le successive operazioni.
+	* Head Office: la rendicontazione può essere calcolata solamente in head office.
 
 * "Mantieni numerazione rendicontazione in registrazione": la numerazione di una rendicontazione registrata non viene ricalcolata al momento della registrazione in quanto viene mantenuta la numerazione della rendicontazione aperta.
 * "Forza unica rendicontazione aperta": il sistema non permette la creazione di una nuova rendicontazione nel caso ne esista già una aperta e non completamente registrata. Il setup è valido solamente nel caso in cui la rendicontazione viene calcolata localemnte in negozio.
