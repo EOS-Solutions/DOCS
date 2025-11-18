@@ -1,0 +1,19 @@
+# Fatturazione retail
+L'app gestisce due modalità di fatturazione in base alla modalità di connessione del negozio a Business Central.
+Nel caso di negozi "online" rispetto all'head office, la fattura o nota di credito di vendita, viene creata dal sistema al momento della registrazione della transazione di vendita.
+Nel caso invece di negozio "offline" rispetto all'head office, la fattura o nota credito di vendita può essere creata secondo due modalità:
+* 	Manualmente, a partire dalla scheda della transazione registrata
+* 	Automaticamente dal sistema, tramite l'esecuzione di due specifiche commesse
+
+
+## Setup Commesse
+Per attivare la creazione e registrazione automatica delle fatture e note credito di vendita, è necessaria la creazione di due commesse.
+Entrambe le commesse devono prevedere l'esecuzione dell'oggetto Codeunit 18091498 "EOS077 Invoice/Cr. Memo Mgmt.". In aggiunta all'esecuzione della codeunit, in base alla tipologia di dosucmento di vendita da creare e registrare, deve essere compilato il campo "Codice" nel setup della commessa con i valori:
+* POSTCRMEMO -> in caso di creazione e registrazione di note credito a partire dalle transazioni di reso
+* POSTINVOICE -> in caso di creazione e registrazione di fatture di vendita a partire dalle transazioni di vendita
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001064-0/PostInvoice.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001064-0/PostCrMemo.jpg"><br>
+
+Si consiglia l'esecuzione "frequente" delle due commesse in oggetto (ad esempio ogni 10 minuti).
