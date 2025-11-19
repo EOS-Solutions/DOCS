@@ -10,24 +10,23 @@ The invoicing method can be defined within each customer’s master data through
 * Direct Invoice → the system creates and posts the sales document at the end of the sales transaction registration
 * Cumulative Invoice → the system creates and posts a sales shipment based on the registered sales transaction. The creation and posting of the shipment occurs when the store statement is registered.
 
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/TipoFatturaPOS.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/TipoFatturaPOS_ENU.jpg"><br>
 
 If the “POS Ask for Invoice Post” field is enabled in the "Sales & Receivables Setup", when performing the “Total” action at the POS, the system will first display a confirmation request:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/Fatt1.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/Fatt1_ENU.jpg"><br>
 
 Depending on the value of the “POS Invoice Type” field, the system will display a different message at the POS after executing the “Total” action.
 If the value is Request, the user must choose the invoicing type to apply for that specific sales transaction:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/FattRichiedi.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/FattRichiedi_ENU.jpg"><br>
 
-If the value is Direct Invoice, the message displayed is:
+If the value is Immediate, the message displayed is:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/FattImmediata.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/FattImmediata_ENU.jpg"><br>
 
-If the value is Cumulative Invoicing, the message displayed is:
+If the value is Deferred, the message displayed is:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/Fatt2.jpg"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/Fatt2_ENU.jpg"><br>
 
 
