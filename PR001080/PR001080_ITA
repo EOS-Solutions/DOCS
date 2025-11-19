@@ -20,11 +20,11 @@ In base al valore del campo "Tipo Fattura POS", il sistema mostra un differente 
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/FattRichiedi.jpg"><br>
 
-Nel caso in cui il valore sia "Fattura diretta", il messaggio visualizzato è:
+Nel caso in cui il valore sia "Immediata", il messaggio visualizzato è:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/FattImmediata.jpg"><br>
 
-Nel caso invece in cui il valore sia "Fatturazione cumulativa", il messaggio visualizzato è:
+Nel caso invece in cui il valore sia "Differita", il messaggio visualizzato è:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001080-0/Fatt2.jpg"><br>
 
