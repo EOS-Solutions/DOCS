@@ -1,0 +1,57 @@
+Il Decreto Legge 50/2017 (art. 13-quater) ha introdotto l'arrotondamento degli importi totali pagati in contanti ai 5 centesimi più vicini, per eccesso o per difetto, a decorrere dal 1° gennaio 2018, sospendendo contemporaneamente la produzione delle monete da 1 e 2 centesimi. L'arrotondamento non si applica ai singoli prodotti, ma solo all'importo complessivo finale, e non è valido per i pagamenti effettuati con altri mezzi come carte di credito, debito o smartphone. 
+
+## Setup registratore telematico
+Nel setup del registratore telematico è necessario attivare il parametro 27 Arrotondamento DL N. 50/2017 e impostarlo al valore "Standard".
+
+## Metodo di arrotondamento
+Ai fini del corretto calcolo automatico dell'arrotondamento è necessario creare un "metodo di arrotondamento". La precisione di arrotondamento deve essere impostata a 0,05 e il tipo di arrotondamento deve essere "Al più vicino".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001098-0/ArrMetodoITA.jpg"><br>
+
+## Income/Expense
+Per ogni negozio è necessaria la definizione di due "Income/expense", uno di tipo "Income" (Reddito) ed uno di tipo "Expense" (di spesa).
+Entrambi devono essere associati ad un Cod. IVA POS con IVA pari a 0%.
+
+Nel setup dell'Income/Expense di tipo "di spesa" è necessario indicare:
+* "Descrizione": Arro. DL N.50/2017
+* "Tipo conto": di spesa
+* "Riga Messaggio 1": Arro. DL N.50/2017
+* "Scontrino Testo 1": Arro. DL N.50/2017
+* "Metodo pagamento arrotondamento": abilitato
+* "ID Fiscale": 601 (indica il metodo "Sconto a pagare")
+* "Descrizione IF Fiscale": Arro. DL N.50/2017 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001098-0/ArrIncExp1ITA.jpg"><br>
+
+Nel setup dell'Income/Expense di tipo "reddito" è necessario indicare:
+* "Descrizione": Arro. DL N.50/2017
+* "Tipo conto": Reddito
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001098-0/ArrIncExp2ITA.jpg"><br>
+
+## Setup POS Funzionalità Profilo
+All'interno di ogni POS functionality profile in uso da parte dei negozi o dei POS terminal, è possibile eseguire il setup relativo alal gestione degli arrotondamenti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001098-0/ArrFuncProfileITA.jpg"><br>
+
+Nella sezione "Arrotondamenti" sono presenti i seguenti campi:
+
+* "Tipo cod. arrotondamento in eccesso": il campo può assumere due distinti valori:
+	* Income/Expense: nel caso in cui per gesire l'arrotondamento si voglia utilizzare un income/expense legato all'anagrafica negozio.
+	* Metodo di pagamento: nel caso in cui per gestire l'arrotondamento si voglia utilizzare un metodo di pagamento legato all'anagrafica negozio.
+
+* "Cod. arrotondamento in eccesso": indicare il codice dell'income/expense o del metodo di pagamento da utilizzare per gestire l'arrotondamento in eccesso. Nel caso in cui il "Tipo cod. arrotondamento in eccesso" sia Income/Expense, indicare un Income/Expense di tipo "Income" (Reddito).
+
+* "Tipo cod. arrotondamento per difetto": il campo può assumere due distinti valori:
+	*  Income/Expense: nel caso in cui per gesire l'arrotondamento si voglia utilizzare un income/expense legato all'anagrafica negozio.
+	* Metodo di pagamento: nel caso in cui per gestire l'arrotondamento si voglia utilizzare un metodo di pagamento legato all'anagrafica negozio.
+
+* "Cod. arrotondamento per difetto": indicare il codice dell'income/expense o del metodo di pagamento da utilizzare per gestire l'arrotondamento per difetto. Nel caso in cui il "Tipo cod. arrotondamento per difetto" sia Income/Expense, indicare un Income/Expense di tipo "Expense" (di Spesa).
+
+Ai fini della gestione degli arrotondamenti prevista dall'Agenzia delle Entrate, è possibile utilizzare solamente l'opzione "Income/Expense". L'opzione "Metodo di pagamento" è comunque selezionabile ed utilizzabile ma non segue le indicazioni previste dall'Agenzia delle Entrate.
+
+## POS Menu
+Per consentire il calcolo e l'applicazione automatica dell'arrotondamento è necessario modificare ogni riga di POS menu line dove utilizzato il metodo di pagamento "contanti".
+Il comando da utilizzare è ROUND_TOT mentre il comando registra è TENDER_K impostando poi come parametro il codice del metodo di pagamento relativo ai contanti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001098-0/ArrPOSMenuITA.jpg"><br>
