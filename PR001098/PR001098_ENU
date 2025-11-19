@@ -1,0 +1,57 @@
+The Decree Law 50/2017 (Art. 13-quater) introduced the rounding of total amounts paid in cash to the nearest 5 cents, either up or down, starting from January 1st, 2018, while simultaneously suspending the production of 1 and 2 cent coins. The rounding does not apply to individual products, but only to the final total amount, and it is not valid for payments made with other methods such as credit cards, debit cards, or smartphones.
+
+## Fiscal printer setup
+On the setup of the fiscal printer, the parameter 27 Arrotondamento DL N. 50/2017 must be activated and its value must be "Standard".
+
+## Rounding Method
+For the correct automatic calculation of the rounding, it is necessary to create a “rounding method”. The rounding precision must be set to 0.05, and the rounding type must be “Nearest”.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001098-0/ArrMetodoENU.jpg"><br>
+
+## Income/Expense
+For each store, two “Income/Expense” entries are required: one of type “Income” and one of type “Expense”.
+Both must be associated with a POS VAT Code with 0% VAT.
+
+In the setup of the “Expense” type Income/Expense, it is necessary to specify:
+
+* Description: Arro. DL N.50/2017
+* Account Type: Expense
+* Message Line 1: Arro. DL N.50/2017
+* Receipt Text 1: Arro. DL N.50/2017
+* Rounding Tender Type: enabled
+* Fiscal ID: 601 (indicates the “Sconto a pagare” method)
+* Fiscal ID Description: Arro. DL N.50/2017
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001098-0/ArrIncExp1ENU.jpg"><br>
+
+In the setup of the “Income” type Income/Expense, it is necessary to specify:
+
+* Description: Arro. DL N.50/2017
+* Account Type: Income
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001098-0/ArrIncExp2ENU.jpg"><br>
+
+## POS Functionality Profile Setup
+Within each POS functionality profile used by stores or POS terminals, you can configure the rounding management settings.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001098-0/ArrFuncProfileENU.jpg"><br>
+
+In the Rounding section, the following fields are available:
+
+* Rounding Code Type (Increase): the field can take two values:
+	* Income/Expense: when rounding should be handled using an income/expense linked to the store master data.
+	* Tender Type: when rounding should be handled using a payment method linked to the store master data.
+* Rounding Code (Increase): specify the code of the income/expense or payment method used to handle rounding increases. If the “Rounding Code Type (Increase)” is Income/Expense, specify an Income/Expense of type “Income”.
+* Rounding Code Type (Decrease): the field can take two values:
+	* Income/Expense: when rounding should be handled using an income/expense linked to the store master data.
+	* Payment Method: when rounding should be handled using a tender type linked to the store master data.
+
+* Rounding Code (Decrease): specify the code of the income/expense or tender type used to handle rounding decreases. If the “Rounding Code Type (Decrease)” is Income/Expense, specify an Income/Expense of type “Expense”.
+
+For compliance with the Italian Revenue Agency’s rounding requirements, only the Income/Expense option may be used. The “Tender Type” option is selectable and usable but does not follow the guidelines defined by the Revenue Agency.
+
+## POS Menu
+To enable the automatic calculation and application of rounding, each POS menu line where the “cash” tender type is used must be modified.
+The command to use is ROUND_TOT, while the register command is TENDER_K, then set the parameter to the code of the cash tender type.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001098-0/ArrPOSMenuENU.jpg"><br>
