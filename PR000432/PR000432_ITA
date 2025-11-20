@@ -19,6 +19,7 @@ Per il Metodo calcolo qtà secondaria i valori ammessi sono:
 -   **Default:** permette l’inserimento con entrambe le unità di misura, ma effettua il calcolo solo se l’altra quantità è uguale a zero.
 -   **Fisso:** esegue sempre la conversione fra le quantità.
 -   **Nessun valore predefinito:** non esegue la conversione fra le quantità.
+-   **Fisso da Quantità primaria a Quantità Sec.:** la Quantità Secondaria verrà sempre ricalcolata quando la Quantità cambia.
 
 Per il Tipo calcolo quantità secondaria. I valori ammessi sono:
 
