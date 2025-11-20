@@ -20,6 +20,7 @@ For Secondary Qty. Calc. Method the allowed values are:
 -   **Default:** It allows the insertion of both units of measure, but performs the calculation only if the other quantity is equal to zero.
 -   **Fixed:** Always converts between quantities.
 -   **No Default:** No conversion between quantities.
+-   **Fixed From Quantity to Sec. Quantity:** Secondary Quantity will be always recalculated when Quantity changes.
 
 For Quantity Calc. Method the allowed values are:
 
