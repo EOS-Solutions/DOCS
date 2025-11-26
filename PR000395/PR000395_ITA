@@ -1,24 +1,33 @@
 **Calcolo valore WIP di magazzino**
 
-Setup: per effettuare il calcolo del WIP è necessario attivare il flag “Calcola WIP periodo” per il periodo oggetto di elaborazione: 
+Per effettuare il calcolo del WIP è necessario attivare il flag “Calcola WIP periodo” per il periodo oggetto di elaborazione: 
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/12inventory-valuation-and-costing-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ITA_01.jpg"><br>
 
-Elaborazione: dopo aver eseguito le funzionalità “Archivia dati periodo” e “Calcola dati consuntivi” è possibile accedere allo “Storico wip”: <br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/13inventory-valuation-and-costing-ita.png"><br>
+Dopo aver eseguito le funzionalità “Archivia dati periodo” e “Calcola dati consuntivi” è possibile accedere allo “Storico WIP”:
 
-Vengono mostrati tutti gli ordini di produzione inclusi nel calcolo e, tramite Gestione->Visualizza è possibile accedere alla scheda di dettaglio del singolo ordine.<br> 
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/23inventory-valuation-and-costing-ita.png"><br>
-Esempio scheda di dettaglio:<br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/24inventory-valuation-and-costing-ita.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ITA_02.jpg"><br>
 
-* Il campo “Importo costo” della testata indica il valore del WIP calcolato per lo specifico ordine.
-* Subpage “Wip componenti ordini prod”: contiene la valorizzazione dei componenti utilizzati per articoli non ancora versati a magazzino come Output (parzialmente o completamente). Nell’esempio sopra: sono stati consumati 10 pz per ogni componente ma è stato registrato un Output parziale (5 su 10 pz).
-* Subpage “Wip cicli ordini prod”: contiene la valorizzazione dei movimenti capacità (tempo di lavorazione + tempo di setup) registrati per articoli non ancora versati a magazzino come Output (parzialmente o completamente). Nell’esempio sopra: sono stati registrati Movimenti contabili capacità per 122 minuti (totale previsto per produrre 10 pz) ma è stato versato a magazzino un Output parziale (5 su 10 pz). Generalmente per le lavorazioni interne, il calcolo viene effettuato in funzione dei tempi dichiarati/effettivi, per il C/Lavoro in funzione dei PZ.
+Vengono mostrati tutti gli ordini di produzione inclusi nel calcolo e, tramite Gestione->Visualizza è possibile accedere alla scheda di dettaglio del singolo ordine.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ITA_03.jpg"><br>
+
+Esempio scheda di dettaglio:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ITA_04.jpg"><br>
+
+* Il campo “Importo WIP” della testata indica il valore del WIP calcolato per lo specifico ordine.
+* Subpage “Componenti ordine di produzione WIP”: contiene la valorizzazione dei componenti utilizzati per articoli non ancora versati a magazzino come Output (parzialmente o completamente). Nell’esempio sopra: sono stati consumati 10 pz per ogni componente ma è stato registrato un Output parziale (8 su 10 pz), la Quantità WIP risulta quindi essere pari a 2.
+* Subpage “Ciclo ordine prod. WIP”: contiene la valorizzazione dei movimenti capacità (tempo di lavorazione + eventuale tempo di setup) registrati per articoli non ancora versati a magazzino come Output (parzialmente o completamente). Nell’esempio sopra: sono stati registrati Movimenti contabili capacità per 95 minuti ma è stato versato a magazzino un Output parziale (8 su 10 pz); il tempo previsto per produrre 8 PZ sarebbe 72 min, il Tempo WIP risulta quindi essere pari a 23 min. 
+Generalmente per le lavorazioni interne, il calcolo viene effettuato in funzione dei tempi dichiarati/effettivi, per il C/Lavoro in funzione dei PZ. La tariffa unitaria utilizzata nel calcolo, viene determinata/recuperata attraverso i seguenti campi del “Setup costi articoli”: “Calcolo costi capacità” e “WIP – usa costi effettivi”
+.
  
-**Storico wip (IVC)**
+**Storico WIP (IVC)**
 
-I dati calcolati posso essere visualizzati attraverso il report Storico wip (IVC):
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/27inventory-valuation-and-costing-ita.png"><br>
-Esempio di stampa<br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/28inventory-valuation-and-costing-ita.png"><br>
+I dati calcolati posso essere visualizzati attraverso il report Storico WIP (IVC):
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ITA_05.jpg"><br>
+
+Esempio di stampa:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ITA_06(1).jpg"><br>
