@@ -1,22 +1,31 @@
 **Inventory WIP calculation**
 
-Setup: to perform the WIP calculation it is necessary to activate the "Calculate WIP" flag for the period being processed: 
+To perform the WIP calculation it is necessary to activate the "Calculate WIP" flag for the period being processed: 
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/12inventory-valuation-and-costing-enu.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ENG_01.jpg"><br>
 
-Processing: after having performed the "Archive Period Data" and "Calculate Actual Data" functions, you can access the "Wip history":<br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/13inventory-valuation-and-costing-enu.png"><br>
+After having performed the "Archive Period Data" and "Calculate Actual Data" functions, you can access the "Wip history":
 
-All production orders included in the calculation are shown and, through Manage-> View, you can access the detail card of the single order.<br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/23inventory-valuation-and-costing-enu.png"><br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/24inventory-valuation-and-costing-enu.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ENG_02.jpg"><br>
+
+All production orders included in the calculation are shown and, through Manage-> View, you can access the detail card of the single order.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ENG_03.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ENG_04.jpg"><br>
+
+
 
 * The "Cost Amount" field in the header indicates the WIP value calculated for the specific order.
-* “Prod. Order Component Wip” Tab: contains the enhancement of the components used for items not yet stocked in the warehouse as Output (partially or completely). In the example above : 10 pieces were consumed for each component but partial output was recorded (5 out of 10 pieces).
-* Prod. Order Routing WIP” Tab: contains the enhancement of the capacity movements (run time + setup time) recorded for items not yet stocked in the warehouse as Output (partially or completely). In the example above : Capacity accounting entries were recorded for 122 minutes (total expected to produce 10 pcs) but a partial Output was booked in the warehouse (5 out of 10 pcs). Generally for internal machining, the calculation is carried out according to the declared / actual times, for the Subcontracting according to the pieces.
+* Prod. Order Component Wip Tab: contains the enhancement of the components used for items not yet stocked in the warehouse as Output (partially or completely). In the example above: 10 pieces were consumed for each component but partial output was recorded (8 out of 10 pieces), the WIP quantity is therefore equal to 2.
+* Prod. Order Routing WIP” Tab: contains the enhancement of the capacity movements (run time + any setup time) recorded for items not yet stocked in the warehouse as Output (partially or completely). In the example above: Capacity Accounting Entries were recorded for 95 minutes but a partial Output (8 out of 10 pcs) was placed in the warehouse; the expected time to produce 8 pcs would be 72 min, the WIP Time therefore turns out to be 23 min.
+Generally, for internal processes, the calculation is based on declared/actual times, while for subcontracting it is based on the number of pieces. The unit rate used in the calculation is determined/retrieved through the following fields in the "Item Cost Setup": "Capacity Cost Calculation" and "WIP - Use Entry Actual Costs"
+.
  
-**Wip History (IVC)**
+**WIP History (IVC)**
 
-The calculated data can be viewed through the Wip History (IVC) report:<br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/27inventory-valuation-and-costing-enu.png"><br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/ex053/WIP Calculation/28inventory-valuation-and-costing-enu.png"><br>
+The calculated data can be viewed through the Wip History (IVC) report:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ENG_05.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000395-0/18945_ENG_06.jpg"><br>
