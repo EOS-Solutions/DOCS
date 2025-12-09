@@ -1,0 +1,19 @@
+The app includes a graphical interface, but it only works on newer versions of Windows. On older systems, the interface may not start.
+
+When the interface is not available, you can always use the **GIN** command-line tool. GIN works on all supported Windows versions.
+
+If the UI doesn’t open, just run GIN instead.
+
+## Supported Versions
+
+The UI works on:
+
+* Windows 11
+* Windows 10
+* Windows Server 2022
+
+The UI does **not** work on:
+
+* Windows Server 2016
+
+On any version where the UI does not work, you can always use **GIN**.
