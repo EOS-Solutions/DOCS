@@ -1,0 +1,21 @@
+Gordon Installer uses the concept of **scopes** to determine where an app is installed and to whom the app will be available. You can consider the scopes to be the same as the usual "Current User" and "All Users" question that you may know from other installers.
+
+You will typically see the scope "user-wide" and "machine-wide" as the primary scopes.
+
+- **user-wide**: Apps installed in this scope will be placed under `%localappdata%\Programs\EOS Solutions` and are therefore **per user**. Users without administrative privileges are free to install and uninstall to and from this scope. This is usually the scope where **Gordon UI** and **XLIFF Editor** go.
+
+- **machine-wide**: Apps installed in this scope will be placed under `%programdata%\Programs\EOS Solutions`. Only users with administrative privileges can install into this scope.
+
+Certain apps will require certain scopes. For example, **Gordon Service** can only be installed into the **machine-wide** scope because it will register itself as a Windows Service also. Make sure you don't install your apps into the wrong scope.
+
+If your machine is running docker, you will also see each of your **Windows Containers** as a scope. This means that you can use Gordon Installer to install something *directly* into your container from your host machine. This is typically used for installing **Gordon Service** into one of your Business Central containers.
+
+To see a list of scopes available to you, use the cogwheel button on the top right corner of the Installer UI. Clicking it, will let you change your current scope.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001103-0/installer-ui.png"><br>
+
+The same goes for gin.exe. You can use the command `gin.exe scopes` to list them.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001103-0/gin.png"><br>
+
+In this case we have the two defaul scopes. Machine-wide is marked as not available because the terminal session was **not** run with  administrative privileges. We also have `bc27-rtm` as a container-scope.
