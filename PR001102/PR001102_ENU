@@ -1,0 +1,69 @@
+The primary use case of `gin.exe` is using it from piplines or other automated tasks. However, you are free to use it to manage your Gordon Suite tools on you machine as well.
+
+{{% alert title="Attention" %}}
+Make sure you type `gin.exe` in full when using gin from PowerShell, as `gin` alone is an alias for `Get-ComputerInfo`.
+{{% /alert %}}
+
+### Help
+
+You can run gin.exe without any arguments to get a short help and command overview:
+<pre>
+````
+# gin.exe --help
+Usage: gin [command]
+
+gin
+
+Commands:
+  scopes       Lists all available scopes
+  feeds        Lists all available feeds
+  list         Lists all installed / available packages
+  install      Installs a pacakge to a given scope
+  uninstall    Uninstalls a package from a given scope
+  push         Pushes a package to a feed
+
+Options:
+  -h, --help    Show help message
+  --version     Show version
+````
+</pre>
+
+### Checking installed apps
+
+To check which apps are installed in which version, use `gin.exe list`. You must specify the scope using the `--scope` parameter. Make sure you specify a scope that is accessible to your session. This command will not only list apps that you have installed, but will also list the ones that are available to be installed.
+
+<pre>
+````
+# gin.exe list --scope user-wide
+┌────────┬────────────────────┬─────────┬───────────┬────────────────────────────────────────────────────────────┐
+│ Status │ ID                 │ Current │ Available │ Description                                                │
+├────────┼────────────────────┼─────────┼───────────┼────────────────────────────────────────────────────────────┤
+│        │ bare.webapi        │         │ 4.0.12    │ Gordon Service API endpoint - Remote BC service management │
+│        │ eos-function-api   │         │ 1.0.141   │ EOS FunctionAPI                                            │
+│   OK   │ gordon             │ 4.0.6   │ 4.0.6     │ A GUI for Gordon, your trusted mustache                    │
+│   UP   │ gordon-installer   │ 0.0.119 │ 0.0.128   │ One installer to rule them all!                            │
+│   OK   │ gordon-xliffeditor │ 4.0.3   │ 4.0.3     │ Editor for AL XLIFF translation files                      │
+└────────┴────────────────────┴─────────┴───────────┴────────────────────────────────────────────────────────────┘
+````
+</pre>
+
+As you can see above, the `Status` column indicates the status of the app. If an app has no status, it is not installed on your machine.
+- `OK`: you have the app installed and up-to-date
+- `UP`: there is an update available for this app
+
+### Installing an app
+
+To install or update an app using `gin.exe`, you would simply run a command like so:
+
+````
+# gin.exe install gordon --scope user-wide
+````
+
+
+### Unstalling an app
+
+To uninstall an app using `gin.exe`, you would simply run a command like so:
+
+````
+# gin.exe uninstall gordon --scope user-wide
+````
