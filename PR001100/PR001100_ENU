@@ -1,0 +1,11 @@
+Gordon installer is the easiest and recommended way to install any component/tool that is part of the Gordon Suite. It comes in two different flavours:
+
+- The installer UI
+  
+	You can download the Gordon Installer UI from the [Gordon landing page](https://gordon.eos-solutions.it) or by using [the direct link](https://eospublictoolsstorage.blob.core.windows.net/installer/Eos.Installer.Downloader.exe). This will download and install the Gordon Installer.
+	
+- A command line utility (gin.exe)
+
+  The Gordon Installer CLI is called `gin` (as in **g**ordon **in**staller). You can find instructions on how to get it on the [EOS Solutions Scripts repository on GitHub](https://github.com/EOS-Solutions/Scripts/tree/master/Installer). There is a script that will download and check if you have the latest version. You can also choose to use [the direct link to download gin.exe](https://eospublictoolsstorage.blob.core.windows.net/installer/gin.exe) and put this executable somewhere handy.
+
+Both versions of the installer perform the same operations and support the same features. You are free to choose to use the one you like better or which better suits your scenario.
