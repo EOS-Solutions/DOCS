@@ -25,7 +25,7 @@
 			<td>Descrizione partner</td>
 			<td>
 				<p>cliccando sul campo<span> si apre un wizard c</span>he facilita la
-					configurazione nel caso di integrazione tra societÖ nello stesso
+					configurazione nel caso di integrazione tra societ√† nello stesso
 					database.
 			</td>
 		</tr>
@@ -34,8 +34,8 @@
 			<td>Non Usato</td>
 		</tr>
 		<tr>
-			<td>SocietÖ attiva</td>
-			<td>si puï scegliere se mantenere attiva la sincronizzazione oppure avere la societÖ a setup senza
+			<td>Societ√† attiva</td>
+			<td>si pu√≤ scegliere se mantenere attiva la sincronizzazione oppure avere la societ√† a setup senza
 				sincronizzarla&nbsp;</td>
 		</tr>
 		<tr>
@@ -44,16 +44,16 @@
 				cosiderare per le sincronizzazioni</td>
 		</tr>
 		<tr>
-			<td>PrioritÖ colonna matrice</td>
-			<td>definisce la prioritÖ con cui
+			<td>Priorit√† colonna matrice</td>
+			<td>definisce la priorit√† con cui
 				visualizzare le company nelle matrici. <br>
-				Si possono inserire dei valori numerici. (1=prioritÖ massima,
-				man mano che aumenta il valore numerico la prioritÖ diminuisce).<br>
+				Si possono inserire dei valori numerici. (1=priorit√† massima,
+				man mano che aumenta il valore numerico la priorit√† diminuisce).<br>
 				<br>
 		</tr>
 		<tr>
-			<td>SocietÖ corrente</td>
-			<td>mostra qual ä la societÖ corrente. La spunta viene messa in automatico dal Wizard.&nbsp;</td>
+			<td>Societ√† corrente</td>
+			<td>mostra qual √® la societ√† corrente. La spunta viene messa in automatico dal Wizard.&nbsp;</td>
 		</tr>
 	</tbody>
 </table>
