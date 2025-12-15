@@ -4,7 +4,7 @@
 
 Costituisce quindi un'alternativa ai metodi di fatturazione standard BC, al fine di **creare un piano di fatturazione dedicato in base agli accordi contrattuali di progetto**. Di seguito le caratteristiche principali dell’app IPL:
 
-* Definire i parametri del piano di fatturazione come concordato con il cliente
+* Definire i parametri del piano di fatturazione come concordato con il cliente o fornitore
 
 *  Tenere traccia delle fatture e dello stato avanzamento del progetto
 
@@ -18,20 +18,20 @@ Costituisce quindi un'alternativa ai metodi di fatturazione standard BC, al fine
 
 L'app IPL viene utilizzata da due tipi di ruolo utente:
 
-# Gestore Ordini Vendita
+# Gestore Ordini Vendita o Acquisto
 * Crea i modelli di Piano di Fatturazione più utilizzati
 
-* Definisce i Piani Fatturazione secondo gli accordi di progetto
+* Definisce i Piani Fatturazione secondo gli accordi di progetto o con il fornitore
 
-* Crea il Piano Fatturazione partendo dall'Ordine di Vendita. 
+* Crea il Piano Fatturazione partendo dall'Ordine di Vendita e dell'Ordine di Acquisto
 
 # Contabile
 * Seleziona le fatture da creare in base al piano fatture
 
-* Crea le fatture di vendita
+* Crea le fatture di vendita o carichi di acquisto
 
-* Registra le fatture di vendita
+* Registra le fatture di vendita o di acquisto
 
 * Crea eventuali Note di Credito
 
-* Gestisce e contabilizza i relativi incassi
+* Gestisce e contabilizza i relativi incassi o pagamenti
