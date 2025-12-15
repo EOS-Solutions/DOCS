@@ -8,9 +8,15 @@ Dalla ricerca di BC è possibile verificare ed eventualmente personalizzare il s
 
 * Modelli dei piani di fatturazione
 
+* Nr. carichi registrati
+
+* Escludi Riga descrittiva Numero Ordine in fattura di chiusura
+
+* Pagamenti in attesa
+
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/3InvoicingPlan-ITA.png"><br>
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/4InvoicingPlan-ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/IPL_01_ITA.png"><br>
 
 Nell’app IPL a livello di setup, è possibile gestire i **"Template dei piani di fatturazione"**: modelli configurabili e richiamabili a livello di singolo piano di fatturazione specifico, utili a semplificare l’inserimento e la gestione per ordine.
 
