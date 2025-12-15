@@ -2,7 +2,7 @@
 <br>
 It is therefore an alternative to the standard BC invoicing methods, in order to create a dedicated billing plan based on the project contractual agreements. Here are the main features of the IPL app:
 
-*   Define the parameters of the invoicing plan as agreed with the customer
+*   Define the parameters of the invoicing plan as agreed with the customer and vendor
 
 *   Track invoices and project progress
 
@@ -17,19 +17,19 @@ It is therefore an alternative to the standard BC invoicing methods, in order to
 <br>
 
 There are two different role centers types that will use IPL
-# Sales Order Processor
+# Sales of Purchase Order Processor
 * Creates the most frequent Invoicing Plan templates
 
-* Defines the Invoice Plans according to the project agreements
+* Defines the Invoice Plans according to the project agreements or vendor agreements
 
-* Creates the Invoice Plan starting from the Sales Order
+* Creates the Invoice Plan starting from the Sales Order and Purchase Order
 
 # Accountant
 * Selects the invoices to be created according to the invoice plan
 
-* Creates the Sales Invoices
+* Creates the Sales Invoices and Purchase Receipt
 
-* Posts the Sales Invoices
+* Posts the Sales Invoices and Purchase Invoices
 
 * Creates any Credit Memos
 
