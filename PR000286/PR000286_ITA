@@ -1,3 +1,5 @@
+# Flusso piani di fatturazione attivi
+
 Dall’ordine di vendita **Rilasciato** è possibile creare il piano di fatturazione dedicato tramite apposita funzione: "Piano di fatturazione (IPL)".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/8InvoicingPlan-ITA.png"><br>
@@ -202,7 +204,35 @@ Generando invece una **fattura di chiusura parziale con detrazione** (non a capi
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/44InvoicingPlan-ITA.png"><br>
 
+## Ulteriori funzionalità dei piani di fatturazione attivi
 
+-Dalle righe del piano di fatturazione è possibile:
+
+* Aprire le fatture/note credito provvisorie e le fatture/note credito registrate
+
+* Impostare dei testi estesi da inserire nelle fatture
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/38InvoicingPlan-ITA.png"><br>
+
+-Utilizzando una riga di fatturazione di tipo "Fattura di chiusura parziale" o "Fattura di chiusura parziale con detrazioni" è possibile selezionare, nella riga del piano di fatturazione, una o più spedizioni specifiche oggetto di fatturazione.
+
+La fattura generata conterrà solo le spedizioni selezionate.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/39InvoicingPlan-ITA.png"><br>
+
+-Selezionando la spedizione (oppure le spedizioni nel caso si voglia selezionarne più di una) verranno compilati i campi:
+
+* Nr. spedizione filtro: viene visualizzato il filtro contenente i nr. delle spedizioni di vendita registrate selezionate
+
+* Importo spedizione: viene visualizzato l’importo totale delle spedizioni selezionate.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/40InvoicingPlan-ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/41InvoicingPlan-ITA.png"><br>
+
+-L’app IPL mette a disposizione direttamente nel menù principale anche la "Lista dei piani di fatturazione (IPL)" inseriti a sistema, con evidenza degli ordini di vendita collegati e la possibilità di aprire il piano di fatturazione direttamente dalla lista:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/42InvoicingPlan-ITA.png"><br>
 
 
 
