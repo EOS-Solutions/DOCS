@@ -1,3 +1,5 @@
+# Sales Invoicing Plan
+
 From the **Released** sales order it is possible to create the dedicated invoicing plan using the appropriate function "Invoice plan (IPL)".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/8InvoicingPlan-ENU.png"><br>
@@ -200,4 +202,35 @@ Alternatively, when a partial closing invoice with proportional deduction (not u
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/44InvoicingPlan-ENU.png"><br>
 
+
+## More Functionalities
+
+
+-From the lines of the invoice plan it is possible to:
+
+* Open interim invoices / credit memos and posted invoices / credit memos
+
+* Enter extended texts to be included in invoices
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/38InvoicingPlan-ENU.png"><br>
+
+-Using an invoice line of type "Partial Closing Invoice" or "Partial Closing Invoice with Deductions" it is possible to select, in the line of the invoicing plan, one or more specific shipments to be invoiced.
+
+The generated invoice will contain only the selected shipments.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/39InvoicingPlan-ENU.png"><br>
+
+-By selecting the shipment (or shipments if you want to select more than one) the fields will be filled in:
+
+* Filter No Shipment: the filter containing the no. of the selected posted sales shipments
+
+* Shipping Amount: the total amount of the selected shipments is displayed
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/40InvoicingPlan-ENU.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/41InvoicingPlan-ENU.png"><br>
+
+-The IPL app also provides the "Invoice Plan List (IPL)", entered in the system directly in the main menu, with evidence of the connected sales orders and the possibility of opening the invoice plan directly from the list:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/42InvoicingPlan-ENU.png"><br>
 
