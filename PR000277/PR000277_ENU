@@ -8,9 +8,13 @@ From the BC search it is possible to verify and possibly customize the setup of 
 
 * Invoice plan templates
 
+* Exclude Order No. Description line in Closing Invoice
+
+* Payments On Hold
+
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/3InvoicingPlan-ENU.png"><br>
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/4InvoicingPlan-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/IPL_01_ENG.png"><br>
 
 In the IPL app at the setup level, it is possible to manage the "Invoice Plan Templates": configurable and recallable models at the level of a single specific billing plan, useful for simplifying the insertion and management by order.
 
