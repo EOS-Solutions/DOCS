@@ -1,0 +1,34 @@
+Di seguito i passi suggeriti per il setup in **Business Central** (come evidenziato nella demo):
+
+1. **Verificare l’integrazione Dataverse**  
+   - Aprire *Setup integrazione* standard **BC↔Dataverse** e assicurarsi che il mapping includa il campo **percorso cartella** proveniente da CE (indicato come **CE SP Folder Path** o equivalente).  
+<br><br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide14_img1.png"><br>
+   - Se necessario, **forzare una sincronizzazione** iniziale per popolare i record in BC.
+
+2. **DocSolution – SharePoint Setup**  
+   - Dalla pagina **DocSolution SharePoint Setup**, impostare **Tenant ID**, **Client ID** e **Client Secret** (gli stessi usati in CE).  
+   - Testare la connessione; proseguire solo a **connessione valida**.
+
+3. **Definizione Library di tipo “CE”**  
+   - Creare una nuova **Library** DocSolution e selezionare **Storage = CE**. 
+   - Impostare **Site** e **Library Name** esattamente identici a quelli configurati in CE.  
+   - **Folder Pattern**: abilitare il flag che premette il **prefisso obbligatorio “CE Folder Path”** (inserito automaticamente) e completare l’eventuale struttura restante. 
+   - **Filename Pattern**: configurare lo schema per il ritrovamento dei file secondo le proprie convenzioni.
+<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide15_img1.png"><br> <br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide13_img1.png"><br> 
+<br>
+<br><br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide12_img1.png"><br>
+4. **Associazione tabella**  
+   - Nella **Tabella** (es. *Clienti*), associare la **Library** DocSolution “CE” appena creata.  
+   - Esporre o lasciare nascosto il campo *CE Folder Path* (di norma è **nascosto** all’utente finale).
+
+5. **Verifica operativa**  
+   - Aprire un **Cliente** sincronizzato e controllare nella **FactBox DocSolution** la presenza dei file CE (es. *Customer agreement*).  
+   - Eseguire operazioni di **download/apri/carica** per validare permessi e percorso.
+
+{{% alert title="Suggerimenti" color="warning" %}}
+- Allineare **Site** e **Library** su CE e BC è fondamentale per risolvere la cartella corretta.  
+- Il **CE Folder Path** costituisce la **radice** del pattern in BC quando si usa lo **Storage “CE”**; non rimuoverlo né cambiarne l’ordine.
+{{% /alert %}}
+
+<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide11_img1.png"><br>
+<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide10_img1.png"><br>
