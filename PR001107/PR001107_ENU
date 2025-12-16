@@ -1,0 +1,7 @@
+
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001107-0/slide18_img1.png"><br>
+
+- **CE**: DocSolution for CE hooks into *native* SharePoint features, adding app configuration and folder patterns. When a new **Account** is created, the solution creates the **SharePoint folder** according to the defined *Folder Pattern* (e.g., `{name}-{guid}-DCS`).
+- **Synchronization**: the **BC↔Dataverse** connector syncs the **“CE Folder Path”** (SharePoint folder path for the entity) onto the corresponding record in **BC**.
+- **BC**: DocSolution for **BC** leverages **DocSolution for SharePoint** settings and the new **“CE” storage** to point to the exact same folder. BC users see files in the **FactBox** and can operate as usual.
+
