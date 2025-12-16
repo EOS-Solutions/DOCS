@@ -1,0 +1,8 @@
+**DocSolution for CE** extends the native integration between **Dynamics 365 Customer Engagement (CE)**, **Business Central (BC)** and **SharePoint** to deliver a unified document experience. It enables CE users (e.g., Sales) and BC users (e.g., Finance) to **see, upload and download the very same files, in the same folder structure**, with **no extra middleware**, leveraging the standard CE↔Dataverse↔BC data synchronization.
+
+Typical scenario: a salesperson attaches a *Customer Agreement* on an **Account** in **CE**; moments later, a **BC** user opens the corresponding **Customer** card and finds the same file in the DocSolution **FactBox**.
+
+> **Prerequisites**
+> - Active **Dynamics 365 CE** and **Business Central** environments
+> - **SharePoint Online** for file storage
+> - A **data synchronization** mechanism between CE and BC (the standard **BC↔Dataverse** connector is recommended)
