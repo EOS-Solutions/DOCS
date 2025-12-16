@@ -1,0 +1,36 @@
+Below are the recommended steps in **Business Central** (as shown in the demo):
+
+1. **Verify Dataverse integration**  
+   - Open the standard **BC↔Dataverse** integration setup and ensure the map includes the **folder path field** coming from CE (exposed as **CE SP Folder Path** or equivalent).  
+   - If needed, **force an initial sync** to populate BC records.
+<br><br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide14_img1.png"><br>
+2. **DocSolution – SharePoint Setup**  
+   - In **DocSolution SharePoint Setup**, enter **Tenant ID**, **Client ID** and **Client Secret** (same values used in CE).  
+   - Test the connection; proceed only when **valid**.
+
+3. **Define Library (Storage “CE”)**  
+   - Create a new **DocSolution Library** and set **Storage = CE**.  
+   - Set **Site** and **Library Name** exactly as in CE.  
+   - **Folder Pattern**: enable the flag that **prefixes the mandatory “CE Folder Path”** (auto‑inserted) and complete any additional structure.  
+   - **Filename Pattern**: configure how files are resolved/looked up.
+<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide15_img1.png"><br> <br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide13_img1.png"><br> 
+<br>
+<br><br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide12_img1.png"><br>
+
+4. **Bind to table**  
+   - On the **Table** (e.g., *Customers*), bind the newly created **CE** DocSolution Library.  
+   - Keep the *CE Folder Path* field **hidden** for end users (default) or expose it for diagnostics only.
+
+5. **Operational check**  
+   - Open a synchronized **Customer** and verify in the **DocSolution FactBox** that CE files (e.g., *Customer agreement*) are available.  
+   - **Open/download/upload** to validate permissions and path resolution.
+
+{{% alert title="Tips" color="warning" %}}
+- Keeping **Site** and **Library** aligned across CE and BC is essential to target the correct folder.  
+- With **Storage = CE**, the **CE Folder Path** is the **root** of the pattern in BC; do not remove or reorder it.
+
+{{% /alert %}}
+
+
+<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide11_img1.png"><br>
+<br><img width="" src="https://docs-test.eos-solutions.it/Images/PR001108-0/slide10_img1.png"><br>
