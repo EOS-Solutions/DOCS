@@ -1,0 +1,4 @@
+- **Nuovo tipo di Storage “CE” in BC**: oltre allo storage SharePoint già noto, è disponibile un tipo **CE** che impone l’uso del *CE Folder Path* come radice obbligatoria del **Folder Pattern**.
+- **Allineamento cross‑sistema**: una volta creata la cartella per il record CE, la sincronizzazione espone in **BC** il **percorso cartella** (campo *CE Folder Path*), permettendo a DocSolution (lato BC) di indirizzare allo stesso contenitore SharePoint.
+- **Esperienza coerente** in CE e BC: **upload**, **download** e **apertura** documenti dalla scheda entità (*Account/Cliente* ecc.) con la stessa struttura.
+- **No middleware/API aggiuntive**: l’app lavora “a valle” della **sincronizzazione** tra sistemi; non richiede servizi d’integrazione esterni.
