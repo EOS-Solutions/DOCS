@@ -8,7 +8,7 @@ In Sharepoint setup (DCS) you need to connect your Business Central client to th
 | **Field**                 | **Description**                                                                            |
 |---------------------------|-----------------------------------------------------------------------------|
 | Directory (tenant) ID     | The Azure tenant ID to which connect the client . It's already filled in SAAS environment. |
-| Aapplicazion (client) ID  | The Azure application client ID. Already filled in by the system.                          |
+| Application (client) ID  | The Azure application client ID. Already filled in by the system.                          |
 | Client Secret             | Azure application Client Secret. Already filled in by the system.                          |
 | Secret Expiration Date    | Allow to define when the Client Secret is going to expire, a notification will be shown near the expiration date                          
 
