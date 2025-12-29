@@ -1,4 +1,4 @@
-Below are the recommended steps in **Business Central** (as shown in the demo):
+Below are the recommended steps in **Business Central**:
 
 1. **Verify Dataverse integration**  
    - Open the standard **BC↔Dataverse** integration setup and ensure the map includes the **folder path field** coming from CE (exposed as **CE SP Folder Path** or equivalent).  
