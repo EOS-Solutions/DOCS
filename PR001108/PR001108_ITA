@@ -1,4 +1,4 @@
-Di seguito i passi suggeriti per il setup in **Business Central** (come evidenziato nella demo):
+Di seguito i passi suggeriti per il setup in **Business Central**:
 
 1. **Verificare l’integrazione Dataverse**  
    - Aprire *Setup integrazione* standard **BC↔Dataverse** e assicurarsi che il mapping includa il campo **percorso cartella** proveniente da CE (indicato come **CE SP Folder Path** o equivalente).  
