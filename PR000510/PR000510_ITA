@@ -18,7 +18,7 @@ Sulle page di Fatture, Ordini, NC vendita/Fatture, Ordini, NC vendita reg. è pr
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/5itElectronicInvoiceForItaly.png"><br>
 
 
-Scegliendo di **inviare** il documento elettronico, il sistema genera un file .Xml e lo invia a IX. In lista fatture vendita registrate è presente il campo Stato che mostra lo [stato del documento restituito da IX](https://helpbc.eos-solutions.it/main.aspx?lang=it-it&content=ITA_ElectronicInvoiceForItaly_StatiIXFE.html).
+Scegliendo di **inviare** il documento elettronico, il sistema genera un file .Xml e lo invia a IX. In lista fatture vendita registrate è presente il campo Stato che mostra lo [stato del documento restituito da IX](https://docs.eos-solutions.it/it/docs/apps-func/electronic-invoice-for-italy/electronic-invoice-for-italy-ixfe-status.html).
 
 Scegliendo di **creare** il documento il sistema crea un file .Xml che viene legato alla testata della fattura nel Tab Doc. Elettronico:
 
