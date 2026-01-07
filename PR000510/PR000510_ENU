@@ -16,7 +16,7 @@ In Sales Invoice, Sales Order, Sales Credit Memo List / Posted Sales Invoice, Po
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/5ElectronicInvoiceForItaly.png"><br>
 
-By choosing to **send** the electronic document, the system generates an .Xml file and sends it to IX. In the posted sales invoice list there is the Status field which shows the [Status of the electronic document returned by IX](https://docs.eos-solutions.it/en/docs/apps-func/electronic-invoice-for-italy/electronic-invoice-for-italy-ixfe-status.html).
+By choosing to **send** the electronic document, the system generates an .Xml file and sends it to IX. In the posted sales invoice list there is the Status field which shows the [Status of the electronic document returned by IX]({{<relref "electronic-invoice-for-italy-ixfe-status">}}).
 
 By choosing to **create** the electronic document, the system creates an .Xml file that is linked to the invoice header in the Electronic Document Tab:
 
