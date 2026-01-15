@@ -1,0 +1,15 @@
+**DocSolutions per BC** amplia l’integrazione nativa tra **Dynamics 365 Customer Engagement (CE)** e **SharePoint** e implementa anche l’integrazione con **Business Central (BC)** per offrire un’esperienza documentale unificata.
+Consente la creazione di più cartelle e sottocartelle basate su modelli personalizzati alla creazione del record; inoltre permette agli utenti CE (es. Vendite) e agli utenti BC (es. Finanza) di visualizzare, caricare e scaricare gli stessi file, nella stessa struttura di cartelle, **senza middleware aggiuntivo**, sfruttando la sincronizzazione standard dei dati CE↔Dataverse↔BC.
+
+Scenario tipico: un venditore allega un Contratto Cliente su un **Account** in **CE**; pochi istanti dopo, un utente **BC** apre la relativa scheda **Cliente** e trova lo stesso file nel FactBox di DocSolutions.
+
+> **Prerequisiti**
+> - Ambiente **Dynamics 365 CE** attivo
+> - **SharePoint Online** per l’archiviazione dei file
+> - Ambienti **Business Central** (se i documenti devono essere condivisi tra CE e BC)
+> - Un meccanismo di **sincronizzazione dati** tra CE e BC (si consiglia il connettore standard **BC↔Dataverse**)
+
+{{% alert title="NOTA" color="warning" %}}
+Questa app è parte del kit che include l'app BC "DocSolutions for CE" e che deve essere installata in parallelo per ogni ambiente per un'esperienza completa.<br>
+La documentazione di questa app può essere visualizzata a questo link: [EX069.04 DocSolutions for CE]({{<relref "docsolutions-for-ce">}})
+{{% /alert %}}
