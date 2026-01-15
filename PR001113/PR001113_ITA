@@ -1,0 +1,34 @@
+Nella configurazione del **Sito SharePoint (DCS)** è necessario connettere Dynamics 365 CE con SharePoint utilizzando una **AppRegistration**.
+
+Le informazioni richieste sono:
+
+| **Campo**                 | **Descrizione**                                                                      |
+|---------------------------|--------------------------------------------------------------------------------------|
+| Application (client) ID   | ID client dell’applicazione Azure.                                                   |
+| Client Secret             | Secret dell’applicazione Azure.                                                      |
+| Tenant Id                 | ID tenant di Azure a cui connettere il client (dove è presente il sito SharePoint)   |
+
+### Prerequisiti:
+- Configurare l’integrazione del sito SharePoint – vedi [Benefici della gestione documentale con integrazione SharePoint - Power Platform | Microsoft Learn](https://learn.microsoft.com/it-it/power-platform/admin/set-up-sharepoint-integration)
+- Creare una App Registration e configurarla come documentato in DocSolutions per SharePoint (BC)
+- L’utente che effettua la configurazione deve avere i ruoli **System Administrator** + **DocSolutions Admin** assegnati
+- L’utente applicativo deve avere il ruolo **DocSolutions User** assegnato
+
+### Importante per la comunicazione degli errori:
+DocSolutions notificherà errori nella creazione delle cartelle SharePoint o messaggi di licenza tramite **notifiche in-app**; **questa funzionalità deve essere abilitata in tutte le app in cui i messaggi devono essere mostrati**.
+Dal portale Power Apps: apri l’app (tutte le app utilizzate dal cliente con DocSolutions), clicca su **Impostazioni**, seleziona la scheda **Funzionalità** e **abilita il flag In-app notifications**.
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-01inappnotification-it.png"><br>
+
+### Configurazione del Sito SharePoint
+1. Apri l’app DocSolutions e vai su **SharePoint Sites**
+2. Apri il sito in cui DocSolutions deve essere configurato (può essere più di uno)
+3. Apri la scheda DocSolutions e configura i seguenti campi:
+   - Client ID
+   - Client Secret
+   - Tenant ID
+
+Una volta salvato il record, il client secret sarà criptato e l’ID del sito SharePoint sarà popolato.
+**Message Status** indica il risultato del test di connessione; se viene mostrato un messaggio di errore, correggere la configurazione di conseguenza.
+
+**Nota**: deve essere attivata una licenza valida di DocSolutions per SharePoint per il cliente, basata sul Tenant ID.
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-02siteconfiguration-it.png"><br>
