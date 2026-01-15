@@ -1,0 +1,31 @@
+Each entity in Dynamics 365 CE can be configured to use DocSolutions for BC; in case the entity is not configured in Document Management, it will be added.
+ 
+DocSolutions for BC can create folder and subfoders in SharePoint site, but Document Libraries must be created with the standard functionality or manually in site.
+ 
+## Library Configuration
+ 
+1. Open DocSolution Libraries link
+2. Add new record (of type DocSolutions Librariy
+3. The following fields must be populated:
+
+| Name/Code | Code or Name of DocSolutions Library |
+| --- | --- |
+| Entity/Table name | Entity/Table logical name |
+| SharePoint Site | SharePoint Site from list of existing SharePoint Sites |
+| Folder Pattern | String composed from a mix of fields values and fixed text; **fields (logical name) must be specified in curly brackets**; e.g. {fieldname}; these fields must be set as required to have the correct folder name compiled at creation |
+| Parent Type | Can be:  <br>**Library**: the folder is created under the specified Document Library<br>**Parent Record**: the folder is created under the folder of a parent record folder (under a fixed subfolder – eg. account/&lt;accountFolder&gt;/quotes/&lt;quoteFolder&gt; or directly under the record folder- eg. account/&lt;accountFolder&gt;/&lt;quoteFolder&gt; in case of quote) |
+| If Parent Type = **Library** | **SharePoint Document Library Name**: must exists in Sharepoint; is the SharePoint Library name where the folders are created |
+| If Parent Type = **Parent Record** | **Parent DocSolutions Library**: parent DocSolution Library that create the parent folder (required)<br>**Parent Folder**: fixed folder name (optional)<br>**Parent Field**: field logical name that link entity record with parent record |
+| Integration Key | Optional field indicating the integration field used for BC-CE integration |
+| Integration Path Field | Required if folders must be shared between CE and BC; in account and product tables are present eosapp\_dcspath fields ready for this scope; this field values must be synchronized between the two systems |
+| Message Status (DCS) | Will be automatically filled with configuration result (OK or error) |
+
+4. In addition fixed subfolders can be created in the underying subgrid.  
+  
+	
+Example for DCS Library with **Parent Type = Library**  
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-03libconfiguration.png"><br>
+
+  
+Example for DCS Library with **Parent Type = Parent Record**  
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-04libconfiguration.png"><br>
