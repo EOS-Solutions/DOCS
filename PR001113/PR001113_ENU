@@ -1,0 +1,38 @@
+In SharePoint Site setup (DCS) you need to connect Dynamics 365 CE with SharePoint using an AppRegistration.
+
+Information required are:
+
+| **Field**                 | **Description**                                                                      |
+|---------------------------|--------------------------------------------------------------------------------------|
+| Application (client) ID   | The Azure application client ID.                                                     |
+| Client Secret             | Azure application Client Secret.                                                     |
+| Tenant Id                 | The Azure tenant ID to which connect the client (where SharePoint Site is present)   |
+
+### Pre-requisites:
+
+- Configure SharePoint Site Integration – refer to [Benefits of document management with SharePoint integration - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/set-up-sharepoint-integration)
+- Create an App Registration and configure it as documented in DocSolutions for Sharepoint (BC)
+- Setup user must have **System Administrator** + **DocSolutions Admin** roles assigned
+- Application user must have **DocSolutions User** Role assigned.
+
+### Important for error comunication:
+
+DocSolutions will notify errors creating Sharepoint folders or license messages with in-app notification; **this feature must be enabled in all the apps where the messages must be shown**.  
+From Power App portal: open the app (all apps used by customer with DocSolutions use), click on settings, select Features tab and **enable In-app notifications** flag  
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-01inappnotification.png"><br>
+
+### Setup and Sharepoint Site Configuration
+ 
+1. Open DocSolutions App and go to SharePoint Sites 
+2. Open the Site where DocSolutions must be configured (can be more than one)
+3. Open DocSolutions tab and configure the following fields: 
+   - Client ID
+   - Client Secret
+   - Tenant ID
+
+  
+Once the record is saved the client secret will be encypted and SharePoint Site ID will be populated.  
+Message Status indicates the connection test result; if an error message is shown, please correct the configuration accordingly.  
+  
+**Note**: a valid license of DocSolutions for SharePoint must be activated for the customer based on tenant ID.  
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-02siteconfiguration.png"><br>
