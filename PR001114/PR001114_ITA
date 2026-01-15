@@ -1,0 +1,28 @@
+Ogni entità in Dynamics 365 CE può essere configurata per utilizzare DocSolutions per BC; se l’entità non è configurata nella Gestione Documenti, verrà aggiunta.
+
+DocSolutions per BC può creare cartelle e sottocartelle nel sito SharePoint, ma le **Document Libraries** devono essere create con la funzionalità standard o manualmente nel sito.
+
+## Configurazione Libreria
+1. Apri il link **DocSolution Libraries**
+2. Aggiungi un nuovo record (di tipo DocSolutions Library)
+3. Compila i seguenti campi:
+
+| Nome/Codice | Codice o Nome della libreria DocSolutions |
+| --- | --- |
+| Entity/Table name | Nome logico dell’entità/tabella |
+| SharePoint Site | Sito SharePoint dall’elenco dei siti esistenti |
+| Folder Pattern | Stringa composta da un mix di valori di campi e testo fisso; **i campi (nome logico) devono essere specificati tra parentesi graffe**; es. {fieldname}; questi campi devono essere impostati come obbligatori per avere il nome corretto della cartella alla creazione |
+| Parent Type | Può essere:  <br>**Library**: la cartella è creata sotto la Document Library specificata<br>**Parent Record**: la cartella è creata sotto la cartella di un record padre (in una sottocartella fissa – es. account/<accountFolder>/quotes/<quoteFolder> oppure direttamente sotto la cartella del record – es. account/<accountFolder>/<quoteFolder> in caso di quote) |
+| Se Parent Type = **Library** | **SharePoint Document Library Name**: deve esistere in SharePoint; è il nome della libreria dove vengono create le cartelle |
+| Se Parent Type = **Parent Record** | **Parent DocSolutions Library**: libreria DocSolutions padre che crea la cartella padre (obbligatorio)<br>**Parent Folder**: nome cartella fisso (opzionale)<br>**Parent Field**: nome logico del campo che collega il record dell’entità con il record padre |
+| Integration Key | Campo opzionale che indica il campo di integrazione usato per BC-CE |
+| Integration Path Field | Obbligatorio se le cartelle devono essere condivise tra CE e BC; nelle tabelle account e product sono presenti i campi eosapp_dcspath pronti per questo scopo; i valori di questo campo devono essere sincronizzati tra i due sistemi |
+| Message Status (DCS) | Si compilerà automaticamente con il risultato della configurazione (OK o errore) |
+
+4. Inoltre, è possibile creare sottocartelle fisse nella sottogriglia sottostante.
+
+Esempio per DCS Library con **Parent Type = Library**
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-03libconfiguration-it.png"><br>
+
+Esempio per DCS Library con **Parent Type = Parent Record**
+<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-04libconfiguration-it.png"><br>
