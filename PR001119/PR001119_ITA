@@ -1,0 +1,8 @@
+Consente di selezionare quale conto bancario deve essere stampato sul documento. Questa opzione è abilitata per impostazione predefinita.
+
+Il conto bancario da stampare è determinato dal campo “Stampa conto bancario” sul metodo di pagamento utilizzato nel documento. Attualmente sono disponibili i seguenti valori:
+- **Banca di Canalizzazione** (impostazione predefinita): stampa il conto bancario specificato nel campo `EOS Our Bank Account`.
+- **C/C bancarion cli./forn.**: stampa il primo conto bancario del `Cliente fatturare-a` / `Fornitore pagare-a`, se presente.
+- **C/C bancario documento** (disponibile solo con il Advanced Document Reporting for Italy): stampa il conto bancario del cliente/fornitore specificato utilizzando il campo `Conto bancario` sul documento.
+
+Questo comportamento può essere personalizzato utilizzando l'evento `OnBeforeGetBankAccount` in codeunit ` 18122055 EOS009 LE Bank Account`
