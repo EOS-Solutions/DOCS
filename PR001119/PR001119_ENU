@@ -1,0 +1,8 @@
+This will enable the selection of which bank account should be printed on the document. This is enabled by default. 
+
+The bank account to be printed is determined by the field `Print Bank Account` on the payment method used on the document. The following values are currently available:
+- **Our Bank Account** (default): Print the bank account specified on the `EOS Our Bank Account` field.
+- **Cust./.Vend Bank Account**: Print the first bank account of the `Bill-To Customer` / `Pay-To Vendor`, if there is one.
+- **Document Bank Account** (only available with Advanced Document Report for Italy): Prints the customer/vendor bank account that was specified using the field `Bank Account` on the document.
+
+This behaviour can be customized using the `OnBeforeGetBankAccount` event on codeunit ` 18122055 EOS009 LE Bank Account`.
