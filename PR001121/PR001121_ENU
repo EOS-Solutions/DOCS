@@ -1,0 +1,86 @@
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>PowerWMS - EX089</td>
+        <td></td>
+        <td></td>
+        <td>PowerWMS x HUM - EX089.01</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Release date</td>
+        <td>Notes</td>
+        <td>PowerApp version</td>
+        <td>BC25</td>
+        <td>BC26</td>
+        <td>BC27</td>
+        <td>BC25</td>
+        <td>BC26</td>
+        <td>BC27</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>08/01/2026</td>
+        <td>Location selection with traceability details</td>
+        <td>1.1.237.0</td>
+        <td>25.0.89</td>
+        <td>26.0.56</td>
+        <td>27.0.19</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>30/12/2025</td>
+        <td>Empty location management in HU handling</td>
+        <td>1.1.233.0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>25.0.46</td>
+        <td>26.0.26</td>
+        <td>27.0.16</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>31/10/2025</td>
+        <td>Ideas, scanner search setup</td>
+        <td>1.1.206.0</td>
+        <td>25.0.88</td>
+        <td>26.0.52</td>
+        <td>27.0.15</td>
+        <td>25.0.43</td>
+        <td>26.0.22</td>
+        <td>27.0.12</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>08/10/2025</td>
+        <td>Inventory orders</td>
+        <td>1.1.205.0</td>
+        <td>25.0.83</td>
+        <td>26.0.48</td>
+        <td>27.0.11</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>29/08/2025</td>
+        <td>Alternative views</td>
+        <td>1.1.203.0</td>
+        <td>25.0.78</td>
+        <td>26.0.43</td>
+        <td>27.0.10</td>
+        <td>25.0.41</td>
+        <td>26.0.20</td>
+        <td>27.0.10</td>
+        <td></td>
+    </tr>
+</table>
