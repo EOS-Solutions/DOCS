@@ -1,0 +1,9 @@
+Nella  pagina Setup VMI è possibile definire i principali parametri di funzionamento dell'app.	 
+
+Il reparto *Registrazione* presenta due opzioni di suggerimento automatico del campo di testata *Descr. registrazione* dei documenti di acquisto e di vendita:
+
+- Nr. documento provvisorio: comportamento standard, viene suggerito il valore *Fattura/Nota credito + Nr. provvisorio del documento*
+
+- Ragione sociale: viene suggerita la ragione sociale del cliente/fornitore intestatario del documento
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001120-0/EX020 Setup VMI.png"><br>
