@@ -1,0 +1,10 @@
+In the VMI Setup page it is possible to define the main operating parameters of the app.
+
+The Registration section includes two options for the automatic suggestion of the header field “Posting Description” in purchase and sales documents:
+
+- Provisional Document No.: standard behavior; the suggested value is Invoice/Credit note + provisional document number.
+
+- Vendor Customer Name: the company name of the customer/supplier to whom the document is addressed is suggested.
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001120-0/EX020 Setup VMI ENU.png"><br>
