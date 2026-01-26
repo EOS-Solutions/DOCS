@@ -1,0 +1,5 @@
+* Verificare che sia attivo un servizio con autenticazione NavUserPassword e che le API siano abilitate.
+* Installare le app.
+* Completare la configurazione di DocFinance all'interno dell'app.
+* Creare l'utente BC per l'integrazione con DocFinance e generare la relativa chiave di accesso ai servizi web (Web Service Access Key).
+* Configurare la connessione su DocFinance verso il servizio con autenticazione NavUserPassword.
