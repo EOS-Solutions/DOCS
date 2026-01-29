@@ -1,3 +1,97 @@
-From the **Released** purchase order it is possible to create the dedicated invoicing plan using the appropriate function "Invoice plan (IPL)".
+From the Released purchase order it is possible to create the dedicated billing plan using the specific function: "Billing Plan (IPL)".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_02_ENG.png"><br>
+
+In the newly created billing plan, it will be possible to recall a preconfigured template, optionally changing the header and/or line data according to the needs of the individual order:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_03_ENG.png"><br>
+
+In the billing plan, several amounts are displayed, including:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_04_ENG.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_05_ENG.png"><br>
+
+Complete, if necessary, the configuration of the posting fields of the billing plan:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_07_ENG.png"><br>
+
+At the billing plan line level, it is possible to fill in or modify some fields:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_08_ENG.png"><br>
+
+The values relating to percentages or amounts of advance invoice lines can be calculated as:
+
+Percentage of the total amount of the sales order (the amount will be recalculated automatically)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_09_ENG.png"><br>
+
+Fixed amount with respect to the total sales order (the percentages will be recalculated automatically).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_10_ENG.png"><br>
+
+If the values or quantities in the sales order are changed, it is possible to use the “Recalculate billing plan” function with two options:
+
+Recalculate percentages: the amounts will remain unchanged and the percentages will be adjusted to the new total;
+
+Recalculate amounts: the percentages will remain unchanged and the amounts will be adjusted to the new total.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_06_ENG.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_11_ENG.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_12_ENG.png"><br>
+
+Each line can have different payment methods and conditions so that each invoice is created with predefined payment terms without further user intervention:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_13_ENG.png"><br>
+
+To create sales invoices/credit memos from the billing plan, it is always necessary to indicate which line you want to process, using the “Execute action” flag.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_14_ENG.png"><br>
+
+Subsequently, to generate the different types of documents, it is necessary to use the following functions available in the header:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_15_ENG.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_16_ENG.png"><br>
+
+Using the purchase receipt generation function on the advance billing line, an advance purchase receipt will be posted
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_18_ENG.png"><br>
+
+The advance receipt will contain the line with the account related to the advance on the order; this receipt can then be linked to the advance purchase invoice sent by the vendor, using the Get Receipt Lines function.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_19_ENG.png"><br>
+
+After posting the advance receipts and linking them to the advance invoices, it is possible to post the receipt of the items included in the purchase order following the logistics flow set in the system; subsequently, upon receipt of the purchase invoice, when matching the receipt using the Get Receipt Lines function, it will be possible to choose which advance invoices to reverse in the vendor final invoice, based on the received document:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_20_ENG.png"><br>
+
+NB: it is possible to decide to generate a credit memo with only the advance reversal lines in the event that the vendor, instead of deducting them from the final invoice, decides to send a purchase credit memo
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_21_ENG.png"><br>
+
+By entering the advance reversal lines, they will be displayed in the document reversing the amount advanced by the vendor
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_22_ENG.png"><br>
+
+## Purchase credit memo management for advance reversal:
+
+Before the final invoice, if it is necessary to reverse an incorrectly invoiced advance, it is possible to generate a purchase credit memo directly from the billing plan by selecting the incorrect advance line to be reversed:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_23_ENG.png"><br>
+
+The provisional credit memo will be generated, which can then be linked to the XML received from the vendor and posted
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_24_ENG.png"><br>
+
+## Payment management and payment block:
+
+If it is necessary to block the payment of an entry, for example the final invoice, from the billing plan lines it is possible to enable the Block payment flag, which will insert the value set in the setup of the On Hold field present in the vendor ledger entries
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_25_ENG.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_26_ENG.png"><br>
+
+If instead the payment of the invoice is posted, it will be visible in the billing plan in the payment balances:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_27_ENG.png"><br>
