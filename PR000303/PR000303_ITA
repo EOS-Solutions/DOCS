@@ -1,3 +1,97 @@
 Dall’ordine di acquisto **Rilasciato** è possibile creare il piano di fatturazione dedicato tramite apposita funzione: "Piano di fatturazione (IPL)".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_02_ITA.png"><br>
+
+Nel piano di fatturazione appena creato, sarà possibile **richiamare un template preconfigurato**, variando eventualmente i dati di testata e/o di riga in base alle esigenze del singolo ordine:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_03_ITA.png"><br>
+
+Nel piano di fatturazione sono visualizzati diversi importi, tra i quali:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_04_ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_05_ITA.png"><br>
+
+Completare se necessario la configurazione dei campi di registrazione del piano di fatturazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_07_ITA.png"><br>
+
+A livello di riga del piano di fatturazione, è possibile compilare o modificare alcuni campi:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_08_ITA.png"><br>
+
+I valori relativi alle percentuali o agli importi delle righe di fatture di anticipo, possono essere calcolati come:
+
+* Percentuale dell’importo totale dell’ordine di vendita (l’importo verrà ricalcolato in automatico)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_09_ITA.png"><br>
+
+* Importo fisso rispetto al totale dell’ordine di vendita (le percentuali verranno ricalcolate in automatico).
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_10_ITA.png"><br>
+
+Nel caso i valori o le quantità nell’ordine di vendita venissero variati è possibile utilizzare la funzione “Ricalcola piano fattura” con due opzioni:
+
+* **Ricalcola percentuali:** gli importi rimarranno invariati e le percentuali saranno adattate al nuovo totale;
+
+* **Ricalcola importi:** le percentuali rimarranno invariate e gli importi saranno adattati al nuovo totale.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_06_ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_11_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_12_ITA.png"><br>
+
+Ogni riga può avere diversi metodi e condizioni di pagamento in modo che ogni fattura nasca con i termini di pagamento prestabiliti senza ulteriori interventi da parte dell’utente:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_13_ITA.png"><br>
+
+Per creare le fatture/note credito di vendita dal piano di fatturazione è sempre necessario indicare quale riga si desidera elaborare, tramite il flag “**Esegui azione**".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_14_ITA.png"><br>
+
+Successivamente per generare le diverse tipologie di documento è necessario utilizzare le seguenti funzioni presenti in testata:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_15_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_16_ITA.png"><br>
+
+Utilizzando la funzione di generazione del **carico di acquisto** sulla riga di fatturazione anticipata, verrà registrato un carico di acquisto di avanzamento dell'anticipo
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_18_ITA.png"><br>
+
+Il carico dell'anticipo conterrà la riga con il conto relativo all'anticipo sull'ordine, tale carico potrà poi essere collegato alla fattura di acquisto di anticipo inviata dal fornitore, tramite la funzione prendi righe carico.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_19_ITA.png"><br>
+
+Dopo aver registrato i carichi di anticipo e averli collegati alle fatture di anticipo, è possibile effettuare il carico degli articoli presenti nell’ordine di acquisto seguendo il flusso logistico impostato a sistema, successivamente, alla ricezione della fattura di acquisto, all'abbinamento del carico tramite la funzione **Prendi righe di carico** si avrà la possibilità di scegliere quali fatture di anticipo stornare nella fattura a saldo del fornitore, in base al documento ricevuto:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_20_ITA.png"><br>
+
+**NB:** è possibile decidere di generare una nota di credito con le sole righe di storno anticipo nel caso in cui il fornitore anzichè detrarle dalla fattura a saldo decida di inviare una nota credito di acquisto
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_21_ITA.png"><br>
+
+Inserendo le righe di storno anticipo verranno visualizzate nel documento a storno dell'importo anticipato dal fornitore
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_22_ITA.png"><br>
+
+## Gestione nota di credito acquisto a storno anticipo:
+
+Prima della fattura a saldo nel caso in cui si avesse la necessità di stornare un anticpo erroneamente fatturato, è possibile generare una nota di credito di acquisto direttamente dal piano di fatturazione selezionando la riga di anticipo errata da stornare:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_23_ITA.png"><br>
+
+Verrà generata la nota di credito provvisoria, che potrà essere eventualmente collegata con l'XML arrivato dal fornitore e contabilizzata
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_24_ITA.png"><br>
+
+## Gestione pagamenti e blocco pagamenti:
+
+Nel caso in cui sia necessario bloccare il pagamento di una partita, ad esempio quello della fattura a saldo, dalle righe del piano di fatturazione è possibile abilitare il flag **Blocca pagamento** che andrà ad inserire il valore impostato a setup del campo **In sospeso** presente nei movimenti contabili fornitori
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_25_ITA.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_26_ITA.png"><br>
+
+Nel caso invece si registri il pagamento della fattura, esso sarà visibile nel piano di fatturazione nei saldi di pagamento:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_27_ITA.png"><br>
