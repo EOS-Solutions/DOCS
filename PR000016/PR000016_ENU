@@ -1,12 +1,12 @@
-The Customer Vendor Compensation App for Microsoft Dynamics 365 Business Central allows you to select lines from two lists of accounting items to compensate. For example, if you select select a Customer invoice which total is 100 ± and a Vendor invoice which total is 80 ±, it will be suggested the entry to connect the two accounting items: the Vendor invoice will be 0 ± and the Customer invoice will now be open for 20 ±. Precondition: Customers and Vendors can be connected by different options:
+The Customer Vendor Compensation app enables simple and efficient management of offsetting between open customer and vendor items.
+This functionality allows users to easily select the due items to be offset, choosing them from two lists of open items displayed on a summary page, or to automatically generate the proposed offset entries.
+It is also possible to perform a bulk compensation procedure.
+The customer/vendor link can be established through either the customer/vendor master data record or the contact.
+For example, by selecting a customer invoice for Eur 100 and a vendor invoice for Eur 80, the system will suggest the accounting entry to link the two items, fully clearing the vendor invoice and leaving the customer invoice open with a remaining balance of Eur 20.
 
-\- in the Customer / Vendor card (*Compensation-\>EOS Comp. Vendor No.*)
+**Customer Vendor Compensation - SUMMARY**<br>
+The main functions of the app can be found using the acronym â€œCVC.â€
+To display the list of features, press ALT + Q and type â€œCVC.â€
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000016-0/ENU_1CustomerVendorBalanceCompensation.png"><br>
-
-\-in Contacts (from *Functions-\>Link with existing)*
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000016-0/ENU_2CustomerVendorBalanceCompensation.png"><br>
-
-\-they share the same VAT Number
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000016-0/EN_01_CVC Menu.png"><br>
 
