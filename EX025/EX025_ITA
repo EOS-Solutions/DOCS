@@ -4,15 +4,15 @@
 <table>
 	<tr>
 		<td>1</td>
-		<td>compilare il setup Compensazione</td>
+		<td>Setup - Collegamento cliente/fornitore</td>
 	</tr>
 	<tr>
 		<td>2</td>
-		<td>nella page Compensazione scegliere se partire da un mov. Cliente o da un mov. Fornitore</td>
+		<td>Eseguire la compensazione</td>
 	</tr>
 	<tr>
 		<td>3</td>
-		<td>registrare oppure annullare la selezione e ri-eseguire la Compensazione</td>
+		<td>Compensazione massiva</td>
 	</tr>
 </table>
 
