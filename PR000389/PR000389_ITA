@@ -1,5 +1,5 @@
 ### 6.0  Setup
-Le impostazioni di base per la creazione delle disposizioni di pagamento Bonifico Estero XML sono, qui di seguito, roportate.
+Le impostazioni di base per la creazione delle disposizioni di pagamento Bonifico Estero XML sono, di seguito, riportate.
 
 
 #### 6.1 Setup importazione\esportazione banca
@@ -12,7 +12,7 @@ Nel setup importazione\esportazione  banca dovrà essere creato un nuovo codice 
 * Codeunit per controllo esportazioni: **18123336** - "EOS005 Foreign CT-Check Line".
 
 
-#### 6.2 Setup Scheda conto corrente bancari
+#### 6.2 Setup Scheda conto corrente bancario
 Nella cartella "Trasferimento" della scheda conto corrente bancario dovranno essere impostati i seguenti parametri.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/IT_EST_02.png"><br>
@@ -22,12 +22,12 @@ Nella cartella "Trasferimento" della scheda conto corrente bancario dovranno ess
 * **IBAN (2)**: il codice IBAN è obbligatorio.
 
 
-**Campo  CUC**
-Secondo le  norme CBI, il codice CUC (Codice Univoco CBI) è obbligatorio.
+<br>**Campo  CUC**<br>
+Secondo le norme CBI, il codice CUC (Codice Univoco CBI) è obbligatorio.
 Si tratta di un codice alfanumerico di 8 caratteri che viene assegnato dal sistema bancario.
 Tuttavia, tale dato non sempre è richiesto dalla banca e, per garantire la continuità con le precedenti versioni, non è stato implementato uno specifico controllo di obbligatorietà.
 
-Si consiglia, comunque, di valorizzare il campo "CUC" presente sulla  scheda conto  corrente bancario per non rischiare lo scarto della disposizione.
+Si consiglia, comunque, di valorizzare il campo "CUC" presente nella scheda conto corrente bancario per non rischiare lo scarto della disposizione.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/IT_EST_CUC_03.png"><br>
 
@@ -39,17 +39,20 @@ Nella cartella "Generale" della scheda conto corrente bancario dovrà essere imp
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/IT_EST_CCGeneral_04.png"><br>
 
 
-**Nota: pagamenti in valuta estera**
-Per effetturare i bonifici in una valuta estera, è necessario che sia impostata una banca nella stessa valuta.
+**Nota: pagamenti in valuta estera**<br>
+Per effettuare i bonifici in una valuta estera, è necessario che sia impostata una banca nella stessa valuta.
 
+#### 6.3 Setup BNK
+Nel Setup BNK, il campo "Nr. campo cod. valuta" consente di indicare quale campo della tabella Valute debba essere utilizzato per comunicare il codice ISO della valuta di pagamento.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/IT_EST_04.03_Setup BNK.png"><br>
 
-#### 6.3 Setup Informazioni Società
-La partita IVA della società è un dato obbligatorio nel file XML dei bonifici estero.
+#### 6.4 Setup Informazioni Società
+La partita IVA della società è un dato obbligatorio nel file XML dei bonifici esteri.
 Il campo "Partita IVA" della scheda "Informazioni Società" deve essere obbligatoriamente compilato.
 
 
-#### 6.4 Informazioni da inserire nelle disposizioni sulle righe della distinta
+#### 6.5 Informazioni da inserire nelle disposizioni sulle righe della distinta
 Sulle righe della distinta fornitore, per i bonifici estero, è necessario impostare le seguenti informazioni.
 
 **Tipologia commissioni**<br>
@@ -58,10 +61,11 @@ I valore ammessi sono i seguenti:
 * Nostro carico ("DEBT")
 * Ripartite (“SHAR”)
 * Beneficiario ("CRED")
-* 
+
+
 **Note**<br>
-* la tipologia commissioni deve essere uguale per l'intera distinta.
-* Secondo le regole CBI il campo tipologia di commissioni assume obbligatoriamente valore “SHAR” se il beneficiario è valorizzato con coordinata IBAN che contiene un Codice Paese appartenente all'area dello Spazio Economico Europeo.
+* la tipologia di commissioni deve essere uguale per l'intera distinta.
+* Secondo le regole CBI il campo tipologia di commissioni assume obbligatoriamente valore “SHAR” se il beneficiario è valorizzato con una coordinata IBAN che contiene un Codice Paese appartenente all'area dello Spazio Economico Europeo.
 
 
 **Tipo CVS**<br>
@@ -72,25 +76,25 @@ Da valorizzare con i seguenti codici definiti dalle norme UIC (Ufficio Italiano 
 * "CDV" (cessione divisa tra residenti)
 
 **Codice Causale Valutaria (CVS)**<br>
-Il campo deve essere compilato nel caso di Tipo CVS = “CVA”, negli altri casi è facoltativo
+Il campo deve essere compilato nel caso di Tipo CVS = “CVA”, mentre negli altri casi è facoltativo.
 
 
-#### 6.5 Creazione del file Bonifico Estero
+#### 6.6 Creazione del file Bonifico Estero
 **Distinta effetti fornitore emessa**<br>
 Per esportare il file Bonifico Estero XML dalla "Crea file bonifico estero XML:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/IT_EST_Distinta_05.png"><br>
 
 
-#### 6.6 Gestione valuta
+#### 6.7 Gestione valuta
 E’ stata implementata la possibilità di definire il tasso di cambio da utilizzare nella registrazione della distinta.
 Il tasso di cambio viene proposto sulla base della **Data distinta**, ma può essere modificato selezionando l'assist edit del campo Cod. Valuta.   
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000389-0/IT_EST_Distval_06.png"><br>
 
 
-<br>**Informazioni tecniche**<br>
-Il file SDD, in Italia,  è sottoposto agli standard del servizio CBI (Corporate Banking Interbancario), che integra il tracciato standard ISO20022.
-<br>Il tracciato attuale è disciplinato dal manuale tecnico "STPE-MO-001 Pagamenti- v.00.01.01, versione ***00.01.01*** del 02/11/2023.
+#### 6.8 Informazioni tecniche
+Il file Bonifico Estero XML, in Italia, segue gli standard del servizio CBI (Corporate Banking Interbancario), che integra il tracciato standard ISO20022.
+<br>Il tracciato attuale è disciplinato dal manuale tecnico "STPE-MO-001 Pagamenti, versione ***00.01.01*** del 02/11/2023.
 
 **Tracciato ISO20022 di riferimento**: CustomerCreditTransferInitiationV03  - pain.001.001.03
