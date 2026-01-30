@@ -1,43 +1,80 @@
-In the Customer / Vendor card go to *Actions-\>Functions-\>Compensation*:
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/ENU_3CustomerVendorBalanceCompensation.png"><br>
-
-the system will propose the connected entries depending on the filters selected:
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/ENU_4CustomerVendorBalanceCompensation.png"><br>
-
-| **Field**             | **Description**                                                             |
-|-----------------------|-----------------------------------------------------------------------------|
-| Open                  | choose if the system will show open / closed / all entries (Yes / No / All) |
-| Posting Date          | it is possible to filter by Posting Date                                    |
-| Payment Method Filter | it is possible to filter by Payment Method                                  |
-| Currency Filter       | it is possible to filter by Currency                                        |
-| Journal Template Name | define a category for records concerning registration                       |
-| Journal Batch Name    | define a batch for records concerning registration                          |
-     
-
-<br><br>**Mode Entries / Linked entries**
-
-Go to Compensation-\>Auto-Comp. From and decide whether to start from a Customer or from a Vendor. The selected entries will be markd in the "Selected" coloumn.
+## Compensation Procedure
+The offset can be performed from the following areas:
+* from the customer or vendor card
+* from the journal
 
 
-{{% alert title="NOTE" color="warning" %}}
-
-In Actions\>Compensation--\>Reset Compensation it is possible to reset and select the accounting items again
-
-{{% /alert %}}
-
-In Actions-\>Suggest Compensation Lines you have access to the registration batch:
-
-<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/ENU_5CustomerVendorBalanceCompensation.png"><br>
+### Compensation from Customer/Vendor Card
+From the Customer/Vendor Card, you can access the offset page using the "Compensation (CVC)" action.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000161-0/EN_07_CVC_Compensazione da scheda Cl-Fr.png"><br>
 
 
-The system will propose the entries to balance. Posting the payment, the journal registers all the entries and connects them to the selected documents.
+### Compensation from the Journal
+The compensation page can also be opened from the journal using the same menu option.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000161-0/EN_08_CVC_Compensazione da giornale.png"><br>
 
-<br>**Mode On Balance**
 
-You select only entries of a section (Source), e.g. Customer and pressing "Suggest Compensation Lines" the system will propose only the lines of closure of selected invoices and will add a single record to the Vendor (Recipient) without connecting to any accounting item (you can make the connection manually later). This is achieved only when the balance of the Recipient does not become negative.
+**Note**<br>
+If the fields "Account Type" and "Account No." are filled in the journal with customer or vendor references, the offset page will automatically open filtered by the customer/vendor code entered.
 
-<br>**Semiautomatic compensation**
 
-You select only an entry of the Source, then you go to Actions, "Auto-Comp From" and choose Vendor Entry. The system will try to connect the entry selected to the lines of the Recipient section by FIFO. It can also be done in reverse, starting from a Vendor movement.
+### Compensation Page
+The offset page displays the customer/vendor entries to be offset based on the filters applied.
+It is possible to filter the entries displayed using the following parameters:
+* Open/Closed entries
+* Posting date
+* Payment method code
+* Currency code
+
+The compensation page will display customer and vendor ledger entries according to the filters set.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000161-0/EN_09_Pagina compensazione filtri.png"><br>
+
+Below is a description of the main fields on the page.<br>
+
+
+| **Field**                       | **Description**                                                      |
+|---------------------------------|----------------------------------------------------------------------|
+| Show Open Entries               | Opzions: Yes, No, All .                                              |
+| Posting Date Filter             | Allows filtering by posting date.                                    |
+| Payment Method Code Filter      | Filter by payment method.                                            |
+| Filtro Cod. valuta              | Filter by currency code.                                             |
+| Default Journal Name            | Shows the journal set up for postings.                               |
+| Default Batch Name              | Displays the batch set up for postings.                              |
+| Documento No.                   | Allows defining the temporary document number to be used for postings when not set on the journal batch.<br> If a No. Series is set in the batch setup, this field is not used.                |
+| Postong Date                    | Date used for posting. <br>When offsetting from the customer/vendor card, the work date is suggested.<br>When offsetting from the journal, the posting date from the batch line is proposed.       |
+
+
+
+### Compensation Methods
+**Manual Application**<br>
+It is possible to manually select the entries to be offset using the "Selected" field.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000161-0/EN_10_CVC_Compensazione manuale.png"><br>
+
+When an entry is selected, the fields "Applied Amount" and "Applied Amount (LCY)" are automatically populated.
+
+
+**Note**<br>
+Even if the "Applied Amount" field is automatically filled with an amount higher than the remaining amount (as it is based on the available balance), during the posting proposal the value will be automatically adjusted.
+
+
+<br>**Automatic Application (Comp. Sel. Customer Entries/Comp. Sel. Vendor Entries)**<br>
+Using the "Comp. Sel. Customer Entries"/"Comp. Sel. Vendor Entries" actions, an automatic application proposal is generated, based on customer/vendor entries sorted by ascending due date.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000161-0/EN_11_CVC_Compensazione automatica.png"><br>
+
+<br>**"Balance" Mode**<br>
+If only entries from one section are selected (e.g., Customer section) and the "Suggest Application Lines" action is executed, the system will propose the settlement of the selected entries and insert a single balancing line in the opposite section (Vendor in the example), without applying it to any entry.
+
+The compensation is executed only if the final balance of the destination party does not become negative.
+
+### Create Journal Lines
+The "Create Journal Lines" action proposes the offset of the selected entries.
+As mentioned above, when only entries from one section are selected ("balance" mode), the system suggests the closing lines for the selected entries and one balancing posting line in the opposite section.
+
+### Open Journal Batch.
+The "Open Journal Batch" action allows accessing the batch used for the offset postings.
+
+
+### Clear All
+The "Clear All" action clears the selections made, allowing you to make new selections for the offset.
