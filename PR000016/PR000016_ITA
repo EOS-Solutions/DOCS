@@ -1,12 +1,13 @@
-<img width="" src="https://docs.eos-solutions.it/Images/PR000016-0/8CustomerVendorBalanceCompensation.png"><br>
+L'app Customer Vendor Compensation consente di gestire in modo semplice ed efficiente la compensazione tra partite aperte di clienti e fornitori.<br>
+La funzionalità consente di selezionare facilmente le scadenze da compensare, scegliendole da due elenchi di partite aperte esposte in una pagina di sintesi, o di proporre automaticamente le scritture di compensazione. 
+E’ possibile, inoltre, eseguire una procedura massiva di compensazione.
 
-Grazie alla app Customer Vendor Compensation per Dynamics 365 Business Central � possibile selezionare da due elenchi di partite aperte le scadenze da compensare.
+Il collegamento cliente/fornitore può essere fatto tramite l'anagrafica o il contatto.
 
-Selezionando ad esempio una fattura cliente da 100 euro ed una fattura fornitore da 80 euro, verr� suggerita la scrittura contabile per collegare le due partite azzerando la fattura fornitore e lasciando la fattura cliente aperta per 20. Precondizione: aver collegato i clienti e fornitori
+Selezionando, ad esempio, una fattura cliente da 100 euro ed una fattura fornitore da 80 euro, verrà suggerita la scrittura contabile per collegare le due partite saldando completamente la fattura fornitore e lasciando la fattura cliente aperta per un importo residuo di 20 euro.
 
-\- in anagrafica attraverso il campo "Nr. fornitore comp." nel tab Compensazione
+**Customer Vendor Compensation - SOMMARIO**<br>
+Le principali funzioni dell’app sono ricercabili con l’acronimo "CVC".
+Per visualizzare l’elenco delle funzionalità premere ALT + Q e digitare "CVC".
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000016-0/1CustomerVendorBalanceCompensation.png"><br>
-\- in Contatti (da *Funzioni-\>Collega con esistente*)
-<img width="" src="https://docs.eos-solutions.it/Images/PR000016-0/2CustomerVendorBalanceCompensation.png"><br>
-\- tramite la P.IVA
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000016-0/IT_01_CVC Menu.png"><br>
