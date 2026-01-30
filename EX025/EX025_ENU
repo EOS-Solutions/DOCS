@@ -4,15 +4,15 @@
 <table>
 	<tr>
 		<td>1</td>
-		<td>fill-in the Compensation Setup</td>
+		<td>Setup - Customer/vendor link</td>
 	</tr>
 	<tr>
 		<td>2</td>
-		<td>in Compensation page start from a Customer or a Vendor</td>
+		<td>Execute customer/vendor compensation</td>
 	</tr>
 	<tr>
 		<td>3</td>
-		<td>post or reset Compensation and select the accounting items again</td>
+		<td>Mass compensation</td>
 	</tr>
 </table>
 
