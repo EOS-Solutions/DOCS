@@ -30,6 +30,11 @@ Sulle righe della distinta fornitore e della distinta fornitore emessa sono stat
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000931-0/PR000931_6_ITA.PNG"><br>
 
+##### Setup BNK
+E' possibile escludere la compilazione di CIG e CUP nelle righe della distinta fornitore abilitando il campo "Escludi CIG e CUP da distinta fornitore" nel Setup BNK.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000931-0/PR000931_6.02_ITA.png"><br>
+
 
 #### CIG e CUP sul bonifico Sepa (file XML)
 I riferimenti di CIG e CUP, se presenti, sono riportati nel file XML generato dalla funzione "Esporta distinta effetti su file"; le informazioni sono esposte nel TAG "Ustrd".
