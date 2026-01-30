@@ -3,12 +3,12 @@ The function allows importing the unpaid SDD bills file provided by the bank.
 **Import Customer Dishonored (CBI) – SUMMARY**<br>
 To access the function press ALT + Q and type “CBI” to search for the functionality.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000386-0/EN_CBI_InsolutiSDD_Menu_01.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000386-0/EN_CBI_InsolutiSDD_Menu_r02_01.png"><br><br>
 
 
 Select "SEPA DD Dishonored (CBI)" to open the following page.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000386-0/EN_CBI_InsolutiSDD_02.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000386-0/EN_CBI_InsolutiSDD_Menu_r02_02.png"><br>
 
 Parameters to be entered:
 
@@ -16,6 +16,11 @@ Parameters to be entered:
 |------------------------------|-------------------------------------------------|
 |Template Name            | Select the journal to use. |
 |Batch Name               | Select the batch to use.   |
+|Transitory Account No.   | If using a transitory account, it can be selected. |
+|Used as posting date     | Define the proposed posting date for accounting entries. <br>**Payment Date**: proposed posting date will be the due date.<br>**Creation Date:** posting date will be the creation date in the unpaid file.|
+
+
+
 
 
 <br>**Procedure**
@@ -24,14 +29,10 @@ Parameters to be entered:
 1. **Import the unpaid file into Business Central using the “SEPA DD Dishonored (CBI)” function and post the accounting entries.**
 1. Run the “Closing Bank Receipts” procedure to apply the invoice with the payment entry (the procedure is the same as that used for closing bank receipts).
 
-Closing must occur after posting the unpaid bills, as the unpaid import assumes the related entry is still open. If few unpaid bills exist, you can close them at maturity and manually reopen them before importing
+Closing must occur after posting the unpaid bills, as the unpaid import assumes the related entry is still open. If only a few unpaid bills exist, you can close them at maturity and manually reopen them before importing.
 
 
-<br>**Technical Information**
-Supported Record type:
+<br>**Technical Information**<br>
+Supported Record types:
 * CBISDDStsRptLogMsg.00.01.00
 * CBIBdySDDStsRpt.00.01.00
-
-
-<br>**Outline summary of CBI services**<br>
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000386-0/4BFForItaly-en.png"><br>                                                                        
