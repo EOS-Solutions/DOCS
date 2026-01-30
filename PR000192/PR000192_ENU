@@ -1,1 +1,72 @@
-In Setup Compensation define a category and a batch for records concerning compensation.
+## Setup ans Customer/Vendor linking”
+### Setup
+
+In the “Compensation Setup (CVC)” page, you can configure the main parameters required for the operation of the app.<br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000192-0/EN_02_CVC_Setup.png"><br>
+
+
+The parameters to be entered are the following.
+
+| **Field**              | **Description**                                                      |
+|------------------------|----------------------------------------------------------------------|
+| Comp. Jnl Template Name | Defines the Journal to be used for compensation postings             |
+| Comp. Gen. Jnl Batch   | Defines the Batch to be used for compensation postings.               |
+| Default Document Type  | Sets the document type used by the system for compensation entries.      The available options are blank and payment.|
+<br> 
+
+**Note**<br>
+If the Default Document Type is set to Payment, the system will propose the document type Payment for invoices and Refund for credit memos (in the relatively rare case these documents are compensated).
+<br><br>
+
+#### Compensation Journal Batch Setup
+In the Journal intended for compensation, it is recommended to create a specific batch for compensation entries and assign the temporary and/or final number series.
+
+**Batch Setup Example**
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000192-0/EN_02.02_CVC_Setup Batch.png"><br>
+
+
+### Customer/Vendor Linking
+To proceed with compensations, the Customer code must be linked to the corresponding Vendor code.
+The Customer/Vendor link can be created from:
+* Customer/Vendor master data,
+* Contact (by setting up a business relation)
+
+##### Linking via Customer/Vendor Master Data
+The Customer/Vendor link can be set using the "Comp. Vendor No." field on the customer card (Compensation section) or, alternatively, by filling in the "Comp. Customer No". field on the vendor card.
+
+***Linking from Customer Card***
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000192-0/EN_03_CVC_Setup collegamento anagrafica.png"><br><br>
+
+***Linking from Vendor Card***
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000192-0/EN_04_CVC_Setup collegamento anagrafica forn.png"><br>
+
+
+***Note***<br>
+The customer/vendor link must be defined either from the customer card or the vendor card.
+
+
+##### Linking via Business Relation on Contact
+The customer/vendor link can also be activated by setting a business relation between customer and vendor on the contact.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000192-0/EN_05_CVC_Setup collegamento cont.png"><br>
+
+When the link is created through a contact/business relation, the standard Business Central fields "Balance (LCY) as Vendor" and "Balance (LCY) as Customer" are enabled.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000192-0/EN_06_CVC_Setup collegamento cont campi standard.png"><br>
+
+
+#### Foreign Currency Compensation
+The CVC app also supports the compensation of foreign currency transactions.<br>
+Compensation is allowed in the same currency or between a foreign currency and EUR.
+Compensation is not allowed between two different foreign currencies.
+
+Foreign currency compensation must be enabled both in the Customer Posting Setup and in the Vendor Posting Setup.
+
+In the Currency Application field, the option All must be selected to enable compensation between EUR and all foreign currencies (EU and non‑EU).
+Alternatively, select EU to enable compensation only between EUR and EU currencies other than EUR.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000192-0/EN_06.02_CVC_Setup valute.png"><br>
+
+
+
