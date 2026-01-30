@@ -3,12 +3,11 @@ La funzione di importazione degli insoluti SDD clienti consente di acquisire il 
 ***Importazione Insoluti Cliente (CBI) - SOMMARIO***
 <br>Premere ALT + Q e digitare “CBI" per ricercare la funzionalità:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000386-0/IT_CBI_InsolutiSDD_Menu_01.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000386-0/IT_CBI_InsolutiSDD_Menu_r02_01.png"><br><br>
 
+Selezionando "SEPA Importazione Insoluti Clienti (CBI)" si aprirà la seguente pagina:
 
-Selezionando "SEPA Importazione Insoluti Clienti (CBI)" si aprirà le seguente pagina:
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000386-0/IT_CBI_InsolutiSDD_02.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000386-0/IT_CBI_InsolutiSDD_Menu_r02_02.png"><br>
 
 
 I parametri da inserire sono i seguenti.
@@ -17,6 +16,9 @@ I parametri da inserire sono i seguenti.
 |-------------------------------|-------------------------------------------------|
 | Nome template                 | Consente di selezionare il giornale di registrazione da utilizzare. |
 | Nome batch contabile          | Consente di selezionare il batch da utilizzare.                     |
+| Conto transitorio             | Nel caso si utilizzi un conto transitorio di contropartita è possibile selezionarlo.                     |
+| Imposta data registrazione    | Consente di definire la data registrazione proposta nelle scritture contabili. <br>**Data pagamento**: la data registrazione proposta sarà la data scadenza dell'effetto. <br>**Data creazione**: la data registrazione proposta sarà quella di creazione del flusso indicata nel file degli insoluti. |
+
 
 
 <br>**Procedura**<br>
@@ -24,26 +26,21 @@ La procedura per la gestione degli incassi SDD è la seguente.
 
 1. Il file di presentazione delle disposizioni di incasso SDD viene creato, in Business Central, tramite la "Distinta cliente".
 
-1. Alla scadenza degli effetto, si attende ancora il tempo necessario alla banca per elaborare l'esito degli incassi, quindi si provvede a scaricare, dall'applicazione di Remote Banking, il file degli insoluti SDD.
+1. Alla scadenza degli effetti, si attende ancora il tempo necessario alla banca per elaborare l'esito degli incassi, quindi si provvede a scaricare, dall'applicazione di Remote Banking, il file degli insoluti SDD.
 
 1. **Si importa il file degli insoluti, in Business Central, tramite la funzione "SEPA Importazione Insoluti Clienti (CBI)" e si provvede alla registrazione delle scritture contabili.**
 
-1. Si esegue, infine, la procedura "Chiusura ricevure bancarie" (la procedura è la medesima di quella usata per la chiusura delle ricevute bancarie) che chiude gli effetti SDD collegando la fattura presentata in banca con il movimento contabile di presentazione (di tipo "pagamento").
+1. Si esegue, infine, la procedura "Chiusura ricevute bancarie" (la procedura è la medesima di quella usata per la chiusura delle ricevute bancarie) che chiude gli effetti SDD collegando la fattura presentata in banca con il movimento contabile di presentazione (di tipo "pagamento").
 
-La chiusura degli effetti SDD deve avvenire necessariamente dopo la contabilizzazione degli insoluti; questo poichè l'importazione degli insoluti presuppone che la partita da collegare all'insoluto sia aperta.
+La chiusura degli effetti SDD deve avvenire necessariamente dopo la contabilizzazione degli insoluti; questo poiché l'importazione degli insoluti presuppone che la partita da collegare all'insoluto sia aperta.
 
 Alternativamente, se gli insoluti non sono molti, è possibile chiudere a scadenza gli effetti; in questo caso, però, prima di importare il file degli insoluti sarà necessario riaprire, manualmente, le partite impagate.
 
 
 
-<br>**Informazione tecniche**
+<br>**Informazioni tecniche**<br>
 Tipi di record supportati:
 * CBISDDStsRptLogMsg.00.01.00
 * CBIBdySDDStsRpt.00.01.00
-
-
-<br>**Schema di sintesi dei servizi CBI**  
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000386-0/4BFForItaly.png"><br>
 
 
