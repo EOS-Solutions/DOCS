@@ -1,7 +1,24 @@
-The massive compensation report exists for both Sales and Purchase:
+It is possible to perform a mass settlement of customer/vendor ledger entries.
+The procedure can be executed either from the journal or via the dedicated task.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000188-0/ENU_6CustomerVendorBalanceCompensation.png"><br>
+**Execution from the Journal**<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000188-0/EN_12_CVC_Compensazione massiva.png"><br>
 
-It is possible to make the compensation for some filtered customers: the system will propose the entries to balance in the batch indicated in the setup.
+<br>**Execution via task**<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000188-0/EN_13_CVC_Compensazione massiva task.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000188-0/ENU_7CustomerVendorBalanceCompensation.png"><br>
+<br>**Procedure execution**<br>
+This function allows you to select, through the parameters to be set, the customers/vendors and/or the ledger entries to be settled.<br>
+The procedure will propose the balancing entries in the batch specified in the setup.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000188-0/EN_14_CVC_Compensazione massiva filtri.png"><br>
+
+
+The settlement method used is the “**balance**” method, meaning the system proposes the settlement entries related to the source customer/vendor ledger entries and then posts a single balancing entry in the opposite section, but without linking it to the specific ledger entries.
+Settlement is executed only if the final balance of the recipient account does not become negative as a result of the process.
+
+
+**Note**<br>
+* Posting Date: if the posting date is not specified, the work date is used.
+* Document No.: the document number is used only if no temporary number series is defined in the batch setup.
+* Currency Code: the currency code acts as a filter and only one currency can be specified. If the field is left blank, only ledger entries in the system currency (blank), generally EUR, will be processed.
