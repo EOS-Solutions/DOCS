@@ -1,7 +1,24 @@
-Il report per effettuare massivamente la compensazione esiste lato Clienti e lato Fornitori.
+E' possibile eseguire la compensazione massiva delle partite clienti/fornitori.<br>
+La procedura può essere eseguita dal giornale di registrazione o tramite apposito task.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000188-0/5CustomerVendorBalanceCompensation.png"><br>
+**Esecuzione da Giornale di registrazione**<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000188-0/IT_12_CVC_Compensazione massiva.png"><br>
 
-Tale report consente di scegliere tramite filtri i clienti o i fornitori da compensare e il sistema in automatico proporr� le scritture a saldo nel batch indicato a setup.
+<br>**Esecuzione tramite task**<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000188-0/IT_13_CVC_Compensazione massiva task.png"><br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000188-0/6CustomerVendorBalanceCompensation.png"><br>
+<br>**Esecuzione della procedura**<br>
+La funzionalità consente di selezionare, tramite i parametri da impostare, i clienti/fornitori e/o le partite da compensare.<br>
+La procedura proporrà le scritture a saldo nel batch specificato a setup.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000188-0/IT_14_CVC_Compensazione massiva filtri.png"><br>
+
+
+La modalità di compensazione utilizzata è quella "**a saldo**", ovvero sono proposte le scritture di compensazione relative alle partite del cliente/fornitore di origine inserendo, poi, una singola scrittura di quadratura nella sezione opposta, ma senza effettuare il collegamento alle specifiche partite.
+La compensazione viene eseguita solo se il saldo finale del soggetto destinatario non risulta negativo a seguito dell’operazione.
+
+
+**Note**<br>
+* Data di registrazione: se la data registrazione non viene indicata è utilizzata la workdate.
+* Nr. documento: il nr. documento viene utilizzato solo nel caso in cui non sia impostato un nr serie provvisorio nel setup del batch.
+* Cod. valuta: il campo codice valuta agisce da filtro ed è possibile specificare un'unica valuta. Se il campo non viene compilato saranno processate solo le partite nella valuta di sistema (blank), quindi, generalmente, euro.
