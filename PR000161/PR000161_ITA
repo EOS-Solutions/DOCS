@@ -1,41 +1,83 @@
-Dalla Scheda Cliente / Fornitore si accede alla funzionalitÖ da *Azioni-\>Funzioni-\>Compensazione*:
+## Procedura di compensazione
+La compensazione pu√≤ essere eseguita dalle seguenti aree:
+* dalla scheda cliente o fornitore,
+* dal giornale di registrazione.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/3CustomerVendorBalanceCompensation.png"><br>
+### Compensazione da scheda cliente/fornitore
+Dalla Scheda Cliente/Fornitore si accede alla pagina di compensazione dall'azione "Compensazione (CVC)".
 
-Si aprirÖ una pagina che mostra le partite in base ai filtri selezionati in alto:
-<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/4CustomerVendorBalanceCompensation.png"><br>
-<br>
-
-| **Campo**                | **Descrizione**                                                      |
-|--------------------------|----------------------------------------------------------------------|
-| Aperto                   | scegliere se visualizzare solo i movimenti aperti (Si / No / Tutti)  |
-| Data di registrazione    | ä possibile impostare una data di registrazione come filtro          |
-| Filtro metodo pagamento  | scegliere se filtrare per metodo pagamento                           |
-| Filtro valuta            | scegliere se filtrare per valuta                                     |
-| Nome def. registrazioni  | impostare / modificare la categoria per le registrazioni             |
-| Nome batch contabile     | impostare / modificare il batch per le registrazioni                 |
-
-<br>**ModalitÖ Partite/Partite con collegamento**
-
-Da *Azioni-\>Compensazione-\>Comp. auto da* decidere se partire da un movimento cliente o fornitore. Il sistema proporrÖ in automatico le partite da collegare che verranno marcate nella colonna "Selezionato".
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000161-0/IT_07_CVC_Compensazione da scheda Cl-Fr.png"><br>
 
 
-{{% alert title="NOTA" color="warning" %}}
+### Compensazione da giornale di registrazione
+La pagina di compensazione pu√≤ essere aperta dal giornale di registrazione tramite la stessa voce di menu.
 
-Da Azioni-\>Annulla Compensazione ä possibile annullare la selezione delle righe e ri-eseguirla.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000161-0/IT_08_CVC_Compensazione da giornale.png"><br>
 
-{{% /alert %}}
+**Nota**<br>
+Se nel giornale di registrazione si compilano i campi "Tipo conto" e "Nr. conto" con i riferimenti del cliente o del fornitore, la pagina di compensazione sar√† visualizzata automaticamente con il filtro sul codice cliente/fornitore inserito.
 
-Da *Azioni-\>Suggerisci righe compensazione* si accede al batch contabile che consente di effettuare la compensazione e infine di registrare:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000161-0/7CustomerVendorBalanceCompensation.png"><br>
+### Pagina di compensazione partite
+Nella pagina di compensazione sono proposte le partite cliente\fornitore da compensare in base ai filtri impostati.
 
-Il sistema proporrÖ le righe di chiusura che possiamo registrare da Registrazione.
+E' possibile, infatti, filtrare le partite da visualizzare per i seguenti parametri.
+* Movimenti aperti/chiusi.
+* Data di registrazione.
+* Cod. metodo di pagamento.
+* Cod. valuta.
 
-<br>**ModalitÖ a saldo**
+La pagina di compensazione mostrer√† le partite clienti e fornitori in base ai filtri impostati.
 
-Si selezionano solo le partite di una sezione (Sorgente), ad es. Cliente e premendo "Suggerisci righe compensazione" il sistema proporrÖ solo le righe di chiusura delle fatture selezionate e aggiungerÖ una singola scrittura per il Fornitore (Destinatario) senza collegarla a nessuna partita (si puï effettuare il collegamento manualmente in seguito). La compensazione avviene solo quando il saldo del soggetto destinatario non va in negativo.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000161-0/IT_09_CVC_Pagina compensazione filtri.png"><br>
 
-<br>**Compensazione semi-automatica**
+Si descrive, di seguito, il significato dei principali campi presenti sulla pagina.<br>
 
-Si seleziona una partita di una sezione, si va in Azioni-\>"Comp. auto. da" e si sceglie Mov. fornitore. Il sistema cercherÖ di collegare a FIFO la partita che ho selezionato con le partite della sezione del Destinatario. Si puï fare anche al contrario, partendo da un movimento del fornitore.
+
+| **Campo**                       | **Descrizione**                                                      |
+|---------------------------------|----------------------------------------------------------------------|
+| Mostra movimenti aperti         | Opzioni: S√¨, No, Tutti.                                              |
+| Filtro data registrazione       | Permette di filtrare per data di registrazione.                      |
+| Filtro Cod. metodo di pagamento | Filtro per metodo pagamento.                                         |
+| Filtro Cod. valuta              | Filtro per codice valuta.                                            |
+| Nome def. registrazioni         | Espone il giornale di registrazione impostato a setup  utilizzato per le registrazioni.  |
+| Nome batch contabile            | Visualizza il batch impostato a setup utilizzato per le registrazioni.                   |
+| Nr. documento                   | Permette di definire il nr. documento provvisorio da usare nelle registrazioni nel caso non sia stato impostato sul batch di registrazione.<br> Se il nr. serie √® stato impostato nel setup del batch tale campo non √® utilizzato.  |
+| Data di registrazione           | Data utilizzata per la registrazione. <br>Nel caso di compensazione da scheda cliente/fornitore viene proposta la Workdate.<br>Nella compensazione da giornale viene proposta la data registrazione presente sulla riga del batch su cui si √® posizionati.               |
+
+
+### Modalit√† di compensazione
+**Collegamento manuale**<br>
+E' possibile contrassegnare manualmente le partite da compensare tramite il campo "Selezionato".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000161-0/IT_10_CVC_Compensazione manuale.png"><br>
+
+Con la selezione del movimento saranno impostati automaticamente i campi "Importo applicato" e "Importo applicato (VL)".
+
+**Nota**<br>
+Anche se il campo "Importo applicato" viene valorizzato automaticamente per un importo superiore all'importo residuo (in quanto proposto in base all'importo residuo disponibile della partita), in fase di proposta delle scritture contabili sar√† automaticamente adeguato al valore corretto.
+
+
+<br>**Collegamento automatico (Compens. da mov cliente/Compens. da mov fornitore)**<br>
+Tramite le azioni "Compens. da mov cliente"/"Compens. da mov fornitore" √® possibile ottenere una proposta di collegamento automatico partendo rispettivamente dai movimenti cliente o fornitore ordinati in base alla data scadenza crescente.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000161-0/IT_11_CVC_Compensazione automatica.png"><br>
+
+
+<br>**Modalit√† "a saldo"**<br>
+Se selezionano manualmente solo le partite di una sezione (es. sezione Cliente) e si esegue  l'azione "Suggerisci righe compensazione" saranno proposte le scritture di saldo delle partite selezionate e sar√† inserita una singola scrittura a quadratura sulla sezione opposta (nel nostro esempio la sezione Fornitore) senza effettuare il collegamento ad alcuna partita.
+
+La compensazione avviene solo se il saldo finale del soggetto destinatario non diviene negativo con la compensazione.
+
+
+### Suggerisci righe compensazione
+L'azione "Suggerisci righe compensazione" proporr√† la compensazione delle partite selezionate. 
+Come gi√† illustrato, nel caso si selezionino eslusivamente le partite di una sezione (modalit√† "a saldo") saranno proposte le scritture di chiusura delle partite delle righe selezionate e una scrittura a quadratura sulla sezione opposta.
+
+
+### Apri batch reg.
+L'azione "Apri batch reg." consente di accedere al batch utilizzato per le scritture di  compensazione.
+
+
+### Annulla Compensazione
+L‚Äôazione ‚ÄúAnnulla compensazione‚Äù permette di azzerare le selezioni effettuate e procedere con una nuova scelta delle partite da compensare.
