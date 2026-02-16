@@ -1,0 +1,10 @@
+Il report **EOS075 Bonus Copy Document** aiuta gli utenti a duplicare i documenti relativi ai bonus nel modulo Sales and Purchase Bonus. Copia i dettagli da un documento esistente per crearne uno nuovo, riducendo l'inserimento manuale.
+
+Per utilizzare il report, imposta un filtro (opzionale) per selezionare uno o più contratti bonus da copiare. Il tipo di contratto (vendita o acquisto) determinerà anche il tipo del nuovo contratto creato.
+
+- **Duplica sul contratto originale**: Se abilitato, le righe duplicate vengono aggiunte al contratto bonus originale. Se disabilitato, viene creato un nuovo contratto bonus per ogni contratto sorgente. Quando abilitato, "Nr. serie" e "Codice bonus di destinazione" vengono azzerati e non possono essere utilizzati.
+- **Nr. serie**: Seleziona la serie numerica per generare i codici dei nuovi contratti bonus. Usalo come alternativa a "Codice bonus di destinazione". Disabilitato se "Duplica sul contratto originale" è abilitato. Modificandolo si azzera "Codice bonus di destinazione".
+- **Codice bonus di destinazione**: Specifica il codice per il nuovo contratto bonus. Può essere usato solo quando si duplica un singolo contratto. Disabilitato se "Duplica sul contratto originale" è abilitato. Modificandolo si azzera "Nr. serie".
+- **Formula data**: Inserisci una formula data per modificare le date di inizio e fine delle righe bonus e le date dei piani di liquidazione (es. +1A per spostare le date avanti di un anno).
+- **Copia piano di liquidazione**: Abilita per copiare le voci del piano di liquidazione dalle righe bonus sorgente alle nuove righe bonus. Le voci di liquidazione vengono impostate come Temporanee.
+- **Copia righe**: Abilita per copiare righe bonus, soglie e piani di liquidazione. Se disabilitato, viene creato solo l'intestazione del contratto bonus. Disabilitato se "Duplica sul contratto originale" è abilitato, perché in quel caso le righe vengono sempre copiate.
