@@ -1,0 +1,10 @@
+The **EOS075 Bonus Copy Document** report helps users duplicate bonus-related documents in the Sales and Purchase Bonus module. It copies details from an existing document to create a new one, reducing manual entry.
+
+To use the report, set an (optional) filter to select one or more bonus headers to copy. The contract type (sales or purchase) will also determine the type of the newly created contract.
+
+- **Duplicate to original contract**: If enabled, duplicated lines are added to the original bonus contract. If disabled, a new bonus contract is created for each source contract. When enabled, "No. Series" and "Destination Bonus Code" are cleared and cannot be used.
+- **No. Series**: Select the number series for generating new bonus contract codes. Use this as an alternative to "Destination Bonus Code". Disabled if "Duplicate to original contract" is enabled. Changing this clears "Destination Bonus Code".
+- **Destination Bonus Code**: Specify the code for the new bonus contract. Can only be used when duplicating a single contract. Disabled if "Duplicate to original contract" is enabled. Changing this clears "No. Series".
+- **Date Formula**: Enter a date formula to adjust the starting and ending dates of bonus lines and settlement plan dates (e.g., +1Y to shift dates forward by one year).
+- **Copy Settlement Plan**: Enable to copy settlement plan entries from the source bonus lines to the new bonus lines. Settlement entries are set to Temporary status.
+- **Copy Lines**: Enable to copy bonus lines, thresholds, and settlement plans. If disabled, only the bonus contract header is created. Disabled if "Duplicate to original contract" is enabled because it will always copy lines in that case.
