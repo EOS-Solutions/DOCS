@@ -25,6 +25,18 @@
     </tr>
     <tr>
         <td>08/01/2026</td>
+        <td>Correzione scanner con token tracciabilità per ordini inventario fisico + implementazione ordine scansione inverso + correzioni piattaforma</td>
+        <td>1.1.242.0</td>
+        <td>-</td>
+        <td>26.0.67</td>
+        <td>27.0.29</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>08/01/2026</td>
         <td>Selezione collocazione con dettaglio tracciabilità</td>
         <td>1.1.237.0</td>
         <td>25.0.89</td>
