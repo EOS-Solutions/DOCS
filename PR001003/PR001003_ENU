@@ -46,11 +46,18 @@ This is a mock storage for use with the IFileSystem interface. This is useful fo
 This replaces the obsolete `ApplicationInsights Query`. This new implementation allows executing KustoQL queries, just like it's predecessor did. In addition, it also allows to post logs to an application insights ingestion endpoint. For this, you need to specify the application insights connection string, where you want to post your logs to, in the **Endpoint Uri** field.
 
 The following configuration parameters are available:
-- `ApiKey`: this is only required when executing queries. The API key credentials you have created on your application insights account to use.
-- `ApplicationId`: this is only required when executing queries. The application ID of the account to use. You can find this in the configuration of your application insights account.
+- `ApiKey`: (obsolete) this is only required when executing queries. The API key credentials you have created on your application insights account to use. If this setting is specifed, API key authentication will be used. If you want to use OAuth authentication, remove this setting. This setting is obsolete since starting March 2026 API key authentication will be disabled. 
+- `ApplicationId`: (obsolete) this is only required when executing queries. The application ID of the account to use. You can find this in the configuration of your application insights account. This setting is obsolete since starting March 2026 API key authentication will be disabled.
+- `ClientId`: This is only required when executing queries. Specifies the ClientId to use for OAuth authentication. Make sure that `ApiKey` has been removed in order to switch to OAuth authentication.
+- `TenantId`: This is only required when executing queries. Specifies the TenantId to use for OAuth authentication. Make sure that `ApiKey` has been removed in order to switch to OAuth authentication.
+- `ClientSecret`: This is only required when executing queries. Specifies the client secret to use for OAuth authentication. Make sure that `ApiKey` has been removed in order to switch to OAuth authentication.
 
 {{% alert title="Note" color="info" %}}
 The field **Endpoint Uri** for this type needs to be set to the application insights connection string only if you want to use it for posting log messages. If you only want to use this for reading queries, you don't need to specify it at all.
+{{% /alert %}}
+
+{{% alert title="Note" color="info" %}}
+**API key authentication will be deprecated starting March 2026.** Make sure that you update your configuration accordingly to continue executing Application Insights queries.
 {{% /alert %}}
 
 **Generic API**
