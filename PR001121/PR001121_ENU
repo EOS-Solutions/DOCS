@@ -25,6 +25,18 @@
     </tr>
     <tr>
         <td>08/01/2026</td>
+        <td>Physical Inventory Order tracking scanner fixes + reverse scan order implementation + platform fixes</td>
+        <td>1.1.242.0</td>
+        <td>-</td>
+        <td>26.0.67</td>
+        <td>27.0.29</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>08/01/2026</td>
         <td>Location selection with traceability details</td>
         <td>1.1.237.0</td>
         <td>25.0.89</td>
