@@ -1,3 +1,73 @@
+## **19/02/26**
+
+Nuova versione Febbraio 2026
+
+E' stata rilasciata una **nuova versione dell’App “EX036 Withholding Tax Certificazioni Uniche for Italy”** per recepire le modifiche effettuate dall’Agenzia delle Entrate nelle specifiche tecniche pubblicate il 05/02/2026. 
+
+Riassumiamo quindi le novità relative alle Certificazioni Uniche 2026. 
+
+**Modello sintetico in PDF**: 
+
+Innanzitutto, ricordiamo che l’implementazione di EOS stampa solamente il MODELLO SINTETICO relativamente alle pagine contenenti dati gestiti dall’E.R.P. (1,6,8,9). 
+
+Per queste pagine il nuovo modello ha la stessa conformazione del modello dell’anno scorso, a meno di qualche modifica relativa a dati che non vengono gestiti da BC. 
+
+Il **Modello di stampa pdf**  può essere aggiornato dalla pagina setup certificazioni uniche (ECU) con l’azione “importa modello”: 
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/Setup ECU 1 ITA.png"><br>
+<br>
+
+
+**In ogni caso è possibile scaricare il modello SINTETICO** (da cui sono state eliminate le pagine 4 e 6) dal sito **[Download Modelli (ECU) | EOS Docs]({{<relref "ecu-download-models">}})** 
+
+<br>
+<br>
+**File per la trasmissione telematica**: 
+
+Analizzando le nuove specifiche tecniche, le novità relative ai dati gestiti da Business Central sono solamente le seguenti: 
+
+**sul file delle specifiche tecniche a pag. 89** 
+
+è stato aggiunto il **valore 24** per il campo AU001006  **“Tipo di reddito non imponibile”**: 
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/ECU MODELLO ITA.png"><br>
+<br>
+
+
+**sul file delle istruzioni a pag. 85 viene riportato**: 
+
+ 
+
+Il valore “24” è già disponibile tra le opzioni del campo **“Tipo di reddito non imponibile”** perché l’Agenzia delle Entrate lo ha reintrodotto quest’anno con un nuovo significato. Di conseguenza, non è stato necessario modificare questa sezione dell’APP. 
+
+Le nuove modifiche sono state rilasciate OnPrem per BC14, BC25, BC26 e BC27 nelle seguenti versioni:  
+
+**OnPrem BC14 : 14.0.95 o superiori** 
+
+**OnPrem BC25 : 25.0.27 o superiori** 
+
+**OnPrem e Saas : 26.0.19 o superiori** 
+
+**OnPrem e Saas : 27.0.13 o superiori** 
+
+<br>
+<br>
+
+**NAV e BC C/AL** 
+
+Per adeguare il modello di stampa PDF è sufficiente importarlo nel Setup EOS Platform: 
+<br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000845-0/ECU Setup NAV ITA.png"><br>
+<br>
+
+
+Non risulta necessario apportare alcuna modifica al codice sorgente in NAV e BC C/AL. 
+
+In caso di segnalazioni l’indirizzo a cui rivolgersi è labs@eos-solutions.it.  
+
+<br>
+<br>
+
 ## **20/02/25**
 
 Nuova versione febbraio 2025
