@@ -1,17 +1,24 @@
-Eos Vat Management for Italy app allows you to preview and check VAT Plafond overruns.
+Eos Vat Management for Italy app allows to calculate the available VAT plafond amount (fixed or variable) based on the VAT code setup and check usage throughout the year.
+
+In VMI Setup it's possible to enable the management of the Fixed or Mobile VAT plafond:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000613-0/WI1990_ENG_01.png"><br>
 
 On page **VAT Identifier** you need to enter choose :
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000613-0/21VatManagement-en.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000613-0/21VatManagement-en.png"><br>
 
 | **Field**                | **Description**                                                                                                                          |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | Subject to VAT Plafond   | Specifies if the VAT code is subject to a VAT exemption ceiling                                                                          |
 | Supply Next Year Plafond | It indicates which VAT codes are used to foreign sales. Necessary to calculate the ceiling of the following year, for regular exporters. |
 
-Open **VAT Plafond Periods (VMI)**
+**VAT Plafond Periods (VMI)**
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000613-0/22VatManagement-en.png"><br>
+To manage the Fixed VAT Plafond for the year, you need to access the “VAT Plafond Periods (VMI)” page and fill in the following fields:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000613-0/WI1990_ENG_02.png"><br>
+
 
 | **Field**                         | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                  |                   |                             |                             |
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-------------------|-----------------------------|-----------------------------|
@@ -27,3 +34,36 @@ Open **VAT Plafond Periods (VMI)**
 |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Error            | Receipt           | Confirm                     | Confirm                     | 
 |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Error            | Invoice           | Confirm                     | Block                       |
 |Next Year Supplied Amount (LCY)    | Flowfield field that sums up the sales invoices issued abroad and not taxable, so as to automatically calculate the plafond for the following year                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                  |                   |                             |                             |
+
+
+To manage the Mobile VAT Plafond, after creating the annual period, you need to run the "Create monthly plafond periods" function:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000613-0/WI1990_ENG_03.png"><br>
+
+The “Month Plafond” flag is then activated and it's possible to access the “VAT Monthly Plafond Period (VMI)” page:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000613-0/WI1990_ENG_04.png"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000613-0/WI1990_ENG_05.png"><br>
+
+Calculation logics of the different columns:
+
+* Exports of the Month: sum of VAT sales transactions for the appropriate VAT codes.
+* Exports last 12 months: sum of "Exports of the Month" for the previous 12 periods, including the current one.
+* Plafond Monthly usage: sum of VAT purchase transactions for the appropriate VAT codes.
+* Plafond Usage Last 12 Months: sum of " Plafond Monthly usage" for the previous 12 periods, including the current one.
+* Plafond Usage Progressive: " Plafond Usage Progressive" for the previous month + Tax-Exempt purchases for the month – Exports for the 13th previous month (i.e., the same month of the previous year). If negative, it’s set to zero.
+* Plafond Available Early Next Month: Exports for the last 12 months – Plafond Usage Progressive.
+* Plafond Available Current Month: this amount corresponds to the " Plafond Available Early Next Month" amount for the previous month.
+
+Each time you access the "VAT Monthly VAT Plafond Period (VMI)" page, the values in the various columns are automatically updated, except for VAT ceiling values imported via Excel files (specific feature).
+
+**Operational note**: To correctly calculate the Monthly VAT Plafond in the go-live year, it is necessary to create the VAT plafond for the previous year and import the values using the specific "Import from Excel" function:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000613-0/WI1990_ENG_06.png"><br>
+
+The Excel file must have the same structure as the “VAt Monthly Plafond Period (VMI)” page; we recommend generating the Excel template using the standard BC “Open in Excel” functionality.
+
+
+
+
