@@ -1,0 +1,34 @@
+The app enables the issuance of sales, voids, and return commercial documents, as required by the Italian Tax Authority (Agenzia delle Entrate).
+After a sale is posted in LS Express, a specific record is created indicating that a commercial document needs to be printed.
+This record is then processed by Node-RED for the actual printing of the commercial document. Once the printing is completed, Node-RED updates the record by inserting the references to the processed commercial document and updating its status accordingly.
+To access and review the commercial documents printed as a result of a sale, you must run the “Fiscal Receipts” function, available from the “POS Sales History” page.
+In the list, you can view:
+* the IP address of the fiscal printer
+* the transaction amount
+* the creation date and time
+* the receipt status
+* the payload
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001142-0/Scontrino1ENU.jpg"><br>
+
+You can then display the payload on screen by running the “View Payload” function.
+Once the commercial document has been printed, the record will contain additional information such as:
+* Receipt No.
+* Last command: the last command executed by the fiscal printer
+* Printer status: the status of the fiscal printer
+* Receipt status: the result of the printing process
+* Serial No.: the serial number of the fiscal printer that executed the print
+* ZReport No.: the financial closure number (Z Report) in which the printed commercial document will be included
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001142-0/Scontrino2ENU.jpg"><br>
+
+If the “Receipt Status” field shows “Error”, you must check the payload to identify the issue and, if necessary, retry printing the commercial document using the “Print Receipt” function available on the “POS Sales History” page.
+
+# Receipt Copy Printing
+The app also allows printing a copy of a previously issued commercial document by reading the fiscal printer’s electronic journal.
+To print a copy, you can (alternatively):
+* Run the “Print Receipt Copy” function from the “POS Sales History” page
+* Run the “Print Slip” function from the “POS Sales History” page
+* Use the “Reprint Last Receipt” function from the POS sales screen
+
+Regardless of the function executed, a new record will be inserted into the Fiscal Receipts table, with the “Receipt Copy” flag set accordingly.
