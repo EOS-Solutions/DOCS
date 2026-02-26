@@ -1,0 +1,28 @@
+# Configurazione flussi Node-RED
+La comunicazione tra LS Express ed il registratore telematico Epson è gestita tramite flussi configurati all'interno della piattaforma di integrazione Node-RED.
+Node‑RED è una piattaforma di sviluppo basata su flussi (flow‑based programming) che permette di creare applicazioni di integrazione combinando tra loro nodi grafici tramite un’interfaccia web drag‑and‑drop.
+
+L'integrazione tra LS Express ed il registratore telematico richiede quindi l'installazione e la configurazione di Node.js.
+
+# Flussi Node-RED
+L'integrazione con il registratore telematico avviene tramite due specifici flussi Node-RED:
+* gestione della stampa del dodumento commerciale di vendita, di annullo e di redo
+* gestione della stampa della chiusura finanziaria (ZReport)
+
+Entrambe i flussi, richiedono un setup minimo che riguarda la configurazione della comunicazione tra Node-RED e LS Express/Business Central.
+Per ogni flusso, nel nodo "Init settings" sarà necessario definire:
+* BC_SOAP_URL: indirizzo del WS esposto da Business Central per l'integrazione
+* BC_USER: utente Business Central specifico per l'integrazione
+* BC_KEY: password dell'utente Business Central
+* POSId: POSId specifico per il registratore telematico collegato al computer
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001140-0/NodeRed1.jpg"><br>
+
+Dopo aver inserito i parametri di comunicazione con LS Express/Business Central, è possibile definire la frequenza di ripetizione dei due flussi tramite il setup del nodo "Poll every".
+Sarà quindi necessario impostare:
+* Tipologia di schedulazione: Interval
+* Schedulazione della ripetizion: Seconds ed il numero di secondi
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001140-0/NodeRed2.jpg"><br>
+
+Dopo aver impostato tutti i parametri qui descritti, sarà possibile salvare ed avviare il flusso tramite il tasto Done e successivamente Deploy.
