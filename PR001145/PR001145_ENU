@@ -1,0 +1,8 @@
+The app provides additional POS functions such as:
+* entering the customer’s tax code (Codice Fiscale)
+* entering the customer’s VAT number
+* entering the lottery code for the “Receipt Lottery” (Lotteria degli Scontrini)
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001145-0/AltreFunzioniENU.jpg"><br>
+
+All entered data is then included in the sales commercial document, in accordance with the requirements of the Italian Tax Authority (Agenzia delle Entrate).
