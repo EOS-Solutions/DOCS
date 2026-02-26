@@ -1,0 +1,11 @@
+For the purpose of issuing a sales document, return, or cancellation through an Epson fiscal printer, it is necessary to define, for each payment method available in the stores, the corresponding payment category as required by the Italian Revenue Agency.
+The various definable categories and their specifications are provided by the Italian Revenue Agency.
+Below is a table listing the accepted categories:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001137-0/PaymentMethods.jpg"><br>
+
+In Business Central, within the master data of each payment method, it is possible to define:
+* “Fiscal ID”: according to the table provided above
+* “Fiscal ID Description”: the description to be printed on the sales document
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001137-0/MetPagamentoENU.jpg"><br>
