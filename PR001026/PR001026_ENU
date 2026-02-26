@@ -1,8 +1,8 @@
-### 5.0  Setup
+### 5.1 Setup
 The basic settings for creating SEPA Credit Transfers payments are as follows.
 
 
-#### 5.1 Bank Export/import Setup
+#### 5.1.1 Bank Export/import Setup
 A new export format code will need to be created in the Bank export/import setup.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_01.png"><br>
@@ -16,7 +16,7 @@ Regarding the “Check Export Codeunit” to be set, it should be noted that cod
 It is suggested, therefore, for the control when exporting the file to use codeunit 1223, as it is updated regularly.
 
 
-#### 5.2 Bank Account Card setup
+#### 5.1.2 Bank Account Card setup
 In the “Transfer” tab of the bank account card the following parameters should be set.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_02.png"><br>
@@ -41,12 +41,31 @@ Therefore, it is suggested that the “CUC” field on the bank account card be 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_04.png"><br>
 
 
-#### 5.3 Company Information Setup
+#### 5.1.3 Company Information Setup
 The VAT number of the company is a mandatory data element in the XML file of transfers.
 The “VAT Registration No.” field on the “Company Information” tab must be mandatorily filled in.
 
 
-#### 5.4 Entering Vendor Transfer Bill
+#### 5.1.4 General Ledger Setup
+**Setting the “Export SEPA Non‑Euro Export” field in the General Ledger Setup**<br>
+With the 27‑CU1 release of Business Central, Microsoft introduced an update that changes the system behavior when generating the SEPA payment file for vendor transfers.
+
+This update also affects the functionalities of the BNK – Bank Files for Italy (EX005) app.
+
+Specifically, when the “Export SEPA Non‑Euro” field is enabled in the General Ledger Setup, the system automatically sets the "ChrgBr" tag in the SEPA file generated from the Vendor Payment Journal to “SHAR”, which causes the payment instruction to be rejected.
+
+Please note that for SEPA credit transfers, the "ChrgBr" tag must mandatorily be set to “SLEV”.
+
+Therefore, it is recommended not to enable the fields related to SEPA payment file generation in the General Ledger Setup:
+* "SEPA Non‑Euro Export"
+* "SEPA Export w/o Bank Acc. Data"
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_04.01_Setup_cont_generale.png"><br>
+
+
+### 5.1 Vendor Transfer Bill
+#### 5.2.1 Entering Vendor Transfer Bill
 To enter a transfer bill for vendor payments, select the menu item "Vendor Bill Card".<br>
 From the Vendor Bill Card page, you can access the list of draft vendor transfer bills.
 Here, you can view all payment instructions that have been entered but not yet posted.
@@ -98,14 +117,14 @@ In payment proposals of type "Bank Account", beneficiary details such as name an
 
 **Note:** Transfers of type "Conto C/G" and "C/C bancario" cannot be combined.
 
-#### 5.5 Creation of the SCT file (SEPA Credit Transfers)
+#### 5.2.2 Creation of the SCT file (SEPA Credit Transfers)
 **Vendor Bill List Sent Card**<br>
 To export the SCT file from the Vendor Bill List Sent Card, select the “Export Bill List to File” action.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_05.png"><br>
 
 
-#### 5.6 Credit Transfer Cumulative Debit
+### 5.3 Credit Transfer Cumulative Debit
 It is possible to define how the bank should report the payments of the bill list on the periodic statement.
 
 The credit transfer cumulative debit reporting request covers the entire bill list and with it, in practice, you are asking the bank to report, on the statement, a single transaction for the total of the bill and not the individual payment.
@@ -136,7 +155,7 @@ If “BtchBookg” is true the cumulative bill charge is requested.
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_Addcum_06.png"><br>
 
 
-#### 5.7 Payments to Third Parties (Beneficiary Different from Supplier)
+### 5.4 Credit Transfer Cumulative Debit(Beneficiary Different from Supplier)
 In cases where a supplier has transferred its receivables to a third party, such as a factoring company, it is possible to manage payments correctly by specifying an alternative beneficiary in the vendor’s bank account card.
 
 This functionality allows the payment to be directed to the third party (e.g., the factoring company), while maintaining the correct accounting entry on the supplier’s ledger.
@@ -150,7 +169,7 @@ This ensures that the payment is executed in favor of the transferee, while the 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/EN_SCT_B07_Factoring.png"><br>
 
 
-#### 5.8 Technical Information
+### 5.5 Technical Information
 The SCT file in Italy is subject to the standards of the CBI (Corporate Banking Interbancario) service, which adopts the ISO20022 standard format.
 <br>The current version is defined by the technical manual “STIP-MO-001 Payments-v.00.04.01 ENG” version ***00.04.01*** dated 02/11/2023.
 <br>**Reference ISO20022 format**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
