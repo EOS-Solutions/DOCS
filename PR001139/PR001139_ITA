@@ -1,0 +1,9 @@
+# Setup indirizzo registratore telematico
+Per consentire la corretta comunicazione tra LS Express ed il registratore telematico Epson, è necessario inserire l'indirizzo IP impostato nel setup del regitratore telematico stesso.
+L'associazione tra l'indirizzo IP ed il numero di cassa (POS Id) avviene tramite la funzione "Setup stampante fiscale" presente nella pagina di gestione delle sottoscrizioni a LS Express.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001139-0/IPStampante1.jpg"><br>
+
+Per ogni POS (point of sale) presente nella lista, sarà consentito associare un indirizzo IP nel campo "Indirizzo IP stampante fiscale".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001139-0/IPStampante2.jpg"><br>
