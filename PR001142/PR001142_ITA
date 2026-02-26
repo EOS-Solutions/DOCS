@@ -1,0 +1,37 @@
+L'app permette l'emissione dei documenti commerciali di vendita, di annullo oppure di reso merce così come previsto dall'Agenzia delle Entrate.
+A seguito della registrazione di una vendita in LS Express, verrà creata uno specifico record con indicazione della necessità di stampare un documento commerciale.
+Tale record viene poi considerato da Node-RED ai fini della stampa vera e propria del documento commerciale. A seguito della stampa Node-RED, aggiornerà il record inserendo i riferimenti al documento commerciale di vendita processato, aggiornandone di conseguenza lo stato.
+
+Per accedere e verificare i documenti commerciali stampati a seguito di una vendita, è necessario eseguire la funzione "Ricevute fiscali", accedibili dalla pagina "Storico vendite POS".
+
+Nella lista sarà possibile visualizzare:
+* IP del registratore telematico
+* Importo della transazione
+* Data e ora di creazione
+* Stato della ricevuta
+* Payload
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001142-0/Scontrino1ITA.jpg"><br>
+
+Sarà poi possibile visualizzare a video il payload eseguendo la funzione "Visualizza Payload".
+
+Una volta stampato il documento commerciale, il record conterrà ulteriori informazioni quali:
+* Nr. di ricevuta
+* Ultimo comando: l'ultimo comando eseguito dal registratore telematico)
+* Stato stampante: lo stato del registratore telematico
+* Stato ricevuta: l'esito della stampa
+* Nr. seriale: il numero seriale del registratore teelmatico che ha eseguito la stampa
+* Nr. ZReport: il numero di chiusura finanziaria in cui verrà inserito il documento commerciale stampato
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001142-0/Scontrino2ITA.jpg"><br>
+
+Nel caso in cui il campo "Stato ricevuta" sia "Errore", sarà necessario verificare nel payload l'eventuale problematica ed eventualmente riprovare la stampa del documento commerciale tramite la funzione "Stampa ricevuta" presente nella pagina "Storico vendite POS".
+
+# Stampa copia ricevuta
+L'app consente di stampare anche la copia di un documento commerciale precedentemente emesso tramite la lettura del giornale elettronico del registratore telematico.
+Per effettuare la stampa di una copia sarà necessario (in alternativa)
+* Eseguire la funzione "Stampa copia ricevuta" presente nella pagina "Storico vendite POS"
+* Eseguire la funzione "Stampa ricevuta" presente nella pagina "Storico vendite POS"
+* Eseguire la funzione di ristampa ultima ricevuta dalla pagina di vendita di cassa
+
+Indipendentemente dalla funzione eseguita, verrà inserito un nuovo record nella tabella delle ricevute fiscali, con apposito flag "Copia ricevuta" valorizzato
