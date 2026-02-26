@@ -1,0 +1,37 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>VAT setup</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Payment methods</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Sales profile</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Printer integration web services</td>
+	</tr>
+		<tr>
+		<td>5</td>
+		<td>FIscal printer setup</td>
+		</tr>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Node-RED printer flows</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>Functioning</td>
+	</tr>
+	</tr>
+</table>
+
+<br>
+# EOS Italian localization for LS Express (LSI) - SUMMARY
+
+Press ALT + Q and digit “LSI” for a list of the features involved:
