@@ -1,0 +1,11 @@
+L'app consente di emettere tramite il registratore telematico, documenti commerciali per annullo e documenti commerciali per reso merce.
+La procedura per la gestione delle due tipologie di documento prevede l'utilizzo della funzone standard di LS Express "Reso articoli", presente nella pagina "Storico vendite POS".
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001143-0/ResoAnnullo1ITA.jpg"><br>
+
+All'esecuzione della funzione, l'app richiederà all'utente di selezionare se sta eseguendo un'operazione di annullo o un'operazione di reso. 
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001143-0/ResoAnnullo2ITA.jpg"><br>
+
+L'operazione, indipendentemente da quale sia, seguirà poi quanto previsto dallo standard di LS Express.
+
