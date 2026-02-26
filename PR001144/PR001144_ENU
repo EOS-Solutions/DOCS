@@ -1,0 +1,5 @@
+If a customer other than the “Walk‑in” customer defined in the setup is selected at the POS, and if invoice management is enabled, the system will allow the creation of sales invoices and sales credit memos without issuing the related commercial document through the fiscal printer.
+If the “Active Invoice Management” flag is enabled in the Sales Profile setup in use, and the “Invoice Management Type” field is set to “Request Invoice”, then at the end of a POS sale the system will prompt the user to confirm whether they want to issue a sales invoice or a sales credit memo.
+If the user selects “No”, the system will issue a sales commercial document instead.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001144-0/InvoiceENU.jpg"><br>
