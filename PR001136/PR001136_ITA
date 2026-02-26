@@ -1,0 +1,8 @@
+Ai fini dell’emissione di uno scontrino di vendita, reso o annullamento, è necessario definire una mappatura tra il setup registrazioni IVA in LS Express e i reparti fiscali configurati nel setup del registratore telematico Epson.
+La configurazione è unica per tutto il sistema e non dipende né dal negozio né dal terminale POS; di conseguenza, è obbligatorio configurare tutti i registratori fiscali con gli stessi reparti IVA.
+Nel setup della “Setup registrazioni IVA” è stato aggiunto il campo obbligatorio “ID fiscale”.
+Questo campo deve contenere il numero del reparto IVA corrispondente al codice e alla percentuale IVA configurati in LS Express.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001136-0/Reparti.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001136-0/SetRegIVAITA.jpg"><br>
