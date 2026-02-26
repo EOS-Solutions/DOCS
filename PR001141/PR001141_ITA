@@ -1,0 +1,7 @@
+# Setup web services
+Per consentire la comunicazione tra LS Express e il registratore telematico, è necessario aggiungere due specifici web services.
+Sarà quindi necessario pubblicare la codeunit:
+* 70624157 "EOS081FiscalReceiptWS"
+* 70624158 "EOS081ZReportReceiptWS"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001141-0/WebServiceITA.jpg"><br>
