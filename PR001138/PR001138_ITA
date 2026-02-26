@@ -1,0 +1,31 @@
+All'interno della scheda del setup del profilo vendite, sono stati aggiunti alcuni campi di setup.
+## Setup aggiuntivi
+### Stampa
+I setup presenti nella sezione "Stampa", pilotano alcune funzionalità aggiuntive rispetto allo standard di LS Express.
+* "Debug Mode": attiva la modalità di "debug" per la stampa tramite registratore telematico. In fase di creazione della richiesta di stampa al registratore telematico, il sistema mostrerà a video la richiesta in formato XML.
+* "Metodo di stampa": il campo può assumere tre distinti valori
+	* "Power Automate": stampa del documento commerciale tramite flusso Power Automate (attualmente non supportato)
+	* "Node Red": stampa del documento tramite chiamata a web service esposto da NodeRed (attualmente non supportato)
+	* "Esterno": stampa del documento tramite flusso Node Red il quale richiama WS esposti da LS Express
+* "Power Automate Printer Url": url del flusso Power Automate
+* "Power Automate Epson Signature": signature del flusso Power Automate
+* "Stampa barcode": consente l'attivazione della stampa del barcode all'interno del documento commerciale di vendita emesso dal registratore telematico
+* "Tipo barcode": il campo può assumere due distinti valori
+	* "CODE128": stampa il barcode in formato Code128
+	* "QRCode": stampa il QR code 
+* "Larghezza barcode": nel caso in cui il campo "Tipo barcode" è CODE128, è necessario indicare la larghezza del barcode
+* "Altezza barcode": nel caso in cui il campo "Tipo barcode" è CODE128, è necessario indicare l'altezza del barcode
+* "Dimensione QRCode": nel caso in cui il campo "Tipo barcode" è QRCode, è necessario indicare la dimensione del QR Code
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001138-0/SalesProfileITA1.jpg"><br>
+
+### Setup aggiuntivo
+Ulteriori setup, non strettamente legati alla stampa del documento commerciale, sono stati aggiunti nella sezione "Setup aggiuntivo".
+* "Ricerca ricevuta da POS": consente la ricerca di una vendite precedentemente registrata tramite inserimento del numero documento (barcode o QR code) direttamente nella schermata di vendita di cassa
+* "Gestione fattura attiva": consente l'emissione di fatture di vendita direttamente dalla schermata di vendita di cassa selezionando un cliente diverso dal normale cliente per i corrispettivi (o "walk-in")
+* "Tipo gestione fattura": il campo può assumere due distinti valori
+	* "Richiedi fattura": il sistema richiede la conferma all'utente ai fini dell'emissione di una fattura direttamente dalla schermata di vendita in cassa
+	* "Crea e registra": il sistema non chiede alcuna conferma e in automatico crea e registra la fattura di vendita senza eseguire la stampa del documento commerciale dal registratore telematico
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001138-0/SalesProfileITA2.jpg"><br>
+	
