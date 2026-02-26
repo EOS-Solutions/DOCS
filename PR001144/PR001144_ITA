@@ -1,0 +1,4 @@
+Nel caso in cui in cassa venga selezionato un cliente differente dal cliente "Walk-in" definito a setup, e nel caso in cui sia attiva la gestione delle fatture, il sistema consentirà la creazione di fatture di vendita e note credito di vendita senza l'emissione del relativo documento commerciale dal registratore telematico.
+Nel caso in cui nel setup "Profilo vendite" in uso sia attivo il flag "Gestione fattura attiva" ed il valore del campo "Tipo gestione fattura" sia "Richiedi fattura", in fase di conclusione di una vendita in cassa, il sistema richierà la conferma di emeissione di una fattura o di una nota credito di vendita. Nel caso in cui l'utente risponda "No", il sistema emetterà un documento commerciale di vendita.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001144-0/InvoiceITA.jpg"><br>
