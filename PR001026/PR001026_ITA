@@ -1,8 +1,8 @@
-### 5.0  Setup
+### 5.1 Setup
 Le impostazioni di base per la creazione delle disposizioni di pagamento SEPA Credit Transfers (Bonifici SEPA) sono le seguenti.
 
 
-#### 5.1 Setup importazione/esportazione banca
+#### 5.1.1 Setup importazione/esportazione banca
 Nel setup importazione\esportazione banca dovrà essere creato un nuovo codice di formato esportazione.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_01.png"><br>
@@ -18,7 +18,7 @@ Per quanto riguarda la "Codeunit per controllo esportazioni" da impostare, si so
 Si suggerisce, quindi, per il controllo in fase di esportazione del file di utilizzare la codeunit 1223, in quanto aggiornata regolarmente.
 
 
-#### 5.2 Setup Scheda conto corrente bancario
+#### 5.1.2 Setup Scheda conto corrente bancario
 Nella cartella "Trasferimento" della scheda conto corrente bancario 
 dovranno essere impostati i seguenti parametri.
 
@@ -45,12 +45,30 @@ Si consiglia, comunque, di valorizzare il campo "CUC" presente sulla  scheda con
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_04.png"><br>
 
 
-#### 5.3 Setup Informazioni Società
+#### 5.1.3 Setup Informazioni Società
 La partita IVA della società è un dato obbligatorio nel file XML dei bonifici.
 Il campo "Partita IVA" della scheda "Informazioni Società" dovrà essere obbligatoriamente compilato.
 
 
-#### 5.4 Inserimento della distinta di pagamento
+#### 5.1.4 Setup contabilità generale
+**Impostazione campo “Esportazione SEPA non in euro” nel Setup contabilità generale**<br>
+Con la versione 27-CU1 di Business Central, Microsoft ha introdotto un aggiornamento che modifica il comportamento del sistema nella creazione del file SEPA dei bonifici ai fornitori.
+
+Tale aggiornamento influisce anche sulle funzionalità dell’app BNK - Bank Files for Italy (EX005).
+
+In particolare, attivando il campo “Esportazione SEPA non in euro” nel Setup contabilità generale viene impostato automaticamente a “SHAR” il tag "ChrgBr" nel file SEPA generato dalla Distinta fornitore causando lo scarto della disposizione.
+
+Si ricorda che, per i bonifici SEPA, il valore del tag "ChrgBr" deve essere obbligatoriamente “SLEV“.
+
+Si raccomanda, quindi, di non attivare i campi relativi alla generazione del file dei bonifici SEPA presenti nel Setup contabilità generale: 
+* “Esportazione SEPA non in euro”
+* “Esportazione SEPA senza dati C/C bancario”
+
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_04.01_Setup_cont_generale.png"><br>
+
+### 5.2 Distinta di pagamento
+#### 5.2.1 Inserimento della distinta di pagamento
 Per inserire la distinta di pagamento selezionare la voce di menu “Distinta fornitore”. Da qui, infatti, si accede alla pagina delle distinte bonifico fornitori provvisorie, dove sono visualizzate le distinte inserite e non ancora registrate.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_B01_Menu.png"><br>
@@ -105,14 +123,13 @@ Nel caso di distinta di tipo "C/C bancario", le informazioni relative al nome be
 
 **Nota**: i bonifici di tipo Conto C/G e C/C bancario non possono essere cumulati.
 
-#### 5.5 Creazione del file SCT (Bonifico SEPA)
+#### 5.2.2 Creazione del file SCT (Bonifico SEPA)
 **Distinta effetti fornitore emessa**<br>
 Per esportare il file SCT dalla "Distinta effetti forn. emessa" selezionare l'azione "Esporta distinta emessa su file".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_05.png"><br>
 
-
-#### 5.6 Addebito cumulativo distinta
+### 5.3 Addebito cumulativo distinta
 E' possibile definire le modalità di rendicontazione della distinta di pagamento sull’estratto conto periodico da parte della banca.
 
 La richiesta di addebito cumulativo riguarda l’intera distinta e con essa, in pratica, si chiede alla banca di rendicontare, sull'estratto conto, un'unica operazione per il totale della distinta e non le singole disposizioni di pagamento.
@@ -141,7 +158,7 @@ Se BtchBookg" è true si richiede l'addebito cumulativo della distinta.
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_Addcum_06.png"><br>
 
 
-#### 5.7 Pagamenti a soggetti terzi (beneficiario diverso dal fornitore)
+### 5.4 Pagamenti a soggetti terzi(beneficiario diverso dal fornitore)
 È possibile indicare un beneficiario diverso per i pagamenti, nell’anagrafica delle banche fornitori, al fine di gestire correttamente le operazioni di factoring o, in generale, di cessione del credito del fornitore.
 
 In questo modo, i bonifici verranno indirizzati al soggetto terzo (es. società di factoring) anziché al fornitore, pur mantenendo la corretta imputazione contabile.
@@ -154,8 +171,7 @@ Questa funzionalità consente, quindi,  di effettuare il bonifico direttamente a
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001026-0/IT_SCT_B07_Factoring.png"><br>
 
-
-#### 5.8 Informazioni tecniche
+### 5.5 Informazioni tecniche
 Il file SCT, in Italia, è soggetto agli standard del servizio CBI (Corporate Banking Interbancario), che integra il tracciato standard ISO20022.
 <br>Il tracciato attuale è disciplinato dal manuale tecnico "STIP-MO-001 Pagamenti- v.00.04.01", versione ***00.04.01*** del 02/11/2023.
 <br>**Tracciato ISO20022 di riferimento**: CustomerCreditTransferInitiationV03 - pain.001.001.09.
