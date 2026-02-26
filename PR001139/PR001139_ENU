@@ -1,0 +1,9 @@
+# Fiscal printer IP address setup
+To enable proper communication between LS Express and the Epson fiscal printer, it is necessary to enter the IP address configured in the fiscal printer setup.
+The association between the IP address and the POS number (POS Id) is managed through the “Fiscal Printer Setup” function available on the LS Express subscription management page.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001139-0/IPStampante1ENU.jpg"><br>
+
+For each POS (point of sale) listed, it is possible to assign an IP address in the “Fiscal Printer IP Address” field.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001139-0/IPStampante2ENU.jpg"><br>
