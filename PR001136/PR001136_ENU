@@ -1,0 +1,8 @@
+For the purpose of issuing a sales, return, or cancellation receipt, it is necessary to define a mapping between the VAT posting setup in LS Express and the fiscal departments configured in the setup of the Epson fiscal printer.
+The setup is unique across the entire system and is not dependent on the store or POS terminal; therefore, it is mandatory to configure all fiscal printers with the same VAT departments.
+
+In the setup of the “VAT Posting Setup”, the mandatory field “Fiscal ID” has been added. The field must contain the VAT department number corresponding to the LS Express VAT code and percentage.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001136-0/Reparti.jpg"><br>
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001136-0/SetRegIVAENU.jpg"><br>
