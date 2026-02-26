@@ -1,0 +1,10 @@
+The app allows issuing cancellation commercial documents and return commercial documents through the fiscal printer.
+The procedure for handling both document types requires the use of the LS Express standard function “Return Items”, available on the “POS Sales History” page.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001143-0/ResoAnnullo1ENU.jpg"><br>
+
+When the function is executed, the app will prompt the user to select whether they are performing a cancellation operation or a return operation.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001143-0/ResoAnnullo2ENU.jpg"><br>
+
+Regardless of the selected option, the process will then follow the standard LS Express workflow.
