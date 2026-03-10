@@ -7,7 +7,7 @@ Nella pagina di Setup è possibile abilitare la gestione della doppia unità di 
 |--------------------------------------------|---------------------------------------------------------------------------------|
 | Abilita doppia unità di misura             | consente di abilitare, per società, la DUM                                      |
 | Suggerisci q.tà sec. da gestire            | si può scegliere di far suggerire al sistema la quantità secondaria             |
-| Gestione Quantità Residua Sec.            | specifica la gestione delle quantità residua secondaria. Può assumere i valori **Standard** e **Azzera quantità residua sec. alla chiusura della riga**. Il valore **Azzera quantità residua sec. alla chiusura della riga** indica che la quantità residua sec. viene azzerata quando la riga viene chiusa nell'unità di misura principale.             |
+| Gestione Quantità Residua Sec.            | specifica la gestione del campo "quantità secondaria residua" sulla riga dell'ordine. Può assumere i valori **Standard** e **Azzera quantità residua sec. alla chiusura della riga**. Il valore **Azzera quantità residua sec. alla chiusura della riga** indica che la quantità residua secondaria nella riga ordine viene azzerata quando la riga viene chiusa nell'unità di misura principale.             |
 | Precisione arrotondamento prezzi vendita   | permette di definire con quanti decimali arrotondare i prezzi nel ciclo attivo  |
 | Precisione arrotondamento prezzi acquisto  | permette di definire con quanti decimali arrotondare i prezzi nel ciclo passivo |
 
