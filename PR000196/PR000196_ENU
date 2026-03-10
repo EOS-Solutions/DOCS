@@ -2,7 +2,7 @@
 
 On the Shipping Price list it is possible to create a new card by pressing New:
 
-| ?? **Important** |
+| âš ï¸ **Important** |
 | --- |
 | Each Shipping Price is associated with a single shipping agent. <br>A Shipping agent has only one Shipping Price for transport costs. |
 
@@ -11,12 +11,12 @@ On the Shipping Price list it is possible to create a new card by pressing New:
 
 | **Field**| **Description** |
 | :--- | :--- |
-| Shipping Price Codeÿ| Indicates the Shipping agent and is selected from the Shipping agent list previously defined.ÿ|
-| Shipping / Invoice / Order Calculation| It is possible to calculate the transport costs on the basis of the shipping price respectively at the time of the creation of the sales order / delivery note / invoice.ÿ|
-| Calculation Type| **Sum:**ÿit takes as input all the shipping price type codes of the lines and adds the values to calculate the cost of the entire shipment.**First occurrence:**ÿtakes as input the first value it encounters in the lines (based on the value of the "Priority" field) without carrying out the sum.ÿ|
-| Area Calculation Type| **Sum:**ÿit takes as input all the shipping price type codes of the lines and adds the values to calculate the cost of the entire shipment.**First occurrence:**ÿtakes as input the first value it encounters in the lines (based on the value of the "Priority" field) without carrying out the sum.ÿ|
-| Version Nos.| It is the default numerator to manage the versions of the shipping price.ÿ|
-| Weight / Cubage Conv. Factorÿÿ| Specifies the shipper's weight/cubage conversion factor. This is because in the case of bulky parcel shipments the cost of shipping is calculated not only on the basis of the actual weight, but on the taxable weight, thanks to a conversion factor that translates a certain volume into taxable kg.ÿ|
-| Active Versionÿÿ| Once the versions of the shipping price with the relative validity periods have been defined in the table, the active version will be automatically indicated in this field.ÿ|
-| Currency Code| Indicates the currency in which to calculate the transportation costs.ÿ|
-| Status| Indicates the status of the document.<br>**New**: newly created price list. It cannot be used for calculations, but it can be modified.  <br>**Under Development**: the shipping price is being edited. It cannot be used for calculations.  <br>**Certificate**: the shipping price can generate transport cost calculations, but cannot be changed.  <br>**Closed**: it cannot be used, nor modified, but is kept in history.ÿ|
+| Shipping Price CodeÂ | Indicates the Shipping agent and is selected from the Shipping agent list previously defined.Â |
+| Shipping / Invoice / Order Calculation| It is possible to calculate the transport costs on the basis of the shipping price respectively at the time of the creation of the sales order / delivery note / invoice.Â |
+| Calculation Type| **Sum:**Â it takes as input all the shipping price type codes of the lines and adds the values to calculate the cost of the entire shipment.**First occurrence:**Â takes as input the first value it encounters in the lines (based on the value of the "Priority" field) without carrying out the sum.Â |
+| Area Calculation Type| **Sum:**Â it takes as input all the shipping price type codes of the lines and adds the values to calculate the cost of the entire shipment.**First occurrence:**Â takes as input the first value it encounters in the lines (based on the value of the "Priority" field) without carrying out the sum.Â |
+| Version Nos.| It is the default numerator to manage the versions of the shipping price.Â |
+| Weight / Cubage Conv. FactorÂ Â | Specifies the shipper's weight/cubage conversion factor. This is because in the case of bulky parcel shipments the cost of shipping is calculated not only on the basis of the actual weight, but on the taxable weight, thanks to a conversion factor that translates a certain volume into taxable kg. </br> Example: Sales order with total weight of 10 kg and a weight-based shipping price list. By default, the app uses the total quantity of the document (10 kg) to filter the price list lines and find the amount.</br> If a conversion factor has been defined, this calculation is performed: *Qty = Total document volume Ã— Factor*. </br>If this calculated quantity is greater than the original quantity (10 kg) of the document, it is used to filter the price list lines and find the amount. </br>If the price list is by volume: *Qty = Total net weight of the document Ã— Factor*.Â |
+| Active VersionÂ Â | Once the versions of the shipping price with the relative validity periods have been defined in the table, the active version will be automatically indicated in this field.Â |
+| Currency Code| Indicates the currency in which to calculate the transportation costs.Â |
+| Status| Indicates the status of the document.<br>**New**: newly created price list. It cannot be used for calculations, but it can be modified.  <br>**Under Development**: the shipping price is being edited. It cannot be used for calculations.  <br>**Certificate**: the shipping price can generate transport cost calculations, but cannot be changed.  <br>**Closed**: it cannot be used, nor modified, but is kept in history.Â |
