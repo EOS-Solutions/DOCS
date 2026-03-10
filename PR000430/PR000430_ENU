@@ -6,7 +6,7 @@ On the Setup page you can enable the management of the double unit of measure an
 |---------------------------------|------------------------------------------------------------------------------|
 | Enable Dual Unit of Measure     | allows you to enable the DUM app for the Company                             |
 | Suggest Sec. Qty. to Handle     | you can choose to have the system suggest the secondary quantity             |
-| Sec. Outstanding Quantity Mgt.            | specifies the secondary outstanding quantity management. It can assume the values **Standard** and **Reset Sec. Outst. Qty. at line close**. The value **Reset Sec. Outst. Qty. at line close** indicates that the residual quantity sec. is set to zero when the line is closed in the main unit of measure.             
+| Sec. Outstanding Quantity Mgt.            | specifies the management of the secondary outstanding quantity field on the order line. It can assume the values **Standard** and **Reset Sec. Outst. Qty. at line close**. The value **Reset Sec. Outst. Qty. at line close** indicates that the secondary outstanding quantity in the order line is set to zero when the line is closed in the base unit of measure.        
 | Sales Price Rounding Precision  | allows you to define how many decimals round the prices in the active cycle  |
 | Purch. Price Rounding Precision | allows you to define how many decimals round prices in the passive cycle     |
 
