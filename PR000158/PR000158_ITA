@@ -34,6 +34,15 @@ Quando la sincronizzazione fallisce nella società di origine viene registrato l
 				<td>Se attivo vengono disabilitati tutti i sottoprocessi. </td>
 			</tr>
 			<tr>
+				<td>Ottimizza sincronizzazione:</td>
+				<td>
+				<ul>
+					<li>&nbsp;Invia sempre: le entry vengono inviate sempre</li>
+					<li>Invia dopo le modifiche: viene eseguito un controllo e verificato se le entry sono già state inviate, e quindi non le sincronizza di nuovo. Evita di sincronizzare lo stesso record con gli stessi dati più volte</li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
 				<td>Consenti modifiche a caldo</td>
 				<td>Consente di effettuare modifiche ai setup mentre è in corso 
 				una sincronizzazione</td>
@@ -75,7 +84,7 @@ Quando la sincronizzazione fallisce nella società di origine viene registrato l
 &nbsp;</td>
 			</tr>
 			<tr>
-				<td>Modalità eliminazione:</td>
+				<td>Modalità eliminazione batch:</td>
 				<td>
 				<ul>
 					<li>&nbsp;Completo: cancella tutto subito</li>
