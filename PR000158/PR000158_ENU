@@ -29,6 +29,15 @@ Useful in the case of a blocking problem in the app, so serious that it affects 
 <td>If enabled, all threds are disabled.&nbsp;</td>
 </tr>
 <tr>
+				<td>Synch Optimization:</td>
+				<td>
+				<ul>
+					<li>&nbsp;Send always: entries are always sended</li>
+					<li>Send after changes: a check is executed and verified if entries have already been sent, and so they aren't synchronized another time. Avoid synchronizing the same record with the same data multiple times</li>
+				</ul>
+				</td>
+			</tr>
+<tr>
 <td>Allow Hot Changes</td>
 <td>Allows you to make changes to setups while a synchronization is in progress&nbsp;</td>
 </tr>
