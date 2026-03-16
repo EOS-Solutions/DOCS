@@ -22,15 +22,15 @@ At the billing plan line level, it is possible to fill in or modify some fields:
 
 The values relating to percentages or amounts of advance invoice lines can be calculated as:
 
-Percentage of the total amount of the sales order (the amount will be recalculated automatically)
+Percentage of the total amount of the purchase order (the amount will be recalculated automatically)
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_09_ENG.png"><br>
 
-Fixed amount with respect to the total sales order (the percentages will be recalculated automatically).
+Fixed amount with respect to the total purchase order (the percentages will be recalculated automatically).
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_10_ENG.png"><br>
 
-If the values or quantities in the sales order are changed, it is possible to use the “Recalculate billing plan” function with two options:
+If the values or quantities in the purchase order are changed, it is possible to use the “Recalculate billing plan” function with two options:
 
 Recalculate percentages: the amounts will remain unchanged and the percentages will be adjusted to the new total;
 
