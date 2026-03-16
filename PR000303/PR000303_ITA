@@ -22,15 +22,15 @@ A livello di riga del piano di fatturazione, è possibile compilare o modificare
 
 I valori relativi alle percentuali o agli importi delle righe di fatture di anticipo, possono essere calcolati come:
 
-* Percentuale dell’importo totale dell’ordine di vendita (l’importo verrà ricalcolato in automatico)
+* Percentuale dell’importo totale dell’ordine di acquisto (l’importo verrà ricalcolato in automatico)
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_09_ITA.png"><br>
 
-* Importo fisso rispetto al totale dell’ordine di vendita (le percentuali verranno ricalcolate in automatico).
+* Importo fisso rispetto al totale dell’ordine di acquisto (le percentuali verranno ricalcolate in automatico).
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_10_ITA.png"><br>
 
-Nel caso i valori o le quantità nell’ordine di vendita venissero variati è possibile utilizzare la funzione “Ricalcola piano fattura” con due opzioni:
+Nel caso i valori o le quantità nell’ordine di acquisto venissero variati è possibile utilizzare la funzione “Ricalcola piano fattura” con due opzioni:
 
 * **Ricalcola percentuali:** gli importi rimarranno invariati e le percentuali saranno adattate al nuovo totale;
 
