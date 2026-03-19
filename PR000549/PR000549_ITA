@@ -1,10 +1,19 @@
-La App VAT Management for Italy per Microsoft Dynamics 365 Business Central consente di gestire la Dichiarazione di Intento a livello di riga documento, di creare un'anteprima e di controllare il tetto del Plafond IVA. 
-<br><br>
+La App VAT Management for Italy (VMI) per Microsoft Dynamics 365 Business Central consente di: 
 
+* Gestire la Dichiarazione di Intento clienti e fornitori
+* Controllare il plafond IVA
+* Calcolare e gestire l’importo IVA pro rata
+* Calcolare gli interessi IVA nel caso di liquidazioni IVA trimestrali
+* Verificare i dati IVA registrati sia per data di registrazione, che per data esecuzione operazione
+* Gestire Split payment*
+* Prevede inoltre la possibilità di stampare Registri IVA e Liquidazione IVA con alcune integrazioni rispetto allo standard BC
+
+*Funzionalità presente nell’app FTE
+<br><br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vhFl1YWaVxs" title="VAT Management for Italy for Microsoft Dynamics 365 Business Central" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
 
 **VAT Management for Italy - SOMMARIO**
 
-Premere ALT + Q e digitare "VMI" per vedere un elenco delle funzionalit� coinvolte:
+Premere ALT + Q e digitare "VMI" per vedere un elenco delle funzionalità coinvolte:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000549-0/1VatManagement.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000549-0/1VatManagement.png"><br>
