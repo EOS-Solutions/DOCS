@@ -27,5 +27,6 @@ Vediamone i campi principali
   - Fornitore: se il riconoscimento avviene tramite ricezione di fattura passiva
 - **Periodicità liquidazione**: dove non presente un piano di liquidazione è possibile indicare con quale periodicità vengono liquidati i bonus (es. se mensile (1M) il sistema genererà un documento ogni mese liquidato)
 - **Tipo soglia**: Unità di misura dei valori di soglia inseriti
-  
+- **Data di inizio** / **Data di fine**: indica le date utilizzate per limitare gli snapshot inclusi nel calcolo di questa riga. La **Data di inizio** non può essere posteriore alla **Data di fine**. Se una modifica a questi campi comporta che alcuni movimenti relative ai bonus risultino al di fuori del periodo compreso tra la data di inizio e quella di fine, tali voci verranno eliminate al successivo calcolo di questa riga. Se sono presenti voci liquidate o allocate al di fuori di questo periodo, la modifica non sarà consentita.
+
 L’inclusione / esclusione di clienti, articoli, gerarchie o cluster è definibile tramite gli omonimi campi di filtro.
