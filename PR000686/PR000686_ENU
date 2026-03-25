@@ -26,5 +26,6 @@ It is only possible to modify a contract if it is in the "Under Development" sta
   - Vendor: if the premium is settled by receiving a vendor invoice
 - **Settlement periodicity**: where there is no settlement plan, you can indicate how periodically the bonuses are settled (e.g. if monthly (1M) the system will generate a document each month settled)
 - **Thresh. Type**: units of measure of the threshold values entered
-  
+- ** Starting Date** / **Ending Date**: : indicates dates used to limit the snapshots included in the calculation for this line. **Starting Date** cannot be greater than **Ending Date**. If a change to these fields results in bonus entries being outside of the starting-/ending date, they will be deleted the next time this line is calculated. If there are settled or allocated entries outside this period the change will not be allowed.
+
 The inclusion / exclusion of customers, items, hierarchies, or clusters can be defined through the filter fields of the same name.
