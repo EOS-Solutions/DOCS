@@ -43,5 +43,12 @@ La stampa ministeriale marcherà il riquadro **Dogana**, reparto DESTINATARIO DE
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000587-0/Fornitori autorità doganale 2.PNG"><br>
 
 
+<br>
+<br>
 
+| **Nota**                                                                                                                                                     |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nella pagina "Scheda setup reg. IVA" è presente il flag "Ignora dich. intento". Se attivo, per lo specifico setup IVA la dichiarazione d'intento valida non viene proposta automaticamente sui documenti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000587-0/VMI ITA1.png"><br>
 
