@@ -3,63 +3,57 @@
         <td></td>
         <td></td>
         <td></td>
-        <td>**PowerWMS - EX089**</td>
+				<td><b>PowerWMS - EX089</b></td>
         <td></td>
         <td></td>
-        <td>**PowerWMS x HUM - EX089.01**</td>
+        <td><b>PowerWMS x HUM - EX089.01</b></td>
         <td></td>
         <td></td>
 
     </tr>
     <tr>
-        <td>**Release date**</td>
-        <td>**Notes**</td>
-        <td>**PowerApp version**</td>
-        <td>**BC25**</td>
-        <td>**BC26**</td>
-        <td>**BC27**</td>
-        <td>**BC25**</td>
-        <td>**BC26**</td>
-        <td>**BC27**</td>
+        <td><b>Release date</b></td>
+        <td><b>Notes</b></td>
+        <td><b>PowerApp version</b></td>
+        <td><b>BC25</b></td>
+        <td><b>BC26</b></td>
+        <td><b>BC27</b></td>
+        <td><b>BC25</b></td>
+        <td><b>BC26</b></td>
+        <td><b>BC27</b></td>
     </tr>
 	<tr>
         <td>20/03/2026</td>
-        <td> - Event for manage put-away lines under quality control  
-				- Free text longer than 100 chars management  
-				- Copy alternative views improvements</td>
+        <td> - Event for manage put-away lines under quality control<br>- Free text longer than 100 chars management<br>- Copy alternative views improvements</td>
         <td>1.1.245.0</td>
         <td>-</td>
         <td>26.0.72</td>
         <td>27.0.34</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
     </tr>
 		<tr>
         <td>05/03/2026</td>
-        <td> - Actions: return to lines  
-				- Additional fields for source scans and HU list  
-				- New flag "Skip Quantity Check" for custom activities</td>
+        <td> - Actions: return to lines<br>- Additional fields for source scans and HU list<br>- New flag "Skip Quantity Check" for custom activities</td>
         <td>1.1.245.0</td>
         <td>-</td>
         <td>26.0.69</td>
         <td>27.0.31</td>
-        <td></td>
+        <td>-</td>
         <td>26.0.32</td>
         <td>27.0.22</td>
     </tr>
     <tr>
         <td>08/01/2026</td>
-        <td> - Physical Inventory Order tracking scanner fixes  
-				- Reverse scan order implementation  
-				- Platform fixes</td>
+        <td> - Physical Inventory Order tracking scanner fixes<br>- Reverse scan order implementation<br>- Platform fixes</td>
         <td>1.1.242.0</td>
         <td>-</td>
         <td>26.0.67</td>
         <td>27.0.29</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
     </tr>
     <tr>
         <td>08/01/2026</td>
@@ -68,17 +62,17 @@
         <td>25.0.89</td>
         <td>26.0.56</td>
         <td>27.0.19</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
     </tr>
     <tr>
         <td>30/12/2025</td>
         <td>Empty location management in HU handling</td>
         <td>1.1.233.0</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
         <td>25.0.46</td>
         <td>26.0.26</td>
         <td>27.0.16</td>
@@ -101,9 +95,9 @@
         <td>25.0.83</td>
         <td>26.0.48</td>
         <td>27.0.11</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
     </tr>
     <tr>
         <td>29/08/2025</td>
