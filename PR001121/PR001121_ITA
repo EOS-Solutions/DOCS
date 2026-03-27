@@ -3,34 +3,59 @@
         <td></td>
         <td></td>
         <td></td>
-        <td>PowerWMS - EX089</td>
+	<td>**PowerWMS - EX089**</td>
         <td></td>
         <td></td>
-        <td>PowerWMS x HUM - EX089.01</td>
-        <td></td>
+        <td>**PowerWMS x HUM - EX089.01**</td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>Data rilascio</td>
-        <td>Note</td>
-        <td>Versione PowerApp</td>
-        <td>BC25</td>
-        <td>BC26</td>
-        <td>BC27</td>
-        <td>BC25</td>
-        <td>BC26</td>
-        <td>BC27</td>
+        <td>**Data rilascio**</td>
+        <td>**Note**</td>
+        <td>**Versione PowerApp**</td>
+        <td>**BC25**</td>
+        <td>**BC26**</td>
+        <td>**BC27**</td>
+        <td>**BC25**</td>
+        <td>**BC26**</td>
+        <td>**BC27**</td>
+    </tr>
+		<tr>
+        <td>20/03/2026</td>
+        <td> - Evento per gestione righe in controllo qualità in stoccaggio  
+				- Gestione testi liberi con lunghezza superiore a 100 caratteri  
+				- Miglioramento copia viste alternative</td>
+        <td>1.1.245.0</td>
+        <td>-</td>
+        <td>26.0.72</td>
+        <td>27.0.34</td>
         <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+		<tr>
+        <td>05/03/2026</td>
+        <td> - Azioni: ritorno alla lista righe  
+				- Campi aggiuntivi per scansioni origine e lista HU  
+				- Flag "Salta controllo quantità" per le attività personalizzate</td>
+        <td>1.1.245.0</td>
+        <td>-</td>
+        <td>26.0.69</td>
+        <td>27.0.31</td>
+        <td></td>
+        <td>26.0.32</td>
+        <td>27.0.22</td>
     </tr>
     <tr>
         <td>08/01/2026</td>
-        <td>Correzione scanner con token tracciabilità per ordini inventario fisico + implementazione ordine scansione inverso + correzioni piattaforma</td>
+        <td> - Correzione scanner con token tracciabilità per ordini inventario fisico  
+				- Implementazione ordine scansione inverso  
+				- Correzioni piattaforma</td>
         <td>1.1.242.0</td>
         <td>-</td>
         <td>26.0.67</td>
         <td>27.0.29</td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -45,7 +70,6 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>30/12/2025</td>
@@ -57,7 +81,6 @@
         <td>25.0.46</td>
         <td>26.0.26</td>
         <td>27.0.16</td>
-        <td></td>
     </tr>
     <tr>
         <td>31/10/2025</td>
@@ -69,7 +92,6 @@
         <td>25.0.43</td>
         <td>26.0.22</td>
         <td>27.0.12</td>
-        <td></td>
     </tr>
     <tr>
         <td>08/10/2025</td>
@@ -78,7 +100,6 @@
         <td>25.0.83</td>
         <td>26.0.48</td>
         <td>27.0.11</td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -93,6 +114,5 @@
         <td>25.0.41</td>
         <td>26.0.20</td>
         <td>27.0.10</td>
-        <td></td>
     </tr>
 </table>
