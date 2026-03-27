@@ -3,34 +3,60 @@
         <td></td>
         <td></td>
         <td></td>
-        <td>PowerWMS - EX089</td>
+        <td>**PowerWMS - EX089**</td>
         <td></td>
         <td></td>
-        <td>PowerWMS x HUM - EX089.01</td>
+        <td>**PowerWMS x HUM - EX089.01**</td>
+        <td></td>
+        <td></td>
+
+    </tr>
+    <tr>
+        <td>**Release date**</td>
+        <td>**Notes**</td>
+        <td>**PowerApp version**</td>
+        <td>**BC25**</td>
+        <td>**BC26**</td>
+        <td>**BC27**</td>
+        <td>**BC25**</td>
+        <td>**BC26**</td>
+        <td>**BC27**</td>
+    </tr>
+	<tr>
+        <td>20/03/2026</td>
+        <td> - Event for manage put-away lines under quality control  
+				- Free text longer than 100 chars management  
+				- Copy alternative views improvements</td>
+        <td>1.1.245.0</td>
+        <td>-</td>
+        <td>26.0.72</td>
+        <td>27.0.34</td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
-    <tr>
-        <td>Release date</td>
-        <td>Notes</td>
-        <td>PowerApp version</td>
-        <td>BC25</td>
-        <td>BC26</td>
-        <td>BC27</td>
-        <td>BC25</td>
-        <td>BC26</td>
-        <td>BC27</td>
+		<tr>
+        <td>05/03/2026</td>
+        <td> - Actions: return to lines  
+				- Additional fields for source scans and HU list  
+				- New flag "Skip Quantity Check" for custom activities</td>
+        <td>1.1.245.0</td>
+        <td>-</td>
+        <td>26.0.69</td>
+        <td>27.0.31</td>
         <td></td>
+        <td>26.0.32</td>
+        <td>27.0.22</td>
     </tr>
     <tr>
         <td>08/01/2026</td>
-        <td>Physical Inventory Order tracking scanner fixes + reverse scan order implementation + platform fixes</td>
+        <td> - Physical Inventory Order tracking scanner fixes  
+				- Reverse scan order implementation  
+				- Platform fixes</td>
         <td>1.1.242.0</td>
         <td>-</td>
         <td>26.0.67</td>
         <td>27.0.29</td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -45,7 +71,6 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>30/12/2025</td>
@@ -57,7 +82,6 @@
         <td>25.0.46</td>
         <td>26.0.26</td>
         <td>27.0.16</td>
-        <td></td>
     </tr>
     <tr>
         <td>31/10/2025</td>
@@ -69,7 +93,6 @@
         <td>25.0.43</td>
         <td>26.0.22</td>
         <td>27.0.12</td>
-        <td></td>
     </tr>
     <tr>
         <td>08/10/2025</td>
@@ -78,7 +101,6 @@
         <td>25.0.83</td>
         <td>26.0.48</td>
         <td>27.0.11</td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -93,6 +115,5 @@
         <td>25.0.41</td>
         <td>26.0.20</td>
         <td>27.0.10</td>
-        <td></td>
     </tr>
 </table>
