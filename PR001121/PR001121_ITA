@@ -3,62 +3,56 @@
         <td></td>
         <td></td>
         <td></td>
-	<td>**PowerWMS - EX089**</td>
+				<td><b>PowerWMS - EX089</b></td>
         <td></td>
         <td></td>
-        <td>**PowerWMS x HUM - EX089.01**</td>
+        <td><b>PowerWMS x HUM - EX089.01</b></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>**Data rilascio**</td>
-        <td>**Note**</td>
-        <td>**Versione PowerApp**</td>
-        <td>**BC25**</td>
-        <td>**BC26**</td>
-        <td>**BC27**</td>
-        <td>**BC25**</td>
-        <td>**BC26**</td>
-        <td>**BC27**</td>
+        <td><b>Data rilascio</b></td>
+        <td><b>Note</b></td>
+        <td><b>Versione PowerApp</b></td>
+        <td><b>BC25</b></td>
+        <td><b>BC26</b></td>
+        <td><b>BC27</b></td>
+        <td><b>BC25</b></td>
+        <td><b>BC26</b></td>
+        <td><b>BC27</b></td>
     </tr>
 		<tr>
         <td>20/03/2026</td>
-        <td> - Evento per gestione righe in controllo qualità in stoccaggio  
-				- Gestione testi liberi con lunghezza superiore a 100 caratteri  
-				- Miglioramento copia viste alternative</td>
+        <td> - Evento per gestione righe in controllo qualità in stoccaggio<br>- Gestione testi liberi con lunghezza superiore a 100 caratteri<br>- Miglioramento copia viste alternative</td>
         <td>1.1.245.0</td>
         <td>-</td>
         <td>26.0.72</td>
         <td>27.0.34</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
     </tr>
 		<tr>
         <td>05/03/2026</td>
-        <td> - Azioni: ritorno alla lista righe  
-				- Campi aggiuntivi per scansioni origine e lista HU  
-				- Flag "Salta controllo quantità" per le attività personalizzate</td>
+        <td> - Azioni: ritorno alla lista righe<br>- Campi aggiuntivi per scansioni origine e lista HU<br>- Flag "Salta controllo quantità" per le attività personalizzate</td>
         <td>1.1.245.0</td>
         <td>-</td>
         <td>26.0.69</td>
         <td>27.0.31</td>
-        <td></td>
+        <td>-</td>
         <td>26.0.32</td>
         <td>27.0.22</td>
     </tr>
     <tr>
         <td>08/01/2026</td>
-        <td> - Correzione scanner con token tracciabilità per ordini inventario fisico  
-				- Implementazione ordine scansione inverso  
-				- Correzioni piattaforma</td>
+        <td> - Correzione scanner con token tracciabilità per ordini inventario fisico<br>- Implementazione ordine scansione inverso<br>- Correzioni piattaforma</td>
         <td>1.1.242.0</td>
         <td>-</td>
         <td>26.0.67</td>
         <td>27.0.29</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
     </tr>
     <tr>
         <td>08/01/2026</td>
@@ -67,17 +61,17 @@
         <td>25.0.89</td>
         <td>26.0.56</td>
         <td>27.0.19</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
     </tr>
     <tr>
         <td>30/12/2025</td>
         <td>Gestione collocazione vuota in gestione HU</td>
         <td>1.1.233.0</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
         <td>25.0.46</td>
         <td>26.0.26</td>
         <td>27.0.16</td>
@@ -100,9 +94,9 @@
         <td>25.0.83</td>
         <td>26.0.48</td>
         <td>27.0.11</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
     </tr>
     <tr>
         <td>29/08/2025</td>
