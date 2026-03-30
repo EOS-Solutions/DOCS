@@ -14,3 +14,5 @@ NB: “Definitive” flag: It must be set only when the LIFO calculation is not 
 
 At the end of the calculation process it is necessary to execute the Costing LIFO Print (IVC) report. If a filter is not applied to the item or any information related to the item, all the items with LIFO bands are printed.<br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/ex053/italian LIFO/20inventory-valuation-and-costing-enu.png"><br>
+
+In the event that the calculation must be performed for a LIFO Category, you must first run the “LIFO Category Cost Calculation” function available on the “Item Costing Period Management (IVC)” page.
