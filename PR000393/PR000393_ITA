@@ -10,3 +10,15 @@ IIl LIFO a scatti viene calcolato a fine anno; per effettuare il calcolo è nece
 
 NB: Attenzione all’attivazione del flag “Definitivo”: deve essere valorizzato solo quando il calcolo LIFO non è previsionale (in corso di anno) ma è definitivo (a fine esercizio). Le fasce LIFO definitive non possono più essere modificate.<br>
 <img width="" src="https://docs-test.eos-solutions.it/Images/ex053/italian LIFO/20inventory-valuation-and-costing-ita.png"><br>
+
+Nel caso in cui il calcolo debba essere effettuato per Categoria LIFO, occorre preventivamente eseguire la funzionalità “Calcolo costi categorie LIFO” presente nella pagina “Gestione periodi costi articoli (IVC)”. 
+
+Al termine del processo di calcolo è necessario lanciare la “Stampa Valutazione LIFO (IVC)”: se non viene applicato un filtro sull’articolo o su una qualsiasi informazione legata all’Articolo, vengono stampati tutti gli articoli con fasce LIFO.  
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000393-0/LIFO_ITA_01.png"><br>
+
+Esempio di stampa:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000393-0/LIFO_ITA_02.png"><br>
+
+
