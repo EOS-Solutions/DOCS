@@ -1,15 +1,16 @@
-1.  Nel caso di utilizzo dello sconto fattura sia nel ciclo attivo, che passivo Š obbligatorio attivare il campo "**Calcola sconto fatt.**" presente nei Setup contabilit… clienti e Setup contabilit… fornitori.
-2.  LÂApp **DUM non Š compatibile con la gestione dei Prepayment**. Non sono stati fatti test in merito. Durante gli ultimi sviluppi, per sistemare il calcolo degli sconti, sono state apportate alcune modifiche agganciandosi ad eventi standard, per i quali non era possibile risalire alle modalit… di gestione del prepayment.
-3.  La **gestione delle statistiche** relative ai documenti di tipo Ordine (Vendita e Acquisto) visualizza dati non correttamente ricalcolati relativamente ai tab Fatturazione e Spedizione:
+1.  Nel caso di utilizzo dello sconto fattura sia nel ciclo attivo, che passivo Ã¨ obbligatorio attivare il campo "**Calcola sconto fatt.**" presente nei Setup contabilitÃ  clienti e Setup contabilitÃ  fornitori.
+2.  Lâ€™App **DUM non Ã¨ compatibile con la gestione dei Prepayment**. Non sono stati fatti test in merito. Durante gli ultimi sviluppi, per sistemare il calcolo degli sconti, sono state apportate alcune modifiche agganciandosi ad eventi standard, per i quali non era possibile risalire alle modalitÃ  di gestione del prepayment.
+3.  La funzione **Annulla spedizione per la Spedizione Diretta** non Ã¨ supportata con la doppia unitÃ  di misura. Questa funzionalitÃ  Ã¨ stata aggiunta da Microsoft nella versione 28 di Business Central.
+4.  La **gestione delle statistiche** relative ai documenti di tipo Ordine (Vendita e Acquisto) visualizza dati non correttamente ricalcolati relativamente ai tab Fatturazione e Spedizione:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000452-0/KL1_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000452-0/KL1_ITA.png"><br>
 
-Lo scenario con cui si verifica Š il seguente:
+Lo scenario con cui si verifica Ã¨ il seguente:
 
 -   app Dual Unit of Measure attiva
 -   app Detailed Document Discounts attiva
--   utilizzo di articoli con Metodo di calcolo prezzo di vendita = Unit… di misura secondaria
--   spedizione / fatturazione con Quantit… parziali
+-   utilizzo di articoli con Metodo di calcolo prezzo di vendita = UnitÃ  di misura secondaria
+-   spedizione / fatturazione con QuantitÃ  parziali
 
 <br>
 <br>
