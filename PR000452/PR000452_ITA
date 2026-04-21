@@ -1,7 +1,8 @@
 1.  Nel caso di utilizzo dello sconto fattura sia nel ciclo attivo, che passivo è obbligatorio attivare il campo "**Calcola sconto fatt.**" presente nei Setup contabilità clienti e Setup contabilità fornitori.
 2.  L’App **DUM non è compatibile con la gestione dei Prepayment**. Non sono stati fatti test in merito. Durante gli ultimi sviluppi, per sistemare il calcolo degli sconti, sono state apportate alcune modifiche agganciandosi ad eventi standard, per i quali non era possibile risalire alle modalità di gestione del prepayment.
 3.  La funzione **Annulla spedizione per la Spedizione Diretta** non è supportata con la doppia unità di misura. Questa funzionalità è stata aggiunta da Microsoft nella versione 28 di Business Central.
-4.  La **gestione delle statistiche** relative ai documenti di tipo Ordine (Vendita e Acquisto) visualizza dati non correttamente ricalcolati relativamente ai tab Fatturazione e Spedizione:
+4.  La funzione **Ottieni righe ordine**, nelle righe della fattura d'acquisto, non è supportata con la doppia unità di misura. Questa funzionalità è stata aggiunta da Microsoft nella versione 28 di Business Central.
+5.  La **gestione delle statistiche** relative ai documenti di tipo Ordine (Vendita e Acquisto) visualizza dati non correttamente ricalcolati relativamente ai tab Fatturazione e Spedizione:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000452-0/KL1_ITA.png"><br>
 
