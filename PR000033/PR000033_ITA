@@ -38,12 +38,13 @@ Grazie alla app Dual Unit of Measure, sulle righe ordine, troviamo i campi abitu
 -   **Dual Unit of Measure for Product Quality** Consente di gestire la campionatura anche in seconda unità di misura e di definire la quantità secondaria conforme e non conforme su ordini di controllo e non conformità. Richiede sottoscrizione alle app EOS Dual Unit of Measure e EOS Product Quality Assurance.
 -   **Dual Unit of Measure for Close Documents** Consente la chiusura di righe documento anche in seconda unità di misura. Richiede sottoscrizione alle app EOS Dual Unit of Measure e EOS Close Documents without invoicing.
 
+<br>
+**App/Funzionalità non supportate**
 
-**N.B.**
-
-alcune app / features funzionano solo con l'unità di misura principale:
+Alcune app / features funzionano solo con l'unità di misura principale:
 
 -   Over- and Under-Delivery Quantities (OVR)
+-   Electronic Invoice for Italy (FTE)
 -   Costing
 -   Reservation
 -   Prospetti pianificazione (MRP)
