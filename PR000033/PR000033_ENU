@@ -38,11 +38,12 @@ Thanks to the Dual Unit of Measure app, on the order lines, we find the usual fi
 -   **Dual Unit of Measure for Product Quality** allows specifying a secondary unit of measure for quantities on test types, as well as specifying the compliant and blocked secondary quantity on both inspection orders and non compliances. Subscriptions to both base apps EOS Dual Unit of Measure e EOS Product Quality Assurance are needed.
 -   **Dual Unit of Measure for Close Documents** Allows closing document lines with a secondary unit of measure. Subscriptions to both base apps EOS Dual Unit of Measure e EOS Close Documents without invoicing are needed.
 
-**N.B.**
+**Apps/Features not supported**
 
-some apps/features only work with the main unit of measure:
+Some apps/features only work with the main unit of measure:
 
 -   Over- and Under-Delivery Quantities (OVR)
+-   Electronic Invoice for Italy (FTE)
 -   Costing
 -   Reservation
 -   MRP
