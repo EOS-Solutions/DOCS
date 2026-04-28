@@ -1,6 +1,6 @@
-Ogni entità in Dynamics 365 CE può essere configurata per utilizzare DocSolutions per BC; se l’entità non è configurata nella Gestione Documenti, verrà aggiunta.
+Ogni entità in Dynamics 365 CE può essere configurata per utilizzare DocSolutions per CE; se l’entità non è configurata nella Gestione Documenti, verrà aggiunta.
 
-DocSolutions per BC può creare cartelle e sottocartelle nel sito SharePoint, ma le **Document Libraries** devono essere create con la funzionalità standard o manualmente nel sito.
+DocSolutions per CE può creare cartelle e sottocartelle nel sito SharePoint, ma le **Document Libraries** devono essere create con la funzionalità standard o manualmente nel sito.
 
 ## Configurazione Libreria
 1. Apri il link **DocSolution Libraries**
@@ -21,8 +21,10 @@ DocSolutions per BC può creare cartelle e sottocartelle nel sito SharePoint, ma
 
 4. Inoltre, è possibile creare sottocartelle fisse nella sottogriglia sottostante.
 
+<br><br>
 Esempio per DCS Library con **Parent Type = Library**
-<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-03libconfiguration-it.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-03libconfiguration-it.png"><br>
 
+<br><br>
 Esempio per DCS Library con **Parent Type = Parent Record**
-<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-04libconfiguration-it.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-04libconfiguration-it.png"><br>
