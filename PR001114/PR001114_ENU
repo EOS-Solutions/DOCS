@@ -1,6 +1,6 @@
-Each entity in Dynamics 365 CE can be configured to use DocSolutions for BC; in case the entity is not configured in Document Management, it will be added.
+Each entity in Dynamics 365 CE can be configured to use DocSolutions for CE; in case the entity is not configured in Document Management, it will be added.
  
-DocSolutions for BC can create folder and subfoders in SharePoint site, but Document Libraries must be created with the standard functionality or manually in site.
+DocSolutions for CE can create folder and subfoders in SharePoint site, but Document Libraries must be created with the standard functionality or manually in site.
  
 ## Library Configuration
  
@@ -22,10 +22,10 @@ DocSolutions for BC can create folder and subfoders in SharePoint site, but Docu
 
 4. In addition fixed subfolders can be created in the underying subgrid.  
   
-	
+<br><br>
 Example for DCS Library with **Parent Type = Library**  
-<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-03libconfiguration.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-03libconfiguration.png"><br>
 
-  
+<br><br>  
 Example for DCS Library with **Parent Type = Parent Record**  
-<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-04libconfiguration.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001114-0/dcs4bc-setup-04libconfiguration.png"><br>
