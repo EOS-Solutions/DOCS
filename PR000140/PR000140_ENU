@@ -12,16 +12,16 @@ When copying Application ID and Directory ID to Business Central pay attention t
 
 Firstly you need to Log in to Microsoft Azure (https://portal.azure.com/\#home)
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/1_EX069.03 Azure Setup.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/1_EX069.03 Azure Setup.png"><br>
 <br><br><br><br>
 
 and search "App registration"
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/2_EX069.03 APP Reg.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/2_EX069.03 APP Reg.png"><br>
 <br><br>
 Open "New registration" and enter the Name and the URL callback:
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/3_CallBack.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/3_CallBack.png"><br>
 
 <br><br>
 
@@ -38,7 +38,7 @@ Press Register.
 
 In Authentication check "Access Tokens" e "ID Tokens". Set to Yes "Allow public client flow" and Save
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/4_EX069.03 Authent.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/4_EX069.03 Authent.png"><br>
 
 <br><br><br><br>
 
@@ -48,7 +48,7 @@ In Certificate & Secrets add a "New Client Secret" and set the Expiration to "Ne
 
 Once created it must be copied and saved because it will only be visible during creation
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/1_EX069.03 Secret.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/1_EX069.03 Secret.png"><br>
 
 
 <br><br>
@@ -56,19 +56,19 @@ Once created it must be copied and saved because it will only be visible during 
 
 In API Permissions add a new permission "Microsoft Graph" type and choose "Application"
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/5_EX069.03 API.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/5_EX069.03 API.png"><br>
 <br><br><br><br>
 
 finally select the "sites.readwrite.all" permission and click on "Add permissions"
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/6_EX069.03 Permission.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/6_EX069.03 Permission.png"><br>
 <br><br><br><br>
 
 Click on "Grant admin consent for X" (it will start the authorization request)
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/98_EX069.03 Admin GRANT.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/98_EX069.03 Admin GRANT.png"><br>
 
 
 finally return to the "Overview" tab and copy the client ID and tenant
 
-<img width="" src="https://docs.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/99_EX069.03 Copy To ClipBoard.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/ex069.03/docsolutions for sharepoint (dcs) - how to configure azure app, app key and secret/99_EX069.03 Copy To ClipBoard.png"><br>
