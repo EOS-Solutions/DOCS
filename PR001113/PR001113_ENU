@@ -19,7 +19,7 @@ Information required are:
 
 DocSolutions will notify errors creating Sharepoint folders or license messages with in-app notification; **this feature must be enabled in all the apps where the messages must be shown**.  
 From Power App portal: open the app (all apps used by customer with DocSolutions use), click on settings, select Features tab and **enable In-app notifications** flag  
-<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-01inappnotification.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-01inappnotification.png"><br>
 
 ### Setup and Sharepoint Site Configuration
  
@@ -34,5 +34,7 @@ From Power App portal: open the app (all apps used by customer with DocSolutions
 Once the record is saved the client secret will be encypted and SharePoint Site ID will be populated.  
 Message Status indicates the connection test result; if an error message is shown, please correct the configuration accordingly.  
   
-**Note**: a valid license of DocSolutions for SharePoint must be activated for the customer based on tenant ID.  
-<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-02siteconfiguration.png"><br>
+{{% alert title="NOTE" color="warning" %}}
+A valid license of DocSolutions for SharePoint must be activated for the customer based on tenant ID.
+{{% /alert %}}
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-02siteconfiguration.png"><br>
