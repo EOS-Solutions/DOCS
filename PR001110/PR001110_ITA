@@ -1,0 +1,30 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Installa l’app DocSolutions per CE in Dynamics 365 CE</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Assegna i ruoli di sicurezza DCS ad Admin e Utenti</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Definisci una registrazione dell’app in Azure per consentire a CE di accedere a SharePoint</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>Copia Tenant ID, Application ID e Secret Value in Dynamics 365 CE (il sito SharePoint deve esistere)</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>Configura la libreria DCS per le entità (cartelle personalizzate, campo di sincronizzazione DCS e sottocartelle)</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>Configura le App personalizzate per abilitare le notifiche In-App</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>Crea record e carica/condividi documenti</td>
+	</tr>
+</table>
