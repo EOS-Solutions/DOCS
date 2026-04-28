@@ -17,7 +17,7 @@ Le informazioni richieste sono:
 ### Importante per la comunicazione degli errori:
 DocSolutions notificherà errori nella creazione delle cartelle SharePoint o messaggi di licenza tramite **notifiche in-app**; **questa funzionalità deve essere abilitata in tutte le app in cui i messaggi devono essere mostrati**.
 Dal portale Power Apps: apri l’app (tutte le app utilizzate dal cliente con DocSolutions), clicca su **Impostazioni**, seleziona la scheda **Funzionalità** e **abilita il flag In-app notifications**.
-<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-01inappnotification-it.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-01inappnotification-it.png"><br>
 
 ### Configurazione del Sito SharePoint
 1. Apri l’app DocSolutions e vai su **SharePoint Sites**
@@ -30,5 +30,7 @@ Dal portale Power Apps: apri l’app (tutte le app utilizzate dal cliente con Do
 Una volta salvato il record, il client secret sarà criptato e l’ID del sito SharePoint sarà popolato.
 **Message Status** indica il risultato del test di connessione; se viene mostrato un messaggio di errore, correggere la configurazione di conseguenza.
 
-**Nota**: deve essere attivata una licenza valida di DocSolutions per SharePoint per il cliente, basata sul Tenant ID.
-<img width="70%" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-02siteconfiguration-it.png"><br>
+{{% alert title="NOTA" color="warning" %}}
+Deve essere attivata una licenza valida di DocSolutions per SharePoint per il cliente, basata sul Tenant ID.
+{{% /alert %}}
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-02siteconfiguration-it.png"><br>
