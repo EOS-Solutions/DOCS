@@ -41,20 +41,20 @@ The flag is reversible up to and including BC29. Once BC30 is deployed, revertin
 
 ```
 Sales-Post / Purch.-Post
-  └─ OnBeforePostLines
-       ├─ CreateGLAccrualEntry()
-       │    ├─ Amount (LCY)    ← FORECASTED via CalcAccrualAmount() (posting groups + VAT setup)
-       │    ├─ G/L Account No. ← FORECASTED via FindAccrualAccountNo() (General Posting Setup)
-       │    └─ InsertGlAccrEntry()  →  record written to DB with forecasted values
-       └─ PostGLAccrEntries(TmpGLAccrEntry)   ← posts immediately, before document lines
-            └─ PostGlAccrEntry(EntryNo)
-                 ├─ Calculate() → builds journal lines
-                 └─ posts journal lines via Gen. Jnl.-Post Line
+..└─ OnBeforePostLines
+.......├─ CreateGLAccrualEntry()
+.......│    ├─ Amount (LCY)    ← FORECASTED via CalcAccrualAmount() (posting groups + VAT setup)
+.......│    ├─ G/L Account No. ← FORECASTED via FindAccrualAccountNo() (General Posting Setup)
+.......│    └─ InsertGlAccrEntry()  →  record written to DB with forecasted values
+.......└─ PostGLAccrEntries(TmpGLAccrEntry)   ← posts immediately, before document lines
+............└─ PostGlAccrEntry(EntryNo)
+.................├─ Calculate() → builds journal lines
+.................└─ posts journal lines via Gen. Jnl.-Post Line
 
-  [... standard document lines and G/L entries are posted ...]
+..[... standard document lines and G/L entries are posted ...]
 
-  └─ Invoice posting buffer G/L entry written
-       └─ PostingSubscribers → LinkTo(documentGlEntry)   ← links accrual entry to document G/L entry
+..└─ Invoice posting buffer G/L entry written
+.......└─ PostingSubscribers → LinkTo(documentGlEntry)   ← links accrual entry to document G/L entry
 ```
 
 Accrual entries are created with **forecasted** amounts and accounts and **immediately posted** during `OnBeforePostLines`, before standard document lines run. The `Amount (LCY)` is estimated from the document line amount, currency conversion, and VAT setup. The `G/L Account No.` is looked up from the General Posting Setup. The eventual link to the document's own G/L entry is established only after posting, at which point all accrual journal lines are already in the ledger.
@@ -65,25 +65,25 @@ Accrual entries are created with **forecasted** amounts and accounts and **immed
 
 ```
 Sales-Post / Purch.-Post
-  └─ OnBeforePostLines
-       └─ CreateGLAccrualEntry()
-            ├─ Amount (LCY)    ← NOT calculated (left at 0)
-            ├─ G/L Account No. ← still temporarily set from posting groups (will be overwritten)
-            └─ QueueToBePosted()  →  EOS001 Accrual Posting Queue (table 18004100)
+..└─ OnBeforePostLines
+.......└─ CreateGLAccrualEntry()
+............├─ Amount (LCY)    ← NOT calculated (left at 0)
+............├─ G/L Account No. ← still temporarily set from posting groups (will be overwritten)
+............└─ QueueToBePosted()  →  EOS001 Accrual Posting Queue (table 18004100)
 
-  [... standard document lines and G/L entries are posted ...]
+..[... standard document lines and G/L entries are posted ...]
 
-  └─ Invoice posting buffer G/L entry written
-       └─ PostingSubscribers → LinkTo(documentGlEntry)
-            ├─ GlAccrEntry."G/L Account No." := documentGlEntry."G/L Account No."   ← ACTUAL account
-            └─ GlAccrEntry."Amount (LCY)"    := documentGlEntry.Amount               ← ACTUAL amount
+..└─ Invoice posting buffer G/L entry written
+.......└─ PostingSubscribers → LinkTo(documentGlEntry)
+............├─ GlAccrEntry."G/L Account No." := documentGlEntry."G/L Account No."   ← ACTUAL account
+............└─ GlAccrEntry."Amount (LCY)"    := documentGlEntry.Amount               ← ACTUAL amount
 
-  └─ OnBeforeFinalizePosting                  ← NEW trigger point
-       └─ PostGLAccrEntries()
-            └─ Queue.Collect()               ← reads session-scoped queue
-                 └─ PostGlAccrEntry(EntryNo) ← entry already has final amount + account
-                      ├─ Calculate() → builds journal lines from ACTUAL values
-                      └─ posts journal lines via Gen. Jnl.-Post Line
+..└─ OnBeforeFinalizePosting                  ← NEW trigger point
+.......└─ PostGLAccrEntries()
+............└─ Queue.Collect()               ← reads session-scoped queue
+.................└─ PostGlAccrEntry(EntryNo) ← entry already has final amount + account
+......................├─ Calculate() → builds journal lines from ACTUAL values
+......................└─ posts journal lines via Gen. Jnl.-Post Line
 ```
 
 Accrual entries are created as **stubs** and queued. Between `OnBeforePostLines` and `OnBeforeFinalizePosting`, the standard document posting writes the invoice's G/L entries. The `PostingSubscribers` codeunit intercepts this moment and calls `LinkTo()` on the accrual entry, overwriting both the `G/L Account No.` and `Amount (LCY)` with the **actual values** from the posted G/L entry — not a forecast.
