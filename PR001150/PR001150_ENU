@@ -1,0 +1,187 @@
+## Overview
+
+This branch introduces a refactored G/L accrual posting flow that changes **when** accruals are posted relative to the parent document. Under the new behaviour, G/L accrual entries are posted **after** the document lines have been fully posted (and the G/L entries written), rather than before.
+
+The new behaviour is controlled by a feature flag registered in `EOS001 Features` (codeunit 18004107) under the key `EOS001_0001`. The flag is opt-in and reversible.
+
+---
+
+## Feature Flag
+
+| Property | Value |
+|---|---|
+| Key | `EOS001_0001` |
+| Description | *Posts G/L accruals after posting the document* |
+| Reversible | Yes |
+| Per Company | No |
+| Codeunit | `EOS001 Features` (18004107) |
+
+```al
+// Check in code
+Features.NewPostingMethodEnabled()
+```
+
+---
+
+## Flag Lifecycle
+
+| Version | Behaviour |
+|---|---|
+| BC27 | Flag available. Must be manually enabled. Off by default for all installations. |
+| BC29 | Flag automatically enabled for **new installations** only. Existing installations are unaffected until manually enabled. |
+| BC30 | Flag forcibly enabled for **all installations**. Legacy posting code is removed. |
+
+The flag is reversible up to and including BC29. Once BC30 is deployed, reverting to the legacy posting flow is no longer possible.
+
+---
+
+## Execution Flow
+
+### Legacy Flow (flag **disabled**)
+
+```
+Sales-Post / Purch.-Post
+  └─ OnBeforePostLines
+       ├─ CreateGLAccrualEntry()
+       │    ├─ Amount (LCY)    ← FORECASTED via CalcAccrualAmount() (posting groups + VAT setup)
+       │    ├─ G/L Account No. ← FORECASTED via FindAccrualAccountNo() (General Posting Setup)
+       │    └─ InsertGlAccrEntry()  →  record written to DB with forecasted values
+       └─ PostGLAccrEntries(TmpGLAccrEntry)   ← posts immediately, before document lines
+            └─ PostGlAccrEntry(EntryNo)
+                 ├─ Calculate() → builds journal lines
+                 └─ posts journal lines via Gen. Jnl.-Post Line
+
+  [... standard document lines and G/L entries are posted ...]
+
+  └─ Invoice posting buffer G/L entry written
+       └─ PostingSubscribers → LinkTo(documentGlEntry)   ← links accrual entry to document G/L entry
+```
+
+Accrual entries are created with **forecasted** amounts and accounts and **immediately posted** during `OnBeforePostLines`, before standard document lines run. The `Amount (LCY)` is estimated from the document line amount, currency conversion, and VAT setup. The `G/L Account No.` is looked up from the General Posting Setup. The eventual link to the document's own G/L entry is established only after posting, at which point all accrual journal lines are already in the ledger.
+
+---
+
+### New Flow (flag **enabled**)
+
+```
+Sales-Post / Purch.-Post
+  └─ OnBeforePostLines
+       └─ CreateGLAccrualEntry()
+            ├─ Amount (LCY)    ← NOT calculated (left at 0)
+            ├─ G/L Account No. ← still temporarily set from posting groups (will be overwritten)
+            └─ QueueToBePosted()  →  EOS001 Accrual Posting Queue (table 18004100)
+
+  [... standard document lines and G/L entries are posted ...]
+
+  └─ Invoice posting buffer G/L entry written
+       └─ PostingSubscribers → LinkTo(documentGlEntry)
+            ├─ GlAccrEntry."G/L Account No." := documentGlEntry."G/L Account No."   ← ACTUAL account
+            └─ GlAccrEntry."Amount (LCY)"    := documentGlEntry.Amount               ← ACTUAL amount
+
+  └─ OnBeforeFinalizePosting                  ← NEW trigger point
+       └─ PostGLAccrEntries()
+            └─ Queue.Collect()               ← reads session-scoped queue
+                 └─ PostGlAccrEntry(EntryNo) ← entry already has final amount + account
+                      ├─ Calculate() → builds journal lines from ACTUAL values
+                      └─ posts journal lines via Gen. Jnl.-Post Line
+```
+
+Accrual entries are created as **stubs** and queued. Between `OnBeforePostLines` and `OnBeforeFinalizePosting`, the standard document posting writes the invoice's G/L entries. The `PostingSubscribers` codeunit intercepts this moment and calls `LinkTo()` on the accrual entry, overwriting both the `G/L Account No.` and `Amount (LCY)` with the **actual values** from the posted G/L entry — not a forecast.
+
+Only then does `OnBeforeFinalizePosting` drain the queue and post the accrual journal lines. At this point the accrual entry already carries the definitive account and amount, so no estimation is involved.
+
+---
+
+## Event Changes
+
+### `OnAfterCalcAccrualAmount`
+
+**Legacy:** Fires during `CreateGLAccrualEntry` for every document line that carries an accrual template. This is where the pre-calculated (forecasted) `Amount (LCY)` is produced.
+
+**Flag enabled:** `CalcAccrualAmount` is not called for any document line. `OnAfterCalcAccrualAmount` **does not fire**. Subscribers that relied on this event to adjust accrual amounts will not run.
+
+---
+
+### `OnBeforeInsertGlAccrualEntry` / `OnAfterInsertGlAccrualEntry`
+
+**Legacy:** Fire when the accrual entry is written to the database. At this point the entry already has a fully resolved `Amount (LCY)` and `G/L Account No.`
+
+**Flag enabled:** Both events still fire, but `Amount (LCY)` is `0` and `G/L Account No.` is the forecasted value from `FindAccrualAccountNo()` — both will be overwritten by `LinkTo()` later in the posting cycle. Subscribers that read or modify these fields should be aware their changes may be overwritten.
+
+---
+
+### `OnBeforeCheckGlAccrEntry` / `OnAfterCheckGlAccrEntry` / `OnAfterTestGlAccountAccruable`
+
+**Legacy:** Fire inside `Calculate()`, which is called from `PostGlAccrEntry` immediately during `OnBeforePostLines`. The entry's `Amount (LCY)` and `G/L Account No.` at this point are the forecasted values.
+
+**Flag enabled:** The same events fire inside the same `Calculate()` call, but `PostGlAccrEntry` now runs at `OnBeforeFinalizePosting`. By then, `LinkTo()` has already run and the entry carries the **actual** amount and account from the posted G/L entry. Subscribers will see definitive values instead of estimates.
+
+---
+
+### `OnBeforeCreateBuffer` / `OnAfterCreateBuffer`
+
+**Legacy:** Fire during `PostGlAccrEntry` inside `OnBeforePostLines`, with the forecasted amount and account.
+
+**Flag enabled:** Fire at the same position inside `PostGlAccrEntry`, but execution now occurs at `OnBeforeFinalizePosting`. The entry passed to these events carries the actual amount and account resolved from the G/L entry.
+
+---
+
+### `OnAfterPrepareAccrualGenJnlLine` / `OnBeforePostAccrualGenJnlLine`
+
+**Legacy:** Fire for each accrual journal line generated during `PostGlAccrEntry` inside `OnBeforePostLines`.
+
+**Flag enabled:** Fire for the same journal lines, but at `OnBeforeFinalizePosting`. The parent accrual entry — and therefore the journal lines derived from it — now reflects the actual G/L entry values rather than forecasted ones.
+
+---
+
+### `OnAfterLinkToGlEntry`
+
+Fires in both flows when `PostingSubscribers` calls `LinkTo()` after the invoice posting buffer's G/L entry is written. The timing relative to the overall posting cycle is unchanged.
+
+**Flag enabled:** In addition to the existing behaviour, `LinkTo()` now also overwrites `G/L Account No.` and `Amount (LCY)` on the accrual entry. Subscribers receive an entry with updated fields.
+
+---
+
+### `OnAfterUpdateFromGlEntry` *(new)*
+
+| Location | `EOS G/L Accrual Entry` table 18004127, inside `LinkTo()` |
+|---|---|
+| Parameters | `GlAccrEntry` (modified), `PrevGlAccrEntry` (original state before update), `GlEntry` |
+
+This event did not exist in the legacy flow. It is raised every time `LinkTo()` is called, which in the new flow is the moment the accrual entry receives its definitive `G/L Account No.` and `Amount (LCY)`. Use this event to react to or further adjust these values after they have been copied from the G/L entry.
+
+---
+
+## Additional Changes
+
+### `EOS G/L Accrual Entry` — `LinkTo()` extended
+
+In the new flow, `LinkTo()` unconditionally overwrites two fields on the accrual entry from the linked `G/L Entry`:
+
+- **`G/L Account No.`** — previously resolved ahead of time from the General Posting Setup via `FindAccrualAccountNo()`. Now always taken directly from `GlEntry."G/L Account No."`.
+- **`Amount (LCY)`** — previously estimated via `CalcAccrualAmount()` using the document line amount, currency factor, and VAT setup. Now always taken directly from `GlEntry.Amount`.
+
+This means the accrual entry always reflects exactly what was posted to the ledger, with no rounding differences, currency conversion approximations, or VAT estimation errors.
+
+### Amount and account are no longer forecasted
+
+The central conceptual change in this refactor is the elimination of the **forecast** step:
+
+| | Legacy (flag OFF) | New (flag ON) |
+|---|---|---|
+| `Amount (LCY)` source | Estimated: line amount → currency conversion → VAT extraction | Exact: copied from the posted `G/L Entry` |
+| `G/L Account No.` source | Looked up from General Posting Setup | Copied directly from the posted `G/L Entry` |
+| Timing of resolution | Before document lines are posted (`OnBeforePostLines`) | After document lines are posted (between `OnBeforePostLines` and `OnBeforeFinalizePosting`) |
+
+`CalcAccrualAmount` is not called for any document line — `Amount (LCY)` is `0` on the accrual entry until `LinkTo()` supplies the real value from the posted G/L entry. A zero-amount guard in `PostGlAccrEntry` deletes the entry rather than posting it if `LinkTo()` was not called or if the G/L entry amount is zero.
+
+### Obsolete declarations
+
+| Symbol | Reason |
+|---|---|
+| `EOS G/L Accrual Entry`."Posted" field | `ObsoleteState = Pending` (tag `27.0`) — no longer used. |
+| `FindAccrualAccountNo(SalesLine)` | Obsolete `27.0` — account is now always taken from the G/L Entry. |
+| `FindAccrualAccountNo(PurchLine)` | Obsolete `27.0` — same. |
+| `FindGlAccountNo(...)` | Obsolete `27.0` — delegates to the above obsolete procedures. |
+| `PostGLAccrEntries(var TmpGLAccrEntry)` | Obsolete `27.0` — use the `List of [Integer]` overloads instead. |
+| `CollectEntriesToPostLegacy()` | Obsolete `27.0` — legacy queue collection via `"To Post"` field. |
