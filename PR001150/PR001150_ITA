@@ -1,0 +1,187 @@
+## Panoramica
+
+Questo branch introduce un flusso di registrazione dei ratei C/G refactorizzato che modifica **quando** i ratei vengono registrati rispetto al documento di origine. Con il nuovo comportamento, i movimenti ratei C/G vengono registrati **dopo** che le righe del documento sono state completamente registrate (e i movimenti C/G scritti), anziché prima.
+
+Il nuovo comportamento è controllato da un feature flag registrato in `EOS001 Features` (codeunit 18004107) con chiave `EOS001_0001`. Il flag è opzionale e reversibile.
+
+---
+
+## Feature Flag
+
+| Proprietà | Valore |
+|---|---|
+| Chiave | `EOS001_0001` |
+| Descrizione | *Registra i ratei C/G dopo la registrazione del documento* |
+| Reversibile | Sì |
+| Per Società | No |
+| Codeunit | `EOS001 Features` (18004107) |
+
+```al
+// Verifica nel codice
+Features.NewPostingMethodEnabled()
+```
+
+---
+
+## Ciclo di Vita del Flag
+
+| Versione | Comportamento |
+|---|---|
+| BC27 | Flag disponibile. Deve essere abilitato manualmente. Disattivato per impostazione predefinita per tutte le installazioni. |
+| BC29 | Flag abilitato automaticamente solo per le **nuove installazioni**. Le installazioni esistenti non sono interessate fino all'abilitazione manuale. |
+| BC30 | Flag abilitato forzatamente per **tutte le installazioni**. Il codice di registrazione legacy viene rimosso. |
+
+Il flag è reversibile fino a BC29 incluso. Una volta distribuito BC30, non è più possibile tornare al flusso di registrazione legacy.
+
+---
+
+## Flusso di Esecuzione
+
+### Flusso Precedente (flag **disabilitato**)
+
+```
+Sales-Post / Purch.-Post
+  └─ OnBeforePostLines
+       ├─ CreateGLAccrualEntry()
+       │    ├─ Amount (LCY)    ← STIMATO tramite CalcAccrualAmount() (cat. reg. + setup IVA)
+       │    ├─ G/L Account No. ← STIMATO tramite FindAccrualAccountNo() (Setup Reg. Generali)
+       │    └─ InsertGlAccrEntry()  →  record scritto nel DB con valori stimati
+       └─ PostGLAccrEntries(TmpGLAccrEntry)   ← registra immediatamente, prima delle righe documento
+            └─ PostGlAccrEntry(EntryNo)
+                 ├─ Calculate() → costruisce le righe di registrazioni
+                 └─ registra le righe tramite Gen. Jnl.-Post Line
+
+  [... registrazione standard delle righe documento e movimenti C/G ...]
+
+  └─ Movimento C/G del buffer di registrazione fattura scritto
+       └─ PostingSubscribers → LinkTo(documentGlEntry)   ← collega il mov. rateo al mov. C/G del documento
+```
+
+I movimenti ratei vengono creati con importi e conti **stimati** e **registrati immediatamente** durante `OnBeforePostLines`, prima che le righe documento standard vengano elaborate. L'`Amount (LCY)` viene stimato a partire dall'importo della riga documento, dalla conversione valuta e dal setup IVA. Il conto C/G (`G/L Account No.`) viene ricercato nel Setup Registrazioni Generali. Il collegamento al movimento C/G del documento viene stabilito soltanto dopo la registrazione, momento in cui tutte le righe di registrazione dei ratei sono già presenti nella contabilità.
+
+---
+
+### Nuovo Flusso (flag **abilitato**)
+
+```
+Sales-Post / Purch.-Post
+  └─ OnBeforePostLines
+       └─ CreateGLAccrualEntry()
+            ├─ Amount (LCY)    ← NON calcolato (lasciato a 0)
+            ├─ G/L Account No. ← impostato temporaneamente dalle cat. registrazione (sarà sovrascritto)
+            └─ QueueToBePosted()  →  EOS001 Accrual Posting Queue (tabella 18004100)
+
+  [... registrazione standard delle righe documento e movimenti C/G ...]
+
+  └─ Movimento C/G del buffer di registrazione fattura scritto
+       └─ PostingSubscribers → LinkTo(documentGlEntry)
+            ├─ GlAccrEntry."G/L Account No." := documentGlEntry."G/L Account No."   ← conto EFFETTIVO
+            └─ GlAccrEntry."Amount (LCY)"    := documentGlEntry.Amount               ← importo EFFETTIVO
+
+  └─ OnBeforeFinalizePosting                  ← NUOVO punto di innesco
+       └─ PostGLAccrEntries()
+            └─ Queue.Collect()               ← legge la coda di sessione
+                 └─ PostGlAccrEntry(EntryNo) ← il movimento ha già il conto e l'importo definitivi
+                      ├─ Calculate() → costruisce le righe di registrazione dai valori EFFETTIVI
+                      └─ registra le righe tramite Gen. Jnl.-Post Line
+```
+
+I movimenti ratei vengono creati come **bozze** e messi in coda. Tra `OnBeforePostLines` e `OnBeforeFinalizePosting`, la registrazione standard del documento scrive i movimenti C/G della fattura. La codeunit `PostingSubscribers` intercetta questo momento e chiama `LinkTo()` sul movimento rateo, sovrascrivendo sia il `G/L Account No.` che l'`Amount (LCY)` con i **valori effettivi** del movimento C/G registrato — non una stima.
+
+Solo a quel punto `OnBeforeFinalizePosting` svuota la coda e registra le righe di registrazione dei ratei. In questo momento il movimento rateo contiene già il conto e l'importo definitivi, senza alcuna stima.
+
+---
+
+## Variazioni agli Eventi
+
+### `OnAfterCalcAccrualAmount`
+
+**Flusso precedente:** Si attiva durante `CreateGLAccrualEntry` per ogni riga documento che contiene un template di rateo. È qui che viene prodotto l'`Amount (LCY)` pre-calcolato (stimato).
+
+**Flag abilitato:** `CalcAccrualAmount` non viene chiamato per nessuna riga documento. `OnAfterCalcAccrualAmount` **non si attiva**. I subscriber che si affidavano a questo evento per rettificare gli importi dei ratei non verranno eseguiti.
+
+---
+
+### `OnBeforeInsertGlAccrualEntry` / `OnAfterInsertGlAccrualEntry`
+
+**Flusso precedente:** Si attivano quando il movimento rateo viene scritto nel database. In quel momento il movimento ha già un `Amount (LCY)` e un `G/L Account No.` completamente risolti.
+
+**Flag abilitato:** Entrambi gli eventi si attivano ancora, ma `Amount (LCY)` è `0` e `G/L Account No.` è il valore stimato restituito da `FindAccrualAccountNo()` — entrambi verranno sovrascritti da `LinkTo()` più avanti nel ciclo di registrazione. I subscriber che leggono o modificano questi campi devono tenere conto che le loro modifiche potrebbero essere sovrascritte.
+
+---
+
+### `OnBeforeCheckGlAccrEntry` / `OnAfterCheckGlAccrEntry` / `OnAfterTestGlAccountAccruable`
+
+**Flusso precedente:** Si attivano all'interno di `Calculate()`, chiamato da `PostGlAccrEntry` immediatamente durante `OnBeforePostLines`. In quel momento `Amount (LCY)` e `G/L Account No.` del movimento contengono i valori stimati.
+
+**Flag abilitato:** Gli stessi eventi si attivano nella stessa chiamata a `Calculate()`, ma `PostGlAccrEntry` viene ora eseguito in `OnBeforeFinalizePosting`. A quel punto `LinkTo()` è già stato eseguito e il movimento contiene i valori **effettivi** di importo e conto del movimento C/G registrato. I subscriber riceveranno valori definitivi invece di stime.
+
+---
+
+### `OnBeforeCreateBuffer` / `OnAfterCreateBuffer`
+
+**Flusso precedente:** Si attivano durante `PostGlAccrEntry` all'interno di `OnBeforePostLines`, con importo e conto stimati.
+
+**Flag abilitato:** Si attivano nella stessa posizione all'interno di `PostGlAccrEntry`, ma l'esecuzione avviene ora in `OnBeforeFinalizePosting`. Il movimento passato a questi eventi contiene l'importo e il conto effettivi risolti dal movimento C/G.
+
+---
+
+### `OnAfterPrepareAccrualGenJnlLine` / `OnBeforePostAccrualGenJnlLine`
+
+**Flusso precedente:** Si attivano per ciascuna riga di registrazione del rateo generata durante `PostGlAccrEntry` all'interno di `OnBeforePostLines`.
+
+**Flag abilitato:** Si attivano per le stesse righe di registrazione, ma in `OnBeforeFinalizePosting`. Il movimento rateo padre — e di conseguenza le righe di registrazione da esso derivate — riflette ora i valori effettivi del movimento C/G anziché quelli stimati.
+
+---
+
+### `OnAfterLinkToGlEntry`
+
+Si attiva in entrambi i flussi quando `PostingSubscribers` chiama `LinkTo()` dopo che il movimento C/G del buffer di registrazione fattura è stato scritto. La posizione nel ciclo di registrazione complessivo è invariata.
+
+**Flag abilitato:** Oltre al comportamento esistente, `LinkTo()` sovrascrive ora anche `G/L Account No.` e `Amount (LCY)` sul movimento rateo. I subscriber ricevono un movimento con i campi aggiornati.
+
+---
+
+### `OnAfterUpdateFromGlEntry` *(nuovo)*
+
+| Posizione | Tabella `EOS G/L Accrual Entry` 18004127, all'interno di `LinkTo()` |
+|---|---|
+| Parametri | `GlAccrEntry` (modificato), `PrevGlAccrEntry` (stato originale prima dell'aggiornamento), `GlEntry` |
+
+Questo evento non esisteva nel flusso precedente. Viene attivato ogni volta che `LinkTo()` viene chiamato, che nel nuovo flusso corrisponde al momento in cui il movimento rateo riceve il `G/L Account No.` e l'`Amount (LCY)` definitivi. Usare questo evento per reagere a tali valori o rettificarli ulteriormente dopo che sono stati copiati dal movimento C/G.
+
+---
+
+## Ulteriori Modifiche
+
+### `EOS G/L Accrual Entry` — `LinkTo()` esteso
+
+Nel nuovo flusso, `LinkTo()` sovrascrive incondizionatamente due campi del movimento rateo con i dati del `Movimento C/G` collegato:
+
+- **`G/L Account No.`** — in precedenza risolto in anticipo dal Setup Registrazioni Generali tramite `FindAccrualAccountNo()`. Ora viene sempre preso direttamente da `GlEntry."G/L Account No."`.
+- **`Amount (LCY)`** — in precedenza stimato tramite `CalcAccrualAmount()` utilizzando l'importo della riga documento, il fattore di cambio valuta e il setup IVA. Ora viene sempre preso direttamente da `GlEntry.Amount`.
+
+Ciò garantisce che il movimento rateo rifletta esattamente quanto registrato nella contabilità, senza differenze di arrotondamento, approssimazioni nella conversione valuta o errori di stima IVA.
+
+### Importo e conto non sono più stimati
+
+La variazione concettuale centrale di questo refactoring è l'eliminazione del passaggio di **stima**:
+
+| | Flusso precedente (flag OFF) | Nuovo flusso (flag ON) |
+|---|---|---|
+| Origine `Amount (LCY)` | Stimato: importo riga → conversione valuta → estrazione IVA | Esatto: copiato dal `Movimento C/G` registrato |
+| Origine `G/L Account No.` | Ricercato nel Setup Registrazioni Generali | Copiato direttamente dal `Movimento C/G` registrato |
+| Momento della risoluzione | Prima della registrazione delle righe documento (`OnBeforePostLines`) | Dopo la registrazione delle righe documento (tra `OnBeforePostLines` e `OnBeforeFinalizePosting`) |
+
+`CalcAccrualAmount` non viene chiamato per nessuna riga documento — `Amount (LCY)` è `0` sul movimento rateo fino a quando `LinkTo()` non fornisce il valore reale dal movimento C/G registrato. Un controllo anti-zero in `PostGlAccrEntry` elimina il movimento anziché registrarlo nel caso in cui `LinkTo()` non sia stato chiamato o l'importo del movimento C/G sia zero.
+
+### Dichiarazioni obsolete
+
+| Simbolo | Motivo |
+|---|---|
+| Campo `"Posted"` di `EOS G/L Accrual Entry` | `ObsoleteState = Pending` (tag `27.0`) — non più utilizzato. |
+| `FindAccrualAccountNo(SalesLine)` | Obsoleto `27.0` — il conto viene ora sempre preso dal Movimento C/G. |
+| `FindAccrualAccountNo(PurchLine)` | Obsoleto `27.0` — idem. |
+| `FindGlAccountNo(...)` | Obsoleto `27.0` — delega alle procedure obsolete precedenti. |
+| `PostGLAccrEntries(var TmpGLAccrEntry)` | Obsoleto `27.0` — utilizzare gli overload con `List of [Integer]`. |
+| `CollectEntriesToPostLegacy()` | Obsoleto `27.0` — raccolta della coda legacy tramite il campo `"To Post"`. |
