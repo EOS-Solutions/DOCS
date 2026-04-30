@@ -41,20 +41,20 @@ Il flag è reversibile fino a BC29 incluso. Una volta distribuito BC30, non è p
 
 ```
 Sales-Post / Purch.-Post
-  └─ OnBeforePostLines
-       ├─ CreateGLAccrualEntry()
-       │    ├─ Amount (LCY)    ← STIMATO tramite CalcAccrualAmount() (cat. reg. + setup IVA)
-       │    ├─ G/L Account No. ← STIMATO tramite FindAccrualAccountNo() (Setup Reg. Generali)
-       │    └─ InsertGlAccrEntry()  →  record scritto nel DB con valori stimati
-       └─ PostGLAccrEntries(TmpGLAccrEntry)   ← registra immediatamente, prima delle righe documento
-            └─ PostGlAccrEntry(EntryNo)
-                 ├─ Calculate() → costruisce le righe di registrazioni
-                 └─ registra le righe tramite Gen. Jnl.-Post Line
+..└─ OnBeforePostLines
+.......├─ CreateGLAccrualEntry()
+.......│    ├─ Amount (LCY)    ← STIMATO tramite CalcAccrualAmount() (cat. reg. + setup IVA)
+.......│    ├─ G/L Account No. ← STIMATO tramite FindAccrualAccountNo() (Setup Reg. Generali)
+.......│    └─ InsertGlAccrEntry()  →  record scritto nel DB con valori stimati
+.......└─ PostGLAccrEntries(TmpGLAccrEntry)   ← registra immediatamente, prima delle righe documento
+............└─ PostGlAccrEntry(EntryNo)
+.................├─ Calculate() → costruisce le righe di registrazioni
+.................└─ registra le righe tramite Gen. Jnl.-Post Line
 
-  [... registrazione standard delle righe documento e movimenti C/G ...]
+..[... registrazione standard delle righe documento e movimenti C/G ...]
 
-  └─ Movimento C/G del buffer di registrazione fattura scritto
-       └─ PostingSubscribers → LinkTo(documentGlEntry)   ← collega il mov. rateo al mov. C/G del documento
+..└─ Movimento C/G del buffer di registrazione fattura scritto
+.......└─ PostingSubscribers → LinkTo(documentGlEntry)   ← collega il mov. rateo al mov. C/G del documento
 ```
 
 I movimenti ratei vengono creati con importi e conti **stimati** e **registrati immediatamente** durante `OnBeforePostLines`, prima che le righe documento standard vengano elaborate. L'`Amount (LCY)` viene stimato a partire dall'importo della riga documento, dalla conversione valuta e dal setup IVA. Il conto C/G (`G/L Account No.`) viene ricercato nel Setup Registrazioni Generali. Il collegamento al movimento C/G del documento viene stabilito soltanto dopo la registrazione, momento in cui tutte le righe di registrazione dei ratei sono già presenti nella contabilità.
@@ -65,25 +65,25 @@ I movimenti ratei vengono creati con importi e conti **stimati** e **registrati 
 
 ```
 Sales-Post / Purch.-Post
-  └─ OnBeforePostLines
-       └─ CreateGLAccrualEntry()
-            ├─ Amount (LCY)    ← NON calcolato (lasciato a 0)
-            ├─ G/L Account No. ← impostato temporaneamente dalle cat. registrazione (sarà sovrascritto)
-            └─ QueueToBePosted()  →  EOS001 Accrual Posting Queue (tabella 18004100)
+..└─ OnBeforePostLines
+.......└─ CreateGLAccrualEntry()
+............├─ Amount (LCY)    ← NON calcolato (lasciato a 0)
+............├─ G/L Account No. ← impostato temporaneamente dalle cat. registrazione (sarà sovrascritto)
+............└─ QueueToBePosted()  →  EOS001 Accrual Posting Queue (tabella 18004100)
 
-  [... registrazione standard delle righe documento e movimenti C/G ...]
+..[... registrazione standard delle righe documento e movimenti C/G ...]
 
-  └─ Movimento C/G del buffer di registrazione fattura scritto
-       └─ PostingSubscribers → LinkTo(documentGlEntry)
-            ├─ GlAccrEntry."G/L Account No." := documentGlEntry."G/L Account No."   ← conto EFFETTIVO
-            └─ GlAccrEntry."Amount (LCY)"    := documentGlEntry.Amount               ← importo EFFETTIVO
+..└─ Movimento C/G del buffer di registrazione fattura scritto
+.......└─ PostingSubscribers → LinkTo(documentGlEntry)
+............├─ GlAccrEntry."G/L Account No." := documentGlEntry."G/L Account No."   ← conto EFFETTIVO
+............└─ GlAccrEntry."Amount (LCY)"    := documentGlEntry.Amount               ← importo EFFETTIVO
 
-  └─ OnBeforeFinalizePosting                  ← NUOVO punto di innesco
-       └─ PostGLAccrEntries()
-            └─ Queue.Collect()               ← legge la coda di sessione
-                 └─ PostGlAccrEntry(EntryNo) ← il movimento ha già il conto e l'importo definitivi
-                      ├─ Calculate() → costruisce le righe di registrazione dai valori EFFETTIVI
-                      └─ registra le righe tramite Gen. Jnl.-Post Line
+..└─ OnBeforeFinalizePosting                  ← NUOVO punto di innesco
+.......└─ PostGLAccrEntries()
+............└─ Queue.Collect()               ← legge la coda di sessione
+.................└─ PostGlAccrEntry(EntryNo) ← il movimento ha già il conto e l'importo definitivi
+......................├─ Calculate() → costruisce le righe di registrazione dai valori EFFETTIVI
+......................└─ registra le righe tramite Gen. Jnl.-Post Line
 ```
 
 I movimenti ratei vengono creati come **bozze** e messi in coda. Tra `OnBeforePostLines` e `OnBeforeFinalizePosting`, la registrazione standard del documento scrive i movimenti C/G della fattura. La codeunit `PostingSubscribers` intercetta questo momento e chiama `LinkTo()` sul movimento rateo, sovrascrivendo sia il `G/L Account No.` che l'`Amount (LCY)` con i **valori effettivi** del movimento C/G registrato — non una stima.
