@@ -1,8 +1,10 @@
-Nei casi in cui fosse necessario avere delle caratteristiche alfanumeriche ad inserimento libero Š possibile utilizzare lÂopzione ®**Senza valori**¯ avendo prima impostato il ®Tipo decodifica¯ come ®Struttura¯.
+Nei casi in cui fosse necessario avere delle caratteristiche alfanumeriche ad inserimento libero Ã¨ possibile utilizzare lâ€™opzione Â«**Senza valori**Â» avendo prima impostato il Â«Tipo decodificaÂ» come Â«StrutturaÂ».
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000283-0/Charac4_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000283-0/Charac4_ITA.png"><br>
 
-Questa opzione fa s che durante la configurazione lÂutente possa inserire **un valore libero**, non condizionato alla precedente associazione di valori.
+Questa opzione fa sÃ¬ che durante la configurazione lâ€™utente possa inserire **un valore libero**, non condizionato alla precedente associazione di valori. <br>
+
+Tramite i campi Â«**Nome tabella lookup**Â» e Â«**Nome campo lookup**Â» Ã¨ possibile specificare una tabella e il campo da utilizzare come valore. <br> In configurazione, sulla caratteristica senza valori, utilizzando il pulsante di "Assist Edit", l'utente puÃ² aprire la tabella, selezionare un record e assegnare il valore del campo specificato alla caratteristica.
 
 <br>
 <br>
