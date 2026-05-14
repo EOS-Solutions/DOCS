@@ -34,7 +34,7 @@ Segue un dettaglio dei principali campi presenti nelle caratteristiche:
 | ID Attributo |Indica l’ID Attributo. Utilizzato per la mappatura fra caratteristiche e attributi.|
 | Valore Attributo |Indica il Valore Attributo. Utilizzato per la mappatura fra caratteristiche e attributi.|
 | Nome campo | Specifica il campo della tabella Articoli associato a questa caratteristica. Il campo verrà compilato nell'anagrafica articolo alla configurazione di un articolo.|
-| Nome tabella lookup <br> Nome campo lookup | Sono abilitati per le caratteristiche "Senza valori" per specificare una tabella di lookup, collegata alla caratteristica, e il campo da utilizzare come valore. <br> In fase di configurazione, sulla caratteristica senza valori, utilizzando il pulsante di "Assist Edit", l'utente può aprire la tabella e selezionare un valore del campo indicato.
+| Nome tabella lookup <br> Nome campo lookup | Sono abilitati per le caratteristiche "Senza valori" per specificare la tabella e il campo da utilizzare come valore. <br> In fase di configurazione, sulla caratteristica senza valori, utilizzando il pulsante di "Assist Edit", l'utente può aprire la tabella, selezionare un record e assegnare il valore del campo specificato alla caratteristica.
 
 <br>
 
