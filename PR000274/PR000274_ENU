@@ -33,7 +33,7 @@ Below is a detail of the main fields present in the characteristics:
 | Attribute ID |Specifies the Attribute ID. Used for the mapping between characteristics and attributes.|
 | Attribute Value |Specifies the Attribute Value. Used for the mapping between characteristics and attributes.|
 | Field Name |Specifies the field of the Item table associated with this characteristic. The field will be populated on the item card when configuring an item.|
-| Lookup Table Name <br> Lookup Field Name |They are enabled for characteristics "Without values" to specify a lookup table, linked to the characteristic, and the field to use as the value. <br> In configuration, on the characteristic without values, using the "Assist Edit", the user can open the table and select a value for the indicated field.|
+| Lookup Table Name <br> Lookup Field Name |They are enabled for characteristics "Without values" to specify the table and the field to use as the value. <br> In configuration, on the characteristic without values, using the "Assist Edit", the user can open the table, select a record and assign the value of the specified field to the characteristic.|
 
 <br>
 
