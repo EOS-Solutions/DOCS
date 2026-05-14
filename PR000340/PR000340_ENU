@@ -8,6 +8,7 @@ The configurator allows to associate specific item attributes to configured item
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000340-0/Attributes2_ENU.png"><br>
 
 The configured items show the attribute values according to the value of the characteristics used. Functionality available only if you use the configurator to generate item codes.
+**From BC28, the functionality is also available for Item Variants.**
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000340-0/Attributes3_ENU.png"><br>
 
