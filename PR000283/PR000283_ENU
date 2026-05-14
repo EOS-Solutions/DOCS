@@ -1,8 +1,10 @@
-In some cases, it is useful to define alphanumeric characteristics that contain comments. This is possible by selecting the option �**Without Values**� on a characteristic of type �Structure�.
+In some cases, it is useful to define alphanumeric characteristics that contain comments. This is possible by selecting the option «**Without Values**» on a characteristic of type «Structure».
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000283-0/Charac4_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000283-0/Charac4_ENU.png"><br>
 
-This option ensures that during configuration the user can enter a free value, not conditioned by the previous association of values.
+This option ensures that during configuration the user can enter a free value, not conditioned by the previous association of values. <br>
+
+Through the fields «**Lookup Table Name**» and «**Lookup Field Name**» it's possible to specify a lookup table and the field to use as value. <br> In configuration, on the characteristic without values, using the "Assist Edit", the user can open the table, select a record and assign the value of the specified field to the characteristic.
 
 <br>
 <br>
