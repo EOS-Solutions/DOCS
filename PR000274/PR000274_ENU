@@ -2,7 +2,7 @@ The characteristics are a fundamental data for the use of the configurator. They
 
 <br>
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000274-0/Charac2_ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000274-0/Charac2_ENU.png"><br>
 
 They can be of two types:
 -   **Structure:** characteristics that take a defined list of pre-encoded alphanumeric or numeric values;
@@ -17,7 +17,7 @@ Below is a detail of the main fields present in the characteristics:
 | Max Length |Can only be used with structure type characteristics. Prevents a characteristic from taking more characters than indicated.|
 | Decoding Type |Allowed values are Structure and Measure. **Structure**: characteristics that take a defined list of pre-encoded alphanumeric or numeric values. **Measure**: characteristics that accept only free-entry numeric values.|
 | Without values |CAllows to use a structure characteristic without specifying a predefined list of values.|
-| Acronym |Is used to compose the item description before any characteristic value code or description. There are two ways to configure an item's description: **1.** as defined by the rule using the ÃFormat DescriptionÄ and ÃFormat Description 2Ä fields. **2.** configurator uses all characteristics code and description based on these settings: ÃUse CodeÄ and ÃUse DescriptionÄ fields in characteristics and characteristics values tables.|
+| Acronym |Is used to compose the item description before any characteristic value code or description. There are two ways to configure an item's description: **1.** as defined by the rule using the â€œFormat Descriptionâ€ and â€œFormat Description 2â€ fields. **2.** configurator uses all characteristics code and description based on these settings: â€œUse Codeâ€ and â€œUse Descriptionâ€ fields in characteristics and characteristics values tables.|
 | Use Description |If active, the configurator uses the description of the characteristic value for the creation of the item description.|
 | Use Code |If active, the configurator uses the characteristic value for the creation of the item description.|
 | Master |Indicates that the values of one characteristic can be used by other characteristics.|
@@ -28,10 +28,12 @@ Below is a detail of the main fields present in the characteristics:
 | Dimension Code |Enabled only when configuring items. If this field is not empty, the dimension is inherited by the newly created item.|
 | Dimension Value Code |Enabled only when configuring items. If this field is not empty, the dimension value is inherited by the newly created item.|
 | Value Posting |Determines how dimensions are handled.|
-| Step |Only for characteristics of type ®measure¯, it is only used by the batch configuration. Determines the increment for characteristics of type ®measure¯.|
-| Numeric Format |Specifies the expression used to format the code in AL language (for example, Precision and Standard Format). It is only used for relations of type ®higher level¯, in order to customize how to format characteristics of type ®structure¯ calculated by a formula.|
+| Step |Only for characteristics of type Â«measureÂ», it is only used by the batch configuration. Determines the increment for characteristics of type Â«measureÂ».|
+| Numeric Format |Specifies the expression used to format the code in AL language (for example, Precision and Standard Format). It is only used for relations of type Â«higher levelÂ», in order to customize how to format characteristics of type Â«structureÂ» calculated by a formula.|
 | Attribute ID |Specifies the Attribute ID. Used for the mapping between characteristics and attributes.|
 | Attribute Value |Specifies the Attribute Value. Used for the mapping between characteristics and attributes.|
+| Field Name |Specifies the field of the Item table associated with this characteristic. The field will be populated on the item card when configuring an item.|
+| Lookup Table Name <br> Lookup Field Name |They are enabled for characteristics "Without values" to specify a lookup table, linked to the characteristic, and the field to use as the value. <br> In configuration, on the characteristic without values, using the "Assist Edit", the user can open the table and select a value for the indicated field.|
 
 <br>
 
@@ -41,14 +43,14 @@ Below is a detail of the main fields present in the characteristic values:
 |------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Code  |Value characteristic code.|
 | Description |Value characteristic description.|
-| Acronym |In case thereÂs an acronym, the characteristic value description is replaced by it in the item description, and the characteristic code is replaced by it in the item code.|
-| Use Description |If active, the configurator uses the description of the characteristic value for the creation of the item description. ItÂs inherited by the characteristic and can be disabled for each value.|
-| Use Code |If active, the configurator uses the characteristic value for the creation of the item description. itÂs inherited by the characteristic and can be disabled for each value.|
+| Acronym |In case thereâ€™s an acronym, the characteristic value description is replaced by it in the item description, and the characteristic code is replaced by it in the item code.|
+| Use Description |If active, the configurator uses the description of the characteristic value for the creation of the item description. Itâ€™s inherited by the characteristic and can be disabled for each value.|
+| Use Code |If active, the configurator uses the characteristic value for the creation of the item description. itâ€™s inherited by the characteristic and can be disabled for each value.|
 | Linked Characteristic Code |Used with Linked Characteristic Value. When compiled, the configuration makes a 1:1 transfer of the values on this characteristic, without having to specify a relation of type transfer value.|
 | Linked Characteristic Value |Used with Linked Characteristic Code. When compiled, the configuration makes a 1:1 transfer of the values on this characteristic, without having to specify a relation of type transfer value.|
 | Neutral Rule Characteristic Code |Used with Neutral Rule Characteristic Value. When compiled with a neutral rule present, these are used instead of the characteristic to search for the fix code.|
 | Neutral Rule Characteristic Value |Used with Neutral Rule Characteristic Value. When compiled with a neutral rule present, these are used instead of the characteristic to search for the fix code.|
-| Purchase Item No. |Defines the fix purchase item that should be replaced by the ®Item from neutral to fix¯ in the configured BOM.|
+| Purchase Item No. |Defines the fix purchase item that should be replaced by the Â«Item from neutral to fixÂ» in the configured BOM.|
 | Enable routing |When active, specifies that the characteristic value conditions the line of the configured routing. Enables business logic for fields: Source Type, Source No., Run Time Factor, Standard Task Code.|
 | Source Type |The routing line can be created as Work Center or Machine Center.|
 | Source No. |Work center code or Machine center Code to be used in the routing according to the Source Type.|
