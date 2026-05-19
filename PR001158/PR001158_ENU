@@ -1,0 +1,20 @@
+The following setups are available for "Analytics Library":
+
+### **Analytics Library Setup (ALB)**
+
+- **Enable Snapshot**: This flag specifies whether snapshots are enabled. This is a global switch that will deactivate snapshot generation in any case, if disabled. Therefore you need to enable this for snapshots to work.
+
+### **Snapshot Setup (ALB)**
+
+This setup allows you to configure when and how snapshots will be generated. This confiuration can be modified separately for sales / purchase documents and per single document type. The following settings are available:
+
+- **Disabled**: Snapshots are disabled completely.
+- **Active**: Snapshots *can* be created, but will not be created automatically by the system. You can still create them by manually running the snapshot creation reports or through custom procedures that trigger snapshots via code.
+- **Active (Automatic)**: Snapshots are enabled and will automatically be created for these documents. For posted documents this will happen during posting. For non-posted documents this will happen during document release.
+
+### **Item Charges**
+
+Item charges will be posted to the snapshots as the items that they have been assigned to, not as the item charge iteself. You can specify per single item charges, how discounts applied to the item charge will be distributed across the related item lines:
+
+- **(blank)**: the line and header discount amounts are zero. The amounts will be posted as net amounts.
+- **By Amount**: When there is a 1:1 link between item charge and item, discount amounts are allocated in the same way as for the item-type sales line. If there is a 1:N link, discount amounts are allocated proportionally based on the docuemnt line amount.
