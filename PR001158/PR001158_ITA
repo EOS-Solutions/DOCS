@@ -1,0 +1,20 @@
+Le seguenti setuo sono disponibili per "Analytics Library":
+
+### **Setup Analytics Library (ALB)**
+
+- **Abilita Snapshot**: Questo flag specifica se gli snapshot sono abilitati. Questo è un interruttore globale che disabiliterà la generazione di snapshot in ogni caso, se disabilitato. Pertanto si deve abilitare questa opzione affinché gli snapshot funzionino.
+
+### **setup Snapshot (ALB)**
+
+Questo setup consente di configurare quando e come verranno generati gli snapshot. Questo setup può essere modificata separatamente per i documenti di vendita/acquisto e per ogni singolo tipo di documento. Le seguenti impostazioni sono disponibili:
+
+- **Disabilitato**: Gli snapshot sono completamente disabilitati.
+- **Attivo**: Gli snapshot *possono* essere creati, ma non verranno creati automaticamente dal sistema. È possibile comunque crearli eseguendo manualmente i report di creazione degli snapshot o attraverso procedure personalizzate che attivano gli snapshot tramite codice.
+- **Attivo (Automatico)**: Gli snapshot sono abilitati e verranno creati automaticamente per questi documenti. Per i documenti registrati ciò accadrà durante la registrazione. Per i documenti non registrati ciò accadrà durante il rilascio del documento.
+
+### **Addebiti Articolo**
+
+Gli addebiti articolo verranno registrati negli snapshot come gli articoli a cui sono stati assegnati, non come l'addebito articolo stesso. Si puo specificare per ogni singolo addebito articolo come gli sconti applicati all'addebito articolo verranno distribuiti tra le righe di articolo correlate:
+
+- **(vuoto)**: gli importi degli sconti di riga e intestazione sono zero. Gli importi verranno registrati come importi netti.
+- **Per Importo**: Quando esiste un collegamento 1:1 tra addebito articolo e articolo, gli importi degli sconti vengono allocati nello stesso modo delle righe di vendita di tipo articolo. Se esiste un collegamento 1:N, gli importi degli sconti vengono allocati proporzionalmente in base all'importo della riga del documento.
