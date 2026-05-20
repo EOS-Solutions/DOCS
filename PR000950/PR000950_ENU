@@ -4,3 +4,6 @@
 * Example 4: generation of an invoice for each reason code:
     * Reason code VEN: standard
     * Reason code NO_MAG: does not affect warehouse stock
+* Example 5: generation of sales invoices with recurring sales lines:
+    * Separate invoice: generation of recurring sales lines in a separate invoice
+    * Appended invoice: generation of recurring sales lines appended to the shipment invoice
