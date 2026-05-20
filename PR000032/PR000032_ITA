@@ -6,3 +6,4 @@ L’app Extended Combine Shipment (ECS) viene utilizzata in sostituzione della f
 * Schedulare il processo di fatturazione
 * Sottoporre a Workflow del Data Security il processo di fatturazione
 * Attribuire alle fatture generate automaticamente da ECS una specifica classe documentale
+* Inserire automaticamente righe ricorrenti (es. canoni, servizi periodici) nelle fatture generate da ECS e decidere se creare una fattura separata di servizi o accodarle alle fatture di merce generate dalle spedizioni
