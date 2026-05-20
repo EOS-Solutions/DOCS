@@ -4,3 +4,6 @@
 * Esempio 4: generazione di una fattura per ogni causale:
 	* Causale VEN: standard
 	* Causale NO_MAG: non movimenta giacenza di magazzino
+* Esempio 5: generazione di fatture di vendita con *righe vendita ricorrenti*:
+	* Fattura separata: generazione delle righe vendita ricorrenti in una fattura separata
+	* Fattura accodata: generazione delle righe vendita ricorrenti accodate alla fattura di spedizione
