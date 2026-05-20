@@ -1,6 +1,6 @@
 The Extended Combine Shipment app allows you to preset setups for billing methods. Each method is associated with a code.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000634-0/EN_ShipmentMethods.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000634-0/ECS_IMG_ENG_3.png"><br>
 
 | **Field** | **Description** |
 |-|-|
@@ -9,3 +9,5 @@ The Extended Combine Shipment app allows you to preset setups for billing method
 | Bill-to | field that identifies the invoice recipient. The options are:<ul><li>Bill-to Customer: invoice the name entered in the "Bill-to" field on the Sales Order in the "Shipping and Billing" Tab (this option is the default)</li><li>Sell-to Customer: invoice the name entered in the "Sell-to" field on the Sales Order</li></ul>   |
 | Formula date from / Formula date to  | formula used to calculate the billing period (CM/-CM = shipments posted throughout the month are considered)) |
 | Retrieve header values from | to create the invoice, header values can be taken from the order or the shipment |
+| Invoice Document Class | Allows assigning a sales document class to all provisional sales invoices generated with the related invoicing method. |
+| Recurring Sales Lines Mode | Allows defining, for the selected invoicing method, whether recurring sales lines should be appended to the invoice generated from shipment or inserted into a separate document. The available options are:<ul><li>Separate invoice: recurring sales lines are inserted into a provisional sales invoice generated separately by ECS and containing only recurring lines</li><li>Append to invoices: recurring sales lines are inserted into the same provisional sales invoice generated |
