@@ -14,3 +14,20 @@ On the **Customer Setup** in the “Invoicing” Tab you can in fact define the 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/EN_Setup2.png"><br>
 
 If this field is not filled in, the system considers the one indicated in the Extended Cumulative Invoices Setup.
+
+**Recurring Lines Setup**
+
+In the table of recurring sales lines assigned to the customer (Customers page > Related > Sales > Recurring Sales Lines), the following field has been introduced:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/ECS_IMG_ENG_1.png"><br>
+
+Editability and validation rules:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/ECS_IMG_ENG_2.png"><br>
+
+
+* The “Manage in ECS” field is clickable/editable only if the “Invoice Line Insertion Mode” field (standard field for assigning recurring lines to the customer) is set to “Automatic”.
+* If the user changes the value of the “Invoice Line Insertion Mode” field from “Automatic” to another value (e.g. “Manual” or “Always Ask”), the system automatically disables the “Manage in ECS” field by setting it back to false.
+* This logic ensures that only lines with automatic insertion can be managed by the ECS process, preventing unpredictable behavior.
+
+Note: If there are multiple recurring sales lines for the customer and the mode is set to “Automatic”, if there is only one recurring sales line, it will be inserted automatically.
