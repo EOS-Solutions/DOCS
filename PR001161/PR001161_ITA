@@ -1,0 +1,18 @@
+## Integrazione con righe vendita ricorrenti
+
+**Modalità operative:**
+
+**Modalità A – Fattura separata di servizi**
+
+Per ogni cliente coinvolto nella sessione di fatturazione ECS che dispone di righe ricorrenti valide (con «Gestire in ECS» = true e date di validità coerenti):
+* ECS genera una sola fattura di vendita separata contenente esclusivamente le righe ricorrenti selezionate
+* La fattura viene creata una volta sola per cliente, anche se nella stessa sessione ECS sono state generate N fatture di merce per lo stesso «Fatturare a»
+* La fattura di servizi ricorrenti viene conteggiata nel numero totale di fatture create dalla sessione ECS
+
+**Modalità B – Accoda alle fatture di merce**
+
+Per ogni cliente per cui nella sessione ECS vengono create una o più fatture di merce:
+* ECS aggiunge le righe ricorrenti valide (flag «Gestire in ECS» attivo) alle fatture di merce del cliente
+* In caso di più fatture di merce generate per il medesimo «Fatturare a» (es. split per destinazione, causale, ecc.), l'accodamento avviene su tutte le fatture generate da ECS
+
+**Nota**: se per un cliente non sono presenti righe ricorrenti valide, nessuna fattura separata di servizi viene creata.
