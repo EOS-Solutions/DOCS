@@ -1,5 +1,5 @@
-# Integration with recurring sales lines
 **Operating modes:**
+
 **Mode A – Separate service invoice**
 
 For each customer involved in the ECS invoicing session who has valid recurring lines (with “Manage in ECS” = true and consistent validity dates):
