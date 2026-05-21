@@ -14,3 +14,5 @@ Per ogni cliente per cui nella sessione ECS vengono create una o più fatture di
 * In caso di più fatture di merce generate per il medesimo «Fatturare a» (es. split per destinazione, causale, ecc.), l'accodamento avviene su tutte le fatture generate da ECS
 
 **Nota**: se per un cliente non sono presenti righe ricorrenti valide, nessuna fattura separata di servizi viene creata.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001161-0/ECS_IMG_ITA_4.png"><br>
