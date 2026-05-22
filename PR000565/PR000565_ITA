@@ -108,6 +108,8 @@ Esempio: con liquidazione annuale al 31/12/2025, il contributo Enasarco viene ca
 Alla ricezione della fattura XML definitiva, è possibile collegarla alla provvisoria e aggiornare la data documento (es. 19/01/2026) senza modificare il calcolo né la competenza del contributo, che resta ancorata alla data di liquidazione originaria. 
 Nei movimenti Enasarco (CMS) risulteranno quindi la data di registrazione del contributo al 31/12/2025 e la data documento e di registrazione del documento al 2026, garantendo coerenza contributiva e contabile.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENACalcCompEna01.png"><br>
+
 **Report di calcolo integrazioni**
 
 Nel caso in cui le integrazioni/recuperi dei contributi Enasarco non si vogliano calcolare sulla singola fattura (di fine trimestre) ma si preferisca effettuare un calcolo massivo, è possibile utilizzare l’apposita procedura “Calcola integrazioni Enasarco (CMS)”:
