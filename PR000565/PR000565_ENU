@@ -96,6 +96,8 @@ Example: with an annual settlement as of 31/12/2025, the Enasarco contribution i
 Upon receipt of the final XML invoice, it can be linked to the provisional document and the document date can be updated (e.g. 19/01/2026) without changing either the calculation or the accrual of the contribution, which remains anchored to the original settlement date.
 In the Enasarco contribution movements (CMS), this results in a contribution registration date of 31/12/2025 and a document date and document posting date in 2026, ensuring both contribution and accounting consistency.
 
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000565-0/ENA_ENCalcCompEna01.png"><br>
+
 **Calculation report**
 
 Let's open Calculate Enasarco Integration (CMS):
