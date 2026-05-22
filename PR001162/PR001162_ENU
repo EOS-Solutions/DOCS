@@ -1,0 +1,12 @@
+In the table of recurring sales lines assigned to the customer (Customers page > Related > Sales > Recurring Sales Lines), the following field has been introduced:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/ECS_IMG_ENG_1.png"><br>
+
+Editability and validation rules:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/ECS_IMG_ENG_2.png"><br>
+
+
+* The “Manage in ECS” field is clickable/editable only if the “Invoice Line Insertion Mode” field (standard field for assigning recurring lines to the customer) is set to “Automatic”.
+* If the user changes the value of the “Invoice Line Insertion Mode” field from “Automatic” to another value (e.g. “Manual” or “Always Ask”), the system automatically disables the “Manage in ECS” field by setting it back to false.
+* This logic ensures that only lines with automatic insertion can be managed by the ECS process, preventing unpredictable behavior.
