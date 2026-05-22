@@ -88,6 +88,14 @@ In the print, the system shows the filters applied:
 |----------------------------------------------------------------------------------------------------------------------------------------------------|
 | It is possible to choose whether to execute only the calculations or also to post (based on the filters that are activated in the ACTIONS section) |
 
+**Enasarco Accrual at Year End**
+
+The contribution accrual is determined by the document date of the purchase invoice generated from the settlement statement.
+For each settlement period (monthly, quarterly, or annual), including year-end settlements, the system generates provisional purchase invoices with a document date matching the accrual date (e.g. 31/12/2025), including all commissions accrued and applying the Enasarco rates and ceilings in force for that financial year.
+Example: with an annual settlement as of 31/12/2025, the Enasarco contribution is calculated with 2025 accrual even if the agent’s electronic invoice is received in January 2026.
+Upon receipt of the final XML invoice, it can be linked to the provisional document and the document date can be updated (e.g. 19/01/2026) without changing either the calculation or the accrual of the contribution, which remains anchored to the original settlement date.
+In the Enasarco contribution movements (CMS), this results in a contribution registration date of 31/12/2025 and a document date and document posting date in 2026, ensuring both contribution and accounting consistency.
+
 **Calculation report**
 
 Let's open Calculate Enasarco Integration (CMS):
