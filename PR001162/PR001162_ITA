@@ -1,0 +1,11 @@
+Nella tabella delle righe di vendita ricorrenti assegnate al cliente (pagina Clienti > Correlato > Vendite > Righe vendita ricorrenti) è stato introdotto il seguente campo:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/ECS_IMG_ITA_1.png"><br>
+
+Regole di editabilità e validazione:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000631-0/ECS_IMG_ITA_2.png"><br>
+
+* Il campo «Gestire in ECS» è cliccabile/modificabile solo se il campo «Modalità di inserimento per la fattura» (campo standard di assegnazione delle righe ricorrenti al cliente) è impostato su «Automatico».
+* Se l'utente modifica il valore del campo «Modalità di inserimento per la fattura» da «Automatico» a un altro valore (es. «Manuale» o «Chiedi sempre»), il sistema disabilita automaticamente il campo «Gestire in ECS» riportandolo a false.
+* Questa logica garantisce che solo le righe con inserimento automatico possano essere gestite dal processo ECS, evitando comportamenti imprevedibili.
