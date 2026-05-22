@@ -100,6 +100,14 @@ Nella stampa il sistema riporta i filtri che erano stati applicati:
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | E' possibile scegliere se eseguire solo i calcoli oppure effettuare anche la registrazione (in base ai filtri che vengono attivati nella sezione ESEGUI) |
 
+**Competenza Enasarco a fine anno**
+
+La competenza contributiva è determinata dalla data documento della fattura di acquisto generata dal prospetto di liquidazione. 
+In ogni periodo di liquidazione (mensile, trimestrale o annuale), incluse le liquidazioni di fine anno, il sistema genera fatture di acquisto provvisorie con data documento pari alla data di competenza (es. 31/12/2025), includendo tutte le provvigioni maturate e applicando aliquote e massimali Enasarco vigenti per tale esercizio. 
+Esempio: con liquidazione annuale al 31/12/2025, il contributo Enasarco viene calcolato con competenza 2025 anche se la fattura elettronica dell’agente arriva a gennaio 2026. 
+Alla ricezione della fattura XML definitiva, è possibile collegarla alla provvisoria e aggiornare la data documento (es. 19/01/2026) senza modificare il calcolo né la competenza del contributo, che resta ancorata alla data di liquidazione originaria. 
+Nei movimenti Enasarco (CMS) risulteranno quindi la data di registrazione del contributo al 31/12/2025 e la data documento e di registrazione del documento al 2026, garantendo coerenza contributiva e contabile.
+
 **Report di calcolo integrazioni**
 
 Nel caso in cui le integrazioni/recuperi dei contributi Enasarco non si vogliano calcolare sulla singola fattura (di fine trimestre) ma si preferisca effettuare un calcolo massivo, è possibile utilizzare l’apposita procedura “Calcola integrazioni Enasarco (CMS)”:
