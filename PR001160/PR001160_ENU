@@ -1,0 +1,33 @@
+**Invoicing recurring sales lines with ECS on a separate invoice**
+
+On the customer, we set an invoicing method that provides for "Sales lines mode" equal to "Separate invoice"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ENG_5.png"><br>
+
+In the setup of recurring sales lines, we set the lines with the flag "Manage in ECS" equal to True
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ENG_6.png"><br>
+
+By running the report "Extended cumulative invoicing (ECS)", separate invoices are generated:
+
+* The sales invoice with lines derived from shipment
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ENG_7.png"><br>
+
+* The sales invoice with lines derived from recurring sales lines
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ENG_8.png"><br>
+
+**Invoicing recurring sales lines with ECS appended to the goods invoice**
+
+On the customer, we set an invoicing method that provides for "Sales lines mode" equal to "Appended invoice"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ENG_9.png"><br>
+
+In the setup of recurring sales lines, we set the lines with the flag "Manage in ECS" equal to True
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ITA_10.png"><br>
+
+By running the report "Extended cumulative invoicing (ECS)", the recurring sales lines are appended to the shipment lines in the same sales invoice:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ITA_11.png"><br>
