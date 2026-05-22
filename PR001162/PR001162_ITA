@@ -5,7 +5,7 @@ Nella tabella delle righe di vendita ricorrenti assegnate al cliente (pagina Cli
 Regole di editabilità e validazione:
 
 | **Campo** | **Tipo** | **Default** | **Descrizione** |
-|-|-|
+|-|-|-|-|
 | Gestire in ECS | Boolean | false | Se attivo, la riga ricorrente è eleggibile per l'inserimento automatico nelle fatture generate dal processo di fatturazione cumulativa ECS |
 
 * Il campo «Gestire in ECS» è cliccabile/modificabile solo se il campo «Modalità di inserimento per la fattura» (campo standard di assegnazione delle righe ricorrenti al cliente) è impostato su «Automatico».
