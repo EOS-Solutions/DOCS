@@ -1,0 +1,36 @@
+**Fatturazione righe vendita ricorrenti con ECS su fattura separata** 
+
+Nel cliente impostiamo un metodo di fatturazione che preveda la "*Modalità righe vendita*" uguale a "*Fattura separata*"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ITA_5.png"><br>
+
+Nel setup delle righe vendita ricorrenti impostiamo le righe con il flag "*Gestisci in ECS*" uguale a *True*
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ITA_6.png"><br>
+
+Eseguendo il report "*Fatt. cumulative estese (ECS)*" vengono generate fatture separate:
+
+* La fattura di vendita con le righe derivanti da spedizione
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ITA_7.png"><br>
+
+* La fattura di vendita con le righe derivanti dalle righe vendita ricorrenti
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ITA_8.png"><br>
+
+
+**Fatturazione righe vendita ricorrenti con ECS su fattura accodata a fattura di merci** 
+
+Nel cliente impostiamo un metodo di fatturazione che preveda la "*Modalità righe vendita*" uguale a "*Fattura accodata*"
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ITA_9.png"><br>
+
+Nel setup delle righe vendita ricorrenti impostiamo le righe con il flag "*Gestisci in ECS*" uguale a *True*
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ITA_10.png"><br>
+
+Eseguendo il report "*Fatt. cumulative estese (ECS)*" le righe vendita ricorrenti vengono accodate alle righe di spedizione nella stessa fattura di vendita:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001160-0/ECS_IMG_ITA_11.png"><br>
+
+
