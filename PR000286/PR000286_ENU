@@ -200,6 +200,9 @@ Alternatively, when a partial closing invoice with proportional deduction (not u
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/44InvoicingPlan-ENU.png"><br>
 
+| N.B. |
+| --- |
+| To avoid data inconsistencies, it is not possible to enter advance payment invoice lines after partial closing invoice lines with deductions |
 
 ## More Functionalities
 
