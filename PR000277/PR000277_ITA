@@ -12,11 +12,13 @@ Dalla ricerca di BC è possibile verificare ed eventualmente personalizzare il s
 
 * Escludi Riga descrittiva Numero Ordine in fattura di chiusura
 
+* Dividi riga per IVA predefinita: è possibile disattivare o riattivare la funzione del dividi riga IVA
+
 * Pagamenti in attesa
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/3InvoicingPlan-ITA.png"><br>
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/IPL_01_ITA.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/IPL_01_ITA_V1.1.png"><br>
 
 Nell’app IPL a livello di setup, è possibile gestire i **"Template dei piani di fatturazione"**: modelli configurabili e richiamabili a livello di singolo piano di fatturazione specifico, utili a semplificare l’inserimento e la gestione per ordine.
 
