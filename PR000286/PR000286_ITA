@@ -202,6 +202,10 @@ Generando invece una **fattura di chiusura parziale con detrazione** (non a capi
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000286-0/44InvoicingPlan-ITA.png"><br>
 
+| N.B. |
+| --- |
+| Per evitare incongruenze nei dati, non è possibile inserire righe di fatture di pagamento anticipato successive a righe di fattura di chiusura parziale con detrazioni |
+
 ## Ulteriori funzionalità dei piani di fatturazione attivi
 
 -Dalle righe del piano di fatturazione è possibile:
@@ -231,7 +235,6 @@ La fattura generata conterrà solo le spedizioni selezionate.
 -L’app IPL mette a disposizione direttamente nel menù principale anche la "Lista dei piani di fatturazione (IPL)" inseriti a sistema, con evidenza degli ordini di vendita collegati e la possibilità di aprire il piano di fatturazione direttamente dalla lista:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/42InvoicingPlan-ITA.png"><br>
-
 
 
 
