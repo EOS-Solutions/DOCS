@@ -10,11 +10,13 @@ From the BC search it is possible to verify and possibly customize the setup of 
 
 * Exclude Order No. Description line in Closing Invoice
 
+* Split lines by VAT by Default: it is possible to disable or enable the VAT line split function
+
 * Payments On Hold
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/3InvoicingPlan-ENU.png"><br>
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/IPL_01_ENG.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000277-0/IPL_01_ENG_V1.1.png"><br>
 
 In the IPL app at the setup level, it is possible to manage the "Invoice Plan Templates": configurable and recallable models at the level of a single specific billing plan, useful for simplifying the insertion and management by order.
 
