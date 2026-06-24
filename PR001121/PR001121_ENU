@@ -14,20 +14,42 @@
         <td><b>Release date</b></td>
         <td><b>Notes</b></td>
         <td><b>PowerApp version</b></td>
-        <td><b>BC25</b></td>
         <td><b>BC26</b></td>
         <td><b>BC27</b></td>
-        <td><b>BC25</b></td>
+				<td><b>BC28</b></td>
         <td><b>BC26</b></td>
         <td><b>BC27</b></td>
+				<td><b>BC28</b></td>
+    </tr>
+	<tr>
+        <td>20/03/2026</td>
+        <td> - Custom activity and group captions<br>- Inventory pick activity<br>- Custom activities with existing tables</td>
+        <td>1.1.255.0</td>
+        <td>-</td>
+        <td>27.0.42</td>
+				<td>28.0.16</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+		<tr>
+        <td>15/05/2026</td>
+        <td> - Source scans sorting</td>
+        <td>1.1.245.0</td>
+        <td>-</td>
+        <td>27.0.39</td>
+				<td>28.0.12</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
     </tr>
 	<tr>
         <td>20/03/2026</td>
         <td> - Event for manage put-away lines under quality control<br>- Free text longer than 100 chars management<br>- Copy alternative views improvements</td>
         <td>1.1.245.0</td>
-        <td>-</td>
         <td>26.0.72</td>
         <td>27.0.34</td>
+				<td>28.0.10</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
@@ -36,31 +58,31 @@
         <td>05/03/2026</td>
         <td> - Actions: return to lines<br>- Additional fields for source scans and HU list<br>- New flag "Skip Quantity Check" for custom activities</td>
         <td>1.1.245.0</td>
-        <td>-</td>
         <td>26.0.69</td>
         <td>27.0.31</td>
         <td>-</td>
         <td>26.0.32</td>
         <td>27.0.22</td>
+				<td>-</td>
     </tr>
     <tr>
         <td>08/01/2026</td>
         <td> - Physical Inventory Order tracking scanner fixes<br>- Reverse scan order implementation<br>- Platform fixes</td>
         <td>1.1.242.0</td>
-        <td>-</td>
         <td>26.0.67</td>
         <td>27.0.29</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
+				<td>-</td>
     </tr>
     <tr>
         <td>08/01/2026</td>
         <td>Location selection with traceability details</td>
         <td>1.1.237.0</td>
-        <td>25.0.89</td>
         <td>26.0.56</td>
         <td>27.0.19</td>
+				<td>-</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
@@ -72,28 +94,28 @@
         <td>-</td>
         <td>-</td>
         <td>-</td>
-        <td>25.0.46</td>
         <td>26.0.26</td>
         <td>27.0.16</td>
+				<td>-</td>
     </tr>
     <tr>
         <td>31/10/2025</td>
         <td>Ideas, scanner search setup</td>
         <td>1.1.206.0</td>
-        <td>25.0.88</td>
         <td>26.0.52</td>
         <td>27.0.15</td>
-        <td>25.0.43</td>
+				<td>-</td>
         <td>26.0.22</td>
         <td>27.0.12</td>
+				<td>-</td>
     </tr>
     <tr>
         <td>08/10/2025</td>
         <td>Inventory orders</td>
         <td>1.1.205.0</td>
-        <td>25.0.83</td>
         <td>26.0.48</td>
         <td>27.0.11</td>
+				<td>-</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
@@ -102,11 +124,11 @@
         <td>29/08/2025</td>
         <td>Alternative views</td>
         <td>1.1.203.0</td>
-        <td>25.0.78</td>
         <td>26.0.43</td>
         <td>27.0.10</td>
-        <td>25.0.41</td>
+				<td>-</td>
         <td>26.0.20</td>
         <td>27.0.10</td>
+				<td>-</td>
     </tr>
 </table>
