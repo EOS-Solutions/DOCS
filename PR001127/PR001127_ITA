@@ -1,0 +1,88 @@
+### Sistema Legacy
+
+Nel sistema legacy, la gestione degli agenti (ruoli e salesperson) veniva replicata **per ogni singola entità** gestita dall'app Commissions (CMS):
+
+<div style="display: block; margin: 40px auto; width: fit-content;">
+<pre style="font-family: 'Courier New', monospace; white-space: pre; overflow-x: auto; line-height: 1.2; border: 2px solid #ff8800; padding: 20px; background: #f8f9fa;">
+┌─────────────────────────────────────────────────────────────────────┐
+│                        SISTEMA LEGACY                               │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  Customer "CUST001"                                                 │
+│    └── EOS Add. Salesperson/Purchaser                               │
+│          ├── Role: AGENT1, Salesperson: SP001                       │
+│          └── Role: AGENT2, Salesperson: SP002                       │
+│                                                                     │
+│  Sales Header "INV-0001"                                            │
+│    └── EOS Add. Salesperson/Purchaser                               │
+│          ├── Role: AGENT1, Salesperson: SP001  ◄── DUPLICATO        │
+│          └── Role: AGENT2, Salesperson: SP002  ◄── DUPLICATO        │
+│                                                                     │
+│  Sales Line "INV-0001, Line 10000"                                  │
+│    └── EOS Add. Salesperson/Purchaser                               │
+│          ├── Role: AGENT1, Salesperson: SP001  ◄── DUPLICATO        │
+│          └── Role: AGENT2, Salesperson: SP002  ◄── DUPLICATO        │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+</pre>
+</div>
+
+**Limiti del sistema legacy:**
+- **Ridondanza dei dati**: lo stesso set di ruoli/agenti viene memorizzato N volte
+- **Spazio su disco elevato**: crescita esponenziale dello storage
+- **Performance degradate**: query lente su tabelle con milioni di record
+- **Manutenzione complessa**: aggiornamenti che richiedono modifiche su più record
+
+### Nuovo Sistema (Dimension-like)
+
+Il nuovo sistema adotta un approccio simile alla **gestione dimensioni** di Business Central. Ad ogni combinazione univoca di ruoli e agenti viene assegnato un **ID intero univoco** (Salesperson Set ID). Le entità gestite dalla CMS memorizzano solo questo ID.
+
+<div style="display: block; margin: 40px auto; width: fit-content;">
+<pre style="font-family: 'Courier New', monospace; white-space: pre; overflow-x: auto; line-height: 1.2; border: 2px solid #ff8800; padding: 20px; background: #f8f9fa;">
+```
+┌────────────────────────────────────────────────────────────────────┐
+│                        NUOVO SISTEMA                               │
+├────────────────────────────────────────────────────────────────────┤
+│                                                                    │
+│  ┌──────────────────────────────────────────────────────────────┐  │
+│  │  EOS010 Role-Salesperson Sets (tabella normalizzata)         │  │
+│  │  ┌────┬────────────┬─────────────────┐                       │  │
+│  │  │ ID │ Salesp.Role│ Salesperson Code│                       │  │
+│  │  ├────┼────────────┼─────────────────┤                       │  │
+│  │  │ 1  │ AGENT1     │ SP001           │                       │  │
+│  │  │ 2  │ AGENT2     │ SP002           │                       │  │
+│  │  │... │ ...        │ ...             │                       │  │
+│  │  └────┴────────────┴─────────────────┘                       │  │
+│  └──────────────────────────────────────────────────────────────┘  │
+│                                                                    │
+│  ┌──────────────────────────────────────────────────────────────┐  │
+│  │  EOS010 Salesperson Set Entry (combinazioni uniche)          │  │
+│  │  ┌──────────────────┬──────────────────────────┐             │  │
+│  │  │ Salesperson Set  │ Role-Salesperson Set ID  │             │  │
+│  │  │       ID         │  (references table above)│             │  │
+│  │  ├──────────────────┼──────────────────────────┤             │  │
+│  │  │ 100              │ 1 (AGENT1/SP001)         │             │  │
+│  │  │ 100              │ 2 (AGENT2/SP002)         │             │  │
+│  │  │ 101              │ 1 (AGENT1/SP001)         │             │  │
+│  │  │ 101              │ 5 (AGENT3/SP003)         │             │  │
+│  │  └──────────────────┴──────────────────────────┘             │  │
+│  └──────────────────────────────────────────────────────────────┘  │
+│                                                                    │
+│  Customer "CUST001"                                                │
+│    └── EOS Salesperson Set ID = 100  ◄── SOLO UN INTERO!           │
+│                                                                    │
+│  Sales Header "INV-0001"                                           │
+│    └── EOS Salesperson Set ID = 100  ◄── STESSO ID = STESSO SET    │
+│                                                                    │
+│  Sales Line "INV-0001, Line 10000"                                 │
+│    └── EOS Salesperson Set ID = 100  ◄── NESSUNA RIDONDANZA        │
+│                                                                    │
+└────────────────────────────────────────────────────────────────────┘
+</pre>
+</div>
+
+**Vantaggi del nuovo sistema:**
+- **Drastica riduzione dello spazio occupato**: da N record per entità a 1 campo intero
+- **Maggiore velocità di elaborazione**: query su indici interi molto più performanti
+- **Interfaccia utente reattiva**: lookup e filtri immediati
+- **Manutenibilità**: struttura normalizzata e manutenzione semplificata
