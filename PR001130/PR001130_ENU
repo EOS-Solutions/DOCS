@@ -1,0 +1,37 @@
+Monitoring and management page for the upgrade process.
+
+### Layout
+
+#### Setup Section
+
+| Field                                    | Description                           |
+| ---------------------------------------- | ------------------------------------- |
+| **Enable Salesperson Job Queue Upgrade** | Enables/disables Job Queue execution  |
+| **SalesPerson DataUpdate Date**          | Date/time of last execution           |
+| **SalesPerson DataUpdate User**          | User who executed the last upgrade    |
+| **SalesPerson DataUpdate Status**        | Status: In Progress, Completed, Error |
+
+> **Tip:** Click on "SalesPerson DataUpdate Status" to download the detailed log.
+
+#### Tables Section (Repeater)
+
+| Column                | Description                    |
+| --------------------- | ------------------------------ |
+| **Table**             | Table name                     |
+| **Total Records**     | Total records in table         |
+| **Processed Records** | Records with Status = "Valued" |
+| **Progress %**        | Completion percentage          |
+
+### Actions
+
+#### Calculate Status
+Calculates upgrade status for all tables. This operation can take significant time on large databases.
+
+#### Setup Job Queue
+Automatically creates a new Job Queue Entry (if it doesn't already exist) configured to:
+- Execute codeunit `EOS010 SalesP JobQueue Upg`
+- Parameter String: `18|36|112|114|5107` (all tables)
+- Recurrence: every minute, every day
+- Maximum 3 retry attempts in case of error
+
+> **Note:** This action automatically creates and configures the Job Queue Entry with all the correct parameters, significantly simplifying the setup process.
