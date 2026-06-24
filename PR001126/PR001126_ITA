@@ -1,0 +1,19 @@
+Questa documentazione descrive il processo di migrazione dalla gestione agenti **legacy** al nuovo sistema basato su **Salesperson Set ID**. La migrazione è necessaria per passare da un modello di dati ridondante a uno normalizzato, con significativi vantaggi in termini di spazio su disco e performance.
+
+### Attivazione della Migrazione
+
+Il processo di migrazione si compone di due fasi:
+
+**Fase 1 (Opzionale ma Consigliata per Volumi di Dati Elevati):** Pre-calcolo tramite Job Queue
+- Calcola gradualmente i valori "Salesperson Set ID" in anticipo
+- Può essere eseguita durante il normale orario lavorativo con minimo impatto sugli utenti
+- Riduce significativamente il tempo richiesto per la Fase 2
+
+**Fase 2 (Obbligatoria):** Migrazione finale tramite attivazione feature flag in **Eos Admin Library (EAL)**
+- Completa la migrazione al nuovo modello dati
+- Esegue il cambio definitivo della struttura dati
+
+**Importante:** 
+- La migrazione è considerata completa solo quando l'intero processo avviato dall'attivazione del feature flag EAL termina con successo.
+- La migrazione viene eseguita **per company**: ogni company nell'ambiente richiede una migrazione indipendente.
+- È responsabilità del consulente testare accuratamente la migrazione in un ambiente non di produzione prima di eseguirla in produzione.
