@@ -1,0 +1,120 @@
+### Comprendere l'Approccio a Due Fasi
+
+La migrazione può essere eseguita in due modi:
+
+**Approccio a Fase Singola** (Database Piccoli-Medi):
+- Attivazione diretta del feature flag EAL
+- Adatto per ambienti di test e database di produzione di dimensioni contenute
+- Richiede una finestra di manutenzione proporzionale al volume di dati
+
+**Approccio a Due Fasi** (Database di Grandi Dimensioni - CONSIGLIATO):
+- Fase 1: Pre-calcolo opzionale tramite Job Queue (giorni/settimane)
+- Fase 2: Attivazione feature flag (minuti/ore)
+- Minimizza il downtime in produzione
+- Distribuisce il carico sul sistema nel tempo
+
+---
+
+### Scenario 1: Database Piccolo-Medio (Fase Singola)
+
+1. **Test Preliminare:** Testare sempre la procedura completa in un ambiente non di produzione
+2. Aprire la pagina **Salesperson Upgrade Status (CMS)**
+3. Utilizzare **Calculate Status** per valutare il volume di dati corrente e il tempo di migrazione previsto
+4. Pianificare una finestra di manutenzione adeguata
+5. Attivare il feature flag nella **Eos Admin Library (EAL)**
+6. Monitorare il completamento tramite la pagina di stato
+7. Verificare il log per eventuali problemi
+8. Verificare la funzionalità dell'applicazione post-migrazione
+
+### Scenario 2: Database di Grandi Dimensioni (Due Fasi - CONSIGLIATO)
+
+#### Fase 1: Pre-Calcolo tramite Job Queue (Opzionale ma Consigliato)
+
+**Scopo:** Questa fase pre-calcola i valori "Salesperson Set ID" per minimizzare la durata della Fase 2.
+
+**Passi di Configurazione:**
+1. **Test Preliminare:** Eseguire questa procedura in un ambiente di test per stimare i tempi
+2. Aprire la pagina **EOS010 Salesp Upgrade Status**
+3. Abilitare il flag **Enable Salesperson Job Queue Upgrade**
+4. Cliccare l'action **Setup Job Queue** per creare una Job Queue Entry pre-configurata
+5. Personalizzare la schedulazione della Job Queue Entry:
+   - Consigliato: Pianificare durante periodi a basso utilizzo (es. ore notturne)
+   - Impostare una ricorrenza appropriata (es. ogni ora)
+   - Ogni esecuzione ha una durata massima di 10 minuti
+6. Mettere la Job Queue Entry in stato **Ready**
+7. Monitorare regolarmente il progresso tramite **Calculate Status**
+8. Permettere alla Job Queue di eseguire fino a che la percentuale di completamento è sufficientemente alta (tipicamente > 90-95%)
+
+**Durata:** Questa fase può durare giorni o settimane a seconda del volume di dati e della frequenza di schedulazione.
+
+#### Fase 2: Migrazione Finale tramite Attivazione Feature Flag (Obbligatoria)
+
+**Tempistica:** Eseguire durante una finestra di manutenzione pianificata.
+
+**Passi:**
+1. Verificare la percentuale di completamento della Fase 1 (se la Fase 1 è stata eseguita)
+2. Pianificare una finestra di manutenzione appropriata al volume di dati rimanente
+3. Disabilitare la Job Queue (se in esecuzione) per evitare conflitti
+4. Attivare il feature flag nella **Eos Admin Library (EAL)**
+5. Monitorare il processo di migrazione tramite la pagina di stato
+6. Verificare il log dettagliato al completamento
+7. Eseguire verifiche e test post-migrazione
+8. Rimuovere o disabilitare la Job Queue Entry se non più necessaria
+
+**Durata Attesa:** 
+- Senza Fase 1: Può richiedere diverse ore a seconda del volume di dati
+- Con Fase 1 completata: Tipicamente si completa in minuti od ore
+
+**Vantaggi dell'Approccio a Due Fasi:**
+- Finestra di manutenzione significativamente ridotta per la Fase 2
+- Impatto minimo sugli utenti durante la Fase 1
+- Le modifiche degli utenti durante la Fase 1 vengono ricalcolate automaticamente
+- Carico sul sistema distribuito nel tempo
+
+### Scenario 3: Ottimizzazione con Code Processi Multiple (Avanzato)
+
+I filtri tabella che si possono applicare alla coda processi possono essere utilizzati per **ottimizzare l'aggiornamento in base all'attività utente**:
+
+#### Strategia Consigliata
+
+**Tabelle a Bassa Attività Utente** (documenti registrati o archiviati):
+- Possono essere elaborate **durante le ore di attività utente**
+- Tabelle: `112` (Sales Invoice), `114` (Sales Cr.Memo), `5107` (Sales Archive)
+- Basso impatto sulle performance percepite dagli utenti
+
+**Tabelle ad Alta Attività Utente** (documenti attivi):
+- Devono essere elaborate **in fasce orarie scariche** (es. notturne)
+- Tabelle: `36` (Sales Header), `37` (Sales Line)
+- Richiedono finestre temporali con pochi o nessun utente attivo
+
+#### Configurazione Code Processi Multiple
+
+**È possibile avere più code processi di aggiornamento in contemporanea purché lavorino su tabelle differenti.**
+
+Esempio di configurazione:
+
+**Job Queue Entry #1** - Tabelle a bassa attività (orario diurno):
+```
+Parameter String: 112|114|5107
+Orario: 08:00 - 18:00
+Ricorrenza: ogni 30 minuti
+```
+
+**Job Queue Entry #2** - Tabelle ad alta attività (orario notturno):
+```
+Parameter String: 18|36
+Orario: 22:00 - 06:00
+Ricorrenza: ogni 15 minuti
+```
+
+**Vantaggi Potenziali:**
+- Ottimizza l'utilizzo delle risorse nelle 24 ore
+- Riduce l'impatto sugli utenti attivi
+- Può accelerare la preparazione complessiva
+- Fornisce flessibilità nella pianificazione
+
+**Considerazioni Importanti:**
+- Assicurarsi che le tabelle non si sovrappongano tra le diverse Job Queue
+- Monitorare il carico complessivo e le performance del database
+- Le tabelle Customer (18) possono richiedere considerazioni specifiche in base ai vostri pattern di utilizzo
+- Testare questa configurazione in un ambiente non di produzione prima dell'uso in produzione
