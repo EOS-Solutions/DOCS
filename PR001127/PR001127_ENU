@@ -1,0 +1,89 @@
+### Legacy System
+
+In the legacy system, salesperson management (roles and salesperson) was replicated **for each individual entity** managed by the Commissions app (CMS):
+
+<div style="display: block; margin: 40px auto; width: fit-content;">
+<pre style="font-family: 'Courier New', monospace; white-space: pre; overflow-x: auto; line-height: 1.2; border: 2px solid #ff8800; padding: 20px; background: #f8f9fa;">
+┌─────────────────────────────────────────────────────────────────────┐
+│                        LEGACY SYSTEM                                │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│  Customer "CUST001"                                                 │
+│    └── EOS Add. Salesperson/Purchaser                               │
+│          ├── Role: AGENT1, Salesperson: SP001                       │
+│          └── Role: AGENT2, Salesperson: SP002                       │
+│                                                                     │
+│  Sales Header "INV-0001"                                            │
+│    └── EOS Add. Salesperson/Purchaser                               │
+│          ├── Role: AGENT1, Salesperson: SP001  ◄── DUPLICATE        │
+│          └── Role: AGENT2, Salesperson: SP002  ◄── DUPLICATE        │
+│                                                                     │
+│  Sales Line "INV-0001, Line 10000"                                  │
+│    └── EOS Add. Salesperson/Purchaser                               │
+│          ├── Role: AGENT1, Salesperson: SP001  ◄── DUPLICATE        │
+│          └── Role: AGENT2, Salesperson: SP002  ◄── DUPLICATE        │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+</pre>
+</div>
+
+**Legacy system issues:**
+- **Data redundancy**: the same set of roles/salespersons is stored N times
+- **High disk space**: exponential storage growth
+- **Degraded performance**: slow queries on tables with millions of records
+- **Complex maintenance**: updates requiring changes across multiple records
+
+### New System (Dimension-like)
+
+The new system adopts an approach similar to Business Central's **dimension management**. Each unique combination of roles and salespersons is assigned a **unique integer ID** (Salesperson Set ID). Entities managed by CMS store only this ID.
+
+<div style="display: block; margin: 40px auto; width: fit-content;">
+<pre style="font-family: 'Courier New', monospace; white-space: pre; overflow-x: auto; line-height: 1.2; border: 2px solid #ff8800; padding: 20px; background: #f8f9fa;">
+┌────────────────────────────────────────────────────────────────────┐
+│                        NEW SYSTEM                                  │
+├────────────────────────────────────────────────────────────────────┤
+│                                                                    │
+│  ┌──────────────────────────────────────────────────────────────┐  │
+│  │  EOS010 Role-Salesperson Sets (normalized table)             │  │
+│  │  ┌────┬────────────┬─────────────────┐                       │  │
+│  │  │ ID │ Salesp.Role│ Salesperson Code│                       │  │
+│  │  ├────┼────────────┼─────────────────┤                       │  │
+│  │  │ 1  │ AGENT1     │ SP001           │                       │  │
+│  │  │ 2  │ AGENT2     │ SP002           │                       │  │
+│  │  │... │ ...        │ ...             │                       │  │
+│  │  └────┴────────────┴─────────────────┘                       │  │
+│  └──────────────────────────────────────────────────────────────┘  │
+│                                                                    │
+│  ┌──────────────────────────────────────────────────────────────┐  │
+│  │  EOS010 Salesperson Set Entry (unique combinations)          │  │
+│  │  ┌──────────────────┬──────────────────────────┐             │  │
+│  │  │ Salesperson Set  │ Role-Salesperson Set ID  │             │  │
+│  │  │       ID         │  (references table above)│             │  │
+│  │  ├──────────────────┼──────────────────────────┤             │  │
+│  │  │ 100              │ 1 (AGENT1/SP001)         │             │  │
+│  │  │ 100              │ 2 (AGENT2/SP002)         │             │  │
+│  │  │ 101              │ 1 (AGENT1/SP001)         │             │  │
+│  │  │ 101              │ 5 (AGENT3/SP003)         │             │  │
+│  │  └──────────────────┴──────────────────────────┘             │  │
+│  └──────────────────────────────────────────────────────────────┘  │
+│                                                                    │
+│  Customer "CUST001"                                                │
+│    └── EOS Salesperson Set ID = 100  ◄── JUST ONE INTEGER!         │
+│                                                                    │
+│  Sales Header "INV-0001"                                           │
+│    └── EOS Salesperson Set ID = 100  ◄── SAME ID = SAME SET        │
+│                                                                    │
+│  Sales Line "INV-0001, Line 10000"                                 │
+│    └── EOS Salesperson Set ID = 100  ◄── NO REDUNDANCY             │
+│                                                                    │
+└────────────────────────────────────────────────────────────────────┘
+</pre>
+</div>
+
+**Expected benefits of the new system:**
+- **Significant reduction in disk space**: from N records per entity to 1 integer field
+- **Improved processing speed**: queries on integer indexes typically more performant
+- **More responsive user interface**: faster lookups and filters
+- **Better maintainability**: normalized structure with simplified maintenance
+
+*Note: Actual performance improvements may vary depending on the specific environment and data volume.*
