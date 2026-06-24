@@ -1,0 +1,120 @@
+### Understanding the Two-Phase Approach
+
+The migration can be executed in two ways:
+
+**Single-Phase Approach** (Small to Medium Databases):
+- Direct activation of the EAL feature flag
+- Suitable for test environments and smaller production databases
+- Requires a maintenance window proportional to data volume
+
+**Two-Phase Approach** (Large Databases - RECOMMENDED):
+- Phase 1: Optional pre-calculation via Job Queue (days/weeks)
+- Phase 2: Feature flag activation (minutes/hours)
+- Minimizes production downtime
+- Distributes system load over time
+
+---
+
+### Scenario 1: Small to Medium Database (Single-Phase)
+
+1. **Test Environment First:** Always test the complete procedure in a non-production environment
+2. Open the **Salesperson Upgrade Status (CMS)** page
+3. Use **Calculate Status** to assess current data volume and expected migration time
+4. Plan an appropriate maintenance window
+5. Activate the feature flag in **Eos Admin Library (EAL)**
+6. Monitor completion via status page
+7. Review log for any issues
+8. Verify application functionality post-migration
+
+### Scenario 2: Large Database (Two-Phase - RECOMMENDED)
+
+#### Phase 1: Pre-Calculation via Job Queue (Optional but Recommended)
+
+**Purpose:** This phase pre-calculates "Salesperson Set ID" values to minimize Phase 2 duration.
+
+**Setup Steps:**
+1. **Test First:** Execute this procedure in a test environment to estimate timing
+2. Open the **EOS010 Salesp Upgrade Status** page
+3. Enable the **Enable Salesperson Job Queue Upgrade** flag
+4. Click the **Setup Job Queue** action to create a pre-configured Job Queue Entry
+5. Customize the Job Queue Entry scheduling:
+   - Recommended: Schedule during low-usage periods (e.g., night-time)
+   - Set appropriate recurrence (e.g., hourly)
+   - Each execution runs for a maximum of 10 minutes
+6. Set the Job Queue Entry to **Ready** status
+7. Monitor progress regularly via **Calculate Status**
+8. Allow the Job Queue to run until completion percentage is sufficiently high (typically > 90-95%)
+
+**Duration:** This phase may run for days or weeks depending on data volume and scheduling frequency.
+
+#### Phase 2: Final Migration via Feature Flag Activation (Required)
+
+**Timing:** Execute during a planned maintenance window.
+
+**Steps:**
+1. Verify Phase 1 completion percentage (if Phase 1 was executed)
+2. Plan a maintenance window appropriate to remaining data volume
+3. Disable the Job Queue (if running) to avoid conflicts
+4. Activate the feature flag in **Eos Admin Library (EAL)**
+5. Monitor the migration process via status page
+6. Review the detailed log upon completion
+7. Perform post-migration verification and testing
+8. Remove or disable Job Queue Entry if no longer needed
+
+**Expected Duration:** 
+- Without Phase 1: May take several hours depending on data volume
+- With Phase 1 completed: Typically completes in minutes to hours
+
+**Advantages of the Two-Phase Approach:**
+- Significantly reduced maintenance window for Phase 2
+- Minimal user impact during Phase 1
+- User modifications during Phase 1 are automatically recalculated
+- Distributed system load over time
+
+### Scenario 3: Optimization with Multiple Job Queues (Advanced)
+
+Table filters that can be applied to the job queue can be used to **optimize the update based on user activity**:
+
+#### Recommended Strategy
+
+**Low User Activity Tables** (posted or archived documents):
+- Can be processed **during user activity hours**
+- Tables: `112` (Sales Invoice), `114` (Sales Cr.Memo), `5107` (Sales Archive)
+- Low impact on performance perceived by users
+
+**High User Activity Tables** (active documents):
+- Must be processed **during low-traffic time slots** (e.g., night-time)
+- Tables: `36` (Sales Header), `37` (Sales Line)
+- Require time windows with few or no active users
+
+#### Multiple Job Queue Configuration
+
+**It is possible to have multiple update job queues running concurrently as long as they work on different tables.**
+
+Configuration example:
+
+**Job Queue Entry #1** - Low activity tables (daytime hours):
+```
+Parameter String: 112|114|5107
+Schedule: 08:00 - 18:00
+Recurrence: every 30 minutes
+```
+
+**Job Queue Entry #2** - High activity tables (night-time hours):
+```
+Parameter String: 18|36
+Schedule: 22:00 - 06:00
+Recurrence: every 15 minutes
+```
+
+**Potential Benefits:**
+- Optimizes resource utilization across 24 hours
+- Reduces impact on active users
+- May accelerate overall preparation
+- Provides scheduling flexibility
+
+**Important Considerations:**
+- Ensure tables don't overlap between different Job Queues
+- Monitor overall database load and performance
+- Customer tables (18) may require specific considerations based on your usage patterns
+- Test this configuration in a non-production environment before production use
