@@ -1,1 +1,28 @@
 **Work Request Agent** is an intelligent agent integrated into the PMM (Plant Maintenance) application, designed to simplify and automate the creation of Work Requests in Business Central.
+The Agent is available exclusively in **SaaS BC 28 (and later)** environments.
+<br>
+
+## What it does
+
+* captures work requests directly from **received emails**
+
+* automatically identifies the affected **machine and maintenance point**
+
+* extracts the **problem description** and any **planned dates/times**
+
+* automatically generates the **Work Request** in Business Central
+
+* sends a **structured confirmation** to the requester with the details of the created request
+<br>
+
+## Why it matters
+
+* reduces manual user activities
+
+* speeds up the process of reporting and managing maintenance interventions
+
+* ensures traceability and standardization of work requests
+<br>
+
+## Usage costs
+Using the Work Request Agent is designed to be efficient: each processed request requires on average about **25 Copilot credits**, with variations depending on the complexity of the content.
