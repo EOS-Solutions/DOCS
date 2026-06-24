@@ -1,0 +1,133 @@
+### Codeunit "EOS010 SalesP Upgrade" (ID: 18008321)
+
+This codeunit executes the **complete and synchronous** migration of all data. It is designed to be executed **once** in a controlled environment.
+
+#### Main Characteristics
+
+| Characteristic  | Description                                                               |
+| --------------- | ------------------------------------------------------------------------- |
+| **Execution**   | Synchronous, blocking                                                     |
+| **Scope**       | Per company (each company is migrated separately)                         |
+| **Duration**    | Can take hours depending on company data volume                           |
+| **Transaction** | Single transaction with automatic rollback in case of error               |
+
+#### Execution Flow
+
+1. **Checking Environment**
+   - Verifies interferences with other apps
+   - Checks for missing roles/salespersons
+   - Verifies unknown tables
+
+2. **Data Upgrade**
+   - Verifies modify permissions
+   - Creates Role-Salesperson combinations
+   - Migrates active document data
+   - Migrates archived data
+   - Updates sales networks
+
+3. **Data Verification**
+   - Verifies migrated data integrity
+
+#### When to Use
+
+- ✅ Initial migration in test environment
+- ✅ Production environment with downtime possibility
+- ✅ Small/medium-sized databases
+- ⚠️ **Note:** The codeunit is executed **automatically when activating the EAL feature flag**, it cannot be executed manually via code
+- ❌ **DO NOT activate the feature flag** in production environment without downtime
+- ❌ **DO NOT activate the feature flag** on large databases without planning
+
+---
+
+### Codeunit "EOS010 SalesP JobQueue Upg" (ID: 18008325)
+
+This codeunit executes **incremental and asynchronous** migration via Job Queue. It is designed for production environments where downtime is not possible.
+
+#### Main Characteristics
+
+| Characteristic                | Description                                                                                       |
+| ----------------------------- | ------------------------------------------------------------------------------------------------- |
+| **Execution**                 | Asynchronous via Job Queue                                                                        |
+| **Scope**                     | Per company (each Job Queue works on a specific company)                                          |
+| **Single execution duration** | Maximum 10 minutes per execution                                                                  |
+| **Behavior**                  | Resumes from where it left off                                                                    |
+| **Commit**                    | Progressive commits for each document/entity                                                      |
+| **Configuration**             | Recommended to configure via page "EOS010 Salesp Upgrade Status" using action **Setup Job Queue** |
+| **Typical Use**               | Gradual migration in production                                                                   |
+
+#### Operation and Purpose
+
+The activity executed via job queue allows to **calculate the "Salesperson Set ID" value on all supported tables in advance**, thus speeding up the final upgrade when the feature flag is activated.
+
+**Important:** The Job Queue operates on the **current company** data. If you have multiple companies in the environment, you need to configure a separate Job Queue Entry for each company.
+
+**Recommended Scheduling:**
+- The job queue should be **scheduled in a time window with few or no users**, for example during night hours
+- To avoid exceeding the time window, it is designed to execute for a **maximum of 10 minutes at a time**
+- Automatically stops after 10 minutes and resumes at the next scheduled execution
+
+**Change Management:**
+Any record that was already processed by the job queue, if modified by a user, will be automatically recalculated at the next Job Queue execution.
+
+> **Important Note:** The update activity via job queue is **optional** and serves exclusively to speed up the final migration. The actual migration is completed only with the activation of the EAL feature flag.
+
+#### Job Queue Entry Configuration
+
+The **Parameter String** of the Job Queue Entry defines which tables to process:
+
+```
+18|36|112|114|5107
+```
+
+| Value | Processed Table              |
+| ----- | ---------------------------- |
+| 18    | Customer + Ship-to Address   |
+| 36    | Sales Header + Sales Line    |
+| 112   | Sales Invoice Header + Lines |
+| 114   | Sales Cr.Memo Header + Lines |
+| 5107  | Sales Header Archive + Lines |
+
+> **Note:** Accepted separators are `|` (pipe) and `,` (comma).
+
+#### Execution Flow
+
+<div style="display: block; margin: 40px auto; width: fit-content;">
+<pre style="font-family: 'Courier New', monospace; white-space: pre; overflow-x: auto; line-height: 1.2; border: 2px solid #ff8800; padding: 20px; background: #f8f9fa;">
+┌──────────────────────────────────────────────────────────────────┐
+│                    Job Queue Entry Start                         │
+└──────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  Check: CommissionsSetup."Enable SalesP. JobQueue Upg." = TRUE   │
+└──────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  Parse Parameter String → Table ID List                          │
+└──────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  CreateAllRoleSalespersons() + Commit                            │
+└──────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  For each TableID in List:                                       │
+│    ├── Check: (CurrentDateTime - StartDateTime) > 10 min?        │
+│    │     └── YES → Exit                                          │
+│    └── NO → Process Table                                        │
+│              ├── Filter: "Upgrade Status" = "To Calculate"       │
+│              ├── Get Salespersons → Calculate Set ID             │
+│              ├── Update Record with Set ID                       │
+│              ├── Set Status = "Valued"                           │
+│              └── Commit                                          │
+└──────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  Next Job Queue Execution → Resumes from unprocessed records     │
+└──────────────────────────────────────────────────────────────────┘
+</pre>
+</div>
