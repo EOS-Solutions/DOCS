@@ -1,0 +1,14 @@
+The migration affects the following tables (identified by their respective Database IDs):
+
+| Database ID | Table                | Type     | Notes                              |
+| ----------- | -------------------- | -------- | ---------------------------------- |
+| 18          | Customer             | Master   | Includes Ship-to Address (222)     |
+| 222         | Ship-to Address      | Master   | Processed together with Customer   |
+| 36          | Sales Header         | Document | Includes Sales Line (37)           |
+| 37          | Sales Line           | Document | Processed together with Header     |
+| 112         | Sales Invoice Header | Posted   | Includes Sales Invoice Line (113)  |
+| 113         | Sales Invoice Line   | Posted   | Processed together with Header     |
+| 114         | Sales Cr.Memo Header | Posted   | Includes Sales Cr.Memo Line (115)  |
+| 115         | Sales Cr.Memo Line   | Posted   | Processed together with Header     |
+| 5107        | Sales Header Archive | Archive  | Includes Sales Line Archive (5108) |
+| 5108        | Sales Line Archive   | Archive  | Processed together with Header     |
