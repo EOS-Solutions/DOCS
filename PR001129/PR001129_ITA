@@ -1,0 +1,134 @@
+### Codeunit "EOS010 SalesP Upgrade" (ID: 18008321)
+
+Questa codeunit esegue la migrazione **completa e sincrona** di tutti i dati. È progettata per essere eseguita **una sola volta** in un ambiente controllato.
+
+#### Caratteristiche Principali
+
+| Caratteristica  | Descrizione                                                                    |
+| --------------- | ------------------------------------------------------------------------------ |
+| **Esecuzione**  | Sincrona, bloccante                                                            |
+| **Ambito**      | Per company (ogni company viene migrata separatamente)                         |
+| **Durata**      | Può richiedere ore in base al volume dati della company                        |
+| **Transazione** | Unica transazione con rollback automatico in caso di errore                    |
+
+#### Flusso di Esecuzione
+
+1. **Checking Environment**
+   - Verifica interferenze con altre app
+   - Controlla ruoli/agenti mancanti
+   - Verifica tabelle sconosciute
+
+2. **Data Upgrade**
+   - Verifica permessi di modifica
+   - Crea combinazioni Role-Salesperson
+   - Migra dati documenti attivi
+   - Migra dati archiviati
+   - Aggiorna reti vendita
+
+3. **Data Verification**
+   - Verifica integrità dati migrati
+
+#### Quando Usare
+
+- ✅ Migrazione iniziale in ambiente di test
+- ✅ Ambiente di produzione con possibilità di downtime
+- ✅ Database di piccole/medie dimensioni
+- ⚠️ **Nota:** La codeunit viene eseguita **automaticamente all'attivazione del feature flag EAL**, non può essere eseguita manualmente tramite codice
+- ❌ **NON attivare il feature flag** in ambiente di produzione senza downtime
+- ❌ **NON attivare il feature flag** su database di grandi dimensioni senza pianificazione
+
+---
+
+### Codeunit "EOS010 SalesP JobQueue Upg" (ID: 18008325)
+
+Questa codeunit esegue la migrazione **incrementale e asincrona** tramite Job Queue. È progettata per ambienti di produzione dove non è possibile avere downtime.
+
+#### Caratteristiche Principali
+
+| Caratteristica                | Descrizione                                                                                                     |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Esecuzione**                | Asincrona tramite Job Queue                                                                                     |
+| **Ambito**                    | Per company (ogni Job Queue lavora su una specifica company)                                                    |
+| **Durata singola esecuzione** | Massimo 10 minuti per esecuzione                                                                                |
+| **Comportamento**             | Riprende da dove era rimasta                                                                                    |
+| **Commit**                    | Commit progressivi per ogni documento/entità                                                                    |
+| **Configurazione**            | Si consiglia di configurarla tramite la page "EOS010 Salesp Upgrade Status" usando l'action **Setup Job Queue** |
+| **Uso tipico**                | Migrazione graduale in produzione                                                                               |
+
+#### Funzionamento e Scopo
+
+L'attività eseguita tramite coda processi permette di **calcolare il valore di "Salesperson Set ID" su tutte le tabelle supportate in anticipo**, velocizzando poi l'upgrade finale quando la feature flag viene attivata.
+
+**Importante:** La Job Queue opera sui dati della **company corrente**. Se si hanno più company nell'ambiente, è necessario configurare una Job Queue Entry separata per ciascuna company.
+
+**Pianificazione Consigliata:**
+- La coda processi deve essere **pianificata in una finestra di tempo con pochi o nessun utente**, ad esempio durante le ore notturne
+- Per evitare di sforare la finestra temporale, è progettata per eseguire **massimo 10 minuti alla volta**
+- Si ferma automaticamente dopo 10 minuti e riprende alla successiva esecuzione schedulata
+
+**Gestione Modifiche:**
+Qualsiasi record che era stato già elaborato dalla coda processi, se viene modificato da un utente, verrà automaticamente ricalcolato alla successiva esecuzione della Job Queue.
+
+> **Nota Importante:** L'attività di aggiornamento tramite coda processi è **opzionale** e serve esclusivamente a velocizzare la migrazione finale. La migrazione vera e propria si completa solo con l'attivazione del feature flag EAL.
+
+
+#### Configurazione Job Queue Entry
+
+Il **Parameter String** della Job Queue Entry definisce quali tabelle processare:
+
+```
+18|36|112|114|5107
+```
+
+| Valore | Tabella Processata           |
+| ------ | ---------------------------- |
+| 18     | Customer + Ship-to Address   |
+| 36     | Sales Header + Sales Line    |
+| 112    | Sales Invoice Header + Lines |
+| 114    | Sales Cr.Memo Header + Lines |
+| 5107   | Sales Header Archive + Lines |
+
+> **Nota:** I separatori accettati sono `|` (pipe) e `,` (virgola).
+
+#### Flusso di Esecuzione
+
+<div style="display: block; margin: 40px auto; width: fit-content;">
+<pre style="font-family: 'Courier New', monospace; white-space: pre; overflow-x: auto; line-height: 1.2; border: 2px solid #ff8800; padding: 20px; background: #f8f9fa;">
+┌──────────────────────────────────────────────────────────────────┐
+│                    Job Queue Entry Start                         │
+└──────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  Verifica: CommissionsSetup."Enable SalesP. JobQueue Upg." = TRUE│
+└──────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  Parse Parameter String → Lista Table ID                         │
+└──────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  CreateAllRoleSalespersons() + Commit                            │
+└──────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  For each TableID in List:                                       │
+│    ├── Check: (CurrentDateTime - StartDateTime) > 10 min?        │
+│    │     └── YES → Exit                                          │
+│    └── NO → Process Table                                        │
+│              ├── Filter: "Upgrade Status" = "To Calculate"       │
+│              ├── Get Salespersons → Calculate Set ID             │
+│              ├── Update Record with Set ID                       │
+│              ├── Set Status = "Valued"                           │
+│              └── Commit                                          │
+└──────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────────┐
+│  Next Job Queue Execution → Riprende da record non processati    │
+└──────────────────────────────────────────────────────────────────┘
+</pre>
+</div>
