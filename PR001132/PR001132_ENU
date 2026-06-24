@@ -1,0 +1,31 @@
+### Error "Enable SalesP. JobQueue Upg. must have a value"
+
+**Cause:** The enable flag is not active.
+
+**Solution:** Enable "Enable Salesperson Job Queue Upgrade" in the status page.
+
+### Degraded Performance During Execution
+
+**Cause:** Migration competes with user operations.
+
+**Solution:**
+1. Limit Job Queue time window to night hours
+2. Reduce number of tables processed per execution
+3. Increase interval between executions
+
+---
+
+## Notes for Implementers
+
+1. **Backup**: Always perform a complete backup before starting the migration.
+
+2. **Test**: Always test the migration in a copy environment before production.
+
+3. **Monitoring**: During Job Queue migration, regularly monitor:
+   - Disk space
+   - Database performance
+   - Job Queue Entry status
+
+4. **Post-Migration**: After completion:
+   - Remove the Job Queue Entry
+   - Verify application performance
