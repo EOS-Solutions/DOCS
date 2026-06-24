@@ -1,0 +1,19 @@
+This documentation describes the migration process from the **legacy** salesperson management to the new system based on **Salesperson Set ID**. The migration is necessary to transition from a redundant data model to a normalized one, with significant benefits in terms of disk space and performance.
+
+### Migration Activation
+
+The migration process consists of two phases:
+
+**Phase 1 (Optional but Recommended for Large Data Volumes):** Pre-calculation via Job Queue
+- Gradually calculates the "Salesperson Set ID" values in advance
+- Can run during normal working hours with minimal user impact
+- Significantly reduces the time required for Phase 2
+
+**Phase 2 (Required):** Final migration via **Eos Admin Library (EAL)** feature flag activation
+- Completes the migration to the new data model
+- Executes the final data structure switch
+
+**Important:** 
+- The migration is considered complete only when the entire process initiated by the EAL feature flag activation finishes successfully.
+- The migration is performed **per company**: each company in the environment requires independent migration.
+- It is the consultant's responsibility to thoroughly test the migration in a non-production environment before executing it in production.
