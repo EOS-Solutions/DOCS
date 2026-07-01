@@ -35,6 +35,11 @@ Through style sheets you can view the created .xml file:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/10ElectronicInvoiceForItaly.png"><br>
 
+In the document lines, it is possible to enter in the "Altri Dati Gestionali field other related document data
+
+	
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000510-0/Altri dati gestionali EN.png"><br>
+
 |  NB                                                                      |
 |--------------------------------------------------------------------------|
 | Discount amount:: the decimals exported for the tag ImportoSconto are 8. |
