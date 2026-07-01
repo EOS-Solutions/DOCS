@@ -1,9 +1,21 @@
 In the Setup page select the official layout for printing among those preloaded on the system.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000298-0/02aWithhTaxCertUniche-EN.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000298-0/02aWithhTaxCertUniche-EN.png"><br>
 
 | **Field**                  | **Description**                                                 |
 |----------------------------|-----------------------------------------------------------------|
 | PDF Cert. Unica Version    | choose the official form to be used (downloaded from the Cloud) |
 | PDF Cert. Unica Uploaded   | it is automatically activated by the system                     |
 | Split PDF by Vendor/Reason | if enabled the pdf will be filtered by vendor                   |
+
+
+In the “Withholding Tax Certificates Setup (ECU)” page, two actions are available:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000298-0/setup ecu en.png"><br>
+
+
+
+**Recalculate Wihholding Non-taxable Amounts** used to realign situations where the ECU detail tables for non-taxable amounts are inconsistent with the original data.
+
+
+**Check Withholding Non Taxable Amounts** analyzes all processed withholding entries and checks that the standard field is consistent with the sum of the amounts in the ECU detail tables. If inconsistencies are found, it generates an Excel file listing the documents with mismatches, which is useful to identify where to intervene before running the recalculation.
