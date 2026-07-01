@@ -30,3 +30,10 @@ Nel blocco **`<AltriDatiGestionali>`**
 **NOTA**
 
 Per l'utilizzo della funzionalità è necessario installare l'app **EX063.01 VAT exemption for electronic invoice for Italy**
+
+Nel caso in cui non sia installata l'app EX020 VAT Management for Italy (VMI) per la gestione automatica della dichiarazione di intento sarà necessario compilare questi campi manualmente nella sezione **"Altri 
+Dati Gestionali"** delle righe del documento per ciascuna riga.
+
+	
+[Electronic Invoice For Italy - Sales Invoices]({{<relref "sales-invoices">}})
+
