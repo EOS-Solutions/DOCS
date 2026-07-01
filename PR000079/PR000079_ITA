@@ -1,16 +1,20 @@
-LÂapp EOS ®Advanced Intrastat For Italy (ITR)¯ utilizza alcuni setup standard, integrandoli con setup specifici dellÂapp.
+Lâ€™app EOS Â«Advanced Intrastat For Italy (ITR)Â» utilizza alcuni setup standard, integrandoli con setup specifici dellâ€™app.
 
 Nella page Setup intrastat impostare un numeratore e un tipo di raggruppamento:
 
--   ÃPer RigaÄ: ogni singola riga viene riportata nella dichiarazione Intrastat.
--   ÃPer DocumentoÄ: le righe nella Dichiarazione Intrastat vengono raggruppate per nomenclatura e per documento.
+-   â€œPer Rigaâ€: ogni singola riga viene riportata nella dichiarazione Intrastat.
+-   â€œPer Documentoâ€: le righe nella Dichiarazione Intrastat vengono raggruppate per nomenclatura e per documento.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000079-0/2AdvIntrastatForItaly-it.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000079-0/2AdvIntrastatForItaly-it.png"><br>
 
-Nella pagina Setup intrastat (ITR) possiamo inoltre abilitare la generazione automatica delle righe di tipo Call off stock; attivando la gestione, sar… possibile selezionare il tipo di filtro da utilizzare per il suggerimento automatico delle righe
+Nella pagina Setup intrastat (ITR) possiamo inoltre abilitare la generazione automatica delle righe di tipo Call off stock; attivando la gestione, sarÃ  possibile selezionare il tipo di filtro da utilizzare per il suggerimento automatico delle righe
 
-\- Tipo filtro ubicazioni interne: Opzione ÃIncludi paese localeÄ: vengono processate tutte le ubicazioni con Cod. paese pari a quello impostato nelle Informazioni societ…; Opzione ÃFiltroÄ: vengono processate le sole ubicazioni inserite nel campo ÃFiltro ubicazioni interneÄ.
+\- Tipo filtro ubicazioni interne: Opzione â€œIncludi paese localeâ€: vengono processate tutte le ubicazioni con Cod. paese pari a quello impostato nelle Informazioni societÃ ; Opzione â€œFiltroâ€: vengono processate le sole ubicazioni inserite nel campo â€œFiltro ubicazioni interneâ€.
 
-\- Tipo filtro ubicazioni esterne: Opzione ÃIncludi paesi UEÄ: vengono processate tutte le ubicazioni relative a paesi per i quali risulta compilato il campo ÃCod. IntrastatÄ. Opzione ÃFiltroÄ: vengono processate le sole ubicazioni inserite nel campo ÃFiltro ubicazioni interneÄ.
+\- Tipo filtro ubicazioni esterne: Opzione â€œIncludi paesi UEâ€: vengono processate tutte le ubicazioni relative a paesi per i quali risulta compilato il campo â€œCod. Intrastatâ€. Opzione â€œFiltroâ€: vengono processate le sole ubicazioni inserite nel campo â€œFiltro ubicazioni interneâ€.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000079-0/2bAdvIntrastatForItaly-it.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000079-0/2bAdvIntrastatForItaly-it.png"><br>
+
+Sempre nella pagina Setup intrastat (ITR) possiamo attivare il flag "Trasforma la nazione EL in GR" - se attivo il codice paese EL (Grecia) nei campi "Paese di pagamento" e "Cod. paese di origine" verrÃ  convertito in GR (ISO 3166-1) nel report Intrastat come richiesto dal software Intraweb.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000079-0/ITR EL.png"><br>
