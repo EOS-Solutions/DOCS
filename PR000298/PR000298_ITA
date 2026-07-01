@@ -1,6 +1,6 @@
 Nel Setup Certificazioni Uniche (ECU) scegliere il layout ufficiale per la stampa tra quelli precaricati a sistema.
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000298-0/02aWithhTaxCertUniche-IT.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000298-0/02aWithhTaxCertUniche-IT.png"><br>
 
 | **Campo**                           | **Descrizione**                                                  |
 |-------------------------------------|------------------------------------------------------------------|
@@ -8,10 +8,20 @@ Nel Setup Certificazioni Uniche (ECU) scegliere il layout ufficiale per la stamp
 | PDF Cert. Unica Caricato            | si attiva in automatico una volta selezionato un modello         |
 | Suddividi PDF per fornitore/causale | attivarlo per suddividere il pdf per fornitore                   |
 
-I dati definiti nel campo √Nr. rappresentante fiscaleƒ vengono riportati nel record A per definire il √Codice fiscale fornitoreƒ:
+I dati definiti nel campo ‚ÄúNr. rappresentante fiscale‚Äù vengono riportati nel record A per definire il ‚ÄúCodice fiscale fornitore‚Äù:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000298-0/02bWithhTaxCertUniche-IT.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000298-0/02bWithhTaxCertUniche-IT.png"><br>
 
-Mentre i dati definiti nel campo √Nr. intermediario trasmissioneƒ e √Data intermediarioƒ vengono utilizzati per i relativi dati nel record B:
+Mentre i dati definiti nel campo ‚ÄúNr. intermediario trasmissione‚Äù e ‚ÄúData intermediario‚Äù vengono utilizzati per i relativi dati nel record B:
 
-<img width="" src="https://docs.eos-solutions.it/Images/PR000298-0/02cWithhTaxCertUniche-IT.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000298-0/02cWithhTaxCertUniche-IT.png"><br>
+
+Sempre nella pagina Setup Certificazioni Uniche (ECU) sono disponibili due azioni:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000298-0/setup ecu.png"><br>
+
+**Ricalcola importi ritenuta non tassati** utilizzato per riallineare situazioni in cui le tabelle di dettaglio ECU degli importi non soggetti sono disallineati rispetto ai dati originali.
+
+**Verifica gli importi non sogg. a ritenuta** analizza tutte le ritenute elaborate e contolla che il campo standard sia coerente con la somma degli importi nelle tabelle di dettaglio ECU. Se trova incongruenze, produce un excel che elenca i documenti con disallineamenti, utile per capire dove intervenire prima di eseguire il ricalcolo.
+
+
