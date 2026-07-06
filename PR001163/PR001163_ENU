@@ -1,0 +1,67 @@
+## Overview
+
+Posted Deliveries Receipts are the permanent archive of completed delivery transactions. Each posted receipt represents a successful goods receipt that has been processed through the standard Business Central purchase posting routine.
+
+## Visual Indicators
+
+In the Posted Deliveries Receipts list:
+- Records that have been undone (have an undo entry) are displayed with **Unfavorable** style (typically red/bold) to visually distinguish reversed entries
+- The **Correction** flag identifies the reversal record itself
+
+---
+## Undo Process
+
+When a standard BC **Undo Purchase Receipt** is executed on a receipt line that was created by a deliveries receipt:
+
+### What Happens
+
+1. **Undo Posted Deliveries Receipt Created**  
+   A new posted deliveries receipt is created with:
+   - Negative Qty. Received (reversal)
+   - Correction = true
+   - Applies-to Posted Del. Rcpt. = original receipt No.
+
+2. **New Deliveries Receipt Reopened**  
+   A new open deliveries receipt is created from the posted receipt data:
+   - Same vendor, item, lot, weights, shipment details
+   - Linked back to the original purchase order line
+   - Ready for re-editing and re-posting
+
+### Undo Flow
+
+```
+Posted Deliveries Receipt (original, positive qty)
+    │
+    ├── Undo Purchase Receipt triggered
+    │
+    ├──▶ New Posted Deliveries Receipt (negative qty, Correction=true)
+    │    └── Applies-to: original receipt
+    │
+    └──▶ New Deliveries Receipt (open, linked to order line)
+         └── Ready for editing and re-posting
+```
+
+### Visual Result
+
+After an undo, the Posted Deliveries Receipts list shows:
+1. **Original receipt** — positive quantity, marked with unfavorable style (has undo)
+2. **Reversal receipt** — negative quantity, Correction=true
+3. The new open receipt appears in the **Deliveries Receipts** list
+
+---
+
+## Relationship to Standard BC Documents
+
+Each posted deliveries receipt is linked to a standard BC purchase receipt:
+
+```
+Posted Deliveries Receipt
+    │
+    ├── Purch. Receipt No. ──▶ Purchase Receipt Header
+    ├── Purch. Receipt Line No. ──▶ Purchase Receipt Line
+    │
+    └── Via Purchase Receipt ──▶ Item Ledger Entry
+                                  └── Deliveries Order Type
+```
+
+The **Deliveries Order Type** is carried through to the Item Ledger Entry, allowing filtered analysis of deliveries vs. standard receipts.
