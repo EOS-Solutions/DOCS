@@ -1,0 +1,145 @@
+## Panoramica
+
+Le Ricezioni di Conferimento sono i documenti operativi principali nel modulo EOS FOOD Deliveries. Rappresentano l'arrivo fisico delle merci alla stazione di pesatura, catturando i dati di peso, tracciabilità lotto, dettagli di spedizione e collegando la ricezione a una specifica riga di ordine di acquisto per la registrazione.
+
+---
+
+## Ciclo di Vita della Ricezione
+
+### Gestione Stati (Opzionale)
+
+Quando **Enable Deliv. Rcpt. Status Mgt** è attivato nel Setup:
+
+```
+┌──────────┐    ┌────────────┐    ┌──────────┐
+│  Nuovo   │───▶│ Accettato  │───▶│  Pesato  │
+└──────────┘    └────────────┘    └──────────┘
+     │                                  │
+     └──────────────────────────────────┘
+            (salto diretto consentito)
+```
+
+- **Nuovo**: Stato iniziale dopo la creazione
+- **Accettato**: Conferimento accettata al cancello (ispezione superata)
+- **Pesato**: Pesatura completata — pronto per la registrazione
+
+Quando la gestione stati è **disabilitata**, le ricezioni possono essere registrate indipendentemente dallo stato.
+
+### Azioni sulla Ricezione
+
+#### Rileva Peso Lordo / Rileva Tara
+
+Legge il peso lordo e la tara direttamente dalla pesa collegata e compila i campi corrispondenti sulla ricezione.
+
+#### Collega a Ordine
+
+Collega manualmente la ricezione a una riga di ordine di acquisto idonea. Il sistema cerca righe di acquisto corrispondenti a:
+- Tipo Documento = Ordine
+- Stesso fornitore
+- Tipo Ordine Conferimento ≠ vuoto
+- Anno Rif. ≠ 0
+- Tipo = Articolo
+- Stesso articolo e variante
+- Quantità Residua > 0
+
+Se la ricezione è già collegata, il sistema chiede conferma prima di ricollegare.
+
+#### Scollega da Ordine
+
+Rimuove il collegamento tra la ricezione e la sua riga di ordine di acquisto, cancellando Nr. Ordine e Nr. Riga Ordine.
+
+#### Cambia Stato
+
+Transizioni dello stato della ricezione. Le transizioni disponibili dipendono dallo stato attuale:
+- Da **Nuovo**: Può cambiare ad Accettato o Pesato
+- Da **Accettato**: Può cambiare a Pesato
+
+Richiede conferma prima di cambiare.
+
+#### Registra (F9)
+
+Registra la ricezione di conferimento, creando un carico di acquisto e chiudendo la ricezione di conferimento. Vedere [Processo di Registrazione](#processo-di-registrazione) di seguito.
+
+---
+
+## Creazione Ricezioni di Conferimento
+
+Le ricezioni possono essere create in tre modi:
+
+### 1. Dalla Sottoform Ordine di Acquisto
+
+Sulla Sottoform Ordine di Acquisto, azioni a livello riga:
+- **Crea Ricezione Conferimento**: Apre una request page permettendo di specificare:
+  - **Numero di Ricezioni da Creare**: Quante ricezioni creare per la riga (default 1, utile per conferimenti multipli sulla stessa riga ordine)
+  - **Data Registrazione**: La data di registrazione da impostare sulle ricezioni create
+  
+  Il sistema verifica che l'ordine di acquisto sia un ordine di conferimento e che la riga sia di tipo Articolo. Dopo la creazione, offre di aprire la scheda ricezione (singola) o la lista ricezioni (multiple).
+- **Collega a Ricezione Conferimento**: Mostra le ricezioni esistenti non collegate corrispondenti ai criteri della riga per la selezione
+
+### 2. Dalla Lista Ricezioni di Conferimento
+
+Creare un nuovo record direttamente nella pagina lista o scheda. La ricezione deve poi essere collegata manualmente a un ordine di acquisto utilizzando l'azione "Collega a Ordine".
+
+---
+
+## Processo di Registrazione
+
+Quando una ricezione di conferimento viene registrata (dalla scheda ricezione o dall'ordine di acquisto):
+
+### Validazione Pre-Registrazione
+
+Il sistema valida:
+
+| Controllo | Errore se |
+|-----------|-----------|
+| Data Registrazione | Non impostata |
+| Nr. Fornitore | Non impostato |
+| Nr. Articolo | Non impostato |
+| Nr. Lotto | Non impostato e l'articolo richiede tracciabilità lotto |
+| Peso Lordo | Zero o negativo |
+| Tara | Zero o negativa |
+| Peso Netto | Zero o negativo |
+| Qtà da Ricevere | Zero o negativa |
+| Stato | Non "Pesato" (se gestione stati abilitata) |
+| Consistenza | Fornitore/Articolo/Variante/Ubicazione non corrispondono alla riga acquisto |
+
+### Passi della Registrazione
+
+Quando una ricezione viene registrata, il sistema:
+
+1. Imposta la quantità da ricevere sulla riga dell'ordine di acquisto collegata in base alla ricezione
+2. Applica il numero di lotto per la tracciabilità
+3. Aggiorna l'ordine di acquisto con la data di registrazione e il riferimento di spedizione
+4. Riceve la merce tramite la registrazione di acquisto standard di Business Central
+5. Archivia la ricezione come **Ricezione Conferimento Registrata** con un riferimento al carico di acquisto
+6. Rimuove la ricezione aperta originale
+
+### Registrazione dall'Ordine di Acquisto
+
+Quando si registra un ordine di acquisto che ha il Tipo Ordine Conferimento impostato:
+- La conferma standard di registrazione viene intercettata
+- Solo le ricezioni con Qtà da Ricevere > 0 vengono considerate
+- Se la gestione stati è abilitata, solo le ricezioni "Pesate" sono idonee
+- L'utente può selezionare quali ricezioni registrare (se multiple)
+- La Qtà da Ricevere sulle righe acquisto è controllata dalle ricezioni, non modificabile direttamente
+
+---
+
+## Protezione Righe Ordine di Acquisto
+
+Quando una riga di ordine di acquisto è collegata a ricezioni di conferimento:
+
+- Il campo **Qtà da Ricevere** diventa di sola lettura (gestito dalle ricezioni)
+- Il **Nr. Articolo** non può essere cambiato (errore generato)
+- Il **Cod. Variante** non può essere cambiato (errore generato)
+- Il **Nr. Fornitore** sulla testata non può essere cambiato
+- Il **Tipo Ordine Conferimento** sulla testata non può essere cambiato
+
+---
+
+## Generazione Numero Lotto
+
+Il campo Nr. Lotto supporta **AssistEdit**:
+1. Cliccare il pulsante assist-edit
+2. Il sistema chiede: "Vuoi generare un numero lotto?"
+3. Se confermato, genera il numero successivo dalla numerazione Lotto dell'articolo
