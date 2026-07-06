@@ -1,0 +1,100 @@
+## Overview
+
+Land Mappings represent the cadastral and agricultural data for vendor-owned lands. Each land mapping record associates a vendor with a specific parcel of land, its cultivable area, the crop (item) grown, and the expected yield percentage. This data is the foundation for calculating delivery order quantities.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001118-0/Land_Mappings-ENU.png"><br>
+
+---
+
+## Fields
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001118-0/Land_Mapping_Card-ENU.png"><br>
+
+
+### General Section
+
+| Field | Type | Description |
+|-------|------|-------------|
+| **Land ID** | Code | Specifies the unique identifier for the land mapping record. Assigned automatically from the number series. |
+| **Vendor No.** | Code[20] | Specifies the vendor (grower or supplier) who owns or operates this land parcel. |
+| **Ref. Year** | Integer | Specifies the reference year for this land mapping. Land mappings are tracked annually and can be copied from year to year. |
+| **County** | Text | Specifies the county or province where the land parcel is located. |
+| **City** | Text | Specifies the city or municipality where the land parcel is located. |
+
+### Land Registry Data
+
+| Field | Type | Description |
+|-------|------|-------------|
+| **Sheet** | Text | Specifies the cadastral sheet number from the land registry where this parcel is registered. |
+| **Parcel** | Text | Specifies the cadastral parcel number that identifies this specific plot within the sheet. |
+| **Spacing** | Text | Specifies the planting spacing or subdivision identifier within the parcel. |
+| **Planting Year** | Integer | Specifies the year when the crops or plants were originally planted on this land parcel. |
+| **Cultivable Area (mq)** | Decimal | Specifies the total cultivable surface area of the land parcel, measured in square meters. |
+
+### Item Section
+
+| Field | Type | Description |
+|-------|------|-------------|
+| **Item No.** | Code[20] | Specifies the item (product) that is cultivated or harvested from this land parcel. |
+| **Description** | Text | Specifies the description of the item cultivated on this land parcel. |
+| **Description 2** | Text | Specifies an additional description for the item cultivated on this land parcel. |
+| **Yield %** | Decimal | Specifies the expected yield percentage for this land parcel, representing the ratio of usable product to total harvest. |
+
+### Miscellaneous
+
+| Field | Type | Description |
+|-------|------|-------------|
+| **Area Code** | Code | Specifies the geographic area code that groups this land mapping for reporting and delivery order creation. |
+| **Notes** | Text | Specifies any additional notes or remarks about this land mapping record. |
+| **Disciplinary Code** | Code | Specifies the production disciplinary assigned to this land parcel, defining the farming rules and yield limits that apply. |
+
+---
+
+## Functions
+
+The Land Mappings list page provides three key report actions:
+
+### Print Land Mappings
+
+Generates a printable report of land mappings grouped by vendor. Requires a **Reference Year** parameter. Displays cadastral data, cultivable areas, yield percentages, and item descriptions.
+
+### Copy Land Mappings
+
+Copies land mapping records from one reference year to another. Use this at the beginning of each harvest season to carry forward land configurations.
+
+**Parameters**:
+- **From Year**: Source reference year
+- **To Year**: Target reference year
+
+**Behavior**:
+- If mappings already exist for the target year, the system asks whether to delete them first
+- New records are created with new Land IDs (auto-generated)
+- Vendor filter from the list page is applied
+
+### Create Delivery Orders
+
+Creates purchase orders (or blanket orders) from land mappings. This is the primary workflow action. See [03-DeliveryOrders.md](03-DeliveryOrders.md) for details.
+
+---
+
+## Auto-Fill Behavior
+
+When creating a new land mapping from a vendor-filtered view (e.g., opened from the Vendor Card), the **Vendor No.** is automatically populated from the filter.
+
+---
+
+## Document Attachments
+
+Land Mapping records support standard Business Central document attachments via the factbox panel. Attachments are linked to the specific land mapping record.
+
+---
+
+## Yield Calculation
+
+The **Yield %** field, combined with **Cultivable Area (mq)**, determines the quantity of product expected from this land:
+
+```
+Deliverable Quantity = (Cultivable Area × Yield %) / 100
+```
+
+This formula is used by the **Create Delivery Orders** function to calculate purchase line quantities.
