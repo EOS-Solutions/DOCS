@@ -1,0 +1,10 @@
+Disciplinaries define agricultural production specifications that can be associated with land mappings.
+
+| Field | Description |
+|-------|-------------|
+| **Code** | Specifies the unique identifier for the disciplinary record. |
+| **Disciplinary Name** | Specifies the descriptive name of the production disciplinary, such as organic or conventional farming methods. |
+| **Yield Limit** | Specifies the maximum allowed yield limit for this disciplinary. Used to control production thresholds per land mapping. |
+| **Notes** | Specifies any additional notes or remarks about the disciplinary record. |
+
+Disciplinaries support **document attachments** via the standard BC attachment factbox.
