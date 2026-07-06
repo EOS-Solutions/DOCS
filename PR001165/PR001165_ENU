@@ -1,0 +1,55 @@
+## Posting Interception
+
+When a user attempts to post a delivery purchase order (via F9 or the standard Post action):
+
+1. The standard posting confirmation is **suppressed**
+2. The system checks for deliveries receipts with Qty. to Receive > 0
+3. If status management is enabled, only "Weighed" receipts are considered
+4. User is shown a custom confirmation
+5. If multiple receipts exist, user selects which ones to post
+6. Each selected receipt is posted individually (one purchase receipt per deliveries receipt)
+7. After all receipts are posted, remaining line quantities are reset
+
+### Posting Flow Diagram
+
+```
+User clicks Post on Purchase Order
+    │
+    ├── Is Delivery Order? (Type set + Ref. Year set)
+    │   ├── No → Standard BC posting
+    │   └── Yes ↓
+    │
+    ├── Find receipts with Qty. to Receive > 0
+    │   └── (Optional: filter by Status = Weighed)
+    │
+    ├── Confirm with user
+    │
+    ├── For each receipt:
+    │   ├── Validate pre-posting checks
+    │   ├── Set this line's Qty. to Receive from receipt
+    │   ├── Apply lot number (if applicable)
+    │   ├── Receive the goods
+    │   ├── Create Posted Deliveries Receipt
+    │   └── Remove original receipt
+    │
+    └── Reset remaining unprocessed lines
+```
+
+---
+
+## Data Propagation
+
+The **Deliveries Order Type** flows through the posting chain:
+
+```
+Purchase Header
+  └── Deliveries Order Type
+        │
+        ├──▶ Item Journal Line
+        │    └── Deliveries Order Type
+        │
+        └──▶ Item Ledger Entry
+             └── Deliveries Order Type
+```
+
+This enables reporting and analysis on item ledger entries by delivery type.
