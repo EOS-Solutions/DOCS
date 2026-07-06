@@ -1,0 +1,55 @@
+## Intercettazione della Registrazione
+
+Quando un utente tenta di registrare un ordine di acquisto conferimento (tramite F9 o l'azione standard Registra):
+
+1. La conferma standard di registrazione viene **soppressa**
+2. Il sistema cerca ricezioni di conferimento con Qtà da Ricevere > 0
+3. Se la gestione stati è abilitata, vengono considerate solo le ricezioni "Pesate"
+4. All'utente viene mostrata una conferma personalizzata
+5. Se esistono multiple ricezioni, l'utente seleziona quali registrare
+6. Ogni ricezione selezionata viene registrata individualmente (un carico acquisto per ricezione)
+7. Dopo la registrazione di tutte le ricezioni, le quantità rimanenti delle righe vengono azzerate
+
+### Diagramma Flusso Registrazione
+
+```
+L'utente clicca Registra sull'Ordine di Acquisto
+    │
+    ├── È un Ordine Conferimento? (Tipo impostato + Anno Rif. impostato)
+    │   ├── No → Registrazione standard BC
+    │   └── Sì ↓
+    │
+    ├── Trova ricezioni con Qtà da Ricevere > 0
+    │   └── (Opzionale: filtra per Stato = Pesato)
+    │
+    ├── Conferma con l'utente
+    │
+    ├── Per ogni ricezione:
+    │   ├── Valida controlli pre-registrazione
+    │   ├── Imposta Qtà da Ricevere di questa riga dalla ricezione
+    │   ├── Applica numero lotto (se applicabile)
+    │   ├── Riceve la merce
+    │   ├── Crea Ricezione Conferimento Registrata
+    │   └── Rimuove ricezione originale
+    │
+    └── Azzera righe rimanenti non elaborate
+```
+
+---
+
+## Propagazione Dati
+
+Il **Tipo Ordine Conferimento** fluisce attraverso la catena di registrazione:
+
+```
+Testata Ordine Acquisto
+  └── Tipo Ordine Conferimento
+        │
+        ├──▶ Riga Registrazioni Articoli
+        │    └── Tipo Ordine Conferimento
+        │
+        └──▶ Movimento Contabile Articolo
+             └── Tipo Ordine Conferimento
+```
+
+Questo consente reportistica e analisi sui movimenti contabili articolo per tipo di conferimento.
