@@ -1,0 +1,10 @@
+I Disciplinari definiscono le specifiche di produzione agricola che possono essere associate alle mappature terreni.
+
+| Campo | Descrizione |
+|-------|-------------|
+| **Codice** | Specifica l'identificativo univoco del record disciplinare. |
+| **Nome Disciplinare** | Specifica il nome descrittivo del disciplinare di produzione, come metodi di coltivazione biologica o convenzionale. |
+| **Limite Resa** | Specifica il limite massimo di resa consentito per questo disciplinare. Utilizzato per controllare le soglie di produzione per mappatura terreno. |
+| **Note** | Specifica eventuali note o osservazioni aggiuntive sul record disciplinare. |
+
+I Disciplinari supportano **documenti allegati** tramite la factbox standard di BC.
