@@ -1,0 +1,6 @@
+Lookup semplice codice/descrizione per la classificazione delle aree geografiche.
+
+| Campo | Descrizione |
+|-------|-------------|
+| **Codice** | Specifica il codice univoco che identifica l'area di mappatura terreni. |
+| **Descrizione** | Specifica una descrizione dell'area di mappatura terreni, come una regione geografica o un nome di zona. |
