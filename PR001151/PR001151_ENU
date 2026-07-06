@@ -1,0 +1,6 @@
+Simple code/description lookup for geographic area classification.
+
+| Field | Description |
+|-------|-------------|
+| **Code** | Specifies the unique code that identifies the land mapping area. |
+| **Description** | Specifies a description of the land mapping area, such as a geographic region or zone name. |
