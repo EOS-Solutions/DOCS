@@ -1,0 +1,104 @@
+## Overview
+
+The **Create Delivery Orders** function is the bridge between land mapping data and the standard Business Central purchasing flow. It reads land mapping records and automatically generates purchase orders (or blanket purchase orders) with calculated quantities based on cultivable area and yield percentages.
+
+---
+
+## Create Delivery Orders
+
+The function runs interactively from the Land Mappings list and produces no printed output — it creates the purchase documents directly.
+
+### Request Page Parameters
+
+| Parameter | Description |
+|-----------|-------------|
+| **Document Type** | **Order** or **Blanket Order**. Defaults from Deliveries Setup. |
+| **Ref. Year** | Reference/harvest year to process. **Required.** |
+| **Group By** | **Item/Area** or **Item/Area/Land**. Defaults from Deliveries Setup. |
+
+### Vendor Filter
+
+The report inherits the vendor filter from the Land Mappings list page. You can filter to create orders for specific vendors only.
+
+---
+
+## Processing Logic
+
+### 1. Pre-Processing Validation
+
+Before execution, the function:
+- Validates that a Reference Year is specified
+- Checks if delivery orders already exist for the selected year/vendors
+- If orders exist, asks for confirmation before proceeding
+
+### 2. Document Creation Flow
+
+The function processes land mappings sorted by **Ref. Year → Vendor No. → Item No.**:
+
+```
+For each Vendor (new Purchase Header):
+  │
+  ├── Set Deliveries Order Type:
+  │   ├── "Own Production Delivery" if Vendor = Company Vendor No.
+  │   └── "Delivery" for all other vendors
+  │
+  ├── Set Reason Code (from Setup)
+  ├── Set Ref. Year
+  │
+  └── For each Land Mapping:
+      │
+      ├── Calculate quantity:
+      │   Qty = (Cultivable Area × Yield %) / 100
+      │   (rounded per the item's quantity settings)
+      │
+      └── Create/Update Purchase Line:
+          ├── Item/Area grouping: accumulate qty on same line
+          └── Item/Area/Land grouping: new line per land
+```
+
+### 3. Line Grouping Modes
+
+#### Item/Area Grouping
+
+Multiple land mappings with the **same Item No. and Area Code** are combined into a single purchase line. The quantity is the sum of all individual calculated quantities.
+
+**Example**: 3 land mappings for the same vendor, same item "Grapes", same area "NORTH":
+- Land A: 1000 mq × 80% = 800 kg
+- Land B: 500 mq × 75% = 375 kg  
+- Land C: 750 mq × 85% = 637.5 kg
+- → **One purchase line**: 1,812.5 kg
+
+#### Item/Area/Land Grouping
+
+Each land mapping generates its own purchase line. The **Land ID** is stored on the purchase line for traceability.
+
+**Example**: Same 3 land mappings → **Three purchase lines** with individual quantities and Land IDs.
+
+### 4. Purchase Line Fields
+
+Each created purchase line includes:
+
+| Field | Value |
+|-------|-------|
+| **Type** | Item |
+| **No.** | Item No. from land mapping |
+| **Quantity** | Calculated deliverable quantity |
+| **Area Code** | Area Code from land mapping |
+| **Land ID** | Land ID (only in Item/Area/Land mode) |
+
+### 5. Post-Processing
+
+After all documents are created:
+- A summary message shows the number of documents created
+- The user is asked whether to open the created documents
+- If confirmed, the system opens either the Purchase Order List or Blanket Purchase Orders list, filtered to the created documents
+
+---
+
+## Delivery Order Type Assignment
+
+The function automatically determines the **Deliveries Order Type** based on the vendor:
+| Condition | Order Type | Reason Code |
+|-----------|-----------|-------------|
+| Vendor No. = Company Vendor No. (from Setup) | Own Production Delivery | Own Prod. Deliv. Reason Code |
+| Any other vendor | Delivery | Deliveries Reason Code |
