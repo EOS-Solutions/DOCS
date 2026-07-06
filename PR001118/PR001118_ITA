@@ -1,0 +1,99 @@
+## Panoramica
+
+Le Mappature Terreni rappresentano i dati catastali e agricoli dei terreni di proprietà dei fornitori. Ogni record di mappatura terreni associa un fornitore a una specifica particella di terreno, la sua area coltivabile, la coltura (articolo) coltivata e la percentuale di resa prevista. Questi dati sono la base per il calcolo delle quantità degli ordini di conferimento.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001118-0/Land_Mappings-ITA.png"><br>
+
+---
+
+## Campi
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001118-0/Land_Mapping_Card-ITA.png"><br>
+
+### Sezione Generale
+
+| Campo | Tipo | Descrizione |
+|-------|------|-------------|
+| **ID Terreno** | Codice | Specifica l'identificativo univoco del record di mappatura terreno. Assegnato automaticamente dalla serie numerica. |
+| **Nr. Fornitore** | Codice[20] | Specifica il fornitore (coltivatore o produttore) che possiede o gestisce questo terreno. |
+| **Anno Rif.** | Intero | Specifica l'anno di riferimento per questa mappatura terreno. Le mappature terreni sono gestite annualmente e possono essere copiate da un anno all'altro. |
+| **Provincia** | Testo | Specifica la provincia in cui si trova il terreno. |
+| **Comune** | Testo | Specifica la città o il comune in cui si trova il terreno. |
+
+### Dati Catastali
+
+| Campo | Tipo | Descrizione |
+|-------|------|-------------|
+| **Foglio** | Testo | Specifica il numero di foglio catastale del registro terreni in cui questa particella è registrata. |
+| **Particella** | Testo | Specifica il numero di particella catastale che identifica questo specifico appezzamento all'interno del foglio. |
+| **Sesto** | Testo | Specifica il sesto d'impianto o l'identificativo di suddivisione all'interno della particella. |
+| **Anno Impianto** | Intero | Specifica l'anno in cui le colture o le piante sono state originariamente piantate su questo terreno. |
+| **Area Coltivabile (mq)** | Decimale | Specifica la superficie coltivabile totale del terreno, misurata in metri quadrati. |
+
+### Sezione Articolo
+
+| Campo | Tipo | Descrizione |
+|-------|------|-------------|
+| **Nr. Articolo** | Codice[20] | Specifica l'articolo (prodotto) coltivato o raccolto da questo terreno. |
+| **Descrizione** | Testo | Specifica la descrizione dell'articolo coltivato su questo terreno. |
+| **Descrizione 2** | Testo | Specifica una descrizione aggiuntiva per l'articolo coltivato su questo terreno. |
+| **Resa %** | Decimale | Specifica la percentuale di resa prevista per questo terreno, rappresentando il rapporto tra prodotto utilizzabile e raccolto totale. |
+
+### Varie
+
+| Campo | Tipo | Descrizione |
+|-------|------|-------------|
+| **Cod. Area** | Codice | Specifica il codice area geografica che raggruppa questa mappatura terreno per la reportistica e la creazione degli ordini di conferimento. |
+| **Note** | Testo | Specifica eventuali note o osservazioni aggiuntive su questo record di mappatura terreno. |
+| **Cod. Disciplinare** | Codice | Specifica il disciplinare di produzione assegnato a questo terreno, definendo le regole di coltivazione e i limiti di resa applicabili. |
+
+---
+
+## Funzioni
+
+La pagina lista Mappature Terreni fornisce tre azioni report principali:
+
+### Stampa Mappature Terreni
+
+Genera un report stampabile delle mappature terreni raggruppate per fornitore. Richiede un parametro **Anno di Riferimento**. Visualizza dati catastali, aree coltivabili, percentuali di resa e descrizioni articoli.
+
+### Copia Mappature Terreni
+
+Copia i record di mappatura terreni da un anno di riferimento a un altro. Utilizzare questa funzione all'inizio di ogni stagione di raccolta per portare avanti le configurazioni dei terreni.
+
+**Parametri**:
+- **Da Anno**: Anno di riferimento sorgente
+- **A Anno**: Anno di riferimento destinazione
+
+**Comportamento**:
+- Se esistono già mappature per l'anno destinazione, il sistema chiede se cancellarle prima
+- I nuovi record vengono creati con nuovi Land ID (generati automaticamente)
+- Il filtro fornitore dalla pagina lista viene applicato
+
+### Crea Ordini Conferimento
+
+Crea ordini di acquisto (o ordini aperti) dalle mappature terreni. Questa è l'azione principale del flusso di lavoro. Vedere [03-OrdiniConsegna.md](03-OrdiniConsegna.md) per i dettagli.
+
+---
+
+## Compilazione Automatica
+
+Quando si crea una nuova mappatura terreni da una vista filtrata per fornitore (es. aperta dalla Scheda Fornitore), il **Nr. Fornitore** viene compilato automaticamente dal filtro.
+
+---
+
+## Allegati Documenti
+
+I record di Mappatura Terreni supportano gli allegati documenti standard di Business Central tramite il pannello factbox. Gli allegati sono collegati allo specifico record di mappatura terreno.
+
+---
+
+## Calcolo della Resa
+
+Il campo **Yield %**, combinato con **Cultivable Area (mq)**, determina la quantità di prodotto prevista da questo terreno:
+
+```
+Quantità Conferibile = (Area Coltivabile × Resa %) / 100
+```
+
+Questa formula viene utilizzata dalla funzione **Crea Ordini Conferimento** per calcolare le quantità delle righe di acquisto.
