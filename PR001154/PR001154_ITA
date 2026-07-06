@@ -1,0 +1,6 @@
+Registro degli operatori che effettuano le operazioni di pesatura.
+
+| Campo | Descrizione |
+|-------|-------------|
+| **Nr.** | Specifica l'identificativo univoco dell'operatore pesa. |
+| **Nome** | Specifica il nome completo dell'operatore pesa responsabile dell'esecuzione delle misurazioni di peso. |
