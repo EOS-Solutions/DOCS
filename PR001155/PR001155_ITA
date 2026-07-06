@@ -1,0 +1,105 @@
+## Panoramica
+
+La funzione **Crea Ordini Conferimento** è il ponte tra i dati di mappatura terreni e il flusso standard di acquisto di Business Central. Legge i record di mappatura terreni e genera automaticamente ordini di acquisto (o ordini aperti di acquisto) con quantità calcolate in base all'area coltivabile e alle percentuali di resa.
+
+---
+
+## Crea Ordini Conferimento
+
+La funzione viene eseguita in modo interattivo dalla lista Mappature Terreni e non produce alcuna stampa — crea direttamente i documenti di acquisto.
+
+### Parametri Pagina Richiesta
+
+| Parametro | Descrizione |
+|-----------|-------------|
+| **Document Type** | **Ordine** o **Ordine Aperto**. Predefinito dal Setup Conferimenti. |
+| **Ref. Year** | Anno di riferimento/raccolta da elaborare. **Obbligatorio.** |
+| **Group By** | **Articolo/Area** o **Articolo/Area/Terreno**. Predefinito dal Setup Conferimenti. |
+
+### Filtro Fornitore
+
+La funzione eredita il filtro fornitore dalla pagina lista Mappature Terreni. È possibile filtrare per creare ordini solo per fornitori specifici.
+
+---
+
+## Logica di Elaborazione
+
+### 1. Validazione Pre-Elaborazione
+
+Prima dell'esecuzione, la funzione:
+- Verifica che un Anno di Riferimento sia specificato
+- Controlla se esistono già ordini di conferimento per l'anno/fornitori selezionati
+- Se esistono ordini, chiede conferma prima di procedere
+
+### 2. Flusso di Creazione Documenti
+
+La funzione elabora le mappature terreni ordinate per **Anno Rif. → Nr. Fornitore → Nr. Articolo**:
+
+```
+Per ogni Fornitore (nuova Testata Ordine Acquisto):
+  │
+  ├── Imposta Tipo Ordine Conferimento:
+  │   ├── "Conferimento Produzione Propria" se Fornitore = Nr. Fornitore Aziendale
+  │   └── "Conferimento" per tutti gli altri fornitori
+  │
+  ├── Imposta Causale (dal Setup)
+  ├── Imposta Anno Rif.
+  │
+  └── Per ogni Mappatura Terreni:
+      │
+      ├── Calcola quantità:
+      │   Qtà = (Area Coltivabile × Resa %) / 100
+      │   (arrotondata secondo le impostazioni di quantità dell'articolo)
+      │
+      └── Crea/Aggiorna Riga Acquisto:
+          ├── Raggruppamento Articolo/Area: accumula qtà sulla stessa riga
+          └── Raggruppamento Articolo/Area/Terreno: nuova riga per terreno
+```
+
+### 3. Modalità di Raggruppamento Righe
+
+#### Raggruppamento Articolo/Area
+
+Più mappature terreni con lo **stesso Nr. Articolo e Codice Area** vengono combinate in un'unica riga di acquisto. La quantità è la somma di tutte le singole quantità calcolate.
+
+**Esempio**: 3 mappature terreni per lo stesso fornitore, stesso articolo "Uva", stessa area "NORD":
+- Terreno A: 1000 mq × 80% = 800 kg
+- Terreno B: 500 mq × 75% = 375 kg
+- Terreno C: 750 mq × 85% = 637,5 kg
+- → **Una riga di acquisto**: 1.812,5 kg
+
+#### Raggruppamento Articolo/Area/Terreno
+
+Ogni mappatura terreni genera la propria riga di acquisto. Il **Land ID** viene memorizzato sulla riga di acquisto per la tracciabilità.
+
+**Esempio**: Stesse 3 mappature → **Tre righe di acquisto** con quantità individuali e Land ID.
+
+### 4. Campi Riga Acquisto
+
+Ogni riga di acquisto creata include:
+
+| Campo | Valore |
+|-------|--------|
+| **Tipo** | Articolo |
+| **Nr.** | Nr. Articolo dalla mappatura terreni |
+| **Quantità** | Quantità conferibile calcolata |
+| **Codice Area** | Codice Area dalla mappatura terreni |
+| **Land ID** | Land ID (solo in modalità Articolo/Area/Terreno) |
+
+### 5. Post-Elaborazione
+
+Dopo la creazione di tutti i documenti:
+- Un messaggio riepilogativo mostra il numero di documenti creati
+- Viene chiesto all'utente se aprire i documenti creati
+- Se confermato, il sistema apre la lista Ordini di Acquisto o Ordini Programmati, filtrata sui documenti creati
+
+---
+
+## Assegnazione Tipo Ordine Conferimento
+
+La funzione determina automaticamente il **Tipo Ordine Conferimento** in base al fornitore:
+
+| Condizione | Tipo Ordine | Causale |
+|-----------|-------------|---------|
+| Nr. Fornitore = Nr. Fornitore Aziendale (dal Setup) | Conferimento Produzione Propria | Causale Conferimento Prod. Propria |
+| Qualsiasi altro fornitore | Conferimento | Causale Conferimento |
