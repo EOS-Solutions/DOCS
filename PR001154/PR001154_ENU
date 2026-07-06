@@ -1,0 +1,6 @@
+Registry of operators who perform weighing operations.
+
+| Field | Description |
+|-------|-------------|
+| **No.** | Specifies the unique identifier for the weighing operator. |
+| **Name** | Specifies the full name of the weighing operator responsible for performing weight measurements. |
