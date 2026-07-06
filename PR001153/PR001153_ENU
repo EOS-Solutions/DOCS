@@ -1,0 +1,6 @@
+Registry of weighing machines.
+
+| Field | Description |
+|-------|-------------|
+| **No.** | Specifies the unique identifier for the weighing machine. |
+| **Name** | Specifies the descriptive name or label of the weighing machine. |
