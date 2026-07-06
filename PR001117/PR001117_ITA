@@ -1,0 +1,57 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001117-0/Deliveries_Setup-ITA.png"><br>
+
+La pagina Setup Conferimenti è il punto di configurazione centrale per il modulo EOS FOOD Deliveries. È un'unica pagina di setup che raccoglie tutte le opzioni del modulo.
+
+---
+
+## Sezioni di Configurazione
+
+### 1. Numerazioni
+
+Configurare le numerazioni utilizzate per la numerazione automatica dei documenti:
+
+| Campo | Scopo |
+|-------|-------|
+| **Nr. Mappature Terreni** | Specifica la serie numerica utilizzata per assegnare identificativi univoci ai record di mappatura terreni. |
+| **Nr. Disciplinari** | Specifica la serie numerica utilizzata per assegnare identificativi univoci ai record disciplinari. |
+| **Nr. Ricezione Conferimenti** | Specifica la serie numerica utilizzata per assegnare identificativi univoci ai documenti di ricezione conferimenti. |
+| **Nr. Ric. Conf. Registrate** | Specifica la serie numerica utilizzata per assegnare identificativi univoci ai documenti di ricezione conferimenti registrati. |
+
+### 2. Causali
+
+Configurare le causali predefinite utilizzate nella creazione degli ordini di conferimento:
+
+| Campo | Scopo |
+|-------|-------|
+| **Cod. Causale Conferimenti** | Specifica la causale predefinita applicata alle transazioni di ricezione conferimenti durante la registrazione. |
+| **Cod. Causale Conf. Prod. Propria** | Specifica la causale predefinita applicata durante la registrazione delle ricezioni conferimenti per articoli di produzione propria. |
+
+### 3. Elaborazione
+
+Configurare il comportamento di creazione dei documenti:
+
+| Campo | Scopo |
+|-------|-------|
+| **Tipo Documento Conferimenti** | Specifica il tipo di documento di acquisto predefinito (Ordine o Ordine Aperto) creato durante la generazione degli ordini di conferimento dalle mappature terreni. |
+| **Raggr. Righe Doc. Conferimento** | Specifica come vengono raggruppate le righe del documento di acquisto durante la creazione degli ordini di conferimento dalle mappature terreni. |
+| **Nr. Fornitore Aziendale** | Specifica il numero fornitore che rappresenta l'azienda stessa, utilizzato per i conferimenti di produzione propria. |
+
+### 4. Ricezioni di Conferimento
+
+| Campo | Scopo |
+|-------|-------|
+| **Abilita Gestione Stato Ricezioni Conf.** | Specifica se il flusso di lavoro di gestione stati è abilitato per le ricezioni di conferimento, consentendo le transizioni di stato prima della registrazione. |
+
+---
+
+## Checklist di Configurazione
+
+Prima di utilizzare il modulo, assicurarsi che i seguenti elementi siano configurati:
+
+- [ ] Tutte e quattro le numerazioni sono assegnate
+- [ ] La Causale Conferimenti è impostata
+- [ ] La Causale Conferimenti Prod. Propria è impostata (se si utilizza la produzione propria)
+- [ ] Il Nr. Fornitore Aziendale è impostato (se si utilizzano conferimenti di produzione propria)
+- [ ] Il Tipo Documento Conferimenti è selezionato (Ordine o Ordine Aperto)
+- [ ] Il metodo di Raggruppamento Righe è selezionato
+- [ ] La Gestione Stati è attivata/disattivata secondo le esigenze aziendali
