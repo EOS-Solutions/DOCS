@@ -1,0 +1,68 @@
+## Panoramica
+
+Le Ricezioni di Conferimento Registrate sono l'archivio permanente delle transazioni di conferimento completate. Ogni ricezione registrata rappresenta un ricevimento merce riuscito che è stato elaborato attraverso la routine standard di registrazione acquisti di Business Central.
+
+## Indicatori Visivi
+
+Nella lista Ricezioni di Conferimento Registrate:
+- I record che sono stati annullati (hanno un movimento di annullamento) vengono visualizzati con stile **Sfavorevole** (tipicamente rosso/grassetto) per distinguere visivamente i movimenti stornati
+- Il flag **Correction** identifica il record di storno stesso
+
+---
+
+## Processo di Annullamento
+
+Quando un **Annullamento Carico Acquisto** standard BC viene eseguito su una riga di carico creata da una ricezione di conferimento:
+
+### Cosa Succede
+
+1. **Creazione Annullamento Ricezione Conferimento Registrata**  
+   Viene creata una nuova ricezione di conferimento registrata con:
+   - Qtà Ricevuta negativa (storno)
+   - Correction = true
+   - Collega-a Ricezione Conferimento Reg. = Nr. ricezione originale
+
+2. **Nuova Ricezione di Conferimento Riaperta**  
+   Viene creata una nuova ricezione di conferimento aperta dai dati della ricezione registrata:
+   - Stesso fornitore, articolo, lotto, pesi, dettagli spedizione
+   - Ricollegata alla riga dell'ordine di acquisto originale
+   - Pronta per la ri-modifica e ri-registrazione
+
+### Flusso di Annullamento
+
+```
+Ricezione Conferimento Registrata (originale, qtà positiva)
+    │
+    ├── Annullamento Carico Acquisto attivato
+    │
+    ├──▶ Nuova Ricezione Conferimento Registrata (qtà negativa, Correction=true)
+    │    └── Collega-a: ricezione originale
+    │
+    └──▶ Nuova Ricezione di Conferimento (aperta, collegata alla riga ordine)
+         └── Pronta per modifica e ri-registrazione
+```
+
+### Risultato Visivo
+
+Dopo un annullamento, la lista Ricezioni Conferimento Registrate mostra:
+1. **Ricezione originale** — quantità positiva, evidenziata con stile sfavorevole (ha annullamento)
+2. **Ricezione di storno** — quantità negativa, Correction=true
+3. La nuova ricezione aperta appare nella lista **Ricezioni di Conferimento**
+
+---
+
+## Relazione con i Documenti Standard BC
+
+Ogni ricezione di conferimento registrata è collegata a un carico acquisto standard BC:
+
+```
+Ricezione Conferimento Registrata
+    │
+    ├── Nr. Carico Acquisto ──▶ Testata Carico Acquisto
+    ├── Nr. Riga Carico Acquisto ──▶ Riga Carico Acquisto
+    │
+    └── Tramite Carico Acquisto ──▶ Movimento Contabile Articolo
+                                      └── Tipo Ordine Conferimento
+```
+
+Il **Tipo Ordine Conferimento** viene riportato fino al Movimento Contabile Articolo, consentendo analisi e reportistica filtrata per tipo di conferimento rispetto ai ricevimenti standard.
