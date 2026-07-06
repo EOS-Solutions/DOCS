@@ -1,0 +1,145 @@
+## Overview
+
+Deliveries Receipts are the core operational documents in the EOS FOOD Deliveries module. They represent the physical arrival of goods at the weighing station, capturing weight data, lot tracking, shipment details, and linking the receipt to a specific purchase order line for posting.
+
+---
+
+## Receipt Lifecycle
+
+### Status Management (Optional)
+
+When **Enable Deliv. Rcpt. Status Mgt** is turned on in Setup:
+
+```
+┌──────┐    ┌──────────┐    ┌──────────┐
+│ New  │───▶│ Accepted │───▶│ Weighed  │
+└──────┘    └──────────┘    └──────────┘
+   │                              │
+   └──────────────────────────────┘
+         (direct skip allowed)
+```
+
+- **New**: Initial status after creation
+- **Accepted**: Delivery accepted at the gate (inspection passed)
+- **Weighed**: Weighing completed — ready for posting
+
+When status management is **disabled**, receipts can be posted regardless of status.
+
+### Receipt Actions
+
+#### Get Gross Weight / Get Tare
+
+Reads the gross weight and tare directly from the connected weighing machine and fills in the corresponding fields on the receipt.
+
+#### Link To Order
+
+Manually links the receipt to an eligible purchase order line. The system searches for purchase lines matching:
+- Document Type = Order
+- Same vendor
+- Deliveries Order Type ≠ blank
+- Ref. Year ≠ 0
+- Type = Item
+- Same item and variant
+- Outstanding Quantity > 0
+
+If the receipt is already linked, the system asks for confirmation before relinking.
+
+#### Unlink From Order
+
+Removes the link between the receipt and its purchase order line, clearing Order No. and Order Line No.
+
+#### Change Status
+
+Transitions the receipt status. Available transitions depend on current status:
+- From **New**: Can change to Accepted or Weighed
+- From **Accepted**: Can change to Weighed
+
+Requires confirmation before changing.
+
+#### Post (F9)
+
+Posts the deliveries receipt, creating a purchase receipt and closing the delivery receipt. See [Posting Process](#posting-process) below.
+
+---
+
+## Creating Deliveries Receipts
+
+Receipts can be created in three ways:
+
+### 1. From Purchase Order Subform
+
+On the Purchase Order Subform, line-level actions:
+- **Create Deliveries Receipt**: Opens a request page allowing you to specify:
+  - **Number of Deliveries Receipts to Create**: How many receipts to create for the line (default 1, useful for multiple deliveries against the same order line)
+  - **Posting Date**: The posting date to set on the created receipt(s)
+  
+  The system validates that the purchase order is a delivery order and that the line is of type Item. After creation, it offers to open the receipt card (single) or the receipt list (multiple).
+- **Link to Deliveries Receipt**: Shows existing unlinked receipts matching the line's criteria for selection
+
+### 2. From Deliveries Receipts List
+
+Create a new record directly in the list or card page. The receipt must then be linked to a purchase order manually using the "Link To Order" action.
+
+---
+
+## Posting Process
+
+When a deliveries receipt is posted (either from the receipt card or from the purchase order):
+
+### Pre-Posting Validation
+
+The system validates:
+
+| Check | Error if |
+|-------|----------|
+| Posting Date | Not set |
+| Vendor No. | Not set |
+| Item No. | Not set |
+| Lot No. | Not set and item requires lot tracking |
+| Gross Weight | Zero or negative |
+| Tare | Zero or negative |
+| Net Weight | Zero or negative |
+| Qty. to Receive | Zero or negative |
+| Status | Not "Weighed" (if status management enabled) |
+| Consistency | Vendor/Item/Variant/Location doesn't match purchase line |
+
+### Posting Steps
+
+When a receipt is posted, the system:
+
+1. Sets the quantity to receive on the linked purchase order line from the receipt
+2. Applies the lot number for tracking
+3. Updates the purchase order with the posting date and shipment reference
+4. Receives the goods through the standard Business Central purchase posting
+5. Archives the receipt as a **Posted Deliveries Receipt** with a reference to the purchase receipt
+6. Removes the original open receipt
+
+### Posting from Purchase Order
+
+When posting a purchase order that has the Deliveries Order Type set:
+- The standard posting confirmation is intercepted
+- Only receipts with Qty. to Receive > 0 are considered
+- If status management is enabled, only "Weighed" receipts are eligible
+- The user can select which receipts to post (if multiple)
+- The Qty. to Receive on purchase lines is controlled by the receipts, not editable directly
+
+---
+
+## Purchase Order Line Protection
+
+When a purchase order line is linked to deliveries receipts:
+
+- **Qty. to Receive** field becomes read-only (managed by receipts)
+- **Item No.** cannot be changed (error raised)
+- **Variant Code** cannot be changed (error raised)
+- **Buy-from Vendor No.** on the header cannot be changed
+- **Deliveries Order Type** on the header cannot be changed
+
+---
+
+## Lot Number Generation
+
+The Lot No. field supports **AssistEdit**:
+1. Click the assist-edit button
+2. System asks: "Do you want to generate a lot number?"
+3. If confirmed, generates the next number from the item's Lot Nos. number series
