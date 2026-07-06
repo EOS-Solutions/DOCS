@@ -1,0 +1,6 @@
+Registro delle pese utilizzate.
+
+| Campo | Descrizione |
+|-------|-------------|
+| **Nr.** | Specifica l'identificativo univoco della pesa. |
+| **Nome** | Specifica il nome descrittivo o l'etichetta della pesa. |
