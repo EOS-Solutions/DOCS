@@ -1,20 +1,19 @@
 <table>
 	<tr>
 		<td>1</td>
-		<td>Set up land mappings</td>
+		<td>Grapes received from growers through delivery orders</td>
 	</tr>
 	<tr>
 		<td>2</td>
-		<td>Create deliveries orders from land mappings</td>
+		<td>Treatments and fermentation modelled as production orders</td>
 	</tr>
 	<tr>
 		<td>3</td>
-		<td>Receive goods with deliveries receipts</td>
+		<td>Possibility to sell grape must and fermenting wine</td>
 	</tr>
 </table>
 
 <br>
+# EOS WINE Deliveries and Vinification - SUMMARY
 
-# EOS FOOD Deliveries - SUMMARY
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001115-0/EFW_summary-ENU.png"><br>
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001115-0/EFW_Summary-ENU.png"><br>
