@@ -12,40 +12,40 @@ Le Mappature Terreni rappresentano i dati catastali e agricoli dei terreni di pr
 
 ### Sezione Generale
 
-| Campo | Tipo | Descrizione |
-|-------|------|-------------|
-| **ID Terreno** | Codice | Specifica l'identificativo univoco del record di mappatura terreno. Assegnato automaticamente dalla serie numerica. |
-| **Nr. Fornitore** | Codice[20] | Specifica il fornitore (coltivatore o produttore) che possiede o gestisce questo terreno. |
-| **Anno Rif.** | Intero | Specifica l'anno di riferimento per questa mappatura terreno. Le mappature terreni sono gestite annualmente e possono essere copiate da un anno all'altro. |
-| **Provincia** | Testo | Specifica la provincia in cui si trova il terreno. |
-| **Comune** | Testo | Specifica la città o il comune in cui si trova il terreno. |
+| Campo | Descrizione |
+|-------|-------------|
+| **ID Terreno** | Specifica l'identificativo univoco del record di mappatura terreno. Assegnato automaticamente dalla serie numerica. |
+| **Nr. Fornitore** | Specifica il fornitore (coltivatore o produttore) che possiede o gestisce questo terreno. |
+| **Anno Rif.** | Specifica l'anno di riferimento per questa mappatura terreno. Le mappature terreni sono gestite annualmente e possono essere copiate da un anno all'altro. |
+| **Provincia** | Specifica la provincia in cui si trova il terreno. |
+| **Comune** | Specifica la città o il comune in cui si trova il terreno. |
 
 ### Dati Catastali
 
-| Campo | Tipo | Descrizione |
-|-------|------|-------------|
-| **Foglio** | Testo | Specifica il numero di foglio catastale del registro terreni in cui questa particella è registrata. |
-| **Particella** | Testo | Specifica il numero di particella catastale che identifica questo specifico appezzamento all'interno del foglio. |
-| **Sesto** | Testo | Specifica il sesto d'impianto o l'identificativo di suddivisione all'interno della particella. |
-| **Anno Impianto** | Intero | Specifica l'anno in cui le colture o le piante sono state originariamente piantate su questo terreno. |
-| **Area Coltivabile (mq)** | Decimale | Specifica la superficie coltivabile totale del terreno, misurata in metri quadrati. |
+| Campo | Descrizione |
+|-------|-------------|
+| **Foglio** | Specifica il numero di foglio catastale del registro terreni in cui questa particella è registrata. |
+| **Particella** | Specifica il numero di particella catastale che identifica questo specifico appezzamento all'interno del foglio. |
+| **Sesto** | Specifica il sesto d'impianto o l'identificativo di suddivisione all'interno della particella. |
+| **Anno Impianto** | Specifica l'anno in cui le colture o le piante sono state originariamente piantate su questo terreno. |
+| **Area Coltivabile (mq)** | Specifica la superficie coltivabile totale del terreno, misurata in metri quadrati. |
 
 ### Sezione Articolo
 
-| Campo | Tipo | Descrizione |
-|-------|------|-------------|
-| **Nr. Articolo** | Codice[20] | Specifica l'articolo (prodotto) coltivato o raccolto da questo terreno. |
-| **Descrizione** | Testo | Specifica la descrizione dell'articolo coltivato su questo terreno. |
-| **Descrizione 2** | Testo | Specifica una descrizione aggiuntiva per l'articolo coltivato su questo terreno. |
-| **Resa %** | Decimale | Specifica la percentuale di resa prevista per questo terreno, rappresentando il rapporto tra prodotto utilizzabile e raccolto totale. |
+| Campo | Descrizione |
+|-------|-------------|
+| **Nr. Articolo** | Specifica l'articolo (prodotto) coltivato o raccolto da questo terreno. |
+| **Descrizione** | Specifica la descrizione dell'articolo coltivato su questo terreno. |
+| **Descrizione 2** | Specifica una descrizione aggiuntiva per l'articolo coltivato su questo terreno. |
+| **Resa %** | Specifica la percentuale di resa prevista per questo terreno, rappresentando il rapporto tra prodotto utilizzabile e raccolto totale. |
 
 ### Varie
 
-| Campo | Tipo | Descrizione |
-|-------|------|-------------|
-| **Cod. Area** | Codice | Specifica il codice area geografica che raggruppa questa mappatura terreno per la reportistica e la creazione degli ordini di conferimento. |
-| **Note** | Testo | Specifica eventuali note o osservazioni aggiuntive su questo record di mappatura terreno. |
-| **Cod. Disciplinare** | Codice | Specifica il disciplinare di produzione assegnato a questo terreno, definendo le regole di coltivazione e i limiti di resa applicabili. |
+| Campo | Descrizione |
+|-------|-------------|
+| **Cod. Area** | Specifica il codice area geografica che raggruppa questa mappatura terreno per la reportistica e la creazione degli ordini di conferimento. |
+| **Note** | Specifica eventuali note o osservazioni aggiuntive su questo record di mappatura terreno. |
+| **Cod. Disciplinare** | Specifica il disciplinare di produzione assegnato a questo terreno, definendo le regole di coltivazione e i limiti di resa applicabili. |
 
 ---
 
@@ -72,7 +72,7 @@ Copia i record di mappatura terreni da un anno di riferimento a un altro. Utiliz
 
 ### Crea Ordini Conferimento
 
-Crea ordini di acquisto (o ordini aperti) dalle mappature terreni. Questa è l'azione principale del flusso di lavoro. Vedere [03-OrdiniConsegna.md](03-OrdiniConsegna.md) per i dettagli.
+Crea ordini di acquisto (o ordini programmati) dalle mappature terreni. Questa è l'azione principale del flusso di lavoro.
 
 ---
 
