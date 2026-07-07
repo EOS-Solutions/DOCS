@@ -1,20 +1,19 @@
 <table>
 	<tr>
 		<td>1</td>
-		<td>Imposta le mappature terreni</td>
+		<td>Le uve ricevute dai conferitori tramite ordini di conferimento</td>
 	</tr>
 	<tr>
 		<td>2</td>
-		<td>Crea ordini di conferimento dalle mappature terreni</td>
+		<td>Trattamenti e fermentazione modellati come ordini di produzione</td>
 	</tr>
 	<tr>
 		<td>3</td>
-		<td>Ricevi la merce con le ricezioni conferimenti</td>
+		<td>Possibilità di vendere mosto d'uva e vino in fermentazione</td>
 	</tr>
 </table>
 
 <br>
 
-# EOS FOOD Deliveries - SUMMARY
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001115-0/EFW_summary-ITA.png"><br>
+# EOS WINE Deliveries and Vinification - SUMMARY
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001115-0/EFW_Summary-ITA.png"><br>
