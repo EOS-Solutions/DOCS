@@ -1,0 +1,18 @@
+### SaaS Tenants
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001166-0/tenants.png"><br>
+Register and manage your Business Central SaaS tenants by tenant ID. View authentication status and clear cached tokens.
+
+| Name | Description | Page Action | Grid Action |
+|------|-------------|:-----------:|:-----------:|
+| Environments | View environments for the selected tenant | ✅ | ❌ |
+| Clear Token Cache | Clear cached authentication tokens | ✅ | ❌ |
+
+### Tenant Environments
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001166-0/Env.png"><br>
+View all environments for a specific SaaS tenant, showing name, country code, application version, and status.
+
+| Name | Description | Page Action | Grid Action |
+|------|-------------|:-----------:|:-----------:|
+| Apps | Open the App Manager for the selected environment | ✅ | ❌ |
