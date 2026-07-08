@@ -1,9 +1,27 @@
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000880-0/Feeds.png"><br>
 
+Configure and manage package feeds (AppSource, MS Apps, NuGet, ProGet, Folder) for AL extension distribution. Supports authentication types: None, Credentials, MSAL, Bearer, and DevOps Token.
+
 ### Page Actions
 
-| **Name** | **Description** | **Page Action** | **Grid Action** |
-|----------|-----------------|-----------------|-----------------|
-|Show Apps|Will show the list of apps in the selected Feed|✅|❌|
-|Import Configuratio|Will ask you a ZIP file containing some feed configurations|✅|❌|
-|Export Configuration|Will export a ZIP file containing the selected Feed configurations|✅|❌|
+
+| Name | Description | Page Action | Grid Action |
+|------|-------------|:-----------:|:-----------:|
+| Show Apps | Browse apps available in the selected feed | ✅ | ❌ |
+| Export Configuration | Export all feeds as a `.zip` file | ✅ | ❌ |
+| Import Configuration | Import feeds from a `.zip` file | ✅ | ❌ |
+| Duplicate | Duplicate the selected feed configuration | ✅ | ❌ |
+| Add MS Feeds | Auto-create AppSource and MS Apps feeds | ✅ | ❌ |
+| Clear Credentials | Clear cached authentication tokens | ✅ | ❌ |
+
+
+### Feed Apps
+Browse all extensions available in a specific package feed, with name, publisher, and version details.
+
+| Name | Description | Page Action | Grid Action |
+|------|-------------|:-----------:|:-----------:|
+| Refresh | Refresh the app list | ✅ | ❌ |
+| Copy as Dependencies | Copy app details as JSON dependency references | ✅ | ❌ |
+| Add to Playlist | Add the selected app to a playlist | ✅ | ✅ |
+| Download Packages | Download the selected `.app` files or batch as `.zip` | ✅ | ❌ |
+| Changelog | View the app's changelog | ❌ | ✅ |
