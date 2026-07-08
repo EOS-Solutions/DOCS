@@ -1,33 +1,33 @@
 ### Servers
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000877-0/servers.png"><br>
 
-By clicking on the Server Name, it will open the list of BC Services
+Register and manage your on-premises Business Central server hosts. Each server stores its hostname, port, and API key. The list displays the Gordon Service version for each host.
 
-### Page Actions
-
-| **Name** | **Description** | **Page Action** | **Grid Action** |
-|----------|-----------------|-----------------|-----------------|
-|Services|Will open the list of BC services of the selecte server|✅|❌|
+| Name | Description | Page Action | Grid Action |
+|------|-------------|:-----------:|:-----------:|
+| Services | View all Business Central services on the selected server | ✅ | ❌ |
 
 
 ### Services
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000877-0/services.png"><br>
 
-By clicking on the Service Name, it will open the App Manager Page
+View all Business Central services running on a specific server or container. Shows status, version, database info, and license details for each service.
 
 ### Page Actions
 
-| **Name** | **Description** | **Page Action** | **Grid Action** |
-|----------|-----------------|-----------------|-----------------|
-|Apps|Will open the App Manager page for the selected service|✅|✅|
-|Select Feed|You will be able to select the default feeds for the selected service|✅|✅|
-|Active Session|You will see the BC Active Sessions for the selected service|✅|❌|
-|Service Configuration|Will open the BC Service configuration Page|✅|✅|
-|Refresh|Will refresh the page|✅|❌|
-|Start Service|Will start the selected BC Service|✅|✅|
-|Stop Service|Will stop the selected BC Service|✅|✅|
-|Restart Service|Will restart the selected BC Service|✅|✅|
-|Upload License|Will Upload the License in the selected BC Service|✅|✅|
-|Show License|Will show the License in the selected BC Service|✅|✅|
-|Open Web Client|Will open the Web Client|✅|✅|
+| Name | Description | Page Action | Grid Action |
+|------|-------------|:-----------:|:-----------:|
+| Apps | Open the App Manager for this service | ✅ | ❌ |
+| Refresh | Refresh the service list | ✅ | ❌ |
+| Select Feed | Assign package feeds to this service | ✅ | ✅ |
+| Start Service | Start the Business Central service | ✅ | ✅ |
+| Stop Service | Stop the Business Central service | ✅ | ✅ |
+| Restart Service | Restart the Business Central service | ✅ | ✅ |
+| Upload License | Upload a license file to the service | ✅ | ✅ |
+| Show License | View the current license details | ✅ | ✅ |
+| Active Sessions | View active user sessions | ✅ | ❌ |
+| Service Configuration | View and edit service configuration settings | ✅ | ✅ |
+| Open WebClient | Open the Business Central WebClient | ✅ | ✅ |
+| Add to Environment Group | Add this service to an environment group | ❌ | ✅ |
+| Event Log | View Windows Event Log entries for this service | ✅ | ✅ |
