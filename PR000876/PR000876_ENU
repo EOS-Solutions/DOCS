@@ -1,23 +1,29 @@
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000876-0/Docker.png"><br>
 
+Manage all your Business Central Docker containers from a single list: view running/stopped containers, their status, Gordon Service version, and license info. Use this view to create, start, stop, troubleshoot, and remove containers, as well as manage services and licenses inside each container.
+
 By clicking on the Container Name, you will open the AppManager of the Docker Service
 
 ### Page Actions
 
-| **Name** | **Description** | **Page Action** | **Grid Action** |
-|----------|-----------------|-----------------|-----------------|
-|Start Container|Will start the selected container|✅|✅|
-|Stop Container|Will stop the selected container|✅|✅|
-|Remove Container|Will remove the selected container|✅|❌|
-|Select Feed|You will be able to select the default feeds for the selected container|✅|✅|
-|Apps|Will open the App Manager page for the selected container|✅|✅|
-|Active Session|You will see the BC Active Sessions for the selected container|✅|❌|
-|Refresh|Will refresh the page|✅|❌|
-|Start Service|Will start the selected container BC Service|✅|❌|
-|Stop Service|Will stop the selected container BC Service|✅|❌|
-|Restart Service|Will restart the selected container BC Service|✅|❌|
-|Upload License|Will Upload the License in the selected container BC Service|✅|✅|
-|Show License|Will show the License in the selected container BC Service|✅|✅|
-|Service Configuration|Will open the BC Service configuration Page|✅|✅|
-|Services|Will open the list of BC Services|✅|✅|
-|Open Web Client|Will open the Web Client|❌|✅|
+| Name | Description | Page Action | Grid Action |
+|------|-------------|:-----------:|:-----------:|
+| Start Container | Start a stopped Docker container | ✅ | ✅ |
+| Stop Container | Stop a running Docker container | ✅ | ✅ |
+| Troubleshoot Container | Step-by-step repair modal to recover a non-working container | ✅ | ✅ |
+| Remove Container | Permanently delete a container | ✅ | ❌ |
+| Select Feed | Assign a package feed to the container's service | ✅ | ✅ |
+| Apps | Open the App Manager for the container's service | ✅ | ✅ |
+| Refresh | Refresh the container list | ✅ | ❌ |
+| Start Service | Start the Business Central service inside the container | ✅ | ❌ |
+| Stop Service | Stop the Business Central service inside the container | ✅ | ❌ |
+| Restart Service | Restart the Business Central service inside the container | ✅ | ❌ |
+| Active Sessions | View active user sessions on the container's service | ✅ | ❌ |
+| Event Log | View Windows Event Log entries (Application/Security/Setup/System) | ✅ | ✅ |
+| Upload License | Upload a license file to the container | ✅ | ✅ |
+| Show License | View the current license details | ✅ | ✅ |
+| Service Configuration | View and edit the service configuration settings | ✅ | ✅ |
+| Services | View all Business Central services inside the container | ✅ | ✅ |
+| Open WebClient | Open the Business Central WebClient in your browser | ✅ | ✅ |
+| Install Gordon Service | Install or update the Gordon service inside the container | ✅ | ❌ |
+| Add to Environment Group | Add the container to an environment group for bulk operations | ❌ | ✅ |
