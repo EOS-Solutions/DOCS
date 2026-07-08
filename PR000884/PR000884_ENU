@@ -1,5 +1,5 @@
-This is a simple wizard that help you create (and run) the script for generating a new BC Container. 
+This is a Multi-step wizard to create new Business Central Docker containers. Configure the artifact version and country, database type (Cronus / BakFile / External SQL), authentication, network settings, SSL, AAD, and additional features. Export/import your configuration as JSON for repeatable setups.
 
-The script will use BcContainerHelper from Microsoft.
+It will use raw Docker Images, no BcContainerHelper is needed.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000884-0/ContainerWizard.png"><br>
