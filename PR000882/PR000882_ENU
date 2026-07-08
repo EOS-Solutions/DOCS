@@ -3,6 +3,7 @@ This is the landing page for the Gordon App.
 
 In this page you will see: 
 
-1. Last Used Services: A list of the 8 latest services of which you opened the App Manger
-2. The ChangeLog
+1. Quickstart: a wizard to help you get started with Docker, package feeds, container creation, and the VS Code extension
+2. Last Used Services: A list of the 8 latest services of which you opened the App Manger
+3. The ChangeLog
 
