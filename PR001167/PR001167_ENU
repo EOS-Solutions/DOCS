@@ -1,0 +1,23 @@
+### Playlists
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001167-0/playlist.png"><br>
+
+**This feature is currently in preview**
+Create named collections of apps for repeatable batch installations. Supports export/import with feed remapping.
+
+| Name | Description | Page Action | Grid Action |
+|------|-------------|:-----------:|:-----------:|
+| Copy | Duplicate the selected playlist | ✅ | ❌ |
+| Export | Export playlists as a `.zip` file | ✅ | ❌ |
+| Import | Import playlists from a `.zip` file with feed remapping | ✅ | ❌ |
+
+
+### Playlist Apps
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001167-0/playlistapps.png"><br>
+
+View and manage apps assigned to a playlist. Missing feeds are highlighted in red for easy identification.
+
+| Name | Description | Page Action | Grid Action |
+|------|-------------|:-----------:|:-----------:|
+| Remove Selected | Remove the selected app from the playlist | ✅ | ❌ |
+| Change Feed | Change the feed assignment for the selected app | ✅ | ❌ |
+| Repair Feeds | Remap or remove apps pointing to feeds that no longer exist | ✅ | ❌ |
