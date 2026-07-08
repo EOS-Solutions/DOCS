@@ -1,4 +1,4 @@
-This page will contain some settings for the Gordon App
+Configure global application behavior: toggle advanced install options, hide Microsoft apps, manage preview features, set Docker host, and configure container wizard defaults (license path, database credentials, etc.).
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000883-0/Settings.png"><br>
 
@@ -21,3 +21,11 @@ This page will contain some settings for the Gordon App
 |Default Container DB Username|default DB Username when using External SQL Database|
 |Default Container DB Password|default DB Password when using External SQL Database|
 |Default Container Bak File|default bak file location when using a Custom DB|
+
+
+### Page actions
+| Name | Description | Page Action | Grid Action |
+|------|-------------|:-----------:|:-----------:|
+| Export Settings | Export all settings (feeds, servers, tenants, groups) as `.zip` | ✅ | ❌ |
+| Import Settings | Import settings from a `.zip` file | ✅ | ❌ |
+| Open Logs | Open the application log folder in Windows Explorer | ✅ | ❌ |
