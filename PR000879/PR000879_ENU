@@ -1,8 +1,10 @@
-Here you will able to manage Apps in a BC Service
+Manage the full lifecycle of Business Central extensions (apps) on a single service. Browse installed and available apps, identify updates, and perform install, publish, uninstall, unpublish, and synchronize operations.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000879-0/AppManager.png"><br>
 
 ### Header Fields
+
+Some fields may be hidden, they can be enabled from User Settings and then by clicking "Show More".
 
 1. **show**: define what to show in the List:
 	* Service Apps: The app installed or published in the service
@@ -10,26 +12,32 @@ Here you will able to manage Apps in a BC Service
 	* Update Available: The app installe in the service that can be updated from the selected feed
 2. **FeedName**: Choose which feed to use: Multiple can be selected
 3. **Hide MS Apps**: Will filter out all the apps that have "Microsoft" as publisher
+4. **DependencyResolutionPolicy**: How the dependecies need to be resolved.
+5. **Timeout**: The installation process has a timeout limit, you can increase this if needed.
 
-### App List
 
-This is the list of the apps. 
 
 ### Page Actions
 
-| **Name** | **Description** | **Page Action** | **Grid Action** |
-|----------|-----------------|-----------------|-----------------|
-|Refresh|Will refresh the page|✅|❌|
-|Open Web Client|Will open the Web Client|✅|❌|
-|Copy as Dependencies|Will copy the selected app as Dependecy (for App.json)|✅|❌|
-|Install|Will install the selected app|✅|✅|
-|Install from File|Will ask you for an .app file to install|✅|❌|
-|Publish|Will Publish the selected app|✅|✅|
-|Publish from File|Will ask you for an .app file to publish|✅|❌|
-|Uninstall|Will Uninstall the selected app|✅|✅|
-|Uninstall (Delete Data)|Will Uninstall and deleting all the data of the selected app|✅|❌|
-|Unpublish|Will unpublish the selected app|✅|✅|
-|Unpublish (Delete Data)|Will Unpublish and deleting all the data of the selected app|✅|✅|
-|Synch (synchronize)|Will synchronize the selected app|✅|❌|
-|Synch (ForceSynch)|Will synchronize with Force (will delete data if table schema has changed) the selected app|✅|❌|
-|Synch (Clean)|Will synchronize (BUT ALL THE DATA WILL BE DELETED) the selected app|✅|❌|
+| Name | Description | Page Action | Grid Action |
+|------|-------------|:-----------:|:-----------:|
+| Refresh | Refresh the app list | ✅ | ❌ |
+| Install | Install the selected app from feeds | ✅ | ✅ |
+| Publish | Publish the selected app from feeds | ✅ | ✅ |
+| Install (with options) | Install with configurable sync mode, verification, and scope | ✅ | ✅ |
+| Install from File | Upload and install an `.app` file from your filesystem | ✅ | ❌ |
+| Install from File (with options) | Install an `.app` file with configurable options | ✅ | ❌ |
+| Publish from File | Upload and publish an `.app` file from your filesystem | ✅ | ❌ |
+| Uninstall | Uninstall the selected app | ✅ | ✅ |
+| Clean Dangling Apps | Remove unpublished apps with newer versions installed | ✅ | ❌ |
+| Uninstall (Delete Data) | Uninstall and delete the app's data | ✅ | ❌ |
+| Unpublish | Unpublish the selected app | ✅ | ✅ |
+| Unpublish (Delete Data) | Unpublish and delete the app's data | ✅ | ✅ |
+| Copy as Dependencies | Copy app details as JSON dependency references | ✅ | ❌ |
+| Synch (Synchronize) | Synchronize the app (Add mode) | ✅ | ❌ |
+| Synch (ForceSynch) | Force-synchronize the app | ✅ | ❌ |
+| Synch (Clean) | Clean-synchronize the app | ✅ | ❌ |
+| Open WebClient | Open the Business Central WebClient | ✅ | ❌ |
+| Changelog | View the app's changelog from the feed | ❌ | ✅ |
+| Install from Playlist | Install all apps defined in a playlist | ✅ | ❌ |
+
