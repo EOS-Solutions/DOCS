@@ -1,0 +1,56 @@
+L'app consente di ricollegare le **vendite di vino** alle vinificazioni che le hanno
+prodotte, garantendo la piena tracciabilità dalla bottiglia alle uve di origine. Questo è
+gestito tramite la pagina **Dettagli Movimento**.
+
+## Prerequisiti
+
+Affinché un articolo venduto sia collegabile, la sua **categoria articolo** deve essere
+classificata con un **Tipo Categoria Enologica**:
+
+| Tipo Categoria Enologica | Collega la vendita a una vinificazione tramite… |
+|--------------------------|--------------------------------------------------|
+| **Mosto d'Uva** | l'output **Mosto d'Uva** della vinificazione, dove la **Data Vinificazione** è uguale o precedente alla data di registrazione della vendita. |
+| **Mosto Trattato** | l'output **Mosto Trattato** della vinificazione, dove la **Data Trattamento Carbone** è uguale o precedente alla data di registrazione della vendita. |
+| **Vino in Fermentazione** | l'output **Vino in Fermentazione** della vinificazione, dove la **Data Fermentazione** è uguale o precedente alla data di registrazione della vendita. |
+
+La vendita e la vinificazione devono inoltre condividere lo stesso **Codice Ubicazione**.
+
+## Collegare una vendita a una vinificazione
+
+1. Apri la pagina **Dettaglio Movimenti** (tramite *Dimmi cosa vuoi fare* o da un elenco correlato).
+2. Individua il movimento di vendita da tracciare (ogni riga corrisponde a un movimento
+   contabile articolo di vendita).
+3. Nel campo **Nr. Vinificazione**, scegli la ricerca. Il sistema mostra solo le
+   vinificazioni **compatibili** in base alle regole sopra.
+4. Seleziona la vinificazione. Il collegamento viene salvato e le quantità collegate vengono calcolate.
+
+## Visualizzare le vendite collegate sulla vinificazione
+
+Sulla scheda **Vinificazione**, quando sono state collegate delle vendite, compare la
+sezione **Dettaglio Vendite** (di sola lettura) che mostra le vendite legate a quella
+vinificazione: numero del movimento contabile articolo, numero documento, data di
+registrazione, articolo e numero di lotto.
+
+## Statistiche
+
+Scegli **Statistiche** (F7) sulla scheda Vinificazione per aprire la pagina **Statistiche
+Vinificazione**. Riepiloga le quantità totali **consumate** e **prodotte** per la
+vinificazione, calcolate dai movimenti contabili articolo, senza consentire modifiche.
+
+## Grafici di consumo e produzione
+
+La scheda Vinificazione può visualizzare due grafici:
+
+- **Grafico Consumi** — visualizza il consumo di uve, mosto d'uva, mosto trattato e vino in
+  fermentazione.
+- **Grafico Produzione** — visualizza l'output di produzione: raspi, uva diraspata, vinaccia,
+  mosto d'uva e mosto trattato.
+
+Questi grafici offrono una visione immediata dell'avanzamento della partita.
+
+## Lista Vendite
+
+La pagina **Lista Vendite** elenca tutti i movimenti contabili articolo di vendita (tipo
+movimento Vendita, escluse le rettifiche) con numero movimento, data di registrazione, tipo
+e numero documento, numero riga, articolo, lotto, quantità e codice ubicazione — un comodo
+punto di partenza per selezionare le vendite da tracciare.
