@@ -1,0 +1,43 @@
+Apri la **Scheda Articolo** di ogni uva che vinifichi. Nel gruppo **Vinificazione** imposta gli
+articoli di output che quest'uva produce e i fattori di calcolo.
+
+### Mappatura articoli di output
+
+Per l'articolo uva, indirizza ogni output all'articolo corrispondente:
+
+- **Raspi**, **Uva Diraspata**, **Vinaccia**, **Mosto d'Uva**, **Vino in Fermentazione**,
+  **Fecce**, **Vino Finito**, **Vino di Riserva**, **Vino Declassato**, **Mosto Trattato**.
+
+Quando in seguito selezionerai quest'uva su un documento di vinificazione, questi articoli
+di output verranno copiati automaticamente nel documento.
+
+### Percentuali di calcolo
+
+| Campo | Scopo |
+|-------|-------|
+| **% Resa** | Percentuale attesa di mosto o vino ottenuta dalla massa totale dell'uva. |
+| **% Eccedenza** | Percentuale attesa di eccedenza di cantina prodotta oltre la resa standard. |
+| **% Raspi** | Percentuale attesa della massa d'uva costituita da raspi. |
+| **% Vinaccia** | Percentuale attesa di vinaccia rimasta dopo la pressatura. |
+
+### Formule di calcolo delle date
+
+| Campo | Scopo |
+|-------|-------|
+| **Calcolo Data Vinificazione** | Formula data (es. `7G`) sommata alla data documento per ottenere la data di vinificazione. |
+| **Calcolo Data Fermentazione** | Formula data sommata alla data documento per ottenere la data di fermentazione. |
+| **Calcolo Data Prod. Vino** | Formula data sommata alla data documento per ottenere la data di produzione del vino. |
+
+### Vino bianco e vino rosso
+
+Il **Tipo Vinificazione** dell'articolo uva (Bianco o Rosso) determina le regole di
+lavorazione. L'opzione **Trattamento Carbone** su una vinificazione è disponibile solo per
+le uve **bianche**.
+
+### Generazione dei numeri di lotto
+
+Per generare automaticamente i numeri di lotto degli articoli di output, configura su ogni
+articolo di output una delle seguenti opzioni:
+
+- una **Formula Nr. Lotto** (formula lotto EOS WINE), oppure
+- una numerazione **Numerazioni Lotti**.
