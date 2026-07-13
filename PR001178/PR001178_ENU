@@ -1,0 +1,54 @@
+The app lets you link **wine sales** back to the vinifications that produced them, giving
+full traceability from the bottle to the original grapes. This is managed through the
+**Entry Details** page.
+
+## Prerequisites
+
+For a sold item to be linkable, its **item category** must be classified with a
+**Wine Category Type**:
+
+| Wine Category Type | Links the sale to a vinification by… |
+|--------------------|--------------------------------------|
+| **Grape Must** | the vinification's **Grape Must** output, where the **Vinification Date** is on or before the sale's posting date. |
+| **Treated Grape Must** | the vinification's **Treated Grape Must** output, where the **Coal Treatment Date** is on or before the sale's posting date. |
+| **Fermenting Wine** | the vinification's **Fermenting Wine** output, where the **Fermentation Date** is on or before the sale's posting date. |
+
+The sale and the vinification must also share the same **Location Code**.
+
+## Linking a sale to a vinification
+
+1. Open the **Entry Details** page (via *Tell Me* or from a related list).
+2. Locate the sale entry you want to trace (each row corresponds to a sales item ledger
+   entry).
+3. In the **Vinification No.** field, choose the lookup. The system shows only the
+   **compatible** vinifications based on the rules above.
+4. Select the vinification. The link is saved and the linked quantities are calculated.
+
+## Viewing linked sales on the vinification
+
+On the **Vinification** card, when sales have been linked, the **Sales Details** section
+appears (read-only) showing the sales tied to that vinification: item ledger entry number,
+document number, posting date, item and lot number.
+
+## Statistics
+
+Choose **Statistics** (F7) on the Vinification card to open the **Vinification Statistics**
+page. It summarises the total **consumed** and **produced** quantities for the vinification,
+computed from the item ledger entries, without allowing edits.
+
+## Consumption and production charts
+
+The Vinification card can display two charts:
+
+- **Consumptions Chart** — visualises consumption of grapes, grape must, treated grape must
+  and fermenting wine.
+- **Production Chart** — visualises production output: stems, destemmed grape, grape pomace,
+  grape must and treated grape must.
+
+These charts give an at-a-glance view of how the batch is progressing.
+
+## Sales List
+
+The **Sales List** page lists all sales item ledger entries (entry type Sale, excluding
+corrections) with entry number, posting date, document type and number, line number, item,
+lot, quantity and location code — a convenient starting point for selecting sales to trace.
