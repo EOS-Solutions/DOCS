@@ -1,0 +1,64 @@
+When many grape receipts have been posted, you can create vinification documents for them in
+one operation using the **Create Vinifications** report, instead of creating each document
+manually.
+
+## What the report does
+
+The report scans posted **grape receipts** (purchase receipt item ledger entries that
+originate from delivery orders) and creates one vinification document per group of grapes,
+grouped by **Item No.**, **Variant Code** and **Location Code**. Each created document is
+populated with date, item, variant and location, and the matching grape entries are added as
+vinification lines automatically.
+
+## Running the report
+
+1. Search for **Create Vinifications** using *Tell Me*.
+2. On the request page, fill in the options and filters:
+
+| Option / Filter | Purpose |
+|-----------------|---------|
+| **Posting Date** | *(Mandatory)* The posting date used to filter the grape receipts and assigned to the new vinifications. |
+| **Item No.** filter | Restrict the run to specific grape items. |
+| **Location Code** filter | Restrict the run to specific locations. |
+
+3. Choose **OK** to run.
+
+> The **Posting Date** is mandatory. If you leave it empty the report stops with a message
+> asking you to enter it.
+
+## Which entries are included
+
+The report only processes item ledger entries that:
+
+- have the specified **posting date**;
+- are **purchase receipts** originating from a delivery order;
+- have a **positive quantity** still available (not yet fully handled by other vinifications);
+- are not corrections.
+
+This ensures grapes already consumed by existing vinifications are not used twice.
+
+## After the run
+
+The report tells you what it created and offers to open the result:
+
+| Outcome | What happens |
+|---------|--------------|
+| **Nothing matched** | A message informs you that there was nothing to create. |
+| **One vinification created** | You are asked whether to open the new document; confirm to open the Vinification card. |
+| **Several vinifications created** | You are asked whether to open them; confirm to open the Vinification List filtered to the newly created documents. |
+
+## After creating the documents
+
+The batch-created vinifications start in **Processing** status. Open each one to:
+
+1. Review the grape inputs and percentages.
+2. Adjust output items and dates if needed.
+3. Assign output lot numbers.
+4. Release the document to generate the wine treatments.
+
+## Tips
+
+- Run the report per harvest day (using **Posting Date**) to keep grape batches aligned with
+  the day they were received.
+- Use the **Item No.** and **Location Code** filters to process one grape variety or one
+  cellar at a time.
