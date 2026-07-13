@@ -1,0 +1,70 @@
+Before a vinification can be released, every output product that requires lot tracking must
+have its full output quantity distributed across one or more **lot numbers**. The
+**Lot Assignment** window guides you through this.
+
+## When does it appear?
+
+The Lot Assignment window opens automatically as part of the **Release** action when one or more output items require lot numbers. You assign the lots, confirm, and the release continues.
+
+## The Lot Assignment window
+
+The window has two parts:
+
+- An upper list of **output items** that need lot numbers.
+- A lower **Lot No. Lines** part where you enter the lot numbers and quantities for the
+  selected item.
+
+### Output items list
+
+| Field | Meaning |
+|-------|---------|
+| **Item No.** | The output item requiring lot number assignment. |
+| **Item Description** | Description of the output item. |
+| **Output Quantity** | Total quantity to be produced that must be fully covered by lot assignments. |
+| **Qty. Assigned** | Total quantity already distributed across lot numbers for this item. |
+| **Remaining Quantity** | Quantity still to be assigned. It is highlighted while not zero. |
+
+> The **Remaining Quantity** must be **zero for every item** before you can confirm.
+
+### Lot No. Lines
+
+For the currently selected output item, add one line per lot number:
+
+| Field | What to enter |
+|-------|---------------|
+| **Lot No.** | The lot number for this portion of the output. Use the assist-edit (…) button to generate one automatically (see below). |
+| **Qty. to Handle** | The quantity assigned to this lot number. The sum of all lines must equal the Output Quantity. |
+
+The totals at the bottom of the Lot No. Lines part show:
+
+- **Output Quantity** — total to distribute.
+- **Quantity Handled** — sum assigned so far.
+- **Remaining Quantity** — still unassigned (must reach zero).
+
+## Generating a lot number automatically
+
+1. On a Lot No. line, choose the assist-edit (…) button in the **Lot No.** field.
+2. Confirm the prompt to generate a lot number from the item configuration.
+3. The system generates the lot number using:
+   - the item's **Lot No. Formula** (EOS WINE formula), if defined; otherwise
+   - the item's **Lot Nos.** number series.
+4. If the lot number does not yet exist, the corresponding **Lot No. Information** record is
+   created automatically.
+
+If neither a formula nor a number series is configured on the item, type the lot number
+manually.
+
+> Each lot number must be unique within the assignment — assigning the same lot twice is
+> rejected.
+
+## Confirming
+
+When the **Remaining Quantity** is zero for all output items, choose **Confirm**. The window
+closes and the release proceeds. If you cancel instead, the release is aborted and the
+document stays in *Processing*.
+
+## Output item lot numbers on the card
+
+The output **… Lot No.** fields in the **Items** group of the Vinification card show the lot
+assigned to each single-lot output. For outputs split across several lots, the detailed
+distribution is managed through this Lot Assignment window during release.
