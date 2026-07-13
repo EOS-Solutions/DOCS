@@ -1,0 +1,71 @@
+Prima di poter rilasciare una vinificazione, ogni prodotto in uscita che richiede la
+gestione a lotti deve avere la sua intera quantità di output distribuita su uno o più
+**numeri di lotto**. La finestra **Assegnazione Lotti** ti guida in questa operazione.
+
+## Quando compare?
+
+La finestra Assegnazione Lotti si apre automaticamente come parte dell'azione **Rilascia** quando uno o più articoli di output richiedono i numeri di lotto. Assegni i lotti, confermi e il rilascio prosegue.
+
+## La finestra Assegnazione Lotti
+
+La finestra è composta da due parti:
+
+- Un elenco superiore degli **articoli di output** che necessitano di numeri di lotto.
+- Una parte inferiore **Righe Nr. Lotto** in cui inserisci i numeri di lotto e le quantità per
+  l'articolo selezionato.
+
+### Elenco articoli di output
+
+| Campo | Significato |
+|-------|-------------|
+| **Nr. Articolo** | L'articolo di output che richiede l'assegnazione del numero di lotto. |
+| **Descrizione Articolo** | Descrizione dell'articolo di output. |
+| **Quantità Output** | Quantità totale da produrre che deve essere interamente coperta dalle assegnazioni di lotto. |
+| **Qtà Assegnata** | Quantità totale già distribuita sui numeri di lotto per questo articolo. |
+| **Quantità Rimanente** | Quantità ancora da assegnare. È evidenziata finché è diversa da zero. |
+
+> La **Quantità Rimanente** deve essere **zero per ogni articolo** prima di poter confermare.
+
+### Righe Nr. Lotto
+
+Per l'articolo di output attualmente selezionato, aggiungi una riga per ogni numero di lotto:
+
+| Campo | Cosa inserire |
+|-------|---------------|
+| **Nr. Lotto** | Il numero di lotto per questa porzione di output. Usa il pulsante di assist-edit (…) per generarlo automaticamente (vedi sotto). |
+| **Qtà da Gestire** | La quantità assegnata a questo numero di lotto. La somma di tutte le righe deve essere uguale alla Quantità Output. |
+
+I totali in fondo alla parte Righe Nr. Lotto mostrano:
+
+- **Quantità Output** — totale da distribuire.
+- **Quantità Gestita** — somma assegnata finora.
+- **Quantità Rimanente** — ancora non assegnata (deve arrivare a zero).
+
+## Generare un numero di lotto automaticamente
+
+1. Su una riga Nr. Lotto, scegli il pulsante di assist-edit (…) nel campo **Nr. Lotto**.
+2. Conferma la richiesta per generare un numero di lotto dalla configurazione dell'articolo.
+3. Il sistema genera il numero di lotto usando:
+   - la **Formula Nr. Lotto** dell'articolo (formula EOS WINE), se definita; altrimenti
+   - la numerazione **Numerazioni Lotti** dell'articolo.
+4. Se il numero di lotto non esiste ancora, il relativo record **Informazioni Nr. Lotto** viene
+   creato automaticamente.
+
+Se sull'articolo non è configurata né una formula né una numerazione, digita il numero di
+lotto manualmente.
+
+> Ogni numero di lotto deve essere univoco all'interno dell'assegnazione — assegnare lo
+> stesso lotto due volte viene rifiutato.
+
+## Confermare
+
+Quando la **Quantità Rimanente** è zero per tutti gli articoli di output, scegli **Conferma**.
+La finestra si chiude e il rilascio prosegue. Se invece annulli, il rilascio viene interrotto
+e il documento rimane *In Lavorazione*.
+
+## Numeri di lotto degli articoli di output sulla scheda
+
+I campi **… Nr. Lotto** degli output nel gruppo **Articoli** della scheda Vinificazione
+mostrano il lotto assegnato a ogni output a lotto singolo. Per gli output suddivisi su più
+lotti, la distribuzione dettagliata è gestita tramite questa finestra Assegnazione Lotti
+durante il rilascio.
