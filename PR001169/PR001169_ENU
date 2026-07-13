@@ -1,0 +1,41 @@
+Open the **Item Card** of each grape item you vinify. In the **Vinification** group set the
+output items that this grape produces and the calculation factors.
+
+### Output item mapping
+
+For the grape item, point each output to the corresponding item:
+
+- **Stems**, **Destemmed Grape**, **Grape Pomace**, **Grape Must**, **Fermenting Wine**,
+  **Wine Lees**, **Finished Wine**, **Reserve Wine**, **Downgraded Wine**, **Treated Grape Must**.
+
+When you later select this grape on a vinification document, these output items are
+copied automatically into the document.
+
+### Calculation percentages
+
+| Field | Purpose |
+|-------|---------|
+| **Yield %** | Expected percentage of grape must or wine obtained from the total grape mass. |
+| **Surplus %** | Expected percentage of cellar surplus produced beyond the standard yield. |
+| **Stems %** | Expected percentage of the grape mass consisting of stems. |
+| **Grape Pomace %** | Expected percentage of grape pomace remaining after pressing. |
+
+### Date calculation formulas
+
+| Field | Purpose |
+|-------|---------|
+| **Vinification Date Calculation** | Date formula (e.g. `7D`) added to the document date to obtain the vinification date. |
+| **Fermentation Date Calculation** | Date formula added to the document date to obtain the fermentation date. |
+| **Wine Prod. Date Calculation** | Date formula added to the document date to obtain the wine production date. |
+
+### White vs. red wine
+
+The grape item's **Vinification Type** (White or Red) determines processing rules. The
+**Coal Treatment** option on a vinification is only available for **white** grapes.
+
+### Lot number generation
+
+To auto-generate lot numbers for output items, configure on each output item either:
+
+- a **Lot No. Formula** (EOS WINE lot formula), or
+- a **Lot Nos.** number series.
