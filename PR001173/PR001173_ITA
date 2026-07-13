@@ -1,0 +1,34 @@
+La sottopagina **Righe Vinificazione** elenca le uve in entrata consumate da questa vinificazione.
+
+1. Nella sottopagina **Righe Vinificazione**, scegli **Ottieni Movimenti Collegati**.
+2. Si apre la finestra **Movimenti Vinificazione**, che elenca i movimenti contabili articolo
+   disponibili (da conferimenti, trasferimenti e ordini di produzione) corrispondenti
+   all'articolo, alla variante e all'ubicazione del documento.
+3. Per ogni movimento che vuoi utilizzare:
+   - Spunta **Selezionato**.
+   - Inserisci la **Qtà da Gestire** — la quantità di quel movimento da assegnare a questa
+     vinificazione. Non deve superare la quantità disponibile.
+4. Conferma per riportare i movimenti selezionati come righe di vinificazione.
+
+### Campi dei Movimenti Vinificazione
+
+| Campo | Descrizione |
+|-------|-------------|
+| **Selezionato** | Spunta per includere questo movimento come uva in entrata. |
+| **Tipo Documento** | Origine del movimento: Acquisto, Trasferimento o Produzione. |
+| **Data Registrazione / Nr. Documento / Nr. Riga Documento** | Identificano il documento di origine. |
+| **Nr. Articolo / Nr. Lotto / Codice Ubicazione** | L'uva, il suo lotto e dove è stoccata. |
+| **Qtà Ricevuta** | Quantità totale ricevuta nell'unità di misura base. |
+| **Qtà Ricevuta (Litri) / (Kg)** | La quantità ricevuta convertita in litri e chilogrammi. |
+| **Qtà da Gestire** | La quantità che assegni a questa vinificazione. |
+| **Qtà Gestita** | Quantità già assegnata ad altre vinificazioni (non più disponibile). |
+
+> Lo stesso movimento di uva può essere condiviso tra più vinificazioni: **Qtà Gestita**
+> mostra ciò che è già stato impegnato altrove, così non si sovra-assegna mai.
+
+### Righe risultanti
+
+Ogni movimento selezionato diventa una **Riga Vinificazione** di sola lettura che mostra la
+data di registrazione, il tipo/numero documento, l'articolo, il lotto, l'ubicazione e la
+**Qtà da Gestire** che verrà consumata. Usa l'azione **Naviga** su una riga per ispezionare
+tutti i documenti e i movimenti correlati.
