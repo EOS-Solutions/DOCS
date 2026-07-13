@@ -1,0 +1,33 @@
+The **Vinification Lines** subpage lists the grape inputs consumed by this vinification.
+
+1. In the **Vinification Lines** subpage, choose **Get Linked Entries**.
+2. The **Vinification Entries** window opens, listing the available item ledger entries
+   (from purchase receipts, transfer receipts and production orders) that match the
+   document's item, variant and location.
+3. For each entry you want to use:
+   - Tick **Selected**.
+   - Enter the **Qty. To Handle** — the quantity from that entry to assign to this
+     vinification. It must not exceed the available quantity.
+4. Confirm to bring the selected entries back as vinification lines.
+
+### Vinification Entries fields
+
+| Field | Description |
+|-------|-------------|
+| **Selected** | Tick to include this entry as grape input. |
+| **Document Type** | Origin of the entry: Purchase, Transfer or Production. |
+| **Posting Date / Document No. / Document Line No.** | Identify the source document. |
+| **Item No. / Lot No. / Location Code** | The grape, its lot and where it is stored. |
+| **Qty. Received** | Total quantity received in the base unit of measure. |
+| **Qty. Received (Liters) / (Kg)** | The received quantity converted to liters and kilograms. |
+| **Qty. To Handle** | The quantity you assign to this vinification. |
+| **Qty. Handled** | Quantity already assigned to other vinifications (no longer available). |
+
+> The same grape entry can be shared across vinifications: **Qty. Handled** shows what has
+> already been committed elsewhere, so you never over-allocate.
+
+### Resulting lines
+
+Each selected entry becomes a read-only **Vinification Line** showing the posting date,
+document type/number, item, lot, location and the **Qty. To Handle** that will be consumed.
+Use the **Navigate** action on a line to inspect all related documents and entries.
