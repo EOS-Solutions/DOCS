@@ -1,0 +1,93 @@
+Un documento di vinificazione attraversa tre stati: **In Lavorazione**, **Rilasciato** e
+**Chiuso**. Quattro azioni sulla scheda Vinificazione lo spostano tra questi stati.
+
+```text
+   In Lavorazione  ──Rilascia──▶  Rilasciato  ──Chiudi──▶  Chiuso
+        ▲                            │                         │
+        ├────Riapri rilasciato───────┘                         │
+        │                                                      │
+        └────────────────────Riapri chiuso─────────────────────┘
+```
+
+Tutte e quattro le azioni sono disponibili nel pulsante diviso **Rilascia** della scheda
+Vinificazione e sono abilitate solo per lo stato a cui si riferiscono.
+
+## Rilascia
+
+**Disponibile quando:** Stato = *In Lavorazione*.
+
+Scegli **Rilascia** per registrare i movimenti di consumo e di output per tutte le fasi
+della vinificazione.
+
+Cosa accade:
+
+1. Se gli articoli di output richiedono la gestione a lotti, si apre la finestra
+   Assegnazione Lotti per distribuire le quantità di output sui
+   numeri di lotto.
+2. Il sistema crea gli **ordini di produzione dei trattamenti enologici** — uno per ogni
+   fase rilevante (vinificazione, fermentazione, produzione vino, eccedenza cantina e, per i
+   vini bianchi, trattamento al carbone), usando i codici causale della Configurazione.
+3. Lo stato del documento passa a **Rilasciato** e il documento viene bloccato.
+
+Dopo il rilascio, sulla scheda compare la sezione **Trattamenti Enologici**.
+
+## Riapri rilasciato
+
+**Disponibile quando:** Stato = *Rilasciato*.
+
+Scegli **Riapri rilasciato** per annullare il rilascio. Il sistema storna tutti i movimenti
+registrati ed elimina gli ordini di produzione dei trattamenti enologici, riportando lo
+stato a **In Lavorazione** per consentire le correzioni.
+
+## Chiudi
+
+**Disponibile quando:** Stato = *Rilasciato*.
+
+Scegli **Chiudi** per finalizzare la vinificazione. Il sistema verifica che **tutti** gli
+ordini di produzione dei trattamenti enologici siano stati registrati. In tal caso, lo stato
+passa a **Chiuso** e non sono consentite ulteriori modifiche.
+
+> Se alcuni trattamenti non sono ancora registrati, la chiusura non è consentita — registra
+> prima i trattamenti in sospeso.
+
+## Riapri chiuso
+
+**Disponibile quando:** Stato = *Chiuso*.
+
+Scegli **Riapri chiuso** per stornare una vinificazione chiusa. Il sistema storna tutti i
+movimenti di consumo e di output generati dai trattamenti enologici, imposta gli ordini di
+produzione dei trattamenti enologici allo stato **Finito** e lo stato torna a
+**In Lavorazione** per consentire le correzioni.
+
+## Sezione Trattamenti Enologici
+
+Una volta rilasciata una vinificazione, la parte **Trattamenti Enologici** mostra gli ordini
+di produzione in una struttura ad albero:
+
+| Livello | Mostra |
+|---------|--------|
+| **Trattamento** | Il trattamento enologico (ordine di produzione) di una fase, con il suo codice causale e stato. |
+| **Riga Ordine Prod.** | La/le riga/righe dell'ordine di produzione sotto un trattamento. |
+| **Componente** | I materiali consumati e prodotti dal trattamento. |
+
+I dettagli visualizzati includono il **Nr. Ordine di Produzione**, il **Codice Causale**, la
+**Descrizione**, il **Nr. Articolo**, le quantità, l'unità di misura, l'ubicazione, la data
+prevista e lo **Stato Ordine di Produzione**.
+
+Usa l'azione di navigazione **Trattamenti Enologici** per aprire l'elenco a pagina intera,
+oppure il sottomodulo **Trattamenti Enologici** incorporato nella scheda.
+
+## Altre azioni di navigazione
+
+| Azione | Scopo |
+|--------|-------|
+| **Statistiche** (F7) | Apre le statistiche della vinificazione con i totali delle quantità consumate e prodotte dai movimenti contabili articolo. |
+| **Movimenti Contabili Articolo** | Mostra tutti i movimenti contabili articolo (consumo, output, trasferimenti) generati da questa vinificazione, per audit e tracciabilità. |
+| **Trattamenti Enologici** | Apre gli ordini di produzione dei trattamenti enologici creati per questa vinificazione e il loro stato di registrazione. |
+
+## Registrazione dei trattamenti enologici
+
+I singoli ordini di produzione dei trattamenti enologici vengono registrati tramite le
+pagine standard di registrazione trattamenti di EOS WINE. La parte Righe di Tracciabilità su
+quelle pagine mostra la gestione a lotti (Nr. Lotto e Quantità Base) per la piena
+tracciabilità. Una volta registrati tutti i trattamenti, puoi **Chiudere** la vinificazione.
