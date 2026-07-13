@@ -1,0 +1,36 @@
+Before creating your first vinification you must configure the app once. This involves
+the **Vinification Setup** page, the grape and wine **items**, and the wine treatment
+**reason codes**.
+
+## Vinification Setup
+
+Search for **Vinification Setup** using *Tell Me* and fill in the fields below.
+
+### Number series and location
+
+| Field | Purpose |
+|-------|---------|
+| **Vinification Nos.** | The number series used to assign a unique number to each new vinification document. |
+| **Default Location Code** | The default warehouse/cellar location proposed on new vinification documents. |
+
+### Reason codes
+
+Each wine treatment phase is posted with a dedicated **reason code**. The reason codes
+must be flagged as wine treatment reason codes (the *Wine Treatment* mark in the EOS WINE
+reason code setup).
+
+| Field | Purpose |
+|-------|---------|
+| **Vinification Reason Code** | Reason code for the initial vinification treatment. |
+| **Fermentation Reason Code** | Reason code for the fermentation treatment. |
+| **Wine Production Reason Code** | Reason code for the wine production treatment. |
+| **Cellar Surplus Reason Code** | Reason code for the cellar surplus produced beyond the standard yield. |
+| **Coal Treatment Reason Code** | Reason code for the activated carbon (coal) treatment of grape must. |
+
+### Units of measure and lot numbering
+
+| Field | Purpose |
+|-------|---------|
+| **KG Unit of Measure** | The unit of measure that represents kilograms, used for weight-based quantity conversions. |
+| **Liter Unit of Measure** | The unit of measure that represents liters, used for volume-based quantity conversions. |
+| **Use Last Lot No.** | When enabled, output items are pre-filled with the most recently used lot number where applicable. |
