@@ -1,0 +1,23 @@
+1. Apri la **Lista Vinificazioni** e scegli **Nuovo**, oppure apri una scheda **Vinificazione** vuota.
+2. Il **Nr.** viene assegnato automaticamente dalla numerazione. Puoi anche usare il pulsante
+   di assist-edit (…) per inserire un numero manuale se la numerazione lo consente.
+3. Compila il gruppo **Generale**.
+
+### Gruppo Generale
+
+| Campo | Cosa inserire |
+|-------|---------------|
+| **Data** | La data di inizio del processo di vinificazione. È la base per il calcolo delle date di vinificazione, fermentazione e produzione del vino. |
+| **Nr. Articolo** | L'uva da lavorare. Selezionandola si precompilano gli articoli di output, le percentuali e le formule data dalla scheda articolo. |
+| **Descrizione / Descrizione 2** | Compilate automaticamente dall'articolo uva. |
+| **Nr. Lotto** | Il numero di lotto delle uve in entrata, per la tracciabilità. |
+| **Massa** | Il peso totale (kg) dell'uva in entrata. Questo valore guida tutti i calcoli delle quantità di output. |
+| **% Grado** | Il contenuto zuccherino (alcol potenziale) delle uve. |
+| **% Resa, % Eccedenza, % Raspi, % Vinaccia** | Percentuali di calcolo, precompilate dall'articolo ma modificabili per documento. |
+| **Calcolo Data Vinificazione / Fermentazione / Prod. Vino** | Formule data, precompilate dall'articolo. |
+| **Data Vinificazione / Fermentazione / Produzione Vino** | Le date calcolate dalle formule sopra. |
+| **Codice Ubicazione** | L'ubicazione di cantina in cui avviene il processo e vengono stoccati gli output. |
+| **Stato** | Di sola lettura. Un nuovo documento parte in *In Lavorazione*. |
+
+> Suggerimento: modificando la **Data** o una formula di **Calcolo Data** le relative date di
+> lavorazione vengono ricalcolate automaticamente.
