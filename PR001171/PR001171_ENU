@@ -1,0 +1,23 @@
+1. Open the **Vinification List** and choose **New**, or open a blank **Vinification** card.
+2. The **No.** is assigned automatically from the number series. You can also use the
+   assist-edit (…) button to enter a manual number if the series allows it.
+3. Fill in the **General** group.
+
+### General group
+
+| Field | What to enter |
+|-------|---------------|
+| **Date** | The date the vinification process starts. It is the base for calculating the vinification, fermentation and wine production dates. |
+| **Item No.** | The grape item being processed. Selecting it pre-fills the output items, percentages and date formulas from the item card. |
+| **Description / Description 2** | Filled automatically from the grape item. |
+| **Lot No.** | The lot number of the input grapes, for traceability. |
+| **Mass** | The total weight (kg) of the grape input. This value drives all output quantity calculations. |
+| **Degree %** | The sugar content (potential alcohol) of the grapes. |
+| **Yield %, Surplus %, Stems %, Grape Pomace %** | Calculation percentages, pre-filled from the item but adjustable per document. |
+| **Vinification / Fermentation / Wine Prod. Date Calculation** | Date formulas, pre-filled from the item. |
+| **Vinification / Fermentation / Wine Production Date** | The dates calculated from the formulas above. |
+| **Location Code** | The cellar location where the process takes place and outputs are stored. |
+| **Status** | Read-only. A new document starts in *Processing*. |
+
+> Tip: Changing the **Date** or a **Date Calculation** formula recalculates the related
+> processing dates automatically.
