@@ -1,0 +1,36 @@
+Prima di creare la prima vinificazione è necessario configurare l'app una volta sola.
+Questo coinvolge la pagina **Setup Vinificazione**, gli **articoli** di uva e vino
+e i **codici causale** dei trattamenti enologici.
+
+## Setup Vinificazione
+
+Cerca **Setup Vinificazione** tramite *Dimmi cosa vuoi fare* e compila i campi seguenti.
+
+### Numerazione e ubicazione
+
+| Campo | Scopo |
+|-------|-------|
+| **Numerazione Vinificazioni** | La numerazione usata per assegnare un numero univoco a ogni nuovo documento di vinificazione. |
+| **Codice Ubicazione Predefinito** | L'ubicazione di magazzino/cantina predefinita proposta sui nuovi documenti di vinificazione. |
+
+### Codici causale
+
+Ogni fase del trattamento enologico viene registrata con un **codice causale** dedicato. I
+codici causale devono essere contrassegnati come codici causale di trattamento enologico
+(il contrassegno *Trattamento Enologico* nella configurazione codici causale di EOS WINE).
+
+| Campo | Scopo |
+|-------|-------|
+| **Codice Causale Vinificazione** | Codice causale per il trattamento iniziale di vinificazione. |
+| **Codice Causale Fermentazione** | Codice causale per il trattamento di fermentazione. |
+| **Codice Causale Produzione Vino** | Codice causale per il trattamento di produzione del vino. |
+| **Codice Causale Eccedenza Cantina** | Codice causale per l'eccedenza di cantina prodotta oltre la resa standard. |
+| **Codice Causale Trattamento Carbone** | Codice causale per il trattamento con carbone attivo del mosto. |
+
+### Unità di misura e numerazione lotti
+
+| Campo | Scopo |
+|-------|-------|
+| **Unità di Misura KG** | L'unità di misura che rappresenta i chilogrammi, usata per le conversioni di quantità a peso. |
+| **Unità di Misura Litri** | L'unità di misura che rappresenta i litri, usata per le conversioni di quantità a volume. |
+| **Usa Ultimo Nr. Lotto** | Se attivo, gli articoli di output vengono precompilati con l'ultimo numero di lotto utilizzato, ove applicabile. |
