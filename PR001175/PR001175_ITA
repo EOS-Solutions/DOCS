@@ -1,0 +1,65 @@
+Quando sono stati registrati molti conferimenti di uva, puoi creare i documenti di
+vinificazione per essi in un'unica operazione tramite il report **Crea Vinificazioni**,
+invece di creare ogni documento manualmente.
+
+## Cosa fa il report
+
+Il report analizza i **conferimenti di uva** registrati (movimenti contabili articolo di
+ricevimento acquisto provenienti da ordini di conferimento) e crea un documento di
+vinificazione per ogni gruppo di uve, raggruppate per **Nr. Articolo**, **Codice Variante** e
+**Codice Ubicazione**. Ogni documento creato viene popolato con data, articolo, variante e
+ubicazione, e i movimenti di uva corrispondenti vengono aggiunti automaticamente come righe
+di vinificazione.
+
+## Esecuzione del report
+
+1. Cerca **Crea Vinificazioni** tramite *Dimmi cosa vuoi fare*.
+2. Nella pagina di richiesta, compila le opzioni e i filtri:
+
+| Opzione / Filtro | Scopo |
+|------------------|-------|
+| **Data Registrazione** | *(Obbligatoria)* La data di registrazione usata per filtrare i conferimenti di uva e assegnata alle nuove vinificazioni. |
+| Filtro **Nr. Articolo** | Limita l'esecuzione a specifiche uve. |
+| Filtro **Codice Ubicazione** | Limita l'esecuzione a specifiche ubicazioni. |
+
+3. Scegli **OK** per eseguire.
+
+> La **Data Registrazione** è obbligatoria. Se la lasci vuota il report si interrompe con un
+> messaggio che ti chiede di inserirla.
+
+## Quali movimenti vengono inclusi
+
+Il report elabora solo i movimenti contabili articolo che:
+
+- hanno la **data di registrazione** specificata;
+- sono **ricevimenti acquisto** provenienti da un ordine di conferimento;
+- hanno una **quantità positiva** ancora disponibile (non già interamente gestita da altre vinificazioni);
+- non sono rettifiche.
+
+Questo garantisce che le uve già consumate da vinificazioni esistenti non vengano usate due volte.
+
+## Al termine dell'esecuzione
+
+Il report ti comunica cosa ha creato e propone di aprire il risultato:
+
+| Esito | Cosa accade |
+|-------|-------------|
+| **Nessuna corrispondenza** | Un messaggio ti informa che non c'era nulla da creare. |
+| **Una vinificazione creata** | Ti viene chiesto se aprire il nuovo documento; confermando si apre la scheda Vinificazione. |
+| **Più vinificazioni create** | Ti viene chiesto se aprirle; confermando si apre la Lista Vinificazioni filtrata sui documenti appena creati. |
+
+## Dopo aver creato i documenti
+
+Le vinificazioni create in massa partono nello stato **In Lavorazione**. Apri ciascuna per:
+
+1. Verificare le uve in entrata e le percentuali.
+2. Modificare articoli di output e date se necessario.
+3. Assegnare i numeri di lotto di output.
+4. Rilasciare il documento per generare i trattamenti enologici.
+
+## Suggerimenti
+
+- Esegui il report per giornata di vendemmia (usando la **Data Registrazione**) per mantenere
+  le partite di uva allineate al giorno in cui sono state ricevute.
+- Usa i filtri **Nr. Articolo** e **Codice Ubicazione** per elaborare una sola varietà di uva
+  o una sola cantina alla volta.
