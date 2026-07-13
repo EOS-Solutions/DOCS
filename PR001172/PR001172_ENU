@@ -1,0 +1,19 @@
+Open the **Items** group. The output items and their lot numbers were pre-filled from the
+grape item card. Review them and adjust if necessary:
+
+- **Stems**, **Destemmed Grape**, **Grape Pomace**, **Grape Must**, **Fermenting Wine**,
+  **Wine Lees**, **Finished Wine**, **Reserve Wine**, **Downgraded Wine**.
+- Each output has a matching **… Lot No.** field. The lot field is enabled only when the
+  output item requires lot tracking.
+
+### Coal treatment (white wines only)
+
+If the grape is a white wine, you can enable **Coal Treatment** to add an activated carbon
+clarification phase:
+
+| Field | Purpose |
+|-------|---------|
+| **Coal Treatment** | Enables the coal treatment phase (white grapes only). |
+| **Coal Treatment Date Calculation** | Date formula to schedule the coal treatment. |
+| **Coal Treatment Date** | The calculated date of the coal treatment. |
+| **Treated Grape Must** | The output item representing coal-treated grape must. |
