@@ -1,0 +1,19 @@
+Apri il gruppo **Articoli**. Gli articoli di output e i relativi numeri di lotto sono stati
+precompilati dalla scheda dell'articolo uva. Verificali e modificali se necessario:
+
+- **Raspi**, **Uva Diraspata**, **Vinaccia**, **Mosto d'Uva**, **Vino in Fermentazione**,
+  **Fecce**, **Vino Finito**, **Vino di Riserva**, **Vino Declassato**.
+- Ogni output ha un campo **… Nr. Lotto** corrispondente. Il campo lotto è abilitato solo
+  quando l'articolo di output richiede la gestione a lotti.
+
+### Trattamento al carbone (solo vini bianchi)
+
+Se l'uva è un vino bianco, puoi attivare **Trattamento Carbone** per aggiungere una fase di
+chiarificazione con carbone attivo:
+
+| Campo | Scopo |
+|-------|-------|
+| **Trattamento Carbone** | Abilita la fase di trattamento al carbone (solo uve bianche). |
+| **Calcolo Data Trattamento Carbone** | Formula data per pianificare il trattamento al carbone. |
+| **Data Trattamento Carbone** | La data calcolata del trattamento al carbone. |
+| **Mosto Trattato** | L'articolo di output che rappresenta il mosto trattato al carbone. |
