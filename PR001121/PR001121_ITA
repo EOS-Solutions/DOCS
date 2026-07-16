@@ -21,7 +21,18 @@
         <td><b>BC27</b></td>
 				<td><b>BC28</b></td>
     </tr>
-	<tr>
+		<tr>
+        <td>15/07/2026</td>
+        <td> - Scanner sequenziale con gestione personalizzata<br>- Campi di dettaglio nelle attività "Contenuto collocazione"<br>- Campi di dettaglio nelle attività di inventario<br>- Possibilità di disabilitare il focus iniziale sul campo barcode</td>
+        <td>1.1.260.0</td>
+        <td>-</td>
+        <td>27.0.44</td>
+				<td>28.0.18</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+		<tr>
         <td>23/06/2026</td>
         <td> - Etichette attività e gruppi personalizzabili<br>- Attività prelievo magazzino<br>- Attività personalizzate basate su tabelle esistenti</td>
         <td>1.1.255.0</td>
