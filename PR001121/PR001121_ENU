@@ -21,7 +21,18 @@
         <td><b>BC27</b></td>
 				<td><b>BC28</b></td>
     </tr>
-	<tr>
+		<tr>
+        <td>15/07/2026</td>
+        <td> - Sequential scanner with backend call<br>- Detail fields in bin activities<br>- Detail fields in inventory activities<br>- Disable autofocus on barcode input</td>
+        <td>1.1.260.0</td>
+        <td>-</td>
+        <td>27.0.44</td>
+				<td>28.0.18</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+    </tr>
+		<tr>
         <td>23/06/2026</td>
         <td> - Custom activity and group captions<br>- Inventory pick activity<br>- Custom activities with existing tables</td>
         <td>1.1.255.0</td>
