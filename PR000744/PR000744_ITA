@@ -5,7 +5,7 @@ Si occupa di generare le seguenti scritture contabili / simulate:
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/18SalesPurchaseBonus.png"><br>
  
 - **Da data / A data**: indicare il periodo di calcolo degli stanziamenti relativi ai bonus clienti / fornitori. 
-- **Simulato**: viene proposto a 'sì' se nel “Setup bonus (SPB)” è valorizzato il campo “Template Def. Stanziamenti Sim.”. Questa opzione è solo disponibile se l'app SGL è installata.
+- **Simulato**: viene proposto a 'sì' se nel “Setup bonus (SPB)” il campo “Template Def. Stanziamenti COGE.” viene valorizzato con un giornale e un batch di registrazioni simulate. Questa opzione è solo disponibile se l'app SGL è installata.
 - **Registrazione automatica stanziamenti**: precompilato in funzione dell’omonimo flag presente nel “Setup bonus (SPB)”. Può comunque essere modificato dall’utente. Questa opzione è solo disponibile se l'app SGL è installata.
  
 
