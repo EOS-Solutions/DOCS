@@ -5,7 +5,7 @@ It allows to generate the following accounting / simulated records:
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000744-0/18SalesPurchaseBonus_en.png"><br>
 
 - **From Date / To Date**: indicate the calculation period of the allocations relating to customer / vendor bonuses.  
-- **Simulated**: it is correctly enabled if in the “Setup bonus (SPB)”, the field “Allocation Sim. Gen. Jnl. Template" is entered
+- **Simulated**: It is set to Yes when the “G/L Accruals Template” field in the “Bonus Setup (SPB)” is populated with a simulation journal and journal batch. This option is available only if the SGL app is installed.
 - **Allocation Automatic Posting**: entered by the system, according to the flag of the same name present in the “Setup bonus (SPB)”. However, it can be modified by the user  
 
 **Simulated Entries Generated**
