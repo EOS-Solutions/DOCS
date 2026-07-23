@@ -1,3 +1,7 @@
+La funzionalità si attiva tramite un **feature flag** presente nella page **Feature Flag (EAL)**, la funzionalità è reversibile ed è attivabile per società.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/43InvoicingPlan_ITA.png"><br>
+
 Dall’ordine di acquisto **Rilasciato** è possibile creare il piano di fatturazione dedicato tramite apposita funzione: "Piano di fatturazione (IPL)".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_02_ITA.png"><br>
