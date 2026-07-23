@@ -1,4 +1,8 @@
-From the Released purchase order it is possible to create the dedicated billing plan using the specific function: "Billing Plan (IPL)".
+The feature can be enabled through a **feature flag** available on the **Feature Flags (EAL)** page. It is fully reversible and can be activated for individual companies.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/43InvoicingPlan_ENU.png"><br>
+
+From the Released purchase order it is possible to create the dedicated billing plan using the specific function: "Invoice Plan (IPL)".
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_02_ENG.png"><br>
 
@@ -30,7 +34,7 @@ Fixed amount with respect to the total purchase order (the percentages will be r
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000303-0/IPL_10_ENG.png"><br>
 
-If the values or quantities in the purchase order are changed, it is possible to use the “Recalculate billing plan” function with two options:
+If the values or quantities in the purchase order are changed, it is possible to use the “Re-Calculate Invoice Plan” function with two options:
 
 Recalculate percentages: the amounts will remain unchanged and the percentages will be adjusted to the new total;
 
