@@ -1,5 +1,9 @@
-* Gestione dei Trattamenti Vino e di tutte le operazioni di vinificazione: potatura, trasporto, dolcificazione, etc.
+Le principali funzionalità sono:
+ 
+* Gestione a livello di anagrafica articoli dei dati legati al vino: grado, annata, Volume bottiglie ecc.
+* Tutti i documenti di Business Central sono stati implementati con la quantità in litri e la quantità in kilogrammi.
+* Gestione dei trattamenti vino che permettono una rapida e controllata gestione delle operazioni di cantina.   
+* Gestione degli ordini di imbottigliamento e dei contrassegni di stato (fascette DOCG).
+* Gestione assegnazioni (utilizzata per riservare bottiglie costose).
+* Gestione formato del nr. lotto.
 
-* Gestione delle operazioni di imbottigliamento con la Distinta Base di produzione: vino, etichette, bottiglie, etc.
-
-* Funzionalit� di Assegnazione bottiglie, utilizzata per riservare bottiglie costose
