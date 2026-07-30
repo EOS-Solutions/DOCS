@@ -1,5 +1,9 @@
-* Manage wine treatments and all winery operations: cutting, transfer, sweetening etc.
+Le principali funzionalità sono:
+ 
+* Manages wine-specific item data, including alcohol content, year, bottle volume, and other wine-related characteristics.
+* All Business Central documents have been extended to include quantities expressed in both liters and kilograms, ensuring accurate management and traceability of wine products.
+* Enables the management of wine treatments, ensuring fast, controlled, and fully traceable execution of winery operations.   
+* Enables the management of bottling orders and official DOCG control seals, including allocation, tracking, and reconciliation with bottling activities.
+* Assignment Management (reservation of expensive wine bottles).
+* Lot Number Format Management.
 
-* Perform bottling operations with the production BOM: wine, labels, bottles etc.
-
-* Wine bottles assignment as a reservation for expensive wine bottles
