@@ -1,25 +1,45 @@
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000649-0/3wine-base-ITA.jpg"><br>
+**Per gli articoli che prendono parte alla gestione del Vino è importante sottolineare:**
+* **E' obbligatoria la gestione con attiva la tracciabilità a lotti.**
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000649-0/4wine-base-ITA.jpg"><br>
+L'anagrafica articolo è stata estesa con i seguenti principali campi:
 
-La Scheda articolo include:
+**Campi Principali:**
 
-* Grado alcolico, Anno, Zuccheri, Volume Bottiglia etc..
+| Campo | Descrizione e Comportamento |
+|-------|--------------------------------------------------------------------------------------|
+| **Vino** | |
+| **Tipo Vino** | Può assumere i valori: Vino Imbottigliato, Vino Sfuso, Uva, Altro, ' ' (vuoto). il campo è usato operativamente per: 1. **Propagare la vasca** sui componenti degli ordini di produzione (solo articoli "vino") 2. **Determinare se un articolo è soggetto a gestione SIAN** (se vuoto → escluso) 3. **Classificare l'articolo nelle tabelle Accise (EX082) e nelle operazioni/registri SIAN (EX083)**. |
+| **Anno** | Annata dell'articolo. Il campo Anno è puramente **informativo/classificatorio**. Viene copiato dall'anagrafica articolo nelle strutture SIAN (EX083) quando si inizializzano gli attributi dell'articolo. |
+| **Alcool** | Grado alcolico dell'articolo. A differenza di Anno e Tipo Vino, il campo Alcool è **propagato attivamente** dall'anagrafica articolo a tutte le righe documento (vendita, acquisto, produzione, assemblaggio, trasferimento), ai movimenti contabili articolo, ai documenti registrati, e viene usato come valore di default per il grado alcolico nelle operazioni SIAN (EX083). |
+| **Zuccheri g/Kg** | Specifica il contenuto di zuccheri dell'articolo. Il campo Zuccheri g/Kg segue lo stesso schema di propagazione dell'Alcool (Item → righe documento → Item Journal → documenti registrati), ma in più viene **salvato sulla scheda lotto** sia alla creazione del lotto, sia alla registrazione (produzione e riclassificazione), ed è utilizzato nel contesto dei **trattamenti enologici** per tracciare la concentrazione zuccherina del prodotto risultante. |
+| **% IGP** | Specifica la percentuale IGP dell'articolo. Il campo % IGP ha un ruolo nella **tracciabilità del lotto** e nella **gestione SIAN** (EX083): 1. Viene propagato dall'articolo ai lotti durante la registrazione 2. Viene copiato sulle righe di produzione e componenti 3. Viene usato attivamente dalla logica SIAN per popolare le righe operazione con la percentuale IGP associata a ciascun movimento 4. Può essere sovrascitto a livello di lotto specifico (il lotto ha precedenza sull'articolo nelle righe di produzione). |
+| **Volume Bottiglia** | Volume in litri della bottiglia. Il campo Volume Bottiglia non viene propagato su righe documento come Alcool o Zuccheri. Il suo uso principale è **nel report di creazione delle comunicazioni di interscambio con le Dogane (Accise - EX082)**, dove serve a determinare quanti colli corrispondono a un dato quantitativo in litri e qual è la capacità nominale di ciascun collo. È un campo obbligatorio in quel contesto. |
+| **Cod. Categoria Vino** | Il campo Cod. Categoria Vino è **puramente informativo e derivato**. Non viene usato in alcuna logica di calcolo o validazione. Il valore è impostato sulla Categoria Articolo e l'articolo lo visualizza in sola lettura tramite FlowField (campo calcolato). |
+| **Cod. Colore Vino** | Il campo Cod. Colore Vino è derivato dalla Categoria Articolo. Rispetto al Cod. Categoria Vino, ha un utilizzo aggiuntivo: viene **copiato negli attributi SIAN** dell'articolo come valore "Colore" durante l'inizializzazione della scheda attributi SIAN (EX083). |
+| **Area di coltivazione Vino** | Comportamento identico al Cod. Colore Vino. Il campo è derivato dalla Categoria Articolo e, oltre all'esposizione UI, viene **copiato negli attributi SIAN** dell'articolo come "Codice Vigna" durante l'inizializzazione della scheda attributi SIAN (EX083). |
+| **Tracciabilità Articolo** | |
+| **Formula Nr. Lotto** | Il campo Formula Nr. Lotto è un'**alternativa alla serie numerica standard** per la generazione dei numeri di lotto. Nel comporre la formula si possono usare: DD = Giorno, DDD = Giorno Giuliano, WW = Settimana, MM = Mese, Y = Ultima cifra dell'anno, YY = Ultime due cifre dell'anno, YYYY = anno, HH = Ora, mm = Minuto. Quando valorizzato: 1. Impedisce l'uso della serie numerica lotto standard (e viceversa) 2. Viene usato in tutti i punti dove si genera un nuovo lotto (Item Tracking Lines, trattamenti enologici, vinificazione) per decodificare la formula e produrre automaticamente il numero lotto.  |
 
-* � obbligatorio utilizzare la Tracciabilit� Articolo EOS.
 
-* Il campo Formula Nr. Lotto consente il calcolo del numero lotto:
+E' importante anche gestire in modo corretto i campi:
+* **Peso Lordo**
+* **Peso Netto**
+* **Volume Unitario**
 
-	- DD = Day
+In particolare **Peso netto** e **Volume unitario** si utilizzano per il calcolo della quantità in Kg e la quantità in litri presente nei documenti.
 
-	- DDD = Julian Day
+Ad esempio se l'articolo è una bottiglia di vino da 0,75 i campi si dovrebbero valorizzare come segue:
+* **Peso Lordo = 1** (supponendo che la bottiglia pesi 0,25).
+* **Peso Netto = 0,75** 
+* **Volume Unitario = 0,75**
 
-	- MM = Month
+Se l'articolo è un vino sfuso i campi si dovrebbero valorizzare come segue:
+* **Peso Lordo = 1** 
+* **Peso Netto = 1** 
+* **Volume Unitario = 1**
 
-	- WW = Week
+Se l'articolo è un uva (in generale per tutti gli articoli gestiti solo a KG) i campi si dovrebbero valorizzare come segue:
+* **Peso Lordo = 1** 
+* **Peso Netto = 1** 
+* **Volume Unitario = 0**
 
-	- Y = Year
-
-	- HH = Hour
-
-	- MI = Minutes
