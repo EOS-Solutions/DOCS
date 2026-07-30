@@ -1,0 +1,22 @@
+The EOS Wine Base (EWI) app enables users to:
+
+-   Manages wine-specific item data, including alcohol content, year, bottle volume, and other wine-related attributes.
+-   All Business Central documents have been extended to include quantities expressed in both liters and kilograms.
+-   Provides wine treatment management functionality to support efficient, traceable, and controlled winery operations.
+-   Management of bottling orders.
+-   Assignment Management.
+
+**Additional Apps**        
+
+-   **EOS WINE SIAN** llows Business Central users to manage all information required for the correct transmission of company wine register data to SIAN in an integrated manner. 	
+-   **EOS WINE Excise Duty** Provides comprehensive excise management, including automatic e-AD issuance and transmission, handling of sent and received e-AD electronic flows, and generation of data files for electronic excise duty reporting.
+-   **EOS WINE Deliveries and Vinification** Enables the management of grape deliveries, vinification bills of materials, and the complete vinification process.
+
+<br>
+**App/Funzionalità non supportate**
+
+-   Combine Warehouse Shipment (CWS) 
+-   Dual unit of measure (DUM)
+
+<br>
+<br>
