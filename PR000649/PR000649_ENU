@@ -1,25 +1,45 @@
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000649-0/2wine-base-ENU.jpg"><br>
+**For items participating in wine management, it is important to note that:**
+* **Lot tracking is mandatory.**
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000649-0/3wine-base-ENU.jpg"><br>
+The Item Card has been extended with the following main fields:
 
-The Item Card includes:
+**Main Fields:**
 
-* Alcohol degree, Year, Sugar, Bottle Volume etc..
+| Field | Description |
+|-------|--------------------------------------------------------------------------------------|
+| **Wine** | |
+| **Wine Type** | Can take the following values: Wine Bottled, Wine Loose, Grape, Other, or blank.
+This field is operationally used to: 1. **Propagate the tank** assignment to production order components (wine items only). 2. **Determine whether an item is subject to SIAN management** (if the field is blank, the item is excluded). 3. **Classify the item in Excise Duty tables (EX082) and in SIAN operations and registers (EX083)**. |
+| **Year** | Year of the wine. The Year field is used **for informational and classification purposes only**. It is copied from the Item Card to the SIAN data structures (EX083) when the item attributes are initialized. |
+| **Alcohol** | Specifies the alcohol content of the wine. Unlike the Year and Wine Type fields, the Alcohol Content field is **actively propagated** from the Item Card to all document lines (sales, purchase, production, blending, and transfer), item ledger entries, and posted documents. It is also used as the default alcohol strength value for SIAN operations (EX083). |
+| **Sugar g/Kg** | Specifies the sugar content of the item. The Sugars (g/kg) field follows the same propagation model as the Alcohol Content field (Item → Document Lines → Item Journal → Posted Documents). In addition, **it is stored on the Lot Information Card** both when the lot is created and when transactions are posted (production and reclassification). The field is also used within **wine treatment** processes to track the sugar concentration of the resulting product. |
+| **IGP %** | Specifies the item's IGP (GPI) percentage. The IGP % field plays a key role in both **lot traceability** and **SIAN management** (EX083): 1. It is propagated from the item to the related lots during posting. 2. It is copied to production order lines and production components. 3. It is actively used by the SIAN logic to populate operation lines with the PGI percentage associated with each transaction. 4. It can be overridden at the individual lot level. In production processes, the value defined on the lot takes precedence over the value defined on the item. |
+| **Bottle Volume** | Specifies the bottle volume in liters. The Bottle Volume field is not propagated to document lines like Alcohol Content or Sugars. Its primary purpose is within the **Excise Duty (EX082) Customs Exchange Communication report**, where it is used to determine the number of packages corresponding to a given quantity in liters and the nominal capacity of each package. This field is mandatory in that context. |
+| **Wine Category Code** | The Wine Category Code field is **purely informational and derived**. It is not used in any calculation or validation logic. The value is defined on the Item Category, and the item displays it as a read-only FlowField (calculated field). |
+| **Wine Color Code** | he Wine Color Code field is derived from the Item Category. Unlike the Wine Category Code, it has an additional purpose: it is **copied to the item's SIAN Attributes** as the Color value when the SIAN Attribute Card (EX083) is initialized. |
+| **Wine Growing Area Code** | The behavior is identical to the Wine Color Code field. The field is derived from the Item Category and, in addition to being displayed in the user interface, it is **copied to the item's SIAN Attributes** as the Vineyard Code during the initialization of the SIAN Attribute Card (EX083). |
+| **Item Tracking** | |
+| **Lot No. Formula** | The Lot No. Formula field **provides an alternative to the standard number series** for generating lot numbers. When defining the formula, the following placeholders can be used: DD = Day, DDD = Julian Day, WW = Week, MM = Month, Y = Last digit of the year, YY = Last 2 digit of the Year, YYYY = Year, HH = Hour, MM = Minute. When populated, this field: 1. Prevents the use of the standard lot number series (and vice versa). 2. Is used wherever a new lot number is generated (Item Tracking Lines, Wine Treatments, and Vinification) to interpret the formula and automatically generate the lot number. |
 
-* Using EOS Wine Item Tracking Code is mandatory.
+It is also important to properly manage the following fields:
+* **Gross Weight**
+* **Net Weight**
+* **Unit Volume**
 
-* Lot No. Formula. This field allows the Lot No. Calculation:
+In particular, the **Net Weight** and **Unit Volume** fields are used to calculate the quantities in kilograms and liters reported on documents.
 
-	- DD = Day
+For example, if the item represents a 0.75-liter wine bottle, these fields should be configured as follows:
+* **Gross Weight = 1** (Assuming that the bottle weighs 0.25 kg).
+* **Net Weight = 0,75** 
+* **Unit Volume = 0,75**
 
-	- DDD = Julian Day
+If the item represents a loose wine product, the fields should be configured as follows::
+* **Gross Weight = 1** 
+* **Net Weight = 1** 
+* **Unit Volume = 1**
 
-	- MM = Month
+If the item represents grapes (or, more generally, any item managed exclusively in kilograms), the fields should be configured as follows:
+* **Gross Weight = 1** 
+* **Net Weight = 1** 
+* **Unit Volume = 0**
 
-	- WW = Week
-
-	- Y = Year
-	
-	- HH = Hour
-
-	- MI = Minutes
