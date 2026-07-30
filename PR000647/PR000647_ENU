@@ -1,8 +1,16 @@
-Open the (EWI) Wine Setup to enable the app.
+**Functional Purpose:**
+Centralized setup page for the entire **Wine Base** features. It enables users to define setup parameters, number series, routing, and batches required for the posting of wine treatment journals.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000647-0/8wine-base-ENU.jpg"><br>
+**Main Fields:**
 
-| Tab | Description |
-| --- | --- |
-| Numbering | Fill in the Numbering Tab in order to assign serial numbers |
-| Wine Treatments | Define Batches to post wine treatments |
+| Field | Description |
+|-------|--------------------------------------------------------------------------------------|
+| **Wine App Enabled** | Primary field used to enable or disable the entire app. This field must be enabled for all Wine Base functionalities to operate correctly. |
+| **Quantity Conversion Rounding Precision** | Defines the quantity rounding precision used during conversions from the base unit of measure to liters/kg. Example: 1 = round to a whole number, 0.01 = round to 2 decimal places, 0.001 = round to 3 decimal places. |
+| **Wine Treatment Routing No.** | Standard certified routing used as the template for all wine treatments. The routing must have the Certified status and contains the standard operations and routing steps required for processing. This field is mandatory to execute wine treatment operations. |
+| **Prod. Cost Work Center No.** | Identifies the Work Center used to track and record production costs for treatment processes as additional operations. Required for posting. |
+| **Output Jnl. Template Name** | Specifies the template used for posting the Output entries of items produced through treatment processes. Required. |
+| **Output Jnl. Batch Name** | Specifies the batch used for posting the Output entries of items produced through treatment processes. Required. |
+| **Consumption Jnl. Template Name** | Specifies the template used for posting the Consumption entries of items consumed by treatment processes. Required. |
+| **Consumption Jnl. Batch Name** | Specifies the batch used for posting the Consumption entries of items consumed by treatment processes. Required. |
+| **Wine Treatment No. Series** | Specifies the No. Series used to automatically generate Wine Treatment records. Required. |
