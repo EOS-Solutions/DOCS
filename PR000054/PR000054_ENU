@@ -10,6 +10,7 @@ The EOS Wine Base (EWI) app enables users to:
 
 -   **EOS WINE SIAN** llows Business Central users to manage all information required for the correct transmission of company wine register data to SIAN in an integrated manner. 	
 -   **EOS WINE Excise Duty** Provides comprehensive excise management, including automatic e-AD issuance and transmission, handling of sent and received e-AD electronic flows, and generation of data files for electronic excise duty reporting.
+-   **EOS FOOD Deliveries** Enables end-to-end management of product deliveries from lands to the company through land mapping, purchase order processing, and product receipt management.
 -   **EOS WINE Deliveries and Vinification** Enables the management of grape deliveries, vinification bills of materials, and the complete vinification process.
 
 <br>
