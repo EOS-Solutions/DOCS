@@ -1,8 +1,16 @@
-Aprire la pagina (EWI) Wine Setup per abilitare l'app.
+**Scopo Funzionale:**
+Pagina di configurazione centralizzata per l'intera applicazione Wine Base. Consente di definire i parametri operativi, le numerazioni, i cicli e i batch necessari per le registrazioni dei trattamenti vino.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000647-0/2wine-base-ITA.jpg"><br>
+**Campi Principali:**
 
-| Tab | Descrizione |
-| --- | --- |
-| Numerazione | Compilare il tab Numerazione per poter assegnare numeri di serie |
-| Trattamenti Vino | Definire i batch registrazione relativi ai trattamenti vino |
+| Campo | Descrizione e Comportamento |
+|-------|--------------------------------------------------------------------------------------|
+| **Attivazione App Vino** | Flag principale di attivazione/disattivazione dell'intera applicazione. Obbligatorio per il funzionamento di tutte le funzionalità Wine. |
+| **Precisione Arrotondamento Quantità** | Definisce la precisione per l'arrotondamento delle quantità durante le conversioni da unità base a litri/kg. Esempio: 1 = arrotonda all'intero, 0.01 = arrotonda a 2 decimali, 0.001 = arrotonda a 3 decimali. |
+| **Nr. Ciclo trattamento Vino** | Ciclo certificato standard utilizzato come template per tutti i trattamenti vino. Il ciclo deve avere stato "Certificato" e contiene le operazioni e fasi di lavorazione standard. Obbligatorio per poter eseguire trattamenti. |
+| **Centro di lavoro costi di produzione** | Identifica il centro di lavoro utilizzato per tracciare e registrare i costi di produzione dei trattamenti come operazioni aggiuntive. Obbligatorio per posting. |
+| **Def. Reg. Magazzino Output** | Specifica il template utilizzato per le registrazioni di "Output" degli articoli prodotti dai trattamenti. Obbligatorio. |
+| **Batch Registrazioni Magazzino Output** | Specifica il batch utilizzato per le registrazioni di "Output" degli articoli prodotti dai trattamenti. Obbligatorio. |
+| **Def. Reg. Magazzino Consumi** | Specifica il template utilizzato per le registrazioni dei "Consumo" degli articoli consumati dai trattamenti. Obbligatorio. |
+| **Batch Registrazioni Magazzino Consumi** | Specifica il batch utilizzato per le registrazioni di "Consumo"degli articoli consumati dai trattamenti. Obbligatorio. |
+| **Nr. Serie Trattamento Vino** | Nr. di serie utilizzato per generare automaticamente i trattamenti vino. Obbligatorio. |
