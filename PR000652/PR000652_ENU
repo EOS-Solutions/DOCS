@@ -1,5 +1,60 @@
-Wine treatments are used to make easier for the user winery operations, such as: sweetening, pressing, sparkling wine making, etc.. Wine treatments are stored in a standard production order table.
+**Wine Treatments**
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000652-0/4wine-base-ENU.jpg"><br>
+Wine treatments allow enological transformations to be recorded as dedicated production documents. They consume one or more lots/components and generate one or more output items (wines or derivatives), while maintaining traceability of location, tank, lot, analytical parameters, and costs.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000652-0/5wine-base-ENU.jpg"><br>
+The menu entries related to wine treatments are:
+
+| Name | Functionality |
+|---|---|
+| **(EWI) New Wine Treatment** | Starts the creation of a wine treatment by selecting the reason code, number series, routing, location, and posting date. |
+| **(EWI) Released Wine Treatments** | List of active treatments. Allows users to open, modify, create a new treatment, and change its status. |
+| **(EWI) Finished Wine Treatments** | Inquiry page for completed treatments, with access to details and generated entries. |
+<br>
+
+**Required Setup**
+
+| Area | Configuration |
+|---|---|
+| Activation | Enable `Wine App Enabled` in the Wine Setup. |
+| Numbering | Configure a number series for wine treatments. |
+| Production Routing | Define a default certified routing for wine treatments. |
+| Costs | Configure a work center with a specific unit cost. |
+| Posting | Configure separate journal templates and batches for outputs and consumptions. |
+| Reason Codes | Create reason codes enabled for wine treatments; for each one, it is possible to define a number series, routing, and multi-output flag. |
+| Warehouse | Configure locations and, if required, bins. Items and components must have sufficient availability. |
+| Traceability | For lot-tracked items, configure item tracking and, optionally, a number series/formula for lot generation. |
+| Wine Master Data | Configure tanks and the required enological attributes. |
+<br>
+
+**Operational Flow**
+
+1. The user starts **"New Wine Treatment"** and specifies the reason code, date, location, optional bin, numbering, and routing.
+2. The system creates a production order in **Released** status, identified as a wine treatment.
+3. The user enters:
+   - the resulting item (wine, must, or derivative), quantity, unit of measure, tank, and lot;
+   - consumed components or wines, including quantities and lots;
+   - analytical data: sugar content, base/potential/final alcohol content, and IGP percentage;
+   - references to external documents, dates, and dimensions.
+4. It is possible to calculate the output quantity from the sum of the components or, in multi-output treatments, calculate consumption from the sum of the outputs.
+5. When the treatment is posted, the system records outputs and consumptions through the configured journals and transfers enological and certification data to the produced lot.
+6. The treatment status changes to **Finished** and remains available for consultation together with item entries, capacity entries, value entries, and warehouse entries.
+
+**Standard and Multi-Output Treatments**
+
+- **Standard:** one or more components are transformed into a single resulting wine/product.
+- **Multi-output:** the same consumption can produce multiple resulting wines, each with its own quantity, lot, tank, enological parameters, and production cost allocation percentage. The sum of the allocation percentages cannot exceed 100%.
+- The treatment type is defined in the reason code table through the **Wine Treatment Multi Output** field.
+
+**Main Controls**
+
+- Reason code, location, and posting date are mandatory.
+- If the location requires a bin, the bin is mandatory.
+- The lot number is mandatory when the item requires specific lot tracking and it is not already managed through reservation entries.
+- Before posting, the system verifies component availability, including lot and bin availability.
+- A treatment cannot be posted more than once.
+- Reversal is allowed only if the outputs have not already been used or consumed in subsequent transactions.
+
+**SIAN and Vinification Integration**
+
+With the SIAN app, treatment lines can manage **enological practices**, **Wine Growing Zones**, and **SIAN operational product codes**. This information is retained on the output lot. Within vinification processes, linked treatments are monitored, and the vinification process can be closed once all related treatments have been posted.
+
