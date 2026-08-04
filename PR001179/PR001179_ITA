@@ -1,0 +1,41 @@
+La compilazione del campo causale è molto importante per le app della suite Wine.
+La tabella standard **Causali** viene estesa dall'app **EOS WINE** (EX080), con dei parametri operativi del trattamento, e dall'app  **EOS WINE SIAN** (EX083) con dei parametri di tracciabilità telematica ICQRF/SIAN. 
+
+### 1. Campi aggiunti da EOS WINE (EX080)
+
+| Campo | Utilizzo funzionale |
+|---|---|
+| Trattamento Vino | Abilita la causale all'uso nei trattamenti vino. Funge da filtro: nella creazione e nei collegamenti del trattamento sono selezionabili solo le causali con questo flag attivo. È anche la condizione che rende visibili gli altri campi Wine sulla scheda Causali. |
+| Trattamento Vino con Output Multiplo | Indica che il trattamento genera più prodotti in uscita dalla stessa massa. Se attivo, il trattamento nasce come ordine di tipo "Famiglia" con pagina multi-output; se spento, si crea un trattamento a singolo output. |
+| Nr. Serie Trattamento Vino | Serie numerica specifica assegnata ai trattamenti creati con questa causale. Prevale sulla serie di default definita nel Wine Setup. |
+| Nr. Ciclo Trattamento Vino | Ciclo di produzione (solo cicli Certificati) proposto per il trattamento di questa causale. Prevale sul ciclo di default del Setup Vino. |
+
+**Uso operativo:** selezionando la causale in "Nuovo trattamento vino", il sistema precompila serie numerica e ciclo, e decide se aprire la scheda standard o quella multi-output.
+<br>
+
+### 2. Campi aggiunti da EOS WINE SIAN (EX083)
+
+| Campo | Utilizzo funzionale |
+|---|---|
+| Tipo Operazione SIAN Carico | Tipo di operazione SIAN (es. ARMC, IMBO, TAGL, SVIN…) associato ai movimenti di carico (positivi). Alla registrazione di un movimento positivo determina l'operazione con cui alimentare il registro SIAN. |
+| Tipo operazione scarico SIAN | Analogo al precedente per i movimenti di scarico (negativi). È usato anche come filtro nei lookup del numero prodotto operazione sugli output/componenti del trattamento. |
+| Data Scadenza Carico | Formula di scadenza applicata all'operazione di carico: calcola la data di scadenza della riga di registro SIAN a partire dalla data di registrazione. |
+| Data Scadenza SIAN Scarico | Come sopra, per l'operazione di scarico. |
+| SIAN pratica enologica | Pratica enologica di default (tabella SIAN "Enological Practices"). Sui trattamenti/output di carico (diversi da IMBO) viene propagata al lotto prodotto insieme alle pratiche ereditate dai componenti, salvo automazione disattivata nel SIAN Setup. |
+| Esonero Deroga | Codice di esenzione/deroga (tabella SIAN "Derogation Obligation") riportato nell'operazione del registro SIAN generata dal movimento. |
+| Controllo categorie SIAN | Se attivo, salta il controllo di categoria ammessa per l'operazione durante la trasmissione al web service SIAN. |
+| Data Scadenza SIAN | Campo di scadenza generico esposto sulla scheda Causali. Nella logica corrente la scadenza effettiva è gestita dai campi Carico/Scarico dedicati; è quindi un parametro residuale/di riferimento. |
+<br>
+
+**Nota di convenzione (SIAN):** il controllo di categoria ricerca una causale il cui codice coincide con il nome dell'operazione (es. causale "IMBO"); su quella causale il flag "Controllo categorie SIAN" disattiva la verifica. È buona prassi allineare i codici causale ai codici operazione SIAN gestiti.
+
+Il Tipo operazione SIAN carico e il Tipo operazione SIAN scarico concidono per tutte le causali di trattamento vino e per la causale di imbottigliamento (IMBO). Fanno eccezione le causali CASD (Acquisto) e USSD (Vendita) dove si deve impostare CASD sul tipo operazione SIAN Carico e USSD sul Tipo operazione SIAN scarico (in entrambe).  
+
+### 3. Indicazioni di setup
+
+- Abilitare "App Vino Abilitata" nel Setup Vino per rendere operativi e visibili i campi Wine/SIAN sulle causali.
+- Per ogni tipologia di trattamento, creare una causale con "Trattamento Vino" = Sì e valorizzare, dove serve, serie numerica, ciclo e flag output multiplo.
+- Per la tracciabilità SIAN, valorizzare almeno il tipo operazione (Carico/Scarico) e, se previsto, pratica enologica, esonero deroga e formule di scadenza.
+- Popolare preventivamente le tabelle SIAN "Pratiche enologiche" e "Obbligo deroga".
+
+
