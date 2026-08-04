@@ -1,5 +1,60 @@
-I trattamenti vino sono utilizzati per facilitare all�utente le operazioni, come ad esempio: dolcificazione, pigiatura, elaborazione di vini frizzanti, ecc. I trattamenti vino sono elencati in una tabella standard degli ordini di produzione.  
+**Trattamenti Vino**
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000652-0/5wine-base-ITA.jpg"><br>
+I trattamenti vino consentono di registrare trasformazioni enologiche come documenti produttivi dedicati: consumano uno o più lotti/componenti e generano uno o più articoli (vini o derivati) in uscita, mantenendo tracciabilità di ubicazione, vasca, lotto, parametri analitici e costi.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000652-0/6wine-base-ITA.png"><br>
+Le voci di menu relative ai trattamenti vino sono:
+
+| Nome | Funzionalità |
+|---|---|
+| **(EWI) Nuovo Trattamento Vino** | Avvia la creazione di un trattamento selezionando causale, numerazione, ciclo, ubicazione e data di registrazione. |
+| **(EWI) Trattamenti Vino Rilasciati** | Elenco dei trattamenti attivi. Consente di aprire, modificare, creare un nuovo trattamento e variarne lo stato. |
+| **(EWI) Trattamenti Vino Chiusi** | Consultazione dei trattamenti conclusi, con accesso al dettaglio e ai movimenti generati. |
+<br>
+
+**Setup necessario**
+
+| Area | Configurazione |
+|---|---|
+| Attivazione | Abilitare `App Vino Abilitata` nel Setup Vino. |
+| Numerazione | Configurare una serie numerica per i trattamenti. |
+| Ciclo produttivo | Definire un ciclo certificato predefinito per il trattamento. |
+| Costi | Configurare un centro di lavoro con costo unitario specifico. |
+| Registrazione | Configurare modello e batch di journal separati per output e consumi. |
+| Causali | Creare causali abilitate al trattamento; per ciascuna si possono definire serie numerica, ciclo e flag multi-output. |
+| Magazzino | Configurare ubicazioni e, se previsto, collocazioni. Articoli e componenti devono avere disponibilità sufficiente. |
+| Tracciabilità | Per gli articoli gestiti a lotto, configurare tracking e, facoltativamente, serie/formula per la generazione del lotto. |
+| Anagrafiche vino | Configurare vasche e le caratteristiche enologiche necessarie. |
+<br>
+
+**Flusso operativo**
+
+1. L’utente avvia “Nuovo trattamento vino” e indica causale, data, ubicazione, eventuale collocazione, numerazione e ciclo.
+2. Il sistema crea un ordine di produzione in stato **Rilasciato**, identificato come trattamento vino.
+3. L’utente inserisce:
+   - articolo (vino, mosti o derivati) ottenuto, quantità, unità di misura, serbatoio e lotto;
+   - componenti o vini in consumo, con quantità e lotti;
+   - dati analitici: zucchero, grado alcolico base/potenziale/finale e percentuale IGP;
+   - riferimenti a documento esterno, date e dimensioni.
+4. È possibile calcolare la quantità di output dalla somma dei componenti, oppure, nei trattamenti multi-output, calcolare il consumo dalla somma degli output.
+5. Con la registrazione il sistema registra output e consumi tramite i journal configurati e trasferisce i dati enologici e certificativi sul lotto prodotto.
+6. Il trattamento passa a **Finito** e rimane consultabile con movimenti articolo, movimenti capacità, movimenti valore e movimenti di magazzino.
+
+**Trattamento standard e multi-output**
+
+- **Standard:** uno o più componenti confluiscono in un singolo vino/prodotto risultante.
+- **Multi-output:** uno stesso consumo può produrre più vini risultanti, ciascuno con quantità, lotto, vasca, parametri enologici e percentuale di attribuzione del costo di produzione. La somma delle percentuali di attribuzione non può superare il 100%.
+- La tipologia di trattamento viene definita nella tabella delle causali tramite il campo **Trattamento VIno con Output Multiplo**
+
+**Controlli principali**
+
+- Causale, ubicazione e data iniziale sono obbligatorie.
+- Se l’ubicazione richiede la collocazione, quest’ultima è obbligatoria.
+- Il lotto è obbligatorio quando l’articolo richiede tracciabilità specifica e non è già gestito da righe di prenotazione.
+- Prima della registrazione il sistema verifica la disponibilità dei componenti, anche per lotto e collocazione.
+- Non è consentita una seconda registrazione dello stesso trattamento.
+- Lo storno è consentito solo se gli output non sono già stati impiegati o consumati in movimenti successivi.
+
+**Integrazione SIAN e vinificazione**
+
+Con l’app SIAN, sulle righe del trattamento sono gestibili le **pratiche enologiche**, la **zona viticola** e i codici prodotto operativi SIAN. Tali informazioni vengono mantenute sul lotto in uscita. Nei processi di vinificazione, i trattamenti collegati sono monitorati e la vinificazione può essere chiusa quando risultano tutti registrati.
+
