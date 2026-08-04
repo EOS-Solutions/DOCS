@@ -1,13 +1,75 @@
-SIAN � il Sistema Informativo Agricolo Nazionale e consente alle aziende del settore vitivinicolo, attraverso un sistema di comunicazione basato su Web Services, di trasmettere/consultare le informazioni relative ai registri enologici: operazioni enologiche, ingressi e uscite, trattamenti enologici, vinificazione ecc.
+SIAN è il Sistema Informativo Agricolo Nazionale e consente alle aziende del settore vitivinicolo, attraverso un sistema di comunicazione basato su Web Services, di trasmettere/consultare le informazioni relative ai registri enologici: operazioni enologiche, ingressi e uscite, trattamenti enologici, vinificazione ecc.
 
-Le informazioni principali sono:
+# Setup SIAN - Campi e utilizzi
 
-* Indirizzi dei servizi Web
+## Generale
 
-* Gruppo di numerazione che consente di definire le modalit� di gestione del codice articolo SIAN, che � costituito dal codice primario e dal codice secondario
+Parametri di comunicazione con i web service del SIAN. L'intero gruppo e disponibile solo quando la sottoscrizione dell'app e attiva.
 
-* Ambiente di produzione SIAN e ambiente di test
+| Campo | Utilizzo |
+|---|---|
+| Indirizzo connessione asincrona live | Indirizzo del WSDL asincrono di produzione. L'app usa questo indirizzo per le chiamate asincrone (invio operazioni che il SIAN elabora in differita) quando la credenziale ICQRF selezionata **non** è marcata come test. Viene precompilato dall'azione `Imposta valori WS Default`. |
+| Percorso richiesta asincrona live | Path del servizio asincrono di produzione, abbinato all'indirizzo precedente. Viene passato al client SOAP come endpoint effettivo della richiesta asincrona in ambiente live. Precompilato da `Imposta valori WS Default`. |
+| Indirizzo connessione asincrona di test | Indirizzo del WSDL asincrono dell'ambiente di collaudo SIAN. La stessa codeunit lo utilizza al posto del live quando la credenziale ICQRF è in modalita test, permettendo di provare gli invii senza impatti reali. Precompilato da `Imposta valori WS Default`. |
+| Percorso richiesta asincrona di test | Path del servizio asincrono di collaudo, usato insieme all'indirizzo di test per instradare le richieste asincrone verso l'ambiente di prova. Precompilato da `Imposta valori WS Default`. |
+| Indirizzo connessione sincrona live | Indirizzo del WSDL sincrono di produzione. Viene usato dalla codeunit di comunicazione per le chiamate sincrone (operazioni con risposta immediata) quando si opera con credenziale non di test. Precompilato da `Imposta valori WS Default`. |
+| Percorso richiesta sincrona live | Path del servizio sincrono di produzione, abbinato all'indirizzo sincrono live per comporre l'endpoint della chiamata. Precompilato da `Imposta valori WS Default`. |
+| Indirizzo connessione sincrona di test | Indirizzo del WSDL sincrono dell'ambiente di collaudo, usato al posto del live per le chiamate sincrone quando la credenziale e in modalita test. Precompilato da `Imposta valori WS Default`. |
+| Percorso richiesta sincrona di test | Path del servizio sincrono di collaudo, usato con l'indirizzo di test per instradare le chiamate sincrone verso l'ambiente di prova. Precompilato da `Imposta valori WS Default`. |
+| Busta SOAP | Header SOAP completo, ottenuto concatenando i tre frammenti tecnici (`SOAP Envelope 1/2/3`) tramite l'azione `Imposta valori WS Default`. Definisce i namespace di autenticazione e del registro vini richiesti dal SIAN. Nel codice attuale viene composto e mostrato, ma non risulta riletto direttamente nella costruzione dei messaggi. |
+| Abilita log Web Service | Attiva la tracciatura dei messaggi scambiati con il SIAN utile per attività di debug o verifica dei dati. |
 
-* Web Service Log: consente il controllo dei dati trasmessi al SIAN
+## Numerazione
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000121-0/14wine-sian-ITA.jpg"><br>
+Definisce come vengono generati i due codici che identificano gli attributi SIAN di un articolo (codice primario e secondario). La combinazione guidata pilota i tipi, che a loro volta determinano quali campi di dettaglio sono attivi.
+
+| Campo | Utilizzo |
+|---|---|
+| Combinazione numerazione SIAN | Selettore guidato della strategia di numerazione. Alla modifica nella pagina imposta automaticamente il tipo di codice primario e secondario secondo l'abbinamento scelto (es. serie numerica + valore fisso), evitando configurazioni incoerenti dei due tipi. |
+| Tipo codice SIAN primario | Determina la modalita di generazione del codice primario dell'attributo: valore fisso, serie numerica oppure categoria SIAN dell'articolo. Alla creazione di un attributo guida quale sorgente usare; e validato in coppia con il tipo secondario affinche una sola delle due parti usi una serie numerica. |
+| Serie numerica attributi articolo primaria | Serie numeri usata per assegnare il codice primario quando il tipo primario e "serie numerica". In fase di creazione dell'attributo il sistema verifica che la serie sia impostata e ne preleva il numero successivo. |
+| Codice attributi articolo primario | Valore fisso previsto per il codice primario quando il tipo primario e "valore fisso"; e verificato come obbligatorio. |
+| Tipo codice SIAN secondario | Determina la modalita di generazione del codice secondario dell'attributo: valore fisso, serie numerica o categoria SIAN. |
+| Serie numerica attributi articolo secondaria | Serie numeri usata per assegnare il codice secondario quando il tipo secondario e "serie numerica". In creazione l'attributo verifica la serie e ne preleva il numero successivo. |
+| Codice attributi articolo secondario | Valore fisso usato per il codice secondario quando il tipo secondario e "valore fisso". |
+
+## Unita di misura
+
+Codici di unita di misura che il modulo usa per riconoscere massa e volume e per convertire correttamente le quantita nelle registrazioni.
+
+| Campo | Utilizzo |
+|---|---|
+| Unita di misura chilogrammo | Identifica l'unita che rappresenta i chilogrammi. |
+| Unita di misura grammo | Identifica l'unita che rappresenta i grammi. |
+| Unita di misura litro | Identifica l'unita che rappresenta i litri. |
+
+## Valori predefiniti
+
+Valori applicati automaticamente dai processi quando non specificati puntualmente sui documenti o sugli articoli.
+
+| Campo | Utilizzo |
+|---|---|
+| Pratica enologica SIAN predefinita | Pratica enologica applicata di default dall'automazione. Si usa per impostare la pratica di default sui valori attributo quando ne manca una, mantenerla come unica pratica in caso di piu voci presenti, ed escluderla quando esiste gia una pratica specifica sul lotto. |
+| Stato fisico vino sfuso | Codice dello stato fisico SIAN che identifica il vino sfuso. |
+| Codice causale predefinito acquisti | Causale proposta automaticamente in testata: alla creazione di un ordine di acquisto, se il campo e valorizzato, l'app assegna questa causale al documento (la causale guida poi la classificazione dell'operazione SIAN in carico/scarico). |
+| Codice causale predefinito vendite | Analogo lato vendite: alla creazione di un ordine di vendita, se il campo e valorizzato, l'app imposta questa causale sul documento. |
+
+## Operazioni
+
+Impostazioni che governano la creazione automatica delle operazioni da inviare al registro SIAN.
+
+| Campo | Utilizzo |
+|---|---|
+| Inserimento automatico operazioni SIAN | Abilita la generazione automatica delle operazioni. Dopo l'inserimento di una movimentazione di magazzino, l'app crea il buffer dell'operazione SIAN solo se questo flag e attivo e se la movimentazione non è esclusa dal registro; se disattivo le operazioni vanno inserite manualmente. |
+
+## Opzioni
+
+Interruttori di comportamento che regolano automazioni e controlli del modulo.
+
+| Campo | Utilizzo |
+|---|---|
+| Salta automazione pratiche enologiche | Disattiva l'intera automazione delle pratiche enologiche. Quando e attivo, l'app non applica la pratica di default agli attributi ed esce senza aggiornare le informazioni di lotto dopo le registrazioni di magazzino. |
+| Numero massimo righe | Soglia massima di righe ammesse in una singola operazione SIAN. L'app superata la soglia, spezza l'operazione in piu documenti; alcuni tipi di operazione (es. PERD, AUCO, IMBO, DERI) forzano comunque una riga per documento. |
+| Ometti codice vasca in carico | Disabilita l'obbligo del codice vasca nelle operazioni di ricevimento. Quando manca il committente il controllo sulla vasca viene saltato solo se questo flag è attivo. |
+| Causale obbligatoria in registrazione | Rende la causale obbligatoria in fase di registrazione. La registrazione viene bloccata se la causale è vuota: sui documenti di vendita, di acquisto e sui movimenti di produzione, dove viene verificata la causale dell'ordine di produzione rilasciato. |
+
