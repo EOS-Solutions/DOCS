@@ -1,5 +1,79 @@
-The standard Released Production Order page contains bottling operations. The Wine Base app allows you to perform the wine ties management.
+In the winery, **bulk wine** (stored in tanks/vessels) can be transformed into a packaged finished product: bottles of a specific format, labeled and sealed, ready for sale. The **Bottling** operation must:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000653-0/6wine-base-ENU.jpg"><br>
+- withdraw (consume) a quantity of bulk wine from a specific lot/tank;
+- consume the required dry materials (empty bottles, corks, capsules, labels);
+- produce the bottled finished product in inventory, with its own lot number and inherited oenological properties (alcohol content, sugar content, IGP%);
+- maintain **traceability** between the incoming bulk wine and the outgoing bottles, including progressive bottle numbering (state ties/identification bands) for SIAN compliance purposes.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000653-0/7wine-base-ENU.jpg"><br>
+The standard Business Central process for transforming raw material into a finished product is the **Production Order**. Bottling is managed through the **standard Production Order** (Firm Planned / Released / Finished Production Order), **without** using *Wine Treatments*.
+
+The distinction is made through the **Reason Code** assigned to the order:
+
+- other enological treatments use reason codes with the *Wine Treatment* flag enabled (which routes them to the dedicated Wine Treatment pages);
+- bottling uses the **IMBO** reason code, **the only one without the *Wine Treatment* flag enabled**: therefore, the order remains a standard Production Order, managed through standard Business Central pages.
+
+On the bottling Production Order:
+
+- **Input (Components):** bulk wine + dry materials (bottles, corks, capsules, labels), managed as Production Order components. The bottle composition is managed through standard Production BOMs.
+- **Output (Product):** the finished bottled item, managed on the Production Order line.
+- **Lot Traceability:** inherited from components to output through Item Tracking.
+- **Tanks:** the app adds the fields *Output Tank Code* and *Component Tank Code* on the order to propagate tank information to production lines and components.
+- **Ties:** progressive ranges (From/To) recorded in the dedicated table and linked to the lot and Production Order. N.B. ties refer to the management of official government seals.
+- **SIAN Classification:** the reason code carries the SIAN operation type (*SIAN Op. Type Load/Unload*) set to **IMBO**, which governs the communication of the operation to the electronic register.
+
+This approach allows the reuse of all standard logistics processes (Item Ledger Entries, costs, capacity, warehouse management) without dedicated objects, while adding only wine-specific attributes, tanks, and state seals.
+
+## Operational Guide for Bottling Production Orders
+
+### 1 Prerequisites
+
+1. **Wine Setup** configured and wine app enabled (*Wine App Enabled*).
+2. **IMBO Reason Code** created with:
+   - *Wine Treatment* flag **disabled** (it is the only production reason code that keeps this flag disabled);
+   - *SIAN Op. Type Load / Unload* set to **IMBO** (for SIAN reporting);
+   - optional No. Series and configuration according to company procedures.
+3. **Items** properly configured: incoming bulk wine, outgoing finished bottle item (with *Bottle Volume*), dry materials, with Units of Measure and wine attributes populated; Production BOM and Routing configured for the finished item.
+4. **Bulk wine available in inventory** (stock available with lot tracking).
+
+### 2 Creating a Bottling Production Order
+
+**Path:** standard BC Production Management → *Released Production Orders* (or *Firm Planned Production Orders*), action **New**; alternatively generated through Planning/MRP.
+
+On the Production Order, define:
+
+| Field | Content |
+|---|---|
+| **Source Item No.** | The finished bottle item to be produced. |
+| **Quantity** | Number of bottles to be packaged. |
+| **Reason Code (EOS EX080 Reason Code)** | The **IMBO** reason code. |
+| **Output Tank Code** | Output tank. This field should not be populated for bottling. |
+| **Component Tank Code** | Bulk wine withdrawal tank (propagated to wine components). |
+| **Location Code / Bin Code** | Production location and bin code, if mandatory. |
+<br>
+
+After **refreshing the Production BOM**, the order is populated with the output line (bottled product) and the component lines (bulk wine + dry materials).
+
+### 3 Completing the Order
+
+On the **Production Order** and its related lines/components (extended standard pages):
+
+1. **Output** – verify the finished bottle item, quantity, Unit of Measure, and assign the outgoing **Lot No.** (Item Tracking).
+2. **Components** – verify the **bulk wine** (lot/withdrawal tank) and the **dry materials** with the quantities defined in the Production BOM.
+3. **Oenological Attributes** – verify alcohol content, sugar content (g/Kg), and IGP%, inherited from the items.
+4. **Ties** – register the progressive ranges (From/To) in the **Ties** page, accessible from the Item Tracking Lines and linked to the output lot. N.B. only if required by the specific type of bottled wine.
+<br>
+
+### 4 Posting and Finishing the Order
+
+- Post **component consumption** and **bottle output** using the standard production journals (*Consumption Journal* / *Output Journal*) or through combined posting.
+- Posting generates the ledger entries: **consumption** of bulk wine and dry materials, and **receipt** of the finished bottled products with lot tracking.
+- Change the order status to **Finished** using the standard BC status change process; the completed order remains available in *Finished Production Orders*.
+
+### 5 Corrections and Reversals
+
+- Corrections follow standard BC rules (reversing output/consumption entries, reworking the order until it reaches the Finished status).
+- After completion, any corrections also affect the related SIAN communication: coordinate the accounting reversal with the corresponding SIAN operation adjustment.
+
+### 6 SIAN Integration (EX083)
+
+With the SIAN app enabled, the **receipt** of the bottled product using a reason code whose *SIAN Op. Type Load* is set to **IMBO** generates a SIAN operation of type **IMBO**, which is then communicated to the electronic register using bottle numbering and Production Order lot traceability.
