@@ -1,5 +1,80 @@
-La pagina standard Ordini di produzione rilasciati contiene le operazioni di imbottigliamento. La app consente anche la Gestione Fascette.
+In cantina il vino sfuso (in vasca/serbatoio) può essere trasformato in prodotto finito confezionato: bottiglie di un dato formato, etichettate e tappate, pronte per la vendita. L'operazione di **imbottigliamento** deve:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000653-0/7wine-base-ITA.jpg"><br>
+- prelevare (consumare) una quantità di vino sfuso da uno specifico lotto/serbatoio;
+- consumare i materiali secchi necessari (bottiglie vuote, tappi, capsule, etichette);
+- produrre a magazzino il prodotto finito imbottigliato, con il proprio numero di lotto e le proprietà enologiche ereditate (grado alcolico, zuccheri, IGP%);
+- mantenere la **tracciabilità** tra vino sfuso in ingresso e bottiglie in uscita, inclusa la numerazione progressiva delle bottiglie (fascette/contrassegni) ai fini della compliance SIAN.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000653-0/8wine-base-ITA.jpg"><br>
+Il ciclo standard di Business Central per la trasformazione di materia in prodotto finito è l'**ordine di produzione**. Per l'imbottigliamento si utilizza proprio l'**ordine di produzione standard** (Firm Planned / Released / Finished Production Order), **senza** ricorrere ai *Trattamenti Vino*.
+
+La distinzione avviene tramite la **Causale (Reason Code)** valorizzata sull'ordine:
+
+- gli altri trattamenti enologici usano causali con il flag *Trattamento Vino* attivo (che li dirotta nelle liste dedicate dei Wine Treatment);
+- l'imbottigliamento usa la causale **IMBO**, **l'unica priva del flag *Trattamento Vino***: l'ordine resta quindi un ordine di produzione ordinario, gestito dalle pagine standard di BC.
+
+Sull'ordine di produzione di imbottigliamento:
+
+- **Input (componenti):** vino sfuso + materiali secchi (bottiglie, tappi, capsule, etichette), gestiti come componenti dell'ordine di produzione. La composizione della bottiglia viene gestita tramite le DB di produzione standard. 
+- **Output (prodotto):** l'articolo bottiglia finita, gestito sulla riga di produzione.
+- **Tracciabilità lotto:** ereditata dai componenti verso l'output tramite l'item tracking.
+- **Vasche:** l'app aggiunge sull'ordine i campi *Cod. Vasca Output* e *Cod. Vasca Componenti* per propagare il serbatoio a righe e componenti.
+- **Fascette:** intervalli progressivi (Da/A) registrati nell'apposita tabella e associati al lotto e all'ordine di produzione. N.B. per fascette siintende la gestione dei contrassegni di stato.
+- **Classificazione SIAN:** la causale porta il tipo operazione SIAN (*SIAN Op. Type Load/Unload*) impostato a **IMBO**, che governa la comunicazione dell'operazione al registro telematico.
+
+Questa scelta consente di riusare tutta la logistica standard (movimenti articolo, costi, capacità, magazzino) senza oggetti dedicati, aggiungendo solo gli attributi vitivinicoli, le vasche e le fascette.
+
+
+
+## Guida Operativa agli Ordini di Produzione di Imbottigliamento
+
+### 1 Prerequisiti
+
+1. **Setup Vino** configurato e app vino abilitata (*App Vino Abilitata*).
+2. **Causale IMBO** creata con:
+   - flag *Trattamento Vino* **NON** attivo (è l'unica causale di produzione a lasciarlo disattivo);
+   - *SIAN Op. Type Load / Unload* impostato a **IMBO** (per la comunicazione SIAN);
+   - eventuale serie numerica/uso secondo prassi aziendale.
+3. **Articoli** anagrafati: vino sfuso in ingresso, bottiglia finita in uscita (con *Volume Bottiglia*), materiali secchi, con UdM e attributi vino valorizzati; distinta base e ciclo dell'articolo finito impostati.
+4. **Vino sfuso disponibile** a magazzino (giacenza con lotto).
+
+### 2 Creazione dell'ordine di produzione di imbottigliamento
+
+**Percorso:** gestione produzione standard di BC – *Ordini di Produzione Rilasciati* (o *Pianificati Confermati*), azione **Nuovo**; in alternativa da pianificazione/MRP.
+
+Sull'ordine impostare:
+
+| Campo | Contenuto |
+|---|---|
+| **Articolo di origine** | La bottiglia finita da produrre. |
+| **Quantità** | Numero di bottiglie da confezionare. |
+| **Causale (EOS EX080 Reason Code)** | La causale **IMBO**. |
+| **Cod. Vasca Output** | Vasca di versamento in uscita. Da non valorizzare per l'imbottigliamento |
+| **Cod. Vasca Componenti** | Serbatoio di prelievo del vino sfuso (propagato ai componenti vino). |
+| **Cod. Ubicazione / Collocazione** | Ubicazione di lavorazione e collocazione se obbligatoria. |
+
+Con il **rifornimento/refresh** della distinta base l'ordine viene popolato con la riga di output (bottiglia) e i componenti (vino sfuso + materiali secchi).
+
+### 3 Compilazione dell'ordine
+
+Sull'**ordine di produzione** e relative righe/componenti (pagine standard estese):
+
+1. **Output** – verificare l'articolo bottiglia finita, quantità, UdM e assegnare il **Nr. Lotto** in uscita (item tracking).
+2. **Componenti** – verificare il **vino sfuso** (lotto/vasca di prelievo) e i **materiali secchi** con le quantità previste dalla distinta.
+3. **Attributi enologici** – controllare grado alcolico, zuccheri g/Kg, IGP%, ereditati dagli articoli.
+4. **Fascette** – registrare gli intervalli progressivi (Da/A) nella pagina **Fascette**, richiamabile dalle righe di tracciabilita articolo, collegata al lotto in uscita. N.B. se previste dalla tipologia di vino imbottigliato.
+
+### 4 Registrazione (consuntivazione) e fine ordine
+
+- Registrare **consumo** dei componenti e **output** delle bottiglie tramite i giornali di produzione standard (Consumption/Output Journal) o la registrazione combinata.
+- La registrazione genera i movimenti: **scarico** del vino sfuso e dei materiali, **carico** delle bottiglie finite con lotto.
+- Portare l'ordine a **Finished** con la modifica stato standard di BC; l'ordine chiuso è consultabile tra gli *Ordini di Produzione Finiti*.
+
+### 5 Rettifiche e storni
+
+- Le correzioni seguono le regole standard di BC (storno movimenti di output/consumo, rilavorazione dell'ordine finché non è Finished).
+- Dopo la chiusura, eventuali rettifiche impattano anche la relativa comunicazione SIAN: coordinare lo storno contabile con la rettifica dell'operazione SIAN.
+
+### 6 Integrazione SIAN (EX083)
+
+Con app SIAN attiva, il **carico** del prodotto imbottigliato con causale il cui *SIAN Op. Type Load* è **IMBO** genera l'operazione SIAN di tipo **IMBO**, che viene comunicata al registro telematico sfruttando la numerazione bottiglie e la tracciabilità lotto dell'ordine.
+
