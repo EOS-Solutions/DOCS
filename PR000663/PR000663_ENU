@@ -1,5 +1,34 @@
-* Register and transmit winery data to SIAN: items, tanks, vineyards, customers, vendors and operations
+The **EOS WINE SIAN (SIA)** app supports wineries in managing the data required for the oenological register and in communicating with the SIAN Web Services.
 
-* Manage the MVV-E Documents: MVV is the shipping document for some kind of wine items
+The main features are:
 
-* SIAN data linked to lot information: the SIAN data are color, physical state, enological practice etc.
+- configuration of SIAN connections in test and production environments;
+- management of credentials and ICQRF codes;
+- management of classification tables and SIAN coded data;
+- classification of items through SIAN attributes and primary/secondary codes;
+- management of SIAN subjects for the company, customers, vendors, carriers, tanks, vineyards and products;
+- creation and management of the operations to be transmitted to the register;
+- automatic generation of operations from inventory entries, when enabled;
+- control, submission, outcome retrieval, consultation, cancellation and reset of operations;
+- management of the MVV-E associated with sales shipments, transfers and returns;
+- acquisition and opening of the MVV-E PDF produced by SIAN;
+- logging of Web Service messages for control and support activities;
+- application of controls on BC posting processes, including the mandatory reason code when required by the setup.
+
+The app does not replace the standard ERP: it extends master data, documents and BC entries by adding the information needed for SIAN management.
+
+
+**Functional prerequisites**
+
+Before using the app the following must be available:
+
+- a properly configured BC company;
+- the items, units of measure, customers, vendors, locations and standard documents required by the business processes;
+- the wine-related data of the EOS WINE app, including tank data when used;
+- the ICQRF codes and credentials provided by the company;
+- valid SIAN endpoints and access parameters for the test or production environment;
+- up-to-date SIAN coded data, imported or maintained through the dedicated functions.
+
+**Application dependencies**
+
+The EX083 app depends on the EOS WINE apps and on the Common Data Layers used to share base data, shipment information and administrative functions. The availability of some functions also depends on the app subscription: when the subscription is not active, the SIAN pages are non-operational or have the functional groups disabled.
