@@ -1,0 +1,21 @@
+The **EOS WINE SIAN (SIA)** app supports wineries in managing the data required for the oenological register and in communicating with the SIAN Web Services.
+
+The main features are:
+
+- configuration of SIAN connections in test and production environments;
+- management of credentials and ICQRF codes;
+- management of classification tables and SIAN coded data;
+- classification of items through SIAN attributes and primary/secondary codes;
+- management of SIAN subjects for the company, customers, vendors, carriers, tanks, vineyards and products;
+- creation and management of the operations to be transmitted to the register;
+- automatic generation of operations from inventory entries, when enabled;
+- control, submission, outcome retrieval, consultation, cancellation and reset of operations;
+- management of the MVV-E associated with sales shipments, transfers and returns;
+- acquisition and opening of the MVV-E PDF produced by SIAN;
+- logging of Web Service messages for control and support activities;
+- application of controls on BC posting processes, including the mandatory reason code when required by the setup.
+
+The app does not replace the standard ERP: it extends master data, documents and BC entries by adding the information needed for SIAN management.
+
+
+**Using this app requires installation and active subscription of EOS Wine app**.
