@@ -8,16 +8,16 @@ Communication parameters for the SIAN web services. The whole group is available
 
 | Field | Usage |
 |---|---|
-| Live asynchronous connection address | Address of the production asynchronous WSDL. The app uses this address for asynchronous calls (submitting operations that SIAN processes in deferred mode) when the selected ICQRF credential is **not** flagged as test. It is pre-filled by the `Set default WS Info` action. |
-| Live asynchronous request path | Path of the production asynchronous service, paired with the address above. It is passed to the SOAP client as the actual endpoint of the asynchronous request in the live environment. Pre-filled by `Set default WS Info`. |
-| Test asynchronous connection address | Address of the asynchronous WSDL of the SIAN test environment. The same codeunit uses it instead of the live one when the ICQRF credential is in test mode, allowing submissions to be tested without real impact. Pre-filled by `Set default WS Info`. |
-| Test asynchronous request path | Path of the test asynchronous service, used together with the test address to route asynchronous requests to the test environment. Pre-filled by `Set default WS Info`. |
-| Live synchronous connection address | Address of the production synchronous WSDL. It is used by the communication codeunit for synchronous calls (operations with immediate response) when working with a non-test credential. Pre-filled by `Set default WS Info`. |
-| Live synchronous request path | Path of the production synchronous service, paired with the live synchronous address to build the call endpoint. Pre-filled by `Set default WS Info`. |
-| Test synchronous connection address | Address of the synchronous WSDL of the test environment, used instead of the live one for synchronous calls when the credential is in test mode. Pre-filled by `Set default WS Info`. |
-| Test synchronous request path | Path of the test synchronous service, used with the test address to route synchronous calls to the test environment. Pre-filled by `Set default WS Info`. |
+| Async. Conn. Address Live | Address of the production asynchronous WSDL. The app uses this address for asynchronous calls (submitting operations that SIAN processes in deferred mode) when the selected ICQRF credential is **not** flagged as test. It is pre-filled by the `Set default WS Info` action. |
+| Async. Conn. Request Live | Path of the production asynchronous service, paired with the address above. It is passed to the SOAP client as the actual endpoint of the asynchronous request in the live environment. Pre-filled by `Set default WS Info`. |
+| Async. Conn. Address Test | Address of the asynchronous WSDL of the SIAN test environment. The same codeunit uses it instead of the live one when the ICQRF credential is in test mode, allowing submissions to be tested without real impact. Pre-filled by `Set default WS Info`. |
+| Async. Conn. Request Test | Path of the test asynchronous service, used together with the test address to route asynchronous requests to the test environment. Pre-filled by `Set default WS Info`. |
+| Sync. Conn. Address Live | Address of the production synchronous WSDL. It is used by the communication codeunit for synchronous calls (operations with immediate response) when working with a non-test credential. Pre-filled by `Set default WS Info`. |
+| Sync. Conn. Request Live | Path of the production synchronous service, paired with the live synchronous address to build the call endpoint. Pre-filled by `Set default WS Info`. |
+| Sync. Conn. Address Test | Address of the synchronous WSDL of the test environment, used instead of the live one for synchronous calls when the credential is in test mode. Pre-filled by `Set default WS Info`. |
+| Sync. Conn. Request Test | Path of the test synchronous service, used with the test address to route synchronous calls to the test environment. Pre-filled by `Set default WS Info`. |
 | SOAP Envelope | Complete SOAP header, obtained by concatenating the three technical fragments (`SOAP Envelope 1/2/3`) through the `Set default WS Info` action. It defines the authentication and wine-register namespaces required by SIAN. In the current code it is composed and displayed, but it does not appear to be read back directly when building the messages. |
-| Enable Web Service log | Enables tracing of the messages exchanged with SIAN, useful for debugging activities or data verification. |
+| Enable WS Log | Enables tracing of the messages exchanged with SIAN, useful for debugging activities or data verification. |
 
 ## Numbering
 
@@ -26,12 +26,12 @@ Defines how the two codes that identify the SIAN attributes of an item (primary 
 | Field | Usage |
 |---|---|
 | SIAN numbering combination | Guided selector of the numbering strategy. When changed on the page, it automatically sets the primary and secondary code type according to the chosen combination (e.g. number series + fixed value), preventing inconsistent configurations of the two types. |
-| SIAN primary code type | Determines how the attribute's primary code is generated: fixed value, number series, or the item's SIAN category. When an attribute is created it drives which source to use; it is validated together with the secondary type so that only one of the two parts uses a number series. |
-| Primary item attributes number series | Number series used to assign the primary code when the primary type is "number series". When the attribute is created, the system checks that the series is set and takes the next number. |
-| Primary item attributes code | Fixed value expected for the primary code when the primary type is "fixed value"; it is checked as mandatory. |
-| SIAN secondary code type | Determines how the attribute's secondary code is generated: fixed value, number series, or SIAN category. |
-| Secondary item attributes number series | Number series used to assign the secondary code when the secondary type is "number series". When the attribute is created it checks the series and takes the next number. |
-| Secondary item attributes code | Fixed value used for the secondary code when the secondary type is "fixed value". |
+| SIAN Primary Code Type | Determines how the attribute's primary code is generated: fixed value, number series, or the item's SIAN category. When an attribute is created it drives which source to use; it is validated together with the secondary type so that only one of the two parts uses a number series. |
+| Item Attributes Primary Nos. | Number series used to assign the primary code when the primary type is "number series". When the attribute is created, the system checks that the series is set and takes the next number. |
+| Item Attributes Primary Code | Fixed value expected for the primary code when the primary type is "fixed value"; it is checked as mandatory. |
+| SIAN Secondary Code Type | Determines how the attribute's secondary code is generated: fixed value, number series, or SIAN category. |
+| Item Attributes Secondary Nos. | Number series used to assign the secondary code when the secondary type is "number series". When the attribute is created it checks the series and takes the next number. |
+| Item Attributes Secondary Code | Fixed value used for the secondary code when the secondary type is "fixed value". |
 
 ## Units of measure
 
@@ -39,9 +39,9 @@ Unit of measure codes that the module uses to recognize mass and volume and to c
 
 | Field | Usage |
 |---|---|
-| Kilogram unit of measure | Identifies the unit that represents kilograms. |
-| Gram unit of measure | Identifies the unit that represents grams. |
-| Liter unit of measure | Identifies the unit that represents liters. |
+| Kilogram Unit of Measure | Identifies the unit that represents kilograms. |
+| Gram Unit of Measure | Identifies the unit that represents grams. |
+| Liter Unit of Measure | Identifies the unit that represents liters. |
 
 ## Default values
 
@@ -49,10 +49,10 @@ Values automatically applied by the processes when not specified explicitly on t
 
 | Field | Usage |
 |---|---|
-| Default SIAN oenological practice | Oenological practice applied by default by the automation. It is used to set the default practice on attribute values when one is missing, to keep it as the only practice when several entries are present, and to exclude it when a specific practice already exists on the lot. |
-| Bulk wine physical state | Code of the SIAN physical state that identifies bulk wine. |
-| Default purchase reason code | Reason code proposed automatically in the header: when a purchase order is created, if the field is populated, the app assigns this reason code to the document (the reason code then drives the classification of the SIAN operation as incoming/outgoing). |
-| Default sales reason code | Same on the sales side: when a sales order is created, if the field is populated, the app sets this reason code on the document. |
+| Def. SIAN Enological Practice | Oenological practice applied by default by the automation. It is used to set the default practice on attribute values when one is missing, to keep it as the only practice when several entries are present, and to exclude it when a specific practice already exists on the lot. |
+| Wine loose physical State | Code of the SIAN physical state that identifies bulk wine. |
+| Default Purchase Reason Code | Reason code proposed automatically in the header: when a purchase order is created, if the field is populated, the app assigns this reason code to the document (the reason code then drives the classification of the SIAN operation as incoming/outgoing). |
+| Default Sales Reason Code | Same on the sales side: when a sales order is created, if the field is populated, the app sets this reason code on the document. |
 
 ## Operations
 
@@ -60,7 +60,7 @@ Settings that govern the automatic creation of the operations to be sent to the 
 
 | Field | Usage |
 |---|---|
-| Automatic insert SIAN operations | Enables automatic generation of operations. After an inventory movement is inserted, the app creates the SIAN operation buffer only if this flag is active and the movement is not excluded from the register; if disabled, operations must be inserted manually. |
+| Automatic Insert Sian Op. | Enables automatic generation of operations. After an inventory movement is inserted, the app creates the SIAN operation buffer only if this flag is active and the movement is not excluded from the register; if disabled, operations must be inserted manually. |
 
 ## Options
 
@@ -68,8 +68,7 @@ Behavior switches that regulate the module's automations and controls.
 
 | Field | Usage |
 |---|---|
-| Skip enological practices automation | Disables the entire oenological practices automation. When active, the app does not apply the default practice to the attributes and exits without updating the lot information after inventory postings. |
-| Maximum lines number | Maximum number of lines allowed in a single SIAN operation. Once the threshold is exceeded, the app splits the operation into several documents; some operation types (e.g. PERD, AUCO, IMBO, DERI) still force one line per document. |
-| Skip receipt tank code | Disables the requirement for the tank code in receipt operations. When the principal is missing, the tank check is skipped only if this flag is active. |
-| Reason code mandatory on posting | Makes the reason code mandatory on posting. Posting is blocked if the reason code is empty: on sales documents, purchase documents, and production movements, where the reason code of the released production order is checked. |
-
+| Skip Enol. Pract. Automation | Disables the entire oenological practices automation. When active, the app does not apply the default practice to the attributes and exits without updating the lot information after inventory postings. |
+| Maximum Lines Number | Maximum number of lines allowed in a single SIAN operation. Once the threshold is exceeded, the app splits the operation into several documents; some operation types (e.g. PERD, AUCO, IMBO, DERI) still force one line per document. |
+| Skip Receipt Tank Code | Disables the requirement for the tank code in receipt operations. When the principal is missing, the tank check is skipped only if this flag is active. |
+| Reason Code Mandatory on Posting | Makes the reason code mandatory on posting. Posting is blocked if the reason code is empty: on sales documents, purchase documents, and production movements, where the reason code of the released production order is checked. |
