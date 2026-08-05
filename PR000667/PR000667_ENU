@@ -1,3 +1,7 @@
-SIAN matrix contains a set of controls that Business Central performs when managing operations. For each of the SIAN item categories it is possible to specify which data are allowed (N.B. Not mandatory). The control matrix is distributed by MIPAAF.
+The SIAN matrix defines, for each SIAN category, which attributes/data must be managed or checked during operations involving SIAN (the dematerialized portal of the electronic wine register).
+This table serves as the configuration panel for the first-level control matrix: one row for each SIAN category, while the columns indicate which information is relevant (N.B. not mandatory) for that category.
+
+The control matrix is distributed by MIPAAF.
+
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000667-0/4wine-sian-ENU.jpg"><br>
