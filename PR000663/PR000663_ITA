@@ -1,5 +1,33 @@
-* Registrare e trasmettere i dati della cantina al SIAN:articoli, botti, vigneti, clienti, fornitori e operazioni.
+L'app **EOS WINE SIAN (SIA)** supporta le aziende vitivinicole nella gestione dei dati necessari al registro enologico e nella comunicazione con i Web Service SIAN.
 
-* Gestione Documenti MVV-E: MVV � il documento di spedizione per alcuni tipi di articoli legati alla vinificazione
+Le funzionalità principali sono:
 
-* Dati SIAN collegati alle informazioni sui lotti: i dati SIAN sono colore, stato fisico, pratica enologica ecc.
+- configurazione dei collegamenti SIAN in ambiente di test e di produzione;
+- gestione delle credenziali e dei codici ICQRF;
+- gestione delle tabelle di classificazione e dei dati codificati SIAN;
+- classificazione degli articoli tramite attributi SIAN e codici primario/secondario;
+- gestione dei soggetti SIAN dell'azienda, dei clienti, dei fornitori, dei vettori, delle vasche, dei vigneti e dei prodotti;
+- creazione e gestione delle operazioni da trasmettere al registro;
+- generazione automatica delle operazioni a partire dai movimenti di magazzino, quando attivata;
+- controllo, invio, ricezione esiti, consultazione, annullamento e reset delle operazioni;
+- gestione dell'MVV-E associato a spedizioni di vendita, trasferimenti e resi;
+- acquisizione e apertura del PDF MVV-E prodotto dal SIAN;
+- registrazione dei messaggi Web Service per attività di controllo e assistenza;
+- applicazione di controlli sui processi di registrazione BC, tra cui la causale obbligatoria quando prevista dal setup.
+
+L'app non sostituisce il gestionale standard: estende anagrafiche, documenti e movimenti BC aggiungendo le informazioni necessarie alla gestione SIAN.
+
+**Prerequisiti funzionali**
+
+Prima di utilizzare l'app devono essere disponibili:
+
+- una società BC correttamente configurata;
+- gli articoli, le unità di misura, i clienti, i fornitori, le ubicazioni e i documenti standard necessari ai processi aziendali;
+- i dati vitivinicoli dell'app EOS WINE, inclusi i dati relativi alle vasche quando utilizzati;
+- i codici e le credenziali ICQRF forniti dall'azienda;
+- gli endpoint e i parametri di accesso SIAN validi per l'ambiente di test o di produzione;
+- i dati codificati SIAN aggiornati, importati o mantenuti tramite le apposite funzioni.
+
+**Dipendenze applicative**
+
+L'app EX083 dipende dalle app EOS WINE e dai Common Data Layer utilizzati per condividere dati di base, informazioni di spedizione e funzionalità amministrative. La disponibilità di alcune funzioni dipende inoltre dalla sottoscrizione dell'app: quando la sottoscrizione non è attiva, le pagine SIAN risultano non operative o con i gruppi funzionali disabilitati.
