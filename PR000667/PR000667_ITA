@@ -1,5 +1,5 @@
-La matrice SIAN contiene un set di controlli eseguiti da Business Central durante la gestione delle operazioni. Per ciascuna delle categorie di articoli SIAN Š possibile specificare quali dati sono ammessi (N.B. Non obbligatori).
+La matrice SIAN per ogni categoria SIAN stabilisce quali attributi/dati devono essere gestiti o controllati nelle operazioni verso il SIAN (il portale dematerializzato del registro telematico vitivinicolo). La tabella Ã¨ quindi il pannello di configurazione della matrice di controllo di primo livello: una riga per categoria SIAN, e le colonne indicano quali informazioni sono pertinenti (N.B. non obbligatorie) per quella categoria.
 
-La matrice di controllo Š distribuita dal MIPAAF.
+La matrice di controllo Ã¨ distribuita dal MIPAAF.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000667-0/4wine-sian-ITA.jpg"><br>
