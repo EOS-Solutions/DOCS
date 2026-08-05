@@ -1,7 +1,26 @@
-Tables used for data communication to SIAN:
+The **SIAN Tables** page allows consulting and managing the codes used in SIAN data. The types include, among others:
 
-* tables are provided by ministry and updated periodically
+- categories;
+- classifications;
+- colors;
+- origins;
+- physical states;
+- viticultural zones and sub-zones;
+- enological practices;
+- varieties;
+- countries of origin;
+- mentions;
+- PDO/PGI;
+- E-Bacchus;
+- certifications;
+- MVV-E validation states;
+- motivations and other SIAN technical codes.
 
-* an Import SIAN values function allows you to load individual tables from files
+The tables are provided by SIAN and are updated periodically.
+Updating them is the user's responsibility and can be performed either manually or through file import, using the **Import SIAN Values** function.
+Imports must be performed by an administrative user or a user in charge of maintaining the codes. Before importing it is necessary to verify the file format and the version of the data provided by the authority.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000665-0/2wine-sian-ENU.jpg"><br>
+
+The page also includes the **Set Allowed Categories** function.
+It is used to define and maintain the matrix of SIAN categories allowed for each register operation type. In practice, it establishes which product categories (e.g. a specific oenological classification) are considered valid/allowed for a given SIAN operation type.
+This configuration feeds the consistency checks that the app applies when generating or controlling register operations: it allows the system to verify that the product category is compatible with the operation type being transmitted, preventing operation/category combinations not foreseen by the oenological register rules from being sent to SIAN.
