@@ -1,0 +1,20 @@
+L'app **EOS WINE SIAN (SIA)** supporta le aziende vitivinicole nella gestione dei dati necessari al registro enologico e nella comunicazione con i Web Service SIAN.
+
+Le funzionalità principali sono:
+
+- configurazione dei collegamenti SIAN in ambiente di test e di produzione;
+- gestione delle credenziali e dei codici ICQRF;
+- gestione delle tabelle di classificazione e dei dati codificati SIAN;
+- classificazione degli articoli tramite attributi SIAN e codici primario/secondario;
+- gestione dei soggetti SIAN dell'azienda, dei clienti, dei fornitori, dei vettori, delle vasche, dei vigneti e dei prodotti;
+- creazione e gestione delle operazioni da trasmettere al registro;
+- generazione automatica delle operazioni a partire dai movimenti di magazzino, quando attivata;
+- controllo, invio, ricezione esiti, consultazione, annullamento e reset delle operazioni;
+- gestione dell'MVV-E associato a spedizioni di vendita, trasferimenti e resi;
+- acquisizione e apertura del PDF MVV-E prodotto dal SIAN;
+- registrazione dei messaggi Web Service per attività di controllo e assistenza;
+- applicazione di controlli sui processi di registrazione BC, tra cui la causale obbligatoria quando prevista dal setup.
+
+L'app non sostituisce il gestionale standard: estende anagrafiche, documenti e movimenti BC aggiungendo le informazioni necessarie alla gestione SIAN.
+
+**Per utilizzare questa app è necessario che l'app EOS Wine sia installata e che la relativa sottoscrizione sia attiva.**
