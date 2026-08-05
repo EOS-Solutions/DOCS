@@ -1,7 +1,24 @@
-Tabelle utilizzate per la comunicazione dei dati al SIAN:
+La pagina **(SIA) Lista tabelle SIAN** consente di consultare e gestire le codifiche utilizzate nei dati SIAN. Le tipologie comprendono, tra le altre:
 
-* le tabelle sono fornite dal ministero e aggiornate periodicamente
+- categorie;
+- classificazioni;
+- colori;
+- origini;
+- stati fisici;
+- zone viticole e sottozone;
+- pratiche enologiche;
+- varietà;
+- paesi di origine;
+- menzioni;
+- DOP/IGP;
+- E-Bacchus;
+- certificazioni;
+- stati di validazione MVV-E;
+- motivazioni e altri codici tecnici SIAN.
 
-* una funzione Importa valori SIAN consente di caricare singole tabelle da file
+Le tabelle sono fornite dal SIAN e vengono aggiornate periodicamente.
+L'aggiornamento è a carico dell'utente e si può effettuare o manualmente o tramite un eventuale importazione da file (con la funzione **Importa Valori SIAN**).  
+Gli import devono essere eseguiti da un utente amministrativo o da un utente incaricato della manutenzione delle codifiche. Prima dell'importazione è necessario verificare il formato del file e la versione dei dati forniti dall'ente.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000665-0/2wine-sian-ITA.jpg"><br>
+Nella pagina è presente anche la funzione **Imposta Categorie Permesse** che serve a definire e mantenere la matrice delle categorie SIAN ammesse per ciascun tipo di operazione del registro. In pratica stabilisce quali categorie di prodotto (es. una specifica classificazione enologica) sono considerate valide/consentite in un determinato tipo di operazione SIAN. 
+Questa configurazione alimenta i controlli di coerenza che l'app applica quando genera o controlla le operazioni del registro: consente al sistema di verificare che la categoria del prodotto sia compatibile con il tipo di operazione che si sta trasmettendo, evitando di inviare a SIAN combinazioni operazione/categoria non previste dalle regole del registro enologico.
