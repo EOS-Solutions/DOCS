@@ -1,7 +1,52 @@
-Il codice ICQRF � il codice identificativo assegnato alle aziende dal "Dipartimento dell'Ispettorato Centrale per la tutela della qualit� e la repressione delle frodi sui prodotti agroalimentari".
+## Codici ICQRF
+
+**Scopo:** anagrafica dei **codici di stabilimento/deposito ICQRF** dell'azienda, cioè le posizioni fisiche registrate presso l'organismo di riferimento (ICQRF) verso cui si comunicano i movimenti del registro enologico. Ogni codice rappresenta una "posizione" da indicare su soggetti, operazioni e ubicazioni.
+
+| Campo | Utilizzo e scopo |
+|---|---|
+| Codice | Codice ICQRF dello stabilimento. In validazione viene **normalizzato rimuovendo gli spazi**, per garantire un formato coerente con quanto atteso dal SIAN. È la chiave usata come riferimento in tutto il modulo (operazioni, ubicazioni, soggetti). |
+| Descrizione | Descrizione leggibile della posizione ICQRF, per facilitarne la selezione da parte dell'operatore. |
+| Codice credenziale ICQRF | **Collega il codice ICQRF alla credenziale** di autenticazione da usare per trasmettere. È l'anello che, a partire dallo stabilimento, determina *con quali credenziali* e *verso quale ambiente* (test/live) inviare le richieste Web Service. |
+
+**Utilizzo:** un'azienda può avere più codici ICQRF (più stabilimenti/depositi); ognuno punta alla credenziale corretta, così in fase di invio il sistema risale dalla posizione → credenziale → ambiente/endpoint.
+
+**Nella scheda dell'ubicazione, nell'apposita sezione SIAN, si deve inserire il codice ICQRF.**
+
+## Credenziali ICQRF
+
+**Scopo:** contiene i **dati tecnici di autenticazione** verso i Web Service SIAN e determina l'**ambiente** (test o produzione) delle trasmissioni. È referenziata dai codici ICQRF.
+
+| Campo | Utilizzo e scopo |
+|---|---|
+| Codice | Identificativo della credenziale, usato come riferimento dal codice ICQRF. |
+| Descrizione | Descrizione della credenziale (es. ente/ambiente), per selezione operativa. |
+| Utente Live | Username per l'ambiente **di produzione** (live). |
+| Password Live | Password per l'ambiente **di produzione** (live). |
+| Utente Test | Username per l'ambiente **di collaudo** (test). |
+| Password Test | Password per l'ambiente **di collaudo** (test). |
+| Codice fiscale | Codice fiscale del soggetto ICQRF titolare della credenziale; identifica l'entità presso il servizio. |
+| Valido per invio | Flag che abilita la credenziale all'**invio effettivo** verso SIAN: se non attivo, la credenziale non può essere usata per trasmettere. |
+| Test | Determina l'**ambiente**: se attivo, tutte le chiamate Web Service sono indirizzate agli **endpoint di test**; altrimenti a quelli **live**. È il discriminante test/produzione descritto nel setup. |
+
+
+## Relazione funzionale tra le due tabelle
+
+In sintesi: il **codice ICQRF** rappresenta *dove* (posizione/stabilimento), la **credenziale ICQRF** rappresenta *come e verso quale ambiente* autenticarsi. Ogni operazione/soggetto SIAN eredita il codice ICQRF e, tramite esso, la credenziale che governa endpoint, autenticazione e abilitazione alla trasmissione.
+
+Il codice ICQRF è il codice identificativo assegnato alle aziende dal "Dipartimento dell'Ispettorato Centrale per la tutela della qualità e la repressione delle frodi sui prodotti agroalimentari".
 
 Ad ogni codice ICQRF deve essere associato un codice credenziali ICQRF che contiene l'utente e la password per l'accesso ai servizi telematici SIAN.
 
-Il codice ICQRF pu� essere associato a una o pi� posizioni. L'assegnazione � obbligatoria se si desidera inviare le informazioni a SIAN.
+Il codice ICQRF può essere associato a una o più posizioni. L'assegnazione è obbligatoria se si desidera inviare le informazioni a SIAN.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000670-0/6wine-sian-ITA.jpg"><br>
+## Scheda Ubicazione
+
+Il gruppo SIAN della scheda Ubicazione collega ogni deposito/magazzino BC alle informazioni necessarie al registro enologico: **dove** (Codice ICQRF, che porta con sé credenziale e ambiente) e **per conto di chi** (soggetto come fornitore, committente come cliente). Questi valori sono poi utilizzati dalla logica SIAN nella generazione delle operazioni dai movimenti di magazzino; coerentemente, la mancanza dell'ubicazione o del relativo codice ICQRF blocca l'elaborazione dei flussi che li richiedono.
+
+| Campo | Utilizzo e scopo |
+|---|---|
+| Codice ICQRF | Associa l'ubicazione al **codice ICQRF** dello stabilimento/deposito (relazione a `EOS083 SIAN ICQRF`). Determina la posizione ICQRF a cui riferire i movimenti del registro e, attraverso di essa, la credenziale e l'ambiente (test/live) di trasmissione. È il collegamento chiave per far confluire i movimenti di magazzino della location nel corretto registro SIAN. |
+| Codice soggetto SIAN | Identifica il **soggetto SIAN** associato all'ubicazione (relazione a `Fornitore`). Rappresenta il soggetto (fornitore/deposito) da comunicare al registro come titolare/gestore della posizione. In pratica serve a "chiudere" la controparte nelle operazioni interne/trasferimenti dove non esiste un cliente o fornitore reale, così che il registro abbia comunque un soggetto valido (Movimenti di Acquisto, Movimenti di Vendita, Movimenti di Trasferimento). |
+| Codice committente | Identifica il **committente SIAN** dell'ubicazione (relazione a `Cliente`). Rappresenta il committente associato all'ubicazione, per le operazioni svolte per conto terzi (logica tipo conto lavoro/committente). |
+
+
