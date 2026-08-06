@@ -1,4 +1,6 @@
-The **EOS WINE SIAN (SIA)** app supports wineries in managing the data required for the oenological register and in communicating with the SIAN Web Services.
+## 1. Objective and scope
+
+The **EOS WINE SIAN** app supports wineries in managing the data required for the oenological register and in communicating with the SIAN Web Services.
 
 The main features are:
 
@@ -17,8 +19,9 @@ The main features are:
 
 The app does not replace the standard ERP: it extends master data, documents and BC entries by adding the information needed for SIAN management.
 
+## 2. Prerequisites and dependencies
 
-**Functional prerequisites**
+### 2.1 Functional prerequisites
 
 Before using the app the following must be available:
 
@@ -29,6 +32,422 @@ Before using the app the following must be available:
 - valid SIAN endpoints and access parameters for the test or production environment;
 - up-to-date SIAN coded data, imported or maintained through the dedicated functions.
 
-**Application dependencies**
+### 2.2 Application dependencies
 
 The EX083 app depends on the EOS WINE apps and on the Common Data Layers used to share base data, shipment information and administrative functions. The availability of some functions also depends on the app subscription: when the subscription is not active, the SIAN pages are non-operational or have the functional groups disabled.
+
+### 2.3 Test environment and live environment
+
+An ICQRF credential can be flagged as a test credential. In this case the calls are directed to the test endpoints; otherwise the live endpoints are used. This distinction allows configuration and flows to be verified without transmitting real data to the production register.
+
+## 3. Functional concepts
+
+### 3.1 ICQRF code and credential
+
+The ICQRF code identifies the company's position or subject with the reference authority. The ICQRF credential contains the technical data needed for authentication and determines, through the test flag, the environment to which requests are sent.
+
+A company can manage multiple ICQRF codes and multiple credentials. Each subject and each operation must be associated with the correct code and credential.
+
+### 3.2 SIAN subject
+
+A SIAN subject is a master record or entity that must be communicated to the register. The app manages subjects of the following types:
+
+- company;
+- customer;
+- vendor;
+- carrier;
+- tank;
+- vineyard;
+- item/product;
+- campaign or ICQRF code, depending on the SIAN model used.
+
+Each subject is stored with control, submission, acceptance, cancellation status and any SIAN response.
+
+### 3.3 SIAN operation
+
+The operation represents an entry in the oenological register, with header and lines. It contains the operation type, the date, the source BC document, the subject and the ICQRF code, as well as the control and transmission statuses.
+
+### 3.4 MVV-E
+
+The MVV-E is the electronic document associated with a shipment. The app stores the reference to the BC document, the MVV number assigned by SIAN, the validation status, the outcomes and the PDF document returned by the service.
+
+## 4. SIAN configuration
+
+The **SIAN Setup** page is the central configuration point. The fields are organized into the following groups.
+
+### 4.1 Web Service parameters
+
+They are configurable separately for the live and test environments:
+
+- asynchronous WSDL address;
+- asynchronous request path;
+- synchronous WSDL address;
+- synchronous request path;
+- SOAP envelope and related technical fragments;
+- enabling of the Web Service message log.
+
+The **Set Default WS Values** action prefills the endpoints and composes the SOAP envelope from the three expected fragments. The endpoints must be verified by the consultant or administrator before use in production.
+
+### 4.2 Attribute numbering rules
+
+The numbering combination automatically determines the type of the primary and secondary code. The following combinations are available:
+
+- number series + fixed value;
+- number series + SIAN item category;
+- fixed value + number series;
+- SIAN item category + number series.
+
+The system prevents configurations in which both codes use a number series or neither of the two uses a number series. Depending on the combination, the fields related to number series and fixed values become available.
+
+### 4.3 Units of measure
+
+The BC codes representing the following must be indicated:
+
+- kilograms;
+- grams;
+- liters.
+
+These codes are used to recognize mass and volume and to convert the quantities in the transmitted operations.
+
+### 4.4 Default values
+
+The setup allows setting:
+
+- default SIAN oenological practice;
+- physical state that identifies bulk wine;
+- default reason code for purchases;
+- default reason code for sales.
+
+The default reason codes are copied onto new documents when the related field is filled in.
+
+### 4.5 Automations and options
+
+The following switches and parameters are available:
+
+- **Automatic insertion of SIAN operations:** enables the automatic creation of operations from inventory entries;
+- **Skip oenological practices automation:** disables the automatic update of oenological practices;
+- **Maximum number of lines:** threshold beyond which an operation is split;
+- **Omit tank code on load:** allows not blocking the tank code control in the applicable cases;
+- **Mandatory reason code on posting:** blocks posting when the required reason code is empty.
+
+There are also technical parameters for handling deletions in the test environment, not intended for ordinary use.
+
+## 5. Reference tables and data
+
+The **SIAN Tables** page allows consulting and managing the codes used in SIAN data. The types include, among others:
+
+- categories;
+- classifications;
+- colors;
+- origins;
+- physical states;
+- viticultural zones and sub-zones;
+- oenological practices;
+- varieties;
+- countries of origin;
+- mentions;
+- PDO/PGI;
+- E-Bacchus;
+- certifications;
+- MVV-E validation states;
+- motivations and other SIAN technical codes.
+
+Imports via XMLport are available for:
+
+- SIAN tables;
+- categories;
+- SIAN operations;
+- product and numbering definitions;
+- MVV decoding;
+- ISTAT municipalities;
+- PDO/PGI.
+
+Imports must be performed by an administrative user or a user in charge of maintaining the codes. Before importing it is necessary to verify the file format and the version of the data provided by the authority.
+
+## 6. SIAN subject master data
+
+### 6.1 Creating subjects
+
+The app provides lists, cards and sub-pages for the different subject types. Subjects can be created through dedicated functions that read the data from BC master data and build the record to be transmitted to SIAN.
+
+Creation functions are provided for:
+
+- company;
+- customers;
+- vendors;
+- carriers;
+- tanks;
+- vineyards;
+- items/products.
+
+The creation produces a subject header and, when needed, one or more detail lines. The lines can contain master data, address, natural or legal person, item, product, tank and vineyard.
+
+### 6.2 Control and submission of subjects
+
+For each subject the user can:
+
+1. verify the data before submission;
+2. submit the subject to the SIAN Web Service;
+3. view the transmission identifier, response code and message;
+4. verify acceptance by the register;
+5. request the cancellation of an already transmitted subject, when allowed;
+6. consult the historical status of the operation.
+
+The subject retains the user and the date of creation, submission and cancellation, making it possible to reconstruct the operations.
+
+### 6.3 Association with tanks and vineyards
+
+Tanks and vineyards can be linked to their SIAN record. In case of subject cancellation, the link is removed from local data to avoid references to a subject that is no longer present.
+
+## 7. SIAN item attributes
+
+### 7.1 Purpose
+
+SIAN attributes identify the wine product according to the characteristics required by the register. Each combination is identified by a primary code and a secondary code.
+
+### 7.2 Managed data
+
+The attributes card can contain:
+
+- associated BC item;
+- SIAN category;
+- growing zone and sub-zone;
+- classification and color;
+- wine origin and grape origin;
+- physical state;
+- organic/organicity;
+- certification and PDO/PGI;
+- PDO certificate date and number;
+- E-Bacchus code;
+- vintage;
+- mass;
+- lot code;
+- vineyard code;
+- PDO expiration date;
+- additional values such as varieties, mentions, oenological practices and countries of origin.
+
+### 7.3 Code generation
+
+On creation, the system generates the primary and secondary code according to the combination defined in the setup:
+
+- fixed value;
+- progressive number from a number series;
+- SIAN category of the item.
+
+The mandatory fields are checked based on the chosen type. Number series are used through standard BC numbering management.
+
+### 7.4 Reuse and search
+
+Before creating a new combination, the system searches for an existing attribute with the same primary and secondary values. If it finds one, it reuses it; otherwise it creates a new combination and verifies its consistency in the SIAN matrix.
+
+The attributes dashboard also shows whether a combination is used in lots, whether it contains oenological practices, countries of origin, varieties or mentions, and whether it is already associated with a SIAN subject.
+
+### 7.5 Automatic oenological practices
+
+When the automation is active, the system can:
+
+- apply the default oenological practice when it is missing;
+- keep the default practice as the only practice when multiple values are present;
+- remove the default practice when a specific practice exists;
+- transfer or update practices between the obtained product and the consumed product in vinification entries;
+- consider the practice indicated in the reason code or in the production order line.
+
+The automation can be excluded globally from the setup or for a single item through the exclusion field provided by the app.
+
+## 8. Register operations
+
+### 8.1 Creation
+
+Operations can be:
+
+- created automatically from inventory entries, if the option is active;
+- created manually or through the operation creation report;
+- generated from BC documents and configured reason codes.
+
+The operation contains a header and its lines. The header identifies date, type, operation number, source document, subjects, ICQRF code, reason code, location and notes.
+
+### 8.2 Line generation
+
+The **Generate lines** action builds the operation lines using the entry data and the SIAN attributes of the item or lot.
+
+The lines can contain, depending on the operation type:
+
+- product and primary/secondary codes;
+- quantity and unit of measure;
+- lot and origin information;
+- tank and vineyard;
+- subjects involved;
+- oenological practices;
+- load, unload, transformation or transfer data.
+
+The maximum number of lines is controlled by the setup. When the limit is exceeded, the operation is split into multiple documents. For some operation types the system still forces one line per document.
+
+### 8.3 Operation control
+
+The **Control/Open** action performs the preliminary checks and changes the operation status:
+
+- an operation without lines cannot be controlled;
+- the control records the user who performed it;
+- an already controlled operation can be reopened when it needs to be corrected;
+- operations already submitted or cancelled cannot be treated as new operations;
+- consistency, mandatory data, credential and type-specific constraints are verified.
+
+### 8.4 Submission, response and cancellation
+
+From the list or the operation card the user can:
+
+- submit one or more selected operations;
+- acquire the SIAN response;
+- view the transmission and register identifiers;
+- view the response code and message;
+- verify whether the operation was accepted and when;
+- consult the operation data present on the register;
+- request the cancellation of the operation, when allowed;
+- acquire the cancellation outcome;
+- restore the local operation through the provided reset;
+- split the lines of an operation into a new operation;
+- navigate to the source BC document.
+
+The system prevents cancellation when the operation has expired or when the local status does not allow the action.
+
+### 8.5 Specific types and constraints
+
+The service applies specific controls for some operation types. In particular:
+
+- for the TAGL type at least two lines related to the base product are required;
+- for some types, including PERD, AUCO, IMBO and DERI, only one detail per document is allowed;
+- operations selected for the same transmission must use the same ICQRF code;
+- for load operations the tank code may be required, unless the exclusion option is activated;
+- shipment data and location must be present for the flows that require them.
+
+## 9. Integration with SIAN Web Services
+
+### 9.1 Asynchronous and synchronous calls
+
+The app uses asynchronous calls for submitting operations and for requests that receive a transmission identifier to be processed later. It uses synchronous calls for operations that require an immediate response, such as consultations or specific requests.
+
+The endpoint is chosen automatically based on the ICQRF credential and its test/live mode.
+
+### 9.2 Managed Web Service functions
+
+The communication module supports, among others, requests for:
+
+- submitting operations;
+- receiving operation outcomes;
+- consulting operations present on SIAN;
+- cancelling operations;
+- submitting and cancelling company, customer, vendor, carrier, tank, vineyard and product subjects;
+- submitting MVV-E;
+- cancelling MVV-E;
+- updating or requesting the MVV-E print;
+- deleting company data in the test environment.
+
+### 9.3 Security and authentication
+
+Requests are built with a SOAP envelope and SIAN namespace. Credentials must not be shared with unauthorized users and live endpoints must be used only after validation by the consultant and administrator.
+
+## 10. MVV-E
+
+### 10.1 Managed documents
+
+The MVV-E can be associated with:
+
+- posted sales shipment;
+- transfer shipment;
+- return shipment.
+
+For each document a unique MVV-E record is created, identified by document type and number.
+
+### 10.2 Stored information
+
+The record retains:
+
+- BC document type and number;
+- MVV number and timestamp assigned by SIAN;
+- validation status;
+- submission status and date;
+- user who created and submitted the document;
+- response code and message;
+- cancellation status and date;
+- PEC code and its outcome, when returned;
+- notes;
+- MVV-E PDF stored in the record.
+
+### 10.3 Available actions
+
+The user can:
+
+1. submit the MVV-E to the Web Service;
+2. verify the transmission outcome;
+3. cancel the last submission when allowed;
+4. request a new PDF print from SIAN;
+5. open or export the MVV-E PDF;
+6. print the MVV report associated with the document.
+
+The PDF can be opened only when it is present in the record. The print update function allows realigning the local document with the version returned by the service.
+
+## 11. Automations and controls on BC processes
+
+### 11.1 Automatic creation of operations
+
+After an inventory entry is posted, the app checks the setup and any exclusion of the entry from the register. If automatic insertion is enabled, it creates the SIAN operation buffer with the available data.
+
+Entries excluded from the register, excluded items and non-relevant flows do not generate operations.
+
+### 11.2 Update of lots and practices
+
+After consumption and output entries the app can update the SIAN information of the lot and propagate the oenological practices between raw material and obtained product, respecting the reason codes and the setup settings.
+
+### 11.3 Mandatory reason code on posting
+
+When the option is active, posting is blocked if the reason code is missing:
+
+- in sales documents;
+- in purchase documents;
+- in production entries, verifying the reason code of the released production order.
+
+The reason code also determines the SIAN load or unload operation type and can indicate the oenological practice to be applied.
+
+### 11.4 Exclusions
+
+The app allows excluding specific items or entries from SIAN management. The exclusion must be used only for items or processes that must not be represented in the register, because it prevents the generation or automatic update of the related data.
+
+## 12. Monitoring, errors and traceability
+
+### 12.1 Local statuses
+
+Subjects, operations and MVV-E retain the main statuses of the cycle:
+
+- created;
+- controlled;
+- submitted;
+- accepted;
+- cancelled;
+- with error or response to be verified.
+
+The presence of date, time and user makes it possible to reconstruct who created, controlled, submitted or cancelled the record.
+
+### 12.2 Web Service log
+
+If enabled in the setup, the log records the messages exchanged with SIAN. The log can be consulted from the **SIAN WS Log** page and supports:
+
+- analysis of the requests sent;
+- verification of the responses received;
+- diagnosis of authentication, endpoint or data errors;
+- technical support and application audit.
+
+### 12.3 Main functional errors
+
+The app blocks processing when, among other cases:
+
+- the credential or the ICQRF code is missing;
+- the ICQRF code is not consistent among the selected operations;
+- a mandatory request datum is missing;
+- the location or the ICQRF code of the location is missing;
+- the SIAN attributes of the item are missing;
+- lines are missing in the operation;
+- the number of lines is not compatible with the operation type;
+- the tank code is missing when required;
+- the operation is already submitted, cancelled or expired;
+- the requested MVV-E PDF is not available.
+
