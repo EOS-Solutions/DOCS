@@ -1,15 +1,23 @@
-Il monitoraggio � obbligatorio per gli articoli SIAN. La casella di controllo "Escludi dalla gestione SIAN" consente di disabilitare la gestione SIAN per elementi specifici. Esempio: etichette e tappi tipo non devono essere gestiti tramite il SIAN.
+Nella **scheda Articolo* è stato aggiunto il gruppo **SIAN** con i seguenti campi:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/7wine-sian-ITA.jpg"><br>
+| Campo | Scopo e utilizzo |
+|---|---|
+| **Codice Primario SIAN** | Primo identificativo SIAN del prodotto. Insieme al Codice Secondario identifica la scheda attributi SIAN dell’articolo. È gestito tramite l’azione **Attributi SIAN**, viene trasferito ai lotti e utilizzato nella generazione delle operazioni e dei documenti MVV come `CodPrimario`. È un campo non modificabile direttamente nella scheda Articolo. |
+| **Codice Secondario SIAN** | Secondo identificativo SIAN del prodotto, associato al codice primario. Completa l’identificazione del prodotto SIAN, viene trasferito ai lotti e utilizzato come `CodSecondario` nei file MVV e nella ricerca della relativa scheda soggetto SIAN. È anch’esso non modificabile direttamente nella scheda Articolo. |
+| **Contenuto zuccherino SIAN** | Codice del contenuto zuccherino del prodotto, selezionato dalla tabella SIAN dei contenuti zuccherini. Durante la creazione della riga operazione SIAN valorizza il campo **Contenuto zuccherino**. Se esiste un lotto, viene utilizzato prima il valore del lotto; in assenza del lotto viene utilizzato quello dell’articolo. |
+| **Trattamento SIAN** | Codice del trattamento enologico applicato al prodotto, selezionato dalla tabella SIAN dei trattamenti. Viene riportato nel campo **Trattamento** della riga operazione SIAN, con priorità al valore eventualmente presente sul lotto. |
+| **Metodo pratiche enologiche SIAN** | Codice del metodo relativo alle pratiche enologiche, selezionato dalla tabella SIAN dei metodi. Viene utilizzato per valorizzare il campo **Metodo pratiche enologiche** della riga operazione SIAN; anche in questo caso il dato del lotto prevale su quello dell’articolo. |
+| **Escludi dalla gestione SIAN** | Determina se l’articolo deve essere escluso dai processi SIAN. Se attivo, il movimento di magazzino viene marcato come escluso dal registro SIAN e non vengono eseguite la gestione delle pratiche enologiche, la creazione del lotto SIAN e la generazione automatica dell’operazione. Il valore viene impostato automaticamente in base al tipo vino: articolo senza tipo vino = escluso. |
+| **Tipo prodotto SIAN** | Codice della tipologia di prodotto, selezionato dalla tabella SIAN dei tipi prodotto. È obbligatorio per la verifica di conformità dei documenti MVV relativi a spedizioni di vendita, trasferimenti e resi. Durante la generazione del file MVV viene trasmesso nel nodo `CodTipoProdMVV`, utilizzando i primi due caratteri del codice. |
 
-Il SIAN prevede di gestire la codifica degli elementi attraverso due codici liberi: definiti come Codice Primario e Secondario.
+### Sintesi funzionale
 
-I campi che compongono i codici sono: Categoria, Classificazione, Atto/Certificato, Stato fisico, Colore, Biologico, DOPIGP, Vigneto, Data Certificato DOP, Numero Certificato DOP, E-Bacchus, Sottozona, Annata, Origine Uve, Paesi Provenienza, Zona viticola, Codice di lotto, Massa.
+I campi del gruppo SIAN svolgono quattro funzioni principali:
 
-A questi controlli, � necessario aggiungere la verifica delle pratiche enologiche. Per pratiche enologiche si intendono: Paesi di origine, Menzioni tradizionali, Pratiche enologiche (manipolazioni), Variet�.
+1. identificano il prodotto tramite la coppia di codici primario/secondario;
+2. descrivono le caratteristiche enologiche da riportare nelle operazioni SIAN;
+3. stabiliscono se l’articolo partecipa alla gestione SIAN;
+4. forniscono il tipo prodotto necessario alla generazione dei documenti MVV.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/8wine-sian-ITA.png"><br>
+Per i dati enologici, la logica della riga operazione legge prima i valori presenti nel lotto e utilizza quelli dell’articolo come valori alternativi. I campi **Contenuto zuccherino**, **Trattamento** e **Metodo pratiche enologiche** vengono assegnati alla riga operazione SIAN.
 
-In ogni movimento articolo � possibile accedere alla Scheda Informativa del Lotto per vedere quale sia il codice SIAN associato ed eventualmente modificare una serie di attributi e ottenere un nuovo codice SIAN.
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/9wine-sian-ITA.png"><br>
