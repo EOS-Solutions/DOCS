@@ -1,4 +1,6 @@
-L'app **EOS WINE SIAN (SIA)** supporta le aziende vitivinicole nella gestione dei dati necessari al registro enologico e nella comunicazione con i Web Service SIAN.
+## 1. Obiettivo e perimetro
+
+L'app **EOS WINE SIAN** supporta le aziende vitivinicole nella gestione dei dati necessari al registro enologico e nella comunicazione con i Web Service SIAN.
 
 Le funzionalità principali sono:
 
@@ -17,7 +19,10 @@ Le funzionalità principali sono:
 
 L'app non sostituisce il gestionale standard: estende anagrafiche, documenti e movimenti BC aggiungendo le informazioni necessarie alla gestione SIAN.
 
-**Prerequisiti funzionali**
+
+## 2. Prerequisiti e dipendenze
+
+### 2.1 Prerequisiti funzionali
 
 Prima di utilizzare l'app devono essere disponibili:
 
@@ -28,6 +33,424 @@ Prima di utilizzare l'app devono essere disponibili:
 - gli endpoint e i parametri di accesso SIAN validi per l'ambiente di test o di produzione;
 - i dati codificati SIAN aggiornati, importati o mantenuti tramite le apposite funzioni.
 
-**Dipendenze applicative**
+### 2.2 Dipendenze applicative
 
 L'app EX083 dipende dalle app EOS WINE e dai Common Data Layer utilizzati per condividere dati di base, informazioni di spedizione e funzionalità amministrative. La disponibilità di alcune funzioni dipende inoltre dalla sottoscrizione dell'app: quando la sottoscrizione non è attiva, le pagine SIAN risultano non operative o con i gruppi funzionali disabilitati.
+
+### 2.3 Ambiente di test e ambiente live
+
+Una credenziale ICQRF può essere marcata come credenziale di test. In questo caso le chiamate vengono indirizzate agli endpoint di collaudo; in caso contrario vengono utilizzati gli endpoint live. La distinzione consente di verificare configurazione e flussi senza trasmettere dati reali al registro di produzione.
+
+## 3. Concetti funzionali
+
+### 3.1 Codice ICQRF e credenziale
+
+Il codice ICQRF identifica la posizione o il soggetto dell'azienda presso l'organismo di riferimento. La credenziale ICQRF contiene i dati tecnici necessari all'autenticazione e determina, tramite il flag di test, l'ambiente verso cui inviare le richieste.
+
+Un'azienda può gestire più codici ICQRF e più credenziali. Ogni soggetto e ogni operazione devono essere associati al codice e alla credenziale corretti.
+
+### 3.2 Soggetto SIAN
+
+Un soggetto SIAN è un'anagrafica o un'entità che deve essere comunicata al registro. L'app gestisce soggetti di tipo:
+
+- azienda;
+- cliente;
+- fornitore;
+- vettore;
+- vasca;
+- vigneto;
+- articolo/prodotto;
+- campagna o codice ICQRF, in base al modello SIAN utilizzato.
+
+Ogni soggetto viene memorizzato con stato di controllo, invio, accettazione, annullamento ed eventuale risposta SIAN.
+
+### 3.3 Operazione SIAN
+
+L'operazione rappresenta una registrazione del registro enologico, con testata e righe. Contiene il tipo di operazione, la data, il documento BC di origine, il soggetto e il codice ICQRF, oltre agli stati di controllo e trasmissione.
+
+### 3.4 MVV-E
+
+L'MVV-E è il documento elettronico associato a una spedizione. L'app memorizza il riferimento al documento BC, il numero MVV assegnato da SIAN, lo stato di validazione, gli esiti e il documento PDF restituito dal servizio.
+
+
+## 4. Configurazione SIAN
+
+La pagina **SIAN Setup** è il punto centrale di configurazione. I campi sono organizzati nei seguenti gruppi.
+
+### 4.1 Parametri Web Service
+
+Sono configurabili separatamente per ambiente live e test:
+
+- indirizzo WSDL asincrono;
+- percorso di richiesta asincrono;
+- indirizzo WSDL sincrono;
+- percorso di richiesta sincrono;
+- busta SOAP e relativi frammenti tecnici;
+- abilitazione del log dei messaggi Web Service.
+
+L'azione **Imposta valori WS Default** precompila gli endpoint e compone la busta SOAP a partire dai tre frammenti previsti. Gli endpoint devono essere verificati dal consulente o dall'amministratore prima dell'uso in produzione.
+
+### 4.2 Regole di numerazione degli attributi
+
+La combinazione di numerazione determina automaticamente il tipo del codice primario e secondario. Sono previste le combinazioni:
+
+- serie numerica + valore fisso;
+- serie numerica + categoria SIAN articolo;
+- valore fisso + serie numerica;
+- categoria SIAN articolo + serie numerica.
+
+Il sistema impedisce configurazioni in cui entrambi i codici usano una serie numerica oppure nessuno dei due usa una serie numerica. In base alla combinazione diventano disponibili i campi relativi a serie numeriche e valori fissi.
+
+### 4.3 Unità di misura
+
+Devono essere indicati i codici BC che rappresentano:
+
+- chilogrammi;
+- grammi;
+- litri.
+
+Questi codici sono utilizzati per riconoscere massa e volume e per convertire le quantità nelle operazioni trasmesse.
+
+### 4.4 Valori predefiniti
+
+Il setup permette di impostare:
+
+- pratica enologica SIAN predefinita;
+- stato fisico che identifica il vino sfuso;
+- causale predefinita per gli acquisti;
+- causale predefinita per le vendite.
+
+Le causali predefinite vengono riportate sui nuovi documenti quando il relativo campo è valorizzato.
+
+### 4.5 Automazioni e opzioni
+
+Sono disponibili i seguenti interruttori e parametri:
+
+- **Inserimento automatico operazioni SIAN:** abilita la creazione automatica delle operazioni dai movimenti di magazzino;
+- **Salta automazione pratiche enologiche:** disabilita l'aggiornamento automatico delle pratiche enologiche;
+- **Numero massimo righe:** soglia oltre la quale un'operazione viene suddivisa;
+- **Ometti codice vasca in carico:** consente di non bloccare il controllo del codice vasca nei casi previsti;
+- **Causale obbligatoria in registrazione:** blocca la registrazione quando la causale richiesta è vuota.
+
+Sono presenti anche parametri tecnici per la gestione di cancellazioni in ambiente di test, non destinati all'uso ordinario.
+
+
+## 5. Tabelle e dati di riferimento
+
+La pagina **Lista Tabelle SIAN** consente di consultare e gestire le codifiche utilizzate nei dati SIAN. Le tipologie comprendono, tra le altre:
+
+- categorie;
+- classificazioni;
+- colori;
+- origini;
+- stati fisici;
+- zone viticole e sottozone;
+- pratiche enologiche;
+- varietà;
+- paesi di origine;
+- menzioni;
+- DOP/IGP;
+- E-Bacchus;
+- certificazioni;
+- stati di validazione MVV-E;
+- motivazioni e altri codici tecnici SIAN.
+
+Sono disponibili importazioni per:
+
+- tabelle SIAN;
+- categorie;
+- operazioni SIAN;
+- definizioni dei prodotti e della numerazione;
+- decodifica MVV;
+- comuni ISTAT;
+- DOP/IGP.
+
+Gli import devono essere eseguiti da un utente amministrativo o da un utente incaricato della manutenzione delle codifiche. Prima dell'importazione è necessario verificare il formato del file e la versione dei dati forniti dall'ente.
+
+## 6. Anagrafiche soggetto SIAN
+
+### 6.1 Creazione dei soggetti
+
+L'app mette a disposizione liste, schede e sotto-pagine per i diversi tipi di soggetto. I soggetti possono essere creati attraverso funzioni dedicate che leggono i dati dalle anagrafiche BC e costruiscono il record da trasmettere a SIAN.
+
+Sono previste funzioni di creazione per:
+
+- azienda;
+- clienti;
+- fornitori;
+- vettori;
+- vasche;
+- vigneti;
+- articoli/prodotti.
+
+La creazione produce un'intestazione soggetto e, quando necessario, una o più righe di dettaglio. Le righe possono contenere dati anagrafici, indirizzo, persona fisica o giuridica, articolo, prodotto, vasca e vigneto.
+
+### 6.2 Controllo e invio dei soggetti
+
+Per ogni soggetto l'utente può:
+
+1. verificare i dati prima dell'invio;
+2. inviare il soggetto al Web Service SIAN;
+3. visualizzare identificativo di trasmissione, codice e messaggio di risposta;
+4. verificare l'accettazione da parte del registro;
+5. richiedere l'annullamento del soggetto già trasmesso, quando previsto;
+6. consultare lo stato storico dell'operazione.
+
+Il soggetto conserva l'utente e la data di creazione, invio e annullamento, rendendo possibile la ricostruzione dell'operatività.
+
+### 6.3 Associazione a vasche e vigneti
+
+Le vasche e i vigneti possono essere collegati al relativo record SIAN. In caso di cancellazione del soggetto, il collegamento viene rimosso dai dati locali per evitare riferimenti a un soggetto non più presente.
+
+## 7. Attributi SIAN degli articoli
+
+### 7.1 Scopo
+
+Gli attributi SIAN identificano il prodotto vitivinicolo secondo le caratteristiche richieste dal registro. Ogni combinazione è identificata da un codice primario e da un codice secondario.
+
+### 7.2 Dati gestiti
+
+La scheda attributi può contenere:
+
+- articolo BC associato;
+- categoria SIAN;
+- zona di coltivazione e sottozona;
+- classificazione e colore;
+- origine del vino e origine delle uve;
+- stato fisico;
+- biologico/organicità;
+- certificazione e DOP/IGP;
+- data e numero del certificato DOP;
+- codice E-Bacchus;
+- annata;
+- massa;
+- codice lotto;
+- codice vigneto;
+- data di scadenza DOP;
+- valori aggiuntivi come varietà, menzioni, pratiche enologiche e paesi di origine.
+
+### 7.3 Generazione dei codici
+
+Alla creazione, il sistema genera il codice primario e secondario secondo la combinazione definita nel setup:
+
+- valore fisso;
+- numero progressivo da serie numerica;
+- categoria SIAN dell'articolo.
+
+I campi obbligatori vengono controllati in base al tipo scelto. Le serie numeriche sono utilizzate attraverso la gestione standard delle numerazioni BC.
+
+### 7.4 Riutilizzo e ricerca
+
+Prima di creare una nuova combinazione il sistema ricerca un attributo esistente con gli stessi valori principali e secondari. Se lo trova, lo riutilizza; altrimenti crea una nuova combinazione e ne verifica la coerenza nella matrice SIAN.
+
+La dashboard degli attributi mostra inoltre se una combinazione è utilizzata nei lotti, se contiene pratiche enologiche, paesi di origine, varietà o menzioni e se è già associata a un soggetto SIAN.
+
+### 7.5 Pratiche enologiche automatiche
+
+Quando l'automazione è attiva, il sistema può:
+
+- applicare la pratica enologica predefinita quando manca;
+- mantenere la pratica predefinita come unica pratica quando sono presenti più valori;
+- rimuovere la pratica predefinita quando esiste una pratica specifica;
+- trasferire o aggiornare le pratiche tra prodotto ottenuto e prodotto consumato nei movimenti di vinificazione;
+- considerare la pratica indicata nella causale o nella riga dell'ordine di produzione.
+
+L'automazione può essere esclusa globalmente dal setup oppure per singolo articolo tramite il campo di esclusione previsto dall'app.
+
+## 8. Operazioni del registro
+
+### 8.1 Creazione
+
+Le operazioni possono essere:
+
+- create automaticamente dai movimenti di magazzino, se l'opzione è attiva;
+- create manualmente o tramite il report di creazione operazioni;
+- generate a partire dai documenti BC e dalle causali configurate.
+
+L'operazione contiene una testata e le relative righe. La testata identifica data, tipo, numero operazione, documento origine, soggetti, codice ICQRF, causale, ubicazione e note.
+
+### 8.2 Generazione delle righe
+
+L'azione **Genera righe** costruisce le righe dell'operazione utilizzando i dati del movimento e degli attributi SIAN dell'articolo o del lotto.
+
+Le righe possono contenere, in base al tipo di operazione:
+
+- prodotto e codici primario/secondario;
+- quantità e unità di misura;
+- lotto e informazioni di origine;
+- vasca e vigneto;
+- soggetti coinvolti;
+- pratiche enologiche;
+- dati di carico, scarico, trasformazione o trasferimento.
+
+Il numero massimo di righe è controllato dal setup. Quando il limite viene superato l'operazione viene suddivisa in più documenti. Per alcuni tipi di operazione il sistema forza comunque una riga per documento.
+
+### 8.3 Controllo dell'operazione
+
+L'azione **Controlla/Apri** esegue le verifiche preliminari e modifica lo stato dell'operazione:
+
+- un'operazione senza righe non può essere controllata;
+- il controllo registra l'utente che lo ha eseguito;
+- un'operazione già controllata può essere riaperta quando è necessario correggerla;
+- le operazioni già inviate o annullate non possono essere trattate come nuove operazioni;
+- vengono verificati coerenza, dati obbligatori, credenziale e vincoli specifici del tipo di operazione.
+
+### 8.4 Invio, risposta e annullamento
+
+Dalla lista o dalla scheda operazione l'utente può:
+
+- inviare una o più operazioni selezionate;
+- acquisire la risposta SIAN;
+- visualizzare gli identificativi di trasmissione e di registro;
+- visualizzare codice e messaggio di risposta;
+- verificare se l'operazione è stata accettata e in quale momento;
+- consultare i dati dell'operazione presenti sul registro;
+- richiedere l'annullamento dell'operazione, quando consentito;
+- acquisire l'esito dell'annullamento;
+- ripristinare l'operazione locale tramite il reset previsto;
+- dividere le righe di un'operazione in una nuova operazione;
+- navigare verso il documento BC di origine.
+
+Il sistema impedisce l'annullamento quando l'operazione è scaduta o quando lo stato locale non consente l'azione.
+
+### 8.5 Tipi e vincoli specifici
+
+Il servizio applica controlli specifici per alcuni tipi di operazione. In particolare:
+
+- per il tipo TAGL sono necessarie almeno due righe relative al prodotto base;
+- per alcuni tipi, tra cui PERD, AUCO, IMBO e DERI, è previsto un solo dettaglio per documento;
+- le operazioni selezionate per una stessa trasmissione devono usare lo stesso codice ICQRF;
+- per le operazioni di carico può essere necessario il codice vasca, salvo attivazione dell'opzione di esclusione;
+- i dati di spedizione e l'ubicazione devono essere presenti per i flussi che li richiedono.
+
+## 9. Integrazione con i Web Service SIAN
+
+### 9.1 Chiamate asincrone e sincrone
+
+L'app usa chiamate asincrone per l'invio delle operazioni e per le richieste che ricevono un identificativo di trasmissione da elaborare successivamente. Usa chiamate sincrone per le operazioni che richiedono una risposta immediata, come consultazioni o richieste puntuali.
+
+L'endpoint è scelto automaticamente in base alla credenziale ICQRF e alla sua modalità test/live.
+
+### 9.2 Funzioni Web Service gestite
+
+Il modulo di comunicazione supporta, tra le altre, le richieste per:
+
+- invio di operazioni;
+- ricezione degli esiti delle operazioni;
+- consultazione di operazioni presenti su SIAN;
+- annullamento di operazioni;
+- invio e annullamento di soggetti aziendali, clienti, fornitori, vettori, vasche, vigneti e prodotti;
+- invio MVV-E;
+- annullamento MVV-E;
+- aggiornamento o richiesta della stampa MVV-E;
+- cancellazione di dati aziendali in ambiente di test.
+
+### 9.3 Sicurezza e autenticazione
+
+Le richieste sono costruite con busta SOAP e namespace SIAN. Le credenziali non devono essere condivise con utenti non autorizzati e gli endpoint live devono essere utilizzati solo dopo la validazione del consulente e dell'amministratore.
+
+## 10. MVV-E
+
+### 10.1 Documenti gestiti
+
+L'MVV-E può essere associato a:
+
+- spedizione di vendita registrata;
+- spedizione di trasferimento;
+- spedizione di reso.
+
+Per ogni documento viene creato un record MVV-E unico, identificato da tipo e numero documento.
+
+### 10.2 Informazioni memorizzate
+
+Il record conserva:
+
+- tipo e numero del documento BC;
+- numero MVV e timestamp assegnati da SIAN;
+- stato di validazione;
+- stato e data di invio;
+- utente che ha creato e inviato il documento;
+- codice e messaggio di risposta;
+- stato e data di annullamento;
+- codice PEC e relativo esito, quando restituiti;
+- note;
+- PDF MVV-E memorizzato nel record.
+
+### 10.3 Azioni disponibili
+
+L'utente può:
+
+1. inviare l'MVV-E al Web Service;
+2. verificare l'esito della trasmissione;
+3. annullare l'ultimo invio quando consentito;
+4. richiedere una nuova stampa PDF dal SIAN;
+5. aprire o esportare il PDF MVV-E;
+6. stampare il report MVV associato al documento.
+
+Il PDF può essere aperto solo quando è presente nel record. La funzione di aggiornamento stampa consente di riallineare il documento locale con la versione restituita dal servizio.
+
+## 11. Automazioni e controlli sui processi BC
+
+### 11.1 Creazione automatica delle operazioni
+
+Dopo l'inserimento di un movimento di magazzino, l'app verifica il setup e l'eventuale esclusione del movimento dal registro. Se l'inserimento automatico è abilitato, crea il buffer dell'operazione SIAN con i dati disponibili.
+
+I movimenti esclusi dal registro, gli articoli esclusi e i flussi non pertinenti non generano operazioni.
+
+### 11.2 Aggiornamento dei lotti e delle pratiche
+
+Dopo i movimenti di consumo e produzione l'app può aggiornare le informazioni SIAN del lotto e propagare le pratiche enologiche tra materia prima e prodotto ottenuto, rispettando le causali e le impostazioni del setup.
+
+### 11.3 Causale obbligatoria in registrazione
+
+Quando l'opzione è attiva, la registrazione viene bloccata se manca la causale:
+
+- nei documenti di vendita;
+- nei documenti di acquisto;
+- nei movimenti di produzione, verificando la causale dell'ordine di produzione rilasciato.
+
+La causale determina anche il tipo di operazione SIAN di carico o scarico e può indicare la pratica enologica da applicare.
+
+### 11.4 Esclusioni
+
+L'app consente di escludere specifici articoli o movimenti dalla gestione SIAN. L'esclusione deve essere usata solo per articoli o processi che non devono essere rappresentati nel registro, perché impedisce la generazione o l'aggiornamento automatico dei dati collegati.
+
+## 12. Monitoraggio, errori e tracciabilità
+
+### 12.1 Stati locali
+
+Soggetti, operazioni e MVV-E conservano gli stati principali del ciclo:
+
+- creato;
+- controllato;
+- inviato;
+- accettato;
+- annullato;
+- con errore o risposta da verificare.
+
+La presenza di data, ora e utente consente di ricostruire chi ha creato, controllato, inviato o annullato il record.
+
+### 12.2 Log Web Service
+
+Se abilitato nel setup, il log registra i messaggi scambiati con SIAN. Il log è consultabile dalla pagina **SIAN WS Log** e supporta:
+
+- analisi delle richieste inviate;
+- verifica delle risposte ricevute;
+- diagnosi degli errori di autenticazione, endpoint o dati;
+- supporto tecnico e audit applicativo.
+
+### 12.3 Errori funzionali principali
+
+L'app blocca l'elaborazione quando, tra gli altri casi:
+
+- manca la credenziale o il codice ICQRF;
+- il codice ICQRF non è coerente tra le operazioni selezionate;
+- manca un dato obbligatorio della richiesta;
+- manca l'ubicazione o il codice ICQRF dell'ubicazione;
+- mancano gli attributi SIAN dell'articolo;
+- mancano righe nell'operazione;
+- il numero di righe non è compatibile con il tipo operazione;
+- manca il codice vasca quando richiesto;
+- l'operazione è già inviata, annullata o scaduta;
+- il PDF MVV-E richiesto non è disponibile.
+
