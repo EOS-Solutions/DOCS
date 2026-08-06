@@ -1,0 +1,80 @@
+La funzione **Attributi SIAN**, presente in anagrafica articoli e nella scheda informazioni lotto, consente di creare il codice primario e il codice secondario da utilizzare per le comunicazioni al SIAN.
+
+Il codice articolo identifica il prodotto per i processi aziendali, mentre il codice SIAN identifica il prodotto per gli adempimenti normativi. 
+Poiché il SIAN considera numerosi attributi che possono variare nel tempo e da lotto a lotto, utilizzare la stessa codifica genererebbe una complessità gestionale elevata. 
+La best practice consiste nel mantenere una codifica aziendale stabile in Business Central e demandare al sistema la generazione e la gestione dei codici SIAN necessari alla comunicazione con il registro telematico.
+
+La soluzione consiste nel:
+
+* gestire l'articolo con una codifica aziendale
+* associare gli attributi SIAN (generici) all'articolo
+* associare gli attributi SIAN (specifici) sul lotto
+* generare automaticamente il codice SIAN quando necessario e al variare degli attributi
+* trasmettere al SIAN il codice corretto associato al lotto movimentato.
+
+Il SIAN prevede di gestire la codifica degli articoli tramite due codici a codifica libera: definiti Codice Primario e Secondario. 
+
+Le loro regole prevedono che i campi che compongono un codice articolo sono:
+Categoria, Classificazione, Atto / Certificato, Stato Fisico, Colore, Biologico, DOP/IGP, Vigna, Data Certificato DOP, Nr. Certificato DOP,E-Bacchus, Sottozona, Annata, Origine Uve, Provenienza, Zona Viticola, Codice Partita, Massa volumica. 
+
+Oltre a questi controlli bisogna aggiungere la verifica delle pratiche enologiche. Per pratiche enologiche si intende: Paesi Provenienza, Menzioni Tradizionali, Pratiche Enologiche (Manipolazioni), Varietà.
+
+L’enorme quantità di informazioni ci fa capire che non è possibile avere un rapporto di 1 a 1 fra l’anagrafica articoli di Business Central e quella del SIAN. Il rapporto di fatto è di n a n. 
+
+La soluzione adottata è quella si permettere l’associazione di un codice primario / secondario di default a livello di anagrafica articolo. In fase poi di utilizzo dell’articolo nei vari documenti al variare delle informazioni legate al lotto movimentato BC crea in automatico del nuovi codice articolo SIAN se necessario.
+
+## Dati gestiti
+
+| Area | Utilizzo e caratteristiche |
+|---|---|
+| Codice Primario SIAN | Primo identificativo della scheda attributi. Non viene modificato direttamente nella pagina, ma viene restituito al termine dell’elaborazione. |
+| Codice Secondario SIAN | Secondo identificativo della scheda attributi. Insieme al codice primario individua univocamente la combinazione di attributi. |
+| Categoria SIAN | Identifica la categoria enologica del prodotto. Condiziona anche quali attributi sono ammessi dalla matrice SIAN. |
+| Zona di coltivazione SIAN | Indica la zona nella quale è stato coltivato il prodotto. |
+| Classificazione SIAN | Specifica la classificazione del prodotto secondo le codifiche SIAN. |
+| Colore SIAN | Indica il colore del vino o del prodotto enologico. |
+| Origine SIAN | Specifica l’origine del prodotto. |
+| Origine uve SIAN | Indica il Paese o l’area di origine delle uve. |
+| Stato fisico SIAN | Descrive lo stato fisico del prodotto. |
+| E-Bacchus SIAN | Collega il prodotto al relativo codice E-Bacchus. |
+| Biologico SIAN | Indica la caratteristica biologica del prodotto. |
+| Certificazione atto SIAN | Identifica l’eventuale certificazione prevista per il prodotto. |
+| DOP/IGP SIAN | Indica la classificazione DOP o IGP. |
+| Data e numero certificato DOP | Memorizzano i riferimenti del certificato DOP associato. |
+| Anno | Indica l’anno di riferimento del vino o della produzione. |
+| Massa SIAN | Memorizza la massa o il valore di massa volumica previsto per il prodotto. |
+| Codice vigna SIAN | Collega il prodotto alla vigna censita in SIAN. |
+| Sottozona SIAN | Specifica l’eventuale sottozona di produzione. |
+| Codice lotto SIAN | Memorizza il codice lotto associato alla scheda attributi. |
+| Descrizione | Descrizione libera della combinazione di attributi. |
+
+## Valori multipli
+
+La pagina contiene anche quattro sottosezioni dedicate alla gestione di più valori:
+
+- **Paesi di origine SIAN**
+- **Menzioni tradizionali SIAN**
+- **Pratiche enologiche SIAN**
+- **Varietà SIAN**
+
+Per ogni valore vengono gestiti almeno il codice e la descrizione. Per le varietà è disponibile anche la **percentuale della varietà**.
+
+Il campo **Paesi di origine SIAN** visualizzato nella sezione generale è un indicatore della presenza di valori dettagliati; i singoli Paesi vengono invece gestiti nella relativa sottopagina.
+
+## Controlli e riutilizzo
+
+Quando viene creata una nuova combinazione, l'app confronta gli attributi generali e i valori multipli con le schede già presenti.
+
+La nuova scheda viene inoltre verificata rispetto alla **matrice SIAN**. La matrice impedisce di valorizzare attributi non ammessi per la categoria selezionata, ad esempio una varietà, una menzione o una certificazione non compatibile con la categoria del prodotto.
+
+## Utilizzo successivo
+
+Gli attributi salvati vengono utilizzati per:
+
+- identificare il prodotto SIAN tramite la coppia di codici primario e secondario;
+- trasferire l’identificazione ai lotti;
+- valorizzare le righe del registro operazioni SIAN;
+- riportare nei documenti MVV le informazioni del prodotto;
+- determinare caratteristiche come categoria, origine, colore, classificazione, pratiche enologiche e certificazioni.
+
+In particolare, i dati relativi a pratiche enologiche, trattamento e contenuto zuccherino vengono utilizzati nella generazione delle righe del registro SIAN. 
