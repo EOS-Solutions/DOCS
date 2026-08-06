@@ -10,6 +10,8 @@ Nella **scheda Articolo* è stato aggiunto il gruppo **SIAN** con i seguenti cam
 | **Escludi dalla gestione SIAN** | Determina se l’articolo deve essere escluso dai processi SIAN. Se attivo, il movimento di magazzino viene marcato come escluso dal registro SIAN e non vengono eseguite la gestione delle pratiche enologiche, la creazione del lotto SIAN e la generazione automatica dell’operazione. Il valore viene impostato automaticamente in base al tipo vino: articolo senza tipo vino = escluso. |
 | **Tipo prodotto SIAN** | Codice della tipologia di prodotto, selezionato dalla tabella SIAN dei tipi prodotto. È obbligatorio per la verifica di conformità dei documenti MVV relativi a spedizioni di vendita, trasferimenti e resi. Durante la generazione del file MVV viene trasmesso nel nodo `CodTipoProdMVV`, utilizzando i primi due caratteri del codice. |
 
+**In tutti gli articoli gestiti dal SIAN la tracciabilità a lotto è obbligatoria**
+
 ### Sintesi funzionale
 
 I campi del gruppo SIAN svolgono quattro funzioni principali:
