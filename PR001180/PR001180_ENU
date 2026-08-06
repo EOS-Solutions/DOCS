@@ -1,0 +1,80 @@
+The **SIAN Attributes** function, available on the Item Card and in the Lot Information Sheet, allows users to create the Primary Code and Secondary Code used for SIAN communications.
+
+The item code identifies the product for business processes, while the SIAN code identifies the product for regulatory compliance purposes.
+Since SIAN considers a large number of attributes that may vary over time and from lot to lot, using the same coding structure would introduce significant management complexity.
+The recommended best practice is to maintain a stable company item coding structure in Business Central and let the system generate and manage the SIAN codes required for communication with the electronic register.
+
+The solution consists of:
+
+* managing the item using a company-specific item code
+* associating the generic SIAN attributes with the item
+* associating the specific SIAN attributes with the lot
+* automatically generating the SIAN code whenever required and whenever attributes change
+* transmitting to SIAN the correct code associated with the lot being posted or moved.
+
+SIAN manages item identification through two freely configurable codes, referred to as the Primary Code and Secondary Code.
+
+The rules for generating these codes require the following fields to be considered:
+Category, Classification, Act / Certificate, Physical State, Color, Organic, PDO/PGI, Vineyard, PDO Certificate Date, PDO Certificate No., E-Bacchus, Subzone, Vintage, Grape Origin, Provenance, Wine-Growing Area, Batch Code, and Density.
+
+In addition to these controls, the validation of enological practices must also be considered. Enological practices include: Countries of Origin, Traditional Terms, Enological Practices (Manipulations), and Grape Varieties.
+
+The large amount of information involved clearly shows that it is not possible to establish a 1:1 relationship between the Business Central item master and the SIAN item master. In practice, the relationship is many-to-many (N:N).
+
+The adopted solution is to allow the association of a default Primary Code and Secondary Code at the item master level. Subsequently, when the item is used in documents, Business Central automatically creates new SIAN item codes whenever necessary, based on changes to the information associated with the lot being processed.
+
+## Managed Data
+
+| Area | Purpose and characteristics |
+|---|---|
+| SIAN Primary Code | First identifier of the attribute record. It is returned to the Item Card at the end of the process. |
+| SIAN Secondary Code | Second identifier of the attribute record. Together with the primary code, it uniquely identifies the attribute combination. |
+| SIAN Category | Identifies the product’s oenological category and determines which attributes are allowed by the SIAN matrix. |
+| SIAN Growing Area | Indicates the area where the product was grown. |
+| SIAN Classification | Specifies the product classification according to SIAN codes. |
+| SIAN Colour | Indicates the colour of the wine or oenological product. |
+| SIAN Origin | Specifies the origin of the product. |
+| SIAN Grape Origin | Indicates the country or area of origin of the grapes. |
+| SIAN Physical State | Describes the physical state of the product. |
+| SIAN E-Bacchus | Links the product to the relevant E-Bacchus code. |
+| SIAN Organic | Indicates whether the product has an organic characteristic. |
+| SIAN Act Certification | Identifies any certification applicable to the product. |
+| SIAN DOP/IGP | Indicates the DOP or IGP classification. |
+| DOP Certification Date and No. | Store the details of the associated DOP certificate. |
+| Year | Indicates the reference year of the wine or production. |
+| SIAN Mass | Stores the mass or volumetric mass value required for the product. |
+| SIAN Vineyard Code | Links the product to a vineyard registered in SIAN. |
+| SIAN Subzone | Specifies the production subzone, when applicable. |
+| SIAN Batch Code | Stores the batch code associated with the attribute record. |
+| Description | Free-text description of the attribute combination. |
+
+## Multiple Values
+
+The page also includes four sections for managing multiple values:
+
+- **SIAN Countries of Origin**
+- **Traditional Mentions**
+- **SIAN Oenological Practices**
+- **Varieties**
+
+Each value includes at least a code and a description. For varieties, the related **variety percentage** can also be specified.
+
+The **SIAN Countries of Origin** field shown in the general section indicates whether detailed values are present. The individual countries are managed in the dedicated subpage.
+
+## Validation and Reuse
+
+When a new combination is created, the app compares the general attributes and multiple values with the existing records.
+
+The new record is also checked against the **SIAN matrix**. The matrix prevents users from entering attributes that are not allowed for the selected category, such as a variety, mention or certification that is not compatible with the product category.
+
+## Subsequent Use
+
+The saved attributes are used to:
+
+- identify the SIAN product through the primary and secondary code pair;
+- transfer the identification to lots;
+- populate SIAN operation lines;
+- include product information in MVV documents;
+- determine characteristics such as category, origin, colour, classification, oenological practices and certifications.
+
+The **Oenological Practices**, **Treatment** and **Sugar Content** information is then used when generating SIAN register lines. These fields should be distinguished from the corresponding SIAN attributes managed separately on the Item Card.
