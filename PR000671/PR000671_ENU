@@ -1,15 +1,23 @@
-Items: Tracking is mandatory for SIAN items. ÃExclude from SIANÄ checkbox let disable SIAN management for specific Items. I.E: labels and caps products type must not be managed with the SIAN.
+In the Item Card, the **SIAN** group is added with the following fields:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/7wine-sian-ENU.jpg"><br>
+| Field | Purpose and use |
+|---|---|
+| **SIAN Primary Code** | First SIAN identifier of the product. Together with the SIAN Secondary Code, it identifies the item's SIAN attribute record. It is managed through the **SIAN Attributes** action, transferred to lots, and used when generating SIAN operations and MVV documents as `CodPrimario`. It cannot be edited directly on the Item Card. |
+| **SIAN Secondary Code** | Second SIAN identifier of the product, associated with the primary code. It completes the identification of the SIAN product, is transferred to lots, and is used as `CodSecondario` in MVV files and when searching for the related SIAN subject record. It cannot be edited directly on the Item Card. |
+| **SIAN Sugar Content** | Code identifying the product's sugar content, selected from the SIAN sugar content table. When the SIAN operation line is created, it populates the **Sugar Content** field. If a lot exists, the lot value is used first; otherwise, the item value is used. |
+| **SIAN Treatment** | Code identifying the oenological treatment applied to the product, selected from the SIAN treatment table. It populates the **Treatment** field on the SIAN operation line, with the lot value taking precedence when available. |
+| **SIAN Enological Practices Method** | Code identifying the method related to oenological practices, selected from the SIAN methods table. It populates the **Enological Practices Method** field on the SIAN operation line; the lot value takes precedence over the item value. |
+| **Exclude from SIAN Management** | Determines whether the item must be excluded from SIAN processes. When enabled, the inventory movement is marked as excluded from the SIAN register, and the management of oenological practices, SIAN lot creation, and automatic SIAN operation generation are skipped. The value is automatically set based on the wine type: an item without a wine type is excluded. |
+| **SIAN Product Type** | Code identifying the product type, selected from the SIAN product type table. It is required when checking MVV compliance for sales shipments, transfers, and returns. When the MVV file is generated, it is transmitted in the `CodTipoProdMVV` node using the first two characters of the code. |
 
-The SIAN is expecting to manage the coding of the items through two free coding codes: defined as Primary and Secondary Code.
+### Functional summary
 
-Fields composing the codes are: Category, Classification, Act Certification, Physical State, Color, Organic, DOP/IGP, Vineyard, Date of DOP Certificate, No. of DOP Certificate, E-Bacchus, Subzone, Year, Origin of Grapes, Provenience, Wine Growing Zone, Batch Code, Mass.
+The fields in the SIAN group serve four main purposes:
 
-In addition to these checks, it is necessary to add the verification of enological practices. By enological practices we mean: Countries of Origin, Traditional Terms, Enological Practices (Manipulations), Varieties.
+1. identify the product through the primary/secondary code pair;
+2. describe the oenological characteristics reported in SIAN operations;
+3. determine whether the item participates in SIAN management;
+4. provide the product type required to generate MVV documents.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/8wine-sian-ENU.jpg"><br>
+For the enological data, the operation-line logic first reads the values stored on the lot and uses the item values as defaults. The **SIAN Sugar Content**, **SIAN Treatment**, and **SIAN Enological Practices Method** fields are assigned to the SIAN operation line.
 
-In each entries of an item it is possible to access to the Lot Information Sheet to see which is the associated SIAN code and possibly change a series of attributes and obtain a new SIAN code.
-
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000671-0/9wine-sian-ENU.jpg"><br>
