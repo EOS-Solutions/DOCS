@@ -10,6 +10,8 @@ In the Item Card, the **SIAN** group is added with the following fields:
 | **Exclude from SIAN Management** | Determines whether the item must be excluded from SIAN processes. When enabled, the inventory movement is marked as excluded from the SIAN register, and the management of oenological practices, SIAN lot creation, and automatic SIAN operation generation are skipped. The value is automatically set based on the wine type: an item without a wine type is excluded. |
 | **SIAN Product Type** | Code identifying the product type, selected from the SIAN product type table. It is required when checking MVV compliance for sales shipments, transfers, and returns. When the MVV file is generated, it is transmitted in the `CodTipoProdMVV` node using the first two characters of the code. |
 
+** Lot tracking is mandatory for all items managed by SIAN. **
+
 ### Functional summary
 
 The fields in the SIAN group serve four main purposes:
