@@ -1,7 +1,45 @@
-ICQRF code is the identification code assigned to companies by the "Department of the Central Inspectorate for the protection of quality and the repression of agro-food products fraud".
+## ICQRF Codes
 
-Each ICQRF code must be associated with an ICQRF credential code which contains the user and password for accessing the SIAN telematic services.
+**Purpose:** master data of the company's **ICQRF facility/depot codes**, i.e. the physical positions registered with the reference authority (ICQRF) to which the movements of the oenological register are communicated. Each code represents a "position" to be indicated on subjects, operations and locations.
 
-The ICQRF code can be associated with one or more locations. The assignment is mandatory if you want to send the information to SIAN.
+| Field | Use and purpose |
+|---|---|
+| Code | ICQRF code of the facility. On validation it is **normalized by removing spaces**, to ensure a format consistent with what SIAN expects. It is the key used as a reference throughout the module (operations, locations, subjects). |
+| Description | Readable description of the ICQRF position, to make it easier for the operator to select. |
+| ICQRF Credential Code | **Links the ICQRF code to the authentication credential** to be used for transmitting. It is the link that, starting from the facility, determines *with which credentials* and *toward which environment* (test/live) the Web Service requests are sent. |
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000670-0/6wine-sian-ENU.jpg"><br>
+**Use:** a company can have multiple ICQRF codes (multiple facilities/depots); each points to the correct credential, so on submission the system traces from the position → credential → environment/endpoint.
+
+
+**In the Location Card, in the dedicated SIAN section, the ICQRF code must be entered.**
+
+## ICQRF Credential
+
+**Purpose:** contains the **technical authentication data** toward the SIAN Web Services and determines the **environment** (test or production) of the transmissions. It is referenced by the ICQRF codes.
+
+| Field | Use and purpose |
+|---|---|
+| Code | Identifier of the credential, used as a reference by the ICQRF code. |
+| Description | Description of the credential (e.g. authority/environment), for operational selection. |
+| Username Live | Username for the **production** (live) environment. |
+| Password Live | Password for the **production** (live) environment. |
+| Username Test | Username for the **test** environment. |
+| Password Test | Password for the **test** environment. |
+| Fiscal Code | Fiscal code of the ICQRF subject holding the credential; identifies the entity with the service. |
+| Valid for transmission | Flag that enables the credential for **actual submission** toward SIAN: if not active, the credential cannot be used to transmit. |
+| Test | Determines the **environment**: if active, all Web Service calls are directed to the **test endpoints**; otherwise to the **live** ones. It is the test/production discriminator described in the setup. |
+
+## Functional relationship between the two tables
+
+In short: the **ICQRF code** represents *where* (position/facility), the **ICQRF credential** represents *how and toward which environment* to authenticate. Each SIAN operation/subject inherits the ICQRF code and, through it, the credential that governs endpoint, authentication and transmission enablement.
+
+## Location Card
+
+The SIAN group on the Location Card links each BC depot/warehouse to the information required by the oenological register: **where** (ICQRF Code, which carries with it credential and environment) and **on whose behalf** (subject as vendor, commissioner as customer). These values are then used by the SIAN logic when generating operations from inventory movements; consistently, a missing location or its ICQRF code blocks the processing of the flows that require them.
+
+| Field | Use and purpose |
+|---|---|
+| ICQRF Code | Links the location to the **ICQRF code** of the facility/depot (relation to `EOS083 SIAN ICQRF`). It determines the ICQRF position to which the register movements are referred and, through it, the credential and the environment (test/live) for transmission. It is the key link that routes the location's inventory movements into the correct SIAN register. |
+| SIAN Subject Code | Identifies the **SIAN subject** associated with the location (relation to `Vendor`). It represents the default subject (counterparty) to attribute to the SIAN operations originating from that location when the standard document does not provide a counterparty (Purchase entries, Sale entries, Transfer entries) |
+| SIAN Commissioner Code | Identifies the **SIAN commissioner** of the location (relation to `Customer`). It represents the commissioner associated with the location, for operations carried out on behalf of third parties (commissioner / subcontracting-type logic). |
+
