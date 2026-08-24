@@ -1,7 +1,78 @@
-The SIAN matrix defines, for each SIAN category, which attributes/data must be managed or checked during operations involving SIAN (the dematerialized portal of the electronic wine register).
-This table serves as the configuration panel for the first-level control matrix: one row for each SIAN category, while the columns indicate which information is relevant (N.B. not mandatory) for that category.
+## SIAN Matrix List
 
-The control matrix is distributed by MIPAAF.
+**Type:** List  
+**Purpose:** Configuration of the rules that determine which SIAN attributes are allowed for each product category.
 
+The page allows the SIAN manager to define which information can be used for each SIAN category. Each row represents a SIAN category and contains several Yes/No indicators.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000667-0/4wine-sian-ENU.jpg"><br>
+- **Yes:** the information can be populated.
+- **No:** the information must not be populated.
+- A Yes value does not make the field mandatory.
+- If a forbidden value is entered, the matrix validation blocks the process and reports the incompatibility.
+
+## Matrix fields
+
+| Field | Functional purpose |
+|---|---|
+| SIAN Category Code | Identifies the SIAN category to which the rules apply. |
+| Act Certification | Specifies whether act certification is allowed. |
+| Classification | Specifies whether product classification is allowed. |
+| DOPIGP | Specifies whether the DOP/IGP code is allowed. |
+| IGP % | Specifies whether the IGP percentage is allowed. |
+| E-Bacchus | Specifies whether the E-Bacchus code is allowed. |
+| Origin | Specifies whether the wine origin is allowed. |
+| Has Country Origins | Specifies whether countries of origin are allowed. |
+| Grape Origin | Specifies whether grape origin is allowed. |
+| Wine Growing Zone | Specifies whether the wine-growing zone is allowed. |
+| Varieties | Specifies whether grape varieties are allowed. |
+| Varieties % | Specifies whether the percentage of varieties is allowed. |
+| Other Varieties | Specifies whether other varieties are allowed. |
+| Subzone | Specifies whether the subzone is allowed. |
+| Vineyard | Specifies whether the vineyard is allowed. |
+| Color | Specifies whether the product color is allowed. |
+| Mentions | Specifies whether mentions are allowed. |
+| Biological | Specifies whether the organic characteristic is allowed. |
+| Sugar Content | Specifies whether sugar content is allowed. |
+| Enological Practices | Specifies whether oenological practices are allowed. |
+| Year | Specifies whether the product year or vintage is allowed. |
+| Year Perc. | Specifies whether the year percentage is allowed. |
+| Potential Alc. Strength | Specifies whether potential alcoholic strength is allowed. |
+| Actual Alc. Strength | Specifies whether actual alcoholic strength is allowed. |
+| Total Alc. Strength | Specifies whether total alcoholic strength is allowed. |
+| Volumic Mass | Specifies whether volumic mass is allowed. |
+| Physical State | Specifies whether physical state is allowed. |
+| Container | Specifies whether the container is allowed. |
+| Quantity Load/Unload | Specifies whether the load/unload quantity is allowed. |
+| Nominal Volume | Specifies whether nominal volume is allowed. |
+| DOP Cert. Date | Specifies whether the DOP certificate date is allowed. |
+| DOP Cert. No. | Specifies whether the DOP certificate number is allowed. |
+| Serial No. | Specifies whether the serial number is allowed. |
+| From Tie | Specifies whether the initial mark number is allowed. |
+| To Tie | Specifies whether the final mark number is allowed. |
+| Packages | Specifies whether the number of packages is allowed. |
+| Lot No. | Specifies whether the lot number is allowed. |
+| Note | Specifies whether notes are allowed. |
+| Acidity Degree | Specifies whether acidity degree is allowed. |
+| Mount Degrees | Specifies whether mount degrees are allowed. |
+| Batch Code | Specifies whether the batch code is allowed. |
+| Treatment | Specifies whether the treatment is allowed. |
+| Enological Practices Method | Specifies whether the oenological practices method is allowed. |
+| Aging Days | Specifies whether the aging days are allowed. |
+| Quantity Lost | Specifies whether the lost quantity is allowed. |
+
+## Use in the process
+
+The matrix is mainly used in two situations:
+
+1. **When creating or checking SIAN item attributes:** it verifies that the entered attributes are compatible with the selected category.
+2. **When generating SIAN operation lines:** it checks that the information entered on the operation line is allowed for the product category.
+
+### Example
+
+If the physical state is not allowed for a specific SIAN category, entering a physical state in the item attributes or in the related operation is blocked.
+
+## Maintenance
+
+The matrix can be maintained manually or initialized through the default-value setup function. Initialization recreates the standard rules and deletes the existing values, so it should be performed only after assessing its impact on the current configuration.
+
+The page therefore represents the **central configuration of SIAN consistency rules**, preventing the transmission of data combinations that are not compatible with the relevant product categories.
