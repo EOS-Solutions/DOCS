@@ -1,14 +1,99 @@
-La pagina permette di inviare la tabella Vasi al SIAN. Le azioni principali sono:
+## Lista vasi SIAN
 
-* Utilizzando il Crea soggetto � possibile creare / aggiornare le botti.
+**Funzione:** consultazione e gestione massiva dei soggetti SIAN relativi alle vasche vinicole.
 
-* Spedisci al Servizio WEB.
+La pagina mostra esclusivamente i record della tabella **Intestazione soggetto SIAN** con tipo soggetto **Vasca**. Non consente l’inserimento, la modifica o la cancellazione diretta dei record. 
 
-* Ottieni Risposta.
+### Informazioni visualizzate
 
-* Nella sezione Risposta SIAN � presente lo stato della richiesta/risposta.
+La lista espone le informazioni identificative e lo stato del ciclo SIAN:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000673-0/10wine-sian-ITA.jpg"><br>
+- numero progressivo del soggetto;
+- tipo soggetto;
+- codice soggetto;
+- codice ICQRF;
+- tipo richiesta;
+- identificativo della persona fisica;
+- identificativo della persona giuridica;
+- data di creazione;
+- utente creatore;
+- stato di controllo;
+- utente che ha eseguito il controllo;
+- stato di invio;
+- data di invio;
+- utente che ha eseguito l’invio;
+- stato di annullamento;
+- data e ora di annullamento;
+- utente che ha eseguito l’annullamento.
+
+La sezione **Risposta SIAN**, non modificabile, consente di consultare:
+
+- identificativo trasmissione movimenti;
+- identificativo trasmissione registro;
+- stato di accettazione;
+- data e ora di accettazione;
+- codice risposta;
+- messaggio risposta.
+
+### Azioni disponibili
+
+#### Crea soggetto
+
+Avvia una procedura massiva per creare i soggetti SIAN a partire dalle vasche presenti nell’anagrafica EOS WINE.
+
+Per ogni vasca vengono generati:
+
+- un’intestazione del soggetto SIAN;
+- una riga di dettaglio;
+- il codice della vasca;
+- la tipologia SIAN della vasca;
+- la descrizione;
+- il volume in litri;
+- il collegamento tra la vasca locale e il soggetto SIAN creato.
+
+La procedura utilizza il codice ICQRF selezionato e non ricrea i soggetti già trasmessi. I soggetti locali non ancora inviati possono invece essere eliminati e ricreati.
+
+#### Invia al servizio web
+
+Invia a SIAN i soggetti selezionati che risultano:
+
+- controllati;
+- non ancora inviati;
+- non annullati.
+
+L’invio viene eseguito per il tipo soggetto Vasca e aggiorna le informazioni di trasmissione del record.
+
+#### Ricevi risposta
+
+Richiede al servizio SIAN l’esito dell’ultima trasmissione per i soggetti selezionati. La risposta può aggiornare:
+
+- identificativi di trasmissione;
+- identificativo di registro;
+- stato di accettazione;
+- data e ora di accettazione;
+- codice e messaggio di risposta.
+
+#### Reimposta registri selezionati
+
+Richiede conferma e ripristina lo stato locale dei soggetti non ancora inviati, cancellando gli identificativi, gli esiti e gli stati di trasmissione precedentemente memorizzati.
+
+Un soggetto già inviato non può essere reimpostato tramite questa funzione.
+
+#### Elimina registri selezionati
+
+Per i soggetti già trasmessi, invia a SIAN una richiesta di cancellazione o annullamento del soggetto. Non si tratta della cancellazione fisica del record locale.
+
+## Flusso funzionale complessivo
+
+1. L’amministratore configura sulla vasca il tipo SIAN e il codice ICQRF.
+2. L’utente crea i soggetti SIAN tramite la lista delle vasche.
+3. Il sistema genera l’intestazione e il dettaglio della vasca.
+4. L’utente aggiorna i dati, se necessario.
+5. Il soggetto viene inviato al servizio SIAN.
+6. L’utente acquisisce e verifica la risposta.
+7. In caso di necessità, può richiedere l’annullamento del soggetto già trasmesso.
+
+La pagina costituisce quindi il punto di gestione del ciclo completo dei soggetti SIAN relativi alle vasche, dalla generazione locale fino alla trasmissione e alla ricezione dell’esito.
 
 Le seguenti funzioni analoghe a quelle dei vasi consentono l'invio di:
 
