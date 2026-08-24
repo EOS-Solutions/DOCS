@@ -1,3 +1,63 @@
-Viene utilizzato per definire quali righe sono consentite per ogni operazione ammessa da SIAN, specificando anche una descrizione che aiuta l'operatore ad inserire i trattamenti vino.
+## Definizioni numeri prodotto SIAN
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000668-0/5wine-sian-ITA.jpg"><br>
+**Tabella di origine:** Definizioni numeri prodotto SIAN  
+**Funzione:** gestione dell’associazione tra i tipi di operazione SIAN e i relativi numeri di prodotto.
+
+La pagina consente di mantenere l’elenco dei numeri di prodotto previsti da SIAN per ciascun tipo di operazione del registro enologico. Il numero di prodotto è un codice SIAN e non corrisponde necessariamente al codice articolo utilizzato in Business Central.
+
+### Dati gestiti
+
+| Campo | Descrizione funzionale |
+|---|---|
+| Tipo operazione | Identifica il tipo di operazione SIAN a cui si riferisce la definizione. |
+| Numero prodotto | Identifica il numero di prodotto previsto da SIAN per il tipo di operazione. |
+| Descrizione numero prodotto | Descrive il prodotto associato al numero SIAN, con una lunghezza massima di 50 caratteri. |
+
+La combinazione di **Tipo operazione** e **Numero prodotto** identifica univocamente la definizione. Lo stesso numero può quindi essere presente per tipi di operazione diversi, mentre non possono esistere due definizioni uguali per lo stesso tipo di operazione.
+
+### Utilizzo nei processi
+
+La pagina viene utilizzata come elenco di riferimento quando l’utente deve valorizzare il numero prodotto in una riga di operazione SIAN.
+
+Il flusso operativo è il seguente:
+
+1. l’utente inserisce o dispone il tipo di operazione SIAN;
+2. richiede la selezione del numero prodotto;
+3. il sistema apre la lista filtrata per il tipo di operazione corrente;
+4. l’utente seleziona una definizione;
+5. il numero prodotto viene riportato nella riga dell’operazione.
+
+La stessa logica viene utilizzata anche in alcuni processi di produzione e vinificazione, nei quali il tipo di operazione viene determinato dalla causale associata all’ordine.
+
+### Importazione delle definizioni
+
+La pagina mette a disposizione l’azione **Importa definizione numero prodotto SIAN**, che consente di caricare massivamente le definizioni fornite da SIAN.
+
+Il file di importazione:
+
+- utilizza il formato testuale delimitato da punto e virgola;
+- è codificato in UTF-8;
+- contiene il tipo di operazione, il numero prodotto e la relativa descrizione;
+- prevede una prima riga di intestazione, che viene ignorata durante l’importazione.
+
+L’importazione converte il tipo di operazione nel corrispondente valore SIAN e il numero prodotto in un valore numerico. La descrizione viene memorizzata entro il limite previsto dal campo.
+
+### Rilevanza funzionale
+
+La pagina è importante perché garantisce che l’utente scelga numeri prodotto compatibili con il tipo di operazione SIAN. Una definizione assente o errata può impedire la corretta compilazione dell’operazione oppure comportare la trasmissione di un codice prodotto non coerente con le regole SIAN.
+
+La pagina gestisce esclusivamente le definizioni dei numeri prodotto; non tratta le categorie SIAN, gli attributi degli articoli o le regole di ammissibilità della matrice SIAN.
+
+### Esempio
+
+| Tipo Operazione | Numero Prodotto | Descrizione Numero Prodotto |
+|---|---|---|
+| ARMC |1 | Prodotto Base |
+| ARMC |2 | Prodotto Aggiunto |
+| ARMC |3 | Prodotto Arricchito |
+| IMBO |1 | Prodotto Sfuso |
+| IMBO |2 | Prodotto Imbottigliato |
+| SVIN |1 | Prodotto Base |
+| SVIN |2 | Prodotto Risultante Vinaccia |
+| SVIN |3 | Prodotto Risultante Feccia |
+| SVIN |4 | Prodotto Risultante Mosto o Vino |
