@@ -1,5 +1,80 @@
-La matrice SIAN per ogni categoria SIAN stabilisce quali attributi/dati devono essere gestiti o controllati nelle operazioni verso il SIAN (il portale dematerializzato del registro telematico vitivinicolo). La tabella è quindi il pannello di configurazione della matrice di controllo di primo livello: una riga per categoria SIAN, e le colonne indicano quali informazioni sono pertinenti (N.B. non obbligatorie) per quella categoria.
+## Matrice SIAN
 
-La matrice di controllo è distribuita dal MIPAAF.
+**Tipologia:** Lista  
+**Funzione:** configurazione delle regole di ammissibilità degli attributi SIAN per ciascuna categoria di prodotto.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000667-0/4wine-sian-ITA.jpg"><br>
+La pagina consente al responsabile SIAN di definire quali informazioni possono essere utilizzate per ogni categoria SIAN. Ogni riga corrisponde a una categoria e contiene una serie di indicatori Sì/No.
+
+## Significato degli indicatori
+
+- **Sì:** l’informazione può essere valorizzata.
+- **No:** l’informazione non deve essere valorizzata.
+- Un indicatore impostato a **Sì** non rende automaticamente il campo obbligatorio.
+- Se viene valorizzata un’informazione vietata, il controllo della matrice blocca l’elaborazione e segnala l’incompatibilità.
+
+## Campi della matrice
+
+| Campo | Funzione |
+|---|---|
+| Codice categoria SIAN | Identifica la categoria SIAN a cui si applicano le regole. |
+| Certificazione dell’atto | Indica se è ammessa la certificazione dell’atto. |
+| Classificazione | Indica se è ammessa la classificazione del prodotto. |
+| DOP/IGP | Indica se è ammesso il codice DOP/IGP. |
+| Percentuale IGP | Indica se è ammessa la percentuale IGP. |
+| Codice E-Bacchus | Indica se è ammesso il codice E-Bacchus. |
+| Origine del vino | Indica se è ammessa l’origine del vino. |
+| Presenza dei paesi di origine | Indica se sono ammessi i paesi di origine. |
+| Origine delle uve | Indica se è ammessa l’origine delle uve. |
+| Zona viticola | Indica se è ammessa la zona viticola. |
+| Varietà | Indica se sono ammesse le varietà. |
+| Percentuale delle varietà | Indica se è ammessa la percentuale delle varietà. |
+| Altre varietà | Indica se sono ammesse altre varietà. |
+| Sottozona | Indica se è ammessa la sottozona. |
+| Vigneto | Indica se è ammesso il vigneto. |
+| Colore | Indica se è ammesso il colore. |
+| Menzioni | Indica se sono ammesse le menzioni. |
+| Biologico | Indica se è ammessa l’informazione relativa al biologico. |
+| Contenuto zuccherino | Indica se è ammesso il contenuto zuccherino. |
+| Pratiche enologiche | Indica se sono ammesse le pratiche enologiche. |
+| Annata | Indica se è ammessa l’annata. |
+| Percentuale dell’annata | Indica se è ammessa la percentuale dell’annata. |
+| Titolo alcolometrico potenziale | Indica se è ammesso il titolo alcolometrico potenziale. |
+| Titolo alcolometrico effettivo | Indica se è ammesso il titolo alcolometrico effettivo. |
+| Titolo alcolometrico totale | Indica se è ammesso il titolo alcolometrico totale. |
+| Massa volumica | Indica se è ammessa la massa volumica. |
+| Stato fisico | Indica se è ammesso lo stato fisico. |
+| Contenitore | Indica se è ammesso il contenitore. |
+| Quantità di carico/scarico | Indica se è ammessa la quantità di carico o scarico. |
+| Volume nominale | Indica se è ammesso il volume nominale. |
+| Data del certificato DOP | Indica se è ammessa la data del certificato DOP. |
+| Numero del certificato DOP | Indica se è ammesso il numero del certificato DOP. |
+| Numero di serie | Indica se è ammesso il numero di serie. |
+| Contrassegno iniziale | Indica se è ammesso il contrassegno iniziale. |
+| Contrassegno finale | Indica se è ammesso il contrassegno finale. |
+| Numero dei colli | Indica se è ammesso il numero dei colli. |
+| Numero di lotto | Indica se è ammesso il numero di lotto. |
+| Nota | Indica se sono ammesse note descrittive. |
+| Grado di acidità | Indica se è ammesso il grado di acidità. |
+| Gradi di montaggio | Indica se sono ammessi i gradi di montaggio. |
+| Codice partita | Indica se è ammesso il codice partita. |
+| Trattamento | Indica se è ammesso il trattamento applicato al prodotto. |
+| Metodo della pratica enologica | Indica se è ammesso il metodo della pratica enologica. |
+| Giorni di affinamento | Indica se sono ammessi i giorni di affinamento. |
+| Quantità persa | Indica se è ammessa la quantità persa. |
+
+## Utilizzo nel processo
+
+La matrice viene utilizzata principalmente in due momenti:
+
+1. **Creazione o verifica degli attributi SIAN dell’articolo:** controlla che gli attributi inseriti siano compatibili con la categoria selezionata.
+2. **Generazione delle righe delle operazioni SIAN:** verifica che i dati riportati nella riga dell’operazione siano ammessi per la categoria del prodotto.
+
+### Esempio
+
+Se per una determinata categoria il campo **Stato fisico** è impostato su **No**, l’inserimento dello stato fisico negli attributi SIAN o nella relativa operazione viene bloccato.
+
+## Manutenzione
+
+La matrice può essere compilata manualmente oppure inizializzata tramite la funzione di impostazione dei valori predefiniti. L’inizializzazione ricrea le regole standard e cancella i valori già presenti; deve quindi essere eseguita solo dopo aver verificato l’impatto sulle configurazioni esistenti.
+
+La pagina rappresenta quindi una **configurazione centrale delle regole di coerenza SIAN**, utile a prevenire l’invio di combinazioni di dati non compatibili con le categorie di prodotto.
