@@ -1,14 +1,99 @@
-The page allows to send the Tanks table to SIAN. The main actions are:
+## SIAN Vase Subject List
 
-* Using the Create Subject you can Create/Update the tanks.
+**Purpose:** View and manage SIAN subjects related to wine-making vases.
 
-* Send to WEB service.
+The page displays only records from the **SIAN Subject Header** table where the subject type is **Vase**. Direct insertion, modification and deletion are disabled. 
 
-* Get Response.
+### Displayed information
 
-* In the SIAN Response section there is the status of the request / response.
+The list shows the identification data and lifecycle status of each SIAN subject:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000673-0/10wine-sian-ENU.jpg"><br>
+- Entry No.;
+- Subject Type;
+- Subject Code;
+- ICQRF Code;
+- Request Type;
+- Physical Person;
+- Legal Person;
+- Creation Date;
+- Created By;
+- Controlled;
+- Controlled By;
+- Sent;
+- Date Sent;
+- Sent By;
+- Canceled;
+- Canceled Datetime;
+- Canceled By.
+
+The **SIAN Response** information includes:
+
+- ID Transmission Movements;
+- ID Transmission Registry;
+- Accepted;
+- Accepted Datetime;
+- Response Code;
+- Response Message.
+
+### Available actions
+
+#### Create Subject
+
+Starts a processing procedure to create SIAN subjects from the vases registered in the EOS WINE master data.
+
+For each vase, the system creates:
+
+- a SIAN subject header;
+- a detail line;
+- the vase code;
+- the SIAN vase type;
+- the description;
+- the volume in litres;
+- the link between the local vase and the generated SIAN subject.
+
+The procedure uses the selected ICQRF Code and does not recreate subjects that have already been sent. Local subjects that have not yet been sent can be deleted and regenerated.
+
+#### Send to Web Service
+
+Sends the selected subjects to SIAN when they are:
+
+- controlled;
+- not yet sent;
+- not canceled.
+
+The sending process is delegated to the SIAN management codeunit and updates the transmission information on the subject.
+
+#### Get Response
+
+Requests the result of the last transmission from the SIAN Web Service. The response may update:
+
+- transmission identifiers;
+- registry transmission identifier;
+- acceptance status;
+- acceptance date and time;
+- response code and message.
+
+#### Reset Selected Registers
+
+After confirmation, resets the local status of subjects that have not yet been sent. Transmission identifiers, response data and transmission statuses are cleared.
+
+A subject that has already been sent cannot be reset.
+
+#### Delete Selected Registers
+
+For subjects already transmitted, sends a deletion or cancellation request to SIAN. This action does not physically delete the local record.
+
+## Overall functional flow
+
+1. The user configures the SIAN type and ICQRF Code on the vase master data.
+2. The user creates the SIAN subjects from the vase list.
+3. The system generates the subject header and vase detail.
+4. The user updates the data if necessary.
+5. The subject is sent to the SIAN Web Service.
+6. The user retrieves and checks the response.
+7. If necessary, the user requests the cancellation of an already transmitted subject.
+
+The page therefore manage the complete lifecycle of SIAN vase subjects, from local generation through transmission and response handling.
 
 The following functions similarly to those of the tanks allow the sending of:
 
