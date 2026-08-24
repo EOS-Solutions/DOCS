@@ -1,6 +1,5 @@
 ## SIAN Matrix List
 
-**Type:** List  
 **Purpose:** Configuration of the rules that determine which SIAN attributes are allowed for each product category.
 
 The page allows the SIAN manager to define which information can be used for each SIAN category. Each row represents a SIAN category and contains several Yes/No indicators.
