@@ -1,3 +1,63 @@
-It is used to define which rows are allowed for each operation admitted by SIAN, also specifying a description that helps the operator enter the Wine treatments.
+## SIAN Product Number Definitions
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000668-0/5wine-sian-ENU.jpg"><br>
+**Source table:** SIAN Product Number Definitions  
+**Purpose:** Management of the association between SIAN operation types and their related product numbers.
+
+The page maintains the list of product numbers defined by SIAN for each type of operation in the oenological register. The product number is a SIAN code and does not necessarily correspond to the item number used in Business Central.
+
+### Managed fields
+
+| Field | Functional description |
+|---|---|
+| Operation Type | Identifies the SIAN operation type to which the definition applies. |
+| Product Number | Identifies the product number defined by SIAN for the operation type. |
+| Product Number Description | Describes the product associated with the SIAN number. The maximum length is 50 characters. |
+
+The combination of **Operation Type** and **Product Number** uniquely identifies each definition. The same product number may therefore be used for different operation types, but duplicate combinations are not allowed.
+
+### Use in the processes
+
+The page is used as a reference list when the user must enter the product number on a SIAN operation line.
+
+The process is as follows:
+
+1. the user selects or has an available SIAN operation type;
+2. the user opens the product number lookup;
+3. the system displays the list filtered by the current operation type;
+4. the user selects a product number definition;
+5. the selected product number is transferred to the operation line.
+
+The same logic is also used in certain production and winemaking processes, where the operation type is determined by the reason code associated with the production order.
+
+### Importing definitions
+
+The page provides the **Import SIAN Product Number Definition** action, which allows the definitions supplied by SIAN to be loaded in bulk.
+
+The import file:
+
+- uses text format with semicolon separators;
+- is encoded in UTF-8;
+- contains the operation type, product number and related description;
+- includes a header row, which is ignored during the import.
+
+During the import, the operation type is converted into the corresponding SIAN value and the product number into a numeric value. The description is stored within the maximum length allowed by the field.
+
+### Functional relevance
+
+The page ensures that users select product numbers compatible with the SIAN operation type. A missing or incorrect definition may prevent the correct completion of an operation or result in the transmission of a product code that is inconsistent with SIAN rules.
+
+The page manages only product number definitions. It does not manage SIAN categories, item attributes or the admissibility rules maintained in the SIAN matrix.
+
+### Example
+
+| Operation Type | Product Number | Product Number Description |
+|---|---|---|
+| ARMC | 1 | Base Product |
+| ARMC | 2 | Added Product |
+| ARMC | 3 | Enriched Product |
+| IMBO | 1 | Bulk Product |
+| IMBO | 2 | Bottled Product |
+| SVIN | 1 | Base Product |
+| SVIN | 2 | Pomace Derived Product |
+| SVIN | 3 | Lees Derived Product |
+| SVIN | 4 | Must or Wine Derived Product |
