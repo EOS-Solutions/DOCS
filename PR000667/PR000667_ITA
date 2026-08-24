@@ -1,6 +1,5 @@
 ## Matrice SIAN
 
-**Tipologia:** Lista  
 **Funzione:** configurazione delle regole di ammissibilità degli attributi SIAN per ciascuna categoria di prodotto.
 
 La pagina consente al responsabile SIAN di definire quali informazioni possono essere utilizzate per ogni categoria SIAN. Ogni riga corrisponde a una categoria e contiene una serie di indicatori Sì/No.
