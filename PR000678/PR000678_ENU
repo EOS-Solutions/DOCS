@@ -1,15 +1,175 @@
-From the posted sales shipments it is possible to access the MVV management. In this page there are some actions:
+# SIAN MVV-E Management
 
-* Send to Webservice. Send the MVV-E to SIAN
+## Purpose
+MVV stands for the accompanying document for certain wine products (for example, bulk wine in Italy and bottled wine only for small producers, as well as must and concentrated grape must shipped within the European Union; please refer to the applicable regulations).
 
-* Cancel Sending MVV
+MVVs can currently be issued in three formats:
 
-* Print MVV
+* Paper-based, printed in three copies: Recipient / Consignor / Carrier. The document must be validated through an authorized validating body (e.g., microfilming office, municipality, or prescribed stamp).
+* Electronic submission with validation via PEC through the ICQRF.
+* e-MVV (Electronic MVV). The shipment is managed through the web services made available by the SIAN system.
 
-* Refresh MVV-E Print
+**The application supports only the management of e-MVVs.**
 
-* Open MVV-E PDF
+The functionality allows users to create, submit and monitor MVV-E documents for wine-product movements through the SIAN service.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000678-0/12wine-sian-ENU.jpg"><br>
+An MVV contains:
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000678-0/13wine-sian-ENU.jpg"><br>
+- source document;
+- consignee, buyer and carrier;
+- products, quantities and units of measure;
+- lots and SIAN attributes;
+- transport and delivery data;
+- ICQRF code and transmission credentials;
+- SIAN validation status;
+- PDF document returned by SIAN.
+
+## Access
+
+The functionality is available from:
+
+- **Posted Sales Shipments**;
+- **Posted Transfer Shipments**;
+- **Posted Return Shipments**.
+
+Each page provides the **MVV Management** action. The action creates or retrieves the MVV header associated with the current posted shipment and opens the `(SIA) SIAN MVV-E` page.
+
+The action is available only when the WINE application and the required subscription are active.
+
+## `(SIA) SIAN MVV-E`
+
+The page displays the MVVs created in the system. New MVVs cannot be inserted manually from the list: each document must originate from a posted shipment.
+
+The document is identified by:
+
+- **Document Type**;
+- **Document No.**
+
+The supported document types are sales shipments, transfer shipments and return shipments.
+
+The list allows users to select multiple MVVs for submission, cancellation and PDF update operations.
+
+## List fields
+
+| Field | Functional description |
+|---|---|
+| **Document Type** | Identifies the type of source shipment. |
+| **Document No.** | Number of the posted shipment linked to the MVV. |
+| **Creation Date** | Date on which the MVV header was created. |
+| **MVV No.** | Number assigned to the MVV by SIAN. |
+| **MVV Time Stamp** | Time reference associated with the SIAN transmission. |
+| **SIAN Validation Status** | Validation status returned by SIAN. |
+| **Sent** | Indicates whether the MVV request has been submitted. |
+| **Sent Date** | Submission date. |
+| **Sent Date Time** | Date and time of submission. |
+| **Sent By** | User who submitted the MVV. |
+| **Created By** | User who created the MVV. |
+| **Response Code** | Code returned by SIAN. |
+| **Response Message** | Description of the response or error. |
+| **Canceled** | Indicates whether the MVV has been canceled with SIAN. |
+| **Canceled Datetime** | Date and time of cancellation. |
+| **Canceled By** | User who requested the cancellation. |
+| **Note** | Notes associated with the MVV. |
+
+## MVV card
+
+The card page displays the complete details of the selected MVV, including transmission data and the SIAN response.
+
+Additional fields include:
+
+- **MVV PDF**;
+- **PEC Unique Code**;
+- **PEC Validation**;
+- **Response Code**;
+- **Response Message**.
+
+The response information is read-only.
+
+## Available actions
+
+### `Send to Webservice`
+
+Submits the MVV creation request to SIAN.
+
+The system:
+
+1. validates the shipment data;
+2. builds the request with header, transport, product and lot information;
+3. submits the request through the SIAN Web Service;
+4. stores the response;
+5. updates the transmission status and the information returned by SIAN.
+
+The action can be executed for one or more selected MVVs.
+
+### `Cancel Sending MVV`
+
+Submits a cancellation request to SIAN for the last MVV transmission.
+
+The local record is not deleted. The MVV remains available for audit and traceability, while its cancellation status and related information are updated.
+
+The action is available for MVVs that have been sent and have not yet been canceled.
+
+### `Refresh MVV-E Print`
+
+Requests the updated MVV-E PDF from SIAN and stores it in the **MVV PDF** field.
+
+### `Open MVV-E PDF`
+
+Exports and opens the PDF stored in the MVV.
+
+If no PDF is available, the system reports that the PDF document is empty.
+
+### `Print MVV`
+
+Available on the MVV card, this action generates the local MVV report using the source shipment data and the available SIAN information.
+
+This is different from the PDF received from SIAN:
+
+- `Print MVV` generates a local report;
+- `Refresh MVV-E Print` retrieves the document from SIAN;
+- `Open MVV-E PDF` opens the stored PDF.
+
+The manual action for refreshing the MVV-E status is currently disabled in the application.
+
+## Prerequisites and controls
+
+Before submitting an MVV, the following information must be available:
+
+- active SIAN configuration;
+- valid ICQRF credentials;
+- consistent ICQRF code;
+- complete consignee and carrier data;
+- transport and delivery information;
+- items with SIAN attributes;
+- correctly identified lots;
+- updated SIAN and ISTAT decoding tables;
+- all mandatory data in the source shipment.
+
+If mandatory information is missing, the transmission is interrupted and an explanatory message is returned. The result is stored in **Response Code** and **Response Message**.
+
+## SIAN decoding tables
+
+SIAN decoding tables provide the values used for product classification, item attributes, validation statuses, enological practices and other MVV data.
+
+The administrative tools allow users to:
+
+- import SIAN tables;
+- import ISTAT cities;
+- initialize default values;
+- configure allowed categories.
+
+These values must be configured before creating and submitting MVVs.
+
+## Operational flow
+
+1. Post a sales shipment, transfer shipment or return shipment.
+2. Verify the SIAN attributes of the items and lots.
+3. Select **MVV Management** from the posted shipment.
+4. Open the `(SIA) SIAN MVV-E` page.
+5. Open the MVV card and verify the data.
+6. Select **Send to Webservice**.
+7. Check **SIAN Validation Status**, **Response Code** and **Response Message**.
+8. Select **Refresh MVV-E Print** to retrieve the PDF.
+9. Use **Open MVV-E PDF** or **Print MVV**.
+10. If required, select **Cancel Sending MVV** to submit the cancellation request to SIAN.
+
