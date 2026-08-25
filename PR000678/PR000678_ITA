@@ -1,15 +1,178 @@
-Dalle spedizioni di vendita registrate � possibile accedere alla gestione MVV. In questa pagina ci sono le azioni:
+# Gestione MVV-E SIAN
 
-* Spedisci al Servizio WEB: invia il documento MVV-E al SIAN
+## Scopo
 
-* Cancella spedizione MVV
+Per MVV si intende documento di accompagnamento per alcuni prodotti vitivinicoli (ad esempio vino sfuso in Italia e imbottigliato solo per i piccoli produttori, mosto e mosto concentrato verso comunità Europea, consultare la normativa). 
+Gli MVV attualmente si possono emettere in tre formati:
+* Stampato su carta in tre copie: Destinatario / Speditore / Trasportatore. Il documento si deve convalidare tramite Microfilmatrice, Comune, Marca Prescritta.
+* Invio con convalida tramite PEC dell’ICQRF.
+* MVV-E. La spedizione avviene tramite i Web Services messi a disposizione dal SIAN.
 
-* Stampa MVV
+**L'app prevede la sola gestione degli MVV-E.**
+ 
+La gestione consente di predisporre, inviare e monitorare gli MVV-E relativi alle movimentazioni di prodotti vitivinicoli verso il servizio SIAN.
 
-* Aggiorna stampa MVV-E
+L’MVV viene collegato a una spedizione registrata e contiene le informazioni necessarie per la trasmissione, tra cui:
 
-* Apri PDF MVV-E
+- documento di origine;
+- destinatario, acquirente e trasportatore;
+- prodotti, quantità e unità di misura;
+- lotti e attributi SIAN;
+- dati di trasporto e consegna;
+- codice ICQRF e credenziali di trasmissione;
+- esito della validazione SIAN;
+- eventuale documento PDF restituito dal servizio.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000678-0/21wine-sian-ITA.jpg"><br>
+## Accesso alla gestione
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR000678-0/22wine-sian-ITA.jpg"><br>
+La funzionalità è disponibile dalle seguenti pagine standard:
+
+- **Spedizioni vendita registrate**;
+- **Spedizioni trasferimento registrate**;
+- **Spedizioni reso registrate**.
+
+Su ciascuna pagina è disponibile l’azione **Gestione MVV**. L’azione crea o richiama la testata MVV associata alla spedizione corrente e consente di accedere alla pagina `(SIA) MVV-E SIAN`.
+
+La disponibilità dell’azione dipende dall’attivazione dell’applicazione WINE e dalla sottoscrizione prevista.
+
+## `(SIA) MVV-E SIAN`
+
+La pagina presenta l’elenco degli MVV generati nel sistema. Non è previsto l’inserimento manuale di nuovi documenti dalla lista: ogni MVV deve essere originato da una spedizione registrata.
+
+La chiave del documento è composta da:
+
+- **Tipo documento**;
+- **Nr. documento**.
+
+I valori di **Tipo documento** identificano la spedizione di vendita, di trasferimento o di reso da cui l’MVV è stato generato.
+
+La lista supporta la selezione di più documenti per le operazioni di invio, cancellazione della spedizione e aggiornamento della stampa.
+
+## Campi della lista
+
+Nella pagina sono visualizzati i principali dati di identificazione, stato e trasmissione:
+
+| Campo | Descrizione funzionale |
+|---|---|
+| **Tipo documento** | Identifica la tipologia di spedizione origine. |
+| **Nr. documento** | Numero della spedizione registrata collegata all’MVV. |
+| **Data creazione** | Data di creazione della testata MVV. |
+| **Nr. MVV** | Numero assegnato da SIAN all’MVV. |
+| **MVV Time Stamp** | Riferimento temporale restituito o associato alla trasmissione SIAN. La caption risulta mantenuta in inglese. |
+| **Stato Validazione SIAN** | Stato della validazione effettuata dal servizio SIAN. |
+| **Inviato** | Indica se la richiesta MVV è stata trasmessa. |
+| **Data invio** | Data della trasmissione. |
+| **Data e ora invio** | Data e ora della trasmissione. |
+| **Inviato da** | Utente che ha eseguito l’invio. |
+| **Creato da** | Utente che ha creato il documento MVV. |
+| **Codice risposta** | Codice restituito dal servizio SIAN. |
+| **Messaggio risposta** | Descrizione dell’esito o dell’eventuale errore. |
+| **Cancellato** | Indica se l’MVV è stato annullato presso SIAN. |
+| **Data e ora cancellazione** | Momento in cui è stata registrata la cancellazione. |
+| **Cancellato da** | Utente che ha richiesto la cancellazione. |
+| **Note** | Annotazioni associate al documento. |
+
+## Scheda di dettaglio MVV
+
+Dalla lista è possibile aprire la scheda del singolo MVV. La scheda consente di consultare in modo completo le informazioni generali, i dati di trasmissione e la risposta SIAN.
+
+Sono disponibili anche i seguenti campi:
+
+- **MVV PDF**;
+- **Codice PEC**;
+- **Convalida PEC**;
+- **Codice risposta**;
+- **Messaggio risposta**.
+
+Il gruppo relativo alla risposta è non modificabile e ha finalità esclusivamente informativa.
+
+## Azioni disponibili
+
+### `Spedisci al Servizio Web`
+
+Invia a SIAN la richiesta di creazione dell’MVV.
+
+L’operazione:
+
+1. verifica i dati della spedizione;
+2. costruisce la richiesta con i dati di intestazione, trasporto, prodotti e lotti;
+3. trasmette la richiesta tramite il servizio Web SIAN;
+4. registra l’esito della risposta;
+5. aggiorna i dati di invio, il numero MVV, lo stato di validazione e il riferimento temporale, quando restituiti dal servizio.
+
+L’azione può essere eseguita su uno o più MVV selezionati nella lista.
+
+### `Cancella spedizione MVV`
+
+Invia a SIAN una richiesta di annullamento dell’ultima trasmissione dell’MVV.
+
+L’azione non elimina il record locale e non rappresenta una cancellazione fisica del documento. La testata MVV rimane disponibile per mantenere la tracciabilità dell’operazione, aggiornando lo stato di cancellazione e le relative informazioni.
+
+È possibile richiedere la cancellazione solo per MVV già inviati e non ancora cancellati.
+
+### `Aggiorna stampa MVV-E`
+
+Richiede a SIAN il documento PDF aggiornato dell’MVV e lo memorizza nel campo **MVV PDF**.
+
+L’azione è utile quando il PDF non è ancora presente oppure quando è necessario recuperare una versione aggiornata del documento.
+
+### `Apri PDF MVV-E`
+
+Esporta e apre il PDF memorizzato nell’MVV.
+
+Se il campo **MVV PDF** non contiene alcun documento, il sistema segnala che il documento PDF è vuoto.
+
+### `Stampa MVV`
+
+Disponibile nella scheda del singolo MVV, genera la stampa locale del modello MVV utilizzando i dati della spedizione origine e le informazioni SIAN disponibili.
+
+Questa stampa è distinta dal PDF ricevuto tramite il servizio SIAN:
+
+- `Stampa MVV` produce una stampa locale;
+- `Aggiorna stampa MVV-E` recupera il documento prodotto o aggiornato da SIAN;
+- `Apri PDF MVV-E` apre il PDF già memorizzato.
+
+Non risulta disponibile un comando attivo per l’aggiornamento manuale del solo stato MVV-E. L’eventuale azione dedicata risulta disabilitata nel codice applicativo.
+
+## Controlli e prerequisiti
+
+Prima dell’invio devono essere disponibili:
+
+- configurazione SIAN attiva;
+- credenziali ICQRF valide;
+- codice ICQRF coerente con la sede o l’ubicazione coinvolta;
+- dati completi del destinatario e del trasportatore;
+- informazioni di consegna e trasporto;
+- articoli con attributi SIAN valorizzati;
+- lotti correttamente identificati;
+- decodifiche SIAN e ISTAT aggiornate;
+- dati obbligatori della spedizione origine.
+
+In caso di dati mancanti, il sistema interrompe la trasmissione e restituisce un messaggio esplicativo. L’esito viene registrato nei campi **Codice risposta** e **Messaggio risposta**.
+
+## Decodifiche e dati di base
+
+Le decodifiche SIAN costituiscono il riferimento per la classificazione dei prodotti, degli attributi, degli stati di validazione, delle pratiche enologiche e degli altri valori utilizzati nella composizione dell’MVV.
+
+Gli strumenti amministrativi dell’applicazione consentono di:
+
+- importare le tabelle SIAN;
+- importare i comuni ISTAT;
+- inizializzare i valori predefiniti;
+- configurare le categorie ammesse.
+
+Queste informazioni devono essere predisposte prima della gestione operativa degli MVV, perché sono utilizzate nei controlli e nella costruzione della richiesta inviata a SIAN.
+
+## Flusso operativo
+
+1. Registrare una spedizione di vendita, trasferimento o reso.
+2. Verificare gli attributi SIAN degli articoli e dei lotti.
+3. Dalla spedizione registrata selezionare **Gestione MVV**.
+4. Consultare la pagina `(SIA) MVV-E SIAN`.
+5. Aprire la scheda dell’MVV e verificare i dati.
+6. Selezionare **Spedisci al Servizio Web**.
+7. Controllare **Stato Validazione SIAN**, **Codice risposta** e **Messaggio risposta**.
+8. Utilizzare **Aggiorna stampa MVV-E** per recuperare il PDF.
+9. Utilizzare **Apri PDF MVV-E** oppure **Stampa MVV**.
+10. Se necessario, utilizzare **Cancella spedizione MVV** per trasmettere a SIAN la richiesta di annullamento.
+
