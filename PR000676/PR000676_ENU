@@ -7,146 +7,165 @@ SIAN operations represent wine-related register entries to be communicated to th
 
 Operations are normally generated from inventory movements, SIAN buffers or the operation creation report. The card does not allow direct insertion of a new header.
 
-## Page 70094449 – SIAN Operation List
+## (SIA) SIAN Operation List
 
-The Page 70094449 - SIAN Operation List is the main page for consulting and managing multiple operations.
+## SIAN Operation Card
 
-Operations are sorted by:
+The pages manage SIAN operations to be transmitted to SIAN. Operations are generated from warehouse movements, items, lots and SIAN attributes.
 
-1. operation date;
-2. operation number.
+The list is sorted by `Operation Date` and `Operation No.` and supports multiple selection for mass processing. The card manages the individual operation.
 
-Selecting a line opens the Page 70094450 - SIAN Operation Card.
+The available functions require an active SIAN subscription.
 
-### Main fields
+## Fields common to both pages
 
-| Area | Fields |
-|---|---|
-| Identification | Entry No., Operation Date, Operation Type, Operation No., Operation Document No. |
-| Source document | Posting Date, Document Type, Document No. |
-| Subjects and identifiers | Subject Physical Person, Subject Legal Person, ICQRF Code, ICQRF Credential Code |
-| Counterparties | Vendor No., Recipient No., Commissioner Code |
-| Supporting documents | Derogation Obligation, Justification No., Justification Date |
-| Control and audit | Controlled, Controlled By, Created By |
-| Transmission | Sent, Sent Datetime, Sent By |
-| Cancellation | Canceled, Canceled By |
-| SIAN response | Accepted, Accepted Datetime, Response Code, Response Message |
-| Technical identifiers | ID Transmission Movements, ID Transmission Registry |
-| Notes | Note |
+| Area | Caption | Purpose |
+|---|---|---|
+| Identification | `Operation Date`, `Operation Type`, `Operation Document No.`, `Operation No.` | Identify the SIAN operation, its date, type and progressive number. |
+| Subject and credentials | `Subject Physical Person`, `Subject legal Person`, `ICQRF Credential Code`, `ICQRF Code` | Identify the subject and the credentials used for transmission. |
+| Source document | `Request Type`, `Posting Date`, `Document Type`, `Document No.` | Link the operation to the originating document or movement. |
+| Counterparties | `Vendor No.`, `Recipient No.`, `Commissioner Code` | Identify the parties involved in the operation. |
+| Derogations | `Derogation Obligation`, `Justification No.`, `Justification Date` | Manage any applicable derogation and its supporting reference. |
+| Status | `Controlled`, `Controlled By`, `Sent`, `Sent By`, `Canceled`, `Canceled By` | Show the operational status and the users involved. |
+| Notes | `Note` | Contains additional information about the operation. |
+| SIAN response | `ID Transmission Movements`, `ID Transmission Registry`, `Accepted`, `Accepted Datetime`, `Response Code`, `Response Message` | Store the identifiers and outcome returned by SIAN. |
 
-The page also checks whether the required subscription is active. If it is not active, the list and its actions are disabled.
+The `SIAN Response` section is read-only.
 
-### Main actions
+## Actions common to both pages
 
-- **Generate Lines**: generates or regenerates the lines for the selected operations.
-- **Control/Open**: performs completeness checks or reopens an operation that has already been controlled.
-- **Send to Webservice**: sends controlled operations that have not yet been submitted or canceled.
-- **Get response**: retrieves the result of the last transmission.
-- **Reset Selected Register**: resets transmission and response statuses before submission.
-- **View Operation**: sends a request to SIAN to consult operations.
-- **Delete Operation**: starts the remote cancellation of the operation through the SIAN Web Service.
-- **Rapid web service call**: performs line generation, control and submission in sequence.
-- **Move Operation No. Forward**: moves forward the numbering of operations with the same date.
-- **Copy Operation**: duplicates the header, lines and SIAN lot data into a new operation.
+The actions operate on the selected operations in the list and on the current operation in the card.
 
-The list supports mass processing by applying the actions to the selected records.
+### `Generate Lines`
 
-## Page 70094450 – SIAN Operation Card
+Generates or rebuilds the SIAN operation lines using warehouse movements, items, lots and SIAN attributes.
 
-The Page 70094450 - SIAN Operation Card allows the user to manage a single operation in detail.
+### `Controll/Open` / `Control/Open`
 
-### General group
+Checks the prerequisites of the operation, including the presence of the required lines.
 
-The header contains:
+If the checks are successful, the operation is marked as `Controlled`. If it is already controlled, the action reopens it and allows the data to be managed again.
 
-- creation date;
-- SIAN request type;
-- SIAN operation type;
-- operation date and number;
-- operation document number;
-- physical-person and legal-person subject;
-- ICQRF code and ICQRF credential code;
-- derogation obligation and related details;
-- posting date;
-- source document type and number;
-- vendor, recipient and commissioner;
-- notes;
-- control status;
-- user who performed the control;
-- submission status and user who submitted the operation;
-- cancellation status, date and user.
+### `Send to Webservice`
 
-The general data can be edited only when the operation:
+Sends the operation to SIAN.
 
-- has not been controlled;
-- has not been submitted.
+The operation must be controlled, not already sent and not canceled.
 
-Status and audit fields are managed by the application procedures and cannot be edited directly.
+### `Get response`
 
-### Operation lines
+Retrieves the latest response from SIAN and updates the `SIAN Response` section.
 
-The card contains the Page 70094451 - SIAN Operation Sub subpage, linked to the header through the operation Entry No.
+For a canceled operation, the response to the cancellation request is retrieved.
 
-The lines manage:
+### `Reset Selected Register`
 
-- product and primary/secondary SIAN codes;
-- category, classification, origin, color and certifications;
-- PDO/PGI designation and E-Bacchus data;
-- varieties, mentions and oenological practices;
-- physical state, vintage and volumic mass;
-- potential, actual and total alcohol strength;
-- quantity, lost quantity, nominal volume and number of packages;
-- tank or container;
-- lot, serial numbers and marking ranges;
-- item variant.
+Resets the transmission status and related response data, including transmission identifiers and acceptance information.
 
-The operation type determines which fields are mandatory. The control procedure checks the required data for each operation type and product number.
+### `View Operation`
 
-The subpage also allows users to:
+Sends a request to SIAN to retrieve the details of the selected or current operation.
 
-- open the item card;
-- view SIAN attributes;
-- consult standard lot information;
-- consult SIAN-specific lot information;
-- request product stock from SIAN;
-- copy a line.
+The current implementation prepares temporary operation data; opening the temporary card is currently commented out.
 
-## SIAN Response group
+### `Delete Operation`
 
-The card displays the following fields as read-only:
+Sends a cancellation request to SIAN.
 
-- transmission movements identifier;
-- transmission register identifier;
-- acceptance status;
-- acceptance date and time;
-- response code;
-- response message returned by SIAN.
+This is not a simple local deletion. The operation must be controlled and sent, must not already be canceled and must not be expired.
 
-Acceptance is not determined simply by submitting the request. It is updated when the user runs **Get response**.
+## List-specific fields
 
-## Operational lifecycle
+The list also displays:
 
-1. **Creation**  
-   The operation is generated from inventory movements, the report or automatic processes.
+- `Entry no.`;
+- `Sent Datetime`;
+- `Created By`.
 
-2. **Line generation**  
-   Lines are rebuilt using movements, documents, lots and SIAN attributes.
+## List-specific actions
 
-3. **Control**  
-   The system checks the mandatory data for the operation type. If successful, it sets `Controlled` and `Controlled By`.
+### `Rapid web service call`
 
-4. **Submission**  
-   Only controlled operations that have not been submitted or canceled can be sent. The Web Service builds the SOAP request and stores the transmission identifiers.
+Executes the following steps for the selected operation:
 
-5. **Response retrieval**  
-   For standard operations, `GetOperSiRPV` is used. For canceled operations, `GetDelOperSiRPV` is used. The system updates the response code, message and acceptance status.
+1. `Generate Lines`;
+2. `Controll/Open`;
+3. Sends the operation request to SIAN.
 
-6. **Cancellation**  
-   **Delete Operation** does not simply delete the local record. It sends a remote cancellation request to SIAN. The operation must be controlled, submitted and not already canceled.
+### `Move Operation No. Forward`
 
-7. **Reset**  
-   Reset is allowed before submission. It clears identifiers, statuses, response and acceptance data without deleting the lines.
+Increases the operation number of the current operation and the subsequent operations with the same date.
 
-8. **Copy and split**  
-   An operation can be copied or split into multiple operations according to the configured maximum number of lines. Specific rules apply to operation types such as `PERD`, `AUCO`, `IMBO` and `DERI`.
+### `Copy Operation`
+
+Creates a new operation by copying the header, lines and related lot information.
+
+## Card-specific fields
+
+The card also displays:
+
+- `Creation Date`;
+- `Canceled Datetime`.
+
+The card does not allow direct insertion of a new operation.
+
+The `General` section and `SIAN Operation Lines` are editable only when the operation is neither controlled nor sent. `Controlled` and `Controlled By` are read-only. The `SIAN Response` section is always read-only.
+
+## Card-specific actions
+
+### `Navigate`
+
+Opens the navigation page using the operation’s `Posting Date` and `Document No.`.
+
+### `Split Operation`
+
+Splits the current operation lines into another SIAN operation according to the configured SIAN limits.
+
+## SIAN Operation Lines
+
+The card contains the `SIAN Operation Lines` subpage, linked to the operation header through `SIAN Operation Entry No.`.
+
+The subpage displays the following fields:
+
+`Product Number`, `Item No.`, `Primary Product Code`, `Secondary Product Code`, `Product Created`, `Product Accepted`, `Category`, `Act Certification`, `Classification`, `DOPIGP`, `IGP %`, `E_Bacchus`, `Origin`, `Grape Origin`, `Has Country Origins`, `Wine Growing Zone`, `Has Varieties`, `Other Varieties`, `Subzone`, `Vineyard`, `Color`, `Has Mentions`, `Biological`, `Sugar Content`, `Has Enological Practices`, `Enological Practices Method`, `Treatment`, `Aging Days`, `Acidity Degree`, `Mount Degrees`, `Batch Code`, `Year`, `Year Perc.`, `Volumic Mass`, `Potential Alc. Strength`, `Actual Alc. Strength`, `Total Alc. Strength`, `Physical State`, `Container`, `Quantity`, `Quantity Lost`, `Operation Type`, `Lot No.`, `Initial Mark No.`, `Final Mark No.`
+
+## Subpage actions
+
+### `SIAN Attributes`
+
+Opens the SIAN attributes related to the selected operation line and allows the product codes associated with the line and lot to be updated.
+
+### `Page Item Card`
+
+Opens the standard item card for the item associated with the line.
+
+### `Lot No. Information List`
+
+Opens the lot information list filtered by item, variant and lot number.
+
+### `SIAN Lot No. Information List`
+
+Opens the SIAN lot information linked to the selected operation line.
+
+### `Product Card`
+
+Checks whether the SIAN product exists. If necessary, it creates the product and opens its card.
+
+### `Get product stock`
+
+Requests the product stock from SIAN and displays the result in a summary page.
+
+### `Copy Line`
+
+Duplicates the selected line within the operation.
+
+## Operational flow
+
+1. The system generates the SIAN operation from warehouse movements.
+2. The operation lines are generated.
+3. The user checks and completes the data.
+4. The operation is controlled.
+5. The operation is sent to SIAN using `Send to Webservice`.
+6. The response is retrieved using `Get response`.
+7. If required, the cancellation request is sent using `Delete Operation`.
 
