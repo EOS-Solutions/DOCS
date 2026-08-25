@@ -1,0 +1,284 @@
+## 1. Obiettivo e perimetro
+
+L'app **EOS WINE Excise Duty** supporta le aziende vitivinicole nella gestione delle accise e nella movimentazione dei prodotti soggetti ad accisa, con l'emissione dei documenti amministrativi elettronici (e-AD) e la comunicazione con il sistema EMCS dell'Agenzia delle Dogane e dei Monopoli (ADM).
+
+Le funzionalità principali sono:
+
+- configurazione dei parametri accise, delle unità di misura e delle credenziali per la firma e l'invio;
+- gestione dei dati di riferimento codificati delle Dogane (tabelle di codifica ADM);
+- gestione dei work setup accise per ubicazioni, clienti, fornitori e articoli;
+- gestione delle anagrafiche di autisti e veicoli utilizzati nel trasporto;
+- creazione dei documenti e-AD a partire dagli ordini di vendita e dagli ordini di trasferimento;
+- generazione, firma digitale e invio dei messaggi XML (IE815 e correlati) all'ADM;
+- gestione del ciclo di vita dell'e-AD: bozza, validazione, assegnazione ARC, invio, esito e chiusura;
+- gestione del cambio di destinazione, dei respingimenti e dei frazionamenti;
+- ricezione e registrazione dei messaggi EMCS in ingresso (IE801 e correlati) e dei relativi PDF;
+- gestione dei registri accise (di carico/scarico) e delle voci registrate con imposta, imposta in sospensione e garanzia;
+- controlli e automazioni sui processi standard di vendita e trasferimento BC;
+- tracciatura dei file XML/PDF e delle comunicazioni con ADM per attività di controllo e assistenza.
+
+L'app non sostituisce il gestionale standard: estende anagrafiche, documenti e processi BC aggiungendo le informazioni e i flussi necessari alla gestione delle accise.
+
+## 2. Prerequisiti e dipendenze
+
+### 2.1 Prerequisiti funzionali
+
+Prima di utilizzare l'app devono essere disponibili:
+
+- una società BC correttamente configurata;
+- gli articoli, le unità di misura, i clienti, i fornitori, le ubicazioni e i documenti standard necessari ai processi aziendali;
+- i dati vitivinicoli dell'app EOS WINE;
+- i codici, le credenziali e i certificati necessari alla firma digitale e alla comunicazione con l'ADM (tramite l'intermediario Aruba);
+- i dati di riferimento delle Dogane importati e aggiornati;
+- i work setup accise configurati per le ubicazioni, i clienti, i fornitori e gli articoli soggetti ad accisa.
+
+### 2.2 Dipendenze applicative
+
+L'app EX082 dipende dalle seguenti app EOS:
+
+- **EOS Administration Library** — utilità di base, gestione permessi e upgrade;
+- **Eos Wine** — dati e logiche di dominio vitivinicolo;
+- **Common Data Layer** — enumerazioni, utilità e tabelle condivise;
+- **Doc shipping Common Data Layer** — informazioni di spedizione a livello di documento, estese con i dati accise.
+
+La disponibilità di alcune funzioni dipende inoltre dalla sottoscrizione dell'app e dall'attivazione delle app collegate: quando la sottoscrizione o le dipendenze non sono attive, l'app non interviene sui processi BC.
+
+### 2.3 Ambiente di test e ambiente di produzione
+
+La configurazione e-EAD permette di selezionare l'ambiente ADM reale oppure l'ambiente di collaudo. 
+
+## 3. Concetti funzionali
+
+### 3.1 e-AD
+
+L'e-AD (documento amministrativo elettronico) è il documento che accompagna e traccia la movimentazione dei prodotti soggetti ad accisa in regime sospensivo o assolto. Sostituisce la documentazione cartacea e si interfaccia con il sistema EMCS. All'interno dell'app l'e-AD è composto da una testata, da uno o più dettagli e dai relativi sotto-dettagli, oltre ai file XML/PDF scambiati con l'ADM.
+
+### 3.2 ARC e LRN
+
+L'**ARC** (codice di riferimento amministrativo) è il codice univoco assegnato dall'ADM a fronte della validazione di un movimento. L'**LRN** (Local Reference Number) è il riferimento locale del documento all'interno del sistema EMCS. L'app gestisce inoltre l'identificativo IUT restituito dall'ADM e le sequenze ARC in caso di più e-AD collegati allo stesso movimento.
+
+### 3.3 EMCS e ADM
+
+L'**EMCS** è il sistema di controllo dei movimenti dei prodotti soggetti ad accisa. L'app comunica con l'**ADM** (Agenzia delle Dogane e dei Monopoli) tramite web service SOAP, con firma digitale dei messaggi affidata all'intermediario Aruba. I messaggi vengono scambiati in formato XML (ad esempio IE815 in uscita, IE801/IE813/IE818 in ingresso).
+
+### 3.4 Registro accise
+
+Il registro accise raccoglie le voci di carico e scarico dei prodotti soggetti ad accisa, con l'evidenza dell'imposta, dell'imposta in sospensione e della garanzia. Costituisce la base per gli adempimenti verso l'autorità doganale.
+
+### 3.5 Work setup accise
+
+I work setup accise sono configurazioni dedicate che arricchiscono le anagrafiche standard di BC (ubicazioni, clienti, fornitori, articoli) con i dati necessari alla gestione delle accise e alla compilazione dell'e-AD.
+
+## 4. Configurazione
+
+### 4.1 Setup accise
+
+La pagina **(EXC) Setup Doganale** è il punto centrale di configurazione. Consente di impostare, tra l'altro:
+
+- il codice unità di misura per i chilogrammi;
+- il codice unità di misura per i litri;
+- il tipo di documento e-AD predefinito (collegato ai codici delle Dogane);
+- la busta SOAP utilizzata per i messaggi verso l'ADM;
+
+Dalla pagina è disponibile un'azione per testare la firma e l'invio, utile a validare la configurazione tecnica prima dell'uso operativo.
+
+### 4.2 Setup e-DAS
+
+Attualmente non gestito.
+
+### 4.3 Percorsi e parametri tecnici
+
+I percorsi utilizzati per certificati, log e documenti sono gestiti tramite un'apposita tabella di percorsi. La corretta impostazione di questi parametri è un prerequisito per la firma e la comunicazione e deve essere validata dall'amministratore o dal consulente tecnico.
+
+## 5. Dati di riferimento delle Dogane
+
+L'app utilizza un repository di dati di riferimento codificati dalle Dogane, organizzati per tipo di codifica (ad esempio lingue, unità di durata trasporto, paesi, tipi di collo, tipi di destinazione, responsabili del trasporto, origine della spedizione, uffici doganali, tipi di documento e-AD, tipi di registro, tipi di deposito, garanti, nomenclature di prodotto).
+
+Questi dati:
+
+- sono consultabili e gestibili tramite l'apposita lista;
+- vengono utilizzati come lookup e validazione nella compilazione dell'e-AD e dei work setup;
+- possono essere importati o aggiornati tramite XMLport.
+
+L'importazione e l'aggiornamento devono essere eseguiti da un utente amministrativo o incaricato della manutenzione delle codifiche, verificando il formato e la versione dei dati forniti dall'ente.
+
+## 6. Anagrafiche e work setup accise
+
+### 6.1 Work setup ubicazione
+
+Il work setup di ubicazione definisce, per ciascun deposito/impianto, i dati necessari alla gestione accise: tipo di deposito, codici e progressivi assegnati dall'ADM, ufficio doganale di competenza, lingua predefinita, suffissi di numerazione dei documenti e delle interscambio, eventuale restrizione dell'e-AD ai soli articoli soggetti ad accisa, e i riferimenti alle entità BC collegate (ubicazione, cliente, fornitore).
+
+### 6.2 Work setup cliente e fornitore
+
+I work setup di cliente e fornitore definiscono il profilo accise della controparte, compreso il tipo di documento e-AD, il tipo di destinazione, il responsabile e la durata del trasporto, la lingua di comunicazione e gli eventuali riferimenti a mittenti alternativi. Sono gestiti per combinazione di anagrafica e indirizzo (indirizzo di spedizione per il cliente, indirizzo ordine per il fornitore).
+
+### 6.3 Work setup articolo
+
+Il work setup di articolo classifica il prodotto ai fini accise: codice del registro/imposta collegato, tipo di collo, tipo di deposito, unità di misura di stoccaggio e nomenclature di prodotto (classificazioni doganali). Da queste informazioni deriva il codice prodotto utilizzato nell'e-AD e nel calcolo dell'accisa.
+
+### 6.4 Autisti e veicoli
+
+L'app gestisce le anagrafiche degli autisti (dati anagrafici e indirizzo) e dei veicoli/mezzi di trasporto (tipo di mezzo, targhe/identificativi, rimorchio, autista, capacità e portata, vettore e metodo di spedizione). Questi dati alimentano i dettagli di trasporto dell'e-AD.
+
+### 6.5 Causali intercompany
+
+Le causali dedicate mappano le motivazioni BC verso i tipi di documento e le tipologie di voce accise (ad esempio vendite intercompany, cambi di destinazione, resi/respingimenti e il trattamento fiscale associato: fabbricazione, sospensione, credito, pagamento).
+
+## 7. e-AD
+
+### 7.1 Creazione
+
+L'e-AD viene creato a partire dai documenti BC, in particolare:
+
+- ordini di vendita;
+- ordini di trasferimento.
+
+Al momento del rilascio del documento l'app verifica il setup e i work setup collegati (ubicazione, cliente, articolo) e costruisce la testata e i dettagli dell'e-AD con i dati necessari (mittente, luogo di spedizione, destinatario, luogo di destinazione, uffici doganali, dati di trasporto, prodotti).
+
+### 7.2 Struttura del documento
+
+L'e-AD è organizzato in:
+
+- **testata**, con i dati generali del movimento (data, riferimenti interni, ARC e sequenza, ubicazione, tipo e durata del trasporto, mittente, destinatario, luoghi e uffici, riferimenti al documento BC di origine);
+- **dettagli**, con i dati di garante, trasporto, certificati e categoria merce;
+- **sotto-dettagli** accessibili da sotto-pagine dedicate: certificato, EAD cumulativo, causa di respingimento, frazionamento, garante, importazione (SAD), collo, prodotto, respingimento, dettaglio trasporto e operazione enologica.
+
+### 7.3 Ciclo di vita
+
+Il ciclo di vita dell'e-AD attraversa gli stati principali di comunicazione:
+
+1. bozza;
+2. XML creato (IE815 generato localmente);
+3. XML firmato ricevuto (firma applicata tramite Aruba);
+4. richiesta inviata all'ADM;
+5. esito della richiesta;
+6. validazione e assegnazione dell'ARC;
+7. ricezione dell'identificativo IUT;
+8. ricezione del documento elettronico finale e del PDF;
+9. eventuale respingimento con codici di errore.
+
+Ogni passaggio aggiorna lo stato dell'e-AD e archivia i file XML/PDF associati.
+
+### 7.4 File e artefatti
+
+I file scambiati (XML in uscita e in ingresso, PDF prodotti dall'ADM) sono conservati in un archivio dedicato, con tipo di documento, mittente/destinatario, identificativi di messaggio e correlazione, stato di comunicazione ed eventuali codici ed errori. Questo consente la ricostruzione completa della comunicazione.
+
+## 8. Cambio di destinazione, respingimenti e frazionamenti
+
+### 8.1 Cambio di destinazione
+
+Dopo l'emissione, l'e-AD può essere oggetto di cambio di destinazione (ad esempio prodotto deviato verso un'altra ubicazione o un altro cliente). L'app gestisce lo stato del cambio (in attesa, approvato, respinto), la tipologia (rientro o deviazione), la nuova destinazione (ubicazione o cliente/indirizzo di spedizione), i riferimenti al documento BC collegato e all'eventuale nuovo e-AD generato, oltre allo stato di registrazione presso l'ADM.
+
+### 8.2 Respingimenti
+
+Il respingimento, totale o parziale, viene gestito con le relative cause e con i messaggi EMCS correlati, aggiornando lo stato dell'e-AD e conservando gli artefatti dello scambio.
+
+### 8.3 Frazionamenti
+
+Il frazionamento consente di suddividere un movimento in più e-AD collegati, mantenendo il riferimento all'ARC di origine (ARC upstream) per garantire la tracciabilità della catena dei documenti.
+
+## 9. Integrazione EMCS e comunicazione con ADM
+
+### 9.1 Flusso in uscita
+
+Il flusso in uscita segue le fasi:
+
+1. creazione dell'e-AD dal documento BC e costruzione dell'XML IE815;
+2. firma digitale dell'XML tramite l'intermediario Aruba, con credenziali del delegato e certificato/chiave;
+3. invio del messaggio firmato all'ADM tramite web service SOAP, selezionando l'ambiente reale o di collaudo;
+4. archiviazione della risposta e aggiornamento dello stato dell'e-AD.
+
+### 9.2 Flusso in ingresso
+
+Il flusso in ingresso prevede l'acquisizione dei messaggi provenienti dall'ADM (ad esempio IE801, IE813, IE818), l'estrazione dei dati rilevanti (ARC, IUT, codici di errore), l'aggiornamento dello stato dell'e-AD e la conservazione degli artefatti.
+
+### 9.3 Registro dei messaggi EMCS in ingresso
+
+I messaggi ricevuti sono registrati con l'ARC e la sequenza, l'ubicazione di riferimento, l'XML e il PDF, lo stato (in attesa, ricevuto, registrato, respinto), le date di download e documento e il collegamento all'e-AD di origine. Da qui è possibile confermare la ricezione e allineare i processi BC.
+
+### 9.4 Interscambio (IDOC)
+
+L'app gestisce inoltre uno strato di interscambio a record strutturati (di tipo A, B, C, D, E, F, R e IDOC), utilizzato per lo scambio di informazioni con l'ADM secondo tracciati fissi. Le pagine di interscambio dedicate consentono la consultazione e la manutenzione dei relativi record, con la storicizzazione delle comunicazioni.
+
+### 9.5 Sicurezza e autenticazione
+
+Le richieste sono costruite con busta SOAP e firmate digitalmente. Le credenziali e i certificati non devono essere condivisi con utenti non autorizzati e l'ambiente reale deve essere utilizzato solo dopo la validazione del consulente e dell'amministratore.
+
+## 10. Registri accise
+
+### 10.1 Definizione dei registri
+
+Il registro accise è definito da un codice, una descrizione, un tipo di registro (codificato dalle Dogane), il protocollo e l'anno di registrazione, il soggetto che presta la garanzia e l'ufficio doganale di competenza.
+
+### 10.2 Configurazione delle aliquote
+
+Le aliquote di accisa sono configurate per combinazione di paese, fascia di gradazione alcolica e data di validità, con l'importo di imposta di fabbricazione, l'importo in sospensione e la percentuale di garanzia richiesta. Questa configurazione guida il calcolo dell'accisa nelle voci del registro.
+
+### 10.3 Voci del registro
+
+Le voci del registro rappresentano i movimenti registrati e contengono, tra l'altro:
+
+- l'indicazione se si tratta di riga iniziale (saldo di apertura), di movimento positivo (carico) o di rettifica;
+- data di registrazione, data e numero documento, origine (cliente/fornitore);
+- le quantità nelle diverse dimensioni gestite;
+- l'imposta calcolata, l'eventuale quota regionale, l'imposta in sospensione e l'importo garantito;
+- il periodo di riferimento per gli adempimenti.
+
+### 10.4 Reportistica
+
+Sono disponibili report per l'esportazione del registro accise e della quota di imposta in sospensione, a supporto degli adempimenti verso l'autorità doganale, oltre alla stampa dell'e-AD e alla generazione dei file di interscambio.
+
+## 11. Automazioni e controlli sui processi BC
+
+### 11.1 Aggancio ai processi standard
+
+L'app si aggancia ai processi standard di BC tramite sottoscrittori di eventi. In particolare, intercetta le fasi dei documenti di vendita e degli ordini di trasferimento per aggiornare e valorizzare le informazioni accise di spedizione (ad esempio alla validazione del destinatario, al cambio dell'indirizzo di spedizione, all'inizializzazione del trasferimento da ubicazione).
+
+### 11.2 Attivazione condizionata
+
+L'intervento dell'app è condizionato alla sottoscrizione e all'attivazione delle app collegate (EOS Wine e le informazioni di spedizione). Quando queste condizioni non sono soddisfatte, l'app non interviene sui processi.
+
+### 11.3 Controlli sull'e-AD
+
+Prima delle operazioni sull'e-AD vengono applicati controlli di coerenza sullo stato del documento (ad esempio non è possibile modificare un e-AD già inviato) e sui dati obbligatori richiesti per la generazione e la trasmissione dei messaggi.
+
+### 11.4 Eventi di estensione
+
+L'app pubblica eventi di integrazione che consentono di personalizzare i punti chiave del processo (rilascio degli ordini, creazione dell'e-AD e dei suoi dettagli, costruzione della busta SOAP e dell'XML), preservando la manutenibilità delle personalizzazioni.
+
+## 12. Monitoraggio, errori e tracciabilità
+
+### 12.1 Stati locali
+
+e-AD, cambi di destinazione, messaggi EMCS in ingresso e voci di registro conservano gli stati principali del ciclo (bozza/creato, firmato, inviato, validato, ricevuto, respinto), con date e riferimenti che consentono di ricostruire l'operatività.
+
+### 12.2 Log e artefatti
+
+Se abilitato, il log delle comunicazioni registra lo scambio con l'ADM e con l'intermediario di firma. I file XML/PDF e i record di interscambio conservano l'evidenza completa dei messaggi, a supporto di attività di controllo, audit e assistenza tecnica.
+
+### 12.3 Errori funzionali principali
+
+L'app blocca o segnala l'elaborazione quando, tra gli altri casi:
+
+- l'app non è abilitata o le dipendenze non sono attive;
+- mancano i dati di setup o e-DAS necessari (unità di misura, credenziali, certificati, percorsi);
+- mancano o sono incoerenti i work setup di ubicazione, cliente, fornitore o articolo;
+- mancano dati obbligatori dell'e-AD (mittente, destinatario, uffici, trasporto, prodotti);
+- si tenta di modificare un e-AD già inviato o in stato non consentito;
+- la firma o l'invio all'ADM restituiscono un errore;
+- il messaggio EMCS in ingresso o il PDF richiesto non è disponibile.
+
+## 13. Flussi operativi
+
+### 13.1 Gestione di un errore di trasmissione
+
+1. L'utente apre l'e-AD e consulta stato, codici e messaggi di risposta.
+2. Verifica setup, e-DAS, certificati, work setup e dati obbligatori.
+3. Se necessario abilita o consulta il log delle comunicazioni.
+4. Corregge i dati o riporta l'e-AD in uno stato lavorabile.
+5. Rigenera e rifirma l'XML, se necessario.
+6. Ripete l'invio e acquisisce il nuovo esito.
+
+
+
+
