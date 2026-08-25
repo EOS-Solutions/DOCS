@@ -7,146 +7,210 @@ Le operazioni SIAN rappresentano le registrazioni delle movimentazioni enologich
 
 Le operazioni sono normalmente generate dai movimenti di magazzino, dai buffer SIAN o dal report di creazione operazioni. La scheda non consente l’inserimento diretto di una nuova testata.
 
-## Page 70094449 - SIAN Operation List
+## `(SIA) Lista operazioni SIAN`
 
-La Page 70094449 - SIAN Operation List è il pannello principale per consultare e gestire più operazioni contemporaneamente.
+## `Scheda operazione SIAN`
 
-Le operazioni sono ordinate per:
+Le pagine consentono di gestire le operazioni da trasmettere al SIAN, generate a partire dai movimenti di magazzino, dagli articoli, dai lotti e dagli attributi SIAN.
 
-1. data operazione;
-2. numero operazione.
+L’elenco è ordinato per **Data Operazione** e **Nr. operazione** e consente di selezionare più operazioni per eseguire elaborazioni massive. La scheda consente invece di lavorare sulla singola operazione.
 
-La selezione di una riga apre la Page 70094450 - SIAN Operation Card.
+La disponibilità delle funzioni è subordinata alla sottoscrizione SIAN attiva.
 
-### Campi principali
+## Campi presenti in entrambe le pagine
 
-| Area | Campi |
-|---|---|
-| Identificazione | Entry No., Operation Date, Operation Type, Operation No., Operation Document No. |
-| Documento origine | Posting Date, Document Type, Document No. |
-| Soggetti e identificativi | Subject Physical Person, Subject Legal Person, ICQRF Code, ICQRF Credential Code |
-| Controparti | Vendor No., Recipient No., Commissioner Code |
-| Giustificativi | Derogation Obligation, Justification No., Justification Date |
-| Controllo e audit | Controlled, Controlled By, Created By |
-| Trasmissione | Sent, Sent Datetime, Sent By |
-| Annullamento | Canceled, Canceled By |
-| Esito SIAN | Accepted, Accepted Datetime, Response Code, Response Message |
-| Identificativi tecnici | ID Transmission Movements, ID Transmission Registry |
-| Note | Note |
+| Area | Caption italiana | Funzione |
+|---|---|---|
+| Identificazione | **Tipo Operazione**, **Data Operazione**, **Nr. operazione**, **Nr. Documento Operazione**, **Tipo Richiesta** | Identificano il movimento SIAN, la relativa data, il numero progressivo e il tipo di richiesta. |
+| Soggetto e credenziali | **Soggetto persona fisica**, **Soggetto persona legale**, **Codice ICQRF**, **Codice credenziale ICQRF** | Identificano il soggetto e le credenziali utilizzate per la trasmissione. |
+| Documento origine | **Data di registrazione**, **Tipo di documento**, **Nr. documento** | Collegano l’operazione al documento o movimento che l’ha generata. |
+| Controparti | **Nr. fornitore**, **Nr. Cliente**, **Codice committente** | Identificano le controparti coinvolte nell’operazione. |
+| Deroghe | **Obbligo deroga**, **Nr. giustificativo**, **Data giustificativa** | Gestiscono eventuali deroghe e i relativi riferimenti. |
+| Stato | **Controllato**, **Controllato Da**, **Spedito**, **Spedito da**, **cancellato**, **Cancellato da** | Rappresentano lo stato operativo dell’operazione e gli utenti coinvolti. |
+| Note | **Nota** | Contiene annotazioni aggiuntive sull’operazione. |
+| Risposta SIAN | **ID Movimento Trasmissione**, **ID Registro Trasmissione**, **Accettato**, **Accettato il**, **Codice di Risposta**, **Messaggio di risposta** | Contengono gli identificativi e l’esito restituito dal SIAN. |
 
-La pagina controlla inoltre che la sottoscrizione necessaria sia attiva. In caso contrario, la lista e le relative azioni vengono disabilitate.
+La sezione **Risposta SIAN** è di sola lettura.
 
-### Azioni principali
+## Azioni presenti in entrambe le pagine
 
-- **Generate Lines**: genera o rigenera le righe delle operazioni selezionate.
-- **Control/Open**: esegue i controlli di completezza oppure riapre un’operazione già controllata.
-- **Send to Webservice**: trasmette le operazioni controllate, non ancora inviate e non annullate.
-- **Get response**: acquisisce l’esito dell’ultima trasmissione.
-- **Reset Selected Register**: azzera gli stati di trasmissione e risposta prima dell’invio.
-- **View Operation**: invia a SIAN una richiesta di consultazione delle operazioni.
-- **Delete Operation**: avvia l’annullamento dell’operazione sul Web Service SIAN.
-- **Rapid web service call**: esegue in sequenza generazione righe, controllo e invio.
-- **Move Operation No. Forward**: sposta in avanti la numerazione delle operazioni dello stesso giorno.
-- **Copy Operation**: duplica testata, righe e dati SIAN di lotto in una nuova operazione.
+Le azioni dell’elenco lavorano sulle operazioni selezionate; quelle della scheda lavorano sull’operazione corrente.
 
-Le operazioni sono elaborate in modalità massiva utilizzando la selezione effettuata nella lista.
+### `Crea righe operazione`
 
-## Page 70094450 - SIAN Operation Card
+Genera o rigenera le righe dell’operazione utilizzando i movimenti di magazzino, gli articoli, i lotti e gli attributi SIAN.
 
-La Page 70094450 - SIAN Operation Card consente di gestire nel dettaglio una singola operazione.
+Prima della rigenerazione le righe esistenti vengono eliminate.
 
-### Gruppo General
+### `Controlla/Apri`
 
-La testata contiene:
+Se l’operazione non è controllata, verifica la presenza delle righe e dei dati obbligatori previsti dal relativo **Tipo Operazione**.
 
-- data di creazione;
-- tipo richiesta SIAN;
-- tipo operazione SIAN;
-- data e numero dell’operazione;
-- numero documento operazione;
-- soggetto persona fisica e persona giuridica;
-- codice ICQRF e credenziale ICQRF;
-- obbligo di deroga e relativi estremi;
-- data di registrazione;
-- tipo e numero del documento origine;
-- fornitore, destinatario e committente;
-- note;
-- stato di controllo;
-- utente che ha eseguito il controllo;
-- stato di invio e utente che ha effettuato l’invio;
-- stato di annullamento, data e utente.
+Se i controlli hanno esito positivo, l’operazione viene marcata come **Controllato**. Se è già controllata, l’azione la riapre consentendo nuovamente la gestione dei dati.
 
-I dati generali sono modificabili solo quando l’operazione:
+### `Spedisci al Web Service`
 
-- non è stata controllata;
-- non è stata inviata.
+Trasmette l’operazione al SIAN. L’operazione deve essere controllata, non ancora spedita e non cancellata.
 
-I campi di stato e audit vengono gestiti dalle procedure applicative e non sono modificabili direttamente.
+### `Ottieni Risposta`
 
-### Righe dell’operazione
+Richiede al SIAN l’esito dell’ultima trasmissione e aggiorna i dati della sezione **Risposta SIAN**.
 
-La scheda contiene la subpage Page 70094451 - SIAN Operation Sub, collegata alla testata tramite l’Entry No. dell’operazione.
+Per un’operazione cancellata viene richiesta la risposta relativa alla cancellazione.
 
-Le righe gestiscono:
+### `Resetta registri selezionati`
 
-- prodotto e codici SIAN primario e secondario;
-- categoria, classificazione, origine, colore e certificazioni;
-- denominazione DOP/IGP e dati E-Bacchus;
-- varietà, menzioni e pratiche enologiche;
-- stato fisico, annata e massa volumica;
-- gradazione alcolica potenziale, effettiva e totale;
-- quantità, quantità persa, volume nominale e numero colli;
-- vasca o contenitore;
-- lotto, matricole e intervalli di contrassegni;
-- variante articolo.
+Azzera gli stati e i dati relativi alla trasmissione, inclusi gli identificativi, l’accettazione e il messaggio di risposta.
 
-Il tipo di operazione determina quali campi sono obbligatori. La funzione di controllo verifica infatti la presenza dei dati richiesti per ciascun tipo di operazione e per ciascun numero prodotto.
+La funzione è prevista per operazioni non ancora spedite.
 
-Dalla subpage è inoltre possibile:
+### `Visualizza operazione`
 
-- aprire la scheda articolo;
-- visualizzare gli attributi SIAN;
-- consultare i lotti standard;
-- consultare le informazioni lotto specifiche SIAN;
-- richiedere la giacenza prodotto a SIAN;
-- copiare una riga.
+Invia al SIAN una richiesta per ottenere i dettagli dell’operazione selezionata o corrente.
 
-## Gruppo SIAN Response
+### `Cancella operazione`
 
-La scheda espone in sola lettura:
+Invia al SIAN una richiesta di cancellazione dell’operazione.
 
-- identificativo dei movimenti trasmessi;
-- identificativo del registro di trasmissione;
-- esito di accettazione;
-- data e ora di accettazione;
-- codice risposta;
-- messaggio restituito da SIAN.
+L’operazione deve risultare controllata e spedita, non deve essere già cancellata e non deve essere scaduta.
 
-L’accettazione non viene determinata al semplice invio: viene aggiornata quando l’utente esegue **Get response**.
+## Campi specifici dell’elenco
 
-## Ciclo operativo
+L’elenco mostra inoltre:
 
-1. **Creazione**  
-   L’operazione viene generata dai movimenti di magazzino, dal report o da processi automatici.
+- **Nr. movimento**, identificativo locale dell’operazione;
+- **Data e ora invio**, momento della trasmissione;
+- **Creato Da**, utente che ha creato l’operazione.
 
-2. **Generazione righe**  
-   Le righe vengono ricostruite utilizzando movimenti, documenti, lotti e attributi SIAN.
+## Azioni specifiche dell’elenco
 
-3. **Controllo**  
-   Il sistema verifica i dati obbligatori in base al tipo di operazione. Se il controllo ha esito positivo, valorizza `Controlled` e `Controlled By`.
+### `Invio rapido`
 
-4. **Invio**  
-   Sono inviabili solo operazioni controllate, non ancora inviate e non annullate. Il Web Service costruisce la richiesta SOAP e registra gli identificativi della trasmissione.
+Esegue in sequenza:
 
-5. **Acquisizione risposta**  
-   Per le operazioni normali viene utilizzato `GetOperSiRPV`; per le operazioni annullate `GetDelOperSiRPV`. Il sistema aggiorna codice, messaggio ed eventuale accettazione.
+1. `Crea righe operazione`;
+2. `Controlla/Apri`;
+3. `Spedisci al Web Service`.
 
-6. **Annullamento**  
-   L’azione **Delete Operation** non elimina semplicemente il record locale: invia a SIAN una richiesta di annullamento remoto. Sono richieste operazioni controllate, inviate e non già annullate.
+È destinata alla gestione rapida dell’operazione selezionata.
 
-7. **Reset**  
-   È consentito prima dell’invio e azzera identificativi, stati, risposta e accettazione senza cancellare le righe.
+### `Sposta numero operazione in avanti`
 
-8. **Copia e suddivisione**  
-   Un’operazione può essere copiata oppure suddivisa in più operazioni in base al limite massimo di righe configurato. Per alcuni tipi, come `PERD`, `AUCO`, `IMBO` e `DERI`, sono applicate regole specifiche di suddivisione.
+Incrementa il numero dell’operazione corrente e dei successivi numeri operazione riferiti alla stessa data.
+
+### `Copia operazione`
+
+Crea una nuova operazione copiando l’intestazione, le righe e le informazioni collegate ai lotti.
+
+## Campi specifici della scheda
+
+La scheda mostra inoltre:
+
+- **Data creazione**;
+- **Momento cancellazione**.
+
+La sezione generale e la sotto-pagina delle righe sono modificabili solo quando l’operazione non è controllata e non è spedita. I campi **Controllato** e **Controllato Da** sono non modificabili direttamente.
+
+La scheda non consente l’inserimento diretto di una nuova operazione.
+
+## Sotto-pagina `Righe operazione SIAN`
+
+La scheda contiene la sotto-pagina 70094451 **Righe operazione SIAN**, collegata all’intestazione tramite il movimento dell’operazione SIAN.
+
+Le righe contengono i dati del prodotto e del movimento:
+
+- **Numero Prodotto**;
+- **Nr. Articolo**;
+- **Codice prodotto primario**;
+- **Codice prodotto secondario**;
+- **Prodotto creato**;
+- **Prodotto accettato**;
+- **Categoria**;
+- **Atto/certificato**;
+- **Classificazione**;
+- **DOPIGP**;
+- **% IGP**;
+- **E-Bacchus**;
+- **Provenienza**;
+- **Origine Uve**;
+- **Paese provenienza**;
+- **Zona viticola**;
+- **Varietà**;
+- **Altre varietà**;
+- **Sottozona**;
+- **Vigna**;
+- **Colore**;
+- **Menzioni Tradizionali**;
+- **Biologico**;
+- **Tenore zuccheri**;
+- **Pratica enologica**;
+- **Metodo Pratiche Enologiche**;
+- **Trattamento**;
+- **Giorni di invecchiamento**;
+- **Gradi acidità**;
+- **Montegradi**;
+- **Codice partita**;
+- **Annata**;
+- **% Annata**;
+- **Massa volumica**;
+- **Titolo alcolometrico potenziale**;
+- **Titolo alcolometrico effettivo**;
+- **Titolo alcolometrico totale**;
+- **Stato fisico**;
+- **Contenitore**;
+- **Quantità**;
+- **Quantità perdita**;
+- **Tipo Operazione**;
+- **Lotto di appartenenza**;
+- **Numero inziale contrassegni**;
+- **Numero finale contrassegni**.
+
+## Azioni della sotto-pagina
+
+### `Naviga`
+
+Apre la navigazione delle registrazioni collegate, utilizzando la **Data di registrazione** e il **Nr. documento** dell’operazione.
+
+### `Dividi operazione`
+
+Suddivide le righe in più operazioni quando viene superato il numero massimo configurato nelle impostazioni SIAN.
+
+### `Attributi SIAN`
+
+Apre gli attributi SIAN dell’articolo e permette di aggiornare i codici prodotto collegati alla riga e al lotto.
+
+### `Scheda articolo`
+
+Apre la scheda dell’articolo associato alla riga.
+
+### `Lista informazioni nr. lotto`
+
+Apre le informazioni del lotto filtrate per articolo, variante e lotto.
+
+### `Lista informazioni nr. lotto SIAN`
+
+Apre le informazioni SIAN collegate alla riga dell’operazione.
+
+### `Scheda prodotto`
+
+Verifica l’esistenza del prodotto SIAN. Se necessario, ne avvia la creazione e apre la relativa scheda.
+
+### `Richiedi stato giacenza`
+
+Richiede al SIAN la giacenza del prodotto e visualizza il risultato in una pagina riepilogativa.
+
+### `Copia riga`
+
+Duplica la riga selezionata all’interno dell’operazione.
+
+## Flusso operativo
+
+1. Il sistema genera l’operazione dai movimenti di magazzino.
+2. Vengono create le righe operative.
+3. L’utente verifica e completa i dati.
+4. L’operazione viene controllata.
+5. L’operazione viene spedita al SIAN tramite `Spedisci al Web Service`.
+6. La risposta viene acquisita con `Ottieni Risposta`.
+7. Se necessario, viene richiesta la cancellazione tramite `Cancella operazione`.
+
 
