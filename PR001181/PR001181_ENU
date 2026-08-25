@@ -1,0 +1,281 @@
+## 1. Objective and scope
+
+The **EOS WINE Excise Duty** app supports wineries in managing excise duties and the movement of products subject to excise, with the issuance of electronic administrative documents (e-AD) and communication with the EMCS system of the Italian Customs and Monopolies Agency (ADM).
+
+The main features are:
+
+- configuration of excise parameters, units of measure and credentials for signing and sending;
+- management of the Customs coded reference data (ADM code tables);
+- management of the excise work setups for locations, customers, vendors and items;
+- management of the master data of drivers and vehicles used in transport;
+- creation of e-AD documents from sales orders and transfer orders;
+- generation, digital signature and submission of the XML messages (IE815 and related) to ADM;
+- management of the e-AD lifecycle: draft, validation, ARC assignment, submission, outcome and closure;
+- management of change of destination, rejections and splits;
+- receipt and registration of incoming EMCS messages (IE801 and related) and their PDFs;
+- management of the excise registers (load/unload) and of the recorded entries with duty, suspended duty and guarantee;
+- controls and automations on the standard BC sales and transfer processes;
+- tracing of the XML/PDF files and of the ADM communications for control and support activities.
+
+The app does not replace the standard ERP: it extends master data, documents and BC processes by adding the information and flows needed for excise management.
+
+## 2. Prerequisites and dependencies
+
+### 2.1 Functional prerequisites
+
+Before using the app the following must be available:
+
+- a properly configured BC company;
+- the items, units of measure, customers, vendors, locations and standard documents required by the business processes;
+- the wine-related data of the EOS WINE app;
+- the codes, credentials and certificates needed for digital signature and communication with ADM (through the Aruba intermediary);
+- the Customs reference data imported and up to date;
+- the excise work setups configured for locations, customers, vendors and items subject to excise.
+
+### 2.2 Application dependencies
+
+The EX082 app depends on the following EOS apps:
+
+- **EOS Administration Library** — base utilities, permissions and upgrade management;
+- **Eos Wine** — wine domain data and logic;
+- **Common Data Layer** — shared enums, utilities and tables;
+- **Doc shipping Common Data Layer** — document-level shipping information, extended with excise data.
+
+The availability of some functions also depends on the app subscription and on the activation of the linked apps: when the subscription or the dependencies are not active, the app does not intervene in the BC processes.
+
+### 2.3 Test environment and production environment
+
+The e-EAD configuration allows selecting the real ADM environment or the test environment.
+
+## 3. Functional concepts
+
+### 3.1 e-AD
+
+The e-AD (electronic administrative document) is the document that accompanies and tracks the movement of products subject to excise, whether under duty suspension or duty paid. It replaces paper documentation and interfaces with the EMCS system. Within the app the e-AD is composed of a header, one or more details and their sub-details, in addition to the XML/PDF files exchanged with ADM.
+
+### 3.2 ARC and LRN
+
+The **ARC** (administrative reference code) is the unique code assigned by ADM upon validation of a movement. The **LRN** (Local Reference Number) is the local reference of the document within the EMCS system. The app also manages the IUT identifier returned by ADM and the ARC sequences in case of multiple e-ADs linked to the same movement.
+
+### 3.3 EMCS and ADM
+
+The **EMCS** is the control system for the movements of products subject to excise. The app communicates with **ADM** (Italian Customs and Monopolies Agency) through SOAP web services, with digital signing of the messages entrusted to the Aruba intermediary. Messages are exchanged in XML format (for example IE815 outbound, IE801/IE813/IE818 inbound).
+
+### 3.4 Excise register
+
+The excise register collects the load and unload entries of the products subject to excise, showing the duty, the suspended duty and the guarantee. It is the basis for the obligations towards the customs authority.
+
+### 3.5 Excise work setup
+
+The excise work setups are dedicated configurations that enrich the standard BC master data (locations, customers, vendors, items) with the data needed for excise management and for compiling the e-AD.
+
+## 4. Configuration
+
+### 4.1 Excise setup
+
+The **Excise Duty Setup** page is the central configuration point. It allows setting, among others:
+
+- the unit of measure code for kilograms;
+- the unit of measure code for liters;
+- the default e-AD document type (linked to the Customs codes);
+- the SOAP envelope used for the messages to ADM;
+
+An action to test signing and sending is available from the page, useful to validate the technical configuration before operational use.
+
+### 4.2 e-DAS setup
+
+Currently not supported.
+
+### 4.3 Paths and technical parameters
+
+The paths used for certificates, logs and documents are managed through a dedicated path table. The correct setting of these parameters is a prerequisite for signing and communication and must be validated by the administrator or technical consultant.
+
+## 5. Customs reference data
+
+The app uses a repository of coded reference data from Customs, organized by code type (for example languages, transport duration units, countries, package types, destination types, transport managers, shipping origin, customs offices, e-AD document types, register types, deposit types, guarantors, product nomenclatures).
+
+This data:
+
+- can be consulted and managed through the dedicated list;
+- is used as lookup and validation in compiling the e-AD and the work setups;
+- can be imported or updated via XMLport.
+
+Import and update must be performed by an administrative user or a user in charge of maintaining the codes, verifying the format and the version of the data provided by the authority.
+
+## 6. Master data and excise work setup
+
+### 6.1 Location work setup
+
+The location work setup defines, for each deposit/facility, the data needed for excise management: deposit type, codes and progressive numbers assigned by ADM, competent customs office, default language, document and interchange numbering suffixes, any restriction of the e-AD to items subject to excise only, and the references to the linked BC entities (location, customer, vendor).
+
+### 6.2 Customer and vendor work setup
+
+The customer and vendor work setups define the excise profile of the counterparty, including the e-AD document type, the destination type, the transport manager and duration, the communication language and any references to alternative consignors. They are managed by combination of master data and address (ship-to address for the customer, order address for the vendor).
+
+### 6.3 Item work setup
+
+The item work setup classifies the product for excise purposes: linked register/duty code, package type, deposit type, storage unit of measure and product nomenclatures (customs classifications). The product code used in the e-AD and in the excise calculation is derived from this information.
+
+### 6.4 Drivers and vehicles
+
+The app manages the master data of drivers (personal data and address) and of vehicles/means of transport (means type, plates/identifiers, trailer, driver, capacity and load, carrier and shipment method). This data feeds the transport details of the e-AD.
+
+### 6.5 Intercompany reason codes
+
+The dedicated reason codes map the BC reasons to the document types and to the excise entry types (for example intercompany sales, changes of destination, returns/rejections and the associated tax treatment: manufacture, suspension, credit, payment).
+
+## 7. e-AD / e-DAS
+
+### 7.1 Creation
+
+The e-AD is created from BC documents, in particular:
+
+- sales orders;
+- transfer orders.
+
+Upon release of the document the app verifies the setup and the linked work setups (location, customer, item) and builds the e-AD header and details with the necessary data (consignor, place of dispatch, consignee, place of destination, customs offices, transport data, products).
+
+### 7.2 Document structure
+
+The e-AD is organized into:
+
+- **header**, with the general data of the movement (date, internal references, ARC and sequence, location, transport type and duration, consignor, consignee, places and offices, references to the source BC document);
+- **details**, with guarantor, transport, certificate and goods category data;
+- **sub-details** accessible from dedicated sub-pages: certificate, cumulative AAD, rejection cause, split, guarantor, import (SAD), package, product, rejection, transport detail and wine operation.
+
+### 7.3 Lifecycle
+
+The e-AD lifecycle goes through the main communication states:
+
+1. draft;
+2. XML created (IE815 generated locally);
+3. signed XML received (signature applied through Aruba);
+4. request sent to ADM;
+5. request outcome;
+6. validation and ARC assignment;
+7. receipt of the IUT identifier;
+8. receipt of the final electronic document and PDF;
+9. any rejection with error codes.
+
+Each step updates the e-AD status and archives the associated XML/PDF files.
+
+### 7.4 Files and artifacts
+
+The exchanged files (outbound and inbound XML, PDFs produced by ADM) are kept in a dedicated archive, with document type, sender/recipient, message and correlation identifiers, communication status and any codes and errors. This allows the complete reconstruction of the communication.
+
+## 8. Change of destination, rejections and splits
+
+### 8.1 Change of destination
+
+After issuance, the e-AD can be subject to a change of destination (for example product diverted to another location or another customer). The app manages the change status (pending, approved, rejected), the type (return or deviation), the new destination (location or customer/ship-to address), the references to the linked BC document and to any newly generated e-AD, as well as the registration status with ADM.
+
+### 8.2 Rejections
+
+The rejection, total or partial, is managed with the related causes and with the correlated EMCS messages, updating the e-AD status and keeping the artifacts of the exchange.
+
+### 8.3 Splits
+
+The split allows subdividing a movement into multiple linked e-ADs, keeping the reference to the origin ARC (upstream ARC) to guarantee the traceability of the document chain.
+
+## 9. EMCS integration and communication with ADM
+
+### 9.1 Outbound flow
+
+The outbound flow follows these phases:
+
+1. creation of the e-AD from the BC document and construction of the IE815 XML;
+2. digital signing of the XML through the Aruba intermediary, with the delegate credentials and certificate/key;
+3. submission of the signed message to ADM through SOAP web service, selecting the real or test environment;
+4. archiving of the response and update of the e-AD status.
+
+### 9.2 Inbound flow
+
+The inbound flow involves the acquisition of the messages coming from ADM (for example IE801, IE813, IE818), the extraction of the relevant data (ARC, IUT, error codes), the update of the e-AD status and the retention of the artifacts.
+
+### 9.3 Register of incoming EMCS messages
+
+The received messages are recorded with the ARC and sequence, the reference location, the XML and PDF, the status (pending, received, posted, rejected), the download and document dates and the link to the source e-AD. From here it is possible to confirm receipt and align the BC processes.
+
+### 9.4 Interchange (IDOC)
+
+The app also manages an interchange layer of structured records (of type A, B, C, D, E, F, R and IDOC), used for the exchange of information with ADM according to fixed layouts. The dedicated interchange pages allow the consultation and maintenance of the related records, with the historization of the communications.
+
+### 9.5 Security and authentication
+
+Requests are built with a SOAP envelope and digitally signed. Credentials and certificates must not be shared with unauthorized users and the real environment must be used only after validation by the consultant and administrator.
+
+## 10. Excise registers
+
+### 10.1 Register definition
+
+The excise register is defined by a code, a description, a register type (coded by Customs), the protocol and the registration year, the party providing the guarantee and the competent customs office.
+
+### 10.2 Rate configuration
+
+The excise rates are configured by combination of country, alcohol strength band and validity date, with the manufacture duty amount, the suspended amount and the required guarantee percentage. This configuration drives the excise calculation in the register entries.
+
+### 10.3 Register entries
+
+The register entries represent the recorded movements and contain, among others:
+
+- the indication of whether it is an initial line (opening balance), a positive movement (load) or an adjustment;
+- posting date, document date and number, source (customer/vendor);
+- the quantities in the different managed dimensions;
+- the calculated duty, any regional share, the suspended duty and the guaranteed amount;
+- the reference period for the obligations.
+
+### 10.4 Reporting
+
+Reports are available for exporting the excise register and the suspended duty share, to support the obligations towards the customs authority, in addition to the e-AD print and the generation of the interchange files.
+
+## 11. Automations and controls on BC processes
+
+### 11.1 Hooking into standard processes
+
+The app hooks into the standard BC processes through event subscribers. In particular, it intercepts the phases of the sales documents and of the transfer orders to update and populate the excise shipping information (for example on consignee validation, on ship-to address change, on transfer initialization from location).
+
+### 11.2 Conditional activation
+
+The app's intervention is conditional on the subscription and on the activation of the linked apps (EOS Wine and the shipping information). When these conditions are not met, the app does not intervene in the processes.
+
+### 11.3 Controls on the e-AD
+
+Before operations on the e-AD, consistency checks are applied on the document status (for example an already sent e-AD cannot be modified) and on the mandatory data required for the generation and transmission of the messages.
+
+### 11.4 Extension events
+
+The app publishes integration events that allow customizing the key points of the process (order release, creation of the e-AD and its details, construction of the SOAP envelope and of the XML), preserving the maintainability of the customizations.
+
+## 12. Monitoring, errors and traceability
+
+### 12.1 Local statuses
+
+e-AD, changes of destination, incoming EMCS messages and register entries retain the main statuses of the cycle (draft/created, signed, sent, validated, received, rejected), with dates and references that make it possible to reconstruct the operations.
+
+### 12.2 Logs and artifacts
+
+If enabled, the communication log records the exchange with ADM and with the signing intermediary. The XML/PDF files and the interchange records keep the complete evidence of the messages, to support control, audit and technical support activities.
+
+### 12.3 Main functional errors
+
+The app blocks or flags processing when, among other cases:
+
+- the app is not enabled or the dependencies are not active;
+- the necessary setup or e-DAS data is missing (units of measure, credentials, certificates, paths);
+- the location, customer, vendor or item work setups are missing or inconsistent;
+- mandatory e-AD data is missing (consignor, consignee, offices, transport, products);
+- an attempt is made to modify an already sent e-AD or one in a non-allowed status;
+- the signing or the submission to ADM returns an error;
+- the incoming EMCS message or the requested PDF is not available.
+
+## 13. Operational flows
+
+### 13.1 Handling a transmission error
+
+1. The user opens the e-AD and consults status, codes and response messages.
+2. Verifies setup, e-DAS, certificates, work setups and mandatory data.
+3. If necessary, enables or consults the communication log.
+4. Corrects the data or brings the e-AD back to a workable status.
+5. Regenerates and re-signs the XML, if necessary.
+6. Repeats the submission and acquires the new outcome.
+
