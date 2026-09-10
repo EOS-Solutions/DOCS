@@ -22,6 +22,17 @@
 				<td><b>BC28</b></td>
     </tr>
 		<tr>
+        <td>10/09/2026</td>
+        <td> - Gestione identificativi articoli migliorata<br>- Validazione parametri azione<br>- Nuova impostazione attività per gestire il filtro sulle righe completate<br>- P&P: la creazione HU è attiva solo se l'attività "Crea Unità di carico" è assegnata</td>
+        <td>1.1.263.0</td>
+        <td>-</td>
+        <td>27.0.49</td>
+				<td>28.0.23</td>
+        <td>-</td>
+        <td>27.0.27</td>
+        <td>28.0.14</td>
+    </tr>
+		<tr>
         <td>15/07/2026</td>
         <td> - Scanner sequenziale con gestione personalizzata<br>- Campi di dettaglio nelle attività "Contenuto collocazione"<br>- Campi di dettaglio nelle attività di inventario<br>- Possibilità di disabilitare il focus iniziale sul campo barcode</td>
         <td>1.1.260.0</td>
