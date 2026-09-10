@@ -22,6 +22,17 @@
 				<td><b>BC28</b></td>
     </tr>
 		<tr>
+        <td>10/09/2026</td>
+        <td> - Return all identifiers for items<br>- Validate action parameters<br>- New activity settings for manage filter on completed lines<br>- P&P: create HU enabled only if "Create Handling Unit" activity is assigned</td>
+        <td>1.1.263.0</td>
+        <td>-</td>
+        <td>27.0.49</td>
+				<td>28.0.23</td>
+        <td>-</td>
+        <td>27.0.27</td>
+        <td>28.0.14</td>
+    </tr>
+		<tr>
         <td>15/07/2026</td>
         <td> - Sequential scanner with backend call<br>- Detail fields in bin activities<br>- Detail fields in inventory activities<br>- Disable autofocus on barcode input</td>
         <td>1.1.260.0</td>
