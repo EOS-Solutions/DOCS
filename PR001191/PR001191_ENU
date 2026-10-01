@@ -1,0 +1,19 @@
+Every leasing contract must be linked to a contract type: the G/L accounts used in the postings and the number series used to assign the internal numbers are derived from this link.
+
+**Leasing Contract Types** represent the contract categories managed (for example real estate leasing, vehicle leasing, equipment leasing), each with its own G/L accounts, number series and fixed asset classification.
+
+### Configuration
+
+Search for **Leasing Contract Types** and create a new type for each leasing category managed, filling in:
+
+- **Contract Type Code** and **Description** of the contract type;
+- **Internal Leasing Contract No. Series**: number series for the internal numbers of contracts of this type;
+- the five G/L accounts: **Debt Leasing Account No.**, **Detection IFRS16 Debt Account No.**, **Initial Costs Account No.**, **Interests Account No.**, **Transitory Debt Account No.**;
+- **Leasing Class Code** and **Leasing Subclass Code** to be assigned to the Right of Use assets created for this contract type;
+- **Right of Use Series No.**: number series for assigning numbers to Right of Use fixed assets.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001191-0/4-LCM-EN.png"><br>
+
+The module is ready to be used when at least one contract type exists with its own accounts and number series, to be used when creating contracts.
+
+It is recommended to create a separate contract type for each leasing category (real estate, vehicles, equipment), so that different G/L accounts and fixed asset classifications can be used for each category.
