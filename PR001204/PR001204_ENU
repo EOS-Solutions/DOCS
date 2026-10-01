@@ -1,0 +1,12 @@
+**Purchase Request Agent** simplifies and automates the creation of purchase requests by processing incoming emails and converting them into structured procurement documents.  
+The agent automatically identifies requested items and quantities, recognizes the requester, and creates the corresponding Purchase Request directly within Business Central.
+
+**Key Benefits**
+
+- Automates purchase request creation from incoming emails.
+- Reduces manual data entry and administrative workload.
+- Accelerates procurement processes and request handling.
+- Improves data accuracy and completeness.
+- Ensures traceability and standardization of purchasing workflows.
+
+By transforming unstructured requests into actionable procurement records, **Purchase Request Agent** enables purchasing teams to work faster and more efficiently while maintaining full control of the process.
