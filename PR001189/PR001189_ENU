@@ -1,0 +1,29 @@
+The **IFRS16 Lease Contract Management** module provides full management of company leasing contracts in compliance with the IFRS16 international accounting standard, which requires both the right to use the leased asset and the related financial liability to be recognized on the balance sheet.
+
+## Description
+
+With this module, a company can:
+
+- record the leased goods and the related leasing contracts;
+- automatically calculate the financial amortization schedule of the debt, using the effective interest rate method;
+- generate a **Right of Use** fixed asset for each leased good;
+- produce the accounting entries for the initial recognition, the periodic interest detection, and the debt reduction;
+- link the leasing installments to the purchase invoices and credit memos received from the leasing company;
+- manage contracts that include multiple goods, automatically splitting the amounts in proportion to the value of each good;
+- calculate, in parallel, the values required by the Italian accounting standards (OIC).
+
+Without this module, a lease payment would simply be posted as an operating cost. With IFRS16, the contract instead generates an asset (the right to use the good) and a liability (the debt toward the leasing company) on the balance sheet, while the income statement shows the depreciation of the right-of-use asset and the interest expense accrued on the debt.
+
+## Usage
+
+The module is used throughout the entire life of the leasing contract: from the initial configuration, to the creation of the good and the contract, to the calculation of the installment schedule, up to the monthly management of the accounting entries and the final closing of the contract.
+
+## Result
+
+A leasing process that is tracked in detail, with accounting entries consistent with IFRS16, full traceability of paid installments and generated fixed assets, and less manual calculation and posting effort.
+
+## Summary
+
+For a summary of the functionalities involved, press ALT + Q and type "LCM":
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001189-0/1-LCM-EN.png"><br>
