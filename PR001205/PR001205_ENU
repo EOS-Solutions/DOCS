@@ -1,0 +1,12 @@
+**Work Request Agent** helps organizations automate the creation and management of maintenance work requests in Microsoft Dynamics 365 Business Central.  
+The agent interprets maintenance requests received via email, identifies the equipment involved, extracts relevant information, and automatically generates maintenance work requests within Business Central.
+
+**Key Benefits**
+
+- Automates maintenance request intake and processing.
+- Reduces manual administration activities.
+- Speeds up maintenance response times.
+- Improves data quality and process consistency.
+- Enhances traceability across maintenance operations.
+
+By converting maintenance requests into structured workflows, **Work Request Agent** helps maintenance teams improve operational efficiency and focus on high-value activities.
