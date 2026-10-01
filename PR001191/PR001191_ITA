@@ -1,0 +1,19 @@
+Ogni contratto di leasing deve obbligatoriamente essere associato a un tipo di contratto: da questa associazione derivano i conti contabili utilizzati nelle scritture e le serie numeriche per l'assegnazione dei numeri interni.
+
+I **Tipi Contratto Leasing** rappresentano le categorie di contratto gestite (ad esempio leasing immobiliare, leasing auto, leasing strumentale), ciascuna con i propri conti contabili, la propria serie numerica e la propria classificazione dei cespiti.
+
+### Configurazione
+
+Cercare **Tipi Contratto Leasing** e creare un nuovo tipo per ogni categoria di leasing gestita, compilando:
+
+- **Codice** e **Descrizione** del tipo contratto;
+- **Nr. Serie Contratti Interni**: serie numerica per i numeri interni dei contratti di questo tipo;
+- i cinque conti contabili: **Conto Debito Leasing**, **Conto Debito IFRS16**, **Conto Costi Iniziali**, **Conto Interessi**, **Conto Debito Transitorio**;
+- **Classe** e **Sottoclasse Cespite** da assegnare ai Diritti d'Uso creati per questo tipo di contratto;
+- **Nr. Serie Diritto d'Uso**: serie numerica per l'assegnazione dei numeri dei cespiti Diritto d'Uso.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001191-0/4-LCM-IT.png"><br>
+
+Il modulo è pronto per l'utilizzo quando è definito almeno un tipo di contratto con i relativi conti e serie numeriche, da utilizzare in fase di creazione dei contratti.
+
+È consigliabile creare un tipo di contratto distinto per ogni categoria di leasing (immobiliare, auto, strumentale), in modo da poter usare conti contabili e classificazioni cespite differenti per ciascuna categoria.
