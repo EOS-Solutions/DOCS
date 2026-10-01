@@ -1,0 +1,22 @@
+Ogni bene fisico oggetto di un contratto di leasing (un veicolo, un immobile, un macchinario) deve essere censito nell'anagrafica Beni in Leasing prima di poter essere associato a un contratto.
+
+La scheda del bene raccoglie le informazioni di base necessarie per il calcolo del piano di ammortamento e per la creazione del cespite Diritto d'Uso: descrizione, valore economico, eventuali costi iniziali diretti e, una volta creato, il collegamento al cespite generato.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001192-0/5-LCM-IT.png"><br>
+
+Un bene può essere assegnato a un solo contratto alla volta e non può essere eliminato se è ancora collegato a un contratto.
+
+### Configurazione
+
+Non è richiesta una configurazione specifica oltre al Setup generale del modulo. 
+Se nel Setup è stata definita una serie numerica per il codice bene, il codice può essere assegnato automaticamente; in caso contrario va inserito manualmente.
+
+### Utilizzo
+
+1. Cercare **Lista Beni Leasing** e cliccare **Nuovo**.
+2. Inserire il **Codice Bene** (manualmente oppure lasciandolo vuoto per farlo assegnare automaticamente dalla serie numerica configurata nel Setup).
+3. Inserire la **Descrizione** del bene: verrà ripresa automaticamente nella descrizione del cespite Diritto d'Uso.
+4. Inserire il **Valore Bene**: questo importo determina la quota di ogni rata attribuita al bene quando un contratto comprende più beni. Se il valore è lasciato a zero e il bene è l'unico del contratto, viene considerato pari al 100% del totale.
+5. Se ci sono costi iniziali diretti legati alla stipula (es. spese di attivazione), inserirli nel campo **Costi Iniziali**: verranno aggiunti al valore del cespite Diritto d'Uso in fase di rilevazione IFRS16.
+
+Una volta completato l'inserimento il bene è disponibile per essere assegnato a un contratto di leasing tramite l'azione **Assegna Beni** dalla scheda contratto
