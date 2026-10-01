@@ -1,0 +1,29 @@
+Il modulo **IFRS16 Lease Contract Management** permette di gestire in modo completo i contratti di leasing aziendali in conformità al principio contabile internazionale IFRS16, che richiede di iscrivere a bilancio sia il diritto di utilizzo del bene locato sia il relativo debito finanziario.
+
+## Descrizione
+
+Con questo modulo l'azienda può:
+
+- registrare i beni oggetto di leasing e i relativi contratti;
+- calcolare automaticamente il piano di ammortamento finanziario del debito, con il metodo del tasso di interesse effettivo;
+- generare il cespite **Diritto d'Uso** per ogni bene in leasing;
+- produrre le scritture contabili per la rilevazione iniziale, la rilevazione periodica degli interessi e la riduzione del debito;
+- collegare le rate del piano di leasing alle fatture di acquisto e alle note di credito ricevute dalla società di leasing;
+- gestire contratti che comprendono più beni, ripartendo automaticamente gli importi in proporzione al valore di ciascun bene;
+- calcolare in parallelo anche i valori richiesti dai principi contabili italiani (OIC).
+
+Senza questo modulo, un canone di leasing verrebbe registrato come semplice costo. Con l'IFRS16, invece, il contratto genera in bilancio un'attività (il diritto d'uso del bene) e una passività (il debito verso la società di leasing), mentre a conto economico compaiono l'ammortamento del diritto d'uso e gli interessi passivi maturati sul debito.
+
+## Utilizzo
+
+Il modulo si utilizza lungo tutta la vita del contratto di leasing: dalla configurazione iniziale, alla creazione del bene e del contratto, al calcolo del piano rate, fino alla gestione mensile delle scritture contabili e alla chiusura finale del contratto.
+
+## Risultato
+
+Un processo di leasing tracciato in modo puntuale, con scritture contabili coerenti con l'IFRS16, piena tracciabilità delle rate pagate e dei cespiti generati, e riduzione del lavoro manuale di calcolo e registrazione.
+
+## Sommario
+
+Premere ALT + Q e digitare "LCM" per vedere un elenco delle funzionalità coinvolte:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001189-0/1-LCM-IT.png"><br>
