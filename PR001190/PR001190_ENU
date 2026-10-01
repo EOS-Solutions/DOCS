@@ -1,10 +1,8 @@
 Before managing leasing contracts, the module must be configured once, defining the posting journals to be used. This page describes the general setup.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001190-0/2-LCM-EN.png"><br>
-
-### Description
-
 **Leasing Setup (LCM)** collects the general settings valid for the whole company: the depreciation book to be used for the Right of Use fixed assets, the optional number series for the good code, and the general journals used for the IFRS16 entries and for the periodic interest/debt reduction entries.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001190-0/2-LCM-EN.png"><br>
 
 ### Prerequisites
 
