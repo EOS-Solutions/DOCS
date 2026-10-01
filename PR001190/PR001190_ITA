@@ -1,10 +1,8 @@
 Prima di gestire i contratti di leasing è necessario configurare il modulo una sola volta, definendo i giornali di registrazione da utilizzare. Questa pagina descrive il setup generale.
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001190-0/2-LCM-IT.png"><br>
-
-### Descrizione
-
 **Setup Leasing (LCM)** raccoglie le impostazioni generali valide per tutta l'azienda: il registro ammortamento da usare per i cespiti Diritto d'Uso, l'eventuale serie numerica per il codice bene e i giornali di registrazione generale destinati alle scritture IFRS16 e alle scritture periodiche di interessi/riduzione debito.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001190-0/2-LCM-IT.png"><br>
 
 ### Prerequisiti
 
