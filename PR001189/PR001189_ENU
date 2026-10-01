@@ -5,7 +5,7 @@ The **IFRS16 Lease Contract Management** module provides full management of comp
 With this module, a company can:
 
 - record the leased goods and the related leasing contracts;
-- automatically calculate the financial amortization schedule of the debt, using the effective interest rate method;
+- automatically calculate the financial depreciation schedule of the debt, using the effective interest rate method;
 - generate a **Right of Use** fixed asset for each leased good;
 - produce the accounting entries for the initial recognition, the periodic interest detection, and the debt reduction;
 - link the leasing installments to the purchase invoices and credit memos received from the leasing company;
