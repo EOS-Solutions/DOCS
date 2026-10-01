@@ -1,0 +1,42 @@
+Ogni contratto viene creato scegliendo prima un tipo di contratto, che determina la serie numerica del numero interno e i conti contabili da utilizzare. Alla testata del contratto vengono poi associati uno o più beni in leasing e, in un secondo momento, le righe rata generate dal calcolo del piano di ammortamento.
+
+### Prerequisiti
+
+- Almeno un Tipo di Contratto configurato
+- I beni in leasing da associare già censiti in anagrafica
+- Un fornitore che rappresenti la società di leasing.
+
+### Utilizzo
+
+#### Creazione del contratto
+
+1. Cercare **Contratti Leasing** e cliccare **Nuovo**.
+2. Viene proposta automaticamente una finestra di selezione del **Tipo Contratto**: sceglierlo e confermare. Il numero interno del contratto viene assegnato automaticamente dalla serie numerica del tipo scelto.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001193-0/6-LCM-IT.png"><br>
+
+3. Compilare la testata del contratto:
+   - **Nr. Contratto**: numero ufficiale assegnato dalla società di leasing;
+   - **Nr. Fornitore**: società di leasing (finché non è compilato, le sezioni Beni e Righe non sono modificabili);
+   - **Data Firma** e **Data Inizio**: la data inizio determina l'avvio dell'ammortamento del cespite e del piano rate;
+   - **Frequenza Pagamenti**: mensile o trimestrale;
+   - **Anticipato/Posticipato**: se il pagamento avviene all'inizio o alla fine di ogni periodo;
+   - **Tasso Interesse Annuo Interno**: tasso implicito usato per il calcolo IFRS16;
+   - **Tasso Interesse Finanziamento** (facoltativo): usato solo per i calcoli paralleli secondo i principi OIC.
+4. La **Data Fine** del contratto viene calcolata automaticamente al termine della generazione del piano rate (vedere il paragrafo Calcolo del piano di ammortamento); può comunque essere modificata manualmente in qualunque momento: in tal caso viene aggiornata anche la data fine ammortamento dei cespiti Diritto d'Uso collegati.
+
+#### Associazione dei beni
+
+1. Dalla scheda contratto, cliccare **Assegna Beni**.
+2. Selezionare uno o più beni non ancora assegnati ad altri contratti e confermare.
+3. Per rimuovere un bene già associato, usare **Dissocia Bene**: l'azione è disponibile solo se per il contratto non sono ancora state generate righe rata.
+
+#### Gestione dimensioni
+
+Dalla scheda contratto, tramite l'azione **Dimensioni** (Alt+D), è possibile impostare i centri di costo e le altre dimensioni analitiche del contratto. Se il contratto ha già righe rata, il sistema chiede se propagare la modifica a tutte le righe esistenti.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001193-0/7-LCM-IT.png"><br>
+
+### Informazioni aggiuntive
+
+Dalla sezione Beni del contratto sono disponibili anche le azioni **Scheda Bene** e **Scheda Diritto d'Uso** (quest'ultima attiva solo dopo la creazione del cespite) per la consultazione rapida, oltre a **Crea Diritto d'Uso** e **Rimuovi Diritto d'Uso**, descritte nel paragrafo Creazione del cespite Diritto d'Uso (RoU).
