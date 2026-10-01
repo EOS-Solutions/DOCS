@@ -1,6 +1,6 @@
 Every physical asset subject to a leasing contract (a vehicle, a building, a piece of equipment) must be recorded in the **Leasing Goods** master data before it can be linked to a contract.
 
-The leasing good card collects the basic information required to calculate the amortization schedule and to create the Right of Use fixed asset: description, monetary value, any initial direct costs, and, once created, the link to the generated fixed asset.
+The leasing good card collects the basic information required to calculate the depreciation schedule and to create the Right of Use fixed asset: description, monetary value, any initial direct costs, and, once created, the link to the generated fixed asset.
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001192-0/5-LCM-EN.png"><br>
 
