@@ -1,0 +1,41 @@
+Prima di gestire i contratti di leasing è necessario configurare il modulo una sola volta, definendo i giornali di registrazione da utilizzare. Questa pagina descrive il setup generale.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001190-0/2-LCM-IT.png"><br>
+
+### Descrizione
+
+**Setup Leasing (LCM)** raccoglie le impostazioni generali valide per tutta l'azienda: il registro ammortamento da usare per i cespiti Diritto d'Uso, l'eventuale serie numerica per il codice bene e i giornali di registrazione generale destinati alle scritture IFRS16 e alle scritture periodiche di interessi/riduzione debito.
+
+### Prerequisiti
+
+Prima di avviare la configurazione, verificare che in Business Central siano già presenti:
+
+- le serie numeriche da utilizzare per i contratti interni, per i codici bene e per i cespiti Diritto d'Uso;
+- un registro ammortamento dedicato ai cespiti Diritto d'Uso;
+- il piano dei conti con i conti da utilizzare per debito, interessi e conto transitorio;
+- le classi e sottoclassi cespite da assegnare ai Diritti d'Uso;
+- i modelli e i batch delle registrazioni generali da usare per le scritture di leasing;
+- le anagrafiche fornitore delle società di leasing.
+
+### Configurazione
+
+Cercare **Setup Leasing (LCM)** nella barra di ricerca e compilare i seguenti campi:
+
+| Campo | Descrizione |
+|---|---|
+| **Codice Registro Amm.to Cespiti** | Registro ammortamento utilizzato per tutti i cespiti Diritto d'Uso creati dal modulo |
+| **Nr. Serie Codice Bene** | Serie numerica facoltativa per l'assegnazione automatica del codice dei beni in leasing |
+| **Nome Modello / Nome Batch Reg. IFRS16** | Modello e batch di registrazioni generali usati per la rilevazione iniziale IFRS16 |
+| **Nome Modello / Nome Batch Reg. Leasing** | Modello e batch di registrazioni generali usati per le scritture periodiche di interessi e riduzione debito |
+
+Se il record di setup non esiste ancora, viene creato automaticamente alla prima apertura della pagina.
+
+### Integrazione SGL
+
+Se nell'ambiente è installato anche il modulo EOS **Accruals and Simulated General Ledger (SGL)**, sulla pagina Setup Leasing (LCM) compare la sezione **Integrazione SGL**, con i campi:
+
+| Campo | Descrizione |
+|---|---|
+| **Abilita Ereditarietà Dim. da Riga** | Se attivo, i dati di competenza economica vengono copiati automaticamente dalla riga contratto alla riga documento quando si recuperano le rate in una fattura di acquisto |
+| **Modello Rateo Leasing** | Modello di competenza economica predefinito da proporre per le scritture di interessi |
+
