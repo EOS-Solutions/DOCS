@@ -1,0 +1,65 @@
+This phase covers the generation of the accounting entries required by IFRS16: the initial recognition of the debt and the fixed asset, and the two periodic entries for interest detection and debt reduction.
+
+All entries are generated as lines in a general journal: the user must always review them and post them manually; no entry is posted automatically.
+
+### Prerequisites
+
+- Leasing Setup (LCM) filled in with the posting journals.
+- Contract type with the G/L accounts filled in.
+- For the initial recognition: the Right of Use fixed asset already created for each good of the contract.
+
+### Usage
+
+#### Initial IFRS16 recognition
+
+1. From the contract card, click **Detect IFRS16** (or run the report of the same name on multiple contracts at once, filtering by internal contract number).
+2. For each good of the contract, the following journal lines are generated:
+
+```
+DEBIT    Right of Use fixed asset        = Discounted Amount + Initial Costs
+CREDIT   Detection IFRS16 Debt Account   = Discounted Amount
+CREDIT   Initial Costs Account           = Initial Costs (only if present)
+```
+
+3. The journal opens automatically with the generated lines: review them and post the batch.
+4. If IFRS16 has already been detected for the same contract, the system asks for confirmation before generating further lines, to avoid unintentional duplication.
+
+The **IFRS16 Detected** flag on the contract header becomes active only when the fixed asset acquisition cost entry is actually posted, not simply by running the **Detect IFRS16** action.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001196-0/10-LCM-EN.png"><br>
+
+#### Periodic interest detection
+
+1. From the contract's Lines section, select one or more due installments and click **Detect Interest** (or use the **Detect Interest** batch report, which can be filtered by contract and by installment).
+2. For each installment, the following lines are generated:
+
+```
+DEBIT    Interests Account               = Interest of the installment
+CREDIT   Transitory Debt Account         = Interest of the installment
+```
+
+3. An installment for which interest has already been detected cannot be processed again: the system reports the issue.
+4. When the journal is posted, the installment's **Interest Detected** flag is set automatically.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001196-0/11-LCM-EN.png"><br>
+
+#### Riduzione del debito
+
+1. From the contract's Lines section, select one or more installments and click **Debt Reduction** (or use the **Debt Reduction** batch report).
+2. For each installment, the following lines are generated:
+
+```
+CREDIT   Debt Leasing Account            = Installment Amount (reduces the liability)
+DEBIT    Transitory Debt Account         = Installment Amount (closes the transitory account)
+```
+
+3. An installment whose debt has already been reduced cannot be processed again.
+4. When the journal is posted, the installment's **Debt Reduced** flag is set automatically.
+
+The three operations (interest detection, debt reduction and the purchase invoice) together produce the combined accounting effect of the installment: interest expense on the income statement, a reduction of the leasing debt, and a payable toward the vendor. The transitory account acts as a bridge between the entries and should net to zero once all three operations have been completed for the same installment.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001196-0/12-LCM-EN.png"><br>
+
+### Additional information
+
+Both interest detection and debt reduction, when run from the contract lines, offer to inherit the accrual template set on the installment, if any.
