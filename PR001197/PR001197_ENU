@@ -1,0 +1,32 @@
+The leasing installments must be matched against the documents with which the leasing company actually invoices the payments, in order to keep track of what has been paid against what is due under the schedule.
+
+The module adds a **Get Leasing Installments** action on the purchase invoice lines, on the purchase credit memo lines, and on the general journal lines, allowing the contract's installments to be automatically imported as document lines or journal lines.
+
+### Usage
+
+#### From a purchase invoice
+
+1. Create a purchase invoice for the vendor (leasing company).
+2. On the lines, select **Functions → Get Leasing Installments**.
+3. Choose the contract (the list is filtered by the invoice's vendor) and select one or more installments that are not yet closed.
+4. The system creates an invoice line for each selected installment, using the contract type's **Debt Leasing Account No.**, the installment amount, a description referencing contract/installment/good, and the dimensions inherited from the contract line.
+
+#### From a purchase credit memo
+
+Same procedure as for the invoice; in this case only installments that are already linked to a posted invoice are proposed, to allow reversals or corrections.
+
+#### From general journals
+
+The **Get Leasing Installments** action is also available on the standard general journal: after selecting a contract and one or more installments, the system creates journal lines using the **Debt Leasing Account No.** and, as the balancing account, the contract type's **Transitory Debt Account No.**.
+
+When the document is posted, the contract's installment line is updated automatically:
+
+| Event | Effect on the installment line |
+|---|---|
+| Posting a purchase invoice | The posted invoice number and line are recorded; the **Posted Amount** is increased; the installment becomes **Closed** if the posted amount reaches the installment amount |
+| Posting a purchase credit memo | The posted credit memo number and line are recorded; the **Posted Amount** is decreased; the installment becomes not **Closed** again if the posted amount falls below the installment amount |
+| Posting from a general journal | The **Posted Amount** is increased; the installment becomes **Closed** if the posted amount reaches the installment amount |
+
+### Additional information
+
+The same installment can be linked to several document lines (for example in case of partial invoicing across multiple invoices): the contract card shows the number of open and posted invoice/credit memo lines linked to each installment, as well as the number of G/L entries generated.
