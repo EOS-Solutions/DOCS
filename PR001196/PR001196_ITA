@@ -1,0 +1,65 @@
+Questa fase riguarda la generazione delle scritture contabili richieste dall'IFRS16: la rilevazione iniziale del debito e del cespite, e le due scritture periodiche di rilevazione interessi e riduzione del debito.
+
+Tutte le scritture vengono generate come righe in un giornale di registrazioni generali: l'utente deve sempre verificarle e registrarle manualmente, nessuna scrittura viene contabilizzata in automatico.
+
+### Prerequisiti
+
+- Setup Leasing (LCM) compilato con i giornali di registrazione.
+- Tipo di contratto con i conti contabili compilati.
+- Per la rilevazione iniziale: il cespite Diritto d'Uso già creato per ogni bene del contratto.
+
+### Utilizzo
+
+#### Rilevazione iniziale IFRS16
+
+1. Dalla scheda contratto, cliccare **Rileva IFRS16** (oppure eseguire il report omonimo su più contratti contemporaneamente, filtrando per numero contratto interno).
+2. Per ogni bene del contratto vengono generate le righe giornale:
+
+```
+DARE   Cespite Diritto d'Uso        = Valore Attualizzato + Costi Iniziali
+AVERE  Conto Debito IFRS16          = Valore Attualizzato
+AVERE  Conto Costi Iniziali         = Costi Iniziali (solo se presenti)
+```
+
+3. Si apre automaticamente il giornale con le righe generate: verificarle ed eseguire la registrazione.
+4. Se la rilevazione IFRS16 è già stata eseguita in precedenza per lo stesso contratto, il sistema chiede conferma prima di generare ulteriori righe, per evitare duplicazioni involontarie.
+
+L'indicatore **IFRS16 Rilevato** sulla testata del contratto diventa attivo solo quando la scrittura di acquisizione del cespite viene effettivamente registrata, non al semplice utilizzo dell'azione.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001196-0/10-LCM-IT.png"><br>
+
+#### Rilevazione periodica interessi
+
+1. Dalla sezione Righe del contratto, selezionare una o più rate in scadenza e cliccare **Rileva Interessi** (oppure usare il report batch **Rileva Interessi**, filtrabile per contratto e per rata).
+2. Per ogni rata vengono generate le righe:
+
+```
+DARE   Conto Interessi              = Interessi della rata
+AVERE  Conto Debito Transitorio     = Interessi della rata
+```
+
+3. Una rata già rilevata non può essere rielaborata: il sistema segnala l'anomalia.
+4. Alla registrazione del giornale, l'indicatore **Interessi Rilevati** della rata viene impostato automaticamente.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001196-0/11-LCM-IT.png"><br>
+
+#### Riduzione del debito
+
+1. Dalla sezione Righe del contratto, selezionare una o più rate e cliccare **Riduzione Debito** (oppure usare il report batch **Riduzione Debito**).
+2. Per ogni rata vengono generate le righe:
+
+```
+AVERE  Conto Debito Leasing         = Importo Rata (riduce la passività)
+DARE   Conto Debito Transitorio     = Importo Rata (chiude il transitorio)
+```
+
+3. Una rata con debito già ridotto non può essere rielaborata.
+4. Alla registrazione del giornale, l'indicatore **Debito Ridotto** della rata viene impostato automaticamente.
+
+Le tre operazioni (rilevazione interessi, riduzione debito e fattura di acquisto) producono nel loro insieme l'effetto contabile combinato della rata: interessi passivi a conto economico, riduzione del debito di leasing e debito verso il fornitore. Il conto transitorio funge da ponte tra le scritture e deve azzerarsi una volta completate tutte e tre le operazioni per la stessa rata.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001196-0/12-LCM-IT.png"><br>
+
+### Informazioni aggiuntive
+
+Sia la rilevazione interessi sia la riduzione debito, quando eseguite dalle righe contratto, propongono di ereditare il modello di competenza economica (rateo) impostato sulla rata, se presente.
