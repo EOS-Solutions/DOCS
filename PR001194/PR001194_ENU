@@ -1,0 +1,42 @@
+The depreciation schedule defines the amount, the date, and the composition (principal/interest) of each individual installment of the contract, using the effective interest rate method required by IFRS16.
+
+The calculation is based on "blocks" of homogeneous installments (for example: an initial deposit, a number of ordinary installments, a final redemption installment). For each block, the number of installments and the amount of each installment are specified; the system then automatically generates all the installment lines with their present values, interest and progressive debt balances.
+
+### Usage
+
+1. From the contract card, click **Calculate depreciation Schedule**.
+2. On the page that opens, the contract's **Contract Initial Date**, **Installment Frequency** and **Interest Rate** are shown for reference.
+3. Enter a line for each block of homogeneous payments, specifying:
+   - **Installments Total No.** for the block;
+   - **Installment Amount**;
+   - the **Deposit** flag, if the line represents an initial advance payment (with the related **Deposit Date**);
+   - the **Redemption** flag, if the line represents the final payment to purchase the good.
+4. Use the **Insert Line Above Current Line** / **Insert Line Below Current Line** actions to add further blocks in the desired position.
+5. Click **Create Contract Lines**: the system generates the final installment lines and closes the calculation page.
+
+#### Example
+
+For a 60-month lease with an initial deposit, 58 ordinary installments and a final redemption:
+
+| Block | Installments Total No. | Installment Amount | Deposit | Redemption |
+|---|---|---|---|---|
+| 1 | 1 | 10,000.00 | Yes | No |
+| 2 | 58 | 500.00 | No | No |
+| 3 | 1 | 3,000.00 | No | Yes |
+
+The system generates the installment lines always in the following order: first the deposit, then the ordinary installments, and finally the redemption installment. For each installment it calculates:
+
+- the **Discounted Amount** (used for IFRS16 detection and for the fixed asset value);
+- the **Liability Before Payment** and **Liability After Payment**;
+- the **Interest** for the period;
+- the **Debt at the end of the period**;
+- in parallel, the **Share Capital OIC** and **Interest OIC** amounts according to the OIC method.
+
+The contract's **Ending Date** is updated automatically based on the last generated installment. If the contract includes multiple goods, each installment is split in proportion to the value of each good.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001194-0/8-LCM-EN.png"><br>
+
+### Additional information
+
+- When the schedule is regenerated, installment lines that are not yet closed and not linked to purchase documents are deleted and recreated; already closed lines remain unchanged.
+- The total number of installments cannot be reduced below the number of already closed installments, and the amount of a block cannot be changed if it contains closed installments.
