@@ -1,0 +1,32 @@
+Per ogni bene in leasing l'IFRS16 richiede l'iscrizione a bilancio di un cespite che rappresenta il diritto di utilizzo del bene per la durata del contratto.
+
+Il modulo crea automaticamente un cespite dedicato per ciascun bene associato al contratto, completo di registro ammortamento, dimensioni e classificazione cespite, senza necessità di configurazione manuale del cespite stesso.
+
+### Prerequisiti
+
+- Il piano rate non deve essere ancora stato generato per il contratto (l'azione non è disponibile se esistono già righe rata).
+- Il bene deve essere associato a un contratto e non deve avere già un cespite collegato.
+- Il tipo di contratto deve avere compilati Classe, Sottoclasse e Serie numerica del Diritto d'Uso.
+- Il Setup deve avere compilato il registro ammortamento da utilizzare.
+
+### Utilizzo
+
+1. Dalla scheda contratto, nella sezione Beni, selezionare uno o più beni.
+2. Cliccare **Crea Diritto d'Uso**.
+3. Il sistema crea un cespite per ciascun bene selezionato e apre la lista dei cespiti creati.
+
+Per ogni bene viene creato automaticamente:
+
+- un nuovo **cespite**, con numero dalla serie del tipo contratto, descrizione ripresa dal bene, classe e sottoclasse dal tipo contratto, e dimensioni globali ereditate dal contratto;
+- l'intero **set di dimensioni** del contratto, riportato come dimensioni predefinite del cespite;
+- un **registro ammortamento** sul cespite, con data inizio pari alla data inizio contratto, data fine pari alla data fine contratto e metodo di ammortamento lineare;
+- l'aggiornamento del bene con il riferimento al cespite appena creato.
+
+Il cespite riporta inoltre, in una sezione dedicata della propria scheda, il riferimento al bene e al contratto di leasing di origine, per facilitarne la tracciabilità.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001195-0/9-LCM-IT.png"><br>
+
+### Informazioni aggiuntive
+
+- L'azione **Rimuovi Diritto d'Uso**, disponibile dalla sezione Beni del contratto, consente di scollegare il cespite dal bene senza eliminare il cespite stesso, ad esempio in caso di errore di associazione. Viene richiesta conferma prima di procedere.
+- Se il cespite viene invece eliminato dalla gestione cespiti standard, il collegamento sul bene viene azzerato automaticamente.
