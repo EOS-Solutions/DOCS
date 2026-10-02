@@ -1,0 +1,23 @@
+Quando nell'ambiente Business Central è installata anche l'APP EOS **Accruals and Simulated General Ledger (SGL)**, il modulo di Leasing offre funzionalità aggiuntive per distribuire correttamente nel tempo il costo degli interessi passivi, evitando che l'intero importo venga imputato al solo mese di scadenza della rata.
+
+Questa integrazione è opzionale, i campi di configurazione (sezione Integrazione SGL) si trovano nel Setup Leasing (LCM).
+
+### Prerequisiti
+
+- APP EOS Accruals and Simulated General Ledger (SGL) installata.
+- Un modello di competenza economica (rateo) già configurato nel modulo di Gestione Ratei.
+- Sezione Integrazione SGL compilata nel Setup Leasing (LCM).
+
+### Utilizzo
+
+Ogni singola riga rata può avere un proprio **Modello di Rateo** e un periodo di competenza (data inizio/fine), calcolati automaticamente in base alla frequenza e alla tipologia di pagamento del contratto, ma modificabili manualmente.
+
+Quando si esegue **Rileva Interessi** o **Riduzione Debito** dalla riga contratto, il sistema chiede se si desidera ereditare il modello di competenza economica impostato sulla rata: confermando, la scrittura di interessi viene generata con le date di competenza corrette per la ripartizione automatica del costo nei periodi contabili di competenza.
+
+Nei report batch Rileva Interessi e Riduzione Debito è disponibile l'opzione **Eredita Modello Ratei**, che applica lo stesso comportamento a tutte le rate elaborate in blocco.
+
+Il costo degli interessi passivi viene ripartito automaticamente sui periodi contabili di competenza, in linea con il principio di competenza economica, riducendo il lavoro manuale di gestione dei ratei.
+
+### Informazioni aggiuntive
+
+Questa funzionalità non altera in alcun modo la logica di calcolo IFRS16 del piano di ammortamento: agisce solo sulla modalità di imputazione contabile temporale della scrittura di interessi già calcolata.
