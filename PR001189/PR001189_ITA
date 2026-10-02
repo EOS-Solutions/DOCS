@@ -1,4 +1,4 @@
-Il modulo **IFRS16 Lease Contract Management** permette di gestire in modo completo i contratti di leasing aziendali in conformità al principio contabile internazionale IFRS16, che richiede di iscrivere a bilancio sia il diritto di utilizzo del bene locato sia il relativo debito finanziario.
+Il modulo **IFRS16 Lease Contract Management** permette di gestire in modo completo i contratti di leasing aziendali in conformità al principio contabile internazionale IFRS 16, che richiede di iscrivere a bilancio sia il diritto di utilizzo del bene locato sia il relativo debito finanziario.
 
 ## Descrizione
 
@@ -12,7 +12,7 @@ Con questo modulo l'azienda può:
 - gestire contratti che comprendono più beni, ripartendo automaticamente gli importi in proporzione al valore di ciascun bene;
 - calcolare in parallelo anche i valori richiesti dai principi contabili italiani (OIC).
 
-Senza questo modulo, un canone di leasing verrebbe registrato come semplice costo. Con l'IFRS16, invece, il contratto genera in bilancio un'attività (il diritto d'uso del bene) e una passività (il debito verso la società di leasing), mentre a conto economico compaiono l'ammortamento del diritto d'uso e gli interessi passivi maturati sul debito.
+Senza questo modulo, un canone di leasing verrebbe registrato come semplice costo. Con l'IFRS 16, invece, il contratto genera in bilancio un'attività (il diritto d'uso del bene) e una passività (il debito verso la società di leasing), mentre a conto economico compaiono l'ammortamento del diritto d'uso e gli interessi passivi maturati sul debito.
 
 ## Utilizzo
 
@@ -20,7 +20,7 @@ Il modulo si utilizza lungo tutta la vita del contratto di leasing: dalla config
 
 ## Risultato
 
-Un processo di leasing tracciato in modo puntuale, con scritture contabili coerenti con l'IFRS16, piena tracciabilità delle rate pagate e dei cespiti generati, e riduzione del lavoro manuale di calcolo e registrazione.
+Un processo di leasing tracciato in modo puntuale, con scritture contabili coerenti con l'IFRS 16, piena tracciabilità delle rate pagate e dei cespiti generati, e riduzione del lavoro manuale di calcolo e registrazione.
 
 ## Sommario
 
