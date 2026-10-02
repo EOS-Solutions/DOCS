@@ -1,0 +1,32 @@
+Le rate del piano di leasing devono essere abbinate ai documenti con cui la società di leasing fattura effettivamente i canoni, in modo da tenere sotto controllo quanto è stato pagato rispetto a quanto previsto dal piano.
+
+Il modulo aggiunge un'azione **Recupera Rate Leasing** sia sulle righe delle fatture di acquisto, sia sulle righe delle note di credito di acquisto, sia sulle righe delle registrazioni generali, che permette di importare automaticamente le rate del contratto come righe documento o righe giornale.
+
+### Utilizzo
+
+#### Da fattura di acquisto
+
+1. Creare una fattura di acquisto per il fornitore (società di leasing).
+2. Nelle righe, selezionare **Funzioni → Recupera Rate Leasing**.
+3. Scegliere il contratto (la lista viene filtrata per il fornitore della fattura) e selezionare una o più rate non ancora chiuse.
+4. Il sistema crea una riga fattura per ogni rata selezionata, con il conto Debito Leasing del tipo contratto, l'importo della rata, la descrizione con riferimento a contratto/rata/bene e le dimensioni ereditate dalla riga contratto.
+
+#### Da nota di credito di acquisto
+
+Stesso procedimento della fattura; in questo caso vengono proposte solo le rate che risultano già collegate a una fattura registrata, per consentire storni o correzioni.
+
+#### Da registrazioni generali
+
+L'azione **Recupera Rate Leasing** è disponibile anche nelle registrazioni generali standard: selezionando un contratto e una o più rate, il sistema crea righe giornale con il conto Debito Leasing e, come conto di contropartita, il Conto Debito Transitorio del tipo contratto.
+
+Alla registrazione del documento, la riga rata del contratto viene aggiornata automaticamente:
+
+| Evento | Effetto sulla riga rata |
+|---|---|
+| Registrazione fattura di acquisto | Aggiornati numero e riga della fattura registrata; l'importo registrato viene incrementato; la rata diventa **Chiusa** se l'importo registrato raggiunge l'importo rata |
+| Registrazione nota di credito | Aggiornati numero e riga della nota di credito registrata; l'importo registrato viene ridotto; la rata torna **Aperta** se l'importo registrato scende sotto l'importo rata |
+| Registrazione da giornale generale | L'importo registrato viene incrementato; la rata diventa **Chiusa** se l'importo registrato raggiunge l'importo rata |
+
+### Informazioni aggiuntive
+
+Una stessa rata può essere collegata a più righe documento (ad esempio in caso di fatturazione parziale su più fatture): la scheda contratto mostra il numero di righe fattura/nota di credito, aperte e registrate, collegate a ciascuna rata, oltre al numero di movimenti contabili generati.
