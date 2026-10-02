@@ -1,4 +1,4 @@
-Prima di gestire i contratti di leasing è necessario configurare il modulo una sola volta, definendo i giornali di registrazione da utilizzare. Questa pagina descrive il setup generale.
+Prima di gestire i contratti di leasing è necessario configurare il modulo al primo utilizzo, definendo i giornali di registrazione da utilizzare. Questa pagina descrive il setup generale.
 
 **Setup Leasing (LCM)** raccoglie le impostazioni generali valide per tutta l'azienda: il registro ammortamento da usare per i cespiti Diritto d'Uso, l'eventuale serie numerica per il codice bene e i giornali di registrazione generale destinati alle scritture IFRS16 e alle scritture periodiche di interessi/riduzione debito.
 
@@ -34,6 +34,6 @@ Se nell'ambiente è installato anche il modulo EOS **Accruals and Simulated Gene
 
 | Campo | Descrizione |
 |---|---|
-| **Abilita Ereditarietà Dim. da Riga** | Se attivo, i dati di competenza economica vengono copiati automaticamente dalla riga contratto alla riga documento quando si recuperano le rate in una fattura di acquisto |
-| **Modello Rateo Leasing** | Modello di competenza economica predefinito da proporre per le scritture di interessi |
+| **Abilita ereditarietà da riga contratto leasing a riga di giornale simulate** | Se attivo, i dati di competenza economica vengono copiati automaticamente dalla riga contratto alla riga documento quando si recuperano le rate in una fattura di acquisto |
+| **Template Ratei Leasing** | Modello di competenza economica predefinito da proporre per le scritture di interessi |
 
