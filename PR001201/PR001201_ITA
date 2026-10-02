@@ -1,0 +1,26 @@
+Questo paragrafo raccoglie le domande più frequenti e i messaggi di errore più comuni che l'utente può incontrare utilizzando il modulo.
+
+### Domande frequenti
+
+| Domanda | Risposta |
+|---|---|
+| Posso avere più beni in un solo contratto? | Sì. Ogni bene avrà il proprio cespite Diritto d'Uso e gli importi delle rate vengono ripartiti in proporzione al valore di ciascun bene. |
+| Posso modificare il piano dopo averlo generato? | Le rate non ancora chiuse e non collegate a documenti di acquisto vengono eliminate e ricreate al ricalcolo; le rate già chiuse restano invariate. |
+| Posso eliminare un bene associato a un contratto? | No. È necessario prima dissociarlo dal contratto, operazione possibile solo se non esistono ancora righe rata. |
+| Le scritture vengono registrate automaticamente? | No. Tutte le funzioni generano righe nei giornali di registrazione; la registrazione va sempre confermata manualmente dall'utente. |
+| Come verifico lo stato di una rata? | Dalla sezione Righe della scheda contratto, controllando gli indicatori Chiusa, Interessi Rilevati, Debito Ridotto e l'importo registrato. |
+| Il modulo supporta i principi contabili italiani (OIC)? | Sì: le righe contratto riportano in parallelo anche la quota capitale e la quota interessi calcolate secondo il metodo OIC. |
+| Posso rimuovere per errore il collegamento di un cespite Diritto d'Uso? | Sì, tramite l'azione dedicata dalla sezione Beni del contratto, previa conferma; il cespite non viene eliminato. |
+
+### Errori comuni
+
+| Messaggio | Causa | Soluzione |
+|---|---|---|
+| "Il bene X è collegato al cespite Y" | Tentativo di creare un secondo Diritto d'Uso per un bene che ne ha già uno | Verificare dalla scheda bene il cespite già collegato |
+| Campo Registro Ammortamento mancante | Setup incompleto | Compilare il registro ammortamento nel Setup Leasing (LCM) |
+| Serie numerica mancante | Tipo contratto incompleto | Compilare le serie numeriche mancanti nella scheda Tipo Contratto |
+| "L'installment è presente nel documento..." | Tentativo di eliminare una riga rata collegata a un documento di acquisto (aperto o registrato) | Eliminare prima la riga dal documento; le righe già collegate a documenti registrati non possono in nessun caso essere eliminate |
+| "Interessi Rilevati deve essere No" | Tentativo di rilevare di nuovo gli interessi su una rata già elaborata | Verificare l'indicatore sulla riga rata |
+| "Debito Ridotto deve essere No" | Tentativo di ridurre di nuovo il debito su una rata già elaborata | Verificare l'indicatore sulla riga rata |
+| "Esistono righe per il contratto X" | Tentativo di dissociare un bene o di creare un Diritto d'Uso quando esistono già righe rata | Eliminare prima le righe rata non chiuse e senza documenti collegati |
+| "Non è possibile ridurre il numero di rate sotto N" | Tentativo di ridurre il piano al di sotto delle rate già chiuse | Non è possibile modificare rate già pagate |
