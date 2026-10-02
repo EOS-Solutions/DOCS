@@ -1,0 +1,23 @@
+When the EOS **Accruals and Simulated General Ledger (SGL)** APP is also installed in the Business Central environment, the Leasing module offers additional functionality to correctly spread the interest expense over time, avoiding the entire amount being posted only in the month the installment is due.
+
+This integration is optional, the configuration fields (SGL Integration section) are located in the Leasing Setup (LCM).
+
+### Prerequisites
+
+- EOS Accruals and Simulated General Ledger (SGL) APP installed.
+- An accrual template already configured in the Accrual Management module.
+- SGL Integration section filled in on the Leasing Setup (LCM).
+
+### Usage
+
+Each installment line can have its own **Accrual Template** and accrual period (**Accrual Starting Date** / **Accrual Ending Date**), automatically calculated based on the contract's frequency and payment type, but which can be changed manually.
+
+When **Detect Interest** or **Debt Reduction** is run from a contract line, the system asks whether the accrual template set on the installment should be inherited: if confirmed, the interest entry is generated with the correct accrual dates for the automatic allocation of the cost to the relevant accounting periods.
+
+In the **Detect Interest** and **Debt Reduction** batch reports, the **Inherit Accrual Template** option is available, applying the same behavior to all installments processed in bulk.
+
+The interest expense is automatically spread over the relevant accounting periods, in line with the accrual accounting principle, reducing the manual effort of managing accruals.
+
+### Additional information
+
+This functionality does not change the IFRS16 depreciation schedule calculation logic in any way: it only affects how the already calculated interest entry is allocated over time for accounting purposes.
