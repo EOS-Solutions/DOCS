@@ -1,0 +1,12 @@
+The module provides three batch processes to handle multiple contracts or multiple installments at once, avoiding the need to repeat the same actions individually from each contract card.
+
+| Report | Function | Available filters |
+|---|---|---|
+| **Detect IFRS16 (LCM)** | Generates the initial recognition entries in bulk for the selected contracts | Internal Contract No. |
+| **Detect Interest (LCM)** | Generates the interest detection entries in bulk for the selected installments | Internal Contract No., Installment No., "Inherit Accrual Template" option |
+| **Debt Reduction (LCM)** | Generates the debt reduction entries in bulk for the selected installments | Internal Contract No., Installment No., "Inherit Accrual Template" option |
+<BR>
+Simply search for the report name in the search bar and set the desired filters (for example, a specific contract number using the filter field with guided search).
+Once complete, the system displays the number of processed records and automatically opens the journal containing the generated lines.
+
+All generated lines are routed to the same registration journal used by the individual actions on the respective records; the user must always verify and post them manually.
