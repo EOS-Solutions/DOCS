@@ -1,0 +1,30 @@
+For every leased good, IFRS16 requires recognizing on the balance sheet a fixed asset representing the right to use the good for the duration of the contract.
+
+The module automatically creates a dedicated fixed asset for each good linked to the contract, complete with depreciation book, dimensions and fixed asset classification, without requiring manual configuration of the fixed asset itself.
+
+### Prerequisites
+
+- The installment schedule must not have been generated yet for the contract (the action is not available if contract lines already exist).
+- The good must be linked to a contract and must not already have a fixed asset assigned.
+- The contract type must have **Leasing Class Code**, **Leasing Subclass Code** and **Right of Use Series No.** filled in.
+- The Setup must have the **Fixed Asset Depreciation Book Code** filled in.
+
+### Usage
+
+1. From the contract card, in the Goods section, select one or more goods.
+2. Click **Create Right Of Use**.
+3. The system creates a fixed asset for each selected good and opens the list of the created fixed assets.
+
+For each good, the following is automatically created:
+
+- a new **fixed asset**, numbered from the contract type's Right of Use series, with description copied from the good, class and subclass from the contract type, and global dimensions inherited from the contract;
+- the entire **dimension set** of the contract, copied as default dimensions of the fixed asset;
+- a **depreciation book** entry on the fixed asset, with depreciation starting date equal to the contract's starting date, depreciation ending date equal to the contract's ending date, and straight-line depreciation method;
+- the good is updated with the reference to the newly created fixed asset.
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001195-0/9-LCM-EN.png"><br>
+
+### Additional information
+
+- The **Remove Right Of Use** action, available from the Goods section of the contract, allows unlinking the fixed asset from the good without deleting the fixed asset itself, for example in case of an incorrect assignment. Confirmation is requested before proceeding.
+- If the fixed asset is instead deleted through standard fixed asset management, the link on the good is cleared automatically.
