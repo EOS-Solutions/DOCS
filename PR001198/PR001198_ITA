@@ -1,0 +1,28 @@
+Durante la vita del contratto, il cespite Diritto d'Uso viene ammortizzato con le funzionalità standard di gestione cespiti di Business Central; al termine del contratto occorre verificare che tutte le rate siano state completamente elaborate.
+
+Il valore del cespite Diritto d'Uso corrisponde al valore attualizzato delle rate più eventuali costi iniziali, ed è ammortizzato linearmente per l'intera durata del contratto, dalla data inizio alla data fine.
+
+### Utilizzo
+
+#### Ammortamento
+
+1. Verificare, dalla scheda del cespite Diritto d'Uso, che il registro ammortamento sia impostato correttamente (date inizio/fine coincidenti con il contratto, metodo lineare).
+2. Eseguire periodicamente la funzionalità standard di Business Central per il calcolo dell'ammortamento sul registro configurato nel Setup.
+3. Verificare e registrare le scritture di ammortamento generate.
+
+#### Chiusura del contratto
+
+Al termine naturale del contratto, verificare che:
+
+- tutte le rate risultino **Chiuse**;
+- tutte le rate abbiano **Interessi Rilevati** e **Debito Ridotto** attivi;
+- il debito residuo dell'ultima rata sia pari a zero.
+
+In caso di riscatto, il bene diventa di proprietà dell'azienda e il cespite viene mantenuto; in caso di restituzione, si procede con le funzionalità standard di cessione/dismissione del cespite.
+
+Il debito di leasing e il conto transitorio risultano azzerati, il cespite Diritto d'Uso è completamente ammortizzato e il contratto può considerarsi concluso.
+
+### Informazioni aggiuntive
+
+Se la data fine del contratto viene modificata manualmente in un secondo momento, la data fine ammortamento di tutti i cespiti Diritto d'Uso collegati al contratto viene aggiornata automaticamente.
+
