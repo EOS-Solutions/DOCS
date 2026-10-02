@@ -1,0 +1,13 @@
+Il modulo mette a disposizione tre elaborazioni batch per gestire più contratti o più rate contemporaneamente, evitando di dover ripetere le stesse azioni singolarmente da ogni scheda contratto.
+
+| Report | Funzione | Filtri disponibili |
+|---|---|---|
+| **Rileva IFRS16 (LCM)** | Genera in blocco le scritture di rilevazione iniziale per i contratti selezionati | Numero contratto interno |
+| **Rileva Interessi (LCM)** | Genera in blocco le scritture di rilevazione interessi per le rate selezionate | Numero contratto interno, numero rata, opzione "Eredita Modello Ratei" |
+| **Riduzione Debito (LCM)** | Genera in blocco le scritture di riduzione debito per le rate selezionate | Numero contratto interno, numero rata, opzione "Eredita Modello Ratei" |
+
+<BR>
+E' sufficiente cercare il nome del report nella barra di ricerca ed impostare i filtri desiderati (ad esempio uno specifico numero contratto, tramite il campo di filtro con ricerca guidata).
+Al termine, il sistema mostra il numero di record elaborati e apre automaticamente il giornale con le righe generate.
+
+Tutte le righe generate confluiscono nello stesso giornale di registrazione utilizzato dalle azioni singole delle rispettive schede: l'utente deve sempre verificarle e registrarle manualmente.
