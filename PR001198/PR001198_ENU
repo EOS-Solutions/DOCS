@@ -1,0 +1,27 @@
+Throughout the life of the contract, the Right of Use fixed asset is depreciated using Business Central's standard fixed asset functionality; at the end of the contract, it must be verified that all installments have been fully processed.
+
+The value of the Right of Use fixed asset corresponds to the discounted amount of the installments plus any initial costs, and it is depreciated on a straight-line basis over the entire duration of the contract, from the starting date to the ending date.
+
+### Usage
+
+#### Depreciation
+
+1. From the Right of Use fixed asset card, verify that the depreciation book is set up correctly (starting/ending dates matching the contract, straight-line method).
+2. Periodically run Business Central's standard depreciation calculation functionality for the depreciation book configured in the Setup.
+3. Review and post the resulting depreciation entries.
+
+#### Closing the contract
+
+At the natural end of the contract, verify that:
+
+- all installments are **Closed**;
+- all installments have **Interest Detected** and **Debt Reduced** active;
+- the residual debt of the last installment (**Debt at the end of the period**) is equal to zero.
+
+In case of redemption, the good becomes the company's property and the fixed asset is retained; in case of return, proceed with the standard fixed asset disposal functionality.
+
+The leasing debt account and the transitory account net to zero, the Right of Use fixed asset is fully depreciated, and the contract can be considered closed.
+
+### Additional information
+
+If the contract's **Ending Date** is changed manually at a later time, the depreciation ending date of all Right of Use fixed assets linked to the contract is updated automatically.
