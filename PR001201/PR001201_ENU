@@ -1,0 +1,26 @@
+This paragraph collects the most frequently asked questions and the most common error messages that users may encounter while using the module.
+
+### Frequently asked questions
+
+| Question | Answer |
+|---|---|
+| Can a single contract include multiple goods? | Yes. Each good will have its own Right of Use fixed asset, and installment amounts are split in proportion to the value of each good. |
+| Can I change the schedule after it has been generated? | Installment lines that are not yet closed and not linked to purchase documents are deleted and recreated when the schedule is recalculated; already closed lines remain unchanged. |
+| Can I delete a good that is linked to a contract? | No. It must first be unassigned from the contract, which is only possible if no installment lines exist yet. |
+| Are the entries posted automatically? | No. Every function only generates lines in the posting journals; posting must always be confirmed manually by the user. |
+| How do I check the status of an installment? | From the Lines section of the contract card, checking the Closed, Interest Detected, Debt Reduced flags and the Posted Amount. |
+| Does the module support the Italian accounting standards (OIC)? | Yes: the contract lines also show, in parallel, the Share Capital OIC and Interest OIC amounts calculated with the OIC method. |
+| Can I undo a Right of Use fixed asset link by mistake? | Yes, using the dedicated action in the Goods section of the contract, after confirmation; the fixed asset itself is not deleted. |
+
+### Common errors
+
+| Message | Cause | Solution |
+|---|---|---|
+| "Good X is linked to fixed asset Y" | Attempt to create a second Right of Use for a good that already has one | Check the already linked fixed asset from the good card |
+| Missing Fixed Asset Depreciation Book Code | Incomplete Setup | Fill in the depreciation book in Leasing Setup (LCM) |
+| Missing number series | Incomplete contract type | Fill in the missing number series on the Leasing Contract Type card |
+| "Installment is in document..." | Attempt to delete an installment line linked to a purchase document (open or posted) | Delete the line from the document first; lines already linked to posted documents can never be deleted |
+| "Interest Detected must be No" | Attempt to detect interest again for an installment already processed | Check the flag on the installment line |
+| "Debt Reduced must be No" | Attempt to reduce the debt again for an installment already processed | Check the flag on the installment line |
+| "There are lines for contract X" | Attempt to de-assign a good or create a Right of Use while installment lines already exist | Delete the open installment lines that are not linked to documents first |
+| "Installments Total No. cannot be lower than N" | Attempt to reduce the schedule below the number of already closed installments | Already paid installments cannot be modified |
