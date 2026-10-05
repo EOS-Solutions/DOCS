@@ -1,7 +1,7 @@
-| On Prem | SaaS                                                                  |
-|------|------------------------------------------------------------------------------|
-| I verify that I have a service with NavUserPassword authentication and that the API is enabled      | I contact IT to create an Ãapp registrationÄ and decide which user to use for integration |
-| Install the apps  | Install the apps |
-| I perform the DocFinance setup on the app | I perform the DocFinance setup on the app |               
-| I create the BC user for DocFinance integration and create its web service access key | I assign permissions to the chosen user |               
-| Setup of connection on DocFinance to the service with NavUserPassword authentication | Connection setup on DocFinance |  
+* Contact IT to create an "App registration".
+* Install the apps.
+* Complete the DocFinance setup within the app.
+* Create the Microsoft Entra Application in Business Central and assign the permission set.
+* Configure the connection in DocFinance.
+
+User authentication is still available, but the Microsoft Entra Authentication is suggested.
