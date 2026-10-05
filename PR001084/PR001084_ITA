@@ -1,0 +1,55 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001084-0/SyncMode_Actions_IT.png"><br>
+
+Quando si utilizzano le modalità asincrone (completa o incrementale), sono disponibili le seguenti azioni per gestire l'esportazione dei dati:
+
+#### 1. Coda processi - Esportazione anagrafiche
+**Quando utilizzarla:**
+- Quando si desidera automatizzare la preparazione dei dati delle anagrafiche tramite coda processi
+- Ideale per schedulare l'esportazione in orari specifici (es. durante la notte)
+- Disponibile per entrambe le modalità asincrone (completa e incrementale)
+
+**Come utilizzarla:**
+1. Selezionare "Job Queue - Export MasterData"
+2. Configurare la coda processi con la frequenza desiderata
+3. Il sistema preparerà automaticamente i dati secondo lo schedule impostato
+
+#### 2. Coda processi - Esportazione scadenzari
+**Quando utilizzarla:**
+- Quando si desidera automatizzare la preparazione dei dati delle scadenze tramite coda processi
+- Ideale per schedulare l'esportazione in orari specifici
+- Disponibile per la modalità asincrona completa
+
+**Come utilizzarla:**
+1. Selezionare "Coda processi - Esportazione scadenzari"
+2. Configurare la coda processi con la frequenza desiderata
+3. Il sistema preparerà automaticamente i dati delle scadenze secondo lo schedule impostato
+
+#### 3. Esportazione anagrafiche (asincrona)
+**Quando utilizzarla:**
+- Quando si desidera preparare manualmente i dati delle anagrafiche
+- Utile per esportazioni su richiesta senza attendere la coda processi
+- Disponibile per entrambe le modalità asincrone (completa e incrementale)
+
+**Come utilizzarla:**
+1. Accedere al menu "Actions" nella pagina di setup
+2. Selezionare "Export MasterData (Async)"
+3. L'azione prepara immediatamente i dati per l'esportazione
+4. I dati saranno disponibili per DocFinance alla successiva richiesta
+
+#### 4. Esportazione scadenzari (asincrona)
+**Quando utilizzarla:**
+- Quando si desidera preparare manualmente i dati delle scadenze
+- Utile per esportazioni su richiesta senza attendere la coda processi
+- Disponibile per la modalità asincrona completa
+
+**Come utilizzarla:**
+1. Accedere al menu "Actions" nella pagina di setup
+2. Selezionare "Export Receiv/Payable (Async)"
+3. L'azione prepara immediatamente i dati delle scadenze per l'esportazione
+4. I dati saranno disponibili per DocFinance alla successiva richiesta
+
+### Note importanti
+- Le azioni Job Queue sono consigliate per un'automazione completa del processo.
+- Le azioni di esportazione manuale (asincrona) sono utili per situazioni eccezionali o test.
+- Nella modalità incrementale asincrona, solo i dati modificati o nuovi vengono preparati, ottimizzando le performance.
+- Eventuali modifiche effettuate tra la preparazione e l'esportazione effettiva saranno incluse nella richiesta successiva.
