@@ -1,0 +1,18 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001083-0/SyncModeFull_IT.png"><br>
+
+Tramite la modalità di sincronizzazione è possibile specificare la modalità con cui vengono gestite le esportazioni verso DocFinance.
+
+Per quanto riguarda le anagrafiche:
+
+| **Campo**               | **Descrizione**                                                                 |
+|-------------------------|---------------------------------------------------------------------------------|
+| Completa sincrona (default) | Con questa modalità i dati delle anagrafiche esportati verso DocFinance vengono generati al momento della richiesta da parte di DocFinance, tutte le anagrafiche vengono esportate ogni volta, non sono necessari ulteriori setup. Ottimale per piccole e medie moli di dati. |
+| Completa asincrona | Con questa modalità i dati delle anagrafiche esportati verso DocFinance vengono generati in anticipo rispetto al momento della richiesta dei dati da parte di DocFinance, tutte le anagrafiche vengono esportate ogni volta. Al momento della richiesta i dati sono quindi già pronti per essere esportati (eventuali modifiche effettuate tra la preparazione e l'esportazione effettiva verranno esportate con la richiesta seguente). In questa modalità è possibile utilizzare una coda processi, oppure preparare i dati per l'esportazione tramite l'apposita azione. |
+| Incrementale asincrona | Con questa modalità i dati delle anagrafiche esportati verso DocFinance vengono generati in anticipo rispetto al momento della richiesta dei dati da parte di DocFinance. A differenza della modalità completa asincrona, vengono esportate solo le differenze (record nuovi o modificati) rispetto all'ultima esportazione, riducendo significativamente il volume di dati trasmessi. Al momento della richiesta i dati sono quindi già pronti per essere esportati (eventuali modifiche effettuate tra la preparazione e l'esportazione effettiva verranno esportate con la richiesta seguente). Questa modalità è ottimale per grandi moli di dati. In questa modalità è possibile utilizzare una coda processi, oppure preparare i dati per l'esportazione tramite l'apposita azione. |
+
+Per quanto riguarda le scadenze:
+
+| **Campo**               | **Descrizione**                                                                 |
+|-------------------------|---------------------------------------------------------------------------------|
+| Completa sincrona (default) | Con questa modalità i dati delle scadenze esportati verso DocFinance vengono generati al momento della richiesta da parte di DocFinance, tutte le scadenze vengono esportate ogni volta, non sono necessari ulteriori setup. Ottimale per piccole e medie moli di dati. |
+| Completa asincrona | Con questa modalità i dati delle scadezne esportati verso DocFinance vengono generati in anticipo rispetto al momento della richiesta dei dati da parte di DocFinance, tutte le scadenze vengono esportate ogni volta. Al momento della richiesta i dati sono quindi già pronti per essere esportati (eventuali modifiche effettuate tra la preparazione e l'esportazione effettiva verranno esportate con la richiesta seguente). In questa modalità è possibile utilizzare una coda processi, oppure preparare i dati per l'esportazione tramite l'apposita azione. |
