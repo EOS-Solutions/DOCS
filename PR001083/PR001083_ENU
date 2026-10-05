@@ -1,0 +1,18 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001083-0/SyncModeFull_EN.png"><br>
+
+Through the synchronization mode, it is possible to specify the mode with which exports to DocFinance are managed.
+
+For master data:
+
+| **Field**               | **Description**                                                                 |
+|-------------------------|---------------------------------------------------------------------------------|
+| Full synchronous (default) | With this mode, the master data exported to DocFinance are generated at the time of the request from DocFinance, all master data are exported every time, no further setup is required. Optimal for small and medium data volumes. |
+| Full asynchronous | With this mode, the master data exported to DocFinance are generated in advance of the data request from DocFinance, all master data are exported every time. At the time of the request, the data are therefore already ready to be exported (any changes made between preparation and actual export will be exported with the next request). In this mode, it is possible to use a job queue, or prepare the data for export through the dedicated action. |
+| Incremental asynchronous | With this mode, the master data exported to DocFinance are generated in advance of the data request from DocFinance. Unlike the full asynchronous mode, only the differences (new or modified records) compared to the last export are exported, significantly reducing the volume of transmitted data. At the time of the request, the data are therefore already ready to be exported (any changes made between preparation and actual export will be exported with the next request). This mode is optimal for large data volumes. In this mode, it is possible to use a job queue, or prepare the data for export through the dedicated action. |
+
+For receivables/payables dates:
+
+| **Field**               | **Description**                                                                 |
+|-------------------------|---------------------------------------------------------------------------------|
+| Full synchronous (default) | With this mode, the due date data exported to DocFinance are generated at the time of the request from DocFinance, all due dates are exported every time, no further setup is required. Optimal for small and medium data volumes. |
+| Full asynchronous | With this mode, the due date data exported to DocFinance are generated in advance of the data request from DocFinance, all due dates are exported every time. At the time of the request, the data are therefore already ready to be exported (any changes made between preparation and actual export will be exported with the next request). In this mode, it is possible to use a job queue, or prepare the data for export through the dedicated action. |
