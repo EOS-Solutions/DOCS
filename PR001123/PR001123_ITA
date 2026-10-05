@@ -1,0 +1,24 @@
+{{% alert title="NOTE" color="warning" %}}
+Si consiglia vivamente di eseguire questa configurazione con il supporto del consulente DocFinance di riferimento del cliente.
+{{% /alert %}}
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DocFinance10.png"><br>
+
+## Configurazione SaaS
+
+| **Campo**                       | **Descrizione**                                                                                                                                                                                                        |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Protocollo                      | https                                                                                                                                                                                                                  |
+| Host                            | api.businesscentral.dynamics.com                                                                                                                                                                                       |
+| Porta                           | 443                                                                                                                                                                                                                    |
+| Autenticazione                  | OAuth2User o OAuth2Service                                                                                                                                                                                                                |
+| Response Timeout                | Tempo di attesa massima in secondi per cui DocFinance attenderà una risposta da BC                                                                                                                                     |
+| EnvironmentName                 | Nome dell'ambiente in SaaS a cui ci si collegherà                                                                                                                                                                      |
+| API Publisher/Group/Version     | Disponibile sul setup DocFinance nel gruppo connessione                                                                                                                                                                |
+| CompanyID                       | Disponibile sul setup DocFinance nel gruppo connessione                                                                                                                                                                |
+| TenantID                        | Disponibile sul setup DocFinance nel gruppo connessione                                                                                                                                                                |
+| ClientID                        | Ottenuto con la procedura disponibile nel punto precedente.                                                                                                  |
+| Scope                           | Lasciare vuoto                                                                                                                                                                                                          |
+| Secret Key                      | Ottenuto con la procedura disponibile nel punto precedente.                                                                                                  |
+| Percorso di backup degli scambi | Cartella su cui vengono salvate le chiamate effettuate da DocFinance a BC ed il loro contenuto, utile per il debug in caso di problemi                                                                                 |
+
