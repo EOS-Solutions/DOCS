@@ -12,6 +12,6 @@ Port: a scelta (default: 7048)
 
 | | |
 |-|-|
-| **Environment Name**            | nome dell'environment  |
-| **API publisher/group/version** | stringa che serve per comporre l'URL da chiamare (in caso di cambiamento in futuro, si puï ottenere comodamente l'URL nuovo) |
+| **Environment Name**            | Nome dell'environment  |
+| **API publisher/group/version** | Stringa che serve per comporre l'URL da chiamare (in caso di cambiamento in futuro, si pu√≤ ottenere comodamente l'URL nuovo) |
 | **Company ID**                  | ID della company su BC, lo si ottiene anche tramite lookup sulla lista delle company                                         |
