@@ -1,44 +1,44 @@
-Per il SaaS la procedura Š la seguente:
+Per il SaaS la procedura Ã¨ la seguente:
 
-1\. Cercare lÂapp registrations e selezionare ÃNew registrationÄ
+1\. Sull'Azure portal cercare lâ€™"App registrations" e selezionare â€œNew registrationâ€
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/1_SaaS.jpg"><br>
-2\. Inserire il nome e premere ÃregisterÄ
+2\. Inserire il nome e premere "Register"
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/2_SaaS.jpg"><br>
 
-3\. Andare nella pagina application, cliccare su ÃAdd a platformÄ, selezionare ÃMobile and deskop applicationsÄ
+3\. Andare nella pagina "Authentication", cliccare su "Add a platform", selezionare "Mobile and deskop applications"
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/3_SaaS.jpg"><br>
 
-4\. Selezionare il primo redirect URL e cliccare su ÃconfigureÄ
+4\. Selezionare il primo redirect URL e cliccare su "configure"
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/4_SaaS.jpg"><br>
 
-5\. Cambiare il valore del ÃDefault client typeÄ a yes
+5\. Cambiare il valore del "Default client type" a Yes
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/5_SaaS.jpg"><br>
 
-6\. Nella pagina ÃCertificates & secretsÄ creare una nuova client secret tramite lÂapposita azione e salvare il valore. Successivamente non sar… pi— visibile, perci• Š necessario esegure ora tale operazione;
+6\. Nella pagina "Certificates & secrets" creare una nuova client secret tramite lâ€™apposita azione e salvare il valore. Successivamente non sarÃ  piÃ¹ visibile, perciÃ² Ã¨ necessario esegure ora tale operazione;
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/6_SaaS.jpg"><br>
 
-7\. Nella pagina ÃAPI PermissionÄ, selezionare ÃAdd a permissionÄ e poi selezionare ÃDynamics 365 Business CentralÄ
+7\. Nella pagina "API Permission", selezionare "Add a permission" e poi selezionare "Dynamics 365 Business Central"
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/7_SaaS.jpg"><br>
 
-8\. Nella pagina successiva selezionare ÃApplication permissionÄ e selezionare ÃApp_accessÄ. Completare lÂazione con Ãapp_accessÄ
+8\. Nella pagina successiva selezionare "Application permission" e selezionare "App_access". Completare lâ€™azione con "app_access"
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/8_SaaS.jpg"><br>
 
-9\. Selezionare ÃAdd a permissionÄ e poi ÃDynamics 365 Business CentralÄ
+9\. Selezionare "Add a permission" e poi "Dynamics 365 Business Central"
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/9_SaaS.jpg"><br>
 
-10\. Scegliere ÃDelegated permissionsÄ e Ãuser_impersonationÄ e cliccare su Add permissions
+10\. Scegliere â€œDelegated permissionsâ€ e â€œuser_impersonationâ€ e cliccare su Add permissions
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/10_SaaS.png"><br>
 
-11\. La pagina apparir… cos:
+11\. La pagina apparirÃ  cosÃ¬:
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/11_SaaS.png"><br>
 
@@ -48,11 +48,13 @@ Nella pagina di Overview si trova il client ID
 
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/11_3_SaaS.jpg"><br>
 
+In BC Ã¨ possibile trovare altri campi di configurazione:
+
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR000710-0/11_4_SaaS.jpg"><br>
 
 | | |
 |-|-|
-| **Tenant ID**                   | ID del tenant su cui si sta lavorando |
-| **Environment Name**            | nome dell'environment |
-| **API publisher/group/version** | stringa che serve per comporre l'URL da chiamare (in caso di cambiamento in futuro, si pu• ottenere comodamente l'URL nuovo) |
-| **Company ID**                  | ID della company su BC, Š recuperabile anche con uno zoom sulla lista delle company  |
+| **Tenant ID**                   | ID del tenant su cui si sta lavorando. |
+| **Environment Name**            | Nome dell'environment. |
+| **API publisher/group/version** | Stringa che serve per comporre l'URL da chiamare (in caso di cambiamento in futuro, si puÃ² ottenere comodamente l'URL nuovo). |
+| **Company ID**                  | ID della company su BC, Ã¨ recuperabile anche con uno zoom sulla lista delle company.  |
