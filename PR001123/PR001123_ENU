@@ -1,0 +1,23 @@
+{{% alert title="NOTE" color="warning" %}}
+It is strongly recommended to carry out this configuration with the support of the customer's designated DocFinance consultant.
+{{% /alert %}}
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000712-0/DocFinance10.png"><br>
+
+## SaaS Configuration
+
+| **Field**                       | **Description**                                                                                                                                                                                                        |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Protocol                        | https                                                                                                                                                                                                                  |
+| Host                            | api.businesscentral.dynamics.com                                                                                                                                                                                       |
+| Port                            | 443                                                                                                                                                                                                                    |
+| Authentication                  | OAuth2                                                                                                                                                                                                                 |
+| Timeout                         | Maximum waiting time in seconds for which DocFinance will wait for a response from BC                                                                                                                                  |
+| Username                        | E-mail address of the user that we will use for the connection between DocFinance and BC                                                                                                                               |
+| Password                        | Not available                                                                                                                                                                                                          |
+| EnvironmentName                 | Name of the environment in SaaS that you will connect to                                                                                                                                                               |
+| API Publisher/Group/Version     | Available on the DocFinance setup in the connection group                                                                                                                                                              |
+| CompanyID                       | Available on the DocFinance setup in the connection group                                                                                                                                                              |
+| TenantID                        | Available on the DocFinance setup in the connection group                                                                                                                                                              |
+| ClientID                        | Obtained by the procedure available in [Installation requirements]({{<relref "installation-requirements">}})                                                                                                           |
+| Exchange backup path            | Folder on which calls made by DocFinance to BC and their contents are saved, useful for debugging in case of problems                                                                                                  |
