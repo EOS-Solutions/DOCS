@@ -1,0 +1,59 @@
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001084-0/SyncMode_Actions_EN.png"><br>
+
+When using asynchronous modes (complete or incremental), the following actions are available to manage data export:
+
+### Available Actions in the "Actions" Menu
+
+#### 1. Job Queue - Export MasterData
+**When to use it:**
+- When you want to automate master data preparation through a job queue
+- Ideal for scheduling exports at specific times (e.g., during the night)
+- Available for both asynchronous modes (complete and incremental)
+
+**How to use it:**
+1. Access the "Actions" menu in the setup page
+2. Select "Job Queue - Export MasterData"
+3. Configure the job queue with the desired frequency
+4. The system will automatically prepare the data according to the set schedule
+
+#### 2. Job Queue - Export Receivables/Payables
+**When to use it:**
+- When you want to automate due date data preparation through a job queue
+- Ideal for scheduling exports at specific times
+- Available for complete asynchronous mode
+
+**How to use it:**
+1. Access the "Actions" menu in the setup page
+2. Select "Job Queue - Export Receivables/Payables"
+3. Configure the job queue with the desired frequency
+4. The system will automatically prepare the due date data according to the set schedule
+
+#### 3. Export MasterData (Async)
+**When to use it:**
+- When you want to manually prepare master data
+- Useful for on-demand exports without waiting for the job queue
+- Available for both asynchronous modes (complete and incremental)
+
+**How to use it:**
+1. Access the "Actions" menu in the setup page
+2. Select "Export MasterData (Async)"
+3. The action immediately prepares the data for export
+4. The data will be available for DocFinance at the next request
+
+#### 4. Export Receiv/Payable (Async)
+**When to use it:**
+- When you want to manually prepare due date data
+- Useful for on-demand exports without waiting for the job queue
+- Available for complete asynchronous mode
+
+**How to use it:**
+1. Access the "Actions" menu in the setup page
+2. Select "Export Receiv/Payable (Async)"
+3. The action immediately prepares the due date data for export
+4. The data will be available for DocFinance at the next request
+
+### Important Notes
+- Job Queue actions are recommended for complete process automation
+- Manual export actions (Async) are useful for exceptional situations or testing
+- In incremental asynchronous mode, only modified or new data is prepared, optimizing performance
+- Any changes made between preparation and actual export will be included in the next request
