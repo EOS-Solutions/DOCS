@@ -93,10 +93,13 @@ I prezzi sono elencati sul sito di EOS Solutions. Tutti i prezzi sono destinati 
 
 
 ## Non vedi i piani di sottoscrizione o le sottoscrizioni non si attivano?
-Forse è un problema di connessione
+Forse il tuo server non si sta connettendo al servizio EOS Online.
 <br>
-
-
+Esegui l'azione “Test API Connection” nel Pannello di controllo sottoscrizioni.
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR000728-0/EOS Apps API ITA.png"><br>
+<br>
+Altrimenti, prova a controllare il seguente:
+<br>
 **Se il tuo ambiente Business Central è OnPremise:**
 
 \- Verifica la connessione Internet
