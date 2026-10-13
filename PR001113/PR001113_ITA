@@ -20,9 +20,9 @@ Dal portale Power Apps: apri l’app (tutte le app utilizzate dal cliente con Do
 <img width="" src="https://docs-test.eos-solutions.it/Images/PR001113-0/dcs4bc-setup-01inappnotification-it.png"><br>
 
 ### Configurazione del Sito SharePoint
-1. Apri l’app DocSolutions e vai su **SharePoint Sites**
-2. Apri il sito in cui DocSolutions deve essere configurato (può essere più di uno)
-3. Apri la scheda DocSolutions e configura i seguenti campi:
+1. Aprire l’app DocSolutions e andare su **SharePoint Sites**
+2. Aprire il sito in cui DocSolutions deve essere configurato (può essere più di uno)
+3. Aprire la scheda DocSolutions e configurare i seguenti campi:
    - Client ID
    - Client Secret
    - Tenant ID
