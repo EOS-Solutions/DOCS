@@ -1,0 +1,61 @@
+The **Rule Validator** tab allows validation rules to be applied to the target record before the DocSolutions configuration is completed. Set **Use Rule Validator** to **Yes** and enter the rule definition in **Rule Validator Json**.
+
+The JSON is evaluated in two phases:
+
+1. The `when` condition group determines whether the validations apply. If it is omitted or contains no conditions, it evaluates to true. Conditions use `and` by default; set `logic` to `or` to require at least one condition to be true.
+2. If `when` is false, `otherwise` controls the result. The default is `success`, so the configuration continues and `validations` are not evaluated. Set it to `error` to stop the configuration and optionally provide `otherwiseMessage`.
+3. If `when` is true, the rules in `validations` are evaluated. All failed validations are returned together; if at least one fails, the configuration is skipped.
+<br><br>
+Example for DCS Library - **Rule Validator**  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001185-0/dcs4bc-setup-05rulevalidator.png"><br>
+
+
+### How `when` and `validations` work
+
+The `when` section is a gate for the validation rules. It describes the situation in which the checks in `validations` must be applied. It does not validate the record by itself. For example, a rule can say: "only when the Case origin is Email, require a Contact".
+
+The `validations` section contains the checks to execute after the `when` section is true. A `required` validation is useful for lookups: the field must be present and must contain a value. In the example below, `caseorigincode` is the standard Case Origin option set and `primarycontactid` is the Case Contact lookup. Replace `2` with the option-set value for **Email** if it is different in the target environment.
+
+```json
+{
+	"when": {
+		"conditions": [
+			{
+				"field": "caseorigincode",
+				"operator": "eq",
+				"value": 2
+			}
+		]
+	},
+	"otherwise": "success",
+	"validations": [
+		{
+			"type": "required",
+			"field": "primarycontactid",
+			"message": "A Contact is required when the Case origin is Email."
+		}
+	]
+}
+```
+
+In this example, a Case with origin **Email** enters `validations`; if no Contact is indicated, the validation fails and the DocSolutions configuration is skipped. A Case with any other origin does not enter `validations`, and the configuration continues because `otherwise` is `success`.
+
+### Configuration Properties
+
+| Property | Description |
+| --- | --- |
+| `when.logic` | Logical operator for the conditions: `and` or `or`. The default is `and`. |
+| `when.conditions[].field` | Logical name of the Dataverse field to read from the target record. |
+| `when.conditions[].operator` | Comparison operator: `eq`, `neq`, `null`, or `notnull`. |
+| `when.conditions[].value` | Value used by `eq` or `neq`; it can represent text, numbers, dates, booleans, option-set values, money, or an entity reference GUID. |
+| `otherwise` | Result when `when` is false: `success` (default) or `error`. |
+| `otherwiseMessage` | Optional error message returned when `otherwise` is `error`. |
+| `validations[].type` | Validation type: `required` or `regex`. |
+| `validations[].field` | Logical name of the field to validate. |
+| `validations[].message` | Optional message returned when the validation fails. |
+| `validations[].parameters.pattern` | Regular expression used by a `regex` validation. |
+| `validations[].parameters.ignoreCase` | Optional Boolean value for a `regex` validation. The default is `true`. |
+
+For a `required` validation, the field must be present and must not be null or blank. A `regex` validation is skipped when the field is absent, null, or blank; when a value is present, the `pattern` parameter is required and must match the value according to the regular expression.
+
+The JSON can be left empty when no validation is required. Invalid JSON or invalid regular-expression parameters return an error. An unsupported condition operator evaluates to false and returns the configured `otherwise` result.
