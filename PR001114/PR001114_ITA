@@ -3,9 +3,9 @@ Ogni entità in Dynamics 365 CE può essere configurata per utilizzare DocSoluti
 DocSolutions per CE può creare cartelle e sottocartelle nel sito SharePoint, ma le **Document Libraries** devono essere create con la funzionalità standard o manualmente nel sito.
 
 ## Configurazione Libreria
-1. Apri il link **DocSolution Libraries**
-2. Aggiungi un nuovo record (di tipo DocSolutions Library)
-3. Compila i seguenti campi:
+1. Aprire il link **DocSolution Libraries**
+2. Aggiungere un nuovo record (di tipo DocSolutions Library)
+3. Compilare i seguenti campi:
 
 | Nome/Codice | Codice o Nome della libreria DocSolutions |
 | --- | --- |
