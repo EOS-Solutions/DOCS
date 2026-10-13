@@ -1,0 +1,61 @@
+La scheda **Rule Validator** consente di applicare regole di validazione al record prima del completamento della configurazione DocSolutions. Impostare **Use Rule Validator** su **Yes** e inserire la definizione della regola nel campo **Rule Validator Json**.
+
+Il JSON viene elaborato in due fasi:
+
+1. Il gruppo di condizioni `when` determina quando applicare le validazioni. Se è omesso o non contiene condizioni, il risultato è true. Le condizioni utilizzano `and` per impostazione predefinita; impostare `logic` su `or` per richiedere che almeno una condizione sia vera.
+2. Se `when` è false, `otherwise` determina il risultato. Il valore predefinito è `success`, quindi la configurazione continua e le `validations` non vengono valutate. Impostarlo su `error` per interrompere la configurazione e, facoltativamente, specificare `otherwiseMessage`.
+3. Se `when` è true, vengono valutate le regole contenute in `validations`. Tutti gli errori di validazione vengono restituiti insieme; se almeno una validazione fallisce, la configurazione viene saltata.
+
+<br><br>
+Esempio per DCS Library - **Rule Validator**  
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001185-0/dcs4bc-setup-05rulevalidator-it.png"><br>
+
+### Come funzionano `when` e `validations`
+
+La sezione `when` è il filtro che attiva le regole di validazione. Descrive la situazione nella quale devono essere applicati i controlli contenuti in `validations`; da sola non valida il record. Ad esempio, una regola può indicare: "solo quando l'origine del Case è Email, rendere obbligatorio un Contact".
+
+La sezione `validations` contiene i controlli da eseguire quando `when` è true. Una validazione `required` è utile per i lookup: il campo deve essere presente e deve contenere un valore. Nell'esempio seguente, `caseorigincode` è l'option set standard dell'origine del Case e `primarycontactid` è il lookup Contact del Case. Sostituire `2` con il valore dell'opzione **Email** se nell'ambiente di destinazione è diverso.
+
+```json
+{
+	"when": {
+		"conditions": [
+			{
+				"field": "caseorigincode",
+				"operator": "eq",
+				"value": 2
+			}
+		]
+	},
+	"otherwise": "success",
+	"validations": [
+		{
+			"type": "required",
+			"field": "primarycontactid",
+			"message": "È obbligatorio indicare un Contact quando l'origine del Case è Email."
+		}
+	]
+}
+```
+
+In questo esempio, un Case con origine **Email** esegue le `validations`; se non è indicato alcun Contact, la validazione fallisce e la configurazione DocSolutions viene saltata. Un Case con un'origine diversa non esegue le `validations` e la configurazione continua perché `otherwise` è impostato a `success`.
+
+### Proprietà di configurazione
+
+| Proprietà | Descrizione |
+| --- | --- |
+| `when.logic` | Operatore logico delle condizioni: `and` oppure `or`. Il valore predefinito è `and`. |
+| `when.conditions[].field` | Nome logico del campo Dataverse da leggere nel record corrente. |
+| `when.conditions[].operator` | Operatore di confronto: `eq`, `neq`, `null` oppure `notnull`. |
+| `when.conditions[].value` | Valore usato da `eq` o `neq`; può rappresentare testo, numeri, date, valori Boolean, opzioni, importi o il GUID di un riferimento a un'entità. |
+| `otherwise` | Risultato quando `when` è false: `success` (predefinito) oppure `error`. |
+| `otherwiseMessage` | Messaggio di errore opzionale restituito quando `otherwise` è `error`. |
+| `validations[].type` | Tipo di validazione: `required` oppure `regex`. |
+| `validations[].field` | Nome logico del campo da validare. |
+| `validations[].message` | Messaggio opzionale restituito quando la validazione fallisce. |
+| `validations[].parameters.pattern` | Espressione regolare usata da una validazione `regex`. |
+| `validations[].parameters.ignoreCase` | Valore Boolean opzionale per una validazione `regex`. Il valore predefinito è `true`. |
+
+Con una validazione `required`, il campo deve essere presente e non può essere null o vuoto. Una validazione `regex` viene ignorata quando il campo non è presente, è null o è vuoto; quando è valorizzato, il parametro `pattern` è obbligatorio e deve corrispondere al valore secondo l'espressione regolare.
+
+Il JSON può essere lasciato vuoto quando non è richiesta alcuna validazione. Un JSON non valido o parametri non validi per l'espressione regolare restituiscono un errore. Un operatore di condizione non supportato viene valutato come false e restituisce il risultato configurato in `otherwise`.
