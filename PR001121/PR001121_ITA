@@ -14,64 +14,75 @@
         <td><b>Data rilascio</b></td>
         <td><b>Note</b></td>
         <td><b>Versione PowerApp</b></td>
-        <td><b>BC26</b></td>
         <td><b>BC27</b></td>
 				<td><b>BC28</b></td>
-        <td><b>BC26</b></td>
+        <td><b>BC29</b></td>
         <td><b>BC27</b></td>
 				<td><b>BC28</b></td>
+				<td><b>BC29</b></td>
+    </tr>
+		<tr>
+        <td>20/10/2026</td>
+        <td> - Raggruppamento personalizzato nei documenti con modalità di scansione "Per gruppo"<br>- Pick&Pack: Creazione unità di carico se l'attività "Crea HU" è assegnata e attiva</td>
+        <td>1.1.271.0</td>
+        <td>-</td>
+				<td>28.0.29</td>
+				<td>29.0.7</td>
+        <td>27.0.30</td>
+        <td>28.0.16</td>
+        <td>29.0.5</td>
     </tr>
 		<tr>
         <td>10/09/2026</td>
         <td> - Gestione identificativi articoli migliorata<br>- Validazione parametri azione<br>- Nuova impostazione attività per gestire il filtro sulle righe completate<br>- P&P: la creazione HU è attiva solo se l'attività "Crea Unità di carico" è assegnata</td>
         <td>1.1.263.0</td>
-        <td>-</td>
         <td>27.0.49</td>
 				<td>28.0.23</td>
-        <td>-</td>
+				<td>-</td>
         <td>27.0.27</td>
         <td>28.0.14</td>
+				<td>-</td>
     </tr>
 		<tr>
         <td>15/07/2026</td>
         <td> - Scanner sequenziale con gestione personalizzata<br>- Campi di dettaglio nelle attività "Contenuto collocazione"<br>- Campi di dettaglio nelle attività di inventario<br>- Possibilità di disabilitare il focus iniziale sul campo barcode</td>
         <td>1.1.260.0</td>
-        <td>-</td>
         <td>27.0.44</td>
 				<td>28.0.18</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
+				<td>-</td>
     </tr>
 		<tr>
         <td>23/06/2026</td>
         <td> - Etichette attività e gruppi personalizzabili<br>- Attività prelievo magazzino<br>- Attività personalizzate basate su tabelle esistenti</td>
         <td>1.1.255.0</td>
-        <td>-</td>
         <td>27.0.42</td>
 				<td>28.0.16</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
+				<td>-</td>
     </tr>
 		<tr>
         <td>15/06/2026</td>
         <td> - Ordinamento scansioni origine</td>
         <td>1.1.245.0</td>
-        <td>-</td>
         <td>27.0.39</td>
 				<td>28.0.12</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
+				<td>-</td>
     </tr>
 	<tr>
         <td>20/03/2026</td>
         <td> - Evento per gestione righe in controllo qualità in stoccaggio<br>- Gestione testi liberi con lunghezza superiore a 100 caratteri<br>- Miglioramento copia viste alternative</td>
         <td>1.1.245.0</td>
-        <td>26.0.72</td>
         <td>27.0.34</td>
 				<td>28.0.10</td>
+				<td>-</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
@@ -80,20 +91,20 @@
         <td>05/03/2026</td>
         <td> - Azioni: ritorno alla lista righe<br>- Campi aggiuntivi per scansioni origine e lista HU<br>- Flag "Salta controllo quantità" per le attività personalizzate</td>
         <td>1.1.245.0</td>
-        <td>26.0.69</td>
         <td>27.0.31</td>
         <td>-</td>
-        <td>26.0.32</td>
+				<td>-</td>
         <td>27.0.22</td>
+				<td>-</td>
 				<td>-</td>
     </tr>
     <tr>
         <td>08/01/2026</td>
         <td> - Correzione scanner con token tracciabilità per ordini inventario fisico<br>- Implementazione ordine scansione inverso<br>- Correzioni piattaforma</td>
         <td>1.1.242.0</td>
-        <td>26.0.67</td>
         <td>27.0.29</td>
         <td>-</td>
+				<td>-</td>
         <td>-</td>
         <td>-</td>
 				<td>-</td>
@@ -102,12 +113,12 @@
         <td>08/01/2026</td>
         <td>Selezione collocazione con dettaglio tracciabilità</td>
         <td>1.1.237.0</td>
-        <td>26.0.56</td>
         <td>27.0.19</td>
 				<td>-</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
+				<td>-</td>
     </tr>
     <tr>
         <td>30/12/2025</td>
@@ -116,41 +127,41 @@
         <td>-</td>
         <td>-</td>
         <td>-</td>
-        <td>26.0.26</td>
         <td>27.0.16</td>
+				<td>-</td>
 				<td>-</td>
     </tr>
     <tr>
         <td>31/10/2025</td>
         <td>Ideas, setup scanner ricerca</td>
         <td>1.1.206.0</td>
-        <td>26.0.52</td>
         <td>27.0.15</td>
 				<td>-</td>
-        <td>26.0.22</td>
+				<td>-</td>
         <td>27.0.12</td>
+				<td>-</td>
 				<td>-</td>
     </tr>
     <tr>
         <td>08/10/2025</td>
         <td>Ordini di inventario</td>
         <td>1.1.205.0</td>
-        <td>26.0.48</td>
         <td>27.0.11</td>
 				<td>-</td>
         <td>-</td>
         <td>-</td>
         <td>-</td>
+				<td>-</td>
     </tr>
     <tr>
         <td>29/08/2025</td>
         <td>Viste alternative</td>
         <td>1.1.203.0</td>
-        <td>26.0.43</td>
         <td>27.0.10</td>
 				<td>-</td>
-        <td>26.0.20</td>
+				<td>-</td>
         <td>27.0.10</td>
+				<td>-</td>
 				<td>-</td>
     </tr>
 </table>
