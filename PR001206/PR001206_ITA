@@ -1,0 +1,34 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Compila i campi richiesti nel setup, compila le tabelle necessarie</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>**Gestione dei Documenti Merce Fuel (DMF)**: creazione e monitoraggio dei documenti collegati agli ordini di vendita, acquisto e trasferimento, con controllo degli stati, validazioni e gestione dei flussi e-AD/e-DAS</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>**Limiti di credito e debito**: gestione dei limiti per clienti e fornitori, con importi, periodi di validità e stato di attivazione o blocco</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>**Gestione fiscale**: configurazione dei codici e dei regimi di imposta di fabbricazione e delle riduzioni IVA</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>**Densità e fatturazione a 15°**: gestione dei gruppi e delle matrici di densità e delle configurazioni collegate alla fatturazione a 15°</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>e molte altre ...</td>
+	</tr>
+</table>
+
+<br>
+
+# Fuel Finance (FUF) - Summary
+
+Premere ALT + Q e digitare "FUF" per un elenco delle funzionalità:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001206-0/EX112_1_ITA.png"><br>
