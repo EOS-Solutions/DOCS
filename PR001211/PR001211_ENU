@@ -1,0 +1,31 @@
+Fuel for LPG supports the management of LPG Utilities and their related installations, combining technical operations, consumption readings and invoicing.
+The main features of the **Fuel for LPG (FLP)** app are:
+
+- **Gas System Management:** register Gas Systems associated with customers and locations, track their operational status and consult archived versions.
+- **Tank and Component Management:** manage tank and component details and status, including installation and decommissioning.
+- **Utility Management:** link Utilities to Gas Systems and customers, and consult the associated supply contract and billing information.
+- **Refueling Scheduling:** configure Refuelings and Refueling Periods, including frequency and the allocation of planned annual consumption.
+- **Gas Meter and Meter Reading Management:** link Gas Meters to Utilities, record readings using the Meter Readings Journal and consult the related Meter Reading Entries.
+- **Consumption Invoicing:** process sales invoices based on recorded meter readings and the terms of the supply contract.
+- **Maintenance Interventions:** create and manage interventions for Gas Systems. Posting an intervention updates the tank components and creates the related Maintenance Entries.
+
+
+**Additional Apps**
+
+- **Fuel Data Layer (EX110)**: a non-commercial app that provides the shared functional foundation for FUEL apps by centralizing setup and industry-specific reference data.
+- **Fuel Finance for Italy (EX112)**: The Fuel Finance (FUF) app helps companies operating in the fuel industry manage transport documentation in Italy, including DAS, E-DAS, and E-AD. It also supports the definition of customer credit limits and vendor debt limits and provides functionality for electronic communications with the UTF.
+- **Fuel Finance for Italy (EX113)**: extends Fuel Finance with functionality supporting Italian tax requirements in the fuel sector, including the management and printing of UTF registers, the preparation and export of ADM-EDI flows for tax warehouses, and the management of charges on sales and purchase documents.
+- **Fuel for Distribution (EX114)**: extends Business Central to support the physical distribution of fuels, from journey and transport resource planning to CTD/e-DAS document management and the posting of purchase receipts and sales shipments.
+- **Fuel for LPG (EX115)**: supports the management of LPG utilities, from setting up gas systems, tanks and meters to recording refuelings and meter readings, planning maintenance, and invoicing consumption according to supply contracts.
+- **Fuel for Service Station (EX117)**: supports service-station operations, from setting up pumps, tanks and shifts to recording dispensing transactions, payments and electronic receipts, monitoring tank levels, and managing customers, contracts and prices.
+- **Fuel Prices and Contracts (EX119)**: centralizes purchase and sales contract management and fuel price determination, linking contract conditions to market indices and quotations to calculate and update applicable prices.
+
+<br>
+
+**Unsupported Apps/Features**
+
+- Combined Warehouse Shipments (CWS)
+- Dual Unit of Measure (DUM)
+
+<br>
+<br>
