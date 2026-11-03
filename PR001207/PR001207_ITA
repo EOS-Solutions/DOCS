@@ -1,0 +1,28 @@
+Le principali funzionalità dell'app Fuel Finance (FUF) sono le seguenti:
+
+* **Gestione dei Documenti Merce Fuel (DMF)**: creazione e monitoraggio dei documenti collegati agli ordini di vendita, acquisto e trasferimento, con controllo degli stati, validazioni e gestione dei flussi e-AD/e-DAS.
+* **Gestione delle scadenze operative**: monitoraggio delle scadenze relative a veicoli, conducenti e ubicazioni, con avvisi, richieste di conferma o blocchi nei processi interessati.
+* **Limiti di credito e debito**: gestione dei limiti per clienti e fornitori, con importi, periodi di validità e stato di attivazione o blocco.
+* **Monitoraggio dei crediti clienti**: consultazione degli importi in scadenza o scaduti e supporto alla gestione dei solleciti.
+* **Gestione fiscale**: configurazione dei codici e dei regimi di imposta di fabbricazione e delle riduzioni IVA.
+* **Gestione e valorizzazione dell’inventario**: rilevazioni giornaliere per articolo e ubicazione, calcolo dei costi e consultazione dello storico e dei relativi report.
+* **Densità e fatturazione a 15°**: gestione dei gruppi e delle matrici di densità e delle configurazioni collegate alla fatturazione a 15°.
+
+**App Aggiuntive**        
+
+-   **Fuel Data Layer** Fuel Data Layer (EX110) è una libreria non commerciale e costituisce la base funzionale condivisa delle app FUEL: centralizza setup e dati di riferimento del settore. 
+-   **Fuel Finance for Italy** Fuel Finance for Italy (EX113) estende Fuel Finance con funzionalità per gli adempimenti fiscali italiani nel settore carburanti, tra cui la gestione e stampa dei registri UTF, l’elaborazione e l’esportazione dei flussi ADM-EDI per i depositi fiscali e la gestione degli oneri accessori sui documenti di vendita e acquisto.
+-   **Fuel for Distribution** (EX114) Fuel for Distribution estende Business Central per gestire la distribuzione fisica dei carburanti, dalla pianificazione di viaggi e risorse di trasporto alla gestione dei documenti CTD/e-DAS e delle registrazioni di ricezione e spedizione.
+-   **Fuel for LPG** Fuel for LPG (EX115) supporta la gestione delle utenze GPL, dalla configurazione degli impianti, serbatoi e contatori alla registrazione di rifornimenti e letture, alla pianificazione delle manutenzioni e all’elaborazione della fatturazione dei consumi secondo i contratti di fornitura.
+-   **Fuel for Service Station** Fuel for Service Station (EX117) supporta la gestione operativa delle stazioni di servizio, dalla configurazione di pompe, serbatoi e turni alla registrazione di erogazioni, pagamenti e corrispettivi, con monitoraggio dei livelli dei serbatoi e gestione di clienti, contratti e prezzi.
+-   **Fuel Prices and Contracts** Fuel Prices (EX119) and Contracts centralizza la gestione dei contratti di acquisto e vendita e la determinazione dei prezzi dei carburanti, collegando le condizioni contrattuali agli indici e alle quotazioni di mercato per calcolare e aggiornare i prezzi applicabili.
+  
+<br>
+
+**App/Funzionalità non supportate**
+
+-   Combine Warehouse Shipment (CWS) 
+-   Dual unit of measure (DUM)
+
+<br>
+<br>
