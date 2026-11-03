@@ -1,0 +1,34 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Fill in the required fields in the setup, populate the required tables</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>**Gas System Management:** register Gas Systems associated with customers and locations, track their operational status and consult archived versions</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>**Tank and Component Management:** manage tank and component details and status, including installation and decommissioning</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>**Utility Management:** link Utilities to Gas Systems and customers, and consult the associated supply contract and billing information</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>**Refueling Scheduling:** configure Refuelings and Refueling Periods, including frequency and the allocation of planned annual consumption</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>and more...</td>
+	</tr>
+</table>
+
+<br>
+
+# Fuel for LPG (FLP) - Summary
+
+Press ALT + Q and digit "FLP" for a list of the features involved:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001210-0/EX115_1_ENU.png"><br>
