@@ -1,0 +1,34 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Compila i campi richiesti nel setup, compila le tabelle necessarie</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>**Gestione degli impianti GPL:** censimento degli impianti associati al cliente e all’ubicazione, con stato operativo e consultazione delle versioni archiviate</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>**Gestione di serbatoi e componenti:** registrazione delle caratteristiche e dello stato dei serbatoi e dei relativi componenti, comprese le fasi di installazione e dismissione</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>**Gestione delle utenze:** collegamento delle utenze all’impianto e al cliente, con consultazione del contratto di fornitura e dei dati rilevanti per la fatturazione</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>**Programmazione dei rifornimenti:** definizione delle frequenze e dei periodi di rifornimento e della ripartizione dei consumi previsti</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>e molte altre ...</td>
+	</tr>
+</table>
+
+<br>
+
+# Fuel for LPG (FLP) - Summary
+
+Premere ALT + Q e digitare "FLP" per un elenco delle funzionalità:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001210-0/EX115_1_ITA.png"><br>
