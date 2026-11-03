@@ -1,0 +1,28 @@
+The main features of the **Fuel Finance (FUF)** app are:
+
+- **Customs Travel Documents (CTDs):** create and monitor documents linked to sales orders, purchase orders and transfer orders, including status tracking, validation and e-AD/e-DAS workflows.
+- **Management Deadlines:** monitor deadlines for vehicles, drivers and locations, with warnings, confirmation requests or process blocks where applicable.
+- **Customer Credit Limits and Vendor Debit Limits:** manage amounts, validity periods, and active or blocked status.
+- **Customer Statistics and Reminders:** review due and overdue amounts and support reminder management.
+- **Excise Tax Management:** configure Tax Manufacture codes and Excise Tax Regimes, as well as VAT reductions.
+- **Inventory Management and Valuation:** create daily inventory entries by item and location, calculate costs, and consult historical data and related reports.
+- **Density and 15-Degree Invoicing:** manage density groups and matrices, and configure related 15-degree invoicing.
+
+**Additional Apps**
+
+- **Fuel Data Layer (EX110):** a non-commercial library that provides the shared functional foundation for FUEL apps by centralizing setup and industry-specific reference data.
+- **Fuel Finance for Italy (EX113):** extends Fuel Finance with functionality supporting Italian tax requirements in the fuel sector, including the management and printing of UTF registers, the preparation and export of ADM-EDI flows for tax warehouses, and the management of charges on sales and purchase documents.
+- **Fuel for Distribution (EX114):** extends Business Central to support the physical distribution of fuels, from journey and transport resource planning to CTD/e-DAS document management and the posting of purchase receipts and sales shipments.
+- **Fuel for LPG (EX115):** supports the management of LPG utilities, from setting up gas systems, tanks and meters to recording refuelings and meter readings, planning maintenance, and invoicing consumption according to supply contracts.
+- **Fuel for Service Station (EX117):** supports service-station operations, from setting up pumps, tanks and shifts to recording dispensing transactions, payments and electronic receipts, monitoring tank levels, and managing customers, contracts and prices.
+- **Fuel Prices and Contracts (EX119):** centralizes purchase and sales contract management and fuel price determination, linking contract conditions to market indices and quotations to calculate and update applicable prices.
+
+<br>
+
+**Unsupported Apps/Features**
+
+- Combined Warehouse Shipments (CWS)
+- Dual Unit of Measure (DUM)
+
+<br>
+<br>
