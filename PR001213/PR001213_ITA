@@ -1,0 +1,38 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Compila i campi richiesti nel setup, compila le tabelle necessarie</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>**Anagrafiche delle stazioni di servizio**: gestione dei dati della stazione, della localizzazione e delle aree geografiche, con accesso alle informazioni su clienti, fornitori e proprietari collegati</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>**Configurazione dell’impianto**: gestione di pompe e serbatoi, associazione tramite matrice pompa-serbatoio, definizione dei turni e degli articoli trattati dalla stazione. Sono disponibili anche le causali di pagamento e le scadenze</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>**Registrazioni operative**: inserimento e registrazione dei movimenti tramite giornale pompe, giornale manuale, giornale pagamenti e giornale ricevute elettroniche. Le registrazioni possono includere articolo, quantità, prezzo, importo e riferimenti temporali</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>**Rilevazione dei livelli dei serbatoi**: registrazione delle misurazioni dei serbatoi, con dati relativi a livello, volume, acqua e temperatura</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>**Contratti e prezzi**: gestione dei contratti associati alla stazione, con validità e stato, e generazione dei prezzi per la singola stazione</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>e molte altre ...</td>
+	</tr>
+</table>
+
+<br>
+
+# Fuel for Service Station (FST) - Summary
+
+Premere ALT + Q e digitare "FLP" per un elenco delle funzionalità:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001213-0/EX117_1_ITA.png"><br>
