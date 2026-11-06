@@ -1,0 +1,34 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Fill in the required fields in the setup, populate the required tables</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>**Market Indexes and Market Index Items**: Manage market indexes and their items, including purchase and sales units of measure. Enter effective-dated Market Index Quotations by currency and quotation type, with low, mid, and high amounts. Suggest index items and update detailed quotations</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>**Purchase Price Worksheet**: Suggest and update purchase prices by item and vendor. The worksheet can use market index quotations, vendor contracts, load bases, currencies, and validity dates</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>**Vendor Contracts**: Manage vendor contracts, validity dates, status, and purchase conditions. Contract lines can specify market index items, calculation formulas, load bases, and reference periods. Contracts can be used to suggest and update purchase prices</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>**Fuel Distribution Contracts**: Define the commercial relationship, validity period, ship-to destination, and price list, including the price delta applied</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>and more...</td>
+	</tr>
+</table>
+
+<br>
+
+# Fuel for Prices and Contracts (FPR) - Summary
+
+Press ALT + Q and digit "FPR" for a list of the features involved:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001216-0/EX119_1_ENU.png"><br>
