@@ -1,38 +1,32 @@
-<table>
-	<tr>
-		<td>1</td>
-		<td>Compila i campi richiesti nel setup, compila le tabelle necessarie</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>**Anagrafiche delle stazioni di servizio**: gestione dei dati della stazione, della localizzazione e delle aree geografiche, con accesso alle informazioni su clienti, fornitori e proprietari collegati</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td>**Configurazione dell’impianto**: gestione di pompe e serbatoi, associazione tramite matrice pompa-serbatoio, definizione dei turni e degli articoli trattati dalla stazione. Sono disponibili anche le causali di pagamento e le scadenze</td>
-	</tr>
-	<tr>
-		<td>4</td>
-		<td>**Registrazioni operative**: inserimento e registrazione dei movimenti tramite giornale pompe, giornale manuale, giornale pagamenti e giornale ricevute elettroniche. Le registrazioni possono includere articolo, quantità, prezzo, importo e riferimenti temporali</td>
-	</tr>
-	<tr>
-		<td>5</td>
-		<td>**Rilevazione dei livelli dei serbatoi**: registrazione delle misurazioni dei serbatoi, con dati relativi a livello, volume, acqua e temperatura</td>
-	</tr>
-	<tr>
-		<td>6</td>
-		<td>**Contratti e prezzi**: gestione dei contratti associati alla stazione, con validità e stato, e generazione dei prezzi per la singola stazione</td>
-	</tr>
-	<tr>
-		<td>7</td>
-		<td>e molte altre ...</td>
-	</tr>
-</table>
+L'app Fuel for Service Station (EX117) supporta la gestione operativa delle stazioni di servizio, dalla configurazione di pompe, serbatoi e turni alla registrazione di erogazioni, pagamenti e corrispettivi, con monitoraggio dei livelli dei serbatoi e gestione di clienti, contratti e prezzi.
 
+Le principali funzionalità dell'app Fuel for Service Station (FST) sono le seguenti:
+
+* **Anagrafiche delle stazioni di servizio**: gestione dei dati della stazione, della localizzazione e delle aree geografiche, con accesso alle informazioni su clienti, fornitori e proprietari collegati.
+* **Configurazione dell’impianto**: gestione di pompe e serbatoi, associazione tramite matrice pompa-serbatoio, definizione dei turni e degli articoli trattati dalla stazione. Sono disponibili anche le causali di pagamento e le scadenze.
+* **Registrazioni operative**: inserimento e registrazione dei movimenti tramite giornale pompe, giornale manuale, giornale pagamenti e giornale ricevute elettroniche. Le registrazioni possono includere articolo, quantità, prezzo, importo e riferimenti temporali.
+* **Rilevazione dei livelli dei serbatoi**: registrazione delle misurazioni dei serbatoi, con dati relativi a livello, volume, acqua e temperatura.
+* **Contratti e prezzi**: gestione dei contratti associati alla stazione, con validità e stato, e generazione dei prezzi per la singola stazione.
+* **Operazioni multistazione e compensazioni**: registrazione di transazioni associate a carte e circuiti multistazione, con riferimenti a cliente, veicolo, contratto, articolo, quantità, prezzi e sconti.
+* **Concorrenti e prezzi rilevati**: gestione delle anagrafiche dei concorrenti e delle relative stazioni, con consultazione dei prezzi rilevati.
+
+
+**App Aggiuntive**        
+
+-   **Fuel Data Layer** Fuel Data Layer (EX110) è un app non commerciale e costituisce la base funzionale condivisa delle app FUEL: centralizza setup e dati di riferimento del settore.
+-   **Fuel Finance** Fuel Finance (EX112) estende Business Central supportando le aziende del settore carburanti nella gestione dei documenti di accompagnamento al trasporto sul territorio italiano, inclusi DAS, E-DAS ed E-AD. Consente di definire limiti di credito per i clienti e di debito per i fornitori, e mette a disposizione strumenti per le comunicazioni telematiche all’UTF. 
+-   **Fuel Finance for Italy** Fuel Finance for Italy (EX113) estende Fuel Finance con funzionalità per gli adempimenti fiscali italiani nel settore carburanti, tra cui la gestione e stampa dei registri UTF, l’elaborazione e l’esportazione dei flussi ADM-EDI per i depositi fiscali e la gestione degli oneri accessori sui documenti di vendita e acquisto.
+-   **Fuel for Distribution** (EX114) Fuel for Distribution estende Business Central per gestire la distribuzione fisica dei carburanti, dalla pianificazione di viaggi e risorse di trasporto alla gestione dei documenti CTD/e-DAS e delle registrazioni di ricezione e spedizione.
+-   **Fuel for LPG** Fuel for LPG (EX115) supporta la gestione delle utenze GPL, dalla configurazione degli impianti, serbatoi e contatori alla registrazione di rifornimenti e letture, alla pianificazione delle manutenzioni e all’elaborazione della fatturazione dei consumi secondo i contratti di fornitura.
+-   **Fuel for Service Station** Fuel for Service Station (EX117) supporta la gestione operativa delle stazioni di servizio, dalla configurazione di pompe, serbatoi e turni alla registrazione di erogazioni, pagamenti e corrispettivi, con monitoraggio dei livelli dei serbatoi e gestione di clienti, contratti e prezzi.
+-   **Fuel Prices and Contracts** Fuel Prices (EX119) and Contracts centralizza la gestione dei contratti di acquisto e vendita e la determinazione dei prezzi dei carburanti, collegando le condizioni contrattuali agli indici e alle quotazioni di mercato per calcolare e aggiornare i prezzi applicabili.
+  
 <br>
 
-# Fuel for Service Station (FST) - Summary
+**App/Funzionalità non supportate**
 
-Premere ALT + Q e digitare "FLP" per un elenco delle funzionalità:
+-   Combine Warehouse Shipment (CWS) 
+-   Dual unit of measure (DUM)
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001213-0/EX117_1_ITA.png"><br>
+<br>
+<br>
