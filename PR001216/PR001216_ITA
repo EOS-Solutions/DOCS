@@ -1,0 +1,34 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Compila i campi richiesti nel setup, compila le tabelle necessarie</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>**Indici di mercato e articoli indice**: gestione degli indici e degli articoli associati, incluse le unità di misura di acquisto e di vendita. È possibile registrare le quotazioni per data, valuta e tipo di quotazione, con valori minimi, medi e massimi, e aggiornare le quotazioni di dettaglio</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>**Prospetto prezzi di acquisto**: suggerimento e aggiornamento dei prezzi di acquisto per articolo e fornitore. Il prospetto considera, tra gli altri dati, l’indice di mercato, il contratto fornitore, la base di carico, la valuta e il periodo di validità</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>**Contratti fornitori**: gestione dei contratti, delle date di validità, dello stato e delle condizioni di acquisto. Le righe contrattuali possono collegare articoli indice, formule di calcolo, basi di carico e periodi di riferimento; i contratti possono essere utilizzati per suggerire e aggiornare i prezzi di acquisto</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>**Contratti di distribuzione carburante**: definizione della relazione commerciale, della validità, della destinazione di spedizione e del listino prezzi, con gestione dello scostamento applicato al prezzo</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>e molte altre ...</td>
+	</tr>
+</table>
+
+<br>
+
+# Fuel for Prices and Contracts (FPR) - Summary
+
+Premere ALT + Q e digitare "FPR" per un elenco delle funzionalità:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001216-0/EX119_1_ITA.png"><br>
