@@ -1,0 +1,30 @@
+The main features of the **Fuel Data Layer (FDL)** app are:
+
+* **Fuel Setup**: Define the units of measure used for fuel and configure general parameters and options for fuel stock management, inventory valuation, consignment warehouse management, and invoicing in liters at 15 °C. The setup also includes credit limit management, Responsibility Center settings, and Fuel user options.
+* **Item Working Setup**: Classify fuel items and configure stock management by unit of measure, density limits, and temperature coefficients. Additional settings can be defined by Responsibility Center, along with item rounding precision.
+* **Units of Measure and Density**: Maintain unit-of-measure conversion factors by item, location, and starting date, including temperature and density at 15 °C. These conversions support quantities in kilograms, liters, and liters at 15 °C, and are used in inventory, sales, and purchase transactions.
+* **Deposit Profiles**: Define deposit profiles and their lines, linking locations, fuel item types, and Item Working Setup codes. A profile can also include a Responsibility Center, deposit type, tax details, and address information.
+* **Load Bases and Geographic Areas**: Maintain load base information, including address, geolocation, distance, and ADM-EDI reference codes, and organize geographic areas and subareas.
+* **Fuel Users**: Assign users to Responsibility Centers and define view or modify permissions by data type, including personal data, documents, and posted documents. A default Responsibility Center can be specified.
+* **Fuel Journal Templates and Batches**: Configure Fuel journal templates and batches, including the journal type, Responsibility Center, and related number series.
+* **ADM Reference Data**: View and import selected or all ADM reference tables used by Fuel processes and ADM-EDI data exchange.
+
+**Additional Apps**
+
+- **Fuel Data Layer (EX110)**: a non-commercial app that provides the shared functional foundation for FUEL apps by centralizing setup and industry-specific reference data.
+- **Fuel Finance for Italy (EX112)**: The Fuel Finance (FUF) app helps companies operating in the fuel industry manage transport documentation in Italy, including DAS, E-DAS, and E-AD. It also supports the definition of customer credit limits and vendor debt limits and provides functionality for electronic communications with the UTF.
+- **Fuel Finance for Italy (EX113)**: extends Fuel Finance with functionality supporting Italian tax requirements in the fuel sector, including the management and printing of UTF registers, the preparation and export of ADM-EDI flows for tax warehouses, and the management of charges on sales and purchase documents.
+- **Fuel for Distribution (EX114)**: extends Business Central to support the physical distribution of fuels, from journey and transport resource planning to CTD/e-DAS document management and the posting of purchase receipts and sales shipments.
+- **Fuel for LPG (EX115)**: supports the management of LPG utilities, from setting up gas systems, tanks and meters to recording refuelings and meter readings, planning maintenance, and invoicing consumption according to supply contracts.
+- **Fuel for Service Station (EX117)**: supports service-station operations, from setting up pumps, tanks and shifts to recording dispensing transactions, payments and electronic receipts, monitoring tank levels, and managing customers, contracts and prices.
+- **Fuel Prices and Contracts (EX119)**: centralizes purchase and sales contract management and fuel price determination, linking contract conditions to market indices and quotations to calculate and update applicable prices.
+
+<br>
+
+**Unsupported Apps/Features**
+
+- Combined Warehouse Shipments (CWS)
+- Dual Unit of Measure (DUM)
+
+<br>
+<br>
