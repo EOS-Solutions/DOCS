@@ -1,0 +1,33 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Fill in the required fields in the setup, populate the required tables</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>**Fuel Setup**: Define the units of measure used for fuel and configure general parameters and options for fuel stock management, inventory valuation, consignment warehouse management, and invoicing in liters at 15 °C. The setup also includes credit limit management, Responsibility Center settings, and Fuel user options</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>**Item Working Setup**: Classify fuel items and configure stock management by unit of measure, density limits, and temperature coefficients. Additional settings can be defined by Responsibility Center, along with item rounding precision</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>**Deposit Profiles**: Define deposit profiles and their lines, linking locations, fuel item types, and Item Working Setup codes. A profile can also include a Responsibility Center, deposit type, tax details, and address information</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>**Fuel Users**: Assign users to Responsibility Centers and define view or modify permissions by data type, including personal data, documents, and posted documents. A default Responsibility Center can be specified</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>and more...</td>
+	</tr>
+</table>
+
+<br>
+
+# Fuel Data Layer (FDL) - Summary
+
+Press ALT + Q and digit "FDL" for a list of the features involved:
+
