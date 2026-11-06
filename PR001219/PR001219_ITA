@@ -1,0 +1,33 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Compila i campi richiesti nel setup, compila le tabelle necessarie</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>**Setup Fuel**: definizione delle unità di misura utilizzate per i carburanti, dei parametri generali e delle opzioni per la gestione delle scorte, della valutazione inventario, del magazzino conto deposito e della fatturazione a 15 °C. Il setup include anche funzioni per la gestione dei limiti di credito, dei centri di responsabilità e degli utenti Fuel</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>**Impostazioni di funzionamento degli articoli**: classificazione degli articoli carburante e configurazione delle unità utilizzate per la gestione delle scorte, delle soglie di densità e dei coefficienti di temperatura. Sono disponibili impostazioni specifiche per centro di responsabilità e per la precisione di arrotondamento</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>**Profili deposito**: definizione dei profili e delle relative righe, collegando ubicazioni, tipologie di articolo carburante e codici di funzionamento articolo. Il profilo può includere centro di responsabilità, tipo deposito, dati fiscali e indirizzo</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>**Gestione utenti**: associazione degli utenti ai centri di responsabilità e definizione dei permessi di visualizzazione o modifica per tipologia di dati, inclusi dati personali, documenti e documenti registrati. È possibile indicare un centro di responsabilità predefinito</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>e molte altre ...</td>
+	</tr>
+</table>
+
+<br>
+
+# Fuel Data Layer (FDL) - Summary
+
+Premere ALT + Q e digitare "FDL" per un elenco delle funzionalità:
+
