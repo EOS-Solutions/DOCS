@@ -1,0 +1,38 @@
+<table>
+	<tr>
+		<td>1</td>
+		<td>Fill in the required fields in the setup, populate the required tables</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>**Service Station Master Data**: Manage station details, location, and geographic areas, with access to linked customer, vendor, and owner information</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>**Station Configuration**: Manage pumps and tanks, link them through the Pump / Tank Matrix, define Shifts, and specify the items handled by the station through Furnishment > Item. Payment Reason and Deadlines are also available</td>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>**Operational Journals**: Enter and post transactions through the Pump Journal (FST), Manual Journal (FST), Payment Journal (FST), and Electronic Receipt Journal (FST). Entries can include item, quantity, price, amount, and date and time details</td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>**Tank Level Recording**: Record tank measurements through the Tank Level Journal (FST), including level, volume, water, and temperature</td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>**Contracts and Prices**: Manage station contracts, including validity dates and status, through Service Station Contracts (FST), and generate prices for an individual station using Price Generation</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>and more...</td>
+	</tr>
+</table>
+
+<br>
+
+# Fuel for Service Station (FST) - Summary
+
+Press ALT + Q and digit "FST" for a list of the features involved:
+
+<img width="" src="https://docs-test.eos-solutions.it/Images/PR001213-0/EX117_1_ENU.png"><br>
