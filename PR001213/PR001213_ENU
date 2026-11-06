@@ -1,38 +1,31 @@
-<table>
-	<tr>
-		<td>1</td>
-		<td>Fill in the required fields in the setup, populate the required tables</td>
-	</tr>
-	<tr>
-		<td>2</td>
-		<td>**Service Station Master Data**: Manage station details, location, and geographic areas, with access to linked customer, vendor, and owner information</td>
-	</tr>
-	<tr>
-		<td>3</td>
-		<td>**Station Configuration**: Manage pumps and tanks, link them through the Pump / Tank Matrix, define Shifts, and specify the items handled by the station through Furnishment > Item. Payment Reason and Deadlines are also available</td>
-	</tr>
-	<tr>
-		<td>4</td>
-		<td>**Operational Journals**: Enter and post transactions through the Pump Journal (FST), Manual Journal (FST), Payment Journal (FST), and Electronic Receipt Journal (FST). Entries can include item, quantity, price, amount, and date and time details</td>
-	</tr>
-	<tr>
-		<td>5</td>
-		<td>**Tank Level Recording**: Record tank measurements through the Tank Level Journal (FST), including level, volume, water, and temperature</td>
-	</tr>
-	<tr>
-		<td>6</td>
-		<td>**Contracts and Prices**: Manage station contracts, including validity dates and status, through Service Station Contracts (FST), and generate prices for an individual station using Price Generation</td>
-	</tr>
-	<tr>
-		<td>7</td>
-		<td>and more...</td>
-	</tr>
-</table>
+The Fuel for Service Station app supports service-station operations, from setting up pumps, tanks and shifts to recording dispensing transactions, payments and electronic receipts, monitoring tank levels, and managing customers, contracts and prices.
+
+The main features of the **Fuel for Service Station (FST)** app are:
+
+* **Service Station Master Data**: Manage station details, location, and geographic areas, with access to linked customer, vendor, and owner information.
+* **Station Configuration**: Manage pumps and tanks, link them through the Pump / Tank Matrix, define Shifts, and specify the items handled by the station through Furnishment > Item. Payment Reason and Deadlines are also available.
+* **Operational Journals**: Enter and post transactions through the Pump Journal (FST), Manual Journal (FST), Payment Journal (FST), and Electronic Receipt Journal (FST). Entries can include item, quantity, price, amount, and date and time details.
+* **Tank Level Recording**: Record tank measurements through the Tank Level Journal (FST), including level, volume, water, and temperature.
+* **Contracts and Prices**: Manage station contracts, including validity dates and status, through Service Station Contracts (FST), and generate prices for an individual station using Price Generation.
+* **Multistation and Netting Transactions**: Record transactions associated with Multistation cards and circuits through the Multistation Journal (FST) and Netting Journal (FST), including customer, vehicle, contract, item, quantity, price, and discount details.
+* **Competitors and Observed Prices**: Manage competitor records and their associated stations, and review observed prices through Competitors (FST), Competitor Service Station, Service Station Concurrent, and Service Station Concurrent Price.
+
+**Additional Apps**
+
+- **Fuel Data Layer (EX110)**: a non-commercial app that provides the shared functional foundation for FUEL apps by centralizing setup and industry-specific reference data.
+- **Fuel Finance for Italy (EX112)**: The Fuel Finance (FUF) app helps companies operating in the fuel industry manage transport documentation in Italy, including DAS, E-DAS, and E-AD. It also supports the definition of customer credit limits and vendor debt limits and provides functionality for electronic communications with the UTF.
+- **Fuel Finance for Italy (EX113)**: extends Fuel Finance with functionality supporting Italian tax requirements in the fuel sector, including the management and printing of UTF registers, the preparation and export of ADM-EDI flows for tax warehouses, and the management of charges on sales and purchase documents.
+- **Fuel for Distribution (EX114)**: extends Business Central to support the physical distribution of fuels, from journey and transport resource planning to CTD/e-DAS document management and the posting of purchase receipts and sales shipments.
+- **Fuel for LPG (EX115)**: supports the management of LPG utilities, from setting up gas systems, tanks and meters to recording refuelings and meter readings, planning maintenance, and invoicing consumption according to supply contracts.
+- **Fuel for Service Station (EX117)**: supports service-station operations, from setting up pumps, tanks and shifts to recording dispensing transactions, payments and electronic receipts, monitoring tank levels, and managing customers, contracts and prices.
+- **Fuel Prices and Contracts (EX119)**: centralizes purchase and sales contract management and fuel price determination, linking contract conditions to market indices and quotations to calculate and update applicable prices.
 
 <br>
 
-# Fuel for Service Station (FST) - Summary
+**Unsupported Apps/Features**
 
-Press ALT + Q and digit "FST" for a list of the features involved:
+- Combined Warehouse Shipments (CWS)
+- Dual Unit of Measure (DUM)
 
-<img width="" src="https://docs-test.eos-solutions.it/Images/PR001213-0/EX117_1_ENU.png"><br>
+<br>
+<br>
