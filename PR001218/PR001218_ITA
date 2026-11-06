@@ -1,0 +1,31 @@
+Fuel Prices (EX119) and Contracts centralizza la gestione dei contratti di acquisto e vendita e la determinazione dei prezzi dei carburanti, collegando le condizioni contrattuali agli indici e alle quotazioni di mercato per calcolare e aggiornare i prezzi applicabili.
+
+Le principali funzionalità dell'app Fuel Prices and Contracts (FLP) sono le seguenti:
+
+* **Indici di mercato e articoli indice**: gestione degli indici e degli articoli associati, incluse le unità di misura di acquisto e di vendita. È possibile registrare le quotazioni per data, valuta e tipo di quotazione, con valori minimi, medi e massimi, e aggiornare le quotazioni di dettaglio.
+* **Prospetto prezzi di acquisto**: suggerimento e aggiornamento dei prezzi di acquisto per articolo e fornitore. Il prospetto considera, tra gli altri dati, l’indice di mercato, il contratto fornitore, la base di carico, la valuta e il periodo di validità.
+* **Inserimento prezzi di acquisto giornalieri**: inserimento dei nuovi costi unitari di acquisto con data di decorrenza e valuta. La schermata consente di confrontare i costi con le quotazioni correnti e precedenti dell’indice di riferimento e di registrare le righe selezionate.
+* **Contratti fornitori**: gestione dei contratti, delle date di validità, dello stato e delle condizioni di acquisto. Le righe contrattuali possono collegare articoli indice, formule di calcolo, basi di carico e periodi di riferimento; i contratti possono essere utilizzati per suggerire e aggiornare i prezzi di acquisto.
+* **Contratti di distribuzione carburante**: definizione della relazione commerciale, della validità, della destinazione di spedizione e del listino prezzi, con gestione dello scostamento applicato al prezzo.
+* **Riepilogo contratti di vendita**: consultazione dei contratti associati a una relazione commerciale e accesso alle tipologie collegate, tra cui contratti di trading, GPL, lubrificanti, multistazione, stazioni di servizio e distribuzione carburante.
+
+
+**App Aggiuntive**        
+
+-   **Fuel Data Layer** Fuel Data Layer (EX110) è un app non commerciale e costituisce la base funzionale condivisa delle app FUEL: centralizza setup e dati di riferimento del settore.
+-   **Fuel Finance** Fuel Finance (EX112) estende Business Central supportando le aziende del settore carburanti nella gestione dei documenti di accompagnamento al trasporto sul territorio italiano, inclusi DAS, E-DAS ed E-AD. Consente di definire limiti di credito per i clienti e di debito per i fornitori, e mette a disposizione strumenti per le comunicazioni telematiche all’UTF. 
+-   **Fuel Finance for Italy** Fuel Finance for Italy (EX113) estende Fuel Finance con funzionalità per gli adempimenti fiscali italiani nel settore carburanti, tra cui la gestione e stampa dei registri UTF, l’elaborazione e l’esportazione dei flussi ADM-EDI per i depositi fiscali e la gestione degli oneri accessori sui documenti di vendita e acquisto.
+-   **Fuel for Distribution** (EX114) Fuel for Distribution estende Business Central per gestire la distribuzione fisica dei carburanti, dalla pianificazione di viaggi e risorse di trasporto alla gestione dei documenti CTD/e-DAS e delle registrazioni di ricezione e spedizione.
+-   **Fuel for LPG** Fuel for LPG (EX115) supporta la gestione delle utenze GPL, dalla configurazione degli impianti, serbatoi e contatori alla registrazione di rifornimenti e letture, alla pianificazione delle manutenzioni e all’elaborazione della fatturazione dei consumi secondo i contratti di fornitura.
+-   **Fuel for Service Station** Fuel for Service Station (EX117) supporta la gestione operativa delle stazioni di servizio, dalla configurazione di pompe, serbatoi e turni alla registrazione di erogazioni, pagamenti e corrispettivi, con monitoraggio dei livelli dei serbatoi e gestione di clienti, contratti e prezzi.
+-   **Fuel Prices and Contracts** Fuel Prices (EX119) and Contracts centralizza la gestione dei contratti di acquisto e vendita e la determinazione dei prezzi dei carburanti, collegando le condizioni contrattuali agli indici e alle quotazioni di mercato per calcolare e aggiornare i prezzi applicabili.
+  
+<br>
+
+**App/Funzionalità non supportate**
+
+-   Combine Warehouse Shipment (CWS) 
+-   Dual unit of measure (DUM)
+
+<br>
+<br>
