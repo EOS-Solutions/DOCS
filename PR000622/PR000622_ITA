@@ -18,6 +18,8 @@ E' possibile anche:
 
 * Mantenere la percentuale di scarto originale dal componente di partenza a quello nuovo (solo per articoli)
 
+* Nascondi le righe della distinta base scadute (righe con data di fine validità precedente alla data di lavoro; l'opzione è visibile e abilitabile se e solo se è attivo il flag "Abilita gestione date righe DB" nel Setup Manufacturing)
+
 * Moltiplicare la quantità dei componenti per un certo fattore
 
 * Filtrare solo per determinate versioni
