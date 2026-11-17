@@ -18,6 +18,8 @@ It is also possible:
 
 * Keep old scrap percentage from the old component to the new component (only for items)
 
+* Hide expired BOM lines (BOM lines with ending date less than work date; option visible and enable only if it is active the flag "Enable BOM Lines Dates Management" in Manufacturing Setup)
+
 * Multiply the quantity of components by a certain factor
 
 * Filter only for certain versions
