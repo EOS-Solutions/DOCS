@@ -8,4 +8,4 @@ This table allows you to manage test results with a code:
 | Description | enter a description |
 | Inspection Result | • **Released**: the goods are therefore no longer blocked for inspection but are free to be consumed or shipped.<br> • **Concession**: a part of the goods could be usable and a part is not compliant therefore a reclassification of the goods will be made in a setup area in the location.<br> • **Blocked**: the goods are non-compliant therefore a reclassification of the goods will be made in a setup area in the location. |
 | Allow Posting | flag that authorizes subsequent postings of the source document: for example, with a partially received receipt, if you wish to continue receiving the goods, any previously inspection orders must be in a status that allows posting, otherwise subsequent postings are not permitted. |
-| Allow Editing | allows you to make changes on the inspection order card |
+| Allow Editing | allows you to make changes on the inspection order card |  
